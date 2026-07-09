@@ -1,0 +1,74 @@
+FBLA STUDY OUTLINE — INTRODUCTION TO INFORMATION TECHNOLOGY (2025–2026)
+Source: Official FBLA Competitive Events Guidelines
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Foundational IT knowledge: hardware, software, operating systems,
+applications, modern technologies, networking, and information management.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Computer Hardware (20 test items)
+1. Describe different types of computers and their use cases (mainframe, personal, tablet, supercomputer, etc.).
+2. Discuss common computer hardware components and their functions (CPU, RAM, hard drive).
+3. Troubleshoot common computer hardware problems.
+4. Explain the purposes of expansion cards (graphics cards, sound cards, network adapters).
+5. Evaluate decisions regarding the purchase and upgrade of computer hardware.
+6. Describe computer storage devices (SSD, HDD, external drives).
+7. Explain the steps of basic hardware installation and configuration.
+8. Evaluate the performance of computer system components (CPU, GPU, etc.).
+9. Discuss connectivity devices and peripherals (printers, scanners, USB devices, Bluetooth).
+10. Interpret hardware requirements for running software.
+
+B. Software Fundamentals (10 test items)
+1. Distinguish between system, application, and specialized software.
+2. Explain the importance of software updates and patches.
+3. Explain the functions of various system utilities (antivirus, disk management, backup tools).
+4. Describe appropriate use cases for specialized software applications.
+5. Identify the steps of the Software Development Life Cycle.
+6. Describe how software interacts with hardware to perform tasks.
+
+C. Operating Systems (15 test items)
+1. Explain the purpose and functions of operating systems.
+2. Discuss types of operating systems (mobile, desktop).
+3. Troubleshoot common OS issues (blue screen of death, crashing, boot issues).
+4. Discuss characteristics of platform operating systems (Windows, macOS, Linux, Android, iOS).
+5. Discuss basic OS processes (booting and partitioning, caching, virtual memory, file systems).
+6. Apply basic command-line utilities for Windows and Unix-like systems (file management, process monitoring, troubleshooting).
+7. Describe steps for configuring an OS (account setup/management, permissions, updates).
+
+D. Software Applications (10 test items)
+1. Evaluate the most appropriate application type for a business task (word processing, spreadsheet, email, presentation).
+2. Discuss uses of common workplace applications (word processing, spreadsheet, email, collaboration).
+3. Describe email application features in business and collaboration contexts.
+4. Explain the functions of team collaboration software (Microsoft Teams, Zoom).
+
+E. Modern Technologies (10 test items)
+1. Describe the function and applications of the cloud.
+2. Describe the purpose and applications of virtualization.
+3. Describe the Internet of Things (IoT).
+4. Discuss use cases for artificial intelligence.
+5. Describe the nature of artificial intelligence.
+
+F. Networking Concepts (20 test items)
+1. Describe different types of networks (LAN, WAN).
+2. Describe basic network security practices (encryption, VPN, packet sniffing, authentication).
+3. Discuss common network security threats (viruses, phishing, backdoors).
+4. Describe different connectivity technologies (Ethernet, Wi-Fi, Bluetooth).
+5. Discuss the functions of common network devices (modems, routers, switches).
+6. Discuss types of network environments (peer-to-peer, client-server, thin client).
+7. Explain relationships between major network components (servers, clients, switches).
+8. Describe each layer of the Open System Interconnection (OSI) model.
+9. Explain basic networking protocols (TCP/IP, UDP, DHCP, SMP).
+10. Discuss the characteristics of network topologies (star, bus, ring).
+11. Describe tools and procedures for troubleshooting networks (ping, tracert, checking cable connections).
+
+G. Information Management Concepts (15 test items)
+1. Describe data storage methods (local, cloud, etc.).
+2. Discuss basic database operations and use cases.
+3. Explain the importance of disaster recovery and list examples.
+4. Discuss physical and digital security practices to protect information.
+5. Describe ways personal data is collected, stored, stolen, and sold.
+6. Explain regulations pertaining to intellectual property, privacy, and licensing.

@@ -1,0 +1,147 @@
+FBLA STUDY OUTLINE — ADVANCED ACCOUNTING (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+============================================================
+
+EVENT DESCRIPTION
+Higher-level accounting concepts: corporate accounting, managerial
+accounting, and financial analysis.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Financial Statements
+1. Describe types of financial statements; explain purposes and compare differences.
+2. Prepare a trial balance, worksheet (8 and 10 columns), and adjusted trial balance.
+3. Prepare and interpret an income statement.
+4. Prepare and interpret a balance sheet.
+5. Prepare a statement of Owner's Equity / Partner's Equity / Retained Earnings.
+6. Explain the purpose of each statement and how they articulate with each other.
+7. Analyze the effects of revenue on financial statements.
+8. Use manual and computerized systems for preparing statements and evaluating changes.
+9. Determine acceptable levels of financial performance for management decisions.
+10. Define terminology and classifications for financial statements.
+
+B. Corporate Accounting
+1. Identify methods for forming a corporation; complete the accounting cycle for a corporation or not-for-profit.
+2. Identify and describe classes of stock and the rights of each class.
+3. Journalize capital stock issuance, organization costs, stock subscriptions, dividend declaration/payment.
+4. Differentiate stock splits vs. stock dividends and their effects on equity.
+5. Determine stockholders' equity and EPS; prepare a statement of stockholders' equity.
+6. Perform the closing process end-to-end for a corporation (closing entries, post-closing trial balance, statements/reports).
+7. Apply accounting techniques for formation, allocation/distribution of earnings, and dissolution of corporations.
+8. Describe purposes of revenue, expense, and drawing accounts and effects on equity.
+9. Describe liability and taxation levels for Subchapter S Corporations and LLCs.
+10. Analyze information derived from corporate financial statements.
+
+C. Partnerships
+1. Identify partnership characteristics; steps for forming and admitting partners.
+2. Create partnership financial statements (worksheet, income statement, distribution of net income, owner's equity statement, balance sheet, adjusting/closing entries, post-closing trial balance).
+3. Apply techniques for formation, allocation of earnings, and dissolution of a partnership.
+
+D. Ratios and Data Analysis
+1. Compute financial ratios; analyze statements via horizontal analysis, vertical analysis, and common ratios.
+2. Analyze how a change in an independent variable produces change in a dependent variable.
+3. Calculate financial strength: current ratio, acid-test ratio, debt ratio, working capital, equity ratio, EPS.
+4. Apply differential analysis to decisions (make vs. buy, lease vs. buy, discontinue a department/product, repair vs. replace, discounted special orders).
+
+E. Accounts Receivable and Payable
+1. Journalize merchandise sales (cash, on account, credit card); post; prepare schedule of accounts receivable.
+2. Journalize purchases on account; net purchases; post; prepare schedule of accounts payable.
+3. Write off uncollectible accounts: direct write-off and allowance methods.
+4. Prepare adjustments: aging of receivables, percentage of sales, percentage of receivables.
+5. Explain notes payable/receivable; calculate, record, and journalize interest and payments.
+6. Prepare adjusting and reversing entries for prepaid/accrued expenses and unearned/accrued revenue.
+
+F. Budgeting and Cash Flow
+1. Review revenues, expenditures, trends, priorities, projections to prepare a budget.
+2. Prepare master and flexible budgets; describe uses of each.
+3. Compare budgeted vs. actual amounts via a performance report.
+4. Use cost-volume-profit and contribution margin analysis to plan operations.
+5. Prepare budget analysis using spreadsheet software.
+6. Calculate and prepare cash flow statements.
+7. Determine cash flows from operating, investing, and financing activities.
+
+G. Cost Accounting / Manufacturing
+1. Define managerial accounting; cost accounting terminology and techniques.
+2. Interpret costs and accounts unique to manufacturing.
+3. Calculate manufacturing cost of finished goods (direct materials, labor, factory overhead).
+4. Prepare a schedule of cost of goods manufactured; relate it to the income statement.
+5. Journalize entries summarizing cost records at fiscal year end.
+6. Use allocation methods for overhead and indirect costs.
+7. Explain variable, mixed, and fixed costs.
+8. Compute break-even and cost-revenue analysis; interpret results.
+9. Prepare materials ledger and finished goods ledger.
+10. Apply software to cost accounting records.
+
+H. Departmentalized Accounting
+1. Define departmentalized accounting terminology.
+2. Journalize departmental purchases/cash payments and sales/cash receipts; post to ledgers.
+3. Create departmental statement of gross profit, financial statements, end-of-period work.
+4. Prepare and maintain payroll records for a departmentalized business.
+5. Journalize and post adjusting/closing entries.
+6. Apply software to departmentalized records.
+
+I. Ethics
+1. Describe importance of integrity, confidentiality, and ethical standards in financial statements and data use.
+2. Explain the importance of ethical business decisions.
+3. Adhere to financial laws, regulations, and company policies.
+4. Utilize security measures to minimize loss and create trust.
+
+J. Income Tax
+1. Complete basic business tax forms (941, 940, payroll, etc.).
+2. Identify differences between pretax financial income and taxable income.
+3. Identify deferred income tax issues; effects of tax rates; presentation in statements.
+4. Differentiate personal vs. business taxation, including tax-planning strategies.
+5. Calculate federal income tax expense; record adjustment; complete corporate worksheet.
+6. Identify basic differences between GAAP and tax law.
+7. Distinguish tax avoidance vs. tax evasion.
+8. Evaluate accrual methods, inventory methods, depreciation options for tax effects.
+9. Analyze business decisions for tax impact.
+
+K. Inventory
+1. Explain the importance of an inventory system and its valuation.
+2. Determine inventory value using LIFO, FIFO, Weighted Average.
+3. Estimate inventory cost using retail and gross profit methods.
+4. Calculate and analyze merchandise turnover ratio.
+5. Determine costs of obsolete inventory/materials.
+
+L. Journalizing and Posting
+1. Journalize cash receipts and payments; post to ledgers.
+2. Journalize purchases and sales on account.
+3. Journalize merchandise returns; post appropriately.
+4. Journalize and post adjusting and closing entries.
+5. Record transactions in general and special journals with correct correction methods.
+6. Post to general and subsidiary ledgers; prove accuracy.
+7. Journalize using multicolumn journals.
+8. Journalize adjustments of deferred expenses/revenue and accrued expenses/revenue.
+9. Prove and rule journals.
+10. Prepare a post-closing trial balance.
+11. Journalize entries in a voucher system.
+
+M. Payroll
+1. Calculate earnings: hourly, piece rate, salary, commission, salary+commission.
+2. Calculate and journalize deductions (federal income tax, social security, Medicare, state tax, other) to determine net pay.
+3. Calculate and journalize employer payroll taxes and employer-paid benefits.
+4. Prepare payroll checks and vouchers.
+5. Record earnings and deductions in a payroll register.
+6. Maintain employee earnings record.
+7. Complete federal/state employment tax forms (W-4, W-2, quarterly, unemployment).
+
+N. Plant Assets and Depreciation
+1. Explain the need for recording depreciation.
+2. Calculate/journalize annual and partial-year depreciation: straight line, sum-of-years' digits, declining balance, production unit, MACRS, depletion.
+3. Record disposition of plant assets (buy, sell, trade).
+4. Compare depreciation methods and their effects on asset value.
+5. Identify property, plant, and equipment assets; record initial costs.
+
+O. Purchases and Sales
+1. Evaluate sales and purchasing activities to minimize expenses.
+2. Differentiate cost of sales vs. general operating expenses.
+3. Compare transactions recorded as assets vs. expenses (e.g., supplies).
+4. Calculate sales dollars/units required for a target net income.
+5. Calculate contribution margin rate, breakeven point, required sales.
+6. Describe effects of changes in volume, unit costs, and prices on net income.
+7. Calculate cost of goods sold for a period.
+8. Calculate amount due with terms of sale, sales tax, discounts.
+9. Calculate cash/trade discounts with terms of sale, shipping.
+10. Identify difference between debit and credit memorandums.

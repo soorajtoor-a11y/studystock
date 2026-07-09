@@ -1,0 +1,78 @@
+FBLA STUDY OUTLINE — DATA SCIENCE & AI (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Aug 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Data analysis, machine learning, and AI principles: the role of data
+and AI in solving real-world problems across industries.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Probability and Statistics Foundations (15 test items)
+1. Calculate mean, median, mode, and range of a dataset.
+2. Discuss measures of statistical variance (standard deviation, variance, covariance).
+3. Discuss characteristics and importance of Gaussian (normal) distribution.
+4. Calculate the expected value of a random variable.
+5. Differentiate variable types (continuous, discrete).
+
+B. Data Analysis and Statistics for AI (15 test items)
+1. Select the most appropriate visual medium for a dataset.
+2. Describe diagram types (boxplots, histograms, scatterplots).
+3. Discuss multivariate data techniques (dependence/interdependence methods, multiple linear and logistic regression).
+4. Discuss the importance of cleaning data.
+5. Identify factors affecting data quality (duplicates, low-quality sources, incomplete datasets).
+6. Describe how data science algorithms apply to real-world problems (linear regression, decision trees, k-means).
+
+C. Tools for Data and AI (10 test items)
+1. Write queries in SQL.
+2. Describe common data/AI packages and libraries (Pandas, NumPy, PyTorch).
+3. Discuss Python for cleaning and wrangling datasets.
+4. Discuss R for data science.
+5. Describe characteristics of relational databases.
+
+D. AI Basics (10 test items)
+1. Discuss the nature of generative AI.
+2. Discuss capabilities and limitations of generative AI.
+3. List uses of generative AI (healthcare, research, digital art).
+4. Describe AI subfields (computer vision, NLP, human interaction, robotics).
+5. Define large language models (LLMs).
+6. Discuss the capabilities of LLMs.
+
+E. Machine Learning (10 test items)
+1. Discuss the nature of machine learning.
+2. Describe training, test, and validation datasets.
+3. Describe how ML algorithms behave (neural networks, decision trees, learning functions).
+4. Characterize unsupervised, supervised, and reinforcement learning.
+5. Select an appropriate ML algorithm for a reasoning problem.
+6. Explain the concept of deep learning.
+
+F. Perception, Representation, and Reasoning (10 test items)
+1. Explain how predicate logic is used in AI models.
+2. Give examples of predicate logic.
+3. Discuss logic-based vs. probability-based reasoning.
+4. Describe Bayesian networks and components (nodes, edges, Directed Acyclic Graphs).
+5. Discuss knowledge representation and reasoning for AI.
+
+G. Privacy and Ethics (10 test items)
+1. Discuss dilemmas from AI systems (self-driving vehicles, generative AI, surveillance).
+2. Describe how AI inherits bias (algorithmic bias).
+3. Discuss security and privacy risks of LLMs.
+4. Discuss credibility concerns of LLMs (hallucinations, misinformation).
+
+H. Data Literacy and Foundations (20 test items)
+1. Discuss the nature of data science.
+2. Describe structured vs. unstructured data.
+3. Identify numeric and categorical data points.
+4. Convert among data representations (binary, hexadecimal, decimal).
+5. Describe data types gathered from various sources.
+6. Describe the importance of data wrangling and transformation.
+7. Describe the stages of the data science process.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- AI4K12 Grade Band Progression Charts
+- ACM Computing Competencies for Undergraduate Data Science Curricula
+- CodeHS Intro to AI Syllabus
+- Harvard Data Science Principles; IBM Data Science Professional Certificate
+- Youcubed DS Learning Objectives

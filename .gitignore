@@ -1,0 +1,5 @@
+fbla-app/node_modules/
+fbla-app/dist/
+fbla-app/.env
+*.local
+.DS_Store

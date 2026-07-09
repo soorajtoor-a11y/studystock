@@ -1,0 +1,70 @@
+FBLA STUDY OUTLINE — NETWORKING INFRASTRUCTURES (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Network administration and infrastructure: network design, protocols,
+hardware, and security.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Networking Basics (20 test items)
+1. Discuss characteristics and types of LANs (SOHO, enterprise, datacenter).
+2. Discuss functions of the physical and data link layers of the OSI model.
+3. Discuss functions of the network and transport layers of the OSI model.
+4. Discuss functions of the session, presentation, and application layers.
+5. Explain how data travels across networks (packets, routers, switches).
+6. Describe how devices receive an internet connection (ISP, equipment, cabling).
+7. Describe IP addresses, MAC addresses, and subnetting.
+8. Discuss differences between IPv4 and IPv6.
+9. Identify IPv4 address classes.
+
+B. Network Topologies and Architecture (20 test items)
+1. Give examples of peer-to-peer and client-server networks.
+2. Discuss characteristics of network types (LAN, MAN, WAN).
+3. Recommend topologies per business requirements (bus, mesh, star).
+4. Explain topology characteristics (star, bus, ring, mesh).
+5. Discuss wireless connectivity options for small and large networks.
+6. Explain use cases for IaaS, PaaS, and SaaS.
+7. Discuss benefits, costs, risks of cloud architectures.
+8. Explain factors affecting range, speed, reliability of wireless.
+9. Describe characteristics of 5G networks.
+
+C. Network Security (25 test items)
+1. Explain differences between risks, vulnerabilities, exploits, threats.
+2. Identify internal/external risk sources (zero day, employees, outdated software).
+3. Describe basic network security (user management, permissions, encryption, authentication).
+4. Discuss malware protection (antivirus, filtering, patch management).
+5. Describe DoS attack characteristics and forms (botnets, overload, DDoS).
+6. Describe common attacks (phishing, spoofing, poisoning).
+7. Describe confidentiality, integrity, availability.
+8. Describe vulnerability mitigations (closing ports, updates, antivirus).
+9. Explain hashing, digital signatures, and certificates.
+10. Describe authentication methods (MFA, SSO, remote authentication).
+
+D. Network Protocols and Standards (20 test items)
+1. Explain common transfer protocols (FTP, SFTP, SMTP).
+2. Explain the relationship between DNS, DHCP, and IP addresses.
+3. Describe 802.11 wireless standards (range, speed, frequency).
+4. Describe 802.3 wired standards.
+5. Characterize TCP and UDP.
+6. Describe dynamic routing protocols (BGP, EIGRP, OSPF).
+7. Identify well-known ports (e.g., port 22 for SFTP/SSH).
+8. Describe network address translation (NAT).
+9. Describe wireless encryption standards (WPA2, WPA3).
+
+E. Network Hardware and Connectivity (15 test items)
+1. Discuss functions of network devices (modems, routers, switches).
+2. Discuss network adapters (NIC, virtual adapters, PCIe adapters).
+3. Describe Ethernet cable types (STP, UTP, coaxial).
+4. Describe fiber optic cable types and connectors.
+5. Analyze benefits of rack and blade server infrastructures.
+6. Describe equipment needed to connect to the internet.
+7. Discuss NAS and RAID hard drive configurations.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- CompTIA Network+ (N10-009) and A+ Core 1/2 exam objectives
+- ACM Information Technology Curricula 2017
+- Microsoft Learn "Fundamentals of Computer Networking"; IBM network infrastructure topics

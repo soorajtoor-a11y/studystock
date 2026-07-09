@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue-950: #0c1a3a;
+  --blue-900: #1e3a8a;
+  --blue-800: #1e40af;
+  --blue-700: #1d4ed8;
+  --blue-600: #2563eb;
+  --blue-500: #3b82f6;
+  --blue-400: #60a5fa;
+  --blue-200: #bfdbfe;
+  --blue-100: #dbeafe;
+  --blue-50:  #eff6ff;
+
+  --sidebar-bg:     #07101f;
+  --sidebar-hover:  rgba(255,255,255,0.055);
+  --sidebar-text:   rgba(255,255,255,0.48);
+  --sidebar-text-h: rgba(255,255,255,0.88);
+  --gold:           #f59e0b;
+  --gold-light:     #fbbf24;
+  --gold-bg:        rgba(245,158,11,0.13);
+
+  --bg:      #f0f4ff;
+  --surface: #ffffff;
+  --border:  #e2e8f0;
+  --border-s:#f1f5f9;
+  --text:    #0f172a;
+  --text-2:  #334155;
+  --text-3:  #64748b;
+  --text-4:  #94a3b8;
+
+  --green:        #16a34a;
+  --green-bg:     #f0fdf4;
+  --green-border: #bbf7d0;
+  --red:          #dc2626;
+  --red-bg:       #fef2f2;
+  --red-border:   #fecaca;
+  --amber:        #d97706;
+  --amber-bg:     #fffbeb;
+
+  --r-sm: 6px;
+  --r:    10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.07),0 1px 2px rgba(0,0,0,0.04);
+  --shadow:    0 4px 16px rgba(0,0,0,0.08),0 1px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.12),0 4px 12px rgba(0,0,0,0.06);
+  --shadow-xl: 0 24px 64px rgba(0,0,0,0.16),0 8px 24px rgba(0,0,0,0.08);
+}
+
+html,body { height: 100%; }
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { height: 100vh; display: flex; flex-direction: column; }
+
+h1,h2,h3 { font-family: 'Syne', 'Plus Jakarta Sans', sans-serif; }

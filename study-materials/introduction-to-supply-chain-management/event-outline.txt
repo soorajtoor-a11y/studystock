@@ -1,0 +1,135 @@
+FBLA STUDY OUTLINE — INTRODUCTION TO SUPPLY CHAIN MANAGEMENT (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Eligibility: 9th & 10th graders only.
+============================================================
+
+EVENT DESCRIPTION
+The flow of goods, information, and finances in a supply chain:
+logistics, inventory control, procurement, and distribution strategies.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Essential Supply Chain Management Concepts
+1. Define supply chain management (SCM).
+2. Define the entire supply chain.
+3. Define logistics.
+4. Explain how logistics impacts SCM.
+5. Describe how e-commerce, logistics, import taxes, risk, tariffs, customs, and legal aspects impact global trading.
+6. Analyze creation of new value for customers, society, environment.
+7. Explain SCM practice across industries.
+8. Explain demand forecasting.
+9. Define logistics management.
+10. Define physical and information flows.
+11. Define strategic orientation for saving money.
+12. Describe the global impact on SCM.
+13. Explain importing, exporting, trade agreements, customs regulations.
+14. Explain reasons for SCM growth (information revolution, global competition, relationship management).
+
+B. Supply Chain Topics
+1. Define analytics.
+2. Explain customer relationship management.
+3. Describe the role of forecasting.
+4. Explain the growth of global distribution.
+5. Explain SCM for the healthcare industry.
+6. Explain the logistics of inventory management.
+7. Define procurement.
+8. Describe sales and operations planning.
+9. Define supply market intelligence.
+10. Define sustainability for SCM.
+11. Explain SCM's relationship with transportation planning.
+12. Describe SCM careers.
+
+C. Characteristics for Successful Supply Chain Managers
+1. Describe leadership opportunities in SCM.
+2. Describe effective communication skills for managers.
+3. Explain responsibility ethics.
+4. Describe language skills of successful managers.
+5. Explain the importance of flexible thinking.
+6. Understand freight terminology.
+7. Explain people and problem-solving skills.
+8. Explain technology skills.
+9. Explain the sense of urgency in SCM.
+10. Describe the importance of Excel knowledge.
+11. Describe the temperament required for success.
+
+D. Supply Chain Planning and Design
+1. Explain purchasing's relationship with SCM.
+2. Explain how a company provides value to SCM.
+3. Explain how suppliers, subcontractors, transport providers, and distribution are determined.
+4. Define supply chain integration.
+5. Describe managing supply and demand.
+6. Describe efficient facility network design.
+7. Explain expense management for SCM.
+
+E. Supply Chain Process
+1. Describe manufacturing's role in a supply chain.
+2. Define inventory management's relationship with SCM.
+3. Explain transportation management.
+4. Explain the role and cost of warehouses.
+5. Explain the process for product returns.
+6. Describe the importance of customer service.
+
+F. Product Portfolio Management
+1. Determine what products to sell.
+2. Explain how a company determines products used and sold.
+3. Define a product portfolio.
+4. Explain the Pareto principle.
+5. Identify slow-moving products heading toward obsolescence.
+6. Explain minimizing inventory during all stages.
+
+G. Improving Supply Chain Network Performance
+1. Explain synchronizing material flow.
+2. Define inventory maximization.
+3. Define decoupling points.
+4. Explain algorithms for capital cost optimization.
+5. Explain proximity to the customer and efficiency.
+6. Describe product sourcing decisions.
+7. Describe evaluation processes.
+8. Define how SCM meets consumer needs.
+9. Explain market signals and consumer demand impact.
+10. Explain meeting and improving customer needs.
+11. Describe meeting logistic needs of customer segments.
+
+H. Production Planning and Control
+1. Describe types of SCM planning.
+2. Define static vs. dynamic planning.
+3. Explain how a master production schedule is determined.
+4. Define Bill of Material (BOM).
+5. Describe raw materials requirements.
+6. Describe work-in-process.
+7. Define finished goods and the goal to move them.
+
+I. Supply Chain Coordination and Decision Making
+1. Explain cooperation and coordination in a supply chain.
+2. Describe the role of outsourcing.
+3. Describe measurement of supply chain performance.
+4. Explain the role of the team.
+5. Describe channels of distribution for SCM.
+
+J. Contemporary Issues
+1. Describe IT's impact on SCM.
+2. Explain e-business impact.
+3. Describe the financial flow in SCM.
+4. Explain e-commerce's impact on distribution channels.
+5. Describe political and economic events impacting SCM.
+6. Explain competition's impact on SCM decisions.
+
+K. Channels of Distribution
+1. List the functions of distribution channels.
+2. Explain time, place, and ownership utility.
+3. Explain marketing channels for assembly, storage, sorting, transport.
+4. Define facilitation in SCM.
+5. Explain pre-sale and post-purchase services (financing, maintenance, information, coordination).
+6. Explain how SCM creates efficiencies.
+7. Describe risk sharing between channels and manufacturers.
+8. Define indirect channels of distribution.
+9. Define the role of intermediaries.
+10. Define one-level channel (manufacturer → retailer → customer).
+11. Define two-level channel (manufacturer → wholesaler → retailer → customer).
+12. Define three-level channel (manufacturer → agent → wholesaler → retailer → customer).
+13. Describe dual distribution (showroom + internet).
+14. Explain how services use intermediaries.
+15. Define the on-demand business model.
+16. Describe how market, product, competition, company impact channel choice.
+17. Explain how product characteristics (perishability, cost, technicality) impact SCM.

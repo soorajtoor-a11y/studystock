@@ -1,0 +1,79 @@
+FBLA STUDY OUTLINE — COMPUTER PROBLEM SOLVING (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Computer systems knowledge — operating systems, networking, hardware —
+with troubleshooting and analytical IT problem-solving.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Operating Systems (20 test items)
+1. Explain the purpose and functions of operating systems.
+2. Describe primary OS components (registry, virtual memory, file system).
+3. Discuss file system characteristics (NTFS, FAT32, ExFAT).
+4. Configure files and programs (compatibility mode, compression, installation).
+5. Discuss boot methods (POST, USB, Recovery).
+6. Troubleshoot common OS issues (blue screen, crashing, boot issues).
+7. Discuss common OS utilities (disk management, disk cleanup, system monitoring).
+8. Explain considerations when upgrading an OS.
+9. Use command line tools for Windows and Linux (cd, mkdir, ipconfig, cat).
+
+B. Networks (20 test items)
+1. Explain how data is sent/received through a network (devices, protocols, IP and MAC addresses).
+2. Describe network types (LAN, WAN).
+3. Describe common networking protocols (TCP/IP, UDP, SMTP, SSH).
+4. Discuss IP addressing schemes (static, dynamic, public, private, IPv4, IPv6).
+5. Describe wireless standards (802.11xx) and equipment.
+6. Describe Ethernet characteristics (types, standards, capabilities).
+7. Describe how DHCP and DNS assign, manage, and use IP addresses.
+8. Discuss functions of networking devices (modems, routers, switches).
+9. Describe how IP and MAC addresses facilitate network communication.
+
+C. Computer Hardware and Connectivity (20 test items)
+1. Describe computer components (CPU, motherboard, GPU).
+2. Describe expansion cards (graphics, sound, NIC).
+3. Discuss purchase/upgrade considerations.
+4. Describe storage devices (SSD, HDD, external drives).
+5. Explain peripheral cables and connectors (RJ45/11, USB, Thunderbolt).
+6. Describe network cables (Cat 5e, coaxial, fiber).
+7. Apply troubleshooting methodologies to hardware problems.
+8. Discuss symptoms/causes of power issues (lights, fans, circuit fault).
+
+D. Security (15 test items)
+1. Discuss protective measures (access control, permissions, auditing, event logging).
+2. Discuss digital security threats (viruses, malware, spyware).
+3. Discuss antivirus and firewall configurations.
+4. Discuss social engineering dangers and prevention.
+5. Discuss common cyber attacks (DoS, DDoS, phishing, SQL injection, malware).
+6. Discuss threat types (internal/external, footprinting, spoofing).
+7. Differentiate confidentiality, integrity, availability (CIA triad).
+8. Describe vulnerability types and how to address them (non-compliance, zero-day).
+9. Discuss Wi-Fi Protected Access features, versions, characteristics.
+
+E. Laptops, Tablets, and Mobile Devices (15 test items)
+1. Describe preventive care (battery, charging, heat, cleaning).
+2. Discuss hardware differences: laptops vs. mobile vs. desktops (RAM, CPU, efficiency, power).
+3. Discuss cross-device data synchronization (cloud, USB, Wi-Fi).
+4. Describe Bluetooth capabilities, limitations, requirements.
+5. Troubleshoot connectivity issues on laptops and mobile devices.
+6. Discuss wireless connectivity methods (5G, hotspot, LTE).
+7. Discuss laptop component replacement/upgrade (RAM, adapter, battery, cards).
+8. Explain common hardware and power issues in portables.
+
+F. Printers and Peripherals (10 test items)
+1. Discuss printer hardware and consumables.
+2. Identify printer ports, interfaces, and cables.
+3. Troubleshoot printer connection issues (not responding, not found).
+4. Determine causes of print quality issues (faded, blank, speckled, striped).
+5. Explain maintenance of laser, inkjet, and thermal printers.
+6. Discuss printer sharing methods (PC host, network, Ethernet).
+7. Customize print jobs (trays, duplex, modes).
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- CompTIA A+ Core 1 and Core 2 exam objectives
+- ACM Information Technology Curricula 2017
+- Codecademy "Introduction to IT" course
+- GFC Global Computer Basics; GeeksforGeeks Computer Fundamentals

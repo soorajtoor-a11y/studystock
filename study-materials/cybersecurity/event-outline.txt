@@ -1,0 +1,75 @@
+FBLA STUDY OUTLINE — CYBERSECURITY (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Protecting systems and data from digital threats (viruses, malware,
+phishing, spyware): foundational principles, tools, and best practices.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Security Fundamentals (15 test items)
+1. Describe Confidentiality, Integrity, and Availability (CIA triad).
+2. Describe measures for digital trust (identity proofing, non-repudiation, attestation).
+3. Explain authentication, authorization, and accounting (AAA).
+4. Provide examples of Zero Trust.
+5. Describe deception/disruption technology (honeypots, honeynets, honeyfiles).
+6. Explain how binary, hexadecimal, and decimal are used in cryptography.
+7. Explain the principle of least privilege.
+
+B. Cyber Threats and Vulnerabilities (20 test items)
+1. Describe web/software vulnerability sources (injections, overflows, jailbreaking, race conditions).
+2. Discuss threat actors and their goals (internal/external, financial gain, espionage, data theft).
+3. Describe types of viruses.
+4. Discuss security vulnerabilities (backdoors, zero-days, unpatched software).
+5. Discuss social engineering scams (phishing, phone scams, email scams).
+6. Describe the purpose, methods, and mechanics of DDoS attacks.
+7. Describe malware types (viruses, Trojans, worms, logic bombs).
+8. Describe cryptographic attacks (downgrades, collisions, birthday attacks).
+9. Discuss vulnerabilities of wireless networks.
+
+C. Security and Design (20 test items)
+1. Explain how cloud infrastructure affects system security.
+2. Discuss security implications of microservices (attack surfaces, authentication, complexity).
+3. Differentiate logical vs. physical segmentation.
+4. Explain how containerization and virtualization increase security.
+5. Describe IoT security risks and challenges.
+6. Describe backups, RAID, and UPS concepts.
+7. Identify CIA triad examples in network design (UPS, encryption, data integrity).
+8. Explain the role of testing in secure cyber architecture.
+
+D. Network and Data Security (15 test items)
+1. Describe the purpose of cryptography.
+2. Differentiate public vs. private key cryptography.
+3. Discuss shift, Caesar, and substitution ciphers.
+4. Describe the three states of data (at rest, in transit, in use).
+5. Describe access control models (MAC, DAC, RBAC).
+6. Discuss authentication/authorization of network resources (multifactor, certificates, tokens).
+7. Describe blockchains and hashing for authentication and data integrity.
+
+E. Security Operations and Management (10 test items)
+1. Describe common security policies (acceptable use, information security, business continuity, disaster recovery).
+2. Discuss disaster prevention and recovery plan elements.
+3. Describe firewall types (network-based, NGFW, WAF).
+4. Explain firewall access lists and rules.
+5. Describe best practices for messaging, email, and data security.
+6. Describe the impact of change management on security.
+
+F. Security Protocols and Threat Mitigation (20 test items)
+1. Provide examples of secure protocols (SSH, HTTPS, TLS, WPA2).
+2. Describe intrusion prevention and detection systems (IPS/IDS).
+3. Describe policies preventing viruses, phishing, email scams.
+4. Explain obfuscation methods (tokenization, data masking, steganography).
+5. Describe how strong passwords increase security.
+6. Describe digital certificates and Certificate Authorities (CAs).
+7. Describe importance of patches, updates, version control.
+8. Explain penetration testing for security.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- CompTIA Security+ (SY0-701) exam objectives
+- ACM Cybersecurity Curricula 2017
+- Codecademy "Introduction to Cybersecurity"
+- Cyber.org K-12 Cybersecurity Learning Standards
+- Cybersecurity Guide "Cybersecurity 101"

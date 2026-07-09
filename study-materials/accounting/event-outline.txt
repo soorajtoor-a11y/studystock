@@ -1,0 +1,115 @@
+FBLA STUDY OUTLINE — ACCOUNTING (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Eligibility note: for students with no more than 2 semesters of HS accounting.
+============================================================
+
+EVENT DESCRIPTION
+Demonstrates understanding of fundamental accounting principles:
+financial statements, journal entries, and the accounting cycle.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Journalizing
+1. Prepare a multi-column journal for recording data.
+2. Record transactions (accounts receivable/payable) in appropriate journals.
+3. Journalize business transactions (cash receipts, cash payments, purchases, sales, general).
+4. Journalize adjusting and closing entries for a business.
+5. Prove and rule journals.
+
+B. Account Classification
+1. Evaluate assets and liabilities to determine their function in an accounting system.
+2. Identify asset accounts.
+3. Identify liability accounts.
+4. Identify capital or owner's equity accounts.
+5. Create a chart of accounts to reflect business needs and update as needed.
+6. Differentiate among fixed assets, intangible assets, and current assets.
+7. Differentiate between current and long-term liabilities.
+
+C. Terminology, Concepts, and Practices
+1. Identify the steps in the accounting cycle.
+2. Identify and apply the accounting equation.
+3. Maintain knowledge of current financial laws, regulations, and policies.
+4. Identify resources for information on financial laws, regulations, and policies.
+5. Describe the types of financial statements, their purposes, and differences.
+6. Define general accounting terms (asset, liability, accounts payable, capital, income, expense).
+7. Define double entry accounting, debits, and credits.
+8. Describe the purpose of accounting and its role in the economy.
+9. Describe the purpose of GAAP.
+
+D. Income Statement
+1. Apply the income statement equation to determine revenue and expenses.
+2. Prepare an income statement reporting results of operations.
+3. Interpret the information on an income statement.
+
+E. Posting
+1. Post from journals to a general ledger.
+2. Post from journals to a subsidiary ledger.
+3. Record postings in journal and ledger reference columns.
+4. Balance and verify the ledger accounts.
+5. Prepare a trial balance.
+6. Post adjusting and closing entries.
+7. Prepare schedules for subsidiary ledgers.
+
+F. Balance Sheet
+1. Classify account titles into assets, liabilities, and owner's equity.
+2. Prepare a balance sheet reporting the entity's financial condition.
+3. Interpret the information found on a balance sheet.
+
+G. Worksheet
+1. Identify information needed to prepare a worksheet.
+2. Record adjustments on the worksheet.
+3. Prepare trial balance, income statement, and balance sheet sections.
+
+H. Bank Reconciliation
+1. Maintain a check register.
+2. Compare checkbook to bank statement.
+3. Identify inequalities and make adjusting entries.
+4. Prepare a bank reconciliation statement.
+5. Journalize banking transactions.
+
+I. Payroll
+1. Identify methods for determining gross earnings (piece-rate, hourly, commission).
+2. Explain the purposes of withholdings and other deductions.
+3. Verify time and wage documents (timecards, etc.).
+4. Compute employee gross earnings, deductions, and net pay.
+5. Maintain employee earnings records.
+6. Journalize payroll transactions.
+7. Record payroll earnings and deductions in a payroll register.
+8. Prepare payroll checks and vouchers.
+9. Complete federal/state employment forms (W-4, W-2, quarterly reports, unemployment tax).
+
+J. Types of Ownership
+1. Identify types of business organizations and functions.
+2. Identify reporting and information flow required per ownership type.
+3. Explain characteristics of corporations.
+4. Define advantages and disadvantages of corporations.
+5. Explain characteristics of partnerships.
+6. Define advantages and disadvantages of partnerships.
+7. Explain characteristics of sole proprietorships.
+8. Define advantages and disadvantages of sole proprietorships.
+9. Compare accounting implications for different ownership types.
+
+K. Depreciation
+1. Identify the appropriate method for calculating depreciation.
+2. Determine depreciation using straight-line, units of production,
+   double-declining balance, and sum of the years' digits.
+3. Maintain records for depreciation of plant assets.
+4. Journalize and post depreciation on plant assets.
+
+L. Manual and Computerized Systems
+1. Operate financial software to generate usable data.
+2. Operate electronic spreadsheet software to create formulas and reports.
+3. Adapt accounting/record-keeping functions to computerized systems.
+4. Use a spreadsheet to prepare payroll, worksheets, and reports.
+5. Enter data and print checks to process payroll.
+6. Identify and review financial management software packages.
+
+M. Ethics
+1. Identify confidentiality concepts and policies.
+2. Identify characteristics of professional conduct.
+3. Identify and practice good ethical behavior.
+4. Differentiate between good and poor business ethics.
+5. Adhere to established company rules, regulations, and policies.
+6. Identify issues and trends affecting computers and information privacy.
+7. Implement security measures to minimize loss and create trust.

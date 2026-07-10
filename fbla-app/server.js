@@ -4,13 +4,28 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Load .env before anything reads process.env
+const __envPath = fileURLToPath(new URL('.env', import.meta.url));
+if (fs.existsSync(__envPath)) {
+  for (const line of fs.readFileSync(__envPath, 'utf8').split('\n')) {
+    const m = line.match(/^\s*([^#=\s]+)\s*=\s*(.*)$/);
+    if (m) process.env[m[1]] = m[2].trim();
+  }
+}
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MATERIALS_DIR = path.join(__dirname, '..', 'study-materials');
-const BOT_RULES_PATH = path.join(__dirname, '..', 'bot-rules.txt');
+const MATERIALS_DIR   = path.join(__dirname, '..', 'study-materials');
+const BOT_RULES_PATH  = path.join(__dirname, '..', 'bot-rules.txt');
+const GEN_RULES_PATH  = path.join(__dirname, '..', 'question-generation-rules.txt');
+
+// Read generation rules once at startup so every prompt gets them
+let GEN_RULES = '';
+try { GEN_RULES = fs.readFileSync(GEN_RULES_PATH, 'utf8'); }
+catch { console.warn('question-generation-rules.txt not found — generation will run without rules'); }
 
 const PROVIDER      = process.env.AI_PROVIDER  || 'ollama';
 const OLLAMA_MODEL  = process.env.OLLAMA_MODEL  || 'llama3.2';
@@ -115,17 +130,29 @@ app.get('/api/events', (req, res) => {
 
 app.get('/api/events/:event/outline', (req, res) => {
   const outlinePath = path.join(MATERIALS_DIR, req.params.event, 'event-outline.txt');
+  const contentPath = path.join(MATERIALS_DIR, req.params.event, 'study-content.txt');
   if (!fs.existsSync(outlinePath)) return res.status(404).json({ error: 'Not found' });
-  res.json({ content: fs.readFileSync(outlinePath, 'utf8') });
+  let content = fs.readFileSync(outlinePath, 'utf8');
+  if (fs.existsSync(contentPath)) {
+    // Extract just the structured objectives block (the section between the
+    // first and second === separators in study-content.txt).  That block
+    // has the A. Title / 1. objective format the frontend parser needs.
+    const parts = fs.readFileSync(contentPath, 'utf8').split(/={20,}/);
+    if (parts.length >= 3) content = parts[1].trim() + '\n\n' + content;
+  }
+  res.json({ content });
 });
 
 function getOutline(event) {
-  const p = path.join(MATERIALS_DIR, event, 'event-outline.txt');
-  return fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
+  const p  = path.join(MATERIALS_DIR, event, 'event-outline.txt');
+  const p2 = path.join(MATERIALS_DIR, event, 'event-outline 2.txt');
+  let content = fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
+  if (fs.existsSync(p2)) content += '\n\n' + fs.readFileSync(p2, 'utf8');
+  return content;
 }
 
 function getExtras(event) {
-  return ['notes.txt', 'vocab.txt', 'mistakes.txt']
+  return ['notes.txt', 'vocab.txt', 'mistakes.txt', 'study-content.txt']
     .map(f => path.join(MATERIALS_DIR, event, f))
     .filter(fs.existsSync)
     .map(f => `--- ${path.basename(f)} ---\n${fs.readFileSync(f, 'utf8')}`)
@@ -236,7 +263,7 @@ async function callGemini(prompt, genOpts = {}) {
   const url = `${GEMINI_BASE}:generateContent?key=${GEMINI_API_KEY}`;
   const body = {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    generationConfig: { temperature: 0.3, maxOutputTokens: 8192, responseMimeType: 'application/json', ...genOpts },
+    generationConfig: { temperature: 0.3, maxOutputTokens: 16384, responseMimeType: 'application/json', ...genOpts },
   };
   const res = await fetch(url, {
     method: 'POST',
@@ -344,43 +371,50 @@ function normalizeCards(cards) {
 // Prompt builders
 // ---------------------------------------------------------------------------
 
-function buildGenPrompt(type, count, objective, outline, difficulty) {
+function buildGenPrompt(type, count, objective, outline, difficulty, extras = '') {
   const diffGuide = {
     easy:   'Simple recall and basic understanding only.',
     medium: 'Mix of recall and application.',
     hard:   'In-depth analysis and nuanced understanding.',
   }[difficulty] || 'Mix of recall and application.';
 
+  const studyBlock = [
+    outline ? `--- EVENT OUTLINE ---\n${outline.slice(0, 1500).trim()}` : '',
+    extras  ? `--- STUDY CONTENT ---\n${extras.slice(0, 3000).trim()}`  : '',
+  ].filter(Boolean).join('\n\n');
+
   if (type === 'quiz') {
-    const context = outline ? outline.slice(0, 1200).trim() : '';
-    return `Output ONLY a valid JSON array. No text before or after the array.
+    return `${GEN_RULES}
+
+--- TASK ---
+Output ONLY a valid JSON array. No text before or after the array.
 
 Generate exactly ${count} multiple-choice questions about: "${objective}"
 Difficulty: ${difficulty} — ${diffGuide}
-${context ? `\nReference:\n${context}\n` : ''}
+${studyBlock ? `\n${studyBlock}\n` : ''}
 Format — every object must have these exact keys:
-[{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"one sentence only"}]
+[{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"2-3 sentences: why correct and why the wrong choices are wrong","knowledge_area":"topic area","difficulty":"${difficulty}"}]
 
 Rules:
 - "answer" must be exactly A, B, C, or D
-- "explanation" must be ONE short sentence (keep output short)
 - No text outside the array
-- The array MUST end with the character ]`;
+- The array MUST end with ]`;
   }
 
   return `Output ONLY a valid JSON array. No text before or after the array.
 
-Generate exactly ${count} flashcards about: "${objective}"
-
+Generate EXACTLY ${count} flashcards about: "${objective}"
+${studyBlock ? `\n${studyBlock}\n` : ''}
 Format:
 [{"front":"short term or concept","back":"1-2 sentence definition"}]
 
 Rules:
 - Every object must have "front" and "back" string keys
 - front: concise term (under 10 words)
-- back: clear explanation (1-3 sentences)
-- ${count} different topics, no duplicates
-- The array MUST end with the character ]`;
+- back: clear explanation (1-2 sentences)
+- EXACTLY ${count} cards — no more, no fewer
+- No duplicate topics
+- Array MUST end with ]`;
 }
 
 // ---------------------------------------------------------------------------
@@ -391,13 +425,14 @@ Rules:
 app.post('/api/quiz', async (req, res) => {
   const { event, objective, count, difficulty } = req.body;
   const outline = extractRelevantSection(getOutline(event), objective);
-  const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty);
+  const extras  = getExtras(event);
+  const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty, extras);
 
   try {
     const questions = await withRetry(async () => {
       let raw = '';
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
-      else if (PROVIDER === 'gemini') raw = await callGemini(prompt);
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(count * 350, 16384) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       return extractJSON(raw);
     });
@@ -411,13 +446,15 @@ app.post('/api/quiz', async (req, res) => {
 // Flashcard generation — retries up to 3 times total, slices to exact count
 app.post('/api/flashcards', async (req, res) => {
   const { event, objective, count } = req.body;
-  const prompt = buildGenPrompt('flashcard', count, objective, '', '');
+  const outline = extractRelevantSection(getOutline(event), objective);
+  const extras  = getExtras(event);
+  const prompt  = buildGenPrompt('flashcard', count, objective, outline, '', extras);
 
   try {
     const parsed = await withRetry(async () => {
       let raw = '';
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
-      else if (PROVIDER === 'gemini') raw = await callGemini(prompt);
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(count * 200, 8192) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       return extractJSON(raw);
     });

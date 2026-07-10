@@ -217,7 +217,7 @@ function FlashcardPane({ event, objectiveText, count, onBack }) {
       <div className="pane-loading">
         <div className="pane-spinner" />
         <p className="pane-loading-title">Generating {count} flashcards…</p>
-        <p className="pane-loading-sub">This takes a moment with local AI</p>
+        <p className="pane-loading-sub">Powered by Gemini AI</p>
       </div>
     </div>
   )
@@ -341,7 +341,7 @@ function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
       <div className="pane-loading">
         <div className="pane-spinner" />
         <p className="pane-loading-title">Generating {count} {diffLabel?.toLowerCase()} questions…</p>
-        <p className="pane-loading-sub">This takes a moment with local AI</p>
+        <p className="pane-loading-sub">Powered by Gemini AI</p>
       </div>
     </div>
   )

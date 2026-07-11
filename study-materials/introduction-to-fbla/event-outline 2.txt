@@ -1,0 +1,36 @@
+FBLA STUDY OUTLINE — INTRODUCTION TO FBLA (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Objective Test — 100 multiple-choice questions, 50 minutes
+Eligibility: 9th & 10th graders only.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of FBLA itself: the organization's history, structure,
+programs, and leadership.
+
+KNOWLEDGE AREAS
+(Note: this event has knowledge areas only — FBLA publishes no detailed
+objective list or test composition. Study material comes from fbla.org
+and official FBLA documents.)
+
+1. FBLA History
+2. FBLA Corporate & Division Bylaws
+3. FBLA Programs
+4. FBLA Pledge, Mission, Goals, Creed
+5. FBLA High School Competitive Events
+6. FBLA Structure
+7. FBLA Dress Code
+8. FBLA Publications
+9. FBLA Deadlines
+10. FBLA Website & Communications
+11. FBLA Partners
+
+STUDY SOURCES
+- www.fbla.org (official study guide reference)
+- FBLA Competitive Events Policy & Procedures Manual
+- FBLA Honor Code, Code of Conduct, Dress Code
+- FBLA bylaws (corporate and division)
+
+STUDYBOT NOTE: For this event, add your own notes.txt with the FBLA
+creed, pledge, mission, key dates from FBLA history, national officer
+structure, and program names — the bot will quiz from those.

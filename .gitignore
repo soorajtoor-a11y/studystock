@@ -1,5 +1,7 @@
 fbla-app/node_modules/
 fbla-app/dist/
 fbla-app/.env
+keys.py
 *.local
 .DS_Store
+__pycache__/

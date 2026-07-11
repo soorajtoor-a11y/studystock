@@ -1,0 +1,411 @@
+FBLA STUDY CONTENT — INTRODUCTION TO PARLIAMENTARY PROCEDURE (2025–2026)
+LONG-FORM EDITION
+Based on Robert's Rules of Order Newly Revised (RONR, the event's
+official handbook). Test = 100 questions: ~90 parliamentary procedure
++ ~10 FBLA bylaws. Parli pro questions are drawn from the National
+Association of Parliamentarians (NAP) official test bank, so this
+document is built to NAP-exam depth.
+============================================================
+
+CONSTRUCTED KNOWLEDGE AREAS AND OBJECTIVES
+(FBLA publishes no objective list for this event; this path is
+modeled on the official format, built from RONR and NAP exam scope.)
+
+A. Principles and Foundations of Parliamentary Law
+1. State the fundamental principles of parliamentary law.
+2. Define parliamentary authority, bylaws, standing rules, special rules of order.
+3. Distinguish a session from a meeting; define quorum and its consequences.
+B. Classification and Precedence of Motions
+1. Classify any motion: main, subsidiary, privileged, incidental, bring-back.
+2. Apply the 13-motion order of precedence to determine if a motion is in order.
+C. Rules for Each Motion
+1. For any motion, state: second required? debatable? amendable? vote required? can it be reconsidered?
+2. Identify the purpose and correct use of each motion.
+D. Processing Business
+1. List the six steps in handling a main motion.
+2. Apply the rules of debate and recognition.
+3. Apply amendment rules, including degrees and forms of amendment.
+E. Voting
+1. Differentiate voting methods and when each is used.
+2. Compute majority and two-thirds outcomes; handle ties correctly.
+F. Meetings, Officers, and Records
+1. Recite the standard order of business.
+2. State the duties of president, vice president, secretary, treasurer, parliamentarian.
+3. Identify what belongs (and doesn't belong) in minutes.
+G. Committees, Nominations, and Elections
+1. Distinguish standing vs. special committees and committee procedure.
+2. Apply nomination methods and election rules.
+H. FBLA Bylaws and Organization
+1. State FBLA's divisions, regions, officers, and key governance rules.
+
+============================================================
+PART 1 — FOUNDATIONS
+
+1.1 Fundamental principles of parliamentary law
+- One question at a time; one speaker at a time.
+- The majority decides, but only after the minority has been heard.
+- Every member has equal rights, privileges, and obligations.
+- The rights of the assembly, the minority, individual members, and
+  absentees must all be protected.
+- Justice, courtesy, and impartiality for all; partiality to none.
+- Silence gives consent — members who abstain agree to abide by the
+  result of the vote.
+- Purpose of parliamentary procedure: to transact business
+  efficiently while protecting the rights of every member.
+
+1.2 Governing documents (from highest authority down)
+1. Corporate charter (if incorporated)
+2. Bylaws — the fundamental rules of the organization. CANNOT be
+   suspended. Amended only with previous notice + 2/3 vote (typical).
+3. Special rules of order — modify the parliamentary authority;
+   adopted by 2/3 with notice; suspendable by 2/3.
+4. Rules of order / parliamentary authority (RONR for FBLA) —
+   applies wherever bylaws are silent.
+5. Standing rules — administrative details (e.g., meeting time);
+   adopted by majority; suspended by majority for a session.
+Custom falls to the ground when in conflict with written rules.
+
+1.3 Sessions, meetings, quorum
+- MEETING: a single official gathering with no break longer than a
+  recess. SESSION: one or more connected meetings devoted to one
+  order of business (a convention is one session).
+- QUORUM: the minimum number of members who must be present to
+  transact business legally. Default: a majority of the membership,
+  unless the bylaws set another number.
+- Without a quorum, the only actions in order are: fix the time to
+  which to adjourn, adjourn, recess, and measures to obtain a quorum.
+  Any other business transacted is NULL AND VOID.
+- The chair should declare the presence of a quorum before business;
+  any member may raise a point of order about quorum.
+
+============================================================
+PART 2 — THE MOTIONS SYSTEM
+
+2.1 The five classes
+- MAIN MOTION: brings business before the assembly. Only one main
+  motion may be pending at a time; lowest rank. Two types: original
+  main motions (new substantive business) and incidental main
+  motions (procedural business, e.g., ratify, adopt a recommendation).
+- SUBSIDIARY MOTIONS: help dispose of the main motion (amend it,
+  delay it, kill it, send it to committee, control its debate).
+- PRIVILEGED MOTIONS: urgent matters unrelated to the pending
+  question (adjourning, recessing, comfort of the assembly).
+- INCIDENTAL MOTIONS: procedural questions arising out of pending
+  business; decided immediately; no rank among themselves.
+- MOTIONS THAT BRING A QUESTION AGAIN BEFORE THE ASSEMBLY:
+  take from the table, reconsider, rescind/amend something
+  previously adopted, discharge a committee.
+
+2.2 Order of precedence (memorize cold: #1 highest to #13 lowest)
+ 1. Fix the time to which to adjourn      (privileged)
+ 2. Adjourn                                (privileged)
+ 3. Recess                                 (privileged)
+ 4. Raise a question of privilege         (privileged)
+ 5. Call for the orders of the day        (privileged)
+ 6. Lay on the table                       (subsidiary)
+ 7. Previous question                      (subsidiary)
+ 8. Limit or extend limits of debate      (subsidiary)
+ 9. Postpone to a certain time            (subsidiary)
+ 10. Commit or refer                       (subsidiary)
+ 11. Amend                                 (subsidiary)
+ 12. Postpone indefinitely                 (subsidiary)
+ 13. Main motion
+RULES: When a motion is pending, any motion HIGHER on the list is in
+order; any motion LOWER is out of order. Motions are voted on in
+REVERSE order of their making (highest precedence first).
+
+2.3 The complete motions chart
+(S=Second req'd, D=Debatable, A=Amendable, V=Vote, R=Reconsiderable)
+
+PRIVILEGED
+Fix time to which to adjourn  S:Y  D:N  A:Y  V:Majority   R:Y
+Adjourn                       S:Y  D:N  A:N  V:Majority   R:N
+Recess                        S:Y  D:N  A:Y  V:Majority   R:N
+Raise question of privilege   S:N  D:N  A:N  V:Chair rules R:N
+Call for orders of the day    S:N  D:N  A:N  V:Demand of 1 R:N
+
+SUBSIDIARY
+Lay on the table              S:Y  D:N  A:N  V:Majority   R:N
+Previous question             S:Y  D:N  A:N  V:2/3        R:Y (before vote taken under it)
+Limit/extend debate           S:Y  D:N  A:Y  V:2/3        R:Y
+Postpone to a certain time    S:Y  D:Y  A:Y  V:Majority   R:Y
+Commit or refer               S:Y  D:Y  A:Y  V:Majority   R:Y (until committee begins)
+Amend                         S:Y  D:*  A:Y  V:Majority   R:Y
+  (*debatable only when the motion to be amended is debatable)
+Postpone indefinitely         S:Y  D:Y  A:N  V:Majority   R:affirmative only
+
+MAIN
+Main motion                   S:Y  D:Y  A:Y  V:Majority   R:Y
+
+INCIDENTAL (no rank; decided when they arise)
+Point of order                S:N  D:N  A:N  V:Chair rules
+Appeal from the chair         S:Y  D:*  A:N  V:Majority to overturn;
+  TIE SUSTAINS THE CHAIR  (*undebatable if it concerns decorum,
+  priority of business, or arises during an undebatable question)
+Suspend the rules             S:Y  D:N  A:N  V:2/3
+Objection to consideration    S:N  D:N  A:N  V:2/3 AGAINST consideration
+  (must be raised BEFORE debate begins; applies only to original
+  main motions)
+Division of the assembly      S:N  D:N  A:N  V:Demand of 1 member
+Division of the question      S:Y  D:N  A:Y  V:Majority
+Requests (parliamentary inquiry, request for information, withdraw
+  a motion, read papers): decided by chair or majority.
+  - Withdraw: before the chair states the motion, the maker may
+    withdraw freely; after, requires consent of the assembly.
+
+BRING-BACK MOTIONS
+Take from the table           S:Y  D:N  A:N  V:Majority
+  (in order until the end of the NEXT regular session)
+Reconsider                    S:Y  D:*  A:N  V:Majority
+  (*debatable when the motion to be reconsidered is debatable)
+  - May be moved ONLY by a member who voted on the PREVAILING side.
+  - May be made only on the same day or the next day of the session.
+  - Suspends action on the decision until resolved.
+Rescind / Amend something
+previously adopted            S:Y  D:Y  A:Y
+  V: 2/3 without notice, OR majority WITH previous notice, OR
+  majority of the ENTIRE membership.
+  - Cannot rescind action already carried out that can't be undone.
+Discharge a committee         S:Y  D:Y  A:Y  V: same as rescind
+
+2.4 Purposes — what each motion is FOR
+- Postpone indefinitely: KILLS the main motion for the session
+  without a direct vote on it (also lets opponents test strength).
+- Amend: modify wording. Forms: (1) insert/add, (2) strike out,
+  (3) strike out and insert / substitute.
+- Commit/refer: send to a committee for study or redrafting.
+- Postpone to a certain time: delay to a definite time (becomes a
+  general or special order).
+- Limit/extend debate: change the 10-minute/2-speech defaults.
+- Previous question: immediately close debate and vote. "Calling
+  the question" from your seat has NO effect — it must be moved,
+  seconded, and adopted by 2/3.
+- Lay on the table: set business aside TEMPORARILY for something
+  urgent. Misusing it to kill a motion is improper — use postpone
+  indefinitely instead.
+- Question of privilege: comfort/safety/rights issues (too noisy,
+  can't hear, confidential matter -> enter executive session).
+- Orders of the day: demand return to the scheduled agenda.
+- Suspend the rules: do something the rules of order prevent
+  (never bylaws, never protections of absentees/minority).
+- Division of the assembly: verify an inconclusive voice vote by
+  rising vote — any single member may demand it.
+- Division of the question: split a motion with independent parts
+  into separate questions.
+
+2.5 Amendment rules in depth
+- Amendments must be GERMANE (relevant) to the motion.
+- First-degree amendment: amends the main motion.
+  Second-degree amendment: amends the first-degree amendment.
+  THIRD-degree amendments are NOT allowed.
+- Vote order: second-degree first, then first-degree, then the main
+  motion as amended.
+- An amendment may be hostile (against the spirit) yet still
+  germane — that is allowed.
+- Adopting an amendment does NOT adopt the main motion; the main
+  motion (as amended) must still be voted on.
+- "Friendly amendment": after the chair states the motion, it still
+  requires normal amendment processing or unanimous consent — the
+  maker alone cannot accept it.
+
+============================================================
+PART 3 — RUNNING BUSINESS
+
+3.1 Six steps of a main motion
+1. Member rises and addresses the chair ("Madam/Mr. President").
+2. Chair recognizes the member (member "has the floor").
+3. Member states the motion: "I move that ..."
+   (NEVER "I make a motion that" / "I so move" is improper form.)
+4. Another member seconds ("Second!") — shows at least two members
+   want it considered. Committee-reported motions need NO second.
+   A motion that gets no second simply does not come before the
+   assembly (it is not "dead on the floor" — it just isn't taken up).
+5. Chair STATES the question ("It is moved and seconded that ...").
+   Only now does the motion belong to the assembly.
+6. Debate (if debatable) -> chair PUTS the question (takes the
+   vote) -> chair ANNOUNCES the result and what happens next
+   ("The ayes have it, the motion is adopted, and ...").
+
+3.2 Debate rules (RONR defaults)
+- Only the member recognized by the chair may speak.
+- Limit: TWO speeches per member, per motion, per day; TEN minutes
+  each. (Changing this requires limit/extend debate, 2/3.)
+- The maker of the motion has the right to speak FIRST in debate
+  and may not speak AGAINST their own motion (may vote against it).
+- No member speaks a second time while another who hasn't spoken
+  seeks the floor.
+- Debate must be germane; address the chair, not other members;
+  no attacking motives; refer to members impersonally ("the
+  previous speaker") — no names in debate.
+- The presiding officer must be IMPARTIAL: does not enter debate
+  while presiding (must relinquish the chair to debate, and does
+  not return until the question is disposed of).
+
+3.3 Voting
+- Methods: voice (viva voce) — the normal method for majority
+  votes; rising — required to verify on demand and for 2/3 votes;
+  show of hands (small groups); ballot (secrecy — required when
+  bylaws say so, e.g., elections); roll call (records each member's
+  vote — used in representative bodies); unanimous/general consent
+  ("If there is no objection ..." — a single objection forces a
+  regular vote); absentee/mail/proxy only if bylaws authorize.
+- MAJORITY VOTE = more than half of the votes CAST by members
+  entitled to vote (blanks/abstentions are ignored).
+  Example: 19 votes cast -> majority is 10.
+- TWO-THIRDS VOTE = at least 2/3 of votes cast.
+  Example: 60 votes cast -> need 40.
+- A TIE DEFEATS a motion (majority not achieved). EXCEPTION: on an
+  appeal, a tie SUSTAINS the chair's decision.
+- The chair, if a member, votes when the vote is by ballot, or
+  whenever their vote would CHANGE the result (to make or break a
+  tie) — never twice.
+- An abstention is not a vote; members are not compelled to vote.
+- No member may vote on a question of direct personal or pecuniary
+  interest not shared by other members.
+
+3.4 Standard order of business
+1. Call to order ("The meeting will come to order.")
+2. Opening ceremonies (optional — pledge, creed, etc.)
+3. Reading and approval of the minutes
+   (corrections by unanimous consent; "approved as read/corrected")
+4. Reports of officers, boards, standing committees
+5. Reports of special (select) committees
+6. Special orders (matters set for this meeting, incl. postponed
+   items made special orders)
+7. Unfinished business and general orders
+   (NOT "old business" — improper term; unfinished business is
+   never "called for" by the chair asking members, it comes up
+   automatically from the previous meeting)
+8. New business
+9. Announcements
+10. Adjournment (by motion, or by unanimous consent, or the chair
+    may declare adjournment when the agenda is exhausted)
+
+============================================================
+PART 4 — OFFICERS, RECORDS, COMMITTEES, ELECTIONS
+
+4.1 Officer duties
+- PRESIDENT/CHAIR: opens meetings on time, announces business in
+  proper order, recognizes members, states and puts all questions,
+  enforces the rules, decides points of order (subject to appeal),
+  declares adjournment, signs official documents, remains impartial.
+- VICE PRESIDENT: presides in the president's absence; automatically
+  fills a presidential vacancy (unless bylaws say otherwise).
+- SECRETARY: keeps the minutes and official records, maintains the
+  membership roll, provides the president an order of business,
+  reads documents, handles official correspondence, certifies
+  copies. In the absence of president AND VP, the secretary calls
+  the meeting to order and presides over election of a chair pro tem.
+- TREASURER: custodian of funds, pays authorized bills, reports
+  regularly. The treasurer's report is NOT adopted or approved —
+  it is received and FILED; only the AUDITOR'S report is adopted.
+- PARLIAMENTARIAN: ADVISES the chair on procedure; has no authority
+  to rule (only the chair rules); remains impartial, so does not
+  make motions, debate, or vote (except by ballot).
+
+4.2 Minutes — the record of what was DONE, not what was said
+Contain: kind of meeting (regular/special); name of body; date,
+time, place; presence of president and secretary (or substitutes);
+whether previous minutes were approved; all MAIN motions (except
+withdrawn ones) with the name of the MAKER (not the seconder) and
+the result; points of order and appeals; counts on counted votes;
+time of adjournment. The secretary signs the minutes.
+Do NOT include: opinions, debate summaries, praise or criticism.
+Minutes are read and approved at the next regular meeting;
+corrections are usually handled by unanimous consent.
+
+4.3 Committees
+- STANDING committees: permanent, defined in bylaws (e.g., finance).
+- SPECIAL (select/ad hoc) committees: created for one task; cease
+  to exist when the task is done and the final report is made.
+- Committees may be appointed by the chair, elected, or named in
+  the motion to commit.
+- Committee chairs usually may debate and vote (small-board rules:
+  no seconds required, chair may participate, informal discussion).
+- A committee cannot punish members or act beyond its instructions.
+- Committee of the whole / quasi-committee / informal consideration:
+  ways the full assembly loosens debate limits on a subject.
+- Minority of a committee may present its views ("minority report")
+  only by permission of the assembly.
+
+4.4 Nominations and elections
+- Nomination methods: by the chair, from the floor (most common),
+  by a nominating committee, by ballot, by mail, by petition.
+- Nominations from the floor require NO second.
+- A member may be elected even without being nominated (write-in),
+  unless the bylaws require nomination.
+- Closing nominations: motion requires 2/3 (it removes rights);
+  reopening nominations: majority.
+- Elections: MAJORITY of ballots cast elects, unless bylaws provide
+  for plurality. If no candidate achieves majority, balloting is
+  REPEATED (no automatic runoff or drop-the-lowest unless bylaws
+  say so) until someone does.
+- An election becomes final when the candidate is declared elected
+  and does not decline; an officer assumes office immediately
+  unless bylaws set a term start.
+- Illegal votes (unintelligible, for ineligible persons) are counted
+  as votes CAST for majority computation; blanks are not.
+
+4.5 Improper ("out of order") motions — always out of order:
+- Conflicts with the bylaws or with national/state/local law.
+- Presents substantially the same question already decided this
+  session (renewal must wait for a new session, or use
+  reconsider/rescind).
+- Conflicts with a motion already adopted and still in force.
+- Proposed while another has the floor, or beyond the object of
+  the assembly (unless 2/3 allow).
+- Dilatory, absurd, or frivolous motions — the chair does not
+  entertain them.
+
+============================================================
+PART 5 — FBLA BYLAWS AND ORGANIZATION (the ~10 bylaws questions)
+
+5.1 Structure
+- Divisions: FBLA Middle School, FBLA High School, FBLA Collegiate,
+  FBLA Network (formerly: FBLA-Middle Level, FBLA, PBL, and
+  Professional Division).
+- Five national regions (HS/MS): Eastern, Southern, North Central,
+  Mountain Plains, Western. International chapters: Eastern Region.
+- FBLA High School national officer team (9): president, secretary,
+  treasurer, parliamentarian, and five regional vice presidents.
+- National officers: elected by voting delegates at the National
+  Leadership Conference; serve ONE-YEAR terms; the officer team
+  designs and implements the annual program of work.
+- Governance: Board of Directors (CEO, business leaders, state
+  educators, business education teachers, division national
+  presidents).
+- Headquarters: Reston, Virginia (National Center opened 1991).
+
+5.2 Membership and chapters
+- Membership types: active (student), professional (FBLA Network),
+  honorary; local chapters chartered through schools.
+- State chapter charter requires at least 5 active local chapters
+  (High School division).
+- National dues deadline for NLC eligibility: March 1, 11:59 p.m.
+  Eastern, of the current school year.
+- Members compete: one individual/team event + one chapter event
+  at NLC; top-10 NLC finishers may not repeat an event.
+
+5.3 The parliamentarian in FBLA
+- Chapter/state/national parliamentarians advise their presidents
+  on RONR procedure. The NAP (National Association of
+  Parliamentarians) partners with FBLA: objective test questions
+  come from the NAP test bank, and top scorers on this test
+  historically qualify for NAP membership consideration.
+
+============================================================
+DRILL PRIORITIES (what the test actually hammers)
+1. The chart: second/debatable/amendable/vote for all 13 ranked
+   motions + incidentals. Expect MANY questions like "Which of
+   these motions is not debatable?"
+2. Precedence puzzles: "A motion to amend is pending. Which of the
+   following is in order?"
+3. Two-thirds list: previous question, limit/extend debate, suspend
+   the rules, objection to consideration, rescind without notice,
+   close nominations.
+4. Special rules: tie sustains chair on appeal; reconsider requires
+   prevailing side; treasurer's report is filed not adopted;
+   minutes record what was done; quorum defaults; "unfinished" not
+   "old" business; friendly amendments still need consent.
+5. FBLA structure: 9 officers, 5 regions, March 1, NLC voting
+   delegates elect officers.

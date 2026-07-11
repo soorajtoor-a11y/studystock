@@ -1,0 +1,652 @@
+[
+ {
+  "question": "When a retailer transitions from a seasonal display to a permanent fixture arrangement, which display technique best accommodates both customer flow patterns and inventory rotation requirements?",
+  "options": [
+   "Island displays that create natural traffic patterns while allowing stock visibility from multiple angles and simplifying restocking procedures",
+   "Vertical wall displays that maximize linear footage per square foot while reducing floor space demands and enabling systematic merchandise rotation",
+   "Perimeter displays that establish clear sightlines throughout the department while supporting both high-velocity items and slower-moving inventory simultaneously",
+   "Diagonal displays that create visual interest through angled product placement while distributing customer weight evenly across the sales floor"
+  ],
+  "correct_index": 0,
+  "explanation": "Island displays are specifically designed to serve dual purposes: they encourage circulation (increasing dwell time and basket size) while their 360-degree accessibility makes inventory rotation and restocking more efficient than wall-mounted or perimeter arrangements. The other options prioritize either space efficiency or visual impact but don't equally balance traffic flow with practical merchandise management.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A display's structural integrity has degraded after six weeks on the sales floor. The retailer must decide whether to refresh the existing arrangement or dismantle and store the fixture. Which factor should primarily determine this decision?",
+  "options": [
+   "The original cost of the display fixture and the remaining budget allocated for maintenance labor this quarter",
+   "The condition of the underlying frame and support systems relative to both safety standards and the cost of repairs versus replacement",
+   "The seasonal relevance of the merchandise currently displayed and whether a new product line is scheduled for promotion next month",
+   "The floor space currently occupied by the display and the availability of alternative locations within the department layout"
+  ],
+  "correct_index": 1,
+  "explanation": "Structural integrity is a safety and liability issue that must be evaluated independently of cost or scheduling. A compromised frame poses risk to customers and staff, so the decision hinges on whether repairs are viable and safe, not on expense or upcoming promotions. Merchandise and location are secondary considerations that follow only after structural soundness is confirmed.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "During dismantling of a multi-component display system, a retailer discovers that several fixture elements show stress fractures and adhesive separation. What is the most appropriate immediate action before storing these components?",
+  "options": [
+   "Document damage with photographs, segregate compromised pieces with clear labeling, and store separately to prevent contamination of usable inventory",
+   "Attempt reinforcement repairs using retail-grade adhesives and wrapping, then store with functional components in standard warehouse bins",
+   "Discard all affected pieces immediately and file a claim with the display vendor for replacement fixtures before the warranty period expires",
+   "Clean all components thoroughly, apply protective coating to visible damage, and stack in climate-controlled storage with weight distribution documentation"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper storage protocol requires identifying and isolating damaged components to prevent their inadvertent reuse in future displays, which could create safety hazards or visual failures. Documentation ensures accountability and informs future purchasing decisions. Attempting repairs during storage (option B) risks further damage; discarding without assessment (option C) is wasteful; and coating damage (option D) masks rather than addresses the underlying structural problem.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A retailer must maintain a product display across three separate store locations while accommodating different floor layouts and customer traffic patterns at each site. Which display arrangement strategy best supports this multi-location consistency requirement?",
+  "options": [
+   "Modular display systems with standardized components that can be reconfigured for each location while maintaining core visual hierarchy and brand messaging",
+   "Custom-built fixtures designed specifically for each store layout to maximize available floor space and optimize sightlines from the store entrance",
+   "Identical fixed displays replicated at all locations regardless of architectural constraints to ensure uniform customer experience and inventory management",
+   "Portable tabletop displays supplemented by wall signage that allows rapid deployment changes while minimizing fixture storage and maintenance costs"
+  ],
+  "correct_index": 0,
+  "explanation": "Modular systems balance consistency (maintaining brand integrity and core messaging) with flexibility (adapting to different spaces and traffic patterns). Fixed identical displays (option C) ignore critical differences in store layouts and may create customer flow problems; custom builds (option B) sacrifice consistency and increase costs; portable tables (option D) lack the structural integrity and visual impact needed for sustained merchandising effectiveness.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A display containing fragile glassware has been in place for eight weeks. Performance metrics show decreased sales velocity, and visual inspection reveals dust accumulation, minor product shifting, and fading on printed display materials. Which maintenance approach best addresses both the performance decline and the identified physical condition?",
+  "options": [
+   "Restock missing items, dust thoroughly, realign products, refresh printed signage, and assess whether merchandise rotation or minor component replacement would improve sales performance",
+   "Replace all signage materials, remove slow-selling items from the display, and relocate the entire fixture to a higher-traffic area of the department",
+   "Clean the entire fixture and surrounding floor space, reorganize products by price point rather than by current arrangement, and extend the display duration by two additional weeks",
+   "Conduct a full dismantling, inspect all components for wear, clean and repair fixtures, then reassemble using an adjusted product assortment based on current demand"
+  ],
+  "correct_index": 0,
+  "explanation": "Maintenance that addresses surface deterioration (dust, worn signage) while investigating root causes of sales decline (merchandise relevance, arrangement effectiveness) follows best practice. This approach corrects observable maintenance issues while determining whether strategic changes are needed. Option B changes the location without addressing maintenance; option C ignores component wear; option D is disproportionately resource-intensive when maintenance and analysis would likely suffice.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A merchandiser in modern retail must balance inventory selection, customer experience design, and vendor relationships. Which of these responsibilities most directly distinguishes merchandising from general marketing functions?",
+  "options": [
+   "Creating promotional campaigns across social media, email, and broadcast channels to drive consumer awareness and purchase intent",
+   "Selecting, pricing, and presenting products to ensure inventory meets customer demand while maximizing profitability and shelf turnover",
+   "Analyzing market trends through consumer surveys, focus groups, and competitive intelligence to inform business strategy",
+   "Developing brand messaging, visual identity, and customer loyalty programs to strengthen emotional connection with target audiences"
+  ],
+  "correct_index": 1,
+  "explanation": "Merchandising's core function is the direct management of product selection, placement, and pricing—the tangible execution of what customers see and buy. While marketing promotes the brand broadly, merchandisers ensure the right products reach the right shelf at the right price, which is a distinct operational role in retail.",
+  "difficulty": "hard",
+  "knowledge_area": "Foundational Retail Knowledge"
+ },
+ {
+  "question": "Consider how retailing has evolved from the general store model to modern omnichannel operations. Which factor most significantly explains why merchandise assortment and presentation strategies have become central to retail success rather than secondary?",
+  "options": [
+   "Increased competition and consumer choice have made product availability, visual appeal, and efficient organization critical differentiators that directly influence purchase decisions",
+   "Government regulations now require retailers to display products in ways that maximize accessibility and comply with standardized merchandising formats",
+   "Technological advancement in point-of-sale systems has eliminated the need for other retail functions, leaving merchandising as the only remaining core activity",
+   "Consumer income levels have risen uniformly across all markets, enabling customers to purchase any product regardless of how it is displayed or priced"
+  ],
+  "correct_index": 0,
+  "explanation": "As retail evolved from monopolistic general stores to competitive modern environments, the ability to present, assort, and position merchandise strategically became a key competitive advantage. Merchandising directly impacts customer perception, satisfaction, and purchase behavior—factors that define retail success in a crowded marketplace.",
+  "difficulty": "hard",
+  "knowledge_area": "Foundational Retail Knowledge"
+ },
+ {
+  "question": "A retailer notices that despite strong marketing campaigns, certain product categories underperform. An analysis reveals that merchandisers have placed slow-moving inventory in prime shelf locations while high-demand items are difficult to find. What does this scenario illustrate about the relationship between merchandising and retail profitability?",
+  "options": [
+   "Marketing and merchandising are interchangeable functions, so poor performance indicates a weakness in advertising strategy rather than product placement",
+   "Merchandising decisions regarding assortment, location, and visibility directly influence sales outcomes independent of promotional efforts, making it essential to retail success",
+   "Retailer profitability depends primarily on inventory volume and cost reduction, not on how products are organized or displayed to customers",
+   "Strong marketing campaigns guarantee sales success regardless of how products are positioned, demonstrating that merchandising is a minor supporting function"
+  ],
+  "correct_index": 1,
+  "explanation": "This scenario demonstrates that effective merchandising—strategic product placement, assortment, and visibility—is independently critical to retail success and cannot be substituted by marketing alone. Even well-promoted products underperform when merchandising execution is poor, proving merchandising's essential role in converting marketing interest into actual sales.",
+  "difficulty": "hard",
+  "knowledge_area": "Foundational Retail Knowledge"
+ },
+ {
+  "question": "During retail's evolution from fixed locations to digital channels, the definition and scope of merchandising have expanded. Which of the following best explains why the merchandiser's role has become MORE important rather than less important in contemporary retail?",
+  "options": [
+   "Digital platforms have reduced the need for product selection and assortment planning, allowing retailers to stock unlimited inventory without strategic decisions",
+   "Consumers now have access to infinite choice across channels, making expert curation, relevant assortment, and targeted product presentation essential to driving conversions and loyalty",
+   "Modern retail no longer requires vendors or inventory management, eliminating the traditional concerns that made merchandising relevant in earlier retail models",
+   "Increased automation in warehousing and logistics has eliminated all human decision-making in retail, making merchandiser skills obsolete in contemporary operations"
+  ],
+  "correct_index": 1,
+  "explanation": "The expansion of retail channels—physical, digital, mobile—has actually amplified the merchandiser's importance because customer choice is now overwhelming. Strategic merchandising that curates assortment, personalizes presentation, and optimizes product discovery across channels has become more critical to retail success, not less.",
+  "difficulty": "hard",
+  "knowledge_area": "Foundational Retail Knowledge"
+ },
+ {
+  "question": "Two retailers operate in the same market with identical marketing budgets and similar store locations. One retailer uses data-driven merchandising to align assortment, pricing, and shelf placement with local customer preferences, while the other uses a standardized merchandising approach across all stores. Which outcome most likely results from this difference?",
+  "options": [
+   "Both retailers will achieve identical sales and profitability because marketing budget and location are the only factors that influence retail success",
+   "The standardized retailer will outperform because consistency across stores is more important than customization to local merchandising strategies",
+   "The data-driven merchandiser will likely achieve higher conversion rates and customer satisfaction because assortment and presentation aligned with local demand directly influence purchasing behavior",
+   "Marketing budget will override merchandising strategy, making the outcomes dependent on promotional spend rather than how products are selected and displayed"
+  ],
+  "correct_index": 2,
+  "explanation": "When marketing effort and location are held constant, merchandising strategy becomes the differentiator. A retailer that strategically curates and presents products to match local customer preferences will outperform one using a one-size-fits-all approach, demonstrating that merchandising excellence directly drives sales independent of other retail factors.",
+  "difficulty": "hard",
+  "knowledge_area": "Foundational Retail Knowledge"
+ },
+ {
+  "question": "A retailer implements a new strategy that emphasizes direct customer engagement and personalized shopping experiences rather than mass production and standardized offerings. Which aspect of retailing's evolution does this primarily reflect?",
+  "options": [
+   "The shift from product-centric to customer-centric retail models that emerged as competition intensified and consumer expectations evolved",
+   "The historical move from general stores to specialized department stores that focused exclusively on inventory management",
+   "The early adoption of fixed pricing policies that replaced barter systems in nineteenth-century trading posts",
+   "The transition from wholesale distribution centers to manufacturers' direct sales outlets that eliminated intermediaries"
+  ],
+  "correct_index": 0,
+  "explanation": "The evolution of retailing has progressively moved toward customer-centricity, recognizing that differentiation depends on understanding and meeting individual customer needs rather than simply offering uniform products. The other options describe specific historical developments but do not capture the fundamental shift in philosophy that defines modern retail evolution.",
+  "knowledge_area": "Foundational Retail Knowledge",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A merchandiser at an apparel retailer analyzes seasonal demand patterns, coordinates with suppliers on delivery timing, and works with the marketing team to position products for upcoming promotions. Which core responsibilities does this scenario best illustrate?",
+  "options": [
+   "Creating visual displays and managing inventory levels to align product availability with marketing campaigns and customer demand cycles",
+   "Conducting market research and establishing brand partnerships to expand the retailer's geographic footprint and supplier network",
+   "Negotiating wholesale prices with manufacturers and setting retail markup percentages based on competitor pricing analysis",
+   "Designing store layouts and training sales staff to improve customer service scores and reduce operational overhead costs"
+  ],
+  "correct_index": 0,
+  "explanation": "Merchandisers bridge inventory management and marketing by ensuring the right products are available at the right time in the right quantities, aligned with demand forecasts and promotional activities. While the other options represent legitimate retail functions, they fall outside the merchandiser's core responsibility for product selection, timing, and assortment planning.",
+  "knowledge_area": "Foundational Retail Knowledge",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company invests heavily in television advertising, social media campaigns, and brand partnerships to increase consumer awareness of its product line. A separate team within the same company selects which products to stock in stores, determines shelf placement, and negotiates with suppliers for optimal inventory levels. Which distinction between these two functions is most accurate?",
+  "options": [
+   "Marketing creates demand and shapes brand perception, while merchandising ensures the right products are available and positioned to convert that demand into sales",
+   "Marketing focuses on long-term customer loyalty through relationship management, while merchandising handles short-term tactical pricing decisions",
+   "Marketing manages all inventory and supply chain logistics, while merchandising concentrates exclusively on promotional creative content and media buying",
+   "Marketing determines which products to develop and launch, while merchandising only manages point-of-sale transactions and customer checkout experiences"
+  ],
+  "correct_index": 0,
+  "explanation": "Retailing and marketing are distinct but complementary: marketing generates awareness and desire for products, while merchandising translates that demand into tangible retail results through assortment, availability, and presentation. The other options conflate or misallocate these functions or describe tasks that belong to other retail departments.",
+  "knowledge_area": "Foundational Retail Knowledge",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Research shows that retailers with sophisticated merchandising strategies—including dynamic inventory optimization, data-driven assortment planning, and strategic product placement—consistently outperform competitors in inventory turnover and gross margin. Why does merchandising hold such significance for retail success?",
+  "options": [
+   "Effective merchandising directly influences sell-through rates, reduces shrinkage and markdowns, and maximizes revenue from available selling space",
+   "Strong merchandising teams eliminate the need for advertising because products sell themselves through superior store layouts and visual displays",
+   "Merchandising expertise allows retailers to avoid purchasing inventory by relying entirely on drop-shipping and just-in-time supplier arrangements",
+   "Proficient merchandising strategies guarantee customer loyalty and repeat purchases regardless of product quality or competitive pricing factors"
+  ],
+  "correct_index": 0,
+  "explanation": "Merchandising's importance lies in its direct impact on operational and financial metrics: correct assortment reduces overstock and obsolescence, strategic placement increases impulse purchases, and optimal pricing balances volume and margin. The other options either overstate what merchandising alone can accomplish or misrepresent the mechanisms through which it creates value.",
+  "knowledge_area": "Foundational Retail Knowledge",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A fashion retailer notices that competitors are gaining market share despite similar marketing budgets and store locations. Upon investigation, the retailer discovers that competitors' merchandisers are selecting different product assortments, adjusting inventory more frequently based on local preferences, and using data analytics to predict micro-trend cycles. What does this reveal about the relationship between merchandising and retailing?",
+  "options": [
+   "Merchandising is a core competitive differentiator in retailing because execution of assortment, timing, and positioning directly drives sales performance independent of marketing reach",
+   "Retailing success depends primarily on advertising effectiveness and brand recognition, making merchandising decisions secondary to promotional strategy",
+   "Competitors' data analytics tools are the sole factor enabling their success, and merchandising strategy plays a minimal role in retail competitiveness",
+   "Marketing budgets and store locations are the only meaningful variables in retail competition, and merchandising adjustments cannot overcome disadvantages in these areas"
+  ],
+  "correct_index": 0,
+  "explanation": "This scenario demonstrates that merchandise selection, assortment planning, and inventory responsiveness are fundamental retail drivers that can outweigh marketing spend or location; strong merchandising execution creates competitive advantage by meeting actual customer demand more precisely. The other options incorrectly minimize merchandising's role or suggest that single factors determine retail success.",
+  "knowledge_area": "Foundational Retail Knowledge",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail manager is evaluating warehouse operations and must decide between a climate-controlled facility with limited square footage and a standard warehouse with significantly more storage space. Which factors should most heavily influence this decision regarding storing considerations?",
+  "options": [
+   "Product perishability, seasonal demand fluctuations, and the cost of maintaining climate control versus the cost of increased inventory shrinkage and spoilage",
+   "The proximity of the warehouse to suppliers, the availability of trained staff in the local market, and the current retail location's foot traffic patterns",
+   "The total number of SKUs carried, the frequency of supplier deliveries, and whether the retailer uses a just-in-time inventory model",
+   "The warehouse's distance from the distribution center, the number of loading docks available, and the brand recognition of the warehouse operator"
+  ],
+  "correct_index": 0,
+  "explanation": "Storing considerations require weighing product-specific needs (perishability, climate sensitivity) against space availability and cost trade-offs. While supplier proximity and SKU count matter in broader inventory management, the core decision between limited climate-controlled space and larger standard space hinges on understanding what products require protection, how much shrinkage and spoilage would occur, and whether those costs justify reduced storage capacity.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "When implementing a warehousing system for a mid-sized retailer, management must choose between a traditional rack-and-bin arrangement and an automated conveyor-based system. Which elements most directly define the nature of warehousing and should guide this choice?",
+  "options": [
+   "The handling, storage, and movement of goods to protect inventory value while enabling efficient retrieval and minimizing labor costs and damage during these processes",
+   "The selection of inventory software, the establishment of receiving protocols, and the decision to use RFID tags versus barcode scanning for tracking",
+   "The layout of aisles, the height of storage shelves, the color coding of inventory bins, and the placement of receiving and shipping areas within the facility",
+   "The warehouse location relative to retail stores, the hiring of permanent versus temporary staff, and the negotiation of utility rates with local providers"
+  ],
+  "correct_index": 0,
+  "explanation": "The nature of warehousing fundamentally encompasses the core functions of handling, protecting, storing, and moving merchandise efficiently. While software selection, facility layout, and staffing are all operational details, they are implementations of warehousing principles rather than definitions of its nature. The essence is preserving inventory value while enabling cost-effective movement and retrieval.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "A retailer discovers that back-of-house inventory records show 150 units of a fast-moving item, but a physical count reveals only 118 units on the shelf. The manager suspects shrinkage during storage. Which steps are most appropriate to address this discrepancy within standard inventory storage and control procedures?",
+  "options": [
+   "Conduct a full physical inventory count to verify the actual quantity, investigate storage conditions and access logs for damage or unauthorized removal, and reconcile records to prevent future inaccuracies",
+   "Immediately reorder additional stock from the supplier, place the item on a watch list for weekly counts, and discipline staff members who may have been careless with handling",
+   "Adjust the perpetual inventory records downward to match the physical count, document the variance as normal shrinkage, and increase the par level to compensate for future loss",
+   "Perform a cycle count of similar high-velocity items, compare their shrinkage rates to industry benchmarks, and implement a new inventory control system to reduce counting errors"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper inventory control requires investigating the root cause of discrepancies through comprehensive physical counts, examining storage conditions and security, and reconciling records to identify systematic issues. While reordering, documenting variance, and cycle counts are valid practices, they do not address the immediate problem of understanding why 32 units are missing and whether it represents theft, damage, miscounting, or misplacement that requires remediation.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "A specialty retailer uses a two-bin inventory system and must decide whether to adjust reorder points based on recent changes in supplier lead time and seasonal demand volatility. How should these factors most directly influence the decision to maintain or modify current inventory levels?",
+  "options": [
+   "Longer supplier lead times require higher reorder points to prevent stockouts during the replenishment period, while increased demand volatility necessitates larger safety stock buffers to maintain service levels despite unpredictable demand fluctuations",
+   "Seasonal demand volatility should trigger a shift to a perpetual inventory system, and longer lead times warrant negotiating expedited shipping to reduce the time goods spend in the warehouse",
+   "The two-bin system should be replaced with a just-in-time model if supplier lead time changes, and demand volatility should be addressed by expanding warehouse capacity instead of adjusting reorder points",
+   "Reorder points should remain static to simplify staff training, but lead time changes should be communicated to buyers, and demand volatility should be tracked through weekly variance reports"
+  ],
+  "correct_index": 0,
+  "explanation": "Maintaining optimal inventory levels requires direct adjustment to reorder points when supplier lead times change—longer lead times mean orders must be placed earlier to avoid stockouts—and safety stock must increase with demand volatility to protect against unexpected surges in customer purchases. The other options either recommend system changes unrelated to lead time and demand management, suggest static reorder points (which ignores the changed environment), or conflate reporting with actual inventory level adjustments.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "During a routine inventory audit, a manager discovers that several out-of-stock items were not reported through the standard reporting system, resulting in delayed reordering and lost sales. Which improvements to out-of-stock reporting procedures would most effectively prevent this recurring issue while maintaining the integrity of inventory control?",
+  "options": [
+   "Establish real-time point-of-sale alerts triggered when inventory drops to the reorder point, train staff to report stockouts immediately through a designated communication channel, and conduct daily verification counts on high-priority items to catch discrepancies before customer impact occurs",
+   "Implement a monthly physical inventory count, increase the reorder point for all fast-moving items, and require supervisors to review inventory reports weekly to identify trends in product availability",
+   "Switch to an automated inventory management system that sends notifications to suppliers, reduce the number of SKUs carried to simplify tracking, and establish a standing order with key vendors to eliminate the need for manual reordering",
+   "Create a detailed log of all out-of-stock events with timestamps and responsible staff members, adjust the two-bin system thresholds quarterly, and hold monthly meetings to review inventory performance metrics"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective out-of-stock reporting prevention requires immediate detection and communication—real-time alerts at reorder points ensure timely ordering, staff training ensures reports are filed when stockouts occur, and daily verification on priority items catches problems before they cascade into lost sales. While monthly counts, supplier automation, and performance reviews are valuable, they operate on slower cycles that allow stockouts to go undetected and unreported, perpetuating the original problem.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "When transitioning between seasonal displays, a retailer must balance removing old fixtures while maintaining visual continuity. Which approach best addresses both the dismantling process and the impact on customer perception during the changeover?",
+  "options": [
+   "Remove all fixtures simultaneously, then install new displays to create a dramatic seasonal transformation that signals freshness to customers",
+   "Dismantle displays section-by-section while staging replacement fixtures nearby, ensuring the sales floor remains visually complete and minimizing customer confusion during transition",
+   "Store existing fixtures in the warehouse before ordering new ones, allowing adequate time for inventory assessment and cleaning between seasonal cycles",
+   "Maintain old displays in secondary locations while constructing new ones in primary spaces, then consolidate fixtures based on storage capacity and future merchandising plans"
+  ],
+  "correct_index": 1,
+  "explanation": "Hard displays require staged dismantling that preserves the customer experience and floor appeal during changeover. Simply removing everything at once (option A) creates gaps; pre-ordering before storage (option C) ignores the dismantling process; and maintaining dual displays (option D) wastes prime selling space. The correct approach manages the physical process while respecting the customer environment.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A boutique retailer uses multiple display arrangement types—window displays, end-cap arrangements, and interior focal walls—across the same store. What is the primary distinction between these arrangement types in terms of their merchandising function and customer engagement?",
+  "options": [
+   "Window displays emphasize seasonal themes, end-caps highlight impulse items at checkout, and focal walls create immersive brand storytelling in high-traffic zones",
+   "Window displays attract foot traffic from outside, end-caps maximize linear shelf efficiency, and focal walls organize products by category for easier shopping navigation",
+   "Window displays feature the broadest product assortment, end-caps rotate inventory rapidly, and focal walls maintain permanent brand installations throughout the year",
+   "Window displays target price-conscious customers, end-caps appeal to bulk buyers, and focal walls cater to premium shoppers seeking curated selections"
+  ],
+  "correct_index": 0,
+  "explanation": "Display arrangement types serve distinct strategic purposes: exterior windows drive awareness and traffic; end-caps capitalize on impulse behavior and decision points; focal walls create emotional brand connections and dwell time. Option B conflates efficiency with arrangement purpose; option C incorrectly locks focal walls to permanent status; option D assigns demographic assumptions unsupported by display function.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "During routine display maintenance, a retail associate notices that product alignment has shifted, lighting is less vibrant than when the display was installed, and some signage is beginning to curl. Which maintenance actions most directly preserve both the display's visual integrity and its original merchandising intent?",
+  "options": [
+   "Replace all signage monthly, relocate products to adjacent shelves, and upgrade lighting fixtures to LED to improve energy efficiency across the store",
+   "Realign product facings to original specifications, clean and check fixture lighting for dimming, and refresh or replace damaged signage to maintain visual hierarchy",
+   "Photograph the display weekly, adjust product placement based on sales velocity, and dim lighting in off-peak hours to extend bulb life and reduce wear",
+   "Rotate products between displays every two weeks, refresh signage only when customer feedback is negative, and increase lighting intensity to compensate for fixture aging"
+  ],
+  "correct_index": 1,
+  "explanation": "Maintenance preserves the original design by restoring alignment, verifying lighting output, and refreshing signage—all preventive steps that keep the display functioning as intended. Option A unnecessarily replaces signage and wastes LED investment; option C treats photography as maintenance and misses root causes; option D introduces sales-velocity changes and reactive signage management that drift from original intent.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A retailer is planning to dismantle and store display fixtures used across multiple locations after a brand refresh. The fixtures vary in material—metal frames, wooden bases, acrylic risers, and fabric draping—and some are custom-built. Which storage and preservation strategy best balances space constraints, fixture longevity, and future usability?",
+  "options": [
+   "Group fixtures by material type, use protective wrapping for items prone to damage, document dimensions and assembly instructions, and store in climate-controlled space away from direct moisture or heat",
+   "Stack fixtures by size to maximize cubic footage, use plastic tarps for moisture protection, and store in the warehouse corner nearest the merchandise receiving area for easy access",
+   "Disassemble all fixtures into component parts, catalog each part in a database, store components by material in separate bins, and assign a staff member to maintain the inventory",
+   "Keep fixtures assembled for faster reinstallation, store them vertically along warehouse walls, use cardboard boxes for dust protection, and photograph each fixture for reference before storage"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective storage protects fixtures from deterioration while enabling future reuse: material-based grouping prevents chemical reactions and damage; protective wrapping guards against moisture and dust; documentation ensures correct reassembly; and climate control preserves finishes and structural integrity. Option B ignores material-specific risks and prioritizes space over condition; option C over-engineers with unnecessary disassembly; option D skips protective measures that prevent warping and damage.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "Two retailers use different display arrangement strategies in similar square-footage stores: one employs predominantly vertical wall displays with minimal floor fixtures, while the other uses modular floor-based islands with varied heights and sight lines. How do these arrangement approaches differ in their impact on visual balance, inventory visibility, and customer browsing patterns?",
+  "options": [
+   "Vertical walls maximize square footage and reduce installation costs, while floor islands require more frequent restocking but allow customers to browse from multiple angles",
+   "Vertical walls create hierarchical product organization and consistent sightlines, while floor islands break visual monotony and encourage non-linear shopping paths and longer dwell time",
+   "Vertical walls accommodate seasonal changes more easily, while floor islands provide superior inventory density and reduce the need for back-of-house storage reserves",
+   "Vertical walls target impulse purchases through eye-level placement, while floor islands prioritize inventory turnover through accessibility and reduce the risk of product damage during handling"
+  ],
+  "correct_index": 1,
+  "explanation": "These arrangements differ fundamentally in spatial dynamics: vertical displays create clear visual hierarchy and predictable customer flow; floor islands disrupt that linearity, encourage exploration, and extend shopping time through varied viewing angles. Option A confuses cost with visual outcome; option C misses the behavioral difference in browsing; option D assigns sales mechanisms unsupported by the arrangement types themselves.",
+  "difficulty": "hard",
+  "knowledge_area": "Display Techniques"
+ },
+ {
+  "question": "A retail employee receives a delivery of merchandise with several damaged boxes. Which sequence best reflects proper receiving procedure when documenting discrepancies?",
+  "options": [
+   "Inspect all items against the packing slip immediately, note damages on the receiving report before accepting delivery, and photograph affected merchandise for documentation purposes",
+   "Accept the full shipment into inventory first, then conduct a detailed inspection within 24 hours, and file a damage claim with the carrier based on findings",
+   "Separate damaged boxes to a holding area, verify item counts match the purchase order, and delay formal acceptance until the supplier authorizes a return",
+   "Flag problematic boxes for later review, cross-reference serial numbers with the invoice details, and contact the warehouse manager before completing the receiving log"
+  ],
+  "correct_index": 0,
+  "explanation": "The receiving process requires immediate inspection against documentation, notation of discrepancies before acceptance, and evidence collection—all steps that protect the retailer and establish clear liability. Delaying inspection or accepting first weakens the retailer's position in damage disputes.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "During stock rotation, a retail employee notices that older merchandise with an earlier expiration date is positioned behind newer stock on the display shelf. What is the primary risk this arrangement creates, and what corrective action aligns with standard rotation policy?",
+  "options": [
+   "Increased shrinkage from customer handling; move the older items to a back-room storage location until the new stock sells through completely",
+   "Potential for expired or obsolete merchandise to be sold; bring the older stock forward and place newer items behind it to maintain FIFO rotation",
+   "Confusion in inventory tracking systems; reorganize shelves by product category and update the point-of-sale system with revised stock locations",
+   "Loss of shelf space efficiency; consolidate both batches into one location and reduce the total on-hand quantity to improve warehouse capacity"
+  ],
+  "correct_index": 1,
+  "explanation": "FIFO (first-in, first-out) rotation ensures older stock sells before expiration or obsolescence. Placing older items in front prevents waste and customer dissatisfaction. Moving new stock behind older inventory is the core corrective action in proper stock rotation.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "A retail store receives a shipment of apparel with price tags already attached from the supplier, but they conflict with the store's current promotional pricing strategy. How should an employee handle price marking in this situation to maintain pricing integrity?",
+  "options": [
+   "Layer new promotional price stickers over existing supplier tags without removing them, ensuring the current promotion remains visible to customers at the point of sale",
+   "Remove or obscure the original supplier tags completely, affix the store's price marking system, and verify all items match the markdown list before routing to the sales floor",
+   "Keep both the supplier tag and store tag visible side-by-side on merchandise, allowing customers to see the original and sale prices for comparison purposes",
+   "Update the point-of-sale inventory system with the promotional prices and allow the register to override the original tags at checkout without modifying the physical merchandise"
+  ],
+  "correct_index": 1,
+  "explanation": "Proper price marking requires the store's official pricing to be clearly displayed and the original supplier tag removed or hidden to prevent customer confusion or disputes. Verification against markdown lists ensures accuracy before floor placement.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "A retail employee is routing received merchandise to the sales floor and must decide between placing items in a high-traffic central zone versus a secondary department section. Which factors should guide this routing decision to optimize both sales performance and stock management?",
+  "options": [
+   "Product demand trends, available floor space, complementary merchandise locations, and alignment with current promotional strategy and customer traffic patterns",
+   "Alphabetical order of product names, the shipping weight of items, proximity to the receiving dock, and the employee's personal familiarity with department layouts",
+   "The date the merchandise was received, the supplier's recommended shelf location, the age of existing competing products, and the number of backroom pallets currently in storage",
+   "Sales history from the prior fiscal year, the manufacturer's brand positioning guidelines, the store's total square footage, and seasonal inventory rotation schedules"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective routing decisions balance merchandising strategy (demand, promotions, traffic) with operational logistics (floor space, complementary placements). This maximizes visibility and sales while ensuring efficient use of retail space.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "During a shift, an employee observes a suspected shoplifter placing merchandise into a personal bag near the fitting room. Under standard shoplifter-handling policies, what is the appropriate employee response that prioritizes safety and legal compliance?",
+  "options": [
+   "Immediately approach the customer, directly accuse them of attempting theft, and physically prevent them from leaving the store until store security or management arrives",
+   "Discreetly alert a manager or loss-prevention staff member, provide a clear description of the incident and location, and allow trained personnel to handle further investigation and intervention",
+   "Follow the customer throughout the store to gather evidence, photograph their activities discreetly, and detain them near the exit if they attempt to leave without paying",
+   "Request the customer remove items from their bag for inspection at checkout, question them about their intentions, and call local law enforcement immediately if they refuse"
+  ],
+  "correct_index": 1,
+  "explanation": "Standard shoplifter-handling policy requires employees to alert management or loss-prevention specialists rather than confronting the customer directly. This approach protects employee safety, ensures proper investigation, and reduces liability exposure from false accusations.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "A retail professional seeking advancement into a role focused on product selection, pricing strategy, and inventory planning would be moving toward which career path?",
+  "options": [
+   "Store management, which emphasizes staffing decisions and daily operational oversight of sales floor activities",
+   "Merchandising, which involves analyzing consumer demand, selecting inventory assortments, and developing pricing strategies",
+   "Visual merchandising, which concentrates on window displays, in-store layouts, and seasonal promotional presentations",
+   "Customer service management, which prioritizes training employees in product knowledge and conflict resolution techniques"
+  ],
+  "correct_index": 1,
+  "explanation": "Merchandising careers center on product selection, pricing, and inventory decisions—the strategic side of what sells. Store management, visual merchandising, and customer service management are related retail roles but focus on different responsibilities: operations, presentation, and customer interaction respectively.",
+  "difficulty": "hard",
+  "knowledge_area": "Career Opportunities"
+ },
+ {
+  "question": "Which of the following career opportunities in retailing requires understanding supply chain logistics, vendor relationships, and cost control while working behind the scenes rather than on the sales floor?",
+  "options": [
+   "Inventory management and purchasing, involving stock levels, supplier negotiations, and warehouse coordination",
+   "Sales associate advancement, focusing on product demonstration, upselling techniques, and direct customer engagement",
+   "Loss prevention and security, concentrating on asset protection, employee monitoring, and theft prevention protocols",
+   "Store layout design, managing floor space allocation, department positioning, and customer traffic flow optimization"
+  ],
+  "correct_index": 0,
+  "explanation": "Inventory management and purchasing careers involve back-office work with supply chains and vendors—not direct sales floor activity. Sales associate advancement, loss prevention, and store layout design are retail careers, but they either focus on customer interaction, security, or visible merchandising rather than vendor and cost management.",
+  "difficulty": "hard",
+  "knowledge_area": "Career Opportunities"
+ },
+ {
+  "question": "A merchandiser analyzing which product categories should occupy premium shelf space, determining markdown timing for seasonal items, and forecasting next quarter's inventory needs is primarily engaged in which type of merchandising responsibility?",
+  "options": [
+   "Product presentation merchandising, which organizes items by color, size, and style for visual appeal and accessibility",
+   "Promotional merchandising, which creates special displays, bundles items for cross-selling, and highlights sale events",
+   "Strategic merchandise planning, which aligns inventory assortments with demand forecasts, pricing, and shelf allocation decisions",
+   "Visual identity merchandising, which maintains brand consistency across displays, signage, and in-store aesthetic standards"
+  ],
+  "correct_index": 2,
+  "explanation": "Strategic merchandise planning involves forecasting, assortment decisions, and allocation of inventory—the analytical backbone of merchandising. Product presentation, promotional merchandising, and visual identity merchandising are merchandising specializations but focus on display organization, sales promotions, or brand aesthetics rather than demand forecasting and strategic allocation.",
+  "difficulty": "hard",
+  "knowledge_area": "Career Opportunities"
+ },
+ {
+  "question": "Which career path in retail combines technical skills in data analysis and software systems with responsibility for tracking sales patterns, managing stock accuracy, and informing purchasing decisions?",
+  "options": [
+   "Retail analytics and inventory systems, using point-of-sale data, inventory software, and sales metrics to optimize stock levels",
+   "Department supervision, overseeing team performance, schedule coordination, and employee adherence to sales floor procedures",
+   "Merchandising brand coordination, liaising with vendors, reviewing product specifications, and ensuring brand guidelines compliance",
+   "Retail operations planning, designing workflow processes, allocating labor resources, and monitoring efficiency benchmarks"
+  ],
+  "correct_index": 0,
+  "explanation": "Retail analytics and inventory systems careers blend technical systems work with data-driven decision-making for inventory and purchasing. Department supervision focuses on people management; merchandising brand coordination centers on vendor relations; and retail operations planning addresses workflow and labor—none emphasize the data analysis and inventory tracking technology core to analytics roles.",
+  "difficulty": "hard",
+  "knowledge_area": "Career Opportunities"
+ },
+ {
+  "question": "A retail career professional transitioning from a buying office role—where they analyze sales data, negotiate with suppliers, and select merchandise assortments—would be leveraging expertise most directly applicable to which merchandising specialization?",
+  "options": [
+   "Visual merchandising design, applying color theory, spatial awareness, and seasonal aesthetics to create compelling displays",
+   "Product line management and procurement, utilizing market research, vendor negotiation skills, and assortment strategy expertise",
+   "Store operations and inventory compliance, monitoring stock rotations, implementing receiving procedures, and conducting audits",
+   "Retail marketing and promotional strategy, planning advertising campaigns, developing customer incentives, and measuring campaign effectiveness"
+  ],
+  "correct_index": 1,
+  "explanation": "Product line management and procurement directly apply buying office skills: data analysis, supplier negotiation, and assortment selection are core to that role. Visual merchandising emphasizes design aesthetics; store operations focuses on logistics and compliance; and retail marketing concentrates on advertising campaigns—none require the procurement and buying expertise from a buying office background.",
+  "difficulty": "hard",
+  "knowledge_area": "Career Opportunities"
+ },
+ {
+  "question": "A retail manager is evaluating storage methods for fragile glassware and heavy machinery parts. Which combination of storing considerations would most directly impact the choice between vertical shelving, flat storage, and climate-controlled zones?",
+  "options": [
+   "Product weight, vulnerability to breakage, temperature sensitivity, and accessibility frequency during peak sales periods",
+   "Employee shift schedules, warehouse square footage, supplier delivery windows, and customer demographic preferences",
+   "Inventory turnover rate, seasonal demand fluctuations, vendor payment terms, and point-of-sale system compatibility",
+   "Product dimensions, environmental protection requirements, handling frequency, and space utilization efficiency"
+  ],
+  "correct_index": 3,
+  "explanation": "Storing considerations focus on the physical and environmental factors that determine how and where inventory should be placed. While all options contain plausible factors, only option D directly addresses the core storing decisions: size affects placement method, environmental needs determine zone selection, handling frequency drives accessibility design, and space efficiency guides layout—all essential to choosing storage type. The other options mix in sales, supplier, or system factors that inform broader strategy but not the mechanics of where items go.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "During a quarterly inventory audit, a warehouse discovers that fast-moving seasonal items stored in a back corner experience a 12% shrinkage rate, while identical items stored near the receiving area have only a 2% shrinkage rate. How does the nature of warehousing explain this difference in inventory loss?",
+  "options": [
+   "Back-corner storage reduces receiving costs and simplifies supplier invoice reconciliation, lowering the warehouse's operational overhead",
+   "Strategic placement affects product visibility, accessibility for accurate picking, handling frequency, and exposure to damage or theft risk",
+   "Back-corner zones require less climate control investment, which decreases utility expenses but increases the risk of temperature fluctuation",
+   "Warehouse automation systems prioritize near-receiving locations for scanning efficiency, which improves barcode tracking and reduces administrative errors"
+  ],
+  "correct_index": 1,
+  "explanation": "The nature of warehousing encompasses how storage location affects product condition, loss prevention, and operational efficiency. Option B directly explains the shrinkage difference: back-corner placement reduces visibility and accessibility, increasing handling errors, damage risk, and theft vulnerability. Options A and C address cost factors unrelated to shrinkage mechanics; option D focuses on scanning accuracy rather than the physical and behavioral factors that drive inventory loss in different warehouse zones.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "A store implements a two-bin inventory system for office supplies while using a continuous-count method for high-value electronics. What principle of inventory control systems best justifies this mixed-method approach?",
+  "options": [
+   "Continuous-count methods are more cost-effective for all inventory categories and eliminate the need for physical verification during the fiscal year",
+   "Different inventory control systems match the specific risk profile, turnover rate, and cost consequence of losing track of different product categories",
+   "Two-bin systems are mandated by accounting standards for supplies, while continuous-count is required by retail law for products exceeding a threshold value",
+   "Mixed-method approaches reduce warehouse labor by automating the two-bin system and requiring spot-checks only for electronics on a quarterly basis"
+  ],
+  "correct_index": 1,
+  "explanation": "Inventory control systems are selected based on the product's characteristics and business impact. Option B correctly identifies that different systems suit different inventory categories: two-bin systems work well for low-cost, high-turnover supplies where out-of-stocks are easily corrected, while continuous-count suits high-value electronics where loss or theft carries significant financial consequence. Options A and C misstate the flexibility and legal framework; option D conflates system selection with labor automation rather than control methodology.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "A retailer reports out-of-stocks to management in three categories: (1) items depleted due to strong customer demand, (2) items missing from shelves despite recorded inventory, and (3) items backordered from the supplier but not yet received. Which two categories should trigger different corrective actions within the retailer's inventory control process?",
+  "options": [
+   "Categories 1 and 3 require demand forecasting and vendor negotiation, while category 2 only needs a recount to resolve discrepancies",
+   "Categories 2 and 3 indicate control failures—inventory variance and supply delays—requiring investigation and process review, while category 1 signals healthy demand",
+   "Categories 1 and 2 are operational issues requiring immediate shelf-stocking, while category 3 is a procurement concern outside inventory control scope",
+   "All three categories require the same out-of-stock report format and the same follow-up action to prevent future occurrence across all product lines"
+  ],
+  "correct_index": 1,
+  "explanation": "Reporting out-of-stocks must distinguish root causes to guide corrective action. Category 1 (demand-driven depletion) may simply need increased ordering or promotion strategy. Categories 2 and 3 represent inventory control failures: category 2 reveals a variance between records and physical count (indicating shrinkage, misplacement, or data error), and category 3 shows a supply-chain breakdown. Only categories 2 and 3 trigger control process reviews; category 1 is a positive demand signal. Option A conflates forecasting with control; option C ignores that backordered stock affects control decisions; option D oversimplifies by treating all out-of-stocks identically.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "During a complete inventory count, a discrepancy arises: the sales system shows 47 units of a product sold in the past month, but the physical count reveals only 3 fewer units were removed from shelves than the system indicates. What does this variance suggest about the interaction between inventory levels and the counting process?",
+  "options": [
+   "The inventory count is inaccurate because the sales system is the authoritative record and a 3-unit variance exceeds the acceptable tolerance threshold",
+   "A processing delay in the sales system created a temporary lag, and the near-alignment between recorded sales and counted units indicates the system is functioning correctly",
+   "Unrecorded inventory transactions—such as damaged goods written off, shrinkage not yet logged, or price adjustments—occurred between the count period and sales recording",
+   "The discrepancy signals that inventory levels are being maintained accurately and that the count process itself is the reliable source for updating the perpetual system"
+  ],
+  "correct_index": 2,
+  "explanation": "The small variance (47 recorded sales versus 50 units removed) suggests the systems are nearly aligned, but the mismatch points to unreported transactions outside normal sales. Option C correctly identifies that unrecorded events—theft, spoilage, receiving errors, or administrative write-offs—create variance between what the system shows and what the count reveals. This variance is normal and important to investigate; it doesn't invalidate either system (eliminating A and D) but rather signals the need to identify and record the missing transactions. Option B incorrectly assumes system lag rather than missing data.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory Storage and Control"
+ },
+ {
+  "question": "A retail manager is designing a storage layout and must balance product accessibility with space efficiency. Which combination of storing considerations would best address both climate control and inventory rotation needs?",
+  "options": [
+   "Placing high-turnover items in elevated shelving to maximize vertical space while monitoring humidity levels in climate-controlled zones",
+   "Implementing FIFO rotation by positioning newer stock behind older inventory in temperature-regulated sections to prevent spoilage",
+   "Using wall-mounted displays for seasonal goods with thermostatic controls and daily shelf audits to maintain stock freshness",
+   "Organizing items by size categories in separate areas with ventilation systems and weekly cycle count procedures for accuracy"
+  ],
+  "correct_index": 1,
+  "explanation": "FIFO (First In, First Out) rotation combined with climate control directly addresses both accessibility and product preservation—core storing considerations. The other options focus on single aspects (display optimization, categorization, or auditing) without integrating rotation and environmental protection together.",
+  "knowledge_area": "Inventory Storage and Control",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A distribution center operator must distinguish between the primary functions of their warehouse operation. Which statement best reflects the nature of warehousing in a retail supply chain?",
+  "options": [
+   "Warehousing serves as a temporary holding facility that consolidates products from multiple suppliers and redistributes them to retail locations based on demand forecasts",
+   "Warehousing functions mainly as a retail display space where customers select items and staff manage point-of-sale transactions and returns",
+   "Warehousing acts as a manufacturing center where raw materials are assembled into finished goods for wholesale distribution to regional markets",
+   "Warehousing operates primarily as a quality inspection station where products are tested and sorted before being returned to suppliers for restocking"
+  ],
+  "correct_index": 0,
+  "explanation": "Warehousing fundamentally consolidates inventory from suppliers and redistributes to retail outlets—a buffer function driven by demand. The other options mischaracterize warehousing as a retail floor (B), production facility (C), or inspection center (D), none of which reflect its core logistical role.",
+  "knowledge_area": "Inventory Storage and Control",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a physical inventory process, a store discovers that system records show 150 units of a high-demand item, but the shelf count reveals only 95 units. Which action most directly addresses the core purpose of completing accurate inventory counts?",
+  "options": [
+   "Adjusting the system records to 95 units and launching a reorder to prevent stockouts while investigating the 55-unit discrepancy in a separate audit",
+   "Recounting the shelf stock three times to verify the 95-unit figure, then conducting a floor search and checking receiving documents to resolve the variance",
+   "Reducing the reorder point from 150 to 95 units and implementing daily hand counts until the system and physical inventory reconcile permanently",
+   "Crediting the inventory account for 55 units and documenting the loss as shrinkage while maintaining the 150-unit system level until the next quarter"
+  ],
+  "correct_index": 1,
+  "explanation": "Accurate inventory counts require verification and root-cause investigation—recounting, floor search, and document review isolate whether the discrepancy stems from receiving errors, misplacement, or loss. The other options either bypass verification (A), impose arbitrary adjustments (C), or accept losses without investigation (D), all of which undermine count integrity.",
+  "knowledge_area": "Inventory Storage and Control",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail manager observes that a popular product category experiences frequent stock-outs despite adequate warehouse supply. When reviewing inventory control systems, the manager should prioritize identifying which system factor most directly prevents stockouts at the sales floor?",
+  "options": [
+   "The reorder point calculation that triggers purchase orders when warehouse stock falls below a predetermined threshold quantity",
+   "The perpetual tracking method that updates unit counts in real time as items are sold and compares floor levels against minimum stock parameters",
+   "The ABC analysis ranking that categorizes items by sales velocity and allocates shelf space proportionally to demand forecasts",
+   "The cycle count frequency schedule that adjusts physical verification intervals based on the historical accuracy rate of prior inventory audits"
+  ],
+  "correct_index": 1,
+  "explanation": "Perpetual inventory systems with real-time updates and floor-level monitoring directly prevent stockouts by flagging when on-hand quantities drop below minimum thresholds. Reorder points (A) trigger warehouse replenishment but don't prevent floor depletion; ABC analysis (C) and cycle counts (D) inform planning and accuracy but don't actively prevent shelf depletion.",
+  "knowledge_area": "Inventory Storage and Control",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A store manager receives an out-of-stock report for three items and must determine which response best reflects proper procedure for managing stock-out notifications. Which approach most effectively bridges the gap between reporting and inventory control?",
+  "options": [
+   "Documenting the out-of-stock date and item number in a log, then immediately reordering from the warehouse without investigating demand or prior usage patterns",
+   "Recording the product code and shelf location, checking whether the item is available in the warehouse, and initiating a floor stock adjustment or expedited transfer",
+   "Filing the report with a timestamp, reducing the reorder point for that item to avoid future stock-outs, and scheduling a physical count within one week",
+   "Flagging the item in the system as discontinued, notifying suppliers of the stock-out event, and implementing a substitute product recommendation at the register"
+  ],
+  "correct_index": 1,
+  "explanation": "Proper out-of-stock reporting investigates warehouse availability and initiates corrective action—moving stock to the floor or requesting expedited transfers. Blind reordering (A) ignores on-hand inventory elsewhere; lowering reorder points (C) masks the underlying issue; discontinuing or substituting (D) eliminates the product rather than restoring availability.",
+  "knowledge_area": "Inventory Storage and Control",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During the receiving process, merchandise arrives damaged and the delivery documentation lists it as acceptable condition. What should the receiving team do before accepting the shipment?",
+  "options": [
+   "Accept the merchandise and file a claim with the supplier within 30 days of delivery to document the damage",
+   "Inspect all items against the purchase order and note any discrepancies or damage on the receiving report before signing",
+   "Reject the entire shipment immediately and require the driver to return all boxes without examining individual items",
+   "Accept the merchandise and segregate damaged items in a holding area until the supplier issues a credit memo"
+  ],
+  "correct_index": 1,
+  "explanation": "The receiving team must inspect merchandise against the purchase order and document any damage or discrepancies on the receiving report before accepting it. This creates a record that protects both the store and supplier and ensures accountability. Accepting first and claiming later weakens the store's position, and rejecting without inspection may cause unnecessary returns of acceptable merchandise.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "When routing stock to the sales floor, a merchandise handler notices that some items are overstocked in one department while another department has minimal inventory of similar products. What is the primary consideration in deciding whether to redistribute this stock?",
+  "options": [
+   "Customer demand patterns and departmental sales velocity for those product categories",
+   "The physical location of storage areas and the distance required to move merchandise",
+   "The seniority of department managers and their personal preferences for inventory levels",
+   "The age of the merchandise and the original supplier's recommended shelf placement"
+  ],
+  "correct_index": 0,
+  "explanation": "Stock routing decisions should be based on customer demand and sales velocity to ensure merchandise reaches departments where it will sell most effectively. While logistics and inventory age matter, demand patterns drive profitability and reduce the risk of overstock in slow-moving departments. Personal preferences and storage location are secondary considerations to actual sales performance.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "A retail store implements a stock rotation system using the FIFO method. A receiving associate incorrectly places new merchandise in front of older stock on the shelf. How would this practice affect merchandise management and what corrective action aligns with proper rotation procedures?",
+  "options": [
+   "Older stock may expire or become obsolete while newer merchandise sells first; staff should immediately relocate new items behind existing inventory",
+   "Inventory shrinkage will increase because customers prefer purchasing the oldest items; all merchandise should be shelved randomly to prevent this bias",
+   "The pricing system will become inconsistent because older items cost less; new merchandise must be repriced to match prior-period costs",
+   "Sales velocity will improve because newer products are more visible; rotation procedures should prioritize customer convenience over stock age"
+  ],
+  "correct_index": 0,
+  "explanation": "FIFO (First In, First Out) rotation prevents older merchandise from expiring, becoming obsolete, or losing value while newer stock sells first. When new items are placed in front of older ones, merchandise sits longer than intended and may spoil or become unsellable. Correcting this requires moving new merchandise behind existing inventory to maintain proper rotation sequence.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "During a delivery, a merchandise handler observes a customer attempting to conceal merchandise from the receiving area in a shopping bag. The handler suspects shoplifting but is uncertain whether this is occurring in the receiving dock or the sales floor. What should the handler's first action be according to standard shoplifting procedures?",
+  "options": [
+   "Immediately confront the customer and demand they empty their bag to confirm whether merchandise was concealed",
+   "Alert a manager or security personnel discreetly and allow trained staff to handle the situation while the handler continues work",
+   "Follow the customer throughout the store to document suspicious behavior and gather evidence for a formal incident report",
+   "Stop the customer at the exit and inspect their bag before allowing them to leave the premises"
+  ],
+  "correct_index": 1,
+  "explanation": "Store staff should alert management or security personnel discreetly rather than confronting customers directly, which can escalate situations and create liability. Trained security or management personnel are equipped to handle suspected shoplifting safely and legally. Direct confrontation, following, or detention may expose the store to civil liability or create safety risks for staff.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ },
+ {
+  "question": "A merchandise handler applies price marks to incoming inventory but notices that similar items have different price points depending on their source supplier and arrival date. When determining the correct price mark for merchandise, what factor should guide the handler's decision?",
+  "options": [
+   "The original cost from each supplier and the date the shipment arrived at the receiving dock",
+   "The retail price directive from management, promotional pricing schedules, and current competitive positioning",
+   "The wholesale cost basis and the handler's assessment of what customers in the area are willing to pay",
+   "The previous selling price of similar items and any markdowns applied during the last inventory cycle"
+  ],
+  "correct_index": 1,
+  "explanation": "Price marks should reflect management directives, promotional strategies, and competitive positioning rather than being determined by individual handlers based on supplier or cost variations. Management sets prices to achieve profit margins, respond to market conditions, and execute promotional campaigns. While cost and prior pricing inform management decisions, handlers must follow established pricing guidelines to maintain consistency and prevent revenue loss.",
+  "difficulty": "hard",
+  "knowledge_area": "Stock-Handling Procedures"
+ }
+]

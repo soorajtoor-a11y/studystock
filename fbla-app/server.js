@@ -387,7 +387,7 @@ async function callAnthropic(prompt) {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const msg = await client.messages.create({
-    model: 'claude-sonnet-4-6', max_tokens: 4096,
+    model: 'claude-haiku-4-5-20251001', max_tokens: 4096,
     messages: [{ role: 'user', content: prompt }],
   });
   return msg.content[0].text;
@@ -397,7 +397,7 @@ async function streamAnthropic(systemPrompt, messages, res) {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const stream = await client.messages.stream({
-    model: 'claude-sonnet-4-6', max_tokens: 1024, system: systemPrompt, messages,
+    model: 'claude-haiku-4-5-20251001', max_tokens: 1024, system: systemPrompt, messages,
   });
   for await (const chunk of stream) {
     if (chunk.type === 'content_block_delta' && chunk.delta.type === 'text_delta') {

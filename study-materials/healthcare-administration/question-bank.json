@@ -1,0 +1,652 @@
+[
+ {
+  "question": "When processing a payment on an account in a healthcare setting, which of the following procedures is most critical to ensure proper reconciliation with patient billing records?",
+  "options": [
+   "Verify the patient's identification, cross-reference the payment amount with the outstanding balance, and document the transaction in the accounts receivable ledger before depositing funds",
+   "Record the payment in the patient account, compare it against the insurance explanation of benefits, and update the aging schedule to reflect the current account status",
+   "Match the remittance advice to the invoice, post the payment to the appropriate cost center, and generate a receipt for the patient's records within 24 hours",
+   "Confirm the payment method, apply credits to the oldest outstanding charges first, and file the payment authorization with the medical record before processing the deposit"
+  ],
+  "correct_index": 1,
+  "explanation": "Recording in the patient account, comparing against EOB, and updating the aging schedule ensures the payment is properly credited and tracked for follow-up on remaining balances. Option 0 emphasizes ledger documentation but omits the critical EOB verification step. Options 2 and 3 focus on procedural elements like cost centers or filing that are secondary to account reconciliation.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "In completing a balance sheet for a healthcare facility, which account groupings and their relationships must be verified to ensure the accounting equation remains in balance?",
+  "options": [
+   "Current assets and fixed assets must total greater than current liabilities, and retained earnings must equal net income from the current fiscal year",
+   "Total assets (current and fixed) must equal the sum of total liabilities plus stockholders' equity, with each component clearly separated into short-term and long-term categories",
+   "Cash and accounts receivable must represent at least 40% of total assets, long-term debt must not exceed 60% of total liabilities, and capital reserves must match depreciation expense",
+   "Operating assets and equipment must be listed at historical cost, prepaid expenses must be amortized over the fiscal period, and endowment funds must be recorded separately from working capital"
+  ],
+  "correct_index": 1,
+  "explanation": "The balance sheet equation (Assets = Liabilities + Equity) is fundamental, and proper categorization into current/non-current and short/long-term is required for accurate financial reporting. Option 0 incorrectly states assets must exceed liabilities and confuses equity components. Options 2 and 3 specify arbitrary percentages and accounting treatments that, while sometimes relevant, do not address the core balance sheet verification requirement.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "Which combination of procedures must be followed when billing patients in a healthcare environment to minimize claim denials and ensure timely payment receipt?",
+  "options": [
+   "Obtain insurance pre-authorization before service delivery, generate an itemized bill listing procedure codes and charges, verify the patient's coverage eligibility, and submit claims within 30 days of service",
+   "Confirm the patient's demographics and insurance information at registration, verify medical necessity documentation supports billed procedures, reconcile the superbill to the patient's claim, and follow up on unpaid claims at 60 days",
+   "Code procedures using the applicable coding system, ensure all required modifiers are applied, submit claims with supporting clinical documentation, and track claim status through payer portals until payment or denial receipt",
+   "Request patient payment commitment before service, audit the fee schedule for accuracy, create a bill that separates in-network from out-of-network charges, and maintain a follow-up log of all pending claims"
+  ],
+  "correct_index": 2,
+  "explanation": "Proper coding with modifiers, complete clinical documentation, and claim status tracking are core billing procedures that reduce denials and ensure collections. Option 0 omits the critical verification and reconciliation steps. Option 1 focuses on follow-up timing but misses the procedural fundamentals. Option 3 emphasizes fee schedule audits and payment commitments, which are secondary to the primary billing workflow.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "When managing past-due accounts in a healthcare practice, what sequence of procedures should be implemented to balance collection efforts with regulatory compliance and patient relations?",
+  "options": [
+   "Send a courtesy reminder at 30 days, initiate collection calls at 60 days, file for small claims court at 90 days, and refer to external collections only after legal judgment",
+   "Issue a first notice at 30 days past due, attempt telephone contact at 45 days, send a formal demand letter at 60 days, and evaluate referral to a collection agency or legal action at 90+ days",
+   "Generate an aging report weekly, place accounts on hold at 45 days, suspend future services at 60 days, and pursue wage garnishment proceedings if balance exceeds $500",
+   "Flag accounts in the system at 21 days, mail a statement with collection language at 35 days, document all payment promises, and escalate to supervisor review before any external referral"
+  ],
+  "correct_index": 1,
+  "explanation": "A structured escalation from notice to contact to formal demand to external referral balances collection activity with legal requirements and patient fairness. Option 0 moves too quickly to small claims court. Option 2 suspends services prematurely and includes wage garnishment, which is legally complex and not a standard procedure. Option 3 lacks the formal demand and external referral steps.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "Which safeguards and reconciliation steps are essential when maintaining a petty cash fund in a healthcare administrative office to prevent loss and ensure audit compliance?",
+  "options": [
+   "Establish a fixed fund amount, document all disbursements with receipts, reconcile the fund weekly by comparing remaining cash to the balance, and reimburst only expenses under $100",
+   "Designate a single custodian, maintain a detailed log of all transactions with dates and purposes, count the physical cash balance regularly and verify it equals opening balance plus receipts minus documented withdrawals, and replenish the fund when depleted",
+   "Record petty cash expenses in a separate general ledger account, require supervisor approval for any single transaction over $50, file all receipts numerically, and conduct a full reconciliation monthly",
+   "Separate cash receipts from cash disbursements in the fund, require two signatures on all vouchers, deposit any surplus cash to the operating account weekly, and monitor employee access through a sign-out sheet"
+  ],
+  "correct_index": 1,
+  "explanation": "Single custodianship, detailed transaction logging, regular physical reconciliation (cash plus receipts minus withdrawals), and fund replenishment are the core controls for petty cash integrity. Option 0 sets an arbitrary disbursement limit but omits regular reconciliation. Option 2 focuses on approval workflows and filing but misses the cash-to-balance verification step. Option 3 emphasizes multi-signature controls and access tracking, which supplement but do not replace fundamental reconciliation procedures.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "A medical record contains both active clinical documentation and inactive historical data. When organizing a record's components according to standard filing procedures, which of the following represents the correct sequence for integrating laboratory results, progress notes, and diagnostic imaging reports into the existing patient file?",
+  "options": [
+   "Progress notes in chronological order, followed by laboratory results by date, with imaging reports filed separately in a supplemental section",
+   "Diagnostic imaging reports first, then progress notes in reverse chronological order, followed by laboratory results organized by test type",
+   "Laboratory results integrated chronologically with progress notes, diagnostic imaging reports filed with clinical correspondence and consultation documents",
+   "All laboratory and imaging reports consolidated in a single diagnostic section, with progress notes maintained separately in temporal sequence"
+  ],
+  "correct_index": 2,
+  "explanation": "In medical record filing, diagnostic materials such as imaging reports should be integrated alongside clinical documentation rather than segregated, and all components follow chronological organization with related materials grouped together. The other options either create artificial separation of related clinical data or reverse standard temporal ordering, which complicates continuity of care documentation.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During the electronic file storage phase of the record life cycle, a healthcare facility must balance immediate access requirements with long-term retention compliance. Which combination of disk management and file organization practices best addresses both the active clinical phase and the inactive archival phase of patient records?",
+  "options": [
+   "Active records stored on high-speed primary servers with weekly backups; inactive records transferred to secondary storage with monthly verification cycles",
+   "All records maintained on a single centralized database with daily backups and metadata indexing for both current and historical data retrieval",
+   "Active records retained in rapid-access cloud storage with daily synchronization; archived records migrated to optical media with annual integrity audits",
+   "Current-year records on dedicated storage arrays with redundant systems; prior-year records compressed and moved to networked archive servers with quarterly restoration testing"
+  ],
+  "correct_index": 3,
+  "explanation": "Effective electronic file management separates active records requiring frequent access from archived records, using storage media and refresh schedules appropriate to each phase's usage patterns. The correct answer reflects tiered storage with adequate testing and recovery procedures for inactive records, whereas other options either consolidate inappropriately, use overly frequent verification for archives, or fail to specify phase-appropriate storage media.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A charge-out procedure for medical records must account for both regulatory compliance and operational tracking. When implementing manual charge-out controls in a facility with high-volume record requests, which of the following procedures ensures accountability while maintaining the record's physical integrity and documentation chain?",
+  "options": [
+   "Issue a sign-out card placed in the file location; record requester name, date, and expected return date; conduct weekly audits of outstanding records",
+   "Log all requests in a centralized register with timestamp, requester identification, and destination; require receipt confirmation and set automated return reminders",
+   "Create a duplicate temporary file folder during checkout; maintain original location marker; verify requester credentials before release and document purpose",
+   "Assign a unique transaction number to each request; photograph the record before removal; store image with checkout details and conduct monthly inventory reconciliation"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective manual charge-out procedures require systematic logging with key identifiers (who, when, where, why) and automated accountability mechanisms such as return reminders to prevent lost records. The correct option combines documentation specificity with practical follow-up, whereas duplicating files compromises the original record's integrity, sign-out cards alone lack remote tracking, and photography adds unnecessary process complexity without improving traceability.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The record life cycle phases determine how coding procedures and component organization evolve from creation through disposal. Which of the following accurately describes the relationship between coding procedures applied during the active phase and the management requirements that emerge during the inactive and disposition phases?",
+  "options": [
+   "Codes assigned during active phase remain static; inactive phase requires recoding by diagnosis type; disposition phase uses different coding standards for legal holds",
+   "Coding structure established in active phase must support retrieval and compliance verification throughout inactive phase; disposition decisions depend on code completeness and archival markings",
+   "Initial coding in active phase is superseded by simplified codes in inactive storage; disposition coding is determined solely by retention schedule without reference to original codes",
+   "Codes function only for active clinical use; inactive phase requires separate indexing systems independent of original codes; disposition phase eliminates all coded data references"
+  ],
+  "correct_index": 1,
+  "explanation": "Coding applied during the active phase creates the foundation for all downstream record management; accurate codes enable proper retrieval, retention compliance verification, and informed disposition decisions throughout the record's life cycle. The other options incorrectly suggest recoding during phases, loss of original code relevance, or separation of coding from disposition logic, all of which create compliance and retrieval risks.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When comparing manual and electronic filing procedures for components such as progress notes, laboratory results, and imaging reports, healthcare administrators must address differences in retrieval speed, security protocols, and compliance verification. Which statement most accurately reflects the operational trade-offs between these two approaches?",
+  "options": [
+   "Manual filing offers superior security and compliance auditability; electronic filing provides faster retrieval and integration with clinical workflows, requiring robust access controls and redundancy",
+   "Electronic filing eliminates all manual filing tasks; manual procedures are retained only for archived records requiring historical verification of metadata",
+   "Manual filing ensures better documentation integrity; electronic systems are faster but cannot reliably track who accessed specific record components or when",
+   "Both approaches require identical audit trails; manual filing is preferred for active records due to lower implementation costs, while electronic filing works only for archived data"
+  ],
+  "correct_index": 0,
+  "explanation": "The correct answer acknowledges legitimate strengths of each method: manual filing's auditability and control versus electronic filing's speed and workflow integration, while recognizing that electronic systems require compensating controls for security and backup. The other options either overstate one method's advantages, incorrectly limit manual filing to archives, ignore electronic audit capabilities, or falsely equate the approaches' technical requirements.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare facility transitions from paper to electronic records and must establish procedures for both the active and inactive phases of the record life cycle. Which of the following best describes the primary distinction between these two phases in terms of access and storage requirements?",
+  "options": [
+   "Active records require frequent retrieval and immediate availability, while inactive records are stored off-site but remain retrievable within specified timeframes for legal compliance.",
+   "Active records are maintained in the electronic system only, while inactive records are converted to microfilm and archived permanently without retrieval access.",
+   "Active records must be duplicated weekly for backup purposes, while inactive records are consolidated into single documents and filed alphabetically by patient surname.",
+   "Active records remain in the patient's room for bedside access, while inactive records are transferred to a centralized repository accessible only to physicians and coders."
+  ],
+  "correct_index": 0,
+  "explanation": "The record life cycle includes active phases where records are regularly accessed and need prompt availability, and inactive phases where records are retained for legal/compliance reasons but retrieved less frequently. The other options describe incorrect storage methods, access restrictions, or filing practices that do not accurately reflect standard lifecycle phases.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a records management audit, a coder must apply coding procedures to a batch of medical records with incomplete documentation. When determining the correct coding procedure for records with missing physician signatures or incomplete clinical information, which approach aligns with both compliance standards and proper charge-out protocols?",
+  "options": [
+   "Code the record based on available information and flag it for incomplete documentation; initiate a charge-out to the responsible department with a specified return deadline.",
+   "Assign temporary codes using standardized assumptions and file the record in the pending folder until the coder can follow up in person with the physician.",
+   "Skip coding the incomplete records and store them separately; add them to the coding queue only after all complete records have been processed and coded.",
+   "Request that the incomplete records be returned to the original department immediately; code only the sections with complete information and defer remaining codes to the next billing cycle."
+  ],
+  "correct_index": 0,
+  "explanation": "Proper charge-out procedures involve documenting which department or personnel has the record, specifying when it must be returned, and flagging items needing completion before coding is finalized. This ensures accountability and compliance. The other options either bypass proper charge-out documentation, create workflow delays, or use non-standardized coding practices that compromise data integrity.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A medical records department manages both manual filing systems for archived records and electronic file storage using networked servers and cloud backup. When comparing the two systems for compliance with retention schedules and disaster recovery requirements, which statement most accurately reflects their complementary roles?",
+  "options": [
+   "Manual files serve as the primary retention mechanism with indexed organization by medical record number, while electronic systems provide redundant backup and rapid search capability across patient demographics and diagnosis codes.",
+   "Electronic systems maintain all active patient records with automatic version control, while manual files house only radiological images and surgical reports that cannot be digitized.",
+   "Manual filing is used exclusively for records older than five years, whereas electronic storage is reserved for newly created records to minimize server capacity usage.",
+   "Both manual and electronic systems operate independently; manual files are purged quarterly while electronic files are retained indefinitely on primary servers without archival to secondary storage."
+  ],
+  "correct_index": 0,
+  "explanation": "Effective records management uses manual files with clear indexing for archived and historical records alongside electronic systems that enable fast retrieval, backup, and compliance verification. Manual and electronic systems complement each other rather than function in isolation. The other options incorrectly segregate record types, misapply retention logic, or fail to address backup and redundancy requirements.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare facility uses a hybrid records environment where patient medical records contain multiple components including laboratory results, diagnostic imaging reports, operative notes, and nursing documentation. When establishing procedures to organize and retrieve these components efficiently, what must be the primary consideration in structuring the medical record components?",
+  "options": [
+   "Organize components in the sequence that aligns with clinical workflow and supports both clinical care continuity and audit trail requirements, ensuring all component types are identifiable and retrievable in standardized order.",
+   "File components alphabetically by the ordering physician's last name to simplify manual lookup; maintain imaging studies in a separate physical location due to their size and specialized storage needs.",
+   "Separate inpatient and outpatient components into different filing systems; consolidate all test results into one subsection regardless of the date when results were received or reviewed.",
+   "Arrange components chronologically by date of service only; maintain laboratory and imaging reports in the electronic system while storing operative and nursing notes in the paper record."
+  ],
+  "correct_index": 0,
+  "explanation": "Medical record components must be organized in a standardized, logical sequence that reflects clinical workflow, supports care coordination, and maintains an auditable structure across all component types. This ensures any authorized user can locate needed information consistently. The other options apply arbitrary sorting criteria, segregate related clinical information inappropriately, or create fragmented records that compromise continuity and audit capability.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When managing electronic file storage across multiple servers and cloud platforms, a records administrator must establish protocols for file and disk management to prevent data loss, ensure compliance auditing, and maintain accessibility. Which combination of practices best addresses the technical and compliance requirements of electronic records management?",
+  "options": [
+   "Implement automated backup routines with redundant storage across geographically separate locations, maintain detailed file access logs with timestamp and user identification, and conduct regular integrity checks on archived files to verify readability and completeness.",
+   "Store all active files on a single high-capacity server to streamline access permissions; perform manual backups monthly and rely on user login timestamps as the sole audit trail.",
+   "Compress all patient files annually to free server space; transfer compressed files to external hard drives that are stored in a secure offsite facility without ongoing verification of data integrity.",
+   "Establish tiered storage where files older than one year are moved to read-only archives without backup copies; eliminate old audit logs after six months to reduce database file size."
+  ],
+  "correct_index": 0,
+  "explanation": "Robust electronic file management requires automated, redundant backups across secure locations; comprehensive audit logging with user and timestamp data; and periodic integrity verification to ensure archived files remain accessible and uncorrupted. The other options introduce single points of failure, inadequate audit trails, irreversible data compression without verification, or deletion of compliance-critical logs.",
+  "knowledge_area": "Records Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare administrative professional observes that a patient from a non-English-speaking background appears frustrated during intake procedures. Which approach best demonstrates awareness of cultural diversity's impact on communication while gathering necessary medical information?",
+  "options": [
+   "Speak more slowly and loudly, repeating key terms multiple times to ensure understanding of health history details",
+   "Arrange for a qualified interpreter or bilingual staff member to facilitate the intake process and verify accuracy of documented responses",
+   "Provide written forms in the patient's primary language and allow them to complete intake independently before review",
+   "Use hospital translation software to convert verbal explanations into the patient's language during the information-gathering session"
+  ],
+  "correct_index": 1,
+  "explanation": "While multiple options address language barriers, arranging qualified interpretation ensures both accurate medical information gathering and demonstrates genuine cultural competence by removing communication obstacles. Translation software and written forms lack real-time clarification; speaking louder ignores the root cause and may increase frustration.",
+  "difficulty": "hard",
+  "knowledge_area": "Communication Skills"
+ },
+ {
+  "question": "When documenting a difficult telephone interaction with a patient who expressed anger about billing charges, which combination of elements should the healthcare administrative professional record to ensure complete communication management?",
+  "options": [
+   "Patient name, call date, specific charges disputed, patient's emotional tone, and recommended next steps for resolution",
+   "Time of call, general complaint category, billing department contact information, and a summary of the caller's main concerns",
+   "Caller identification, nature of complaint, exact phrases used by the patient, staff member's response, and follow-up actions assigned",
+   "Call duration, account number referenced, reasons the patient was upset, department responsible for the issue, and closure status"
+  ],
+  "correct_index": 2,
+  "explanation": "Thorough documentation of difficult interactions requires recording the caller's identity, specific complaint nature, actual communication (what was said), the staff response given, and concrete follow-up actions to ensure accountability and prevent miscommunication. The other options omit either the specific communication exchange or lack clarity on assigned responsibility.",
+  "difficulty": "hard",
+  "knowledge_area": "Communication Skills"
+ },
+ {
+  "question": "A family member of a hospitalized patient repeatedly expresses anxiety about the patient's condition and asks the same questions multiple times during each visit. Which technique best addresses the family member's emotional needs while supporting effective practitioner-family communication?",
+  "options": [
+   "Provide written summaries of the patient's daily status and clinical updates to reduce repetition and redirect questions to nursing staff",
+   "Practice supportive listening by acknowledging the family's concerns, allowing expression of emotions, and gently reinforcing information in calm, reassuring interactions",
+   "Limit visit frequency and direct emotional support requests to social workers so clinical staff can focus on patient care tasks",
+   "Explain medical terminology and test results in detailed technical language to demonstrate competence and reduce family uncertainty"
+  ],
+  "correct_index": 1,
+  "explanation": "Supportive listening techniques—acknowledging emotions, validating concerns, and reinforcing information patiently—address underlying anxiety and build trust in the communication relationship. Written summaries lack the emotional connection; limiting visits avoids the issue; and technical jargon may increase rather than reduce family anxiety.",
+  "difficulty": "hard",
+  "knowledge_area": "Communication Skills"
+ },
+ {
+  "question": "During an interdisciplinary team meeting, a physician, nurse, social worker, and administrative coordinator must coordinate care for a complex patient case. What communication practice is most critical to ensure effective collaboration and prevent information gaps?",
+  "options": [
+   "Each discipline documents findings in its own specialized terminology and submits reports to a central electronic health record system weekly",
+   "The physician leads the discussion, presents the clinical plan, and each team member provides input only when directly asked by the physician",
+   "Team members share information using common language, confirm mutual understanding of goals and responsibilities, and establish clear accountability for assigned actions",
+   "Detailed notes from each discipline are compiled into a single narrative report that is reviewed by all team members before implementation"
+  ],
+  "correct_index": 2,
+  "explanation": "Effective interdisciplinary communication requires shared language (avoiding jargon barriers), active confirmation of understanding, and explicit clarity on roles and follow-up—not hierarchical or delayed reporting structures. The other options create silos, devalue team input, or lack real-time alignment necessary for coordinated care.",
+  "difficulty": "hard",
+  "knowledge_area": "Communication Skills"
+ },
+ {
+  "question": "A patient frequently becomes verbally aggressive when discussing out-of-pocket expenses, displaying hostile body language and raising their voice. Which response strategy appropriately balances de-escalation with professional problem-solving for this difficult patient behavior?",
+  "options": [
+   "Remain calm, maintain professional composure and open body language, listen to the specific financial concern without interrupting, and explain available payment options or financial assistance programs",
+   "Acknowledge the patient's frustration, set a clear boundary regarding respectful communication, and offer to involve a patient advocate or supervisor to mediate the discussion",
+   "Respond with empathy about the cost burden, avoid defensive statements, allow the patient to express their grievance fully, and document the behavior for potential provider notification",
+   "Validate the patient's anger as understandable, suggest rescheduling the conversation when emotions are calmer, and arrange a separate meeting with financial counseling staff"
+  ],
+  "correct_index": 0,
+  "explanation": "This response combines essential de-escalation (calm demeanor, active listening, avoiding interruption) with concrete problem-solving (explaining actual payment options and assistance), which addresses both the emotional and practical dimensions of the patient's anger. Other options either lack actionable resolution, rely on avoidance, or risk appearing dismissive of the underlying financial concern.",
+  "difficulty": "hard",
+  "knowledge_area": "Communication Skills"
+ },
+ {
+  "question": "When reconciling a bank statement in a healthcare practice, a deposit recorded in the practice's accounting system on June 28 does not appear on the bank statement dated June 30. Which of the following best explains this discrepancy and how it should be handled?",
+  "options": [
+   "The deposit is in transit and should be added back to the bank balance during the reconciliation process to match the book balance",
+   "The deposit must be reversed in the accounting records because the bank did not receive it before month-end",
+   "The deposit represents a timing difference that should appear on next month's statement and requires no adjustment to either balance",
+   "The deposit indicates a bank error that must be reported to the financial institution before the reconciliation can be completed"
+  ],
+  "correct_index": 2,
+  "explanation": "A deposit in transit is a normal timing difference in bank reconciliation—the practice recorded it when sent, but the bank processes it on a different date. No adjustment is needed to either the bank or book balance; the reconciliation simply explains why they differ. Adding it back or reversing it would create a double-entry error and mask the true cash position.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare practice receives an invoice from a medical supplier dated June 1 for $2,500 in equipment with net payment terms of 2/10, net 30. The practice pays on June 8. What is the correct amount to record in accounts payable, and what accounting treatment applies?",
+  "options": [
+   "Record $2,500 and take a $50 purchase discount when payment is made within the discount period",
+   "Record $2,450 in accounts payable to reflect the early payment discount at the time the invoice is received",
+   "Record $2,500 initially and adjust to $2,450 only if payment is confirmed within ten days of the invoice",
+   "Record $2,500 and recognize the $50 discount as a reduction to supplies expense upon payment"
+  ],
+  "correct_index": 0,
+  "explanation": "Under the net method, accounts payable is recorded at the full invoice amount ($2,500). The 2/10, net 30 terms mean a 2% discount is available if paid within 10 days; since the practice paid on day 8, the discount is earned. The $50 discount is recorded when payment is made, reducing the cash outflow and generating a purchase discount account that offsets cost of goods or supplies expense.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare facility maintains a petty cash fund of $300. At the end of the month, receipts total $287 (office supplies $120, postage $95, patient education materials $72), and $18 remains in the cash box. What journal entry should be recorded to replenish the fund?",
+  "options": [
+   "Debit Supplies Expense $120, Postage Expense $95, Education Materials $72; Credit Cash $287",
+   "Debit Office Supplies $120, Postage Expense $95, Patient Education $72, Cash Over/Short $5; Credit Cash $292",
+   "Debit Supplies Expense $287; Credit Petty Cash Fund $287; then replenish by depositing $282 cash",
+   "Debit Office Supplies $120, Postage Expense $95, Education Materials $72, Cash Short $5; Credit Cash $292"
+  ],
+  "correct_index": 3,
+  "explanation": "The fund should contain $300, but only $18 remains plus $287 in receipts ($305 total)—a $5 overage. When replenishing, the practice reimburses the $287 in expenses and the $5 overage, requiring a total cash payment of $292. The $5 discrepancy is recorded as Cash Short/Over (a loss if short, gain if over). Option A omits the overage; Option B incorrectly credits petty cash; Option C confuses the replenishment step.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When opening a new patient account in a healthcare practice, which documents and procedures are most critical to ensure accurate billing and compliance with payment policies?",
+  "options": [
+   "Obtain the patient's insurance card, complete a registration form with demographic and insurance information, and establish credit terms based on the patient's employment history",
+   "Collect the patient's Social Security number, full legal name, date of birth, insurance details, and document the patient's agreement to pay outstanding balances according to practice policy",
+   "Verify the patient's identity using a government-issued ID, request prior medical records from other providers, and confirm emergency contact information before the first appointment",
+   "Record the patient's chief complaint, physician referral source, preferred payment method, and any known allergies in the electronic health record system"
+  ],
+  "correct_index": 1,
+  "explanation": "Opening a new patient account requires collecting key identifiers (SSN, name, date of birth) and insurance information for billing purposes, and documenting the patient's financial responsibility agreement to establish clear payment expectations. While identity verification (Option C) is important, it is not a direct accounts function; medical history (Option D) is clinical, not financial; and basing credit terms on employment (Option A) is not standard practice.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare practice uses the accounts receivable aging method to manage past-due accounts. A patient's account shows a balance of $450 with the most recent payment 120 days ago. According to typical healthcare practice procedures, what action should be prioritized for this account?",
+  "options": [
+   "Send a friendly reminder notice and offer a payment plan with a 12-month term to encourage settlement",
+   "Refer the account to an external collection agency immediately and suspend all future services for this patient",
+   "Contact the patient to attempt resolution, document the collection effort, and consider referral to collections if no payment or acceptable arrangement is reached",
+   "Write off the account as bad debt and adjust the allowance for doubtful accounts to reflect the loss"
+  ],
+  "correct_index": 2,
+  "explanation": "For a 120-day past-due account, best practice is to make a direct collection effort first—contact the patient, document attempts, and work toward a payment arrangement. If unsuccessful, then escalate to external collections or write-off. Immediate referral to collections (Option B) skips necessary internal efforts; suspension of services (Option B) may violate patient care obligations; and writing off without documented attempts (Option D) is premature and poor financial management.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When reconciling a bank statement in a healthcare facility, a deposit of $3,500 appears on the bank statement but not in the facility's accounting records. Which action should be taken to correct the discrepancy?",
+  "options": [
+   "Add the deposit amount to the cash balance in the general ledger and record it as miscellaneous revenue in the current period",
+   "Deduct the deposit from the outstanding checks list and investigate whether the deposit was recorded in a prior accounting period",
+   "Record the deposit in the cash receipts journal immediately and adjust the accounts receivable subsidiary ledger to reflect patient payments",
+   "Verify the deposit date, source, and amount against patient billing records and deposit slips, then record it in the appropriate accounting period"
+  ],
+  "correct_index": 3,
+  "explanation": "Bank reconciliation requires matching the bank statement to the facility's records by verifying deposits against source documents like deposit slips and patient payment records. Recording a deposit without confirming its legitimacy or period could result in revenue being recognized incorrectly. The other options either bypass verification procedures or mishandle the timing and documentation of the transaction.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "A healthcare facility processes an accounts payable invoice for medical supplies totaling $8,200 with terms of 2/10 net 30. The facility has sufficient cash to pay immediately. Which statement best describes the financial and procedural considerations for this payment decision?",
+  "options": [
+   "The facility should pay within 10 days to capture the 2% discount, resulting in savings of $164 and improved cash flow management through accelerated payable cycles",
+   "The facility should delay payment until day 30 to maximize working capital and avoid depleting cash reserves needed for daily operations and emergency expenses",
+   "The facility should pay on day 15 to balance the discount opportunity against the administrative cost of processing early payment and updating the accounts payable ledger",
+   "The facility should negotiate with the supplier to extend payment terms beyond 30 days and use the 2% discount amount for other operational investments"
+  ],
+  "correct_index": 0,
+  "explanation": "The 2/10 net 30 terms offer a 2% discount ($164) if paid within 10 days, which represents an annual return far exceeding typical borrowing costs, making it financially advantageous to pay early. The procedural requirement is to record the payment in the accounts payable subsidiary ledger and cash disbursements journal with the appropriate discount. The other options either forgo clear financial benefits or introduce unfeasible negotiation scenarios.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "During the billing process for outpatient services, a patient's insurance claim is rejected due to incorrect coding. The patient's account shows a balance of $950, and the facility has already recorded the revenue. What is the most appropriate procedure to handle this accounts receivable situation?",
+  "options": [
+   "Adjust the revenue account downward immediately, reclassify the $950 as a contractual adjustment, and resubmit the claim with corrected codes while notifying the patient of the status",
+   "Write off the $950 balance as uncollectible and update the allowance for doubtful accounts in the balance sheet without pursuing resubmission or patient contact",
+   "Increase the accounts receivable balance by the insurance deductible amount, submit a revised claim with amended codes, and send the patient an updated statement reflecting the new total due",
+   "Record the $950 as a bad debt expense, close the patient account, and establish a claims follow-up procedure to track rejected claims by payer type and diagnosis code"
+  ],
+  "correct_index": 0,
+  "explanation": "When a claim is rejected due to coding error, the facility must correct the coding, resubmit the claim, and maintain proper accounting records by recording a contractual adjustment rather than writing off the balance as uncollectible. The patient must be kept informed of the status and any impact on their responsibility. The other options either prematurely write off the account or artificially increase the patient's liability without proper documentation procedures.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "A healthcare facility maintains a petty cash fund of $500. At the end of the month, receipts total $485, and the cash box contains $18. Which procedures should be followed to reconcile and replenish the petty cash fund correctly?",
+  "options": [
+   "Count the remaining $18, compare it to the original $500 balance, record the $482 shortage as a loss in the expense account, and do not replenish until the next month",
+   "Verify that receipts of $485 plus remaining cash of $18 do not equal the original fund balance, investigate the $3 discrepancy by reviewing receipt documentation and cash box contents, then replenish to the original $500",
+   "Record the $485 in petty cash expenses, add the $18 remaining cash to the general operating account, and establish a new $500 petty cash fund for the following month",
+   "Total the receipts of $485 and remaining cash of $18 to confirm the fund balance, close out all receipts as miscellaneous expense, and leave the $18 in the cash box as starting balance"
+  ],
+  "correct_index": 1,
+  "explanation": "Petty cash reconciliation requires verifying that receipts plus remaining cash equals the original fund balance; the $3 discrepancy must be investigated before replenishment. Replenishment should restore the fund to its original $500 amount based on receipts reviewed and approved. The other options either ignore the discrepancy, mishandle the replenishment amount, or fail to follow proper fund accountability procedures.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "When opening a new patient account in a healthcare facility, which combination of procedures and documentation ensures accurate billing, collections, and compliance with financial and regulatory requirements?",
+  "options": [
+   "Collect patient demographics, insurance information, and authorization forms; verify insurance coverage and eligibility; record account details in the patient information system; and obtain signed consent for treatment and payment responsibility",
+   "Request photo identification and Social Security number, process initial copayment, file insurance verification with the claims department, and schedule the first appointment without documenting payment responsibility terms",
+   "Gather contact information and employment history, estimate patient out-of-pocket costs based on diagnosis code assumptions, create a standing payment plan regardless of insurance status, and generate an accounts receivable aging report",
+   "Obtain patient name and date of birth, assign a medical record number, submit preliminary insurance claims before treatment begins, and defer collection of financial information until after the first service encounter"
+  ],
+  "correct_index": 0,
+  "explanation": "Opening a new patient account correctly requires collecting complete demographics, verifying insurance coverage and eligibility, documenting the account in the system, and obtaining written consent for treatment and payment responsibility—this establishes the foundation for accurate billing and collections. The other options either collect incomplete information, make assumptions instead of verifying insurance, defer critical documentation, or skip necessary authorization steps that expose the facility to compliance and collection risks.",
+  "difficulty": "hard",
+  "knowledge_area": "Managing Financial Functions"
+ },
+ {
+  "question": "When scheduling a patient appointment in a medical office, which combination of procedures should be followed to ensure both efficient workflow and accurate record-keeping?",
+  "options": [
+   "Verify the patient's insurance information, confirm their availability against the provider's schedule, and document the appointment in both the digital system and paper backup log",
+   "Check the provider's current schedule for open slots, record the patient's chief complaint, and send a confirmation email without documenting in the office system",
+   "Review the patient's previous visit notes, block out time on the provider's calendar for the appointment duration, and update the inventory list to reflect supplies needed",
+   "Confirm the patient's contact information, cross-reference appointment requests with staff availability rather than provider availability, and file the request in the patient's chart"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper appointment scheduling requires verifying insurance, checking provider availability, and documenting in the scheduling system to maintain continuity of care and billing accuracy. Option B fails to document in the office system; Option C conflates appointment scheduling with supply management; Option D uses staff rather than provider schedules and misses system documentation.",
+  "knowledge_area": "Managing Office Procedures",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A medical office must maintain HIPAA patient confidentiality while processing incoming mail containing patient records and insurance statements. Which procedure best protects patient privacy during this mail-sorting process?",
+  "options": [
+   "Sort mail in a public reception area to improve efficiency, open all envelopes immediately, and leave documents on the front desk for staff to retrieve throughout the day",
+   "Establish a secure sorting location with restricted access, verify recipient names before opening, and store unopened mail from unknown senders in a locked cabinet pending verification",
+   "Direct all incoming mail to the front desk receptionist without screening, photograph each document for digital backup before filing, and discuss patient cases during staff lunch breaks to coordinate care",
+   "Use a mail sorter in the hallway to pre-screen envelopes, process documents during scheduled mail time in a private area, and require staff to initial each piece before patient chart filing"
+  ],
+  "correct_index": 1,
+  "explanation": "HIPAA compliance requires secure handling of patient information, including sorting in restricted areas, verifying recipients before opening, and protecting unopened mail from unauthorized access. Option A exposes documents to public view and breaches confidentiality; Option C involves photographing protected health information and discussing cases inappropriately; Option D uses public hallway sorting which violates privacy standards.",
+  "knowledge_area": "Managing Office Procedures",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During patient registration, an office must collect and organize information for both clinical and administrative purposes. Which set of registration procedures ensures complete patient charting while maintaining efficient administrative workflow?",
+  "options": [
+   "Collect demographic data and insurance information at the front desk, defer clinical history to the nurse, and file registration documents in the patient chart only after billing verification",
+   "Request emergency contact information, basic demographic data, and insurance details at check-in, obtain detailed medical and medication history from the patient, and immediately input all data into the electronic health record system for clinical access",
+   "Have patients complete a pre-visit questionnaire with only essential information, store insurance cards in a separate billing folder, and enter clinical history only after the provider's initial assessment is documented",
+   "Gather insurance and payment information exclusively, schedule follow-up appointments before collecting medical history, and maintain separate files for demographic data and clinical information"
+  ],
+  "correct_index": 1,
+  "explanation": "Complete registration requires collecting demographic, insurance, and detailed medical information during the patient's visit, then documenting all data in the EHR for both clinical and administrative access. Option A delays charting inappropriately; Option C defers necessary history and separates data sources; Option D omits medical history collection at registration and fragments the record.",
+  "knowledge_area": "Managing Office Procedures",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A medical office must prepare treatment rooms and maintain instrument sterilization according to safety and infection-control standards. Which procedure sequence correctly integrates room preparation with instrument maintenance?",
+  "options": [
+   "Clean and disinfect surfaces between patients, sterilize used instruments in an autoclave before storage, stock disposable supplies, and inspect equipment functionality before each appointment",
+   "Replace paper liners and patient gowns only at end-of-day, place instruments directly back in drawers without sterilization for quick access, restock supplies monthly rather than after each use, and visually inspect for obvious damage",
+   "Prepare rooms at the start of each day only, autoclave instruments weekly in bulk rather than after each use, maintain a supply list separate from actual inventory, and test equipment twice annually",
+   "Disinfect surfaces selectively based on perceived contamination risk, defer instrument sterilization until weekly deep cleaning, stock high-use supplies immediately and track others informally"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper room and instrument management requires cleaning between patients, sterilizing instruments after each use, maintaining supplies consistently, and verifying equipment works before use to prevent infection and ensure safety. Options B and D skip sterilization or perform it infrequently, risking cross-contamination; Option C batches sterilization and defers critical testing, violating infection-control standards.",
+  "knowledge_area": "Managing Office Procedures",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When coordinating a staff meeting and a patient care event simultaneously, which time-management and resource-allocation strategies should a medical office administrator prioritize to ensure both proceed without compromising patient safety or staff communication?",
+  "options": [
+   "Schedule the staff meeting during patient hours and cover clinical duties with part-time staff, assign one employee to both the meeting and patient-care coordination, and communicate changes verbally to reduce documentation time",
+   "Designate a meeting time outside of peak patient hours, assign specific staff members to each function with clear roles, ensure communication tools are available, and have a contingency plan if staffing needs shift",
+   "Hold the meeting immediately before the scheduled event, consolidate all staff into one session, rely on informal communication between employees, and adjust patient schedules as needed to free up staff",
+   "Split the meeting into multiple sessions throughout the week, assign the meeting coordinator to handle patient-care logistics as secondary duties, use email-only communication to avoid meeting interruptions, and maintain separate resource lists"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective coordination requires scheduling the meeting at low-census times, assigning dedicated staff to each task, ensuring communication protocols are in place, and maintaining contingency plans to sustain both operations. Option A compromises patient care and creates role confusion; Option C compounds both events and risks miscommunication; Option D fragments leadership attention and limits real-time responsiveness.",
+  "knowledge_area": "Managing Office Procedures",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When reconciling a bank statement in a healthcare facility, a deposit of $3,500 recorded in the practice's books on June 30 does not appear on the bank statement until July 2. How should this timing difference be handled in the reconciliation process?",
+  "options": [
+   "Add the deposit to the bank balance as an outstanding item requiring correction in the next month's reconciliation",
+   "Deduct the deposit from the book balance since it was recorded prematurely by the accounting department",
+   "Add the deposit to the bank statement balance as a deposit in transit that will clear within normal processing time",
+   "Remove the entry from the books and rerecord it in July to match the bank's date of receipt"
+  ],
+  "correct_index": 2,
+  "explanation": "A deposit in transit is recorded by the practice before the bank processes it, so it must be added to the bank balance during reconciliation to account for the timing difference. This is a standard reconciling item that resolves automatically once the bank clears the deposit, requiring no correction to the books.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A healthcare practice receives an invoice from a medical supply vendor with terms of 2/10 Net 30. The invoice amount is $4,000. If the practice pays within 10 days, what is the correct treatment of the 2% discount when processing this accounts payable invoice?",
+  "options": [
+   "Record the full $4,000 as accounts payable and recognize the $80 discount as a revenue item when payment is made early",
+   "Record accounts payable at $3,920 and treat the $80 as a purchase discount to be credited against supply expenses if paid by day 10",
+   "Deduct the $80 discount immediately from the supplier's account balance before the invoice is recorded in accounts payable",
+   "Record the $4,000 in accounts payable and adjust the vendor payment terms in the system to reflect the discount eligibility"
+  ],
+  "correct_index": 1,
+  "explanation": "The 2/10 Net 30 terms mean a 2% discount is available if paid within 10 days. The practice should record the payable at the net amount ($3,920) and treat the potential $80 as a purchase discount, which reduces the cost of supplies if the early-payment deadline is met. This method encourages timely payment and accurately reflects the true cost of goods.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "While maintaining the petty cash fund, the office manager finds that the total of receipts and remaining cash is $47.50, but the petty cash fund balance according to the ledger is $50.00. What is the appropriate next step to reconcile this discrepancy?",
+  "options": [
+   "Record an adjustment to increase the petty cash account by $2.50 and investigate the source of the missing cash",
+   "Deduct $2.50 from the next employee reimbursement to balance the petty cash fund without documentation",
+   "Write off the $2.50 difference as miscellaneous expense and replenish the fund to its original $50 balance",
+   "Suspend reconciliation until all receipts can be verified against original vendor statements and transaction logs"
+  ],
+  "correct_index": 0,
+  "explanation": "A $2.50 shortage in petty cash must be documented and investigated to determine whether it was lost, stolen, or recorded incorrectly. The appropriate response is to record an adjustment entry and investigate, not to ignore it or reallocate the loss arbitrarily. This maintains internal control and accountability over the petty cash fund.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When opening a new patient account in a healthcare facility, which documents and procedures are most critical to ensure proper financial and clinical management?",
+  "options": [
+   "Insurance card verification, signed consent forms, billing address confirmation, and authorization for treatment and payment",
+   "Patient photo identification, emergency contact information, employment history, and references from previous healthcare providers",
+   "Social Security number confirmation, credit report review, pharmacy contact details, and prior medication approval records",
+   "Driver's license copy, proof of residence, banking information for automatic withdrawals, and employee discount eligibility forms"
+  ],
+  "correct_index": 0,
+  "explanation": "Opening a new patient account requires insurance card verification to confirm coverage, signed consent forms for treatment, correct billing address for statements, and payment authorization to ensure the facility can bill appropriately. These elements establish both the clinical relationship and the financial framework for service delivery and collections.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A patient's account shows a balance of $850 that is 120 days past due. The practice has sent two collection notices and attempted telephone contact without response. Which procedure is most appropriate for managing this past-due account?",
+  "options": [
+   "Write off the balance as uncollectible bad debt expense and close the account to prevent further billing attempts",
+   "Refer the account to an external collection agency or attorney while maintaining documentation of collection efforts and continuing to age the debt",
+   "Suspend the patient's access to future appointments and services until the full balance plus late fees are paid in advance",
+   "Offer a 50% settlement discount to resolve the account quickly and reallocate the forgiven portion as a contractual adjustment"
+  ],
+  "correct_index": 1,
+  "explanation": "A 120-day past-due account with documented collection efforts should be referred to an external collection agency or attorney to pursue recovery while the practice maintains a record of all collection activities. This approach preserves the account's status, pursues resolution through specialized collectors, and keeps all documentation for financial reporting and audit purposes.",
+  "knowledge_area": "Managing Financial Functions",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When recording a patient's medical history, which combination of elements should be documented to establish a comprehensive baseline for clinical decision-making?",
+  "options": [
+   "Current medications, family medical history, allergies, and reason for visit",
+   "Insurance information, emergency contact details, and employment status",
+   "Previous surgical procedures, current symptoms, vital sign trends, and medication allergies",
+   "Patient demographics, pharmacy preferences, and preferred appointment times"
+  ],
+  "correct_index": 2,
+  "explanation": "A comprehensive medical history requires clinically relevant information: previous surgical procedures establish baseline health status, current symptoms guide diagnosis, vital sign trends show patterns, and medication allergies prevent adverse reactions. While other elements matter administratively, they do not directly inform the clinical care plan or treatment decisions.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "A healthcare administrator observes that vital signs are recorded inconsistently across patient charts—some use different time intervals and measurement techniques. Which standardized procedures should be implemented to ensure reliable vital sign reporting?",
+  "options": [
+   "Record temperature only, document blood pressure at each visit, note respiratory rate when abnormal, and skip heart rate if patient is calm",
+   "Establish consistent measurement intervals, use calibrated equipment, document technique used, and record all readings at the same time of day",
+   "Take vital signs only when the patient requests it, use whatever equipment is available, record approximate values, and update charts weekly",
+   "Measure temperature and blood pressure daily, skip heart rate and respiratory rate, use non-standardized timing, and round all values to nearest whole number"
+  ],
+  "correct_index": 1,
+  "explanation": "Reliable vital sign reporting requires consistency in timing, calibrated instruments, documented technique, and standardized procedures—all of which ensure reproducibility and accuracy for clinical interpretation. Selective or approximate recording undermines the diagnostic value of vital signs and compromises the medical record's integrity and legal validity.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "While reviewing patient charts, an administrator notices discrepancies between the vital signs displayed on the cardiac monitor and the values manually recorded by nursing staff. What is the most appropriate interpretation of this discrepancy when using metering devices?",
+  "options": [
+   "The monitor readings are always incorrect and should be discarded in favor of manual documentation",
+   "Manual readings are more reliable because they involve direct patient contact and observation",
+   "The metering device readings require verification against the patient's clinical presentation and comparison with baseline trends to identify device calibration or user error issues",
+   "Both readings should be averaged together and recorded as a single value on the patient chart"
+  ],
+  "correct_index": 2,
+  "explanation": "Interpreting metering device readings requires critical analysis: the discrepancy may indicate device calibration problems, operator error, or artifact rather than assuming either source is automatically correct or averaging them inappropriately. The correct approach is verification against clinical observation and trend analysis to determine which reading is accurate.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "During a physical examination, a patient reports dizziness and anxiety while blood pressure readings show a sudden 20 mmHg increase from baseline. How should the healthcare administrator record the patient's responses to ensure the charting technique captures the clinical context?",
+  "options": [
+   "Document only the numerical blood pressure value and omit subjective patient complaints to maintain objectivity",
+   "Record vital sign values separately and document the patient's reported symptoms, associated behavioral observations, and time correlation to establish cause-and-effect relationships",
+   "Note the patient's symptoms in the chart but disregard vital sign changes since numbers are always more reliable than patient self-report",
+   "Chart the patient's anxiety as a psychological issue unrelated to the physical examination findings and vital sign elevation"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective charting technique integrates objective findings (vital signs) with subjective patient responses (symptoms, anxiety, dizziness) and behavioral observations, establishing temporal relationships that guide clinical interpretation. Omitting context or artificially separating objective and subjective data undermines the medical record's completeness and diagnostic usefulness.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "A healthcare administrator must ensure that patient lab results, medication orders, and vital sign documentation are recorded in both manual charts and the electronic health record system with consistency. Which charting techniques and correct chart forms should be prioritized to maintain data integrity across both systems?",
+  "options": [
+   "Use different formats for manual and electronic records to allow flexibility, update electronic records only when convenient, and ignore discrepancies between systems",
+   "Enter data into electronic systems first, skip manual documentation to save time, and rely solely on automatic data synchronization between platforms",
+   "Establish standardized entry protocols for both systems, use approved chart forms that map to electronic fields, verify consistency between manual and electronic entries, and document source of any discrepancies",
+   "Maintain manual charts as primary records, avoid entering data into electronic systems, and use whichever chart form is easiest to complete regardless of standardization"
+  ],
+  "correct_index": 2,
+  "explanation": "Maintaining data integrity across dual-record systems requires standardized protocols, approved forms that align between manual and electronic platforms, and active verification—not passive reliance on automatic synchronization or format flexibility. Documenting discrepancies and sources ensures traceability and prevents clinical errors from conflicting records.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "When documenting a patient's medical history, which combination of elements should be prioritized to ensure comprehensive clinical assessment?",
+  "options": [
+   "Chief complaint, medication allergies, family disease history, and current medication list",
+   "Insurance provider details, emergency contact information, and billing address",
+   "Patient occupation, marital status, number of children, and religious preferences",
+   "Previous surgeries, immunization records, social history, and review of systems"
+  ],
+  "correct_index": 0,
+  "explanation": "Chief complaint, allergies, family history, and current medications are core medical history elements that directly inform clinical decision-making and patient safety. The other options contain demographic or administrative data that, while useful, are secondary to the clinical assessment elements required for safe and effective care.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "A patient presents with an elevated blood pressure reading of 158/94 mmHg. Which charting technique should be used to document this finding along with the patient's reported symptoms of dizziness and fatigue?",
+  "options": [
+   "Objective findings recorded in the vital signs column with subjective symptoms noted separately in the progress note",
+   "All data entered into the assessment section without distinguishing between measured values and patient-reported symptoms",
+   "Vital signs placed in the diagnosis field with symptoms documented in the treatment plan section",
+   "Numeric readings recorded in the vital signs field only, with symptoms omitted if the patient is stable"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper charting technique requires separating objective measurements (vital signs) from subjective patient reports (symptoms), allowing clinicians to distinguish clinical data from patient perception. This separation ensures accurate clinical interpretation and appropriate follow-up based on both measurable findings and reported experiences.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "During a patient intake appointment, you must record vital signs and patient responses to initial screening questions. Which sequence of documentation steps best reflects standard procedure for filing and reporting this information?",
+  "options": [
+   "Record vital signs immediately, document patient responses to screening questions, verify data accuracy, and transmit to the electronic health record system",
+   "Ask all screening questions first, estimate vital signs based on patient appearance, compile results into a summary, and file paper copies",
+   "Enter vital signs into the computer system, skip documented patient responses if time is limited, and update the chart at end of shift",
+   "Photograph the vital signs monitor, record patient mood verbally to staff, include informal notes in the chart, and email results to the physician"
+  ],
+  "correct_index": 0,
+  "explanation": "Standard procedure requires taking vital signs first, documenting patient responses accurately and contemporaneously, verifying all data for accuracy before submission, and entering information into the official health record system to ensure proper care coordination. The other options omit critical steps, introduce inaccuracy, or violate documentation standards.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "When interpreting a pulse oximetry reading of 92% on room air for a patient with mild asthma history, which documentation approach correctly reflects both the metering device data and the clinical context needed for care decisions?",
+  "options": [
+   "Record the SpO₂ percentage with the patient's oxygen delivery method, baseline respiratory rate, and any respiratory symptoms reported during measurement",
+   "Note only the 92% reading without additional context to avoid assumptions about clinical significance",
+   "Document the SpO₂ as low without recording the actual percentage or environmental conditions",
+   "Record the reading as normal since it exceeds 90% and omit information about the patient's respiratory history"
+  ],
+  "correct_index": 0,
+  "explanation": "Complete interpretation of metering device readings requires documenting the actual value, the delivery method (room air vs. supplemental oxygen), relevant vital signs, and the clinical context (patient history and symptoms). This holistic documentation allows clinicians to assess whether the reading is acceptable for this specific patient and guides treatment decisions.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ },
+ {
+  "question": "A patient's lab results show elevated creatinine and potassium levels. When answering a patient inquiry about these results using correct medical terminology, which response demonstrates appropriate communication while maintaining clinical accuracy?",
+  "options": [
+   "Explain that kidney function markers are elevated and recommend they contact their physician immediately for interpretation and possible medication adjustment",
+   "Reassure the patient that minor lab variations are normal and schedule a follow-up appointment in several months",
+   "Use only lay terms like 'your numbers are a little high' without referencing the specific tests or clinical implications",
+   "State that the results are abnormal but provide no explanation, referring all questions to the laboratory technician"
+  ],
+  "correct_index": 0,
+  "explanation": "Answering patient inquiries correctly requires using appropriate medical terminology (kidney function, creatinine, potassium), explaining clinical significance in understandable terms, and directing the patient to the physician for clinical interpretation and management decisions. The other responses either under-communicate clinical importance or fail to use proper terminology while maintaining the healthcare team's authority over clinical decisions.",
+  "difficulty": "hard",
+  "knowledge_area": "Medical History"
+ }
+]

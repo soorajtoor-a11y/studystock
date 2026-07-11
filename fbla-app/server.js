@@ -119,6 +119,65 @@ function extractJSON(raw) {
 }
 
 // ---------------------------------------------------------------------------
+// Pre-generated question bank helpers
+// ---------------------------------------------------------------------------
+
+function loadBank(event) {
+  const bankPath = path.join(MATERIALS_DIR, event, 'question-bank.json');
+  if (!fs.existsSync(bankPath)) return null;
+  try { return JSON.parse(fs.readFileSync(bankPath, 'utf8')); }
+  catch { return null; }
+}
+
+function bankToQuizFormat(q) {
+  const letters = ['A', 'B', 'C', 'D'];
+  return {
+    question:       q.question,
+    options:        { A: q.options[0], B: q.options[1], C: q.options[2], D: q.options[3] },
+    answer:         letters[q.correct_index],
+    explanation:    q.explanation,
+    knowledge_area: q.knowledge_area,
+    difficulty:     q.difficulty,
+  };
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Try to serve `count` questions from the bank matching `difficulty`.
+// For section-scoped requests, filter by knowledge_area.
+// Returns an array of quiz-format questions, or null if bank can't satisfy.
+function serveFromBank(event, objective, count, difficulty) {
+  const bank = loadBank(event);
+  if (!bank) return null;
+
+  let pool = difficulty ? bank.filter(q => q.difficulty === difficulty) : bank;
+
+  // If this is a section-scoped request (not a full-event review), try to
+  // narrow to matching knowledge areas by checking for overlap in words.
+  const isFullEvent = objective.toLowerCase().includes('complete review');
+  if (!isFullEvent) {
+    const objWords = new Set(
+      objective.toLowerCase().split(/\W+/).filter(w => w.length > 4)
+    );
+    const sectionPool = pool.filter(q => {
+      const areaWords = (q.knowledge_area || '').toLowerCase().split(/\W+/);
+      return areaWords.some(w => w.length > 4 && objWords.has(w));
+    });
+    if (sectionPool.length >= count) pool = sectionPool;
+  }
+
+  if (pool.length < count) return null;
+  return shuffle(pool).slice(0, count).map(bankToQuizFormat);
+}
+
+// ---------------------------------------------------------------------------
 // File helpers
 // ---------------------------------------------------------------------------
 
@@ -421,9 +480,18 @@ Rules:
 // Routes
 // ---------------------------------------------------------------------------
 
-// Quiz generation — retries up to 3 times total, slices to exact count
+// Quiz generation — serves from pre-generated bank when available, falls back to AI
 app.post('/api/quiz', async (req, res) => {
   const { event, objective, count, difficulty } = req.body;
+
+  // Fast path: serve from pre-generated bank (instant, no AI cost)
+  const banked = serveFromBank(event, objective, count, difficulty);
+  if (banked) {
+    console.log(`[bank] serving ${banked.length} ${difficulty} questions for ${event}`);
+    return res.json({ questions: banked, source: 'bank' });
+  }
+
+  // Slow path: generate with AI
   const outline = extractRelevantSection(getOutline(event), objective);
   const extras  = getExtras(event);
   const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty, extras);
@@ -436,7 +504,7 @@ app.post('/api/quiz', async (req, res) => {
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       return extractJSON(raw);
     });
-    res.json({ questions: questions.slice(0, count) });
+    res.json({ questions: questions.slice(0, count), source: 'ai' });
   } catch (err) {
     console.error('Quiz error:', err.message);
     res.status(500).json({ error: err.message });

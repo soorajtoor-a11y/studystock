@@ -1,0 +1,652 @@
+[
+ {
+  "question": "A company implements a firewall that blocks all incoming traffic by default and only allows specific ports and protocols approved by policy. Which security principle does this configuration best exemplify?",
+  "options": [
+   "Integrity verification through cryptographic checksums on all inbound packets",
+   "Confidentiality protection by encrypting data in transit across network segments",
+   "Availability assurance by load-balancing traffic across multiple security appliances",
+   "Least privilege access by permitting only explicitly authorized network connections"
+  ],
+  "correct_index": 3,
+  "explanation": "Least privilege access is the security principle of granting only the minimum permissions necessary for legitimate function. A default-deny firewall that whitelists specific ports and protocols follows this principle by blocking all unauthorized traffic. The other options describe encryption, redundancy, and data validation—distinct security controls that don't capture the principle of minimal permitted access.",
+  "difficulty": "hard",
+  "knowledge_area": "Security"
+ },
+ {
+  "question": "An attacker performs a footprinting attack to gather information about a target organization's network infrastructure, systems, and email servers without triggering detection. How does this threat differ from a DDoS attack in terms of intent and execution?",
+  "options": [
+   "Footprinting is passive reconnaissance to map vulnerabilities; DDoS is an active denial-of-service that floods systems with traffic to disrupt availability",
+   "Footprinting encrypts stolen data and demands ransom; DDoS exploits SQL injection flaws in databases",
+   "Footprinting installs persistent backdoors for long-term access; DDoS launches malware through email phishing campaigns",
+   "Footprinting hijacks legitimate user sessions; DDoS performs man-in-the-middle interception on wireless networks"
+  ],
+  "correct_index": 0,
+  "explanation": "Footprinting is a passive intelligence-gathering phase where attackers collect network information to identify potential vulnerabilities, while DDoS is an active attack that floods target systems with requests to overwhelm and deny legitimate service. Footprinting precedes actual exploitation; DDoS is a direct assault. The other options conflate unrelated attack types such as ransomware, SQL injection, malware distribution, and session hijacking.",
+  "difficulty": "hard",
+  "knowledge_area": "Security"
+ },
+ {
+  "question": "An organization discovers that an internal employee has been exporting customer data through a cloud storage service while bypassing the corporate firewall. Which combination of security controls would most effectively prevent and detect this type of threat?",
+  "options": [
+   "Access control policies that restrict employee roles, data loss prevention tools that monitor unauthorized transfers, and event logging that records data access and exports",
+   "Antivirus scanning on all downloaded files, Wi-Fi Protected Access 3 encryption, and phishing awareness training for remote workers",
+   "SQL injection vulnerability patching, zero-day exploit detection, and denial-of-service mitigation strategies",
+   "Social engineering prevention frameworks, spoofing detection filters, and biometric authentication on all endpoint devices"
+  ],
+  "correct_index": 0,
+  "explanation": "This insider threat requires layered controls: role-based access control limits what data employees can access, data loss prevention tools actively monitor and block suspicious transfers, and comprehensive event logging provides forensic evidence. The other options address external threats (phishing, DDoS), infrastructure vulnerabilities (SQL injection, zero-day), and authentication—not the specific combination needed to prevent and detect insider data exfiltration.",
+  "difficulty": "hard",
+  "knowledge_area": "Security"
+ },
+ {
+  "question": "A company implements WPA3 for its wireless network but continues to use WPA2 on legacy systems. What is the primary security advantage of WPA3 over WPA2, and when would the older standard create the greatest risk?",
+  "options": [
+   "WPA3 supports AES encryption while WPA2 uses TKIP only; risk is highest when TKIP-encrypted networks are near public areas where attackers can eavesdrop",
+   "WPA3 protects against brute-force attacks through Simultaneous Authentication of Equals and individualized data encryption; WPA2 with shared PSK is vulnerable when users reuse weak passphrases across networks",
+   "WPA3 eliminates the need for firewalls and eliminates zero-day exploits entirely; WPA2 requires constant firmware updates to address emerging vulnerabilities",
+   "WPA3 performs real-time malware scanning on all connected devices; WPA2 only logs audit events without actively preventing intrusions"
+  ],
+  "correct_index": 1,
+  "explanation": "WPA3's Simultaneous Authentication of Equals (SAE) replaces WPA2's Pre-Shared Key (PSK) exchange, protecting against offline dictionary attacks and brute-force attempts on weak passwords. WPA2's reliance on a shared passphrase creates highest risk when users deploy weak, reused credentials. The other options contain false claims: WPA3 does not eliminate firewalls or zero-days, WPA2 supported AES (not only TKIP), and WPA3 does not perform device-level malware scanning.",
+  "difficulty": "hard",
+  "knowledge_area": "Security"
+ },
+ {
+  "question": "An organization experiences a sophisticated attack in which an attacker intercepts network traffic, modifies legitimate data packets, and forwards them to their destination while remaining undetected. Which element of the CIA triad is most directly compromised, and what control would best mitigate this specific threat?",
+  "options": [
+   "Availability is compromised; implement access control lists and firewall rules to block traffic from suspicious IP ranges",
+   "Integrity is compromised; implement digital signatures and cryptographic checksums that detect unauthorized modifications to data in transit",
+   "Confidentiality is compromised; deploy antivirus software and intrusion detection systems to identify and quarantine malicious payloads",
+   "Confidentiality is compromised; enable event logging and auditing to track which users accessed sensitive information and when"
+  ],
+  "correct_index": 1,
+  "explanation": "Data packet modification attacks target integrity—the assurance that data has not been altered. Digital signatures and cryptographic checksums allow recipients to detect when data has been tampered with. Confidentiality protects against unauthorized disclosure (encryption), and availability protects against service disruption (redundancy, DDoS mitigation). Access control, antivirus, and logging address other threats but do not detect in-flight data tampering.",
+  "difficulty": "hard",
+  "knowledge_area": "Security"
+ },
+ {
+  "question": "A system administrator implements access control lists and event logging on a network. Which security objective is most directly supported by combining these two controls?",
+  "options": [
+   "Ensuring that only authorized users can access resources while maintaining an auditable record of who accessed what and when",
+   "Preventing external attackers from intercepting data in transit by encrypting all network communications",
+   "Reducing the attack surface by disabling unnecessary services and patching known vulnerabilities",
+   "Detecting and blocking malicious code before it executes by scanning files against a database of known threats"
+  ],
+  "correct_index": 0,
+  "explanation": "Access control lists restrict who can access resources (confidentiality and integrity), while event logging creates an auditable trail of access attempts (accountability). Together, they form a detective and preventive control pair. The other options describe different security measures like encryption, vulnerability management, and antivirus scanning.",
+  "knowledge_area": "Security",
+  "difficulty": "easy"
+ },
+ {
+  "question": "An attacker uses a fake website that mimics a legitimate banking portal to collect login credentials from users. Later, the attacker launches a coordinated attack from hundreds of compromised machines against the bank's web server. Which two distinct threat types are demonstrated in this scenario?",
+  "options": [
+   "Phishing and DDoS attack",
+   "SQL injection and footprinting",
+   "Social engineering and zero-day vulnerability",
+   "Spoofing and malware infection"
+  ],
+  "correct_index": 0,
+  "explanation": "The fake website collecting credentials is phishing, a social engineering technique. The coordinated attack from many machines is a Distributed Denial of Service (DDoS) attack. SQL injection targets databases, footprinting is reconnaissance, zero-day is an unpatched flaw, spoofing falsifies identity, and malware is executable code—none of these pairs match the scenario.",
+  "knowledge_area": "Security",
+  "difficulty": "easy"
+ },
+ {
+  "question": "A company's firewall is configured to block inbound traffic on all ports except 80 and 443, while antivirus software runs with real-time file scanning enabled. An internal employee installs a remote access tool that communicates over HTTPS on port 443 without authorization. Which security principle is primarily compromised in this scenario?",
+  "options": [
+   "Integrity, because the firewall cannot distinguish between legitimate HTTPS traffic and the unauthorized remote access tool using the same port",
+   "Availability, because blocking unauthorized ports reduces the number of services users can access",
+   "Confidentiality, because the employee's actions expose sensitive data to external parties",
+   "Authentication, because the antivirus software cannot verify the digital signature of the remote access tool"
+  ],
+  "correct_index": 0,
+  "explanation": "This is a hard question because it tests understanding of CIA triad limitations. The firewall's port-based rules cannot distinguish between legitimate HTTPS and malicious HTTPS traffic, compromising the integrity of the system's control (the tool allows unauthorized modification of system state). While confidentiality may also be at risk, the question focuses on why the controls failed—because they cannot enforce integrity at the application level. Availability and authentication are not the primary issue here.",
+  "knowledge_area": "Security",
+  "difficulty": "easy"
+ },
+ {
+  "question": "An organization discovers that a former employee's account was used to access confidential files three weeks after the employee's departure. The IT department had disabled the account immediately but had not reviewed the audit logs. Which combination of vulnerabilities allowed this incident?",
+  "options": [
+   "Non-compliance with regular audit log review procedures and insufficient deprovisioning protocols in the access control policy",
+   "A zero-day vulnerability in the authentication system that bypassed password requirements",
+   "Spyware installed on the employee's computer that captured credentials during the notice period",
+   "Spoofing of the employee's IP address by an external attacker who guessed the account password"
+  ],
+  "correct_index": 0,
+  "explanation": "The vulnerability was organizational, not technical: the account was disabled (deprovisioning happened) but logs were not reviewed, so the breach went undetected. This reflects non-compliance with security procedures and gaps in auditing. A zero-day would have bypassed authentication entirely, spyware would require prior installation, and spoofing would be an external attack—none explains how the account was accessed three weeks after disabling.",
+  "knowledge_area": "Security",
+  "difficulty": "easy"
+ },
+ {
+  "question": "An organization uses WPA2 for wireless security but discovers that an attacker obtained the pre-shared key through social engineering and connected to the network. After the incident, management upgrades to WPA3. Which specific improvement in WPA3 most directly mitigates the risk of this attack repeating?",
+  "options": [
+   "Simultaneous Authentication of Equals (SAE) replaces the Pre-Shared Key (PSK) handshake, providing protection against dictionary attacks and brute-force attempts even if the pre-shared key is compromised",
+   "WPA3 uses AES-256 encryption instead of AES-128, doubling the key length and making credential theft impossible",
+   "WPA3 implements certificate-based authentication that eliminates the need for user-supplied passwords entirely",
+   "WPA3 adds continuous monitoring and event logging that immediately detects and reports unauthorized access attempts"
+  ],
+  "correct_index": 0,
+  "explanation": "WPA3's Simultaneous Authentication of Equals (SAE) is specifically designed to be resistant to brute-force and dictionary attacks on the pre-shared key, directly addressing the scenario where an attacker uses a compromised PSK. WPA2 used the older PSK handshake (Four-Way Handshake), which is vulnerable to offline attacks. The other options describe features that are either not accurate (WPA3 still uses similar encryption lengths relative to the threat model) or are not unique mitigations for compromised PSK scenarios.",
+  "knowledge_area": "Security",
+  "difficulty": "easy"
+ },
+ {
+  "question": "A Windows system fails to boot after a recent driver update, and the user cannot access Safe Mode. Which combination of boot methods and recovery tools would most effectively diagnose whether the issue originates in the firmware POST sequence versus the OS loader?",
+  "options": [
+   "Use USB recovery media to boot an alternate OS, run ipconfig to verify network connectivity, then check the registry for driver conflicts in the backup hive",
+   "Perform a hard restart to trigger POST diagnostics, attempt boot from USB recovery media, and use command-line tools to access the system registry and review driver entries",
+   "Boot into Recovery Mode using F8, run disk cleanup to remove corrupted drivers, then use mkdir commands to rebuild the file system directory structure",
+   "Access the BIOS during POST to disable USB boot options, restart in Safe Mode with networking, and use cat command to view system log files for driver errors"
+  ],
+  "correct_index": 1,
+  "explanation": "A hard restart triggers the POST sequence, which helps isolate firmware-level issues from OS-level failures. USB recovery media allows diagnosis outside the corrupted main OS, and command-line access to the registry and driver information definitively reveals whether the driver itself or its registry entry caused the boot failure. Option A confuses network diagnostics with boot-sequence debugging; Option C attempts to rebuild the file system without diagnosing the actual cause; Option D incorrectly disables the recovery method needed and confuses Linux tools with Windows registry access.",
+  "difficulty": "hard",
+  "knowledge_area": "Operating Systems"
+ },
+ {
+  "question": "An organization must select a file system for a 2 TB external drive that will store both legacy FAT32-formatted archives and new high-resolution media files exceeding 4 GB each, while maintaining compatibility across Windows and macOS systems. Which file system addresses all three constraints most effectively?",
+  "options": [
+   "NTFS, because it supports files larger than 4 GB and includes journaling for data integrity, though compatibility with macOS requires third-party drivers for write access",
+   "ExFAT, because it supports individual files larger than 4 GB, works natively on both Windows and macOS, and can coexist with legacy FAT32 partitions on the same drive",
+   "FAT32, because it maintains universal compatibility across all operating systems and allows the drive to be partitioned to isolate the legacy archives from new media files",
+   "A hybrid approach using NTFS for new files and FAT32 for legacy content, formatted as separate logical volumes with a shared partition table for cross-platform access"
+  ],
+  "correct_index": 1,
+  "explanation": "ExFAT removes the 4 GB per-file limit of FAT32, provides native support on both Windows and macOS without third-party drivers, and can be used alongside legacy FAT32 archives through repartitioning if needed. NTFS lacks native macOS write support; FAT32 cannot exceed the 4 GB file-size limitation; and the hybrid approach adds unnecessary complexity since ExFAT handles all requirements in a single file system.",
+  "difficulty": "hard",
+  "knowledge_area": "Operating Systems"
+ },
+ {
+  "question": "During OS upgrade planning, a system administrator must weigh hardware compatibility, registry migration, and virtual memory allocation for a transition from a 32-bit to 64-bit Windows installation on machines with 4 GB of physical RAM. Which consideration most directly impacts whether the upgrade will improve system stability rather than create new bottlenecks?",
+  "options": [
+   "The 64-bit OS will double the virtual memory ceiling and allow the registry to expand beyond 2 GB, reducing the frequency of disk paging and registry corruption errors",
+   "Existing device drivers compiled for 32-bit architecture must be reinstalled as 64-bit versions, and virtual memory should be configured larger than physical RAM to leverage the expanded address space",
+   "The 64-bit OS can address more than 4 GB of RAM if added later, but on systems with only 4 GB, virtual memory efficiency depends on proper page file sizing and driver compatibility to avoid resource contention",
+   "The registry will automatically migrate and optimize for 64-bit operations, while virtual memory will be disabled by default to prevent conflicts with 64-bit address space management"
+  ],
+  "correct_index": 2,
+  "explanation": "With only 4 GB of physical RAM, the bottleneck is not the OS architecture itself but proper configuration of virtual memory and ensuring all drivers support 64-bit execution to prevent incompatibility-induced thrashing. Option A overstates registry expansion benefits on a 4 GB system; Option B incorrectly suggests virtual memory should exceed physical RAM as a general strategy; Option D is false because the registry does not auto-optimize and virtual memory remains essential even on 64-bit systems.",
+  "difficulty": "hard",
+  "knowledge_area": "Operating Systems"
+ },
+ {
+  "question": "A legacy application written for Windows XP fails to launch on Windows 10, displaying a compatibility error. The administrator observes that the app requires direct hardware access and uses deprecated API calls. Which sequence of configuration and diagnostic steps best determines whether compatibility mode alone can resolve the issue versus requiring full OS virtualization?",
+  "options": [
+   "Enable compatibility mode for Windows XP SP3, disable fullscreen optimizations, run the app, use cd and mkdir commands to inspect the installation directory permissions, then check Device Manager for unsigned driver warnings",
+   "Configure the application to run in compatibility mode for Windows XP, enable reduced color mode and lower resolution settings, use ipconfig to verify network isolation, then review the registry for deprecated API references",
+   "Apply compatibility mode for Windows 7, compress the application files to reduce memory overhead, use cat command to inspect system logs for API failures, then disable User Account Control for the app process",
+   "Run the application in compatibility mode for Windows XP, disable fullscreen optimizations, attempt to launch and observe error messages, then use command-line tools to check for unsigned drivers and inspect the system registry for API compatibility entries"
+  ],
+  "correct_index": 3,
+  "explanation": "This sequence logically tests compatibility mode (the simplest fix), monitors for driver-related failures (which compatibility mode cannot fix and indicate virtualization is needed), and uses available tools to inspect whether deprecated APIs are the root cause. Option A confuses permission inspection with API diagnostics; Option B incorrectly uses network isolation (irrelevant to API compatibility); Option C applies the wrong OS version for XP compatibility and file compression does not address API issues.",
+  "difficulty": "hard",
+  "knowledge_area": "Operating Systems"
+ },
+ {
+  "question": "A Linux system experiences intermittent performance degradation during peak disk I/O. The administrator must distinguish between virtual memory thrashing, file system fragmentation, and insufficient inode allocation. Which sequence of command-line diagnostic tools most effectively isolates the root cause and guides remediation?",
+  "options": [
+   "Use cat /proc/meminfo to monitor virtual memory usage, run mkdir to create test files and measure write latency, then check ipconfig settings to optimize network buffer allocation",
+   "Monitor free memory and swap usage with cat /proc/meminfo, use df and cat /proc/sys/fs/file-max to check inode availability, and review disk I/O statistics to determine whether memory pressure or file system limits are the bottleneck",
+   "Create test directories with mkdir to simulate load, use ipconfig to isolate network latency from disk latency, then compress large files to reduce fragmentation and inode consumption",
+   "Run cat on all system logs to search for I/O errors, use cd to navigate partitions and manually inspect file fragmentation, then disable virtual memory to prevent thrashing at the cost of stability"
+  ],
+  "correct_index": 1,
+  "explanation": "This approach systematically checks virtual memory pressure (cat /proc/meminfo), file system limits and inode exhaustion (df and /proc/sys/fs/file-max), and correlates findings with disk I/O statistics to identify which bottleneck drives performance loss. Option A incorrectly uses ipconfig (a network tool) for disk optimization; Option C uses simulation rather than diagnosis and confuses fragmentation with inode issues; Option D wastes time on log searching and disabling virtual memory is dangerous and counterproductive.",
+  "difficulty": "hard",
+  "knowledge_area": "Operating Systems"
+ },
+ {
+  "question": "A computer on a LAN needs to send data to a host on a remote WAN. Which pair of addresses must be resolved to complete the transmission: one for local delivery and one for routing across the internet?",
+  "options": [
+   "The source MAC address for the local gateway and the destination IPv4 address for the remote host",
+   "The destination MAC address for the local gateway and the destination IPv4 address for the remote host",
+   "The source IPv6 address for the local network and the destination MAC address for the internet backbone",
+   "The destination IPv4 address for the local subnet and the source MAC address for the router interface"
+  ],
+  "correct_index": 1,
+  "explanation": "When sending data across a WAN, the local MAC address must reach the gateway (via ARP resolution), while the destination IP address routes the packet across the internet. The other options confuse source/destination pairing or misapply IPv6 and MAC addresses to wide-area routing, which relies on IP addresses, not MAC addresses beyond the local segment.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "A network administrator configures DHCP on a server with a pool of 254 addresses but observes that only 200 can be assigned to clients simultaneously. Which factor most likely explains this discrepancy?",
+  "options": [
+   "The DHCP server reserves the network address, broadcast address, and gateway address, reducing available IPs",
+   "UDP protocol overhead consumes approximately 21 addresses in the pool before assignment begins",
+   "The administrator configured static IP reservations for 54 devices outside the DHCP pool range",
+   "IPv4 and IPv6 dual-stack mode allocates addresses across two protocols, splitting the pool capacity"
+  ],
+  "correct_index": 0,
+  "explanation": "In any subnet, the network address (first), the gateway address (typically second or .254), and the broadcast address (last) are reserved and unavailable for DHCP assignment. The other options misrepresent protocol overhead (UDP does not reserve addresses), static reservations (which would be separate from the pool), and dual-stack operation (which does not halve a single pool).",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "Three protocols—TCP/IP, UDP, and SSH—are candidates for transmitting sensitive financial data over a WAN. Which combination correctly matches protocols to their primary transport characteristics and security roles?",
+  "options": [
+   "TCP/IP for reliable ordered delivery, UDP for encrypted authentication tunnels, SSH for fast unacknowledged datagrams",
+   "TCP/IP for reliable ordered delivery, UDP for low-latency connectionless transmission, SSH for encrypted secure shell access",
+   "TCP/IP for stateless packet switching, UDP for encrypted tunnel creation, SSH for guaranteed delivery with retransmission",
+   "TCP/IP for broadcast flooding, UDP for secure point-to-point channels, SSH for multicast audio streaming"
+  ],
+  "correct_index": 1,
+  "explanation": "TCP/IP provides reliable, ordered delivery; UDP offers low-latency connectionless transmission; and SSH provides encrypted secure remote access. The other options either reverse protocol characteristics (e.g., claiming UDP is encrypted by default or TCP is stateless) or assign wrong use cases (TCP/IP is not for broadcast flooding, SSH is not for streaming).",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "A switch, router, and modem are installed on a small office network. If a workstation cannot reach external websites, but can communicate with other workstations on the same LAN, which device is most likely the source of the failure and why?",
+  "options": [
+   "The modem, because it bridges the ISP connection and provides WAN connectivity; the switch cannot forward traffic beyond the LAN",
+   "The router, because it performs NAT translation and routes packets to the WAN; the switch only manages LAN frames",
+   "The switch, because it controls all MAC address learning and must resolve DNS queries before routing occurs",
+   "The modem, because it assigns DHCP addresses and determines which devices can access the gateway interface"
+  ],
+  "correct_index": 1,
+  "explanation": "The router is responsible for routing traffic from the LAN to the WAN and vice versa; if internal LAN communication works but external access fails, the router's WAN interface or routing configuration is the likely culprit. The switch only manages LAN frames and does not route to external networks. The modem is a bridge to the ISP; failure here would typically affect all WAN attempts, but DNS resolution failure or DHCP issues would have other symptoms. The switch does not perform DNS queries—that is a client or DNS server function.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "When a client device joins a wireless network using 802.11ac, it must obtain an IP address dynamically. Which sequence correctly describes the order of protocol operations: address assignment, network authentication, and address-to-hardware mapping?",
+  "options": [
+   "802.11ac association, DHCP request and server response, ARP resolution of the gateway MAC address",
+   "DHCP request to the broadcast address, 802.11ac authentication and association, DNS lookup of the gateway IP",
+   "802.11ac authentication and association, ARP broadcast for the default gateway, DHCP discover and lease acceptance",
+   "DNS query for network resources, 802.11ac association, static IP configuration verification by DHCP server"
+  ],
+  "correct_index": 0,
+  "explanation": "The correct order is: 802.11ac association establishes the wireless link, DHCP assigns an IP address, and ARP resolves the gateway's MAC address for local forwarding. The other options either misorder these steps (DHCP before wireless association cannot work), introduce unnecessary steps (DNS lookup is not required before obtaining an IP), or misapply mechanisms (static configuration is not verified by DHCP; DNS is not needed to join the network).",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "A user reports that their laptop battery drains rapidly even when the device is powered off. Which combination of preventive care factors most likely explains this issue?",
+  "options": [
+   "Excessive heat exposure during storage and a failing charging circuit that continues to draw power from the battery",
+   "Accumulated dust blocking cooling vents, causing the CPU to overheat and trigger battery drain during idle periods",
+   "Improper cleaning with liquid solvents that corroded internal connections and degraded the battery's chemical composition",
+   "Frequent full discharge cycles combined with storage in cold temperatures that reduced the battery's overall capacity threshold"
+  ],
+  "correct_index": 0,
+  "explanation": "A laptop drawing power while off typically indicates a hardware fault in the charging circuit or power management system, not dust or cleaning issues. Excessive heat during storage can also degrade battery chemistry and cause parasitic drain. The other options describe real issues but don't explain continuous drain when the device is powered down.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A mobile device user needs to transfer large video files to a laptop and synchronize them across a tablet. Which cross-device synchronization method would provide the fastest initial transfer while maintaining the most reliable ongoing updates across all three devices?",
+  "options": [
+   "Cloud storage service with automatic background sync enabled on all devices, accepting slightly slower initial upload in exchange for persistent multi-device availability",
+   "Direct USB connection between the phone and laptop for file transfer, then manual cloud backup to ensure the tablet receives copies",
+   "Bluetooth file sharing from phone to laptop, followed by Wi-Fi direct peer-to-peer transfer to the tablet for real-time synchronization",
+   "USB external drive physically moved between devices with manual folder merging to guarantee all three devices maintain identical file versions"
+  ],
+  "correct_index": 0,
+  "explanation": "Cloud storage is the only method that synchronizes across all three device types simultaneously and ensures future changes propagate automatically. USB and Bluetooth transfers are faster initially but create synchronization gaps and require manual intervention. Physical external drives are slow and error-prone for multi-device sync.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A technician is troubleshooting a laptop that connects intermittently to a Bluetooth wireless keyboard. The keyboard pairs successfully, disconnects after 5–10 minutes, and must be re-paired. What is the most likely cause given typical Bluetooth limitations?",
+  "options": [
+   "The keyboard's Bluetooth radio is operating in a different frequency band than the laptop's receiver, causing periodic signal loss and requiring re-pairing",
+   "The laptop's Bluetooth antenna is experiencing interference from a nearby 2.4 GHz Wi-Fi router on the same channel, and the keyboard lacks adaptive frequency hopping to maintain connection",
+   "The keyboard's battery voltage is dropping below the minimum required for stable transmission, triggering automatic disconnection as a power-saving safety feature",
+   "The laptop is set to disconnect idle Bluetooth devices after a fixed timeout period to conserve power, misinterpreting the keyboard's standby mode as a disconnection event"
+  ],
+  "correct_index": 1,
+  "explanation": "Bluetooth operates on the 2.4 GHz band shared with Wi-Fi, and interference from a nearby router is a common cause of frequent disconnections. While devices with frequency hopping can mitigate this, older keyboards may lack this capability. Frequency band mismatches are rare in modern devices; battery drain would cause complete failure, not periodic disconnection; and the timeout described is a software setting, not a hardware limitation explaining the exact symptoms.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A user's smartphone is unable to connect to a 5G network in an area where 5G coverage is advertised as available. The device connects reliably to LTE and connects to 5G only when actively using a hotspot. Which connectivity factor most likely accounts for this behavior?",
+  "options": [
+   "The phone's 5G modem requires a separate activation fee through the carrier, whereas hotspot activation automatically unlocks 5G capability without additional cost",
+   "The phone's 5G radio is disabled in the device's connectivity settings by default, but hotspot mode automatically enables all available wireless standards to maximize data throughput",
+   "The 5G network in that area is configured for hotspot devices only, while smartphones are routed to LTE unless they are actively tethering to another device",
+   "The phone's antenna has insufficient gain to detect 5G signals independently, but the hotspot function uses an external antenna connection that provides stronger reception capability"
+  ],
+  "correct_index": 1,
+  "explanation": "Some phones have 5G disabled by default in connectivity settings and enable it automatically when hotspot is activated to provide faster tethered speeds. Carrier fees and network-side restrictions don't match this specific pattern. Antenna gain doesn't change based on whether hotspot is active—the antenna is the same hardware in either mode.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A laptop user is considering replacing the internal battery and upgrading the RAM, but the device is 6 years old. Which combination of hardware replacement factors should influence this decision most heavily?",
+  "options": [
+   "Battery replacement cost relative to a new device, RAM upgrade compatibility with the laptop's motherboard and existing power delivery system, and whether the upgrade extends usable lifespan by at least 2–3 years",
+   "The laptop's current RAM capacity and CPU generation, the availability of replacement batteries at retail price, and whether the motherboard supports higher-frequency memory modules",
+   "Whether the power adapter can be reused for the new battery, the number of RAM slots available, and confirmation that the upgrade will not void the original manufacturer's warranty",
+   "The age of the device and its current condition, the cost of RAM modules relative to solid-state drives, and whether the laptop's thermal design can handle faster RAM without additional cooling upgrades"
+  ],
+  "correct_index": 0,
+  "explanation": "The most practical decision factors are cost-benefit (battery cost vs. new device), technical compatibility (RAM with motherboard and power delivery), and the resulting lifespan extension. While other options mention real considerations, they either prioritize less critical factors (warranty void, SSD cost) or assume compatibility without verifying it meets actual hardware requirements.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A user reports that their laptop battery drains significantly faster than when purchased, even during light web browsing. Which combination of preventive care factors most likely contributed to this degradation, and what should be prioritized first?",
+  "options": [
+   "Frequent full discharge cycles, accumulated dust blocking heat dissipation, and sustained high CPU temperatures during routine tasks—prioritize cleaning vents and thermal paste replacement",
+   "Infrequent charging cycles, inadequate RAM allocation, and disabled wireless connectivity—prioritize enabling power-saving modes and reducing background applications",
+   "Excessive heat accumulation from blocked cooling vents, frequent charge-discharge cycles without optimization, and aged battery chemistry—prioritize thermal management and charging habit adjustment",
+   "Outdated BIOS firmware, incompatible device drivers, and incorrect power plan settings—prioritize updating system software and reconfiguring sleep settings"
+  ],
+  "correct_index": 2,
+  "explanation": "Battery degradation in laptops stems primarily from heat exposure, charge-cycle stress, and chemical aging of the battery itself. While all options name real maintenance concerns, only option C correctly prioritizes the three factors that directly accelerate battery wear: thermal stress, charging patterns, and time-based chemistry decline. Options A and D conflate battery issues with unrelated maintenance tasks like thermal paste or firmware updates, while option B ignores the chemical and thermal drivers of battery degradation.",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A tablet user needs to transfer large design files between their iPad, Windows laptop, and Android smartphone while maintaining the ability to edit on any device. Which synchronization method addresses all three requirements most reliably without requiring device-specific software installation?",
+  "options": [
+   "USB direct connection between each device pairing with cloud backup to OneDrive for version control and cross-platform access",
+   "Wi-Fi peer-to-peer synchronization using native AirDrop on iOS, Nearby Share on Android, and Windows Share, rotating through each connection method",
+   "Cloud-based storage service with native clients available across all three platforms, combined with manual USB transfers as backup during connectivity loss",
+   "Bluetooth file transfer for initial sync, followed by scheduled LTE hotspot uploads to a platform-agnostic cloud service for ongoing updates"
+  ],
+  "correct_index": 2,
+  "explanation": "The scenario requires cross-device editing on three different OS platforms (iOS, Windows, Android) with large files. Cloud storage with native clients (like Google Drive, Dropbox, or OneDrive) provides seamless, automatic synchronization across all three platforms without OS barriers, while USB backup ensures reliability during network outages. Option A limits itself to Microsoft ecosystem; option B excludes Windows effectively; option D introduces unnecessary complexity and Bluetooth's bandwidth limitations for large files.",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A mobile device user attempts to pair a Bluetooth headset but experiences repeated connection failures and audio dropouts once paired. After verifying device compatibility and proximity, which limitation or requirement most likely explains this behavior?",
+  "options": [
+   "Bluetooth version mismatch between the headset and phone, requiring a device operating system update to support the newer protocol specification",
+   "Interference from concurrent 2.4 GHz Wi-Fi, ZigBee, or microwave appliances overwhelming the limited bandwidth and range of the Bluetooth connection",
+   "Insufficient battery charge on the mobile device reducing transmission power and the maximum Bluetooth effective range to under three meters",
+   "Outdated Bluetooth drivers on the phone incompatible with the headset's codec, requiring manual driver installation from the manufacturer's support page"
+  ],
+  "correct_index": 1,
+  "explanation": "Bluetooth operates on the congested 2.4 GHz spectrum shared with Wi-Fi, microwave ovens, and other wireless devices; interference on this band is the most common cause of pairing failures and dropouts in active-use scenarios. Option A conflates version mismatches (which usually prevent pairing entirely); option C overstates battery's role in range reduction; option D incorrectly assumes phones allow manual driver installation like computers do. The shared-spectrum interference mechanism directly explains both initial failures and intermittent audio dropout.",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A laptop user experiences intermittent Wi-Fi disconnections that resolve temporarily after toggling airplane mode, but 5G hotspot tethering from their phone remains stable on the same journey. Which connectivity troubleshooting step should be performed next, and why?",
+  "options": [
+   "Update the laptop's Wi-Fi driver and BIOS firmware, then reconfigure the wireless adapter's power management settings to prevent aggressive sleep states that drop the connection",
+   "Inspect the laptop's Wi-Fi antenna connectors and replace the internal Wi-Fi card if corrosion or loose connections are visible, as this indicates hardware failure",
+   "Switch the laptop's network adapter from 5 GHz to 2.4 GHz band and move closer to the router, since intermittent loss suggests weak signal strength specific to Wi-Fi infrastructure",
+   "Verify that the laptop's Wi-Fi adapter is not conflicting with the active 5G hotspot connection by disabling Bluetooth and clearing the stored network list cache"
+  ],
+  "correct_index": 0,
+  "explanation": "The key diagnostic clue is that the same device connects stably via 5G hotspot but fails on Wi-Fi—this isolates the issue to the Wi-Fi adapter or driver, not network availability. The temporary fix via airplane mode toggle suggests a software state problem rather than hardware failure. Updating drivers and adjusting power management settings addresses the most common cause of intermittent Wi-Fi drops in portables: aggressive adaptive power states. Option B premature hardware replacement; option C misattributes signal strength when the device can maintain 5G; option D incorrectly assumes hotspot interference.",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A laptop user wants to upgrade their device to handle video editing but is limited to 16 GB of soldered RAM and a PCIe 3.0 interface on their motherboard. Which component upgrade strategy best addresses the performance bottleneck while respecting hardware constraints?",
+  "options": [
+   "Replace the existing SSD with a PCIe 4.0 NVMe drive and upgrade the processor to one with integrated graphics, deferring RAM expansion until the next system purchase",
+   "Install an external Thunderbolt 3 GPU dock with dedicated video memory and upgrade the battery to support extended rendering sessions without power loss during processing",
+   "Upgrade the existing mechanical hard drive to an NVMe SSD, prioritize efficient RAM allocation and storage caching through software optimization, and defer major hardware changes",
+   "Add a secondary M.2 SSD expansion card and increase available system memory by replacing the internal battery with a lower-capacity variant to free physical space"
+  ],
+  "correct_index": 2,
+  "explanation": "Since RAM is soldered (non-upgradeable) and the motherboard uses PCIe 3.0, true hardware upgrade options are extremely limited. Video editing performance is bottlenecked by storage speed and workflow efficiency, not processor generation. Installing an NVMe SSD directly addresses the I/O bottleneck for large video files, while software optimization maximizes the fixed 16 GB RAM through efficient caching and project management. Option A wastes budget on incompatible upgrades; option B adds external complexity with thunderbolt latency for real-time editing; option D sacrifices portability and power capacity for marginal gains.",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A user reports that their workstation powers on momentarily—fans spin and lights flash—then the system shuts down completely without reaching the BIOS screen. Which of the following is the most likely hardware cause?",
+  "options": [
+   "The power supply is delivering insufficient wattage to the motherboard and CPU under load, triggering thermal shutdown protection",
+   "The RAM modules are not fully seated in their DIMM slots, causing an immediate power-down safety interlock",
+   "The GPU is drawing excessive current on startup, which the power supply detects and cuts off to prevent circuit damage",
+   "The CPU cooler is not making proper contact with the processor, causing a thermal sensor to halt boot before POST completes"
+  ],
+  "correct_index": 0,
+  "explanation": "A momentary power-on followed by shutdown is a classic symptom of insufficient power supply wattage; the system initiates boot but cannot sustain power when components draw full current. While RAM seating, GPU current draw, and CPU cooler contact can cause boot failures, they typically prevent boot entirely or trigger different error patterns (beep codes, fan behavior), not the brief power-on cycle described.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "When selecting a graphics card upgrade for a workstation, a technician must evaluate both the card's power requirements and the existing system specifications. Which combination of factors should be prioritized to ensure safe installation?",
+  "options": [
+   "The card's TDP rating, the PSU's total wattage capacity, motherboard PCIe slot version, and available physical slot space in the chassis",
+   "The card's GDDR memory bandwidth, the monitor's refresh rate, the CPU model generation, and the system's current RAM configuration",
+   "The card's CUDA core count, the existing storage device speed, the age of the motherboard BIOS, and the system's ambient temperature range",
+   "The card's cooling shroud design, the case fan count, the operating system version installed, and the display cable connector types available"
+  ],
+  "correct_index": 0,
+  "explanation": "A safe GPU upgrade requires verifying that the power supply can handle the card's TDP, the motherboard has a compatible PCIe slot, and the physical chassis has space—these directly determine whether installation is possible without hardware damage. The other options mix peripheral concerns (monitor specs, storage speed, OS version) that do not prevent safe installation, or specifications (CUDA cores, GDDR bandwidth) that affect performance but not compatibility.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A network technician must choose between Cat 5e, Cat 6, and fiber-optic cable for a new long-distance link between two buildings 300 meters apart. Which selection rationale correctly matches cable properties to the deployment scenario?",
+  "options": [
+   "Cat 5e supports gigabit speeds over short runs and is cost-effective, but signal degradation over 300 meters favors fiber-optic for longer distances and electromagnetic interference immunity",
+   "Cat 6 provides the highest bandwidth of copper cables and is immune to crosstalk, making it the optimal choice for any distance without the need for expensive infrastructure upgrades",
+   "Fiber-optic cable is required because Cat 5e and Cat 6 are limited to 10 Mbps maximum throughput, which cannot support modern applications over such long distances",
+   "Cat 5e remains the standard choice for inter-building links because it offers redundancy through dual-pair signaling, whereas fiber-optic is reserved only for undersea telecommunications"
+  ],
+  "correct_index": 0,
+  "explanation": "Cat 5e has a 100-meter distance limit for reliable gigabit transmission; 300 meters exceeds this, causing significant signal attenuation and crosstalk. Fiber-optic, with no distance limitation and immunity to electromagnetic interference, is the appropriate choice for this scenario. Cat 6 improves performance margins but still fails at 300 meters, and the other options misstate speed limits or fiber applications entirely.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "During troubleshooting, a technician discovers that a computer fan runs continuously at maximum speed but the CPU temperature sensor reads normal values. Which diagnosis best explains this symptom pattern?",
+  "options": [
+   "The fan's PWM control circuit is faulty, causing the fan to ignore temperature signals and run at full voltage regardless of actual thermal load",
+   "The CPU is overclocked beyond its rated specifications, forcing the BIOS to lock the fan at maximum speed to maintain safe operating margins",
+   "The motherboard's temperature sensor has failed, preventing accurate readings, but the fan's independent thermal probe has detected a genuine overheating condition",
+   "The system BIOS firmware is corrupted, which disables intelligent fan speed control and forces all cooling devices into high-speed failsafe mode"
+  ],
+  "correct_index": 0,
+  "explanation": "A continuously spinning fan paired with normal temperature readings indicates the fan is not receiving or responding to the motherboard's PWM (pulse-width modulation) control signal, meaning the control circuit is defective. If the CPU were truly overheating, the sensor would show elevated temps; if the sensor failed, the BIOS typically responds with warnings or safe shutdown, not normal readings with full-speed fans.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A workstation intermittently loses network connectivity despite the physical Ethernet connection remaining intact and the RJ45 connector appearing seated properly. When the technician tests with a different Cat 5e cable and the problem persists, what is the most probable cause?",
+  "options": [
+   "The network interface card's PHY chipset is failing, causing periodic loss of link negotiation and signal detection despite intact physical layer connections",
+   "The RJ45 connector's gold-plated contacts are oxidized, preventing reliable data transmission even though the cable jacket is undamaged and the connection appears secure",
+   "The Ethernet cable's unshielded twisted pairs are degraded within the existing run, causing intermittent packet loss that a new cable temporarily masks but does not permanently resolve",
+   "The router is sending collision signals that corrupt frames on this specific port, causing the NIC to drop packets until the connection automatically resets after several seconds"
+  ],
+  "correct_index": 0,
+  "explanation": "Since swapping the cable did not resolve the issue, the problem lies in the workstation's NIC rather than the cable itself. A failing PHY chipset causes intermittent loss of link negotiation, which matches the described symptom. Oxidized RJ45 contacts would affect both cables equally, and router collisions would affect all devices on that port, not this one workstation alone.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A workstation exhibits intermittent video artifacts and crashes during GPU-intensive tasks. The CPU and motherboard show normal temperatures and voltages. Which troubleshooting step should be performed first to isolate whether the issue originates from the graphics card or the PCIe expansion slot?",
+  "options": [
+   "Reseat the GPU and test with a known-working graphics card in the same slot, or test the original GPU in a different PCIe slot if available",
+   "Replace the motherboard power supply connectors and verify all 12V rails deliver stable output across multiple load conditions",
+   "Update the system BIOS to the latest version and recalibrate the CPU multiplier settings to reduce thermal load",
+   "Disable onboard graphics in BIOS and install the latest GPU driver package from the manufacturer's support website"
+  ],
+  "correct_index": 0,
+  "explanation": "Reseating the GPU and cross-testing in different slots isolates whether the fault is the card itself or the motherboard's PCIe slot. This methodical troubleshooting approach tests the hypothesis before replacing expensive components. BIOS updates, driver installations, and power verification are secondary steps if hardware seating does not resolve the issue.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "An organization is upgrading its network infrastructure and must choose between Cat 5e, Cat 6A, and fiber optic cabling for a data center that requires 10 Gigabit Ethernet over 70 meters. Which cabling option provides the best balance of performance, cost, and future scalability without exceeding the distance limitation?",
+  "options": [
+   "Cat 5e cabling, which supports 10 Gbps Ethernet at distances up to 100 meters and costs significantly less than fiber installations",
+   "Cat 6A cabling, which reliably supports 10 Gbps Ethernet at distances up to 100 meters and offers lower latency than fiber media",
+   "Fiber optic cabling with single-mode or multimode options, which supports 10 Gbps Ethernet at distances exceeding 100 meters and enables future bandwidth expansion",
+   "Cat 6 cabling with shielded twisted-pair connectors, which supports 10 Gbps Ethernet at exactly 70 meters and requires no additional equipment"
+  ],
+  "correct_index": 2,
+  "explanation": "Fiber optic cabling exceeds the 70-meter requirement with significant headroom, supports current and future bandwidth demands beyond 10 Gbps, and is the standard for data center deployments despite higher upfront costs. Cat 5e cannot reliably sustain 10 Gbps over any distance, Cat 6A is limited to 100 meters but is more expensive than necessary here, and Cat 6 was not rated for 10 Gbps speeds.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A computer fails to power on, with no LED indicators illuminating on the motherboard, no fan rotation, and no beep codes. The power outlet tests functional with another device. Which component failure is most likely the root cause, and what is the most efficient diagnostic step?",
+  "options": [
+   "The front-panel power switch connector is loose; reseat the power switch leads on the motherboard header and attempt power-on",
+   "The power supply unit has failed; verify the PSU with a multimeter at the 24-pin ATX and 8-pin CPU connectors to check for 12V, 5V, and 3.3V rails",
+   "The motherboard has a short circuit from a dropped screw; visually inspect for foreign objects and measure resistance between ground and power planes",
+   "The CPU power delivery circuit has degraded; test the motherboard in another system or swap the CPU to confirm the fault location"
+  ],
+  "correct_index": 1,
+  "explanation": "Total absence of power delivery (no LEDs, fans, or beep codes) points to the PSU as the most likely culprit; measuring voltage rails with a multimeter confirms whether the PSU is supplying correct voltage. A loose power switch would typically allow partial function, a motherboard short would show LED activity or smoke, and CPU failure does not prevent motherboard initialization.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "When selecting an upgrade for a workstation running thermal-intensive computational tasks, a technician must choose between an air-cooled CPU cooler rated for 250W TDP dissipation and a liquid-cooled all-in-one unit rated for 360W TDP dissipation. The system's CPU generates 105W under load. Which factor should carry the most weight in the purchasing decision?",
+  "options": [
+   "The air cooler's lower cost and passive operation make it sufficient for the current 105W workload, with thermal margin for minor CPU frequency boosts",
+   "The liquid cooler's higher TDP rating provides substantial thermal headroom for future CPU upgrades and sustained workload expansion beyond 105W",
+   "The air cooler's simplicity reduces maintenance and eliminates pump reliability risks, justifying its selection despite lower upgrade capacity",
+   "The liquid cooler's form factor allows more flexible case layouts and faster heat dissipation per watt, making it the only viable long-term solution"
+  ],
+  "correct_index": 1,
+  "explanation": "The liquid cooler's 360W rating provides 255W of unused capacity for future workload growth and CPU upgrades, aligning with prudent capital expenditure planning. Although the current 105W load fits within both coolers, the workstation's stated thermal-intensive purpose suggests high utilization trajectory. Cost and form factor are secondary to thermal capacity when long-term scalability is a procurement priority.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A network administrator observes that a workstation can transmit data to a server but receives severe packet loss and timeouts on return traffic. The RJ45 cables and switch ports test functional with continuity testers. Which hardware element is most likely responsible, and what is the appropriate troubleshooting sequence?",
+  "options": [
+   "The network interface card (NIC) has a faulty receive path; replace the NIC and verify bidirectional traffic, or test the onboard NIC in BIOS if available",
+   "The router's WAN interface is misconfigured; power-cycle the router, check for LED indicators showing link and activity status, and review port mirroring rules",
+   "The switch's backplane has partial failure; move the workstation cable to a different switch port and test throughput with a known-working client device",
+   "The server's TCP/IP stack is corrupted; ping the gateway from the workstation to confirm end-to-end connectivity and check the server's route table entries"
+  ],
+  "correct_index": 0,
+  "explanation": "Asymmetric transmit-success and receive-failure patterns indicate a receive-path fault in the NIC's hardware, not in cabling or infrastructure (which would affect both directions equally). Testing with the onboard NIC isolates whether the add-in card is defective without requiring replacement hardware. Cable continuity and functional testing exclude the physical layer, narrowing the fault to the network adapter's receiver circuitry.",
+  "difficulty": "hard",
+  "knowledge_area": "Computer Hardware and Connectivity"
+ },
+ {
+  "question": "A user reports that their laptop battery drains completely within two hours of moderate use, though the device is only eighteen months old. Which combination of preventive care oversights most likely contributed to this degradation?",
+  "options": [
+   "Frequent exposure to heat above 35°C, allowing the battery to charge overnight regularly, and storing the device in low-humidity environments",
+   "Allowing the battery to heat consistently during use, charging to full capacity repeatedly without partial-charge cycles, and blocking ventilation ports during operation",
+   "Using the laptop exclusively on battery power, maintaining ambient temperatures between 20-25°C, and cleaning the keyboard monthly with compressed air",
+   "Disconnecting peripherals when not in use, calibrating the battery quarterly through full discharge cycles, and positioning the device away from direct sunlight"
+  ],
+  "correct_index": 1,
+  "explanation": "Lithium-ion batteries degrade faster with sustained heat exposure, frequent full charges (which stress the cells), and poor ventilation that traps thermal energy. The correct answer combines three genuine preventive-care failures. The other options include proper practices like temperature control, partial-charge cycling, and ventilation protection.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "When comparing RAM efficiency across a tablet, a laptop, and a desktop computer running identical software, which statement most accurately reflects the hardware trade-offs?",
+  "options": [
+   "Tablets require more total RAM than laptops because mobile processors are less efficient, but desktops use the least RAM due to dedicated graphics memory",
+   "Laptops allocate RAM across CPU and integrated graphics more efficiently than tablets, which must share memory between the system and dedicated mobile chipsets",
+   "Desktops use more RAM overall because their processors lack power-management features, whereas tablets and laptops use hardware-level memory compression to reduce physical RAM needs",
+   "Tablets use RAM most efficiently per task because their processors are optimized for lower power consumption, but laptops and desktops require larger RAM pools to offset slower clock speeds"
+  ],
+  "correct_index": 1,
+  "explanation": "Laptops with integrated graphics manage shared system RAM more efficiently than tablets, which must divide memory between application processes and mobile-optimized chipset requirements. Desktop RAM is not directly comparable on efficiency grounds since desktops prioritize performance over power constraints. The other options incorrectly characterize processor efficiency and compression mechanisms.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A user attempts to synchronize files between a smartphone, tablet, and laptop using both cloud storage and direct USB/Wi-Fi transfer methods. Which scenario describes the most significant limitation that would require a workaround?",
+  "options": [
+   "Cloud synchronization works seamlessly across all three devices when connected to the same Wi-Fi network, but USB transfers between the tablet and smartphone require an intermediary computer",
+   "Wi-Fi direct transfers between the laptop and tablet sync instantly, whereas cloud storage on the smartphone lags during peak hours due to bandwidth throttling",
+   "USB connections from the smartphone to the laptop enable file transfer, but the tablet cannot participate in the same USB chain, requiring separate cloud upload for cross-device sync",
+   "Cloud storage across all devices functions without delays, though Wi-Fi synchronization between the laptop and tablet works only when both are on the 5GHz band simultaneously"
+  ],
+  "correct_index": 2,
+  "explanation": "Tablets and smartphones cannot connect directly via USB in a daisy-chain configuration, forcing users to use cloud storage or intermediate transfers through a laptop as a workaround. The other options describe either non-existent limitations or minor connectivity nuances that do not represent significant barriers to synchronization.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A Bluetooth speaker pairs successfully with a laptop but frequently disconnects during video calls, while the same speaker maintains a stable connection to a nearby smartphone. Which combination of factors best explains this behavior?",
+  "options": [
+   "The laptop's Bluetooth 5.0 chipset operates on a different frequency band than the smartphone's Bluetooth 4.2, causing interference when both devices are powered simultaneously",
+   "The laptop's Wi-Fi adapter and Bluetooth radio share the 2.4 GHz spectrum, and active Wi-Fi use during calls creates interference that degrades the Bluetooth connection stability",
+   "The smartphone uses a lower power-consumption Bluetooth profile that prioritizes connection stability over bandwidth, whereas the laptop maintains a higher-bandwidth profile that is sensitive to distance changes",
+   "The speaker's battery is depleted more quickly when paired with the laptop due to higher power-draw protocols, whereas the smartphone's power management prevents excessive battery drain from the speaker"
+  ],
+  "correct_index": 1,
+  "explanation": "Many laptops use Wi-Fi and Bluetooth concurrently on the 2.4 GHz band, and video call data traffic can cause interference that destabilizes Bluetooth connections. Smartphones typically have superior Bluetooth antenna isolation or use less congested frequency management during calls. The other options mischaracterize Bluetooth versions, power profiles, and interference mechanisms.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A mobile device user experiences intermittent 5G connectivity in an area with strong LTE coverage, and switches to LTE for reliability. Later, the device refuses to reconnect to 5G even when signal strength improves. Which technical issue most likely accounts for this behavior?",
+  "options": [
+   "The device's modem firmware has entered a low-power state after switching to LTE, preventing 5G radio activation until the device is fully powered down and restarted",
+   "The 5G network band used in that location requires manual selection in the device settings, and automatic band-switching is disabled after the fallback to LTE occurred",
+   "The device has cached the LTE connection parameters and prioritizes them over 5G discovery unless the SIM card is removed and reinserted to force a network re-registration",
+   "The mobile carrier's network management system has throttled the device's 5G access after detecting frequent 5G-to-LTE switching, which can be resolved by waiting 24 hours or contacting the carrier"
+  ],
+  "correct_index": 0,
+  "explanation": "When a device switches to LTE, the 5G radio may enter a dormant state to conserve power, and it requires a power cycle (full restart) to reactivate 5G scanning and reconnection logic. The other options describe non-standard procedures, fictional throttling policies, or mischaracterize network band selection—none of which reflect common mobile connectivity troubleshooting.",
+  "difficulty": "hard",
+  "knowledge_area": "Laptops, Tablets, and Mobile Devices"
+ },
+ {
+  "question": "A technician observes that a device on a LAN is receiving frames with correct MAC addresses but cannot establish a connection to a remote server on a different network. Which combination of addressing and device functions is most likely responsible for this failure?",
+  "options": [
+   "The router is not translating between MAC addresses and performing gateway functions to forward packets across network boundaries.",
+   "The DHCP server failed to assign a public IPv4 address, preventing the local switch from learning the device's hardware identifier.",
+   "The DNS resolver returned an IPv6 address while the device's NIC only supports static IPv4 assignment on the local segment.",
+   "The modem is not converting the MAC address to an IP address before transmitting data through the ISP's WAN infrastructure."
+  ],
+  "correct_index": 0,
+  "explanation": "Frames may successfully use MAC addresses for local delivery, but crossing network boundaries requires a router to perform gateway functions and route based on IP addresses. The other options conflate separate issues: DHCP assigns addresses but doesn't prevent local MAC communication; DNS and IPv6 issues would affect different scenarios; modems don't convert MAC to IP addresses.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "In a hybrid network environment, a device configured with a static private IPv4 address (10.0.1.50) needs to communicate with both local hosts via MAC address resolution and external servers. Which of the following protocols and functions work together to enable this architecture?",
+  "options": [
+   "SSH establishes encrypted tunnels between the device and local switches, while UDP broadcasts the static IP to the default gateway.",
+   "TCP/IP provides end-to-end communication with the external server, while ARP resolves the router's MAC address for local gateway delivery.",
+   "SMTP routes outbound packets through the ISP's infrastructure, while DHCP reserves the static address in the local routing table.",
+   "802.11ac wireless standards negotiate IP address leasing with the modem, while TCP ensures MAC address delivery across the WAN."
+  ],
+  "correct_index": 1,
+  "explanation": "TCP/IP handles end-to-end communication to external servers, and ARP (Address Resolution Protocol) resolves the gateway router's MAC address so the device can forward packets locally. SSH is for encrypted sessions, not local delivery; UDP doesn't broadcast static IPs; SMTP is for mail; 802.11ac is wireless standard not an IP protocol; DHCP doesn't reserve static addresses.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "A network administrator configures a WAN link using TCP/IP and must decide between dynamic and static IP addressing for the branch office gateway. If the branch office later adds wireless access points using 802.11ac standards, which statement correctly describes the interaction between addressing and wireless protocols?",
+  "options": [
+   "Static IP addressing on the gateway ensures 802.11ac access points receive consistent DHCP assignments, while dynamic addressing reduces wireless throughput by 54 Mbps.",
+   "Both static and dynamic addressing work at Layer 3 and above, independent of Layer 1 wireless standards, but static addresses simplify routing and remote management of the gateway.",
+   "Dynamic IP addressing automatically optimizes 802.11ac channel bandwidth to 80 MHz, while static addressing limits wireless devices to IPv6-only communication.",
+   "802.11ac standards require the gateway to use static addressing to negotiate with the ISP's DHCP server, preventing address conflicts on the wireless segment."
+  ],
+  "correct_index": 1,
+  "explanation": "IP addressing schemes and wireless standards operate at different layers; 802.11ac (physical/data link) is independent of static vs. dynamic IP decisions (network layer). Static addresses do simplify gateway management and remote administration. The other options incorrectly tie wireless standards to addressing schemes or make false performance claims.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "A packet traveling from a LAN device to a remote server must traverse through a modem and router. At which points in this journey do IP addresses and MAC addresses determine the packet's path, and which device function is most critical for transitioning between network segments?",
+  "options": [
+   "MAC addresses route the packet from the device to the router's WAN port, then IP addresses route through the modem to the ISP; the switch performs segment translation.",
+   "IP addresses determine the path from source to destination across all segments, while MAC addresses guide frames to the next hop; the router's gateway function translates between local and remote addressing schemes.",
+   "MAC addresses are used only on the local LAN segment, IP addresses only on the WAN; the modem's gateway function converts between addressing types before the packet enters the ISP network.",
+   "Both IP and MAC addresses work simultaneously on all segments to ensure redundancy; the router's switching function prioritizes packets based on their hardware identifiers."
+  ],
+  "correct_index": 1,
+  "explanation": "MAC addresses govern frame delivery to the next hop on the local segment (LAN to router), while IP addresses determine the overall route to the destination. The router's gateway function is critical because it re-frames packets, replacing the original MAC destination with the next hop's MAC address while preserving the IP destination. Switches don't translate; modems don't convert between address types; both aren't used simultaneously for routing.",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ },
+ {
+  "question": "During network setup, a DHCP server and DNS resolver both operate on the same LAN. A newly connected device receives a dynamic IP address from DHCP but cannot resolve hostnames to IP addresses. Which of the following best explains the relationship between these two services and identifies the likely cause?",
+  "options": [
+   "DHCP assigns IP addresses and also configures the device with the DNS resolver's IP address; if the device cannot communicate with that resolver address, DNS queries will fail.",
+   "DNS translates hostnames before DHCP assigns addresses, so the resolver must complete its work in advance; a missing DNS forwarder in the router prevents external hostname lookup.",
+   "DHCP and DNS operate independently but both require IPv6 support; if the device defaults to IPv4 addressing only, DNS resolution will not function on the LAN.",
+   "The DNS resolver relies on the device's MAC address to forward responses, not its IP address; a misconfigured ARP table on the DHCP server prevents DNS replies from returning."
+  ],
+  "correct_index": 0,
+  "explanation": "DHCP assigns the device a dynamic IP and provides the DNS resolver's IP address (via DHCP options), allowing the device to query the resolver. If the device doesn't receive or cannot reach the DNS resolver's IP, hostname resolution fails. The other options incorrectly order DNS and DHCP operations, confuse IPv4/IPv6 requirements, or misstate how DNS responses are delivered (by IP, not MAC).",
+  "difficulty": "hard",
+  "knowledge_area": "Networks"
+ }
+]

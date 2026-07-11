@@ -1,0 +1,652 @@
+[
+ {
+  "question": "A manufacturing facility spans three separate buildings across a 500-meter area. The company needs to connect multiple departments with guaranteed low latency, high redundancy, and automatic failover. Which topology would best meet these requirements while minimizing single points of failure?",
+  "options": [
+   "Bus topology with redundant backbone cabling and manual failover procedures",
+   "Mesh topology with multiple interconnected paths between network nodes",
+   "Star topology with a single central switch and wired connections throughout",
+   "Ring topology with dual counter-rotating paths for fault tolerance"
+  ],
+  "correct_index": 1,
+  "explanation": "Mesh topology provides multiple interconnected paths between nodes, eliminating single points of failure and enabling automatic rerouting if any link fails. While ring topology offers some redundancy, it requires both counter-rotating paths to function; mesh provides superior flexibility and scalability for a multi-building facility.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A startup must choose between deploying financial analysis software on-premises or adopting a cloud-based solution. The company values minimal upfront infrastructure investment, automatic software updates, and pay-per-user licensing. Which service model best aligns with these priorities?",
+  "options": [
+   "Infrastructure as a Service (IaaS) for virtualized computing resources and storage management",
+   "Software as a Service (SaaS) for fully managed applications accessed via web browser",
+   "Platform as a Service (PaaS) for development frameworks and middleware services",
+   "Hybrid cloud combining private infrastructure with rented public compute capacity"
+  ],
+  "correct_index": 1,
+  "explanation": "SaaS delivers fully managed applications with automatic updates and subscription-based licensing, eliminating capital infrastructure costs. IaaS and PaaS require greater technical management; PaaS targets developers, not end-users, while IaaS still requires significant operational responsibility.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An organization is evaluating wireless connectivity for a sprawling office campus where signal strength, interference patterns, and building materials create variable coverage zones. Which factors should the network architect prioritize to ensure consistent range and reliability across the deployment?",
+  "options": [
+   "Antenna gain, transmission power regulations, and frequency band selection for propagation characteristics",
+   "Access point density, roaming protocols, and environmental interference from 2.4 GHz competing devices",
+   "802.11ac standard compliance, client device capabilities, and scheduled maintenance windows",
+   "Cloud controller integration, guest network segmentation, and quality-of-service packet prioritization"
+  ],
+  "correct_index": 0,
+  "explanation": "Antenna gain, transmit power within regulatory limits, and frequency band choice directly determine how far signals propagate and through what materials. While interference (Option B) matters, it's a secondary consideration; standards compliance and QoS (Options C and D) address performance management rather than physical coverage fundamentals.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A telecommunications company is deciding between 4G LTE and 5G deployment for a dense urban district with thousands of concurrent users. Both networks are technically viable, but differ significantly in bandwidth allocation, latency characteristics, and infrastructure costs. Based on 5G characteristics, which statement accurately compares the two technologies?",
+  "options": [
+   "5G uses lower frequencies than 4G for wider coverage area, but sacrifices peak data rates",
+   "5G delivers sub-10 millisecond latency and multi-gigabit throughput for real-time applications",
+   "5G requires fewer cell towers than 4G due to extended range from millimeter-wave frequencies",
+   "5G maintains backward compatibility with 4G equipment and allows gradual network transition"
+  ],
+  "correct_index": 1,
+  "explanation": "5G networks provide ultra-low latency (sub-10ms) and multi-gigabit speeds enabling real-time services like autonomous vehicles and immersive applications. While 5G uses higher frequencies (not lower), it actually requires denser deployment due to shorter millimeter-wave range; backward compatibility is limited.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A enterprise must choose between a Wide Area Network (WAN) using dedicated leased lines versus cloud-based connectivity with Software-Defined WAN (SD-WAN). Both options connect multiple branch offices to headquarters. Which comparison most accurately reflects the tradeoffs between traditional WAN and SD-WAN approaches?",
+  "options": [
+   "Leased lines offer predictable latency and fixed costs; SD-WAN uses commodity Internet with dynamic routing and lower expense",
+   "SD-WAN guarantees bandwidth allocation and eliminates congestion; leased lines provide best-effort delivery with traffic prioritization",
+   "Leased lines enable direct branch-to-branch communication; SD-WAN requires all traffic routing through centralized hubs only",
+   "SD-WAN uses proprietary routing protocols; leased lines employ standard TCP/IP and OSPF across all connections"
+  ],
+  "correct_index": 0,
+  "explanation": "Leased lines provide consistent performance and predictable costs but remain expensive; SD-WAN leverages cheaper commodity Internet with intelligent software routing to prioritize traffic dynamically. SD-WAN does not guarantee bandwidth nor restrict branch communication; it enables flexible path selection across multiple link types.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A manufacturing facility with three buildings across a 2-mile campus needs to share production data in real time. The network must handle high-speed transfers and recover automatically if one building's connection fails. Which topology best meets these requirements, and why?",
+  "options": [
+   "Bus topology, because it uses a single backbone cable that minimizes equipment costs and simplifies data routing across distributed locations",
+   "Mesh topology, because redundant paths allow continued operation if any single connection fails, and it supports the high-speed, real-time data transfers required",
+   "Star topology, because all buildings connect through a central switch that manages traffic efficiently and provides a clear point of network control",
+   "Ring topology, because it creates a closed loop between buildings that ensures each device receives data in sequence and reduces collision risk"
+  ],
+  "correct_index": 1,
+  "explanation": "Mesh topology provides multiple independent paths between nodes, so failure of any single link does not break connectivity—critical for real-time manufacturing. Bus, star, and ring topologies each have single points of failure or latency issues that make them unsuitable when automatic recovery and high-speed reliability are required.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An organization is choosing between a private LAN for internal file sharing and a WAN solution that connects five geographically dispersed offices. Which statement most accurately reflects the trade-off between these network types?",
+  "options": [
+   "LANs offer higher speeds and lower latency within a building, while WANs span greater distances but typically involve higher costs and shared bandwidth with third-party carriers",
+   "LANs require dedicated fiber-optic cables between every device, whereas WANs use wireless signals exclusively to reduce installation complexity across multiple sites",
+   "LANs support only peer-to-peer communication between users, while WANs mandate a client-server architecture that centralizes all data on a single corporate server",
+   "LANs are limited to 100 Mbps throughput per connection, whereas WANs automatically scale to gigabit speeds regardless of the number of connected offices"
+  ],
+  "correct_index": 0,
+  "explanation": "LANs operate within a confined area with direct wired or local wireless connections, delivering high speed and low latency at lower cost; WANs must traverse public or leased infrastructure across long distances, introducing latency, shared resources, and higher recurring expenses. The other options misstate technical constraints—LANs can use peer-to-peer or client-server, WANs aren't limited to wireless, and both support multiple speed profiles.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A retail chain is evaluating cloud service models to support its point-of-sale systems, customer analytics, and custom inventory software. The company wants to avoid managing servers or databases but needs the ability to customize business logic. Which service model aligns with these goals?",
+  "options": [
+   "Infrastructure as a Service (IaaS), because it provides virtualized computing resources and allows the company to install and manage its own operating systems and applications",
+   "Platform as a Service (PaaS), because it offers pre-built development tools and managed infrastructure, allowing customization of business logic without managing underlying servers or databases",
+   "Software as a Service (SaaS), because it delivers ready-to-use applications hosted by the vendor, eliminating all customization needs and operational overhead",
+   "Hybrid cloud, because it combines on-premises hardware with public cloud storage, ensuring the company maintains direct control over all database management and server configuration"
+  ],
+  "correct_index": 1,
+  "explanation": "PaaS provides a managed platform where developers can build and customize applications without provisioning or maintaining servers and databases—ideal for the company's need to customize business logic without infrastructure responsibility. IaaS requires the company to manage operating systems and databases; SaaS provides no customization; hybrid cloud keeps database management on-premises, contradicting the goal of avoiding server management.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An enterprise is deploying wireless networks across a large office complex and needs to decide between traditional WiFi 5 (802.11ac) and emerging 5G cellular. Which factors most influence the choice between these technologies in this indoor, campus-scale context?",
+  "options": [
+   "5G offers wider coverage range and lower latency for mobile devices, but requires licensed spectrum and carrier contracts; WiFi 5 is unlicensed, less expensive to deploy, and better suited for stationary and portable devices in a confined area",
+   "WiFi 5 achieves only 54 Mbps maximum speed, whereas 5G guarantees gigabit speeds, making 5G the only viable choice for any office with more than 50 concurrent users",
+   "5G is immune to interference from microwave ovens and cordless phones, while WiFi 5 experiences frequent disruptions in busy office environments, so 5G is always preferable indoors",
+   "WiFi 5 requires line-of-sight between access points and devices, whereas 5G penetrates walls and obstacles without degradation, eliminating the need for multiple access points"
+  ],
+  "correct_index": 0,
+  "explanation": "WiFi 5 on unlicensed spectrum offers cost-effective, high-speed coverage in contained areas without carrier dependency; 5G excels at mobile, wide-area coverage but requires licensed spectrum and service contracts—less economical for a fixed office campus. WiFi 5 is not limited to 54 Mbps, 5G is not immune to all interference, and both technologies have similar wall-penetration characteristics that depend on frequency and power.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A logistics company is designing a network to track vehicles and packages across a region spanning 50 miles. The company must choose between a MAN using private leased lines and a WAN using the public internet with encryption. Which consideration is most critical when weighing these approaches?",
+  "options": [
+   "Private leased-line MANs guarantee 99.99% uptime and fixed throughput but involve high fixed costs; internet-based WANs offer lower operational costs and flexibility but depend on shared carrier infrastructure and require strong encryption for security",
+   "Public internet WANs are inherently faster than leased-line MANs because they route traffic through multiple carriers simultaneously, whereas leased lines use a single dedicated path that causes bottlenecks",
+   "Leased-line MANs require the company to operate its own fiber-optic cables and switching equipment, whereas internet WANs eliminate all hardware ownership and place full responsibility on the ISP",
+   "Public internet WANs cannot support real-time vehicle tracking because packet loss exceeds 5%, while leased-line MANs are designed exclusively for tracking applications and guarantee zero packet loss"
+  ],
+  "correct_index": 0,
+  "explanation": "Private MANs provide dedicated, predictable service with high reliability but lock in fixed costs; internet WANs are cheaper and flexible but rely on shared infrastructure and require encryption for security—the core trade-off for a regional logistics network. The other options misstate capacity mechanics (shared paths don't cause bottlenecks; multiple carriers don't stack speeds), hardware responsibility (both models involve customer equipment), and performance (modern WANs reliably support real-time tracking).",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A financial services firm requires rapid inter-office communication with minimal latency, high bandwidth, and centralized security management across three city locations 50 miles apart. Which network type and architecture best balances these requirements with the lowest infrastructure cost?",
+  "options": [
+   "A Metropolitan Area Network (MAN) using a star topology with a central hub office managing all traffic and security policies",
+   "A Wide Area Network (WAN) implemented as a mesh topology to ensure multiple redundant paths and distributed security enforcement",
+   "A Local Area Network (LAN) with peer-to-peer architecture extended across dedicated fiber-optic links between all three sites",
+   "A Local Area Network (LAN) using a ring topology with wireless bridges to reduce cabling costs and maintain equal bandwidth allocation"
+  ],
+  "correct_index": 0,
+  "explanation": "A MAN is specifically designed for distances of 5–50 miles across multiple city sites, making it ideal for three offices 50 miles apart. The star topology with a central hub provides centralized security management and reduces administration overhead, while still delivering high bandwidth and low latency more cost-effectively than a WAN mesh. A WAN would be over-engineered for this distance, peer-to-peer lacks centralized security, and ring topology would create bottlenecks.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An e-commerce platform is evaluating cloud deployment models. The business requires custom application development with control over underlying infrastructure, automatic patching, and the ability to scale compute resources on demand without managing physical servers. Which service model best matches these needs?",
+  "options": [
+   "Infrastructure as a Service (IaaS), which provides virtual machines, storage, and networking where the provider manages only physical hardware and hypervisors",
+   "Platform as a Service (PaaS), which offers pre-configured middleware, databases, and development frameworks with limited control over the underlying OS and runtime",
+   "Software as a Service (SaaS), which delivers fully managed applications accessed via web browser with vendor control over all infrastructure and code",
+   "Public Cloud Hosting, which combines all three service models but requires the organization to manage its own security patches and compliance audits"
+  ],
+  "correct_index": 0,
+  "explanation": "IaaS provides virtual machines and networking infrastructure that the provider manages at the physical level, allowing the business to control the OS, middleware, and applications while leveraging auto-scaling and automated patching. PaaS restricts OS and runtime control, SaaS provides no infrastructure control, and \"Public Cloud Hosting\" is not a distinct service model with the stated characteristics.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A manufacturing plant is selecting wireless connectivity for its production floor. The environment contains metal machinery, RF-reflective surfaces, and operates continuously for 24 hours. Transmission range must cover 400 meters, and throughput must support real-time sensor data at 100 Mbps minimum. Which wireless standard best addresses these range, speed, and reliability constraints?",
+  "options": [
+   "802.11ac (Wi-Fi 5) operating at 5 GHz, offering up to 1.3 Gbps theoretical throughput but limited to 50-meter range in industrial RF-heavy environments",
+   "5G millimeter-wave deployment with peak speeds exceeding 10 Gbps but outdoor line-of-sight range of only 100–200 meters and poor penetration through metal",
+   "802.11n (Wi-Fi 4) at 2.4 GHz, providing 600 Mbps throughput, extended range of 250+ meters in obstructed environments, and better reflection tolerance than higher frequencies",
+   "Dedicated ISM-band mesh network using 915 MHz frequency, delivering 50–100 Mbps per link, 400+ meter range through metal obstacles, and self-healing path redundancy"
+  ],
+  "correct_index": 3,
+  "explanation": "The 915 MHz ISM-band mesh network meets all three constraints: it covers the required 400-meter range through metal interference, delivers sufficient throughput for sensor data, and provides reliability through self-healing mesh paths. 802.11ac's 5 GHz has severe range loss in RF-heavy environments, 5G millimeter-wave cannot penetrate metal and exceeds range needs, and 802.11n at 2.4 GHz, while robust, still falls short of 400 meters in highly reflective industrial settings.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A healthcare organization is comparing on-premises infrastructure versus cloud architecture. On-premises requires $500,000 upfront capital, 20% annual maintenance costs, and supports 1,000 concurrent users. A hybrid cloud model costs $100,000 upfront, $150,000 annually, scales to 5,000 users, and shifts security responsibility. Which cost and risk trade-off most accurately reflects this scenario?",
+  "options": [
+   "Cloud is cheaper long-term but shifts compliance and data-residency risk to the provider, requiring stricter SLAs and audit clauses in contracts",
+   "On-premises has lower total-cost-of-ownership over five years and retains full security control, but lacks scalability and requires internal IT expertise",
+   "Cloud has higher initial cost but zero ongoing maintenance, making it suitable only for organizations with stable, non-growing user bases",
+   "Both models cost equally by year three, but on-premises remains superior because it avoids vendor lock-in and regulatory dependency on third parties"
+  ],
+  "correct_index": 0,
+  "explanation": "The cloud model's lower upfront cost ($100k vs. $500k) and greater scalability (5,000 vs. 1,000 users) come with the legitimate trade-off of shifted compliance, data-residency, and security responsibility—requiring stronger contracts and SLAs. On-premises does control security but is more expensive long-term when maintenance is included, cloud does have ongoing costs, and the models diverge significantly in total cost and capability, not converge.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A logistics company operates in urban and rural regions with varying coverage. It must deploy wireless for both high-density downtown warehouses and sparse remote distribution centers 15+ miles from infrastructure. Which combination of wireless technologies and topologies best supports both coverage zones without over-provisioning either?",
+  "options": [
+   "5G in dense urban areas paired with satellite backhaul in rural zones, using a mesh topology to relay between remote centers and backbone infrastructure",
+   "802.11ax (Wi-Fi 6) at 2.4 GHz for urban density with LPWAN (LoRaWAN) for rural coverage, integrated via a star topology with regional gateways",
+   "Licensed LTE in both zones, consolidated into a ring topology to ensure redundancy and minimize the number of base stations required across regions",
+   "802.11ac access points in warehouses with point-to-point microwave links to remote centers, organized in a bus topology for simplified network administration"
+  ],
+  "correct_index": 1,
+  "explanation": "802.11ax delivers high capacity in dense urban warehouses, while LPWAN (LoRaWAN) is specifically designed for rural, long-range, low-bandwidth sensor applications—matching the logistics company's need to cover both environments efficiently. A star topology with regional gateways avoids over-provisioning by centralizing management. 5G+satellite is costly for both zones, LTE requires licensed spectrum and ring topology is inefficient, and 802.11ac + microwave cannot reliably serve the sparse rural requirement.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A small office network uses a Class C private IP address range with a /24 subnet mask. If the network administrator needs to create four equal subnets for different departments, which subnet mask and resulting number of usable host addresses per subnet would be required?",
+  "options": [
+   "A /26 subnet mask creating four subnets with 62 usable addresses each",
+   "A /25 subnet mask creating two subnets with 126 usable addresses each",
+   "A /28 subnet mask creating sixteen subnets with 14 usable addresses each",
+   "A /27 subnet mask creating eight subnets with 30 usable addresses each"
+  ],
+  "correct_index": 0,
+  "explanation": "A /24 network divided into four equal subnets requires a /26 mask, which borrows two additional bits for subnetting. This creates 2² = 4 subnets, each with 2⁶ - 2 = 62 usable host addresses (subtracting network and broadcast addresses). The other options either create incorrect quantities of subnets or allocate the wrong number of addresses per subnet.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "During packet transmission across an enterprise LAN, a frame must travel through multiple switches to reach its destination on a different network segment. At which OSI layer do switches examine destination information to forward frames, and what type of address do they use for this forwarding decision?",
+  "options": [
+   "Layer 3 using IPv4 or IPv6 addresses to route packets between networks",
+   "Layer 2 using MAC addresses to forward frames within the local network segment",
+   "Layer 4 using port numbers to segment traffic by application type and service",
+   "Layer 1 using physical port numbers to determine cable connections and signal propagation"
+  ],
+  "correct_index": 1,
+  "explanation": "Switches operate at Layer 2 (data link layer) and use MAC addresses to forward frames between devices on the same LAN. Layer 3 routers use IP addresses for inter-network routing, Layer 4 handles transport protocols, and Layer 1 is purely physical signaling. Switches examine the destination MAC address in the frame header to determine which port to forward the frame through.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "An organization must choose between IPv4 and IPv6 for its growing datacenter network. The datacenter currently uses private IPv4 addresses (10.0.0.0/8) but needs to support millions of IoT devices in addition to traditional servers. Which characteristic most directly addresses the scalability concern while explaining a key technical difference between the protocols?",
+  "options": [
+   "IPv6 uses 128-bit addresses providing approximately 3.4 × 10³⁸ possible unique addresses compared to IPv4's 32-bit addresses with about 4.3 × 10⁹ addresses",
+   "IPv6 eliminates the need for subnetting by automatically assigning addresses to all devices without network segmentation or administrative overhead",
+   "IPv4 supports hierarchical addressing through classful networks (A, B, C, D, E) while IPv6 uses flat addressing for simpler routing table management",
+   "IPv6 requires less bandwidth for header information by reducing the frame size, allowing more packets per transmission and faster network throughput"
+  ],
+  "correct_index": 0,
+  "explanation": "IPv6's 128-bit address space provides vastly more addresses than IPv4's 32-bit space, directly solving the scalability challenge. The other options contain inaccuracies: IPv6 still requires subnetting, IPv6 actually uses hierarchical addressing (and classful networks are an IPv4 concept), and IPv6 headers are actually larger, not smaller, than IPv4 headers.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "When a user requests a web page from a remote server, the application layer (Layer 7) initiates the request using HTTP, which then relies on the transport layer to manage delivery. Which transport layer protocol would be selected for this web request, and what is the primary functional difference between this choice and its alternative at the same layer?",
+  "options": [
+   "TCP because it provides connection-oriented communication with guaranteed in-order delivery and error checking, unlike UDP which offers connectionless delivery with no delivery guarantees",
+   "UDP because it minimizes latency through connectionless transmission and is preferred for web applications despite occasional packet loss",
+   "ICMP because it manages routing and network diagnostics while TCP handles the actual data payload transmission to the web server",
+   "IGMP because it establishes secure encrypted sessions between the client and server, preventing eavesdropping on sensitive HTTP traffic"
+  ],
+  "correct_index": 0,
+  "explanation": "HTTP uses TCP at Layer 4 because web page delivery requires reliable, in-order delivery—TCP provides connection setup (three-way handshake), acknowledgment, and retransmission of lost packets. UDP is connectionless and offers no guarantees, making it unsuitable for web traffic despite lower latency. ICMP is for diagnostics, and IGMP manages multicast group membership; neither handles HTTP data transmission.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "An enterprise network consists of multiple office locations connected through an ISP. Each location receives internet connectivity through modem and router equipment from the ISP, which then distributes the connection via cabling (Ethernet, fiber) to network devices. At which two OSI layers do the ISP-provided modem and router primarily operate, and what is the relationship between their functions in establishing end-to-end connectivity?",
+  "options": [
+   "The modem operates at Layers 1–2 converting analog signals to digital frames, while the router operates at Layer 3 forwarding packets to the destination network using IP routing decisions",
+   "The modem operates at Layer 3 managing IP routing decisions, while the router operates at Layers 1–2 converting physical signals and managing MAC address switching",
+   "Both devices operate at Layer 2, with the modem handling frame assembly and the router handling MAC address resolution across the WAN connection",
+   "The modem operates at Layer 4 managing transport protocols, while the router operates at Layer 5 establishing secure sessions between office locations"
+  ],
+  "correct_index": 0,
+  "explanation": "The ISP modem operates at Layers 1–2, converting the analog signal from the ISP into digital data frames suitable for the local network. The router operates at Layer 3, receiving those frames and routing IP packets between the office network and remote networks based on IP address information. This layer separation ensures the physical connection (modem) and logical packet forwarding (router) work together seamlessly.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "A SOHO network and an enterprise datacenter both use switches to segment traffic, but they differ fundamentally in their deployment scale and redundancy requirements. Which of the following best distinguishes how these two LAN types handle device connectivity and fault tolerance?",
+  "options": [
+   "SOHO networks use managed switches with VLAN support and automatic failover, while datacenter networks rely on unmanaged switches and manual intervention for reliability.",
+   "SOHO networks connect a small number of devices with minimal redundancy, whereas datacenter networks employ multiple switches, redundant paths, and high availability architecture to prevent single points of failure.",
+   "SOHO networks operate exclusively on the physical layer and do not implement data link layer functions, while datacenter networks require both layers for basic operation.",
+   "SOHO networks use dedicated fiber-optic cabling with enterprise-grade equipment, whereas datacenter networks depend on standard twisted-pair cabling and consumer-grade switching infrastructure."
+  ],
+  "correct_index": 1,
+  "explanation": "Enterprise datacenters prioritize redundancy and availability through multiple interconnected switches and failover mechanisms, whereas SOHO networks serve small offices or home users with simpler topologies and fewer resilience requirements. The other options mischaracterize the technical capabilities and cabling choices of each environment.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "The physical layer manages cable and signaling, while the data link layer manages frame formatting and MAC addressing. When a packet travels from one switch port to another within the same LAN segment, which layers' functions are actively involved in ensuring the frame reaches its destination?",
+  "options": [
+   "Only the network layer, because routers at that layer determine the physical path and forward frames to their next hop based on IP routing tables.",
+   "The physical layer transmits the signal through the cable, and the data link layer uses MAC addresses and frame headers to deliver the frame to the correct switch port and interface.",
+   "Both the session and presentation layers cooperate to encapsulate the frame in a TCP wrapper, which the physical layer then converts into electrical signals for transmission.",
+   "The transport layer segments the data and assigns port numbers, while the physical layer sends the electrical signal; the data link layer only operates when crossing network boundaries."
+  ],
+  "correct_index": 1,
+  "explanation": "Within a LAN segment, frames are forwarded using MAC addresses at Layer 2 (data link), while Layer 1 (physical) handles the actual signal transmission across the cable. The network layer and above are not needed for intra-switch communication within the same broadcast domain.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "The network layer handles routing and IP addressing, while the transport layer manages end-to-end communication and flow control. A user on one subnet sends a file to a server on a different subnet. Which combination of network and transport layer functions must occur for the transfer to succeed?",
+  "options": [
+   "The network layer fragments the file into packets and assigns them TCP sequence numbers; the transport layer calculates the best route and replaces the source MAC address at each router.",
+   "The network layer uses routing tables and IP addresses to forward packets across routers to the destination subnet, while the transport layer establishes connection state, manages retransmission, and ensures data arrives in order.",
+   "The network layer broadcasts an ARP request to all devices on the destination subnet; the transport layer then unicasts each packet and records MAC addresses for future reference.",
+   "The network layer encapsulates each segment into an IP datagram with source and destination IP addresses, and the transport layer performs OSPF routing calculations to determine the optimal path through intermediate networks."
+  ],
+  "correct_index": 1,
+  "explanation": "The network layer routes packets using IP addressing and routing protocols across subnets and routers, while the transport layer (TCP/UDP) provides end-to-end reliability, flow control, and sequencing. The other options conflate functions or incorrectly assign responsibilities between layers.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "IPv4 addresses are organized into five classes (A through E), each with different numbers of host bits and reserved purposes. A system administrator is designing a network that requires 500 usable host addresses on a single subnet. Which IPv4 class and corresponding subnet mask would provide exactly the number of hosts needed while minimizing wasted address space?",
+  "options": [
+   "Class A with subnet mask 255.255.255.0, which provides 256 total addresses and supports up to 254 usable hosts per subnet.",
+   "Class B with subnet mask 255.255.254.0, which provides 512 total addresses and supports up to 510 usable hosts per subnet after accounting for network and broadcast addresses.",
+   "Class C with subnet mask 255.255.255.128, which provides 256 addresses and allocates 128 addresses per subnet, suitable for networks requiring 120 usable hosts.",
+   "Class A with subnet mask 255.255.0.0, which provides 65,536 total addresses and supports many thousands of usable hosts, though it represents significant address wastage for a 500-host requirement."
+  ],
+  "correct_index": 1,
+  "explanation": "A Class B address with /23 (255.255.254.0) provides 512 addresses per subnet, yielding 510 usable hosts after subtracting network and broadcast addresses—the tightest fit for 500 hosts. Class A or C options either exceed the requirement wastefully or fall short of the 500-host threshold.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "IPv4 uses 32-bit addresses and includes broadcast addresses within each subnet, while IPv6 uses 128-bit addresses and eliminates the traditional broadcast mechanism in favor of multicast. An organization transitioning from IPv4 to IPv6 must understand how these protocol differences affect network design. Which statement accurately compares a critical operational distinction between the two protocols?",
+  "options": [
+   "IPv4 subnets are defined by a netmask that divides the address space into network and host portions, whereas IPv6 uses a simple /64 prefix for all subnets regardless of size, making address planning more straightforward.",
+   "IPv4 requires broadcast frames to reach all devices on a subnet, whereas IPv6 uses link-local addresses and solicited-node multicast addresses to replace broadcast functionality, reducing unnecessary network traffic.",
+   "IPv6 continues to allocate separate broadcast addresses at the end of each subnet range, identical to IPv4, but uses a larger address space to accommodate future growth without changing the fundamental subnet structure.",
+   "IPv4 addresses may be assigned dynamically or statically by administrators, while IPv6 addresses are always assigned through DHCPv6 and cannot be manually configured on individual interfaces."
+  ],
+  "correct_index": 1,
+  "explanation": "IPv6 eliminated traditional broadcasts and instead uses multicast and link-local address mechanisms (such as neighbor solicitation) to perform the same discovery and communication tasks, reducing overhead. IPv4 relies on broadcast addresses at the subnet boundary, whereas IPv6's /64 prefix and multicast approach are fundamentally different operational models.",
+  "difficulty": "hard",
+  "knowledge_area": "Networking Basics"
+ },
+ {
+  "question": "A network administrator needs to transfer large files securely between servers while preventing man-in-the-middle attacks. Which protocol should be used, and what is its primary security mechanism?",
+  "options": [
+   "FTP with SSL encryption layered on top to create a secure tunnel for credentials and file contents",
+   "SFTP, which uses SSH as an underlying protocol to encrypt the control channel, authentication, and data transfer",
+   "SMTP configured with TLS to establish encrypted connections for both message headers and attachment payloads",
+   "FTPS, which operates on port 989 and uses explicit TLS handshakes to secure the passive data channel only"
+  ],
+  "correct_index": 1,
+  "explanation": "SFTP (SSH File Transfer Protocol) uses SSH as its foundation, encrypting the entire session including authentication and file contents. While FTPS and FTP with SSL both exist, SFTP is the modern standard for secure file transfer because it tunnels through a single encrypted SSH connection rather than requiring separate control and data channels. SMTP is for email and does not serve file transfer needs.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "During network initialization, a DHCP server assigns a client an IP address, and the client must resolve a domain name to communicate with a web server. How do these three components—DHCP, DNS, and IP addresses—interact in this scenario?",
+  "options": [
+   "DHCP assigns the IP address and communicates the authoritative DNS server address to the client, which the client then queries to resolve the domain name to an IP address for routing",
+   "DNS queries the DHCP server to obtain the client's IP address, then returns the web server's IP address so the client can establish a connection using that address",
+   "DHCP assigns both the client IP address and a cached copy of all domain name mappings, eliminating the need for further DNS queries during the session",
+   "IP addresses are assigned by DNS directly to clients on the network, while DHCP serves only to distribute router gateway addresses and subnet mask information"
+  ],
+  "correct_index": 0,
+  "explanation": "DHCP assigns the client an IP address and typically provides the DNS server address (or addresses) as part of its lease configuration. The client then uses that DNS server to resolve domain names to IP addresses through recursive queries. DNS does not query DHCP, and DHCP does not distribute cached DNS mappings or assign addresses based on DNS queries; they operate independently but in coordination.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "An organization must choose between 802.11ac and 802.11ax wireless standards for a new office deployment. Considering frequency band, data rate, and range, which statement most accurately reflects the trade-offs between these standards?",
+  "options": [
+   "802.11ac operates on 2.4 GHz with maximum throughput around 1.3 Gbps and longer range, while 802.11ax uses 5 GHz with 6 Gbps and shorter effective coverage distance",
+   "802.11ac uses 5 GHz with peak speeds near 1.3 Gbps and moderate range, while 802.11ax operates on both 2.4 and 5 GHz, reaching 9.6 Gbps with improved range through beamforming",
+   "802.11ax operates exclusively on 5 GHz with maximum 3.5 Gbps throughput and extended range compared to 802.11ac, which is limited to 2.4 GHz and 600 Mbps",
+   "Both standards use identical 5 GHz frequencies and support the same maximum data rates, but 802.11ax provides superior range through dual-band transmission and lower latency"
+  ],
+  "correct_index": 1,
+  "explanation": "802.11ac (Wi-Fi 5) operates on 5 GHz with theoretical maximum throughput around 1.3 Gbps, while 802.11ax (Wi-Fi 6) supports both 2.4 and 5 GHz bands with speeds up to 9.6 Gbps and includes advanced features like beamforming that improve range and penetration. The other options incorrectly reverse band assignments, confuse frequency limitations, or misstate data rates.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A network engineer is designing a routing solution for an autonomous system with multiple interconnected networks. The engineer must select between BGP, EIGRP, and OSPF. Which statement correctly distinguishes these dynamic routing protocols by their scope and convergence characteristics?",
+  "options": [
+   "BGP is an exterior gateway protocol for inter-AS routing with slower convergence but supports complex policies, while EIGRP and OSPF are interior gateway protocols; OSPF converges faster through link-state updates than EIGRP's distance-vector approach",
+   "OSPF is an exterior gateway protocol designed for large-scale inter-AS environments, BGP is a distance-vector protocol limited to single autonomous systems, and EIGRP uses hybrid flooding to achieve fastest convergence across all three",
+   "EIGRP and BGP are both hybrid protocols with equivalent convergence speed, while OSPF is a pure distance-vector interior protocol that requires more hops to reach convergence in complex topologies",
+   "BGP uses link-state updates for inter-AS routing with immediate convergence, OSPF is a distance-vector interior gateway protocol with slower updates, and EIGRP is an exterior protocol that combines both mechanisms"
+  ],
+  "correct_index": 0,
+  "explanation": "BGP is the exterior gateway protocol for routing between autonomous systems and uses path-vector logic with deliberate policy controls, resulting in slower convergence. OSPF and EIGRP are both interior gateway protocols; OSPF is link-state and converges relatively quickly, while EIGRP is a hybrid distance-vector protocol. The other options misclassify protocol types, scope, or convergence mechanisms.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A system administrator configures Network Address Translation (NAT) for a corporate office network. The administrator must map multiple internal servers to external IP addresses while maintaining inbound connection tracking. Which describes the correct relationship between NAT, port translation, and well-known ports in this configuration?",
+  "options": [
+   "NAT rewrites source and destination IP addresses and ports in packet headers; to expose internal server on port 22 externally, the administrator maps internal IP:22 to external IP:22, preserving port numbers for SSH protocol compatibility",
+   "NAT translates internal IP addresses to external addresses and may remap ports; the administrator can map internal server port 22 to external port 2222 to obscure the service, while maintaining stateful session tracking for inbound connections",
+   "NAT operates only on IP addresses without modifying transport-layer ports; port translation requires a separate function, and well-known ports like 22 must remain unchanged to ensure DNS-based port resolution functions correctly",
+   "NAT and port address translation are identical processes; mapping internal port 22 to external port 443 automatically redirects HTTP traffic to SSH, eliminating the need for stateful firewall rules on well-known port numbers"
+  ],
+  "correct_index": 1,
+  "explanation": "NAT translates internal IP addresses to external ones and can also remap ports (port address translation, or PAT). An administrator can map an internal server's port 22 to a different external port like 2222 for security through obscurity, while NAT maintains stateful connection tracking to allow inbound replies to reach the correct internal server. The other options either confuse NAT with DNS, incorrectly state that ports cannot be remapped, or treat port translation as a separate unrelated function.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A network administrator needs to transfer sensitive configuration files between servers securely while also preventing man-in-the-middle attacks. Which protocol should be used, and what is its relationship to the underlying security mechanism?",
+  "options": [
+   "FTP with SSL encryption layer, which wraps the control and data channels in TLS for authenticated communication",
+   "SFTP over SSH, which uses public-key cryptography on port 22 to establish an encrypted tunnel before file transfer",
+   "SMTP with STARTTLS, which initiates plaintext connection first then upgrades to encryption for credential protection",
+   "FTPS with implicit mode, which requires encryption negotiation after the initial socket connection on port 990"
+  ],
+  "correct_index": 1,
+  "explanation": "SFTP (SSH File Transfer Protocol) operates over SSH on port 22 and uses public-key cryptography to create an encrypted tunnel, providing both confidentiality and authentication. While FTPS and FTP with SSL both encrypt data, SFTP is the modern standard for secure file transfer. SMTP is a mail protocol, not a general file transfer mechanism.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "During network troubleshooting, a technician observes that a client device receives an IP address 192.168.1.100 from the DHCP server, yet cannot resolve the hostname 'mail.company.local' to its corresponding IP address. Which sequence of protocols is failing, and why?",
+  "options": [
+   "DHCP successfully assigned the address, but DNS is misconfigured or unreachable because the client cannot query the nameserver to translate hostnames into IP addresses",
+   "Both DHCP and DNS failed because the client's gateway address was not provided by DHCP, preventing access to the DNS resolver on the network",
+   "DNS is working correctly, but DHCP did not assign the required DNS server addresses in the lease, making the client unable to perform name resolution",
+   "The DHCP lease expired before DNS could cache the hostname, so the client must request a new lease before attempting resolution again"
+  ],
+  "correct_index": 0,
+  "explanation": "DHCP provides the IP address and typically the DNS server addresses; DNS then translates hostnames to IPs. If hostname resolution fails after a successful DHCP lease, the DNS resolver is either misconfigured or unreachable. The other options either conflate DHCP and DNS roles or introduce issues not supported by the scenario.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "An organization is deploying wireless access points across a large campus and must decide between 802.11ac and 802.11ax standards. Which pair of specifications most accurately differentiates these standards in terms of operating frequency, theoretical maximum data rate, and typical coverage range?",
+  "options": [
+   "802.11ac operates on 5 GHz with speeds up to 1.3 Gbps and range of 50 meters; 802.11ax operates on both 2.4 and 5 GHz with speeds up to 9.6 Gbps and improved range",
+   "802.11ac operates on 2.4 GHz with speeds up to 600 Mbps and range of 100 meters; 802.11ax operates on 5 GHz only with speeds up to 3.5 Gbps",
+   "802.11ac operates on 5 GHz exclusively with 802.3 wired compatibility; 802.11ax operates on 6 GHz band with backward compatibility to 802.11n devices",
+   "802.11ac uses MIMO technology for 1.3 Gbps on 5 GHz with 30-meter range; 802.11ax uses OFDMA for 6.9 Gbps on 2.4 GHz with extended range"
+  ],
+  "correct_index": 0,
+  "explanation": "802.11ac operates on 5 GHz with maximum speeds around 1.3 Gbps and typical range of 50 meters, while 802.11ax (Wi-Fi 6) operates on both 2.4 and 5 GHz with speeds up to 9.6 Gbps and improved range. The other options contain accurate technical terms but apply incorrect frequency bands, data rates, or range specifications to each standard.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A network engineer must select between TCP and UDP for a real-time video streaming application where occasional packet loss is acceptable but low latency is critical. Which characterization of these protocols best supports this decision?",
+  "options": [
+   "TCP guarantees in-order delivery and retransmits lost packets, adding latency; UDP offers no guarantee of delivery or ordering but has minimal overhead and lower latency",
+   "UDP provides guaranteed delivery through acknowledgment packets on a separate channel; TCP operates connectionless and discards packets that exceed the window size",
+   "TCP uses a three-way handshake and maintains connection state, making it suitable for streaming; UDP requires connection establishment before data transmission",
+   "UDP implements flow control through sliding window mechanisms to prevent congestion; TCP relies on application-layer acknowledgments for reliability"
+  ],
+  "correct_index": 0,
+  "explanation": "TCP's retransmission and in-order delivery guarantee add latency unsuitable for real-time video; UDP's connectionless, no-guarantee model provides lower latency at the cost of occasional packet loss. The distractors incorrectly reverse TCP/UDP characteristics or introduce irrelevant features like separate acknowledgment channels or connection requirements for UDP.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A small office network uses NAT to allow internal hosts on the 192.168.1.0/24 subnet to reach external servers while hiding internal IP addresses. An external client initiates a connection to the NAT gateway at 203.0.113.45:8080, expecting to reach an internal web server at 192.168.1.50:80. Which statement most accurately describes how NAT and port forwarding function together in this scenario?",
+  "options": [
+   "The NAT gateway translates the external destination IP and port (203.0.113.45:8080) to the internal server address (192.168.1.50:80), then maintains a translation table to map return traffic back to the external address",
+   "Port forwarding on the NAT device directs inbound traffic on port 8080 to the internal server's port 80, while NAT translates the internal IP to the external address for responses",
+   "The NAT gateway performs static IP translation, converting all internal addresses to 203.0.113.45, and port forwarding ensures the external port 8080 routes to internal port 80 exclusively",
+   "Port forwarding intercepts the inbound connection and creates a tunnel through NAT; the gateway then translates both source and destination addresses bidirectionally on the internal segment"
+  ],
+  "correct_index": 0,
+  "explanation": "NAT with port forwarding translates the external destination (203.0.113.45:8080) to the internal server (192.168.1.50:80) and maintains a state table for reverse translation of responses. The other options conflate NAT and port forwarding roles, introduce tunneling concepts not applicable here, or incorrectly describe the address translation directionality.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Protocols and Standards"
+ },
+ {
+  "question": "A manufacturing company with multiple facilities across three states needs real-time data synchronization and occasional video conferencing between sites. Which network type and topology combination would best balance cost, latency, and reliability for this scenario?",
+  "options": [
+   "WAN with mesh topology to ensure direct paths between all facilities and automatic rerouting if links fail",
+   "MAN with star topology to centralize traffic through a main hub and simplify management and monitoring",
+   "LAN with ring topology to create redundant circular connections and minimize the number of dedicated leased lines",
+   "WAN with bus topology to connect all facilities sequentially and reduce the total bandwidth requirements needed"
+  ],
+  "correct_index": 0,
+  "explanation": "A mesh topology within a WAN provides direct point-to-point connections between facilities, enabling real-time synchronization and automatic failover—critical for manufacturing operations. Star topology would create a single point of failure at the hub; ring topology would suffer from latency as data traverses each node sequentially; bus topology is impractical for multi-state distances.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An enterprise evaluates three cloud service models for its CRM platform: it needs the ability to customize the application logic and integrate with legacy systems, but prefers not to manage the underlying servers and databases. Which service model and trade-off best matches this requirement?",
+  "options": [
+   "SaaS, accepting limited customization and middleware constraints in exchange for the fastest deployment and lowest operational overhead",
+   "PaaS, gaining customization and integration capabilities while avoiding infrastructure management and hardware scaling responsibilities",
+   "IaaS, obtaining maximum control over application runtime and database configuration while assuming full responsibility for patching and scaling",
+   "Hybrid cloud with SaaS for CRM and IaaS for legacy integration, accepting increased complexity but achieving both flexibility and independence"
+  ],
+  "correct_index": 1,
+  "explanation": "PaaS provides the development environment and middleware needed for customization and integration without requiring the customer to manage servers, storage, or operating systems. SaaS offers no customization; IaaS requires the customer to manage servers and databases, adding operational burden; hybrid approaches introduce unnecessary complexity for a single CRM use case.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "When selecting a wireless connectivity option for a large office campus covering 50 acres with varying building density, which factors create the most significant trade-off between coverage range and data throughput?",
+  "options": [
+   "Frequency band selection and antenna power, where lower frequencies (2.4 GHz) travel farther but suffer from interference, while higher frequencies (5 GHz) provide faster speeds but limited range",
+   "Number of access points and transmit power adjustment, where fewer high-power transmitters cover more area but create congestion, while many low-power APs offer higher throughput but require dense deployment",
+   "802.11 standard version and encryption protocol, where older standards penetrate walls better but cap throughput, while Wi-Fi 6 maximizes speed but demands line-of-sight clarity",
+   "MIMO antenna configuration and client device density, where directional antennas extend range but reduce simultaneous connections, while omnidirectional antennas support more devices at shorter distances"
+  ],
+  "correct_index": 0,
+  "explanation": "Frequency band selection is the fundamental factor determining range-versus-throughput trade-offs: 2.4 GHz propagates farther through obstacles but faces more interference and lower maximum data rates, while 5 GHz and 6 GHz offer higher speeds but shorter effective ranges. Access point density (option B) is a deployment strategy, not a physics-based trade-off; standard version (option C) doesn't purely correlate with range; MIMO (option D) improves efficiency but isn't the primary range-speed constraint.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A financial services firm must choose between a peer-to-peer network architecture for document sharing among 40 traders and a client-server model. Which risk profile and operational consequence best characterizes the peer-to-peer choice?",
+  "options": [
+   "Lower latency and higher throughput because files transfer directly between traders, but significant security vulnerabilities since each peer stores unencrypted credentials and lacks centralized access control",
+   "Improved scalability and reduced infrastructure costs because no central server is needed, but increased complexity for backup, version control, and audit logging across distributed nodes",
+   "Enhanced redundancy if any single trader's computer goes offline, but substantial vulnerability to data loss if multiple peers fail simultaneously without reliable centralized recovery mechanisms",
+   "Simplified network administration and lower licensing costs per user, but critical dependency on bandwidth and CPU availability of client machines, limiting performance during peak trading hours"
+  ],
+  "correct_index": 1,
+  "explanation": "Peer-to-peer eliminates the central server cost but creates operational headaches: backup and version control become fragmented across 40 machines, and audit trails become difficult to maintain—critical for financial compliance. Option A overstates security (P2P can be encrypted); option C mischaracterizes redundancy (P2P actually increases single-node failure risk); option D confuses peer-to-peer with client-server on the client side.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A telecommunications company evaluates the deployment benefits and limitations of 5G networks in a mixed urban-rural service area. Which characteristic most accurately distinguishes 5G's advantage over 4G LTE while identifying a corresponding implementation challenge?",
+  "options": [
+   "5G uses sub-6 GHz and millimeter wave frequencies for dramatically higher spectral efficiency and reduced latency, requiring significantly denser base station placement in areas with building density and coverage gaps in open terrain",
+   "5G delivers higher throughput through wider channel bandwidth and advanced modulation, enabling network slicing for isolated virtual networks, but demands increased backhaul capacity and new core network infrastructure investments",
+   "5G provides improved energy efficiency per transmitted bit and lower battery drain on devices, allowing longer coverage ranges than 4G, but limiting peak data rates when supporting large simultaneous device connections",
+   "5G implements network function virtualization to reduce hardware costs and increase flexibility, providing equivalent coverage to 4G with fewer antennas, but introducing software vulnerabilities in the virtualized control plane"
+  ],
+  "correct_index": 1,
+  "explanation": "5G's genuine advantages—higher throughput via wider channels and network slicing for virtual networks—require substantial infrastructure upgrades: increased backhaul and new core network architecture. Option A correctly notes frequency tradeoffs but oversimplifies implementation; option C reverses 5G's energy advantage; option D conflates NFV benefits with coverage claims that 5G doesn't actually make.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A company discovers that an attacker exploited a previously unknown flaw in their web server software to gain unauthorized access. Which of the following best describes the relationship between the flaw, the attacker's action, and the resulting breach?",
+  "options": [
+   "The flaw was a vulnerability; the attacker's action was an exploit; the unauthorized access was the threat that materialized into a risk.",
+   "The flaw was a threat; the attacker's use of it was a vulnerability; the breach itself became an exploitable weakness for future attacks.",
+   "The flaw was a zero-day vulnerability; the attacker's action was an exploit of that vulnerability; the breach represents the risk that was realized.",
+   "The flaw was an external risk source; the attacker's technique was a threat; the access gained was classified as a vulnerability in the response plan."
+  ],
+  "correct_index": 2,
+  "explanation": "A zero-day vulnerability is an unknown flaw; an exploit is the active method used to leverage it; and a realized risk is the actual harm (unauthorized access). The other options confuse the definitions by applying these terms to the wrong components of the attack sequence.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Security"
+ },
+ {
+  "question": "A digital signature on a contract document ensures which of the following security properties, and how does this differ from encryption of the same document?",
+  "options": [
+   "Encryption ensures confidentiality and integrity; a digital signature ensures authentication and non-repudiation, so both must be used together for full protection.",
+   "A digital signature ensures confidentiality so the document cannot be read; encryption ensures only the recipient can open it, making them equivalent protections.",
+   "A digital signature ensures integrity and authentication without requiring secrecy; encryption ensures confidentiality but does not prove who created the document or prevent modification.",
+   "Encryption guarantees non-repudiation through hashing; a digital signature guarantees availability through certificate revocation, so a signature is stronger protection."
+  ],
+  "correct_index": 2,
+  "explanation": "A digital signature proves authenticity (who signed it) and integrity (it was not modified), but does not hide the document's contents. Encryption hides the contents (confidentiality) but does not prove authorship. They serve different purposes and a signed document can still be read by anyone. The other options conflate these properties incorrectly.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Security"
+ },
+ {
+  "question": "An organization is evaluating three authentication approaches: a password-only system, multi-factor authentication (MFA) requiring a password and SMS code, and single sign-on (SSO) with federated identity. Which statement most accurately compares their security posture against the attack vectors of credential theft and internal privilege escalation?",
+  "options": [
+   "Password-only is weakest against credential theft; MFA mitigates theft but not escalation; SSO eliminates both by verifying identity at a central authority, making it inherently more secure.",
+   "Password-only offers no defense against credential theft; MFA significantly raises the cost of theft via compromised passwords; SSO reduces escalation risk through centralized access control but requires strong federation security.",
+   "MFA is immune to credential theft because it requires two factors; password-only is vulnerable to both attacks; SSO prevents privilege escalation only if the federated provider uses biometric authentication.",
+   "All three are equally vulnerable to credential theft; MFA and SSO differ only in administrative complexity, not actual security; password resets mitigate escalation in all cases."
+  ],
+  "correct_index": 1,
+  "explanation": "Password-only systems are weak to credential theft since one factor is easily compromised. MFA makes theft much harder by requiring a second factor (even if the password leaks, the attacker needs the SMS code). SSO centralizes identity management, improving privilege escalation control through centralized policy enforcement, but the federation itself must be secure. The other options either overstate SSO's immunity, conflate different attack types, or claim equivalence where none exists.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Security"
+ },
+ {
+  "question": "A network experiences a sudden spike in traffic to its public web server, consuming all available bandwidth and making the service unavailable to legitimate users. The traffic originates from thousands of different IP addresses across multiple countries. Which attack type is most consistent with these characteristics, and how does this attack differ from a similar threat category in its method and typical remediation?",
+  "options": [
+   "This is a distributed denial-of-service (DDoS) attack, differing from a botnet in that it requires a single attacker controlling multiple machines; mitigation involves rate-limiting and traffic filtering.",
+   "This is a denial-of-service attack using a botnet; it differs from a direct DoS in that traffic comes from many compromised hosts rather than a single source; remediation includes ISP rate-limiting and traffic analysis.",
+   "This is a phishing attack exploiting thousands of user accounts; it differs from spoofing in that each source is a real victim's machine; mitigation requires user authentication training.",
+   "This is a DDoS attack that differs from protocol poisoning in that it overloads resources rather than corrupting data; remediation is limited to antivirus deployment on all endpoints."
+  ],
+  "correct_index": 1,
+  "explanation": "A botnet-driven DDoS is characterized by traffic from many compromised machines (not one attacker). This distinguishes it from a single-source DoS and from direct attacks. Mitigation focuses on traffic filtering, rate-limiting, and ISP coordination, not antivirus alone. Option A incorrectly states a botnet requires one attacker; Option C misidentifies phishing; Option D wrongly claims antivirus is the primary remedy.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Security"
+ },
+ {
+  "question": "A manufacturing company operates facilities across three cities within a 50-mile radius and requires real-time data synchronization between all sites. Which network type best balances cost-efficiency with the distance and performance requirements?",
+  "options": [
+   "A LAN, because it provides high bandwidth and is designed for sites within close geographic proximity",
+   "A MAN, because it spans multiple cities while maintaining faster speeds than a WAN and lower costs than three separate LANs",
+   "A WAN, because it supports unlimited geographic distance and ensures data consistency across all manufacturing locations",
+   "A combination of peer-to-peer networks, because distributed systems eliminate the need for centralized infrastructure"
+  ],
+  "correct_index": 1,
+  "explanation": "A MAN (Metropolitan Area Network) is specifically designed for multi-site deployments within a city or region, offering better performance than a WAN while covering the necessary geographic area. A LAN only covers a single site, a WAN introduces unnecessary latency and cost, and peer-to-peer lacks the centralized management this scenario requires.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A retail chain must choose between mesh and star topologies for its store network. The mesh topology ensures redundancy if any link fails, while the star topology uses a central switch and simplifies management. Which factor most strongly justifies selecting mesh despite higher cost?",
+  "options": [
+   "The need for automatic failover and continued network operation if a single connection point fails, critical in high-availability environments",
+   "Reduced cabling requirements and easier installation compared to star topology configurations across multiple locations",
+   "Lower hardware costs because mesh networks eliminate the need for managed switches and routers at each node",
+   "Improved data transmission speed due to direct point-to-point connections avoiding central bottlenecks in the network"
+  ],
+  "correct_index": 0,
+  "explanation": "Mesh topology's primary advantage is resilience through multiple paths; if one link fails, traffic reroutes automatically, keeping the network operational. While mesh does offer some speed benefits and redundancy, the cost justification centers on availability—critical for retail operations. Star topology actually offers better management and lower costs, making it preferable unless high availability is mandatory.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A company evaluates cloud service models for its development and production environments. Developers need full control over operating systems and middleware, while the production database should be managed by the cloud provider including patches and backups. Which combination of service models best addresses these distinct requirements?",
+  "options": [
+   "IaaS for development environments and SaaS for the production database to leverage provider-managed infrastructure and applications",
+   "PaaS for both environments, because it provides operating system control for developers while the provider manages database infrastructure",
+   "IaaS for development to allow OS and middleware customization, and managed SaaS or PaaS for production databases with provider-handled maintenance",
+   "SaaS for development with API access to custom middleware, and IaaS for production databases to retain complete administrative control"
+  ],
+  "correct_index": 2,
+  "explanation": "IaaS (Infrastructure as a Service) gives developers the OS and middleware control they need; a managed database offering (SaaS or specialized PaaS) provides the automated patching and backups production requires. PaaS limits OS flexibility, SaaS removes too much control for development, and IaaS for databases contradicts the need for provider-managed maintenance.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A wireless network must serve both a corporate office (dense, high-capacity demand) and a warehouse (sparse coverage, long-range priority). The office currently uses Wi-Fi 6, while the warehouse requires extended range. Which wireless technology combination addresses these competing demands most effectively?",
+  "options": [
+   "Wi-Fi 6 for both, because its higher frequency bands deliver capacity to the office and extended range to the warehouse through environmental adaptation",
+   "5G for the office to maximize capacity and throughput, combined with lower-frequency Wi-Fi or licensed spectrum for warehouse range and penetration",
+   "Wi-Fi 6 in the office for high-capacity demand and 5G in the warehouse, because 5G's higher frequency provides superior long-range coverage in open spaces",
+   "Dual-band Wi-Fi 5 and Wi-Fi 6 across both locations, layering 2.4 GHz for range and 5 GHz for capacity to balance competing requirements equally"
+  ],
+  "correct_index": 1,
+  "explanation": "5G's high frequency optimizes the office's capacity needs, while lower-frequency licensed spectrum or extended-range Wi-Fi penetrates the warehouse effectively. Wi-Fi 6's higher frequencies sacrifice range despite capacity gains, 5G's range limitations make it poor for warehouses, and dual Wi-Fi doesn't address the fundamental mismatch between office and warehouse needs.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "An organization considering cloud migration must weigh infrastructure cost reduction against vendor lock-in risk and data sovereignty regulations. Which cloud architecture benefit and risk pair most directly creates this strategic tension?",
+  "options": [
+   "Automated scaling reduces operational overhead while geographic data residency requirements may force multi-region deployments that increase complexity",
+   "Managed services eliminate infrastructure maintenance costs while regulatory compliance mandates and vendor-specific APIs limit portability and exit options",
+   "Pay-as-you-go pricing lowers capital expenditure while performance variability and shared infrastructure create unpredictable operating costs",
+   "Global presence improves disaster recovery capabilities while distributed data replication and compliance audits introduce significant management overhead"
+  ],
+  "correct_index": 1,
+  "explanation": "Managed services (the core cost benefit of cloud) inherently create vendor lock-in because they use proprietary APIs and formats; regulations like GDPR compound this by restricting data movement. While scaling and pricing offer benefits, they don't create the fundamental cost-versus-lock-in tension. Disaster recovery benefits don't directly conflict with costs in the same way proprietary services do.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Topologies and Architecture"
+ },
+ {
+  "question": "A company discovers that an attacker has exploited a previously unknown software flaw to gain unauthorized access to its network. Which of the following best distinguishes this incident from a vulnerability that was patched but not yet applied to all systems?",
+  "options": [
+   "A zero-day exploit targets an unpatched vulnerability unknown to the vendor, whereas an unpatched system is vulnerable to known exploits for which remediation already exists but has not been deployed.",
+   "A vulnerability represents the weakness itself, while an exploit is the technique used to leverage it, and a zero-day attack uses a threat vector that antivirus software cannot yet detect.",
+   "An unpatched system presents a risk from known threats, whereas a zero-day creates a threat that bypasses all authentication methods and requires digital certificate revocation.",
+   "A zero-day vulnerability is one that the vendor knew about but chose not to patch, while an unpatched system is one where the patch exists but the organization failed to apply it."
+  ],
+  "correct_index": 0,
+  "explanation": "A zero-day exploit is distinguished by targeting a vulnerability that is unknown to the vendor or the security community, whereas an unpatched system is vulnerable to known exploits for which patches or mitigations already exist but have not been deployed. This distinction is critical because zero-days cannot be mitigated through patch management alone, while unpatched systems represent a failure of vulnerability mitigation controls. The other options conflate related but distinct concepts (risk vs. threat vs. exploit) or misdefine the characteristics of zero-day and unpatched vulnerabilities.",
+  "difficulty": "hard",
+  "knowledge_area": "Network Security"
+ }
+]

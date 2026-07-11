@@ -1,0 +1,652 @@
+[
+ {
+  "question": "During project execution, a team member reports that a critical deliverable is trending 15% behind schedule. Which combination of actions best addresses both the immediate schedule risk and the underlying team performance issue?",
+  "options": [
+   "Request the team member work overtime, compress the remaining timeline, and document the delay in project records for stakeholder reporting",
+   "Analyze root causes of the delay, reallocate resources or adjust scope with stakeholder approval, and implement process adjustments to prevent recurrence",
+   "Accelerate non-critical tasks, reassign the team member to lower-risk activities, and extend the project deadline without stakeholder notification",
+   "Increase quality assurance checkpoints, reduce the scope of remaining work, and escalate the issue to executive leadership immediately"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project control requires identifying root causes of variance, taking corrective action through resource reallocation or scope negotiation, and implementing preventive measures. The other options either mask the problem (overtime alone), bypass stakeholder governance (unilateral deadline extension), or over-escalate without attempting corrective action first.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, finance, and operations who have conflicting priorities regarding feature scope. The project manager must balance competing departmental goals while maintaining schedule integrity. Which approach best supports both coordination and stakeholder alignment?",
+  "options": [
+   "Establish a formal change control process with clear criteria, facilitate trade-off discussions with all departments represented, and document approved scope changes and their schedule/budget impacts",
+   "Prioritize engineering recommendations, defer finance concerns to post-launch review, and allow operations to adjust implementation after project closure",
+   "Implement a rotating decision-making structure where each department leads scope decisions in alternating weeks to ensure equal influence",
+   "Create separate workstreams for each department, integrate outputs at the end, and resolve conflicts through senior management arbitration if needed"
+  ],
+  "correct_index": 0,
+  "explanation": "Cross-functional coordination requires transparent change control, collaborative trade-off discussions involving all stakeholders, and documented decisions linking scope changes to schedule and budget. The other options either bias decisions toward one function, defer accountability, create artificial equality without addressing root conflicts, or fragment coordination until late integration.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project is 60% complete. The earned value analysis shows CPI of 0.92 and SPI of 0.95, with actual costs at $450,000 against a baseline of $420,000. What corrective action most directly addresses the underlying performance variance while providing reliable completion forecasting?",
+  "options": [
+   "Reduce scope by 8% to align actual costs with baseline, recalculate the schedule performance index, and report revised completion date to stakeholders",
+   "Investigate cost and schedule drivers of the variances, implement targeted efficiency improvements in underperforming activities, and reforecast ETC using actual productivity rates",
+   "Request a budget increase to $490,000 to account for 10% cost growth, compress remaining schedule by 5%, and maintain original scope without further analysis",
+   "Accelerate high-value tasks, negotiate supplier discounts on remaining purchases, and reallocate 10% of contingency reserve to cover overruns"
+  ],
+  "correct_index": 1,
+  "explanation": "CPI 0.92 and SPI 0.95 indicate both cost and schedule underperformance; corrective action must diagnose root causes and establish reliable forecasting based on actual productivity rates. Investigation-based corrective action and updated estimates provide better predictability than scope cuts, budget increases, or contingency spending without addressing systemic issues.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project monitoring, you discover that two critical path activities have consumed 85% of their budgets but completed only 60% of planned work. The activities are interdependent, and their delays will cascade to three downstream tasks. How should you respond to restore schedule alignment and manage team performance?",
+  "options": [
+   "Fast-track both activities by adding resources and overlapping their remaining work, adjust downstream task start dates, and implement daily progress reviews for the critical path",
+   "Conduct a root-cause analysis of the productivity gap, assess whether scope creep or estimation errors occurred, reallocate specialized resources if available, and revise remaining-work estimates with the team",
+   "Reduce the scope of both activities to align with current budget consumption, extend the project deadline by the equivalent delay duration, and redistribute team members to downstream tasks",
+   "Increase the project budget by 25% to cover cost overruns, request overtime authorization, and implement penalty clauses for further delays"
+  ],
+  "correct_index": 1,
+  "explanation": "A 60% work completion at 85% budget consumption indicates systematic underperformance (not just acceleration needs). Root-cause analysis—whether from scope creep, estimation errors, or resource constraints—informs appropriate corrective action. The other options either avoid diagnosis (fast-tracking or extending deadlines), cut scope without understanding the problem, or throw resources at symptoms without addressing causes.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "You are managing a project team across three geographic locations with staggered work hours and asynchronous communication patterns. Team morale surveys indicate confusion about priorities and gaps in ownership clarity. Which combination of management practices best sustains motivation and coordination across this distributed structure?",
+  "options": [
+   "Establish clear RACI assignments with documented responsibility matrices, implement a centralized project dashboard updated daily, hold weekly synchronous standups with rotating time zones, and use asynchronous status updates for detailed progress tracking",
+   "Assign a senior manager to oversee each location independently, conduct monthly all-hands meetings via video, allow each site to set its own priorities aligned to overall goals, and rely on email for routine communication",
+   "Compress the team into a single time zone by rotating work schedules, centralize all decision-making at headquarters, require daily in-person check-ins via video conference, and standardize all processes across locations",
+   "Minimize synchronous meetings to respect time zones, publish a weekly priority summary from the PMO, assign individual task ownership without formal documentation, and use informal communication channels for relationship-building"
+  ],
+  "correct_index": 0,
+  "explanation": "Distributed teams need explicit role clarity (RACI), visible progress tracking (dashboard), synchronized touchpoints adapted to constraints (rotating standups), and documented asynchronous communication to prevent priority gaps. The other options either create silos (independent location management), impose unsustainable scheduling, reduce coordination (minimal meetings without documented ownership), or lack formal accountability structures.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable will miss its deadline by two weeks due to unforeseen technical constraints. As the project manager, which action best addresses both the immediate schedule risk and the underlying team coordination issue?",
+  "options": [
+   "Document the delay in the project status report and notify stakeholders of the revised timeline without adjusting resource allocation or team roles",
+   "Reassess task dependencies and resource availability across the team, implement corrective actions such as reallocating personnel or adjusting scope, and communicate the revised schedule to all stakeholders",
+   "Extend the project deadline by three weeks as a buffer and increase the team's working hours to compensate for the technical constraints identified",
+   "Replace the underperforming team member with someone from another department and restart the task with fresh personnel to meet the original deadline"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project monitoring and controlling requires identifying root causes, implementing corrective actions through team coordination and resource management, and communicating transparently. Simply documenting delays without action fails to address control; extending deadlines indiscriminately wastes resources; replacing team members ignores the technical constraint and disrupts team dynamics.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project is tracking behind schedule in two work streams while maintaining budget. The project manager must decide how to motivate the team while managing the schedule. Which approach most effectively balances schedule recovery with team morale and cross-functional collaboration?",
+  "options": [
+   "Implement mandatory overtime for both work streams, reduce the scope of lower-priority deliverables, and hold daily stand-ups to identify bottlenecks and redistribute work across team members as needed",
+   "Accelerate the critical path by reassigning high-performers from on-schedule work streams, increase communication frequency, and offer incentives for early task completion",
+   "Conduct a root-cause analysis with each work stream, identify resource or dependency constraints, reallocate or add resources strategically, involve team leads in problem-solving, and adjust schedules based on realistic capacity planning",
+   "Request a formal schedule extension from the sponsor, freeze scope changes to prevent further delays, and implement a penalty-based accountability system for missed milestones"
+  ],
+  "correct_index": 2,
+  "explanation": "Hard schedule recovery demands root-cause analysis, realistic capacity planning, and cross-functional coordination—not just reactive measures. Mandatory overtime reduces quality and morale; reassigning high-performers destabilizes on-schedule work. A formal extension avoids active management. Strategic resource reallocation based on constraint analysis, combined with team involvement and transparent adjustment, addresses both schedule and motivation.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Your project involves three departments with competing priorities and separate reporting structures. Midway through execution, you discover that one department's work is creating rework for another, and team members report unclear role boundaries. Which strategy best manages this cross-functional coordination challenge?",
+  "options": [
+   "Escalate the issue to executive leadership and request that all three departments report directly to you for the duration of the project",
+   "Establish clear RACI matrices for interdependent tasks, facilitate cross-functional workshops to align priorities with overall project goals, define handoff criteria and communication protocols, and create shared accountability metrics",
+   "Separate the three departments' work into independent parallel tracks with minimal interaction to reduce conflict and allow each to work autonomously",
+   "Reassign all critical work to your core team members and minimize involvement from the three departments to maintain schedule and quality control"
+  ],
+  "correct_index": 1,
+  "explanation": "Managing cross-functional teams requires aligning goals, clarifying roles, and establishing transparent processes—not eliminating collaboration or restructuring authority. A RACI matrix with shared accountability, clear handoff criteria, and aligned priorities addresses both the coordination breakdown and the rework loop. Escalation without process changes, separating work into silos, or removing department involvement all ignore the root cause of misalignment.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "You are monitoring project performance using earned value management. Your project shows a Cost Performance Index (CPI) of 0.92 and a Schedule Performance Index (SPI) of 0.88. Your team is working at capacity. Which corrective action most appropriately addresses the underlying control issues?",
+  "options": [
+   "Increase the team's work hours and budget reserves to bring both indices above 1.0 and ensure on-time, on-budget delivery",
+   "Conduct a detailed analysis of cost and schedule variances, identify root causes such as scope creep or resource inefficiency, reallocate resources or adjust scope, and establish tighter monitoring thresholds for future periods",
+   "Report the variances to stakeholders and request a formal baseline revision to reset expectations around budget and timeline",
+   "Reduce scope immediately to match the current burn rate, accelerate non-critical tasks using overtime, and freeze all budget spending until performance improves"
+  ],
+  "correct_index": 1,
+  "explanation": "An SPI of 0.88 and CPI of 0.92 indicate both schedule and cost overruns. Effective controlling requires root-cause analysis and corrective action, not just increasing effort or revising baselines. Simply adding hours or budget masks the underlying inefficiency; baseline revision without addressing causes sets up continued problems. Strategic resource reallocation and scope review, supported by tighter monitoring, directly address the performance gaps.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A key project deliverable is due in three weeks. Your team is technically skilled but shows signs of fatigue and waning motivation after a six-month sprint. Quality metrics have begun to slip, and two team members have indicated they may seek reassignment. What is the most effective integrated approach to maintain motivation, manage quality, and achieve the deadline?",
+  "options": [
+   "Implement a strict quality-gate review process with penalty clauses for missed standards, assign the two at-risk members to lower-visibility tasks, and promise bonuses upon on-time delivery",
+   "Recognize the team's efforts publicly, clarify the final deliverable's business impact and how their work contributes to company goals, adjust the pace by reducing non-essential meetings, redistribute workload to balance fatigue, and provide one additional resource or scope relief",
+   "Extend the deadline by two weeks to reduce pressure, allow the team to work at their own pace without performance oversight, and defer quality reviews until after delivery",
+   "Accelerate completion by bringing in external contractors to handle lower-priority work, maintain the deadline pressure as a motivator, and conduct individual performance reviews to identify underperformers"
+  ],
+  "correct_index": 1,
+  "explanation": "Sustaining motivation under deadline pressure requires recognizing effort, connecting work to purpose, managing fatigue through realistic pacing, and demonstrating leadership support—not penalties or artificial pressure. Extending deadlines or deferring quality removes accountability; external contractors do not address team morale. Purpose-driven motivation combined with workload management and targeted resource support addresses all three challenges: motivation, quality, and schedule.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable is at risk of missing its deadline due to resource constraints. Which combination of actions would most effectively address both the immediate schedule risk and underlying team performance issues?",
+  "options": [
+   "Reallocate available resources from lower-priority tasks, document the constraint in the project log, and reassess team capacity in the next status meeting to prevent recurring delays",
+   "Extend the project deadline by two weeks, reassign the task to a different team member, and reduce the scope of remaining deliverables to accelerate completion",
+   "Request emergency funding for temporary contract staff, eliminate all non-essential project communications, and implement daily check-ins with the affected team member",
+   "Approve overtime for the current team member, bypass the change control process to fast-track approvals, and defer quality reviews until after the deadline passes"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective project control requires balancing immediate corrective action (resource reallocation) with monitoring mechanisms (documentation and capacity reassessment) to address root causes and prevent recurrence. The other options either circumvent proper controls, create new risks, or fail to establish sustainable team management practices for future similar situations.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from five departments with competing priorities and unclear accountability for deliverables. Which approach best combines team coordination with effective progress monitoring to align all functions toward the project goals?",
+  "options": [
+   "Establish clear RACI responsibilities for each work stream, hold weekly cross-functional sync meetings with defined agendas, and track progress against agreed milestones with visible dashboards",
+   "Assign a single project owner from the largest department, schedule monthly reviews with senior leadership, and require email approval chains for all work-package decisions",
+   "Create separate sub-teams for each department, allow each team to set its own schedule and deliverables, and consolidate results in a final integration phase before handoff",
+   "Implement daily status meetings for all team members, centralize all decision-making through the project manager, and rotate task assignments weekly to build cross-functional skills"
+  ],
+  "correct_index": 0,
+  "explanation": "Clear role definition (RACI), regular structured communication, and transparent progress tracking are core coordination and monitoring practices that align cross-functional teams without creating bottlenecks. The alternatives either centralize decisions inappropriately, create silos that hinder coordination, or add overhead that impedes rather than enables effective monitoring.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Midway through execution, the project manager identifies that actual resource utilization differs significantly from the resource plan, and team morale has declined among members assigned to high-pressure workstreams. What is the most appropriate integrated response to manage team performance and control project resources?",
+  "options": [
+   "Conduct a resource leveling review to identify utilization variances, meet individually with affected team members to understand workload concerns, reassign tasks to balance capacity, and adjust the schedule if necessary to sustain productivity",
+   "Increase the project budget to hire additional staff immediately, mandate that all team members work extended hours until resource levels normalize, and provide bonuses to high-performers only",
+   "Reduce project scope to match available resources, terminate the contracts of underutilized team members, and implement weekly punitive performance reviews for members on high-pressure workstreams",
+   "Accept the resource variance as normal project variability, implement mandatory team-building activities to boost morale, and request executive intervention to force other departments to release more staff"
+  ],
+  "correct_index": 0,
+  "explanation": "Addressing resource and team performance issues together requires data-driven analysis of utilization, direct engagement with team members to understand root causes, and corrective actions (reassignment or schedule adjustment) that manage both resources and morale sustainably. The other options ignore root causes, create unsustainable practices, or fail to properly monitor and control resource allocation.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Your project dashboard shows that three work packages are behind schedule, but the critical path remains on track. The sponsor requests immediate corrective action for all delayed work packages. How should you evaluate and communicate the appropriate corrective response?",
+  "options": [
+   "Analyze which delayed work packages affect the critical path and float availability; implement corrective actions only for those impacting schedule risk; document the analysis to explain why non-critical delays do not require immediate intervention",
+   "Implement corrective actions for all three work packages immediately to demonstrate responsiveness, reallocate all available resources to acceleration, and request a budget increase to cover the additional cost of expedited work",
+   "Delay corrective action until the next scheduled review period, inform the sponsor that off-critical-path delays are acceptable, and focus all monitoring efforts on the critical path only",
+   "Extend the overall project deadline by the total float amount available, reassign delayed tasks to team members with lighter workloads, and reduce the frequency of progress reports to focus on execution"
+  ],
+  "correct_index": 0,
+  "explanation": "Sound project control requires distinguishing between schedule variance and schedule risk by analyzing critical path impact and available float. Communicating this analysis to the sponsor demonstrates informed decision-making and prevents unnecessary over-correction that wastes resources. The alternatives either respond without proper analysis, abandon monitoring discipline, or misuse schedule reserves.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A team member consistently delivers high-quality work but frequently misses internal milestone dates, creating bottlenecks for dependent workstreams. Meanwhile, another team member delivers on time but occasionally submits work requiring rework. How should the project manager address these distinct performance issues while maintaining team effectiveness?",
+  "options": [
+   "Meet separately with each member to understand the root causes of their performance patterns; adjust task assignment, deadline sequencing, or support methods based on their specific constraints; monitor progress more frequently for the time-management issue while implementing quality checkpoints for the other",
+   "Assign the first team member to tasks with internal deadlines only, assign the second to tasks with external commitments, and reduce both members' workload by 25 percent to improve overall performance consistency",
+   "Provide the same performance improvement plan to both members, require both to report daily status updates, and implement peer review processes where the two members check each other's work",
+   "Promote the first member to a senior role focused on quality assurance, reassign the second member's tasks to meet external deadlines, and hire replacement staff for their original responsibilities"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective team management requires diagnosing the unique root causes of each performance issue and tailoring interventions accordingly—not applying uniform solutions to distinct problems. Differentiated support (deadline sequencing for one, quality checkpoints for the other) combined with adjusted monitoring addresses the underlying issues while preserving both members' strengths. The alternatives either create misaligned incentives, impose unnecessary overhead, or fail to address root causes.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable will miss its deadline by two weeks due to resource constraints. As the project manager, which action best addresses both the immediate schedule risk and underlying resource allocation?",
+  "options": [
+   "Reassign tasks from non-critical path activities to accelerate the delayed deliverable while monitoring float consumption on dependent tasks",
+   "Request additional budget to hire temporary staff and implement concurrent processing of all remaining project phases",
+   "Document the delay in the project log and notify stakeholders that schedule adjustments will occur at the next monthly review",
+   "Reduce the scope of the delayed deliverable to match the available timeline and obtain written approval from the sponsor"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective monitoring and corrective action requires identifying slack resources (tasks with float) and reallocating them to the critical path while tracking the impact on dependent activities. Hiring (option B) adds cost without analyzing existing capacity; documentation alone (option C) is passive; scope reduction (option D) changes project objectives without exhausting scheduling alternatives first.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, finance, and operations who disagree on resource priorities. The engineering lead wants to extend development time; the finance lead demands cost containment; the operations lead needs early deployment. How should the project manager coordinate these competing goals?",
+  "options": [
+   "Establish a priority hierarchy with the project sponsor and align individual team incentives to cross-functional milestones rather than departmental metrics",
+   "Schedule separate meetings with each functional group to understand their constraints and report findings to leadership for a directive decision",
+   "Implement daily stand-ups where each function presents its constraints and allow the team to vote on priority trade-offs using majority rule",
+   "Document all conflicting positions in the project charter and escalate to the executive steering committee for official guidance on goal sequencing"
+  ],
+  "correct_index": 0,
+  "explanation": "Coordinating cross-functional teams toward shared goals requires aligning incentives and establishing clear sponsor-backed priorities so team members see themselves as part of one project, not competing departments. Separate meetings (option B) perpetuate silos; voting (option C) lacks governance; escalation (option D) abdicates the PM's coordination responsibility and delays resolution.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "While monitoring project progress using earned value analysis, you observe that the Cost Performance Index (CPI) is 0.92 and the Schedule Performance Index (SPI) is 1.05. Team morale is reported as declining despite the apparent schedule acceleration. What is the most likely explanation and recommended corrective action?",
+  "options": [
+   "The project is over budget but ahead of schedule; investigate scope creep or resource cost overruns and assess whether the schedule acceleration is sustainable without burning out the team",
+   "The project is under budget but behind schedule; reallocate reserves to accelerate task completion and implement recognition programs to boost morale",
+   "The project is tracking to plan but experiencing communication gaps; increase status reporting frequency and conduct a stakeholder engagement review",
+   "The project schedule baseline is misaligned with actual work; request a baseline revision and implement team-building activities to restore confidence"
+  ],
+  "correct_index": 0,
+  "explanation": "CPI of 0.92 indicates 92 cents earned per dollar spent (cost overrun); SPI of 1.05 indicates schedule acceleration. Declining morale despite progress suggests unsustainable pace or hidden issues (scope creep, overtime, quality shortcuts). Option B misreads CPI; option C ignores the cost issue; option D questions the baseline rather than investigating root causes.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A team member consistently delivers quality work but frequently misses internal deadlines and avoids collaborative tasks. Your project depends on this person's expertise, but the behavior is affecting team cohesion and increasing your corrective action burden. Which approach best manages both the individual and project risk?",
+  "options": [
+   "Document performance issues formally and move the person to a specialist role with clear deliverables and dependencies mapped to team milestones, with explicit expectations and feedback cycles",
+   "Assign a peer mentor from the team to improve collaboration skills and adjust the project schedule to accommodate the person's working pace",
+   "Reduce the scope of the person's responsibilities to tasks they can reliably complete on time and reallocate complex work to other team members",
+   "Schedule weekly one-on-one coaching sessions to build time-management skills and provide public recognition for completed work to increase motivation"
+  ],
+  "correct_index": 0,
+  "explanation": "Managing a high-skill, low-collaboration team member requires clarity on role expectations, measured feedback, and removing ambiguity about dependencies rather than accommodating behavior. A mentorship approach (option B) does not address accountability; reducing scope (option C) wastes expertise; coaching alone (option D) lacks structure and accountability mechanisms.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Your project dashboard shows all schedule and budget metrics within tolerance, but the technical lead reports that two systems integration dependencies will not be resolved until week 15, three weeks later than originally planned. The integration delay was not flagged in regular status reports. What does this reveal about your monitoring and control process?",
+  "options": [
+   "The project-management tools are tracking cost and schedule but not capturing technical or external dependency risks; implement a risk register review cycle and require leads to report blockers at the task level, not just summary metrics",
+   "The team is underreporting issues to avoid escalation; conduct anonymous surveys and adjust the reward structure to encourage early risk disclosure",
+   "The integration constraint was foreseeable and should have been in the project schedule baseline; request a formal schedule revision and extend the project timeline",
+   "The technical lead did not communicate with the project manager; establish a weekly technical steering committee to align on design decisions and dependency sequencing"
+  ],
+  "correct_index": 0,
+  "explanation": "Aggregate metrics (cost, schedule) can mask task-level or technical risks that create future critical-path impacts. The process failed to monitor forward-looking dependencies and technical blockers, not the relationship or team structure. Option B assumes motivation problems without evidence; option C accepts the delay without preventing recurrence; option D adds meetings without addressing root cause of the monitoring gap.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical task is at risk of missing its deadline due to resource constraints. Which approach best balances corrective action with team motivation while maintaining schedule integrity?",
+  "options": [
+   "Reallocate available resources from lower-priority tasks, document the schedule adjustment, and meet with the affected team member to discuss support and workload expectations.",
+   "Extend the overall project timeline immediately to accommodate the delay and notify stakeholders of the revised completion date without analyzing root causes.",
+   "Remove the team member from the task and reassign it to someone with fewer current responsibilities to accelerate completion regardless of skill match.",
+   "Implement mandatory overtime for all team members and increase monitoring frequency to ensure the original deadline is met through increased effort."
+  ],
+  "correct_index": 0,
+  "explanation": "Effective project control requires diagnosing resource constraints, taking corrective action (reallocation), documenting changes, and maintaining team morale through supportive communication. The other options either abandon schedule control, ignore skill considerations, or rely on unsustainable pressure tactics that undermine team motivation and project sustainability.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager discovers that actual costs are tracking 12% over budget through the first half of execution, while schedule performance shows tasks are 8% ahead of plan. What is the most appropriate monitoring response to coordinate corrective actions with cross-functional teams?",
+  "options": [
+   "Accelerate all remaining tasks to offset the cost overrun by compressing the schedule further and reallocate budget reserves to cover the variance.",
+   "Investigate the cost drivers and schedule correlation with functional teams, analyze whether early completion is sustainable, and adjust resource allocation or scope to bring costs in line without sacrificing quality.",
+   "Accept the cost variance as normal project volatility and focus monitoring efforts exclusively on keeping the schedule ahead to improve overall project performance metrics.",
+   "Request additional budget from stakeholders immediately and maintain current execution pace, since the schedule performance demonstrates the project is delivering value efficiently."
+  ],
+  "correct_index": 1,
+  "explanation": "Integrated monitoring must diagnose the relationship between cost and schedule variance—early completion may have driven costs up through inefficiency or rework. Coordinating with cross-functional teams to analyze root causes and adjust resource allocation addresses both metrics sustainably. The other options either ignore the cost problem, assume the schedule success is sustainable, or seek budget relief without understanding the underlying issues.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, marketing, and operations who have conflicting priorities regarding feature scope for the next release cycle. How should the project manager address this conflict while maintaining project control and team alignment?",
+  "options": [
+   "Facilitate a structured discussion using project objectives and constraints as criteria, document trade-offs and decisions, and establish clear roles and accountabilities for coordinated execution.",
+   "Defer the decision to senior management and ask them to mandate which function's priorities take precedence to avoid ongoing team conflict.",
+   "Prioritize engineering requirements since they typically have the longest lead times and schedule the fewest changes during execution.",
+   "Implement a rotating priority system where each function leads decision-making for one sprint cycle to ensure all perspectives receive equal time in planning."
+  ],
+  "correct_index": 0,
+  "explanation": "Effective cross-functional coordination requires the project manager to align competing priorities against project goals and constraints, make transparent trade-off decisions, and document accountability to enable unified execution. Deferring to management, assuming one function's priority, or rotating leadership without criteria all undermine the project manager's role in coordinating teams toward project success.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "While monitoring project progress, the team identifies that two interdependent tasks have slipped, creating a cascading delay in the critical path. The responsible team members attribute the slip to unclear handoff procedures between their departments. Which corrective actions should the project manager coordinate to address both the immediate schedule impact and underlying process deficiency?",
+  "options": [
+   "Document the delay, apply schedule compression techniques to remaining tasks, conduct a lessons-learned session with both teams to clarify handoff procedures, and update project management processes for future phases.",
+   "Assign an additional project coordinator to monitor handoffs daily for the remainder of the project and hold the responsible team members accountable for all future delays without investigating process root causes.",
+   "Reduce the scope of downstream tasks to absorb the slip within the current schedule baseline and require both departments to submit written handoff checklists immediately.",
+   "Request a schedule extension from stakeholders, implement a temporary task force to oversee all interdepartmental handoffs, and plan a post-project audit to redesign processes."
+  ],
+  "correct_index": 0,
+  "explanation": "Comprehensive project control requires both immediate corrective action (schedule compression) and root-cause remediation (clarifying handoff procedures and updating processes). This addresses the schedule variance while enabling team learning and preventing recurrence. The other options either increase supervision without fixing processes, reduce deliverables arbitrarily, or defer systemic improvements to post-project when they cannot benefit current execution.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager observes declining team engagement and missed individual deadlines that are not yet reflected in official schedule metrics. The team cites unclear expectations about how their work contributes to project goals. What integrated actions should the project manager take to restore motivation, prevent schedule variance, and maintain team effectiveness?",
+  "options": [
+   "Communicate project goals and interdependencies to the team, clarify how each role contributes to success, establish regular touchpoints to address concerns, and recognize completed milestones to sustain commitment.",
+   "Implement stricter status reporting requirements and increase the frequency of progress meetings to detect schedule slippage earlier and reinforce individual accountability.",
+   "Restructure task assignments based on individual skill levels and reduce scope commitments temporarily to improve on-time task completion without addressing underlying motivation factors.",
+   "Schedule one-on-one meetings with each team member to discuss performance concerns and issue formal expectations documents stating required output levels and deadline compliance."
+  ],
+  "correct_index": 0,
+  "explanation": "Effective team management and motivation require connecting individual work to project purpose, creating two-way communication channels, and recognizing contributions—these prevent variance before it appears in metrics. The other options focus on compliance monitoring, adjust resources without addressing root causes, or create formality that may increase perceived pressure rather than genuine engagement and shared purpose.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable is at risk of missing its deadline due to unforeseen technical complications. As the project manager, which approach best balances immediate corrective action with team motivation?",
+  "options": [
+   "Reassign the task to a more experienced team member and document the performance issue for the original assignee's review",
+   "Work with the team member to identify root causes, adjust the schedule or resources as needed, and communicate transparently about the revised timeline to stakeholders",
+   "Extend all subsequent milestones by the same duration and require daily status reports until the deliverable is complete",
+   "Escalate the issue to senior management immediately and request additional budget to hire contract resources"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project control requires addressing the root cause while maintaining team engagement—adjusting schedule or resources, not just reassigning blame. The other options either undermine motivation through public accountability, create artificial delays across unaffected work, or skip necessary problem-solving steps by defaulting to escalation.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, marketing, and finance with competing departmental priorities. Two team members have conflicting views on resource allocation that threatens the project schedule. What is the most effective coordination strategy?",
+  "options": [
+   "Have each department head present their position to the project sponsor and accept the sponsor's decision as final",
+   "Facilitate a joint problem-solving session where both parties identify shared project goals, explore trade-offs, and reach consensus on how to align resource use with overall project objectives",
+   "Implement a resource-sharing rotation that alternates priority weekly between departments until the project concludes",
+   "Document both positions formally and proceed with the option that requires the least total schedule delay"
+  ],
+  "correct_index": 1,
+  "explanation": "Coordinating cross-functional teams toward company goals requires aligning individual departmental interests with shared project objectives through collaborative dialogue, not unilateral decisions or mechanical rotations. Option B builds team cohesion and ownership; the others either bypass the team or create artificial parity without genuine agreement.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "While monitoring project progress, you discover that actual resource consumption is 15% higher than planned through the first third of the project. The schedule remains on track, but the budget trajectory suggests the project will exceed its limit by approximately 8%. Which corrective action sequence is most appropriate?",
+  "options": [
+   "Immediately reduce staffing levels on all remaining tasks and request a budget variance waiver from the sponsor",
+   "Analyze which tasks are driving the overrun, assess whether scope creep or estimation errors are responsible, adjust staffing or task sequencing for remaining work, and communicate revised forecasts to stakeholders",
+   "Compress the remaining schedule by reducing task durations and reallocate contingency reserves to cover the projected overage",
+   "Implement a freeze on all non-critical purchases and require all overtime to be approved by the project sponsor"
+  ],
+  "correct_index": 1,
+  "explanation": "Monitoring and controlling requires diagnostic analysis before corrective action—understanding whether the overage stems from estimation errors, scope change, or resource inefficiency shapes the right response. Option B's systematic approach avoids either blanket cuts or unsustainable schedule compression; the alternatives react without addressing root causes.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project team member consistently misses internal deadlines for deliverables, creating bottlenecks for dependent work, yet demonstrates strong technical skills and willingness to help peers. How should the project manager address this to both manage the project schedule and motivate the team?",
+  "options": [
+   "Pair the team member with a peer mentor who models time-management practices, establish clear milestone check-ins with agreed consequences, and recognize improvements publicly to reinforce the behavior change",
+   "Remove the team member from schedule-critical path tasks and reassign them to lower-priority work until they demonstrate consistent on-time delivery",
+   "Provide additional training on project management tools and require weekly progress reports submitted by end-of-business each Friday",
+   "Restructure task dependencies to add buffer time between this team member's deliverables and downstream work, absorbing schedule risk"
+  ],
+  "correct_index": 0,
+  "explanation": "Managing the team while controlling the schedule requires addressing root causes of missed deadlines—coaching, clear accountability, and recognition—rather than avoidance or buffer-padding. Option A leverages the team member's strengths, clarifies expectations, and maintains motivation; the others either sideline capability or mask the problem without solving it.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Your project is halfway complete. A project-management tool shows 94% of planned tasks are on schedule, yet earned value analysis reveals you are only 68% through the planned budget and schedule value. What does this discrepancy most likely indicate, and what monitoring action should follow?",
+  "options": [
+   "Task completion tracking is inaccurate; conduct a re-baseline of all remaining work and recalibrate the earned value baseline",
+   "Individual task progress is positive, but earlier tasks consumed more resources than planned or scope has expanded; investigate variance drivers, quantify remaining work accurately, and revise forecasts for schedule and cost at completion",
+   "The project is operating efficiently on schedule but underspending; accelerate procurement and hiring to consume the remaining budget before project closure",
+   "Schedule performance metrics are lagging indicators; focus monitoring exclusively on resource burn rate and cash flow for the remainder of the project"
+  ],
+  "correct_index": 1,
+  "explanation": "Earned value analysis reveals a performance gap that task-completion percentages alone cannot detect—either early tasks were inefficient or scope has expanded silently. Option B correctly prioritizes root-cause analysis of the variance, accurate measurement of true remaining work, and updated forecasts; the others either misdiagnose the gap or abandon the diagnostic tools.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable will miss its scheduled completion date by five days due to unexpected technical issues. Which approach best balances immediate corrective action with team morale while maintaining schedule integrity?",
+  "options": [
+   "Reassign the task to a more experienced team member and compress the remaining timeline by extending work hours across the entire project",
+   "Analyze resource availability and task dependencies to determine if schedule recovery is possible through parallel execution or resource reallocation before escalating to stakeholders",
+   "Accept the delay as unavoidable, document it in the project log, and inform all stakeholders immediately without exploring recovery options",
+   "Reduce the scope of the deliverable to meet the original deadline, then plan a separate change request for the omitted functionality"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project monitoring and corrective action requires first analyzing the situation systematically—examining resources, dependencies, and recovery alternatives—before deciding whether delay is unavoidable or preventable. The other approaches either skip analysis (option C), implement solutions prematurely (options A and D), or create secondary problems by overcommitting the team or unilaterally changing scope.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, marketing, and finance who have competing departmental priorities. The project manager notices that coordination breakdowns are causing rework and conflicting status reports. Which strategy most effectively aligns these departments toward the project goal while maintaining their functional accountability?",
+  "options": [
+   "Establish a project charter that clarifies shared objectives, define clear role boundaries and decision rights, and schedule regular cross-functional synchronization meetings with documented action items",
+   "Request that each department assign a full-time resource who reports exclusively to the project manager to eliminate divided loyalties and functional interference",
+   "Implement a matrix structure where the project manager has direct authority over all team members' daily task assignments and work priorities regardless of their home department",
+   "Create separate communication channels for each functional group and consolidate decisions at weekly executive steering committee reviews to reduce coordination friction"
+  ],
+  "correct_index": 0,
+  "explanation": "Coordinating cross-functional teams requires shared clarity on goals and explicit role definition, combined with regular synchronization—which preserves functional accountability while creating alignment. Option B removes functional expertise; option C creates unhealthy reporting conflicts; option D delays decisions and fragments communication rather than improving it.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project team's velocity has declined by 30% over the past two sprints without any official scope changes. The project manager must diagnose the root cause and motivate the team. Which sequence of actions best combines monitoring rigor with team leadership?",
+  "options": [
+   "Interview team members individually to identify blockers and morale issues, cross-reference findings with task burn-down data and resource utilization reports, then develop targeted corrective actions in collaboration with team leads",
+   "Conduct a public retrospective meeting to shame underperforming team members into increased effort and reallocate their work to proven high-performers on the team",
+   "Assume external dependencies or scope creep caused the slowdown, immediately escalate to the sponsor for additional budget and resources before investigating further",
+   "Review time-tracking logs to identify which individuals logged the fewest hours, then redistribute workload to ensure equal effort allocation across all team members"
+  ],
+  "correct_index": 0,
+  "explanation": "Monitoring and controlling project performance requires combining quantitative data (burn-down, utilization) with qualitative insights from team members to identify true root causes, and then engaging team leads in solutions—which preserves trust and accountability. The other approaches rely on assumption (option C), misdiagnose individual effort as the problem (option D), or damage motivation (option B).",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, the project manager identifies a deviation: actual resource costs have exceeded the planned budget by 12%, yet the schedule remains on track and scope is unchanged. Which corrective action best serves project control while investigating the root cause?",
+  "options": [
+   "Immediately freeze all non-essential spending and reduce labor hours to bring costs back to baseline, then investigate why costs overran after spending cuts are in place",
+   "Document the cost variance in detail, analyze whether it stems from wage rate changes, inefficient resource utilization, or unplanned work, and implement targeted controls based on root cause before the variance exceeds 15%",
+   "Accept the 12% overrun as minor and continue monitoring, since the schedule and scope targets are being met and the project may self-correct in later phases",
+   "Escalate immediately to the sponsor and finance department requesting a budget increase to cover the overrun and revised spending forecasts for remaining phases"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project control requires diagnosing cost variance before implementing corrective action—distinguishing between inefficiency, rate changes, or legitimate scope execution. Option A controls blindly without understanding cause; option C abandons monitoring within tolerance; option D escalates prematurely without internal corrective alternatives.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager must communicate project status to five different stakeholder groups—the executive sponsor, functional department heads, the project team, external clients, and the finance office—who each require different information and have different concerns. What approach ensures effective communication while using project-management tools appropriately?",
+  "options": [
+   "Create a single comprehensive project dashboard showing all metrics, schedule details, resource costs, and risk registers, then distribute it weekly to all stakeholders to ensure transparency and consistency",
+   "Identify each stakeholder group's information needs and concerns, develop tailored reports and communication formats for each audience using a shared underlying data repository and project-management tool, then schedule appropriate review cadences",
+   "Designate the project team to generate their own status reports, allow each functional department to report resource metrics independently, and consolidate findings into an executive summary for the sponsor only",
+   "Implement daily email status updates from team leads covering all activities, blockers, and budget information, then conduct monthly all-hands meetings where every stakeholder hears the same generic presentation"
+  ],
+  "correct_index": 1,
+  "explanation": "Monitoring and communicating project progress effectively requires tailoring information to each audience's priorities—sponsor cares about ROI and risk, team needs task-level details, clients need deliverable status—while maintaining a single source of truth in project-management tools. Option A provides one-size-fits-all reporting; option C fragments accountability; option D mixes high-frequency noise with low-frequency generic updates.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager completes a final review showing that two of four key objectives were met on schedule, one was partially achieved with scope reduction, and one was missed entirely. Which action should take priority during project closing?",
+  "options": [
+   "Document the specific reasons for the partial and missed objectives, noting scope changes and timeline pressures that affected delivery outcomes",
+   "Immediately reward all team members equally for their effort regardless of individual objective performance to maintain morale",
+   "Eliminate the lessons learned phase and proceed directly to archiving documentation to expedite project closure",
+   "Reassign underperforming team members to other projects before conducting any formal recognition or evaluation activities"
+  ],
+  "correct_index": 0,
+  "explanation": "Evaluating project results and documenting lessons learned are core closing activities that require honest assessment of what was achieved versus what was planned. This analysis informs both recognition decisions and organizational learning. The other options either skip critical closing steps, apply recognition inappropriately, or take personnel actions before proper evaluation.",
+  "knowledge_area": "Closing a Project",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During project closure, a team member who resolved a critical technical issue midway through the project is being considered for recognition. However, the final deliverable still fell short of the original performance specifications. How should the project manager approach recognition in this scenario?",
+  "options": [
+   "Recognize individual contributions to specific problem-solving efforts while also documenting in lessons learned how technical constraints affected overall project outcomes",
+   "Withhold all recognition until every original project goal is met, regardless of individual effort or intermediate achievements during execution",
+   "Provide recognition only to the project manager and sponsor since they are accountable for overall project performance metrics",
+   "Award bonuses based solely on the percentage of original objectives completed rather than evaluating individual contributions separately"
+  ],
+  "correct_index": 0,
+  "explanation": "Best practice in project closing separates recognition for individual efforts and contributions from the overall project results evaluation. Team members should be recognized for their specific achievements even if the total project did not meet all original specifications. This distinction encourages accountability while maintaining morale and supporting organizational culture.",
+  "knowledge_area": "Closing a Project",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A project that was intended to improve customer service response time by 40% achieved only a 15% improvement, though the implementation was technically sound and the team executed the plan as designed. When documenting lessons learned, what should the project manager prioritize investigating?",
+  "options": [
+   "Whether the initial goal of 40% was realistic given market conditions, and whether the actual improvement still delivered measurable business value despite missing the target",
+   "Which team members were responsible for the shortfall so they can be reassigned to easier projects in the future",
+   "How to modify project documentation standards to prevent future projects from setting ambitious objectives that might not be achieved",
+   "Whether to terminate the implemented solution immediately since it failed to meet the original performance specification benchmark"
+  ],
+  "correct_index": 0,
+  "explanation": "Evaluating project results requires assessing not only whether goals were met but also whether the goals themselves were realistic and whether the actual outcomes still delivered value. Lessons learned should examine the assumptions behind objectives, not blame team members for external factors. This supports organizational improvement and informs future project planning with better-calibrated expectations.",
+  "knowledge_area": "Closing a Project",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A project manager is closing a three-year infrastructure project with a team of 30 people from multiple departments. Several team members are being transferred to new projects immediately, and some will be reassigned to different business units. Which sequence best reflects proper closing procedures?",
+  "options": [
+   "Conduct formal recognition and feedback sessions with all team members, document lessons learned, evaluate goal achievement against baselines, and then transition personnel to new assignments",
+   "Release team members to their new projects first, then schedule optional feedback sessions, and file lessons learned documentation when project administrative work is complete",
+   "Evaluate goal achievement immediately, transfer personnel, recognize top performers through email communications, and archive lessons learned in a centralized database",
+   "Complete personnel transitions, gather informal feedback from department heads, consolidate objectives assessment with recognition activities, and archive project records"
+  ],
+  "correct_index": 0,
+  "explanation": "Proper project closing requires evaluating results, recognizing contributions, and capturing lessons learned before dispersing the team. Conducting these activities while the team is still intact ensures complete and accurate documentation, meaningful recognition, and the opportunity to gather fresh insights from all team members. Moving personnel before closing activities compromises the quality of lessons learned and the effectiveness of recognition.",
+  "knowledge_area": "Closing a Project",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When comparing two similar completed projects, Project A had lower actual costs than budget but did not meet all original scope objectives, while Project B met all objectives but exceeded budget by 18%. How should lessons learned from each project inform the closing documentation?",
+  "options": [
+   "Document in Project A's lessons the root causes of scope reductions and cost management practices, and in Project B's lessons the scope-control issues and cost-estimation factors that led to overruns",
+   "Rate Project A as more successful due to cost performance and Project B as failed due to budget variance, recommending cost controls be prioritized over scope in future projects",
+   "Combine the results into a single lessons learned report emphasizing that cost performance alone determines project success regardless of objective achievement",
+   "Focus closing documentation exclusively on the budget variances, treating scope and objective achievement as secondary considerations in the lessons learned analysis"
+  ],
+  "correct_index": 0,
+  "explanation": "Evaluating project results and documenting lessons learned requires examining multiple dimensions—cost, schedule, scope, and objective achievement—rather than favoring one metric. Each project's unique trade-offs provide distinct lessons. Project A teaches cost and scope management insights, while Project B teaches cost estimation and scope control lessons. This balanced approach supports better decision-making in future projects rather than oversimplifying success to a single variable.",
+  "knowledge_area": "Closing a Project",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical path activity will finish three days late due to resource constraints. Which corrective action best balances schedule recovery with team morale while maintaining project quality standards?",
+  "options": [
+   "Reallocate resources from non-critical activities, compress the schedule on dependent tasks, and communicate revised timelines to stakeholders immediately",
+   "Extend the project deadline by five days to accommodate the delay and reassess resource allocation across all remaining activities",
+   "Remove the team member from the activity and assign it to a faster performer to recover lost time without changing other parameters",
+   "Reduce the scope of the critical path activity to match the available time and document the change in the project charter"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective corrective action during execution requires identifying alternatives that address the root cause—resource constraints—without sacrificing quality or severely damaging team dynamics. Reallocating from non-critical activities uses float efficiently, compressing dependent tasks maintains the overall schedule, and transparent stakeholder communication prevents scope creep and maintains trust. The other options either cede control of the timeline, create personnel issues, or reduce deliverables without addressing the underlying constraint.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A cross-functional project team includes members from engineering, finance, and operations who report to different department heads. Two team members disagree on whether to use an expensive material that improves durability or a cheaper alternative that meets minimum specifications. As project manager, how should you resolve this conflict while maintaining alignment with company goals?",
+  "options": [
+   "Consult the project charter and cost-benefit analysis to determine which option aligns with project objectives, stakeholder priorities, and organizational strategy before deciding",
+   "Allow the engineering team member to choose the better material since engineering owns technical quality and durability is their primary concern",
+   "Defer to the finance team member because cost control is the ultimate measure of project success and cheaper solutions are always preferable",
+   "Split the difference by using the expensive material for half the project and the cheaper material for the other half to satisfy both perspectives"
+  ],
+  "correct_index": 0,
+  "explanation": "Managing cross-functional teams requires a structured decision framework that weighs trade-offs against established project objectives, not department preferences or arbitrary compromises. The project charter and cost-benefit analysis provide the governance needed to align conflicting functional priorities with overall company goals and stakeholder expectations. Deferring to one department or splitting differences without analysis abandons the project manager's coordinating role and risks decisions that serve individual functions rather than project success.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "While monitoring a project midway through execution, you discover that actual resource spending exceeds budgeted amounts by 12 percent, but work completed is only 8 percent behind schedule. The project still has sufficient contingency reserve. What is the most appropriate next step?",
+  "options": [
+   "Analyze cost and schedule variances to identify root causes, assess whether corrective actions can improve efficiency, and adjust the baseline if scope or assumptions have changed",
+   "Immediately implement cost-reduction measures across all remaining activities to bring spending back within the original budget allocation",
+   "Increase the contingency reserve by reallocating funds from low-risk activities since the project appears to be tracking over budget",
+   "Continue execution without intervention because the schedule variance is smaller than the cost variance, indicating acceptable overall performance"
+  ],
+  "correct_index": 0,
+  "explanation": "Monitoring requires investigation before action: a 12% cost overrun paired with only 8% schedule lag suggests inefficiency in resource utilization, not necessarily a fatal problem requiring immediate cuts. Analyzing the variance to understand whether it stems from scope creep, resource rate inflation, or inefficiency informs whether corrective action, baseline adjustment, or acceptance is warranted. Applying blanket cost cuts without diagnosis risks harming quality or schedule further; ignoring the variance delays intervention until the situation becomes critical.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Two senior team members have become locked in a dispute over technical approach that is slowing project progress. One advocates for an innovative solution with higher risk but better long-term outcomes; the other prefers a proven method with minimal risk and adequate outcomes. Both have strong support from their respective functional groups. How should you manage this conflict to sustain team motivation while advancing project goals?",
+  "options": [
+   "Facilitate a structured discussion where both approaches are evaluated against project constraints, risk tolerance, and success criteria, then make a decision that explains trade-offs and rationale",
+   "Support the proven method to minimize project risk and avoid delaying the schedule further while the dispute continues without resolution",
+   "Authorize the innovative approach because it demonstrates team engagement and willingness to pursue excellence, which motivates higher performance",
+   "Separate the conflicting team members into different workstreams so each can pursue their preferred approach and compete to demonstrate superiority"
+  ],
+  "correct_index": 0,
+  "explanation": "Managing team conflict while maintaining morale requires transparent, objective decision-making tied to project success criteria, not avoidance or favoritism. Facilitating structured evaluation against project constraints, risk tolerance, and success criteria makes the decision process visible and legitimate, even if one approach is rejected. This approach preserves motivation because team members see their input was heard and the choice reflects priorities, not politics. Choosing based on risk alone or splitting the team undermines trust and project cohesion.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "Your project management tool shows that three activities on the critical path are now 15 days behind, while three non-critical activities have 22 days of float remaining. Budget reserves are adequate, and no scope changes have been approved. Which combination of monitoring and control actions best restores schedule performance without creating new risks?",
+  "options": [
+   "Reallocate resources from float activities to critical path tasks, review dependencies for compression opportunities, and monitor whether schedule recovery actions impact quality or risk",
+   "Accept the 15-day delay, reduce project scope to match the extended timeline, and reallocate freed resources to higher-priority company initiatives",
+   "Crash the critical path by adding resources and overtime to recover all 15 days immediately, then monitor actual progress against the accelerated baseline",
+   "Focus corrective action only on the most-delayed critical activity, monitor the others, and implement contingency funds if additional delays occur"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective schedule control leverages the float pool—a built-in risk buffer—before consuming contingency or degrading quality through aggressive crashing. Reallocating from activities with float protects the project's schedule and budget reserves while compression opportunities (logic changes, parallel sequencing) avoid the cost penalty of crashing. Proactive quality and risk monitoring during recovery ensures that corrective actions don't introduce new problems. The other approaches either sacrifice scope prematurely, exhaust reserves too quickly, or neglect multiple critical bottlenecks.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "During project execution, a team member reports that a critical deliverable is falling behind schedule due to resource constraints. Which combination of actions would most effectively address both the immediate schedule risk and the underlying resource issue?",
+  "options": [
+   "Document the delay in the project log and notify stakeholders of the revised timeline without adjusting resource allocation or task dependencies",
+   "Reallocate available team members to accelerate the critical path, coordinate with cross-functional teams to secure additional expertise, and update the schedule baseline with corrective actions",
+   "Request overtime from the existing team to meet the original deadline while maintaining current resource levels and communication protocols",
+   "Reduce project scope to match current resource availability and reschedule non-critical deliverables to later phases without stakeholder consultation"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project control requires coordinating resources across teams, implementing corrective actions through reallocation, and updating baselines—not just logging delays or unilateral scope cuts. Overtime and static resources without coordination fail to address the root resource constraint that causes schedule risk.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager discovers midway through execution that two cross-functional teams are duplicating effort on the same deliverable due to unclear task ownership. Which approach best resolves this coordination failure while maintaining team motivation and project momentum?",
+  "options": [
+   "Implement clear ownership assignments immediately, hold a joint team meeting to clarify roles and dependencies, and establish a coordination protocol for future interface points",
+   "Assign the deliverable solely to the team that started first and redirect the second team's effort to fill other resource gaps without formal reassignment meetings",
+   "Merge both teams into a single unit under one leader to eliminate future coordination problems and restructure the work breakdown structure accordingly",
+   "Allow both teams to continue in parallel and select the higher-quality output after completion to minimize disruption and preserve team autonomy"
+  ],
+  "correct_index": 0,
+  "explanation": "Resolving coordination failures requires explicit ownership definition, transparent team communication, and documented protocols—not just priority selection or team mergers. Clarifying roles and dependencies motivates teams by reducing confusion and rework, which directly supports both schedule control and team management.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "While monitoring project progress using earned value analysis, a project manager identifies that the Schedule Performance Index is 0.92 while the Cost Performance Index is 1.05. What do these metrics reveal about project status, and which corrective action is most appropriate?",
+  "options": [
+   "The project is behind schedule but under budget; accelerate critical-path activities through resource reallocation while maintaining cost controls and monitoring earned value trends",
+   "The project is ahead of schedule and over budget; reduce resource levels immediately and extend the timeline to match the original cost baseline",
+   "The project metrics indicate normal variance; no corrective action is needed as schedule and cost are balanced within acceptable tolerance ranges",
+   "The project is over budget despite schedule delays; conduct a full scope review and implement a budget freeze until schedule recovery is confirmed"
+  ],
+  "correct_index": 0,
+  "explanation": "An SPI of 0.92 indicates schedule lag (behind by 8%), while a CPI of 1.05 shows cost efficiency (under budget by 5%). The appropriate response is to use the cost surplus to fund corrective schedule actions through resource coordination—not to ignore the schedule risk or implement broad cuts.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project team member consistently misses individual task deadlines, yet the overall project schedule remains on track due to schedule buffers. Should the project manager take corrective action, and if so, what form should it take?",
+  "options": [
+   "Monitor the situation passively since overall schedule performance is acceptable and individual performance issues will resolve naturally without management intervention",
+   "Initiate a coaching conversation to identify root causes such as skill gaps or unclear expectations, coordinate task reassignment or support if needed, and document progress to prevent schedule risk escalation",
+   "Immediately reassign the team member's remaining tasks to other team members and escalate performance concerns without investigating underlying causes or constraints",
+   "Reduce the team member's task scope proportionally and extend individual task deadlines to match their demonstrated capacity while maintaining project schedule commitments"
+  ],
+  "correct_index": 1,
+  "explanation": "Even when buffers mask individual performance problems, proactive team management through diagnosis and coordination prevents cascading failures when buffers are exhausted. Passive monitoring and immediate reassignment both fail to address root causes or develop team capability, whereas coaching and coordinated support improve both current and future performance.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ },
+ {
+  "question": "A project manager must communicate project status to three distinct audiences: the executive steering committee, the core project team, and external vendor partners. Which approach to progress communication best serves project control and coordination objectives across these groups?",
+  "options": [
+   "Distribute an identical comprehensive status report to all stakeholders containing detailed technical metrics, earned value analysis, risk registers, and vendor performance data",
+   "Tailor communication content and frequency to each audience's information needs—executives receive summary metrics and business impact, the team receives detailed progress and corrective actions, vendors receive scope and timeline updates relevant to their deliverables",
+   "Communicate only through weekly all-hands meetings to ensure transparency and reduce the administrative burden of multiple report formats and distribution channels",
+   "Provide status updates only when significant variances occur to minimize communication overhead and allow teams to focus on execution rather than reporting activities"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective project monitoring and control requires audience-specific communication that delivers actionable information—not one-size-fits-all reporting or meeting-only updates. Tailored communication enables executives to govern risks, teams to coordinate corrective actions, and vendors to manage dependencies, which directly supports executing and controlling the project.",
+  "difficulty": "hard",
+  "knowledge_area": "Executing, Monitoring, and Controlling a Project"
+ }
+]

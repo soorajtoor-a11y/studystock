@@ -595,7 +595,7 @@
   "correct_index": 0,
   "explanation": "Data in transit and data at rest are distinct states with different threat models. Data in transit is vulnerable to interception during network transmission, requiring encryption protocols like TLS; data at rest in storage systems requires encryption at the storage layer plus physical access controls. The other options confuse cipher types with data states or incorrectly pair authentication mechanisms with data protection requirements.",
   "knowledge_area": "Network and Data Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organization implementing a blockchain-based audit log wants to ensure that historical transaction records cannot be altered without detection. How does blockchain's hashing mechanism accomplish this integrity requirement?",
@@ -608,7 +608,7 @@
   "correct_index": 0,
   "explanation": "Blockchain integrity relies on hash chaining: each block's hash depends on its contents and the previous block's hash, creating an immutable chain. Any tampering with a past transaction changes that block's hash, which breaks the chain for all subsequent blocks, making tampering detectable. The other options misapply certificates, ciphers, and key systems to the hashing mechanism.",
   "knowledge_area": "Network and Data Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A network administrator must choose between MAC (Mandatory Access Control), DAC (Discretionary Access Control), and RBAC (Role-Based Access Control) for a healthcare system where doctors, nurses, and billing staff have different data permissions. Which model best fits this requirement and why?",
@@ -621,7 +621,7 @@
   "correct_index": 0,
   "explanation": "RBAC is the best fit for role-based permission structures; permissions are centrally defined by role and automatically applied to all members of that role, simplifying administration in multi-role environments. MAC works best for classified data with fixed security levels; DAC is best when individual data owners control permissions. While MAC and DAC have specific uses, RBAC directly addresses the scenario of different job roles requiring different access.",
   "knowledge_area": "Network and Data Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "During network authentication, a system requires something you know (password), something you have (hardware token), and something you are (fingerprint). How does this multifactor authentication approach differ from public key cryptography in preventing unauthorized network access?",
@@ -634,7 +634,7 @@
   "correct_index": 0,
   "explanation": "Multifactor authentication (MFA) verifies that the person requesting access is who they claim to be by requiring multiple independent proof factors, blocking unauthorized users at the authentication gate. Public key cryptography protects the confidentiality and integrity of messages in transit by ensuring only the private key holder can decrypt them, but doesn't authenticate who the user is. MFA and PKC address different security concerns.",
   "knowledge_area": "Network and Data Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "Two organizations exchange sensitive data and must ensure confidentiality. Organization A wants to use public key cryptography, while Organization B prefers private key cryptography. Which statement accurately describes the trade-off between these approaches?",
@@ -647,6 +647,6 @@
   "correct_index": 0,
   "explanation": "Public key cryptography solves the key distribution problem by using paired keys (public and private), eliminating the need to secretly share keys beforehand, but involves higher computational overhead. Private key cryptography (symmetric) requires both parties to securely share a single secret key in advance but is faster to compute. The other options confuse cipher types with key management systems or incorrectly pair cryptographic approaches with unrelated mechanisms.",
   "knowledge_area": "Network and Data Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  }
 ]

@@ -144,6 +144,12 @@ def parse_questions(raw, area_name):
         raise ValueError("no valid questions in response")
     return good
 
+def enforce_difficulty(questions, difficulty):
+    """Override whatever the model wrote so the tag always matches the request."""
+    for q in questions:
+        q['difficulty'] = difficulty
+    return questions
+
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
     while True:
@@ -219,7 +225,7 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
         for attempt in (1, 2):                      # retry bad JSON once
             try:
                 raw = call_model(client, prompt)
-                got = parse_questions(raw, section["name"])
+                got = enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
                 break
             except ValueError as e:
                 print(f"    bad JSON from model (attempt {attempt}): {e}")

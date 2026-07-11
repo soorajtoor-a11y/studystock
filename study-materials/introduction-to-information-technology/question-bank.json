@@ -595,7 +595,7 @@
   "correct_index": 3,
   "explanation": "Continuous replication across multiple cloud regions ensures minimal data loss and maintains service continuity during outages, whereas archive-only or local-only approaches create single points of failure. The other options lack either geographic distribution or continuous synchronization needed for true disaster recovery.",
   "knowledge_area": "Information Management Concepts",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organization discovered that personal data including Social Security numbers and payment card information was stolen from their customer database. Which of the following best describes how this data is typically monetized in illegal markets?",
@@ -608,7 +608,7 @@
   "correct_index": 1,
   "explanation": "Stolen financial and identity data commands high prices on dark web markets specifically because criminals use it for fraud, unauthorized purchases, and identity theft. While legitimate data brokers and marketers do collect personal data, stolen data is routed through criminal networks rather than legal data commerce channels.",
   "knowledge_area": "Information Management Concepts",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A software development company must decide between storing its proprietary source code in an on-premises server infrastructure versus a hybrid cloud model with encrypted cloud storage. Which factors most directly address both intellectual property protection and regulatory compliance concerns?",
@@ -621,7 +621,7 @@
   "correct_index": 1,
   "explanation": "Data residency requirements and access controls directly address regulatory compliance (which data can reside where) while trade secret classification protects intellectual property rights legally. The other options address related concerns like vendor agreements or escrow, but do not comprehensively address both IP protection and regulatory compliance simultaneously.",
   "knowledge_area": "Information Management Concepts",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organization implements both biometric access controls for server rooms and multi-factor authentication for database user accounts. How do these security measures address different layers of information protection?",
@@ -634,7 +634,7 @@
   "correct_index": 0,
   "explanation": "Physical security through biometrics protects the infrastructure itself from unauthorized access, while digital authentication protects against unauthorized database queries and account compromises. These layers work together to prevent both physical intrusions and logical security breaches, which the other options incorrectly conflate.",
   "knowledge_area": "Information Management Concepts",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A healthcare organization must choose between a traditional relational database with scheduled nightly backups and a cloud-based NoSQL database with continuous synchronization across multiple availability zones. Which distinction best explains the trade-offs between these data storage architectures in terms of recovery capability and operational complexity?",
@@ -647,6 +647,6 @@
   "correct_index": 0,
   "explanation": "The core architectural distinction involves consistency guarantees (relational ACID properties versus eventual consistency in NoSQL) and scalability trade-offs, which directly impact recovery strategies and operational management. While geographic distribution and compliance are relevant, the fundamental difference between these database types centers on how they prioritize consistency, schema structure, and horizontal scaling capabilities.",
   "knowledge_area": "Information Management Concepts",
-  "difficulty": "easy"
+  "difficulty": "hard"
  }
 ]

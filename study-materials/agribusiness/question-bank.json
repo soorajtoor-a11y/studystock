@@ -75,7 +75,7 @@
   "correct_index": 2,
   "explanation": "A cooperative allows the farmer to retain operational control of her vegetable business while pooling resources with other agricultural producers for economies of scale and shared marketing—addressing both her desire for autonomy and growth constraints. A sole proprietorship leaves her personally liable; a partnership dilutes control; and a corporation introduces tax complexity she wishes to avoid.",
   "knowledge_area": "Management Analysis and Decision Making",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A livestock producer is developing a SWOT analysis for his cattle ranch operation. He identifies that a regional drought reduces grazing capacity, while nearby urban expansion creates premium direct-to-consumer meat markets. Which combination represents an accurate pairing of environmental consideration with strategic response?",
@@ -88,7 +88,7 @@
   "correct_index": 1,
   "explanation": "Urban expansion is a threat to land availability but simultaneously creates an opportunity for direct-to-consumer premium markets; the producer's strength in grass-fed branding and proximity to restaurants allows him to capitalize on this threat-turned-opportunity through farm-to-table sales. The other pairings either misclassify the SWOT category or fail to connect environmental factors to realistic strategic responses.",
   "knowledge_area": "Management Analysis and Decision Making",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organic grain operation is conducting impact analysis for a proposed transition from conventional tillage to no-till production methods. Which assessment most accurately reflects both the positive and negative consequences across environmental and business dimensions?",
@@ -101,7 +101,7 @@
   "correct_index": 0,
   "explanation": "No-till systems genuinely reduce erosion and water loss (environmental positives) but require significant upfront equipment costs, produce lower yields during organic transition, and delay organic certification benefits (business negatives). The other options present false trade-offs, misrepresent agronomic outcomes, or assume market conditions not supported by organic industry trends.",
   "knowledge_area": "Management Analysis and Decision Making",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A poultry cooperative is developing business goals and strategies to capture expanding demand for heritage breed meat products. The cooperative's current strengths include established distribution networks and member expertise, while market research shows premium pricing potential but limited consumer awareness. Which strategic goal most directly addresses the market opportunity while leveraging existing cooperative advantages?",
@@ -114,7 +114,7 @@
   "correct_index": 1,
   "explanation": "A heritage breed marketing brand and direct-to-consumer platform directly capitalize on the premium pricing opportunity while using the cooperative's existing member networks and distribution expertise—high-return use of current strengths. Cost reduction (A) misses the premium positioning; large-scale expansion (C) contradicts heritage positioning; and genetics licensing (D) diverts resources from immediate market capture.",
   "knowledge_area": "Management Analysis and Decision Making",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A dairy farmer is designing a production plan to meet contracts requiring 50,000 pounds of milk monthly while managing seasonal variation in herd lactation cycles. The farmer currently maintains 120 cows with peak production of 2,200 pounds per cow monthly and winter lows of 1,600 pounds per cow. Which operational decision most ethically and feasibly addresses the contractual obligation within herd welfare constraints?",
@@ -127,7 +127,7 @@
   "correct_index": 3,
   "explanation": "Purchasing milk from neighboring dairies during low-production months meets contractual obligations while maintaining current herd size and welfare standards—the farmer's herd produces 192,000-264,000 pounds monthly (104,000 excess in winter), making partnership feasible. Expanding herd size or using stimulants creates ethical welfare concerns; adjusting contracts breaches existing agreements.",
   "knowledge_area": "Management Analysis and Decision Making",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A region transitions from traditional grain monoculture to an integrated crop-livestock system that includes legume cover crops. Which of the following best explains the primary interconnection between these AFNR systems?",

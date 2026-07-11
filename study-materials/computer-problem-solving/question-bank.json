@@ -75,7 +75,7 @@
   "correct_index": 0,
   "explanation": "Access control lists restrict who can access resources (confidentiality and integrity), while event logging creates an auditable trail of access attempts (accountability). Together, they form a detective and preventive control pair. The other options describe different security measures like encryption, vulnerability management, and antivirus scanning.",
   "knowledge_area": "Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An attacker uses a fake website that mimics a legitimate banking portal to collect login credentials from users. Later, the attacker launches a coordinated attack from hundreds of compromised machines against the bank's web server. Which two distinct threat types are demonstrated in this scenario?",
@@ -88,7 +88,7 @@
   "correct_index": 0,
   "explanation": "The fake website collecting credentials is phishing, a social engineering technique. The coordinated attack from many machines is a Distributed Denial of Service (DDoS) attack. SQL injection targets databases, footprinting is reconnaissance, zero-day is an unpatched flaw, spoofing falsifies identity, and malware is executable code—none of these pairs match the scenario.",
   "knowledge_area": "Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A company's firewall is configured to block inbound traffic on all ports except 80 and 443, while antivirus software runs with real-time file scanning enabled. An internal employee installs a remote access tool that communicates over HTTPS on port 443 without authorization. Which security principle is primarily compromised in this scenario?",
@@ -101,7 +101,7 @@
   "correct_index": 0,
   "explanation": "This is a hard question because it tests understanding of CIA triad limitations. The firewall's port-based rules cannot distinguish between legitimate HTTPS and malicious HTTPS traffic, compromising the integrity of the system's control (the tool allows unauthorized modification of system state). While confidentiality may also be at risk, the question focuses on why the controls failed—because they cannot enforce integrity at the application level. Availability and authentication are not the primary issue here.",
   "knowledge_area": "Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organization discovers that a former employee's account was used to access confidential files three weeks after the employee's departure. The IT department had disabled the account immediately but had not reviewed the audit logs. Which combination of vulnerabilities allowed this incident?",
@@ -114,7 +114,7 @@
   "correct_index": 0,
   "explanation": "The vulnerability was organizational, not technical: the account was disabled (deprovisioning happened) but logs were not reviewed, so the breach went undetected. This reflects non-compliance with security procedures and gaps in auditing. A zero-day would have bypassed authentication entirely, spyware would require prior installation, and spoofing would be an external attack—none explains how the account was accessed three weeks after disabling.",
   "knowledge_area": "Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "An organization uses WPA2 for wireless security but discovers that an attacker obtained the pre-shared key through social engineering and connected to the network. After the incident, management upgrades to WPA3. Which specific improvement in WPA3 most directly mitigates the risk of this attack repeating?",
@@ -127,7 +127,7 @@
   "correct_index": 0,
   "explanation": "WPA3's Simultaneous Authentication of Equals (SAE) is specifically designed to be resistant to brute-force and dictionary attacks on the pre-shared key, directly addressing the scenario where an attacker uses a compromised PSK. WPA2 used the older PSK handshake (Four-Way Handshake), which is vulnerable to offline attacks. The other options describe features that are either not accurate (WPA3 still uses similar encryption lengths relative to the threat model) or are not unique mitigations for compromised PSK scenarios.",
   "knowledge_area": "Security",
-  "difficulty": "easy"
+  "difficulty": "hard"
  },
  {
   "question": "A Windows system fails to boot after a recent driver update, and the user cannot access Safe Mode. Which combination of boot methods and recovery tools would most effectively diagnose whether the issue originates in the firmware POST sequence versus the OS loader?",

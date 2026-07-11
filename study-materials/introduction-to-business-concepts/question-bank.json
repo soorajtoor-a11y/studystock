@@ -1,0 +1,652 @@
+[
+ {
+  "question": "When tailoring a resume for a specific job posting, which element should be prioritized to demonstrate direct alignment with the employer's stated requirements?",
+  "options": [
+   "Reorganizing the skills section to mirror the language and competencies listed in the job description, while maintaining accurate representation of your actual experience",
+   "Expanding the objective statement to include every qualification mentioned in the posting, even if some are tangentially related to your background",
+   "Rearranging work history entries by relevance to the position rather than strict chronological order, highlighting duties that match the role's core functions",
+   "Adding industry-specific terminology throughout the document to increase keyword density and improve applicant tracking system compatibility"
+  ],
+  "correct_index": 0,
+  "explanation": "The most effective resume tailoring strategy mirrors the employer's language in the job description while staying truthful about your qualifications—this demonstrates both alignment and credibility. Options B and D sacrifice accuracy for appearance, while C risks confusion by abandoning the standard reverse-chronological format that many employers expect.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "In a behavioral interview using the STAR method, what distinguishes an effective response that demonstrates genuine competency from one that merely describes job responsibilities?",
+  "options": [
+   "Focusing on the Situation and Task phases while keeping the Action and Result sections brief to maintain interviewer engagement",
+   "Selecting a concrete example where your specific actions led to a measurable outcome, rather than discussing what your role typically involved",
+   "Using examples exclusively from your most recent position, as they are most relevant to current employer expectations and industry standards",
+   "Emphasizing the team environment and collaborative context of the example to show you prioritize group dynamics over individual achievement"
+  ],
+  "correct_index": 1,
+  "explanation": "A strong STAR response showcases individual agency and concrete results, not just job duties—interviewers distinguish capability from role description through specific actions and measurable outcomes. Option A weakens the impact by shortchanging critical evidence; Option C limits your material unnecessarily; Option D can obscure your personal contribution.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "When writing a cover letter, how should you balance demonstrating knowledge of the company's mission and recent developments with avoiding content that could be substituted into applications for competing firms?",
+  "options": [
+   "Reference the company's stated mission and values, then connect one specific recent business event or product launch to a personal experience that motivated your career direction",
+   "Describe the company's overall industry position and explain why the sector interests you more than other fields you might have considered",
+   "List multiple achievements and awards the company has received in the past three years to establish credibility and show thorough research",
+   "Incorporate the company name frequently throughout and quote sections directly from their website's About Us and careers pages verbatim"
+  ],
+  "correct_index": 0,
+  "explanation": "The strongest cover letters combine company-specific research (mission, recent news) with personalized connection (your own motivation or relevant experience)—this is verifiable as genuine research while remaining distinctive. Options B and C show industry awareness but lack company-specific focus; Option D reads as generic template-filling despite the company name.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "When completing a job application form, which approach best protects against disqualification while presenting yourself as a strong candidate?",
+  "options": [
+   "Copying phrases and formatting from your resume and cover letter directly into the application fields to ensure consistency and coherence",
+   "Providing complete, honest information in all required fields, adapting language to the application's specific questions while maintaining resume accuracy",
+   "Leaving optional fields blank to reduce the risk of providing information that might be used against you during screening",
+   "Using the notes section to explain gaps in employment or qualifications you lack, positioning these as learning opportunities and future strengths"
+  ],
+  "correct_index": 1,
+  "explanation": "Successful applications require honest, complete responses tailored to the form's specific prompts—direct copying ignores context, optional blanks weaken your profile, and explanatory notes in notes sections invite scrutiny rather than strength. The correct approach demonstrates both accuracy and strategic relevance to each question.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "How should you prepare for an interview when you lack direct experience in one of the job's core competencies but possess related skills from a different context?",
+  "options": [
+   "Acknowledge the skill gap upfront, describe the related transferable skills you do possess, and explain how you would rapidly develop the missing competency through on-the-job learning",
+   "Emphasize the strengths and accomplishments from roles where you excelled rather than addressing the specific gap the employer listed",
+   "Research industry training programs and certification courses you could complete after hire to demonstrate commitment to developing the missing skill",
+   "Reframe your related experience as substantially equivalent to the required competency, highlighting any overlap in problem-solving or analytical approaches"
+  ],
+  "correct_index": 0,
+  "explanation": "Credible candidates acknowledge gaps honestly while bridging them with transferable skills and a learning plan—this builds trust and shows self-awareness. Option B avoids the issue; Option C defers accountability to post-hire; Option D risks appearing deceptive if the equivalence is overstated during fact-checking.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "A manufacturing firm tracks inventory costs, manages supplier relationships, and coordinates production schedules. Which business activity encompasses all three of these functions?",
+  "options": [
+   "Operations, which transforms raw materials into finished goods while managing supplier networks and production timelines",
+   "Finance, which allocates capital to inventory purchases, negotiates supplier terms, and monitors production expenses",
+   "Marketing, which coordinates product distribution through suppliers and schedules promotional campaigns across production cycles",
+   "Human resources, which recruits production staff, manages supplier employment contracts, and develops scheduling protocols"
+  ],
+  "correct_index": 0,
+  "explanation": "Operations encompasses the transformation of inputs into outputs, including supply chain coordination, inventory management, and production scheduling. Finance allocates resources but does not directly manage supplier relationships or coordinate production. Marketing focuses on customer value, not supplier or production logistics. Human resources manages people, not material flows or production timing.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "An accounting department records sales transactions, reconciles bank statements, and prepares financial reports for creditors. In relation to the broader business function, accounting primarily serves which role?",
+  "options": [
+   "Finance, because accounting provides the historical financial data and analysis that finance uses to make capital allocation and investment decisions",
+   "Operations, because accounting tracks the costs of production activities and helps optimize material and labor resource usage",
+   "Marketing, because accounting measures customer transaction values and calculates the revenue impact of promotional campaigns",
+   "Management, because accounting gathers information that allows managers to monitor organizational performance and compliance with regulations"
+  ],
+  "correct_index": 0,
+  "explanation": "Accounting is a subset of finance; it records and communicates financial information that finance uses to plan budgets, manage debt, and allocate capital. While accounting data informs operations and management decisions, accounting's primary role within the business function hierarchy is to support financial decision-making and analysis.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A retailer implements a loyalty program to increase repeat purchases, trains customer service staff to resolve complaints, and analyzes feedback to improve product selection. Which two business activities are most directly addressed by these initiatives?",
+  "options": [
+   "Marketing and human resources, since the program builds brand loyalty, staff training develops employee skills, and feedback shapes market positioning",
+   "Customer relations and marketing, since the program fosters loyalty and repeat purchases while using feedback to refine value propositions",
+   "Finance and operations, since the program increases cash flow from repeat customers and improves inventory decisions through feedback analysis",
+   "Human resources and information management, since staff training develops capabilities and feedback collection systems capture customer data"
+  ],
+  "correct_index": 1,
+  "explanation": "Positive customer relations focus on building loyalty and resolving complaints—both directly addressed by the loyalty program and staff training. Marketing applies that loyalty and feedback to develop products and messaging that meet customer needs. While human resources and information management are involved, the core business activities being exercised are customer relations and marketing.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "During a recession, a company must decide whether to reduce workforce size, defer capital equipment purchases, or cut marketing spending. Which business function must balance the constraints of limited cash, employee retention, and market visibility to guide these trade-off decisions?",
+  "options": [
+   "Finance, which prioritizes liquidity and return on investment while consulting operations and human resources on feasibility and risk",
+   "Operations, which minimizes production costs and supply chain disruptions while requesting support from finance and human resources",
+   "Management, which integrates information from all functions to align spending decisions with long-term organizational strategy and stakeholder obligations",
+   "Human resources, which negotiates workforce adjustments with finance and marketing to preserve organizational culture and employee morale"
+  ],
+  "correct_index": 2,
+  "explanation": "Management is the integrative function that sets organizational direction and makes cross-functional trade-off decisions under constraint. While finance manages capital and operations manages efficiency, management weighs strategic priorities, risk, and stakeholder interests across all functions. Finance, operations, and human resources provide input, but management makes the final allocation decision.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A software company outsources customer support to reduce labor costs, automates invoice processing to accelerate cash collection, and centralizes data into a cloud platform. Which business activity most directly enables all three of these process improvements?",
+  "options": [
+   "Information management, because centralized data systems allow the company to monitor support outsourcing, track invoice automation metrics, and integrate cloud infrastructure",
+   "Operations, because outsourcing, automation, and platform consolidation all reduce production cycle time and improve resource efficiency",
+   "Finance, because outsourcing reduces headcount expenses, automation speeds receivables collection, and data integration improves financial forecasting",
+   "Human resources, because outsourcing redirects staffing, automation eliminates routine tasks, and centralized systems improve employee access to information"
+  ],
+  "correct_index": 0,
+  "explanation": "Information management—the organization and use of data systems—is the common thread: it enables outsourcing decisions through reporting, supports automation through integrated workflows, and provides the cloud platform infrastructure. While finance benefits from faster cash flow and operations gains efficiency, information management is the business activity that directly executes and coordinates all three technical and organizational changes.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "When tailoring a resume for a specific job posting, which section should be modified most frequently to reflect the language and priorities of the job description?",
+  "options": [
+   "The professional summary or objective statement to emphasize relevant skills and experience that align with the employer's stated needs",
+   "The employment history dates to show continuous work experience without gaps that might concern potential employers",
+   "The education section to highlight degrees and certifications that match industry standards for entry-level positions",
+   "The contact information area to include links to professional portfolios that demonstrate technical competencies"
+  ],
+  "correct_index": 0,
+  "explanation": "The professional summary or objective is the most flexible and impactful section to customize for each position, allowing candidates to immediately address the employer's priorities and demonstrate fit. While all sections matter, the summary directly connects candidate strengths to job requirements, whereas employment history, education, and contact details remain largely consistent across applications.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "During a job interview, a candidate is asked about a weakness. Which approach best balances honesty with demonstrating growth and self-awareness?",
+  "options": [
+   "Describe a genuine past challenge, explain the specific steps taken to address it, and demonstrate measurable improvement or current proficiency in that area",
+   "Admit that perfectionism is your main weakness while assuring the interviewer that you work around the clock to meet all deadlines",
+   "Acknowledge a technical skill gap in a non-essential function and outline your commitment to acquiring that skill through formal training programs",
+   "Claim that you have no significant weaknesses but emphasize your willingness to learn from colleagues and mentors in a team setting"
+  ],
+  "correct_index": 0,
+  "explanation": "The best answer demonstrates authentic self-reflection by naming a real challenge, showing initiative through concrete action, and providing evidence of improvement—qualities employers value. Options B and D dodge the question or claim perfection, which damages credibility, while Option C's approach (non-essential skill gap) misses the opportunity to show personal growth from a meaningful challenge.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "When writing a cover letter, how should a candidate balance demonstrating knowledge of the company with explaining their own qualifications and fit?",
+  "options": [
+   "Dedicate roughly equal space to research-backed company insights and specific examples of personal skills or achievements that address the role's core responsibilities",
+   "Focus primarily on the company's mission, values, and recent achievements to show genuine interest, then briefly mention relevant personal experience in the closing",
+   "Concentrate on detailing personal accomplishments and career goals, with only a passing reference to why the company's industry appeals to you",
+   "Reference multiple company initiatives and product lines extensively to prove thorough research, reserving the final paragraph for a summary of educational background"
+  ],
+  "correct_index": 0,
+  "explanation": "The strongest cover letter weaves company knowledge with personal qualifications equally, showing both genuine interest and clear fit. Option B over-weights company research at the expense of demonstrating capability, Option C neglects company research entirely, and Option D misallocates space by emphasizing company details over the applicant's value proposition.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "A job application requires references who can speak credibly to your work ethic and relevant skills. Which combination of reference types would be most effective for a first-time job seeker?",
+  "options": [
+   "A former supervisor or team lead, an academic advisor or professor, and a community volunteer coordinator who observed your reliability and initiative",
+   "Three family members who can vouch for your character and personal qualities in everyday situations",
+   "A high school or college guidance counselor, a sports coach, and a personal friend who knows your long-term ambitions",
+   "Two former employers and a character reference from a teacher who emphasized your academic strengths and classroom participation"
+  ],
+  "correct_index": 0,
+  "explanation": "A supervisor demonstrates work-specific competence, an academic reference shows intellectual capability and discipline, and a volunteer coordinator illustrates reliability and initiative in an applied setting—together providing diverse, credible evidence of job readiness. Options B and C lack professional or substantive workplace context, while Option D's teacher reference is weaker than a volunteer coordinator's direct observation of work behaviors.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "During a job interview, the hiring manager asks, 'Tell me about a time you had to adapt to a significant change at work or school.' How should a candidate structure their response to be most compelling?",
+  "options": [
+   "Describe the specific situation and change, explain the challenge it created, detail the concrete actions taken to adapt, and reflect on the outcome and lesson learned",
+   "Give a brief overview of your flexibility as a trait, mention a couple of past changes you've experienced, and assure the interviewer you're always open to change",
+   "Recount a major organizational restructuring or policy shift, emphasize how stressful the initial period was, and note that you eventually got used to it over time",
+   "Explain a change you initiated yourself to show leadership and proactivity, detail your planning process, and highlight improvements that resulted from your decision"
+  ],
+  "correct_index": 0,
+  "explanation": "The STAR method (Situation, Task, Action, Result) structure demonstrates concrete problem-solving and resilience by providing a complete narrative. Option B is vague and lacks proof; Option C focuses on stress rather than adaptation strategy; Option D shifts focus to leading change rather than responding adaptively to external change.",
+  "difficulty": "hard",
+  "knowledge_area": "Job-Search Skills"
+ },
+ {
+  "question": "A business implements a subscription-based revenue model while maintaining traditional retail locations. How does this dual approach reflect organizational adaptation to modern market conditions?",
+  "options": [
+   "It diversifies income streams while reducing dependence on seasonal retail traffic by capturing recurring customer revenue alongside transactional sales",
+   "It eliminates the need for inventory management by shifting all operations to digital platforms and reducing overhead costs significantly",
+   "It guarantees market dominance by offering customers multiple purchasing channels without requiring changes to supply chain infrastructure",
+   "It simplifies organizational design by consolidating all business functions into a single department responsible for both subscription and retail operations"
+  ],
+  "correct_index": 0,
+  "explanation": "Organizations adapt by diversifying revenue models and customer touchpoints; the subscription component provides predictable recurring revenue while retail maintains direct customer relationships. The other options misrepresent how dual models function—they don't eliminate inventory needs, guarantee dominance, or simplify operations, but rather require more sophisticated organizational coordination.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "When a manufacturing firm decides to source materials from suppliers in countries with lower labor costs while maintaining corporate headquarters in a developed nation, which business environment factors most directly influence this decision?",
+  "options": [
+   "Government trade agreements, labor cost differentials, and currency exchange rates that collectively affect production expenses and competitive positioning",
+   "Corporate social responsibility initiatives, brand loyalty metrics, and customer demographic trends that determine long-term market viability",
+   "Technological innovation cycles, patent protection laws, and research and development funding availability across different regions",
+   "Supply chain transparency requirements, inventory turnover ratios, and logistics network density in both domestic and international markets"
+  ],
+  "correct_index": 0,
+  "explanation": "Global sourcing decisions hinge on economic factors: labor costs, trade agreements, and exchange rates directly impact profitability and competitiveness. While options B, C, and D contain real business considerations, they operate at different levels—CSR and brand strategy influence where sourcing occurs, but don't directly drive the cost-based location decision itself.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A nonprofit organization restructures from a hierarchical command-and-control model to a matrix structure with cross-functional teams reporting to both functional and project managers. What does this change primarily demonstrate about organizational design in relation to business ethics?",
+  "options": [
+   "The organization recognizes that accountability and decision-making transparency improve when distributed across multiple reporting relationships and stakeholder perspectives",
+   "The organization has adopted flatter hierarchies that automatically eliminate ethical violations by reducing management layers and communication barriers",
+   "The organization prioritizes cost reduction through workforce consolidation while maintaining ethical compliance through increased employee oversight mechanisms",
+   "The organization implements matrix structures to segment ethical decision-making into specialized departments that operate independently from operational teams"
+  ],
+  "correct_index": 0,
+  "explanation": "Matrix structures improve ethical accountability by requiring transparent communication across multiple decision pathways and involving diverse perspectives in choices. Option B overstates the automatic effect of flatter hierarchies; option C conflates cost reduction with ethical design; option D incorrectly suggests ethics belongs in isolated departments rather than throughout operations.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A government imposes new environmental regulations requiring manufacturers to reduce carbon emissions by 40% within five years. How do these regulations illustrate the relationship between government and business in shaping the competitive environment?",
+  "options": [
+   "Government establishes mandatory environmental standards that create competitive advantages for firms with existing green technologies while imposing compliance costs that disadvantage late-adopting competitors",
+   "Government regulations eliminate market competition by forcing all businesses to adopt identical production methods and operational procedures without variation",
+   "Government environmental mandates primarily benefit small businesses by requiring large corporations to downsize operations and cede market share to smaller competitors",
+   "Government policies create artificial barriers that prevent innovation by locking firms into specific technologies and preventing them from developing alternative emissions-reduction strategies"
+  ],
+  "correct_index": 0,
+  "explanation": "Regulations reshape competitive dynamics by raising compliance costs unevenly across competitors; firms prepared with green technology gain advantage while laggards face disadvantages. Options B and D incorrectly suggest regulations eliminate competition or prevent innovation; option C misrepresents how regulatory costs distribute across firm sizes.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A business serving multiple international markets must balance standardized global product offerings with localized customer preferences and regulatory requirements. Which aspect of the global business environment does this scenario primarily illustrate?",
+  "options": [
+   "The tension between achieving operational efficiency through global standardization and responding to diverse cultural, legal, and economic conditions in different national markets",
+   "The necessity for all multinational firms to establish separate independent subsidiaries in each country to avoid legal liability and regulatory conflicts",
+   "The expectation that successful global businesses must prioritize cultural adaptation over financial performance to maintain ethical standards and market credibility",
+   "The requirement that international business models eliminate local competition by offering products at prices below what domestic competitors can sustain profitably"
+  ],
+  "correct_index": 0,
+  "explanation": "Global business operations require navigating the fundamental tension between standardization's efficiency gains and localization's market-responsiveness demands. Option B overstates subsidiary requirements; option C creates a false choice between adaptation and profitability; option D describes predatory pricing rather than legitimate global strategy adaptation.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "When tailoring a resume for a specific position, which element should be adjusted to reflect the language used in the job posting while maintaining accuracy about your actual experience?",
+  "options": [
+   "The professional summary or objective statement to mirror key phrases from the job description without overstating qualifications",
+   "Your employment dates and job titles to align more closely with the company's organizational structure and terminology",
+   "Educational credentials and certifications to emphasize those most relevant to the role's required qualifications",
+   "Personal references and contact information to match the preferred communication channels listed in the job posting"
+  ],
+  "correct_index": 2,
+  "explanation": "Tailoring a resume means emphasizing and organizing genuine qualifications to match job requirements—not inventing credentials. Educational credentials and certifications should be highlighted or de-emphasized based on relevance, but employment dates and titles must remain truthful. The professional summary can be adjusted in tone, but changing dates or titles crosses into dishonesty.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a job interview, a candidate is asked an open-ended behavioral question about a time they failed. Which approach best demonstrates both self-awareness and professional growth?",
+  "options": [
+   "Acknowledge a genuine mistake, explain the specific actions taken to resolve it, and reflect on what was learned and applied afterward",
+   "Redirect the question to highlight a recent success instead, showing confidence and forward-thinking perspective to the interviewer",
+   "Describe a minor setback that was quickly fixed without significant consequences to minimize any perceived risk as a hire",
+   "Admit to struggling with a common workplace challenge and explain why the company's training programs would help address that gap"
+  ],
+  "correct_index": 0,
+  "explanation": "The STAR method (Situation, Task, Action, Result) is standard for behavioral interview questions. Option A demonstrates accountability and growth mindset—key employer values. Option B avoids the question; Option C minimizes learning; Option D implies current inadequacy rather than past learning, which raises concerns about readiness for the role.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A cover letter is being written for a marketing coordinator position at a mid-sized tech company. Which opening paragraph best balances demonstrating knowledge of the company with establishing immediate relevance to the role?",
+  "options": [
+   "Reference the company's recent product launch or market initiative, then connect a specific skill or achievement from your background that addresses a challenge revealed by that development",
+   "State your enthusiasm for the tech industry and explain why you chose marketing as a career path before discussing the coordinator role",
+   "List the main job responsibilities from the posting and confirm you possess each qualification mentioned in the job description",
+   "Introduce yourself with your name and relevant certifications, then provide a brief overview of your professional background in chronological order"
+  ],
+  "correct_index": 0,
+  "explanation": "An effective cover letter opening shows you've researched the company and immediately connects your qualifications to their specific needs—not just the generic role. Option A demonstrates both company knowledge and relevance. Options B and D are generic and could apply to any company; Option C merely restates the job posting without adding insight.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When completing a formal job application for a regulated industry, you notice a discrepancy between how you phrased a responsibility on your resume and the most accurate way to describe it using the application form's official terminology. What is the appropriate action?",
+  "options": [
+   "Use the application form's official terminology and industry-standard language to describe the responsibility, ensuring the core facts remain consistent with your resume",
+   "Reproduce the exact wording from your resume on the application to maintain consistency and avoid any appearance of changing your story",
+   "Choose whichever phrasing sounds more impressive or detailed, since different documents can emphasize different aspects of the same experience",
+   "Leave that section blank and note in a cover letter that the responsibility is already described elsewhere on your resume"
+  ],
+  "correct_index": 0,
+  "explanation": "Job applications in regulated industries often require specific terminology for compliance and accurate record-keeping. Adjusting phrasing to match official language while keeping facts consistent is appropriate; this is different from changing facts. Option B sacrifices accuracy; Option C prioritizes appearance over honesty; Option D creates gaps in the application.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "After an interview, you want to send a follow-up message that reinforces your interest and differentiates you from other candidates. Which approach most effectively achieves both goals without appearing desperate or presumptuous?",
+  "options": [
+   "Reference a specific discussion point from the interview, restate your relevant qualifications, and express genuine interest in contributing to a particular project or goal the interviewer mentioned",
+   "Send the message within two hours of the interview to demonstrate urgency and eagerness before the interviewer has time to meet with other candidates",
+   "Acknowledge that you understand the interview process takes time, apologize for any missteps during the interview, and ask when a decision might be made",
+   "Thank the interviewer for their time and include links to your online portfolio or professional profiles to provide additional evidence of your capabilities"
+  ],
+  "correct_index": 0,
+  "explanation": "A strong follow-up message demonstrates that you listened carefully and connects your qualifications to the company's needs—showing genuine fit, not just interest. Option A accomplishes both goals authentically. Option B appears desperate; Option C is apologetic and passive; Option D, while helpful, doesn't differentiate you or reference the specific conversation.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business implements a new customer feedback system to address complaints promptly and builds long-term relationships with repeat buyers. Which business activity does this primarily demonstrate?",
+  "options": [
+   "Operations management, which focuses on reducing production costs and optimizing supply chain logistics",
+   "Positive customer relations, which emphasizes understanding client needs and maintaining trust through responsive communication",
+   "Marketing strategy, which concentrates on identifying market segments and developing promotional campaigns across multiple channels",
+   "Finance management, which allocates capital resources and monitors cash flow to ensure organizational liquidity"
+  ],
+  "correct_index": 1,
+  "explanation": "Positive customer relations centers on understanding and meeting customer needs while building long-term trust—exactly what the feedback system and relationship-building accomplish. Operations, marketing, and finance are distinct activities; this scenario does not focus on production efficiency, promotional tactics, or capital allocation.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "An organization's accounting department tracks the cost of materials purchased, records revenue from sales transactions, and prepares financial statements showing assets and liabilities. How do these accounting functions support business decision-making?",
+  "options": [
+   "They provide quantifiable financial data that enables management to assess performance, allocate resources effectively, and evaluate business health",
+   "They satisfy legal compliance requirements and ensure that all customer communications meet regulatory standards for transparency",
+   "They streamline human resources recruitment processes and maintain employee records to reduce administrative overhead costs",
+   "They optimize production scheduling and coordinate supplier relationships to minimize inventory holding periods and waste"
+  ],
+  "correct_index": 0,
+  "explanation": "Accounting's core purpose is to measure and communicate financial information—revenue, costs, assets, and liabilities—so managers can make informed decisions about performance and resource allocation. Compliance, HR functions, and production coordination are separate business activities that accounting supports only indirectly.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A manufacturing firm must decide whether to invest in new equipment, take out a loan, or use retained earnings to fund expansion. Which business activity is most directly responsible for evaluating these capital options?",
+  "options": [
+   "Information management, which collects market data and analyzes competitor strategies to guide investment direction",
+   "Finance, which oversees capital structure decisions, evaluates funding costs, and ensures resources align with strategic goals",
+   "Production management, which determines equipment specifications and negotiates supplier contracts for machinery acquisition",
+   "Human resources management, which assesses staffing needs and develops compensation packages to attract skilled financial professionals"
+  ],
+  "correct_index": 1,
+  "explanation": "Finance directly addresses capital decisions—choosing between loans, equity, and internal funds—and evaluates the cost and risk of each option. Information management informs strategy, production selects equipment types, and HR staffs the finance team, but none owns the capital structure decision itself.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A global retailer expands into new markets by researching consumer preferences, developing product lines tailored to local tastes, and creating region-specific promotional campaigns. In a global economy, which activity is this organization primarily executing?",
+  "options": [
+   "Marketing, which identifies customer demand, adapts offerings to local conditions, and builds brand awareness through targeted communication",
+   "Operations, which manages inventory distribution centers, coordinates logistics networks, and ensures timely product delivery to retail locations",
+   "Production, which manufactures goods in cost-effective facilities, sources raw materials from global suppliers, and maintains quality standards",
+   "Finance, which analyzes currency fluctuations, manages international payment systems, and hedges foreign exchange risk across subsidiaries"
+  ],
+  "correct_index": 0,
+  "explanation": "This scenario—researching preferences, adapting products, and creating region-specific promotions—directly illustrates marketing's role in understanding and responding to customer demand in different markets. Operations handles distribution, production manages manufacturing, and finance manages currency and payment issues, but the core activities described are marketing functions.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "During a strategic planning session, executives discuss whether to redesign workflows, adopt new technologies, and implement process improvements to reduce errors and increase output. These decisions most directly involve which business activity?",
+  "options": [
+   "Operations, which designs processes, allocates resources, and oversees the execution of work to deliver products or services efficiently",
+   "Management, which establishes organizational structure, sets strategic direction, and monitors overall business performance across all functions",
+   "Information management, which deploys software systems, maintains databases, and ensures data security and accessibility across departments",
+   "Human resources management, which recruits talent, develops employee skills, and creates workplace policies that foster productivity and engagement"
+  ],
+  "correct_index": 0,
+  "explanation": "Operations specifically focuses on how work is performed—designing and improving processes, allocating operational resources, and managing execution to increase efficiency and output. Management sets overall strategy and structure, information management deploys technology systems, and HR develops people; but redesigning workflows and optimizing process execution are core operations responsibilities.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A business owner is evaluating how to structure her company's internal departments. She wants to ensure that customer feedback directly influences product development, that financial resources are allocated efficiently, and that employee skills align with operational needs. Which combination of business activities would best address all three of these concerns?",
+  "options": [
+   "Marketing to understand customer preferences, finance to manage budgets, and human resources to develop workforce capability",
+   "Operations to streamline production, accounting to track expenses, and information management to organize customer data",
+   "Production to manufacture goods, finance to secure capital, and marketing to establish brand recognition globally",
+   "Management to oversee all departments, human resources to recruit talent, and operations to optimize workflow efficiency"
+  ],
+  "correct_index": 0,
+  "explanation": "This scenario requires balancing customer relations, financial responsibility, and workforce alignment—the core purposes of marketing (customer feedback), finance (resource allocation), and human resources (skill development). The other combinations miss at least one critical element: operations without marketing ignores customer input, management without finance lacks cost control, and production without human resources cannot address capability alignment.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "During a quarterly business review, a manager observes that the company's accounting records show accurate expense tracking, but the finance department is struggling to forecast cash flow and plan capital investments. The operations team reports that information systems cannot provide real-time production metrics. Which two business activities are most directly responsible for these separate gaps?",
+  "options": [
+   "Accounting for cash flow forecasting and operations for capital investment planning",
+   "Finance for cash flow forecasting and information management for real-time production visibility",
+   "Management for investment planning and human resources for operational reporting",
+   "Operations for forecasting accuracy and accounting for information system design"
+  ],
+  "correct_index": 1,
+  "explanation": "Finance and information management address the two distinct problems: finance handles cash flow forecasting and capital investment planning (distinct from basic expense tracking done by accounting), while information management provides the data systems needed for real-time production metrics. Accounting is record-keeping, not forecasting; operations cannot provide information technology solutions; management and human resources do not directly solve these technical and financial gaps.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A manufacturing company recognizes that its products meet customer expectations but sales are declining in international markets. Marketing research shows strong brand awareness but weak market positioning relative to competitors. Management determines that the company's competitive advantage depends on both lower production costs and better-informed pricing strategies. Which two business activities must be improved to address both the cost and pricing challenges?",
+  "options": [
+   "Operations to reduce manufacturing costs and finance to support informed pricing decisions",
+   "Production to improve efficiency and marketing to adjust promotional messaging in each region",
+   "Human resources to optimize labor costs and accounting to provide detailed cost analysis",
+   "Information management to track competitor data and operations to streamline supply chains"
+  ],
+  "correct_index": 0,
+  "explanation": "Operations (not just production) focuses on manufacturing efficiency and cost reduction across the entire process, while finance (not accounting alone) analyzes cost structures to inform strategic pricing decisions. Production is narrower than operations, marketing addresses positioning but not pricing strategy, accounting provides data but finance makes strategic decisions, and information management and supply-chain optimization do not directly drive pricing power.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A service-sector business is redesigning its organizational structure. The CEO wants departments that develop long-term customer loyalty, optimize the use of technology and data, and ensure that employees understand the company's strategic direction and feel motivated. Which three business activities correspond most directly to these three goals?",
+  "options": [
+   "Customer relations through marketing, operational efficiency through operations management, and alignment through human resources development",
+   "Positive customer relations through marketing, data management through information management, and strategic awareness through management communication",
+   "Marketing to drive sales, accounting to measure performance, and human resources to hire skilled workers",
+   "Production to meet customer demand, finance to fund growth, and information management to track employee productivity"
+  ],
+  "correct_index": 1,
+  "explanation": "Marketing develops customer loyalty through positive relations, information management optimizes technology and data use, and management (strategic leadership communication) ensures employee understanding and motivation. The first option conflates customer relations with operations; the third confuses accounting with strategic communication; the fourth mistakes production for customer focus and does not address strategic alignment.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "A business consultant observes that a company has well-trained employees, clear financial records, and efficient production schedules, yet still struggles to enter new global markets successfully. The consultant determines that the company lacks understanding of customer needs in different regions and cannot analyze competitive pricing in those markets. Which two business activities are most critical for the company to strengthen in order to compete globally?",
+  "options": [
+   "Marketing to identify regional customer needs and finance to analyze pricing strategies across markets",
+   "Human resources to recruit local staff and operations to adapt production for regional demands",
+   "Accounting to track currency exchange rates and information management to monitor global supply chains",
+   "Management to oversee expansion and production to scale manufacturing capacity internationally"
+  ],
+  "correct_index": 0,
+  "explanation": "Marketing identifies and adapts to regional customer preferences, while finance analyzes competitive pricing and cost structures in different markets—both essential for global market entry. Human resources and operations address internal execution but not market understanding, accounting and information management handle transactions and data but not strategic market analysis, and management and production do not directly assess customer needs or competitive pricing.",
+  "difficulty": "hard",
+  "knowledge_area": "Types of Business Activities"
+ },
+ {
+  "question": "When completing a job application, which of the following should you do to address employment gaps spanning several months?",
+  "options": [
+   "Leave the gap blank and explain it verbally during the interview if asked by the hiring manager",
+   "List all activities during that period, including volunteer work, skills training, or caregiving responsibilities that are relevant to the position",
+   "Write 'N/A' for months without formal employment to indicate you were between jobs during that timeframe",
+   "Backdate a previous position to cover the gap and provide clarification about the actual end date during your interview"
+  ],
+  "correct_index": 1,
+  "explanation": "Job applications require honest, complete information. Listing relevant activities during gaps—including unpaid work, education, or volunteer efforts—demonstrates continuous professional development and shows respect for the application process. Leaving gaps blank, using 'N/A,' or falsifying dates raises red flags and can disqualify candidates or lead to termination if discovered after hire.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a job interview, you are asked to describe a time you failed at a significant task. Which approach best demonstrates professional maturity?",
+  "options": [
+   "Admit you have never really failed because you always succeed at whatever you attempt in your career",
+   "Select a genuine failure, explain what caused it, describe the specific steps you took to resolve it, and reflect on what you learned",
+   "Describe a failure from early in your career that you have since completely overcome without mentioning any lingering challenges",
+   "Explain that you rarely fail because you ask colleagues for help before attempting difficult tasks independently"
+  ],
+  "correct_index": 1,
+  "explanation": "Employers use failure questions to assess self-awareness, accountability, and growth mindset. A strong answer acknowledges a real setback, takes responsibility, demonstrates problem-solving, and shows learning. Claiming perfection undermines credibility, while describing only ancient history or relying exclusively on others dodges the question's intent to evaluate resilience and personal development.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which element should a cover letter emphasize to distinguish itself from a generic template and connect most directly to the employer's needs?",
+  "options": [
+   "Your personal background, education history, and all previous job titles held throughout your entire career",
+   "Specific achievements and skills that directly address the job description and demonstrate knowledge of the company's goals or challenges",
+   "Your availability to start immediately and flexibility to work any schedule the employer requests without restrictions",
+   "Professional certifications you hold and industry awards you have received from outside organizations in your field"
+  ],
+  "correct_index": 1,
+  "explanation": "A compelling cover letter goes beyond a generic summary by matching your qualifications to the specific job posting and showing you understand the employer's priorities. Reciting all background information, over-promising flexibility, or listing every credential dilutes your message and fails to differentiate you. Customization—showing you've researched the role and company—signals genuine interest and fit.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When preparing a resume, how should you handle descriptions of job responsibilities to best appeal to hiring managers reviewing dozens of applications?",
+  "options": [
+   "Use action verbs and quantifiable outcomes tied to business impact rather than listing duties or general descriptions of daily tasks",
+   "Focus on the number of hours worked weekly and the total time spent in each position to demonstrate commitment and loyalty",
+   "Include all responsibilities assigned to your role, even minor administrative tasks, to show you performed your job thoroughly",
+   "Describe your job duties using the exact language from the official job posting to ensure alignment with what the company seeks"
+  ],
+  "correct_index": 0,
+  "explanation": "Resumes stand out when they highlight achievements with strong action verbs (managed, increased, reduced) and concrete metrics (boosted sales 15%, reduced costs by $50K). Listing every task, emphasizing hours worked, or mirroring job posting language verbatim creates a passive, unfocused document that doesn't demonstrate value. Results-driven language captures attention and proves your contribution.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Why is tailoring each job application to the specific position and company significantly more effective than submitting identical applications to multiple employers?",
+  "options": [
+   "Customized applications allow you to highlight the exact skills and experiences most relevant to each role, increasing the likelihood of passing screening criteria and matching employer priorities",
+   "Employers appreciate the time investment and automatically advance all tailored applications to the interview stage regardless of candidate qualifications",
+   "Sending identical applications to many companies improves your odds because volume increases the chance that at least one employer will overlook weak matches",
+   "Tailoring applications demonstrates that you understand business terminology, which hiring managers use to filter applicants by communication style alone"
+  ],
+  "correct_index": 0,
+  "explanation": "Customized applications directly address the job's specific requirements and company needs, increasing your relevance and passing automated screening systems. Quantity does not compensate for poor fit, and tailoring is not a secret unlock for weak credentials—it simply ensures your strongest, most relevant qualifications are prominent. One well-targeted application outperforms ten generic ones because it aligns your experience with what the employer actually seeks.",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturer implements a subscription-based model allowing customers to receive monthly product shipments while reducing inventory costs through predictable demand patterns. Which dual business role does this primarily demonstrate?",
+  "options": [
+   "Creating utility by transforming raw materials into finished goods while adapting to market expectations through service delivery innovation",
+   "Generating profit margins by establishing price controls and limiting competitor access to the same supply chain distribution networks",
+   "Establishing brand loyalty by offering exclusive products unavailable through retail channels and controlling all aspects of customer relationships",
+   "Reducing operational expenses by outsourcing manufacturing to lower-cost regions while maintaining direct consumer sales channels exclusively"
+  ],
+  "correct_index": 0,
+  "explanation": "This scenario demonstrates business's dual societal roles: creating utility (form utility through manufacturing, plus service utility through convenient delivery) and adapting to market demands through model innovation. The other options either misidentify business functions (profit is a result, not a role) or conflate operational strategies with the fundamental nature of business's societal purpose.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A global pharmaceutical company structures itself with regional divisions handling drug development, manufacturing divisions managing production, and a separate division overseeing regulatory compliance across all markets. Which organizational design principle does this structure primarily reflect?",
+  "options": [
+   "Functional departmentalization enabling specialized expertise in each business process while maintaining centralized strategic oversight of operations",
+   "Geographic segmentation allowing each region to operate independently with minimal coordination from corporate headquarters regarding product standards",
+   "Matrix organization combining both functional and product-line reporting relationships to eliminate redundancy and improve decision-making speed",
+   "Divisional structure based on business function and geography simultaneously, creating specialized units while addressing location-specific regulatory environments"
+  ],
+  "correct_index": 3,
+  "explanation": "This structure combines functional divisions (development, manufacturing, compliance) with geographic considerations (regional oversight), illustrating a hybrid approach that balances specialized expertise with location-specific adaptability. Options A and B describe only partial organizational approaches, while Option C describes matrix organization, which differs from this simultaneous functional-geographic structure.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A fashion retailer sources textiles from countries with lower labor costs, manufactures in regions with favorable trade agreements, and sells primarily in developed markets where consumer purchasing power is highest. How does this strategy reflect adaptation to the global business environment?",
+  "options": [
+   "Leveraging comparative advantages across geographies through supply chain optimization while responding to varied consumer demand levels and regulatory frameworks in different markets",
+   "Minimizing labor expenses through offshore outsourcing while maximizing revenue by selling exclusively in wealthy nations that guarantee consistent profit margins",
+   "Exploiting developing nations' resources and labor while building brand reputation solely through high-end retail presence in premier shopping districts globally",
+   "Establishing corporate headquarters in low-tax countries while maintaining manufacturing proximity to consumer markets to reduce transportation costs and tariffs"
+  ],
+  "correct_index": 0,
+  "explanation": "This strategy demonstrates genuine global adaptation by capitalizing on each region's comparative advantages (lower costs where available, purchasing power where needed) and acknowledging different regulatory and consumer environments. The incorrect options either oversimplify the strategy as mere cost-cutting, misrepresent the geographic choices, or contradict the stated supply chain.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "During an economic downturn, a technology company maintains employee training programs, increases research spending, and expands into emerging markets while competitors reduce costs and pause innovation. Which factors most directly influence why this company's strategy differs from its competitors' approaches?",
+  "options": [
+   "Company culture and leadership philosophy regarding long-term positioning, coupled with available capital reserves and assessment of market recovery timing and opportunity windows",
+   "Government subsidies for technology companies and mandatory workforce development requirements in the regions where this company operates versus its competitors' locations",
+   "Superior access to venture capital funding and legal obligations to shareholders requiring sustained growth regardless of economic conditions and competitor behavior",
+   "Regulatory compliance costs unique to the technology sector and competitive advantages derived from patent portfolios that eliminate financial pressure during downturns"
+  ],
+  "correct_index": 0,
+  "explanation": "Business environment factors include internal elements (company culture, financial position, leadership vision) and external market assessment (recession depth, recovery timeline, emerging opportunities). While government and capital access matter, the core distinction here is how organizational values and strategic foresight shape responses differently than competitors face. The incorrect options either impose conditions not stated in the scenario or mischaracterize what drives strategic divergence.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "A corporation discovers that its supply chain relies on suppliers using child labor in violation of international standards. The company faces pressure from activist investors, potential government sanctions, and consumer backlash, yet switching suppliers would significantly increase production costs and reduce short-term profitability. What core ethical dilemma does this situation most directly illustrate regarding business responsibility?",
+  "options": [
+   "Balancing fiduciary duty to maximize shareholder returns against stakeholder obligations and legal/moral standards, where ethical compliance conflicts with financial performance metrics",
+   "Choosing between complying with domestic labor laws versus international conventions, since regulations differ by country and the company must follow only its home nation's requirements",
+   "Determining whether corporate social responsibility is a marketing strategy or genuine operational commitment, recognizing that ethical sourcing always strengthens competitive advantage",
+   "Evaluating whether government regulation or industry self-regulation should guide labor practices, given that voluntary standards eliminate the need for formal legal accountability mechanisms"
+  ],
+  "correct_index": 0,
+  "explanation": "This scenario embodies the fundamental business ethics tension: weighing profit obligations to shareholders against broader ethical duties to stakeholders and society, especially when doing right is costly. The other options either misstate the nature of the dilemma (suggesting legal compliance alone resolves it, or that ethics always boost profit), or misdirect to regulatory frameworks rather than the core ethical conflict.",
+  "difficulty": "hard",
+  "knowledge_area": "Nature of Business"
+ },
+ {
+  "question": "An entrepreneur starting a sole proprietorship accepts full personal liability for business debts, whereas a partner in a general partnership shares liability only for their own actions. Which statement best distinguishes these two ownership structures?",
+  "options": [
+   "A sole proprietor retains all profits but bears unlimited personal risk, while a general partner's personal assets are protected from partnership obligations.",
+   "A sole proprietor operates with a single owner bearing unlimited liability, while general partners share joint and several liability for all partnership debts.",
+   "A sole proprietorship requires formal registration with the state, while a general partnership can operate informally without legal documentation.",
+   "A sole proprietor can transfer ownership easily to investors, while general partners cannot modify the partnership agreement without dissolving the entity."
+  ],
+  "correct_index": 1,
+  "explanation": "A general partnership involves shared joint and several liability, meaning each partner can be held personally responsible for debts incurred by any partner. A sole proprietorship places all liability on the single owner. The other options misstate key features: sole proprietorships don't always require state registration, general partnerships do require operating agreements, and sole proprietorships typically cannot transfer ownership as easily as stated.",
+  "difficulty": "hard",
+  "knowledge_area": "Owning a Business"
+ },
+ {
+  "question": "A limited liability company and a corporation both provide owners with liability protection, yet they differ significantly in taxation and management structure. Which characteristic most clearly separates these two ownership forms?",
+  "options": [
+   "An LLC is taxed as a pass-through entity by default, while a corporation faces double taxation unless it elects S-corp status.",
+   "A corporation allows passive investors called limited partners, while an LLC requires all members to actively participate in operations.",
+   "An LLC must have a board of directors to govern major decisions, while a corporation can operate under member-managed or manager-managed structures.",
+   "A corporation can issue preferred stock with special voting rights, while an LLC can only issue common membership units with equal rights."
+  ],
+  "correct_index": 0,
+  "explanation": "LLCs typically receive pass-through taxation treatment (income taxed at owner level), while corporations face double taxation—once at the corporate level and again when dividends are distributed to shareholders (unless taxed as an S-corp). Limited partners are a partnership structure feature, not an LLC feature. Corporations require a board of directors; LLCs are more flexible. The preferred stock distinction exists, but the taxation difference is the most fundamental structural distinction between these entities.",
+  "difficulty": "hard",
+  "knowledge_area": "Owning a Business"
+ },
+ {
+  "question": "An entrepreneur with a strong technical skill set but limited business experience is deciding between starting a business independently versus buying a franchise. Which factor most directly reflects an entrepreneurial challenge that franchising mitigates?",
+  "options": [
+   "The need to develop original products and services that meet market demand while managing the operational and financial risks associated with unproven business models.",
+   "The requirement to secure brand recognition and customer trust across multiple markets while competing against established industry leaders with greater resources.",
+   "The ability to customize business operations to reflect personal values, which is restricted by the franchisor's standardized systems and operating procedures.",
+   "The obligation to hire, train, and retain employees who understand the franchisor's methods, whereas independent startups can hire more selectively."
+  ],
+  "correct_index": 0,
+  "explanation": "Franchising reduces entrepreneurial risk by providing a proven business model, established brand, and operational systems—addressing the core challenge of developing and testing an original concept. While franchising does limit customization (option C is true but describes a drawback, not a mitigated challenge), the fundamental entrepreneurial risk being addressed is proving a business concept works. Options B and D misstate typical franchise advantages and constraints.",
+  "difficulty": "hard",
+  "knowledge_area": "Owning a Business"
+ },
+ {
+  "question": "A partnership agreement specifies that Partner A contributes 60% of capital and Partner B contributes 40%, yet both partners share profits equally. This arrangement reflects which key principle of partnership ownership?",
+  "options": [
+   "Capital contributions determine profit distribution unless the partnership agreement explicitly states otherwise, so this arrangement is invalid.",
+   "Partners may allocate profits independently of capital contributions if documented in the partnership agreement, demonstrating flexibility in ownership terms.",
+   "Profit sharing in partnerships is always proportional to capital investment, and any deviation requires converting to a limited liability company structure.",
+   "Equal profit sharing automatically ensures equal management authority, meaning both partners must consent to all business decisions regardless of capital stakes."
+  ],
+  "correct_index": 1,
+  "explanation": "Partnership agreements have significant flexibility; partners can customize profit-sharing arrangements independent of capital contributions. This agreement is valid and legal. Option A incorrectly suggests capital must determine profits. Option C overstates the requirement for proportionality—partnerships can allocate profits as agreed. Option D conflates profit sharing with management authority, which are separate issues that must be negotiated separately.",
+  "difficulty": "hard",
+  "knowledge_area": "Owning a Business"
+ },
+ {
+  "question": "An entrepreneur evaluates starting a business by identifying an underserved market gap, developing a solution, and accepting the possibility of business failure. Which aspect of entrepreneurship does this sequence most directly illustrate?",
+  "options": [
+   "The entrepreneur's willingness to assume financial and personal risk while pursuing innovation and opportunity recognition in a competitive marketplace.",
+   "The entrepreneur's responsibility to comply with regulatory requirements and licensing standards specific to their industry before launching operations.",
+   "The entrepreneur's obligation to secure venture capital funding and demonstrate profitability to investors within the first eighteen months of operation.",
+   "The entrepreneur's strategy to differentiate from competitors by conducting market research and filing patents for proprietary technology and processes."
+  ],
+  "correct_index": 0,
+  "explanation": "This sequence—opportunity recognition, solution development, and acceptance of failure risk—directly exemplifies entrepreneurship's core nature: identifying and pursuing opportunities while bearing uncertainty and financial risk. While regulatory compliance, funding, and differentiation are important entrepreneurial activities, they are secondary to the fundamental characteristic of risk-taking and opportunity pursuit. Options B, C, and D describe specific business tasks rather than the essence of entrepreneurial behavior.",
+  "difficulty": "hard",
+  "knowledge_area": "Owning a Business"
+ }
+]

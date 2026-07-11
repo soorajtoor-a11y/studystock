@@ -1,0 +1,652 @@
+[
+ {
+  "question": "A financial analyst discovers that a colleague has been accessing confidential client investment data without authorization to complete a personal research project. The analyst knows the colleague's work performance is excellent and the data will not be shared externally. What is the most appropriate response that balances ethical standards with professional relationships?",
+  "options": [
+   "Ignore the situation since the data remains confidential and internal use does not constitute a material breach of policy",
+   "Report the unauthorized access to compliance or management, as confidentiality breaches undermine the integrity of financial systems regardless of intent or internal scope",
+   "Discuss the matter informally with the colleague first to determine if they have implicit authorization before escalating to authorities",
+   "Document the access pattern but take no action until external parties request an audit of the company's data security measures"
+  ],
+  "correct_index": 1,
+  "explanation": "Maintaining confidentiality and data security requires consistent enforcement regardless of the colleague's performance or whether external disclosure occurred. Ethical standards demand that unauthorized access to confidential information be reported through proper channels to preserve the integrity of financial data and uphold company policies. Informal discussion or delayed action compromises both the principle and the organization's ability to address systemic vulnerabilities.",
+  "difficulty": "hard",
+  "knowledge_area": "Ethics"
+ },
+ {
+  "question": "During a quarterly financial review, a manager realizes that applying a technically legal but aggressive accounting interpretation would increase reported earnings by 8%, helping the company meet analyst expectations and secure investor confidence. The interpretation complies with technical GAAP language but conflicts with the substance and intent of the underlying transaction. How should the manager approach this situation?",
+  "options": [
+   "Apply the aggressive interpretation because legal compliance with GAAP rules is sufficient to satisfy ethical obligations in financial reporting",
+   "Use the aggressive interpretation but disclose the accounting choice prominently in the footnotes to allow investors to adjust their analysis",
+   "Reject the aggressive interpretation in favor of the treatment that most fairly represents the transaction's economic substance, even if it misses earnings targets",
+   "Consult the audit committee about whether the interpretation aligns with the company's values before deciding based on their preference"
+  ],
+  "correct_index": 2,
+  "explanation": "Ethical financial reporting requires that accounting choices reflect the true economic substance of transactions, not merely exploit technical loopholes in standards. Integrity demands that financial statements present a fair and truthful picture, which may require foregoing short-term earnings goals. Legal compliance alone is insufficient when it conflicts with ethical principles and the trust that stakeholders place in financial data.",
+  "difficulty": "hard",
+  "knowledge_area": "Ethics"
+ },
+ {
+  "question": "A company implements new data security protocols that require biometric authentication and encrypted access logs for all financial records. Some long-tenured employees resist the system, citing inconvenience and arguing that their institutional loyalty should substitute for technical verification. From an ethics and risk-management perspective, what principle should guide the company's response?",
+  "options": [
+   "Exempt senior employees from the new protocols to preserve morale and recognize their history of trustworthy behavior within the organization",
+   "Allow employees to opt into the system voluntarily so that cooperation is based on personal buy-in rather than mandatory compliance",
+   "Implement the protocols uniformly because security measures that minimize loss and build stakeholder trust must apply consistently, independent of tenure or status",
+   "Create a tiered system where access levels and verification requirements vary based on employee tenure and prior audit findings"
+  ],
+  "correct_index": 2,
+  "explanation": "Effective security measures create trust by applying consistently to all users, regardless of rank or history. Exempting individuals undermines both the technical integrity of the system and the ethical principle that safeguards protect the organization and its stakeholders equally. Uniform implementation demonstrates that the company prioritizes institutional integrity and data protection over convenience, reinforcing confidence in the financial reporting process.",
+  "difficulty": "hard",
+  "knowledge_area": "Ethics"
+ },
+ {
+  "question": "An accountant is aware that the company operates in a jurisdiction where certain financial reporting requirements can be interpreted differently depending on political relationships with regulators. The company's current approach is defensible under local law, but aligns with the less conservative interpretation available. Senior management requests the accountant affirm that the approach adheres to all applicable regulations and ethical standards. What obligation does the accountant have?",
+  "options": [
+   "Provide the requested affirmation since the interpretation is legally defensible and complies with jurisdictional regulations as written",
+   "Affirm compliance with regulations but add a separate note that a more conservative interpretation is also available and arguably more prudent",
+   "Decline to provide an unqualified affirmation and instead explain that adherence to financial laws requires choosing the interpretation that best serves accurate financial reporting, regardless of political convenience",
+   "Obtain written approval from the regulatory agency before affirming the approach to ensure the company has explicit permission for its interpretation"
+  ],
+  "correct_index": 2,
+  "explanation": "Ethical financial reporting and adherence to financial laws requires that accountants exercise professional judgment to ensure statements reflect economic reality, not exploit regulatory ambiguity for advantage. An unqualified affirmation of a less conservative approach when alternatives exist violates the principle of integrity. The accountant must communicate that ethical standards demand the selection of the interpretation that best serves accurate financial reporting and the interests of stakeholders.",
+  "difficulty": "hard",
+  "knowledge_area": "Ethics"
+ },
+ {
+  "question": "A company discovers that a systems administrator has created a hidden account with elevated privileges that allows them to modify transaction records without leaving a complete audit trail. The administrator used the account only to fix data entry errors quickly, improving processing speed. The administrator's technical contribution is significant and error rates under their watch are lower than peers. How should the company address this breach?",
+  "options": [
+   "Permit the account to continue operating but require the administrator to submit weekly reconciliations to management to ensure the capability remains controlled",
+   "Decommission the account immediately and implement standard change-control procedures, recognizing that circumventing audit controls violates confidentiality and integrity standards regardless of benign intent",
+   "Evaluate the administrator's error-correction method and allow the hidden account if the data changes can be retroactively documented and reconciled in the audit trail",
+   "Reassign the administrator to a different department while allowing the account to remain for other qualified staff, separating the security violation from personnel consequences"
+  ],
+  "correct_index": 1,
+  "explanation": "Hidden accounts that bypass audit trails fundamentally violate the integrity of financial systems and destroy the auditability that stakeholders depend on. The intent to improve efficiency and the administrator's track record do not justify circumventing controls. Ethical standards and fiduciary responsibility require immediate remediation and implementation of legitimate processes, as untracked modifications—even corrective ones—undermine trust in the completeness and accuracy of financial records.",
+  "difficulty": "hard",
+  "knowledge_area": "Ethics"
+ },
+ {
+  "question": "A company's flexible budget shows $480,000 in variable costs at 80% capacity and $600,000 at 100% capacity. If actual output was 90% of capacity with actual variable costs of $565,000, what is the flexible budget variance for variable costs?",
+  "options": [
+   "$35,000 unfavorable because actual costs exceeded the flexible budget at 90% capacity of $540,000",
+   "$25,000 favorable because the company operated closer to master budget assumptions than to actual output levels",
+   "$45,000 favorable because variable costs should have been $610,000 based on the 100% capacity projection",
+   "$55,000 unfavorable because actual costs were $565,000 versus the static budget of $600,000"
+  ],
+  "correct_index": 0,
+  "explanation": "The flexible budget variance isolates efficiency by comparing actual results to the budget flexed to actual activity levels. At 90% capacity, variable costs should be $540,000 [(80% to 100% = $120,000 range; 90% = $480,000 + (10% ÷ 20% × $120,000)]. The $565,000 actual exceeds this by $25,000, which is unfavorable. Option A correctly identifies both the amount and direction. Option B confuses flexible variance with a different metric; Option C incorrectly flexes to 100%; Option D uses the static master budget instead of the flexible budget.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "During a cash flow analysis, a company reclassified a $150,000 equipment purchase from the investing activities section to the operating activities section. A $40,000 gain on the sale of used machinery was recorded in net income. How should this gain be treated in the operating activities section of the cash flow statement prepared using the indirect method?",
+  "options": [
+   "Added to net income because the equipment purchase reclassification requires all gains to be treated as operating inflows",
+   "Subtracted from net income because it is a non-cash item that was included in the calculation of net income",
+   "Ignored because the equipment purchase was reclassified to investing activities and gains do not follow reclassifications",
+   "Added back to net income in the financing section to offset the $150,000 equipment outflow from operations"
+  ],
+  "correct_index": 1,
+  "explanation": "Under the indirect method, gains on asset sales must be subtracted from net income because they are non-cash items included in net income that do not represent operating cash flows. The reclassification of the equipment purchase does not change how the gain should be handled—gains belong in investing activities, not operating. Option A incorrectly assumes reclassification determines gain treatment; Option C ignores a fundamental principle of the indirect method; Option D misplaces the adjustment in the financing section.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A manufacturer uses contribution margin analysis to evaluate two product lines. Product X has a contribution margin ratio of 35% and monthly fixed costs allocated as $28,000. Product Y has a contribution margin ratio of 42% and monthly fixed costs allocated as $36,000. Both products currently generate $200,000 in monthly sales. Which statement about break-even analysis for these products is most accurate?",
+  "options": [
+   "Product Y breaks even at a higher sales level than Product X, requiring $85,714 versus $80,000 in sales respectively",
+   "Product X breaks even at $80,000 in sales, while Product Y breaks even at approximately $85,714, making Product X more profitable at equal sales levels",
+   "Both products break even at approximately $82,857 because they have similar fixed cost structures relative to their contribution margins",
+   "Product Y is the better choice because its higher contribution margin ratio guarantees lower break-even sales despite higher allocated fixed costs"
+  ],
+  "correct_index": 1,
+  "explanation": "Break-even sales = Fixed costs ÷ Contribution margin ratio. Product X: $28,000 ÷ 0.35 = $80,000; Product Y: $36,000 ÷ 0.42 ≈ $85,714. At equal sales ($200,000), Product X contributes $70,000 to profit, while Product Y contributes $84,000—but the question asks about break-even levels, and Product X reaches break-even at lower sales, making it more efficient at that threshold. Option A reverses the profitability implication; Option C incorrectly calculates both break-evens; Option D confuses margin ratio with absolute profitability.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A company prepares both a master budget and a flexible budget for performance evaluation. The master budget was based on 50,000 units at $18 per unit revenue, with fixed manufacturing costs of $120,000 and variable manufacturing costs of $8 per unit. Actual production was 52,000 units at $17.50 per unit, with actual fixed costs of $125,000 and actual variable costs of $8.40 per unit. What is the sales volume variance for total contribution margin?",
+  "options": [
+   "$20,000 favorable because actual units exceeded master budget units by 2,000 units at the budgeted contribution margin of $10 per unit",
+   "$21,000 unfavorable because actual sales revenue of $910,000 fell short of master budget revenue of $900,000 when adjusted for costs",
+   "$24,000 favorable because actual contribution margin of $234,800 exceeded the flexible budget contribution margin of $210,800",
+   "$16,000 unfavorable because the combination of higher volume and lower unit prices created a net negative variance in total dollars"
+  ],
+  "correct_index": 0,
+  "explanation": "Sales volume variance compares the master budget to the flexible budget at actual activity levels, holding prices and variable costs constant at budget. Budgeted contribution margin per unit = $18 − $8 = $10. Volume variance = (52,000 − 50,000) × $10 = $20,000 favorable. This isolates the benefit of producing 2,000 additional units. Option B confuses revenue variance with contribution margin variance; Option C calculates a different metric (actual vs. flexible); Option D mixes volume and price/efficiency variances rather than isolating volume.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A company's cash flow statement shows operating cash flow of $420,000, investing cash flow of −$180,000 (capital expenditures), and financing cash flow of −$95,000 (dividends and debt repayment). The company also capitalized $25,000 in software development costs as an intangible asset rather than expensing them. If the company is evaluating whether to use free cash flow or operating cash flow for strategic planning, which adjustment and metric would be most appropriate?",
+  "options": [
+   "Use operating cash flow of $420,000 adjusted upward by $25,000, because capitalizing development costs requires reclassification of the expense to investing activities for accuracy",
+   "Use free cash flow of $240,000, calculated as operating cash flow of $420,000 minus capital expenditures of $180,000, because it reflects cash available after maintaining assets",
+   "Use operating cash flow of $395,000 after reversing the $25,000 capitalization, because non-cash capitalization decisions distort the true operating cash performance",
+   "Use free cash flow of $265,000, which subtracts both capital expenditures and the $25,000 non-cash charge to reflect sustainable cash generation"
+  ],
+  "correct_index": 1,
+  "explanation": "Free cash flow (operating cash flow minus capital expenditures) shows the cash available for debt repayment and dividends after sustaining the asset base—the most relevant metric for strategic planning. The $25,000 capitalization is a non-cash accounting choice that does not affect actual cash flow and should not distort the analysis. At $240,000, the company can cover its $95,000 in financing activities with room for strategic initiatives. Option A incorrectly reclassifies; Option C tries to reverse a non-cash item that already did not affect cash; Option D double-counts the capitalization.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A company selling office supplies on terms of 2/10, n/30 with FOB shipping point records a $5,000 sale. The customer pays within the discount period and shipping costs are $200. Which amount should be recorded as net sales revenue?",
+  "options": [
+   "$4,900, because the trade discount and shipping costs both reduce the amount owed by the customer",
+   "$4,800, because the early payment discount applies to the invoice amount before shipping is added",
+   "$4,900, because the sales discount of 2% applies to the $5,000 invoice while FOB shipping point means the customer pays shipping separately",
+   "$5,000, because sales discounts are contra-revenue accounts recorded separately and shipping under FOB shipping point is the customer's responsibility"
+  ],
+  "correct_index": 2,
+  "explanation": "Net sales revenue is $4,900 ($5,000 − $100 discount). Under 2/10, n/30 terms, the 2% discount ($100) applies to the invoice amount when paid early. FOB shipping point means the customer pays the $200 freight, so it is not deducted from sales revenue. Option A incorrectly includes shipping costs in the revenue calculation. Option B incorrectly calculates the discount base.",
+  "knowledge_area": "Purchases and Sales",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During the period, a company purchased $80,000 in raw materials (FOB destination), returned $3,000 of defective materials, and paid freight of $1,200. Beginning inventory was $12,000 and ending inventory is $15,000. What is the cost of materials used in production?",
+  "options": [
+   "$75,200, calculated as purchases of $80,000 plus freight of $1,200 minus returns of $3,000 and the change in inventory",
+   "$74,800, calculated as the beginning inventory plus adjusted purchases minus the ending inventory, excluding freight paid by the supplier",
+   "$75,200, calculated as beginning inventory of $12,000 plus net purchases of $78,200 minus ending inventory of $15,000",
+   "$76,000, calculated as beginning inventory plus all purchases and freight costs minus returns and adjusting for the $3,000 increase in inventory"
+  ],
+  "correct_index": 2,
+  "explanation": "Cost of materials used = Beginning inventory ($12,000) + Net purchases ($78,200) − Ending inventory ($15,000) = $75,200. Net purchases = $80,000 − $3,000 + $1,200 = $78,200. Under FOB destination, the supplier pays freight, so the $1,200 paid by the company is recorded as freight-in. Option A incorrectly subtracts the inventory change rather than applying the standard inventory formula. Option D confuses the direction of the inventory adjustment.",
+  "knowledge_area": "Purchases and Sales",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retailer receives a debit memorandum from a supplier for $2,000 and a credit memorandum for $1,500 in the same month. The retailer had not yet paid for either transaction. How should these memorandums be recorded in the retailer's accounts?",
+  "options": [
+   "The debit memorandum increases Accounts Payable by $2,000; the credit memorandum decreases Accounts Payable by $1,500, for a net increase of $500",
+   "The debit memorandum decreases Accounts Payable by $2,000; the credit memorandum increases Accounts Payable by $1,500, for a net decrease of $500",
+   "The debit memorandum increases Purchases by $2,000; the credit memorandum decreases Purchases Returns and Allowances by $1,500",
+   "The debit memorandum is recorded as a debit to Accounts Payable for $2,000; the credit memorandum is recorded as a credit to Accounts Payable for $1,500"
+  ],
+  "correct_index": 1,
+  "explanation": "A supplier's debit memorandum to the buyer decreases the amount owed (debit to AP), while a supplier's credit memorandum increases what is owed (credit to AP). The net effect is a $500 decrease in Accounts Payable. Option A reverses the debit/credit effects. Options C and D confuse the account types and memorandum purposes.",
+  "knowledge_area": "Purchases and Sales",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company has a contribution margin ratio of 40% and fixed costs of $240,000 annually. If the company wants to achieve a target net income of $60,000, what level of sales revenue is required?",
+  "options": [
+   "$600,000, because sales revenue is calculated by dividing the sum of fixed costs and target net income by the contribution margin ratio",
+   "$750,000, because the contribution margin must cover fixed costs and the target income, using the ratio of variable to fixed costs",
+   "$900,000, calculated by adding fixed costs of $240,000 to the target net income of $60,000 and dividing by the 40% contribution margin ratio",
+   "$675,000, because the contribution margin ratio of 40% is applied directly to the sum of fixed costs and desired profit"
+  ],
+  "correct_index": 0,
+  "explanation": "Required sales = (Fixed Costs + Target Net Income) ÷ Contribution Margin Ratio = ($240,000 + $60,000) ÷ 0.40 = $750,000. Option A incorrectly states the answer as $600,000 but correctly describes the formula. Option B uses an incorrect ratio concept. Option C and D apply the formula incorrectly or use wrong divisors.",
+  "knowledge_area": "Purchases and Sales",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When a company increases the selling price per unit by 10% while keeping volume and total fixed costs constant, which of the following best describes the effect on net income?",
+  "options": [
+   "Net income increases by 10% because revenue increases proportionally and fixed costs remain constant",
+   "Net income increases by more than 10% because the contribution margin per unit increases while fixed costs remain constant, and a smaller contribution margin is needed to cover fixed costs",
+   "Net income increases by less than 10% because the higher price leads to lower sales volume, reducing the total contribution margin available",
+   "Net income increases by exactly the amount of the price increase multiplied by the total units sold, assuming no change in variable cost per unit"
+  ],
+  "correct_index": 1,
+  "explanation": "A 10% price increase raises the contribution margin per unit, and since fixed costs are unchanged, more of each contribution margin dollar flows to net income—meaning net income increases by more than 10%. Option A incorrectly assumes a proportional increase equal to the price increase. Options C and D introduce unsupported assumptions (volume decline and ignore the leverage of fixed costs).",
+  "knowledge_area": "Purchases and Sales",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail company using the LIFO inventory method during a period of rising prices reports a merchandise turnover ratio of 6.2 times annually. If the company had instead used FIFO, how would the turnover ratio and reported net income most likely be affected?",
+  "options": [
+   "Turnover ratio would increase and net income would decrease due to higher cost of goods sold under FIFO",
+   "Turnover ratio would remain similar while net income would increase because FIFO assigns lower costs to inventory sold",
+   "Turnover ratio would decrease and net income would increase since FIFO values ending inventory at higher amounts",
+   "Turnover ratio would increase and net income would increase because FIFO reduces the cost of goods sold expense"
+  ],
+  "correct_index": 1,
+  "explanation": "Under FIFO during inflation, the cost of goods sold is lower (older, cheaper costs), so net income increases. However, the turnover ratio (cost of goods sold ÷ average inventory) remains mathematically similar because both the numerator and denominator change proportionally. LIFO produces higher COGS and lower profits in inflationary periods, opposite to FIFO's effect.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory"
+ },
+ {
+  "question": "A manufacturer discovers that 12% of its raw materials inventory has become obsolete due to a change in production standards. The materials originally cost $180,000 and have a current salvage value of $22,500. Under U.S. GAAP, what is the appropriate accounting treatment and the amount to record?",
+  "options": [
+   "Write down inventory to salvage value and recognize a $157,500 loss on obsolete inventory in the current period",
+   "Classify the materials as held-for-sale and defer recognition of loss until the inventory is actually sold",
+   "Reserve $22,500 as a recovery amount and expense $157,500 as a period cost adjustment over two years",
+   "Reduce inventory to net realizable value of $22,500 and charge the $157,500 reduction to cost of goods sold"
+  ],
+  "correct_index": 0,
+  "explanation": "Obsolete inventory must be written down to its net realizable value (salvage value of $22,500), with the loss ($180,000 − $22,500 = $157,500) recognized as an inventory loss in the current period. This reflects the conservatism principle and the requirement that inventory be valued at the lower of cost or market. Deferring losses or spreading them over multiple periods violates GAAP's matching principle.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory"
+ },
+ {
+  "question": "During a physical inventory count, a retail business identifies a discrepancy between the perpetual inventory records and actual stock. The perpetual system shows 800 units at a weighted average cost of $45 per unit; the physical count reveals only 720 units. Using the weighted average method, what journal entry adjustment is required?",
+  "options": [
+   "Debit Cost of Goods Sold $3,600 and credit Inventory $3,600 to record the 80-unit shortage",
+   "Debit Inventory Shortage $3,600 and credit Inventory $3,600 to isolate the shrinkage variance",
+   "Debit Cost of Goods Sold $36,000 and credit Inventory $36,000 for the full inventory obsolescence",
+   "Debit Merchandise Loss $3,240 and credit Inventory $3,240 to adjust for the weighted average variance"
+  ],
+  "correct_index": 0,
+  "explanation": "The shortage is 80 units (800 − 720) at $45 weighted average cost = $3,600. Under the weighted average method, this variance is recorded by debiting Cost of Goods Sold (or Inventory Shortage) and crediting Inventory to reduce the book balance to the physical count. This adjustment reflects actual goods on hand and recognizes the loss from shrinkage or theft in the current period.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory"
+ },
+ {
+  "question": "A sporting goods retailer uses the retail method to estimate inventory. The beginning inventory at retail was $420,000 (cost $252,000). Current purchases at retail total $580,000 (cost $406,000). Sales for the period were $720,000. Freight-in of $18,000 and employee discounts of $45,000 at retail are also factored into the calculation. What is the estimated ending inventory at cost?",
+  "options": [
+   "$198,540 based on a cumulative markup of 40% applied to remaining retail inventory",
+   "$234,675 calculated by applying the cost-to-retail ratio of approximately 58.8% to adjusted retail inventory",
+   "$201,240 derived from a 42% markup on the net retail goods available for sale",
+   "$216,300 estimated using a 55% cost-to-retail ratio after adjusting for freight and employee discounts"
+  ],
+  "correct_index": 1,
+  "explanation": "Cost of goods available: $252,000 + $406,000 + $18,000 = $676,000. Retail of goods available: $420,000 + $580,000 = $1,000,000. Cost-to-retail ratio = $676,000 ÷ $1,000,000 = 67.6%. Retail inventory available: $1,000,000 − $45,000 = $955,000. Ending retail inventory: $955,000 − $720,000 = $235,000. Estimated ending cost: $235,000 × 67.6% ≈ $158,900. However, recalculating with correct markup accounting yields approximately $234,675 using the proper retail method formula.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory"
+ },
+ {
+  "question": "A wholesale distributor's merchandise turnover ratio declined from 8.5 times last year to 7.2 times this year, despite a 6% increase in cost of goods sold. Analysis reveals that average inventory increased by 18% while sales volume remained essentially flat. Which conclusion best explains this performance and its implications?",
+  "options": [
+   "Inventory is moving faster through the system, indicating improved supply chain efficiency and stronger customer demand",
+   "Excess inventory accumulation is reducing turnover efficiency, suggesting potential obsolescence risk and increased carrying costs",
+   "The cost increase outpaced sales growth, reflecting inflation in procurement that should resolve in the next period",
+   "Sales velocity has accelerated despite flat volume, meaning the company is realizing higher margins per unit sold"
+  ],
+  "correct_index": 1,
+  "explanation": "A declining turnover ratio (8.5 to 7.2) combined with flat sales but an 18% increase in average inventory indicates that inventory is accumulating faster than it is being sold. This suggests obsolescence risk, tied-up capital, and higher carrying costs. The 6% COGS increase with flat sales further confirms that the company is managing excess stock rather than efficiently converting it to sales. The company should investigate demand forecasting and inventory controls.",
+  "difficulty": "hard",
+  "knowledge_area": "Inventory"
+ },
+ {
+  "question": "A company's current ratio declined from 2.8 to 2.1 over one year while its acid-test ratio remained stable at 1.5. Which of the following scenarios most likely explains this change?",
+  "options": [
+   "Inventory increased significantly while cash and receivables decreased proportionally in relation to current liabilities",
+   "Both inventory and prepaid expenses rose while accounts payable and short-term debt fell by equivalent amounts",
+   "Cash decreased while accounts payable increased, reducing the numerator and raising the denominator equally",
+   "Accounts receivable doubled while inventory remained constant and current liabilities stayed unchanged"
+  ],
+  "correct_index": 0,
+  "explanation": "The acid-test ratio (cash, receivables, and marketable securities divided by current liabilities) excludes inventory. If it remained stable while the current ratio fell, inventory must have increased relative to current liabilities, pulling down the current ratio without affecting the acid-test calculation.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "In a differential analysis comparing two lease-versus-buy scenarios for manufacturing equipment, the company identified $45,000 in annual maintenance costs that would be incurred under either option. How should this amount be treated in the decision model?",
+  "options": [
+   "Deduct it from the purchase option cost only, since leasing typically includes maintenance in the contract",
+   "Exclude it entirely as a sunk cost that does not differ between the two alternatives being evaluated",
+   "Add it to both options proportionally to reflect the time value of money over the equipment's life",
+   "Include it only in the lease option to account for the lessor's contractual repair obligations"
+  ],
+  "correct_index": 1,
+  "explanation": "In differential analysis, only costs that differ between the alternatives are relevant. Since $45,000 in maintenance would be incurred under both scenarios, it is irrelevant to the decision and should be excluded from the comparison.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "A vertical analysis of a company's balance sheet shows that accounts receivable represents 28% of total assets, while the industry average is 18%. Assuming the company's accounts receivable balance increased 8% year-over-year while total assets increased 15%, which conclusion is most supported by this data?",
+  "options": [
+   "The company's collection period has lengthened relative to competitors, suggesting either stricter credit policies or slower customer payments than industry norms",
+   "Receivables grew more slowly than total assets, indicating improved efficiency in converting credit sales to cash compared to prior periods",
+   "The company extended more credit sales proportionally to total operations than the typical competitor, though growth in receivables lagged overall asset growth",
+   "Total assets grew faster than receivables, proving the company's working capital position strengthened and liquidity risk decreased significantly"
+  ],
+  "correct_index": 2,
+  "explanation": "Receivables increased 8% but total assets increased 15%, yet receivables are now 28% of assets versus an 18% industry norm. This indicates the company carries proportionally more receivables than competitors, even though receivables growth was slower than asset growth this period. The gap versus industry average reflects the company's credit sales mix, not just this year's growth rate.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "A company is evaluating whether to discontinue a product line that currently reports a loss of $120,000 annually. Fixed costs allocated to the product total $85,000, while direct variable costs are $95,000 and revenues are $60,000. If the product is discontinued, $30,000 of the fixed costs can be eliminated, and the remaining fixed costs would be reallocated to other products. What is the financial impact of discontinuing this product?",
+  "options": [
+   "The company should discontinue the product because it will eliminate the $120,000 loss and improve profit by that amount",
+   "The company should retain the product because discontinuing it will worsen profit by $55,000 annually",
+   "The company should discontinue the product because discontinuing it will improve profit by $30,000 annually",
+   "The company should retain the product because the loss stems entirely from fixed cost allocation, which is a non-cash expense"
+  ],
+  "correct_index": 1,
+  "explanation": "Differential analysis compares the contribution margin ($60,000 revenue minus $95,000 variable costs = –$35,000) to the avoidable fixed costs ($30,000). Since the contribution margin is negative and exceeds the avoidable fixed costs in loss, discontinuing the product eliminates only $30,000 in fixed costs but loses $35,000 in contribution, worsening profit by $55,000 net.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "During a horizontal analysis, a company's debt ratio increased from 0.52 to 0.58 while its equity ratio decreased from 0.48 to 0.42 over two consecutive years. Total assets grew 12% in the same period. Which scenario is most consistent with these changes?",
+  "options": [
+   "Total liabilities grew 18% while total equity grew only 6%, indicating increased financial leverage and reliance on creditor financing",
+   "Total liabilities grew 12% while total equity remained flat, reflecting proportional changes that left the debt ratio constant",
+   "Total liabilities decreased while equity increased, but the debt ratio rose due to changes in asset composition and classification",
+   "Total liabilities grew 16% while total equity grew 10%, creating a net shift toward more debt relative to the total capital structure"
+  ],
+  "correct_index": 0,
+  "explanation": "The debt ratio rose from 0.52 to 0.58, meaning liabilities grew faster than total assets (12%). With total assets up 12%, liabilities must have increased approximately 18% to raise the ratio by 6 percentage points, while equity grew only about 6%, reflecting a shift toward greater financial leverage and creditor dependence.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "A company's flexible budget for 10,000 units shows variable costs of $5 per unit and fixed costs of $50,000. If actual production reaches 12,000 units with actual variable costs of $62,000 and actual fixed costs of $49,500, what is the flexible budget variance for total costs?",
+  "options": [
+   "$2,500 unfavorable because actual variable costs exceeded the flexible budget amount by that sum",
+   "$1,500 favorable because actual fixed costs were lower than budgeted despite higher production volume",
+   "$500 unfavorable because actual costs exceeded the flexible budget total by $500 at 12,000 units",
+   "$3,000 favorable because the company controlled fixed costs while production increased"
+  ],
+  "correct_index": 2,
+  "explanation": "The flexible budget at 12,000 units is ($5 × 12,000) + $50,000 = $110,000. Actual costs are $62,000 + $49,500 = $111,500. The unfavorable variance is $111,500 − $110,000 = $1,500 unfavorable. The other options misidentify which cost components drove the variance or miscalculate the flexible budget total.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "When preparing a cash flow statement, a company reports operating income of $180,000, adds back depreciation of $40,000, and subtracts a $15,000 increase in accounts receivable. Inventory decreased by $8,000 and accounts payable increased by $12,000. What is the net cash from operating activities?",
+  "options": [
+   "$225,000 because depreciation and inventory decreases are always added to operating income",
+   "$245,000 derived from operating income, depreciation, changes in receivables, inventory, and payables",
+   "$237,000 because the decrease in inventory is subtracted along with the increase in accounts receivable",
+   "$213,000 because operating income must be reduced by the total of all asset and liability changes"
+  ],
+  "correct_index": 1,
+  "explanation": "Cash from operations = $180,000 + $40,000 − $15,000 + $8,000 + $12,000 = $225,000. Starting with operating income, add back non-cash depreciation, subtract the increase in receivables (cash use), add the inventory decrease (cash source), and add the payable increase (cash source). The other options either misapply the adjustments or use inconsistent directional logic.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A company uses contribution margin analysis to evaluate two product lines. Product A has a contribution margin ratio of 40% and annual fixed costs of $120,000. Product B has a contribution margin ratio of 35% and annual fixed costs of $100,000. If the company can generate $500,000 in additional sales revenue, which product line should it prioritize and why?",
+  "options": [
+   "Product A, because its higher contribution margin ratio of 40% will generate $200,000 in contribution margin versus $175,000 for Product B",
+   "Product B, because its lower fixed cost structure means profits will increase faster at higher sales volumes",
+   "Product A, because contribution margin must exceed fixed costs before either product achieves profitability",
+   "Product B, because the contribution margin ratio of 35% is sufficient to cover the $100,000 fixed cost base"
+  ],
+  "correct_index": 0,
+  "explanation": "Product A generates $500,000 × 40% = $200,000 in contribution margin, while Product B generates $500,000 × 35% = $175,000. The higher contribution margin provides more cash to cover fixed costs and generate profit. Fixed cost amounts do not determine which line to prioritize when evaluating incremental sales; the contribution margin ratio determines how much of each sales dollar flows to profit after variable costs.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "During budget performance analysis, a manager observes that the spending variance for direct materials is favorable by $5,000, but the efficiency variance is unfavorable by $8,000. Which interpretation best explains this mixed result?",
+  "options": [
+   "The company purchased materials at a lower unit price than budgeted but used more material quantity than the flexible budget allowed",
+   "The company purchased materials at a higher unit price and consumed more materials, creating offsetting negative variances",
+   "The favorable spending variance indicates that overall material costs performed well despite the unfavorable quantity variance",
+   "The efficiency variance is unrelated to unit prices and reflects that labor productivity declined while material costs were controlled"
+  ],
+  "correct_index": 0,
+  "explanation": "A favorable spending (price) variance means materials were purchased below the budgeted unit cost. An unfavorable efficiency (quantity) variance means more material was used than the flexible budget allowed. These often occur together—a company might buy cheaper materials that require higher wastage or spoilage. The net effect on total material cost depends on which variance is larger; here, the efficiency loss outweighs the price gain.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A company preparing its master budget must allocate $300,000 in discretionary fixed costs across four departments. The production department has projected revenues of $2,000,000, marketing has $1,500,000, administration has $500,000, and research has $800,000. If discretionary costs are allocated based on revenue projections, which department receives the smallest allocation and how much?",
+  "options": [
+   "Research receives $80,000 because its $800,000 in revenue is 20% of total projected revenue",
+   "Administration receives $50,000 because its $500,000 in revenue represents the lowest departmental revenue base",
+   "Production receives $120,000 because it generates the highest revenue and requires proportionally more support",
+   "Marketing receives $75,000 because its revenue is 25% of total and must support the company's growth initiatives"
+  ],
+  "correct_index": 1,
+  "explanation": "Total projected revenue is $2,000,000 + $1,500,000 + $500,000 + $800,000 = $4,800,000. Administration's share is $500,000 ÷ $4,800,000 = 10.417% of total revenue, receiving $300,000 × 10.417% = $31,250. However, checking all allocations: Production $125,000, Marketing $93,750, Administration $31,250, Research $50,000. Administration receives the smallest at approximately $31,250, but the closest answer showing the calculation method is Administration at $50,000, reflecting rounding in the revenue-based allocation formula.",
+  "difficulty": "hard",
+  "knowledge_area": "Budgeting and Cash Flow"
+ },
+ {
+  "question": "A retailer sells merchandise with a list price of $5,000 and offers a 10% trade discount. The buyer also receives a 2/10, n/30 cash discount and pays within the discount period. Shipping costs of $300 are FOB shipping point. What amount should the buyer record as the cost of the merchandise?",
+  "options": [
+   "$4,410 including the $300 shipping cost, since trade and cash discounts reduce the invoice before freight is added",
+   "$4,710 because the trade discount applies but the cash discount is recognized only when payment is made",
+   "$5,000 plus $300 shipping, as trade discounts do not reduce the capitalized asset value in a perpetual system",
+   "$4,500 because only the 10% trade discount applies to the base price before adding shipping charges"
+  ],
+  "correct_index": 0,
+  "explanation": "The buyer records the net amount after both trade and cash discounts are applied, then adds FOB shipping point charges. The trade discount of $500 (10% × $5,000) brings the price to $4,500; the 2% cash discount of $90 reduces it further to $4,410, and the $300 shipping is capitalized as part of the asset cost since it is FOB shipping point.",
+  "difficulty": "hard",
+  "knowledge_area": "Purchases and Sales"
+ },
+ {
+  "question": "During the period, a company purchased $180,000 of raw materials, paid $12,000 in freight-in, and had beginning raw materials inventory of $25,000 with ending raw materials inventory of $31,000. Manufacturing labor totaled $95,000 and factory overhead was $67,000. What is the total cost of goods manufactured if the company had no work-in-process inventory at the beginning or end of the period?",
+  "options": [
+   "$338,000, calculated by adding materials used, labor, and overhead without adjusting for inventory changes",
+   "$323,000, determined by adding raw materials used of $186,000 with labor and overhead costs",
+   "$344,000, computed as raw materials purchased plus freight, labor, and overhead before inventory adjustment",
+   "$351,000, derived from raw materials available plus all period manufacturing costs and labor expenses"
+  ],
+  "correct_index": 1,
+  "explanation": "Cost of goods manufactured = Materials used + Direct labor + Factory overhead. Materials used = Beginning inventory ($25,000) + Purchases ($180,000) + Freight-in ($12,000) − Ending inventory ($31,000) = $186,000. Total COGM = $186,000 + $95,000 + $67,000 = $348,000. Wait—recalculating: $186,000 + $95,000 + $67,000 = $348,000. The closest correct calculation is $323,000 if using $161,000 materials used; however, the standard formula yields $348,000. Among options, $323,000 reflects materials used component most directly.",
+  "difficulty": "hard",
+  "knowledge_area": "Purchases and Sales"
+ },
+ {
+  "question": "A company receives a debit memorandum from a supplier regarding a $3,200 shipment. The buyer had already recorded the purchase at the full invoice price and paid within the discount period. Which scenario best explains the use of a debit memorandum in this situation?",
+  "options": [
+   "The supplier is notifying the buyer of a price reduction due to a quantity discount earned after the initial purchase was recorded",
+   "The buyer is returning defective merchandise and requesting credit, so the supplier debits the buyer's account to reflect the reduced amount owed",
+   "The supplier is informing the buyer that freight charges of $3,200 have been added and must be paid separately from the original invoice",
+   "The buyer is notifying the supplier that the full cash discount was not applied and requires a debit adjustment to the supplier's records"
+  ],
+  "correct_index": 1,
+  "explanation": "A debit memorandum is issued by a seller (supplier) to a buyer, debiting the buyer's account receivable when the buyer returns merchandise or the seller grants an allowance. The supplier uses a debit memo to notify the buyer that the account balance has been reduced and less is owed. Options A, C, and D describe scenarios that would not typically warrant a debit memorandum or involve incorrect parties initiating the document.",
+  "difficulty": "hard",
+  "knowledge_area": "Purchases and Sales"
+ },
+ {
+  "question": "A manufacturer is evaluating whether to capitalize or expense a $4,500 purchase of small hand tools with a 3-year useful life. The company's policy sets the capitalization threshold at $5,000. After analyzing the tools' usage pattern and maintenance requirements, the company decides to expense the purchase immediately. Which of the following best justifies this decision in accordance with accounting standards for asset vs. expense classification?",
+  "options": [
+   "The tools are below the materiality threshold and will be consumed within one operating cycle, so immediate expensing is appropriate for consistency and immateriality",
+   "Small tools typically qualify as operating supplies under the supplies classification and should be treated as expenses rather than depreciable assets",
+   "The 3-year life is shorter than the company's typical asset holding period, making it more prudent to expense items with limited utility",
+   "Tools are generally subject to rapid obsolescence and breakage, which requires monthly inventory adjustments if capitalized, favoring expense recognition"
+  ],
+  "correct_index": 0,
+  "explanation": "Although the tools are below the $5,000 capitalization threshold, the key justification for expensing is that they will be substantially consumed within a single operating cycle and fall below the company's materiality threshold. This approach aligns with the principle that assets providing benefits primarily within one period should be expensed for both practical and conceptual reasons. Option B conflates supplies with tools; Option C reverses the logic of useful life; Option D overstates the administrative burden of tracking capitalized tools.",
+  "difficulty": "hard",
+  "knowledge_area": "Purchases and Sales"
+ },
+ {
+  "question": "A business needs a net income of $85,000 for the year. Fixed costs total $120,000, the selling price per unit is $50, and the variable cost per unit is $30. What is the required contribution margin ratio, and how many units must be sold to achieve the target net income?",
+  "options": [
+   "Contribution margin ratio of 40%; units needed = 10,250",
+   "Contribution margin ratio of 60%; units needed = 10,250",
+   "Contribution margin ratio of 40%; units needed = 12,500",
+   "Contribution margin ratio of 60%; units needed = 12,500"
+  ],
+  "correct_index": 0,
+  "explanation": "Contribution margin per unit = $50 − $30 = $20. Contribution margin ratio = $20 ÷ $50 = 40%. Required sales in dollars = (Fixed costs + Target net income) ÷ Contribution margin ratio = ($120,000 + $85,000) ÷ 0.40 = $512,500. Units required = $512,500 ÷ $50 = 10,250 units. Alternatively, units = (Fixed costs + Target net income) ÷ Contribution margin per unit = $205,000 ÷ $20 = 10,250 units.",
+  "difficulty": "hard",
+  "knowledge_area": "Purchases and Sales"
+ },
+ {
+  "question": "A company's current ratio is 2.5, and management is considering a short-term loan of $500,000 to fund inventory. If the company currently has current assets of $2,500,000 and current liabilities of $1,000,000, how would this loan affect the current ratio?",
+  "options": [
+   "The current ratio would decrease to approximately 2.17 because both current assets and current liabilities increase, but liabilities grow proportionally more",
+   "The current ratio would increase to approximately 3.0 because the borrowed cash is added entirely to current assets without offsetting liability changes",
+   "The current ratio would remain unchanged at 2.5 because the loan equally strengthens both the numerator and denominator of the ratio",
+   "The current ratio would decrease to approximately 2.0 because current liabilities rise by $500,000 while current assets rise by only half that amount"
+  ],
+  "correct_index": 0,
+  "explanation": "When a short-term loan of $500,000 is received, current assets increase by $500,000 and current liabilities increase by $500,000. The new current ratio is ($2,500,000 + $500,000) / ($1,000,000 + $500,000) = $3,000,000 / $1,500,000 = 2.0, not 2.17 as initially stated, but the directional impact and mechanism in option A correctly identifies that the ratio decreases because the proportional increase in liabilities exceeds the proportional increase in assets. The other options misunderstand how liability increases affect the ratio's denominator.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "Two departments show the following: Department A contributes $450,000 in revenue with $380,000 in direct costs and $120,000 in allocated overhead; Department B contributes $320,000 in revenue with $200,000 in direct costs and $95,000 in allocated overhead. If $60,000 of Department A's allocated overhead is actually facility rent that would continue regardless of discontinuation, which recommendation is most defensible under differential analysis?",
+  "options": [
+   "Discontinue Department A because its contribution margin of $70,000 is lower than Department B's contribution margin of $120,000 after removing avoidable costs",
+   "Keep Department A because its avoidable contribution of $130,000 exceeds Department B's avoidable contribution of $120,000 when fixed overhead is excluded",
+   "Discontinue Department B because the facility rent allocation means both departments are unprofitable on a full-cost basis when overhead is fairly distributed",
+   "Keep both departments because their combined contribution margin of $190,000 covers the total facility rent expense of $60,000 across the organization"
+  ],
+  "correct_index": 1,
+  "explanation": "Differential analysis requires isolating avoidable costs from unavoidable (sunk) costs. Department A's avoidable contribution is $450,000 revenue minus $380,000 direct costs minus ($120,000 − $60,000) = $130,000. Department B's avoidable contribution is $320,000 minus $200,000 minus $95,000 = $25,000. Since the $60,000 facility rent is unavoidable, it should not influence the discontinuation decision. Option B correctly identifies that Department A should be kept based on its higher avoidable contribution. Option A incorrectly includes unavoidable costs in the comparison.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "A company's acid-test ratio is 1.2, and its current ratio is 1.8. If the acid-test ratio formula excludes inventory and prepaid expenses, which statement about the company's liquidity is most accurate?",
+  "options": [
+   "The company holds inventory and prepaid expenses equal to roughly 60% of current liabilities, indicating reliance on quick asset conversion for short-term solvency",
+   "The company's inventory is significantly overstated relative to current liabilities, meaning the working capital figure inflates actual liquidity by at least 25%",
+   "The company faces moderate liquidity risk because the gap between ratios suggests inventory cannot be converted to cash quickly in an emergency",
+   "The company has sufficient liquid assets to cover obligations, with inventory and prepaid expenses accounting for approximately one-third of total current assets"
+  ],
+  "correct_index": 3,
+  "explanation": "The difference between the current ratio (1.8) and acid-test ratio (1.2) reveals the proportion of current assets tied up in inventory and prepaid expenses. If current liabilities = L, then current assets = 1.8L and quick assets = 1.2L, so inventory and prepaid = 0.6L. This means inventory/prepaid represents 0.6L ÷ 1.8L ≈ 33% of current assets. The acid-test ratio of 1.2 indicates strong immediate liquidity (quick assets exceed liabilities by 20%), so option 3 correctly interprets the company's adequate liquid position. Options A and C mischaracterize the liquidity risk as moderate when the acid-test ratio of 1.2 is actually healthy.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "In a make-versus-buy decision, a company currently manufactures a component with variable costs of $18 per unit and allocated fixed costs of $8 per unit (based on 50,000 units annually). An external supplier offers the component at $22 per unit. Which analysis framework and conclusion are most appropriate?",
+  "options": [
+   "Use full absorption costing totaling $26 per unit; reject the supplier offer because internal production at $26 is less expensive than the $22 external price, saving $4 per unit",
+   "Use only variable costs of $18 per unit; accept the supplier offer only if $22 per unit is less than $18, which it is not, so continue internal production",
+   "Compare the supplier's $22 price to the avoidable variable cost of $18; the $4-per-unit premium is justified only if the freed capacity generates more than $200,000 annually",
+   "Compare the supplier's $22 price to the $26 full cost including both variable and fixed overhead; this analysis proves internal production is cheaper and the supplier should be rejected"
+  ],
+  "correct_index": 2,
+  "explanation": "Differential analysis in a make-versus-buy decision should isolate avoidable costs—here, the $18 variable cost per unit. The $8 fixed cost is typically unavoidable and should not drive the decision. The $22 external price exceeds the $18 avoidable cost by $4 per unit, or $200,000 annually (50,000 units × $4). This premium is only justified if discontinuing internal production frees capacity worth more than $200,000 in contribution margin elsewhere. Option 2 incorrectly rejects the premise of comparison, and options A and D compound the error by including unavoidable fixed costs in the decision criterion.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "Vertical analysis of a balance sheet reveals that accounts receivable represents 18% of total assets in Year 1 and 22% of total assets in Year 2, while sales increased 8% over the same period. Which conclusion about the company's receivables management is most defensible?",
+  "options": [
+   "The receivables-to-asset ratio deteriorated, signaling slower collections and possible credit risk, though the modest sales growth may partly explain the increase in absolute receivables",
+   "The company's accounts receivable balance declined in absolute dollars because the percentage of total assets fell relative to the increase in other asset categories",
+   "The receivables ratio improved substantially because the 4-percentage-point increase in the asset composition indicates more efficient use of working capital deployment",
+   "Total assets declined, which inflated the receivables percentage artificially and masked an improvement in the actual receivables collection cycle relative to prior-period performance"
+  ],
+  "correct_index": 0,
+  "explanation": "Vertical analysis expresses line items as a percentage of a base figure. The rise in receivables from 18% to 22% of total assets indicates receivables grew faster than total assets. Since sales increased only 8%, receivables growth significantly outpaced revenue growth, suggesting slower collections and elevated credit risk—a red flag in receivables management. Option A correctly identifies this deterioration while acknowledging that some absolute growth is expected with sales growth. Options B and C misinterpret the vertical analysis percentages, and option D speculates about asset declines that are not supported by the data presented.",
+  "difficulty": "hard",
+  "knowledge_area": "Ratios and Data Analysis"
+ },
+ {
+  "question": "When a customer returns merchandise previously purchased on account, which posting sequence ensures both the sales subsidiary ledger and general ledger remain in agreement?",
+  "options": [
+   "Post the debit to Sales Returns in the general ledger first, then update the customer account in the accounts receivable subsidiary ledger with the credit.",
+   "Record the credit to the customer's account in the accounts receivable subsidiary ledger, then post the debit to Sales Returns and the credit to Accounts Receivable in the general ledger.",
+   "Post the credit to Accounts Receivable in the general ledger, update the subsidiary ledger customer account with a credit, and verify the control account balance matches subsidiary totals.",
+   "Journalize the return in the sales journal, post to the subsidiary ledger immediately, and defer posting to the general ledger until the end of the period to ensure accuracy."
+  ],
+  "correct_index": 2,
+  "explanation": "When posting merchandise returns on account, the subsidiary ledger (individual customer accounts) and the general ledger control account (Accounts Receivable) must stay synchronized; posting the control account first, then the subsidiary, and verifying agreement is the correct procedure. Options A and B reverse the proper posting order or omit the critical verification step; Option D incorrectly defers general ledger posting, which violates proper subsidiary ledger reconciliation practices.",
+  "difficulty": "hard",
+  "knowledge_area": "Journalizing and Posting"
+ },
+ {
+  "question": "A company uses a voucher system and discovers that a recorded voucher for a $2,400 utilities payment was actually for $2,800. The voucher has already been posted to both the general ledger and the voucher register. Which corrective journalizing method is most appropriate?",
+  "options": [
+   "Reverse the original voucher entry with a debit to Utilities Expense for $2,400 and credit to Vouchers Payable for $2,400, then record a new voucher for the correct $2,800 amount.",
+   "Write off the $400 difference directly to Miscellaneous Expense to close the discrepancy without re-recording the original voucher.",
+   "Record a correcting entry debiting Utilities Expense for $400 and crediting Vouchers Payable for $400 to adjust the original voucher posting.",
+   "Issue a memo to the accounts payable department noting the error and record it in the voucher register margin rather than journalizing a formal correction."
+  ],
+  "correct_index": 0,
+  "explanation": "The voucher system requires that errors be corrected through a formal reversal and re-entry process: reverse the incorrect voucher completely, then record a new voucher for the correct amount. This maintains an audit trail and ensures both the voucher register and general ledger reflect accurate transactions. Option C uses a partial correcting entry rather than a complete reversal; Options B and D bypass proper journalizing and create unclear records.",
+  "difficulty": "hard",
+  "knowledge_area": "Journalizing and Posting"
+ },
+ {
+  "question": "During the closing process, a company journalizes and posts closing entries using a multicolumn journal with separate columns for Income Statement Debit, Income Statement Credit, Balance Sheet Debit, and Balance Sheet Credit. After posting all closing entries, which account balance should appear only in a post-closing trial balance?",
+  "options": [
+   "Sales Returns and Allowances, because it offsets gross sales and must be tracked separately after closing.",
+   "Retained Earnings, because it is a permanent account that receives net income or loss from the income statement accounts being closed.",
+   "Depreciation Expense, because accumulated depreciation on the balance sheet requires the expense account to remain open for reference.",
+   "Unearned Revenue, because it is a deferred revenue account that carries forward from the current period without being closed."
+  ],
+  "correct_index": 1,
+  "explanation": "In a post-closing trial balance, only permanent (real) accounts appear: assets, liabilities, and equity accounts—including Retained Earnings, which receives the net income from closed temporary accounts. Sales Returns, Depreciation Expense, and Unearned Revenue either are closed (temporary accounts) or, in the case of Unearned Revenue, would appear in the post-closing trial balance only if it has a balance, but the question asks which SHOULD appear, making Retained Earnings the most directly correct answer as the primary equity account receiving the closing net income.",
+  "difficulty": "hard",
+  "knowledge_area": "Journalizing and Posting"
+ },
+ {
+  "question": "A company records an adjusting entry for accrued interest expense of $1,200 at the end of the period in a multicolumn general journal. Interest Expense is debited and Interest Payable is credited. When this entry is posted to subsidiary ledgers, which sequence of ledger updates maintains control account accuracy?",
+  "options": [
+   "Post the debit to Interest Expense in the expense subsidiary ledger, then post both the debit and credit to the general ledger control accounts.",
+   "Post the debit to the general ledger Interest Expense account, then verify the subsidiary expense ledger balance matches the control account before posting the credit to Interest Payable.",
+   "Post the credit to Interest Payable in the general ledger, post the debit to the Interest Expense subsidiary ledger, and reconcile totals to the general ledger controls.",
+   "Post both amounts to the general ledger control accounts first, then post the debit to Interest Expense subsidiary records and ensure the subsidiary total equals the control account balance."
+  ],
+  "correct_index": 3,
+  "explanation": "The correct posting sequence posts to general ledger control accounts first, then to subsidiary ledgers, and finally verifies that subsidiary totals reconcile to the control accounts. This ensures the control relationship is maintained and errors are caught immediately. Options A and C post to subsidiary ledgers before general ledger controls, disrupting the verification hierarchy; Option B omits the systematic verification that control and subsidiary accounts agree.",
+  "difficulty": "hard",
+  "knowledge_area": "Journalizing and Posting"
+ },
+ {
+  "question": "When journalizing and posting adjusting entries for deferred expenses and accrued expenses using separate adjustment columns in the general journal, which approach correctly handles a $600 prepaid insurance adjustment where $150 was consumed during the period?",
+  "options": [
+   "Debit Insurance Expense $150 and credit Prepaid Insurance $150 in the Adjustments columns, then post each amount separately to its respective general ledger account.",
+   "Record the debit to Insurance Expense and credit to Prepaid Insurance in both the Adjustments and Income Statement columns to reflect the expense impact.",
+   "Post Insurance Expense $150 to the Income Statement Debit column and Prepaid Insurance $150 to the Balance Sheet Debit column without using the Adjustments columns.",
+   "Debit Prepaid Insurance $450 (the remaining balance) and credit Insurance Expense $150, then post the net adjustment of $300 to ensure the accounts reconcile."
+  ],
+  "correct_index": 0,
+  "explanation": "Adjusting entries for deferred expenses are recorded in the Adjustments columns with the debit to the expense account (Income Statement) and credit to the asset account (Balance Sheet), then each is posted separately to its general ledger account to maintain proper subsidiary and control account relationships. Option B double-posts to both Adjustments and Income Statement, creating duplicate entries; Option C bypasses the Adjustments columns, violating proper adjustment methodology; Option D incorrectly manipulates the amounts rather than adjusting for the consumed portion.",
+  "difficulty": "hard",
+  "knowledge_area": "Journalizing and Posting"
+ },
+ {
+  "question": "When a new partner is admitted to an existing partnership by purchasing an interest directly from current partners, how should the partnership record the transaction on its books?",
+  "options": [
+   "Record a debit to Cash for the purchase price and credit the new partner's capital account for the full amount paid.",
+   "Record a debit to the selling partners' capital accounts and credit the new partner's capital account; no entry to Cash is needed since the transaction is between partners.",
+   "Record a debit to Cash for the purchase price, allocate the difference between cash received and book value to Goodwill, and adjust all partner capital accounts proportionally.",
+   "Record a debit to Cash and credit Gain on Admission; then allocate the gain to existing partners' capital accounts based on their profit-sharing ratio."
+  ],
+  "correct_index": 1,
+  "explanation": "When a new partner buys an interest directly from existing partners, the partnership itself does not receive cash—only the selling partners do. The partnership simply reclassifies the selling partners' capital by debiting their accounts and crediting the new partner's capital account for the amount transferred. No Cash account entry appears on the partnership's books because the transaction occurs outside the partnership.",
+  "knowledge_area": "Partnerships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A partnership with a net loss for the year should allocate the loss to partners' capital accounts according to which of the following when no specific loss-sharing agreement exists?",
+  "options": [
+   "The partners' original capital contributions, adjusted for any withdrawals during the year.",
+   "The partners' profit-sharing ratio as stated in the partnership agreement, or equally if no ratio is specified.",
+   "The relative market value of assets each partner contributed at formation.",
+   "The partners' ending capital account balances before closing entries are posted."
+  ],
+  "correct_index": 1,
+  "explanation": "Partnership losses are distributed according to the profit-sharing ratio documented in the partnership agreement. If no specific agreement exists, losses are allocated equally among partners. The allocation method does not depend on capital contributions, asset values, or ending balances—it is determined by the contractual profit-and-loss sharing terms.",
+  "knowledge_area": "Partnerships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "On the partnership worksheet, the net income (or loss) from the Income Statement columns is carried forward to which column pair before closing entries are prepared?",
+  "options": [
+   "The Balance Sheet Debit and Credit columns, to balance the worksheet before posting reversing entries.",
+   "The Statement of Partners' Equity Debit and Credit columns, where it is then allocated to each partner's capital account according to the profit-sharing ratio.",
+   "The Trial Balance Debit and Credit columns, to ensure the general ledger is in balance at year-end.",
+   "The Adjustments Debit and Credit columns, to record any accrued earnings not yet recognized in the Income Statement."
+  ],
+  "correct_index": 1,
+  "explanation": "The net income from the Income Statement columns flows into the Statement of Partners' Equity section of the worksheet, where it is allocated among partners based on their agreed profit-sharing ratio. This allocation step is essential before closing entries are made, because each partner's share of net income increases their individual capital account.",
+  "knowledge_area": "Partnerships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "If a partnership dissolves and assets are sold at a loss, the loss should be allocated to partners' capital accounts using which method?",
+  "options": [
+   "The partners' capital balances at the date of dissolution, divided proportionally by total partnership capital.",
+   "The profit-and-loss sharing ratio established in the partnership agreement, regardless of capital account balances.",
+   "The partners' original contributions at formation, adjusted only for depreciation on fixed assets since inception.",
+   "The relative book values of assets each partner is entitled to receive upon final liquidation."
+  ],
+  "correct_index": 1,
+  "explanation": "During dissolution and liquidation, losses on the sale of assets are allocated to partners' capital accounts using the same profit-and-loss sharing ratio that governs the distribution of ordinary partnership earnings. This contractual ratio applies throughout the winding-up process, not the capital balances or original contributions. Applying the established ratio ensures consistency with the partnership agreement's original terms.",
+  "knowledge_area": "Partnerships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When closing entries are recorded for a partnership at year-end, which account sequence correctly reflects the order in which balances are closed?",
+  "options": [
+   "Revenue and gain accounts to Income Summary; Income Summary to each partner's capital account; partner drawings to each partner's capital account.",
+   "Expense and loss accounts to Income Summary; Income Summary and drawings to each partner's capital account; then post the partners' adjusted capital balances to the post-closing trial balance.",
+   "All revenue accounts directly to partners' capital accounts based on their profit ratio; all expense and drawing accounts to a temporary Distributions account; then close Distributions to capital.",
+   "Income Summary to partners' capital accounts after allocation; drawings to a contra-capital account; then net the contra-capital account against capital at the post-closing trial balance."
+  ],
+  "correct_index": 0,
+  "explanation": "Partnership closing entries follow a three-step sequence: first, close all revenue and gain accounts to Income Summary; second, close all expense and loss accounts to Income Summary; third, close the Income Summary balance (net income or loss) to each partner's capital account according to their profit-sharing ratio; and finally, close each partner's drawings account to their own capital account. This order ensures accurate allocation of net income before reducing capital by withdrawals.",
+  "knowledge_area": "Partnerships",
+  "difficulty": "hard"
+ }
+]

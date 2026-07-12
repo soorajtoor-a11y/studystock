@@ -3,8 +3,8 @@
   "question": "An investor with a 25-year time horizon and moderate risk tolerance is evaluating between corporate bonds yielding 5.2% annually, dividend-paying stocks with historical returns of 7.8%, and a balanced mutual fund returning 6.5%. Which factor should MOST influence this selection decision?",
   "options": [
    "The investor's age, income stability, and liquidity needs relative to their investment timeline and ability to weather market volatility",
-   "The current Federal Reserve interest rate environment and whether the economy is in an expansion or contraction phase",
    "The historical performance of each investment type over the past ten years and the likelihood of those returns repeating",
+   "The current Federal Reserve interest rate environment and whether the economy is in an expansion or contraction phase",
    "The tax classification of the investor and whether each investment generates ordinary income or capital gains"
   ],
   "correct_index": 0,
@@ -15,12 +15,12 @@
  {
   "question": "A young professional earning $65,000 annually with $15,000 in emergency savings is deciding between a high-yield savings account at 4.5% APY, a certificate of deposit locked for 18 months at 4.8%, and a growth-focused equity mutual fund with expected returns of 9%. Which combination of factors would make the equity fund the LEAST appropriate choice at this time?",
   "options": [
-   "Limited emergency reserves relative to monthly expenses and an uncertain job market creating near-term liquidity requirements",
-   "The investor's marginal tax bracket placing them in the 24% federal tax category where equity fund dividends are taxed favorably",
+   "The investor's age allowing sufficient time to recover from potential market downturns before retirement in 40+ years",
    "Historical equity market downturns demonstrating 20% declines over 12-month periods during market corrections",
-   "The investor's age allowing sufficient time to recover from potential market downturns before retirement in 40+ years"
+   "The investor's marginal tax bracket placing them in the 24% federal tax category where equity fund dividends are taxed favorably",
+   "Limited emergency reserves relative to monthly expenses and an uncertain job market creating near-term liquidity requirements"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "An investor with minimal emergency reserves relative to expenses should prioritize liquidity and capital preservation in liquid, accessible investments before committing funds to market-dependent equity investments. The other factors—tax treatment, historical volatility, and time horizon—are considerations, but insufficient emergency savings creates an immediate risk that should be addressed first through more conservative instruments.",
   "difficulty": "hard",
   "knowledge_area": "Investment Strategies"
@@ -29,11 +29,11 @@
   "question": "When comparing stock investments, bond investments, and real estate investment trusts (REITs), an investor notices that stocks have historically provided 10% average annual returns, bonds 4% returns, and REITs 7% returns over 30 years. Which statement most accurately reflects how to apply this information when selecting among these investment types?",
   "options": [
    "Historical returns are reliable predictors of future performance and should be weighted equally with current economic conditions when making selections",
-   "Higher historical returns directly indicate lower risk and greater suitability for conservative investors seeking stability",
    "Past returns provide context for understanding risk-return relationships but must be evaluated alongside the investor's timeline, risk capacity, and correlation with other holdings",
-   "Bonds should be avoided entirely in favor of stocks and REITs since their lower historical returns cannot justify inclusion in a diversified portfolio"
+   "Bonds should be avoided entirely in favor of stocks and REITs since their lower historical returns cannot justify inclusion in a diversified portfolio",
+   "Higher historical returns directly indicate lower risk and greater suitability for conservative investors seeking stability"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "While historical returns illustrate the risk-return trade-off among investment types, they are not guaranteed to repeat and must be interpreted within the investor's personal context. Stocks' higher historical returns come with greater volatility; the appropriateness of each investment depends on the investor's ability to tolerate that volatility, time horizon, and how the investment correlates with their overall portfolio.",
   "difficulty": "hard",
   "knowledge_area": "Investment Strategies"
@@ -41,12 +41,12 @@
  {
   "question": "A 45-year-old investor with $200,000 in investable assets, stable employment, and $50,000 in liquid emergency reserves is selecting between Treasury securities yielding 4.1%, investment-grade corporate bonds yielding 5.5%, high-yield bonds yielding 8.2%, and dividend growth stocks yielding 2.8% with expected total returns of 8.5%. Which investment combination would most align with a moderate-risk strategy?",
   "options": [
-   "Allocate 60% to high-yield bonds and 40% to dividend growth stocks to maximize current yield and total return over 20 years",
-   "Allocate 70% to corporate bonds and Treasury securities in a ladder strategy while maintaining 30% in dividend growth stocks for capital appreciation",
    "Allocate 100% to investment-grade corporate bonds to ensure consistent 5.5% returns without exposure to equity market fluctuations",
-   "Allocate 50% to high-yield bonds, 30% to dividend stocks, and 20% to Treasury securities to balance yield, growth, and capital preservation"
+   "Allocate 50% to high-yield bonds, 30% to dividend stocks, and 20% to Treasury securities to balance yield, growth, and capital preservation",
+   "Allocate 70% to corporate bonds and Treasury securities in a ladder strategy while maintaining 30% in dividend growth stocks for capital appreciation",
+   "Allocate 60% to high-yield bonds and 40% to dividend growth stocks to maximize current yield and total return over 20 years"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A moderate-risk strategy with a 20-year horizon typically emphasizes stability with growth potential through a core holding of quality bonds (corporate and Treasury) paired with a meaningful equity allocation for long-term appreciation. Option B achieves this balance; Option A over-concentrates in high-yield credit risk, Option C eliminates growth potential, and Option D front-loads high-yield bonds beyond what moderate risk tolerance usually warrants.",
   "difficulty": "hard",
   "knowledge_area": "Investment Strategies"
@@ -55,11 +55,11 @@
   "question": "An investor is evaluating three investment options: diversified index funds with 0.05% expense ratios and $3,000 minimum investment, actively managed growth funds with 1.2% expense ratios and $1,000 minimum investment, and individual stocks requiring $50 per share with no ongoing fees. Which factor should MOST critically inform this selection for an investor with $8,000 to deploy and moderate investment knowledge?",
   "options": [
    "The number of individual stocks that can be purchased within the $8,000 budget and the likelihood of outperforming market averages through stock picking",
-   "The total cost of ownership including fees, the investor's ability to research and monitor holdings, and the diversification achieved per dollar invested",
    "The historical performance of the specific fund managers over the past five years and their expected ability to beat their benchmark indices",
+   "The total cost of ownership including fees, the investor's ability to research and monitor holdings, and the diversification achieved per dollar invested",
    "The tax efficiency of each option and whether the investor should prioritize minimizing capital gains distributions or dividend income recognition"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "For a moderate investor with $8,000, the total cost of ownership (including fees), ability to manage holdings effectively, and diversification per dollar are paramount considerations. Index funds offer broad diversification at minimal cost relative to the investor's knowledge level; individual stock selection introduces concentration risk and requires significant time and expertise, while active funds charge high fees that historically underperform indexes for most investors.",
   "difficulty": "hard",
   "knowledge_area": "Investment Strategies"
@@ -69,8 +69,8 @@
   "options": [
    "Saving provides immediate liquidity for unexpected expenses while investing allows wealth to grow over time through compound returns, addressing both short-term security and long-term financial goals.",
    "Investing guarantees higher returns than savings accounts, so professionals should prioritize investment vehicles before establishing any emergency fund reserves.",
-   "Saving and investing are essentially the same activity, both requiring the postponement of current spending to build future financial capacity.",
-   "Emergency savings should only be established after investment goals are fully funded, since investments offer better protection against inflation and economic downturns."
+   "Emergency savings should only be established after investment goals are fully funded, since investments offer better protection against inflation and economic downturns.",
+   "Saving and investing are essentially the same activity, both requiring the postponement of current spending to build future financial capacity."
   ],
   "correct_index": 0,
   "explanation": "Saving and investing serve complementary but distinct purposes: saving builds accessible reserves for emergencies and short-term needs, while investing grows wealth over longer periods for future goals. The other options either confuse the two concepts, falsely prioritize one over the other, or misrepresent the sequence and purpose of each. Hard difficulty lies in recognizing that both are necessary parts of sound financial planning rather than alternatives.",
@@ -82,8 +82,8 @@
   "options": [
    "Reduce discretionary spending categories such as dining and entertainment by reallocating those dollars to essential fixed expenses like housing and utilities.",
    "Increase income through additional employment or side work, or decrease expenses by renegotiating fixed obligations such as insurance premiums and service contracts.",
-   "Establish a line of credit to cover the monthly shortfall until expenses naturally decrease due to inflation-adjusted salary increases.",
-   "Move non-essential purchases to a separate account and track them monthly to increase awareness of spending patterns without cutting the actual expenses."
+   "Move non-essential purchases to a separate account and track them monthly to increase awareness of spending patterns without cutting the actual expenses.",
+   "Establish a line of credit to cover the monthly shortfall until expenses naturally decrease due to inflation-adjusted salary increases."
   ],
   "correct_index": 1,
   "explanation": "The core problem is that expenses exceed income; the solution requires either raising income or lowering expenses. Option B addresses the structural imbalance directly by tackling both sides of the equation, while A merely shifts categories without solving the gap, C creates debt instead of solving the problem, and D is awareness-building without corrective action. Hard difficulty comes from distinguishing real solutions from temporary measures and accounting shuffles.",
@@ -93,12 +93,12 @@
  {
   "question": "A recent college graduate with $45,000 in student loan debt, $8,000 in savings, and $32,000 in annual gross income is calculating personal net worth. Which statement most accurately reflects how to interpret this net worth figure in the context of setting realistic financial goals?",
   "options": [
-   "Net worth of negative $37,000 indicates immediate financial distress and should prompt elimination of all discretionary spending and aggressive debt repayment before establishing forward-looking goals.",
    "Net worth of negative $37,000 represents a common starting position for young professionals and serves as a baseline to track progress, but does not prevent setting goals for income growth, debt reduction, and asset accumulation.",
-   "Net worth is irrelevant to goal-setting because the graduate's annual income is positive, meaning all financial planning should focus exclusively on annual cash flow management.",
-   "Net worth of negative $37,000 means the graduate should delay any financial goals for five years until the student loans are partially repaid and net worth becomes positive."
+   "Net worth of negative $37,000 means the graduate should delay any financial goals for five years until the student loans are partially repaid and net worth becomes positive.",
+   "Net worth of negative $37,000 indicates immediate financial distress and should prompt elimination of all discretionary spending and aggressive debt repayment before establishing forward-looking goals.",
+   "Net worth is irrelevant to goal-setting because the graduate's annual income is positive, meaning all financial planning should focus exclusively on annual cash flow management."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Net worth is a snapshot of financial position (assets minus liabilities); a negative net worth is not disqualifying for goal-setting but rather a starting point. Option B correctly interprets it as a baseline while acknowledging realistic pathways forward. Option A overstates urgency, C ignores the role of net worth in financial health, and D imposes an artificial timeline. Hard difficulty stems from balancing the sobering reality of negative net worth against the constructive use of that information for planning.",
   "difficulty": "hard",
   "knowledge_area": "Financial Needs and Goals"
@@ -106,12 +106,12 @@
  {
   "question": "When setting financial goals, a household must choose between a goal to save $12,000 for a home down payment within 36 months and a goal to eliminate $18,000 in credit card debt within 24 months. Which framework best guides the prioritization of these competing goals?",
   "options": [
-   "The home down payment goal should be prioritized because homeownership is a long-term wealth-building asset, whereas debt elimination only preserves current financial position.",
    "Debt elimination should be prioritized because the interest cost of carrying $18,000 in credit card debt typically exceeds the returns from down payment savings, and reducing high-interest obligations improves overall financial capacity.",
+   "The credit card goal should be abandoned entirely in favor of the down payment goal, since real estate appreciation historically outpaces the cost of consumer debt.",
    "Both goals should be pursued simultaneously in equal proportion, allocating 50 percent of available funds to each objective to ensure balanced financial progress.",
-   "The credit card goal should be abandoned entirely in favor of the down payment goal, since real estate appreciation historically outpaces the cost of consumer debt."
+   "The home down payment goal should be prioritized because homeownership is a long-term wealth-building asset, whereas debt elimination only preserves current financial position."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "High-interest debt (typically 15–25% on credit cards) is a drag on financial health that should generally be addressed before taking on new asset goals. Option B recognizes that eliminating expensive debt improves financial capacity for future goals, while A misses the economic reality of interest costs, C splits resources inefficiently without addressing urgency, and D falsely assumes debt can be ignored. Hard difficulty lies in weighing competing priorities using financial logic rather than emotional attachment to asset ownership.",
   "difficulty": "hard",
   "knowledge_area": "Financial Needs and Goals"
@@ -132,12 +132,12 @@
  {
   "question": "A 28-year-old professional with stable employment is deciding between increasing monthly savings contributions and making lump-sum investments. Which statement best explains why both saving and investing serve distinct roles in long-term financial security?",
   "options": [
-   "Saving builds liquid reserves for unexpected expenses while investing grows wealth through compound returns over extended periods, addressing both short-term stability and long-term growth needs.",
    "Investing provides immediate access to funds during emergencies while saving accumulates money slowly enough to avoid the risks associated with market volatility and economic downturns.",
+   "Both serve identical purposes in wealth accumulation, but saving is preferred for those under 35 while investing becomes the primary strategy only after retirement planning begins.",
    "Saving allows for tax-deferred growth of retirement accounts while investing in stocks and bonds creates the emergency fund reserves needed for unexpected financial hardships.",
-   "Both serve identical purposes in wealth accumulation, but saving is preferred for those under 35 while investing becomes the primary strategy only after retirement planning begins."
+   "Saving builds liquid reserves for unexpected expenses while investing grows wealth through compound returns over extended periods, addressing both short-term stability and long-term growth needs."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Saving and investing fulfill complementary roles: saving provides liquidity and financial security for near-term needs, while investing leverages compound growth for long-term wealth building. The other options reverse these functions, confuse tax structures, or incorrectly suggest the strategies are interchangeable based on age alone.",
   "knowledge_area": "Financial Needs and Goals",
   "difficulty": "hard"
@@ -146,11 +146,11 @@
   "question": "When developing a personal budget, a household member discovers that fixed expenses consume 62% of monthly gross income, variable expenses account for 18%, and the remainder is unallocated. Which approach best reflects sound budgeting principles for the remaining 20%?",
   "options": [
    "Allocate the full 20% to discretionary spending immediately, since fixed and variable expenses are already accounted for and the surplus can support increased lifestyle purchases.",
-   "Reserve portions for savings goals, debt reduction, and emergency fund contributions before assigning any remainder to discretionary categories, ensuring financial resilience.",
    "Apply the entire 20% to investment accounts exclusively, as budgeting principles prioritize wealth growth over maintaining liquid emergency reserves or debt management.",
-   "Distribute the 20% evenly across three equal accounts for short-term fun, medium-term vehicle purchases, and long-term retirement, without distinguishing between essential and optional allocations."
+   "Distribute the 20% evenly across three equal accounts for short-term fun, medium-term vehicle purchases, and long-term retirement, without distinguishing between essential and optional allocations.",
+   "Reserve portions for savings goals, debt reduction, and emergency fund contributions before assigning any remainder to discretionary categories, ensuring financial resilience."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Sound budgeting prioritizes building financial security through savings, emergency reserves, and debt reduction before allocating funds to discretionary spending. The other options either spend the surplus too quickly, over-emphasize one goal, or fail to prioritize the foundational elements of financial stability.",
   "knowledge_area": "Financial Needs and Goals",
   "difficulty": "hard"
@@ -159,8 +159,8 @@
   "question": "An individual lists assets totaling $187,500 and liabilities totaling $94,200. Which of the following most accurately describes how this information is used within the broader context of financial goal-setting?",
   "options": [
    "Net worth of $93,300 serves as a snapshot of current financial position and provides a baseline for measuring progress toward goals and assessing capacity for additional debt or investment.",
-   "Net worth of $93,300 indicates the total amount available for immediate spending on consumer purchases and represents the individual's annual income earning capacity.",
    "Net worth of $281,700 reflects the combined value of all resources and obligations and should be increased annually by at least 15% through aggressive investment strategies alone.",
+   "Net worth of $93,300 indicates the total amount available for immediate spending on consumer purchases and represents the individual's annual income earning capacity.",
    "Net worth of $281,700 demonstrates financial stability and eliminates the need for emergency savings or ongoing budget monitoring since assets already exceed liabilities by a significant margin."
   ],
   "correct_index": 0,
@@ -171,12 +171,12 @@
  {
   "question": "A college graduate is establishing financial goals for the next decade and must choose between setting outcome goals (specific target amounts) and process goals (behavioral habits). Which characteristic most distinguishes why both types are necessary within a comprehensive financial plan?",
   "options": [
+   "Both outcome and process goals must be identical in their dollar amounts, and setting different types of goals creates confusion that undermines overall financial planning effectiveness.",
    "Outcome goals define measurable endpoints such as 'accumulate $50,000 in savings by age 35,' while process goals establish recurring behaviors like 'allocate 15% of income to retirement accounts,' ensuring targets become reality through consistent action.",
    "Process goals are more important than outcome goals because financial success depends entirely on daily spending habits rather than planning specific milestones or target amounts.",
-   "Outcome goals should replace process goals once an individual reaches a net worth of $100,000, as disciplined behaviors become unnecessary once sufficient wealth accumulates.",
-   "Both outcome and process goals must be identical in their dollar amounts, and setting different types of goals creates confusion that undermines overall financial planning effectiveness."
+   "Outcome goals should replace process goals once an individual reaches a net worth of $100,000, as disciplined behaviors become unnecessary once sufficient wealth accumulates."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Outcome goals set specific targets (the 'what') while process goals establish the behaviors and habits (the 'how') needed to reach them; both are necessary because targets without discipline lack implementation pathways. The other options incorrectly prioritize one type, suggest goals become unnecessary at certain wealth levels, or impose artificial constraints on how goals should be structured.",
   "knowledge_area": "Financial Needs and Goals",
   "difficulty": "hard"
@@ -184,12 +184,12 @@
  {
   "question": "When comparing two budget approaches—the 50/30/20 model (50% needs, 30% wants, 20% savings/debt) and a zero-based budget (every dollar assigned a purpose before spending)—which statement most accurately reflects their practical differences in personal financial planning?",
   "options": [
-   "The 50/30/20 model provides a flexible framework with preset allocations suitable for stable incomes, while zero-based budgeting requires detailed tracking of every expense and works best for variable incomes or aggressive financial goals.",
-   "Zero-based budgeting is universally superior because it prevents any discretionary spending, whereas the 50/30/20 model allows excessive wants spending and should never be used by serious savers.",
    "The 50/30/20 model is only applicable to households earning over $75,000 annually, while zero-based budgeting works exclusively for lower incomes and does not scale to higher earnings.",
-   "Both models mandate identical spending percentages across all categories, so choosing between them makes no practical difference in achieving financial goals or monitoring budget performance."
+   "Zero-based budgeting is universally superior because it prevents any discretionary spending, whereas the 50/30/20 model allows excessive wants spending and should never be used by serious savers.",
+   "Both models mandate identical spending percentages across all categories, so choosing between them makes no practical difference in achieving financial goals or monitoring budget performance.",
+   "The 50/30/20 model provides a flexible framework with preset allocations suitable for stable incomes, while zero-based budgeting requires detailed tracking of every expense and works best for variable incomes or aggressive financial goals."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The 50/30/20 model offers simplicity through preset percentages (ideal for predictable incomes), while zero-based budgeting demands precise allocation of each dollar (better for irregular incomes or aggressive savings targets). The other options falsely claim one method is universally superior, impose artificial income limits, or ignore meaningful methodological differences.",
   "knowledge_area": "Financial Needs and Goals",
   "difficulty": "hard"
@@ -210,12 +210,12 @@
  {
   "question": "Treasury notes and government bonds both represent forms of currency issued by the government. How do they differ in their primary function within the financial system?",
   "options": [
-   "Treasury notes serve as a medium of exchange in everyday transactions, while government bonds function primarily as long-term debt instruments that generate investment returns",
-   "Government bonds can be exchanged for goods and services at any merchant, whereas treasury notes are restricted to transactions with federal agencies only",
    "Treasury notes mature within two to ten years and pay semi-annual interest, while government bonds have no maturity date and serve as legal tender in all commercial dealings",
+   "Government bonds can be exchanged for goods and services at any merchant, whereas treasury notes are restricted to transactions with federal agencies only",
+   "Treasury notes serve as a medium of exchange in everyday transactions, while government bonds function primarily as long-term debt instruments that generate investment returns",
    "Both instruments function identically as stores of value, but treasury notes are denominated in smaller amounts suitable for retail use, while bonds are issued only in large institutional quantities"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "While both are government-issued financial instruments, treasury notes function as debt securities with defined maturity periods and interest payments, whereas circulating currency (coins and paper money) serves as the medium of exchange. Government bonds similarly function as investment instruments rather than everyday currency for transactions.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -223,12 +223,12 @@
  {
   "question": "A salaried employee receives a paycheck twice monthly, while a commission-based salesperson's income fluctuates based on monthly sales performance. Which aspect of the time value of money makes the salaried position financially advantageous despite potentially lower total annual earnings?",
   "options": [
-   "Predictable income timing allows the salaried employee to invest surplus funds at compound interest rates earlier in the year, generating returns that offset lower base compensation",
-   "The fixed pay schedule enables more accurate budgeting and reduces the risk of insufficient funds for obligations, thereby lowering the overall cost of credit if borrowing becomes necessary",
    "Salaried income remains constant regardless of inflation rates, while commission-based earnings increase proportionally, making the present value of future payments less certain for the salaried worker",
-   "The biweekly disbursement guarantees that funds received today will retain their purchasing power longer than monthly commission payments would, due to reduced exposure to market volatility"
+   "The biweekly disbursement guarantees that funds received today will retain their purchasing power longer than monthly commission payments would, due to reduced exposure to market volatility",
+   "Predictable income timing allows the salaried employee to invest surplus funds at compound interest rates earlier in the year, generating returns that offset lower base compensation",
+   "The fixed pay schedule enables more accurate budgeting and reduces the risk of insufficient funds for obligations, thereby lowering the overall cost of credit if borrowing becomes necessary"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The time value of money recognizes that certainty and timing of cash flows affect financial planning and borrowing costs. Predictable, consistent income reduces the need for emergency credit and allows better planning, which lowers the cost of any necessary borrowing. Options 0 and 3 misstate how time value works, and option 2 reverses the inflation relationship.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -236,12 +236,12 @@
  {
   "question": "Credit serves multiple purposes in the financial system, including enabling consumption, facilitating commerce, and managing cash flow. Which scenario best demonstrates how credit functions as both a consumer tool AND a measure of financial responsibility?",
   "options": [
-   "A student takes a federal student loan to cover tuition, establishes a consistent repayment history, and later qualifies for a lower-interest mortgage because lenders view the payment record as evidence of creditworthiness",
-   "A small business owner applies for a line of credit to purchase inventory during the off-season, repays it within thirty days, and receives approval for a larger credit limit based on timely payment behavior",
    "A homeowner refinances an existing mortgage to access equity for home improvements, reducing the monthly payment obligation while maintaining the same loan principal balance over the loan term",
-   "An individual opens a credit card account with a zero-percent introductory rate, makes minimum payments for six months, and then transfers the remaining balance to a card offering extended zero-percent financing"
+   "A small business owner applies for a line of credit to purchase inventory during the off-season, repays it within thirty days, and receives approval for a larger credit limit based on timely payment behavior",
+   "An individual opens a credit card account with a zero-percent introductory rate, makes minimum payments for six months, and then transfers the remaining balance to a card offering extended zero-percent financing",
+   "A student takes a federal student loan to cover tuition, establishes a consistent repayment history, and later qualifies for a lower-interest mortgage because lenders view the payment record as evidence of creditworthiness"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "This option demonstrates credit's dual function: it enables the consumer to access education services immediately (consumption function) while the repayment history builds creditworthiness that lenders evaluate for future credit decisions. Options 1 and 3 show credit usage but not the responsibility-assessment aspect, and option 2 shows balance-transfer strategy rather than creditworthiness evaluation.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -249,12 +249,12 @@
  {
   "question": "A consumer enters into a credit agreement but fails to read the terms governing interest rates, late fees, and dispute resolution procedures. Which legal responsibility does this consumer overlook, and what financial consequence typically results?",
   "options": [
-   "The consumer remains responsible for understanding the disclosed terms of the credit agreement, and failure to do so does not void the contract; unread penalties and interest charges become enforceable obligations",
-   "The creditor must provide simplified explanations of all terms before the contract becomes valid; if the consumer does not receive a written summary, the agreement is void and all charges are forgiven",
+   "Both the consumer and creditor share equal legal responsibility for contract compliance; if the terms cause financial hardship, the court may reduce interest rates or suspend penalty fees as a matter of fairness",
    "The consumer has a sixty-day grace period to cancel the agreement without penalty; creditors cannot enforce terms against borrowers who claim lack of awareness before the grace period expires",
-   "Both the consumer and creditor share equal legal responsibility for contract compliance; if the terms cause financial hardship, the court may reduce interest rates or suspend penalty fees as a matter of fairness"
+   "The creditor must provide simplified explanations of all terms before the contract becomes valid; if the consumer does not receive a written summary, the agreement is void and all charges are forgiven",
+   "The consumer remains responsible for understanding the disclosed terms of the credit agreement, and failure to do so does not void the contract; unread penalties and interest charges become enforceable obligations"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Consumer financial law holds individuals responsible for understanding the terms they agree to, even if they don't read them carefully. Disclosed rates, fees, and terms are legally enforceable regardless of the borrower's claim of unawareness. Options 1, 2, and 3 misstate consumer protections—while disclosures are required, they do not void contracts, and grace periods apply to specific situations, not blanket contract cancellation.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -262,12 +262,12 @@
  {
   "question": "A 35-year-old self-employed consultant with two dependents and a mortgage is evaluating insurance needs. Which combination of factors should most heavily influence the type and amount of coverage she selects?",
   "options": [
-   "Her current age, the age of her dependents, her total outstanding debt obligations, and her ability to replace income if she becomes unable to work",
    "The average cost of insurance premiums in her region, the number of years until her mortgage is paid off, and the market value of her home",
    "Her employment classification, the frequency with which she updates her financial statements, her tax bracket, and the deductibles offered by local insurers",
-   "The inflation rate, her investment portfolio performance, the cost of living in her area, and the terms of her current business contracts"
+   "The inflation rate, her investment portfolio performance, the cost of living in her area, and the terms of her current business contracts",
+   "Her current age, the age of her dependents, her total outstanding debt obligations, and her ability to replace income if she becomes unable to work"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Insurance needs are determined by assessing personal liabilities (mortgage, dependents) and income replacement risk—factors directly tied to financial vulnerability. While premium costs, tax status, and market conditions matter operationally, they are secondary to identifying what financial losses would harm her most severely.",
   "knowledge_area": "Risk Management",
   "difficulty": "hard"
@@ -276,8 +276,8 @@
   "question": "Two individuals both carry term life insurance policies with identical death benefits and monthly premiums. Individual A selected a 20-year level-term policy at age 30, while Individual B selected a 30-year level-term policy at age 40. Which statement best explains the relationship between their coverage design and their risk management strategy?",
   "options": [
    "Individual A's shorter term length reduces total lifetime premiums paid, whereas Individual B's longer term guarantees stable coverage through retirement, suggesting different life stage priorities and income-replacement windows",
-   "Individual B's longer coverage period means lower annual premiums due to age-banding rules, while Individual A's earlier purchase locks in rates that will increase faster over the policy duration",
    "Individual A's policy will expire when dependents are likely still in college, while Individual B's policy extends beyond typical retirement, making Individual B's choice more cost-effective overall",
+   "Individual B's longer coverage period means lower annual premiums due to age-banding rules, while Individual A's earlier purchase locks in rates that will increase faster over the policy duration",
    "Individual A's 20-year term aligns with mortgage payoff, while Individual B's 30-year term aligns with Social Security eligibility, each reflecting optimal coverage alignment with asset depletion timelines"
   ],
   "correct_index": 0,
@@ -288,12 +288,12 @@
  {
   "question": "A small business owner with seasonal income fluctuations is deciding between a traditional indemnity insurance plan and a high-deductible health plan paired with a Health Savings Account. Which trade-off most accurately describes the risk management decision she faces?",
   "options": [
-   "Accepting higher out-of-pocket costs during years of low seasonal income in exchange for lower premiums and the ability to accumulate tax-advantaged funds for future healthcare expenses",
    "Choosing between comprehensive preventive coverage now versus accumulating savings that may not cover emergency expenses if her income drops during off-season periods",
-   "Trading the certainty of fixed monthly premiums for variable deductibles that fluctuate with her income level, while retaining access to a broader network of providers",
-   "Selecting between employer-subsidized plan premiums and self-funded account contributions that reduce her taxable income while limiting her annual coverage maximum"
+   "Selecting between employer-subsidized plan premiums and self-funded account contributions that reduce her taxable income while limiting her annual coverage maximum",
+   "Accepting higher out-of-pocket costs during years of low seasonal income in exchange for lower premiums and the ability to accumulate tax-advantaged funds for future healthcare expenses",
+   "Trading the certainty of fixed monthly premiums for variable deductibles that fluctuate with her income level, while retaining access to a broader network of providers"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "A high-deductible plan with HSA is a risk transfer strategy suited to those who can absorb higher short-term costs for lower premiums and long-term savings; seasonal income creates genuine risk during high-deductible years. Indemnity plans shift more risk to the insurer. The choice hinges on matching the insurance product structure to income stability and emergency reserves.",
   "knowledge_area": "Risk Management",
   "difficulty": "hard"
@@ -301,12 +301,12 @@
  {
   "question": "An individual discovers that her homeowner's insurance policy covers the dwelling structure at replacement cost but personal property on an actual cash value basis. When a five-year-old television valued at $800 new is destroyed in a covered loss, the insurer pays $320. Which principle of insurance does this outcome illustrate, and what does it reveal about her need for additional coverage?",
   "options": [
+   "Contribution restricts total recovery across all policies to actual cash value for personal property; she needs to verify that no other homeowner's policies overlap before filing additional claims",
    "Indemnity ensures she receives only the economic loss she suffered; the depreciation applied to personal property suggests she may need a separate endorsement or replacement-cost rider to close the coverage gap for high-value items",
-   "Subrogation limits her recovery to the fair market value of destroyed items; she should increase her deductible to offset the difference between replacement and actual cash value payments",
    "Insurable interest determines that personal property recovers at replacement cost only if it generates income; she should add a rider that covers business-use items at replacement rather than depreciated value",
-   "Contribution restricts total recovery across all policies to actual cash value for personal property; she needs to verify that no other homeowner's policies overlap before filing additional claims"
+   "Subrogation limits her recovery to the fair market value of destroyed items; she should increase her deductible to offset the difference between replacement and actual cash value payments"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Indemnity means reimbursement for actual economic loss, not a windfall—the $480 difference reflects depreciation (5-year-old item). Actual cash value (ACV) is standard for personal property; replacement-cost endorsements are a common add-on. Understanding this gap is key to determining whether upgraded coverage is needed.",
   "knowledge_area": "Risk Management",
   "difficulty": "hard"
@@ -316,8 +316,8 @@
   "options": [
    "The risk that loss of either income earner's salary would deplete their emergency reserve within months and create a shortfall in covering fixed obligations like the mortgage before returning to work or securing new employment",
    "The probability that one income earner will experience a temporary illness lasting longer than their employer's paid leave, requiring them to draw down savings faster than their current rate of accumulation",
-   "The possibility that medical expenses from a disabling injury could exceed their health insurance coverage limits and force them to liquidate retirement accounts ahead of schedule",
-   "The likelihood that their liquid savings would be insufficient to maintain their current lifestyle if both spouses simultaneously reduced their work hours due to family obligations"
+   "The likelihood that their liquid savings would be insufficient to maintain their current lifestyle if both spouses simultaneously reduced their work hours due to family obligations",
+   "The possibility that medical expenses from a disabling injury could exceed their health insurance coverage limits and force them to liquidate retirement accounts ahead of schedule"
   ],
   "correct_index": 0,
   "explanation": "With $150,000 income supporting a $300,000 mortgage plus dependents, either earner's income loss would exhaust the 4-month emergency fund quickly, creating a genuine earnings-replacement gap. Disability insurance bridges that gap by replacing lost income during recovery. The other options address different risks (paid leave, medical debt, voluntary lifestyle changes) not unique to disability.",
@@ -327,12 +327,12 @@
  {
   "question": "A consumer uses a debit card to purchase groceries, while a friend uses a credit card for the same transaction. Which statement accurately describes a key difference in how these forms of financial exchange function?",
   "options": [
-   "Debit cards draw funds directly from a linked bank account at the point of sale, whereas credit cards create a debt obligation that must be repaid by a future due date.",
    "Credit cards offer immediate payment processing without interest charges, while debit cards require the merchant to wait several business days for fund settlement.",
-   "Debit cards are issued only by government institutions and are backed by treasury notes, whereas credit cards are issued exclusively by private commercial banks.",
-   "Credit cards freeze the cardholder's account balance until the transaction clears, while debit cards allow the merchant to hold funds in escrow for up to 30 days."
+   "Credit cards freeze the cardholder's account balance until the transaction clears, while debit cards allow the merchant to hold funds in escrow for up to 30 days.",
+   "Debit cards draw funds directly from a linked bank account at the point of sale, whereas credit cards create a debt obligation that must be repaid by a future due date.",
+   "Debit cards are issued only by government institutions and are backed by treasury notes, whereas credit cards are issued exclusively by private commercial banks."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Debit cards represent a direct, immediate withdrawal from available funds (a form of cash-equivalent exchange), while credit cards are a form of short-term borrowing where the cardholder receives a bill for repayment. The other options misrepresent how each payment method functions: credit cards typically charge interest, debit cards settle immediately, and neither is restricted to the institutions described.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -340,12 +340,12 @@
  {
   "question": "A government issues both paper currency and treasury notes as forms of money. How do these two instruments differ in their primary economic functions?",
   "options": [
-   "Paper money serves as the medium of exchange for daily transactions and a unit of account, while treasury notes function primarily as a store of value and a debt instrument representing future government obligations.",
    "Treasury notes are used exclusively as coins in vending machines, whereas paper money is reserved for large purchases and stored in safety deposit boxes.",
-   "Paper money is issued by private banks to facilitate credit transactions, while treasury notes are distributed by retailers as proof of purchase and guarantee of refund eligibility.",
-   "Both instruments serve identical functions in the money supply, but treasury notes are printed in larger denominations and are therefore preferred for everyday consumer spending."
+   "Paper money serves as the medium of exchange for daily transactions and a unit of account, while treasury notes function primarily as a store of value and a debt instrument representing future government obligations.",
+   "Both instruments serve identical functions in the money supply, but treasury notes are printed in larger denominations and are therefore preferred for everyday consumer spending.",
+   "Paper money is issued by private banks to facilitate credit transactions, while treasury notes are distributed by retailers as proof of purchase and guarantee of refund eligibility."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Treasury notes are debt securities—borrowing instruments—that serve primarily as stores of value and investment vehicles, while paper currency is designed for immediate circulation as a medium of exchange. The distractors introduce false restrictions on use, incorrect issuers, and a false claim of functional equivalence that ignores the distinct roles each plays in the financial system.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -353,12 +353,12 @@
  {
   "question": "An individual receives income from three sources: a salary from employment, dividend payments from stock investments, and interest earned on a savings account. Which describes how these forms of compensation differ in their relationship to the time value of money?",
   "options": [
-   "Salary income is received in fixed intervals and represents current purchasing power, dividend income is distributed from retained corporate earnings and reflects past company performance, while interest income is a return that explicitly compensates for postponing consumption into the future.",
+   "Interest income is the only compensation that is adjusted annually for inflation, salary income is fixed and never increases, and dividend income is only available to corporate employees.",
    "Dividend income is immediately taxable and therefore loses value before receipt, salary income is tax-deferred until retirement, and interest income requires no reporting to tax authorities.",
    "Salary represents payment for current labor, dividends are penalties charged by corporations for early withdrawal, and interest is a government subsidy paid to savers who invest in bonds.",
-   "Interest income is the only compensation that is adjusted annually for inflation, salary income is fixed and never increases, and dividend income is only available to corporate employees."
+   "Salary income is received in fixed intervals and represents current purchasing power, dividend income is distributed from retained corporate earnings and reflects past company performance, while interest income is a return that explicitly compensates for postponing consumption into the future."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Interest explicitly compensates the saver for deferring consumption (the core of time value), while salary is payment for current work and dividends represent a share of past corporate profits. The distractors contain false tax claims, misdefine dividends and interest, and incorrectly describe inflation adjustment and salary flexibility.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -366,12 +366,12 @@
  {
   "question": "A consumer is deciding whether to borrow $5,000 at 8% annual interest to purchase a vehicle or wait two years to save the full amount. Which aspect of the time value of money MOST directly applies to evaluating this decision?",
   "options": [
-   "The principle that a dollar received today has greater purchasing power and earning potential than a dollar received in the future, making the cost of waiting to save the vehicle's depreciation and lost utility.",
-   "The concept that inflation will cause the vehicle's price to triple in value, making immediate credit purchase cheaper than future cash purchase.",
    "The rule that all borrowed money must be repaid within 12 months, so a two-year loan would violate consumer protection laws and trigger automatic penalties.",
-   "The theory that interest rates always decrease over time, ensuring that waiting to borrow will result in a lower rate and reduce total repayment cost."
+   "The concept that inflation will cause the vehicle's price to triple in value, making immediate credit purchase cheaper than future cash purchase.",
+   "The theory that interest rates always decrease over time, ensuring that waiting to borrow will result in a lower rate and reduce total repayment cost.",
+   "The principle that a dollar received today has greater purchasing power and earning potential than a dollar received in the future, making the cost of waiting to save the vehicle's depreciation and lost utility."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Time value of money directly addresses the trade-off between current benefit (having and using the vehicle now) versus future cost (interest paid on the loan); it also considers opportunity cost (lost use while saving). The distractors introduce false claims about price tripling, illegal repayment timelines, and predicted interest rate trends unrelated to the core time-value principle.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -379,12 +379,12 @@
  {
   "question": "A lender extends credit to a consumer, who is now legally responsible for repaying the borrowed funds plus interest. Which statement most accurately explains why credit serves an important purpose in the financial system despite the legal obligations it creates?",
   "options": [
-   "Credit allows consumers to acquire assets and smooth consumption patterns across time by leveraging future income, while creating a contractual obligation that protects lenders and encourages responsible borrowing behavior through clear repayment terms.",
    "Credit eliminates the need for money to exist in the economy, since borrowing replaces all cash transactions and makes the time value of money irrelevant.",
-   "Credit is granted only to wealthy individuals who have already accumulated significant savings, ensuring that poor households are protected from the burden of repayment obligations.",
-   "Credit serves no legitimate purpose beyond allowing people to live beyond their means, and the legal responsibilities imposed on borrowers are punitive measures designed to discourage all consumer debt."
+   "Credit allows consumers to acquire assets and smooth consumption patterns across time by leveraging future income, while creating a contractual obligation that protects lenders and encourages responsible borrowing behavior through clear repayment terms.",
+   "Credit serves no legitimate purpose beyond allowing people to live beyond their means, and the legal responsibilities imposed on borrowers are punitive measures designed to discourage all consumer debt.",
+   "Credit is granted only to wealthy individuals who have already accumulated significant savings, ensuring that poor households are protected from the burden of repayment obligations."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Credit's economic importance lies in its ability to unlock future earning power and allow purchases that build wealth (like vehicles or education), while legal obligations ensure accountability and lower lender risk. The distractors falsely claim credit replaces money, restrict credit to the wealthy, and characterize all consumer debt as harmful rather than recognizing credit's role in productive consumption and investment.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -392,10 +392,10 @@
  {
   "question": "An investor with a 25-year time horizon and low risk tolerance is comparing three investment vehicles. Which combination best balances growth potential with capital preservation given their constraints?",
   "options": [
-   "A mix of dividend-paying stocks, investment-grade bonds, and real estate investment trusts to provide steady income while limiting volatility exposure",
+   "Municipal bonds and money market funds paired with international stocks to achieve tax advantages and geographic diversification benefits",
    "Primarily Treasury securities and high-yield savings accounts with a small allocation to emerging market index funds for diversification",
-   "Growth stocks and small-cap equities supplemented by corporate bonds and commodities to maximize long-term appreciation potential",
-   "Municipal bonds and money market funds paired with international stocks to achieve tax advantages and geographic diversification benefits"
+   "A mix of dividend-paying stocks, investment-grade bonds, and real estate investment trusts to provide steady income while limiting volatility exposure",
+   "Growth stocks and small-cap equities supplemented by corporate bonds and commodities to maximize long-term appreciation potential"
   ],
   "correct_index": 1,
   "explanation": "Given low risk tolerance, Treasury securities and high-yield savings protect capital while the emerging market allocation provides modest growth suited to the 25-year horizon. The other options either overweight equities (option A has too much growth exposure; option C is inappropriate for low risk tolerance) or prioritize tax advantages and international exposure over the fundamental need for capital stability.",
@@ -405,12 +405,12 @@
  {
   "question": "When evaluating investment options, an investor discovers that Bond A offers a 4.2% yield with investment-grade rating and 7-year maturity, while Bond B offers 5.8% yield with speculative rating and 7-year maturity. Beyond yield comparison, which factors most directly explain the difference in these offerings?",
   "options": [
-   "Credit risk and issuer financial stability, where higher yield compensates for greater default probability and lower issuer creditworthiness",
-   "Inflation expectations and Federal Reserve policy, since speculative bonds track interest rate changes more closely than investment-grade securities",
    "Liquidity risk and secondary market trading volume, where speculative bonds trade less frequently and require larger bid-ask spreads",
-   "Time-to-maturity and reinvestment risk, since both bonds mature in seven years but have different coupons affecting reinvestment rates"
+   "Time-to-maturity and reinvestment risk, since both bonds mature in seven years but have different coupons affecting reinvestment rates",
+   "Credit risk and issuer financial stability, where higher yield compensates for greater default probability and lower issuer creditworthiness",
+   "Inflation expectations and Federal Reserve policy, since speculative bonds track interest rate changes more closely than investment-grade securities"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The yield spread between investment-grade and speculative-rated bonds primarily reflects credit risk—higher yields compensate investors for taking on greater default risk. While liquidity (option C) and reinvestment risk (option D) exist, they do not explain a 1.6% spread between similarly-matured bonds. Inflation and Fed policy (option B) affect all bonds, not the relative difference between these two.",
   "knowledge_area": "Investment Strategies",
   "difficulty": "hard"
@@ -420,8 +420,8 @@
   "options": [
    "Historical return magnitude and expense ratio percentage, since lower-cost funds with identical returns produce superior after-tax wealth accumulation",
    "Asset class volatility, correlation with other holdings, and role within a diversified portfolio rather than return alone",
-   "Fund manager tenure and track record consistency, as longer-tenured managers with stable outperformance justify higher fund selection priority",
-   "Dividend yield and capital gains distribution frequency, which determine whether the investment generates current income or primarily price appreciation"
+   "Dividend yield and capital gains distribution frequency, which determine whether the investment generates current income or primarily price appreciation",
+   "Fund manager tenure and track record consistency, as longer-tenured managers with stable outperformance justify higher fund selection priority"
   ],
   "correct_index": 1,
   "explanation": "Since returns and expenses are equivalent across all four options, the meaningful differentiator is their fundamentally different characteristics as asset classes—volatility profiles, correlation patterns, and roles in portfolio diversification. Option A ignores the given assumption of similar expenses; option C wrongly prioritizes manager tenure over structural asset-class differences; option D oversimplifies by treating income distribution as the primary distinction when asset-class characteristics matter more.",
@@ -431,12 +431,12 @@
  {
   "question": "Two investors with identical $100,000 portfolios and 30-year time horizons differ in one respect: Investor X experiences high income volatility with unpredictable cash flow, while Investor Y has stable employment income. How should this employment income difference shape their investment selections?",
   "options": [
-   "Investor X should hold higher liquid reserves and lower equity allocation to maintain emergency funds, while Investor Y can accept greater illiquidity and equity concentration",
    "Investor Y should prioritize dividend-paying stocks and bond ladders to supplement stable employment income, while Investor X pursues capital appreciation strategies",
-   "Investor X should focus on growth equities to offset income volatility, while Investor Y selects conservative fixed-income investments matching stable cash flow",
-   "Both investors should maintain identical asset allocations since 30-year horizons eliminate timing risk, with employment stability affecting only emergency reserve size"
+   "Both investors should maintain identical asset allocations since 30-year horizons eliminate timing risk, with employment stability affecting only emergency reserve size",
+   "Investor X should hold higher liquid reserves and lower equity allocation to maintain emergency funds, while Investor Y can accept greater illiquidity and equity concentration",
+   "Investor X should focus on growth equities to offset income volatility, while Investor Y selects conservative fixed-income investments matching stable cash flow"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Investor X's income volatility requires higher liquidity and lower equity allocation to handle unexpected cash shortfalls without forced asset sales; Investor Y's stable income allows greater equity exposure and illiquidity tolerance. Option B confuses income stability with investment purpose; option C reverses the relationship (unstable income warrants defensive positioning, not aggressive growth); option D incorrectly separates time horizon from cash flow needs.",
   "knowledge_area": "Investment Strategies",
   "difficulty": "hard"
@@ -446,8 +446,8 @@
   "options": [
    "TIPS, because their principal adjustment mechanism directly protects purchasing power if inflation accelerates as anticipated",
    "Traditional Treasury bonds, since their fixed 3.2% yield exceeds current inflation and provides capital stability during uncertain periods",
-   "Corporate bonds, as their 4.8% yield most substantially exceeds both current and expected inflation rates to preserve real returns",
-   "A combination of TIPS and traditional Treasuries, balancing inflation protection with the certainty of fixed nominal income regardless of CPI movements"
+   "A combination of TIPS and traditional Treasuries, balancing inflation protection with the certainty of fixed nominal income regardless of CPI movements",
+   "Corporate bonds, as their 4.8% yield most substantially exceeds both current and expected inflation rates to preserve real returns"
   ],
   "correct_index": 0,
   "explanation": "TIPS directly address the investor's inflation outlook—their principal adjusts with CPI, so if inflation rises to 3.5%, the investor's real return improves automatically. Traditional Treasuries (option B) provide a fixed 3.2% nominal return that could lag 3.5% inflation. Corporate bonds (option C) appear attractive nominally but lack inflation adjustment mechanisms. While option D offers diversification, it dilutes protection against the explicitly expected inflation increase.",
@@ -459,8 +459,8 @@
   "options": [
    "A credit union that specializes in consumer lending and deposit products but contracts with external advisors",
    "A full-service bank offering deposit accounts, lending, investment advisory, and wealth management under one institution",
-   "A brokerage firm that maintains client cash accounts and provides securities trading alongside limited banking partnerships",
-   "An insurance agency that bundles banking relationships with investment products through affiliated third-party providers"
+   "An insurance agency that bundles banking relationships with investment products through affiliated third-party providers",
+   "A brokerage firm that maintains client cash accounts and provides securities trading alongside limited banking partnerships"
   ],
   "correct_index": 1,
   "explanation": "A full-service bank offers integrated deposit, lending, investment, and advisory services under one roof, making it the most comprehensive choice for a consumer needing both checking and investment services. Credit unions, brokerages, and insurance agencies each specialize in narrower service lines or require external partnerships to cover both areas.",
@@ -470,12 +470,12 @@
  {
   "question": "When comparing financial-services providers, a consumer discovers that Provider A charges a flat annual fee of $200 with no transaction fees, while Provider B charges $0.50 per transaction with no annual fee. Which consideration is most critical in selecting between these fee structures?",
   "options": [
-   "The total number of expected transactions annually and the consumer's typical account activity level",
-   "The consumer's total investable assets and the historical performance of each provider's managed funds",
    "The geographic location of the provider's branches and the availability of online banking features",
+   "The consumer's total investable assets and the historical performance of each provider's managed funds",
+   "The total number of expected transactions annually and the consumer's typical account activity level",
    "The minimum balance requirements and the interest rates offered on savings and checking accounts"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The choice between flat fees and per-transaction fees depends directly on usage patterns; a consumer with high transaction volume would benefit from the flat fee, while one with few transactions would prefer pay-per-use. Assets, location, and interest rates are important considerations but do not determine which fee structure is more economical.",
   "difficulty": "hard",
   "knowledge_area": "Financial-Services Providers"
@@ -485,8 +485,8 @@
   "options": [
    "The regulatory oversight body and the reserve requirement ratios each institution must maintain",
    "The membership or eligibility requirements, branch availability, and the breadth of services offered by each institution",
-   "The Federal Deposit Insurance Corporation coverage limits and the FDIC's examination schedule for each provider",
-   "The capital adequacy ratios and the loan-to-deposit ratios that each provider maintains with regulators"
+   "The capital adequacy ratios and the loan-to-deposit ratios that each provider maintains with regulators",
+   "The Federal Deposit Insurance Corporation coverage limits and the FDIC's examination schedule for each provider"
   ],
   "correct_index": 1,
   "explanation": "A credit union may have membership restrictions, a traditional bank offers physical branches, and an online bank offers convenience but no in-person service; these structural differences directly affect which provider suits a consumer's needs. Regulatory details, FDIC coverage, and capital ratios are uniform across safe, insured institutions and do not meaningfully differentiate the consumer experience.",
@@ -496,12 +496,12 @@
  {
   "question": "A consumer must choose between Provider X, which offers limited service options but exceptionally low fees, and Provider Y, which charges higher fees but provides comprehensive financial planning, tax guidance, and investment management. Which selection criterion should drive this decision?",
   "options": [
-   "The complexity of the consumer's financial situation, long-term goals, and the value of professional advisory services relative to fee costs",
    "The age of the consumer and the expected time horizon until retirement or the next major financial milestone",
    "The consumer's credit score and payment history, which determine eligibility for premium service tiers",
+   "The complexity of the consumer's financial situation, long-term goals, and the value of professional advisory services relative to fee costs",
    "The consumer's income level and the proportion of disposable income available for discretionary financial services"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The trade-off between low fees and comprehensive services hinges on whether professional guidance adds value given the consumer's specific situation; a simple financial picture may not justify higher fees, while a complex one may benefit greatly from advisory services. Age, credit score, and income are demographic factors but do not directly measure the actual need for and benefit of advisory services.",
   "difficulty": "hard",
   "knowledge_area": "Financial-Services Providers"
@@ -509,12 +509,12 @@
  {
   "question": "Two providers offer the same deposit insurance coverage and comparable interest rates. Provider A is a bank with established brick-and-mortar branches and a large compliance staff, while Provider B is a fintech company with no physical locations but advanced mobile banking technology and lower overhead costs. How should a consumer weigh these differences when selecting a provider?",
   "options": [
-   "Provider A is always safer because traditional banks are older and have more regulatory history than fintech companies",
-   "Provider B is superior because lower overhead costs automatically translate to better long-term rates and service quality",
    "The consumer should evaluate whether in-person service and local branch access outweigh the convenience and potential cost savings of digital-first banking",
-   "Provider A is the only legitimate choice because fintech companies are not eligible for federal deposit insurance protection"
+   "Provider A is always safer because traditional banks are older and have more regulatory history than fintech companies",
+   "Provider A is the only legitimate choice because fintech companies are not eligible for federal deposit insurance protection",
+   "Provider B is superior because lower overhead costs automatically translate to better long-term rates and service quality"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The choice between traditional and fintech providers depends on the consumer's preferences for service delivery, accessibility, and convenience relative to their financial needs; both can offer equal safety if properly insured. Age and overhead costs do not determine quality or safety, and fintech companies that are properly licensed and insured offer the same deposit protection as traditional banks.",
   "difficulty": "hard",
   "knowledge_area": "Financial-Services Providers"
@@ -522,12 +522,12 @@
  {
   "question": "An individual with substantial medical expenses and a family to support should prioritize which type of insurance when evaluating their risk management strategy?",
   "options": [
-   "Term life insurance with a death benefit sufficient to replace lost income and cover outstanding debts and final expenses",
-   "Whole life insurance with a cash value component that accumulates over time and provides lifelong coverage with minimal underwriting",
    "Disability insurance paired with a high-deductible health plan to protect against both income loss and catastrophic medical costs",
-   "Umbrella liability insurance exceeding $1 million in coverage to protect accumulated assets from lawsuits and unforeseen claims"
+   "Umbrella liability insurance exceeding $1 million in coverage to protect accumulated assets from lawsuits and unforeseen claims",
+   "Term life insurance with a death benefit sufficient to replace lost income and cover outstanding debts and final expenses",
+   "Whole life insurance with a cash value component that accumulates over time and provides lifelong coverage with minimal underwriting"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "When determining insurance needs for a dependent family, the primary risk is loss of income due to death, which term life insurance directly addresses at a lower cost than alternatives. While disability and health coverage are important, term life's primary function—income replacement—is the foundational need for someone with dependents and debt obligations. Umbrella coverage protects against liability risks, which is secondary to income protection in this scenario.",
   "difficulty": "hard",
   "knowledge_area": "Risk Management"
@@ -535,12 +535,12 @@
  {
   "question": "A 35-year-old professional with stable income, no dependents, and liquid savings of $50,000 is evaluating insurance needs. Which combination most effectively addresses their risk profile?",
   "options": [
-   "A $500,000 term life policy, comprehensive health insurance, and disability insurance replacing 60% of monthly income during inability to work",
    "A $1 million whole life policy, a high-deductible health plan, and workers' compensation through their employer with minimal additional coverage",
-   "Health insurance with a moderate deductible, long-term disability coverage, and a $250,000 term life policy for final expense and mortgage payoff",
-   "A variable universal life policy with investment options, basic health coverage, and supplemental accident insurance for additional income protection"
+   "A $500,000 term life policy, comprehensive health insurance, and disability insurance replacing 60% of monthly income during inability to work",
+   "A variable universal life policy with investment options, basic health coverage, and supplemental accident insurance for additional income protection",
+   "Health insurance with a moderate deductible, long-term disability coverage, and a $250,000 term life policy for final expense and mortgage payoff"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "This individual faces three primary risks: medical expenses (health insurance), temporary inability to work (disability insurance), and potential financial hardship to beneficiaries (term life). The $500,000 term policy is appropriate because even without dependents, it covers final expenses and leaves a legacy; disability insurance protects their current income; health insurance covers medical risk. Option C underinsures life coverage relative to need, Option B overcomplicates with whole life, and Option D mixes inappropriate products for this risk profile.",
   "difficulty": "hard",
   "knowledge_area": "Risk Management"
@@ -549,9 +549,9 @@
   "question": "When determining adequate disability insurance coverage, a self-employed consultant earning $120,000 annually should consider which factors as most critical to calculating their replacement income need?",
   "options": [
    "Current gross income, estimated length of disability recovery period, existing emergency savings, and percentage of expenses that continue during inability to work",
-   "Current net income after taxes, the average cost of equivalent professional services in their market, the number of years until retirement, and employer benefit availability",
    "Annual gross revenue, outstanding business loan obligations, the consultant's age and health status, and the elimination period selected in the policy",
-   "Monthly fixed expenses, the elimination period under consideration, the maximum benefit period offered by insurers, and investment portfolio performance during recovery"
+   "Monthly fixed expenses, the elimination period under consideration, the maximum benefit period offered by insurers, and investment portfolio performance during recovery",
+   "Current net income after taxes, the average cost of equivalent professional services in their market, the number of years until retirement, and employer benefit availability"
   ],
   "correct_index": 0,
   "explanation": "Disability coverage should replace the income the person would lose during inability to work, which requires knowing: (1) current income level as the baseline, (2) how long recovery might take to size the benefit period needed, (3) existing savings to bridge gaps, and (4) which expenses continue regardless of work status. Option B conflates net income (after-tax) with coverage need—replacement should be based on gross income. Option C and D include factors that inform policy selection but not the core calculation of replacement need.",
@@ -561,12 +561,12 @@
  {
   "question": "A homeowner with a $300,000 mortgage, $200,000 home value appreciation, and significant net worth from investments is evaluating whether to purchase umbrella liability insurance. Which scenario best justifies this addition to their risk management plan?",
   "options": [
-   "They regularly host large gatherings, own a swimming pool, operate a home-based business serving clients, and have accumulated assets substantially exceeding homeowners policy liability limits",
-   "Their homeowners policy includes replacement cost coverage, they have adequate life and disability insurance in place, they live in a low-crime neighborhood, and they maintain an emergency fund",
+   "Their auto insurance includes uninsured motorist protection, they maintain workers' compensation through their employer, their home is located in a flood zone, and their net worth is under $500,000",
    "They own multiple investment properties generating rental income, their current homeowners policy provides $300,000 in liability coverage, they have minor dependents, and their mortgage is nearly paid off",
-   "Their auto insurance includes uninsured motorist protection, they maintain workers' compensation through their employer, their home is located in a flood zone, and their net worth is under $500,000"
+   "Their homeowners policy includes replacement cost coverage, they have adequate life and disability insurance in place, they live in a low-crime neighborhood, and they maintain an emergency fund",
+   "They regularly host large gatherings, own a swimming pool, operate a home-based business serving clients, and have accumulated assets substantially exceeding homeowners policy liability limits"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Umbrella liability insurance protects high-net-worth individuals against claims exceeding underlying policy limits; it is most critical when the insured creates elevated liability exposure (pool, business, gatherings attracting visitors) AND has substantial assets to protect. Option A combines both factors. Option B describes adequate foundational coverage but not the liability exposure that umbrella addresses. Option C mentions rental properties (a liability source) but $300,000 coverage may suffice depending on exposure level. Option D includes flood risk (property, not liability), which is separate from umbrella coverage.",
   "difficulty": "hard",
   "knowledge_area": "Risk Management"
@@ -574,12 +574,12 @@
  {
   "question": "In determining overall insurance needs, how does an individual's risk tolerance and financial capacity interact to shape their coverage strategy?",
   "options": [
-   "Higher risk tolerance justifies lower coverage limits and higher deductibles to reduce premiums, while greater financial capacity allows self-insuring smaller risks and purchasing higher catastrophic limits",
    "Lower risk tolerance requires maximum coverage across all categories regardless of probability, whereas higher financial capacity eliminates the need for disability and health insurance entirely",
    "Risk tolerance determines the types of coverage purchased, while financial capacity is irrelevant because insurance needs are determined solely by life stage and dependent status",
+   "Higher risk tolerance justifies lower coverage limits and higher deductibles to reduce premiums, while greater financial capacity allows self-insuring smaller risks and purchasing higher catastrophic limits",
    "Financial capacity to self-insure smaller losses should be offset by purchasing comprehensive coverage for all low-probability events, independent of the individual's stated risk tolerance"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Risk tolerance (comfort with bearing risk personally) and financial capacity (ability to absorb losses) work together: those with high risk tolerance and strong finances can choose higher deductibles and skip optional coverage; those with low tolerance or limited finances need broader, lower-deductible coverage. Option B incorrectly suggests high capacity eliminates core needs like disability coverage. Option C wrongly dismisses financial capacity as irrelevant. Option D creates a backward incentive—those who can self-insure small losses should not buy comprehensive coverage for improbable events.",
   "difficulty": "hard",
   "knowledge_area": "Risk Management"
@@ -587,12 +587,12 @@
  {
   "question": "A consumer uses a debit card to purchase groceries, while their colleague uses a government bond to finance a home renovation. Which statement accurately describes the distinction between these forms of financial exchange?",
   "options": [
+   "Debit cards can only be used for small purchases under $100, whereas government bonds serve as universal mediums of exchange accepted everywhere without restrictions.",
    "Debit cards represent immediate access to stored funds in an account, whereas government bonds function as debt instruments that generate returns over time and require redemption at maturity.",
    "Debit cards allow consumers to borrow money interest-free, while government bonds are physical currency that must be converted to cash before use in transactions.",
-   "Debit cards can only be used for small purchases under $100, whereas government bonds serve as universal mediums of exchange accepted everywhere without restrictions.",
    "Debit cards are issued by the federal government and backed by the U.S. Treasury, while government bonds are private credit instruments managed entirely by individual banks."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Debit cards are forms of electronic funds transfer that draw directly from existing account balances, making them immediate payment methods. Government bonds are investment instruments and store-of-value assets that represent loans to the government, generating interest income and requiring redemption—not mediums of exchange for everyday transactions. The other options confuse the purposes and mechanisms of these financial tools.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -600,12 +600,12 @@
  {
   "question": "An employee receives compensation through salary, stock options, and a performance bonus. A peer earns income through rental property payments and dividend distributions. How do these compensation structures reflect different applications of money's core functions?",
   "options": [
+   "Stock options and dividends are government-guaranteed income sources, while salary and rental income demonstrate temporary purchasing power that expires after one fiscal year.",
    "Salary and stock options represent money as a unit of measure, while rental income and dividends demonstrate money's role as a medium of exchange in financial markets.",
-   "Salary functions as a medium of exchange for labor services, while stock options, rental income, and dividends illustrate money's store-of-value function through asset ownership and capital returns.",
    "Salary and bonuses operate exclusively as mediums of exchange, whereas rental payments and dividends serve only as units of measure for property valuation.",
-   "Stock options and dividends are government-guaranteed income sources, while salary and rental income demonstrate temporary purchasing power that expires after one fiscal year."
+   "Salary functions as a medium of exchange for labor services, while stock options, rental income, and dividends illustrate money's store-of-value function through asset ownership and capital returns."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Compensation structures that include salary and bonuses function as direct mediums of exchange for services rendered. Stock options, rental income, and dividends exemplify money's store-of-value function—assets held over time that generate ongoing returns without immediate labor. The other options incorrectly assign these income sources to other functions or introduce false limitations.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -614,11 +614,11 @@
   "question": "A borrower with a 720 credit score secures a mortgage at 6.2% interest, while another borrower with a 580 credit score receives a personal loan at 12.8% interest. Why does credit serve different purposes and carry different costs for these consumers?",
   "options": [
    "Credit costs are determined solely by the type of lender, not by credit scores or borrower risk profiles, making interest rates uniform across all consumers regardless of financial history.",
+   "Credit serves an identical purpose for both borrowers, but the interest rate difference reflects only the time period of the loan, with longer terms automatically receiving lower rates to reduce monthly payments.",
    "The borrower with a lower credit score faces higher interest rates because they represent greater default risk; credit serves to facilitate large purchases for creditworthy borrowers while functioning as a higher-cost bridge for those with weaker financial histories.",
-   "Government regulations mandate that personal loans always cost twice as much as mortgages, regardless of credit scores or economic conditions, to encourage homeownership over consumer debt.",
-   "Credit serves an identical purpose for both borrowers, but the interest rate difference reflects only the time period of the loan, with longer terms automatically receiving lower rates to reduce monthly payments."
+   "Government regulations mandate that personal loans always cost twice as much as mortgages, regardless of credit scores or economic conditions, to encourage homeownership over consumer debt."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Credit's purpose and cost are directly tied to perceived risk. A 720 credit score signals reliability, enabling access to lower-cost credit for major purchases like homes. A 580 score indicates higher default risk, resulting in higher interest rates to compensate lenders. Credit thus serves different strategic purposes: enabling major acquisitions for trustworthy borrowers and providing emergency access at premium cost for those with weaker profiles. The other options ignore credit risk assessment or introduce false regulatory mandates.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -626,12 +626,12 @@
  {
   "question": "A young professional invests $5,000 in a savings account earning 4% annually, while another deposits the same amount in a certificate of deposit at 5.2% annually. Both intend to withdraw funds in 3 years. How does the time value of money principle explain the importance of distinguishing between these investment choices?",
   "options": [
-   "The time value of money demonstrates that money held today is worth more than the same amount received in the future because it can earn returns through investment; the higher CD rate compounds to approximately $6,024 versus $5,625 in savings, illustrating how interest rate and time horizon amplify purchasing power.",
    "The time value of money proves that savings accounts and certificates of deposit are economically equivalent because both vehicles preserve capital and eliminate inflation risk equally.",
-   "The time value of money indicates that the professional should always choose savings accounts because they offer greater liquidity, even though the total return will be lower due to regulatory caps on CD interest rates.",
-   "The time value of money shows that a dollar received in three years is worthless compared to a dollar today, making both investment vehicles equally poor choices for long-term wealth building."
+   "The time value of money demonstrates that money held today is worth more than the same amount received in the future because it can earn returns through investment; the higher CD rate compounds to approximately $6,024 versus $5,625 in savings, illustrating how interest rate and time horizon amplify purchasing power.",
+   "The time value of money shows that a dollar received in three years is worthless compared to a dollar today, making both investment vehicles equally poor choices for long-term wealth building.",
+   "The time value of money indicates that the professional should always choose savings accounts because they offer greater liquidity, even though the total return will be lower due to regulatory caps on CD interest rates."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The time value of money principle holds that money available today can earn returns through investment, making it more valuable than the same amount in the future. The 5.2% CD rate generates approximately $6,024 after 3 years versus $5,625 from the 4% savings account—demonstrating how rate differences and compounding over time meaningfully amplify wealth. This principle justifies comparing investment vehicles based on return rates and time horizons. The other options either falsely equate the investments or mischaracterize the principle's core meaning.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"
@@ -639,12 +639,12 @@
  {
   "question": "A consumer purchases an item using an electronic funds transfer (EFT) processed through their bank's payment network, while another uses a credit card with a grace period. Both transactions total $200. Which legal and functional responsibilities differ between these forms of financial exchange in consumer protection frameworks?",
   "options": [
+   "EFT transactions must be completed within 48 hours by law, while credit card grace periods extend up to 90 days, regardless of the purchase amount or merchant type involved.",
    "EFT transactions are protected by the Electronic Funds Transfer Act with liability limits and error dispute procedures, whereas credit card purchases are governed by the Truth in Lending Act with grace periods and dispute rights—creating distinct legal responsibilities and consumer protections depending on the payment method used.",
-   "Credit card transactions have no legal protections under federal law, while EFT transactions are guaranteed to be risk-free with zero liability for the consumer regardless of fraud or error circumstances.",
    "Both EFT and credit card transactions carry identical legal responsibilities and protections, making the choice between them irrelevant from a consumer rights perspective.",
-   "EFT transactions must be completed within 48 hours by law, while credit card grace periods extend up to 90 days, regardless of the purchase amount or merchant type involved."
+   "Credit card transactions have no legal protections under federal law, while EFT transactions are guaranteed to be risk-free with zero liability for the consumer regardless of fraud or error circumstances."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "EFT and credit card transactions operate under different federal frameworks. EFT (debit) transactions are regulated by the Electronic Funds Transfer Act, which limits consumer liability and requires error resolution procedures. Credit card transactions fall under the Truth in Lending Act, providing grace periods before interest accrues and additional dispute protections. These distinct legal frameworks create different responsibilities and consumer safeguards. The other options either eliminate protections, falsely equate the systems, or introduce inaccurate timeline requirements.",
   "difficulty": "hard",
   "knowledge_area": "Principles of Money"

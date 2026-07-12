@@ -2,12 +2,12 @@
  {
   "question": "A retailer advertises a high-end laptop at $299 with 'limited quantities available,' but when customers arrive, staff claim the sale price has expired and pressure them into purchasing a higher-priced model instead. Which unfair or deceptive practice does this most closely exemplify?",
   "options": [
+   "Identity theft, because the retailer obtained customer information under false pretenses during the sales process",
    "Usury, because the retailer is charging excessive interest rates on financed purchases of the higher-priced laptop",
    "Bait and switch, because the advertised low price was used to attract customers who were then directed to a costlier alternative",
-   "Identity theft, because the retailer obtained customer information under false pretenses during the sales process",
    "Deceptive estimates, because the initial advertised price did not accurately reflect the final cost to the consumer"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Bait and switch uses an attractive offer (the 'bait') to lure customers, then substitutes a less desirable or more expensive alternative (the 'switch'). Usury involves excessive interest rates, identity theft involves unauthorized use of personal information, and deceptive estimates refers to false cost projections—none of which directly describe this scenario.",
   "knowledge_area": "Consumer Protection, Product/Personal Liability",
   "difficulty": "hard"
@@ -15,12 +15,12 @@
  {
   "question": "A manufacturer of industrial cleaning equipment includes a clause in its warranty stating that liability is limited to repair or replacement of defective parts within 90 days, and excludes damages from misuse or normal wear. This warranty is best classified as which type?",
   "options": [
-   "An express warranty with limited coverage that restricts the seller's liability to specific remedies and timeframes",
    "An implied warranty of merchantability that is unenforceable because it contradicts the manufacturer's product specifications",
    "A full warranty that must cover all defects regardless of the exclusion clause under the Magnuson-Moss Warranty Act",
-   "An absolute liability warranty that holds the manufacturer responsible for all consequential damages caused by product failure"
+   "An absolute liability warranty that holds the manufacturer responsible for all consequential damages caused by product failure",
+   "An express warranty with limited coverage that restricts the seller's liability to specific remedies and timeframes"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "This is an express warranty (explicitly stated in writing) that is limited in scope, remedy, and duration—distinguishing it from a full warranty. Implied warranties arise by law regardless of what is stated, absolute liability is a tort concept unrelated to warranty classification, and the Magnuson-Moss Act permits limited warranties if they are clear and conspicuous.",
   "knowledge_area": "Consumer Protection, Product/Personal Liability",
   "difficulty": "hard"
@@ -28,12 +28,12 @@
  {
   "question": "A software company's website displays endorsements from customers claiming their product 'cured chronic pain' and 'replaced prescription medication,' but the company has not independently verified these claims or obtained substantiation from medical professionals. Under truth-in-advertising law, what is the primary violation?",
   "options": [
-   "The company failed to disclose that customer testimonials are anecdotal rather than clinical evidence, and advertisements making health claims require competent substantiation before dissemination",
-   "The company made implied warranties of merchantability by allowing third-party reviews without adding express disclaimers to each testimonial posted online",
+   "The company committed fraud by accepting payment for software while simultaneously collecting personal health data without explicit informed consent from purchasers",
    "The company engaged in strict liability by marketing a product in a category that involves inherent risks, requiring it to warn all potential users of danger",
-   "The company committed fraud by accepting payment for software while simultaneously collecting personal health data without explicit informed consent from purchasers"
+   "The company made implied warranties of merchantability by allowing third-party reviews without adding express disclaimers to each testimonial posted online",
+   "The company failed to disclose that customer testimonials are anecdotal rather than clinical evidence, and advertisements making health claims require competent substantiation before dissemination"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Truth-in-advertising law requires that claims—especially health and safety claims—be substantiated by competent evidence before the ad is published. Testimonials alone, without independent verification or medical backing, do not meet this standard. Implied warranties, strict liability, and fraud are distinct legal doctrines that do not address the core advertising claim substantiation issue here.",
   "knowledge_area": "Consumer Protection, Product/Personal Liability",
   "difficulty": "hard"
@@ -42,11 +42,11 @@
   "question": "A vehicle manufacturer discovers that a component in 50,000 vehicles has a defect that poses a crash hazard. The manufacturer chooses not to issue a recall, reasoning that the defect will only manifest in rare driving conditions. Which liability standard would most likely hold the manufacturer accountable regardless of negligence or intent?",
   "options": [
    "Vicarious liability, which imposes responsibility on the manufacturer for the reckless acts of its design and engineering teams",
-   "Strict liability, which holds the manufacturer responsible for injuries caused by a defective product without requiring proof of negligence or wrongful intent",
    "Absolute liability, which applies only to manufacturers who knowingly conceal product defects and breach their duty of disclosure to regulators",
+   "Strict liability, which holds the manufacturer responsible for injuries caused by a defective product without requiring proof of negligence or wrongful intent",
    "Implied liability, which requires the manufacturer to prove it exercised reasonable care in testing and inspection before the product reached consumers"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Strict liability holds a manufacturer liable for defective products regardless of negligence or intent; the plaintiff need only prove the product was defective and caused injury. Vicarious liability applies to supervisory responsibility for others' acts, absolute liability is narrower and usually tied to intentional concealment, and implied liability is not a standard legal doctrine in this context.",
   "knowledge_area": "Consumer Protection, Product/Personal Liability",
   "difficulty": "hard"
@@ -54,12 +54,12 @@
  {
   "question": "The Federal Trade Commission and the Consumer Product Safety Commission both have regulatory authority over product safety and consumer protection, but their jurisdictions and enforcement mechanisms differ. Which statement most accurately distinguishes their respective roles?",
   "options": [
-   "The FTC enforces the Truth in Lending Act and the Fair Debt Collection Practices Act, while the CPSC sets mandatory safety standards for consumer products and recalls hazardous items",
    "The CPSC investigates unfair trade practices and deceptive advertising, while the FTC regulates the safety of food, drugs, and cosmetics sold to consumers nationwide",
+   "The FTC enforces the Truth in Lending Act and the Fair Debt Collection Practices Act, while the CPSC sets mandatory safety standards for consumer products and recalls hazardous items",
    "Both agencies share equal authority over product recalls, but the FTC handles civil penalties while the CPSC pursues criminal prosecution of violators",
    "The FTC regulates financial privacy under the Gramm-Leach-Bliley Act, while the CPSC oversees compliance with the Children's Online Privacy Protection Act for digital products"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The FTC enforces credit and debt collection laws and pursues unfair/deceptive practices, while the CPSC specifically focuses on product safety standards and can mandate recalls of hazardous consumer products. The other options incorrectly swap or misallocate agency responsibilities; for example, FDA (not FTC) regulates food and drugs, and the CPSC does not pursue criminal prosecution.",
   "knowledge_area": "Consumer Protection, Product/Personal Liability",
   "difficulty": "hard"
@@ -67,12 +67,12 @@
  {
   "question": "A couple married in a state that recognizes common law marriage later moves to a jurisdiction that does not. Which statement best describes their legal status?",
   "options": [
+   "The marriage is voidable at either spouse's election because common law marriage is prohibited in their current state of residence.",
    "Their common law marriage remains valid in the new state due to full faith and credit, but they cannot claim marital benefits in that state's courts.",
    "The marriage is recognized as valid in the new state because it was validly formed where it occurred, even though that state would not allow new common law marriages.",
-   "They must formally remarry in the new state or lose all marital protections, including property rights and spousal support eligibility.",
-   "The marriage is voidable at either spouse's election because common law marriage is prohibited in their current state of residence."
+   "They must formally remarry in the new state or lose all marital protections, including property rights and spousal support eligibility."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A marriage validly formed under one jurisdiction's law is generally recognized in another state under conflict-of-laws principles, even if the second state no longer permits that type of marriage formation. The couple does not need to remarry, and the marriage status does not depend on whether the current state would allow new common law marriages to form.",
   "difficulty": "hard",
   "knowledge_area": "Domestic/Personal Law"
@@ -80,12 +80,12 @@
  {
   "question": "In a divorce proceeding, a court applies equitable distribution principles to marital property. Which of the following would most likely NOT be classified as marital property subject to distribution?",
   "options": [
-   "A retirement account funded entirely by one spouse's salary during the marriage, with contributions made from joint income.",
    "A professional license or advanced degree obtained by one spouse during the marriage while supported by the other spouse's earnings.",
    "An inheritance received by one spouse during the marriage from a deceased parent, deposited into an account held solely in that spouse's name.",
-   "A business owned by one spouse before the marriage that increased significantly in value due to both spouses' management and financial contributions."
+   "A business owned by one spouse before the marriage that increased significantly in value due to both spouses' management and financial contributions.",
+   "A retirement account funded entirely by one spouse's salary during the marriage, with contributions made from joint income."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Inheritances and gifts received by one spouse are typically classified as separate property, not marital property, and are generally excluded from equitable distribution unless they were commingled with marital funds or used to benefit the marriage. The other options represent property acquired or substantially affected during the marriage through the efforts or support of both spouses, making them marital assets.",
   "difficulty": "hard",
   "knowledge_area": "Domestic/Personal Law"
@@ -93,12 +93,12 @@
  {
   "question": "A testator executes a valid will, then executes a second will ten years later that does not explicitly revoke the first but contains provisions inconsistent with it. The first will leaves $50,000 to a charity; the second leaves $30,000 to the same charity. Which outcome is most likely under the doctrine of revocation by inconsistent provisions?",
   "options": [
+   "The wills are deemed mutually inconsistent, so the entire first will is revoked, but the second will is also void and the intestacy rules apply.",
    "The second will entirely revokes the first, and the charity receives only $30,000 as stated in the second will.",
    "Both wills remain partially valid; the charity receives $50,000 from the first and $30,000 from the second, totaling $80,000.",
-   "The second will revokes only the inconsistent provisions of the first, so the charity receives $30,000 and other provisions from the first will remain intact.",
-   "The wills are deemed mutually inconsistent, so the entire first will is revoked, but the second will is also void and the intestacy rules apply."
+   "The second will revokes only the inconsistent provisions of the first, so the charity receives $30,000 and other provisions from the first will remain intact."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Under the doctrine of revocation by inconsistent provisions, a later will revokes only those portions of an earlier will with which it conflicts, not the entire earlier will. Since the second will addresses the same bequest with a different amount, that specific provision is revoked and replaced, but other provisions in the first will that do not conflict remain valid.",
   "difficulty": "hard",
   "knowledge_area": "Domestic/Personal Law"
@@ -106,12 +106,12 @@
  {
   "question": "A parent signs a durable power of attorney naming an adult child as agent, but the parent becomes incompetent before any authority is actually exercised. Which statement most accurately reflects the legal effect on the power of attorney and the agent's authority?",
   "options": [
+   "The power of attorney is suspended until a court determines that the parent is incompetent, at which point it may be reinstated by the agent's petition.",
    "The power of attorney becomes immediately void because the principal lacks capacity to be represented, and the agent has no authority unless appointed as guardian by a court.",
-   "The power of attorney remains valid and effective because it is durable, allowing the agent to exercise authority even after the principal becomes incompetent.",
    "The agent may exercise authority only for routine financial matters, not major decisions, until the principal's competency is legally established in court.",
-   "The power of attorney is suspended until a court determines that the parent is incompetent, at which point it may be reinstated by the agent's petition."
+   "The power of attorney remains valid and effective because it is durable, allowing the agent to exercise authority even after the principal becomes incompetent."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A durable power of attorney is specifically designed to survive the principal's incompetence, unlike a standard power of attorney. The 'durable' designation means the agent's authority continues despite the principal's later incapacity, allowing the agent to act on the principal's behalf without requiring a separate guardianship proceeding.",
   "difficulty": "hard",
   "knowledge_area": "Domestic/Personal Law"
@@ -119,12 +119,12 @@
  {
   "question": "A minor is injured in an accident and receives a settlement of $200,000. The minor's parents wish to invest these funds on their child's behalf, but state law requires court approval for any disposition of a minor's property exceeding a certain threshold. Which mechanism would be most appropriate for the court to use to protect the minor's interests while allowing the investment?",
   "options": [
-   "A guardianship of the person that grants the parents complete discretion over the funds without further court oversight or accounting requirements.",
    "A conservatorship or guardianship of the estate that establishes court supervision, requires periodic accountings, and may authorize the parents as conservators or guardians ad litem.",
    "An irrevocable trust funded with the settlement that transfers all legal title to a financial institution, removing the parents' authority and the minor's later control.",
+   "A guardianship of the person that grants the parents complete discretion over the funds without further court oversight or accounting requirements.",
    "A structured settlement arrangement with the defendant's insurance company that pays the minor directly upon reaching the age of majority without parental involvement."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A conservatorship or guardianship of the estate is the appropriate legal device for managing a minor's substantial property, as it provides court oversight, requires the fiduciary to account for the funds, and ensures the minor's interests are protected. This allows responsible investment while maintaining judicial supervision, unlike unrestricted parental control or arrangements that remove the minor's eventual access to the funds.",
   "difficulty": "hard",
   "knowledge_area": "Domestic/Personal Law"
@@ -132,12 +132,12 @@
  {
   "question": "A couple married in a state recognizing common law marriage separates after ten years without formal divorce proceedings. The state later refuses to recognize their union as valid. Which legal distinction best explains why an annulment—rather than dissolution—might be the appropriate remedy if challenged?",
   "options": [
-   "An annulment declares the marriage void from inception due to a defect in formation, whereas dissolution terminates a valid marriage going forward only",
-   "An annulment requires both parties to agree, while dissolution can be granted unilaterally by either spouse seeking to end the relationship",
+   "An annulment restores both parties to unmarried status retroactively, whereas dissolution leaves community property rights intact for tax purposes",
    "An annulment applies only to marriages under five years in duration, while dissolution covers all marriages regardless of length",
-   "An annulment restores both parties to unmarried status retroactively, whereas dissolution leaves community property rights intact for tax purposes"
+   "An annulment requires both parties to agree, while dissolution can be granted unilaterally by either spouse seeking to end the relationship",
+   "An annulment declares the marriage void from inception due to a defect in formation, whereas dissolution terminates a valid marriage going forward only"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Annulment treats the marriage as void ab initio (from the beginning) because a foundational requirement was missing, such as capacity or consent. Dissolution (or divorce) ends a valid marriage prospectively. The other options misstate the relationship between annulment grounds (formation defects, not duration or consent rules) and the legal consequences of each remedy.",
   "knowledge_area": "Domestic/Personal Law",
   "difficulty": "hard"
@@ -145,12 +145,12 @@
  {
   "question": "In a contested divorce, one spouse argues that a prenuptial agreement signed one week before the wedding should be unenforceable because the other party did not have adequate time to review it with counsel. The first spouse claims the agreement was fair and fully disclosed. Which factor is most critical in determining enforceability in most jurisdictions?",
   "options": [
-   "The timing of execution relative to the wedding, combined with evidence of independent legal advice and voluntary execution by both parties",
+   "Whether both spouses disclosed their full financial assets and liabilities in writing, and whether each had a reasonable opportunity to investigate and retain counsel",
    "Whether the agreement was executed in writing and notarized, regardless of the review period or presence of counsel",
-   "The length of the marriage at the time of divorce, since courts weigh shorter marriages as evidence of bad faith planning",
-   "Whether both spouses disclosed their full financial assets and liabilities in writing, and whether each had a reasonable opportunity to investigate and retain counsel"
+   "The timing of execution relative to the wedding, combined with evidence of independent legal advice and voluntary execution by both parties",
+   "The length of the marriage at the time of divorce, since courts weigh shorter marriages as evidence of bad faith planning"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Prenuptial enforceability depends on voluntary execution, full financial disclosure, and a reasonable opportunity for independent legal counsel—not merely timing or notarization. While timing close to the wedding can raise red flags, the critical factors are disclosure, opportunity to seek advice, and absence of duress. Option 0 conflates timing with enforceability; Option 1 ignores substantive fairness; Option 2 improperly weights marriage duration over the formation elements courts actually examine.",
   "knowledge_area": "Domestic/Personal Law",
   "difficulty": "hard"
@@ -158,12 +158,12 @@
  {
   "question": "A minor age 16 enters a contract to purchase a car, then seeks rescission six months later. The minor's parent did not ratify the contract. Which statement most accurately reflects the legal position in most jurisdictions?",
   "options": [
-   "The contract is voidable at the minor's election, and rescission is available even after reaching majority if exercised within a reasonable time",
    "The contract is void from inception because a parent's prior written consent was required for any purchase by a minor",
    "The minor may rescind only if the contract caused financial loss exceeding a statutory threshold set by the state",
+   "The contract is voidable at the minor's election, and rescission is available even after reaching majority if exercised within a reasonable time",
    "The contract becomes enforceable automatically upon the minor reaching age 18, unless the parent files a formal disaffirmance within 30 days"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Contracts entered by minors are voidable (not void) at the minor's option, and the minor may rescind even after reaching majority, provided disaffirmance occurs within a reasonable time. No parental consent was required to make the contract binding—the minor's legal incapacity created the right to avoid it. Options 1 and 3 reverse the burden and timeline; Option 2 adds a non-existent statutory threshold.",
   "knowledge_area": "Domestic/Personal Law",
   "difficulty": "hard"
@@ -171,12 +171,12 @@
  {
   "question": "A testator executes a valid will naming a spouse as executor and primary beneficiary. Five years later, the testator and spouse divorce, and the testator does not execute a new will. Upon the testator's death, which outcome is most likely under modern laws in many states?",
   "options": [
-   "The original will remains valid in full, the ex-spouse serves as executor, and receives all bequests as named",
-   "The original will is revoked in its entirety by operation of law because the testator did not update it after divorce",
+   "The ex-spouse is removed as executor but may elect to accept bequests, with a court-appointed administrator handling estate distribution",
    "Divorce triggers an automatic revocation as to the ex-spouse's gifts and executor role, but the will remains valid as to other provisions",
-   "The ex-spouse is removed as executor but may elect to accept bequests, with a court-appointed administrator handling estate distribution"
+   "The original will is revoked in its entirety by operation of law because the testator did not update it after divorce",
+   "The original will remains valid in full, the ex-spouse serves as executor, and receives all bequests as named"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Many modern jurisdictions apply automatic revocation-upon-divorce statutes that void gifts and fiduciary appointments to an ex-spouse, but leave the rest of the will intact. This prevents an unintended windfall while preserving the testator's other dispositive intent. Option 0 ignores divorce revocation; Option 1 over-revokes the entire document; Option 4 incorrectly treats the ex-spouse as having a unilateral election right.",
   "knowledge_area": "Domestic/Personal Law",
   "difficulty": "hard"
@@ -184,12 +184,12 @@
  {
   "question": "A parent grants a durable power of attorney to an adult child, designating the child as attorney-in-fact for all financial and healthcare decisions, with the document to remain valid after incapacity. The parent later becomes incapacitated. Under the terms of a valid living will, the parent also specified a wish not to receive life-sustaining treatment. The attorney-in-fact and healthcare providers now disagree about end-of-life care. Which principle most reliably guides resolution?",
   "options": [
+   "The healthcare providers may ignore both documents and apply the state's default presumption in favor of life-sustaining treatment",
    "The durable power of attorney supersedes the living will because the attorney-in-fact's authority is broader and more recently executed",
    "The living will takes precedence because it reflects the principal's explicit autonomous wishes, unless the power of attorney specifically authorizes override of advance directives",
-   "The healthcare providers may ignore both documents and apply the state's default presumption in favor of life-sustaining treatment",
    "The attorney-in-fact's healthcare authority is limited to financial decisions; a separate court-appointed guardian must be named to interpret the living will"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A living will expresses the principal's explicit wishes on life-sustaining treatment and generally controls those decisions, unless the durable power of attorney expressly grants the attorney-in-fact power to override it. The living will is not displaced merely because a power of attorney exists; they operate in parallel, with the living will guiding healthcare and the power of attorney enabling implementation. Options 0 and 3 incorrectly subordinate the living will; Option 2 ignores valid advance directives.",
   "knowledge_area": "Domestic/Personal Law",
   "difficulty": "hard"
@@ -198,11 +198,11 @@
   "question": "An employee is hired to manage client accounts and explicitly told she may not commit the company to contracts exceeding $50,000 without written authorization. She signs a $75,000 contract with a long-term client without approval. Which statement best describes the company's legal position?",
   "options": [
    "The contract is void because the agent exceeded her actual authority, and the client may sue the employee personally for breach.",
-   "The contract is binding on the company if the client reasonably believed the employee had authority based on her position and prior dealings.",
    "The company is not liable because the employee violated an explicit written restriction, but the client may recover damages from the employee.",
-   "The contract is unenforceable against both parties because actual authority limitations must be communicated to all third parties in writing."
+   "The contract is unenforceable against both parties because actual authority limitations must be communicated to all third parties in writing.",
+   "The contract is binding on the company if the client reasonably believed the employee had authority based on her position and prior dealings."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Apparent authority can bind a principal even when actual authority is limited, provided the third party reasonably relied on the agent's apparent authority given her position and the parties' course of dealing. The restriction is an internal matter between principal and agent; it does not automatically shield the company from liability to innocent third parties who had no notice of it.",
   "knowledge_area": "Agency and Employment Law",
   "difficulty": "hard"
@@ -210,8 +210,8 @@
  {
   "question": "During a job interview, an employer asks a candidate about her plans to have children, her marital status, and her religious beliefs. The candidate is not hired. Under federal employment law, which of the following most accurately describes the legal risk to the employer?",
   "options": [
-   "The employer has committed discrimination under Title VII if the questions were asked but did not directly influence the hiring decision.",
    "The employer has violated the Civil Rights Act of 1964 because these inquiries are unlawful per se, and the candidate may sue regardless of causation.",
+   "The employer has committed discrimination under Title VII if the questions were asked but did not directly influence the hiring decision.",
    "The employer faces potential liability under Title VII if the candidate can show the questions reveal discriminatory intent and the employer cannot rebut with legitimate, nondiscriminatory reasons.",
    "The employer is not liable because pre-employment inquiries alone do not constitute discrimination without evidence that the candidate was rejected solely on a protected ground."
   ],
@@ -224,11 +224,11 @@
   "question": "A delivery driver employed by a logistics company is instructed to deliver packages only during business hours and never to deviate from the assigned route. The driver uses the company vehicle to visit a personal errand across town, and while returning, causes an accident that injures a pedestrian. The injured party sues the employer. Which analysis best reflects the company's liability exposure?",
   "options": [
    "The employer is not vicariously liable because the employee was on a personal errand outside the scope of employment at the time of the accident.",
-   "The employer is vicariously liable for the employee's negligence because the employee was using company property and was an employee at the time, even though the errand was unauthorized.",
    "The employer is liable only if the employer was negligent in hiring or training the driver; the scope-of-employment rule shields employers from liability for personal detours.",
+   "The employer is vicariously liable for the employee's negligence because the employee was using company property and was an employee at the time, even though the errand was unauthorized.",
    "The employer's liability depends on whether the employee's route deviation was a substantial departure; minor deviations remain within scope, but major detours may insulate the employer."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Even though the errand was personal and unauthorized, courts generally hold employers vicariously liable for negligent acts of employees committed with company property during the course of the employment relationship. A frolic for personal purposes may reduce the employer's culpability somewhat, but the use of company equipment and the employment status typically establish vicarious liability.",
   "knowledge_area": "Agency and Employment Law",
   "difficulty": "hard"
@@ -236,9 +236,9 @@
  {
   "question": "A manufacturing company hires a freelance consultant to identify efficiency improvements. The consultant is paid $15,000 per project, sets his own schedule, uses his own equipment, and retains the right to work for competing firms. After completing his analysis, the consultant claims he is an employee entitled to workers' compensation benefits after sustaining an injury on the client's premises. Under the common-law test for employment status, which factor most weakens the consultant's claim?",
   "options": [
-   "The amount of compensation paid suggests an employment relationship, because fixed project fees are typically used only for independent contractors.",
-   "The consultant's right to work for competitors and control his own schedule indicates independent contractor status, even if other factors point toward employment.",
    "The consultant performed the work on the client's premises, which establishes sufficient control to classify him as an employee for benefits purposes.",
+   "The consultant's right to work for competitors and control his own schedule indicates independent contractor status, even if other factors point toward employment.",
+   "The amount of compensation paid suggests an employment relationship, because fixed project fees are typically used only for independent contractors.",
    "The client provided specific project objectives and deadlines, demonstrating the degree of control over work that defines an employment relationship."
   ],
   "correct_index": 1,
@@ -249,12 +249,12 @@
  {
   "question": "A company's collective bargaining agreement with its union specifies that employees may be terminated only for 'just cause' and that disputes must go to arbitration. The company terminates an employee for alleged insubordination after she refused to work overtime during a busy season, citing a family medical emergency. The union files a grievance, and the arbitrator finds the termination violated the agreement. Which statement most accurately reflects the company's options?",
   "options": [
-   "The company must immediately reinstate the employee with back pay because arbitration awards are binding and enforceable under the Labor-Management Reporting and Disclosure Act.",
    "The company may appeal the arbitration award to federal court on the grounds that the arbitrator's interpretation of 'just cause' was unreasonable.",
-   "The company must comply with the arbitration award because courts typically defer to arbitrators' interpretations of labor contracts, and judicial review is narrowly limited.",
-   "The company may refuse to reinstate if it can prove the family emergency was a pretext and the employee's real motive was union support for the dispute."
+   "The company may refuse to reinstate if it can prove the family emergency was a pretext and the employee's real motive was union support for the dispute.",
+   "The company must immediately reinstate the employee with back pay because arbitration awards are binding and enforceable under the Labor-Management Reporting and Disclosure Act.",
+   "The company must comply with the arbitration award because courts typically defer to arbitrators' interpretations of labor contracts, and judicial review is narrowly limited."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Arbitration awards in labor disputes are highly deferential and are enforceable unless the arbitrator exceeded his authority or the award violates public policy. Courts generally do not second-guess the arbitrator's interpretation of contract terms like 'just cause,' making judicial review extraordinarily narrow. The company's remedy would be to return to the bargaining table or challenge the arbitration process itself, not the merits.",
   "knowledge_area": "Agency and Employment Law",
   "difficulty": "hard"
@@ -262,12 +262,12 @@
  {
   "question": "A software developer discovers that a competitor has incorporated substantial portions of her proprietary source code into a commercial product without authorization. Under federal copyright law, which of the following remedies would NOT be available to her in a civil lawsuit?",
   "options": [
-   "Injunctive relief to prevent further distribution of the infringing software and monetary damages for past infringement",
-   "Criminal prosecution resulting in imprisonment and fines imposed by a federal prosecutor as part of the Computer Fraud and Abuse Act",
+   "Destruction of infringing copies and an accounting of all revenues derived from the unauthorized use of her code",
    "Recovery of actual damages plus defendant's profits, or statutory damages up to $150,000 per work infringed",
-   "Destruction of infringing copies and an accounting of all revenues derived from the unauthorized use of her code"
+   "Criminal prosecution resulting in imprisonment and fines imposed by a federal prosecutor as part of the Computer Fraud and Abuse Act",
+   "Injunctive relief to prevent further distribution of the infringing software and monetary damages for past infringement"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Criminal prosecution under the Computer Fraud and Abuse Act is brought by federal prosecutors, not by the copyright holder in a civil lawsuit. While civil remedies—injunctive relief, actual damages, statutory damages, and destruction of infringing materials—are all available to copyright owners, criminal prosecution is a separate government action and not a remedy the developer herself can pursue.",
   "knowledge_area": "Computer Law",
   "difficulty": "hard"
@@ -275,12 +275,12 @@
  {
   "question": "An e-commerce platform based in Delaware operates a marketplace accessible to customers in all 50 states and 12 foreign countries. A consumer in California initiates a lawsuit against the company alleging breach of contract regarding a defective product purchased online. Which of the following statements most accurately reflects the jurisdictional analysis under modern e-commerce law?",
   "options": [
-   "Delaware courts have exclusive jurisdiction because the company is incorporated there, and the defendant's home state always controls disputes involving online transactions",
    "California courts likely have personal jurisdiction because the defendant's website is interactive, the company directed marketing toward California residents, and substantial revenue derives from in-state sales",
+   "International courts share jurisdiction equally with U.S. courts whenever foreign nationals are involved, requiring the parties to file parallel complaints in multiple jurisdictions",
    "Federal courts must hear all e-commerce disputes regardless of the amount in controversy to ensure uniform application of interstate commerce rules",
-   "International courts share jurisdiction equally with U.S. courts whenever foreign nationals are involved, requiring the parties to file parallel complaints in multiple jurisdictions"
+   "Delaware courts have exclusive jurisdiction because the company is incorporated there, and the defendant's home state always controls disputes involving online transactions"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Under the Zippo framework and subsequent e-commerce jurisdiction doctrine, a court may exercise personal jurisdiction over an online defendant if the website is interactive, the defendant intentionally directed activities toward the forum state, and there is a substantial connection between the defendant's activities and the forum. The company's interactive platform, targeted marketing to California, and in-state revenue satisfy this standard; Delaware incorporation does not confer exclusive jurisdiction, federal court jurisdiction is not automatic, and foreign involvement does not require parallel filings.",
   "knowledge_area": "Computer Law",
   "difficulty": "hard"
@@ -288,12 +288,12 @@
  {
   "question": "A network administrator is charged under the Computer Fraud and Abuse Act with intentionally exceeding authorized access to a computer system and obtaining information that causes more than $5,000 in damage. Which of the following accurately distinguishes this federal offense from a state-level cybercrime statute?",
   "options": [
-   "The CFAA applies only to computers owned by financial institutions, while state laws cover all business and personal computers without restriction",
    "The CFAA requires proof of interstate or foreign commerce involvement and applies to federal interest computers, whereas most state statutes do not require a commerce nexus",
+   "The CFAA applies only to computers owned by financial institutions, while state laws cover all business and personal computers without restriction",
    "State statutes impose criminal liability for any unauthorized computer access regardless of damage, while the CFAA requires proof that damages exceeded $10,000",
    "The CFAA is enforced exclusively by the Federal Bureau of Investigation, whereas state crimes are prosecuted only by local district attorneys with no federal involvement"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The Computer Fraud and Abuse Act is a federal statute that applies to computers affecting interstate or foreign commerce and to federal interest computers, and generally requires a damage threshold ($5,000 or higher depending on the offense). State statutes vary widely but typically do not require commerce involvement and may prosecute unauthorized access with lower or no damage thresholds. The CFAA is not limited to financial institutions, does not require $10,000 in damages (it requires $5,000), and federal prosecutors work alongside state authorities in many cases.",
   "knowledge_area": "Computer Law",
   "difficulty": "hard"
@@ -301,10 +301,10 @@
  {
   "question": "A company implements an email monitoring policy that logs and reviews all employee email communications, including messages sent to personal accounts during work hours on company devices. An employee discovers this practice and claims it violates privacy statutes. Under the Electronic Communications Privacy Act and state privacy laws, which statement most accurately reflects the legal constraints on the employer's monitoring?",
   "options": [
-   "The employer may monitor all emails without restriction if the email system is owned and maintained by the company, even if the policy was not disclosed to employees in advance",
+   "State privacy laws completely preempt the ECPA, meaning employers must obtain a warrant from a judge before reviewing any employee email, including messages sent on company time",
    "The employer may monitor business-related emails on company devices and systems if employees received notice and consent, but monitoring of personal accounts may violate the ECPA's Wiretap Title despite the device ownership",
-   "Employees have an absolute right to privacy in all communications, and any monitoring activity constitutes a federal crime regardless of notice or consent",
-   "State privacy laws completely preempt the ECPA, meaning employers must obtain a warrant from a judge before reviewing any employee email, including messages sent on company time"
+   "The employer may monitor all emails without restriction if the email system is owned and maintained by the company, even if the policy was not disclosed to employees in advance",
+   "Employees have an absolute right to privacy in all communications, and any monitoring activity constitutes a federal crime regardless of notice or consent"
   ],
   "correct_index": 1,
   "explanation": "The ECPA's Wiretap Title prohibits interception of electronic communications in transit, even on company systems, unless consent is obtained. The Stored Communications Act permits employers to monitor stored business emails on company systems with proper notice and consent, but monitoring of personal email accounts accessed on company devices may violate the ECPA even with device ownership. The ECPA does not grant absolute privacy rights nor does it require warrants in all circumstances; state laws do not completely preempt federal law but provide additional protections.",
@@ -315,9 +315,9 @@
   "question": "A software company licenses its application under a proprietary end-user license agreement (EULA) that prohibits reverse engineering, modification, and redistribution. A researcher legally purchases the software and then publicly discloses a security vulnerability after discovering it through reverse engineering conducted for academic purposes. The company sues for breach of the EULA and seeks to invoke the Digital Millennium Copyright Act's anti-circumvention provisions. Which of the following best describes the researcher's strongest defense?",
   "options": [
    "The DMCA's anti-circumvention rules apply only to technological measures protecting content, not to contractual restrictions, and the researcher's disclosure serves the public interest in cybersecurity",
-   "The researcher's academic status grants automatic immunity from all DMCA claims and EULA enforcement actions regardless of the circumvention method used",
+   "The researcher may avoid DMCA liability by proving that the vulnerability disclosure was made in good faith and with reasonable notice to the vendor before public announcement",
    "Reverse engineering for security research is explicitly permitted under the CFAA and cannot be restricted by contract terms, even if the EULA prohibits such activities",
-   "The researcher may avoid DMCA liability by proving that the vulnerability disclosure was made in good faith and with reasonable notice to the vendor before public announcement"
+   "The researcher's academic status grants automatic immunity from all DMCA claims and EULA enforcement actions regardless of the circumvention method used"
   ],
   "correct_index": 0,
   "explanation": "The DMCA's anti-circumvention provisions prohibit circumventing technological protection measures, but do not prevent breach of contract claims for violating a EULA's reverse engineering clause. However, the researcher's strongest defense is that DMCA anti-circumvention rules apply narrowly to technological locks, not contractual provisions, and that public security research serves important policy interests that courts increasingly recognize. Academic status does not grant automatic immunity, the CFAA does not explicitly permit research-based reverse engineering, and good faith disclosure timing alone does not create a statutory defense.",
@@ -341,11 +341,11 @@
   "question": "During a real estate transaction, a title search reveals a mortgage lien recorded against the property from a loan the seller obtained five years ago. The seller claims the loan was fully paid, but the lender never filed a release of lien. Which of the following most accurately describes the legal status and the buyer's position?",
   "options": [
    "The lien is void ab initio because the debt was satisfied, and the buyer takes title free of any encumbrance despite the recorded lien",
-   "The lien remains a valid encumbrance on the property until officially released by the lienholder, and the buyer may be held responsible for the outstanding debt",
    "The lien is extinguished by operation of law after five years under the statute of limitations, and the buyer receives clear title automatically",
+   "The lien remains a valid encumbrance on the property until officially released by the lienholder, and the buyer may be held responsible for the outstanding debt",
    "The lien becomes a junior encumbrance if the seller obtains a new loan, and the buyer's obligation depends on whether the property is sold as-is or with warranties"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A mortgage lien remains enforceable and binding on the property until the lienholder files a formal release, regardless of whether the debt was paid; satisfaction of debt does not automatically clear the record. The buyer may face liability or forced payment to clear title, making this a critical discovery during the transaction phase before closing.",
   "difficulty": "hard",
   "knowledge_area": "Property Laws"
@@ -353,12 +353,12 @@
  {
   "question": "A manufacturing company manufactures widgets using a patented process it licensed from a patent holder under a non-exclusive agreement. The company then begins manufacturing identical widgets using a different process that achieves the same functional result but does not practice the licensed patent claims. Which of the following best describes the company's legal exposure?",
   "options": [
-   "The company has committed patent infringement because it manufactures the same product, regardless of the process used or the scope of the license granted",
    "The company has not infringed the patent because its alternative process does not practice the specific claims covered by the licensed patent",
    "The company is liable for breach of the license agreement, but patent infringement liability depends on whether the alternative process reads on any non-licensed claims",
+   "The company has committed patent infringement because it manufactures the same product, regardless of the process used or the scope of the license granted",
    "The company is in violation of trademark law if the widgets are marketed under a name confusingly similar to the licensor's brand, separate from patent infringement analysis"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Patent infringement requires that the accused product or process practice one or more claims of the patent; designing around the patent by using a different, non-infringing method avoids liability. The company's use of an alternative process that does not fall within the patent's scope is a legal design-around and does not constitute infringement, though it may trigger contract disputes depending on the license terms.",
   "difficulty": "hard",
   "knowledge_area": "Property Laws"
@@ -366,12 +366,12 @@
  {
   "question": "A bailee receives a watch for repair and stores it in a locked safe at their facility. The safe is burglarized and the watch is stolen despite the bailee's use of reasonable security measures and daily inspections. Under the standards of care applicable to bailments, which of the following most accurately addresses the bailee's liability?",
   "options": [
-   "The bailee is strictly liable for loss because bailees must guarantee return of the property regardless of the cause of loss or foreseeability of theft",
-   "The bailee is liable only if the bailee failed to exercise the ordinary care standard applicable to a gratuitous bailment for the bailee's sole benefit",
    "The bailee is not liable because the bailee exercised reasonable care through locks, safes, and inspections, meeting the standard for ordinary care or mutual-benefit bailments",
-   "The bailee's liability is limited to depreciated value only, and coverage under commercial general liability insurance determines the maximum recovery amount"
+   "The bailee is liable only if the bailee failed to exercise the ordinary care standard applicable to a gratuitous bailment for the bailee's sole benefit",
+   "The bailee's liability is limited to depreciated value only, and coverage under commercial general liability insurance determines the maximum recovery amount",
+   "The bailee is strictly liable for loss because bailees must guarantee return of the property regardless of the cause of loss or foreseeability of theft"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Bailees are held to a standard of ordinary care proportional to whether the bailment is gratuitous or for mutual benefit; reasonable security measures and regular inspections satisfy this standard and protect against liability for theft. The bailee's diligent safekeeping practices insulate them from liability where the loss results from criminal acts despite reasonable precautions.",
   "difficulty": "hard",
   "knowledge_area": "Property Laws"
@@ -393,11 +393,11 @@
   "question": "A promissory note is signed by a borrower and held by a creditor who later transfers it to a third party without recourse. Which statement best describes the liability exposure of each party?",
   "options": [
    "The original borrower remains primarily liable; the creditor becomes secondarily liable only if the third party demands payment.",
-   "The original borrower is the primary obligor; the creditor who transferred without recourse has secondary liability if the note is dishonored.",
    "The third party who received the note becomes the primary obligor, relieving both the borrower and original creditor of further duty.",
+   "The original borrower is the primary obligor; the creditor who transferred without recourse has secondary liability if the note is dishonored.",
    "The original borrower and creditor share joint primary liability to the third party regardless of the transfer method or recourse notation."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "In negotiable instrument law, the maker of a promissory note is the primary party (original obligor) with unconditional liability. A holder who transfers the note without recourse (via blank endorsement or without endorsement) becomes a secondary party with liability only if the primary obligor defaults and proper notice is given. The third party is merely a subsequent holder, not a new obligor.",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy",
   "difficulty": "hard"
@@ -407,8 +407,8 @@
   "options": [
    "The security agreement must be in writing, signed by the debtor, and contain a description of the collateral with sufficient specificity to identify it.",
    "The creditor must file a financing statement in the state where the manufacturer is incorporated and also perfect by possession of the materials.",
-   "The supplier must obtain a blanket lien on all assets of the manufacturer and register it in the UCC filing system within thirty days.",
-   "The security agreement must include a personal guarantee from the manufacturer's owner and be notarized in the presence of two witnesses."
+   "The security agreement must include a personal guarantee from the manufacturer's owner and be notarized in the presence of two witnesses.",
+   "The supplier must obtain a blanket lien on all assets of the manufacturer and register it in the UCC filing system within thirty days."
   ],
   "correct_index": 0,
   "explanation": "To create a valid and enforceable security interest under UCC Article 9, three requirements must be met: (1) a written security agreement signed by the debtor, (2) description of the collateral with sufficient particularity, and (3) giving of value and debtor's rights in the collateral. Filing a UCC-1 financing statement perfects the interest and provides notice to other creditors. Possession, personal guarantees, and dual state filing are not blanket requirements for initial enforceability.",
@@ -418,12 +418,12 @@
  {
   "question": "A debtor files for Chapter 7 bankruptcy after accumulating $150,000 in unsecured consumer debt. During the 341 meeting, creditors learn that the debtor owns a home with $80,000 equity and received a $25,000 inheritance three months before filing. How are these assets likely treated in liquidation?",
   "options": [
-   "The home equity and inheritance are both included in the bankruptcy estate; the trustee may liquidate the home but the inheritance may be claimed exempt depending on state law and timing.",
    "The home is excluded from the estate as a primary residence; the inheritance is automatically discharged because it arrived after the filing date.",
-   "Both the home and inheritance become property of the estate and must be liquidated to pay creditors, with no exemptions allowed for consumer debtors.",
-   "The home equity is protected by homestead exemption; the inheritance is treated as new income and passed directly to the debtor for debt repayment."
+   "The home equity is protected by homestead exemption; the inheritance is treated as new income and passed directly to the debtor for debt repayment.",
+   "The home equity and inheritance are both included in the bankruptcy estate; the trustee may liquidate the home but the inheritance may be claimed exempt depending on state law and timing.",
+   "Both the home and inheritance become property of the estate and must be liquidated to pay creditors, with no exemptions allowed for consumer debtors."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Under Chapter 7, all property of the debtor at the time of filing becomes estate property—including real estate and recently received inheritances. However, exemptions apply; the homestead exemption shields some home equity (amount varies by state), and inheritances received within 180 days of filing are includable in the estate. A Chapter 7 trustee may liquidate non-exempt assets to satisfy creditors, but exempt property is protected from liquidation.",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy",
   "difficulty": "hard"
@@ -431,12 +431,12 @@
  {
   "question": "A small business owner with $500,000 in debt and a viable business plan seeks to reorganize rather than liquidate. The business generates sufficient revenue to service a restructured debt over five years. Which bankruptcy chapter and key feature best align with this scenario?",
   "options": [
-   "Chapter 11 allows the debtor to remain in possession of assets, propose a reorganization plan funded by future earnings, and retain control of operations during the restructuring process.",
-   "Chapter 12 is designed specifically for family farmers and ranchers whose income is primarily from agricultural operations and who wish to preserve their farming assets.",
    "Chapter 13 permits a small business to restructure and repay creditors over three to five years through a repayment plan confirmed by the court.",
-   "Chapter 7 allows a viable business to suspend liquidation temporarily and use operating profits to fund a cramdown plan over a fixed repayment term."
+   "Chapter 11 allows the debtor to remain in possession of assets, propose a reorganization plan funded by future earnings, and retain control of operations during the restructuring process.",
+   "Chapter 7 allows a viable business to suspend liquidation temporarily and use operating profits to fund a cramdown plan over a fixed repayment term.",
+   "Chapter 12 is designed specifically for family farmers and ranchers whose income is primarily from agricultural operations and who wish to preserve their farming assets."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Chapter 11 is the primary reorganization chapter for businesses of any size. It allows the debtor-in-possession (the current owner/manager) to operate the business, propose a reorganization plan funded by future earnings, and restructure debt while retaining operational control. Chapter 12 is limited to family farmers/ranchers; Chapter 13 is for individuals with regular income; Chapter 7 is for liquidation, not ongoing operation and reorganization.",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy",
   "difficulty": "hard"
@@ -446,8 +446,8 @@
   "options": [
    "The insurer pays $500,000 for the first claim (capped by per-occurrence limit), $500,000 for the second claim, and $0 for the third because the annual aggregate is exhausted.",
    "The insurer pays the full amount of the first two claims up to the aggregate limit, then denies the third claim entirely because the aggregate is exceeded.",
-   "The insurer pays $500,000 for each claim because each claim triggers a separate per-occurrence limit, regardless of the aggregate total.",
-   "The insurer pays $600,000 for the first claim under a waiver, $800,000 for the second, and requires the insured to self-insure the third claim balance."
+   "The insurer pays $600,000 for the first claim under a waiver, $800,000 for the second, and requires the insured to self-insure the third claim balance.",
+   "The insurer pays $500,000 for each claim because each claim triggers a separate per-occurrence limit, regardless of the aggregate total."
   ],
   "correct_index": 0,
   "explanation": "Commercial liability policies typically enforce both a per-occurrence limit (maximum paid per single event) and an annual aggregate limit (cumulative maximum for all claims in the policy year). The first claim of $600,000 is capped at the per-occurrence limit of $500,000. The second claim of $800,000 is also capped at $500,000. The third claim of $700,000 would exceed the $2,000,000 aggregate ($500,000 + $500,000 + remaining $1,000,000), so only $500,000 is paid, leaving $200,000 unpaid or the entire third claim denied once the aggregate is reached.",
@@ -457,12 +457,12 @@
  {
   "question": "A retailer advertises a smart television at an unusually low price to draw customers into the store, then tells interested buyers the item is out of stock and pressures them to purchase a more expensive model instead. Which consumer protection violation best describes this practice?",
   "options": [
-   "Usury, which involves charging excessive interest rates on consumer credit agreements and violating rate caps set by state regulators",
-   "Bait and switch, which uses an attractive offer to lure consumers and then substitutes a different product or withholds the advertised item",
    "Deceptive estimation, which misrepresents the quality, durability, or performance characteristics of goods before the consumer commits to purchase",
-   "Identity theft, which involves unauthorized use of another person's personal financial information to open accounts or make fraudulent transactions"
+   "Identity theft, which involves unauthorized use of another person's personal financial information to open accounts or make fraudulent transactions",
+   "Bait and switch, which uses an attractive offer to lure consumers and then substitutes a different product or withholds the advertised item",
+   "Usury, which involves charging excessive interest rates on consumer credit agreements and violating rate caps set by state regulators"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Bait and switch occurs when a business advertises an attractive product or price to draw customers, then makes the original offer unavailable and pushes a higher-priced alternative—exactly the retailer's conduct here. Usury involves interest rates on credit; deceptive estimation misrepresents product qualities; and identity theft involves unauthorized personal data use—none fit this scenario.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -470,12 +470,12 @@
  {
   "question": "A manufacturer of kitchen appliances conducts rigorous quality assurance testing, documents potential failure modes, and discovers a defect affecting one percent of units that could cause minor electrical burns under extreme misuse. The company decides not to recall or warn consumers because the cost of a recall exceeds projected liability damages. Which liability principle does this decision most clearly implicate?",
   "options": [
-   "Vicarious liability, which holds an employer responsible for torts committed by employees acting within the scope of their employment duties",
    "Strict liability, which imposes liability without proof of negligence when a defective product causes injury, regardless of manufacturer intent or care",
+   "Vicarious liability, which holds an employer responsible for torts committed by employees acting within the scope of their employment duties",
    "Absolute liability, which holds a defendant responsible for all harm caused by an activity, even when the defendant exercised reasonable precautions and took no wrongful act",
    "Implied warranty liability, which arises when a seller fails to disclose hidden defects that a reasonable inspection would not reveal to an ordinary buyer"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Strict product liability holds manufacturers liable for defective products that cause injury without requiring proof the manufacturer was negligent or careless—the company's knowledge of the defect and cost-benefit decision are irrelevant. Vicarious liability applies to employer-employee relationships; absolute liability is broader and context-specific; and implied warranty concerns nondisclosure of hidden defects, not design defects known to the manufacturer.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -484,11 +484,11 @@
   "question": "A fitness equipment company sells dumbbells with a 90-day parts-and-labor warranty covering manufacturing defects but explicitly excluding damage from drops, improper storage, or normal wear. A customer's dumbbell fails due to a hairline crack in the metal core after six months of heavy use. Which warranty classification and outcome best matches this situation?",
   "options": [
    "Express limited warranty; the company is liable because the defect is a manufacturing flaw occurring within the warranty period regardless of exclusions",
-   "Express limited warranty; the company is not liable because the warranty explicitly excluded wear-related damage and the company identified the specific coverage limits in writing",
+   "Implied warranty of fitness for particular purpose; the company is liable because the customer relied on the retailer's expertise to select appropriate equipment for intensive training",
    "Implied warranty of merchantability; the company must honor the sale because all goods carry an automatic guarantee of fitness for ordinary use without written agreement",
-   "Implied warranty of fitness for particular purpose; the company is liable because the customer relied on the retailer's expertise to select appropriate equipment for intensive training"
+   "Express limited warranty; the company is not liable because the warranty explicitly excluded wear-related damage and the company identified the specific coverage limits in writing"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "This is an express limited warranty—the company affirmatively stated what it would and would not cover in writing, clearly limiting scope and duration. The company is not liable because wear-related damage falls within the stated exclusions and the warranty period has elapsed. Implied warranties protect against unspoken defects, not against explicitly excluded categories of damage; fitness for particular purpose would require the seller to know the customer's specific intensive-use plans.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -496,12 +496,12 @@
  {
   "question": "A consumer finance company extends credit to borrowers and uses aggressive collection tactics including repeated phone calls before 6 a.m., threats of wage garnishment, and demands for immediate payment of allegedly inflated balances. Which federal legislation and regulatory agency are most relevant to addressing these practices?",
   "options": [
-   "The Fair Debt Collection Practices Act, enforced by the Consumer Financial Protection Bureau, which prohibits abusive, unfair, and deceptive collection practices including harassment and false statements about debt",
-   "The Truth in Lending Act, enforced by the Federal Trade Commission, which requires full disclosure of annual percentage rates, finance charges, and payment terms before credit is extended",
    "The Fair Credit Reporting Act, enforced by the Federal Trade Commission, which regulates credit reporting agencies and grants consumers rights to access, correct, and dispute credit information",
+   "The Truth in Lending Act, enforced by the Federal Trade Commission, which requires full disclosure of annual percentage rates, finance charges, and payment terms before credit is extended",
+   "The Fair Debt Collection Practices Act, enforced by the Consumer Financial Protection Bureau, which prohibits abusive, unfair, and deceptive collection practices including harassment and false statements about debt",
    "The Gramm-Leach-Bliley Act, enforced by the Consumer Financial Protection Bureau, which requires financial institutions to protect customer privacy and limit disclosure of nonpublic personal information"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The Fair Debt Collection Practices Act directly prohibits abusive and deceptive collection tactics like harassment, false threats, and calls at unreasonable hours—all present here. The FDCPA is enforced by the Consumer Financial Protection Bureau. Truth in Lending covers initial credit disclosure, not collection; Fair Credit Reporting addresses credit bureaus and reports, not collection conduct; and Gramm-Leach-Bliley focuses on privacy, not collection practices.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -509,12 +509,12 @@
  {
   "question": "A manufacturer markets a dietary supplement with claims that it 'boosts immunity by up to 300 percent' and 'eliminates chronic fatigue in 14 days,' supported only by customer testimonials and limited internal studies not peer-reviewed or submitted to regulatory bodies. Which principle and enforcement outcome best apply?",
   "options": [
-   "Truth in advertising requires substantiation of claims; the company must possess competent and reliable evidence before making express health claims, and the Federal Trade Commission may pursue enforcement action for deceptive practices",
    "Strict liability applies to all health products; once a consumer reports any adverse effect, the manufacturer becomes automatically liable for damages regardless of causation or product safety standards",
    "Implied warranty of fitness applies; the supplement carries an automatic guarantee it will deliver the claimed health benefits because health products are subject to heightened warranty standards",
-   "Deceptive estimation prohibits all comparative claims; any assertion that a product outperforms competitors or delivers measurable outcomes violates federal advertising standards and permits consumer rescission"
+   "Deceptive estimation prohibits all comparative claims; any assertion that a product outperforms competitors or delivers measurable outcomes violates federal advertising standards and permits consumer rescission",
+   "Truth in advertising requires substantiation of claims; the company must possess competent and reliable evidence before making express health claims, and the Federal Trade Commission may pursue enforcement action for deceptive practices"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Truth in advertising law, enforced by the FTC, requires companies to substantiate health claims with competent, reliable evidence before making them—customer testimonials and unreviewed internal studies do not meet this standard. Strict product liability addresses physical defects causing injury, not unsubstantiated marketing claims; implied warranty of fitness does not guarantee claimed benefits will occur; and deceptive estimation does not prohibit all comparative claims, only false or misleading ones.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -524,10 +524,10 @@
   "options": [
    "The original borrower is primary; the lender who transferred it becomes secondary as an endorser",
    "The lender is primary because they received the note first; the borrower is secondary as the maker",
-   "The third-party holder is primary because they now possess the note; both prior parties are secondary",
-   "The borrower remains primary as the maker; the lender is secondary only if the note is dishonored at presentment"
+   "The borrower remains primary as the maker; the lender is secondary only if the note is dishonored at presentment",
+   "The third-party holder is primary because they now possess the note; both prior parties are secondary"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Under negotiable instrument law, the maker of a promissory note (the borrower) is a primary party with unconditional liability. Endorsers and transferees become secondary parties, liable only if the note is not paid when presented for payment and proper notice of dishonor is given. The third party's status depends on how the note was transferred and whether they are an endorsee or holder in due course.",
   "difficulty": "hard",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy"
@@ -536,11 +536,11 @@
   "question": "A check is presented to a bank for payment, but the bank refuses because the account has insufficient funds. The bank has NOT accepted the check. Which of the following correctly describes the bank's obligation and the check holder's recourse?",
   "options": [
    "The bank must pay because presentment triggers automatic acceptance; the holder may sue the bank directly for the full amount",
-   "The bank has no obligation to pay; the holder must pursue secondary parties such as the drawer and prior endorsers",
+   "The bank's refusal is acceptance of dishonor; the holder becomes an unsecured creditor of the drawer with no recourse against endorsers",
    "The bank must honor the check within five business days under the Uniform Commercial Code; if not, the holder gains a lien on the account",
-   "The bank's refusal is acceptance of dishonor; the holder becomes an unsecured creditor of the drawer with no recourse against endorsers"
+   "The bank has no obligation to pay; the holder must pursue secondary parties such as the drawer and prior endorsers"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A bank is not obligated to pay a check simply because it is presented; acceptance by a drawee bank (typically through the bank's written promise) is required to create liability on the bank itself. Without acceptance or payment, the check holder must look to secondary parties—the drawer and prior endorsers—who have conditional liability upon proper notice of dishonor. The UCC does not require payment after a delay, nor does dishonor by non-payment automatically eliminate endorser liability.",
   "difficulty": "hard",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy"
@@ -548,10 +548,10 @@
  {
   "question": "A commercial loan is secured by a security interest in the borrower's inventory and accounts receivable. The lender properly perfects the security interest by filing in the Secretary of State's office. If the borrower later files for Chapter 7 bankruptcy, which statement most accurately reflects the lender's position and rights?",
   "options": [
-   "The lender becomes an unsecured creditor because bankruptcy law invalidates all pre-petition security interests registered under Article 9 of the UCC",
-   "The lender retains a secured claim against the collateral if the lender's interest was properly perfected before bankruptcy; proceeds from the sale of inventory and accounts receivable are used to satisfy the secured claim first",
    "The lender may recover only 50 percent of the outstanding loan balance because secured creditors share equally in bankruptcy liquidation distribution",
-   "The lender's security interest is subordinate to the bankruptcy trustee's ability to liquidate assets freely; the lender must wait until all administrative expenses and priority claims are paid before receiving anything"
+   "The lender retains a secured claim against the collateral if the lender's interest was properly perfected before bankruptcy; proceeds from the sale of inventory and accounts receivable are used to satisfy the secured claim first",
+   "The lender's security interest is subordinate to the bankruptcy trustee's ability to liquidate assets freely; the lender must wait until all administrative expenses and priority claims are paid before receiving anything",
+   "The lender becomes an unsecured creditor because bankruptcy law invalidates all pre-petition security interests registered under Article 9 of the UCC"
   ],
   "correct_index": 1,
   "explanation": "A properly perfected security interest survives bankruptcy and gives the secured creditor priority over unsecured creditors in Chapter 7 liquidation. The secured lender has a claim against the collateral itself (inventory and accounts receivable) and receives payment from the proceeds of their sale before general unsecured creditors. The trustee's liquidation power is subject to creditors' rights in the collateral; perfection under Article 9 is recognized and respected in bankruptcy proceedings.",
@@ -561,12 +561,12 @@
  {
   "question": "A debtor files for Chapter 13 bankruptcy while owing $200,000 in total debt: $150,000 secured by a home mortgage and $50,000 in unsecured credit card debt. The debtor's disposable income is sufficient to pay 60 percent of unsecured claims over five years. Under Chapter 13 reorganization rules, what is the likely treatment of each class of debt?",
   "options": [
-   "Secured debt is discharged entirely; unsecured creditors receive 60 percent of their claims; the debtor retains the home mortgage as a long-term obligation outside the plan",
    "All debt is combined into one class and creditors receive pro-rata distributions based on the debtor's disposable income, with the home exempt from any plan payment",
-   "The debtor's disposable income is applied to unsecured claims first; secured creditors receive the arrearages and ongoing payments on the home mortgage within the plan, while unsecured creditors receive their portion of remaining disposable income",
-   "Secured debt is paid in full outside the plan by refinancing; unsecured creditors must accept the 60 percent distribution as full satisfaction of their claims within the plan"
+   "Secured debt is paid in full outside the plan by refinancing; unsecured creditors must accept the 60 percent distribution as full satisfaction of their claims within the plan",
+   "Secured debt is discharged entirely; unsecured creditors receive 60 percent of their claims; the debtor retains the home mortgage as a long-term obligation outside the plan",
+   "The debtor's disposable income is applied to unsecured claims first; secured creditors receive the arrearages and ongoing payments on the home mortgage within the plan, while unsecured creditors receive their portion of remaining disposable income"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Chapter 13 allows debtors to reorganize debt through a repayment plan using disposable income over three to five years. Secured creditors (like mortgage lenders) receive plan payments sufficient to cure arrearages and maintain regular payments, while unsecured creditors share in remaining disposable income according to their proportion of unsecured claims. The plan must respect the secured creditor's claim on collateral while allowing unsecured creditors a distribution from available disposable income, not requiring full payment of unsecured debt if it would be impossible under the debtor's budget.",
   "difficulty": "hard",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy"
@@ -574,12 +574,12 @@
  {
   "question": "An insurance company issues a fire insurance policy on a commercial building with a face value of $500,000. The policy includes a standard coinsurance clause requiring the insured to maintain coverage equal to at least 80 percent of the building's replacement value, estimated at $600,000. If a fire causes $200,000 in damage and the insured has only maintained $400,000 in coverage, how much will the insurer likely pay under the coinsurance formula?",
   "options": [
+   "The insurer pays $200,000 minus a $50,000 penalty deductible, as coinsurance violations trigger automatic financial penalties under the insurance code",
    "The insurer pays the full $200,000 because the insured exceeded the 50 percent threshold of replacement value coverage required by law",
-   "The insurer pays $166,667, calculated as ($400,000 / $480,000) × $200,000, reflecting the insured's failure to meet the 80 percent coinsurance requirement",
    "The insurer pays $100,000 because the insured maintained only two-thirds of required coverage and shares the remaining loss proportionally",
-   "The insurer pays $200,000 minus a $50,000 penalty deductible, as coinsurance violations trigger automatic financial penalties under the insurance code"
+   "The insurer pays $166,667, calculated as ($400,000 / $480,000) × $200,000, reflecting the insured's failure to meet the 80 percent coinsurance requirement"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The coinsurance clause penalizes underinsurance by limiting recovery to: (Insurance Carried / Insurance Required) × Loss = ($400,000 / $480,000) × $200,000 = $166,667. The required coverage is 80% of $600,000 replacement value, or $480,000; since the insured carried only $400,000, they absorb part of the loss. This clause encourages adequate coverage and prevents moral hazard; it is not a penalty but a proportional distribution of risk based on the coverage ratio.",
   "difficulty": "hard",
   "knowledge_area": "Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy"
@@ -588,8 +588,8 @@
   "question": "A retailer advertises a laptop at $299 but the sales staff consistently tells customers that model is out of stock and pushes them toward a $599 alternative. Which deceptive practice does this best illustrate, and what distinguishes it from mere puffery?",
   "options": [
    "Bait and switch: the advertised item is used to lure customers with the intent not to sell it, but to divert them to a higher-priced substitute",
-   "Identity theft: the retailer misrepresents the product's origin and ownership to create false scarcity and inflate perceived value",
    "Usury: the retailer charges interest rates exceeding the legal maximum by bundling financing into the sale price without disclosure",
+   "Identity theft: the retailer misrepresents the product's origin and ownership to create false scarcity and inflate perceived value",
    "Deceptive estimates: the retailer provides false repair quotes on the advertised model to justify recommending the premium alternative"
   ],
   "correct_index": 0,
@@ -600,12 +600,12 @@
  {
   "question": "A manufacturer includes a limited warranty excluding \"normal wear and tear\" but does not define that term, uses fine print smaller than the product manual's text, and does not clearly disclose whether the warranty is in addition to or instead of implied warranties. Which combination of laws and standards is most directly violated?",
   "options": [
-   "The Magnuson-Moss Warranty Act and the implied warranty of merchantability; the limited warranty must define exclusions clearly and disclaim implied warranties only with conspicuous language",
-   "The Federal Trade Commission Act and the Uniform Commercial Code; express warranties cannot exclude merchantability unless the disclaimer appears in a separate contract signed before purchase",
    "The Consumer Product Safety Commission regulations and the implied warranty of fitness; limited warranties must cover all defects for at least two years regardless of fine-print disclaimers",
-   "The Truth in Advertising Act and the implied warranty of title; a manufacturer cannot limit warranties on new goods and must list all exclusions in bold type at point of sale"
+   "The Truth in Advertising Act and the implied warranty of title; a manufacturer cannot limit warranties on new goods and must list all exclusions in bold type at point of sale",
+   "The Federal Trade Commission Act and the Uniform Commercial Code; express warranties cannot exclude merchantability unless the disclaimer appears in a separate contract signed before purchase",
+   "The Magnuson-Moss Warranty Act and the implied warranty of merchantability; the limited warranty must define exclusions clearly and disclaim implied warranties only with conspicuous language"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The Magnuson-Moss Act requires that limited warranty disclaimers be conspicuous (clear and prominent, not hidden in fine print) and that any exclusion of implied warranties be stated in plain language. The manufacturer's vague exclusion in small print violates both the Act's conspicuousness requirement and the UCC's protection of the implied warranty of merchantability. The other options misstate the legal standards or impose requirements not found in the source laws.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"
@@ -627,9 +627,9 @@
   "question": "A loan company charges an interest rate of 48% annually on a short-term personal loan and complies with all federal disclosure requirements under the Truth in Lending Act. A borrower argues the rate violates usury laws. Which statement best reflects the legal landscape governing this dispute?",
   "options": [
    "Federal law and most state usury statutes permit rates above traditional caps when applied to certain loan types or borrowers; the lender's compliance with TILA disclosure does not shield it from state usury limits, which vary by jurisdiction and loan classification",
-   "Federal disclosure requirements preempt state usury laws entirely; once the lender discloses the annual percentage rate clearly, any interest rate is lawful regardless of state caps",
    "Usury applies only to mortgage loans and home equity products; personal loans are exempt, so the 48% rate is automatically valid provided the lender provides a written promissory note",
-   "The borrower may challenge usury only if the lender failed to disclose the rate; compliance with TILA eliminates all usury defenses, making the rate unassailable in litigation"
+   "The borrower may challenge usury only if the lender failed to disclose the rate; compliance with TILA eliminates all usury defenses, making the rate unassailable in litigation",
+   "Federal disclosure requirements preempt state usury laws entirely; once the lender discloses the annual percentage rate clearly, any interest rate is lawful regardless of state caps"
   ],
   "correct_index": 0,
   "explanation": "Usury laws are primarily state-governed and vary significantly by state and loan type. Federal disclosure under TILA requires clear communication of terms but does not override state usury limits. Many states exempt certain types of loans or lenders from traditional usury caps, and rates above historical ceilings may be lawful depending on the loan classification and state law. Compliance with TILA disclosure is separate from compliance with usury limits.",
@@ -639,12 +639,12 @@
  {
   "question": "An online retailer's website states \"Our products carry a full lifetime warranty covering all defects\" but the shipping and returns policy, buried on a separate page, states \"Coverage excludes water damage, mechanical failure after two years, and labor costs.\" A customer who relied on the homepage text seeks to enforce the full lifetime warranty. How do courts typically resolve this conflict between express warranty language?",
   "options": [
-   "The homepage statement constitutes an express warranty, but the limitations in the fine-print policy are enforceable only if they are conspicuous and clearly disclaim the express warranty using language that a reasonable consumer on the homepage would have encountered during the sales process",
    "The express warranty is limited to what appears in the shipping and returns policy because that is the official contract term; the homepage is mere advertising puffery and does not create enforceable obligations regardless of its specific language",
+   "Express warranties are interpreted to include all limitations stated anywhere on the website at the time of purchase; a reasonable consumer is presumed to review all linked pages, making both statements equally binding and the restrictions enforceable",
    "The full lifetime warranty prevails absolutely because it is the first statement a customer sees; any contradictory terms disclosed later are void as deceptive practices under the Federal Trade Commission Act",
-   "Express warranties are interpreted to include all limitations stated anywhere on the website at the time of purchase; a reasonable consumer is presumed to review all linked pages, making both statements equally binding and the restrictions enforceable"
+   "The homepage statement constitutes an express warranty, but the limitations in the fine-print policy are enforceable only if they are conspicuous and clearly disclaim the express warranty using language that a reasonable consumer on the homepage would have encountered during the sales process"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Express warranties arise from specific promises about product quality; when warranty statements conflict, courts examine whether limitations or disclaimers are conspicuous and whether they clearly disclaim the express warranty language. A reasonable consumer who sees \"full lifetime warranty\" on the homepage may not discover contradicting fine print on a separate page, so the disclaimer may be unenforceable under UCC § 2-316 and consumer protection law. The homepage statement typically governs the transaction unless the limitation was conspicuously presented at the time of sale.",
   "difficulty": "hard",
   "knowledge_area": "Consumer Protection, Product/Personal Liability"

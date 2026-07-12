@@ -3,11 +3,11 @@
   "question": "Generative AI differs from other AI subfields primarily in that it is designed to create new content based on learned patterns, whereas computer vision focuses on interpreting visual data and natural language processing emphasizes understanding text. Which statement best captures a key limitation that distinguishes generative AI from these other approaches?",
   "options": [
    "Generative AI cannot process multiple data modalities simultaneously, while NLP and computer vision each handle single input types exclusively.",
-   "Generative AI may produce outputs that appear plausible but contain factually incorrect information, even when trained on high-quality datasets.",
    "Generative AI requires significantly more labeled training data than computer vision systems but less than robotics applications demand.",
+   "Generative AI may produce outputs that appear plausible but contain factually incorrect information, even when trained on high-quality datasets.",
    "Generative AI operates only on text-based inputs, whereas NLP handles structured data and computer vision interprets unstructured visual information."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Generative AI's tendency to produce plausible-sounding but inaccurate outputs (hallucination) is a defining limitation distinct from other AI subfields' challenges. Computer vision systems struggle with adversarial examples, and NLP systems may lose context in long sequences, but generative AI's specific weakness is generating convincing false information. The other options mischaracterize either the scope of generative AI or the nature of other subfields.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -15,12 +15,12 @@
  {
   "question": "Large language models demonstrate sophisticated capabilities in tasks ranging from summarization to translation, yet their performance varies considerably across different domains and languages. What explains this variance in LLM performance more fundamentally than model size alone?",
   "options": [
+   "The tokenization method used during preprocessing, since all languages require identical token vocabularies to achieve comparable accuracy rates.",
    "The distribution and quality of training data, combined with how well the model's learned patterns align with the specific task or language's underlying structure.",
    "The number of transformer layers and attention heads in the model architecture, which directly determines computational capacity for all processing tasks.",
-   "The inclusion of reinforcement learning from human feedback, which is uniformly applied regardless of domain or language characteristics.",
-   "The tokenization method used during preprocessing, since all languages require identical token vocabularies to achieve comparable accuracy rates."
+   "The inclusion of reinforcement learning from human feedback, which is uniformly applied regardless of domain or language characteristics."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "LLM performance depends heavily on training data coverage and quality for specific domains and languages, not merely on parameter count. A model trained predominantly on English text will perform worse on low-resource languages regardless of size. While architecture and RLHF matter, neither explains why the same-sized model performs better on well-represented domains than underrepresented ones, and tokenization is a technical detail that does not fundamentally account for performance variance across tasks.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -28,12 +28,12 @@
  {
   "question": "Generative AI applications in healthcare show promise for drug discovery and diagnostic support, while research applications include literature analysis and hypothesis generation. Which of the following represents a capability rather than a limitation when comparing generative AI to traditional computational methods in these domains?",
   "options": [
-   "Generative AI can identify novel patterns in large datasets and propose unconventional research directions faster than manual literature review, though validation by human experts remains necessary.",
+   "Generative AI requires significantly less computational infrastructure than traditional machine learning, making it accessible for all research institutions regardless of funding.",
    "Generative AI processes medical images with higher sensitivity than radiologists in all clinical scenarios without requiring domain-specific model retraining.",
    "Generative AI eliminates the need for subject-matter expertise in healthcare and research by automating all aspects of decision-making and discovery.",
-   "Generative AI requires significantly less computational infrastructure than traditional machine learning, making it accessible for all research institutions regardless of funding."
+   "Generative AI can identify novel patterns in large datasets and propose unconventional research directions faster than manual literature review, though validation by human experts remains necessary."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Generative AI's ability to rapidly synthesize information and suggest novel patterns is a genuine capability that augments human researchers, though outputs require expert validation. Option B overstates performance generalization across clinical scenarios. Option C misses that domain expertise remains critical for interpreting and validating AI outputs. Option D is factually incorrect, as LLMs demand substantial computational resources compared to many traditional methods.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -41,12 +41,12 @@
  {
   "question": "When designing a generative AI system for digital art creation, developers must balance the model's ability to produce novel, high-quality images against ethical and practical constraints. Which consideration most directly reflects a fundamental tension inherent to generative AI's nature rather than a technical implementation detail?",
   "options": [
-   "The model must be trained on vast datasets of existing artwork, raising questions about artist attribution, consent, and copyright protection for works in the training corpus.",
    "The system architecture must use convolutional neural networks rather than transformer-based approaches to optimize image generation speed and memory efficiency.",
+   "The preprocessing pipeline must normalize pixel values to a standard range before feeding images into the generative model to ensure stable training convergence.",
    "The output resolution cannot exceed 4K dimensions due to GPU memory limitations, requiring careful optimization of the diffusion model's timestep schedule.",
-   "The preprocessing pipeline must normalize pixel values to a standard range before feeding images into the generative model to ensure stable training convergence."
+   "The model must be trained on vast datasets of existing artwork, raising questions about artist attribution, consent, and copyright protection for works in the training corpus."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The tension between generative AI's generative capability (learning from examples) and ethical concerns over training data sourcing is fundamental to how these systems work. This is not a solvable technical problem but an inherent philosophical challenge of the technology. Options B, C, and D describe genuine engineering constraints but are specific to implementation choices, not fundamental to generative AI's nature or necessary for all such systems.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -54,12 +54,12 @@
  {
   "question": "Large language models achieve their language understanding and generation capabilities through learning statistical patterns in vast text corpora. Given this training approach, which statement most accurately characterizes both a genuine capability and the corresponding limitation of LLMs?",
   "options": [
+   "LLMs require continuous retraining on new data every hour to maintain accurate language understanding, unlike other AI subfields that achieve permanence once deployed.",
    "LLMs can generate contextually appropriate text across many domains because they learn word association patterns, yet they may fail on tasks requiring real-time information or recent events outside their training data cutoff.",
-   "LLMs understand the semantic meaning of words identically to humans because both rely on word embeddings that capture universal linguistic truth.",
    "LLMs perform consistently well on all mathematical reasoning tasks since statistical pattern matching is mathematically equivalent to symbolic computation.",
-   "LLMs require continuous retraining on new data every hour to maintain accurate language understanding, unlike other AI subfields that achieve permanence once deployed."
+   "LLMs understand the semantic meaning of words identically to humans because both rely on word embeddings that capture universal linguistic truth."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "LLMs' strength in context-aware text generation stems from pattern learning, but this same mechanism creates a blind spot: they cannot access information outside their training distribution, making them unreliable for time-sensitive or novel queries. Option B falsely equates statistical learning with human semantics. Option C incorrectly assumes pattern matching equals symbolic reasoning. Option D misrepresents training requirements across all AI systems.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -67,12 +67,12 @@
  {
   "question": "A self-driving vehicle's decision-making system must choose between swerving left into oncoming traffic or braking hard, risking a rear-end collision. Which ethical framework does this dilemma most directly challenge in AI deployment?",
   "options": [
+   "Data privacy standards that govern how personal location information is collected from the vehicle",
    "Utilitarian principles that require minimizing total harm across all parties involved in the decision",
    "Transparency requirements that demand the vehicle disclose its decision-making process to passengers",
-   "Data privacy standards that govern how personal location information is collected from the vehicle",
    "Regulatory compliance frameworks that ensure the manufacturer meets safety certification thresholds"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Self-driving vehicle dilemmas are ethical puzzles because they force AI systems to make trade-offs between different harms—a utilitarian problem. Transparency, privacy, and compliance are important governance issues but do not directly address the core ethical conflict of choosing between competing harmful outcomes.",
   "difficulty": "hard",
   "knowledge_area": "Privacy and Ethics"
@@ -80,12 +80,12 @@
  {
   "question": "A facial recognition system trained primarily on images from one geographic region and demographic group shows 15% higher error rates when identifying individuals from underrepresented populations. What is the root mechanism by which this system inherited bias?",
   "options": [
-   "The training dataset contained insufficient representation of the underrepresented populations, causing the model to learn statistical patterns biased toward the majority group",
-   "The algorithm's underlying mathematical formula contains a built-in weighting factor that penalizes minority classification outcomes",
    "The system was intentionally designed to prioritize accuracy for the majority group at the expense of minority accuracy",
-   "The neural network architecture inherently processes facial features differently based on skin tone and ethnic characteristics"
+   "The algorithm's underlying mathematical formula contains a built-in weighting factor that penalizes minority classification outcomes",
+   "The neural network architecture inherently processes facial features differently based on skin tone and ethnic characteristics",
+   "The training dataset contained insufficient representation of the underrepresented populations, causing the model to learn statistical patterns biased toward the majority group"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Algorithmic bias most commonly arises from imbalanced or non-representative training data, causing models to learn skewed patterns. While formula weighting, intentional design, and architectural features could theoretically introduce bias, the primary documented mechanism in real-world systems is underrepresentation in the training dataset itself.",
   "difficulty": "hard",
   "knowledge_area": "Privacy and Ethics"
@@ -93,12 +93,12 @@
  {
   "question": "A large language model trained on internet text data is deployed for customer service. During testing, it occasionally generates plausible-sounding but entirely false information about product warranties and refund policies. How does this credibility risk differ from a security or privacy risk?",
   "options": [
-   "Hallucinations represent output quality failures that erode user trust, whereas security risks involve unauthorized access to protected data",
-   "Hallucinations only affect individual users, while privacy breaches expose data belonging to entire populations simultaneously",
    "Hallucinations occur because the model lacks sufficient parameters, whereas privacy risks stem from inadequate encryption protocols",
-   "Hallucinations are temporary errors that resolve themselves, whereas security risks create permanent vulnerabilities in system architecture"
+   "Hallucinations are temporary errors that resolve themselves, whereas security risks create permanent vulnerabilities in system architecture",
+   "Hallucinations represent output quality failures that erode user trust, whereas security risks involve unauthorized access to protected data",
+   "Hallucinations only affect individual users, while privacy breaches expose data belonging to entire populations simultaneously"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Hallucinations are credibility problems—the model produces false information that sounds correct, eroding trust in output accuracy. Security and privacy risks involve unauthorized data access or exposure. These are distinct failure modes: hallucinations degrade information quality, while breaches compromise data confidentiality or integrity.",
   "difficulty": "hard",
   "knowledge_area": "Privacy and Ethics"
@@ -106,12 +106,12 @@
  {
   "question": "An organization implements surveillance AI that monitors employee productivity by analyzing keystroke patterns, email content, and calendar metadata. Which privacy concern is most difficult to mitigate through technical safeguards alone?",
   "options": [
-   "The collection and aggregation of behavioral data enables inference of personal information not explicitly provided, creating a scope creep risk that outpaces consent frameworks",
    "The surveillance system stores collected data in an unencrypted database, making it vulnerable to theft by external attackers",
+   "The collection and aggregation of behavioral data enables inference of personal information not explicitly provided, creating a scope creep risk that outpaces consent frameworks",
    "The organization failed to implement role-based access controls, allowing any administrator to view any employee's monitored activities",
    "The AI model was trained on historical surveillance data that included employees who never agreed to monitoring"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Scope creep and inference risks represent fundamental privacy challenges: from keystroke and email data, AI can deduce sensitive information like health status, financial stress, or personal beliefs. Technical safeguards like encryption and access controls address data security but cannot prevent inferences drawn from the data itself once collected. This represents a structural ethical problem, not merely an implementation flaw.",
   "difficulty": "hard",
   "knowledge_area": "Privacy and Ethics"
@@ -120,8 +120,8 @@
   "question": "A generative AI system is fine-tuned on historical news articles to predict public opinion. Analysis reveals that the model disproportionately amplifies sensational framing and underrepresents nuanced reporting. Which source of bias is most likely responsible?",
   "options": [
    "The training data's own editorial and sampling biases became embedded in the model's learned representations of what constitutes 'newsworthy' framing",
-   "The model's loss function was explicitly weighted to prioritize predicting engagement metrics over accuracy",
    "The fine-tuning process used a smaller, curated subset of articles intentionally selected to represent mainstream viewpoints",
+   "The model's loss function was explicitly weighted to prioritize predicting engagement metrics over accuracy",
    "The neural network architecture includes attention mechanisms that inherently favor high-variance inputs over low-variance ones"
   ],
   "correct_index": 0,
@@ -132,12 +132,12 @@
  {
   "question": "A dataset contains values: 12, 15, 18, 20, 25, 28, 32. The researcher calculates the mean as 21.43 and the median as 20. If a new value of 100 is added to the dataset, which measure of central tendency will experience the greatest proportional change?",
   "options": [
-   "The median will increase by approximately 4.3 units, while the mean increases by about 9.5 units due to the extreme outlier",
    "The mean will shift upward by roughly 9.5 units, but the median will remain relatively stable near 22 due to its resistance to outliers",
-   "The mode cannot be recalculated when outliers are present, so the median becomes the only reliable measure of center",
-   "Both the mean and median will increase proportionally by the same percentage since the dataset size increased from seven to eight values"
+   "The median will increase by approximately 4.3 units, while the mean increases by about 9.5 units due to the extreme outlier",
+   "Both the mean and median will increase proportionally by the same percentage since the dataset size increased from seven to eight values",
+   "The mode cannot be recalculated when outliers are present, so the median becomes the only reliable measure of center"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The mean is sensitive to extreme values and shifts significantly (from 21.43 to ~30.88), while the median's position changes minimally because it depends only on the middle value's rank, not magnitude. This illustrates why median is often preferred for skewed datasets with outliers.",
   "difficulty": "hard",
   "knowledge_area": "Probability and Statistics Foundations"
@@ -145,12 +145,12 @@
  {
   "question": "Two investment portfolios have the same mean annual return of 8%. Portfolio A has a standard deviation of 4%, while Portfolio B has a standard deviation of 12%. An investor claims that because both portfolios have identical expected returns, they are equally attractive. Which statistical concept most directly contradicts this claim?",
   "options": [
-   "Covariance measures the correlation between portfolios and proves Portfolio B will outperform over time",
-   "Variance and standard deviation quantify dispersion around the mean, showing Portfolio B carries substantially higher volatility and risk",
+   "Range comparison demonstrates that Portfolio A's minimum and maximum possible returns differ less than Portfolio B's stated boundaries",
    "The coefficient of variation indicates Portfolio A's returns are more negatively skewed, making it more predictable than Portfolio B",
-   "Range comparison demonstrates that Portfolio A's minimum and maximum possible returns differ less than Portfolio B's stated boundaries"
+   "Variance and standard deviation quantify dispersion around the mean, showing Portfolio B carries substantially higher volatility and risk",
+   "Covariance measures the correlation between portfolios and proves Portfolio B will outperform over time"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Standard deviation directly measures how far returns typically deviate from the mean; Portfolio B's higher standard deviation (12% vs 4%) indicates greater variability and risk around the same 8% expected return. This illustrates that measures of dispersion, not just central tendency, are essential for comparing investments.",
   "difficulty": "hard",
   "knowledge_area": "Probability and Statistics Foundations"
@@ -158,10 +158,10 @@
  {
   "question": "A manufacturing process produces widgets where the weight follows a normal distribution with mean 500g and standard deviation 10g. Quality control accepts widgets between 490g and 510g. Approximately what percentage of widgets will fall outside this acceptable range, assuming the distribution is perfectly Gaussian?",
   "options": [
-   "Approximately 32% will be rejected because the range covers one standard deviation on each side",
+   "Approximately 68% will be rejected because one standard deviation contains only 16% of the distribution in each tail",
    "Approximately 5% will be rejected because the acceptable range spans roughly two standard deviations from the mean",
    "Approximately 0.3% will be rejected because three standard deviations from the mean captures 99.7% of production",
-   "Approximately 68% will be rejected because one standard deviation contains only 16% of the distribution in each tail"
+   "Approximately 32% will be rejected because the range covers one standard deviation on each side"
   ],
   "correct_index": 1,
   "explanation": "The acceptable range of 490–510g equals mean ± 20g, which is exactly ±2 standard deviations. In a normal distribution, approximately 95% of values fall within ±2σ, leaving about 5% in both tails combined outside this range. This demonstrates the practical application of the empirical rule in quality assurance.",
@@ -171,12 +171,12 @@
  {
   "question": "A probability model for customer purchase amounts shows: P(X = $50) = 0.30, P(X = $75) = 0.45, P(X = $150) = 0.20, P(X = $200) = 0.05. An analyst calculates E(X) = $91.25. Which statement best explains what this expected value represents in the context of the business?",
   "options": [
-   "The expected value equals the most likely single purchase amount that occurs 45% of the time across all transactions",
    "The expected value is the long-run average purchase per customer if the probability distribution remains constant over many transactions",
+   "The expected value represents the guaranteed minimum revenue per customer because it weights outcomes by their probabilities",
    "The expected value indicates the median purchase amount that splits the customer base into equal halves by spending",
-   "The expected value represents the guaranteed minimum revenue per customer because it weights outcomes by their probabilities"
+   "The expected value equals the most likely single purchase amount that occurs 45% of the time across all transactions"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Expected value is the probability-weighted average of all possible outcomes and converges to the true mean as sample size increases. It does not represent the most likely value (mode), middle value (median), or a guarantee; rather, it is the theoretical average return or outcome per trial over infinitely many repetitions.",
   "difficulty": "hard",
   "knowledge_area": "Probability and Statistics Foundations"
@@ -184,9 +184,9 @@
  {
   "question": "A dataset contains both discrete variables (number of customer complaints: 0, 1, 2, 3) and continuous variables (customer satisfaction score: 4.2, 4.7, 5.0). A data analyst needs to calculate variance for both types. Which statement correctly describes the computational or interpretive difference when variance is applied to each variable type?",
   "options": [
-   "Discrete variable variance uses only integer differences, while continuous variable variance requires logarithmic transformation of measurements",
-   "Both use identical variance formulas, but discrete variable variance indicates gaps between possible values, while continuous variance reflects infinite divisibility within ranges",
    "Continuous variable variance always produces larger values because the measurement scale is finer, making variance calculations inherently incomparable between types",
+   "Both use identical variance formulas, but discrete variable variance indicates gaps between possible values, while continuous variance reflects infinite divisibility within ranges",
+   "Discrete variable variance uses only integer differences, while continuous variable variance requires logarithmic transformation of measurements",
    "Discrete variable variance must exclude zero values from calculation, whereas continuous variable variance includes all observed values regardless of magnitude"
   ],
   "correct_index": 1,
@@ -198,9 +198,9 @@
   "question": "Generative AI differs from traditional AI systems primarily in its approach to producing outputs. Which of the following best distinguishes generative AI from conventional machine learning models?",
   "options": [
    "It creates new content by learning patterns from training data rather than retrieving or classifying existing examples",
+   "It is designed only for language tasks and cannot be applied to image generation, music composition, or other creative domains",
    "It requires significantly larger datasets than discriminative models and cannot function with fewer than one million training examples",
-   "It exclusively uses transformer architectures and cannot be trained on unstructured data from any other source",
-   "It is designed only for language tasks and cannot be applied to image generation, music composition, or other creative domains"
+   "It exclusively uses transformer architectures and cannot be trained on unstructured data from any other source"
   ],
   "correct_index": 0,
   "explanation": "Generative AI fundamentally produces new outputs by learning underlying patterns, whereas traditional classifiers assign labels to existing data. The other options incorrectly impose false restrictions—generative models work with varied dataset sizes, use multiple architectures, and apply across many domains beyond language.",
@@ -210,12 +210,12 @@
  {
   "question": "Large Language Models (LLMs) have demonstrated remarkable capabilities in language understanding and generation, yet they exhibit specific limitations. Which statement most accurately captures both a genuine capability and a true limitation of current LLMs?",
   "options": [
+   "LLMs have perfect knowledge cutoffs and can access real-time information, but they struggle with simple classification tasks",
    "LLMs excel at reasoning over long documents and can reliably perform multi-step mathematical calculations without error",
    "LLMs generate human-like text and understand context, but they can hallucinate facts and lack true comprehension of causality",
-   "LLMs have perfect knowledge cutoffs and can access real-time information, but they struggle with simple classification tasks",
    "LLMs are completely transparent in their decision-making processes and can explain every token prediction through interpretable logic"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "LLMs do produce fluent text and handle contextual language well, but they are prone to generating false information (hallucination) and do not truly understand cause-and-effect relationships. The other options misstate limitations: LLMs have knowledge cutoffs (not perfect ones), cannot access real-time data, and lack interpretability.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -223,12 +223,12 @@
  {
   "question": "Generative AI has found distinct applications across multiple domains, each leveraging different strengths of the technology. In healthcare and research contexts, generative AI is used differently than in creative fields. Which comparison most accurately reflects how generative AI serves these different domains?",
   "options": [
+   "Healthcare generates synthetic patient records for algorithm training, while research creates models only for predicting stock prices and cannot use generative AI for scientific analysis",
    "Healthcare uses generative AI for drug discovery and patient data synthesis, while research relies solely on image classification and has no overlap with creative applications",
-   "Research applications focus on hypothesis generation and literature summarization from large datasets, while healthcare uses it for diagnostic imaging and treatment recommendations with patient safety constraints",
    "Creative digital art uses generative AI exclusively for image synthesis, while healthcare and research fields use it only for document analysis and cannot benefit from content generation",
-   "Healthcare generates synthetic patient records for algorithm training, while research creates models only for predicting stock prices and cannot use generative AI for scientific analysis"
+   "Research applications focus on hypothesis generation and literature summarization from large datasets, while healthcare uses it for diagnostic imaging and treatment recommendations with patient safety constraints"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Generative AI in research supports hypothesis generation and synthesis of research literature, while healthcare applications include both diagnostic support and safe generation of synthetic data for training. The other options falsely segregate applications into single domains or misstate the actual use cases.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -236,12 +236,12 @@
  {
   "question": "AI as a field encompasses multiple specialized subfields that focus on different aspects of intelligence and interaction. Computer vision, natural language processing, human-computer interaction, and robotics represent distinct areas with different core challenges. Which statement most accurately distinguishes between two of these AI subfields and their respective focuses?",
   "options": [
-   "Computer vision processes visual information to extract meaning from images and video, while NLP focuses on understanding and generating human language from text and speech",
-   "Robotics is concerned only with autonomous movement and cannot incorporate vision or language capabilities into robotic systems",
    "Natural language processing and human-computer interaction are identical fields with no meaningful distinction in their goals or methodologies",
-   "Computer vision requires supervised learning exclusively, whereas NLP can only function with unsupervised approaches and reinforcement learning"
+   "Robotics is concerned only with autonomous movement and cannot incorporate vision or language capabilities into robotic systems",
+   "Computer vision requires supervised learning exclusively, whereas NLP can only function with unsupervised approaches and reinforcement learning",
+   "Computer vision processes visual information to extract meaning from images and video, while NLP focuses on understanding and generating human language from text and speech"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Computer vision interprets visual data, while NLP handles linguistic understanding and generation—these are distinct subfields with different core challenges. The other options incorrectly claim that robotics excludes other capabilities, conflate NLP with HCI, or misstate the learning paradigms used in each field.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -249,12 +249,12 @@
  {
   "question": "The capabilities of generative AI systems have expanded significantly, but they remain subject to important constraints. When evaluating what a generative AI system can realistically achieve, which of the following most accurately balances a genuine capability with an actual limitation?",
   "options": [
-   "Generative AI can produce coherent multi-page documents on complex topics and has perfect factual accuracy across all domains without requiring human verification",
    "Generative AI can synthesize novel content combining information from its training data and generate text across multiple languages, but it cannot distinguish between plausible misinformation and verified facts",
-   "Generative AI creates only short text snippets and cannot handle any task involving images, audio, or creative content of any kind",
-   "Generative AI guarantees originality and never reproduces training data, while simultaneously requiring constant internet access to function on any task"
+   "Generative AI can produce coherent multi-page documents on complex topics and has perfect factual accuracy across all domains without requiring human verification",
+   "Generative AI guarantees originality and never reproduces training data, while simultaneously requiring constant internet access to function on any task",
+   "Generative AI creates only short text snippets and cannot handle any task involving images, audio, or creative content of any kind"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Generative AI can indeed produce lengthy documents in multiple languages through its training data, but it struggles with factuality verification and can propagate false information convincingly. The other options either claim impossible perfection, incorrectly limit AI scope, or make contradictory claims about originality and connectivity.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -262,12 +262,12 @@
  {
   "question": "A data scientist is building a model to predict customer churn. She has 10,000 labeled records and wants to assess both generalization performance and hyperparameter tuning. How should she partition the data, and what is the primary purpose of each partition?",
   "options": [
-   "Training set to fit the model parameters, validation set to tune hyperparameters and prevent overfitting, test set to estimate final generalization error on unseen data",
-   "Training set to fit the model parameters, test set to tune hyperparameters and measure performance, validation set to detect data quality issues before modeling",
    "Training set to fit the model parameters, validation set to measure final accuracy, test set to identify feature correlations and engineer new variables",
+   "Training set to fit the model parameters, test set to tune hyperparameters and measure performance, validation set to detect data quality issues before modeling",
+   "Training set to fit the model parameters, validation set to tune hyperparameters and prevent overfitting, test set to estimate final generalization error on unseen data",
    "Training set to fit the model parameters, test set to prevent overfitting, validation set to compare against baseline models and select the best one"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The standard three-partition strategy reserves the training set for learning, the validation set for hyperparameter selection and regularization decisions, and the test set as a held-out, never-tuned benchmark for true generalization error. Option B misaligns test and validation purposes; C conflates validation with exploratory analysis; D reverses the roles of test and validation.",
   "difficulty": "hard",
   "knowledge_area": "Machine Learning"
@@ -275,12 +275,12 @@
  {
   "question": "When comparing a decision tree and a neural network on the same supervised classification task, a practitioner observes that the decision tree achieves high training accuracy but poor test accuracy, while the neural network achieves moderate training and test accuracy. What does this pattern suggest about the two models' behavior?",
   "options": [
-   "The decision tree is overfitting due to its tendency to memorize training patterns through recursive splitting, while the neural network's distributed representation and regularization constraints enable better generalization",
-   "The neural network requires more training data than the decision tree, and retraining with additional samples will reverse the performance gap",
+   "The decision tree's shallow depth limits its capacity to learn complex patterns, whereas the neural network's hidden layers extract features that do not generalize across domains",
    "The decision tree's axis-aligned splits are more interpretable, making it preferable despite lower test accuracy, and the neural network is underfitting",
-   "The decision tree's shallow depth limits its capacity to learn complex patterns, whereas the neural network's hidden layers extract features that do not generalize across domains"
+   "The decision tree is overfitting due to its tendency to memorize training patterns through recursive splitting, while the neural network's distributed representation and regularization constraints enable better generalization",
+   "The neural network requires more training data than the decision tree, and retraining with additional samples will reverse the performance gap"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Decision trees are prone to overfitting because they recursively partition the training space, often capturing noise; neural networks generalize better due to weight sharing, regularization, and learned feature representations. Option B conflates sample size with model complexity; C prioritizes interpretability incorrectly; D reverses the underfitting/overfitting roles and mischaracterizes neural network depth.",
   "difficulty": "hard",
   "knowledge_area": "Machine Learning"
@@ -288,12 +288,12 @@
  {
   "question": "In unsupervised learning, a clustering algorithm partitions a dataset into groups without labeled targets, while in reinforcement learning, an agent learns a policy by receiving reward signals for actions. Which statement best distinguishes these paradigms in terms of feedback structure and learning objective?",
   "options": [
+   "Unsupervised learning optimizes for immediate reward signals in each step, while reinforcement learning discovers hidden patterns without any performance evaluation",
    "Unsupervised learning receives no feedback signal and seeks to discover latent structure; reinforcement learning receives delayed, sparse reward feedback and optimizes cumulative return through trial-and-error interaction",
-   "Unsupervised learning uses unlabeled data to minimize reconstruction error, while reinforcement learning uses labeled data to maximize classification accuracy",
    "Unsupervised learning requires a reward function to guide learning, whereas reinforcement learning has no external feedback and relies only on data similarity metrics",
-   "Unsupervised learning optimizes for immediate reward signals in each step, while reinforcement learning discovers hidden patterns without any performance evaluation"
+   "Unsupervised learning uses unlabeled data to minimize reconstruction error, while reinforcement learning uses labeled data to maximize classification accuracy"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Unsupervised learning has no labels or rewards and aims to uncover hidden structure (clustering, dimensionality reduction); reinforcement learning receives reward signals tied to actions and learns a policy maximizing cumulative reward over time. Option B inverts the labeling assumptions; C reverses the role of reward functions; D contradicts both paradigms' core feedback structures.",
   "difficulty": "hard",
   "knowledge_area": "Machine Learning"
@@ -301,12 +301,12 @@
  {
   "question": "Deep learning differs from shallow machine learning in the number and nature of learned representations. When a deep neural network with five hidden layers learns to recognize faces, how do the intermediate layers' learned features typically evolve from input to output?",
   "options": [
+   "Deep layers learn raw pixel intensities and color distributions, while shallow layers learn abstract concepts because closer proximity to outputs enables faster error gradient flow",
    "Early layers learn low-level features such as edges and textures; middle layers combine these into mid-level patterns like parts; deeper layers learn high-level semantic features such as facial structures and expressions",
    "All layers learn identical feature hierarchies, and the network's depth merely allows more parameters to fit the training data without qualitative differences in learned representations",
-   "The first layer learns the complete face structure, and each subsequent layer refines pixel-level details and noise reduction to improve classification accuracy",
-   "Deep layers learn raw pixel intensities and color distributions, while shallow layers learn abstract concepts because closer proximity to outputs enables faster error gradient flow"
+   "The first layer learns the complete face structure, and each subsequent layer refines pixel-level details and noise reduction to improve classification accuracy"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Deep learning's power comes from hierarchical representation learning: early layers capture simple, low-level patterns (edges, textures), middle layers combine them into part-level features, and deep layers learn abstract, semantic concepts. Option B denies hierarchical abstraction; C reverses the level of abstraction; D inverts the gradient flow and representation hierarchy.",
   "difficulty": "hard",
   "knowledge_area": "Machine Learning"
@@ -314,12 +314,12 @@
  {
   "question": "Given a business problem requiring prediction of future inventory demand based on historical sales, seasonal trends, and promotional events, a data scientist must select between a supervised learning algorithm, an unsupervised algorithm, and a reinforcement learning approach. Which choice and reasoning is most appropriate?",
   "options": [
-   "Supervised learning is appropriate because historical sales form labeled training examples (features: trends, promotions; target: demand), enabling the algorithm to learn a regression function that maps inputs to demand predictions",
-   "Unsupervised learning is optimal because discovering latent clusters in historical sales data will automatically reveal demand patterns without requiring manual labeling of outcomes",
    "Reinforcement learning is necessary because the agent must interact with real inventory and receive delayed reward signals to learn optimal ordering policies",
+   "Unsupervised learning is optimal because discovering latent clusters in historical sales data will automatically reveal demand patterns without requiring manual labeling of outcomes",
+   "Supervised learning is appropriate because historical sales form labeled training examples (features: trends, promotions; target: demand), enabling the algorithm to learn a regression function that maps inputs to demand predictions",
    "The three approaches are equivalent for this problem, and selection depends only on computational budget and available historical data volume, not on problem structure"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Inventory demand prediction is a classic supervised regression task: historical sales, trends, and promotions are features with demand as the labeled target. Unsupervised learning (Option B) discovers structure without targets; reinforcement learning (Option C) requires real-time interaction and delayed rewards, which is unnecessary when historical labels exist. Option D incorrectly equates distinct paradigms.",
   "difficulty": "hard",
   "knowledge_area": "Machine Learning"
@@ -340,12 +340,12 @@
  {
   "question": "You are selecting a visualization for a dataset with three continuous variables: customer age, annual spending, and product return rate. The goal is to identify whether return rate increases or decreases as both age and spending change simultaneously. Which diagram type is most appropriate, and why?",
   "options": [
+   "A histogram of return rates stratified by age deciles, with bars colored by spending quartile, to show the marginal distribution of returns across demographic groups",
    "A boxplot for each age group, with spending ranges shown on the x-axis and return rate on the y-axis, to display univariate distributions across demographic segments",
    "A scatterplot with age on the x-axis, spending on the y-axis, and return rate represented by color intensity, to reveal multivariate relationships and joint patterns",
-   "A histogram of return rates stratified by age deciles, with bars colored by spending quartile, to show the marginal distribution of returns across demographic groups",
    "A multiple-panel boxplot grid comparing return rates within each age-spending combination, to evaluate interdependence without reducing dimensionality"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A scatterplot with a third dimension encoded as color (or size) is the standard choice for displaying three continuous variables and their joint relationships. Boxplots show univariate distributions, histograms show marginal distributions, and panel grids become unwieldy with continuous data. The scatterplot approach directly visualizes multivariate interdependence—the core requirement here.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -353,12 +353,12 @@
  {
   "question": "A data science team is deciding between logistic regression and a decision tree to predict whether a customer will churn. The dataset includes 8 continuous features (spending history, engagement metrics, account age) and 3 categorical features (subscription tier, region, device type). Which statement best describes the trade-offs between these two algorithms in this context?",
   "options": [
+   "Both algorithms require identical data cleaning and handle categorical features equally, but logistic regression outperforms trees on datasets with more continuous than categorical predictors due to its parametric nature",
    "Logistic regression requires feature normalization and assumes linear relationships, while decision trees can handle mixed data types and non-linear patterns, though trees may overfit without pruning constraints",
    "Decision trees automatically perform feature selection and tolerate mixed data with no preprocessing, while logistic regression requires categorical encoding and assumes linear separability, making trees always superior for this dataset",
-   "Logistic regression produces interpretable probability outputs with lower computational cost, while decision trees excel at multivariate interdependence detection but require continuous features to be binned beforehand for accuracy",
-   "Both algorithms require identical data cleaning and handle categorical features equally, but logistic regression outperforms trees on datasets with more continuous than categorical predictors due to its parametric nature"
+   "Logistic regression produces interpretable probability outputs with lower computational cost, while decision trees excel at multivariate interdependence detection but require continuous features to be binned beforehand for accuracy"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Logistic regression assumes linearity and requires normalization and categorical encoding, while decision trees naturally handle mixed data types and capture non-linear relationships; overfitting is a known decision tree risk mitigated by pruning. The other options contain false claims: trees do not require binning of continuous features, the algorithms do not require identical preprocessing, and neither is universally superior based on feature type ratio alone.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -366,12 +366,12 @@
  {
   "question": "A dataset intended for clustering analysis contains product features with widely different scales: price (range $5–$5,000), weight (range 0.1–50 kg), and customer rating (range 1–5). You plan to apply k-means clustering to identify product groups. Which preprocessing step is most critical, and what is its primary purpose?",
   "options": [
-   "Standardizing or normalizing all features to a common scale, because k-means minimizes Euclidean distance and unscaled features with large ranges would dominate the distance calculation and bias cluster assignments",
-   "Removing price as a feature due to its extreme range, because k-means cannot converge when one variable has a range 1,000 times larger than others, regardless of scaling methods applied",
    "Converting continuous features to categorical bins (price tier, weight class, rating level), because k-means requires discrete inputs and clustering categorical data reduces computational complexity significantly",
+   "Removing price as a feature due to its extreme range, because k-means cannot converge when one variable has a range 1,000 times larger than others, regardless of scaling methods applied",
+   "Standardizing or normalizing all features to a common scale, because k-means minimizes Euclidean distance and unscaled features with large ranges would dominate the distance calculation and bias cluster assignments",
    "Applying logarithmic transformation to price and weight, because k-means produces spherical clusters and log-scaling ensures that clusters align with the natural distribution of product features"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "K-means relies on Euclidean distance, so features with large ranges (like $5–$5,000) will overwhelm smaller-range features (like 1–5 rating) in cluster membership decisions. Standardization/normalization corrects this by placing all features on equal footing. Removing price is unnecessary, binning sacrifices information, and log transformation, while sometimes useful, is not the critical step—equal scaling is. The correct answer identifies the preprocessing priority and its specific mechanism.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -379,12 +379,12 @@
  {
   "question": "A company develops a linear regression model to forecast quarterly revenue based on marketing spend, competitor pricing, and seasonal indices. The model shows strong predictive performance on training data (R² = 0.89) but poor performance on new quarterly data from a recent market expansion. Which combination of data and modeling factors is most likely responsible for this gap?",
   "options": [
-   "Training data was collected during stable market conditions, while test data includes expansion-period volatility; the model learned relationships that do not hold in the new market environment, a form of domain shift",
-   "The training dataset contained outliers in marketing spend that inflated R² artificially; removing them would improve generalization because linear regression is sensitive to extreme values in the predictor space",
+   "Multicollinearity between marketing spend and competitor pricing was not detected during model building; the coefficients are unstable and the model cannot extrapolate to expansion markets where pricing correlations differ",
    "Seasonal indices in the training set confounded the relationship between spend and revenue; the model overfit to seasonal patterns and cannot isolate the true effect of marketing investment on sales",
-   "Multicollinearity between marketing spend and competitor pricing was not detected during model building; the coefficients are unstable and the model cannot extrapolate to expansion markets where pricing correlations differ"
+   "The training dataset contained outliers in marketing spend that inflated R² artificially; removing them would improve generalization because linear regression is sensitive to extreme values in the predictor space",
+   "Training data was collected during stable market conditions, while test data includes expansion-period volatility; the model learned relationships that do not hold in the new market environment, a form of domain shift"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "A market expansion introduces fundamentally different conditions—spending levels, competitive responses, and customer behavior may follow different patterns than in the original market. This is domain shift, where the training distribution no longer matches the test distribution. High training R² with poor test performance is a hallmark of this mismatch. The other options describe real issues (outliers, overfitting, multicollinearity) but do not explain why a well-fit model fails on structurally different data.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -392,12 +392,12 @@
  {
   "question": "In predicate logic-based AI systems, how do universal and existential quantifiers differ in their application to knowledge representation?",
   "options": [
-   "Universal quantifiers assert that a property holds for at least one entity, while existential quantifiers assert properties across all entities in a domain",
    "Universal quantifiers express statements applying to all members of a domain, while existential quantifiers specify that a property holds for at least one entity",
+   "Universal quantifiers assert that a property holds for at least one entity, while existential quantifiers assert properties across all entities in a domain",
    "Universal quantifiers allow for conditional reasoning about specific cases, while existential quantifiers enable probabilistic inference across domains",
    "Universal quantifiers restrict reasoning to observed instances only, while existential quantifiers permit extrapolation to unobserved entities"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Universal quantifiers (∀) apply to all entities in a domain, whereas existential quantifiers (∃) assert existence of at least one entity with a property. The other options reverse or confuse these definitions, or conflate them with probabilistic or observational constraints not inherent to the quantifiers themselves.",
   "knowledge_area": "Perception, Representation, and Reasoning",
   "difficulty": "hard"
@@ -406,11 +406,11 @@
   "question": "When comparing logic-based and probability-based reasoning in AI, which distinction most accurately reflects their complementary roles in knowledge representation?",
   "options": [
    "Logic-based reasoning handles uncertain knowledge through weighted rules, while probability-based reasoning provides deterministic conclusions from symbolic representations",
-   "Logic-based reasoning derives certain conclusions from explicit rules and axioms, while probability-based reasoning quantifies uncertainty and degree of belief in propositions",
+   "Logic-based reasoning is used exclusively for deductive tasks, while probability-based reasoning applies only to inductive learning scenarios",
    "Logic-based reasoning requires complete information about all relationships, while probability-based reasoning functions only with partial or noisy data",
-   "Logic-based reasoning is used exclusively for deductive tasks, while probability-based reasoning applies only to inductive learning scenarios"
+   "Logic-based reasoning derives certain conclusions from explicit rules and axioms, while probability-based reasoning quantifies uncertainty and degree of belief in propositions"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Logic-based systems produce definite conclusions from explicit rules, whereas probability-based systems handle uncertainty by assigning likelihoods to propositions. The first option reverses their strengths; the third overstates logic's information requirements; and the fourth incorrectly partitions their domains.",
   "knowledge_area": "Perception, Representation, and Reasoning",
   "difficulty": "hard"
@@ -418,10 +418,10 @@
  {
   "question": "In a Bayesian network, what role do Directed Acyclic Graphs (DAGs) play in representing conditional dependencies among random variables?",
   "options": [
-   "DAGs establish bidirectional dependencies to indicate that variables influence each other equally in both temporal and logical directions",
+   "DAGs function as visual tools for organizing nodes but do not constrain the inference algorithm, allowing cycles if computational power permits",
    "DAGs encode parent-child relationships where directed edges represent conditional probability dependencies, ensuring no cycles to maintain acyclic inference pathways",
    "DAGs restrict reasoning to only the strongest causal links while eliminating weaker correlations that would otherwise create computational cycles",
-   "DAGs function as visual tools for organizing nodes but do not constrain the inference algorithm, allowing cycles if computational power permits"
+   "DAGs establish bidirectional dependencies to indicate that variables influence each other equally in both temporal and logical directions"
   ],
   "correct_index": 1,
   "explanation": "DAGs in Bayesian networks use directed edges to represent conditional dependencies between variables, with the acyclic constraint ensuring valid probability calculations. The first option incorrectly suggests bidirectionality; the third misrepresents filtering of dependencies; and the fourth ignores the mathematical necessity of acyclicity for proper inference.",
@@ -431,9 +431,9 @@
  {
   "question": "How do nodes and edges function differently within a Bayesian network structure compared to their roles in a general graph representation?",
   "options": [
-   "Nodes represent individual data points while edges indicate similarity metrics, whereas in Bayesian networks nodes are variables and edges encode conditional probability relationships",
-   "In Bayesian networks, nodes represent random variables and edges encode conditional independence relationships, whereas general graphs use nodes for entities and edges for abstract connections",
    "Nodes in Bayesian networks store probability distributions, and edges represent data flow pathways, unlike general graphs where edges merely denote adjacency without semantic meaning",
+   "In Bayesian networks, nodes represent random variables and edges encode conditional independence relationships, whereas general graphs use nodes for entities and edges for abstract connections",
+   "Nodes represent individual data points while edges indicate similarity metrics, whereas in Bayesian networks nodes are variables and edges encode conditional probability relationships",
    "Nodes function as computational units in Bayesian networks, while edges implement algorithms, whereas general graphs use nodes for storage and edges for structural organization"
   ],
   "correct_index": 1,
@@ -444,12 +444,12 @@
  {
   "question": "When implementing knowledge representation and reasoning in AI systems using predicate logic, which challenge most directly arises from scaling to real-world domains?",
   "options": [
+   "The requirement to explicitly state all negative facts alongside positive facts doubles the knowledge base size and makes maintenance intractable for realistic problem spaces",
    "The combinatorial explosion of possible predicate instantiations and inference paths increases computational complexity exponentially as domain size and rule set grow",
    "Predicate logic becomes unable to represent continuous variables, requiring conversion to discrete approximations that lose semantic precision in natural reasoning tasks",
-   "The requirement to explicitly state all negative facts alongside positive facts doubles the knowledge base size and makes maintenance intractable for realistic problem spaces",
    "Predicate logic systems cannot integrate probabilistic information, forcing abandonment of uncertainty handling mechanisms necessary for autonomous decision-making"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The primary scalability challenge in logic-based systems is the exponential growth in possible instantiations and inference pathways as domains expand. The second option conflates representation type with quantization issues; the third misrepresents the closed-world assumption; and the fourth overstates incompatibility with probabilistic augmentations like Bayesian logic.",
   "knowledge_area": "Perception, Representation, and Reasoning",
   "difficulty": "hard"
@@ -470,12 +470,12 @@
  {
   "question": "During data cleaning, an analyst discovers that 15% of records in a customer database contain missing values in the 'phone number' field, 8% have duplicate customer IDs, and 22% were entered by a third-party vendor known for inconsistent formatting. Which of these factors presents the most significant threat to data quality for a predictive model?",
   "options": [
-   "The missing phone numbers, because incomplete datasets reduce the effective sample size and can bias parameter estimation",
-   "The duplicate customer IDs, because they create redundancy and violate the independence assumption required by most algorithms",
    "The third-party vendor records, because low-quality sources introduce systematic measurement error across 22% of observations",
-   "All three factors equally, since any deviation from perfect data prevents accurate model training"
+   "All three factors equally, since any deviation from perfect data prevents accurate model training",
+   "The missing phone numbers, because incomplete datasets reduce the effective sample size and can bias parameter estimation",
+   "The duplicate customer IDs, because they create redundancy and violate the independence assumption required by most algorithms"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Low-quality sources introduce systematic bias rather than random error—the 22% from an unreliable vendor corrupts the training process across multiple variables and records. While missing data and duplicates harm model quality, systematic measurement error from a known low-quality source is more damaging because it biases the model's learned relationships rather than simply reducing information.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -483,12 +483,12 @@
  {
   "question": "A real estate company applies multiple linear regression to predict home prices using square footage, number of bedrooms, and neighborhood crime rate. The analyst then applies logistic regression to the same dataset to classify homes as 'above median price' or 'below median price.' How do these two model types differ in their application to this problem?",
   "options": [
-   "Multiple linear regression predicts a continuous output while logistic regression models binary classification; linear regression assumes linear relationships whereas logistic regression applies a sigmoid transformation to bound predictions between 0 and 1",
-   "Multiple linear regression is used only for univariate analysis while logistic regression handles multivariate relationships between predictors and the target",
    "Logistic regression is superior for this dataset because it produces probabilities rather than point estimates, making results more interpretable",
-   "Both models produce identical predictions but differ in their computational algorithms, with logistic regression being faster for large datasets"
+   "Multiple linear regression predicts a continuous output while logistic regression models binary classification; linear regression assumes linear relationships whereas logistic regression applies a sigmoid transformation to bound predictions between 0 and 1",
+   "Both models produce identical predictions but differ in their computational algorithms, with logistic regression being faster for large datasets",
+   "Multiple linear regression is used only for univariate analysis while logistic regression handles multivariate relationships between predictors and the target"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Linear regression outputs continuous values (predicted price) while logistic regression outputs probabilities bounded between 0 and 1 for class membership. The sigmoid function in logistic regression is essential for binary classification, whereas the linear equation in multiple regression suits continuous prediction—these are fundamentally different model structures for different problem types.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -496,12 +496,12 @@
  {
   "question": "An e-commerce platform uses k-means clustering to segment customers based on purchase frequency, average transaction value, and account tenure. The algorithm identifies three distinct clusters. However, the business notices that cluster membership is highly sensitive to the scale of the input variables—changing from raw values to standardized values reassigns 30% of customers to different clusters. What does this behavior reveal about the clustering solution?",
   "options": [
-   "The three clusters are unstable due to scale-dependent distance calculations; the original solution likely reflected the variable with the largest range rather than meaningful customer patterns",
-   "The standardization process introduces noise that corrupts the true clustering structure; the original non-standardized results are more reliable",
+   "The customer segments are not truly distinct, which is why any preprocessing technique dramatically changes the groupings",
    "The high reassignment rate proves that k-means clustering is inappropriate for this dataset and decision trees should be used instead",
-   "The customer segments are not truly distinct, which is why any preprocessing technique dramatically changes the groupings"
+   "The standardization process introduces noise that corrupts the true clustering structure; the original non-standardized results are more reliable",
+   "The three clusters are unstable due to scale-dependent distance calculations; the original solution likely reflected the variable with the largest range rather than meaningful customer patterns"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "K-means calculates distance in the original feature space, so variables with larger ranges (e.g., account tenure in days vs. frequency in 0-100) dominate the distance metric. Standardization removes this bias by placing all variables on equal footing, revealing that the original solution was an artifact of scale rather than genuine customer patterns. The sensitivity indicates the original clustering was unreliable, not that standardization is harmful.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -509,12 +509,12 @@
  {
   "question": "A dataset intended for training a decision tree model contains 50,000 transactions, but manual inspection reveals that 12% of records are exact duplicates (identical values across all 18 features), 7% contain transcription errors in key fields, and 3% are missing entire feature blocks. An analyst must prioritize which quality issues to address first. Which approach balances statistical impact with practical effort?",
   "options": [
-   "Remove all duplicates first since they inflate apparent sample size and reduce model generalization; then address missing data through imputation or deletion based on missingness mechanism; finally correct transcription errors in high-impact features",
    "Correct all transcription errors immediately because they produce false patterns that bias model learning more severely than duplicates or missing data",
+   "Remove all duplicates first since they inflate apparent sample size and reduce model generalization; then address missing data through imputation or deletion based on missingness mechanism; finally correct transcription errors in high-impact features",
    "Delete the 3% with missing feature blocks, then ignore duplicates since they represent only 12% and won't significantly affect a tree's performance on 50,000 records",
    "Impute all missing values across the dataset before addressing duplicates, since incomplete records cannot be used in any training algorithm"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Removing duplicates prevents inflated sample size and ensures independence assumptions; imputation or strategic deletion of missing data preserves records while addressing incompleteness; targeted correction of transcription errors in high-variance features yields the most impact per effort. This prioritization addresses both the severity of the quality problem and the practical cost of remediation.",
   "difficulty": "hard",
   "knowledge_area": "Data Analysis and Statistics for AI"
@@ -522,12 +522,12 @@
  {
   "question": "When converting between data representations, a dataset contains a hexadecimal value of 2F. Which of the following accurately represents this value in decimal and binary formats?",
   "options": [
-   "Decimal 47 and binary 00101111, used when precise numeric encoding is needed for computational efficiency",
-   "Decimal 52 and binary 00110100, commonly applied in legacy systems where base-16 notation reduces file size",
+   "Decimal 63 and binary 00111111, standard in database indexing where maximum bit values optimize query performance",
    "Decimal 47 and binary 00101111, preferred in network protocols where hexadecimal shorthand improves data transmission",
-   "Decimal 63 and binary 00111111, standard in database indexing where maximum bit values optimize query performance"
+   "Decimal 52 and binary 00110100, commonly applied in legacy systems where base-16 notation reduces file size",
+   "Decimal 47 and binary 00101111, used when precise numeric encoding is needed for computational efficiency"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Hexadecimal 2F converts to decimal 47 (2×16¹ + 15×16⁰) and binary 00101111. Options B and D use incorrect decimal values (52 and 63), while option C, though it has the correct conversion, pairs it with a different application context that doesn't strengthen the technical validity.",
   "difficulty": "hard",
   "knowledge_area": "Data Literacy and Foundations"
@@ -535,12 +535,12 @@
  {
   "question": "In the data science process, data wrangling and transformation serve as critical intermediate stages. Which statement most accurately describes why these stages are essential before analysis and modeling?",
   "options": [
-   "Raw data from multiple sources often contains inconsistencies, missing values, and formatting mismatches that would compromise model accuracy and interpretability if left unaddressed",
+   "These stages convert unstructured data into structured schemas and reduce dataset volume by removing features that show low statistical correlation with known outcomes",
    "Transformation stages standardize all categorical variables into numeric formats and remove outliers to ensure every dataset conforms to normal distribution assumptions",
-   "Wrangling eliminates the need for exploratory data analysis by automatically identifying and correcting all data quality issues through predefined algorithmic rules",
-   "These stages convert unstructured data into structured schemas and reduce dataset volume by removing features that show low statistical correlation with known outcomes"
+   "Raw data from multiple sources often contains inconsistencies, missing values, and formatting mismatches that would compromise model accuracy and interpretability if left unaddressed",
+   "Wrangling eliminates the need for exploratory data analysis by automatically identifying and correcting all data quality issues through predefined algorithmic rules"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Option A correctly identifies that wrangling addresses real-world data quality issues (inconsistencies, missing values, formatting) to ensure valid analysis. Option B overstates transformation scope—not all outliers should be removed and normal distribution is not always required. Option C incorrectly claims wrangling eliminates EDA. Option D conflates wrangling with feature selection and dimensionality reduction, which are separate steps.",
   "difficulty": "hard",
   "knowledge_area": "Data Literacy and Foundations"
@@ -548,12 +548,12 @@
  {
   "question": "A data scientist receives three datasets: one containing customer purchase dates and transaction amounts, one containing satellite imagery of manufacturing facilities, and one containing sensor readings from industrial equipment. Which statement best characterizes the structural nature and appropriate handling of these sources?",
   "options": [
-   "Purchase and sensor data are structured with defined schemas and rows; imagery is unstructured and requires feature extraction techniques before quantitative analysis can begin",
-   "All three are unstructured sources requiring natural language processing and image recognition preprocessing before they can be integrated into a unified analytical framework",
    "Sensor data and imagery are structured time-series formats; purchase data is unstructured text and needs tokenization before any exploratory analysis is possible",
-   "Purchase and imagery data are structured relational tables; sensor data is unstructured streaming input requiring buffering and aggregation before storage and retrieval"
+   "Purchase and imagery data are structured relational tables; sensor data is unstructured streaming input requiring buffering and aggregation before storage and retrieval",
+   "All three are unstructured sources requiring natural language processing and image recognition preprocessing before they can be integrated into a unified analytical framework",
+   "Purchase and sensor data are structured with defined schemas and rows; imagery is unstructured and requires feature extraction techniques before quantitative analysis can begin"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Purchase dates/amounts and sensor readings are structured data with predefined schemas; satellite imagery is unstructured and needs feature extraction (computer vision techniques) to become analyzable. Option B incorrectly classifies all three as unstructured. Option C reverses the classification of purchase data (it is structured, not unstructured text). Option D mischaracterizes sensor data as unstructured when sensors typically produce structured, time-stamped readings.",
   "difficulty": "hard",
   "knowledge_area": "Data Literacy and Foundations"
@@ -561,12 +561,12 @@
  {
   "question": "During the data science process, a team identifies three variables in their dataset: ZIP code, monthly revenue in dollars, and customer satisfaction rating on a scale of 1–5. How should these data points be categorized, and what implications does this categorization have for analysis methods?",
   "options": [
-   "ZIP code is categorical nominal; revenue is numeric continuous; satisfaction is categorical ordinal—requiring different encoding and distance metrics suited to each type",
    "ZIP code is numeric interval; revenue is numeric ratio; satisfaction is numeric continuous—permitting all three to be directly analyzed using parametric statistical tests",
-   "ZIP code is categorical ordinal; revenue is categorical nominal; satisfaction is numeric interval—necessitating conversion of revenue to a binned category before modeling",
-   "ZIP code is numeric nominal; revenue is categorical ratio; satisfaction is categorical ordinal—allowing satisfaction and revenue to be treated as interchangeable for correlation analysis"
+   "ZIP code is numeric nominal; revenue is categorical ratio; satisfaction is categorical ordinal—allowing satisfaction and revenue to be treated as interchangeable for correlation analysis",
+   "ZIP code is categorical nominal; revenue is numeric continuous; satisfaction is categorical ordinal—requiring different encoding and distance metrics suited to each type",
+   "ZIP code is categorical ordinal; revenue is categorical nominal; satisfaction is numeric interval—necessitating conversion of revenue to a binned category before modeling"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "ZIP codes are categorical nominal (no inherent order), revenue is numeric continuous (ratio-scaled), and satisfaction ratings are categorical ordinal (ordered categories). This distinction matters because nominal and ordinal data need different encoding (e.g., one-hot encoding vs. label encoding) and distance metrics than continuous data. Options B, C, and D misclassify at least two variables, leading to inappropriate analytical methods.",
   "difficulty": "hard",
   "knowledge_area": "Data Literacy and Foundations"
@@ -574,12 +574,12 @@
  {
   "question": "A data science team sources information from IoT sensors, social media platforms, and financial transaction logs. When describing the nature of data science in this multi-source context, which characterization best integrates the disciplines involved and the challenges encountered?",
   "options": [
-   "Data science combines domain expertise, statistical and computational methods, and communication skills to extract actionable insights from heterogeneous data sources while managing quality and bias issues inherent in each source type",
-   "Data science is primarily a statistical discipline that applies regression and classification techniques uniformly across all data types, with domain expertise used only to validate final model coefficients",
    "Data science encompasses machine learning and artificial intelligence exclusively, focusing on algorithmic optimization while data quality and source selection are treated as preprocessing tasks outside the discipline's scope",
-   "Data science is an engineering field centered on building scalable data pipelines and databases, with statistical analysis and interpretation serving as secondary quality-assurance steps after infrastructure deployment"
+   "Data science is an engineering field centered on building scalable data pipelines and databases, with statistical analysis and interpretation serving as secondary quality-assurance steps after infrastructure deployment",
+   "Data science is primarily a statistical discipline that applies regression and classification techniques uniformly across all data types, with domain expertise used only to validate final model coefficients",
+   "Data science combines domain expertise, statistical and computational methods, and communication skills to extract actionable insights from heterogeneous data sources while managing quality and bias issues inherent in each source type"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Option A correctly reflects the interdisciplinary nature of data science—combining statistics, computer science, domain knowledge, and communication—and acknowledges real challenges like data heterogeneity and bias. Option B reduces data science to statistics alone and ignores domain context. Option C wrongly narrows the field to ML/AI only and dismisses data quality. Option D overemphasizes engineering infrastructure at the expense of analytical rigor and interpretation.",
   "difficulty": "hard",
   "knowledge_area": "Data Literacy and Foundations"
@@ -587,12 +587,12 @@
  {
   "question": "Generative AI systems differ from traditional machine learning models primarily in their ability to produce novel outputs rather than classify existing data. Which of the following best describes a key limitation that distinguishes generative AI from supervised learning approaches?",
   "options": [
+   "Generative AI is limited to text generation, whereas supervised learning can be applied across audio, image, and numerical domains.",
    "Generative AI requires labeled training data for every possible output category, whereas supervised models can learn from unlabeled data streams.",
    "Generative AI may produce outputs that appear plausible but contain factual errors or inconsistencies not present in the training data.",
-   "Generative AI cannot process sequential information, while supervised learning excels at time-series prediction and temporal analysis.",
-   "Generative AI is limited to text generation, whereas supervised learning can be applied across audio, image, and numerical domains."
+   "Generative AI cannot process sequential information, while supervised learning excels at time-series prediction and temporal analysis."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Generative AI systems, while powerful at creating novel content, can hallucinate or generate convincing-sounding but factually incorrect information—a fundamental limitation distinct from supervised models' tendency to overfit or underfit on labeled data. This hallucination problem arises because generative models learn statistical patterns rather than explicit facts, making plausibility and accuracy separate challenges.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -600,12 +600,12 @@
  {
   "question": "Large language models (LLMs) and other generative AI systems have found applications in healthcare research, including drug discovery and diagnostic support. Which of the following most accurately describes both a genuine capability and a critical boundary of LLM use in clinical settings?",
   "options": [
-   "LLMs can identify novel protein structures and generate candidate drug compounds, but they require wet-lab validation and cannot independently conduct clinical trials.",
    "LLMs can synthesize medical literature and suggest diagnostic hypotheses, but they lack the ability to access real-time patient data or make autonomous clinical decisions.",
+   "LLMs can predict patient outcomes with higher accuracy than traditional epidemiological models and do not require oversight from medical professionals.",
    "LLMs can replace radiologists in image analysis and automatically approve treatment protocols based on historical patient records.",
-   "LLMs can predict patient outcomes with higher accuracy than traditional epidemiological models and do not require oversight from medical professionals."
+   "LLMs can identify novel protein structures and generate candidate drug compounds, but they require wet-lab validation and cannot independently conduct clinical trials."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "LLMs excel at synthesizing existing medical knowledge and supporting hypothesis generation, but they cannot access live patient systems and should never make autonomous clinical decisions—they serve as decision-support tools, not replacements for clinical judgment. This boundary is critical to safe deployment in healthcare, where accountability and real-time clinical context are essential.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -614,9 +614,9 @@
   "question": "Computer vision and natural language processing (NLP) represent two major AI subfields with distinct technical challenges. How do these subfields differ in their core representational problem?",
   "options": [
    "Computer vision converts spatial pixel patterns into semantic meaning through convolutional layer hierarchies, while NLP converts sequential token patterns into semantic meaning through attention mechanisms and transformer architectures.",
+   "Computer vision models achieve higher accuracy with smaller datasets, whereas NLP models demand millions of labeled examples before reaching practical performance.",
    "Computer vision processes continuous analog signals, whereas NLP processes only discrete symbolic data with no gradient-based learning.",
-   "Computer vision requires supervised learning exclusively, while NLP can operate entirely in unsupervised or self-supervised modes without labeled examples.",
-   "Computer vision models achieve higher accuracy with smaller datasets, whereas NLP models demand millions of labeled examples before reaching practical performance."
+   "Computer vision requires supervised learning exclusively, while NLP can operate entirely in unsupervised or self-supervised modes without labeled examples."
   ],
   "correct_index": 0,
   "explanation": "Computer vision and NLP both convert raw input (pixels or tokens) into semantic representations, but through fundamentally different architectures: vision uses spatial convolutional hierarchies to extract visual features, while NLP uses sequential transformers and attention to capture linguistic relationships. Understanding this distinction clarifies why techniques successful in one domain may not transfer directly to the other.",
@@ -626,12 +626,12 @@
  {
   "question": "Digital art and creative content generation represent significant use cases for generative AI, yet they raise distinct questions about attribution and originality compared to scientific or healthcare applications. Which statement most accurately reflects both a capability of generative AI in creative domains and a genuine difference from human-generated art?",
   "options": [
-   "Generative AI can produce stylistically novel images and text at scale by interpolating patterns from training data, whereas human artists typically draw from limited direct experience and cannot generate multiple outputs simultaneously.",
-   "Generative AI creates truly original artistic content indistinguishable from human creation and therefore qualifies as independent artistic authorship under copyright law.",
    "Generative AI can remix and recombine visual and textual patterns at computational speed, but the output lacks intentionality and deliberate aesthetic choice in ways human-created work embeds.",
-   "Generative AI is capable of generating digital art but cannot be applied to music, narrative, or interactive media without human intervention at every step."
+   "Generative AI is capable of generating digital art but cannot be applied to music, narrative, or interactive media without human intervention at every step.",
+   "Generative AI can produce stylistically novel images and text at scale by interpolating patterns from training data, whereas human artists typically draw from limited direct experience and cannot generate multiple outputs simultaneously.",
+   "Generative AI creates truly original artistic content indistinguishable from human creation and therefore qualifies as independent artistic authorship under copyright law."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Generative AI can produce stylistically diverse outputs by combining learned patterns at high speed, but these outputs lack the intentional creative vision and deliberate aesthetic reasoning that characterize human artistic work. This distinction—between statistical pattern recombination and purposeful creative expression—remains a key limitation even as the visual or textual quality may be impressive.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"
@@ -639,12 +639,12 @@
  {
   "question": "The capabilities and limitations of generative AI are often discussed in relation to the scale and quality of training data. Which of the following most precisely characterizes the relationship between training data scope and generative model performance?",
   "options": [
+   "Training data size has minimal impact on generative AI performance; model architecture and computational resources during inference are the sole determinants of output quality.",
    "Larger and more diverse training datasets almost always produce proportionally better generative models, as more examples allow the model to memorize a greater variety of outputs without requiring understanding.",
    "Larger training datasets improve generative model capability up to a point of diminishing returns, but data quality, diversity, and the model's architectural capacity to utilize that data are equally or more critical than raw scale.",
-   "Generative models perform best when trained on highly curated, narrow datasets that reduce noise, whereas diverse data always introduces contradictions that degrade output quality.",
-   "Training data size has minimal impact on generative AI performance; model architecture and computational resources during inference are the sole determinants of output quality."
+   "Generative models perform best when trained on highly curated, narrow datasets that reduce noise, whereas diverse data always introduces contradictions that degrade output quality."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "While large datasets help generative models learn broader patterns, data quality, diversity, and alignment with the model's capacity to extract and use that information are equally important—a well-curated medium-sized dataset often outperforms a large but noisy one. This reflects the practical reality that bigger is necessary but not sufficient for strong generative performance.",
   "difficulty": "hard",
   "knowledge_area": "AI Basics"

@@ -2,12 +2,12 @@
  {
   "question": "A manufacturing firm uses both a piecework plan and merit pay structure. When calculating total labor costs for break-even analysis, which components must be included to ensure accurate cost projections?",
   "options": [
-   "Base wages from piecework rates, discretionary bonuses, payroll tax deductions, and employer-paid workers' compensation insurance premiums",
    "Hourly wage rates, performance incentives, FICA withholdings, and employee health insurance premium contributions only",
    "Piecework output rates, merit increases, legally required payroll deductions, and discretionary fringe benefits like retirement plans",
-   "Performance-based compensation, salary schedule adjustments, unemployment insurance employer contributions, and voluntary employee deductions"
+   "Performance-based compensation, salary schedule adjustments, unemployment insurance employer contributions, and voluntary employee deductions",
+   "Base wages from piecework rates, discretionary bonuses, payroll tax deductions, and employer-paid workers' compensation insurance premiums"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Break-even calculations require all labor costs borne by the employer: actual wages paid (whether piecework or merit-based), legally mandated employer costs (workers' comp, unemployment insurance), and discretionary benefits the firm provides. Employee withholdings reduce take-home pay but are not employer costs; the firm's liability is the gross cost plus what it contributes on behalf of the employee.",
   "difficulty": "hard",
   "knowledge_area": "Employee Compensation and Benefits"
@@ -15,12 +15,12 @@
  {
   "question": "An organization implements broad banding and strategic compensation to address comparable worth concerns across departments. How do these approaches differ in their primary mechanisms for achieving fair pay equity?",
   "options": [
-   "Broad banding consolidates multiple pay grades into wider bands allowing flexibility within ranges, while strategic compensation links pay to organizational goals and market competitiveness to ensure equitable distribution",
-   "Strategic compensation adjusts pay based on job evaluation scores and internal consistency, while broad banding uses external market data to set salary schedules for similar work",
+   "Strategic compensation narrows the salary range for each position, while broad banding expands flexibility to reward seniority and tenure within the same role",
    "Broad banding eliminates cost-of-living adjustments across all positions, while strategic compensation applies percentage increases uniformly to address historical wage gaps",
-   "Strategic compensation narrows the salary range for each position, while broad banding expands flexibility to reward seniority and tenure within the same role"
+   "Broad banding consolidates multiple pay grades into wider bands allowing flexibility within ranges, while strategic compensation links pay to organizational goals and market competitiveness to ensure equitable distribution",
+   "Strategic compensation adjusts pay based on job evaluation scores and internal consistency, while broad banding uses external market data to set salary schedules for similar work"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Broad banding reduces the number of pay grades and widens the salary range within each band, giving managers flexibility to recognize experience and performance without creating new grades. Strategic compensation, by contrast, intentionally aligns pay decisions with organizational strategy and external market rates to ensure comparable work receives comparable pay—directly addressing comparable worth by linking compensation to objective market and role factors.",
   "difficulty": "hard",
   "knowledge_area": "Employee Compensation and Benefits"
@@ -28,12 +28,12 @@
  {
   "question": "Rising healthcare costs are causing employees to reassess their compensation expectations. When an employer shifts a larger share of health insurance premiums to employees while maintaining the same base salary, what is the most likely impact on perceived fair compensation?",
   "options": [
+   "Employees view the premium increase as a reduction in benefits rather than compensation, making it psychologically separable from wage expectations and unlikely to affect output",
    "Employees perceive reduced total compensation value and may lower productivity expectations, even though base salary remains unchanged and the shift reflects rising healthcare market costs",
-   "Employees accept the shift without productivity loss because they understand healthcare inflation justifies premium increases and base pay has not decreased",
    "Employees demand higher base salaries to offset premium increases, viewing the employer's cost control as a raise equivalent that should trigger wage adjustments",
-   "Employees view the premium increase as a reduction in benefits rather than compensation, making it psychologically separable from wage expectations and unlikely to affect output"
+   "Employees accept the shift without productivity loss because they understand healthcare inflation justifies premium increases and base pay has not decreased"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Fair compensation perception hinges on total value received, not just base salary. When employees bear more of rising healthcare costs, they experience reduced net purchasing power and perceive total compensation as lower—even if nominal wages stay flat. This perception gap directly correlates with lower productivity and engagement, since employees feel the employer has shifted costs to them without offsetting the loss.",
   "difficulty": "hard",
   "knowledge_area": "Employee Compensation and Benefits"
@@ -54,12 +54,12 @@
  {
   "question": "When calculating the percentage benefit cost as a proportion of total labor cost, an employer must distinguish between legally required and discretionary benefits. Which combination correctly represents the full scope of employer-provided benefits that should be included in this calculation?",
   "options": [
-   "Social Security and unemployment insurance employer contributions, workers' compensation premiums, and discretionary programs such as retirement plans, health insurance employer premiums, and employee reward programs",
-   "Federal income tax withholding, FICA deductions, discretionary bonuses, and employee-paid health insurance premium amounts that the employer deducts from paychecks",
    "Workers' compensation only, supplemental insurance policies, merit pay increases, and voluntary employee contributions to retirement accounts",
-   "Unemployment compensation employer portion, payroll taxes, salary schedule increases, and non-monetary rewards classified as fringe benefits under tax law"
+   "Unemployment compensation employer portion, payroll taxes, salary schedule increases, and non-monetary rewards classified as fringe benefits under tax law",
+   "Social Security and unemployment insurance employer contributions, workers' compensation premiums, and discretionary programs such as retirement plans, health insurance employer premiums, and employee reward programs",
+   "Federal income tax withholding, FICA deductions, discretionary bonuses, and employee-paid health insurance premium amounts that the employer deducts from paychecks"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Benefit cost percentage calculations require both legally mandated employer costs (Social Security/FICA match, unemployment insurance, workers' compensation) and discretionary programs the employer funds (health insurance premiums paid by employer, retirement plan contributions, reward programs). Employee withholdings and voluntary contributions are not employer costs. Merit pay is wages, not benefits; non-payroll costs must meet the tax definition of fringe benefits to be included.",
   "difficulty": "hard",
   "knowledge_area": "Employee Compensation and Benefits"
@@ -67,12 +67,12 @@
  {
   "question": "A mid-sized manufacturing firm is updating its human resource planning strategy to address declining employee retention. The HR director must balance the organization's operational needs with emerging workforce trends. Which approach best reflects how comprehensive HR planning integrates multiple strategic objectives?",
   "options": [
-   "Establishing flexible scheduling and remote work policies while ensuring these align with company goals, employee development needs, and organizational capacity",
-   "Implementing job sharing arrangements to reduce labor costs while maintaining the firm's competitive position in the labor market",
+   "Creating a code of ethics that guides employee conduct and technology use while supporting the firm's financial performance objectives",
    "Developing diversity initiatives that address recruitment challenges and improve workplace culture without disrupting existing operational protocols",
-   "Creating a code of ethics that guides employee conduct and technology use while supporting the firm's financial performance objectives"
+   "Implementing job sharing arrangements to reduce labor costs while maintaining the firm's competitive position in the labor market",
+   "Establishing flexible scheduling and remote work policies while ensuring these align with company goals, employee development needs, and organizational capacity"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Comprehensive HR planning requires balancing multiple dimensions—workforce trends, organizational goals, employee development, and operational capability—simultaneously. While the other options address valid HR functions, only option A demonstrates the integrated, multi-objective approach that defines strategic HR planning. The distractors each focus on a single HR function rather than the interconnected planning process.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -80,12 +80,12 @@
  {
   "question": "An organization recognizes that shifting global supply chains, increased remote work adoption, and a more diverse talent pool are reshaping its workforce demands. When evaluating the impact of these world issues and trends on HR strategy, which factor most directly influences how the company must reconsider its HR goals and policies?",
   "options": [
+   "The decision to expand diversity recruiting programs while evaluating whether current HR policies adequately address inclusion at all organizational levels",
    "The need to revise compensation structures and performance metrics to account for geographic wage variations and remote productivity measurement challenges",
-   "The requirement to update recruitment, retention, and workplace culture policies to reflect changing employee expectations and geographically distributed teams",
    "The obligation to invest in technology infrastructure that supports flexible work arrangements while maintaining consistent policy application across regions",
-   "The decision to expand diversity recruiting programs while evaluating whether current HR policies adequately address inclusion at all organizational levels"
+   "The requirement to update recruitment, retention, and workplace culture policies to reflect changing employee expectations and geographically distributed teams"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "HR goals and policies must be fundamentally revisited when workforce composition, location, and expectations change due to global trends and remote work adoption. While technology, compensation, and diversity are all relevant considerations, option B directly addresses how HR must evaluate and update the full scope of policies governing recruitment, retention, and culture—the core HR planning function. The other options address implementation mechanisms rather than the strategic policy reassessment itself.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -93,12 +93,12 @@
  {
   "question": "A company faces significant HR challenges including skills gaps in emerging technologies, difficulty attracting talent in competitive markets, and the need to maintain ethical standards across a remote workforce. Which combination of remedies most effectively addresses the interconnected nature of these modern HR planning challenges?",
   "options": [
-   "Investing in skills training programs, implementing competitive benefits aligned with flexible work trends, and establishing clear ethical guidelines communicated through technology platforms",
-   "Recruiting external consultants, establishing job-sharing positions, and creating diversity task forces to address talent acquisition and workplace culture concerns",
    "Developing comprehensive HR policies that emphasize employee development, updating recruitment strategies to include remote-capable roles, and integrating ethics training into onboarding",
-   "Offering tuition reimbursement programs, expanding remote work options across all departments, and requiring annual ethics certifications for all management levels"
+   "Offering tuition reimbursement programs, expanding remote work options across all departments, and requiring annual ethics certifications for all management levels",
+   "Recruiting external consultants, establishing job-sharing positions, and creating diversity task forces to address talent acquisition and workplace culture concerns",
+   "Investing in skills training programs, implementing competitive benefits aligned with flexible work trends, and establishing clear ethical guidelines communicated through technology platforms"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Effective HR remedies must address skills development, modern recruitment approaches, and ethical culture simultaneously through integrated policies. Option C encompasses HR policy comprehensiveness, strategic recruitment adaptation, and ethics maintenance—the three pillars needed to address skills gaps, talent attraction, and ethical challenges together. The other options either compartmentalize solutions or focus on isolated interventions rather than systematic policy-based remedies.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -106,12 +106,12 @@
  {
   "question": "When HR leadership evaluates the role of diversity in organizational strategy, they must distinguish between diversity initiatives that address different organizational needs. Which statement most accurately reflects how diversity connects to both HR planning objectives and broader organizational performance?",
   "options": [
-   "Diversity improves workplace culture through representation and inclusion while also expanding the talent pool and bringing varied perspectives that enhance problem-solving and innovation",
    "Diversity increases recruitment efficiency by reducing the time required to fill open positions and demonstrates corporate social responsibility to external stakeholders and customers",
-   "Diversity programs support employee retention by creating mentorship opportunities and career development pathways while reducing the need for external executive recruitment",
-   "Diversity initiatives strengthen compliance with employment regulations while building employee engagement through affinity group programs and cross-cultural team experiences"
+   "Diversity initiatives strengthen compliance with employment regulations while building employee engagement through affinity group programs and cross-cultural team experiences",
+   "Diversity improves workplace culture through representation and inclusion while also expanding the talent pool and bringing varied perspectives that enhance problem-solving and innovation",
+   "Diversity programs support employee retention by creating mentorship opportunities and career development pathways while reducing the need for external executive recruitment"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Diversity's role in HR planning encompasses both cultural benefits (inclusion, engagement) and strategic business benefits (expanded talent pool, cognitive diversity, innovation). Option A captures the dual impact—how diversity simultaneously improves internal workplace dynamics and strengthens organizational capability through broader perspective. The other options address valid but narrower outcomes: compliance, recruitment efficiency, or retention mechanics rather than diversity's fundamental role in comprehensive HR planning.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -120,8 +120,8 @@
   "question": "An organization is redesigning its HR policies to reflect the centrality of teamwork in modern operations while accounting for the increasing use of remote and flexible work arrangements. In this context, how should HR planning recognize the relationship between teams, workplace flexibility, and organizational capability?",
   "options": [
    "Teams drive productivity and innovation, requiring HR policies that define collaboration structures, establish remote communication standards, and create accountability systems despite physical distance",
-   "Flexible scheduling and remote work arrangements reduce overhead costs and improve employee satisfaction, necessitating team-based performance metrics that reward collective rather than individual contributions",
    "Teamwork prevents skill fragmentation by distributing knowledge across the workforce, demanding HR policies that mandate cross-functional assignments and limit specialized job roles in distributed environments",
+   "Flexible scheduling and remote work arrangements reduce overhead costs and improve employee satisfaction, necessitating team-based performance metrics that reward collective rather than individual contributions",
    "Remote teams require enhanced diversity policies to ensure inclusion, making HR responsible for guaranteeing representation across time zones and implementing technology that facilitates equal participation"
   ],
   "correct_index": 0,
@@ -132,12 +132,12 @@
  {
   "question": "A manufacturing company implements a broad banding compensation structure alongside a merit pay system. How would this combination affect the relationship between employee perception of fair compensation and overall productivity compared to a traditional job-grade salary schedule?",
   "options": [
+   "Broad banding compresses salary ranges to prevent internal equity disputes, while merit pay establishes a fixed percentage increase annually, together guaranteeing improved productivity regardless of market compensation rates.",
    "Broad banding reduces salary compression by consolidating grades, while merit pay directly ties compensation to individual performance outcomes, potentially improving productivity perception when pay increases align with demonstrated contributions.",
-   "Merit pay alone increases productivity by rewarding individual effort, whereas broad banding primarily reduces administrative burden without affecting compensation fairness or employee performance motivation.",
    "Both broad banding and merit pay eliminate the need to calculate labor costs as a percentage of revenue, which indirectly improves productivity by reducing accounting complexity.",
-   "Broad banding compresses salary ranges to prevent internal equity disputes, while merit pay establishes a fixed percentage increase annually, together guaranteeing improved productivity regardless of market compensation rates."
+   "Merit pay alone increases productivity by rewarding individual effort, whereas broad banding primarily reduces administrative burden without affecting compensation fairness or employee performance motivation."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Broad banding consolidates multiple job grades into wider salary bands, addressing compression issues and supporting strategic compensation goals. Merit pay directly links compensation to performance, reinforcing fair compensation perception when employees see their contributions rewarded—a key driver of productivity impact. The other options either oversimplify merit pay's role, confuse administrative benefits with productivity effects, or make false claims about cost calculation elimination.",
   "knowledge_area": "Employee Compensation and Benefits",
   "difficulty": "hard"
@@ -146,9 +146,9 @@
   "question": "A company calculates that healthcare benefits represent 8% of total payroll costs, while legally required benefits (Social Security, unemployment compensation, and workers' compensation) total 12%. If payroll is $2,000,000, how would a 3% increase in healthcare costs affect the break-even point compared to a 3% increase in legally required benefits?",
   "options": [
    "Healthcare costs would increase by $4,800, raising fixed costs by that amount; legally required benefits would increase by $7,200, creating a larger upward shift in the break-even point and requiring higher sales volume to maintain profitability.",
-   "Legally required benefits would increase by $4,800, while healthcare would increase by $7,200, meaning the break-even point rises more sharply due to the larger healthcare expense increase and its direct impact on contribution margin.",
+   "Healthcare costs increase by $7,200 and legally required benefits by $4,800, but only healthcare costs affect break-even calculations because discretionary benefits are excluded from payroll-cost analysis in break-even models.",
    "Both categories increase by the same percentage, so the break-even point shifts identically whether the increase applies to healthcare or legally required benefits, since both are fixed labor costs.",
-   "Healthcare costs increase by $7,200 and legally required benefits by $4,800, but only healthcare costs affect break-even calculations because discretionary benefits are excluded from payroll-cost analysis in break-even models."
+   "Legally required benefits would increase by $4,800, while healthcare would increase by $7,200, meaning the break-even point rises more sharply due to the larger healthcare expense increase and its direct impact on contribution margin."
   ],
   "correct_index": 0,
   "explanation": "Healthcare is 8% of $2,000,000 ($160,000), so a 3% increase is $4,800. Legally required benefits are 12% of $2,000,000 ($240,000), so a 3% increase is $7,200. Since both are fixed costs that affect break-even point, the legally required benefit increase causes a larger shift upward. The other options misalculate the amounts, ignore the difference in base percentages, or incorrectly exclude benefits from break-even analysis.",
@@ -158,12 +158,12 @@
  {
   "question": "An organization implements a team-based compensation plan tied to department profitability targets. How does this differ from a piecework plan in terms of legal compliance with fair compensation perception and payroll deduction requirements?",
   "options": [
+   "Piecework and team-based plans have identical legal compliance requirements for deductions, but team-based plans improve fair compensation perception because group rewards remove individual performance pressure that can create payroll disputes.",
    "Team-based plans distribute rewards across groups based on collective results, requiring clear payroll documentation to ensure legally compliant deductions and fair perception when individual contributions are difficult to isolate, whereas piecework directly ties individual output to pay with simpler deduction tracking.",
    "Piecework plans are legally required to include all payroll deductions before calculating piece rates, while team-based plans are exempt from deduction requirements because compensation is discretionary and performance-based.",
-   "Team-based compensation eliminates the need for payroll deductions because group incentives are classified as benefits rather than wages under labor law, whereas piecework requires full documentation of all deductions.",
-   "Piecework and team-based plans have identical legal compliance requirements for deductions, but team-based plans improve fair compensation perception because group rewards remove individual performance pressure that can create payroll disputes."
+   "Team-based compensation eliminates the need for payroll deductions because group incentives are classified as benefits rather than wages under labor law, whereas piecework requires full documentation of all deductions."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Team-based plans reward collective performance, making individual contribution attribution complex and requiring careful documentation to ensure fair compensation perception and legal compliance with payroll deduction rules. Piecework ties pay directly to countable units, simplifying both documentation and employee understanding of compensation fairness. The other options misstate deduction exemptions (no such exemption exists), confuse incentive classification, or falsely equate compliance requirements while missing the substantive difference in fair perception.",
   "knowledge_area": "Employee Compensation and Benefits",
   "difficulty": "hard"
@@ -171,12 +171,12 @@
  {
   "question": "When calculating average labor cost per employee, a firm discovers that incorporating discretionary fringe benefits raises the average by $3,200 per person annually. How does this figure relate to strategic compensation decisions regarding comparable worth and employee retention in competitive labor markets?",
   "options": [
-   "The $3,200 increase represents the discretionary portion of total compensation, which must be benchmarked against competitor offerings to ensure comparable worth and support retention; excluding these benefits from compensation analysis underestimates the true market value of the position.",
    "The $3,200 reflects only legally required benefits and should be excluded from comparable worth analysis because comparable worth standards apply only to base wages, not fringe benefits or voluntary employer offerings.",
+   "The $3,200 increase represents the discretionary portion of total compensation, which must be benchmarked against competitor offerings to ensure comparable worth and support retention; excluding these benefits from compensation analysis underestimates the true market value of the position.",
    "Including the $3,200 discretionary benefit component ensures that average labor cost calculations reflect break-even requirements, but comparable worth analysis focuses exclusively on dollar labor costs without considering benefit percentages.",
    "The $3,200 discretionary benefit addition is necessary for payroll deduction calculations but does not affect strategic compensation decisions because comparable worth requires equal pay for equal work based on base salary alone."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Strategic compensation and comparable worth analysis must account for total compensation, including discretionary fringe benefits, to accurately benchmark against market rates and position the organization competitively for retention. The $3,200 represents meaningful value that competitors' packages may include, so excluding it creates an incomplete picture of compensation competitiveness. The other options either incorrectly limit comparable worth to base wages, confuse break-even analysis with compensation strategy, or falsely claim benefits are irrelevant to retention decisions.",
   "knowledge_area": "Employee Compensation and Benefits",
   "difficulty": "hard"
@@ -184,12 +184,12 @@
  {
   "question": "A salary schedule specifies that entry-level positions in a department start at $35,000 and progress to $52,000 over ten years through annual increases of $1,700. Which of the following best explains how variable pay based on performance would interact with this structure while maintaining compliance with payroll deduction legal requirements?",
   "options": [
+   "The salary schedule serves as a fixed minimum, and variable pay adjusts the $1,700 annual increment by performance rating, but only when adjustments fall within the ten-year progression window and do not affect deduction requirements.",
    "Variable pay based on performance is calculated as a separate incentive above the salary schedule progression, allowing employees to exceed the $52,000 ceiling based on merit while the base schedule remains fixed; all variable components are subject to legally required payroll deductions.",
    "Variable pay replaces the annual $1,700 increases in the schedule, so high performers earn accelerated progression while low performers earn no increase, eliminating the need for payroll deduction calculations on variable amounts.",
-   "The salary schedule serves as a fixed minimum, and variable pay adjusts the $1,700 annual increment by performance rating, but only when adjustments fall within the ten-year progression window and do not affect deduction requirements.",
    "Variable pay based on performance is applied only to entry-level positions below $40,000 to comply with fair compensation laws, while the salary schedule governs all positions above that threshold without performance adjustments."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A salary schedule provides the base progression structure, while variable pay (merit bonuses, performance incentives) operates independently on top of it, allowing overperformers to exceed scheduled maximums. Both the base salary and variable pay are subject to legally required payroll deductions (taxes, Social Security, etc.) without exception. The other options incorrectly substitute variable pay for schedule increases, falsely limit deduction requirements, or impose artificial thresholds not supported by compensation law.",
   "knowledge_area": "Employee Compensation and Benefits",
   "difficulty": "hard"
@@ -197,12 +197,12 @@
  {
   "question": "A manager observes that an employee consistently misses deadlines despite understanding the task requirements. Which distinction is most critical for determining the appropriate intervention?",
   "options": [
-   "Whether the performance gap stems from a deficiency in knowledge versus a deficiency in execution, since each requires fundamentally different corrective approaches",
-   "Whether the employee has received written warnings previously versus verbal warnings, since disciplinary history determines coaching eligibility",
+   "Whether the employee's role involves technical tasks versus administrative tasks, since technical roles demand more intensive performance monitoring",
    "Whether the deadline pressure comes from external clients versus internal departments, since client-facing work requires different motivation strategies",
-   "Whether the employee's role involves technical tasks versus administrative tasks, since technical roles demand more intensive performance monitoring"
+   "Whether the performance gap stems from a deficiency in knowledge versus a deficiency in execution, since each requires fundamentally different corrective approaches",
+   "Whether the employee has received written warnings previously versus verbal warnings, since disciplinary history determines coaching eligibility"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "A knowledge deficiency (not understanding how to do the work) requires training or coaching, while an execution deficiency (knowing how but choosing not to perform) requires counseling, discipline, or motivation strategies. The source material emphasizes distinguishing these two categories as fundamental to selecting appropriate performance interventions. The other options reference factors relevant to some performance situations but do not address the core diagnostic distinction needed here.",
   "difficulty": "hard",
   "knowledge_area": "Performance Management"
@@ -210,12 +210,12 @@
  {
   "question": "During a counseling session, an employee reveals that recent family stress is affecting their work attendance and focus. How should a manager best integrate this insight into the performance management process?",
   "options": [
-   "Recognize that personal problems often underlie performance problems and explore whether accommodations or resource referrals could support performance improvement while respecting appropriate boundaries",
    "Postpone all performance discussions until the personal issue is fully resolved, since addressing work performance during personal crises violates counseling best practices",
    "Shift the counseling focus entirely to personal problem-solving, since the performance management system includes support for employees' off-work challenges",
-   "Document the personal circumstances as a formal exception to standard performance standards, removing accountability until the employee confirms personal stability"
+   "Document the personal circumstances as a formal exception to standard performance standards, removing accountability until the employee confirms personal stability",
+   "Recognize that personal problems often underlie performance problems and explore whether accommodations or resource referrals could support performance improvement while respecting appropriate boundaries"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Performance management recognizes that personal problems frequently impact work performance, and effective managers address this connection by exploring relevant support or adjustments while maintaining professional boundaries. The source material lists understanding the relationship between performance and personal problems as a key competency. The other options either inappropriately extend the manager's role into personal counseling, suspend accountability indefinitely, or ignore the connection altogether.",
   "difficulty": "hard",
   "knowledge_area": "Performance Management"
@@ -223,12 +223,12 @@
  {
   "question": "An organization implements a new performance appraisal system that includes 360-degree feedback, self-assessments, and manager evaluations. Which of the following best explains why combining multiple appraisal methods presents both significant advantage and notable disadvantage?",
   "options": [
-   "Multiple methods provide richer, more comprehensive performance data and reduce individual rater bias, but increase administrative complexity and may produce conflicting feedback that requires skilled interpretation",
+   "Multiple methods simplify the appraisal process and reduce meeting time with employees, but create confusion about which method aligns with organizational strategy",
    "Multiple methods guarantee employee agreement to performance ratings and eliminate the need for follow-up counseling, but require significantly higher compensation for appraisers",
    "Multiple methods allow organizations to eliminate manager involvement in appraisals and reduce legal liability, but make it harder to identify which feedback source is most credible",
-   "Multiple methods simplify the appraisal process and reduce meeting time with employees, but create confusion about which method aligns with organizational strategy"
+   "Multiple methods provide richer, more comprehensive performance data and reduce individual rater bias, but increase administrative complexity and may produce conflicting feedback that requires skilled interpretation"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Multi-source appraisal systems provide broader perspective and reduce single-rater bias (advantage) but require greater resources to manage and may present conflicting perspectives that demand sophisticated feedback interpretation (disadvantage). The source material addresses appraisal system advantages and disadvantages; the core tension lies in data richness versus complexity. The other options misrepresent outcomes (guaranteed agreement, eliminated liability, simplified process) that multi-method systems do not deliver.",
   "difficulty": "hard",
   "knowledge_area": "Performance Management"
@@ -237,9 +237,9 @@
   "question": "A manager must decide whether to address an employee's performance issue through counseling focused on motivation and influence or through disciplinary action. Which factor most appropriately guides this choice according to performance management principles?",
   "options": [
    "Whether the performance deficiency relates to execution capability and willingness to change, since counseling and influence are most effective when the employee has ability but lacks motivation or agreement to improve",
-   "Whether the employee has worked for the organization longer than two years, since tenure determines whether counseling is legally permissible",
    "Whether the performance issue affects team morale more than individual productivity, since disciplinary action addresses team problems while counseling addresses individual ones",
-   "Whether the manager has documented previous conversations with the employee, since prior documentation automatically triggers the disciplinary path rather than counseling"
+   "Whether the manager has documented previous conversations with the employee, since prior documentation automatically triggers the disciplinary path rather than counseling",
+   "Whether the employee has worked for the organization longer than two years, since tenure determines whether counseling is legally permissible"
   ],
   "correct_index": 0,
   "explanation": "Counseling and influence strategies target execution deficiencies and motivation gaps—situations where the employee has capability but lacks will or commitment. Discipline addresses behavior violations or refusal to improve. The source material emphasizes that employee agreement to change is essential and that influence increases performance; these principles guide the choice toward counseling when execution and motivation are the issues. The other options impose arbitrary constraints (tenure, morale distribution, documentation) that do not align with sound performance management logic.",
@@ -249,12 +249,12 @@
  {
   "question": "An effective performance management system serves multiple organizational purposes simultaneously. Which set of components and purposes best reflects the integrated nature of modern performance management?",
   "options": [
+   "Individual achievement of personal career goals independent of organizational objectives, emphasis on employee satisfaction scores as the primary success measure, elimination of performance standards to increase autonomy, and confidential appraisals never shared with employees",
    "Measurement of past performance for compensation decisions, development planning to build future capability, organizational alignment of individual goals with strategy, and identification of behavioral issues requiring intervention",
    "Annual ranking of employees to identify promotion candidates, collection of documented evidence for termination decisions, standardized rating scales that eliminate manager subjectivity, and uniform compensation increases across all departments",
-   "Real-time performance feedback to replace formal appraisals, elimination of compensation contingencies based on ratings, elimination of disciplinary records to protect employee privacy, and focus exclusively on strengths rather than gaps",
-   "Individual achievement of personal career goals independent of organizational objectives, emphasis on employee satisfaction scores as the primary success measure, elimination of performance standards to increase autonomy, and confidential appraisals never shared with employees"
+   "Real-time performance feedback to replace formal appraisals, elimination of compensation contingencies based on ratings, elimination of disciplinary records to protect employee privacy, and focus exclusively on strengths rather than gaps"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A comprehensive performance management system balances multiple purposes: evaluating past performance for accountability and pay decisions, developing future capability through coaching and feedback, aligning individual effort with organizational strategy, and addressing performance and behavioral issues. The source material defines effective performance management systems by their breadth and integration. The other options focus narrowly on single purposes (ranking, discipline, feedback) or reflect practices that undermine performance management effectiveness (hiding information, ignoring organizational strategy, eliminating standards).",
   "difficulty": "hard",
   "knowledge_area": "Performance Management"
@@ -263,11 +263,11 @@
   "question": "When developing a comprehensive HR plan, how should an organization balance the strategic need for workplace flexibility with the requirement to maintain organizational cohesion and team effectiveness?",
   "options": [
    "By implementing work-from-home policies exclusively and allowing employees to set their own schedules without managerial oversight or accountability measures",
-   "By aligning flexible scheduling and job-sharing arrangements with clear organizational goals while ensuring team dynamics and communication structures remain intact",
    "By requiring all employees to work on-site full-time to guarantee team cohesion, then evaluating flexible work options only after teams demonstrate consistent performance metrics",
+   "By aligning flexible scheduling and job-sharing arrangements with clear organizational goals while ensuring team dynamics and communication structures remain intact",
    "By adopting all emerging workplace trends simultaneously, including remote work and flexible hours, then adjusting HR policies based on quarterly financial results alone"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Effective HR planning integrates workplace flexibility trends with the fundamental importance of teams and organizational goals. The correct answer recognizes that flexibility must serve the organization's strategic needs while preserving team effectiveness—not replacing it. The other options either ignore team importance, apply trends indiscriminately, or create false choices between flexibility and cohesion.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -275,9 +275,9 @@
  {
   "question": "An organization's HR department discovers that its current code of ethics policy fails to address emerging challenges related to remote work, diverse team dynamics across multiple time zones, and rapidly evolving technology use. Which approach best reflects HR's role in maintaining ethical standards while addressing modern challenges?",
   "options": [
-   "Retain the existing code of ethics as written, since it was formally approved; implement separate guidelines for remote workers and technology use outside the official ethics framework",
-   "Evaluate the current code against identified gaps in remote work conduct, diversity inclusion, and technology ethics; update policies to address these challenges while preserving core ethical principles",
    "Eliminate detailed ethical guidelines in favor of a brief statement encouraging employees to use personal judgment regarding remote work, digital communication, and team interactions",
+   "Evaluate the current code against identified gaps in remote work conduct, diversity inclusion, and technology ethics; update policies to address these challenges while preserving core ethical principles",
+   "Retain the existing code of ethics as written, since it was formally approved; implement separate guidelines for remote workers and technology use outside the official ethics framework",
    "Implement mandatory ethics training focused only on the organization's original code of ethics, supplemented by technology vendor policies and external diversity consultants"
   ],
   "correct_index": 1,
@@ -289,11 +289,11 @@
   "question": "How do diversity and team dynamics intersect in HR planning, particularly when designing work arrangements and organizational structures that support multiple perspectives while maintaining operational effectiveness?",
   "options": [
    "Diversity should be treated as a compliance issue separate from team planning; flexible scheduling and job-sharing arrangements should be implemented uniformly without regard to team composition or communication patterns",
-   "Teams function best when composed of similar backgrounds and work styles; HR should discourage job-sharing and flexible schedules to ensure consistency, then address diversity through separate training initiatives",
    "HR planning must recognize that diversity strengthens teams through varied perspectives and skills, so flexible arrangements and team structures should be designed to leverage different viewpoints while ensuring clear communication and shared goals",
+   "Teams function best when composed of similar backgrounds and work styles; HR should discourage job-sharing and flexible schedules to ensure consistency, then address diversity through separate training initiatives",
    "Diversity initiatives and team effectiveness are competing priorities; HR should prioritize either comprehensive diversity programs or team cohesion, but not both simultaneously given resource constraints"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The knowledge area emphasizes both the importance of teams and the critical role of diversity in organizations. The correct answer integrates these concepts, showing that diverse teams with varied skills and perspectives require thoughtfully designed structures—like flexible scheduling and clear communication—to succeed. The other options create false dichotomies between diversity and team function or treat diversity as separate from core HR planning.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -301,12 +301,12 @@
  {
   "question": "An HR department must address multiple emerging challenges: technological disruption in hiring processes, shifts to remote and flexible work arrangements, global workforce diversity, and evolving skill requirements. Which approach best reflects comprehensive HR planning that addresses how these factors interconnect?",
   "options": [
-   "Address each challenge independently by hiring a technology consultant for systems, an external recruiting firm for remote positions, a diversity consultant for inclusion, and a training vendor for skills development",
    "Recognize that technology adoption, work arrangement trends, diversity considerations, and skills planning are interdependent; develop an integrated HR strategy that aligns hiring tools, work flexibility, diverse talent acquisition, and skill development to support organizational goals",
+   "Address each challenge independently by hiring a technology consultant for systems, an external recruiting firm for remote positions, a diversity consultant for inclusion, and a training vendor for skills development",
    "Prioritize technology implementation first to reduce HR administrative costs, then implement flexible work arrangements if technology allows, and address diversity and skills separately as budget permits",
    "Focus primarily on maintaining existing skill sets and team structures while cautiously piloting technology, remote work, and diversity initiatives in isolated departments to minimize organizational disruption"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Comprehensive HR planning requires understanding how technology, workplace trends, diversity, skills, and world issues interconnect and reinforce each other. The correct answer reflects this integrated approach to HR challenges rather than siloed solutions. The other options either fragment the strategy among external vendors, apply arbitrary sequencing, or delay necessary adaptation—none of which constitute strategic planning.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -315,11 +315,11 @@
   "question": "When evaluating whether to update HR policies regarding remote work and flexible scheduling, what criteria should guide the decision-making process to ensure policies support both organizational goals and HR's broader strategic objectives?",
   "options": [
    "Survey employees about preferred work arrangements; if remote work and flexible scheduling rank highly, implement these policies immediately without assessing alignment to team effectiveness, job requirements, or organizational performance metrics",
-   "Maintain current on-site policies indefinitely unless a crisis forces change; competitor adoption of flexible work is not sufficient justification for policy revision since trends are temporary",
    "Assess current HR goals and organizational strategy; examine how emerging trends like remote work and flexible scheduling align with team dynamics, skill requirements, and business objectives; then update policies only if they strengthen HR's role in achieving these goals",
+   "Maintain current on-site policies indefinitely unless a crisis forces change; competitor adoption of flexible work is not sufficient justification for policy revision since trends are temporary",
    "Adopt all flexible work and remote arrangements offered by market-leading competitors; assume their implementation success will automatically transfer to the organization regardless of industry, team structure, or operational differences"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The knowledge area specifically addresses the evaluation and updating of HR policies in response to trends like remote work and flexible scheduling. The correct answer reflects strategic policy evaluation—connecting trends to organizational goals and HR's comprehensive planning role. The other options rely on survey preference alone, reject necessary adaptation, or mindlessly copy competitors without critical assessment.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -327,12 +327,12 @@
  {
   "question": "A company implements a policy requiring all applicants to pass a background check that includes credit history review. Under which federal law must the employer verify that this screening method does not have a disparate impact on protected classes, even if applied uniformly to all candidates?",
   "options": [
+   "The Age Discrimination in Employment Act, which protects workers age 40 and older from discrimination in hiring, promotion, compensation, and termination decisions",
    "The Fair Labor Standards Act, which governs wage and hour standards and requires equal pay for substantially similar work regardless of employee background",
    "The Equal Employment Opportunity Act, which prohibits discrimination based on race, color, religion, sex, or national origin and requires employers to avoid screening practices with disparate impact",
-   "The Immigration Reform and Control Act, which mandates I-9 verification and establishes employer penalties for knowingly hiring unauthorized workers without proper documentation",
-   "The Age Discrimination in Employment Act, which protects workers age 40 and older from discrimination in hiring, promotion, compensation, and termination decisions"
+   "The Immigration Reform and Control Act, which mandates I-9 verification and establishes employer penalties for knowingly hiring unauthorized workers without proper documentation"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The Equal Employment Opportunity Act requires employers to ensure hiring practices, including background screening, do not discriminate based on protected characteristics or have disparate impact. While FLSA addresses pay equity for similar roles and ADEA addresses age discrimination, neither specifically governs screening method validation. IRCA focuses on work authorization verification, not broader employment screening practices.",
   "difficulty": "hard",
   "knowledge_area": "Government Relations and Issues"
@@ -341,11 +341,11 @@
   "question": "An HR manager must determine whether an employee injury qualifies for Workers' Compensation coverage. The employee injured his shoulder during lunch break while lifting a heavy box from his personal vehicle in the company parking lot. Which factor is most critical in distinguishing whether this injury is work-related under typical Workers' Compensation law?",
   "options": [
    "Whether the employee was paid hourly or salary, as only non-exempt employees qualify for Workers' Compensation benefits during any on-site injury",
+   "Whether the company had a written safety policy posted, since lack of documented procedures voids all Workers' Compensation claims filed by employees",
    "Whether the injury occurred during work hours and arose out of employment duties, since personal activities during breaks generally fall outside work-related coverage",
-   "Whether the employee had a previous injury history, as preexisting conditions are typically excluded from Workers' Compensation reimbursement entirely",
-   "Whether the company had a written safety policy posted, since lack of documented procedures voids all Workers' Compensation claims filed by employees"
+   "Whether the employee had a previous injury history, as preexisting conditions are typically excluded from Workers' Compensation reimbursement entirely"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Work-related injuries must arise out of and occur during employment duties. A personal activity during a break—lifting from one's own vehicle—typically does not satisfy the work-related requirement, even if it occurs on company grounds. Employment status (hourly vs. salary) does not determine Workers' Compensation eligibility, prior injury history doesn't automatically exclude current claims, and safety policy documentation does not void legitimate work-related injury claims.",
   "difficulty": "hard",
   "knowledge_area": "Government Relations and Issues"
@@ -353,12 +353,12 @@
  {
   "question": "An employer discovers that a hiring manager has consistently rejected qualified female candidates for management positions while accepting male candidates with similar qualifications. The company argues this reflects individual decision-making rather than company policy. Under the Equal Employment Opportunity framework, what legal standard would likely apply to determine if discrimination occurred?",
   "options": [
-   "The company must prove the manager's decisions were based solely on documented job-performance metrics, and any pattern of rejection requires the employee to show intentional discrimination beyond statistical evidence",
    "A pattern of rejection decisions showing disparate treatment of similarly qualified candidates based on a protected characteristic can establish discrimination, regardless of whether written policy mandated the practice",
+   "The company must prove the manager's decisions were based solely on documented job-performance metrics, and any pattern of rejection requires the employee to show intentional discrimination beyond statistical evidence",
    "The company is liable only if the manager was explicitly instructed in writing to discriminate, and statistical patterns of hiring outcomes are insufficient to prove discrimination without testimony from the manager admitting bias",
    "Individual hiring manager decisions are protected as discretionary judgment calls, and discrimination claims require proof that the company's formal procedures contained explicit discriminatory language or quotas"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The EEO framework recognizes disparate treatment—a pattern of decisions favoring one protected class over another in similar circumstances—as evidence of discrimination. Statistical evidence of hiring patterns can establish a prima facie case without requiring the employer to have written discriminatory policy or the manager to admit bias. Disparate treatment differs from disparate impact and does not require proof of intentional instruction to discriminate.",
   "difficulty": "hard",
   "knowledge_area": "Government Relations and Issues"
@@ -366,12 +366,12 @@
  {
   "question": "An employee requests accommodation for a documented disability that limits her ability to lift more than 20 pounds. Her job description lists heavy lifting as an essential function, but the company could redesign the role to eliminate 70% of lifting tasks while preserving core duties. Under the ADA, what obligation does the employer have in this scenario?",
   "options": [
+   "The employer must offer the employee a medical leave of absence rather than restructure the job, as the ADA prioritizes leave options before job modification or reassignment to other positions",
    "The employer must modify the job to accommodate the employee unless doing so creates undue hardship, though essential functions need not be altered if elimination would fundamentally change the position",
-   "The employer must provide the accommodation only if the employee can prove the modification would increase productivity; otherwise, the employee must be reassigned to a different role at lower pay",
    "The employer may deny the accommodation because heavy lifting is listed as essential in the job description, and modifying essential functions exceeds reasonable accommodation requirements",
-   "The employer must offer the employee a medical leave of absence rather than restructure the job, as the ADA prioritizes leave options before job modification or reassignment to other positions"
+   "The employer must provide the accommodation only if the employee can prove the modification would increase productivity; otherwise, the employee must be reassigned to a different role at lower pay"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The ADA requires employers to provide reasonable accommodations unless they create undue hardship. Job restructuring and modification of non-essential or marginal functions are recognized accommodations. While an employer need not eliminate all essential functions, significant restructuring of a job to accommodate a disability—especially when core duties remain intact—is often reasonable. Leave and reassignment are alternatives only when other accommodations prove impossible.",
   "difficulty": "hard",
   "knowledge_area": "Government Relations and Issues"
@@ -379,12 +379,12 @@
  {
   "question": "A company has hired an independent contractor to provide bookkeeping services. The contractor works from her own office, sets her own hours, provides her own software, and serves multiple clients simultaneously. However, the company's tax documents classify her as a W-2 employee. If the IRS audits this classification, which factor would most likely support reclassifying her as an independent contractor rather than an employee?",
   "options": [
+   "The contractor was hired without completing an I-9 form and background check, indicating the company did not follow standard employee onboarding procedures required for W-2 classification",
    "The contractor provides services at an off-site location and maintains her own business infrastructure and client base, demonstrating significant independence in how, when, and where work is performed",
    "The contractor receives no employee benefits such as health insurance, retirement plans, or paid time off, which distinguishes independent contractors from employees in federal tax and employment law",
-   "The contractor is paid via 1099 form and invoices for services rendered, and the company has no written contract specifying the relationship as independent or employee status",
-   "The contractor was hired without completing an I-9 form and background check, indicating the company did not follow standard employee onboarding procedures required for W-2 classification"
+   "The contractor is paid via 1099 form and invoices for services rendered, and the company has no written contract specifying the relationship as independent or employee status"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Independent contractor status hinges on control: workers with significant control over methods, location, schedule, tools, and ability to serve others are typically independent contractors, not employees. While benefits, 1099 reporting, and missing I-9 forms may correlate with contractor status, they are not definitive legal tests. The key distinction is behavioral and financial independence, demonstrated here by the contractor's multi-client practice, own infrastructure, and autonomous work schedule.",
   "difficulty": "hard",
   "knowledge_area": "Government Relations and Issues"
@@ -392,9 +392,9 @@
  {
   "question": "During collective bargaining negotiations, management reaches a point where both sides have presented final offers with no movement for several rounds. Under labor law, what is this situation called, and what is management's primary tactical goal once it occurs?",
   "options": [
-   "A deadlock, allowing management to implement its last offer unilaterally without union approval or further negotiation",
-   "An impasse, permitting management to implement its last offer as a defensive measure while remaining open to resumed negotiation",
    "A stalemate, enabling management to request federal mediation before any unilateral action can be taken by either party",
+   "An impasse, permitting management to implement its last offer as a defensive measure while remaining open to resumed negotiation",
+   "A deadlock, allowing management to implement its last offer unilaterally without union approval or further negotiation",
    "An economic standoff, authorizing management to temporarily suspend collective bargaining rights until union leadership changes"
   ],
   "correct_index": 1,
@@ -407,8 +407,8 @@
   "options": [
    "It prohibited unions from engaging in secondary boycotts and jurisdictional strikes, limiting their economic leverage beyond direct employer disputes",
    "It eliminated union shops and required all union contracts to include open-shop provisions, allowing non-members to work without dues payment",
-   "It granted management the explicit right to initiate organizing campaigns and to counter union recruitment within company facilities",
-   "It mandated that all union officers undergo security screening and government approval before representing their membership"
+   "It mandated that all union officers undergo security screening and government approval before representing their membership",
+   "It granted management the explicit right to initiate organizing campaigns and to counter union recruitment within company facilities"
   ],
   "correct_index": 0,
   "explanation": "Taft-Hartley restricted unions by prohibiting secondary boycotts and jurisdictional strikes, which had been tools unions used to expand their leverage. While it allowed union shops (not open shops), that was a compromise, not the primary restriction. Government approval of officers and management's right to counter-organize were not Taft-Hartley provisions.",
@@ -419,11 +419,11 @@
   "question": "A manufacturing firm faces a union organizing campaign. The company's HR manager considers several responses: discussing union promises with employees, calling employees to mandatory meetings about the company's anti-union position, and investigating which employees are organizing. Under case law prohibiting unfair labor practices by management, which of these actions most clearly violates labor law?",
   "options": [
    "Discussing union promises with employees, because employer speech about unions is restricted under the National Labor Relations Act",
-   "Conducting investigations into employee organizing activities to identify union sympathizers and determining their job status",
    "Calling employees to mandatory meetings to express the company's business position on unionization and its effects",
-   "Offering employees details about the company's existing benefits and wages to counter union recruitment claims"
+   "Offering employees details about the company's existing benefits and wages to counter union recruitment claims",
+   "Conducting investigations into employee organizing activities to identify union sympathizers and determining their job status"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Management investigating employees' union activities and using that information to make employment decisions violates the NLRA by interfering with protected concerted activity. Employer speech against unionization, benefit discussions, and mandatory information meetings are generally lawful under the \"captive audience\" doctrine. Case law prohibits management from surveilling or penalizing organizing, not from communicating its position.",
   "difficulty": "hard",
   "knowledge_area": "Labor Relations and Collective Bargaining"
@@ -431,12 +431,12 @@
  {
   "question": "An employee files a formal grievance alleging unfair shift assignment. The grievance process moves through three steps: an informal discussion with the supervisor, a formal review with the department manager and union representative, and finally binding arbitration. At which stage does the role of the union representative formally change, and what does this reflect about the grievance process's design?",
   "options": [
-   "At the formal review stage, the union representative transitions from advisor to advocate, reflecting the process's shift from informal resolution to contractual enforcement",
-   "At the binding arbitration stage, the union representative becomes a neutral mediator, reflecting the process's intent to move from bilateral to tripartite dispute resolution",
    "At the informal discussion stage, the union representative must step aside to allow direct employee-supervisor dialogue, reflecting the process's preference for front-line problem-solving",
-   "At the formal review stage, the union representative gains full control of the grievance presentation, reflecting the process's shift from individual to collective bargaining authority"
+   "At the formal review stage, the union representative gains full control of the grievance presentation, reflecting the process's shift from individual to collective bargaining authority",
+   "At the binding arbitration stage, the union representative becomes a neutral mediator, reflecting the process's intent to move from bilateral to tripartite dispute resolution",
+   "At the formal review stage, the union representative transitions from advisor to advocate, reflecting the process's shift from informal resolution to contractual enforcement"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "At the formal review stage, the union representative's role evolves from informal support to formal advocacy on behalf of the grievant, signaling that the dispute has escalated beyond resolution at the supervisory level. In arbitration, the union advocate presents the case to a neutral arbitrator, not as a mediator. The union typically participates in informal discussions; gaining full control at formal review overstates its authority.",
   "difficulty": "hard",
   "knowledge_area": "Labor Relations and Collective Bargaining"
@@ -444,12 +444,12 @@
  {
   "question": "A union organizer seeking to establish a bargaining unit must navigate both the legal requirements under the National Labor Relations Board and the steps of union organizing itself. Which of the following most accurately reflects how NLRB jurisdiction and union organizing strategy interact when defining an appropriate bargaining unit?",
   "options": [
-   "The union proposes the bargaining unit composition, the NLRB must accept it if the union demonstrates majority support through signed authorization cards alone",
-   "The union petitions the NLRB with evidence of employee interest, the NLRB determines the appropriate unit based on statutory factors, and only then does the union conduct an election among that defined group",
    "The union collects authorization cards from at least 30% of the proposed unit, then immediately holds an election regardless of NLRB unit-determination challenges from management",
-   "The union and management negotiate the bargaining unit scope as part of pre-election agreements, with the NLRB's role limited to certifying the union if it wins a plurality of votes"
+   "The union proposes the bargaining unit composition, the NLRB must accept it if the union demonstrates majority support through signed authorization cards alone",
+   "The union and management negotiate the bargaining unit scope as part of pre-election agreements, with the NLRB's role limited to certifying the union if it wins a plurality of votes",
+   "The union petitions the NLRB with evidence of employee interest, the NLRB determines the appropriate unit based on statutory factors, and only then does the union conduct an election among that defined group"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The NLRB determines the appropriate bargaining unit based on factors like community of interest and job function—not union preference alone. The union must demonstrate sufficient interest (typically 30% card authorization) to petition the NLRB, which then rules on unit appropriateness before any election occurs. Immediate elections without NLRB unit determination and negotiated unit scopes bypass required NLRB procedures.",
   "difficulty": "hard",
   "knowledge_area": "Labor Relations and Collective Bargaining"
@@ -457,12 +457,12 @@
  {
   "question": "When an organization implements flexible scheduling alongside job sharing initiatives, which of the following best describes HR's primary planning responsibility in this transition?",
   "options": [
+   "Creating separate HR goal statements for full-time employees versus those participating in job sharing or flexible schedule programs",
    "Updating compensation structures while maintaining policy consistency across both traditional and alternative work arrangements",
    "Developing comprehensive HR policies that address scheduling frameworks, team coordination methods, and performance evaluation standards for hybrid workforce models",
-   "Establishing baseline productivity metrics before introducing flexible arrangements to measure comparative employee output changes",
-   "Creating separate HR goal statements for full-time employees versus those participating in job sharing or flexible schedule programs"
+   "Establishing baseline productivity metrics before introducing flexible arrangements to measure comparative employee output changes"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "HR's role in comprehensive planning requires developing integrated HR policies and goals that account for new work arrangements. While compensation and metrics matter, the primary responsibility is establishing clear policies and standards that apply across all workforce configurations to ensure organizational coherence.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -471,11 +471,11 @@
   "question": "A manufacturing company faces high turnover in entry-level positions while simultaneously struggling to attract skilled technical workers. How should HR planning address this dual challenge while maintaining organizational diversity goals?",
   "options": [
    "Increase recruitment budgets exclusively in technical fields and implement stricter retention policies for entry-level staff to reduce overall turnover costs",
-   "Evaluate current HR policies and compensation structures for both levels, identify systemic barriers affecting diverse candidate pools, and redesign career pathways connecting entry-level roles to technical positions",
    "Recognize that diversity initiatives and retention challenges are separate concerns requiring independent HR policies and distinct budget allocations for each problem",
+   "Evaluate current HR policies and compensation structures for both levels, identify systemic barriers affecting diverse candidate pools, and redesign career pathways connecting entry-level roles to technical positions",
    "Update job descriptions for technical roles to require entry-level experience, thereby converting the talent pool and reducing the number of separate recruitment campaigns needed"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "HR planning must integrate solutions across interconnected challenges. Evaluating and updating HR policies comprehensively—addressing compensation, career development, and diversity barriers—creates a cohesive strategy that recognizes entry-level roles as talent pipelines while strengthening diversity across all levels.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -483,12 +483,12 @@
  {
   "question": "Which aspect of HR's role in maintaining a code of ethics becomes most critical when technology enables remote work and job sharing arrangements?",
   "options": [
-   "Ensuring ethical standards are communicated uniformly through digital platforms and accountability mechanisms remain consistent across dispersed team structures and work arrangements",
-   "Limiting remote work opportunities to departments where ethical violations are least likely to occur based on historical data analysis",
+   "Assigning ethics compliance monitoring exclusively to managers who work traditional schedules to maintain centralized oversight and control",
    "Requiring in-person ethics training sessions for all employees regardless of work arrangement to guarantee comprehension of organizational values",
-   "Assigning ethics compliance monitoring exclusively to managers who work traditional schedules to maintain centralized oversight and control"
+   "Ensuring ethical standards are communicated uniformly through digital platforms and accountability mechanisms remain consistent across dispersed team structures and work arrangements",
+   "Limiting remote work opportunities to departments where ethical violations are least likely to occur based on historical data analysis"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "As work becomes dispersed through remote and flexible arrangements, HR must ensure ethical standards remain enforced consistently across all work models through clear communication and accountability. Physical proximity is not required for ethical behavior; instead, systems and messaging must adapt to the technology and structures employees use.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -496,12 +496,12 @@
  {
   "question": "An organization recognizes that global supply chain disruptions and remote workforce trends are creating skills gaps in cross-cultural communication and digital collaboration. How does this scenario relate to HR planning's responsibility for evaluating organizational challenges and trends?",
   "options": [
-   "HR must identify that world issues and work-from-home trends together create specific skill deficiencies, then redesign training programs and hiring criteria to address these interdependent workforce needs",
+   "World issues and workplace trends are external factors beyond HR's control; planning should focus solely on internal HR policy updates without addressing skill development responses",
    "HR should implement separate hiring initiatives for remote workers and international teams rather than integrating these concerns into unified HR planning and policy development",
    "The skills gap indicates that flexible scheduling and job sharing were premature; HR should recommend returning to traditional work arrangements to simplify communication challenges",
-   "World issues and workplace trends are external factors beyond HR's control; planning should focus solely on internal HR policy updates without addressing skill development responses"
+   "HR must identify that world issues and work-from-home trends together create specific skill deficiencies, then redesign training programs and hiring criteria to address these interdependent workforce needs"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "HR planning must evaluate how multiple trends and challenges intersect—in this case, global disruptions and remote work together create specific skill gaps. HR's role is to recognize these interconnected impacts and adapt policies, training, and hiring to equip the organization with necessary capabilities.",
   "difficulty": "hard",
   "knowledge_area": "Human Resource Planning"
@@ -510,9 +510,9 @@
   "question": "When evaluating the importance of teamwork in an organization implementing both diversity initiatives and flexible work arrangements, what represents the most comprehensive HR planning approach?",
   "options": [
    "Establish team-based performance metrics that account for diverse communication styles and asynchronous collaboration patterns while updating HR policies to support inclusive team cohesion across flexible work models",
-   "Create mandatory in-office days for all teams to ensure diversity objectives are met and flexible scheduling does not undermine collaborative relationships",
+   "Define teamwork as requiring physical proximity and scheduled availability, then restrict flexible scheduling options to roles that do not require collaborative responsibilities",
    "Implement diversity training programs separately from flexible work policies, assigning each initiative to different HR departments to maintain clear organizational boundaries",
-   "Define teamwork as requiring physical proximity and scheduled availability, then restrict flexible scheduling options to roles that do not require collaborative responsibilities"
+   "Create mandatory in-office days for all teams to ensure diversity objectives are met and flexible scheduling does not undermine collaborative relationships"
   ],
   "correct_index": 0,
   "explanation": "Comprehensive HR planning integrates multiple objectives by recognizing that teamwork, diversity, and flexible arrangements must reinforce each other. HR must establish policies and metrics that support effective collaboration across diverse teams operating in flexible structures, rather than treating these goals as competing priorities.",
@@ -522,12 +522,12 @@
  {
   "question": "A manager is designing a hiring plan for anticipated turnover over the next 18 months. Which technique should be prioritized to identify internal candidates capable of filling future leadership roles?",
   "options": [
+   "Team recruiting to expand the applicant pool by leveraging referrals from existing high performers",
    "Labor market statistics to assess regional wage trends and competitor salary offerings",
-   "Succession planning to evaluate current employees' readiness and development needs for future positions",
    "Forecasting to predict external market demand and adjust recruitment timelines accordingly",
-   "Team recruiting to expand the applicant pool by leveraging referrals from existing high performers"
+   "Succession planning to evaluate current employees' readiness and development needs for future positions"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Succession planning specifically focuses on identifying and developing internal talent for future leadership and key positions, making it the correct hiring planning technique for this scenario. Forecasting predicts overall staffing needs; labor market statistics inform external recruitment; team recruiting expands the applicant pool—none address internal readiness for promotion.",
   "difficulty": "hard",
   "knowledge_area": "Staff"
@@ -535,12 +535,12 @@
  {
   "question": "During the selection process, a candidate passes the initial interview and written assessment but fails the background check due to a criminal conviction unrelated to the job duties. Under Equal Employment Opportunity legislation, which factor should most heavily influence the hiring decision?",
   "options": [
-   "The nature and severity of the offense, how long ago it occurred, and the job's specific safety or fiduciary requirements",
    "Company policy mandating automatic rejection of all candidates with any criminal history regardless of position type",
+   "The nature and severity of the offense, how long ago it occurred, and the job's specific safety or fiduciary requirements",
    "The candidate's performance on previous employment tests, assuming background results are merely administrative confirmations",
    "Labor market statistics showing the shortage of qualified applicants in the region, justifying an exception to standard contingencies"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "EEO legislation requires individualized assessment of criminal history in relation to job duties; blanket rejections violate fair hiring practices. Employers must evaluate recency, nature of offense, and job-relatedness rather than automatically disqualifying all candidates with records. Company policy alone and labor market shortages do not override legal requirements.",
   "difficulty": "hard",
   "knowledge_area": "Staff"
@@ -548,12 +548,12 @@
  {
   "question": "An organization is struggling with high turnover among mid-level employees despite competitive salaries. Research indicates that employees report limited advancement visibility and unclear performance expectations. Which of the following most directly addresses the core job satisfaction factors likely responsible for the turnover?",
   "options": [
-   "Implementing Affirmative Action recruitment initiatives to attract a more diverse talent pool and improve workplace culture",
    "Outsourcing non-core functions to reduce employee workload and allow more time for professional development activities",
    "Establishing transparent career pathways, regular feedback mechanisms, and clear performance standards tied to advancement",
+   "Implementing Affirmative Action recruitment initiatives to attract a more diverse talent pool and improve workplace culture",
    "Redesigning the interview process to include competency-based questions and reference checks validating leadership potential"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The employee feedback directly indicates dissatisfaction with career progression visibility and role clarity—both core job satisfaction factors. Career pathways, feedback systems, and performance standards address these root causes. Recruitment changes, workload reduction, and interview redesign do not directly tackle the reported satisfaction drivers of advancement opportunity and expectation clarity.",
   "difficulty": "hard",
   "knowledge_area": "Staff"
@@ -561,12 +561,12 @@
  {
   "question": "A hiring manager is developing a structured interview protocol and seeks to comply with legal standards while obtaining valid predictive information about job performance. Which characteristic should the interview questions prioritize to ensure both legal defensibility and reliability?",
   "options": [
-   "Questions that probe the candidate's personal background, family situation, and long-term life plans to assess cultural fit",
    "Job-specific behavioral questions that require candidates to describe how they have handled situations directly relevant to core duties",
    "Open-ended questions allowing candidates maximum freedom to discuss any experiences they deem important to their qualifications",
-   "Personality and aptitude questions that assess emotional intelligence and communication style across all roles uniformly"
+   "Personality and aptitude questions that assess emotional intelligence and communication style across all roles uniformly",
+   "Questions that probe the candidate's personal background, family situation, and long-term life plans to assess cultural fit"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Behaviorally-anchored, job-specific questions are legally defensible and predictively valid because they relate directly to actual job performance requirements. Personal background questions raise EEO concerns; overly open-ended questions reduce standardization and reliability; uniform personality assessments may not predict job-specific performance and can introduce disparate impact.",
   "difficulty": "hard",
   "knowledge_area": "Staff"
@@ -574,12 +574,12 @@
  {
   "question": "During the job analysis phase, an HR specialist must determine which information is essential for effective recruitment and selection decisions. Among the following, which set of elements represents the outputs most directly used to guide both job posting content and candidate evaluation criteria?",
   "options": [
-   "Labor market statistics, wage surveys, and competitor benefit analyses that inform salary positioning and offer structures",
-   "Job duties, required competencies, performance standards, and knowledge/skill specifications identified through systematic analysis",
    "Reference checks, background investigation procedures, and medical examination protocols that validate candidate suitability post-offer",
-   "Succession planning data, internal promotion records, and employee development assessments that identify advancement opportunities"
+   "Labor market statistics, wage surveys, and competitor benefit analyses that inform salary positioning and offer structures",
+   "Succession planning data, internal promotion records, and employee development assessments that identify advancement opportunities",
+   "Job duties, required competencies, performance standards, and knowledge/skill specifications identified through systematic analysis"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Job analysis outputs—duties, competencies, standards, and required knowledge—directly inform both recruitment messaging (what to advertise) and selection criteria (what to evaluate). Labor market data guides compensation; reference and background checks occur after selection; succession data informs retention and development but not the initial candidate screening.",
   "difficulty": "hard",
   "knowledge_area": "Staff"
@@ -587,12 +587,12 @@
  {
   "question": "During collective bargaining negotiations, management determines that further concessions on wages would make the contract economically unviable, and labor refuses to budge from its demands. Both parties have presented final offers multiple times with no movement. What is the primary term for this negotiating condition, and what is management's typical strategic goal at this stage?",
   "options": [
-   "A deadlock situation in which management must request federal mediation to prevent a work stoppage and preserve the negotiating relationship",
-   "An impasse where management aims to demonstrate its bottom-line position while keeping dialogue open for future settlement without capitulating",
    "A stalemate requiring binding arbitration, in which management seeks to shift decision-making authority to a neutral third party to break the deadlock",
-   "A bargaining collapse in which management pursues litigation against the union to invalidate the strike authorization and reassert control"
+   "A deadlock situation in which management must request federal mediation to prevent a work stoppage and preserve the negotiating relationship",
+   "A bargaining collapse in which management pursues litigation against the union to invalidate the strike authorization and reassert control",
+   "An impasse where management aims to demonstrate its bottom-line position while keeping dialogue open for future settlement without capitulating"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "An impasse occurs when negotiating parties have exhausted movement and reached a genuine deadlock. Management's goal in labor negotiations is to achieve the best possible contract terms while maintaining a workable relationship with the union—not to give in, but to establish its true floor and create conditions for eventual settlement. Mediation and arbitration are tools that may follow, not definitions of the impasse itself.",
   "knowledge_area": "Labor Relations and Collective Bargaining",
   "difficulty": "hard"
@@ -602,8 +602,8 @@
   "options": [
    "Certification review, in which the NLRB verifies union membership rolls and declares the union as the sole bargaining representative if the majority threshold is met",
    "Election supervision and representation authority, in which the NLRB conducts or oversees the election process and certifies results to establish the union's bargaining rights",
-   "Unfair labor practice investigation, in which the NLRB determines whether management's refusal to recognize violates the Wagner Act and imposes remedies",
-   "Arbitration determination, in which the NLRB appoints a neutral arbitrator to decide whether the union obtained valid authorization and should be seated"
+   "Arbitration determination, in which the NLRB appoints a neutral arbitrator to decide whether the union obtained valid authorization and should be seated",
+   "Unfair labor practice investigation, in which the NLRB determines whether management's refusal to recognize violates the Wagner Act and imposes remedies"
   ],
   "correct_index": 1,
   "explanation": "The NLRB's role includes supervising union elections and certifying results to establish the union as the legal representative. When management contests an election or refuses recognition, the NLRB ensures the process is fair and properly administered. While unfair labor practices may also be investigated, the primary function here is the election supervision and certification authority that validates union representation rights.",
@@ -613,12 +613,12 @@
  {
   "question": "An employee files a formal grievance claiming the supervisor violated a seniority clause in the collective bargaining agreement. The grievance moves through the multi-step internal process: the supervisor denies the claim at Step 1, the department manager upholds the denial at Step 2, and the grievant requests Step 3 review by senior management, which also denies relief. The employee now demands that the union pursue binding arbitration. What is the grievant's underlying right, and what does binding arbitration accomplish in this context?",
   "options": [
-   "The grievant has the right to contractual dispute resolution, and binding arbitration provides a final, enforceable decision from a neutral arbitrator that both parties must accept",
+   "The grievant has the right to legal counsel, and binding arbitration permits an attorney to cross-examine management witnesses and create a judicial record",
    "The grievant has the right to external review, and binding arbitration allows the union to appeal to the NLRB for supervisory override of management decisions",
-   "The grievant has the right to strike authorization, and binding arbitration substitutes for a work stoppage by removing the union's need to escalate economic pressure",
-   "The grievant has the right to legal counsel, and binding arbitration permits an attorney to cross-examine management witnesses and create a judicial record"
+   "The grievant has the right to contractual dispute resolution, and binding arbitration provides a final, enforceable decision from a neutral arbitrator that both parties must accept",
+   "The grievant has the right to strike authorization, and binding arbitration substitutes for a work stoppage by removing the union's need to escalate economic pressure"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The grievance process exists to resolve disputes over contract interpretation and alleged violations. Binding arbitration is the final step in which a neutral arbitrator hears evidence and issues a decision that is legally binding on both the union and management—it is the agreed mechanism for resolving deadlocked grievances. The other options describe different processes (NLRB appeal, strike authorization, legal representation) that do not correctly characterize binding arbitration's role in grievance resolution.",
   "knowledge_area": "Labor Relations and Collective Bargaining",
   "difficulty": "hard"
@@ -626,12 +626,12 @@
  {
   "question": "A labor historian compares two competing industrial relations models over the past century. Model A prioritizes zero-sum conflict, with management seeking cost minimization and labor seeking maximum wage gains through confrontation. Model B emphasizes mutual problem-solving, with both parties collaborating to improve productivity and share gains fairly. Which terms best describe these models, and what distinguishes their underlying assumptions about labor-management interaction?",
   "options": [
-   "Adversarial relations focus on joint goal-setting and trust-building, while cooperative relations emphasize contract enforcement and grievance defense through legal channels",
-   "Adversarial relations assume incompatible interests and win-lose outcomes, while cooperative relations assume shared interests and interdependence requiring mutual benefit",
+   "Adversarial relations limit communication to formal bargaining sessions, while cooperative relations permit informal wage discussions between individual supervisors and workers",
    "Adversarial relations require union certification and NLRB oversight, while cooperative relations operate under non-union voluntary association frameworks",
-   "Adversarial relations limit communication to formal bargaining sessions, while cooperative relations permit informal wage discussions between individual supervisors and workers"
+   "Adversarial relations focus on joint goal-setting and trust-building, while cooperative relations emphasize contract enforcement and grievance defense through legal channels",
+   "Adversarial relations assume incompatible interests and win-lose outcomes, while cooperative relations assume shared interests and interdependence requiring mutual benefit"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Adversarial labor relations are characterized by opposing interests and distributive bargaining (one side's gain is the other's loss), while cooperative relations are built on the belief that both parties benefit from joint problem-solving and integrated solutions. These models differ fundamentally in their assumptions about whether labor and management can find mutual advantage or are locked in inevitable conflict—not in their legal structure, certification status, or communication channels.",
   "knowledge_area": "Labor Relations and Collective Bargaining",
   "difficulty": "hard"
@@ -639,12 +639,12 @@
  {
   "question": "Management learns that organizers have begun a union card-signing campaign at its facility. Before an election is filed, management holds mandatory meetings where supervisors strongly discourage unionization, promise wage increases if the union is defeated, and threaten to relocate operations if workers unionize. The union files an unfair labor practice charge with the NLRB. Under labor legislation, which management actions constitute prohibited conduct, and what is the legal principle that protects employee organizing rights?",
   "options": [
+   "Supervisor discouragement and conditional wage offers violate the National Labor Relations Act's prohibition on unfair labor practices, safeguarding employees' Section 7 rights to organize and bargain collectively",
    "Threatening relocation and promising benefits to discourage unionization violate the Taft-Hartley Act's ban on management coercion, which protects employees' right to engage in protected concerted activity",
    "Mandatory anti-union meetings and wage promises breach the Wagner Act's guarantee of employee free choice in representation, protecting workers' right to organize without employer interference or reprisal",
-   "Supervisor discouragement and conditional wage offers violate the National Labor Relations Act's prohibition on unfair labor practices, safeguarding employees' Section 7 rights to organize and bargain collectively",
    "Threatening operations closure and offering incentives against unionization infringe the Labor-Management Reporting and Disclosure Act's employee bill of rights, shielding workers from employer domination"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The National Labor Relations Act (Wagner Act) establishes Section 7 rights protecting employees' rights to organize and bargain collectively, and defines unfair labor practices by management including threats, promises of benefit, and interference with organizing. While the Taft-Hartley Act amended the NLRA and the LMRDA addresses union governance, the NLRA is the primary statute establishing protected concerted activity and defining management's prohibited conduct during organizing campaigns.",
   "knowledge_area": "Labor Relations and Collective Bargaining",
   "difficulty": "hard"

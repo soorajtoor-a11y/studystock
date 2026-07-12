@@ -2,12 +2,12 @@
  {
   "question": "A retail company uses customer purchase history from its database to forecast seasonal demand for inventory. Which foundational retail function does this most directly demonstrate?",
   "options": [
-   "Marketing communication to promote products across multiple channels and reach new customer segments",
-   "Product planning and control through data-driven analysis of retail transaction records",
    "Distribution strategy involving the physical movement of goods from warehouses to store locations",
-   "Retailing operations focused on the layout and merchandising of shelves within individual stores"
+   "Retailing operations focused on the layout and merchandising of shelves within individual stores",
+   "Marketing communication to promote products across multiple channels and reach new customer segments",
+   "Product planning and control through data-driven analysis of retail transaction records"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Obtaining information from retail databases for product planning and control involves using transaction data to make decisions about inventory levels and product assortment. While marketing and distribution are related retail functions, they do not directly describe the analysis of database records for planning purposes.",
   "knowledge_area": "Foundational Retail Knowledge",
   "difficulty": "hard"
@@ -16,9 +16,9 @@
   "question": "An organization develops a campaign to build brand awareness and influence consumer preferences for its products across social media and in-store displays. A separate division manages the supply chain to ensure products reach stores efficiently. Which statement best distinguishes these two functions?",
   "options": [
    "Retailing focuses on persuading consumers and creating demand, while distribution manages the logistics and movement of goods through channels",
-   "Marketing creates customer preference and brand recognition, while retailing handles only the final point-of-sale transaction with customers",
    "Distribution controls pricing and promotions, while marketing determines which products are physically stocked in store locations",
-   "Retailing encompasses all supply-chain activities, while marketing is limited to advertising and does not influence product availability"
+   "Retailing encompasses all supply-chain activities, while marketing is limited to advertising and does not influence product availability",
+   "Marketing creates customer preference and brand recognition, while retailing handles only the final point-of-sale transaction with customers"
   ],
   "correct_index": 0,
   "explanation": "Retailing and marketing are distinct functions; marketing persuades and builds demand, while distribution manages the physical movement and availability of goods through supply chains. The other options either conflate the functions or misattribute their primary responsibilities.",
@@ -42,11 +42,11 @@
   "question": "A retail organization queries its database to identify slow-moving inventory in specific categories and regional markets. It then adjusts purchase orders and promotional strategies based on this analysis. Which two foundational retail functions does this scenario most directly integrate?",
   "options": [
    "Retailing and marketing, because inventory decisions require coordinating customer-facing promotions with purchasing",
-   "Product planning and control with data retrieval from retail databases to inform both purchasing and promotional decisions",
    "Distribution and technology, because moving slow inventory requires optimizing warehouse and logistics operations",
+   "Product planning and control with data retrieval from retail databases to inform both purchasing and promotional decisions",
    "Marketing and distribution, because promotional campaigns must align with the physical availability of goods across store locations"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "This scenario explicitly demonstrates obtaining information from retail databases to support product planning and control decisions—the core integration of data retrieval and inventory management. While promotions and distribution are involved, they are outcomes of the primary function, not the direct integration demonstrated.",
   "knowledge_area": "Foundational Retail Knowledge",
   "difficulty": "hard"
@@ -54,12 +54,12 @@
  {
   "question": "Two retail companies pursue different strategies: one focuses on direct-to-consumer sales through digital channels and local micro-fulfillment centers, while the other uses traditional wholesale distribution to stock products in independent retailers nationwide. How do these approaches differ in their scope of distribution and technological integration?",
   "options": [
+   "The first approach controls more distribution touchpoints but lacks access to retail data, while the second approach has broader market reach but requires more promotional spending",
    "The first model shortens distribution channels through direct sales and localized fulfillment technology, while the second relies on intermediaries and centralized logistics without technology differentiation",
-   "The first company manages retailing and marketing, while the second manages only distribution, making them fundamentally incomparable business models",
    "The first model uses databases for inventory, while the second does not, demonstrating that distribution technology is unique to direct-to-consumer approaches",
-   "The first approach controls more distribution touchpoints but lacks access to retail data, while the second approach has broader market reach but requires more promotional spending"
+   "The first company manages retailing and marketing, while the second manages only distribution, making them fundamentally incomparable business models"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Direct-to-consumer models shorten distribution by eliminating wholesalers and leverage technology for localized fulfillment, while wholesale models use intermediaries and more traditional centralized supply chains. Both involve technology and data use, but their distribution scope and integration differ fundamentally. The other options either oversimplify the business models or misattribute the role of technology.",
   "knowledge_area": "Foundational Retail Knowledge",
   "difficulty": "hard"
@@ -67,12 +67,12 @@
  {
   "question": "A retailer notices a 3% variance between perpetual inventory records and physical count results across three regions. Which combination of factors would most likely explain this discrepancy in a unit control system?",
   "options": [
-   "Merchandise in transit between distribution centers and incomplete cycle count documentation at the department level",
    "Unrecorded vendor returns, point-of-sale system errors, and theft or damage not yet logged in the inventory ledger",
    "Seasonal demand fluctuations, regional price adjustments, and customer preference shifts in class-level categories",
+   "Merchandise in transit between distribution centers and incomplete cycle count documentation at the department level",
    "Overstocking at the class level, supplier invoice delays, and misalignment between budgeted and actual allocation"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Shrinkage in inventory systems results from unrecorded transactions (returns, POS errors) and loss events (theft, damage). The other options describe allocation, forecasting, or timing issues rather than the specific causes of the variance between recorded and physical counts in a unit control system.",
   "knowledge_area": "Inventory Control",
   "difficulty": "hard"
@@ -80,12 +80,12 @@
  {
   "question": "When allocating seasonal merchandise across five regions with different demographic profiles, a manager must balance vendor concentration limits against department-level sales velocity. Which approach best maintains inventory control while respecting both constraints?",
   "options": [
-   "Assign 40% of total units to the highest-performing region first, then distribute remainder equally across remaining regions by vendor",
-   "Base allocation on prior-period sales by region and department, adjust for vendor maximum-concentration thresholds, then monitor stock velocity weekly",
    "Allocate identical quantities per region per department, apply vendor limits proportionally, and track only quarterly physical counts",
-   "Concentrate inventory in two largest regions to maximize vendor discounts, backfill smaller regions monthly, and reconcile annually"
+   "Assign 40% of total units to the highest-performing region first, then distribute remainder equally across remaining regions by vendor",
+   "Concentrate inventory in two largest regions to maximize vendor discounts, backfill smaller regions monthly, and reconcile annually",
+   "Base allocation on prior-period sales by region and department, adjust for vendor maximum-concentration thresholds, then monitor stock velocity weekly"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Effective allocation requires tracking historical performance by location and department while enforcing vendor diversity rules and monitoring ongoing stock movement. Approaches using equal allocation, annual reconciliation only, or concentration strategies fail to maintain granular control needed for responsive inventory management.",
   "knowledge_area": "Inventory Control",
   "difficulty": "hard"
@@ -93,12 +93,12 @@
  {
   "question": "A department uses a perpetual unit control system but discovers significant discrepancies when comparing class-level records to physical counts at individual store locations. What is the most likely cause of this tracking breakdown?",
   "options": [
-   "Perpetual systems cannot track inventory below the department level and therefore cannot support class-level accountability",
-   "Store transfers between locations are not being logged consistently in the system, or point-of-sale adjustments are not flowing back to the central ledger",
    "Periodic physical counts at the store level inherently contradict perpetual methods, making reconciliation impossible",
-   "The vendor records do not align with the class-level cost basis, preventing accurate unit reconciliation across locations"
+   "The vendor records do not align with the class-level cost basis, preventing accurate unit reconciliation across locations",
+   "Perpetual systems cannot track inventory below the department level and therefore cannot support class-level accountability",
+   "Store transfers between locations are not being logged consistently in the system, or point-of-sale adjustments are not flowing back to the central ledger"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Perpetual systems track units in real-time at multiple levels when properly maintained. Discrepancies between class-level records and location-level counts typically stem from transaction recording failures—inter-store transfers or POS adjustments not syncing with the central inventory ledger—rather than system design limitations.",
   "knowledge_area": "Inventory Control",
   "difficulty": "hard"
@@ -106,12 +106,12 @@
  {
   "question": "A retailer maintains both a perpetual unit control system and a periodic physical inventory count schedule. Under what conditions would relying exclusively on periodic counts without perpetual updates create the greatest risk to shrinkage detection?",
   "options": [
-   "When vendor lead times exceed 30 days and seasonal merchandise is stored in multiple regional warehouses simultaneously",
-   "When high-velocity departments have low shrinkage rates but are audited only quarterly, allowing theft or loss to accumulate undetected between counts",
    "When the physical count team uses estimation methods instead of exact unit counts in locations with mixed product classes",
-   "When allocation adjustments are processed monthly but purchase order receipts are recorded weekly in the general ledger"
+   "When allocation adjustments are processed monthly but purchase order receipts are recorded weekly in the general ledger",
+   "When high-velocity departments have low shrinkage rates but are audited only quarterly, allowing theft or loss to accumulate undetected between counts",
+   "When vendor lead times exceed 30 days and seasonal merchandise is stored in multiple regional warehouses simultaneously"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Periodic-only counting systems leave extended blind spots between audits, particularly in fast-moving departments where small per-transaction losses compound into significant shrinkage before detection. Perpetual systems catch discrepancies in real-time, whereas periodic-only methods delay discovery until the next scheduled count.",
   "knowledge_area": "Inventory Control",
   "difficulty": "hard"
@@ -119,12 +119,12 @@
  {
   "question": "During a cycle count audit, a store finds that recorded inventory for a vendor's class exceeds physical count by 12 units across three locations, yet the vendor shipment receipt shows the correct quantity was received. Which maintenance action should be prioritized to restore system integrity?",
   "options": [
-   "Issue a corrective purchase order to the vendor for the missing units and request a replacement shipment within 48 hours",
    "Investigate point-of-sale transaction logs, inter-location transfers, and damage/return documentation for the product class to identify where the discrepancy originated",
+   "Issue a corrective purchase order to the vendor for the missing units and request a replacement shipment within 48 hours",
    "Adjust the perpetual ledger downward by 12 units, record shrinkage, and implement daily cycle counts until variance is explained",
    "Recalculate the allocation percentages for that vendor across all regions and rebalance inventory to match the lower physical count"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "System maintenance requires identifying the root cause of discrepancies before adjusting records. Since the receipt was correct, the loss occurred post-receipt; investigating transaction logs and transfers uncovers whether it was POS errors, unrecorded transfers, or actual shrinkage. Simply adjusting without investigation perpetuates the control failure.",
   "knowledge_area": "Inventory Control",
   "difficulty": "hard"
@@ -132,12 +132,12 @@
  {
   "question": "A retailer uses a cost-plus markup method to price inventory and achieves a 40% gross margin. A competitor launches a demand-based pricing strategy that undercuts this retailer's prices by 15% during peak shopping seasons. Which pricing approach should the retailer prioritize to maintain market position while sustaining profitability?",
   "options": [
-   "Shift entirely to demand-based pricing and eliminate cost-plus markup calculations to match competitor pricing exactly",
+   "Combine cost-based floor pricing with demand analysis to identify price points that balance volume and margin retention",
    "Maintain cost-based pricing but analyze competitor pricing data and customer demand elasticity to adjust markup selectively",
    "Switch to competition-based pricing while monitoring break-even points to ensure gross margin does not fall below 25%",
-   "Combine cost-based floor pricing with demand analysis to identify price points that balance volume and margin retention"
+   "Shift entirely to demand-based pricing and eliminate cost-plus markup calculations to match competitor pricing exactly"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Hard-difficulty pricing questions require weighing multiple approaches simultaneously. While competition-based pricing (Option C) considers rivals, it risks margin erosion. Demand-based pricing alone (Option A) ignores cost recovery. The correct answer (Option D) integrates cost-based flooring—ensuring break-even viability—with demand and competitive intelligence, reflecting real retail strategy.",
   "difficulty": "hard",
   "knowledge_area": "Pricing"
@@ -158,12 +158,12 @@
  {
   "question": "A retailer uses return-on-investment (ROI) pricing to set margins and targets a 25% ROI on a $40,000 product investment. The retailer also faces a demand-elastic product category where a 5% price increase historically reduces unit sales by 8%. Should the retailer prioritize achieving the ROI target or adjust pricing downward to maintain volume and market share?",
   "options": [
-   "Prioritize ROI achievement because the 25% return threshold is non-negotiable regardless of competitive or demand conditions",
    "Lower prices immediately by 5% to capture volume gains, even if this reduces ROI to 18% or below target levels",
    "Analyze the trade-off between achieving the ROI margin and preserving market position in an elastic demand category",
+   "Prioritize ROI achievement because the 25% return threshold is non-negotiable regardless of competitive or demand conditions",
    "Set price at the ROI target and accept that market share loss is the natural outcome of profit-focused pricing"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "ROI-based and demand-based pricing can conflict in elastic categories. Option A ignores market dynamics; Option B abandons profitability discipline. Option D accepts preventable loss. The correct answer (Option C) reflects hard-mode reasoning: a retailer must weigh ROI objectives against demand elasticity and competitive reality, potentially finding a middle price point that satisfies both goals partially.",
   "difficulty": "hard",
   "knowledge_area": "Pricing"
@@ -171,12 +171,12 @@
  {
   "question": "Two products in a category have different cost structures: Product X has fixed costs of $5,000, variable cost of $6 per unit, and a competitor price of $15. Product Y has fixed costs of $8,000, variable cost of $4 per unit, and a competitor price of $12. If the retailer uses competition-based pricing for both but wants to ensure break-even at 60% of expected sales volume, which product presents a greater pricing risk?",
   "options": [
-   "Product X is riskier because its break-even quantity of 556 units exceeds 60% of typical sales volume in this category",
    "Product Y is riskier because its break-even quantity of 800 units exceeds 60% of typical sales volume in this category",
-   "Product X is riskier because competition-based pricing at $15 leaves only a $9 contribution margin per unit",
-   "Product Y is riskier because its higher fixed costs relative to variable costs create greater operational leverage"
+   "Product Y is riskier because its higher fixed costs relative to variable costs create greater operational leverage",
+   "Product X is riskier because its break-even quantity of 556 units exceeds 60% of typical sales volume in this category",
+   "Product X is riskier because competition-based pricing at $15 leaves only a $9 contribution margin per unit"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Break-even for Product X at $15 price: $5,000 ÷ ($15 − $6) = 556 units. Break-even for Product Y at $12 price: $8,000 ÷ ($12 − $4) = 1,000 units. Option B correctly identifies Product Y's break-even as 1,000 units (noting the question states \"60% of typical sales volume\"); if the category typically sells fewer than ~1,667 units total, Product Y cannot safely reach break-even at competition-based price. Options C and D misstate the math.",
   "difficulty": "hard",
   "knowledge_area": "Pricing"
@@ -184,12 +184,12 @@
  {
   "question": "A retailer reviews three pricing strategies: cost-plus markup (35% margin), demand-based pricing (variable by season), and competition-based pricing (match rivals' $25 price point). The product costs $15 to source. Demand is highly price-elastic in this category, and two major competitors occupy the $24–$26 range. Which combination of strategies best balances break-even protection and market competitiveness?",
   "options": [
-   "Apply cost-plus markup to guarantee a $20.25 price point and ignore competitor pricing because margin consistency is paramount",
-   "Set price at $25 to match competitors, but conduct demand elasticity analysis to confirm break-even and margin adequacy at volume targets",
+   "Combine cost-plus and competition-based approaches by establishing a $21 cost-based floor and capping price at competitor level of $25",
    "Use demand-based pricing exclusively and adjust the $25 competitor price upward by 5% to maximize seasonal revenue peaks",
-   "Combine cost-plus and competition-based approaches by establishing a $21 cost-based floor and capping price at competitor level of $25"
+   "Apply cost-plus markup to guarantee a $20.25 price point and ignore competitor pricing because margin consistency is paramount",
+   "Set price at $25 to match competitors, but conduct demand elasticity analysis to confirm break-even and margin adequacy at volume targets"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Cost-plus on $15 at 35% margin = $20.25 (Option A ignores competition entirely). Demand analysis alone (Option B) omits cost safety; seasonal elasticity (Option C) risks margin collapse. The correct answer (Option D) integrates all three approaches: cost-plus sets a minimum ($21 floor, above the $15 cost), competition-based sets a ceiling ($25), and within that range, demand data refines the final price—balancing break-even, profitability, and market position.",
   "difficulty": "hard",
   "knowledge_area": "Pricing"
@@ -210,12 +210,12 @@
  {
   "question": "During a floor observation, you notice a sales associate describing only the product's basic features to a customer who has already purchased similar items twice before. What does this represent in terms of selling technique?",
   "options": [
-   "A missed opportunity to apply suggestion selling by recommending complementary products or upgrades that align with the customer's repeat purchase history.",
-   "An effective closing strategy because the customer is already familiar with the product line and needs minimal persuasion.",
    "Proper product demonstration since the associate is focusing on features rather than making assumptions about customer needs.",
-   "A sound approach to managing inventory because the associate is preventing over-suggestion that might discourage the repeat customer."
+   "A missed opportunity to apply suggestion selling by recommending complementary products or upgrades that align with the customer's repeat purchase history.",
+   "A sound approach to managing inventory because the associate is preventing over-suggestion that might discourage the repeat customer.",
+   "An effective closing strategy because the customer is already familiar with the product line and needs minimal persuasion."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Suggestion selling involves recommending additional or complementary items based on customer behavior and purchase history. A repeat customer presents a prime opportunity to suggest related products, upgrades, or complementary items they may not have considered—the associate's basic-features-only approach leaves value on the table. The other options either misdefine closing strategy, confuse product demonstration with suggestion, or prioritize inventory concerns over revenue opportunity.",
   "knowledge_area": "Selling",
   "difficulty": "hard"
@@ -223,12 +223,12 @@
  {
   "question": "A customer has expressed interest in a mid-range option, asked clarifying questions about warranty coverage, and confirmed they have budget available. The associate now summarizes the benefits and asks for the purchase decision. Which element of the sale is being executed?",
   "options": [
-   "Closing the sale by summarizing value and requesting commitment after the customer has signaled readiness and satisfied their key concerns.",
-   "Demonstrating the good by highlighting warranty details that differentiate the product in the marketplace.",
    "Processing retail sales documentation by preparing the transaction for the point-of-sale system.",
+   "Demonstrating the good by highlighting warranty details that differentiate the product in the marketplace.",
+   "Closing the sale by summarizing value and requesting commitment after the customer has signaled readiness and satisfied their key concerns.",
    "Converting an objection by addressing the customer's budget and warranty concerns before moving forward."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Closing the sale occurs when the customer shows buying signals (budget confirmed, questions answered, interest expressed) and the associate requests commitment. The summary and request for the purchase decision represent the closing technique. The other options describe earlier stages (demonstration, documentation, objection handling) rather than the final commitment step.",
   "knowledge_area": "Selling",
   "difficulty": "hard"
@@ -236,12 +236,12 @@
  {
   "question": "New inventory has arrived with upgraded features that differ significantly from the previous model your store sold. Before floor staff can sell these units effectively, they must receive information about what has changed. This responsibility falls under which selling function?",
   "options": [
+   "Process retail sales documentation by recording the new product specifications in the inventory management system.",
    "Provide incoming merchandise information to sales staff so they understand new features and can communicate differences to returning customers without making inaccurate claims.",
-   "Demonstrate the good to customers by having associates personally unbox and inspect each unit before it reaches the sales floor.",
    "Monitor on-floor selling activities to ensure associates mention the upgrades during every customer interaction.",
-   "Process retail sales documentation by recording the new product specifications in the inventory management system."
+   "Demonstrate the good to customers by having associates personally unbox and inspect each unit before it reaches the sales floor."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Providing incoming merchandise information to sales staff ensures they understand what is new, changed, or different so they can sell accurately and confidently. This function bridges inventory operations and floor selling by equipping staff with the knowledge they need. The other options describe later stages (customer demonstration, activity monitoring, transaction processing) rather than the information-sharing step that must happen first.",
   "knowledge_area": "Selling",
   "difficulty": "hard"
@@ -249,12 +249,12 @@
  {
   "question": "A supervisor notices that two associates are closing sales at significantly different rates despite working the same shift with similar customer traffic. To identify whether the difference stems from demonstration clarity, objection handling, or closing technique, the supervisor should focus on which responsibility?",
   "options": [
-   "Monitoring on-floor selling activities by observing both associates' interactions to diagnose where in the selling process each associate is losing or retaining customers.",
-   "Processing retail sales documentation to compare the transaction counts and customer payment methods between the two associates.",
    "Providing incoming merchandise information to ensure both associates have identical product knowledge before they interact with customers.",
-   "Converting customer objections by coaching both associates on how to reframe price and feature concerns into value propositions."
+   "Converting customer objections by coaching both associates on how to reframe price and feature concerns into value propositions.",
+   "Processing retail sales documentation to compare the transaction counts and customer payment methods between the two associates.",
+   "Monitoring on-floor selling activities by observing both associates' interactions to diagnose where in the selling process each associate is losing or retaining customers."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Monitoring on-floor selling activities involves observing selling interactions to assess performance, identify gaps, and pinpoint where a salesperson may be struggling—in this case, whether the issue lies in demonstration, objection handling, or closing. The other options address product knowledge alignment, transaction recording, or coaching on one specific technique rather than the diagnostic observation needed to compare performance.",
   "knowledge_area": "Selling",
   "difficulty": "hard"
@@ -263,9 +263,9 @@
   "question": "A regional manager is reviewing inventory discrepancies across three store locations that carry the same product line. One store reports a 6% variance in units counted versus system records, another shows 3%, and the third shows 9%. When investigating shrinkage causes, which combination of factors is most likely responsible for the widest variance at the highest-loss location?",
   "options": [
    "Employee theft, damaged goods during receiving, and point-of-sale scanning errors at checkout",
-   "Administrative data entry mistakes in the inventory system, supplier short shipments, and seasonal demand fluctuations",
    "Customer returns processed after the count period, vendor billing discrepancies, and transfer-in delays from regional distribution",
-   "Markdown price adjustments, obsolete SKU reclassification, and inventory allocated to another store without system update"
+   "Markdown price adjustments, obsolete SKU reclassification, and inventory allocated to another store without system update",
+   "Administrative data entry mistakes in the inventory system, supplier short shipments, and seasonal demand fluctuations"
   ],
   "correct_index": 0,
   "explanation": "Shrinkage encompasses employee theft, damaged merchandise, and checkout errors—all controllable factors affecting unit inventory records. The other options involve system errors, supplier issues, or post-count transactions rather than true shrinkage losses. Identifying which causes drive the 9% variance helps target control improvements at that location.",
@@ -275,12 +275,12 @@
  {
   "question": "An apparel retailer uses a perpetual inventory-control system across five regions. The Northeast region shows strong sales velocity on winter coats, while the Southeast region is overstocked. Which allocation strategy best balances demand-driven distribution with system accuracy and cost control?",
   "options": [
-   "Transfer excess Southeast inventory to Northeast using inter-store movement transactions, then adjust perpetual records at point of transfer to reflect department-level location changes",
    "Markdown Southeast stock to clear overstock, replenish Northeast from regional distribution center, and record all movements in the perpetual system by class and vendor",
+   "Request supplier return authorization for Southeast overstock while placing emergency orders for Northeast, then reconcile perpetual records during the next cycle count",
    "Consolidate all Southeast winter coats at a single Northeast hub location, eliminate duplicate SKU tracking, and perform a physical count before resuming sales",
-   "Request supplier return authorization for Southeast overstock while placing emergency orders for Northeast, then reconcile perpetual records during the next cycle count"
+   "Transfer excess Southeast inventory to Northeast using inter-store movement transactions, then adjust perpetual records at point of transfer to reflect department-level location changes"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Effective allocation uses distribution centers to replenish demand-heavy regions while allowing markdowns to clear excess, maintaining perpetual accuracy by tracking class and vendor levels. Option A risks perpetual record drift; Option C creates operational complexity; Option D involves supplier credit rather than allocation. Perpetual systems require timely movement recording to support both regional and category-level inventory visibility.",
   "difficulty": "hard",
   "knowledge_area": "Inventory Control"
@@ -288,12 +288,12 @@
  {
   "question": "A multi-vendor retail department implements a periodic inventory-control system for electronics. During the semi-annual physical count, auditors discover a 12% unit variance between counted units and perpetual records across three vendors' products. After investigating receiving logs, point-of-sale data, and transfer documents, which root cause most likely explains why periodic systems often show larger variances than perpetual systems in high-velocity departments?",
   "options": [
-   "Periodic systems accumulate unrecorded shrinkage, data entry delays, and counting errors over longer intervals, whereas perpetual systems detect discrepancies by location and vendor in real time",
-   "Periodic systems require more frequent markdown adjustments, causing vendor cost allocations to drift away from standard unit values recorded in the general ledger",
    "Periodic systems depend on supplier invoice accuracy and purchase order matching, whereas perpetual systems track only what was sold and not what was damaged",
+   "Periodic systems require more frequent markdown adjustments, causing vendor cost allocations to drift away from standard unit values recorded in the general ledger",
+   "Periodic systems accumulate unrecorded shrinkage, data entry delays, and counting errors over longer intervals, whereas perpetual systems detect discrepancies by location and vendor in real time",
    "Periodic systems aggregate multiple vendors' data, making it harder to match individual SKU counts, while perpetual systems separate each vendor's units into class-level detail"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Periodic systems batch count activity at fixed intervals, allowing shrinkage, data entry errors, and counting mishaps to accumulate undetected. Perpetual systems record movement continuously by location and vendor, enabling faster identification and correction. The 12% variance reflects the weakness of periodic systems in high-velocity departments where immediate visibility prevents losses from compounding.",
   "difficulty": "hard",
   "knowledge_area": "Inventory Control"
@@ -314,12 +314,12 @@
  {
   "question": "A retailer's inventory-control audit reveals that three vendors' products show consistent 4-6% shrinkage rates across all store locations, while two other vendors' products show shrinkage rates below 2%. The high-shrinkage vendors supply items in similar price ranges and categories as the low-shrinkage vendors. Which investigation focus best identifies whether shrinkage is a vendor quality, handling, or theft-vulnerability issue?",
   "options": [
-   "Compare receiving damage reports, shelf-to-basket tracking by location and class, point-of-sale exception logs, and employee access patterns for high-shrinkage vendor products",
-   "Audit purchase orders and supplier invoices for pricing discrepancies, conduct full physical counts at each location, and request the vendors provide their own inventory reconciliation",
    "Analyze sales margin data for each vendor, identify which products are markdown-prone, and reduce future allocations to low-margin vendors to improve overall shrinkage metrics",
-   "Implement tighter receiving procedures for high-shrinkage vendors only, reduce their inventory-on-hand targets by 20%, and track cost-per-unit variances in the general ledger"
+   "Implement tighter receiving procedures for high-shrinkage vendors only, reduce their inventory-on-hand targets by 20%, and track cost-per-unit variances in the general ledger",
+   "Audit purchase orders and supplier invoices for pricing discrepancies, conduct full physical counts at each location, and request the vendors provide their own inventory reconciliation",
+   "Compare receiving damage reports, shelf-to-basket tracking by location and class, point-of-sale exception logs, and employee access patterns for high-shrinkage vendor products"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Systematic shrinkage analysis examines receiving integrity, in-store tracking visibility (class and location level), point-of-sale anomalies, and access control—distinguishing between supplier quality, handling damage, and theft. Options B and C address financial reconciliation rather than shrinkage causes; Option D treats symptoms (lower allocations) rather than root causes. Only Option A methodically isolates whether the issue originates in supply, handling, or loss prevention.",
   "difficulty": "hard",
   "knowledge_area": "Inventory Control"
@@ -327,12 +327,12 @@
  {
   "question": "When designing a promotional sign for a clearance event, which combination of elements would most effectively balance visual hierarchy with retail compliance standards?",
   "options": [
-   "Large discount percentage with product category, retailer logo, and call-to-action statement in contrasting colors",
-   "Product images with pricing information, discount duration dates, and promotional terms displayed in equal font sizes",
    "Discount percentage as focal point, secondary product details, store branding, and expiration date in supporting hierarchy",
-   "Competitor pricing comparisons with your discount amount, product SKU numbers, and warehouse location details prominently featured"
+   "Competitor pricing comparisons with your discount amount, product SKU numbers, and warehouse location details prominently featured",
+   "Product images with pricing information, discount duration dates, and promotional terms displayed in equal font sizes",
+   "Large discount percentage with product category, retailer logo, and call-to-action statement in contrasting colors"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Effective promotional signs establish a clear visual hierarchy with the discount or offer as the primary focal point, supported by secondary information like product details, branding, and terms. Options A, B, and D either omit necessary hierarchy elements, fail to prioritize the promotional hook, or include non-standard retail compliance elements like competitor comparisons or SKU numbers that dilute the sign's purpose.",
   "knowledge_area": "Display Techniques",
   "difficulty": "hard"
@@ -340,12 +340,12 @@
  {
   "question": "A retailer needs to display seasonal apparel across three different fixture types. Which selection strategy best aligns display fixtures with both product characteristics and traffic flow objectives?",
   "options": [
+   "Select fixtures that match existing store décor aesthetic, then arrange products alphabetically by size within each fixture type",
    "Use wall-mounted shelving for folded items, rolling racks for hanging pieces, and end-cap tables for accessories near the checkout area",
    "Assign fixtures based on product weight and durability only, placing heavier items on sturdy frames regardless of customer sight lines",
-   "Select fixtures that match existing store décor aesthetic, then arrange products alphabetically by size within each fixture type",
    "Distribute merchandise equally across all available fixtures to maximize space utilization and minimize restocking labor requirements"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Strategic fixture selection matches product form and condition requirements (folded vs. hanging) to appropriate fixtures while considering customer journey and purchase behavior (accessories near checkout). Option B ignores sight-line and accessibility factors; Option C prioritizes aesthetics over functional product display; Option D spreads inventory without regard for merchandising principles or customer decision-making patterns.",
   "knowledge_area": "Display Techniques",
   "difficulty": "hard"
@@ -367,11 +367,11 @@
   "question": "A retail manager is updating seasonal window displays and must choose between statement signage approaches. Which sign strategy would most effectively communicate value while maintaining brand positioning?",
   "options": [
    "Feature numerical discount percentages in the largest text size with brand logo and product images in smaller secondary sizes",
-   "Lead with brand statement and lifestyle imagery in primary visual space, incorporating selective discount messaging in supporting visual hierarchy with specific product references",
    "Distribute equal emphasis between discount messaging, brand name, product photos, and store hours to ensure all information is equally visible",
+   "Lead with brand statement and lifestyle imagery in primary visual space, incorporating selective discount messaging in supporting visual hierarchy with specific product references",
    "Use the largest available sign space for promotional dollar amounts and clearance language, with brand identity and product details in condensed text below"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Premium brand positioning requires that lifestyle and brand messaging lead, with discounting as supporting information—this maintains brand equity while communicating value. Options A and D make discounting the dominant message, potentially eroding brand perception; Option C treats all elements equally, diluting the strategic brand communication and promotional impact.",
   "knowledge_area": "Display Techniques",
   "difficulty": "hard"
@@ -379,12 +379,12 @@
  {
   "question": "When selecting display fixtures for a high-traffic retail environment, which factor combination should most influence the choice between wall units, freestanding displays, and end-cap fixtures?",
   "options": [
-   "Customer traffic patterns, product weight and dimensions, sightline requirements from key vantage points, and merchandise rotation frequency demands",
    "Available floor space square footage, the original purchase cost of different fixture types, staff scheduling patterns, and inventory quantity on hand",
    "Fixture color coordination with existing décor, the number of days until the next seasonal promotion, supplier recommendations, and employee preference for restocking ease",
-   "Store layout grid measurements, competitor display configurations observed in adjacent stores, fixture warranty length, and the number of product SKUs to display"
+   "Store layout grid measurements, competitor display configurations observed in adjacent stores, fixture warranty length, and the number of product SKUs to display",
+   "Customer traffic patterns, product weight and dimensions, sightline requirements from key vantage points, and merchandise rotation frequency demands"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Strategic fixture selection must account for how customers move through the space, what the products demand structurally, and how frequently merchandise needs to rotate—these factors directly impact sales performance and customer experience. Options B and C prioritize operational convenience or aesthetic factors over sales-driving principles; Option D relies on external benchmarks rather than store-specific customer behavior and product requirements.",
   "knowledge_area": "Display Techniques",
   "difficulty": "hard"
@@ -405,12 +405,12 @@
  {
   "question": "During market research, a retailer identifies that customers need affordable children's clothing but cannot confirm whether demand exists for premium, sustainably-sourced options in that category. Which step should the retailer prioritize before committing to inventory?",
   "options": [
-   "Stock both affordable and premium lines immediately, then track sales velocity to determine which price point customers actually demand.",
    "Test the premium sustainable line in a limited geographic area or time period while gathering customer feedback on price sensitivity and willingness to pay.",
    "Focus exclusively on the confirmed need for affordable clothing and defer premium options until a future market research cycle, avoiding the risk of overstock.",
-   "Survey competitors' inventory to infer demand for premium sustainable children's clothing, then match their assortment without conducting independent customer validation."
+   "Survey competitors' inventory to infer demand for premium sustainable children's clothing, then match their assortment without conducting independent customer validation.",
+   "Stock both affordable and premium lines immediately, then track sales velocity to determine which price point customers actually demand."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Determining customer demand requires direct evidence of willingness to purchase at different price points and quality levels. A pilot test with feedback collection allows the retailer to validate the premium segment's viability before large capital commitment. Assumption-based inventory (option A), delayed exploration (option C), and competitor mimicry (option D) all skip the critical step of confirming actual demand.",
   "knowledge_area": "Market Planning",
   "difficulty": "hard"
@@ -418,12 +418,12 @@
  {
   "question": "A retailer's target customer profile identifies mid-career professionals who prioritize convenience and time-saving. However, market research reveals these customers also have strong environmental concerns that influence purchasing decisions. How should the retailer integrate this finding into its market planning?",
   "options": [
-   "Add environmental values as a secondary attribute to the profile and reassess product selection, sourcing, and marketing messaging to align with both convenience and sustainability priorities.",
    "Keep the profile focused on convenience alone and assume environmental concerns are temporary trends that will not sustain purchase behavior over time.",
-   "Treat environmental values as a separate customer segment and develop two distinct product lines without modifying the original profile for the convenience-focused group.",
-   "Acknowledge the environmental concern but market only convenience benefits, allowing customers to discover sustainability attributes on their own through in-store research."
+   "Acknowledge the environmental concern but market only convenience benefits, allowing customers to discover sustainability attributes on their own through in-store research.",
+   "Add environmental values as a secondary attribute to the profile and reassess product selection, sourcing, and marketing messaging to align with both convenience and sustainability priorities.",
+   "Treat environmental values as a separate customer segment and develop two distinct product lines without modifying the original profile for the convenience-focused group."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Customer profiles must integrate all significant attributes that drive purchasing behavior and brand loyalty. When market research surfaces values (like environmental concern) that contradict or complicate initial assumptions, the retailer must revise the profile and align sourcing, product mix, and communication. Ignoring the finding (option B), segregating customers artificially (option C), and downplaying material values (option D) all risk mismatched inventory and marketing.",
   "knowledge_area": "Market Planning",
   "difficulty": "hard"
@@ -433,8 +433,8 @@
   "options": [
    "Conduct separate needs assessments for each segment to identify distinct product attributes, price points, and service expectations, then develop differentiated assortments for each.",
    "Identify the larger segment by revenue and focus needs assessment exclusively on that group, treating the smaller segment as occasional purchasers.",
-   "Assume both segments have identical needs since they shop in the same market, and design a single product line with mid-range pricing and quality to appeal to both.",
-   "Determine needs only for the Budget-Conscious segment, as price-sensitivity typically reflects more urgent market demand than quality preferences."
+   "Determine needs only for the Budget-Conscious segment, as price-sensitivity typically reflects more urgent market demand than quality preferences.",
+   "Assume both segments have identical needs since they shop in the same market, and design a single product line with mid-range pricing and quality to appeal to both."
   ],
   "correct_index": 0,
   "explanation": "Market needs determination must be segment-specific because different customer profiles have fundamentally different priorities and decision drivers. Budget-Conscious and Quality-Focused customers have distinct needs, and serving both requires tailored needs assessments. A single undifferentiated approach (option C) satisfies neither segment well; focusing only on size (option B) or assuming price dominates quality (option D) both leave profit and market share on the table.",
@@ -444,12 +444,12 @@
  {
   "question": "Market research shows that the retailer's target customers demand product X, but historical sales data reveals that demand has declined 15% annually for three years despite consistent inventory. Which diagnosis most accurately explains this pattern, and what follow-up is needed?",
   "options": [
-   "The profile or needs assessment has drifted from reality; conduct updated customer research to confirm whether the stated demand still exists or whether customer preferences have shifted to substitute products.",
    "Supply chain delays are preventing product X from reaching shelves on time; resolve logistics issues to ensure availability aligns with the confirmed demand signal.",
+   "The profile or needs assessment has drifted from reality; conduct updated customer research to confirm whether the stated demand still exists or whether customer preferences have shifted to substitute products.",
    "The retailer's marketing has failed to communicate product X's benefits; increase promotional spending without revising the customer profile or product selection.",
    "Competitors have entered the market and captured share; reduce product X inventory and reallocate shelf space to categories with less competition."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A persistent three-year decline despite assumed demand signals that either the customer profile has become stale, market needs have shifted, or demand assumptions were never validated. Before assuming supply, marketing, or competition issues, the retailer must revisit the foundation: Is the target customer still buying product X, and do their actual needs still support it? Options B, C, and D address downstream tactics without verifying the market planning fundamentals.",
   "knowledge_area": "Market Planning",
   "difficulty": "hard"
@@ -457,10 +457,10 @@
  {
   "question": "A retail distribution center must choose between LTL (less-than-truckload) and full truckload shipping for weekly supplier orders. Which combination of factors would most strongly favor selecting LTL despite its higher per-unit cost?",
   "options": [
-   "Shipment weight exceeds 15,000 pounds and the warehouse has excess storage capacity available for the next two weeks",
+   "Shipment consolidation with other retailers is possible, warehouse inventory turnover is slow, and the supplier offers volume discounts",
    "Shipment weight is under 10,000 pounds, delivery urgency is high, and the supplier is located 200 miles away with multiple weekly shipments",
-   "Shipment destination is a single retail location, order frequency is monthly, and the product requires climate-controlled transport",
-   "Shipment consolidation with other retailers is possible, warehouse inventory turnover is slow, and the supplier offers volume discounts"
+   "Shipment weight exceeds 15,000 pounds and the warehouse has excess storage capacity available for the next two weeks",
+   "Shipment destination is a single retail location, order frequency is monthly, and the product requires climate-controlled transport"
   ],
   "correct_index": 1,
   "explanation": "LTL is most justified when shipment weight is light, delivery speed matters, and frequent smaller shipments prevent full truckload consolidation. The other options either favor full truckload (option A—heavy weight and storage space), highlight specialized transport needs (option C), or suggest consolidation strategies that would make full truckload more economical (option D).",
@@ -470,12 +470,12 @@
  {
   "question": "During warehouse space planning, a store manager must allocate storage for seasonal merchandise, fast-moving SKUs, and slow-moving inventory. If total warehouse space is 8,000 square feet and the manager must balance accessibility, turnover rates, and storage density, which allocation strategy best reflects warehousing principles?",
   "options": [
-   "Assign 60% to fast-moving SKUs in high-density vertical racking near the loading dock, 25% to seasonal storage in climate-controlled areas, and 15% to slow-moving items in deep storage",
-   "Divide space equally among all three categories with seasonal goods in the back corner for easy access during off-season periods",
    "Reserve 70% for slow-moving inventory using compact shelving to maximize density, allocate 20% to seasonal merchandise near loading areas, and 10% to fast-moving SKUs",
-   "Allocate 50% to fast-moving items in accessible locations, 35% to seasonal merchandise in temperature-controlled zones away from traffic, and 15% to slow-moving stock in high-density racking"
+   "Assign 60% to fast-moving SKUs in high-density vertical racking near the loading dock, 25% to seasonal storage in climate-controlled areas, and 15% to slow-moving items in deep storage",
+   "Allocate 50% to fast-moving items in accessible locations, 35% to seasonal merchandise in temperature-controlled zones away from traffic, and 15% to slow-moving stock in high-density racking",
+   "Divide space equally among all three categories with seasonal goods in the back corner for easy access during off-season periods"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Fast-moving SKUs should occupy the largest, most accessible space near shipping areas to minimize picking time and reduce labor costs. Seasonal merchandise requires climate control but less frequent access, justifying medium allocation in controlled zones. Slow-moving items occupy minimal, dense storage in less-trafficked areas. Option C inverts this logic by prioritizing slow-moving stock. Option D underallocates fast-moving items, which drive most warehouse activity.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -483,12 +483,12 @@
  {
   "question": "A regional retailer is evaluating shipping method selection for three different product categories. Product A has low weight-to-value ratio and frequent orders, Product B is bulky but lightweight with seasonal demand spikes, and Product C is high-value, low-volume, and time-sensitive. Which pairing of shipping methods to products represents the most cost-effective decision?",
   "options": [
-   "Product A via parcel carriers, Product B via LTL with consolidation strategies, Product C via expedited full truckload to ensure safety",
-   "Product A via full truckload consolidation, Product B via parcel carriers for flexibility, Product C via air freight or priority ground service",
+   "Product A via parcel carriers for frequent small shipments, Product B via full truckload year-round to maintain consistent service, Product C via standard ground shipping with insurance coverage",
    "Product A via full truckload or LTL based on weekly order volumes, Product B via full truckload when possible during peak seasons, Product C via parcel or expedited ground depending on urgency and destination",
-   "Product A via parcel carriers for frequent small shipments, Product B via full truckload year-round to maintain consistent service, Product C via standard ground shipping with insurance coverage"
+   "Product A via parcel carriers, Product B via LTL with consolidation strategies, Product C via expedited full truckload to ensure safety",
+   "Product A via full truckload consolidation, Product B via parcel carriers for flexibility, Product C via air freight or priority ground service"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Product A's frequent orders favor full truckload consolidation or LTL based on volume analysis. Product B's bulky, lightweight nature makes full truckload efficient during seasonal peaks when volume justifies it. Product C's high value and time sensitivity demand flexible expedited options rather than fixed air freight (wasteful if not urgent) or standard ground (risks delay). Options A and D lock in suboptimal methods; option B over-allocates expensive air freight.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -496,12 +496,12 @@
  {
   "question": "A warehouse manager is designing an inbound shipping process that must accommodate multiple daily deliveries from suppliers while maintaining inventory accuracy and minimizing receiving labor time. The facility receives mixed shipments (some palletized, some loose-packed) via full truckload, LTL, and parcel carrier routes. Which process sequence best optimizes the inbound workflow?",
   "options": [
+   "Consolidate all incoming shipments in a single staging area, cross-dock high-turnover items directly to the sales floor, route slower-moving items through quality control, then place remaining inventory using cycle counting",
    "Unload all trucks at the dock, sort by carrier type in a staging area, perform quality checks, scan items into inventory, then allocate to storage locations based on available space",
    "Direct full truckload deliveries to dedicated dock doors, stage LTL and parcel shipments together for batch processing, verify quantities and condition against packing slips, scan into system, and assign to predetermined storage zones",
-   "Consolidate all incoming shipments in a single staging area, cross-dock high-turnover items directly to the sales floor, route slower-moving items through quality control, then place remaining inventory using cycle counting",
    "Triage shipments by carrier upon arrival, conduct immediate spot-checks on all items, segregate damaged or defective goods, and process verified shipments through automated scanning before manual allocation"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The optimal process separates delivery types by dock door (full truckload gets dedicated resources), batches smaller shipments for efficiency, validates against documentation before system entry, and uses predetermined zones to prevent misplacement. Option A creates bottlenecks by mixing all shipments first. Option C mixes cross-docking with slower inventory, which conflicts with standard inbound protocol. Option D's spot-checks delay the main workflow; full verification against packing slips is more reliable.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -509,12 +509,12 @@
  {
   "question": "A retailer must decide whether to use a single large distribution center or a network of smaller regional warehouses for shipment fulfillment across a five-state territory. The company offers next-day delivery in urban areas and three-day delivery in rural regions. Which set of factors would most strongly support the multi-warehouse strategy despite higher overall inventory holding costs?",
   "options": [
-   "Current transportation costs represent 12% of total logistics spend, suppliers are concentrated in one region, and customer density is highest in three major metro areas",
-   "Supplier base is geographically dispersed across all five states, customers expect consistent next-day and three-day service levels, and transportation time windows from a central hub exceed service commitments in rural areas",
+   "Product demand is relatively uniform across the region, shipping volumes are declining, and warehouse automation at a single facility reduces per-unit handling costs significantly",
    "Inventory turnover rates exceed 8 times annually, consolidation discounts from a single carrier are available, and real estate costs in the central location are lower than in regional markets",
-   "Product demand is relatively uniform across the region, shipping volumes are declining, and warehouse automation at a single facility reduces per-unit handling costs significantly"
+   "Current transportation costs represent 12% of total logistics spend, suppliers are concentrated in one region, and customer density is highest in three major metro areas",
+   "Supplier base is geographically dispersed across all five states, customers expect consistent next-day and three-day service levels, and transportation time windows from a central hub exceed service commitments in rural areas"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Multi-warehouse networks justify higher inventory costs when service-level commitments require faster delivery than a central hub can provide, especially with geographically dispersed suppliers and customers. Option A favors centralization (concentrated suppliers and demand). Options C and D highlight cost advantages of consolidation that outweigh inventory carrying costs. Option B's dispersed supply chain and service-window constraints make distributed fulfillment economically necessary despite inventory investment.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -522,12 +522,12 @@
  {
   "question": "A retailer is deciding between offering a wide assortment with shallow depth or a narrow assortment with deep depth. Which strategic consideration should most directly influence this choice?",
   "options": [
-   "The target customer segment's preference for variety versus selection within preferred categories, combined with inventory carrying costs and warehouse space constraints",
    "The store's total square footage and the number of checkout registers, since deeper assortments require more transaction processing capability",
+   "The target customer segment's preference for variety versus selection within preferred categories, combined with inventory carrying costs and warehouse space constraints",
    "The supplier's minimum order quantities and the retailer's cash flow position, because depth decisions affect payment terms with vendors",
    "The competitor's assortment strategy and local market demographics, particularly income levels and shopping frequency patterns in the trade area"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Width versus depth is fundamentally a customer-centric decision tied to how shoppers want to browse and what inventory economics the retailer can sustain. While competitors and warehouse constraints matter operationally, the core strategic driver is matching assortment structure to customer expectations and managing the cost of inventory depth. The other options address real constraints but are secondary to the primary strategic question.",
   "knowledge_area": "Product Mix",
   "difficulty": "hard"
@@ -535,12 +535,12 @@
  {
   "question": "When planning merchandise assortment, a retailer discovers that one product style sells well in multiple sizes across most store locations, but a second style shows strong demand in only two sizes at specific regional stores. How should this insight shape assortment planning decisions?",
   "options": [
-   "Increase total units of the first style uniformly across all stores while concentrating the second style's inventory in the two high-demand sizes at regional locations only",
    "Reduce the second style's overall inventory depth and reallocate that budget to increasing the first style's color and material options universally",
    "Maintain equal depth for both styles across all locations but adjust color and price points to stimulate demand for the underperforming size options",
+   "Increase total units of the first style uniformly across all stores while concentrating the second style's inventory in the two high-demand sizes at regional locations only",
    "Discontinue the second style entirely and expand the first style's width by adding complementary product categories in those same size ranges"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Effective assortment planning uses location-specific and style-specific demand data to match quantity, size, and color selections to actual customer needs. The first option respects the geographic and size-based variance in demand—concentrating depth where it sells and maintaining broader availability for the more universal style. The other options either ignore the localized demand signal, oversimplify by cutting the second style, or impose uniformity that contradicts the data.",
   "knowledge_area": "Product Mix",
   "difficulty": "hard"
@@ -575,9 +575,9 @@
   "question": "A retailer operates both a flagship urban store and suburban location stores. When developing quality standards for merchandise assortment, the buyer discovers that the urban location sells designer and premium labels while suburban locations show stronger demand for value and mid-range brands. How should this finding influence merchandise quality positioning across the chain?",
   "options": [
    "Establish separate quality and brand-tier assortments by location, with the flagship urban store prioritizing designer depth and breadth while suburban stores emphasize value-tier width and mid-range depth",
-   "Maintain uniform quality standards across all locations to ensure brand consistency, then use promotional pricing in suburban stores to shift customer preference toward higher-tier merchandise",
+   "Stock premium labels in the flagship store exclusively and offer suburban customers access through special order catalogs, preserving brand prestige while maintaining uniform inventory systems",
    "Consolidate sourcing to exclusively mid-range brands that bridge urban and suburban customer bases, reducing complexity and ensuring comparable quality across the entire chain",
-   "Stock premium labels in the flagship store exclusively and offer suburban customers access through special order catalogs, preserving brand prestige while maintaining uniform inventory systems"
+   "Maintain uniform quality standards across all locations to ensure brand consistency, then use promotional pricing in suburban stores to shift customer preference toward higher-tier merchandise"
   ],
   "correct_index": 0,
   "explanation": "Quality merchandise assortment planning must reflect local market positioning and customer demographics. The first option recognizes that different store formats and customer bases support different quality and price-tier strategies—a sophisticated segmentation approach. Forcing uniformity (option B or C) ignores demonstrated local demand and wastes inventory capital. Special-order catalog approach (option D) fails to meet convenient customer expectations and misses sales opportunities in suburban locations.",
@@ -587,12 +587,12 @@
  {
   "question": "A retail distributor must ship 500 units of fragile glassware to 12 regional stores within 5 days while minimizing damage claims and controlling freight costs. Which combination of factors should most heavily influence the shipping method selection?",
   "options": [
-   "Product fragility, delivery timeline requirements, and the geographic spread of destination points balanced against total landed cost and carrier liability coverage options",
-   "The weight of individual units, historical carrier performance metrics, and seasonal demand fluctuations that affect warehouse inventory turnover rates",
    "Supplier lead times, the number of SKUs in the product line, and the company's preferred payment terms with freight vendors",
-   "Local fuel surcharge rates, the availability of expedited air freight, and the customer's preferred delivery window on the original purchase order"
+   "Product fragility, delivery timeline requirements, and the geographic spread of destination points balanced against total landed cost and carrier liability coverage options",
+   "Local fuel surcharge rates, the availability of expedited air freight, and the customer's preferred delivery window on the original purchase order",
+   "The weight of individual units, historical carrier performance metrics, and seasonal demand fluctuations that affect warehouse inventory turnover rates"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Shipping method selection requires balancing product protection needs (fragility), operational constraints (timeline), distribution scope (12 stores across regions), cost efficiency, and carrier accountability—not peripheral factors like supplier lead times or inventory turnover. The correct answer integrates the core criteria: what the product requires, when it must arrive, where it goes, and the cost-risk trade-off.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -600,12 +600,12 @@
  {
   "question": "A warehouse receives an incoming shipment and must allocate storage space for 3,000 units across three product categories: high-velocity seasonal items (45% of units), standard SKUs with steady demand (35% of units), and slow-moving specialty goods (20% of units). Which storage planning approach best optimizes space utilization and picking efficiency?",
   "options": [
-   "Assign high-velocity items to the closest warehouse locations near the shipping dock, reserve mid-tier shelving for standard SKUs, and consolidate slow movers in vertical storage at the rear",
-   "Distribute all categories evenly across the facility to prevent congestion at any single dock or zone during peak order fulfillment periods",
+   "Rotate product placement monthly based on seasonal demand forecasts while maintaining equal square footage for each category to ensure balanced rack system wear",
    "Store items alphabetically by product name regardless of velocity to simplify inventory counting and reduce cycle-count labor hours each month",
-   "Rotate product placement monthly based on seasonal demand forecasts while maintaining equal square footage for each category to ensure balanced rack system wear"
+   "Distribute all categories evenly across the facility to prevent congestion at any single dock or zone during peak order fulfillment periods",
+   "Assign high-velocity items to the closest warehouse locations near the shipping dock, reserve mid-tier shelving for standard SKUs, and consolidate slow movers in vertical storage at the rear"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Optimal warehouse layout uses velocity-based zoning: fast movers near the dock reduce travel time and labor cost, standard items in accessible mid-height zones balance frequency and ergonomics, and slow movers can occupy less-convenient space. This directly improves picking efficiency and throughput, whereas alphabetic storage, even distribution, and monthly rotation ignore velocity data and waste labor on slow-moving picks.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"
@@ -627,9 +627,9 @@
   "question": "During peak holiday season, a warehouse processes 40% more shipments than normal capacity. Current dock configuration can stage 150 outbound units per hour. If average order size is 12 units and the facility operates 16 hours daily, which storage and shipping process adjustment best prevents bottlenecks without permanent infrastructure investment?",
   "options": [
    "Implement cross-docking for 60% of orders, pre-stage incoming merchandise into outbound lanes by destination zone, and extend short-term labor to run two 8-hour shifts instead of one long shift",
-   "Increase dock workers by 50%, rent temporary mobile shelving units for the off-season, and renegotiate carrier pickup schedules to accept twice-daily collections",
    "Relocate slow-moving inventory to an external climate-controlled facility 50 miles away and process all orders through expedited shipping to reduce warehouse dwell time",
-   "Purchase additional conveyor systems and install a second packing station, then implement a just-in-time receiving schedule to align inbound goods with order demand"
+   "Purchase additional conveyor systems and install a second packing station, then implement a just-in-time receiving schedule to align inbound goods with order demand",
+   "Increase dock workers by 50%, rent temporary mobile shelving units for the off-season, and renegotiate carrier pickup schedules to accept twice-daily collections"
   ],
   "correct_index": 0,
   "explanation": "Cross-docking bypasses traditional storage by routing incoming goods directly to outbound lanes organized by destination, dramatically reducing congestion and dwell time without permanent capex. Pre-staging by zone accelerates picking, and split shifts prevent single-shift bottlenecks while remaining temporary and flexible for post-holiday scale-down. Renting external space, purchasing equipment, and expedited shipping add permanent costs; just-in-time receiving is incompatible with peak-season volume unpredictability.",
@@ -639,12 +639,12 @@
  {
   "question": "A retailer ships orders via multiple carriers and freight types. Recent carrier performance data shows: Carrier A (ground, 94% on-time, $8/unit), Carrier B (LTL, 88% on-time, $12/unit), and Carrier C (parcel/air, 97% on-time, $18/unit). Orders experience a 2% damage rate with ground, 0.8% with LTL, and 0.3% with air. Replacement cost per damaged unit averages $35. Which carrier selection criterion should guide routine shipment routing for non-time-critical orders?",
   "options": [
+   "Distribute orders evenly across all three carriers to diversify service risk and maintain negotiating leverage while allowing customers to choose their preferred delivery speed",
    "Select Carrier C exclusively because the 97% on-time rate and 0.3% damage rate deliver the best customer satisfaction and lowest total cost-per-unit over the full year",
-   "Prioritize Carrier A, because despite 2% damage ($0.70 per unit), the $8 base freight cost totals $8.70 all-in, lower than Carrier B's $9.76 ($12 + 0.8% × $35) or Carrier C's $18.11",
    "Route orders through Carrier B for most shipments, because the 0.8% damage rate and $12 freight balance cost control with service quality, yielding $9.76 total cost-per-unit",
-   "Distribute orders evenly across all three carriers to diversify service risk and maintain negotiating leverage while allowing customers to choose their preferred delivery speed"
+   "Prioritize Carrier A, because despite 2% damage ($0.70 per unit), the $8 base freight cost totals $8.70 all-in, lower than Carrier B's $9.76 ($12 + 0.8% × $35) or Carrier C's $18.11"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "True all-in cost accounts for both freight and expected damage replacement: Carrier A = $8 + (2% × $35) = $8.70 per unit; Carrier B = $12 + (0.8% × $35) = $12.28 per unit; Carrier C = $18 + (0.3% × $35) = $18.11 per unit. Carrier A has the lowest total cost despite higher damage rate because the savings on freight outweigh the damage liability. Carrier B is not optimal, and even-distribution ignores economic data. For non-time-critical orders, cost-driven carrier selection is correct.",
   "difficulty": "hard",
   "knowledge_area": "Warehousing and Transportation"

@@ -150,6 +150,18 @@ def enforce_difficulty(questions, difficulty):
         q['difficulty'] = difficulty
     return questions
 
+def shuffle_answer_positions(questions):
+    """Randomly reorder each question's options so correct_index is evenly distributed.
+
+    LLMs tend to place the correct answer at position 0 (A). This fixes that by
+    shuffling options after generation and updating correct_index to match.
+    """
+    for q in questions:
+        correct_text = q['options'][q['correct_index']]
+        random.shuffle(q['options'])
+        q['correct_index'] = q['options'].index(correct_text)
+    return questions
+
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
     while True:
@@ -225,7 +237,9 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
         for attempt in (1, 2):                      # retry bad JSON once
             try:
                 raw = call_model(client, prompt)
-                got = enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
+                got = shuffle_answer_positions(
+                    enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
+                )
                 break
             except ValueError as e:
                 print(f"    bad JSON from model (attempt {attempt}): {e}")

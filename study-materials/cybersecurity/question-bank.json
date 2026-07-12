@@ -2,12 +2,12 @@
  {
   "question": "A company experiences a critical server failure during business hours. Which disaster recovery plan element would most directly address the immediate restoration of operations while maintaining documented procedures?",
   "options": [
-   "Recovery Time Objective (RTO) specifications and backup restoration protocols that define acceptable downtime thresholds and stepwise recovery sequencing",
    "Business continuity redundancy measures and failover procedures that enable parallel operations on alternate infrastructure during primary system unavailability",
-   "Disaster prevention controls and threat detection monitoring that reduce the likelihood of infrastructure failures through proactive system hardening",
-   "Change management approval workflows and configuration documentation that track all infrastructure modifications to prevent unauthorized or unstable updates"
+   "Change management approval workflows and configuration documentation that track all infrastructure modifications to prevent unauthorized or unstable updates",
+   "Recovery Time Objective (RTO) specifications and backup restoration protocols that define acceptable downtime thresholds and stepwise recovery sequencing",
+   "Disaster prevention controls and threat detection monitoring that reduce the likelihood of infrastructure failures through proactive system hardening"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "While RTO specifications are important for planning, the immediate restoration of operations requires active failover and redundancy—business continuity and failover procedures enable parallel operations. Disaster prevention and change management are preventive or post-event measures, not immediate recovery actions.",
   "difficulty": "hard",
   "knowledge_area": "Security Operations and Management"
@@ -28,9 +28,9 @@
  {
   "question": "During a change management review, a security administrator must evaluate how a proposed server patch affects existing firewall access list rules. Which aspect of change management most directly mitigates the risk that the patch introduction could weaken or bypass current security controls?",
   "options": [
-   "Documentation of rollback procedures and version control records that enable rapid restoration if the patch introduces unexpected vulnerabilities or compatibility issues",
-   "Pre-implementation impact assessment and cross-reference of change objectives against active firewall rules, access lists, and authentication dependencies to identify conflicts",
    "Post-deployment monitoring and audit logging that captures all traffic violations and unauthorized access attempts after the patch has been applied to production systems",
+   "Pre-implementation impact assessment and cross-reference of change objectives against active firewall rules, access lists, and authentication dependencies to identify conflicts",
+   "Documentation of rollback procedures and version control records that enable rapid restoration if the patch introduces unexpected vulnerabilities or compatibility issues",
    "Change approval authority delegation and segregation of duties that ensure the server administrator and firewall administrator both sign off before any modifications take effect"
   ],
   "correct_index": 1,
@@ -41,12 +41,12 @@
  {
   "question": "An organization's acceptable use policy and information security policy must align with both business continuity and disaster recovery planning. In what specific way do these policies differ in their primary scope and binding authority?",
   "options": [
-   "Acceptable use policies establish employee conduct standards and system access boundaries, while information security policies define technical controls, encryption standards, and data classification frameworks applicable to all personnel and systems",
    "Information security policies govern employee responsibilities for password management and email confidentiality, while acceptable use policies mandate business continuity procedures and backup schedules for critical applications",
-   "Business continuity policies address acceptable risk thresholds and system uptime requirements, while disaster recovery policies specify employee conduct expectations and compliance audit frequencies for regulatory adherence",
-   "Acceptable use policies outline incident response notification procedures and recovery time objectives, while information security policies document only technical firewall rules and access list configurations"
+   "Acceptable use policies outline incident response notification procedures and recovery time objectives, while information security policies document only technical firewall rules and access list configurations",
+   "Acceptable use policies establish employee conduct standards and system access boundaries, while information security policies define technical controls, encryption standards, and data classification frameworks applicable to all personnel and systems",
+   "Business continuity policies address acceptable risk thresholds and system uptime requirements, while disaster recovery policies specify employee conduct expectations and compliance audit frequencies for regulatory adherence"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Acceptable use policies focus on employee conduct and access, while information security policies address technical controls and data protection. The other options incorrectly reverse or conflate these scopes—business continuity/disaster recovery are separate from the core distinction between acceptable use and information security policies.",
   "difficulty": "hard",
   "knowledge_area": "Security Operations and Management"
@@ -54,12 +54,12 @@
  {
   "question": "A Web Application Firewall (WAF) is deployed to protect an e-commerce platform. Which messaging and email security best practice would most likely be compromised if the WAF's inspection rules fail to account for encrypted traffic and token-based authentication used in transactional communications?",
   "options": [
-   "Email encryption standards and digital signature verification for sensitive financial documents, which rely on end-to-end encryption keys managed outside the WAF's visibility",
    "Data integrity validation for web session tokens and API authentication credentials transmitted between the customer, website, and backend payment processors during checkout",
+   "Email filtering rules and sender authentication protocols like DMARC and SPF, which operate on the mail server infrastructure independent of web application traffic",
    "User identity verification and multi-factor authentication prompts, which are application-layer controls managed by the web server and not subject to WAF packet filtering",
-   "Email filtering rules and sender authentication protocols like DMARC and SPF, which operate on the mail server infrastructure independent of web application traffic"
+   "Email encryption standards and digital signature verification for sensitive financial documents, which rely on end-to-end encryption keys managed outside the WAF's visibility"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A WAF must inspect encrypted traffic and tokens to validate data integrity and authentication—without this capability, transactional security between customer and backend is compromised. Email encryption, user authentication, and email protocols operate outside WAF scope and would not be directly affected by WAF rule gaps.",
   "difficulty": "hard",
   "knowledge_area": "Security Operations and Management"
@@ -69,8 +69,8 @@
   "options": [
    "Logical segmentation through virtual networks combined with physical isolation of critical tenants and encryption of inter-tenant communications",
    "Physical segmentation of all tenant data across separate servers with microservice authentication protocols and regular penetration testing of network boundaries",
-   "Containerization of tenant applications with network policies, namespace isolation, and monitoring of inter-container communications for unauthorized access attempts",
-   "Virtualization of tenant environments with dedicated hypervisor instances, encrypted storage volumes, and quarterly vulnerability assessments of the host operating system"
+   "Virtualization of tenant environments with dedicated hypervisor instances, encrypted storage volumes, and quarterly vulnerability assessments of the host operating system",
+   "Containerization of tenant applications with network policies, namespace isolation, and monitoring of inter-container communications for unauthorized access attempts"
   ],
   "correct_index": 0,
   "explanation": "Cloud infrastructure requires both logical and physical segmentation strategies; logical segmentation through virtual networks provides cost-effective isolation while physical isolation protects critical tenants, and encryption secures communications between tenant boundaries. The other options focus on single control types or misapply technologies (containerization and virtualization are complementary, not primary cloud security controls for multi-tenancy).",
@@ -80,12 +80,12 @@
  {
   "question": "In a microservices architecture, how do authentication complexity and expanded attack surfaces interact to create cumulative security risk compared to monolithic designs?",
   "options": [
+   "Microservices enforce stricter access controls through API boundaries, which paradoxically increases attack surface because network calls replace memory-based function calls, but centralized API gateways mitigate this risk completely",
    "Each microservice requires separate authentication mechanisms and API gateways, exponentially increasing credential management overhead while service-to-service communication introduces new interception points that monolithic architectures avoid through internal function calls",
    "Microservices eliminate single points of failure through distributed authentication tokens, but each service deployment increases the operational burden of patch management across more endpoints than a monolith would require",
-   "Service mesh implementations automatically handle inter-service authentication, reducing administrative overhead while containerization reduces the number of exposed network interfaces compared to monolithic designs with multiple load balancers",
-   "Microservices enforce stricter access controls through API boundaries, which paradoxically increases attack surface because network calls replace memory-based function calls, but centralized API gateways mitigate this risk completely"
+   "Service mesh implementations automatically handle inter-service authentication, reducing administrative overhead while containerization reduces the number of exposed network interfaces compared to monolithic designs with multiple load balancers"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Microservices multiply authentication points (each service must authenticate requests from other services and clients) and replace secure internal calls with network communications that can be intercepted; this creates both complexity and expanded surface area that don't exist in monolithic architectures. The other options either misrepresent how service meshes and containerization function or incorrectly suggest that API gateways completely eliminate the inherent complexity.",
   "difficulty": "hard",
   "knowledge_area": "Security and Design"
@@ -93,12 +93,12 @@
  {
   "question": "A financial services firm uses RAID-5 storage with daily backups to tape and a UPS system for its customer database. Which aspect of the CIA triad does each control primarily address, and what security gap remains?",
   "options": [
+   "Daily backups address availability by providing recovery points, RAID-5 ensures confidentiality through distributed storage, and UPS protects integrity by preventing incomplete writes; the remaining gap is in disaster recovery time objectives",
    "RAID-5 addresses availability through redundancy, daily backups address recovery but not confidentiality, and UPS ensures continued operation during power loss; encryption of data at rest and in transit is not directly provided by any control",
-   "Backups address confidentiality by storing offline copies, RAID-5 provides integrity verification across disk blocks, and UPS maintains availability; however, none of these controls authenticate user access to customer records",
    "UPS addresses availability of systems, RAID-5 provides data integrity through parity checks, and backups ensure recovery from disasters; but the tape backup process itself introduces a confidentiality risk if tapes are not encrypted",
-   "Daily backups address availability by providing recovery points, RAID-5 ensures confidentiality through distributed storage, and UPS protects integrity by preventing incomplete writes; the remaining gap is in disaster recovery time objectives"
+   "Backups address confidentiality by storing offline copies, RAID-5 provides integrity verification across disk blocks, and UPS maintains availability; however, none of these controls authenticate user access to customer records"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "RAID-5 primarily provides availability through redundancy, backups support recovery and availability (but not confidentiality without encryption), and UPS maintains availability during power events; the critical gap is that none ensures data confidentiality—encryption is required separately. Option 2 misattributes confidentiality to backups, Option 3 conflates recovery with availability, and Option 4 incorrectly maps RAID-5 to confidentiality.",
   "difficulty": "hard",
   "knowledge_area": "Security and Design"
@@ -106,12 +106,12 @@
  {
   "question": "When evaluating how containerization and virtualization each enhance security architecture, which statement accurately distinguishes their primary security contributions and their complementary relationship?",
   "options": [
-   "Virtualization isolates entire operating systems and applications from the host, reducing blast radius of compromised applications, while containerization shares the host OS kernel but isolates application dependencies and processes, allowing both to protect against different attack vectors when deployed together",
-   "Containerization provides stronger isolation than virtualization because containers do not require a hypervisor layer, eliminating a potential attack vector, while virtualization is primarily used for legacy application compatibility rather than security boundaries",
+   "Both containerization and virtualization achieve identical isolation through separate kernel instances, but containerization is preferred for security because containers consume fewer resources and therefore reduce the complexity of patching and vulnerability management",
    "Virtualization encrypts data between virtual machines while containerization isolates network traffic through built-in service mesh protocols, creating redundant confidentiality controls that reduce the need for external encryption mechanisms",
-   "Both containerization and virtualization achieve identical isolation through separate kernel instances, but containerization is preferred for security because containers consume fewer resources and therefore reduce the complexity of patching and vulnerability management"
+   "Virtualization isolates entire operating systems and applications from the host, reducing blast radius of compromised applications, while containerization shares the host OS kernel but isolates application dependencies and processes, allowing both to protect against different attack vectors when deployed together",
+   "Containerization provides stronger isolation than virtualization because containers do not require a hypervisor layer, eliminating a potential attack vector, while virtualization is primarily used for legacy application compatibility rather than security boundaries"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Virtualization provides full OS-level isolation (stronger isolation boundary) while containerization provides lightweight process and dependency isolation (faster, more resource-efficient) with shared kernels; they address different security scenarios and are often layered together for defense in depth. Options 2, 3, and 4 either misrepresent isolation mechanisms or incorrectly suggest one is universally superior.",
   "difficulty": "hard",
   "knowledge_area": "Security and Design"
@@ -119,12 +119,12 @@
  {
   "question": "IoT devices in a manufacturing network lack the computational resources for full encryption and frequent patching cycles. Which combination of security measures best mitigates the risk profile unique to IoT without requiring device-level encryption?",
   "options": [
+   "Implementing physical access controls to IoT devices, using firmware integrity checking at boot time to prevent malware installation, and deploying a hardware security module to manage cryptographic keys for all network communications",
    "Network segmentation isolating IoT devices on a separate VLAN with strict firewall rules limiting outbound traffic, API gateway validation of all device communications, and centralized logging to detect anomalous behavior patterns before lateral movement occurs",
-   "Disabling unnecessary IoT device services to reduce attack surface, implementing host-based intrusion detection on each device, and deploying a dedicated IoT authentication server with certificate pinning to prevent man-in-the-middle attacks",
    "Requiring multi-factor authentication for all IoT data access, encrypting data in motion at the gateway level, and conducting penetration testing of the manufacturing network quarterly to identify new vulnerabilities",
-   "Implementing physical access controls to IoT devices, using firmware integrity checking at boot time to prevent malware installation, and deploying a hardware security module to manage cryptographic keys for all network communications"
+   "Disabling unnecessary IoT device services to reduce attack surface, implementing host-based intrusion detection on each device, and deploying a dedicated IoT authentication server with certificate pinning to prevent man-in-the-middle attacks"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Network-level segmentation, API gateway inspection, and behavioral monitoring compensate for IoT devices' inability to run encryption or frequent updates by defending the perimeter and detecting compromise after infection; this is the most practical approach when devices cannot be patched or encrypted. Options 2 and 3 require computational resources or infrastructure not feasible for resource-constrained IoT devices, while Option 4 emphasizes prevention over the detection-and-containment strategy appropriate for devices that will eventually be compromised.",
   "difficulty": "hard",
   "knowledge_area": "Security and Design"
@@ -132,12 +132,12 @@
  {
   "question": "A financial services organization implements TLS 1.3 for client-server communications while maintaining legacy support for WPA2 in wireless networks. Which statement best describes the security trade-off in this hybrid approach?",
   "options": [
-   "TLS 1.3 provides forward secrecy and modern encryption, but WPA2 lacks perfect forward secrecy and is vulnerable to KRACK attacks, creating a weaker link in the security chain.",
    "WPA2 encryption standards exceed TLS 1.3 in key exchange protocols, but TLS 1.3 offers stronger certificate validation through Certificate Authorities.",
-   "TLS 1.3 and WPA2 are equally robust against packet sniffing, though WPA2 requires more frequent patching due to its reliance on tokenization methods.",
-   "Both protocols use identical symmetric encryption algorithms, so the organization faces no meaningful security difference between wireless and wired transport layers."
+   "Both protocols use identical symmetric encryption algorithms, so the organization faces no meaningful security difference between wireless and wired transport layers.",
+   "TLS 1.3 provides forward secrecy and modern encryption, but WPA2 lacks perfect forward secrecy and is vulnerable to KRACK attacks, creating a weaker link in the security chain.",
+   "TLS 1.3 and WPA2 are equally robust against packet sniffing, though WPA2 requires more frequent patching due to its reliance on tokenization methods."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "TLS 1.3 is a modern protocol with forward secrecy and resistance to known attacks, while WPA2, though still functional, has documented vulnerabilities like KRACK (Key Reinstallation Attacks) and lacks perfect forward secrecy. This creates a security asymmetry where wireless communications are the weaker boundary. The other options misrepresent the relative strengths or claim false equivalencies between protocols.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -145,12 +145,12 @@
  {
   "question": "During a penetration test, security researchers discover that an IDS deployed on the network fails to detect a data exfiltration attack using steganographic techniques, while an IPS successfully blocks a known malware signature. What is the primary limitation revealed by this finding?",
   "options": [
-   "The IDS relies on signature-based detection and cannot identify obfuscated payloads hidden within normal-looking traffic, whereas the IPS operates on predetermined threat definitions.",
-   "Steganography bypasses both IDS and IPS systems equally, so the IPS block was coincidental to the malware signature, not a function of intrusion prevention.",
+   "The organization's IDS lacks the Certificate Authority integration necessary to decrypt and inspect steganographic content embedded in HTTPS traffic.",
    "The IPS is more effective than IDS at detecting behavioral anomalies, but steganography defeats behavioral analysis across both system types.",
-   "The organization's IDS lacks the Certificate Authority integration necessary to decrypt and inspect steganographic content embedded in HTTPS traffic."
+   "The IDS relies on signature-based detection and cannot identify obfuscated payloads hidden within normal-looking traffic, whereas the IPS operates on predetermined threat definitions.",
+   "Steganography bypasses both IDS and IPS systems equally, so the IPS block was coincidental to the malware signature, not a function of intrusion prevention."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "IDS systems detect known threats through signature matching and behavioral analysis, but steganography—encoding data within innocent-looking files or traffic—can evade detection if the hidden payload doesn't trigger known signatures. The IPS blocking the malware signature demonstrates that signature-based defenses work for known threats but are blind to obfuscated channels. The other options either falsely equate IDS and IPS capabilities or introduce irrelevant CA concepts.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -158,12 +158,12 @@
  {
   "question": "An organization implements data masking for personally identifiable information (PII) in test environments and tokenization for payment card data in production systems. A developer questions why the same obfuscation method was not used for both. Which explanation most accurately addresses this concern?",
   "options": [
+   "Payment card tokenization and PII masking differ only in the algorithm used, and either method could substitute for the other without affecting system performance or security controls.",
    "Data masking is suitable for test environments where reversibility is not needed and PII must remain realistic for testing, while tokenization is required for payment data in production because it enables secure, reversible lookup of the original card number through a token vault.",
-   "Tokenization is more cost-effective than data masking and should replace masking in all environments to reduce operational overhead and compliance risk.",
    "Data masking and tokenization are functionally identical; the choice depends only on regulatory jurisdiction and has no impact on data recovery or compliance requirements.",
-   "Payment card tokenization and PII masking differ only in the algorithm used, and either method could substitute for the other without affecting system performance or security controls."
+   "Tokenization is more cost-effective than data masking and should replace masking in all environments to reduce operational overhead and compliance risk."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Tokenization creates a reversible reference (token) to actual data stored securely in a vault, essential for payment systems that must retrieve the original card number for transactions. Data masking irreversibly transforms data for non-production use where realism is needed but original recovery is not. The distinction reflects different security and functional requirements, not interchangeable techniques. The other options falsely equate the methods or prioritize cost over security architecture.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -171,12 +171,12 @@
  {
   "question": "A Certificate Authority (CA) issue impacts an organization's HTTPS infrastructure: intermediate CA certificates expire before their corresponding subordinate certificates, but the root CA remains valid. Which immediate security consequence will users most likely experience?",
   "options": [
-   "Browser trust chain validation will fail because the chain from root to endpoint certificate is broken, even though the root CA is trusted, resulting in certificate warnings and blocked HTTPS connections.",
-   "The organization's SSH servers will lose connectivity while HTTPS clients remain unaffected, because SSH and HTTPS use different certificate validation hierarchies.",
    "TLS 1.3 will automatically refresh the expired intermediate certificate through forward secrecy mechanisms, preventing any user-facing impact or service interruption.",
-   "End-entity certificate revocation will occur automatically, forcing immediate reissuance of all subordinate certificates regardless of their individual expiration dates."
+   "Browser trust chain validation will fail because the chain from root to endpoint certificate is broken, even though the root CA is trusted, resulting in certificate warnings and blocked HTTPS connections.",
+   "End-entity certificate revocation will occur automatically, forcing immediate reissuance of all subordinate certificates regardless of their individual expiration dates.",
+   "The organization's SSH servers will lose connectivity while HTTPS clients remain unaffected, because SSH and HTTPS use different certificate validation hierarchies."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "HTTPS validates the entire certificate chain from the trusted root through intermediates to the end-entity certificate. If an intermediate expires, the chain is broken and browsers cannot establish trust, even though the root remains valid. Users see security warnings and blocked connections until the intermediate is renewed. The other options conflate unrelated protocols, invoke non-existent automatic mechanisms, or misstate revocation behavior.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -184,12 +184,12 @@
  {
   "question": "A critical vulnerability is discovered in an open-source library used across an organization's production infrastructure. Security patches are available, but updating all systems to the latest version conflicts with version control policies requiring staged rollout. How should this situation best balance patch management and version control risk?",
   "options": [
-   "Evaluate the vulnerability's severity and exposure; deploy critical patches immediately to affected production systems under a controlled exception process, while maintaining staged rollout for non-critical updates and development environments.",
-   "Defer all patches until the next scheduled maintenance window regardless of severity, because inconsistent version numbers across environments violate security best practices and create audit complications.",
    "Update only the affected library while freezing all other dependencies to prevent version skew, then conduct penetration testing before any additional changes to validate the patch effectiveness.",
-   "Implement a compensating control such as enhanced network segmentation or intrusion prevention rules instead of patching, to avoid version management conflicts and maintain system stability."
+   "Implement a compensating control such as enhanced network segmentation or intrusion prevention rules instead of patching, to avoid version management conflicts and maintain system stability.",
+   "Defer all patches until the next scheduled maintenance window regardless of severity, because inconsistent version numbers across environments violate security best practices and create audit complications.",
+   "Evaluate the vulnerability's severity and exposure; deploy critical patches immediately to affected production systems under a controlled exception process, while maintaining staged rollout for non-critical updates and development environments."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Patch management and version control must work together: critical vulnerabilities warrant expedited deployment with documented exceptions to staged rollout policies, while non-critical updates respect normal schedules. This balances immediate security needs against system stability. Deferring all patches (option B) increases breach risk; selective patching of one library without testing (option C) invites instability; compensating controls alone (option D) do not eliminate the known vulnerability.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -197,12 +197,12 @@
  {
   "question": "A security team is deciding between implementing an IDS and an IPS at a network perimeter. Which statement best reflects the operational difference between these two systems?",
   "options": [
-   "IDS monitors and logs suspicious traffic while IPS monitors and automatically blocks suspicious traffic; IDS is passive while IPS is active",
-   "IPS operates at Layer 2 to prevent MAC spoofing while IDS operates at Layer 3 to prevent IP fragmentation attacks",
+   "IPS requires manual intervention for every alert while IDS automatically quarantines infected files without administrator review",
    "IDS uses machine learning to predict future threats while IPS uses signature-based detection only for known attack patterns",
-   "IPS requires manual intervention for every alert while IDS automatically quarantines infected files without administrator review"
+   "IDS monitors and logs suspicious traffic while IPS monitors and automatically blocks suspicious traffic; IDS is passive while IPS is active",
+   "IPS operates at Layer 2 to prevent MAC spoofing while IDS operates at Layer 3 to prevent IP fragmentation attacks"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "An IDS (Intrusion Detection System) detects and alerts on threats but does not block them—it is a passive monitoring tool. An IPS (Intrusion Prevention System) automatically blocks malicious traffic—it is an active defense mechanism. The other options confuse layer operations, detection methods, or response requirements that do not accurately differentiate these systems.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -210,12 +210,12 @@
  {
   "question": "An organization implements tokenization for credit card data protection while a competitor uses data masking for the same purpose. Under what operational scenario would tokenization provide superior security compared to data masking?",
   "options": [
-   "When the organization must use masked data in test environments and replace it with valid tokens during production transactions",
-   "When the original sensitive data must be retrieved from tokens for transaction processing while masked data is irreversible",
    "When the organization stores tokens in a secure vault and uses them for payment processing without exposing the original card numbers",
+   "When the original sensitive data must be retrieved from tokens for transaction processing while masked data is irreversible",
+   "When the organization must use masked data in test environments and replace it with valid tokens during production transactions",
    "When masked data needs to be displayed to customers while tokens are hidden in backend databases only"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Tokenization replaces sensitive data with non-sensitive tokens stored in a secure vault, allowing legitimate systems to process transactions without ever accessing the original data—this is superior for high-risk environments. Data masking is irreversible replacement, so option 1 contradicts tokenization's irreversibility; option 2 contradicts the purpose of tokenization; option 4 reverses their typical use cases.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -223,12 +223,12 @@
  {
   "question": "A penetration tester discovers that a company's servers lack current security patches despite having a patching policy in place. Which factor most directly explains why this technical vulnerability persists even when a policy exists?",
   "options": [
+   "The policy lacks an enforcement mechanism, defined patching schedule, and consequences for non-compliance by system owners",
    "The patching policy does not specify which patch management tool to use, making implementation technically ambiguous",
    "Patches reduce system performance, causing administrators to disable them after initial installation for business continuity",
-   "The policy lacks an enforcement mechanism, defined patching schedule, and consequences for non-compliance by system owners",
    "Updates require source code review by security personnel before deployment, creating a bottleneck that prevents timely application"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "A policy without enforcement mechanisms, clear schedules, and accountability typically fails in practice—administrators may deprioritize patching without consequences. Option 1 is too vague about implementation details; option 2 assumes patches inherently degrade performance, which is not generally true; option 4 describes an overly restrictive review process not required for standard patch deployment.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -236,12 +236,12 @@
  {
   "question": "Two organizations use different certificate validation approaches: Company A validates certificates against a Certificate Authority's revocation list (CRL), while Company B uses Online Certificate Status Protocol (OCSP). Which operational risk is more likely to affect Company A's approach?",
   "options": [
-   "CRL validation fails if the revocation list becomes outdated, potentially allowing revoked certificates to be trusted until the next refresh",
-   "OCSP requires the CA to remain online constantly, making Company B vulnerable if the CA's OCSP responder experiences downtime",
+   "OCSP validation cannot verify wildcard certificates, limiting Company B to single-domain certificates only",
    "CRL-based validation requires downloading the entire list for every certificate check, consuming significantly more bandwidth than OCSP",
-   "OCSP validation cannot verify wildcard certificates, limiting Company B to single-domain certificates only"
+   "OCSP requires the CA to remain online constantly, making Company B vulnerable if the CA's OCSP responder experiences downtime",
+   "CRL validation fails if the revocation list becomes outdated, potentially allowing revoked certificates to be trusted until the next refresh"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "CRL validation depends on the revocation list being current; if the list is not refreshed frequently, revoked certificates may still be accepted as valid until the next update—a timing vulnerability. Option 1 correctly identifies this risk. Option 2 misrepresents OCSP (it has fallback mechanisms); option 3 overstates bandwidth differences; option 4 is factually incorrect about wildcard certificate support.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -249,12 +249,12 @@
  {
   "question": "A company implements WPA2 encryption for wireless networks and HTTPS for web traffic, yet a security audit reveals that employee phishing emails containing malware bypass these protocols. Which protection layer is NOT addressed by these two protocols?",
   "options": [
-   "Transport layer security, because WPA2 and HTTPS both operate at the application layer only",
    "Email content validation and user authentication at the application layer, which requires email filtering and anti-phishing policies",
+   "Physical layer security, because both protocols require additional hardware firewalls for endpoint protection",
    "Network access control, because encryption protocols do not prevent users from installing unauthorized applications",
-   "Physical layer security, because both protocols require additional hardware firewalls for endpoint protection"
+   "Transport layer security, because WPA2 and HTTPS both operate at the application layer only"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "WPA2 and HTTPS protect data in transit, but neither validates email content, detects phishing tactics, or authenticates sender legitimacy—that requires email security policies, DMARC/SPF records, and user training at the application layer. Option 0 reverses which layer these protocols operate on; option 2 conflates application installation with encryption; option 3 incorrectly suggests encryption alone provides access control.",
   "difficulty": "hard",
   "knowledge_area": "Security Protocols and Threat Mitigation"
@@ -262,12 +262,12 @@
  {
   "question": "A software developer discovers that their application processes user input without proper validation, allowing attackers to insert malicious code into database queries. Which of the following vulnerabilities best describes this threat, and what is its primary exploitation mechanism?",
   "options": [
+   "A jailbreaking vulnerability in the application's sandbox environment that permits direct access to system resources by bypassing security restrictions",
    "A buffer overflow that occurs when input exceeds allocated memory boundaries, causing arbitrary code execution through stack corruption",
    "An SQL injection vulnerability where unvalidated input is concatenated into query strings, allowing attackers to manipulate database commands and access unauthorized data",
-   "A race condition vulnerability where concurrent processes access shared resources without synchronization, creating a window for attackers to modify data between checks",
-   "A jailbreaking vulnerability in the application's sandbox environment that permits direct access to system resources by bypassing security restrictions"
+   "A race condition vulnerability where concurrent processes access shared resources without synchronization, creating a window for attackers to modify data between checks"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "SQL injection specifically targets applications that construct queries from user input without validation. While buffer overflows, race conditions, and jailbreaking are all legitimate software vulnerabilities, only SQL injection directly exploits the scenario of inserting malicious code into database queries through improper input handling.",
   "knowledge_area": "Cyber Threats and Vulnerabilities",
   "difficulty": "hard"
@@ -275,10 +275,10 @@
  {
   "question": "An organization experiences a sudden spike in network traffic consuming all available bandwidth, rendering their web services unavailable to legitimate users for several hours. The attack utilized multiple compromised computers sending requests simultaneously to overwhelm the target infrastructure. Which attack vector does this describe, and what distinguishes it from other network-based threats?",
   "options": [
-   "A phishing campaign using spoofed emails to trick employees into downloading malware-infected attachments that propagate through the network",
+   "A cryptographic downgrade attack forcing encrypted communications to use weaker cipher suites, allowing attackers to intercept and decrypt sensitive data in transit",
    "A distributed denial-of-service attack that floods target systems with traffic from multiple sources, preventing legitimate access through resource exhaustion rather than exploiting specific vulnerabilities",
-   "A zero-day exploit targeting an unpatched application vulnerability to gain unauthorized access and establish persistent backdoor access for long-term data exfiltration",
-   "A cryptographic downgrade attack forcing encrypted communications to use weaker cipher suites, allowing attackers to intercept and decrypt sensitive data in transit"
+   "A phishing campaign using spoofed emails to trick employees into downloading malware-infected attachments that propagate through the network",
+   "A zero-day exploit targeting an unpatched application vulnerability to gain unauthorized access and establish persistent backdoor access for long-term data exfiltration"
   ],
   "correct_index": 1,
   "explanation": "DDoS attacks are specifically characterized by flooding from multiple sources to exhaust resources and deny service, not by exploiting code vulnerabilities. Phishing delivers malware, zero-day exploits target unpatched flaws, and cryptographic downgrades weaken encryption—none of these match the bandwidth-saturation scenario described.",
@@ -288,10 +288,10 @@
  {
   "question": "A company's network administrator identifies that an employee unknowingly executed a program that silently monitors keystrokes and periodically sends credentials to an external server without triggering typical antivirus alerts. The program was initially dormant but activated after 30 days, and it does not self-replicate across systems. Which malware classification most accurately describes this threat?",
   "options": [
-   "A worm that propagates across networked systems autonomously by exploiting vulnerabilities and consuming network resources to disable connected devices",
+   "A virus embedded in executable files that requires user action to spread to other systems and modifies host files to persist across reboots and updates",
    "A logic bomb designed to remain inactive until a specific date or condition is met, then execute harmful actions such as deleting files or corrupting data",
    "A Trojan that masquerades as legitimate software while performing hidden unauthorized actions like stealing data or enabling remote access without self-replicating",
-   "A virus embedded in executable files that requires user action to spread to other systems and modifies host files to persist across reboots and updates"
+   "A worm that propagates across networked systems autonomously by exploiting vulnerabilities and consuming network resources to disable connected devices"
   ],
   "correct_index": 2,
   "explanation": "Trojans are deceptive programs that perform hidden malicious functions without self-replicating, matching the dormant data-stealing behavior described. Worms self-replicate across networks, logic bombs activate on specific triggers and typically destroy data, and viruses require attachment to files and active spreading—none fit the credential-harvesting scenario as precisely.",
@@ -302,9 +302,9 @@
   "question": "A security researcher analyzing a cryptographic system discovers that an attacker used a mathematical technique to find two different inputs producing the same hash output, compromising the system's data integrity verification. This attack exploited the probability that collisions become likely when hashing a large number of inputs. Which cryptographic attack and associated principle does this exemplify?",
   "options": [
    "A birthday attack exploiting the mathematical principle that collision probability increases significantly faster than expected as the number of hashed items grows",
-   "A downgrade attack forcing the system to use legacy hash algorithms with shorter output lengths, reducing the computational effort required to find matching values",
    "A brute-force attack systematically testing billions of possible input combinations until matching hash outputs are discovered by exhaustive enumeration",
-   "A replay attack capturing and retransmitting previously used hash values to bypass authentication checks by exploiting predictable hash generation patterns"
+   "A replay attack capturing and retransmitting previously used hash values to bypass authentication checks by exploiting predictable hash generation patterns",
+   "A downgrade attack forcing the system to use legacy hash algorithms with shorter output lengths, reducing the computational effort required to find matching values"
   ],
   "correct_index": 0,
   "explanation": "Birthday attacks specifically exploit the counterintuitive probability principle that collisions become likely much faster than brute-force would suggest. Downgrade attacks weaken algorithms, brute-force attempts all possibilities sequentially, and replay attacks reuse existing values—only the birthday attack fundamentally involves the probabilistic collision principle described.",
@@ -314,12 +314,12 @@
  {
   "question": "An attacker gains initial access to a corporate network through a fabricated urgent email appearing to come from the IT department, requesting password resets. After capturing credentials, the attacker maintains long-term access through a hidden administrative account. Which threat actor motivation and social engineering vector are most evident in this scenario?",
   "options": [
-   "Espionage-motivated threat actor using phishing emails to extract credentials for persistent network access, establishing covert entry points for intelligence gathering",
-   "Financial-gain-motivated attacker executing a phone-based social engineering scam to impersonate authority figures and manipulate employees into unauthorized fund transfers",
+   "External threat actor leveraging email spoofing to obtain valid login credentials through impersonation, creating hidden administrative accounts for long-term unauthorized access",
    "Data-theft-motivated insider threat exploiting their legitimate access to install backdoors and exfiltrate proprietary information without initial credential compromise",
-   "External threat actor leveraging email spoofing to obtain valid login credentials through impersonation, creating hidden administrative accounts for long-term unauthorized access"
+   "Financial-gain-motivated attacker executing a phone-based social engineering scam to impersonate authority figures and manipulate employees into unauthorized fund transfers",
+   "Espionage-motivated threat actor using phishing emails to extract credentials for persistent network access, establishing covert entry points for intelligence gathering"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The scenario's use of fabricated trusted communications to obtain credentials and establish persistent hidden access aligns most closely with espionage-motivated threats using phishing. Phone scams involve verbal manipulation, insider threats already possess access, and while the attacker is external and uses spoofing, espionage best captures the strategic goal of maintaining covert ongoing network presence.",
   "knowledge_area": "Cyber Threats and Vulnerabilities",
   "difficulty": "hard"
@@ -327,12 +327,12 @@
  {
   "question": "A financial services firm needs to protect customer data across multiple security layers. Which combination of cryptographic approaches would best address both the confidentiality of stored records and the integrity of data transmitted between branch offices?",
   "options": [
-   "Public key cryptography for encrypting files at rest and symmetric encryption for verifying transaction authenticity in transit",
-   "Symmetric key cryptography for encrypting data at rest and public key cryptography for secure key exchange and digital signatures in transit",
+   "Private key cryptography for all stored data and hashing algorithms exclusively for ensuring data cannot be modified during network transfer",
    "Caesar cipher for encoding sensitive databases and substitution cipher for masking network communications between locations",
-   "Private key cryptography for all stored data and hashing algorithms exclusively for ensuring data cannot be modified during network transfer"
+   "Public key cryptography for encrypting files at rest and symmetric encryption for verifying transaction authenticity in transit",
+   "Symmetric key cryptography for encrypting data at rest and public key cryptography for secure key exchange and digital signatures in transit"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Symmetric encryption efficiently protects data at rest, while public key cryptography enables secure key distribution and digital signatures verify integrity during transmission. The other options either confuse cipher types with modern cryptographic methods or misapply cryptographic purposes—Caesar and substitution ciphers lack the computational strength needed for financial data, and hashing alone cannot prevent modification, only detect it.",
   "difficulty": "hard",
   "knowledge_area": "Network and Data Security"
@@ -341,11 +341,11 @@
   "question": "During a security audit, an organization discovers that user access permissions were assigned individually to each network resource without a centralized management system, and employee role changes required manual permission updates across multiple systems. Which access control model was in use, and what was the primary vulnerability?",
   "options": [
    "Role-Based Access Control was implemented with insufficient privilege escalation controls, allowing former employees temporary access to resources",
-   "Discretionary Access Control was in place with fragmented administration, creating inconsistent permissions and delayed revocation when roles changed",
    "Mandatory Access Control was enforced but lacked integration with the directory service, preventing automatic synchronization of role modifications",
-   "Attribute-Based Access Control was configured without proper policy evaluation engines, resulting in manual assignment of permissions to individual resources"
+   "Attribute-Based Access Control was configured without proper policy evaluation engines, resulting in manual assignment of permissions to individual resources",
+   "Discretionary Access Control was in place with fragmented administration, creating inconsistent permissions and delayed revocation when roles changed"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "DAC relies on resource owners granting permissions individually without centralized oversight, making it difficult to manage at scale and prone to inconsistency—especially during personnel transitions. RBAC would use centralized role definitions, MAC enforces system-wide policies, and ABAC uses dynamic attributes; none of these match the described manual, resource-by-resource approach characteristic of DAC.",
   "difficulty": "hard",
   "knowledge_area": "Network and Data Security"
@@ -354,11 +354,11 @@
   "question": "A company implements a multi-factor authentication system requiring an employee to enter a password, scan their fingerprint, and present a hardware token to access the network. However, the system stores the fingerprint template as plaintext in the local database and the token seed is never updated. Which security principle is violated, and what consequence does it create?",
   "options": [
    "The authorization layer is weakened because plaintext storage of biometric data allows attackers who breach the database to impersonate users without needing the original fingerprint",
-   "The authentication mechanism relies on static credentials because the hardware token seed is never rotated, and the plaintext fingerprint enables rapid credential compromise if the database is accessed",
    "The access control model fails to enforce least privilege because the token seed remains constant and biometric templates stored plaintext allow unauthorized token generation",
+   "The authentication mechanism relies on static credentials because the hardware token seed is never rotated, and the plaintext fingerprint enables rapid credential compromise if the database is accessed",
    "The certificate revocation process is incomplete because plaintext fingerprint storage prevents invalidation of compromised credentials and the static token seed reduces entropy"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Both weaknesses—plaintext biometric storage and static token seeds—violate the principle of protecting authentication secrets even after storage compromise. This makes multi-factor authentication ineffective because an attacker with database access can use the plaintext fingerprint and static seed to bypass all factors. The other options conflate authentication, authorization, and certificate management concepts that don't directly apply to the storage vulnerabilities described.",
   "difficulty": "hard",
   "knowledge_area": "Network and Data Security"
@@ -366,10 +366,10 @@
  {
   "question": "An organization wants to ensure that sensitive data cannot be altered by unauthorized parties, whether it is sitting in a database, being transmitted over the network, or actively processed by applications. Which statement most accurately describes the data security strategy needed?",
   "options": [
-   "Apply hashing to data at rest for authenticity, symmetric encryption in transit for confidentiality, and access controls during use to prevent modifications",
    "Implement encryption for the three states of data combined with hashing, ensure access controls at every stage, and use public key infrastructure to detect tampering across all states",
+   "Deploy digital signatures on stored data for non-repudiation, implement TLS encryption in transit for authentication, and apply mandatory access controls during processing for integrity",
    "Use cryptographic hashing at rest for integrity, encryption during transmission for confidentiality, and role-based access controls during use to verify authorized processing only",
-   "Deploy digital signatures on stored data for non-repudiation, implement TLS encryption in transit for authentication, and apply mandatory access controls during processing for integrity"
+   "Apply hashing to data at rest for authenticity, symmetric encryption in transit for confidentiality, and access controls during use to prevent modifications"
   ],
   "correct_index": 2,
   "explanation": "Hashing provides integrity verification for data at rest, encryption protects confidentiality in transit, and role-based access controls restrict who can use and modify data during processing—together addressing all three states with appropriate mechanisms. Option 1 incorrectly treats hashing as the primary integrity tool at rest, option 2 over-specifies with redundant mechanisms, and option 4 confuses non-repudiation (digital signatures) with integrity and misapplies certificate-based authentication in transit.",
@@ -379,12 +379,12 @@
  {
   "question": "A blockchain-based supply chain system records product movements from manufacturer to retailer. Each block contains a hash of the previous block, transaction data, and a timestamp. An auditor asks: if a distributor's record shows a different delivery date than the manufacturer's record, how would the blockchain detect this discrepancy?",
   "options": [
-   "The hash chain would break because altering any transaction data changes its block's hash, which invalidates all subsequent blocks' references to the prior hash",
-   "The Merkle root comparison would fail because transaction data changes alter the combined hash of all transactions in that block, breaking the chain forward",
+   "The smart contract would flag the discrepancy because it verifies that the timestamp hash matches the cryptographic proof embedded in the distributed ledger",
    "The consensus algorithm would reject the record because all nodes maintain copies and would detect the altered timestamp when validating the block signature",
-   "The smart contract would flag the discrepancy because it verifies that the timestamp hash matches the cryptographic proof embedded in the distributed ledger"
+   "The hash chain would break because altering any transaction data changes its block's hash, which invalidates all subsequent blocks' references to the prior hash",
+   "The Merkle root comparison would fail because transaction data changes alter the combined hash of all transactions in that block, breaking the chain forward"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Blockchain's security rests on hash chain integrity—altering any transaction data changes that block's hash, which the next block references; this breaks the chain and is immediately visible. Options 1 and 2 both describe this principle accurately, but option 0 is more precise: the hash chain breaks completely, whereas option 1 conflates the mechanism with a Merkle root concept. Options 3 and 4 incorrectly shift detection to consensus algorithms and smart contracts rather than the fundamental cryptographic property.",
   "difficulty": "hard",
   "knowledge_area": "Network and Data Security"
@@ -393,9 +393,9 @@
   "question": "A financial services company migrates its transaction processing system to a public cloud infrastructure. Which of the following represents the PRIMARY security trade-off they must address?",
   "options": [
    "Reduced physical security control over hardware placement balanced against elasticity and automated patching capabilities",
+   "Elimination of local backup systems balanced against geo-redundant disaster recovery options",
    "Increased encryption overhead balanced against simplified key management through cloud provider tools",
-   "Loss of network segmentation capabilities balanced against improved DDoS mitigation services",
-   "Elimination of local backup systems balanced against geo-redundant disaster recovery options"
+   "Loss of network segmentation capabilities balanced against improved DDoS mitigation services"
   ],
   "correct_index": 0,
   "explanation": "Cloud migration fundamentally shifts security responsibility—the organization loses direct physical control of infrastructure but gains automated security updates and scalability. The other options present false trade-offs: cloud encryption can be client-side, segmentation is still available via VPCs, and backups are complementary, not replacements.",
@@ -405,12 +405,12 @@
  {
   "question": "A development team implements a microservices architecture where each service handles authentication independently. What is the MOST significant security vulnerability this design introduces?",
   "options": [
+   "Distributed logging makes it harder to correlate attack patterns but simplifies compliance audit trails",
    "Inconsistent authentication standards across services create both privilege escalation vectors and token validation bypass opportunities",
    "Multiple authentication endpoints increase latency and reduce system performance during peak transaction loads",
-   "Distributed logging makes it harder to correlate attack patterns but simplifies compliance audit trails",
    "Service-to-service communication requires additional API keys that complicate credential rotation procedures"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Independent authentication per microservice creates inconsistent security policies, allowing attackers to exploit weaker implementations or forge tokens not validated uniformly. Latency and logging are operational concerns, not primary vulnerabilities; credential rotation complexity is a management issue, not an architectural security flaw.",
   "knowledge_area": "Security and Design",
   "difficulty": "hard"
@@ -432,8 +432,8 @@
   "question": "Container and virtual machine technologies both isolate workloads, but they improve security through different mechanisms. Which distinction most accurately reflects their architectural differences?",
   "options": [
    "Containers share the host OS kernel and reduce attack surface through application-level isolation, whereas VMs isolate via separate OS kernels but introduce hypervisor compromise risks",
-   "VMs require more patches because each guest OS needs updates independently, while containers eliminate patching overhead entirely",
    "Containers provide stronger network isolation because they enforce microsegmentation by default, whereas VMs require manual firewall configuration",
+   "VMs require more patches because each guest OS needs updates independently, while containers eliminate patching overhead entirely",
    "VMs are vulnerable to container escape exploits whereas containers cannot be affected by host kernel vulnerabilities"
   ],
   "correct_index": 0,
@@ -444,12 +444,12 @@
  {
   "question": "An organization uses a UPS system, RAID-6 storage, and encrypted backups as core infrastructure components. Which of these specifically supports the Availability and Integrity elements of the CIA triad, and why does each serve a different purpose?",
   "options": [
-   "UPS maintains Availability during power loss; RAID-6 provides Integrity through redundancy and parity, detecting corruption; encryption secures backups during storage and transport but does not directly enforce either CIA property",
-   "RAID-6 ensures Availability by mirroring data across multiple drives; UPS maintains Integrity by providing consistent power; encryption guarantees Confidentiality during backup transmission",
+   "UPS, RAID-6, and encryption together provide all three CIA properties because they prevent data loss, corruption, and unauthorized access simultaneously",
    "Encryption protects both Availability and Integrity by preventing unauthorized modification of stored data; UPS and RAID-6 are redundancy measures that improve performance only",
-   "UPS, RAID-6, and encryption together provide all three CIA properties because they prevent data loss, corruption, and unauthorized access simultaneously"
+   "RAID-6 ensures Availability by mirroring data across multiple drives; UPS maintains Integrity by providing consistent power; encryption guarantees Confidentiality during backup transmission",
+   "UPS maintains Availability during power loss; RAID-6 provides Integrity through redundancy and parity, detecting corruption; encryption secures backups during storage and transport but does not directly enforce either CIA property"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "UPS supports Availability (system uptime); RAID-6 supports Integrity (detects/corrects errors via parity); encryption supports Confidentiality (not CIA Availability or Integrity directly). The other options incorrectly assign properties to components or conflate redundancy with CIA elements.",
   "knowledge_area": "Security and Design",
   "difficulty": "hard"
@@ -457,12 +457,12 @@
  {
   "question": "A security team implements a system where users receive different database access levels based on their job role, while all data transmissions are encrypted and system modifications are logged. Which CIA triad components are directly addressed by these three controls?",
   "options": [
-   "Confidentiality through encryption, Integrity through role-based access, and Availability through audit logging",
-   "Integrity through role-based access control, Confidentiality through encryption, and Availability through comprehensive logging",
+   "Confidentiality through audit logging, Integrity through encrypted transmissions, and Availability through role-based access limitations",
    "Availability through role-based restrictions, Confidentiality through encrypted channels, and Integrity through access control enforcement",
-   "Confidentiality through audit logging, Integrity through encrypted transmissions, and Availability through role-based access limitations"
+   "Integrity through role-based access control, Confidentiality through encryption, and Availability through comprehensive logging",
+   "Confidentiality through encryption, Integrity through role-based access, and Availability through audit logging"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Integrity is protected by role-based access control (limiting who can modify data), Confidentiality by encryption (preventing unauthorized viewing), and Availability assurance comes from audit logging that enables incident response. The other options misalign controls to CIA components—for instance, logging directly supports Integrity verification, not Availability, and role-based access enforces Integrity, not Availability.",
   "difficulty": "hard",
   "knowledge_area": "Security Fundamentals"
@@ -471,9 +471,9 @@
   "question": "During a Zero Trust security review, an organization verifies user identity through multi-factor authentication, confirms device health status before network access, and re-authenticates users every 30 minutes regardless of activity. Which Zero Trust principle is NOT directly demonstrated by these practices?",
   "options": [
    "Continuous verification of user and device credentials throughout the session",
-   "Granular access control based on device posture and compliance status",
+   "Requirement for authentication before allowing any network resource access",
    "Assumption that all internal network traffic is inherently trustworthy and pre-authorized",
-   "Requirement for authentication before allowing any network resource access"
+   "Granular access control based on device posture and compliance status"
   ],
   "correct_index": 2,
   "explanation": "Zero Trust explicitly rejects the assumption that internal traffic is trustworthy; it verifies every access request regardless of network location. The scenario demonstrates continuous verification, device health checks, and initial authentication—all core Zero Trust principles—but directly contradicts the notion that internal traffic requires no verification.",
@@ -484,9 +484,9 @@
   "question": "A financial institution uses honeypots containing fake customer account records and a honeynet environment simulating its transaction processing network. Both systems log unauthorized access attempts. In this deception technology setup, what is the primary security distinction between the two components?",
   "options": [
    "Honeypots isolate individual fake resources to detect targeted attacks, while honeynets simulate complete network segments to study attacker behavior and lateral movement patterns",
-   "Honeypots monitor external intrusion attempts using decoy files, while honeynets restrict internal users from accessing sensitive production systems",
    "Honeypots record attacker keystroke data through fake servers, while honeynets prevent data exfiltration by segmenting network traffic flows",
-   "Honeypots detect insider threats through credential validation, while honeynets identify vulnerability exploits in network protocols"
+   "Honeypots detect insider threats through credential validation, while honeynets identify vulnerability exploits in network protocols",
+   "Honeypots monitor external intrusion attempts using decoy files, while honeynets restrict internal users from accessing sensitive production systems"
   ],
   "correct_index": 0,
   "explanation": "Honeypots are individual decoy resources designed to attract and detect attacks on specific assets, while honeynets are interconnected fake network environments that allow observation of full attack progression and lateral movement. The other options conflate capabilities or assign functions that don't reflect the architectural differences between isolated decoys and simulated network ecosystems.",
@@ -497,9 +497,9 @@
   "question": "An organization implements non-repudiation for digital contract signatures by requiring users to sign with private cryptographic keys and recording all signing events in an immutable audit trail. A user later denies signing a contract. Why does this non-repudiation approach make denial difficult to sustain?",
   "options": [
    "Private key ownership ties the signature cryptographically to the individual, and the immutable audit trail provides objective proof of when and how the signature was created",
-   "The immutable audit trail prevents the user from accessing the contract again, making it impossible to claim signature legitimacy",
    "Private key encryption renders all user communications non-reputable by default, eliminating plausible deniability in all digital transactions",
-   "The cryptographic signature proves the contract's authenticity to third parties, which prevents users from later claiming the document was altered"
+   "The cryptographic signature proves the contract's authenticity to third parties, which prevents users from later claiming the document was altered",
+   "The immutable audit trail prevents the user from accessing the contract again, making it impossible to claim signature legitimacy"
   ],
   "correct_index": 0,
   "explanation": "Non-repudiation works because the private key is uniquely bound to the user (only they possess it), creating cryptographic proof of their action, and the immutable audit trail provides irrefutable evidence of when the signing occurred. Options B and C misstate how these controls work, and option D conflates signature authenticity with user accountability.",
@@ -522,12 +522,12 @@
  {
   "question": "A company deploys both an IDS and an IPS on its network perimeter. Which statement best describes how these systems differ in their response to detected threats?",
   "options": [
-   "IDS logs and alerts on suspicious traffic while IPS actively blocks or modifies malicious packets in real-time",
    "IPS monitors network packets for signature-based attacks while IDS uses only behavioral analysis to prevent breaches",
-   "IDS performs deep packet inspection and terminates connections, whereas IPS generates alerts for security team review",
-   "IPS identifies zero-day exploits through pattern recognition while IDS prevents known vulnerability exploitation"
+   "IDS logs and alerts on suspicious traffic while IPS actively blocks or modifies malicious packets in real-time",
+   "IPS identifies zero-day exploits through pattern recognition while IDS prevents known vulnerability exploitation",
+   "IDS performs deep packet inspection and terminates connections, whereas IPS generates alerts for security team review"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The key distinction is that IDS (Intrusion Detection System) is passive—it detects and reports threats—while IPS (Intrusion Prevention System) is active and can block, drop, or modify malicious traffic. The other options reverse these roles or conflate their capabilities incorrectly.",
   "knowledge_area": "Security Protocols and Threat Mitigation",
   "difficulty": "hard"
@@ -535,12 +535,12 @@
  {
   "question": "During penetration testing, a security team discovers that employee credentials are transmitted over unencrypted HTTP instead of HTTPS. Which protocol layer issue does this represent, and what encryption mechanism would best mitigate this specific vulnerability?",
   "options": [
-   "Application layer vulnerability; implementing TLS/SSL to encrypt data in transit protects credentials from interception",
-   "Physical layer vulnerability; deploying WPA2 encryption ensures wireless authentication credentials remain confidential",
    "Transport layer vulnerability; enforcing SSH tunnels for all remote connections prevents man-in-the-middle attacks",
-   "Network layer vulnerability; using tokenization to replace credential strings removes the need for encrypted channels"
+   "Application layer vulnerability; implementing TLS/SSL to encrypt data in transit protects credentials from interception",
+   "Network layer vulnerability; using tokenization to replace credential strings removes the need for encrypted channels",
+   "Physical layer vulnerability; deploying WPA2 encryption ensures wireless authentication credentials remain confidential"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "HTTP operates at the application layer and lacks encryption; HTTPS uses TLS/SSL to encrypt credentials in transit, preventing interception attacks. WPA2 protects wireless networks, SSH secures remote access, and tokenization masks data at rest—none directly address the HTTP-to-HTTPS migration problem identified in testing.",
   "knowledge_area": "Security Protocols and Threat Mitigation",
   "difficulty": "hard"
@@ -550,8 +550,8 @@
   "options": [
    "Certificate Revocation List (CRL) or Online Certificate Status Protocol (OCSP) to verify the certificate has not been revoked",
    "Public Key Infrastructure (PKI) trust store to confirm the certificate chain matches the organization's root authority",
-   "Certificate pinning mechanism to ensure the certificate fingerprint matches the hardcoded value in the application",
-   "Time Stamp Authority (TSA) records to validate the certificate was issued before the organization's security policy date"
+   "Time Stamp Authority (TSA) records to validate the certificate was issued before the organization's security policy date",
+   "Certificate pinning mechanism to ensure the certificate fingerprint matches the hardcoded value in the application"
   ],
   "correct_index": 0,
   "explanation": "CRL and OCSP are the standard mechanisms for checking certificate revocation status in real-time. PKI trust stores verify certificate chains but don't track revocation; pinning prevents substitution attacks but doesn't check revocation status; TSA records validate timestamps, not revocation.",
@@ -561,12 +561,12 @@
  {
   "question": "A financial services company uses data masking and tokenization in different systems to protect sensitive information. Which scenario best represents the correct application of tokenization rather than data masking?",
   "options": [
-   "Replacing actual credit card numbers with unique tokens in a payment processing system, allowing authorized systems to reverse the mapping and retrieve the original value",
    "Obscuring the last eight digits of customer Social Security Numbers with asterisks in transaction logs while preserving the first three digits for auditing",
    "Substituting employee salary figures with randomized values within the same range in reporting dashboards while keeping the original data in the database",
-   "Replacing personally identifiable information with synthetic but realistic substitute values in development databases without the ability to map back to originals"
+   "Replacing personally identifiable information with synthetic but realistic substitute values in development databases without the ability to map back to originals",
+   "Replacing actual credit card numbers with unique tokens in a payment processing system, allowing authorized systems to reverse the mapping and retrieve the original value"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Tokenization replaces sensitive data with non-sensitive tokens and maintains a secure mapping to retrieve original values when needed, which is essential in payment processing. Data masking replaces values with proxies (asterisks, synthetic data, or obfuscated versions) without reversibility, making it suitable for logs and development environments where original data retrieval is not required.",
   "knowledge_area": "Security Protocols and Threat Mitigation",
   "difficulty": "hard"
@@ -574,12 +574,12 @@
  {
   "question": "A system administrator discovers that critical security patches for a widely used enterprise application have not been applied for six months, despite vendor availability. Which risk does this create, and what policy element should have prevented this gap?",
   "options": [
-   "Unpatched systems remain vulnerable to known exploits that have public proof-of-concepts; a formal patch management policy with documented timelines and enforcement prevents version drift",
    "Outdated software creates compatibility conflicts with SSL/TLS protocols; a version control policy requiring quarterly certificate renewal prevents authentication failures",
+   "Unpatched systems remain vulnerable to known exploits that have public proof-of-concepts; a formal patch management policy with documented timelines and enforcement prevents version drift",
    "Legacy applications without patches fail to support multi-factor authentication; a mandatory password policy update schedule ensures compliance with modern security standards",
    "Unpatched software cannot generate security audit logs; a digital signature verification policy for all deployed binaries ensures tamper-detection and regulatory compliance"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Unpatched systems are vulnerable to known exploits with public exploits available; a formal patch management policy with timelines and accountability is the standard control. Certificate renewal, password policies, and audit logging are important controls but do not directly address the patch management gap or prevent exploitation of known vulnerabilities.",
   "knowledge_area": "Security Protocols and Threat Mitigation",
   "difficulty": "hard"
@@ -588,9 +588,9 @@
   "question": "A financial institution needs to protect customer data while it moves across multiple networks and also when it sits in database servers. Which pair of data states requires fundamentally different protection mechanisms?",
   "options": [
    "Data in transit requires encryption protocols like TLS, while data at rest requires physical access controls and encryption at the storage layer",
-   "Data in use requires authentication tokens and access control lists, while data in transit requires hashing algorithms and digital signatures",
    "Data at rest requires shift cipher encryption, while data in transit requires substitution cipher encryption combined with token validation",
-   "Data in use requires public key cryptography, while data at rest requires private key cryptography and multifactor authentication enforcement"
+   "Data in use requires public key cryptography, while data at rest requires private key cryptography and multifactor authentication enforcement",
+   "Data in use requires authentication tokens and access control lists, while data in transit requires hashing algorithms and digital signatures"
   ],
   "correct_index": 0,
   "explanation": "Data in transit and data at rest are distinct states with different threat models. Data in transit is vulnerable to interception during network transmission, requiring encryption protocols like TLS; data at rest in storage systems requires encryption at the storage layer plus physical access controls. The other options confuse cipher types with data states or incorrectly pair authentication mechanisms with data protection requirements.",
@@ -600,12 +600,12 @@
  {
   "question": "An organization implementing a blockchain-based audit log wants to ensure that historical transaction records cannot be altered without detection. How does blockchain's hashing mechanism accomplish this integrity requirement?",
   "options": [
+   "Private key cryptography signs each block independently, and a revocation token system detects when any block's digital signature no longer matches its contents",
    "Each block contains a cryptographic hash of its own contents plus the hash of the previous block, so tampering with any past transaction invalidates all subsequent hashes",
-   "A master hash stored in a certificate authority verifies the integrity of all blocks simultaneously using multifactor authentication protocols",
    "Shift cipher encryption is applied to each block sequentially, with the cipher key stored in the previous block to prevent backward modification",
-   "Private key cryptography signs each block independently, and a revocation token system detects when any block's digital signature no longer matches its contents"
+   "A master hash stored in a certificate authority verifies the integrity of all blocks simultaneously using multifactor authentication protocols"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Blockchain integrity relies on hash chaining: each block's hash depends on its contents and the previous block's hash, creating an immutable chain. Any tampering with a past transaction changes that block's hash, which breaks the chain for all subsequent blocks, making tampering detectable. The other options misapply certificates, ciphers, and key systems to the hashing mechanism.",
   "knowledge_area": "Network and Data Security",
   "difficulty": "hard"
@@ -613,12 +613,12 @@
  {
   "question": "A network administrator must choose between MAC (Mandatory Access Control), DAC (Discretionary Access Control), and RBAC (Role-Based Access Control) for a healthcare system where doctors, nurses, and billing staff have different data permissions. Which model best fits this requirement and why?",
   "options": [
+   "A combination of all three is required because RBAC defines baseline permissions, MAC enforces system-level restrictions, and DAC allows individual exceptions for urgent care scenarios",
    "RBAC is most appropriate because staff members' access permissions are based on their job role, which directly maps to their data needs and simplifies permission administration",
-   "MAC is most appropriate because the system administrator enforces strict security classifications on patient records, and no user can override access rules regardless of role",
    "DAC is most appropriate because each data owner (such as the attending physician) retains the ability to grant or revoke access permissions to other staff members individually",
-   "A combination of all three is required because RBAC defines baseline permissions, MAC enforces system-level restrictions, and DAC allows individual exceptions for urgent care scenarios"
+   "MAC is most appropriate because the system administrator enforces strict security classifications on patient records, and no user can override access rules regardless of role"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "RBAC is the best fit for role-based permission structures; permissions are centrally defined by role and automatically applied to all members of that role, simplifying administration in multi-role environments. MAC works best for classified data with fixed security levels; DAC is best when individual data owners control permissions. While MAC and DAC have specific uses, RBAC directly addresses the scenario of different job roles requiring different access.",
   "knowledge_area": "Network and Data Security",
   "difficulty": "hard"
@@ -626,12 +626,12 @@
  {
   "question": "During network authentication, a system requires something you know (password), something you have (hardware token), and something you are (fingerprint). How does this multifactor authentication approach differ from public key cryptography in preventing unauthorized network access?",
   "options": [
-   "Multifactor authentication verifies the user's identity through multiple independent channels before granting access, while public key cryptography ensures that only the holder of the private key can encrypt/decrypt messages sent over the network",
-   "Multifactor authentication uses Caesar cipher encryption combined with certificate validation, while public key cryptography relies on substitution ciphers secured by access control tokens",
    "Public key cryptography prevents unauthorized access by requiring two passwords, while multifactor authentication prevents access by requiring a private key stored in hardware",
-   "Multifactor authentication encrypts the user's fingerprint data in transit, while public key cryptography stores biometric data at rest using hashing algorithms and revocation mechanisms"
+   "Multifactor authentication uses Caesar cipher encryption combined with certificate validation, while public key cryptography relies on substitution ciphers secured by access control tokens",
+   "Multifactor authentication encrypts the user's fingerprint data in transit, while public key cryptography stores biometric data at rest using hashing algorithms and revocation mechanisms",
+   "Multifactor authentication verifies the user's identity through multiple independent channels before granting access, while public key cryptography ensures that only the holder of the private key can encrypt/decrypt messages sent over the network"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Multifactor authentication (MFA) verifies that the person requesting access is who they claim to be by requiring multiple independent proof factors, blocking unauthorized users at the authentication gate. Public key cryptography protects the confidentiality and integrity of messages in transit by ensuring only the private key holder can decrypt them, but doesn't authenticate who the user is. MFA and PKC address different security concerns.",
   "knowledge_area": "Network and Data Security",
   "difficulty": "hard"
@@ -639,12 +639,12 @@
  {
   "question": "Two organizations exchange sensitive data and must ensure confidentiality. Organization A wants to use public key cryptography, while Organization B prefers private key cryptography. Which statement accurately describes the trade-off between these approaches?",
   "options": [
+   "Public key cryptography applies hashing to create digital signatures, while private key cryptography applies blockchain verification to ensure the private key remains stored securely in hardware",
    "Public key cryptography requires key distribution infrastructure but enables secure communication without prior secret exchange, while private key cryptography requires securely sharing a single key beforehand but is computationally faster",
-   "Public key cryptography uses shift ciphers for speed, while private key cryptography uses substitution ciphers for stronger security in data at rest scenarios",
    "Public key cryptography encrypts data with a certificate authority token, while private key cryptography uses multifactor authentication to protect the encryption key from network interception",
-   "Public key cryptography applies hashing to create digital signatures, while private key cryptography applies blockchain verification to ensure the private key remains stored securely in hardware"
+   "Public key cryptography uses shift ciphers for speed, while private key cryptography uses substitution ciphers for stronger security in data at rest scenarios"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Public key cryptography solves the key distribution problem by using paired keys (public and private), eliminating the need to secretly share keys beforehand, but involves higher computational overhead. Private key cryptography (symmetric) requires both parties to securely share a single secret key in advance but is faster to compute. The other options confuse cipher types with key management systems or incorrectly pair cryptographic approaches with unrelated mechanisms.",
   "knowledge_area": "Network and Data Security",
   "difficulty": "hard"

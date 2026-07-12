@@ -2,12 +2,12 @@
  {
   "question": "A manager notices that two team members receive significantly different levels of attention, resources, and developmental opportunities despite performing at similar levels. Which leadership theory best explains this differential treatment pattern?",
   "options": [
+   "Servant Leadership Theory, which emphasizes the leader's commitment to supporting all team members equally",
    "Situational Leadership Theory, which adapts leader style based on task complexity and follower maturity levels",
    "Leader-Member Exchange Theory, which describes how leaders develop unique dyadic relationships with individual followers",
-   "Servant Leadership Theory, which emphasizes the leader's commitment to supporting all team members equally",
    "Transformational Leadership Theory, which inspires followers through shared vision and intellectual stimulation"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "LMX Theory specifically addresses how leaders form different quality relationships (in-group vs. out-group) with individual team members, leading to differential treatment. While Situational Leadership adapts style, it doesn't explain why similar performers receive different resources; Servant and Transformational theories emphasize equitable support across followers.",
   "difficulty": "hard",
   "knowledge_area": "Leader/Follower Relations"
@@ -15,12 +15,12 @@
  {
   "question": "During team development, a leader observes that subgroups are forming based on tenure, and newer members feel excluded from decision-making. Which aspect of group dynamics most directly impacts the team's ability to build cohesion in this scenario?",
   "options": [
-   "Role clarity, which defines responsibilities and prevents overlap in task assignment across tenure groups",
-   "Group norms and cohesion, which establish shared values and behavioral expectations that affect inclusion and belonging",
    "Task interdependence, which determines how closely members must coordinate efforts regardless of tenure status",
-   "Communication patterns, which structure information flow through formal channels rather than informal networks"
+   "Role clarity, which defines responsibilities and prevents overlap in task assignment across tenure groups",
+   "Communication patterns, which structure information flow through formal channels rather than informal networks",
+   "Group norms and cohesion, which establish shared values and behavioral expectations that affect inclusion and belonging"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Group norms and cohesion directly address how groups establish inclusive or exclusive behavioral standards that affect belonging. While role clarity, task interdependence, and communication patterns influence team function, they don't directly explain why tenure-based subgroups form or how inclusion is created—group norms do.",
   "difficulty": "hard",
   "knowledge_area": "Leader/Follower Relations"
@@ -30,8 +30,8 @@
   "options": [
    "Assign the follower to high-visibility projects, increase informal interactions, and provide developmental feedback tailored to their career goals",
    "Ensure the follower receives the same resources and treatment as in-group members through transparent, standardized allocation processes",
-   "Reduce task complexity and provide detailed instructions to build confidence before offering stretch opportunities",
-   "Establish clear performance metrics and conduct frequent formal evaluations to document improvement objectively"
+   "Establish clear performance metrics and conduct frequent formal evaluations to document improvement objectively",
+   "Reduce task complexity and provide detailed instructions to build confidence before offering stretch opportunities"
   ],
   "correct_index": 0,
   "explanation": "LMX Theory emphasizes building relationships through high-quality exchanges—increased attention, trust-building through informal interaction, and individualized development. Options B and D focus on fairness and metrics rather than relationship deepening; Option C addresses task support but not the dyadic relationship-building central to LMX.",
@@ -41,12 +41,12 @@
  {
   "question": "An effective leader provides feedback to a follower by acknowledging effort, specifying the gap between current and desired performance, and collaboratively identifying improvement steps. Which characteristic of effective leader feedback does this approach primarily demonstrate?",
   "options": [
-   "Timeliness and frequency, ensuring feedback is delivered immediately after performance events in multiple interactions",
-   "Specificity and actionability, combining observation-based detail with ownership of solutions by the follower",
    "Emotional intelligence and psychological safety, ensuring the follower feels respected despite performance shortfalls",
-   "Consistency and documentation, maintaining written records that align feedback with formal evaluation criteria"
+   "Timeliness and frequency, ensuring feedback is delivered immediately after performance events in multiple interactions",
+   "Consistency and documentation, maintaining written records that align feedback with formal evaluation criteria",
+   "Specificity and actionability, combining observation-based detail with ownership of solutions by the follower"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The scenario shows specific identification of the gap and collaborative action-planning, which defines specificity and actionability—the follower can act on it. While timeliness, emotional intelligence, and documentation are important feedback qualities, this approach's core strength is that it pinpoints exactly what changed and how to improve (specificity) and involves the follower in solutions (actionability).",
   "difficulty": "hard",
   "knowledge_area": "Leader/Follower Relations"
@@ -54,12 +54,12 @@
  {
   "question": "A follower simultaneously leads a project team while supporting their manager's strategic initiatives. This dual role requires balancing upward influence with downward accountability. Which characteristic best enables a follower to navigate this dual role effectively?",
   "options": [
+   "Loyalty and compliance, prioritizing the manager's agenda while maintaining team motivation through clear direction",
    "Organizational awareness and political skill, understanding power dynamics and stakeholder interests across hierarchy levels",
    "Technical expertise and task focus, ensuring both team deliverables and manager objectives meet quality standards",
-   "Loyalty and compliance, prioritizing the manager's agenda while maintaining team motivation through clear direction",
    "Adaptability and self-awareness, flexing communication style based on audience while maintaining personal integrity"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The dual role (leader and follower) requires understanding when to influence upward, how to advocate for the team, and which stakeholder interests matter—organizational awareness and political skill. While technical expertise, loyalty, and adaptability are valuable, they don't specifically address navigating the competing demands and power dynamics inherent in bridging the leader-follower boundary.",
   "difficulty": "hard",
   "knowledge_area": "Leader/Follower Relations"
@@ -67,12 +67,12 @@
  {
   "question": "A manufacturing organization restructures its workforce to include both permanent functional departments and temporary cross-functional project teams. Which of the following best explains the primary advantage of adopting this hybrid approach rather than maintaining only functional teams?",
   "options": [
-   "Functional teams provide stability and expertise in core areas, while cross-functional teams enable faster problem-solving and innovation by bringing diverse perspectives to specific projects",
-   "Cross-functional teams eliminate the need for management oversight, whereas functional teams require constant supervision to maintain productivity standards",
    "Hybrid structures allow the organization to reduce total headcount while maintaining the same output through improved scheduling alone",
-   "Functional departments handle all strategic decisions, while cross-functional teams focus exclusively on routine operational tasks with no overlap"
+   "Functional departments handle all strategic decisions, while cross-functional teams focus exclusively on routine operational tasks with no overlap",
+   "Cross-functional teams eliminate the need for management oversight, whereas functional teams require constant supervision to maintain productivity standards",
+   "Functional teams provide stability and expertise in core areas, while cross-functional teams enable faster problem-solving and innovation by bringing diverse perspectives to specific projects"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The hybrid approach leverages functional teams' depth of expertise with cross-functional teams' ability to integrate diverse skills for complex challenges. The other options either misrepresent the role of management, overstate headcount reduction, or incorrectly separate decision-making responsibilities between team types.",
   "knowledge_area": "Team Leadership and Self-Managed Teams",
   "difficulty": "hard"
@@ -82,8 +82,8 @@
   "options": [
    "Self-managed teams cannot develop technical expertise because they lack external oversight and mentoring from traditional managers",
    "Self-managed teams require robust internal discipline and clear peer accountability systems; without them, coordination and deadline adherence often deteriorate despite member competence",
-   "Self-managed teams are only effective in organizations with fewer than fifty total employees due to communication limitations",
-   "Self-managed teams cannot make decisions about resource allocation because decision-making authority remains with upper management regardless of team structure"
+   "Self-managed teams cannot make decisions about resource allocation because decision-making authority remains with upper management regardless of team structure",
+   "Self-managed teams are only effective in organizations with fewer than fifty total employees due to communication limitations"
   ],
   "correct_index": 1,
   "explanation": "Self-managed teams lose a key advantage when internal accountability mechanisms are weak; they must replace traditional supervision with peer accountability and self-discipline. The scenario shows technical capability exists but organizational processes don't, isolating the disadvantage to governance, not competence or firm size.",
@@ -93,12 +93,12 @@
  {
   "question": "A team consists of five employees who meet weekly, share resources, and have individual performance metrics that determine their pay. A different team has five employees who share collective accountability, pool resources toward shared goals, and receive bonuses based on team outcomes. Which distinction best differentiates these two entities?",
   "options": [
-   "The first entity is a group with coordinated work, while the second is a true team with interdependent goals and shared accountability",
    "The first entity is a team because it meets regularly, while the second is a group because it shares resources across members",
    "The first entity is self-managed because individuals control their own metrics, while the second is functional because it has collective bonuses",
+   "The first entity is a group with coordinated work, while the second is a true team with interdependent goals and shared accountability",
    "The first entity is cross-functional because members have individual accountability, while the second is functional because all members share the same goals"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The fundamental difference between a group and a team lies in interdependence and shared accountability for outcomes. The first entity shows coordination but independent metrics (a group), while the second shows collective accountability and shared outcomes (a true team). Meeting frequency and resource pooling alone do not define the distinction.",
   "knowledge_area": "Team Leadership and Self-Managed Teams",
   "difficulty": "hard"
@@ -106,10 +106,10 @@
  {
   "question": "A leader is designing a cross-functional team to develop a new product and must decide whether to include a member from the finance department who has minimal product-development experience but strong analytical and communication skills. What does this decision scenario most directly test about effective team characteristics and leadership's role?",
   "options": [
-   "Leadership should prioritize subject-matter expertise above all other factors because product development requires only specialized technical knowledge",
+   "Leadership's role is to assign team composition based solely on department size to ensure equal representation across all organizational units",
    "Leadership must balance the need for functional expertise with diverse skills and perspectives, recognizing that strong communication and analytical ability contribute to team effectiveness across disciplines",
    "Leadership should exclude non-specialist members because cross-functional teams function best when every member has prior experience in the project's core domain",
-   "Leadership's role is to assign team composition based solely on department size to ensure equal representation across all organizational units"
+   "Leadership should prioritize subject-matter expertise above all other factors because product development requires only specialized technical knowledge"
   ],
   "correct_index": 1,
   "explanation": "Effective teams benefit from both functional expertise and diverse complementary skills; a strong communicator and analyst adds value to cross-functional work even without product-development background. Leadership must weigh capability and perspective diversity, not restrict teams to specialists or use arbitrary assignment rules.",
@@ -119,12 +119,12 @@
  {
   "question": "An organization implements teams to improve decision-making speed and employee engagement but experiences unexpected turnover among high performers within six months. These employees cite limited career advancement and unclear promotion criteria within the team structure. Which of the following best explains how this outcome reflects a disadvantage of teamwork?",
   "options": [
-   "Teams eliminate individual recognition and career development paths, making it difficult for high performers to see advancement opportunities distinct from collective success",
-   "Teams require all members to possess identical skills, preventing individuals from specializing and limiting their marketability in the external job market",
    "Teams reduce operational efficiency because high performers must spend all their time supporting underperforming colleagues rather than advancing organizational strategy",
-   "Teams prevent organizations from hiring external talent, forcing all advancement from within and creating a closed system with no new perspectives"
+   "Teams prevent organizations from hiring external talent, forcing all advancement from within and creating a closed system with no new perspectives",
+   "Teams eliminate individual recognition and career development paths, making it difficult for high performers to see advancement opportunities distinct from collective success",
+   "Teams require all members to possess identical skills, preventing individuals from specializing and limiting their marketability in the external job market"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "A key disadvantage of teamwork is that collective focus can obscure individual contribution and create ambiguity about personal advancement, frustrating high performers seeking visible career growth. The other options misrepresent team composition, efficiency, and hiring practices rather than addressing the genuine tension between collective accountability and individual career development.",
   "knowledge_area": "Team Leadership and Self-Managed Teams",
   "difficulty": "hard"
@@ -132,12 +132,12 @@
  {
   "question": "A leader strengthens her professional network by attending industry conferences and maintaining regular contact with former colleagues. Which aspect of professional networking most directly enables her to exercise empowerment and mentoring as leadership qualities?",
   "options": [
-   "The expanded pool of emerging professionals she can guide and develop through sustained relational investment",
+   "The increased number of potential business partners available for collaborative ventures and joint projects",
    "The access to competitor intelligence and market trends that inform strategic decision-making",
-   "The visibility within her industry that leads to speaking opportunities and thought leadership recognition",
-   "The increased number of potential business partners available for collaborative ventures and joint projects"
+   "The expanded pool of emerging professionals she can guide and develop through sustained relational investment",
+   "The visibility within her industry that leads to speaking opportunities and thought leadership recognition"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "While all options describe real networking benefits, empowerment and mentoring specifically require direct relational engagement with individuals the leader can influence and support. Option A directly connects the network relationship—sustained contact with professionals—to the leadership practice of guiding their development. The other options describe benefits that are organizational or reputational rather than interpersonal-developmental.",
   "difficulty": "hard",
   "knowledge_area": "Networking"
@@ -145,12 +145,12 @@
  {
   "question": "Two leaders both actively network, but one reports that her network produces breakthrough collaborations while the other reports that his produces mostly transactional connections. Which distinction in productive interpersonal interaction best explains the difference?",
   "options": [
-   "Leaders in the first network share industry credentials and formal certifications, while leaders in the second lack specialized training",
    "The first leader prioritizes genuine relationship-building with authentic listening and mutual respect, whereas the second focuses on extracting value from contacts",
-   "The first leader belongs to larger professional organizations with more members, while the second participates in smaller niche groups",
-   "The first leader uses digital platforms to maintain contact frequency, while the second relies primarily on in-person meetings"
+   "Leaders in the first network share industry credentials and formal certifications, while leaders in the second lack specialized training",
+   "The first leader uses digital platforms to maintain contact frequency, while the second relies primarily on in-person meetings",
+   "The first leader belongs to larger professional organizations with more members, while the second participates in smaller niche groups"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Productive interpersonal interaction depends on mutual respect, authenticity, and genuine engagement—not merely on network size, meeting format, or credentials. Option B captures the core distinction: authentic relationship-building enables true collaboration, whereas transactional interaction yields only surface-level connections. The other options describe structural or logistical differences that do not necessarily determine collaboration quality.",
   "difficulty": "hard",
   "knowledge_area": "Networking"
@@ -158,12 +158,12 @@
  {
   "question": "A new manager discovers that her most effective leadership decisions come after informal conversations with peers from different departments within her extended professional network. How does this reflect leadership's relationship with networking?",
   "options": [
-   "Networking provides access to diverse perspectives and feedback that inform more collaborative and empathetic decision-making",
-   "Networking establishes the manager's credibility so that her decisions are accepted without requiring explanation",
    "Networking reduces the manager's reliance on formal training and mentoring from senior executives within her own organization",
+   "Networking establishes the manager's credibility so that her decisions are accepted without requiring explanation",
+   "Networking provides access to diverse perspectives and feedback that inform more collaborative and empathetic decision-making",
    "Networking creates external accountability structures that force the manager to justify decisions to outside stakeholders"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Leadership and networking are mutually reinforcing: a leader's network provides multiple viewpoints, constructive feedback, and diverse expertise that enhance collaborative decision-making and empathy—core productive leadership traits. Option A directly articulates this relationship. The other options either mischaracterize the mechanism (credibility without explanation, reduced reliance on internal mentoring, or external accountability) or describe benefits unrelated to leadership quality.",
   "difficulty": "hard",
   "knowledge_area": "Networking"
@@ -171,12 +171,12 @@
  {
   "question": "A productive leader in a professional network is known for soliciting honest feedback from contacts, acknowledging their expertise, and creating opportunities for others to lead initiatives. Which two characteristics of productive leaders does this behavior most directly demonstrate?",
   "options": [
-   "Mentoring and empowerment, because the leader invests in others' growth and creates space for their leadership",
-   "Motivation and collaboration, because the leader energizes contacts and works jointly on shared projects",
    "Empathy and feedback, because the leader listens to others' perspectives and responds with constructive input",
+   "Motivation and collaboration, because the leader energizes contacts and works jointly on shared projects",
+   "Mentoring and empowerment, because the leader invests in others' growth and creates space for their leadership",
    "Motivation and mentoring, because the leader inspires others through recognition and provides guidance on skill development"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The described behavior—soliciting feedback from contacts, acknowledging their expertise, and creating leadership opportunities—directly illustrates mentoring (investing in others' development) and empowerment (enabling others to lead and make decisions). Option A names these two traits explicitly and correctly. While the leader may also exhibit motivation, collaboration, and empathy, the core evidence in the scenario most clearly demonstrates mentoring and empowerment.",
   "difficulty": "hard",
   "knowledge_area": "Networking"
@@ -184,10 +184,10 @@
  {
   "question": "A leader uses her professional network strategically: she connects contacts who complement each other's strengths, advocates for emerging leaders' advancement, and regularly reflects on how she has helped others succeed. Which leadership advantage of professional networks does this behavior primarily demonstrate?",
   "options": [
-   "The ability to identify market gaps and launch new business lines based on network intelligence",
+   "The power to shift market share by leveraging network connections to recruit top talent for her organization",
    "The capacity to build organizational influence by creating reciprocal relationships and fostering others' growth within the network",
    "The opportunity to gain access to confidential industry data and competitive positioning strategies",
-   "The power to shift market share by leveraging network connections to recruit top talent for her organization"
+   "The ability to identify market gaps and launch new business lines based on network intelligence"
   ],
   "correct_index": 1,
   "explanation": "The scenario describes a leader using her network to create mutual benefit—connecting complementary contacts, advocating for others, and reflecting on her impact. This demonstrates the core leadership advantage of networks: the ability to build genuine influence through reciprocal relationships and actively developing others. Option B captures this advantage. The other options describe market intelligence, data access, or talent recruitment—benefits that are instrumental or transactional rather than rooted in the relational, developmental aspect of leadership advantage.",
@@ -197,12 +197,12 @@
  {
   "question": "A leader consistently articulates a compelling vision that resonates deeply with employees' sense of purpose. Which combination of factors most directly determines whether this vision creates personal meaning for each team member?",
   "options": [
-   "The employee's prior work experience, their family background, and their current salary level relative to peers",
    "The alignment between the vision and the employee's values, their perceived ability to contribute meaningfully, and their belief in the leader's authenticity",
    "The frequency of communication about the vision, the number of team meetings held, and the leader's tenure in the organization",
+   "The employee's prior work experience, their family background, and their current salary level relative to peers",
    "The industry reputation of the company, the size of the organization, and the geographic location of the workplace"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Personal meaning is determined by how individuals connect the leader's message to their own values and sense of efficacy—not by external demographics or communication volume. Charismatic leadership creates meaning through authentic conviction and demonstrated commitment to a vision that speaks to employees' intrinsic motivations.",
   "difficulty": "hard",
   "knowledge_area": "Charismatic and Transformational Leadership"
@@ -210,12 +210,12 @@
  {
   "question": "Two leaders both inspire strong emotional commitment and loyalty from their teams. Leader A displays unwavering conviction in a controversial strategic direction despite mounting resistance, while Leader B adjusts priorities based on follower feedback and emerging data. Which statement best distinguishes charismatic from transformational leadership in this context?",
   "options": [
-   "Leader A exhibits charismatic leadership through conviction and personal magnetism, while Leader B exhibits transformational leadership through adaptive influence and follower development",
    "Leader A demonstrates transformational leadership because her commitment drives organizational change, while Leader B shows charismatic leadership through responsiveness",
+   "Leader A exhibits charismatic leadership through conviction and personal magnetism, while Leader B exhibits transformational leadership through adaptive influence and follower development",
    "Both leaders are equally charismatic; the difference lies in whether their teams are unionized or work in professional settings",
    "Leader A is more effective because charismatic leaders always outperform transformational leaders in competitive industries"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Charismatic leaders inspire through personal magnetism and conviction, often maintaining their vision regardless of obstacles. Transformational leaders, while also inspiring, emphasize developing followers and adapting strategies to elevate organizational and individual capability—a more flexible and growth-oriented approach. The distinction reflects different mechanisms of influence.",
   "difficulty": "hard",
   "knowledge_area": "Charismatic and Transformational Leadership"
@@ -223,12 +223,12 @@
  {
   "question": "An organization experiences a surge in employee initiative, voluntary cooperation, and willingness to work beyond formal role requirements following a leadership transition. Which of the following best explains this outcome within the framework of charismatic leadership effects?",
   "options": [
-   "Employees respond to increased compensation packages and revised performance metrics established in the first quarter",
    "Followers internalize the leader's articulated values and vision, translating emotional commitment into discretionary effort and self-directed contribution",
    "The new leader implements stricter accountability measures that create fear-based motivation and compliance",
+   "Employees respond to increased compensation packages and revised performance metrics established in the first quarter",
    "Employees adjust their behavior because of new hiring practices that select only highly motivated candidates"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Charismatic leadership effects include converting emotional attachment and belief in a compelling vision into intrinsic motivation and discretionary behavior—followers go beyond requirements because they internalize the leader's values as their own. This is distinct from extrinsic drivers like pay or compliance mechanisms.",
   "difficulty": "hard",
   "knowledge_area": "Charismatic and Transformational Leadership"
@@ -236,12 +236,12 @@
  {
   "question": "A transformational leader invests significant time in one-on-one coaching conversations that help team members identify skill gaps, envision capability growth, and own their development path. How does this behavior specifically exemplify transformational leadership attributes?",
   "options": [
-   "It demonstrates individual consideration by treating followers as whole people with unique potential and development needs beyond immediate job requirements",
    "It shows charismatic appeal because the leader spends personal time with each follower, creating emotional bonds",
-   "It reflects inspirational motivation by setting stretch goals and deadlines for the entire team simultaneously",
-   "It exhibits intellectual stimulation through the use of quarterly performance reviews and standardized competency assessments"
+   "It demonstrates individual consideration by treating followers as whole people with unique potential and development needs beyond immediate job requirements",
+   "It exhibits intellectual stimulation through the use of quarterly performance reviews and standardized competency assessments",
+   "It reflects inspirational motivation by setting stretch goals and deadlines for the entire team simultaneously"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Individual consideration—one of the core transformational leadership attributes—means attending to followers' unique development needs, strengths, and aspirations as individuals. Charisma creates emotional attachment, but transformational leadership's individual consideration specifically elevates each person's capability and sense of purpose in their own growth journey.",
   "difficulty": "hard",
   "knowledge_area": "Charismatic and Transformational Leadership"
@@ -250,9 +250,9 @@
   "question": "When comparing how two different leaders create meaning for their organizations, one leader emphasizes her personal conviction and magnetic personality to rally teams around a singular vision, while the other frames challenges as opportunities for learning and systematically develops critical thinking in followers. Which characterization most accurately reflects these leadership approaches?",
   "options": [
    "The first leader relies on charismatic mechanisms of conviction and personal magnetism; the second employs transformational mechanisms including intellectual stimulation and follower development",
-   "The first leader is transformational because conviction drives organizational change; the second is charismatic because followers question assumptions",
+   "The first leader creates more personal meaning because magnetism is a stronger motivator than intellectual engagement",
    "Both are equally charismatic; their difference lies only in communication style and organizational size",
-   "The first leader creates more personal meaning because magnetism is a stronger motivator than intellectual engagement"
+   "The first leader is transformational because conviction drives organizational change; the second is charismatic because followers question assumptions"
   ],
   "correct_index": 0,
   "explanation": "Charismatic leadership mobilizes followers through the leader's conviction and personal appeal; transformational leadership mobilizes followers by stimulating their thinking, challenging them to grow, and developing their capability. The second leader's approach to intellectual stimulation and follower development reflects transformational rather than charismatic mechanisms.",
@@ -262,12 +262,12 @@
  {
   "question": "A manufacturing company establishes a unit where employees collectively plan work schedules, allocate tasks, and evaluate their own performance without a designated supervisor. Which team type best describes this structure, and what distinguishes it from a cross-functional team?",
   "options": [
-   "A self-managed team empowers workers to control their operations and make decisions autonomously, whereas a cross-functional team pools specialists from different departments to solve a specific problem.",
-   "A cross-functional team allows employees to manage schedules independently, while a self-managed team requires a supervisor to oversee all performance evaluations and task assignments.",
+   "A functional team operates with complete autonomy over decisions, whereas a self-managed team requires coordination across different business units and external stakeholder approval.",
    "A self-managed team is limited to a single department and focuses on routine tasks, whereas a cross-functional team draws from multiple functions to address broader organizational goals.",
-   "A functional team operates with complete autonomy over decisions, whereas a self-managed team requires coordination across different business units and external stakeholder approval."
+   "A self-managed team empowers workers to control their operations and make decisions autonomously, whereas a cross-functional team pools specialists from different departments to solve a specific problem.",
+   "A cross-functional team allows employees to manage schedules independently, while a self-managed team requires a supervisor to oversee all performance evaluations and task assignments."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Self-managed teams empower employees to control operations and make autonomous decisions, whereas cross-functional teams bring together specialists from different departments for specific projects. The key distinction is that self-managed teams operate with internal autonomy within their structure, while cross-functional teams exist to bridge departmental silos for collaborative problem-solving.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -275,12 +275,12 @@
  {
   "question": "An organization forms a group of employees from accounting, marketing, and production to reduce product launch time. However, members attend meetings inconsistently, lack clear goals, and show little accountability for outcomes. Why does this collection fail to function as an effective team despite its cross-functional composition?",
   "options": [
-   "Cross-functional teams cannot succeed without rotating leadership roles quarterly and reassigning members from their original departments every six months.",
    "The group lacks defining team characteristics such as shared objectives, mutual accountability, and commitment to a common purpose that transform a collection of individuals into a cohesive team.",
+   "Self-managed teams require employees to work without any organizational structure, and the presence of consistent meeting schedules prevents the autonomy necessary for team effectiveness.",
    "Members come from too many different departments, which inherently prevents teams from establishing communication norms and prevents functional alignment across business units.",
-   "Self-managed teams require employees to work without any organizational structure, and the presence of consistent meeting schedules prevents the autonomy necessary for team effectiveness."
+   "Cross-functional teams cannot succeed without rotating leadership roles quarterly and reassigning members from their original departments every six months."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A group becomes a team when members share clear objectives, hold each other mutually accountable, and commit to a common purpose. The inconsistent attendance, undefined goals, and lack of accountability indicate the absence of these core team characteristics, explaining why cross-functional composition alone does not ensure team effectiveness.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -288,12 +288,12 @@
  {
   "question": "Leadership must decide whether to implement self-managed teams or functional teams to handle increased customer service demands. When evaluating this choice, which scenario most clearly favors self-managed teams over functional teams?",
   "options": [
+   "The company operates in a traditional hierarchical structure where functional departments have deep expertise and decision-making authority must remain concentrated with senior management and department heads.",
    "The organization needs rapid decision-making and employee motivation in a stable department where workers possess similar skill levels and perform repetitive tasks under close supervision.",
    "The organization requires employees to take ownership of quality and response times, has trained staff capable of managing schedules and evaluating performance, and values workforce engagement and reduced supervisory overhead.",
-   "The company operates in a traditional hierarchical structure where functional departments have deep expertise and decision-making authority must remain concentrated with senior management and department heads.",
    "The business environment demands strict compliance with industry regulations and requires all decisions to flow through a formal approval process with documented accountability trails and centralized quality control."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Self-managed teams thrive when employees are capable of autonomous decision-making, when the organization prioritizes engagement and reduced supervision costs, and when rapid response times are critical. Functional teams work better for stable, repetitive work requiring centralized control and expertise concentration—the opposite of the scenario described in option B.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -302,9 +302,9 @@
   "question": "A supervisor recognizes that her department has shifted from operating as a formal group with assigned roles to functioning as an integrated team. Which pair of changes most accurately reflects this transformation?",
   "options": [
    "The group moved from individual accountability with separate goals to mutual accountability and interdependence, and from supervisor-directed work to members contributing diverse expertise toward a shared objective.",
-   "The group transitioned from having a designated leader to eliminating all leadership responsibilities, and shifted from task-focused work to purely social bonding among members.",
+   "The group shifted from separate job descriptions to identical role assignments, and moved from manager-assigned tasks to employees selecting their own projects based on personal preference.",
    "Members changed from working in isolation to attending mandatory daily meetings, and altered their focus from departmental efficiency to company-wide visibility and recognition.",
-   "The group shifted from separate job descriptions to identical role assignments, and moved from manager-assigned tasks to employees selecting their own projects based on personal preference."
+   "The group transitioned from having a designated leader to eliminating all leadership responsibilities, and shifted from task-focused work to purely social bonding among members."
   ],
   "correct_index": 0,
   "explanation": "The key difference between a group and a team is that teams feature mutual accountability and interdependence rather than individual accountability, and members contribute complementary expertise toward shared goals instead of receiving supervisor-directed assignments. The other options describe either impractical or non-essential changes that do not define the group-to-team transition.",
@@ -314,12 +314,12 @@
  {
   "question": "An organization is weighing the advantages and disadvantages of transitioning to team-based work structures. Which statement best reflects a realistic trade-off inherent in teamwork rather than a clear advantage or disadvantage?",
   "options": [
-   "Teams eliminate all individual performance variability because shared accountability ensures every member contributes equally regardless of skill level or work ethic.",
-   "Team environments may increase decision-making time due to consensus-building and coordination needs, yet this deliberation often improves decision quality and employee commitment compared to top-down directives.",
    "Teamwork guarantees higher productivity in all contexts because collaboration automatically reduces costs and eliminates the need for supervisory oversight in any industry or role.",
-   "Teams always reduce employee motivation because members must sacrifice individual goals entirely and become fully dependent on group performance for their personal evaluation and compensation."
+   "Teams eliminate all individual performance variability because shared accountability ensures every member contributes equally regardless of skill level or work ethic.",
+   "Teams always reduce employee motivation because members must sacrifice individual goals entirely and become fully dependent on group performance for their personal evaluation and compensation.",
+   "Team environments may increase decision-making time due to consensus-building and coordination needs, yet this deliberation often improves decision quality and employee commitment compared to top-down directives."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A genuine trade-off in teamwork is the tension between slower decision-making (due to coordination and consensus needs) and improved decision quality and commitment. Options A, C, and D present absolutes that misrepresent team dynamics; teams do not eliminate variability, guarantee productivity universally, or always reduce motivation—these are context-dependent outcomes.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -329,8 +329,8 @@
   "options": [
    "Initiative, which involves taking proactive action and seeking opportunities to contribute beyond minimum requirements",
    "Follow-through, which means completing delegated tasks on time and maintaining accountability for assigned work",
-   "Adaptability, which requires adjusting strategies when circumstances change and remaining flexible under pressure",
-   "Ethics, which involves making decisions based on moral principles and maintaining integrity in all professional interactions"
+   "Ethics, which involves making decisions based on moral principles and maintaining integrity in all professional interactions",
+   "Adaptability, which requires adjusting strategies when circumstances change and remaining flexible under pressure"
   ],
   "correct_index": 0,
   "explanation": "Initiative is the characteristic that drives people to act proactively and seek opportunities—the employee demonstrates follow-through and likely ethics, but lacks the initiative to self-start. Adaptability and ethics are important but don't directly address the reluctance to volunteer or suggest improvements.",
@@ -341,11 +341,11 @@
   "question": "During a self-assessment for leadership potential, an individual recognizes they struggle to remain composed when plans change unexpectedly and become frustrated with team members who make mistakes. Which two interconnected leader characteristics should this person prioritize developing?",
   "options": [
    "Confidence and excellence, because believing in oneself prevents frustration and high standards eliminate errors",
-   "Resiliency and adaptability, because bouncing back from setbacks and adjusting to change prevent frustration and support others",
    "Independence and positive attitude, because making autonomous decisions and staying optimistic reduce reliance on others",
+   "Resiliency and adaptability, because bouncing back from setbacks and adjusting to change prevent frustration and support others",
    "Follow-through and ethics, because completing tasks reliably and maintaining moral standards create predictable environments"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Resiliency enables recovery from unexpected changes, while adaptability allows flexible responses to new circumstances—together they address both the emotional reaction and the behavioral adjustment needed. The other pairs do not directly target the inability to handle change or support others through mistakes.",
   "knowledge_area": "Leadership Concepts",
   "difficulty": "hard"
@@ -354,11 +354,11 @@
   "question": "A newly promoted leader finds that team members often wait for explicit instructions before acting, and morale has declined since the previous leader left. The new leader wants to understand which leadership characteristics the previous leader likely demonstrated that are now absent from the team's environment.",
   "options": [
    "Excellence and confidence, because high personal standards and self-assurance motivate teams to exceed expectations independently",
-   "Initiative and positive attitude, because modeling proactive behavior and maintaining optimism encourage others to take ownership",
    "Adaptability and follow-through, because flexibility in approach and reliable execution create predictable team dynamics",
+   "Initiative and positive attitude, because modeling proactive behavior and maintaining optimism encourage others to take ownership",
    "Independence and resiliency, because autonomous decision-making and recovery from failure demonstrate strength to the organization"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The previous leader's initiative (modeling proactive action) and positive attitude (creating an optimistic environment) are what likely empowered team members to act independently and maintain morale. Without these visible characteristics, the team defaults to waiting for direction and motivation drops.",
   "knowledge_area": "Leadership Concepts",
   "difficulty": "hard"
@@ -366,12 +366,12 @@
  {
   "question": "A leader demonstrates strong ethics and follow-through in all decisions but frequently dismisses employee suggestions, resists feedback on leadership style, and shows frustration when circumstances require new approaches. Which leader characteristics most directly explain why this leader may struggle to retain talented staff despite reliability?",
   "options": [
+   "Lack of confidence and excellence, which causes the leader to avoid difficult conversations and accept mediocre outcomes",
    "Lack of adaptability and positive attitude, which prevents the leader from valuing diverse input and maintaining morale during transitions",
    "Lack of initiative and independence, which limits the leader's ability to explore alternative solutions and take responsibility",
-   "Lack of confidence and excellence, which causes the leader to avoid difficult conversations and accept mediocre outcomes",
    "Lack of resiliency and self-assessment, which prevents recovery from setbacks and awareness of personal development needs"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A leader who resists feedback and new approaches lacks adaptability; a leader who shows frustration lacks the positive attitude that retains talent. Together, these gaps undermine morale and psychological safety, even when ethics and follow-through are strong. The other pairs do not address the dismissal of input or resistance to change.",
   "knowledge_area": "Leadership Concepts",
   "difficulty": "hard"
@@ -379,12 +379,12 @@
  {
   "question": "When conducting a self-assessment, a potential leader rates themselves as highly confident and excellent but low in adaptability and resiliency. How should this individual interpret these results in the context of leadership potential?",
   "options": [
-   "Their confidence and excellence are sufficient for entry-level leadership, and adaptability can be developed through on-the-job training over time",
    "Their strong self-perception requires validation through external feedback, as confidence without adaptability may indicate overestimation rather than readiness",
-   "Their excellence and confidence will compensate for lower adaptability, because consistently high personal performance models standards for the team",
-   "Their profile suggests readiness in stable environments but vulnerability in complex or changing situations where bounce-back and flexibility are critical"
+   "Their profile suggests readiness in stable environments but vulnerability in complex or changing situations where bounce-back and flexibility are critical",
+   "Their confidence and excellence are sufficient for entry-level leadership, and adaptability can be developed through on-the-job training over time",
+   "Their excellence and confidence will compensate for lower adaptability, because consistently high personal performance models standards for the team"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Confidence and excellence alone do not ensure leadership success; a leader must adapt to changing circumstances and recover from setbacks—both lacking here. This self-assessment reveals a profile suited only to predictable conditions, not the dynamic demands most leaders face. The other options either underestimate the importance of adaptability and resiliency or misinterpret confidence without grounding in flexibility.",
   "knowledge_area": "Leadership Concepts",
   "difficulty": "hard"
@@ -392,12 +392,12 @@
  {
   "question": "A manager demonstrates strong decision-making ability, maintains emotional composure during crises, and builds trust through consistent actions. Which combination of leadership traits does this behavior most directly reflect?",
   "options": [
-   "Integrity paired with resilience and the capacity to inspire confidence in others through demonstrated reliability",
-   "Charisma combined with technical expertise and the ability to delegate tasks effectively to team members",
    "Adaptability linked with communication skills and a focus on developing subordinates for future advancement",
-   "Accountability merged with strategic vision and commitment to establishing clear organizational performance metrics"
+   "Charisma combined with technical expertise and the ability to delegate tasks effectively to team members",
+   "Accountability merged with strategic vision and commitment to establishing clear organizational performance metrics",
+   "Integrity paired with resilience and the capacity to inspire confidence in others through demonstrated reliability"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The scenario describes a leader exhibiting integrity (consistent, trustworthy actions), resilience (composure under pressure), and the ability to inspire confidence. While the other options name real leadership traits, they don't directly match the specific behaviors described: charisma is about magnetism rather than composure, adaptability focuses on flexibility rather than emotional stability, and accountability emphasizes responsibility rather than inspiring trust.",
   "difficulty": "hard",
   "knowledge_area": "Traits of Effective Leaders"
@@ -418,12 +418,12 @@
  {
   "question": "Two leaders both demonstrate strong communication and vision, yet one is widely described as inspiring and transformational while the other is seen as competent but uninspiring. Which trait distinction most likely accounts for this difference in perceived leadership impact?",
   "options": [
-   "The inspiring leader possesses greater technical knowledge and industry expertise relative to their peer group and role requirements",
    "The inspiring leader exhibits authenticity, emotional intelligence, and genuine commitment to follower development alongside their vision and communication",
+   "The inspiring leader possesses greater technical knowledge and industry expertise relative to their peer group and role requirements",
    "The inspiring leader operates with a more hierarchical management structure and clearer accountability mechanisms for individual performance",
    "The inspiring leader combines strong analytical capabilities with detailed strategic planning and measurable short-term operational achievements"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The difference between competent and transformational leadership often lies in authenticity, emotional intelligence, and genuine investment in others' growth—not just technical skill (option A), structure (option C), or analytics (option D). While those elements support effectiveness, they don't create inspiration; it is the human connection and demonstrated care that lifts competent leadership into transformational leadership.",
   "difficulty": "hard",
   "knowledge_area": "Traits of Effective Leaders"
@@ -431,12 +431,12 @@
  {
   "question": "An organization seeks to identify and cultivate emerging leaders from within its ranks. Which approach would most effectively target the development of multiple core leadership traits simultaneously while building them in a realistic context?",
   "options": [
-   "Enroll high-potential employees in online self-paced courses covering leadership theory, ethics, and decision-making frameworks without role changes",
-   "Assign promising managers to increasingly complex projects with diverse teams, paired with executive coaching, peer feedback, and structured reflection on decisions",
+   "Create a mentorship program where emerging leaders shadow senior executives during meetings and receive quarterly assessments on their readiness for advancement",
    "Promote top performers to leadership roles immediately and provide them with an annual off-site retreat focused on strategic planning and goal-setting",
-   "Create a mentorship program where emerging leaders shadow senior executives during meetings and receive quarterly assessments on their readiness for advancement"
+   "Enroll high-potential employees in online self-paced courses covering leadership theory, ethics, and decision-making frameworks without role changes",
+   "Assign promising managers to increasingly complex projects with diverse teams, paired with executive coaching, peer feedback, and structured reflection on decisions"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Real-world project experience with feedback, coaching, and reflection builds multiple traits (resilience, communication, decision-making, integrity) simultaneously in authentic contexts. Online courses (option A) lack application and feedback; immediate promotion (option C) without developmental experience risks failure; shadowing alone (option D) provides observation but limited practice and responsibility for leaders to develop through challenge.",
   "difficulty": "hard",
   "knowledge_area": "Traits of Effective Leaders"
@@ -445,11 +445,11 @@
   "question": "A newly promoted director struggles to influence cross-functional teams despite possessing relevant technical expertise and a clear strategic vision. Which underlying leadership trait deficiency most likely explains the difficulty in exerting influence and building followership?",
   "options": [
    "Insufficient understanding of competitor strategies and market dynamics relative to organizational goals and long-term planning cycles",
-   "Limited ability to build trust and rapport through active listening, empathy, and genuine concern for team members' perspectives and development",
    "Lack of formal authority documented in organizational policies and insufficient delegation of specific, measurable responsibilities to team members",
+   "Limited ability to build trust and rapport through active listening, empathy, and genuine concern for team members' perspectives and development",
    "Inadequate experience in financial management and budget allocation, which prevents credibility when discussing resource-dependent strategic initiatives"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Influence without formal authority requires trust-building traits: empathy, active listening, and genuine concern for others. Technical expertise and vision (option A) support but don't replace relationship skills; formal authority (option C) removes the influence challenge itself; financial expertise (option D) supports credibility but doesn't directly build the personal trust needed for cross-functional followership.",
   "difficulty": "hard",
   "knowledge_area": "Traits of Effective Leaders"
@@ -457,12 +457,12 @@
  {
   "question": "A manufacturing leader is developing a comprehensive crisis management program. After identifying operational risks, the team ranks them by likelihood and impact, then designs protocols for the highest-priority threats. Which additional step from the five-step crisis process must be completed before the organization can claim full crisis readiness?",
   "options": [
-   "Conducting prevention simulations and establishing a crisis management framework for response",
    "Analyzing the external environment to update the strategic vision and mission statement",
+   "Implementing mission-driven goals across all departments to strengthen organizational culture",
    "Evaluating leadership strategies to ensure all executives understand risk reduction approaches",
-   "Implementing mission-driven goals across all departments to strengthen organizational culture"
+   "Conducting prevention simulations and establishing a crisis management framework for response"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The five-step crisis process includes risk identification, assessment/ranking, reduction strategies, prevention simulations, and crisis management. The organization has completed the first three steps; prevention simulations test readiness before an actual crisis occurs. The other options address strategic planning and environmental analysis, which support but do not complete the five-step process.",
   "difficulty": "hard",
   "knowledge_area": "Strategic Leadership for Managing Crises and Change"
@@ -470,12 +470,12 @@
  {
   "question": "During strategic planning, a leader identifies that the organization's stated mission emphasizes customer innovation, yet most employees do not understand how their daily decisions connect to that mission. The leader suspects this disconnect is affecting how teams prioritize objectives and implement strategic initiatives. What is the primary leadership challenge being illustrated?",
   "options": [
-   "The organization lacks a clear process for evaluating leadership strategies across management levels",
-   "The mission statement has not been translated into visible goals, plans, and organizational structures that guide daily decisions",
    "Risk identification and assessment procedures have failed to account for internal communication vulnerabilities",
-   "The strategic vision does not reflect current analysis of the external environment and competitive positioning"
+   "The strategic vision does not reflect current analysis of the external environment and competitive positioning",
+   "The mission statement has not been translated into visible goals, plans, and organizational structures that guide daily decisions",
+   "The organization lacks a clear process for evaluating leadership strategies across management levels"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Effective strategic leadership requires that mission, vision, goals, plans, and organizational structure all work together to guide decisions at every level. When employees cannot see how their work connects to the mission, the organization has failed to translate its mission into clear objectives and organizational design. While environmental analysis and leadership evaluation are important, they do not directly address the communication and alignment problem described.",
   "difficulty": "hard",
   "knowledge_area": "Strategic Leadership for Managing Crises and Change"
@@ -483,12 +483,12 @@
  {
   "question": "A nonprofit organization faces declining donor participation and shifting community needs. Leadership recognizes the need to pivot its service model, yet middle managers are resisting resource reallocation, citing expertise in current programs and uncertainty about new processes. Which aspect of change management does this scenario most directly illustrate?",
   "options": [
-   "The failure to conduct prevention simulations before announcing strategic objectives to all stakeholders",
-   "Inadequate mission statement clarity, which has prevented alignment on organizational goals and decision-making authority",
    "The human and organizational barriers that emerge when people fear loss of competence, identity, or control during transitions",
-   "Insufficient environmental analysis, resulting in a strategic vision that does not address market trends or competitive threats"
+   "Insufficient environmental analysis, resulting in a strategic vision that does not address market trends or competitive threats",
+   "The failure to conduct prevention simulations before announcing strategic objectives to all stakeholders",
+   "Inadequate mission statement clarity, which has prevented alignment on organizational goals and decision-making authority"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "People often resist change due to fear of losing expertise, status, security, or control—not because change itself is illogical. The managers' attachment to their current programs and anxiety about new processes exemplifies this psychological resistance. While mission clarity and environmental analysis support change initiatives, they do not explain why capable people resist necessary transitions.",
   "difficulty": "hard",
   "knowledge_area": "Strategic Leadership for Managing Crises and Change"
@@ -497,11 +497,11 @@
   "question": "An organization experiences a sudden supply chain disruption that threatens production deadlines. The crisis management team rapidly activates pre-planned response protocols, coordinates with suppliers, and communicates transparently with customers. However, leadership realizes that the disruption revealed gaps in risk reduction strategies that should have been identified earlier. What does this scenario suggest about the relationship between the five-step crisis process and organizational readiness?",
   "options": [
    "Prevention simulations must be repeated annually to ensure all crisis management protocols remain current and aligned with operational changes",
-   "Risk assessment and ranking procedures were incomplete, as actual vulnerabilities emerged that had not been mitigated during the reduction strategies phase",
    "The organization prioritized crisis management response over strategic leadership evaluation, reducing the effectiveness of its environmental analysis",
-   "Mission and vision statements were not sufficiently detailed to guide crisis decision-making, limiting the organization's ability to protect stakeholder interests"
+   "Mission and vision statements were not sufficiently detailed to guide crisis decision-making, limiting the organization's ability to protect stakeholder interests",
+   "Risk assessment and ranking procedures were incomplete, as actual vulnerabilities emerged that had not been mitigated during the reduction strategies phase"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The five-step process depends on thorough risk identification and assessment; gaps discovered during an actual crisis indicate that the reduction strategies phase did not adequately address real threats. While annual simulations, clear vision statements, and strategic evaluation all strengthen organizations, they do not directly explain why identified risks were not mitigated beforehand.",
   "difficulty": "hard",
   "knowledge_area": "Strategic Leadership for Managing Crises and Change"
@@ -509,12 +509,12 @@
  {
   "question": "A leader is redesigning organizational structure to improve decision-making speed and accountability. She recognizes that the current structure does not reflect the organization's stated strategic objectives, and employees report confusion about authority and priorities. The leader plans to align structure, roles, and communication systems with the strategic plan. Which elements of strategic leadership does this intervention most directly integrate?",
   "options": [
-   "Mission statement revision, environmental analysis, and crisis management protocols to clarify stakeholder expectations",
-   "Mission, vision, goals, strategic plans, and organizational structure working together to guide and reinforce consistent decisions",
    "Leadership evaluation, change process training, and prevention simulations to build management competence and resilience",
-   "Risk identification, reduction strategies, and prevention simulations aligned with objective-setting and strategic implementation review"
+   "Risk identification, reduction strategies, and prevention simulations aligned with objective-setting and strategic implementation review",
+   "Mission, vision, goals, strategic plans, and organizational structure working together to guide and reinforce consistent decisions",
+   "Mission statement revision, environmental analysis, and crisis management protocols to clarify stakeholder expectations"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Strategic leadership requires that mission, vision, goals, plans, and organizational structure all align and reinforce each other so that decisions at every level reflect strategic intent. The leader's intervention directly addresses this integration by restructuring to match strategic objectives. The other options address important functions—evaluation, crisis readiness, and change management—but do not capture the core alignment challenge.",
   "difficulty": "hard",
   "knowledge_area": "Strategic Leadership for Managing Crises and Change"
@@ -522,12 +522,12 @@
  {
   "question": "A coaching leader seeks to develop an employee's capability in client relations. Which relationship dynamic best distinguishes coaching leadership from traditional directive management in this context?",
   "options": [
-   "The coach provides immediate solutions while the employee implements feedback without question or reflection",
    "The coach asks guided questions to help the employee discover solutions while maintaining accountability for performance outcomes",
+   "The coach observes the employee's work and offers detailed instructions on every decision to ensure consistency",
    "The coach assigns tasks based on the employee's current skill level and avoids discussing long-term capability growth",
-   "The coach observes the employee's work and offers detailed instructions on every decision to ensure consistency"
+   "The coach provides immediate solutions while the employee implements feedback without question or reflection"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Coaching leadership is characterized by partnership and discovery; the coach guides rather than directs, asking questions that help the employee develop insight while still maintaining clear performance standards. Directive management and traditional supervision focus on immediate compliance, whereas coaching-leadership emphasizes building capability and ownership.",
   "difficulty": "hard",
   "knowledge_area": "Coaching"
@@ -535,12 +535,12 @@
  {
   "question": "When a manager tells an underperforming employee, 'Your reports are always late and poorly organized,' the employee becomes defensive and disengaged. Why does this criticism approach typically fail to produce sustainable behavior change?",
   "options": [
+   "It addresses a single performance gap rather than discussing multiple skill deficits the employee should correct simultaneously",
    "It focuses on past failures and triggers a defensive response rather than creating ownership of future improvement",
-   "It is delivered in writing instead of face-to-face conversation, preventing the employee from asking clarifying questions",
    "It uses specific examples rather than general observations, causing the employee to feel personally attacked instead of coached",
-   "It addresses a single performance gap rather than discussing multiple skill deficits the employee should correct simultaneously"
+   "It is delivered in writing instead of face-to-face conversation, preventing the employee from asking clarifying questions"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Criticism that focuses on failures without forward-looking solutions triggers defensiveness and shame, shutting down learning. Effective coaching reframes issues as opportunities to build capability and involves the employee in designing solutions, creating intrinsic motivation rather than compliance through fear.",
   "difficulty": "hard",
   "knowledge_area": "Coaching"
@@ -548,10 +548,10 @@
  {
   "question": "A senior leader wants to use mentoring as a succession strategy. Which outcome most accurately reflects the purpose of mentoring in preparing future leaders?",
   "options": [
-   "The mentor provides step-by-step instructions on organizational procedures so the mentee can replicate processes without modification",
+   "The mentor assigns increasingly difficult projects and measures success only by whether deadlines and budgets are met",
    "The mentor transfers knowledge, perspective, and networks while the mentee develops judgment and leadership identity for expanded roles",
-   "The mentor evaluates the mentee's performance weekly and documents gaps to justify promotion or reassignment decisions",
-   "The mentor assigns increasingly difficult projects and measures success only by whether deadlines and budgets are met"
+   "The mentor provides step-by-step instructions on organizational procedures so the mentee can replicate processes without modification",
+   "The mentor evaluates the mentee's performance weekly and documents gaps to justify promotion or reassignment decisions"
   ],
   "correct_index": 1,
   "explanation": "Mentoring for leadership development goes beyond task competence; it cultivates wisdom, judgment, and relational capability through relationship and example. The mentor shares perspective and opens doors, helping the mentee internalize values and decision-making frameworks needed for leadership, not merely operational execution.",
@@ -561,12 +561,12 @@
  {
   "question": "A coaching leader observes that an employee frequently avoids speaking up in team meetings despite having valuable insights. Rather than saying 'You need to participate more,' the coach asks, 'What concerns do you have about sharing your perspective in the group?' What principle of the coaching-leadership relationship does this approach best demonstrate?",
   "options": [
-   "The coach uses questioning to help the employee discover obstacles and ownership rather than imposing a solution based on the coach's interpretation",
-   "The coach avoids giving direct feedback, allowing the employee to set their own performance standards without accountability",
    "The coach focuses on the employee's personality traits as the root cause and explores whether the role is a good fit",
-   "The coach creates a safe environment by never discussing performance concerns directly with the employee"
+   "The coach uses questioning to help the employee discover obstacles and ownership rather than imposing a solution based on the coach's interpretation",
+   "The coach creates a safe environment by never discussing performance concerns directly with the employee",
+   "The coach avoids giving direct feedback, allowing the employee to set their own performance standards without accountability"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Coaching-leadership uses inquiry to build self-awareness and agency; by asking open questions, the coach invites the employee to examine their own barriers and generate solutions, creating lasting change and ownership. Avoiding feedback entirely or focusing on personality rather than behavior contradicts the coaching principle of developing capability.",
   "difficulty": "hard",
   "knowledge_area": "Coaching"
@@ -574,12 +574,12 @@
  {
   "question": "An organization promotes a high-potential manager who was developed through mentoring relationships over five years. Compared to a manager promoted based solely on technical performance in the previous role, what advantage does the mentored leader typically bring to the new position?",
   "options": [
-   "Deeper familiarity with the organization's culture, stakeholder networks, and unwritten decision-making norms that accelerate effectiveness",
    "Superior technical expertise in the new role's specific functions because mentoring emphasizes mastering each job before advancement",
    "A shorter onboarding period because mentoring relationships provide detailed process documentation for every organizational function",
+   "Deeper familiarity with the organization's culture, stakeholder networks, and unwritten decision-making norms that accelerate effectiveness",
    "Greater confidence in decision-making because mentors advise on which choices the senior leadership team will support"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Mentoring develops not just skills but cultural fluency, judgment, and relationships; a mentored leader has observed leadership through a trusted guide's lens and understands informal power and influence patterns. Technical skill alone does not prepare a leader to navigate stakeholder dynamics, organizational politics, and values-aligned decision-making in complex roles.",
   "difficulty": "hard",
   "knowledge_area": "Coaching"
@@ -587,12 +587,12 @@
  {
   "question": "A manager implements a team structure where members from different departments collaborate on a single project while maintaining their primary departmental roles. Which team type is being used, and what distinguishes it from a self-managed team?",
   "options": [
-   "A cross-functional team, because members report to multiple supervisors and the team itself makes all operational decisions without managerial oversight",
    "A cross-functional team, because it brings together specialists from separate departments for a specific objective while a self-managed team handles its own scheduling and performance evaluation",
    "A functional team, because members come from multiple areas and self-managed teams only exist in manufacturing environments with autonomous decision-making authority",
+   "A cross-functional team, because members report to multiple supervisors and the team itself makes all operational decisions without managerial oversight",
    "A functional team, because it serves a temporary purpose and self-managed teams are permanent structures embedded within the organizational hierarchy"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Cross-functional teams integrate members from different departments for focused work while maintaining departmental connections, whereas self-managed teams have autonomy over their work processes, scheduling, and evaluation. The key distinction is the degree of independence and decision-making authority, not the permanence or sector of the organization.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -600,12 +600,12 @@
  {
   "question": "When evaluating whether a collection of individuals qualifies as a team rather than a group, which characteristic most clearly demonstrates team-level functioning?",
   "options": [
-   "The individuals are assembled in the same physical location and communicate regularly about shared tasks and responsibilities",
-   "The individuals possess complementary skills and work interdependently toward a common goal with shared accountability for outcomes",
+   "The individuals receive the same compensation package and participate in mandatory meetings scheduled by organizational leadership",
    "The individuals have been formally designated by management and given job titles that reflect their membership in the structure",
-   "The individuals receive the same compensation package and participate in mandatory meetings scheduled by organizational leadership"
+   "The individuals are assembled in the same physical location and communicate regularly about shared tasks and responsibilities",
+   "The individuals possess complementary skills and work interdependently toward a common goal with shared accountability for outcomes"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A team is distinguished from a group by interdependence, complementary skills, and shared accountability for achieving a collective goal—not merely by proximity, formal designation, or compensation structure. Groups may work in the same location or under the same manager without the integrated, outcome-focused interdependence that defines a team.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -613,12 +613,12 @@
  {
   "question": "A self-managed team in a manufacturing facility has the authority to schedule its own work, adjust processes to meet production targets, and evaluate member performance. However, the team struggles because members avoid making difficult decisions about underperformance. How does this situation illustrate both an advantage and disadvantage of self-managed team structures?",
   "options": [
+   "The advantage is improved morale from increased autonomy; the disadvantage is that self-managed teams cannot address performance issues without escalating to upper management",
    "The advantage is faster decision-making and process flexibility; the disadvantage is that shared decision-making authority can create accountability conflicts when members must evaluate peers",
    "The advantage is reduced management overhead and increased worker autonomy; the disadvantage is that complex skills in peer evaluation and conflict resolution are not automatically developed",
-   "The advantage is improved morale from increased autonomy; the disadvantage is that self-managed teams cannot address performance issues without escalating to upper management",
    "The advantage is greater alignment with organizational goals; the disadvantage is that self-managed teams require members to specialize in areas beyond their original job function"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Self-managed teams reduce supervisory costs and allow operational flexibility (advantage), but they require members to develop sophisticated interpersonal and evaluative skills that may not exist naturally (disadvantage). The scenario shows that autonomy alone does not guarantee members will handle difficult peer-feedback situations effectively.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"
@@ -626,12 +626,12 @@
  {
   "question": "A marketing leader is deciding between using a functional team (all from the marketing department) or a cross-functional team (members from marketing, sales, product development, and customer service) to develop a new campaign launch strategy. What is the primary trade-off between these two approaches?",
   "options": [
-   "Functional teams provide specialized expertise and clear reporting lines, while cross-functional teams offer diverse perspectives and integrated solutions but may experience coordination challenges and role ambiguity",
    "Functional teams are faster to assemble and have lower labor costs, while cross-functional teams guarantee higher-quality creative output and eliminate all scheduling conflicts",
+   "Functional teams provide specialized expertise and clear reporting lines, while cross-functional teams offer diverse perspectives and integrated solutions but may experience coordination challenges and role ambiguity",
    "Functional teams focus exclusively on long-term strategic planning, while cross-functional teams handle only tactical execution and short-term problem-solving in isolation",
    "Functional teams allow members to specialize deeply in narrow skills, while cross-functional teams require all members to become generalists in every business function"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Functional teams leverage deep departmental expertise and clear authority structures but may miss integrated insights; cross-functional teams bring diverse viewpoints and holistic solutions but must navigate coordination complexity and shared accountability across functions. Both approaches have legitimate advantages and inherent trade-offs.",
   "difficulty": "hard",
   "knowledge_area": "Team Leadership and Self-Managed Teams"

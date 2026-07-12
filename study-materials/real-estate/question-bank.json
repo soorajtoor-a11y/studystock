@@ -2,12 +2,12 @@
  {
   "question": "During a real estate transaction, a lender requires a title search before fund disbursement. Which of the following best explains why financial institutions prioritize this step in the lending process?",
   "options": [
+   "To establish the property's zoning classification and ensure it meets local building codes for the intended residential use",
    "To verify the property's market value and ensure the loan-to-value ratio aligns with secondary mortgage market standards for resale",
-   "To confirm the seller holds clear title and identify any liens or encumbrances that could affect the lender's security position",
    "To document the buyer's credit history and employment verification for regulatory compliance under federal disclosure requirements",
-   "To establish the property's zoning classification and ensure it meets local building codes for the intended residential use"
+   "To confirm the seller holds clear title and identify any liens or encumbrances that could affect the lender's security position"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Financial institutions conduct title searches to protect their security interest by confirming the seller's legal ownership and identifying any existing claims against the property. A clear title ensures the lender's mortgage is a first lien position, critical for loan recovery in default. The other options address real estate concerns but do not explain the lender's specific priority in requiring title verification.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -15,12 +15,12 @@
  {
   "question": "In the secondary mortgage market, a loan originator sells a newly closed mortgage to an investment firm. Which aspect of this transaction best reflects how the secondary market facilitates the primary lending process?",
   "options": [
+   "It converts adjustable-rate mortgages into fixed-rate mortgages, protecting investors from interest rate fluctuations over time",
    "It allows the originator to recover capital immediately, freeing resources to originate additional mortgages and increasing market liquidity",
-   "It transfers the borrower's obligation to a new creditor, which typically results in lower interest rates on the original loan terms",
    "It guarantees the loan will be repaid in full by the investment firm regardless of the borrower's future payment performance",
-   "It converts adjustable-rate mortgages into fixed-rate mortgages, protecting investors from interest rate fluctuations over time"
+   "It transfers the borrower's obligation to a new creditor, which typically results in lower interest rates on the original loan terms"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The secondary mortgage market allows loan originators to sell mortgages and recover their capital quickly, enabling them to originate more loans and increase overall market liquidity. This cycle is essential to the primary lending process. The other options misrepresent how secondary market transactions function—they do not change loan terms, guarantee repayment by the buyer, or automatically restructure rate types.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -28,12 +28,12 @@
  {
   "question": "A buyer and seller negotiate a real estate transaction in which the seller will carry back a portion of the purchase price as a second mortgage. How does this arrangement differ from conventional financing through a financial institution?",
   "options": [
-   "The seller becomes the creditor and assumes the credit risk of the buyer, while terms and conditions are negotiated directly between parties rather than standardized by a lender",
-   "The buyer avoids paying property taxes and insurance premiums because the seller retains equitable title until the second mortgage is fully satisfied",
    "The transaction bypasses the title search and appraisal requirements, allowing the parties to close within days without third-party verification",
+   "The buyer avoids paying property taxes and insurance premiums because the seller retains equitable title until the second mortgage is fully satisfied",
+   "The seller becomes the creditor and assumes the credit risk of the buyer, while terms and conditions are negotiated directly between parties rather than standardized by a lender",
    "The second mortgage automatically receives priority over the first mortgage lien, giving the seller a superior security position in case of foreclosure"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "When a seller carries back financing, the seller becomes the creditor and accepts the borrower's credit risk directly; terms are negotiated bilaterally rather than set by institutional lending standards. This is fundamentally different from conventional financing where a bank originates and typically services the loan. The other options incorrectly describe tax/insurance obligations, title requirements, and lien priority in seller-financed deals.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -41,12 +41,12 @@
  {
   "question": "At closing, the settlement agent must reconcile numerous financial obligations between buyer and seller, including property taxes, homeowner association fees, and insurance premiums. Which principle governs how these prepaid and accrued items are typically apportioned?",
   "options": [
-   "The buyer assumes all prepaid expenses from the seller and reimburses the seller for accrued but unpaid expenses through the closing statement",
-   "The seller retains responsibility for all operating expenses through the closing date, and the buyer assumes them from the day after closing",
+   "The buyer and seller each pay their proportional share directly to the service providers, and the settlement agent merely documents the division for tax purposes",
    "Prepaid expenses are prorated based on the number of days each party held title during the fiscal period, with the buyer and seller sharing costs accordingly",
-   "The buyer and seller each pay their proportional share directly to the service providers, and the settlement agent merely documents the division for tax purposes"
+   "The buyer assumes all prepaid expenses from the seller and reimburses the seller for accrued but unpaid expenses through the closing statement",
+   "The seller retains responsibility for all operating expenses through the closing date, and the buyer assumes them from the day after closing"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "At closing, expenses are prorated between buyer and seller based on their respective ownership periods—the buyer reimburses the seller for prepaid taxes/insurance, and the seller reimburses the buyer for accrued expenses the buyer will later pay. This apportionment ensures each party pays only for the period during which they owned the property. The other options misstate the settlement process and the role of the closing agent in reconciling these shared obligations.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -54,12 +54,12 @@
  {
   "question": "A property is transferred via a warranty deed that includes covenants of seisin, quiet enjoyment, and further assurance. Which aspect of the deed transfer process does this instrument primarily address?",
   "options": [
-   "It establishes the seller's obligation to defend the buyer's title against future claims and provides the buyer with legal recourse if the seller's representations prove false",
-   "It certifies that the property has passed all environmental inspections and that no hazardous materials are present on the land or structures",
    "It guarantees that the purchase price reflects fair market value based on a certified appraisal and comparable sales data from the past six months",
-   "It confirms that the buyer has obtained mortgage pre-approval and that financing is secured through an approved financial institution at the agreed interest rate"
+   "It confirms that the buyer has obtained mortgage pre-approval and that financing is secured through an approved financial institution at the agreed interest rate",
+   "It certifies that the property has passed all environmental inspections and that no hazardous materials are present on the land or structures",
+   "It establishes the seller's obligation to defend the buyer's title against future claims and provides the buyer with legal recourse if the seller's representations prove false"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "A warranty deed with covenants of seisin, quiet enjoyment, and further assurance represents the strongest form of title transfer, binding the seller to defend the buyer against title defects and providing legal remedies if the seller's title claims are breached. These covenants address the nature of title transfer and the seller's obligations. The other options address property condition, valuation, and financing—separate concerns from the deed's title guarantees.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -67,12 +67,12 @@
  {
   "question": "A buyer's agent and a seller's agent both represent clients in the same residential transaction. Which statement accurately reflects the legal obligations each agent owes in this dual-agency scenario?",
   "options": [
-   "The buyer's agent must disclose all client information to the seller's agent to facilitate negotiation and ensure transaction completion.",
    "Each agent owes fiduciary duties to their respective client, including confidentiality and loyalty, while remaining impartial regarding the other party's interests.",
-   "The seller's agent assumes primary responsibility for all disclosures, while the buyer's agent focuses solely on inspections and appraisals.",
-   "Both agents combine their commissions into a single fund held by the brokerage until closing, at which point each receives an equal split."
+   "Both agents combine their commissions into a single fund held by the brokerage until closing, at which point each receives an equal split.",
+   "The buyer's agent must disclose all client information to the seller's agent to facilitate negotiation and ensure transaction completion.",
+   "The seller's agent assumes primary responsibility for all disclosures, while the buyer's agent focuses solely on inspections and appraisals."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "In a dual-agency residential transaction, each agent maintains distinct fiduciary duties to their own client—including confidentiality and loyalty—while remaining neutral toward the opposing party. The buyer's agent does not disclose client confidences to the seller's agent, nor does one agent assume full responsibility for disclosures. Commission structures and pooling are separate from agency obligations.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -80,12 +80,12 @@
  {
   "question": "A commercial real estate sub-agent is hired by a listing brokerage to show properties to qualified tenants in a large office complex transaction. Under what circumstances does the sub-agent's authority and fiduciary relationship differ most significantly from that of the primary listing agent?",
   "options": [
-   "The sub-agent owes fiduciary duties only to tenants and may disclose landlord confidences if it benefits the tenant's negotiating position.",
    "The sub-agent's authority is limited to specific tasks delegated by the listing brokerage, and fiduciary duties run to the brokerage and its client, not directly to the tenant.",
+   "The sub-agent owes fiduciary duties only to tenants and may disclose landlord confidences if it benefits the tenant's negotiating position.",
    "The sub-agent represents both the landlord and tenant equally and must obtain written consent from both parties before showing the property.",
    "The sub-agent assumes all liability for lease negotiations and rent collection, while the primary agent retains only marketing responsibilities."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A sub-agent's authority is defined by the scope of delegation from the listing brokerage, and fiduciary duties flow to the brokerage and its principal (the landlord), not to the tenant being shown. The sub-agent does not represent both parties, assume lease liability, or have independent authority to disclose confidential information without the principal's consent.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -94,11 +94,11 @@
   "question": "In a commercial transaction, a seller's agent lists a warehouse valued at $2.5 million and advertises it through the MLS, broker websites, and industry publications. How do the agent's advertising responsibilities and methods differ between this commercial listing and a comparable residential property?",
   "options": [
    "Commercial listings require MLS posting within 24 hours, while residential listings may use private databases; both must include property photos, but only residential ads may include financing terms.",
-   "Commercial properties often emphasize tenant stability, operating expenses, and cap rates in advertising, whereas residential marketing focuses on lifestyle, amenities, and financing options available to owner-occupants.",
    "Commercial agents must advertise exclusively through broker networks and cannot use public websites, whereas residential agents may use social media and open public listings.",
-   "Residential listings generate larger commissions and therefore receive more advertising investment, while commercial properties are typically advertised only to institutional investors and corporate buyers."
+   "Residential listings generate larger commissions and therefore receive more advertising investment, while commercial properties are typically advertised only to institutional investors and corporate buyers.",
+   "Commercial properties often emphasize tenant stability, operating expenses, and cap rates in advertising, whereas residential marketing focuses on lifestyle, amenities, and financing options available to owner-occupants."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Commercial real estate advertising prioritizes investment metrics such as tenant creditworthiness, NOI, cap rates, and expense details, whereas residential advertising highlights owner-occupant appeal—location amenities, schools, and consumer-friendly financing. Both use MLS and multiple channels, but content and audience focus differ by property type and buyer motivation.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -106,12 +106,12 @@
  {
   "question": "A buyer's agent in a residential transaction discovers that the seller has failed to disclose a prior mold remediation on the property inspection report. The agent's client (the buyer) has not yet made an offer. What is the buyer's agent's primary responsibility regarding this undisclosed defect?",
   "options": [
-   "Advise the buyer to submit an offer below market value and use the mold history as leverage during negotiation without notifying the seller's agent.",
-   "Inform the buyer of the defect and advise consulting an inspector or attorney, while maintaining confidentiality about the seller's disclosure failure until the buyer decides whether to proceed.",
    "Report the non-disclosure immediately to the local real estate board and cease all cooperation with the seller's agent until an investigation is complete.",
-   "Document the mold history in the buyer's offer contingencies and require the seller to provide a certified remediation report before any offer is submitted."
+   "Document the mold history in the buyer's offer contingencies and require the seller to provide a certified remediation report before any offer is submitted.",
+   "Advise the buyer to submit an offer below market value and use the mold history as leverage during negotiation without notifying the seller's agent.",
+   "Inform the buyer of the defect and advise consulting an inspector or attorney, while maintaining confidentiality about the seller's disclosure failure until the buyer decides whether to proceed."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The buyer's agent owes fiduciary duty to the buyer to disclose material information discovered, allowing the buyer to make an informed decision. The agent should not use undisclosed defects as negotiating leverage, prematurely report the seller without buyer consent, or impose unilateral inspection requirements before an offer is made. The buyer must have the facts to decide whether to proceed.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -119,12 +119,12 @@
  {
   "question": "A residential sales agent agrees to represent both a buyer and a seller in the same transaction with written dual-agency consent from both parties. During the buyer's appraisal inspection, the appraiser confidentially tells the agent that the property will likely appraise below the agreed purchase price. How should the agent handle this information without breaching fiduciary duties to either party?",
   "options": [
-   "Immediately inform the seller so the seller can request a second appraisal and avoid a low valuation that would harm the sale price.",
-   "Tell the buyer informally so the buyer can reduce the offer before the formal appraisal is completed, preserving the buyer's bargaining position.",
+   "Advise both parties simultaneously in a joint meeting that an appraisal issue is anticipated and recommend they hire independent appraisers to verify value before proceeding.",
    "Maintain confidentiality about the appraiser's preliminary assessment and allow each party to receive their own formal appraisal results independently through standard channels.",
-   "Advise both parties simultaneously in a joint meeting that an appraisal issue is anticipated and recommend they hire independent appraisers to verify value before proceeding."
+   "Tell the buyer informally so the buyer can reduce the offer before the formal appraisal is completed, preserving the buyer's bargaining position.",
+   "Immediately inform the seller so the seller can request a second appraisal and avoid a low valuation that would harm the sale price."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Even in dual-agency, the agent cannot ethically share one party's confidential information (the buyer's appraiser feedback) with the other party, nor manipulate either side's negotiating position based on private preliminary assessments. Each party receives formal appraisal results through proper channels. Informing either party separately or jointly would breach confidentiality or create an appearance of bias.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -132,12 +132,12 @@
  {
   "question": "A real estate agent lists a property with a known structural defect but omits this information from the MLS listing, relying on the 'as-is' clause in the contract. Which ethical principle does this violate most directly?",
   "options": [
-   "Truth in advertising, because material facts must be disclosed to enable informed consumer decisions regardless of contract language",
    "Fair housing regulations, because withholding information about structural conditions may disproportionately affect protected classes",
-   "Fiduciary duty, because the agent prioritized the seller's interests over the buyer's right to negotiate based on complete information",
-   "Contract law, because the 'as-is' clause creates ambiguity about which party bears responsibility for environmental assessments"
+   "Contract law, because the 'as-is' clause creates ambiguity about which party bears responsibility for environmental assessments",
+   "Truth in advertising, because material facts must be disclosed to enable informed consumer decisions regardless of contract language",
+   "Fiduciary duty, because the agent prioritized the seller's interests over the buyer's right to negotiate based on complete information"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising requires disclosure of material facts—information a reasonable buyer would want to know—regardless of contractual disclaimers. The 'as-is' clause does not eliminate the ethical (or legal) obligation to disclose known defects. Options B and C confuse secondary legal frameworks with the primary violation; option D misidentifies the core ethical issue.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -145,12 +145,12 @@
  {
   "question": "An agent shows a property in a neighborhood experiencing rising crime rates and declining property values, but when asked directly about the area's trajectory, states 'the market here is stabilizing.' Which ethical consideration is most at stake in this response?",
   "options": [
+   "Preventing conflicts of interest, which arise when an agent profits from a sale while withholding negative market data",
    "Avoiding steering, which prohibits suggesting neighborhoods based on protected characteristics",
    "Maintaining truth in advertising by providing accurate market conditions rather than selective or misleading characterizations",
-   "Protecting confidentiality, because neighborhood statistics are public but require informed consent to discuss",
-   "Preventing conflicts of interest, which arise when an agent profits from a sale while withholding negative market data"
+   "Protecting confidentiality, because neighborhood statistics are public but require informed consent to discuss"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Truth in advertising requires that agents present factual, material information accurately rather than optimistically or selectively. 'Stabilizing' is misleading if the actual trend is decline; the statement prioritizes the sale over the buyer's informed decision-making. Steering (A) addresses discrimination, not truthfulness; confidentiality (C) is not implicated for public data; conflict of interest (D) exists but is secondary to the direct truth-in-advertising violation.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -158,12 +158,12 @@
  {
   "question": "A seller instructs their agent to advertise a property's square footage as 2,400 square feet, though the agent knows the actual living space is 2,100 square feet and the seller is conflating this figure with total lot size. The agent believes the inflated number will not significantly affect the final sale price. What is the primary ethical obligation in this situation?",
   "options": [
-   "Disclose the accurate square footage in all marketing materials, because truth in advertising requires factual accuracy regardless of perceived impact on value",
-   "Comply with the seller's instructions, because the agent's fiduciary duty to the seller outweighs the buyer's expectation of accuracy in advertising",
    "Request a professional appraisal before listing, because square footage disputes require third-party verification to protect both parties equally",
+   "Comply with the seller's instructions, because the agent's fiduciary duty to the seller outweighs the buyer's expectation of accuracy in advertising",
+   "Disclose the accurate square footage in all marketing materials, because truth in advertising requires factual accuracy regardless of perceived impact on value",
    "Include a disclaimer in the listing that measurements are approximate, because qualification mitigates liability for minor factual discrepancies"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising is non-negotiable; the agent must disclose accurate square footage regardless of whether the error \"significantly\" affects price or of the seller's wishes. Material facts cannot be intentionally misrepresented. Option B incorrectly elevates seller loyalty above legal and ethical standards; C adds an unnecessary procedural step; D does not cure an intentional falsehood with a disclaimer.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -171,12 +171,12 @@
  {
   "question": "An agent knows a property has a history of water intrusion resolved two years ago through repairs and monitoring. When a buyer's inspector questions dampness in the basement, the agent states the issue 'was addressed and has not recurred,' without volunteering that similar problems have emerged twice since the initial repair. Is this response ethically sound?",
   "options": [
-   "Yes, because the agent disclosed the historical issue and the buyer had the opportunity to hire an inspector, shifting verification responsibility to the purchaser",
-   "No, because the pattern of recurrence constitutes material information that undermines the implication that the problem is resolved and should be disclosed proactively",
+   "No, because federal regulations prohibit agents from discussing structural history without a certified environmental report from an accredited third party",
    "Yes, because the agent is not obligated to supplement prior disclosures with ongoing monitoring data that falls outside the inspection period",
-   "No, because federal regulations prohibit agents from discussing structural history without a certified environmental report from an accredited third party"
+   "Yes, because the agent disclosed the historical issue and the buyer had the opportunity to hire an inspector, shifting verification responsibility to the purchaser",
+   "No, because the pattern of recurrence constitutes material information that undermines the implication that the problem is resolved and should be disclosed proactively"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Truth in advertising requires disclosure of material patterns, not just historical events. The statement 'addressed and has not recurred' is misleading if recurrence has actually happened; the agent's selective disclosure creates a false impression of resolution. Option A incorrectly places the burden entirely on the buyer's inspector; C conflates disclosure timing with obligation; D invokes a non-existent federal requirement.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -185,11 +185,11 @@
   "question": "A property is located near a future infrastructure project announced in the local planning department's public records but not yet common knowledge in the community. An agent aware of this project does not mention it when marketing the property to a buyer from out of state who specifically asks if there are 'any planned changes' to the neighborhood. What ethical principle is violated?",
   "options": [
    "Loyalty to the seller, because the agent should prioritize the seller's interest in obtaining the highest price by not discouraging potential buyers",
+   "Confidentiality, because planning documents are government records and agents may not reference information not yet disclosed by official municipal announcement",
    "Transparency and truth in advertising, because material public information relevant to property value should be disclosed when specifically asked, regardless of source prominence",
-   "Fair housing law, because withholding neighborhood information may constitute steering if the buyer belongs to a protected class",
-   "Confidentiality, because planning documents are government records and agents may not reference information not yet disclosed by official municipal announcement"
+   "Fair housing law, because withholding neighborhood information may constitute steering if the buyer belongs to a protected class"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "When a buyer directly asks about planned changes, an agent must answer truthfully. Material public information—even if not yet widely known—affects value and buyer decision-making; omitting it in response to a direct question violates truth in advertising. Option A misaligns loyalty with dishonesty; C conflates discrimination law with the disclosure obligation; D incorrectly treats public records as confidential information.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -197,12 +197,12 @@
  {
   "question": "A real estate agent discovers that a landlord has refused to rent an apartment to a qualified applicant solely based on familial status. Under the Fair Housing Act, which protected class has been violated, and what federal agency typically investigates such complaints?",
   "options": [
+   "The protected class of religion has been violated; the Federal Trade Commission oversees all residential tenancy disputes and fair lending practices.",
    "The protected class of national origin has been violated; the Department of Justice investigates all housing discrimination cases within 30 days of filing.",
-   "The protected class of familial status has been violated; the Department of Housing and Urban Development receives and investigates Fair Housing Act complaints.",
    "The protected class of disability has been violated; the Equal Employment Opportunity Commission enforces housing discrimination claims through civil litigation.",
-   "The protected class of religion has been violated; the Federal Trade Commission oversees all residential tenancy disputes and fair lending practices."
+   "The protected class of familial status has been violated; the Department of Housing and Urban Development receives and investigates Fair Housing Act complaints."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The Fair Housing Act explicitly protects familial status, which includes families with children. HUD, not DOJ, EEOC, or FTC, is the primary federal agency responsible for receiving, investigating, and enforcing Fair Housing Act complaints. The other options name real agencies and real protected classes, but pair them incorrectly with familial status discrimination.",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -210,12 +210,12 @@
  {
   "question": "A property built in 1982 is being sold to a young family. The seller's agent must disclose the presence of lead-based paint hazards under federal law, but the buyer's inspector finds asbestos in the insulation. Which statement most accurately reflects the legal disclosure requirements and the parties' obligations?",
   "options": [
-   "Lead-based paint disclosure is federally mandated for pre-1978 homes; asbestos disclosure is also required at federal level, and buyers have a 10-day inspection period to investigate both hazards.",
    "Lead-based paint disclosure applies only to homes built before 1975; asbestos is regulated by state agencies exclusively, so federal disclosure is optional in most jurisdictions.",
-   "Lead-based paint disclosure is required for pre-1978 structures under EPA regulations; asbestos disclosure depends on state and local regulations, and both hazards typically allow a buyer inspection contingency.",
-   "Lead-based paint and asbestos disclosures are both mandatory at federal level for all residential properties; the seller must remediate any identified hazards before closing."
+   "Lead-based paint and asbestos disclosures are both mandatory at federal level for all residential properties; the seller must remediate any identified hazards before closing.",
+   "Lead-based paint disclosure is federally mandated for pre-1978 homes; asbestos disclosure is also required at federal level, and buyers have a 10-day inspection period to investigate both hazards.",
+   "Lead-based paint disclosure is required for pre-1978 structures under EPA regulations; asbestos disclosure depends on state and local regulations, and both hazards typically allow a buyer inspection contingency."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Federal law mandates lead-based paint disclosure for homes built before 1978 under EPA regulations. Asbestos disclosure, however, is primarily governed by state and local regulations rather than a single federal requirement. Both hazards typically trigger inspection contingencies. Option 0 incorrectly states asbestos has a federal mandate and a specific 10-day period; Option 1 misidentifies the lead cutoff year and overstates state exclusivity; Option 3 incorrectly suggests seller remediation is mandatory.",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -225,10 +225,10 @@
   "options": [
    "The duty of accounting has been breached; the licensee must return all earnest money and escrow funds to the buyer within 48 hours of discovery.",
    "The duty of confidentiality has been breached; the licensee loses their license and the transaction is automatically voided by the real estate commission.",
-   "The duty of disclosure and loyalty has been breached; the licensee may face license suspension or revocation, and the buyer may pursue rescission or damages.",
-   "The duty of obedience has been breached; the seller is liable for treble damages and the buyer automatically receives the property at no cost."
+   "The duty of obedience has been breached; the seller is liable for treble damages and the buyer automatically receives the property at no cost.",
+   "The duty of disclosure and loyalty has been breached; the licensee may face license suspension or revocation, and the buyer may pursue rescission or damages."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Real estate licensees owe fiduciaries duties including disclosure (full material facts) and loyalty (acting in the client's best interest). Concealing known structural defects violates both. The consequences include license discipline and potential civil liability including rescission or damages. The other options misname duties (accounting and confidentiality are not primary here; obedience applies differently) or describe unrealistic consequences (automatic voiding, treble damages, free property).",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -249,10 +249,10 @@
  {
   "question": "A tenant in a jurisdiction with strong tenant-protection statutes claims their landlord entered the rental unit without notice and removed personal belongings. The landlord asserts the items were abandoned and the entry was necessary for maintenance. Which legal principles regarding tenancy and landlord entry rights would a court most likely apply to resolve this dispute?",
   "options": [
-   "The landlord has absolute right of entry under common law; tenant consent is not required if the entry serves any maintenance purpose and the removal of items is lawful property disposal.",
+   "The lease agreement supersedes all statutory protections; if the lease permits entry and disposal, the landlord may act unilaterally without notice or judicial process.",
    "The landlord must provide statutory notice before entry, typically 24-48 hours, except in emergencies; unauthorized removal of tenant property may constitute conversion and create liability.",
-   "The tenant retains constructive possession of all items on the premises regardless of abandonment status; the landlord may remove items only with written consent and a formal abandonment determination by local authorities.",
-   "The lease agreement supersedes all statutory protections; if the lease permits entry and disposal, the landlord may act unilaterally without notice or judicial process."
+   "The landlord has absolute right of entry under common law; tenant consent is not required if the entry serves any maintenance purpose and the removal of items is lawful property disposal.",
+   "The tenant retains constructive possession of all items on the premises regardless of abandonment status; the landlord may remove items only with written consent and a formal abandonment determination by local authorities."
   ],
   "correct_index": 1,
   "explanation": "Most jurisdictions with tenant protections require landlords to provide notice—typically 24-48 hours—before non-emergency entry, and unauthorized removal of tenant property may constitute conversion and create landlord liability. Option 0 overstates the landlord's rights under modern tenant law; Option 2 requires local authority involvement that may not be necessary; Option 3 incorrectly suggests lease terms override statutory protections. All options reflect real legal frameworks, making the correct balancing of landlord and tenant rights the key distinction.",
@@ -262,12 +262,12 @@
  {
   "question": "A real estate agent lists a property with a known foundation crack that does not affect structural integrity but may concern buyers. The agent discloses the crack in writing but emphasizes the property's recent roof replacement in all marketing materials while relegating the foundation issue to fine print. Which ethical principle is most directly violated by this selective emphasis strategy?",
   "options": [
-   "Truth in advertising, because material facts must be presented with equal prominence regardless of their positive or negative nature",
+   "Consumer protection law, because federal regulations require all disclosed defects to appear in advertisements before any property features",
    "Fiduciary duty, because the agent prioritized the seller's interest in attracting offers over the buyer's right to equal access to all information",
-   "Fair housing compliance, because the selective disclosure disproportionately affects protected classes seeking detailed property information",
-   "Consumer protection law, because federal regulations require all disclosed defects to appear in advertisements before any property features"
+   "Truth in advertising, because material facts must be presented with equal prominence regardless of their positive or negative nature",
+   "Fair housing compliance, because the selective disclosure disproportionately affects protected classes seeking detailed property information"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising requires balanced representation of material facts. Burying a known defect in fine print while prominently featuring positive attributes—even if both are technically disclosed—misleads consumers about the property's true condition and violates the principle that material information must be presented fairly, not selectively emphasized. The other options either mischaracterize legal duties or cite regulatory overreach not supported by standard advertising ethics.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -275,12 +275,12 @@
  {
   "question": "An agent discovers that comparable sales data used to justify a property's listing price includes two transactions that were not arms-length sales (one was between family members, another involved a below-market price due to financial distress). The agent includes these comparables in the market analysis provided to the seller without noting their non-standard nature. What ethical violation occurs?",
   "options": [
-   "Misrepresentation through omission, because comparable sales must be disclosed as arms-length or non-standard to accurately inform pricing decisions",
-   "Fraud in the inducement, because the seller would not have agreed to the listing terms if the true market value had been disclosed",
    "Breach of fiduciary duty to the buyer, because non-standard comparables do not reflect fair market value and harm buyer negotiating position",
-   "Violation of fair housing standards, because selective comparables disproportionately affect certain neighborhoods and protected classes"
+   "Violation of fair housing standards, because selective comparables disproportionately affect certain neighborhoods and protected classes",
+   "Misrepresentation through omission, because comparable sales must be disclosed as arms-length or non-standard to accurately inform pricing decisions",
+   "Fraud in the inducement, because the seller would not have agreed to the listing terms if the true market value had been disclosed"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising and ethical real estate practice require that comparables be presented accurately and that non-arms-length or distressed sales be identified as such. Omitting this context is a material omission that misleads the seller about true market value. While breach of fiduciary duty and fraud in inducement may theoretically apply, the core ethical violation is the failure to disclose known defects in the data—a form of misrepresentation by omission.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -289,9 +289,9 @@
   "question": "A seller's agent learns that a buyer has offered a price well below market value because the buyer misunderstood the property's square footage due to an ambiguous online listing. The agent is aware of the buyer's misunderstanding but does not correct it, allowing the below-market offer to proceed. Which ethical principle most directly addresses this situation?",
   "options": [
    "Truth in advertising requires agents to ensure material property data in listings is clear and unambiguous to prevent consumer reliance on false information",
+   "Non-disclosure privilege protects agents from liability when a buyer's mistake stems from public data rather than direct misrepresentation by the agent",
    "Caveat emptor doctrine permits the agent to remain silent because buyers have a duty to inspect and verify all property information independently",
-   "Seller representation allows agents to remain silent on buyer errors because fiduciary duty runs only to the client, not to opposing parties",
-   "Non-disclosure privilege protects agents from liability when a buyer's mistake stems from public data rather than direct misrepresentation by the agent"
+   "Seller representation allows agents to remain silent on buyer errors because fiduciary duty runs only to the client, not to opposing parties"
   ],
   "correct_index": 0,
   "explanation": "While an agent's primary duty is to their client, truth in advertising and basic ethical practice require that material information in listings be presented clearly and accurately. An agent who knows a listing contains ambiguous or misleading information that caused a buyer's error should correct it to maintain the integrity of the transaction—not because the agent owes fiduciary duty to the buyer, but because the listing itself must be truthful. The other options incorrectly prioritize client loyalty over truthfulness or mischaracterize legal privileges.",
@@ -301,12 +301,12 @@
  {
   "question": "Two competing agents represent neighboring properties in a declining market. Agent A tells her seller that comparable sales from two years ago support a price 15% higher than current market data, framing the older comparables as more representative of \"true value.\" Agent B tells his seller that current comparables, though lower, reflect temporary market conditions and will likely rebound. Both agents are factually correct but emphasizing different time horizons. Which agent's conduct raises an ethical concern under truth in advertising standards?",
   "options": [
-   "Agent A, because selective use of outdated comparables to support a higher listing price misleads regarding current market conditions without clear temporal context",
    "Agent B, because projecting future market recovery is speculative and constitutes a prediction rather than an evidence-based market analysis",
    "Both agents equally, because any cherry-picking of comparables—whether by age or market condition—violates the requirement for neutral market analysis",
+   "Agent A, because selective use of outdated comparables to support a higher listing price misleads regarding current market conditions without clear temporal context",
    "Neither agent, because each has presented factual comparables and allowed the seller to weigh the information and choose their pricing strategy"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising requires that market analysis reflect current conditions and clearly distinguish historical data from present-day comps. Agent A's emphasis on two-year-old comparables without prominent disclosure that they are outdated misleads about true current market value, which is the reference point buyers use. Agent B's language about \"temporary conditions\" is speculative but does not misrepresent the current data itself. Agent A commits an omission of material context that distorts the listing price's truthfulness.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -314,12 +314,12 @@
  {
   "question": "A listing agent knows that a property is in an area zoned for commercial development within the next three years, based on city planning documents. The agent does not disclose this in the listing or to inquiring buyers, believing that future zoning does not yet affect current property value and that buyers should conduct their own research. How does this conduct relate to ethical standards in real estate?",
   "options": [
-   "It violates truth in advertising because material information affecting property value and buyer decision-making must be affirmatively disclosed, not left for buyer investigation",
+   "It complies with standards because the zoning change is speculative and not yet effective, making current disclosure misleading about the property's existing legal status",
    "It complies with ethical standards because agents are not required to interpret future regulatory changes and buyers have access to the same public records",
-   "It violates fiduciary duty to the seller because non-disclosure reduces the property's perceived current appeal, lowering its negotiating position",
-   "It complies with standards because the zoning change is speculative and not yet effective, making current disclosure misleading about the property's existing legal status"
+   "It violates truth in advertising because material information affecting property value and buyer decision-making must be affirmatively disclosed, not left for buyer investigation",
+   "It violates fiduciary duty to the seller because non-disclosure reduces the property's perceived current appeal, lowering its negotiating position"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Truth in advertising and ethical real estate practice require disclosure of material facts that would reasonably influence a buyer's decision—including known or highly probable future regulatory changes affecting the property. While buyers may have theoretical access to public records, the agent's professional duty includes highlighting material information that would not occur to a typical buyer or that requires specialized interpretation. The fact that the change is future-dated does not excuse non-disclosure when the information is both material and known to the agent.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -327,12 +327,12 @@
  {
   "question": "A real estate agent shows a property only to clients of a specific ethnic background while telling other inquiries it is no longer available. Which discriminatory practice does this exemplify?",
   "options": [
+   "Discrimination through selective showing, a violation of Fair Housing Act provisions on equal access",
    "Steering, where agents direct clients toward or away from neighborhoods based on protected characteristics",
-   "Redlining, the practice of denying services in certain geographic areas based on demographic factors",
    "Blockbusting, encouraging panic sales by suggesting demographic changes will lower property values",
-   "Discrimination through selective showing, a violation of Fair Housing Act provisions on equal access"
+   "Redlining, the practice of denying services in certain geographic areas based on demographic factors"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Steering involves an agent directing clients toward or away from particular neighborhoods or properties based on a protected class characteristic. While redlining, blockbusting, and selective showing are all discriminatory practices, steering specifically describes the directional guidance pattern described in the scenario.",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -340,12 +340,12 @@
  {
   "question": "Under federal Fair Housing law, which of the following groups receives explicit protection as a recognized protected class?",
   "options": [
-   "Families with children, people with disabilities, and individuals based on national origin",
-   "Religion, color, sex, and people with temporary work permits or visa status",
+   "Gender, national origin, religion, and people receiving Section 8 housing subsidies",
    "Race, familial status, disability, and individuals based on sexual orientation or identity",
-   "Gender, national origin, religion, and people receiving Section 8 housing subsidies"
+   "Families with children, people with disabilities, and individuals based on national origin",
+   "Religion, color, sex, and people with temporary work permits or visa status"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The Fair Housing Act protects seven classes: race, color, religion, sex, national origin, familial status, and disability. Families with children, people with disabilities, and national origin are all explicitly protected; sexual orientation and visa status are not federal protected classes under Fair Housing law.",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -353,12 +353,12 @@
  {
   "question": "A seller discloses that a home was built in 1975 but fails to provide required documentation about potential asbestos presence. Which federal regulation has the seller most likely violated?",
   "options": [
-   "The Toxic Substances Control Act (TSCA) Title II, which mandates written disclosure of asbestos in pre-1989 structures",
+   "The Resource Conservation and Recovery Act (RCRA), governing proper handling and disposal of building materials and contaminants",
    "The Environmental Protection Agency lead-based paint disclosure rule, requiring inspection reports for homes built before 1978",
-   "The Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), establishing strict liability for hazardous substances",
-   "The Resource Conservation and Recovery Act (RCRA), governing proper handling and disposal of building materials and contaminants"
+   "The Toxic Substances Control Act (TSCA) Title II, which mandates written disclosure of asbestos in pre-1989 structures",
+   "The Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), establishing strict liability for hazardous substances"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "TSCA Title II specifically requires sellers and landlords to disclose known asbestos-containing materials in buildings constructed before 1989. While lead-based paint also requires disclosure for pre-1978 homes, the question specifically asks about asbestos; CERCLA and RCRA address liability and waste management rather than seller disclosure obligations.",
   "difficulty": "hard",
   "knowledge_area": "Laws and Regulations"
@@ -367,8 +367,8 @@
   "question": "A property zoning ordinance prohibits residential use in a specific district but permits commercial, industrial, and agricultural purposes. A homeowner seeks a variance to build a residence on their land. On which grounds would a variance most likely be granted?",
   "options": [
    "Proof that the zoning restriction causes undue hardship and that the variance is consistent with the comprehensive plan and does not harm neighboring properties",
-   "Evidence that similar variances have been granted to other property owners in adjacent zoning districts over the past five years",
    "Demonstration that residential use would increase property tax revenue for the municipality more than the currently permitted uses",
+   "Evidence that similar variances have been granted to other property owners in adjacent zoning districts over the past five years",
    "Documentation that the property owner purchased the land before the zoning ordinance was enacted and has relied on prior permitted use"
   ],
   "correct_index": 0,
@@ -380,9 +380,9 @@
   "question": "A property manager collects rent and manages tenant relations but fails to maintain property records, segregate client funds, or follow state licensing requirements. Which fiduciary responsibility has the manager violated most comprehensively?",
   "options": [
    "The duty of accounting, requiring proper recordkeeping, segregation of client money in trust accounts, and transparency in financial dealings",
-   "The duty of loyalty, requiring the manager to act solely in the client's interest and disclose all material facts affecting the property",
    "The duty of care, requiring the manager to maintain the property to agreed standards and exercise reasonable skill and diligence",
-   "The duty of obedience, requiring compliance with client instructions, state regulations, and the terms of the management agreement"
+   "The duty of obedience, requiring compliance with client instructions, state regulations, and the terms of the management agreement",
+   "The duty of loyalty, requiring the manager to act solely in the client's interest and disclose all material facts affecting the property"
   ],
   "correct_index": 0,
   "explanation": "The duty of accounting specifically requires brokers and managers to maintain detailed records, segregate client funds in trust accounts, and provide transparent accounting. While violation of the duty of loyalty, care, or obedience may also occur in this scenario, the failure in recordkeeping and fund segregation directly breaches the accounting duty, which is foundational to all fiduciary relationships in real estate.",
@@ -393,8 +393,8 @@
   "question": "A real estate agent shows a property only to clients of a specific race and refuses to show the same property to qualified buyers of another race. Under the Fair Housing Act, which protected class has been violated, and what is the name of this discriminatory practice?",
   "options": [
    "Race is protected; the practice is steering, which directs buyers toward or away from neighborhoods based on protected characteristics.",
-   "National origin is protected; the practice is redlining, which denies services or financing based on the geographic location of the property.",
    "Race is protected; the practice is blockbusting, which exploits racial fears to induce panic selling in a neighborhood.",
+   "National origin is protected; the practice is redlining, which denies services or financing based on the geographic location of the property.",
    "Familial status is protected; the practice is discrimination, which applies different terms or conditions based on family composition."
   ],
   "correct_index": 0,
@@ -405,12 +405,12 @@
  {
   "question": "A seller must disclose the presence of lead-based paint in a home built in 1975 before a purchase agreement is signed. Which federal regulation establishes this requirement, and what is the prescribed timeline for the buyer's inspection contingency?",
   "options": [
-   "The Lead-Based Paint Disclosure Rule requires a 10-day inspection period; the seller must provide an EPA pamphlet and notify the buyer of the right to test.",
    "The Residential Lead-Based Paint Hazard Reduction Act mandates a 10-day inspection period; the seller must hire a certified inspector at the seller's expense.",
-   "The Environmental Protection Agency's Lead Rule requires a 5-day inspection window; the buyer may terminate the contract only if lead exceeds federal action levels.",
-   "The Consumer Product Safety Commission's Lead Disclosure Regulation allows a 15-day inspection period; the seller must remediate any lead found before closing."
+   "The Lead-Based Paint Disclosure Rule requires a 10-day inspection period; the seller must provide an EPA pamphlet and notify the buyer of the right to test.",
+   "The Consumer Product Safety Commission's Lead Disclosure Regulation allows a 15-day inspection period; the seller must remediate any lead found before closing.",
+   "The Environmental Protection Agency's Lead Rule requires a 5-day inspection window; the buyer may terminate the contract only if lead exceeds federal action levels."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The Lead-Based Paint Disclosure Rule (enforced by EPA) requires sellers to disclose known lead-based paint hazards and provide the EPA pamphlet before signing. Buyers receive a 10-day inspection contingency. The other options either misname the regulation, state incorrect timelines, impose improper seller obligations, or confuse lead testing with mandatory remediation.",
   "knowledge_area": "Laws and Regulations",
   "difficulty": "hard"
@@ -418,12 +418,12 @@
  {
   "question": "A state real estate commission discovers that a broker accepted a client's earnest money deposit into the broker's operating account instead of a segregated trust account. Under fiduciary responsibility law, what is the broker's primary violation and what is the likely regulatory consequence?",
   "options": [
-   "Commingling of client funds, which violates the duty of care; the broker may face license suspension, restitution requirements, and potential civil liability.",
    "Conversion of trust assets, which violates the duty of disclosure; the broker must restore funds and pay interest but retains licensure if restitution is made.",
+   "Improper segregation of operating funds, which violates the duty of accounting; the broker receives a warning and must implement corrective procedures within 30 days.",
    "Misappropriation of escrow deposits, which violates the duty of loyalty; the broker's license is automatically revoked without opportunity for remediation.",
-   "Improper segregation of operating funds, which violates the duty of accounting; the broker receives a warning and must implement corrective procedures within 30 days."
+   "Commingling of client funds, which violates the duty of care; the broker may face license suspension, restitution requirements, and potential civil liability."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Commingling—mixing client trust funds with the broker's operating account—is a serious breach of fiduciary duty of care and a strict violation of real estate law. Consequences typically include license suspension, restitution to clients with interest, and potential civil liability. Conversion and misappropriation are related concepts but commingling is the precise term; automatic revocation and warnings alone are not standard consequences.",
   "knowledge_area": "Laws and Regulations",
   "difficulty": "hard"
@@ -444,12 +444,12 @@
  {
   "question": "A tenant in a lease fails to pay rent for two months. The landlord serves a notice to quit but the tenant disputes the notice, claiming the property has a serious habitability defect that would justify a rent abatement or lease termination. Which principle of tenancy law and which regulatory body would most directly address the tenant's counterclaim?",
   "options": [
-   "The implied warranty of habitability requires landlords to maintain premises fit for occupancy; state housing codes and courts determine if conditions justify abatement or lease rescission.",
-   "The covenant of quiet enjoyment obligates tenants to maintain the property; federal HUD standards determine whether rent abatement is permissible under the lease.",
    "The duty to mitigate requires landlords to repair only code violations; local property tax assessors determine if an abatement reduces the landlord's tax liability.",
-   "The right to self-help repairs permits tenants to withhold rent until repairs are made; state real estate commissions oversee disputes between landlords and tenants regarding habitability."
+   "The right to self-help repairs permits tenants to withhold rent until repairs are made; state real estate commissions oversee disputes between landlords and tenants regarding habitability.",
+   "The implied warranty of habitability requires landlords to maintain premises fit for occupancy; state housing codes and courts determine if conditions justify abatement or lease rescission.",
+   "The covenant of quiet enjoyment obligates tenants to maintain the property; federal HUD standards determine whether rent abatement is permissible under the lease."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The implied warranty of habitability—enforced by state housing codes and courts—requires landlords to maintain premises suitable for living. When serious defects exist, tenants may pursue rent abatement or, in extreme cases, lease termination. Quiet enjoyment is a separate covenant; HUD oversees fair housing, not habitability standards; property tax assessors do not resolve habitability claims; real estate commissions regulate agents, not landlord-tenant disputes.",
   "knowledge_area": "Laws and Regulations",
   "difficulty": "hard"
@@ -457,12 +457,12 @@
  {
   "question": "During a real estate transaction, a buyer obtains financing through a mortgage lender. Which of the following best describes the lender's role in the secondary mortgage market after the loan closes?",
   "options": [
-   "The lender retains the mortgage and collects monthly payments directly from the borrower for the loan's entire duration.",
    "The lender may sell the mortgage to investors or financial institutions, transferring the right to collect payments while the original lender may service the loan.",
+   "The lender packages the mortgage with other loans into a security that is sold only to other residential lenders in the primary market.",
    "The lender transfers the deed of trust to a government-sponsored enterprise, which assumes all liability for borrower default.",
-   "The lender packages the mortgage with other loans into a security that is sold only to other residential lenders in the primary market."
+   "The lender retains the mortgage and collects monthly payments directly from the borrower for the loan's entire duration."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "In the secondary mortgage market, lenders often sell mortgages to investors or institutions after origination, though they may continue servicing the loan. This is distinct from retaining the loan (which happens in the primary market), transferring title documents (which don't transfer to GSEs this way), or limiting sales to other lenders. Understanding the secondary market's role is critical to grasping modern real estate finance.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -470,12 +470,12 @@
  {
   "question": "A property owner conveys real estate to a buyer using a general warranty deed rather than a quitclaim deed. What significant distinction does this choice make regarding the transfer of title?",
   "options": [
-   "A general warranty deed guarantees that the grantor holds clear title and will defend against all claims, whereas a quitclaim deed transfers only the grantor's interest without warranties.",
-   "A general warranty deed is used only for commercial properties, while a quitclaim deed applies to residential transactions exclusively.",
+   "A general warranty deed is recorded with the county assessor, while a quitclaim deed remains private between the parties until the sale closes.",
    "A general warranty deed requires the buyer to conduct a title search, whereas a quitclaim deed absolves the buyer of this responsibility.",
-   "A general warranty deed is recorded with the county assessor, while a quitclaim deed remains private between the parties until the sale closes."
+   "A general warranty deed is used only for commercial properties, while a quitclaim deed applies to residential transactions exclusively.",
+   "A general warranty deed guarantees that the grantor holds clear title and will defend against all claims, whereas a quitclaim deed transfers only the grantor's interest without warranties."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The critical difference between these deed types lies in the grantor's warranties and liability. A general warranty deed provides full covenants of title and defense against claims; a quitclaim deed conveys only whatever interest the grantor possesses, with no guarantees. Both deed types are used in residential and commercial transactions, require title searches by prudent buyers, and are recorded the same way.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -483,12 +483,12 @@
  {
   "question": "At a real estate closing, the settlement agent prepares a Closing Disclosure that itemizes costs and credits. Which parties' financial obligations are most directly affected by the escrow account structure established during this settlement process?",
   "options": [
-   "Only the buyer's obligation to pay property taxes and homeowners insurance premiums held in reserve by the lender.",
    "Both the buyer and seller, as the escrow account may hold earnest money, prorated taxes, insurance, and HOA fees pending final distribution.",
+   "Exclusively the real estate agent and lender, who use the escrow account to cover their respective commissions and origination fees.",
    "Only the title insurance company, which deposits its premium into escrow until the deed is recorded and the transaction is deemed final.",
-   "Exclusively the real estate agent and lender, who use the escrow account to cover their respective commissions and origination fees."
+   "Only the buyer's obligation to pay property taxes and homeowners insurance premiums held in reserve by the lender."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The escrow account at closing holds funds for both parties—earnest money, prorated property taxes, homeowners insurance, and HOA fees are common items. These funds protect both buyer and seller interests until all conditions are met and the transaction closes. The title insurance company collects its premium separately, and agent and lender fees are paid directly from closing proceeds, not held in escrow.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -496,12 +496,12 @@
  {
   "question": "A real estate investor is evaluating two potential properties using different lending approaches: one with a fixed-rate mortgage and another with an adjustable-rate mortgage (ARM). How do these approaches to real estate lending affect the investor's long-term cash flow predictability?",
   "options": [
-   "A fixed-rate mortgage provides stable, predictable payments over the loan term, whereas an ARM exposes the investor to interest rate fluctuations and potential payment increases after the initial rate period ends.",
-   "An ARM offers lower initial payments that remain fixed for the entire loan term, providing superior cash flow stability compared to fixed-rate mortgages that increase annually.",
+   "Both approaches provide identical payment schedules, but ARMs include additional servicing fees that make them more costly despite equivalent monthly obligations.",
    "A fixed-rate mortgage allows refinancing without penalty, while an ARM prohibits refinancing, making fixed-rate loans more flexible for investor cash flow management.",
-   "Both approaches provide identical payment schedules, but ARMs include additional servicing fees that make them more costly despite equivalent monthly obligations."
+   "An ARM offers lower initial payments that remain fixed for the entire loan term, providing superior cash flow stability compared to fixed-rate mortgages that increase annually.",
+   "A fixed-rate mortgage provides stable, predictable payments over the loan term, whereas an ARM exposes the investor to interest rate fluctuations and potential payment increases after the initial rate period ends."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Fixed-rate mortgages lock in interest rates and payments for the entire term, ensuring predictable cash flow. ARMs have a lower initial rate that adjusts periodically after the introductory period, creating cash flow uncertainty. ARMs do not remain fixed long-term, both loan types allow refinancing, and they have different cost structures—not identical payments. An investor must weigh rate risk against initial savings when choosing between them.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -510,11 +510,11 @@
   "question": "In a real estate transaction, the buyer and seller each have different motivations and risks related to the timing of the closing and settlement. Which of the following most accurately reflects how the closing process addresses the divergent interests of both parties?",
   "options": [
    "The closing process is a formality that prioritizes the buyer's desire for rapid settlement by compressing all title and financial verification into one day.",
-   "The closing coordinates the exchange of funds, transfer of the deed, and resolution of prorated expenses and liens, ensuring both buyer and seller fulfill their obligations simultaneously and verifying clear title transfer.",
+   "The closing protects the seller exclusively by requiring the buyer to deposit all funds into an escrow account that the seller controls until the transaction is deemed satisfactory.",
    "The closing process is controlled entirely by the lender to ensure the mortgage is properly recorded before the buyer takes possession of the property.",
-   "The closing protects the seller exclusively by requiring the buyer to deposit all funds into an escrow account that the seller controls until the transaction is deemed satisfactory."
+   "The closing coordinates the exchange of funds, transfer of the deed, and resolution of prorated expenses and liens, ensuring both buyer and seller fulfill their obligations simultaneously and verifying clear title transfer."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Closing is the coordinated event where funds, deed, and all closing costs are exchanged simultaneously, protecting both parties. The buyer ensures funds buy a clear title; the seller ensures payment and that liens are cleared before transfer. Closing is not a formality but a substantive legal event; the lender plays a role but does not control it; and escrow accounts benefit both parties, not just the seller.",
   "difficulty": "hard",
   "knowledge_area": "Real Estate Transactions and Finance"
@@ -523,9 +523,9 @@
   "question": "A seller's agent and a buyer's agent both represent clients in the same transaction. How does this agency structure differ from a dual agency arrangement, and what is the primary risk?",
   "options": [
    "Separate agents create potential conflicts of interest because each owes fiduciary duties to competing clients, whereas dual agency explicitly acknowledges and manages those conflicts with informed consent from both parties.",
-   "Seller's and buyer's agents work for competing brokerages, eliminating conflicts entirely, while dual agents create liability by representing both sides under one firm without proper disclosure.",
+   "Separate agents reduce commission disputes by dividing compensation equally, while dual agents are prohibited from accepting commissions from both the buyer and seller in most jurisdictions.",
    "Two agents on opposite sides of a transaction each owe undivided loyalty to their respective clients, whereas a dual agent must balance competing loyalties and risks failing to fully advocate for either party.",
-   "Separate agents reduce commission disputes by dividing compensation equally, while dual agents are prohibited from accepting commissions from both the buyer and seller in most jurisdictions."
+   "Seller's and buyer's agents work for competing brokerages, eliminating conflicts entirely, while dual agents create liability by representing both sides under one firm without proper disclosure."
   ],
   "correct_index": 2,
   "explanation": "In a transaction with separate agents, each agent's fiduciary duty runs to only one client, creating a clear principal-agent relationship. A dual agent, by contrast, represents both buyer and seller simultaneously, which creates inherent conflicts because the agent cannot fully advocate for either party's interests without compromising the other's. This is why dual agency requires explicit informed consent and why many jurisdictions restrict or prohibit it.",
@@ -535,10 +535,10 @@
  {
   "question": "When a real estate salesperson works under a broker's license, which responsibility for agency disclosures and compliance with agency laws falls primarily on the salesperson versus the sponsoring broker?",
   "options": [
-   "The salesperson bears full legal responsibility for all agency disclosures and relationship management, while the broker maintains oversight only of trust account balances and earnest money deposits.",
-   "The broker holds primary legal responsibility for agency law compliance and must ensure proper disclosures occur, but the salesperson who conducts the transaction remains personally liable for negligent or fraudulent conduct.",
    "The salesperson and broker share equal responsibility for all disclosures, and either party may be sued independently if an agency relationship is improperly established or disclosed.",
-   "The broker is responsible for creating agency policies and training, while the salesperson is solely responsible for executing disclosures in each transaction and bears all liability for errors."
+   "The broker holds primary legal responsibility for agency law compliance and must ensure proper disclosures occur, but the salesperson who conducts the transaction remains personally liable for negligent or fraudulent conduct.",
+   "The broker is responsible for creating agency policies and training, while the salesperson is solely responsible for executing disclosures in each transaction and bears all liability for errors.",
+   "The salesperson bears full legal responsibility for all agency disclosures and relationship management, while the broker maintains oversight only of trust account balances and earnest money deposits."
   ],
   "correct_index": 1,
   "explanation": "Although salespersons work under a broker's license and the broker is the actual agent in a legal sense, both parties bear responsibility for agency compliance. The broker has primary responsibility for establishing firm-wide agency policies and ensuring compliance, but the salesperson who directly interacts with clients must execute proper disclosures and can be held personally liable for misrepresentation or negligent agency conduct. This dual accountability reflects the nature of the brokerage relationship.",
@@ -548,12 +548,12 @@
  {
   "question": "How does the scope of a sub-agent's fiduciary duties compare to those of the primary agent in a commercial real estate transaction versus a residential transaction?",
   "options": [
-   "Sub-agents owe fiduciary duties only to the broker who hired them in both commercial and residential contexts, whereas primary agents owe duties directly to the principal regardless of transaction type.",
-   "In residential transactions, sub-agents typically owe fiduciary duties to the same principal as the primary agent, whereas in commercial transactions, sub-agents often represent themselves and owe limited duties unless explicitly authorized by written agreement.",
    "Sub-agents in both commercial and residential transactions owe the same fiduciary duties as primary agents to the original principal, but commercial transactions more frequently involve sub-agents with narrowly defined scopes of authority to limit liability.",
-   "Residential sub-agents are always bound by the same fiduciary relationship as the primary agent, while commercial sub-agents may negotiate different duty levels and often operate with greater independence to facilitate complex transactions."
+   "In residential transactions, sub-agents typically owe fiduciary duties to the same principal as the primary agent, whereas in commercial transactions, sub-agents often represent themselves and owe limited duties unless explicitly authorized by written agreement.",
+   "Residential sub-agents are always bound by the same fiduciary relationship as the primary agent, while commercial sub-agents may negotiate different duty levels and often operate with greater independence to facilitate complex transactions.",
+   "Sub-agents owe fiduciary duties only to the broker who hired them in both commercial and residential contexts, whereas primary agents owe duties directly to the principal regardless of transaction type."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Sub-agents legally owe fiduciary duties to the same principal as the primary agent, whether in residential or commercial transactions. However, commercial transactions more frequently use sub-agents with carefully limited scopes of authority—defined in writing—to reduce confusion about the extent of their duties and to manage liability across multiple parties. The fiduciary obligation itself does not change; the difference lies in how explicitly the authority and duties are circumscribed.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -561,10 +561,10 @@
  {
   "question": "A listing agent describes a property as having 'excellent potential for development' to a buyer's agent. The agent later discovers the property sits in a protected wetland zone with severe building restrictions. What does this situation reveal about the distinction between puffery and misrepresentation in agency relationships?",
   "options": [
-   "Puffery is subjective opinion about property quality and is legally protected, whereas misrepresentation involves concealment of known material facts; the agent's statement is puffery unless the agent knew about the wetland restrictions and failed to disclose them.",
+   "Puffery is permitted in listing descriptions because buyers have a duty to investigate independently, whereas misrepresentation applies only to false statements about the property's legal status made directly to the principal.",
    "Puffery refers to exaggeration of desirable features, but agents cannot use puffery to mask failure to disclose known material facts; because building restrictions are material, the agent's omission likely constitutes misrepresentation regardless of whether the development claim was opinion.",
    "Puffery and misrepresentation are equivalent in real estate law; both the vague development statement and the failure to disclose the wetland zone would each independently constitute actionable misrepresentation.",
-   "Puffery is permitted in listing descriptions because buyers have a duty to investigate independently, whereas misrepresentation applies only to false statements about the property's legal status made directly to the principal."
+   "Puffery is subjective opinion about property quality and is legally protected, whereas misrepresentation involves concealment of known material facts; the agent's statement is puffery unless the agent knew about the wetland restrictions and failed to disclose them."
   ],
   "correct_index": 1,
   "explanation": "Puffery—subjective opinions about appeal or potential—is generally not actionable misrepresentation. However, an agent cannot use vague puffery to obscure the failure to disclose material facts (facts that would significantly affect a buyer's decision or property value). Since wetland restrictions severely limit development potential and are material, the agent's duty to disclose them cannot be avoided by framing development potential as mere opinion; the omission constitutes misrepresentation regardless.",
@@ -574,12 +574,12 @@
  {
   "question": "When listing a commercial property online and in print media, how do the scope of disclosures and the permissible use of photography differ between residential and commercial agency practices?",
   "options": [
+   "Commercial and residential listings must both include all property defects and agency disclosures in advertising, but commercial brokers may charge additional fees to sophisticated investors who waive full photograph disclosure.",
    "Commercial listings require identical agency disclosures as residential listings, but commercial properties may use edited or composite photographs without disclaimer, whereas residential listings prohibit any photo editing.",
    "Commercial listings often allow greater flexibility in photography and selective disclosure of property information because commercial buyers are presumed sophisticated and capable of conducting independent due diligence, whereas residential listings mandate comprehensive disclosures and unaltered images.",
-   "Commercial and residential listings must both include all property defects and agency disclosures in advertising, but commercial brokers may charge additional fees to sophisticated investors who waive full photograph disclosure.",
    "Residential listings require detailed property condition disclosures and realistic photography in all media, while commercial listings may omit agency relationships from online postings if the property is marketed through institutional investment channels."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Commercial real estate transactions typically involve more sophisticated parties (corporations, institutional investors, experienced developers) who are expected to conduct thorough due diligence. This sophistication allows greater flexibility in advertising—including selective photography, preliminary renderings, or conceptual images—without the level of comprehensive disclosure required in residential sales. Residential agents, by contrast, face stricter requirements for unaltered images and complete property disclosures because residential buyers are presumed less sophisticated and may rely more heavily on marketing materials.",
   "difficulty": "hard",
   "knowledge_area": "Agency"
@@ -587,9 +587,9 @@
  {
   "question": "During a real estate transaction, a lender requires a full appraisal before committing funds. Which approach to real estate lending does this requirement primarily reflect?",
   "options": [
-   "The portfolio lender approach, where the lender retains mortgages and emphasizes long-term borrower relationships over collateral verification",
-   "The origination-focused approach, where the lender thoroughly evaluates property value and borrower creditworthiness before underwriting",
    "The securitization approach, where the lender pools mortgages immediately and transfers all risk to secondary market investors",
+   "The origination-focused approach, where the lender thoroughly evaluates property value and borrower creditworthiness before underwriting",
+   "The portfolio lender approach, where the lender retains mortgages and emphasizes long-term borrower relationships over collateral verification",
    "The construction lending approach, where the lender disburses funds in phases tied to completion milestones rather than static appraisals"
   ],
   "correct_index": 1,
@@ -601,9 +601,9 @@
   "question": "A buyer receives a warranty deed at closing but later discovers a title defect from ten years prior. The buyer's recourse depends partly on which characteristic of the deed?",
   "options": [
    "Whether the grantor covenants to defend title against all claims, past and future, as is typical with warranty deeds",
-   "Whether the deed includes a quitclaim provision limiting liability to defects arising only during the grantor's ownership period",
+   "Whether the grantor obtained title insurance covering events predating the grantor's acquisition of the property",
    "Whether the deed was recorded within the jurisdiction's statutory period for perfecting title transfers",
-   "Whether the grantor obtained title insurance covering events predating the grantor's acquisition of the property"
+   "Whether the deed includes a quitclaim provision limiting liability to defects arising only during the grantor's ownership period"
   ],
   "correct_index": 0,
   "explanation": "A warranty deed typically includes covenants of title that obligate the grantor to defend against all claims to the property, including those arising before the grantor's ownership. Quitclaim deeds disclaim such covenants; recording timeliness affects notice but not the grantor's liability; and title insurance is a separate product that may or may not cover pre-existing defects depending on the policy.",
@@ -613,12 +613,12 @@
  {
   "question": "A commercial real estate investor plans to hold a property for fifteen years, collecting rental income and expecting appreciation. This investment strategy most closely aligns with which characteristic of real estate investments?",
   "options": [
-   "Leverage potential, in which borrowed capital magnifies returns if property values increase while debt service remains fixed",
-   "Liquidity advantage, in which real estate assets can be quickly converted to cash without loss of principal or market timing risk",
    "Tax deferral through exchange mechanisms, in which investors defer capital gains indefinitely by continuously trading similar properties",
-   "Operational control, in which investors actively manage tenant relations, maintenance, and leasing decisions affecting cash flow"
+   "Operational control, in which investors actively manage tenant relations, maintenance, and leasing decisions affecting cash flow",
+   "Leverage potential, in which borrowed capital magnifies returns if property values increase while debt service remains fixed",
+   "Liquidity advantage, in which real estate assets can be quickly converted to cash without loss of principal or market timing risk"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "A fifteen-year hold strategy with debt financing exemplifies leverage: the investor borrows to increase the equity investment base, and if property appreciates, the percentage return on the investor's own capital exceeds the property's total appreciation. Real estate is illiquid; tax deferral requires specific like-kind exchanges; and operational control alone does not explain the investor's strategy.",
   "knowledge_area": "Real Estate Transactions and Finance",
   "difficulty": "hard"
@@ -628,8 +628,8 @@
   "options": [
    "Loan servicer aggregation, in which multiple servicers consolidate payment processing to reduce operational costs and improve efficiency",
    "Capital recycling, in which originators recover funds to issue new mortgages while investors purchase standardized mortgage pools",
-   "Credit enhancement, in which mortgage pools are restructured with subordinated tranches to protect senior investors from prepayment risk",
-   "Interest rate hedging, in which originators lock in spreads by selling short-term mortgages before refinancing at lower rates"
+   "Interest rate hedging, in which originators lock in spreads by selling short-term mortgages before refinancing at lower rates",
+   "Credit enhancement, in which mortgage pools are restructured with subordinated tranches to protect senior investors from prepayment risk"
   ],
   "correct_index": 1,
   "explanation": "The sale of newly originated mortgages into pools for securitization exemplifies capital recycling: the originator regains capital to originate more loans, while secondary market investors (e.g., institutions, funds) acquire standardized mortgage assets. Servicer aggregation concerns payment administration; credit enhancement involves tranche restructuring; and interest rate hedging addresses duration management, not the primary function of this transaction.",
@@ -639,12 +639,12 @@
  {
   "question": "At closing, the buyer's lender withholds funds pending receipt of a final title insurance commitment. This requirement reflects which financial institution concern in real estate transactions?",
   "options": [
-   "Ensuring the title insurer has completed a preliminary search and verified no liens or encumbrances will impair the lender's mortgage lien position",
-   "Verifying that the title insurer is licensed in the state and maintains adequate reserves to cover potential future claims",
+   "Documenting that the escrow agent holds sufficient funds to cover all closing costs and prepaid property taxes for the first year",
    "Confirming that the buyer has obtained homeowner's insurance to cover casualty loss on the structure during the loan term",
-   "Documenting that the escrow agent holds sufficient funds to cover all closing costs and prepaid property taxes for the first year"
+   "Ensuring the title insurer has completed a preliminary search and verified no liens or encumbrances will impair the lender's mortgage lien position",
+   "Verifying that the title insurer is licensed in the state and maintains adequate reserves to cover potential future claims"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Lenders require a final title commitment (and subsequently, a title policy) to confirm that no liens, easements, or other defects will subordinate the lender's mortgage security. This protects the lender's priority position. Insurer licensing and reserves are regulatory concerns; homeowner's insurance is separate casualty coverage; and escrow agent fund adequacy relates to closing logistics, not title assurance.",
   "knowledge_area": "Real Estate Transactions and Finance",
   "difficulty": "hard"

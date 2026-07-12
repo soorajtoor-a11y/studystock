@@ -2,12 +2,12 @@
  {
   "question": "During a meeting, a member requests that the assembly move directly from approval of minutes to committee reports. Which items from the standard order of business are being skipped?",
   "options": [
-   "Reading of communications and reports from officers, followed by reports of standing committees",
    "Officer reports and special orders of business that fall between minutes approval and committee reports",
-   "Treasurer's report and approval of expenditures, which typically precede standing committee reports",
-   "Reading of communications and special announcements scheduled after minutes but before new business"
+   "Reading of communications and reports from officers, followed by reports of standing committees",
+   "Reading of communications and special announcements scheduled after minutes but before new business",
+   "Treasurer's report and approval of expenditures, which typically precede standing committee reports"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The standard order of business places officer reports and special orders between approval of minutes and standing committee reports. A member requesting to skip from minutes directly to committee reports would be bypassing these intermediate items. The other options either misidentify which reports come between minutes and committee reports or reference items in different sequence positions.",
   "difficulty": "hard",
   "knowledge_area": "Meetings, Officers, and Records"
@@ -30,10 +30,10 @@
   "options": [
    "The treasurer, because financial motions fall under the treasurer's duty to monitor expenditure accuracy",
    "The parliamentarian, because that officer's role includes advising on the accuracy and proper recording of proceedings",
-   "The secretary, because the secretary is responsible for recording and maintaining the accuracy of minutes",
-   "The vice president, because the vice president assumes all duties if the secretary is unavailable to make corrections"
+   "The vice president, because the vice president assumes all duties if the secretary is unavailable to make corrections",
+   "The secretary, because the secretary is responsible for recording and maintaining the accuracy of minutes"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The secretary is responsible for recording and maintaining accurate minutes; when an error is discovered, the secretary must correct it. While the parliamentarian advises on procedural matters and the treasurer monitors financial accuracy, neither holds primary responsibility for the official record. The vice president's duties do not extend to correcting secretary's records unless the secretary is absent.",
   "difficulty": "hard",
   "knowledge_area": "Meetings, Officers, and Records"
@@ -41,12 +41,12 @@
  {
   "question": "At the start of a meeting, the president must decide whether to approve the proposed agenda or call for additions from the floor. If the assembly votes to amend the proposed agenda by adding a new item, at what point in the standard order of business should this newly added item be considered?",
   "options": [
-   "Immediately after approval of the amended agenda, before officer and treasurer reports are presented",
-   "During new business, unless the amendment specified a different position in the order of business",
+   "Before adjournment, only if no other business remains unfinished from earlier in the meeting",
    "After all standing committee reports are completed, as new items take lower priority than scheduled business",
-   "Before adjournment, only if no other business remains unfinished from earlier in the meeting"
+   "Immediately after approval of the amended agenda, before officer and treasurer reports are presented",
+   "During new business, unless the amendment specified a different position in the order of business"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Once the agenda is amended and adopted, new items added by the assembly are typically addressed during new business unless the assembly explicitly votes to place them at a different point in the order of business. The timing is not fixed by the standard order alone; it is determined by where the assembly directs the item to be heard. Items do not automatically move to the end, nor are they necessarily taken before committee reports.",
   "difficulty": "hard",
   "knowledge_area": "Meetings, Officers, and Records"
@@ -67,12 +67,12 @@
  {
   "question": "A motion requiring a two-thirds vote receives 87 votes in favor and 42 votes against out of 129 total members present. Which voting outcome applies?",
   "options": [
-   "The motion passes because 87 exceeds a simple majority of 65 members",
-   "The motion fails because 87 is less than the required 86 two-thirds votes",
    "The motion passes because 87 represents approximately 67% of the assembly",
-   "The motion fails because the margin of victory does not reach three-fourths"
+   "The motion fails because the margin of victory does not reach three-fourths",
+   "The motion fails because 87 is less than the required 86 two-thirds votes",
+   "The motion passes because 87 exceeds a simple majority of 65 members"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A two-thirds vote requires approval from at least 86 members (two-thirds of 129 rounded up). Although 87 is a strong majority, it falls one vote short of the two-thirds threshold, so the motion fails. The simple majority threshold (65) is irrelevant when a higher standard is specified.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -80,10 +80,10 @@
  {
   "question": "During a standing vote count on a main motion, 56 members vote in favor and 56 members vote against, with 8 members abstaining. How is this tie resolved?",
   "options": [
-   "The motion passes because abstentions are excluded from the denominator and 56 exceeds half of 112",
+   "The outcome remains undetermined and requires a recount using a different voting method",
    "The motion fails because the presiding officer breaks ties by voting against pending business",
-   "The motion passes because the presiding officer must cast a deciding vote in favor",
-   "The outcome remains undetermined and requires a recount using a different voting method"
+   "The motion passes because abstentions are excluded from the denominator and 56 exceeds half of 112",
+   "The motion passes because the presiding officer must cast a deciding vote in favor"
   ],
   "correct_index": 1,
   "explanation": "When votes are tied on a main motion, the motion fails because it has not achieved the affirmative majority required to pass. The presiding officer's traditional role in tie-breaking for main motions is to vote against the pending business, maintaining the status quo. Abstentions do not affect the calculation—only affirmative and negative votes count toward the majority requirement.",
@@ -93,12 +93,12 @@
  {
   "question": "A member requests a roll-call vote instead of a voice vote on an amendment. The presiding officer considers the request procedurally. Which statement correctly describes when a roll-call vote is appropriate?",
   "options": [
-   "Roll-call voting is mandatory for all amendments and requires each member's position to be recorded individually",
-   "Roll-call voting may be used when a division of the assembly is demanded or when a precise record of individual votes is needed",
    "Roll-call voting is restricted to two-thirds motions and cannot be applied to simple majority decisions",
-   "Roll-call voting requires the presiding officer's permission and a majority vote before it can be conducted"
+   "Roll-call voting is mandatory for all amendments and requires each member's position to be recorded individually",
+   "Roll-call voting requires the presiding officer's permission and a majority vote before it can be conducted",
+   "Roll-call voting may be used when a division of the assembly is demanded or when a precise record of individual votes is needed"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A roll-call vote creates a recorded vote showing each member's position and is used when a division (challenge to a voice vote result) is made or when the assembly wants documented accountability for individual votes. It is not limited to certain motion types and does not require prior approval—the request itself is in order and must be honored. Voice votes, standing votes, and roll-call votes serve different purposes depending on the assembly's need for accuracy or documentation.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -106,12 +106,12 @@
  {
   "question": "An assembly of 200 members votes on a motion to amend the bylaws, which requires a two-thirds majority. The presiding officer announces: 'In favor: 134; opposed: 66.' How should the result be declared?",
   "options": [
-   "The motion passes because 134 votes exceed the simple majority requirement of 101 members",
-   "The motion passes because 134 represents 67% of the 200-member assembly and meets the two-thirds threshold",
    "The motion fails because 134 is less than the required 134 two-thirds majority needed (200 × 0.6667 = 133.34, rounded to 134)",
-   "The motion fails because two-thirds of 200 equals exactly 133.33, and only whole votes should count toward the threshold"
+   "The motion passes because 134 votes exceed the simple majority requirement of 101 members",
+   "The motion fails because two-thirds of 200 equals exactly 133.33, and only whole votes should count toward the threshold",
+   "The motion passes because 134 represents 67% of the 200-member assembly and meets the two-thirds threshold"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Two-thirds of 200 is 133.33, which rounds up to 134 votes required for passage. The motion received exactly 134 votes in favor, meeting the two-thirds threshold. Option C contains correct arithmetic but misinterprets the rounding convention; when computing two-thirds, the result is rounded up to ensure a supermajority. The simple majority threshold is irrelevant once a higher standard is established.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -120,11 +120,11 @@
   "question": "During a voice vote on a motion, the presiding officer's announcement of the result is questioned by a member who demands a division. The presiding officer then conducts a standing vote, which shows 78 in favor and 75 opposed. Which statement correctly applies?",
   "options": [
    "The standing vote is binding and supersedes the voice vote; the motion passes by 3 votes",
+   "The presiding officer may reject the division if the voice vote seemed sufficiently clear despite the challenge",
    "The standing vote must be repeated until two consecutive counts match within a margin of 1",
-   "The division is honored and the more precise standing vote result is official, establishing the motion's passage",
-   "The presiding officer may reject the division if the voice vote seemed sufficiently clear despite the challenge"
+   "The division is honored and the more precise standing vote result is official, establishing the motion's passage"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "A division is a member's right to challenge the presiding officer's voice vote result and demand a more precise count. The standing vote result (78 to 75) is official and supersedes the original voice vote announcement. The motion passes because 78 exceeds the simple majority of 77 members (out of 153 voting). The presiding officer cannot discretionarily reject a properly made division.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -132,12 +132,12 @@
  {
   "question": "During a meeting, both the president and vice president are absent. The secretary calls the meeting to order and presides over the election of a chair pro tem. After the election concludes and the chair pro tem is declared elected, which of the following correctly describes the officer's status and authority?",
   "options": [
+   "The chair pro tem automatically becomes vice president and assumes the presidential vacancy at the next regular meeting without further election.",
    "The chair pro tem holds full presidential authority for the remainder of the session and may sign all official documents as if elected president.",
    "The chair pro tem presides temporarily and may perform chair duties during this meeting only; the role terminates when the meeting adjourns unless the bylaws specify otherwise.",
-   "The chair pro tem automatically becomes vice president and assumes the presidential vacancy at the next regular meeting without further election.",
    "The chair pro tem gains the authority to appoint committee members and certify official documents but cannot enforce parliamentary rules without the parliamentarian's approval."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A chair pro tem is elected to preside over a specific meeting when both the president and vice president are absent, but holds no standing authority beyond that session. The role is temporary and ends with adjournment unless the bylaws establish a longer tenure. The other options either grant too much authority or confuse the chair pro tem's role with that of the vice president.",
   "difficulty": "hard",
   "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS"
@@ -145,12 +145,12 @@
  {
   "question": "A treasurer submits a financial report to the assembly. The chair announces that the treasurer's report will now be adopted. A member immediately objects, citing parliamentary procedure. Which of the following best explains the member's objection and the correct procedure?",
   "options": [
+   "The member is incorrect; the treasurer's report may be adopted, filed, or referred to a committee at the chair's discretion without a formal motion.",
    "The member is correct; the treasurer's report must be received and filed, not adopted, because only the auditor's report is formally adopted by the assembly.",
    "The member is incorrect; the treasurer's report is always adopted by majority vote unless the bylaws require a two-thirds vote for financial matters.",
-   "The member is correct; the treasurer's report requires a second before it can be received, and seconding must occur before any adoption motion is entertained.",
-   "The member is incorrect; the treasurer's report may be adopted, filed, or referred to a committee at the chair's discretion without a formal motion."
+   "The member is correct; the treasurer's report requires a second before it can be received, and seconding must occur before any adoption motion is entertained."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The treasurer's report is received and filed; it is not adopted or approved by the assembly. Only the auditor's report undergoes formal adoption. This distinction is fundamental to parliamentary procedure and reflects the different roles of these financial officers—the treasurer reports on actual receipts and disbursements, while the auditor verifies the accuracy of those accounts.",
   "difficulty": "hard",
   "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS"
@@ -158,12 +158,12 @@
  {
   "question": "A nominating committee presents its slate of candidates for president. Before the nominations from the floor are closed, three additional candidates are nominated from the floor by different members. One of these floor nominations is seconded; the other two receive no seconds. Which candidates are eligible to receive votes in the election?",
   "options": [
-   "Only the three committee-nominated candidates and the one floor-nominated candidate with a second, because nominations from the floor require a second to be valid.",
    "All six candidates—the three from committee and all three nominated from the floor—because nominations from the floor require no second to be valid.",
-   "Only the three committee-nominated candidates and one floor-nominated candidate, because floor nominations without a second are set aside until a second is obtained.",
-   "Only the committee-nominated candidates, because floor nominations are entertained only after all committee nominations are voted upon and rejected."
+   "Only the three committee-nominated candidates and the one floor-nominated candidate with a second, because nominations from the floor require a second to be valid.",
+   "Only the committee-nominated candidates, because floor nominations are entertained only after all committee nominations are voted upon and rejected.",
+   "Only the three committee-nominated candidates and one floor-nominated candidate, because floor nominations without a second are set aside until a second is obtained."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Nominations from the floor require no second to be valid. All three floor-nominated candidates are eligible, regardless of whether anyone seconded their nominations. This rule ensures that members have broad opportunity to propose candidates without procedural barriers. The committee's nominees and all four floor nominees may all appear on the ballot.",
   "difficulty": "hard",
   "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS"
@@ -171,12 +171,12 @@
  {
   "question": "During an election for treasurer, three ballots are cast: one for candidate A, one for candidate B, and one blank ballot. No candidate achieves the required majority. According to parliamentary procedure, which statement correctly identifies the vote count for purposes of determining whether a majority was achieved?",
   "options": [
+   "Candidate A has one vote, candidate B has one vote, the blank ballot is counted as an abstention; a majority requires two of the three members present.",
    "Candidate A has one vote, candidate B has one vote, and the blank ballot is disregarded; neither candidate achieved a majority of the two ballots cast.",
    "Candidate A has one vote, candidate B has one vote, and the blank ballot counts as one vote cast; a majority requires two of the three votes cast.",
-   "Candidate A has one vote, candidate B has one vote, the blank ballot is counted as an abstention; a majority requires two of the three members present.",
    "All three ballots are counted equally; candidate A and B each have one-third of the votes, and a runoff between them is automatic."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Blank ballots are not counted as votes cast when computing the majority needed for election. The majority is calculated on votes actually cast for candidates—in this case, two votes (one for A, one for B). Neither candidate achieved a majority of the two votes cast, so balloting must be repeated. Illegal votes and blanks are treated differently: illegal votes count as votes cast for majority computation, but blanks do not.",
   "difficulty": "hard",
   "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS"
@@ -184,12 +184,12 @@
  {
   "question": "A member makes a motion to amend the bylaws to eliminate the office of vice president. The chair rules the motion out of order. The member appeals the chair's decision. During the appeal, the parliamentarian stands and states that the chair's ruling was incorrect and that the motion should be entertained. Which of the following correctly describes the parliamentarian's role and the proper outcome?",
   "options": [
-   "The parliamentarian's statement is procedurally improper; the parliamentarian advises the chair on procedure but has no authority to rule, and an appeal is decided by the assembly, not by the parliamentarian's pronouncement.",
+   "The parliamentarian's intervention converts the appeal into a point of order, which must be ruled on by the chair before the appeal is decided by a vote.",
    "The parliamentarian's statement is proper and binding; as the neutral expert on procedure, the parliamentarian's ruling on an appeal supersedes the chair's decision.",
-   "The parliamentarian may only advise the chair if requested; since the appeal is already in progress, the parliamentarian cannot participate and must remain silent until the chair requests guidance.",
-   "The parliamentarian's intervention converts the appeal into a point of order, which must be ruled on by the chair before the appeal is decided by a vote."
+   "The parliamentarian's statement is procedurally improper; the parliamentarian advises the chair on procedure but has no authority to rule, and an appeal is decided by the assembly, not by the parliamentarian's pronouncement.",
+   "The parliamentarian may only advise the chair if requested; since the appeal is already in progress, the parliamentarian cannot participate and must remain silent until the chair requests guidance."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The parliamentarian advises the chair on procedure but has no authority to make rulings or decisions. An appeal is decided by the assembly through a vote, not by the parliamentarian. While the parliamentarian may offer advice to the chair, the assembly—not the parliamentarian—ultimately decides whether the chair's ruling was correct. The parliamentarian also remains impartial and does not make motions, debate, or vote except by ballot.",
   "difficulty": "hard",
   "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS"
@@ -197,12 +197,12 @@
  {
   "question": "A main motion to allocate funds is pending. A member rises to move that debate be limited to three speeches per side. Before this motion is voted on, another member moves to lay the question on the table. Which motion takes precedence and will be voted on first?",
   "options": [
-   "The motion to limit debate, because it was made first and subsidiary motions rank by order of proposal",
-   "The motion to lay on the table, because it outranks the motion to limit debate in the order of precedence",
    "The motion to limit debate, because controlling debate parameters must be decided before procedural delays",
-   "The motion to lay on the table, because all privileged motions override subsidiary motions regardless of timing"
+   "The motion to lay on the table, because all privileged motions override subsidiary motions regardless of timing",
+   "The motion to limit debate, because it was made first and subsidiary motions rank by order of proposal",
+   "The motion to lay on the table, because it outranks the motion to limit debate in the order of precedence"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Lay on the table ranks 6th in precedence while limit/extend debate ranks 8th. When motions are pending, the higher-ranking motion takes precedence and is voted on first in reverse order of proposal. The motion to lay on the table will be voted on before the motion to limit debate.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -210,12 +210,12 @@
  {
   "question": "During discussion of a proposal to change membership dues, a member who voted in favor of the original dues structure moves to reconsider the vote that adopted the new dues. What is the earliest point at which this motion must be renewed if not decided today?",
   "options": [
-   "At the start of the next regular session, within three calendar days",
-   "On the next day of this session or at the next regular session, but only on the same or next day",
    "During the next monthly meeting, provided notice was given at this meeting",
-   "Within fourteen days, as long as the member who moved reconsideration was on the prevailing side"
+   "Within fourteen days, as long as the member who moved reconsideration was on the prevailing side",
+   "On the next day of this session or at the next regular session, but only on the same or next day",
+   "At the start of the next regular session, within three calendar days"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Reconsider may be moved only on the same day or the next day of the session. If not decided by then, the motion expires and cannot be renewed later. The rule prioritizes timely finality over indefinite reopening of decisions.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -224,9 +224,9 @@
   "question": "An assembly is debating a motion to endorse a policy. A member raises a point of order, claiming the motion violates the organization's bylaws. The chair overrules the point. That member then appeals the chair's ruling. During this appeal, is debate permitted?",
   "options": [
    "No debate is permitted because appeals arising from procedural points of order are always undebatable",
-   "Debate is permitted because appeals of substantive bylaws violations are debatable in all circumstances",
+   "Debate is permitted only if two-thirds of members vote to suspend the rule against debating appeals",
    "Debate is not permitted because this appeal concerns priority of business and the original question",
-   "Debate is permitted only if two-thirds of members vote to suspend the rule against debating appeals"
+   "Debate is permitted because appeals of substantive bylaws violations are debatable in all circumstances"
   ],
   "correct_index": 2,
   "explanation": "Appeals are debatable only when they do not concern decorum, priority of business, or arise during an undebatable question. Since this appeal arises from a point of order related to the underlying substantive motion, and involves priority and enforcement of rules, it falls within the undebatable category.",
@@ -236,12 +236,12 @@
  {
   "question": "A motion to commit a proposal to the Budget Committee is pending. A member moves to amend the commitment by adding 'and to report back within 30 days.' Can this amendment be reconsidered after it is adopted?",
   "options": [
+   "No, because the motion to commit itself suspends all reconsideration rights until the committee reports",
    "No, because amendments to subsidiary motions cannot be reconsidered under any circumstances",
    "Yes, but only if the member who voted against the amendment now moves reconsideration",
-   "Yes, reconsider may be moved by any member who voted on the prevailing side of the amendment",
-   "No, because the motion to commit itself suspends all reconsideration rights until the committee reports"
+   "Yes, reconsider may be moved by any member who voted on the prevailing side of the amendment"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Amendments are reconsiderable by any member who voted on the prevailing side, and may be reconsidered on the same or next day. The fact that the amendment applies to a subsidiary motion does not restrict reconsideration—only the requirement that the mover must have been on the winning side.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -249,12 +249,12 @@
  {
   "question": "An assembly voted to postpone a motion indefinitely one hour ago. The member who voted for that postponement now seeks to bring the motion back before the assembly. Which motion should this member use, and what is the time window for making it?",
   "options": [
-   "Rescind the previous vote, which must be moved today or with majority notice at the next session",
    "Reconsider the motion to postpone indefinitely, which must be moved today or tomorrow, on the day of the session",
-   "Take from the table, which may be moved any time until the end of the next regular session",
-   "Discharge the committee holding the tabled motion, which requires a two-thirds vote within fourteen days"
+   "Rescind the previous vote, which must be moved today or with majority notice at the next session",
+   "Discharge the committee holding the tabled motion, which requires a two-thirds vote within fourteen days",
+   "Take from the table, which may be moved any time until the end of the next regular session"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "To undo the postponement, the member should move to reconsider the motion that adopted the postponement. Reconsider must be made by someone on the prevailing side and only on the same or next day of the session. Take from the table applies only when a motion is actually laid on the table; postpone indefinitely is different and uses reconsider instead.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -275,9 +275,9 @@
  {
   "question": "During debate on a motion to relocate the office, a member raises a question of privilege regarding a confidential personnel matter that must be discussed in private. The chair sustains the question and the assembly enters executive session. When executive session ends, what is the status of the pending motion to relocate the office?",
   "options": [
-   "The motion is killed because a question of privilege automatically suspends pending business until the next session.",
-   "The motion remains pending and debate resumes from the point where it was interrupted, because the question of privilege does not affect the status of main or subsidiary motions.",
    "The motion must be reconsidered by a member who voted on the prevailing side before debate can resume.",
+   "The motion remains pending and debate resumes from the point where it was interrupted, because the question of privilege does not affect the status of main or subsidiary motions.",
+   "The motion is killed because a question of privilege automatically suspends pending business until the next session.",
    "The motion is tabled and can only be brought back by taking it from the table before the end of the next regular session."
   ],
   "correct_index": 1,
@@ -288,12 +288,12 @@
  {
   "question": "A motion to amend the bylaws regarding membership fees has been moved and seconded. Before any debate begins, a member rises and objects to the consideration of the main question. The member voting on this objection requires a two-thirds vote against consideration. If the objection is sustained, which of the following is true?",
   "options": [
-   "The motion to amend the bylaws is postponed indefinitely and may be reconsidered only on the next day of the session.",
    "The motion to amend the bylaws is killed for the current session, and the bylaws remain unchanged unless the motion is formally brought before the assembly at a future meeting.",
-   "The motion to amend the bylaws is laid on the table temporarily and the assembly proceeds to other business, with the option to take it from the table later in the session.",
-   "The motion to amend the bylaws is referred to a committee for further study before it can be brought before the assembly again."
+   "The motion to amend the bylaws is referred to a committee for further study before it can be brought before the assembly again.",
+   "The motion to amend the bylaws is postponed indefinitely and may be reconsidered only on the next day of the session.",
+   "The motion to amend the bylaws is laid on the table temporarily and the assembly proceeds to other business, with the option to take it from the table later in the session."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Objection to consideration is an incidental motion that must be raised before debate begins on an original main motion. If sustained by a two-thirds vote against consideration, the motion is killed for the current session and cannot be reconsidered that day. The bylaws remain as they are, and the motion may only be brought before the assembly again at a future meeting as a new main motion.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -301,10 +301,10 @@
  {
   "question": "A member who voted in favor of adopting a new meeting schedule moves to reconsider that decision on the same day of the session. The chair is about to put the reconsideration motion to a vote when another member demands a division of the assembly to verify a voice vote. What is the correct ruling?",
   "options": [
-   "The demand for division is out of order because reconsideration motions are not subject to verification by rising vote under any circumstance.",
+   "The demand for division is in order and suspends the reconsideration motion; the assembly votes on the original meeting schedule decision again before the reconsideration motion is decided.",
    "The demand for division is in order and applies to the reconsideration motion itself; the assembly rises to verify the voice vote on whether to reconsider before proceeding further.",
    "The demand for division must wait until after the reconsideration motion is voted on, at which point it may be applied to the vote on the original meeting schedule motion.",
-   "The demand for division is in order and suspends the reconsideration motion; the assembly votes on the original meeting schedule decision again before the reconsideration motion is decided."
+   "The demand for division is out of order because reconsideration motions are not subject to verification by rising vote under any circumstance."
   ],
   "correct_index": 1,
   "explanation": "Division of the assembly is an incidental motion that any single member may demand to verify an inconclusive voice vote on any pending question. The reconsideration motion is itself pending and subject to a voice vote, so a demand for division applies to that vote. The assembly will rise to count, verifying the voice vote on whether to reconsider, before moving to any other action.",
@@ -314,12 +314,12 @@
  {
   "question": "A motion to commit the annual budget to the finance committee has been moved and seconded. While debate is ongoing, a member moves to amend the motion by changing the deadline for the committee's report from 30 days to 60 days. Before the amendment is voted on, another member moves the previous question on the amendment only. If the previous question is adopted, what happens next?",
   "options": [
-   "Debate on the amendment closes immediately and the assembly votes on the amendment; if adopted, the assembly then votes on the main motion to commit with the amended deadline.",
-   "Debate on both the amendment and the main motion closes, and the assembly votes on the amendment first, then on the main motion without any further debate allowed.",
    "The previous question motion is out of order because it cannot be applied to an amendment when the main motion is also pending; only the main motion may be subject to closure.",
-   "Debate on the amendment closes and the assembly votes on it; the previous question does not apply to the main motion, which remains open for further debate and amendment."
+   "Debate on the amendment closes and the assembly votes on it; the previous question does not apply to the main motion, which remains open for further debate and amendment.",
+   "Debate on both the amendment and the main motion closes, and the assembly votes on the amendment first, then on the main motion without any further debate allowed.",
+   "Debate on the amendment closes immediately and the assembly votes on the amendment; if adopted, the assembly then votes on the main motion to commit with the amended deadline."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "The previous question motion (rank 7) closes debate on the immediately pending question only—in this case, the first-degree amendment to the commit motion. When the amendment is voted on, the previous question does not extend to the main commit motion below it. Debate on the main motion resumes unless another previous question is moved and adopted specifically on it.",
   "difficulty": "hard",
   "knowledge_area": "THE MOTIONS SYSTEM"
@@ -327,10 +327,10 @@
  {
   "question": "FBLA's organizational structure includes three distinct divisions that serve different grade levels and educational contexts. Which of the following correctly pairs a division with its primary membership eligibility?",
   "options": [
-   "Middle School division serves students in grades 6-8 who are enrolled in business or technology courses at their schools",
+   "Professional division consists of young professionals within five years of their initial entry into the business workforce",
    "High School division comprises students in grades 9-12 who are active members of their school's FBLA chapter",
    "Post-Secondary division includes college and university students who are pursuing two-year or four-year degrees in business",
-   "Professional division consists of young professionals within five years of their initial entry into the business workforce"
+   "Middle School division serves students in grades 6-8 who are enrolled in business or technology courses at their schools"
   ],
   "correct_index": 1,
   "explanation": "FBLA's three divisions are Middle School (grades 6-8), High School (grades 9-12), and Post-Secondary (college students). The High School division's membership requirement is that students be enrolled in their school's FBLA chapter. The Professional division is not part of the three core divisions described in FBLA bylaws.",
@@ -340,10 +340,10 @@
  {
   "question": "FBLA's governance operates through a regional hierarchy that bridges local chapter activities and national-level decision-making. How are FBLA regions typically organized, and what is the primary role of regional officers?",
   "options": [
-   "Regions are grouped by congressional districts, and regional officers manage state championship tournament logistics and chapter compliance reporting",
+   "Regions are formed by participating chapters within a metropolitan area, and regional officers collect membership dues and distribute national awards",
    "Regions are organized geographically within states or across multiple states, and regional officers coordinate member development and oversee competitive events",
    "Regions are aligned with school district boundaries, and regional officers serve as liaisons between chapter presidents and the national office",
-   "Regions are formed by participating chapters within a metropolitan area, and regional officers collect membership dues and distribute national awards"
+   "Regions are grouped by congressional districts, and regional officers manage state championship tournament logistics and chapter compliance reporting"
   ],
   "correct_index": 1,
   "explanation": "FBLA regions are organized geographically and serve as intermediary governance units between local chapters and the state/national organization. Regional officers have primary responsibility for coordinating member development activities and overseeing competitive events at the regional level. Congressional districts, school district alignment, and metropolitan area groupings are not the standard basis for FBLA's regional organization.",
@@ -353,12 +353,12 @@
  {
   "question": "The bylaws of FBLA establish specific roles for national-level officers who guide the organization's strategic direction and operational management. Which of the following most accurately describes the relationship between the National President and the National Executive Director within FBLA's governance structure?",
   "options": [
-   "The National President serves as the chief elected officer and chairs the National Board, while the National Executive Director manages day-to-day operations and reports to the President",
    "The National Executive Director holds primary authority over all organizational decisions and serves as chief staff officer, with the National President acting in a ceremonial capacity",
-   "Both positions are elected annually by the membership at the National Leadership Conference, and they share equal decision-making authority on all organizational matters",
-   "The National President is elected by chapter delegates, while the National Executive Director is appointed by state governors and serves a renewable three-year term"
+   "The National President is elected by chapter delegates, while the National Executive Director is appointed by state governors and serves a renewable three-year term",
+   "The National President serves as the chief elected officer and chairs the National Board, while the National Executive Director manages day-to-day operations and reports to the President",
+   "Both positions are elected annually by the membership at the National Leadership Conference, and they share equal decision-making authority on all organizational matters"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "In FBLA's governance model, the National President is the chief elected officer who provides leadership and chairs the National Board of Directors, while the National Executive Director is the chief staff officer responsible for day-to-day operations and carries out decisions made by the Board. The Executive Director reports to the President and Board. The other options misrepresent either the election process, authority relationships, or term structures.",
   "knowledge_area": "FBLA Bylaws and Organization",
   "difficulty": "hard"
@@ -366,12 +366,12 @@
  {
   "question": "FBLA bylaws contain provisions governing member conduct, chapter operations, and participation in competitive events at all organizational levels. According to FBLA's bylaws, what is the primary purpose of establishing code of conduct standards and ethics requirements for members?",
   "options": [
-   "To ensure that all chapters maintain consistent academic standards and require proof of minimum grade point averages before members compete at regional tournaments",
-   "To uphold the values of business leadership, integrity, and professionalism while protecting the organization's reputation and creating an inclusive environment for all members",
    "To establish a uniform penalty structure that requires chapters to suspend members for rule violations and report all infractions to the state office immediately",
-   "To align FBLA membership requirements with state education licensing boards and ensure that participating students meet state-mandated business curriculum competencies"
+   "To align FBLA membership requirements with state education licensing boards and ensure that participating students meet state-mandated business curriculum competencies",
+   "To ensure that all chapters maintain consistent academic standards and require proof of minimum grade point averages before members compete at regional tournaments",
+   "To uphold the values of business leadership, integrity, and professionalism while protecting the organization's reputation and creating an inclusive environment for all members"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "FBLA's code of conduct and ethics requirements are designed to reinforce the organization's core values of business leadership, integrity, and professionalism while maintaining a positive environment. These standards protect the organization's reputation and ensure an inclusive culture. GPA requirements, automatic suspension policies, and alignment with state licensing boards are not the primary purpose of FBLA's conduct standards as outlined in the bylaws.",
   "knowledge_area": "FBLA Bylaws and Organization",
   "difficulty": "hard"
@@ -379,12 +379,12 @@
  {
   "question": "The bylaws of FBLA outline procedures for how chapters are chartered, maintained, and held accountable to organizational standards. Which statement most accurately reflects FBLA's chapter authorization and accountability requirements?",
   "options": [
-   "Chapters must be chartered by their state FBLA organization and maintain continuous membership enrollment of at least thirty active members to retain their charter status throughout the school year",
-   "Chapters receive a charter from their regional office upon completion of an application process and must comply with bylaws, leadership standards, and annual reporting requirements to remain in good standing",
    "All school-based business clubs automatically become FBLA chapters once they register with their principal, and chapters are audited by the national office every other year",
-   "Chapters are chartered by the National FBLA office after a two-year probationary period and must achieve minimum state tournament qualification rankings to renew their charter annually"
+   "Chapters are chartered by the National FBLA office after a two-year probationary period and must achieve minimum state tournament qualification rankings to renew their charter annually",
+   "Chapters must be chartered by their state FBLA organization and maintain continuous membership enrollment of at least thirty active members to retain their charter status throughout the school year",
+   "Chapters receive a charter from their regional office upon completion of an application process and must comply with bylaws, leadership standards, and annual reporting requirements to remain in good standing"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "FBLA chapters are chartered through a formal application process at the state or regional level and must comply with FBLA bylaws, maintain leadership standards, and submit required reports to remain in good standing. The charter is not automatic, there is no universal minimum membership number specified in this manner, chapters are not automatically recognized, and the national office does not conduct individual chapter audits every two years as described in the incorrect options.",
   "knowledge_area": "FBLA Bylaws and Organization",
   "difficulty": "hard"
@@ -392,10 +392,10 @@
  {
   "question": "During a voice vote on a motion to amend the bylaws, the chair announces the ayes have it. A member requests a division of the assembly. After the standing vote, the count shows 34 in favor and 33 opposed. Which statement correctly describes the outcome?",
   "options": [
-   "The motion fails because a two-thirds majority of 45 votes was required for bylaw amendments.",
-   "The motion passes because a simple majority of 34 votes exceeds half of 67 total votes cast.",
    "The motion fails because the tie-breaking procedure requires the chair to vote and break the deadlock.",
-   "The motion passes because voice votes cannot be challenged once the chair has ruled on them."
+   "The motion passes because a simple majority of 34 votes exceeds half of 67 total votes cast.",
+   "The motion passes because voice votes cannot be challenged once the chair has ruled on them.",
+   "The motion fails because a two-thirds majority of 45 votes was required for bylaw amendments."
   ],
   "correct_index": 1,
   "explanation": "A simple majority requires more than half of votes cast. With 67 votes total, 34 exceeds half and wins. Two-thirds voting applies only to specific motions (like suspending rules or calling the previous question), not routine amendments. A division of the assembly is a valid challenge to force a recount, and the standing vote result is what matters, not the chair's initial voice vote announcement.",
@@ -405,12 +405,12 @@
  {
   "question": "An organization's standing rules require a two-thirds vote to suspend them. In a meeting with 90 members present, a motion to suspend the standing rules receives 58 affirmative votes and 32 negative votes. Has the motion succeeded?",
   "options": [
-   "Yes, because 58 votes exceeds the 45-vote simple majority threshold.",
    "No, because 60 votes are required for a two-thirds majority of 90 members present.",
    "Yes, because the affirmative votes outnumber negative votes by a clear margin.",
+   "Yes, because 58 votes exceeds the 45-vote simple majority threshold.",
    "No, because all members present must vote affirmatively to suspend standing rules."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Two-thirds of 90 is 60 votes, so 58 falls short. The motion fails. Simple majority is irrelevant here; the bylaws specify two-thirds. Not all members are required to vote affirmatively—only two-thirds of those voting (or present, depending on the rule). The margin between yes and no votes does not substitute for the required supermajority threshold.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -418,8 +418,8 @@
  {
   "question": "A ballot vote is ordered for the election of five board members. The bylaws state that a plurality vote determines the winners. After counting, the top five finishers received 28, 26, 24, 22, and 21 votes respectively; the sixth-place candidate received 20 votes. The next candidate received 18 votes. Which voting method outcome is this?",
   "options": [
-   "A valid plurality vote because the top five candidates each polled more votes than any other single candidate.",
    "An invalid plurality vote because no candidate received a majority of the total votes cast.",
+   "A valid plurality vote because the top five candidates each polled more votes than any other single candidate.",
    "A valid plurality vote because the fifth-place candidate's 21 votes exceeded the sixth-place candidate's 20 votes.",
    "An invalid plurality vote because the votes were not distributed equally among all candidates."
   ],
@@ -431,12 +431,12 @@
  {
   "question": "Two motions are pending: a main motion and an amendment to it. During debate on the amendment, a member moves to close debate immediately. The chair must decide which voting method applies. Which statement correctly identifies the proper procedure?",
   "options": [
-   "A voice vote is used, and if the result is unclear, the chair rules without a division because the motion is subsidiary.",
-   "A two-thirds vote is required because closing debate is a privileged motion that restricts members' rights.",
+   "A simple majority vote is sufficient because a division of the assembly cannot be demanded on subsidiary motions.",
    "A two-thirds vote is required because the previous question (closing debate) needs a supermajority to pass.",
-   "A simple majority vote is sufficient because a division of the assembly cannot be demanded on subsidiary motions."
+   "A two-thirds vote is required because closing debate is a privileged motion that restricts members' rights.",
+   "A voice vote is used, and if the result is unclear, the chair rules without a division because the motion is subsidiary."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The motion to close debate (called the previous question) requires a two-thirds vote to pass, as it cuts off discussion and is considered a supermajority motion. While a voice vote may be used first, a member may demand a division, and the result stands only if two-thirds actually voted for closure. Subsidiary motions do not automatically bypass the two-thirds requirement; the specific motion's classification determines the vote threshold required.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -444,12 +444,12 @@
  {
   "question": "At a meeting with 75 members present, a counted vote on a motion shows 42 members voting affirmatively, 28 members voting negatively, and 5 members abstaining. Which statement correctly interprets this result?",
   "options": [
+   "The motion passes because 42 exceeds 28, confirming a plurality of those voting.",
    "The motion passes because 42 votes constitute a simple majority of the 70 voting members.",
    "The motion fails because abstaining members must be counted as negative votes under parliamentary law.",
-   "The motion passes because 42 exceeds 28, confirming a plurality of those voting.",
    "The motion fails because 42 votes do not equal a two-thirds supermajority of the 75 members present."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A simple majority requires more than half of those voting. With 42 affirmative and 28 negative votes, 70 members voted; more than half of 70 is 35.5, so 42 passes the motion. Abstentions are not counted as negative votes—they are abstentions and are excluded from the total. A two-thirds supermajority would only be required if specified in bylaws or rules; this question tests simple majority voting. The motion succeeds by simple majority.",
   "difficulty": "hard",
   "knowledge_area": "Voting"
@@ -458,11 +458,11 @@
   "question": "A state chapter in the High School division seeks to maintain its charter. What is the minimum number of active local chapters it must have to meet FBLA bylaws requirements?",
   "options": [
    "At least 3 active local chapters chartered through schools in the state",
+   "At least 10 active local chapters chartered through schools in the state",
    "At least 5 active local chapters chartered through schools in the state",
-   "At least 7 active local chapters chartered through schools in the state",
-   "At least 10 active local chapters chartered through schools in the state"
+   "At least 7 active local chapters chartered through schools in the state"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "FBLA bylaws explicitly require that a state chapter charter in the High School division maintain at least 5 active local chapters. This threshold ensures sufficient organizational strength and membership base at the state level.",
   "difficulty": "hard",
   "knowledge_area": "FBLA BYLAWS AND ORGANIZATION (the ~10 bylaws questions)"
@@ -472,8 +472,8 @@
   "options": [
    "The president, secretary, treasurer, parliamentarian, and four officers representing the Northern, Southern, Eastern, and Western regions, elected by the state chapter presidents",
    "The president, secretary, treasurer, parliamentarian, and five regional vice presidents representing the five national regions, elected by voting delegates at the National Leadership Conference",
-   "The president, secretary, treasurer, parliamentarian, and four officers representing the Middle School, High School, Collegiate, and Professional divisions, elected by the Board of Directors",
-   "The president, vice president, secretary, treasurer, parliamentarian, and three officers appointed by the CEO and business leaders on the Board of Directors"
+   "The president, vice president, secretary, treasurer, parliamentarian, and three officers appointed by the CEO and business leaders on the Board of Directors",
+   "The president, secretary, treasurer, parliamentarian, and four officers representing the Middle School, High School, Collegiate, and Professional divisions, elected by the Board of Directors"
   ],
   "correct_index": 1,
   "explanation": "The FBLA High School national officer team of nine consists of the president, secretary, treasurer, parliamentarian, and five regional vice presidents (one for each of the five national regions: Eastern, Southern, North Central, Mountain Plains, and Western). These officers are elected by voting delegates at the National Leadership Conference and serve one-year terms.",
@@ -483,12 +483,12 @@
  {
   "question": "A student's national dues were submitted on March 15 of the current school year. According to FBLA bylaws, how does this affect her eligibility to compete at the National Leadership Conference?",
   "options": [
-   "She is eligible; the deadline applies only to renewal memberships, not initial dues",
    "She is ineligible; the national dues deadline for NLC eligibility is March 1, 11:59 p.m. Eastern of the current school year",
+   "She is ineligible; all dues must be received by February 15 to allow processing time before the NLC",
    "She is eligible; state chapters may request a one-week extension for late submissions if filed before April 1",
-   "She is ineligible; all dues must be received by February 15 to allow processing time before the NLC"
+   "She is eligible; the deadline applies only to renewal memberships, not initial dues"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "FBLA bylaws set a strict national dues deadline of March 1, 11:59 p.m. Eastern time of the current school year for NLC eligibility. A submission on March 15 misses this deadline and renders the student ineligible to compete at the National Leadership Conference, regardless of the reason for lateness.",
   "difficulty": "hard",
   "knowledge_area": "FBLA BYLAWS AND ORGANIZATION (the ~10 bylaws questions)"
@@ -496,12 +496,12 @@
  {
   "question": "At the National Leadership Conference, voting delegates elect the national officer team. Which of the following accurately describes both the scope of that team's authority and the relationship between national officer terms?",
   "options": [
-   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and the president serves a two-year term to provide continuity",
-   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and incoming officers shadow their predecessors for one month during transition",
    "The officer team advises the Board of Directors on policy but cannot independently implement programs, and all serve staggered two-year terms to ensure overlap",
-   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and the treasurer may serve a consecutive second term without reelection"
+   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and the treasurer may serve a consecutive second term without reelection",
+   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and the president serves a two-year term to provide continuity",
+   "The officer team designs and implements the annual program of work, all serve concurrent one-year terms, and incoming officers shadow their predecessors for one month during transition"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "FBLA bylaws specify that national officers are elected by voting delegates at the National Leadership Conference, serve one-year terms concurrently (all beginning and ending together), and collectively design and implement the annual program of work. There are no exceptions for extended presidencies, staggered terms, or automatic reelection of specific officers.",
   "difficulty": "hard",
   "knowledge_area": "FBLA BYLAWS AND ORGANIZATION (the ~10 bylaws questions)"
@@ -509,12 +509,12 @@
  {
   "question": "The partnership between FBLA and the National Association of Parliamentarians includes which of the following provisions related to the parliamentary procedure knowledge area?",
   "options": [
+   "NAP appoints the national parliamentarian directly and maintains veto authority over all FBLA parliamentary rulings at the national level",
    "NAP provides the official study guide and conducts all chapter-level parliamentary procedure workshops for FBLA members nationwide",
    "FBLA parliamentarians at all levels (chapter, state, national) must hold NAP certification before assuming their positions",
-   "NAP supplies the test bank from which objective questions on parliamentary procedure are drawn, and top scorers on that test have been historically considered for NAP membership",
-   "NAP appoints the national parliamentarian directly and maintains veto authority over all FBLA parliamentary rulings at the national level"
+   "NAP supplies the test bank from which objective questions on parliamentary procedure are drawn, and top scorers on that test have been historically considered for NAP membership"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "FBLA's partnership with the National Association of Parliamentarians includes sourcing parliamentary procedure test questions from the NAP test bank, and top scorers on that test have historically qualified for consideration for NAP membership. This partnership enhances the rigor of parliamentary procedure assessment in FBLA events.",
   "difficulty": "hard",
   "knowledge_area": "FBLA BYLAWS AND ORGANIZATION (the ~10 bylaws questions)"
@@ -522,12 +522,12 @@
  {
   "question": "During debate on a main motion, a member who has already spoken twice on the motion rises to address the chair again. The presiding officer recognizes them. What should happen next?",
   "options": [
-   "The chair allows the speech because the member may speak a third time if debate has not yet closed.",
-   "The chair should direct the member to sit, as they have already used both allowed speeches on this motion today.",
+   "The chair allows the speech if the assembly votes by majority to extend debate limits for this member.",
    "The chair permits the speech only if no other member who has not yet spoken seeks the floor.",
-   "The chair allows the speech if the assembly votes by majority to extend debate limits for this member."
+   "The chair should direct the member to sit, as they have already used both allowed speeches on this motion today.",
+   "The chair allows the speech because the member may speak a third time if debate has not yet closed."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Under RONR rules, each member is limited to two speeches per motion, per day, at ten minutes each. Once a member has spoken twice on a motion, they cannot speak a third time unless debate limits are formally extended by a two-thirds vote—which would apply to all members, not just one. The member's attempt to speak a third time must be ruled out of order.",
   "difficulty": "hard",
   "knowledge_area": "RUNNING BUSINESS"
@@ -535,9 +535,9 @@
  {
   "question": "A motion receives 18 votes in favor, 14 votes against, and 3 members abstain. The abstaining members are entitled to vote. How should the chair announce the result?",
   "options": [
-   "The motion is defeated because 18 votes do not constitute a two-thirds majority of the 35 members present.",
-   "The motion is adopted because 18 is more than half of the 32 votes cast by members entitled to vote.",
    "The motion is defeated because abstentions reduce the majority threshold to 16 votes, and the count is insufficient.",
+   "The motion is adopted because 18 is more than half of the 32 votes cast by members entitled to vote.",
+   "The motion is defeated because 18 votes do not constitute a two-thirds majority of the 35 members present.",
    "The motion is adopted only if the chair, as a member, votes in favor to increase the margin of victory."
   ],
   "correct_index": 1,
@@ -548,12 +548,12 @@
  {
   "question": "A committee-reported motion is brought before the assembly. A member immediately objects and states, 'I second the objection to this motion.' How should the presiding officer proceed?",
   "options": [
-   "The chair accepts the second and moves directly to debate on the committee's report and motion.",
    "The chair should note that committee-reported motions do not require a second, and debate may proceed without one.",
-   "The chair rules the second out of order because the motion itself must first receive a second from a different member.",
-   "The chair tables the motion and reports the objection to the committee for reconsideration before debate begins."
+   "The chair accepts the second and moves directly to debate on the committee's report and motion.",
+   "The chair tables the motion and reports the objection to the committee for reconsideration before debate begins.",
+   "The chair rules the second out of order because the motion itself must first receive a second from a different member."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Motions reported by a committee do not require a second—this is a standing exception to the normal six-step process. The presiding officer should recognize that while a member has raised an objection, the absence of a second is not an issue. The chair states the question and debate proceeds. No second is needed for the motion to come before the assembly.",
   "difficulty": "hard",
   "knowledge_area": "RUNNING BUSINESS"
@@ -562,11 +562,11 @@
   "question": "During a voice vote on a main motion, the presiding officer announces 'The ayes have it.' A member immediately demands a rising vote. The chair takes a rising vote and finds that the noes actually outnumber the ayes. What must the chair announce?",
   "options": [
    "The original voice vote stands because the chair's judgment on a voice vote is final unless a two-thirds majority demands recounting.",
-   "The motion is defeated; the rising vote reveals that the noes have it, reversing the original announcement.",
    "The vote is declared a tie and the motion is automatically defeated under the tie rule.",
+   "The motion is defeated; the rising vote reveals that the noes have it, reversing the original announcement.",
    "The motion is adopted because a rising vote may only overturn a voice vote result if the margin exceeds five votes."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A voice vote is the initial method, but any member may demand a rising vote to verify the result. The rising vote is a more reliable counting method and supersedes the chair's voice vote judgment. If the rising vote shows the noes have it, the chair must announce that result, reversing the original declaration. The motion is defeated.",
   "difficulty": "hard",
   "knowledge_area": "RUNNING BUSINESS"
@@ -574,12 +574,12 @@
  {
   "question": "The presiding officer is a member of the assembly and has a direct financial interest in the outcome of a motion under debate. What action must the presiding officer take?",
   "options": [
-   "The officer must relinquish the chair, take a seat in the assembly, and return to the chair after the vote is announced.",
-   "The officer must relinquish the chair to another member, debate the motion if desired, but cannot vote on the question.",
+   "The officer must abstain from debate and voting but may remain in the chair to maintain procedural continuity throughout.",
    "The officer may remain in the chair and vote only if the vote is by ballot to preserve confidentiality of the officer's position.",
-   "The officer must abstain from debate and voting but may remain in the chair to maintain procedural continuity throughout."
+   "The officer must relinquish the chair, take a seat in the assembly, and return to the chair after the vote is announced.",
+   "The officer must relinquish the chair to another member, debate the motion if desired, but cannot vote on the question."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "A member with direct personal or pecuniary interest not shared by other members cannot vote on that question. The presiding officer, who must be impartial, must relinquish the chair entirely to participate in debate or voting on such a motion. The officer steps down, takes a seat, acts as a member, and does not return to the chair until the question is disposed of.",
   "difficulty": "hard",
   "knowledge_area": "RUNNING BUSINESS"
@@ -587,12 +587,12 @@
  {
   "question": "A main motion to purchase new office equipment is pending. A member rises and moves to amend the motion by changing the budget allocation. Which classification best describes the motion to amend, and is it in order at this point?",
   "options": [
-   "It is a privileged motion and takes precedence over the main motion, so it is in order and must be voted on immediately.",
    "It is a subsidiary motion that is in order because subsidiary motions can be applied to main motions to modify their scope or terms.",
-   "It is an incidental motion and cannot be made until the main motion has been fully debated and a vote is called.",
-   "It is a bring-back motion that requires a two-thirds vote before the amendment can be considered alongside the original motion."
+   "It is a privileged motion and takes precedence over the main motion, so it is in order and must be voted on immediately.",
+   "It is a bring-back motion that requires a two-thirds vote before the amendment can be considered alongside the original motion.",
+   "It is an incidental motion and cannot be made until the main motion has been fully debated and a vote is called."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A motion to amend is a subsidiary motion—one that applies to another motion to modify it. Subsidiary motions are in order while a main motion is pending because they help refine the main motion. The other classifications—privileged, incidental, and bring-back—do not apply to amendments, which are fundamental tools for modifying pending business.",
   "difficulty": "hard",
   "knowledge_area": "Classification and Precedence of Motions"
@@ -600,12 +600,12 @@
  {
   "question": "During a meeting, a member moves to adjourn while debate on a salary increase proposal is underway. According to the order of precedence, what is the status of the motion to adjourn relative to the pending salary motion?",
   "options": [
-   "The motion to adjourn is a subsidiary motion that must wait until the salary motion is resolved, making it out of order at this time.",
-   "The motion to adjourn is a privileged motion that ranks higher in precedence, so it is in order and takes priority over the pending salary motion.",
    "The motion to adjourn is an incidental motion that can only be made after a vote on the salary motion has been called and counted.",
-   "The motion to adjourn is a bring-back motion that requires approval from two-thirds of members present before the salary motion can be set aside."
+   "The motion to adjourn is a subsidiary motion that must wait until the salary motion is resolved, making it out of order at this time.",
+   "The motion to adjourn is a bring-back motion that requires approval from two-thirds of members present before the salary motion can be set aside.",
+   "The motion to adjourn is a privileged motion that ranks higher in precedence, so it is in order and takes priority over the pending salary motion."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A motion to adjourn is a privileged motion with high precedence that can interrupt pending business because it addresses the assembly's right to recess or end the meeting. Privileged motions rank above subsidiary motions in the order of precedence. The motion to adjourn is in order even though the salary motion is pending and takes priority over ongoing debate.",
   "difficulty": "hard",
   "knowledge_area": "Classification and Precedence of Motions"
@@ -614,11 +614,11 @@
   "question": "A member proposes a motion to table the pending resolution on facility improvements. Another member immediately objects and proposes a motion to amend the resolution instead. Applying the order of precedence, which motion should be addressed first?",
   "options": [
    "The motion to amend should be addressed first because amendments always take precedence over motions to table in parliamentary procedure.",
-   "The motion to table should be addressed first because it is a subsidiary motion that takes precedence over other subsidiary motions like amendments.",
    "The motion to table should be addressed first because lay on the table is higher in the order of precedence than the motion to amend.",
-   "The motion to amend should be addressed first because it is an incidental motion that supersedes all other subsidiary motions to the main motion."
+   "The motion to amend should be addressed first because it is an incidental motion that supersedes all other subsidiary motions to the main motion.",
+   "The motion to table should be addressed first because it is a subsidiary motion that takes precedence over other subsidiary motions like amendments."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Both motions are subsidiary motions, but the motion to table (lay on the table) ranks higher in the order of precedence than the motion to amend. When two subsidiary motions are proposed, the one with higher precedence must be decided first. Therefore, the motion to table is addressed and voted on before the motion to amend is considered.",
   "difficulty": "hard",
   "knowledge_area": "Classification and Precedence of Motions"
@@ -626,12 +626,12 @@
  {
   "question": "While a motion to increase membership dues is being debated, a member raises a point of order claiming that the dues amount stated in the motion violates the bylaws. What is the classification of the point of order, and how should the chair handle it?",
   "options": [
-   "It is a privileged motion that requires the chair to suspend debate immediately and investigate the bylaws before allowing the motion to proceed further.",
-   "It is an incidental motion that the chair should rule on at once without suspending debate, based on the bylaws and parliamentary rules governing the motion.",
+   "It is a subsidiary motion that requires a second and a vote from the assembly before the chair can make a ruling on the bylaws question.",
    "It is a bring-back motion that allows the membership to delay the dues motion and revisit a prior decision about membership financial obligations.",
-   "It is a subsidiary motion that requires a second and a vote from the assembly before the chair can make a ruling on the bylaws question."
+   "It is a privileged motion that requires the chair to suspend debate immediately and investigate the bylaws before allowing the motion to proceed further.",
+   "It is an incidental motion that the chair should rule on at once without suspending debate, based on the bylaws and parliamentary rules governing the motion."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A point of order is an incidental motion that challenges whether the assembly is following its rules and bylaws. The chair must rule on points of order promptly without requiring a vote, though debate may continue on the underlying motion. Incidental motions are designed to clarify procedural questions that arise during debate without suspending the main motion.",
   "difficulty": "hard",
   "knowledge_area": "Classification and Precedence of Motions"
@@ -639,9 +639,9 @@
  {
   "question": "A motion to approve the annual budget has been pending for fifteen minutes with no conclusion in sight. A member moves to postpone the budget motion indefinitely, and another member simultaneously moves to postpone it to a specific date next month. According to the order of precedence for subsidiary motions, which postponement motion should be ruled on first?",
   "options": [
-   "The motion to postpone indefinitely should be addressed first because indefinite postponement ranks highest among all postponement motions in the order of precedence.",
-   "The motion to postpone to a specific date should be addressed first because setting a definite time for resumption takes precedence over postponement without a fixed time.",
    "The motion to postpone to a specific date should be addressed first because it is more restrictive and therefore has higher precedence in the subsidiary motion ranking.",
+   "The motion to postpone to a specific date should be addressed first because setting a definite time for resumption takes precedence over postponement without a fixed time.",
+   "The motion to postpone indefinitely should be addressed first because indefinite postponement ranks highest among all postponement motions in the order of precedence.",
    "The motion to postpone indefinitely should be addressed first because it provides the assembly maximum flexibility and is the lowest-ranking postponement option, so it is decided last."
   ],
   "correct_index": 1,

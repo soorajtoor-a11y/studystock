@@ -2,12 +2,12 @@
  {
   "question": "An underwriter evaluating a life insurance application notes the applicant has a family history of early-onset cardiovascular disease and works in a high-stress occupation. Which of the following represents the most appropriate underwriting decision?",
   "options": [
-   "Approve the standard rate after reviewing only the occupational hazard classification",
-   "Request additional medical underwriting including stress tests and family medical records before determining appropriate risk classification and premium adjustment",
+   "Approve at a reduced benefit level while maintaining standard premium rates to offset anticipated claims",
    "Decline coverage immediately due to the documented family history without further investigation",
-   "Approve at a reduced benefit level while maintaining standard premium rates to offset anticipated claims"
+   "Request additional medical underwriting including stress tests and family medical records before determining appropriate risk classification and premium adjustment",
+   "Approve the standard rate after reviewing only the occupational hazard classification"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Proper underwriting requires a comprehensive evaluation of multiple risk factors—medical history, family predisposition, and occupational exposure—before assigning risk classification. The underwriter must gather complete information (stress tests, medical records) to make an informed decision rather than relying on one factor alone or making immediate coverage decisions. Selective review of only occupational factors, automatic decline, or mismatched benefit-to-premium structures all violate sound underwriting principles.",
   "difficulty": "hard",
   "knowledge_area": "Insurance Knowledge"
@@ -15,10 +15,10 @@
  {
   "question": "During the claims management process, a claimant submits documentation that appears inconsistent with prior statements made during policy issuance. What is the insurer's primary obligation under contract law and claims administration standards?",
   "options": [
-   "Immediately deny the claim based on material misrepresentation discovered during underwriting review",
-   "Investigate the discrepancies thoroughly, document findings, and determine whether the inconsistency constitutes fraud or an innocent error before deciding claim disposition",
    "Pay the claim as filed while noting the discrepancy in the policy file for future reference or cancellation",
-   "Request the claimant sign a sworn affidavit confirming the original underwriting statements were accurate"
+   "Investigate the discrepancies thoroughly, document findings, and determine whether the inconsistency constitutes fraud or an innocent error before deciding claim disposition",
+   "Request the claimant sign a sworn affidavit confirming the original underwriting statements were accurate",
+   "Immediately deny the claim based on material misrepresentation discovered during underwriting review"
   ],
   "correct_index": 1,
   "explanation": "Claims management requires due diligence and investigation before determining liability. An insurer must distinguish between material misrepresentation (grounds for denial or rescission) and honest error before taking action. Automatic denial without investigation, payment without verification, or reliance solely on retrospective affidavits all fail to fulfill the insurer's legal and fiduciary obligations to investigate suspected fraud versus innocent discrepancies.",
@@ -29,9 +29,9 @@
   "question": "An organization must ensure its employee benefit plans comply with multiple federal regulations including ERISA, COBRA, and OSHA requirements. Which scenario best describes a compliance challenge that spans all three regulatory frameworks?",
   "options": [
    "Maintaining accurate records of health plan elections, providing timely continuation coverage notices, and documenting workplace safety incident reporting in relation to employee health coverage eligibility",
-   "Recording only OSHA-reportable injuries separately from health insurance claims to avoid duplicate regulatory notifications",
    "Limiting COBRA notices to employees who terminate due to layoffs while excluding other qualifying events under state law provisions",
-   "Consolidating all regulatory compliance documentation into a single annual filing that satisfies ERISA, COBRA, and OSHA reporting simultaneously"
+   "Consolidating all regulatory compliance documentation into a single annual filing that satisfies ERISA, COBRA, and OSHA reporting simultaneously",
+   "Recording only OSHA-reportable injuries separately from health insurance claims to avoid duplicate regulatory notifications"
   ],
   "correct_index": 0,
   "explanation": "ERISA governs plan administration and records; COBRA requires continuation coverage notices for qualifying events including termination and hours reductions; OSHA mandates workplace safety and incident reporting. The correct approach integrates these requirements: maintaining records (ERISA), providing notices (COBRA), and documenting injuries (OSHA). The wrong options either artificially separate frameworks, misapply coverage scope, or falsely assume a single unified filing can satisfy distinct regulatory purposes and timelines.",
@@ -41,12 +41,12 @@
  {
   "question": "An insurance agent identifies a prospective client whose business faces significant exposure to environmental contamination risk. The agent must recommend appropriate coverage and explain policy limitations. Which statement accurately reflects both the coverage option and a contractual provision the client should understand?",
   "options": [
-   "Pollution liability coverage includes gradual contamination events, but the policy contains an absolute pollution exclusion clause that typically bars coverage for intentional or expected pollution",
+   "Contamination exposure is covered under standard commercial general liability policies if the business maintains current OSHA safety certifications and training documentation",
    "Environmental impairment liability policies cover all forms of contamination retroactively, subject only to the discovery period and without limitation based on causation or timing",
    "Pollution coverage is available exclusively through EPA-approved insurers and requires documented compliance with all NFPA standards before a policy can be issued",
-   "Contamination exposure is covered under standard commercial general liability policies if the business maintains current OSHA safety certifications and training documentation"
+   "Pollution liability coverage includes gradual contamination events, but the policy contains an absolute pollution exclusion clause that typically bars coverage for intentional or expected pollution"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Pollution liability coverage protects against gradual contamination, but most policies contain absolute pollution exclusions or significant limitations for intentional or expected pollution. This reflects the balance between available coverage and contractual limitations clients must understand. The alternatives misstate policy scope (retroactive coverage without timing limits doesn't exist in standard markets), incorrectly tie approval to EPA certification rather than underwriting criteria, or falsely classify pollution risk as covered under general liability policies.",
   "difficulty": "hard",
   "knowledge_area": "Insurance Knowledge"
@@ -68,9 +68,9 @@
   "question": "A 35-year-old unmarried professional with no dependents but significant student loan debt is evaluating insurance needs. Which factor should most heavily influence their decision to purchase life insurance at this stage?",
   "options": [
    "The potential need to cover outstanding debt obligations and provide income replacement for a surviving spouse",
-   "The legal requirement to maintain life insurance coverage under federal employment regulations for professional licenses",
+   "The necessity to fund a retirement account and ensure estate taxes are paid by beneficiaries upon death",
    "The desire to lock in lower premiums while young, even though current financial obligations could be met through other means",
-   "The necessity to fund a retirement account and ensure estate taxes are paid by beneficiaries upon death"
+   "The legal requirement to maintain life insurance coverage under federal employment regulations for professional licenses"
   ],
   "correct_index": 0,
   "explanation": "Life insurance at this stage primarily serves to protect against the financial burden of unpaid debts that would fall to a surviving estate or co-signer. While premium locking and other factors have merit, the presence of substantial debt obligations creates an immediate need that outweighs long-term planning strategies. The other options reflect either legal misconceptions or premature planning needs.",
@@ -80,12 +80,12 @@
  {
   "question": "An employee who becomes disabled and unable to work for 18 months receives benefits from both a private disability insurance policy and Social Security Disability Insurance (SSDI). How do these two income sources typically interact in terms of total benefit payments?",
   "options": [
-   "SSDI payments are reduced dollar-for-dollar by any private disability insurance benefits received, ensuring total income does not exceed pre-disability earnings",
    "Private disability insurance and SSDI operate independently with no coordination; the employee receives full benefits from both programs simultaneously",
-   "SSDI payments continue only after private disability insurance benefits expire, creating a sequential rather than concurrent benefit structure",
-   "Private disability insurance benefits are offset by SSDI payments up to a combined limit, though the offset rules vary by policy design"
+   "Private disability insurance benefits are offset by SSDI payments up to a combined limit, though the offset rules vary by policy design",
+   "SSDI payments are reduced dollar-for-dollar by any private disability insurance benefits received, ensuring total income does not exceed pre-disability earnings",
+   "SSDI payments continue only after private disability insurance benefits expire, creating a sequential rather than concurrent benefit structure"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Many private disability policies include an offset or coordination-of-benefits clause that reduces private benefits when SSDI is received, though the specific offset rules depend on the individual policy language. Unlike some government programs that reduce benefits dollar-for-dollar, the interaction between private disability insurance and SSDI is typically defined by contract terms rather than a uniform federal formula. The programs do not operate in strict sequence or complete independence.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -93,10 +93,10 @@
  {
   "question": "A recently divorced 45-year-old with two teenage children and a mortgage is selecting a health insurance plan. Their employer offers a comprehensive HMO with low premiums and a PPO with higher premiums but greater provider flexibility. Which comparison best reflects the trade-off between these two sources of health coverage?",
   "options": [
-   "HMO plans provide lower out-of-pocket costs and broader national networks, while PPO plans require higher deductibles but allow self-directed specialist referrals",
-   "HMO plans restrict coverage to in-network providers and require primary care coordination, while PPO plans permit out-of-network care at higher cost-sharing levels",
    "PPO plans are subsidized entirely by employer contributions, whereas HMO plans require employee premium sharing and create higher family deductibles",
-   "HMO plans cover preventive care exclusively, whereas PPO plans provide comprehensive coverage including emergency and surgical services"
+   "HMO plans restrict coverage to in-network providers and require primary care coordination, while PPO plans permit out-of-network care at higher cost-sharing levels",
+   "HMO plans cover preventive care exclusively, whereas PPO plans provide comprehensive coverage including emergency and surgical services",
+   "HMO plans provide lower out-of-pocket costs and broader national networks, while PPO plans require higher deductibles but allow self-directed specialist referrals"
   ],
   "correct_index": 1,
   "explanation": "The fundamental difference lies in provider networks and referral requirements: HMOs emphasize lower costs through gatekeeping and in-network restrictions, while PPOs allow more flexibility and out-of-network access but at higher cost-sharing. The other options mischaracterize the relationship between plan type and cost structure, subsidy patterns, or coverage scope. Both plans typically cover preventive and comprehensive services.",
@@ -107,11 +107,11 @@
   "question": "A 72-year-old retiree with substantial assets and chronic health conditions is assessing long-term care insurance options against self-funding through investment income. Which scenario best justifies purchasing long-term care insurance rather than relying on personal financial resources?",
   "options": [
    "The retiree anticipates needing custodial care in an assisted living facility for 2–3 years, with estimated annual costs exceeding 40% of their current investment income",
-   "The retiree has limited family support and prefers to preserve estate assets for heirs rather than deplete savings through extended institutional or home-based care",
    "The retiree's health history suggests a moderate to high probability of requiring skilled nursing care, making premium costs predictable relative to potential out-of-pocket exposure",
-   "The retiree lives in a region with above-average long-term care costs and intends to remain in independent living as long as possible before transitioning to care"
+   "The retiree lives in a region with above-average long-term care costs and intends to remain in independent living as long as possible before transitioning to care",
+   "The retiree has limited family support and prefers to preserve estate assets for heirs rather than deplete savings through extended institutional or home-based care"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Long-term care insurance is most justified when the individual faces a credible risk of needing care and the insurance premium is reasonable relative to the catastrophic cost exposure. This occurs when health indicators suggest elevated probability and the premium-to-risk ratio favors insurance. While estate preservation and cost avoidance are secondary benefits, insurance is primarily justified by risk of needing care and inability to reliably self-fund unpredictable duration and intensity of services. Options 1 and 4 describe situations where self-funding might suffice, and option 2 blurs the financial justification.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -119,12 +119,12 @@
  {
   "question": "A financial planner is developing a comprehensive insurance plan for a 40-year-old married client with two children, a primary income of $95,000 annually, and significant retirement savings already accumulated. Over the next 20 years, how should the emphasis and structure of this insurance plan evolve as the client's financial circumstances change?",
   "options": [
-   "Life and disability insurance coverage should decrease as children reach adulthood and mortgage principal declines, while health insurance remains stable and long-term care insurance emphasis increases after age 55",
    "All insurance coverage should remain constant in amount and type throughout the planning period to ensure consistent protection and avoid the administrative burden of policy adjustments",
+   "Life and disability insurance coverage should decrease as children reach adulthood and mortgage principal declines, while health insurance remains stable and long-term care insurance emphasis increases after age 55",
    "Disability insurance should be eliminated once retirement savings reach a specified threshold, while life insurance doubles to offset inflation and long-term care insurance is added immediately",
    "Health insurance coverage should shift from employer-sponsored to individual plans, disability insurance should increase proportionally to income growth, and life insurance should remain at initial levels"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A sound financial plan adapts insurance coverage to changing life stages and risk profiles: as dependents become independent and debt decreases, the income-replacement need for life and disability insurance declines; simultaneously, the probability and potential cost of long-term care increase, making that coverage more relevant in later years. Health insurance remains a consistent need regardless of age or assets. The other options either ignore the fundamental relationship between life stage and insurance need, or misalign coverage with actual risk changes.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -134,8 +134,8 @@
   "options": [
    "Deny the claim immediately because international operations increase overall portfolio risk exposure beyond acceptable thresholds",
    "Segment the risk analysis by geographic region, benchmark against regional loss patterns, and assess whether the specific claim aligns with the client's risk profile in that market",
-   "Approve all claims without adjustment since the client operates globally and must be treated identically across all jurisdictions",
-   "Request the client consolidate operations to a single country to simplify underwriting and eliminate cross-border complexity"
+   "Request the client consolidate operations to a single country to simplify underwriting and eliminate cross-border complexity",
+   "Approve all claims without adjustment since the client operates globally and must be treated identically across all jurisdictions"
   ],
   "correct_index": 1,
   "explanation": "Hard decisions in global environments require segmented analysis and benchmarking against relevant comparables—not blanket approval or denial. Fiduciary duty of care demands that the underwriter assess risk contextually and make decisions grounded in evidence from comparable regional data, not arbitrary consolidation demands.",
@@ -145,12 +145,12 @@
  {
   "question": "An insurance underwriter must decide whether to approve coverage for a manufacturing client with a history of safety incidents. The client has implemented a new risk mitigation program matching best-practice standards from three industry competitors. How should the underwriter integrate this benchmark data into the approval decision?",
   "options": [
-   "Use competitor benchmarks to establish a new baseline loss expectation and compare the client's actual incident rates against that industry standard rather than the client's historical trend alone",
-   "Ignore competitor data and approve coverage based solely on the client's recent safety improvements, regardless of how they compare to peer performance",
+   "Require the client to match the best competitor's loss record before any approval can be granted",
    "Deny coverage because the client's prior incidents exceed the average of all benchmarks, even if the gap is narrowing",
-   "Require the client to match the best competitor's loss record before any approval can be granted"
+   "Use competitor benchmarks to establish a new baseline loss expectation and compare the client's actual incident rates against that industry standard rather than the client's historical trend alone",
+   "Ignore competitor data and approve coverage based solely on the client's recent safety improvements, regardless of how they compare to peer performance"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Benchmarking uses peer data to reset expectations; the underwriter should compare the client's current performance to industry standards, not just its own past. This evidence-based comparison—showing that the client is closing the gap toward acceptable risk levels—supports a more informed approval or conditional coverage decision than relying on historical trend alone.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -158,12 +158,12 @@
  {
   "question": "A risk manager is structuring an enterprise risk management strategy for a client whose portfolio includes both high-volatility growth assets and stable income-generating investments. The client seeks to maximize returns while maintaining insurance coverage. What does optimizing risk-taking decisions in this context require?",
   "options": [
-   "Increase insurance limits only on the stable income assets, since growth investments are inherently speculative and uninsurable",
-   "Analyze the correlation between asset volatility and insurable losses, then allocate coverage limits to maximize expected return per unit of risk while staying within the client's risk appetite",
+   "Reduce overall portfolio volatility by selling the growth assets and reinvesting exclusively in low-risk instruments",
    "Purchase full coverage on all assets regardless of volatility to ensure the portfolio is equally protected",
-   "Reduce overall portfolio volatility by selling the growth assets and reinvesting exclusively in low-risk instruments"
+   "Analyze the correlation between asset volatility and insurable losses, then allocate coverage limits to maximize expected return per unit of risk while staying within the client's risk appetite",
+   "Increase insurance limits only on the stable income assets, since growth investments are inherently speculative and uninsurable"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Optimizing risk-taking decisions requires understanding which risks drive losses and which drive returns, then aligning coverage strategically. The underwriter must evaluate correlation between asset characteristics and insurable loss potential, then calibrate coverage to the client's stated risk appetite—not apply blanket rules or abandon growth exposure.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -171,10 +171,10 @@
  {
   "question": "An underwriter is reviewing a claim denial decision for a small business client. The client argues the denial violates the fiduciary duty of care because the underwriter failed to document the risk analysis that led to the decision. Which statement best reflects the ethical and legal obligation in this scenario?",
   "options": [
-   "The underwriter's fiduciary duty is satisfied by verbal communication; written documentation is optional if the denial outcome is ultimately correct",
-   "The duty of care requires the underwriter to demonstrate through documented analysis how the claim assessment was conducted and how risk factors were weighed in reaching the denial decision",
    "The underwriter owes no fiduciary duty to the client since all insurance decisions are contractual rather than trust-based",
-   "Documentation is only required for claim approvals; denials may be issued without written justification"
+   "The duty of care requires the underwriter to demonstrate through documented analysis how the claim assessment was conducted and how risk factors were weighed in reaching the denial decision",
+   "Documentation is only required for claim approvals; denials may be issued without written justification",
+   "The underwriter's fiduciary duty is satisfied by verbal communication; written documentation is optional if the denial outcome is ultimately correct"
   ],
   "correct_index": 1,
   "explanation": "Fiduciary duty of care includes a duty to act with transparency and to document the reasoning behind decisions affecting the client's interests. An underwriter cannot satisfy this duty through oral explanations alone; the client must be able to review how risks were analyzed and what factors influenced the denial or approval decision.",
@@ -186,10 +186,10 @@
   "options": [
    "Approve both applications at identical premiums since identical facilities should be treated identically regardless of safety history",
    "Deny Applicant A outright and approve Applicant B without conditions, treating all high-incident applicants as automatically uninsurable",
-   "Benchmark each applicant's loss rate against regional and industry norms, assess whether their incident frequency reflects acceptable or unacceptable risk relative to peers, and adjust premiums or impose risk controls accordingly",
-   "Approve Applicant A at a discount to encourage safety improvements, while charging Applicant B a premium for having an unusually low incident count"
+   "Approve Applicant A at a discount to encourage safety improvements, while charging Applicant B a premium for having an unusually low incident count",
+   "Benchmark each applicant's loss rate against regional and industry norms, assess whether their incident frequency reflects acceptable or unacceptable risk relative to peers, and adjust premiums or impose risk controls accordingly"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Defensible underwriting relies on comparative analysis and evidence-based risk segmentation, not mechanical rules or incentive reversal. The underwriter must benchmark both applicants' loss rates against relevant peers to determine whether either is an outlier and adjust coverage, pricing, or conditions based on where each applicant sits relative to the benchmark—not apply identical treatment to different risk profiles.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -198,11 +198,11 @@
   "question": "A risk manager is evaluating whether to approve an insurance claim for a client operating in three different countries with varying regulatory environments. Which approach best balances fiduciary duty with sound decision-making in this global context?",
   "options": [
    "Approve all claims without review to demonstrate care for the client's interests",
+   "Request the client to consolidate all operations into one country to simplify risk assessment",
    "Compare the client's risk profile against industry benchmarks in each region, document the analysis, and apply consistent underwriting standards while considering local regulations",
-   "Deny coverage in high-risk countries to avoid potential losses and liability exposure",
-   "Request the client to consolidate all operations into one country to simplify risk assessment"
+   "Deny coverage in high-risk countries to avoid potential losses and liability exposure"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Sound decision-making in global environments requires using benchmarking to understand comparative risk across regions while maintaining fiduciary duty through documented, consistent standards. Approving without review, denying based only on location, or forcing business changes violate either prudent analysis or fiduciary care.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -210,12 +210,12 @@
  {
   "question": "An underwriter must decide whether to approve coverage for a manufacturing client with a history of safety incidents. The client's incident rate is 15% above industry benchmark, but they have implemented new safety protocols. What decision-making framework best applies here?",
   "options": [
-   "Use ERM principles to analyze whether the risk reduction from new protocols justifies approval, weighing potential losses against the client's commitment to improvement",
+   "Refer the decision to senior management without conducting individual risk analysis",
    "Automatically deny coverage because the current rate exceeds the benchmark by any margin",
-   "Approve coverage at standard rates since safety improvements show the client cares about risk management",
-   "Refer the decision to senior management without conducting individual risk analysis"
+   "Use ERM principles to analyze whether the risk reduction from new protocols justifies approval, weighing potential losses against the client's commitment to improvement",
+   "Approve coverage at standard rates since safety improvements show the client cares about risk management"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Enterprise Risk Management (ERM) frameworks require analyzing the actual risk-taking decision by weighing the quantified benchmark gap against concrete mitigation steps, not simply rejecting above-benchmark risks or approving without rigorous evaluation. This optimizes the risk-taking decision while maintaining fiduciary standards.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -223,10 +223,10 @@
  {
   "question": "Two insurance applicants in the same industry show identical loss histories, but applicant A operates with robust internal controls and documented compliance procedures, while applicant B lacks formal risk management systems. When analyzing client risk for approval decisions, which factor creates the critical distinction?",
   "options": [
-   "Applicant A's compliance documentation proves they will never experience future losses",
+   "Both applicants present identical approval risk because historical loss rates are the only relevant metric",
    "Applicant B should be approved at a lower premium since they have fewer administrative costs",
    "The presence of control systems and fiduciary care mechanisms in applicant A indicates a lower likelihood of future loss recurrence despite identical historical data",
-   "Both applicants present identical approval risk because historical loss rates are the only relevant metric"
+   "Applicant A's compliance documentation proves they will never experience future losses"
   ],
   "correct_index": 2,
   "explanation": "Analyzing client risk requires evaluating not only historical loss data but also the client's governance structures and commitment to fiduciary care, which signal risk appetite and loss prevention capability. Applicant A's controls suggest lower future risk despite matching past performance, making it a more favorable approval candidate.",
@@ -236,12 +236,12 @@
  {
   "question": "A risk manager must decide whether to approve a $2 million liability policy for a consulting firm operating globally. Industry benchmarking shows similar firms carry $1.5–$3 million in coverage. The applicant's risk assessment reveals moderate exposure with improving claims frequency. Which decision-making approach best demonstrates ethical fiduciary duty?",
   "options": [
-   "Approve the full $2 million to meet the client's request, regardless of whether it matches their assessed risk level",
    "Deny approval entirely since benchmarking shows some firms operate with less coverage",
-   "Analyze the client's specific risk profile against regional benchmarks, document whether $2 million aligns with their exposure and claims trend, and approve or adjust the limit based on justified risk analysis",
-   "Approve only the minimum industry benchmark amount to minimize company exposure"
+   "Approve the full $2 million to meet the client's request, regardless of whether it matches their assessed risk level",
+   "Approve only the minimum industry benchmark amount to minimize company exposure",
+   "Analyze the client's specific risk profile against regional benchmarks, document whether $2 million aligns with their exposure and claims trend, and approve or adjust the limit based on justified risk analysis"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Fiduciary duty requires using benchmarking to contextualize the client's risk while making a decision tailored to their specific profile rather than applying blanket approval or arbitrary minimums. Documented risk analysis ensures the decision serves both the client's actual needs and sound underwriting principles.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -249,12 +249,12 @@
  {
   "question": "A risk manager in a global firm receives insurance applications from subsidiaries in three regions with different regulatory and loss environments. To make consistent, ethical approval decisions across all locations, which framework should guide the process?",
   "options": [
-   "Apply identical underwriting standards and premium rates in all regions to ensure consistency regardless of local risk differences",
-   "Allow each regional manager to make independent approval decisions based on local intuition and past relationships",
    "Use ERM and benchmarking to establish risk-adjusted standards for each region, maintain documented fiduciary criteria, and apply consistent decision-making logic while accounting for local variables",
+   "Allow each regional manager to make independent approval decisions based on local intuition and past relationships",
+   "Apply identical underwriting standards and premium rates in all regions to ensure consistency regardless of local risk differences",
    "Approve all applications from established subsidiaries and deny all from new operations to reduce uncertainty"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Enterprise Risk Management in a global context requires balancing consistency through documented, logical criteria with flexibility to account for regional differences—using benchmarking to justify adjustments while maintaining transparent fiduciary accountability. This approach avoids both arbitrary uniformity and ad-hoc decision-making.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -263,11 +263,11 @@
   "question": "An insurance agent receives a client's medical records as part of a risk assessment. Which action best balances the agent's need for underwriting data with ethical confidentiality obligations?",
   "options": [
    "Store the records in a shared office folder accessible to all underwriting staff to expedite the claims process",
+   "Provide the client with a written summary of all data collected and maintain a single master file for internal audits",
    "Retain only the specific health data needed for underwriting, implement role-based access controls, and delete records after policy issuance per the confidentiality agreement",
-   "Upload the records to a cloud backup service to ensure they are never lost or damaged during office operations",
-   "Provide the client with a written summary of all data collected and maintain a single master file for internal audits"
+   "Upload the records to a cloud backup service to ensure they are never lost or damaged during office operations"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The correct approach implements data security by limiting access (role-based controls), retaining only necessary information, and removing data when no longer needed—all core confidentiality agreement practices. The other options either expose data unnecessarily, use inadequate security measures, or conflate backup procedures with privacy obligations.",
   "knowledge_area": "Ethics",
   "difficulty": "hard"
@@ -276,11 +276,11 @@
   "question": "A state insurance commissioner's office enforces a regulation requiring agents to verify client identity before disclosing policy details. An agent's assistant receives a phone request for coverage information from someone claiming to be the policyholder. What does the regulation primarily protect against?",
   "options": [
    "Preventing agents from communicating with family members or authorized representatives of the policyholder",
-   "Limiting the types of policy information that can be disclosed to any caller, regardless of identity verification",
    "Unauthorized disclosure of personal and financial information to third parties who lack legitimate access rights",
+   "Limiting the types of policy information that can be disclosed to any caller, regardless of identity verification",
    "Reducing the speed at which customer service requests are processed during high-volume claim periods"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Federal and state privacy regulations (such as GLBA and state data-protection laws) require identity verification to prevent unauthorized access to sensitive personal and financial data. The other options either mischaracterize the regulation's scope (allowing authorized representatives, not blocking all family communication), confuse procedural limits with disclosure rules, or misidentify the regulation's purpose.",
   "knowledge_area": "Ethics",
   "difficulty": "hard"
@@ -288,12 +288,12 @@
  {
   "question": "An insurance brokerage discovers that an employee inadvertently emailed a client's claims file containing Social Security number and medical history to an external email address. Under federal privacy law obligations, which response aligns most closely with disclosure and breach-notification requirements?",
   "options": [
-   "Immediately notify affected clients, document the incident, conduct a risk assessment, and comply with state-specific notification timelines and content rules",
-   "Secure the file from further sharing, review internal access logs, and provide a summary report to the state insurance commissioner within 90 days",
    "Contact the external recipient to request deletion and file a police report without alerting clients unless the state explicitly mandates notification",
-   "Audit all employee email accounts, restrict external email sending for six months, and require clients to place fraud alerts on their credit files"
+   "Audit all employee email accounts, restrict external email sending for six months, and require clients to place fraud alerts on their credit files",
+   "Secure the file from further sharing, review internal access logs, and provide a summary report to the state insurance commissioner within 90 days",
+   "Immediately notify affected clients, document the incident, conduct a risk assessment, and comply with state-specific notification timelines and content rules"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Federal and state privacy laws (GLBA, state breach-notification statutes) require timely notice to affected individuals, incident documentation, risk assessment, and compliance with state-specific notification timelines. The other options either delay or omit client notification, shift focus to internal controls alone, or impose remedies that exceed regulatory requirements.",
   "knowledge_area": "Ethics",
   "difficulty": "hard"
@@ -301,10 +301,10 @@
  {
   "question": "A confidentiality agreement signed by an insurance agent specifies that client records may not be shared without written consent. The agent's manager requests access to three client files to conduct a routine quality-assurance review. What is the agent's most ethically sound course of action?",
   "options": [
-   "Deny the manager access entirely because the confidentiality agreement prohibits any sharing outside the immediate client relationship",
-   "Provide the files only if the manager signs the same confidentiality agreement, limiting access to data necessary for the review, and documents the authorized disclosure",
    "Share the files verbally to comply with the spirit of confidentiality while allowing the quality-assurance process to proceed",
-   "Request blanket client consent at policy renewal to authorize all future internal reviews and audits without case-by-case approval"
+   "Provide the files only if the manager signs the same confidentiality agreement, limiting access to data necessary for the review, and documents the authorized disclosure",
+   "Request blanket client consent at policy renewal to authorize all future internal reviews and audits without case-by-case approval",
+   "Deny the manager access entirely because the confidentiality agreement prohibits any sharing outside the immediate client relationship"
   ],
   "correct_index": 1,
   "explanation": "Confidentiality agreements typically permit authorized internal use for legitimate business purposes (like QA) when the recipient also agrees to maintain confidentiality and access is limited to necessary information. Denying all access may hinder valid oversight; verbal sharing and blanket advance consent both weaken data security protections.",
@@ -314,12 +314,12 @@
  {
   "question": "An insurance company's data security policy requires encryption of client files during transmission and storage. An agent working remotely needs to email a risk-assessment form containing client financial data to the underwriting team. Which approach best satisfies both the data-security requirement and the confidentiality agreement?",
   "options": [
-   "Use password-protected PDF encryption, send through the company's secure portal, and obtain documented acknowledgment that the recipient maintains confidentiality",
-   "Encrypt the file using standard ZIP compression, email it to the company domain, and rely on the company firewall to protect data in transit",
+   "Save the file to a personal cloud storage account with read-only permissions, share the link internally, and delete the file after 30 days",
    "Print the assessment, scan it at the office the next business day, and file it in the locked cabinet after the underwriting review is complete",
-   "Save the file to a personal cloud storage account with read-only permissions, share the link internally, and delete the file after 30 days"
+   "Use password-protected PDF encryption, send through the company's secure portal, and obtain documented acknowledgment that the recipient maintains confidentiality",
+   "Encrypt the file using standard ZIP compression, email it to the company domain, and rely on the company firewall to protect data in transit"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Encryption of sensitive data during transmission and storage, use of secure internal channels, and documented confidentiality acknowledgment from recipients all align with both data-security standards and confidentiality agreement obligations. ZIP compression is insufficient encryption; firewall protection alone does not encrypt the file; delayed scanning weakens security; and personal cloud storage violates corporate security policy and creates unauthorized external storage risks.",
   "knowledge_area": "Ethics",
   "difficulty": "hard"
@@ -329,8 +329,8 @@
   "options": [
    "Long-term disability insurance with a 90-day elimination period and a term life policy with a 20-year duration matching dependent support needs",
    "Group health insurance through a professional association and Social Security benefits, which automatically cover disability and survivor income",
-   "An individual health plan with high deductibles and a whole life policy that builds cash value for retirement withdrawals",
-   "Disability insurance with a 180-day waiting period and universal life insurance that provides flexible premiums and death benefits"
+   "Disability insurance with a 180-day waiting period and universal life insurance that provides flexible premiums and death benefits",
+   "An individual health plan with high deductibles and a whole life policy that builds cash value for retirement withdrawals"
   ],
   "correct_index": 0,
   "explanation": "The correct answer balances immediate income protection during disability (long-term coverage with reasonable elimination period) with death benefit protection tied to when dependents need support (20-year term life). While Social Security provides some disability and survivor benefits, relying solely on them leaves significant gaps; whole life and universal life focus on cash value or flexibility rather than addressing the core need of income replacement during working years.",
@@ -340,12 +340,12 @@
  {
   "question": "A 52-year-old employee with an employer-sponsored health plan and a chronic condition is planning for potential job loss. How do government programs and private insurance sources work together to manage healthcare costs and income loss risks during this transition?",
   "options": [
-   "COBRA continuation coverage bridges the gap until Medicare eligibility at 65, while state disability programs provide partial wage replacement if the chronic condition prevents immediate reemployment",
    "The employer plan converts automatically to individual coverage, supplemented by Medicaid if income drops below thresholds, eliminating the need for additional private disability insurance",
-   "Social Security Disability Insurance (SSDI) covers all healthcare expenses and income loss simultaneously, making supplemental coverage redundant for workers over age 50",
-   "Unemployment insurance provides healthcare subsidies through marketplace plans, while workers' compensation covers any disability costs related to the chronic condition"
+   "Unemployment insurance provides healthcare subsidies through marketplace plans, while workers' compensation covers any disability costs related to the chronic condition",
+   "COBRA continuation coverage bridges the gap until Medicare eligibility at 65, while state disability programs provide partial wage replacement if the chronic condition prevents immediate reemployment",
+   "Social Security Disability Insurance (SSDI) covers all healthcare expenses and income loss simultaneously, making supplemental coverage redundant for workers over age 50"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "COBRA allows continuation of employer coverage (typically 18 months), bridging to Medicare eligibility, while state or federal disability programs replace some lost wages if the individual cannot work. The other options misrepresent program scope: Medicaid requires income thresholds (not automatic), SSDI covers income but healthcare coverage depends on state/program rules, and unemployment insurance and workers' compensation have narrower scopes not triggered by chronic illness alone.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -353,12 +353,12 @@
  {
   "question": "An insurance professional is advising a 68-year-old client with arthritis who anticipates needing assisted living within five years. Which insurance product and funding strategy best protects against the high costs of extended custodial and personal care services?",
   "options": [
-   "Long-term care insurance purchased now to cover facility and home care expenses, supplemented by setting aside funds in a dedicated account since underwriting may become difficult or more expensive due to pre-existing conditions",
    "Medicare supplemental (Medigap) insurance that covers all long-term care costs and automatically qualifies the client for Medicaid planning after two years of coverage",
+   "Immediate annuity purchase with long-term care riders that guarantee entry into preferred facilities and cover both medical and non-medical care indefinitely",
    "A combination of term life insurance and health savings account contributions, which can be redirected to long-term care expenses without tax penalties after age 65",
-   "Immediate annuity purchase with long-term care riders that guarantee entry into preferred facilities and cover both medical and non-medical care indefinitely"
+   "Long-term care insurance purchased now to cover facility and home care expenses, supplemented by setting aside funds in a dedicated account since underwriting may become difficult or more expensive due to pre-existing conditions"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Long-term care insurance specifically covers custodial care (assistance with daily living), facility charges, and home care—the exact services anticipated. At 68 with a pre-existing condition, purchasing now locks in coverage before underwriting becomes restrictive; supplementing with dedicated savings provides a cushion. Medigap covers medical costs but not custodial care; HSAs have limited application; and annuities with riders are expensive and do not typically guarantee facility placement or indefinite coverage at fixed costs.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -368,8 +368,8 @@
   "options": [
    "Health insurance remains constant while disability coverage duration is extended as earning years increase; term life insurance should increase with mortgage and family obligations, then gradually decrease as investments mature and dependents become independent",
    "All three policies should increase proportionally every five years to match inflation, with permanent life insurance replacing term coverage at age 50 to eliminate future premiums",
-   "Health and disability insurance needs decline after age 40 since accumulated savings reduce income replacement risk; life insurance should be converted to whole life regardless of family status changes",
-   "Disability insurance should be reduced as Social Security credits accumulate; health coverage should shift to high-deductible plans at age 35; life insurance should remain level through retirement"
+   "Disability insurance should be reduced as Social Security credits accumulate; health coverage should shift to high-deductible plans at age 35; life insurance should remain level through retirement",
+   "Health and disability insurance needs decline after age 40 since accumulated savings reduce income replacement risk; life insurance should be converted to whole life regardless of family status changes"
   ],
   "correct_index": 0,
   "explanation": "A sound plan evolves as responsibilities and resources change: health coverage adapts to life stage (family additions, retirement changes); disability needs peak during peak earning years (so coverage duration should extend as working years increase); and life insurance needs follow dependents and debt (high when young with a mortgage and children, declining as assets grow and children become independent). The other options either freeze coverage inappropriately or make sweeping changes tied to age rather than actual financial circumstances.",
@@ -380,9 +380,9 @@
   "question": "A 55-year-old middle-income worker anticipates Social Security benefits beginning at age 67 and has modest savings. Which combination of government income-support programs and private insurance addresses the risk of job loss due to illness or disability before Social Security eligibility?",
   "options": [
    "Long-term disability insurance with benefits extending to age 67 (aligned with Social Security start date), supplemented by state unemployment insurance for initial income loss and potential Medicaid enrollment if assets drop below state thresholds after prolonged disability",
+   "Individual disability insurance with a short elimination period and supplemental life insurance, which can be converted to annuity income to bridge the gap between disability onset and Social Security benefits",
    "Social Security Disability Insurance (SSDI) filing immediately upon job loss, which provides automatic Medicare coverage after two years and guarantees income until full retirement age without requiring private disability insurance",
-   "A combination of short-term disability through the employer and workers' compensation coverage, which together provide full income replacement until age 67 regardless of the disability cause or employment status",
-   "Individual disability insurance with a short elimination period and supplemental life insurance, which can be converted to annuity income to bridge the gap between disability onset and Social Security benefits"
+   "A combination of short-term disability through the employer and workers' compensation coverage, which together provide full income replacement until age 67 regardless of the disability cause or employment status"
   ],
   "correct_index": 0,
   "explanation": "Long-term disability insurance specifically bridges the 12-year gap until Social Security eligibility at 67, while unemployment insurance covers the initial job-loss period and Medicaid provides a healthcare safety net if assets are depleted during prolonged disability. SSDI has strict work-history and medical requirements and only covers work-related or long-term conditions; employer short-term disability and workers' compensation are too narrow in scope (employer-dependent and injury-specific, respectively); and annuity conversion does not address the income gap as efficiently as coordinated disability and income-support programs.",
@@ -392,12 +392,12 @@
  {
   "question": "A risk manager is evaluating two insurance programs for a multinational corporation operating in emerging markets. Program A shows a 12% loss ratio with claims processing in 45 days, while Program B shows a 9% loss ratio but requires 90-day claims processing and higher premiums. Which analytical approach best supports this decision?",
   "options": [
-   "Benchmarking Program A's loss ratio against industry standards for similar global operations to assess relative performance and cost-effectiveness",
    "Selecting Program B based solely on the lower loss ratio, since risk reduction is the primary objective in global environments",
    "Comparing both programs' claims timelines without regard to loss ratios, as speed of resolution indicates program quality",
-   "Rejecting both programs and self-insuring instead, since neither program offers loss ratios below 8 percent"
+   "Rejecting both programs and self-insuring instead, since neither program offers loss ratios below 8 percent",
+   "Benchmarking Program A's loss ratio against industry standards for similar global operations to assess relative performance and cost-effectiveness"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Benchmarking against industry standards allows the risk manager to contextualize both loss ratios and operational metrics within global norms, making a data-driven comparison. Selecting based on loss ratio alone ignores claims processing impact on cash flow and operational continuity, and rejecting both programs without comparative analysis fails to optimize risk-taking decisions.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -405,12 +405,12 @@
  {
   "question": "An insurance underwriter must decide whether to approve coverage for a manufacturing client with a recent warehouse fire loss, inconsistent safety inspection records, and management turnover in the risk department. Which combination of factors demonstrates the fiduciary duty of care in this approval decision?",
   "options": [
+   "Approving with a minor premium surcharge, since the management turnover indicates the company is actively replacing underperforming staff",
    "Approving coverage at standard rates because the client has maintained continuous insurance for five years and loss was accidental",
-   "Requiring documented safety remediation, current risk assessments, and proof of adequate risk management leadership before approval at any rate",
    "Denying coverage outright based on the warehouse fire alone, regardless of the client's corrective actions or risk mitigation efforts",
-   "Approving with a minor premium surcharge, since the management turnover indicates the company is actively replacing underperforming staff"
+   "Requiring documented safety remediation, current risk assessments, and proof of adequate risk management leadership before approval at any rate"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The fiduciary duty of care requires the underwriter to evaluate the client's actual risk profile through current documentation and corrective measures, not historical tenure or assumptions. Approving without evidence of remediation or denying without allowing corrective action both violate the underwriter's obligation to make informed, ethical decisions that protect all parties.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -418,10 +418,10 @@
  {
   "question": "A risk manager in a global retail organization must optimize risk-taking decisions across three business units with different loss histories and geographic exposures. Unit A (North America, 18% loss ratio) wants increased coverage limits; Unit B (Asia-Pacific, 8% loss ratio) seeks lower premiums; Unit C (Europe, 12% loss ratio) proposes self-insurance for smaller claims. What approach best aligns with Enterprise Risk Management principles?",
   "options": [
-   "Increasing coverage limits for Unit A while reducing premiums for Unit B, since each unit's request matches its loss performance relative to the others",
+   "Maintaining uniform coverage terms globally to ensure consistency, regardless of regional loss ratios or market conditions",
    "Evaluating each unit's loss ratio against regional benchmarks and risk tolerance thresholds, then allocating capital and coverage based on optimized risk-return profiles",
    "Implementing Unit C's self-insurance proposal across all units to minimize premium costs, since lower loss claims reduce overall enterprise exposure",
-   "Maintaining uniform coverage terms globally to ensure consistency, regardless of regional loss ratios or market conditions"
+   "Increasing coverage limits for Unit A while reducing premiums for Unit B, since each unit's request matches its loss performance relative to the others"
   ],
   "correct_index": 1,
   "explanation": "ERM requires comparing each unit's risk profile against relevant benchmarks and organizational risk appetite, then making capital allocation decisions that optimize the risk-return trade-off. Responding to requests without benchmarking analysis, implementing identical policies across different risk profiles, or expanding coverage for high-loss units without investigation all fail to optimize risk-taking within an enterprise framework.",
@@ -431,10 +431,10 @@
  {
   "question": "During the underwriting process for a professional services firm, the risk manager discovers that the client's loss data shows a 6% average claims frequency but reported a 4% frequency to competitors' insurers. The client explains the discrepancy as outdated records. Which decision best reflects both ethical duty and sound risk analysis?",
   "options": [
-   "Accepting the client's explanation and approving coverage, since professional services firms typically have low claims frequency and 2% variance is negligible",
+   "Using the 4% figure reported to competitors, since it represents the client's official loss history in the insurance market",
    "Requesting current loss runs, audit documentation, and verification of claims reporting practices before proceeding, then declining if discrepancies remain unexplained",
    "Approving coverage at standard rates but adding a clause requiring future claims verification, deferring the accuracy investigation until after renewal",
-   "Using the 4% figure reported to competitors, since it represents the client's official loss history in the insurance market"
+   "Accepting the client's explanation and approving coverage, since professional services firms typically have low claims frequency and 2% variance is negligible"
   ],
   "correct_index": 1,
   "explanation": "Fiduciary duty requires the underwriter to demand accurate, current information before making an approval decision—not to defer investigation or accept unverified explanations for material discrepancies. Using unverified figures or accepting outdated records violates the underwriter's obligation to assess actual risk and make informed decisions based on reliable data.",
@@ -444,12 +444,12 @@
  {
   "question": "A corporate risk manager must analyze approval criteria for a client in a developing nation with no established insurance market data and limited regulatory oversight. Local competitors report loss ratios between 15% and 22%, but the client has no prior claims history. Which decision framework best applies?",
   "options": [
-   "Benchmarking the client's operations against regional competitors' loss ratios, conducting direct risk assessments, and establishing approval conditions based on comparable market data and identified control gaps",
-   "Automatically approving coverage because the lack of prior claims demonstrates the client's low-risk profile in an unstable insurance market",
    "Declining coverage because the absence of established benchmarks makes it impossible to assess risk in developing nations reliably",
+   "Automatically approving coverage because the lack of prior claims demonstrates the client's low-risk profile in an unstable insurance market",
+   "Benchmarking the client's operations against regional competitors' loss ratios, conducting direct risk assessments, and establishing approval conditions based on comparable market data and identified control gaps",
    "Using a conservative approach that applies developed-market standards uniformly, since loss data inconsistency indicates higher inherent risk"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "When market benchmarks are limited, the risk manager must benchmark against available regional comparables and conduct direct risk assessment of the client's operations, controls, and environment to make an informed approval decision. Automatic approval ignores the absence of loss history data, declining eliminates viable business without analysis, and applying foreign standards ignores local market context—none reflect sound global decision-making.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -457,12 +457,12 @@
  {
   "question": "A risk manager is evaluating whether to approve coverage for a manufacturing client with a history of equipment failures. The manager reviews industry benchmarking data showing the client's loss frequency is 40% above peer averages, yet the client's loss severity remains within normal ranges. Which decision-making approach best supports approval or denial in this scenario?",
   "options": [
-   "Approve coverage because loss severity is acceptable and aligns with peer data standards for underwriting decisions",
-   "Deny coverage because the elevated loss frequency indicates a pattern that benchmarking data reveals exceeds acceptable risk parameters",
    "Approve coverage conditionally by requiring the client to implement loss control measures that reduce frequency to peer benchmarks",
-   "Deny coverage because both frequency and severity metrics must be below average to qualify for any insurance product"
+   "Deny coverage because both frequency and severity metrics must be below average to qualify for any insurance product",
+   "Approve coverage because loss severity is acceptable and aligns with peer data standards for underwriting decisions",
+   "Deny coverage because the elevated loss frequency indicates a pattern that benchmarking data reveals exceeds acceptable risk parameters"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Benchmarking reveals the client's loss frequency significantly exceeds peer norms, signaling elevated risk even though severity is acceptable. In global risk environments, frequency patterns—not just severity—drive underwriting decisions; approval would violate fiduciary duty of care to the insurer. The correct answer reflects hard decision-making that acknowledges data-driven comparative analysis.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -470,10 +470,10 @@
  {
   "question": "An insurance firm uses enterprise risk management (ERM) principles to evaluate a client's request for expanded coverage across three international markets. The client's risk profile shows stable operational controls domestically but limited compliance infrastructure in two emerging markets. How should the ERM framework guide the approval decision?",
   "options": [
-   "Optimize risk-taking by approving full coverage in all markets because the domestic operations demonstrate acceptable overall risk tolerance",
+   "Optimize risk-taking by approving coverage globally and using premium adjustments to compensate for the emerging market control gaps",
    "Optimize risk-taking by approving coverage only in markets where operational controls and compliance systems match domestic standards",
    "Optimize risk-taking by denying all coverage until the client upgrades compliance infrastructure across every geography simultaneously",
-   "Optimize risk-taking by approving coverage globally and using premium adjustments to compensate for the emerging market control gaps"
+   "Optimize risk-taking by approving full coverage in all markets because the domestic operations demonstrate acceptable overall risk tolerance"
   ],
   "correct_index": 1,
   "explanation": "ERM frameworks optimize risk-taking by aligning coverage scope with demonstrated control environments; approving only where controls are robust protects both the insurer and the client. Approval in weak-control markets (option C) or premium-only adjustment (option D) shifts rather than mitigates unacceptable risk. This hard decision requires distinguishing between risk transfer and true risk optimization.",
@@ -483,12 +483,12 @@
  {
   "question": "A compliance officer must decide whether to renew coverage for a financial services client that disclosed a minor regulatory fine during the renewal period. Benchmarking data shows similar firms in the sector average 1.2 regulatory findings per year; this client reported 1.1 findings annually. The client argues the fine was procedural and does not reflect systemic risk. What ethical principle should guide the decision?",
   "options": [
-   "Fiduciary duty of care mandates renewal because the client's regulatory frequency is below peer benchmarks and procedural violations pose minimal systemic risk",
-   "Fiduciary duty of care requires detailed investigation of the fine's root cause and systemic implications rather than automatic renewal based on comparative metrics alone",
+   "Fiduciary duty of care supports renewal conditional on the client accepting a premium increase equal to the average peer firm's annual regulatory settlement costs",
    "Fiduciary duty of care justifies denial because any regulatory finding signals higher risk than the majority of peer firms in the benchmark cohort",
-   "Fiduciary duty of care supports renewal conditional on the client accepting a premium increase equal to the average peer firm's annual regulatory settlement costs"
+   "Fiduciary duty of care requires detailed investigation of the fine's root cause and systemic implications rather than automatic renewal based on comparative metrics alone",
+   "Fiduciary duty of care mandates renewal because the client's regulatory frequency is below peer benchmarks and procedural violations pose minimal systemic risk"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Fiduciary duty of care requires the decision-maker to evaluate the substance and context of disclosed information, not merely compare it to benchmarks. While the frequency appears acceptable, the officer must investigate whether the fine reflects a control failure or isolated procedural misstep—benchmarks alone cannot replace diligent risk analysis. This hard decision tests the tension between quantitative metrics and qualitative judgment.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -496,8 +496,8 @@
  {
   "question": "A risk manager analyzes approval criteria for a commercial real estate developer seeking coverage for a mixed-use project in a region prone to natural disasters. Benchmarking shows comparable projects in the region have loss ratios averaging 8–12% annually. The developer's site engineering analysis predicts 6% annual losses but assumes mitigation measures will reduce exposure. The engineering firm is reputable but has never worked in this region. How should the manager apply decision-making discipline?",
   "options": [
-   "Approve coverage because the developer's projected loss ratio of 6% is below the regional benchmark and the mitigation plan relies on a reputable engineer",
    "Deny coverage because the developer's loss projection is unproven in the regional context and falls below benchmarks by a margin suggesting unrealistic assumptions",
+   "Approve coverage because the developer's projected loss ratio of 6% is below the regional benchmark and the mitigation plan relies on a reputable engineer",
    "Approve coverage at a premium reflecting the regional 8–12% benchmark range rather than the developer's 6% projection, pending validation of mitigation effectiveness",
    "Deny coverage until the developer provides loss history from similar projects completed in the same region by the same mitigation engineer"
   ],
@@ -509,12 +509,12 @@
  {
   "question": "A senior underwriter evaluates approval for a healthcare facility in a country with emerging regulatory frameworks. Domestic benchmarking data is unavailable because comparable facilities in that country are limited. The facility's risk profile shows strong operational controls and financial stability, but compliance infrastructure differs significantly from the underwriter's home market standards. Which decision-making approach best honors both fiduciary duty and risk optimization?",
   "options": [
-   "Deny coverage because the absence of domestic benchmarking data prevents valid comparative risk analysis and compliance standards differ from home market norms",
-   "Approve coverage because the facility demonstrates strong operational and financial controls that compensate for regulatory environment differences in emerging markets",
    "Analyze the facility's controls against global best practices rather than domestic benchmarks, establish compliance baselines through diligent investigation, and approve conditionally with monitoring requirements",
-   "Approve coverage at a significantly higher premium to offset the inability to benchmark and the regulatory framework uncertainty in the emerging market"
+   "Approve coverage because the facility demonstrates strong operational and financial controls that compensate for regulatory environment differences in emerging markets",
+   "Approve coverage at a significantly higher premium to offset the inability to benchmark and the regulatory framework uncertainty in the emerging market",
+   "Deny coverage because the absence of domestic benchmarking data prevents valid comparative risk analysis and compliance standards differ from home market norms"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "In global environments without domestic benchmarks, fiduciary duty requires substituting global standards and direct investigation rather than denial or blind approval. Conditional approval with monitoring transforms an unbenchmarkable risk into a manageable one by creating accountability mechanisms. This hard decision reflects the reality that benchmarking is one tool; when unavailable, deeper analysis of control substance and commitment to oversight become the decision driver.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -523,9 +523,9 @@
   "question": "A risk manager is evaluating two competing insurance products for a multinational client operating in emerging markets. Product A offers broader coverage but higher premiums; Product B has lower costs but excludes certain regional exposures. Which analytical approach best supports an ethical approval decision aligned with fiduciary duty?",
   "options": [
    "Compare total cost of ownership against client cash flow projections and document how exclusions affect the client's risk profile in each geography",
+   "Request claims history from the insurer's prior clients to validate product performance in similar global environments",
    "Benchmark both products against industry standard pricing to ensure the premiums are market-competitive and reasonably priced",
-   "Select the lower-cost option to minimize client expenses and demonstrate cost-consciousness to the client's board",
-   "Request claims history from the insurer's prior clients to validate product performance in similar global environments"
+   "Select the lower-cost option to minimize client expenses and demonstrate cost-consciousness to the client's board"
   ],
   "correct_index": 0,
   "explanation": "Fiduciary duty of care requires documenting how insurance recommendations protect the client's interests—here, analyzing exclusions against actual exposures and comparing full-cost impact, not just price. Benchmarking (B) and claims validation (D) inform decisions but do not directly address the duty to disclose risk gaps; selecting based solely on cost (C) violates the care standard when it ignores material gaps.",
@@ -536,9 +536,9 @@
   "question": "During underwriting review, a broker discovers that a construction client's loss-prevention practices are below industry benchmarks for fall-protection systems, yet the client reports zero incidents in five years. How should the risk manager synthesize benchmarking data and loss history to inform the approval decision?",
   "options": [
    "Approve coverage at standard rates since actual loss experience demonstrates effectiveness regardless of process benchmarks",
-   "Deny coverage until practices meet or exceed benchmarked standards, as benchmarks reflect industry best practices and future risk",
+   "Benchmark the client's incident rate against competitors in the same region to determine if local standards differ from industry norms",
    "Require certification of current practices against benchmarked standards and condition approval on a remediation timeline with interim rate adjustment",
-   "Benchmark the client's incident rate against competitors in the same region to determine if local standards differ from industry norms"
+   "Deny coverage until practices meet or exceed benchmarked standards, as benchmarks reflect industry best practices and future risk"
   ],
   "correct_index": 2,
   "explanation": "Hard decisions in risk management often involve reconciling conflicting signals—here, good loss history versus weak processes. The ethically sound approach conditions approval on closing the gap (acknowledging both data sources) rather than ignoring benchmarks (A) or automatically denying based on one metric (B). Option D delays decision-making without resolving the underlying risk mismatch.",
@@ -548,12 +548,12 @@
  {
   "question": "An enterprise risk manager is structuring a global risk mitigation strategy for a client with operations across three continents. Each region has different regulatory requirements, loss patterns, and insurable capacity. Which decision-making framework best balances optimized risk-taking with fiduciary obligations in this multi-environment context?",
   "options": [
-   "Identify the region with the lowest historical claims frequency and replicate its risk controls and insurance structure across all regions",
    "Map each region's specific exposures and regulatory constraints, benchmark risk metrics against regional peers, and optimize coverage and retention by geography with clear documentation of trade-offs",
    "Consolidate all global operations under a single insurance program negotiated at group rates to ensure uniform protection and cost efficiency",
+   "Identify the region with the lowest historical claims frequency and replicate its risk controls and insurance structure across all regions",
    "Establish a corporate risk appetite statement that applies equally to all regions regardless of local conditions to maintain consistency"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Enterprise risk management in global environments requires analyzing region-specific problems (not replicating one region's controls globally) and optimizing risk-taking decisions by benchmarking against comparable peers and documenting trade-offs—the hallmark of informed, defensible fiduciary decisions. Options A and D ignore local variation; option C prioritizes cost over tailored protection.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -562,11 +562,11 @@
   "question": "A risk manager must decide whether to approve commercial general liability coverage for a consulting firm whose client roster includes government contracts with stringent compliance requirements. The firm's loss history is clean, but its contract review process lacks documented procedures for scope verification. What decision-making approach best reflects fiduciary duty of care?",
   "options": [
    "Approve coverage based on loss history because prior claims experience is the most reliable predictor of future risk in professional services",
-   "Require documented process improvements in contract scope verification before approval, as fiduciary duty includes assessing operational controls that influence client-facing risks",
+   "Approve with a higher deductible and premium adjustment to offset the undocumented procedure risk while avoiding coverage denial",
    "Deny coverage until the firm obtains independent compliance audit certification from a government-approved auditor",
-   "Approve with a higher deductible and premium adjustment to offset the undocumented procedure risk while avoiding coverage denial"
+   "Require documented process improvements in contract scope verification before approval, as fiduciary duty includes assessing operational controls that influence client-facing risks"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Fiduciary duty of care requires analyzing all material risk factors, not relying solely on historical loss data (A). The absence of documented contract review procedures represents a control gap that increases the likelihood of scope disputes or compliance violations on government contracts, even without prior claims. Conditioning approval on process improvement (B) fulfills the duty; denial (C) is premature; premium adjustment alone (D) doesn't address the underlying control deficiency.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -575,11 +575,11 @@
   "question": "A risk manager evaluates two competing approaches for a nonprofit client's directors and officers liability program. Approach X offers standard coverage at lower cost but excludes volunteer director claims. Approach Y includes volunteer coverage at 40% higher cost but carries a $10,000 per-claim deductible. Both carry identical aggregate limits. How should the manager resolve this optimization decision ethically?",
   "options": [
    "Choose Approach X because lower premiums reduce the client's financial burden and volunteer claims are statistically rare in nonprofits",
-   "Choose Approach Y based on benchmarking nonprofit D&O programs, which typically include volunteer protection, and document the coverage trade-offs and cost impact for the client's review",
    "Recommend a hybrid: purchase Approach X and advise the client to establish a self-insurance reserve for volunteer claims at half the Approach Y premium difference",
+   "Choose Approach Y based on benchmarking nonprofit D&O programs, which typically include volunteer protection, and document the coverage trade-offs and cost impact for the client's review",
    "Require the client to obtain board-level written acknowledgment of the coverage gap before approving either approach without recommendation"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "This hard decision involves optimizing cost against risk exposure while honoring fiduciary duty. Approach B (benchmarking, documenting trade-offs) demonstrates care by showing the client what comparable organizations choose and why, enabling informed decision-making. Option A ignores a real exposure; option C shifts risk to the client without professional guidance; option D abdicates the advisory role that fiduciary duty requires.",
   "difficulty": "hard",
   "knowledge_area": "Decision Making"
@@ -587,12 +587,12 @@
  {
   "question": "A 35-year-old self-employed consultant with two dependents is evaluating insurance needs. Which combination of coverage would most appropriately address the primary risks at this life stage?",
   "options": [
-   "Health insurance through the ACA marketplace, disability insurance covering 60% of income, and term life insurance with a 20-year term",
-   "Employer-sponsored health coverage, short-term disability only, and whole life insurance with a $500,000 benefit",
    "Health insurance with a high deductible, long-term care insurance, and a universal life policy for wealth accumulation",
-   "Government Medicare benefits, social security disability insurance, and a 10-year decreasing term life policy"
+   "Government Medicare benefits, social security disability insurance, and a 10-year decreasing term life policy",
+   "Health insurance through the ACA marketplace, disability insurance covering 60% of income, and term life insurance with a 20-year term",
+   "Employer-sponsored health coverage, short-term disability only, and whole life insurance with a $500,000 benefit"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "At age 35 with dependents and self-employment income, the primary risks are loss of income due to illness/disability and premature death. A combination of marketplace health coverage, income-replacement disability insurance (typically 60% of earnings), and sufficient term life insurance addresses these near-term needs cost-effectively. The other options either overemphasize long-term care (inappropriate at 35), rely on government programs not available to the self-employed, or prioritize wealth accumulation over income protection.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -600,12 +600,12 @@
  {
   "question": "A 58-year-old employee with a chronic condition is comparing Social Security Disability Insurance (SSDI) with private long-term disability insurance as potential income sources. What is the key distinction in how these programs determine eligibility?",
   "options": [
-   "SSDI requires total inability to work in any occupation, while private disability typically replaces a percentage of pre-disability income after a waiting period",
    "Private disability insurance covers pre-existing conditions immediately, while SSDI has a mandatory 12-month waiting period before benefits begin",
-   "SSDI is based on age and years of contribution, while private disability uses medical severity and occupational capacity assessments",
-   "Both programs require proof of income loss, but SSDI integrates with Medicare while private insurance does not provide health coverage"
+   "SSDI requires total inability to work in any occupation, while private disability typically replaces a percentage of pre-disability income after a waiting period",
+   "Both programs require proof of income loss, but SSDI integrates with Medicare while private insurance does not provide health coverage",
+   "SSDI is based on age and years of contribution, while private disability uses medical severity and occupational capacity assessments"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "SSDI (a government program) is strictly based on whether the applicant cannot engage in substantial gainful activity in ANY occupation, making it very restrictive. Private long-term disability insurance, by contrast, typically covers partial income loss and replaces a defined percentage (often 50-70%) of pre-disability earnings after a specified elimination period. These represent fundamentally different eligibility models: SSDI is all-or-nothing, while private disability is income-replacement focused.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -615,10 +615,10 @@
   "options": [
    "Disability coverage becomes less critical as long-term care insurance is added and life insurance needs remain constant to protect dependents throughout retirement",
    "Both coverages should decrease proportionally because government benefits replace an increasing share of lost income and estate values typically decline",
-   "Disability insurance needs diminish as earned income decreases and retirement income becomes fixed, while life insurance needs depend on remaining dependent obligations and estate goals",
-   "Life insurance should convert to permanent coverage while disability insurance is eliminated, since mortality risk increases while disability in later years is covered by Medicare"
+   "Life insurance should convert to permanent coverage while disability insurance is eliminated, since mortality risk increases while disability in later years is covered by Medicare",
+   "Disability insurance needs diminish as earned income decreases and retirement income becomes fixed, while life insurance needs depend on remaining dependent obligations and estate goals"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "As income shifts from earned wages to fixed retirement sources (Social Security, pensions, investments), the need for disability insurance naturally decreases because there is less income to replace. Life insurance needs, however, depend on whether dependents remain, estate goals, and tax obligations—not primarily on age. A 70-year-old may need substantial life insurance to cover a surviving spouse or fund charitable bequests, while disability insurance becomes largely unnecessary. The other options incorrectly assume fixed relationships between age and coverage needs.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"
@@ -627,9 +627,9 @@
   "question": "A employee considering sources of health and disability insurance is comparing employer-sponsored coverage with government programs available through Social Security. Which statement accurately reflects how these sources complement or overlap in the income-loss landscape?",
   "options": [
    "Employer disability plans and Social Security Disability Insurance both replace earned income, but SSDI requires total work inability while employer plans typically use own-occupation definitions",
+   "Employer-sponsored disability covers short-term income loss up to two years, while SSDI provides only catastrophic coverage for permanent total disability lasting more than five years",
    "Government programs like SSDI are primary sources for employees, while employer coverage is supplemental and only activates after government benefits are exhausted",
-   "Health insurance from employers covers acute illness costs, while SSDI covers ongoing income replacement, and both integrate fully so there is no duplication",
-   "Employer-sponsored disability covers short-term income loss up to two years, while SSDI provides only catastrophic coverage for permanent total disability lasting more than five years"
+   "Health insurance from employers covers acute illness costs, while SSDI covers ongoing income replacement, and both integrate fully so there is no duplication"
   ],
   "correct_index": 0,
   "explanation": "Employer-sponsored disability plans and SSDI serve similar purposes (income replacement during disability) but use different eligibility standards. Employer plans often use own-occupation or modified own-occupation definitions (can you do your specific job?), while SSDI uses a strict any-occupation standard (can you do ANY substantial work?). These definitions create different trigger points and are not fully overlapping. The other options mischaracterize the coordination, permanence requirements, and benefit structures of these programs.",
@@ -639,12 +639,12 @@
  {
   "question": "A 50-year-old professional with significant assets, adult children, and an aging parent is designing a financial plan that includes long-term care insurance. How should the purpose and timing of this coverage fit within the broader insurance strategy?",
   "options": [
-   "Long-term care insurance should be purchased now to lock in lower premiums and cover potential costs of extended care for self or family members, while disability insurance protects current earned income",
-   "Long-term care insurance is secondary to life insurance because most people rely on Medicare for care costs, and the policy should emphasize asset preservation in case of early death",
+   "Long-term care insurance is unnecessary with sufficient assets, so the plan should rely on home equity, investment liquidation, and spousal care to cover potential nursing or assisted-living expenses",
    "Long-term care insurance should replace traditional health insurance at age 50 since acute care becomes less relevant and focus shifts to chronic condition management and extended facility care",
-   "Long-term care insurance is unnecessary with sufficient assets, so the plan should rely on home equity, investment liquidation, and spousal care to cover potential nursing or assisted-living expenses"
+   "Long-term care insurance is secondary to life insurance because most people rely on Medicare for care costs, and the policy should emphasize asset preservation in case of early death",
+   "Long-term care insurance should be purchased now to lock in lower premiums and cover potential costs of extended care for self or family members, while disability insurance protects current earned income"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Long-term care insurance should be purchased earlier (ideally in the 50s) to secure lower premiums and to protect assets from the high cost of extended care—a distinct risk from disability or mortality. It complements rather than replaces other coverage: disability insurance protects current income, health insurance covers acute care, and long-term care insurance covers extended custodial or nursing care. Medicare does not cover long-term custodial care, making the insurance an important planning tool. The other options either misunderstand Medicare's coverage, conflate long-term care with other insurance types, or overlook the substantial costs that can deplete even significant assets.",
   "difficulty": "hard",
   "knowledge_area": "Health, Disability, and Life Insurance"

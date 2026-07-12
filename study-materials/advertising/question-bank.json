@@ -2,12 +2,12 @@
  {
   "question": "A company is deciding between extending its existing product line with a premium variant or launching an entirely new product category. Which factors should most heavily influence this decision regarding product line extension?",
   "options": [
-   "Current brand loyalty, existing customer base familiarity with the core product, and the company's ability to maintain consistent quality across variants",
-   "The advertising budget allocated for the next fiscal year, the number of promotional channels available, and the target demographic's media consumption habits",
    "The packaging design specifications, the labeling requirements set by regulatory bodies, and the shelf space available at retail locations",
-   "The total number of competitors in the market, the average price point of all competitors' offerings, and seasonal demand fluctuations"
+   "The total number of competitors in the market, the average price point of all competitors' offerings, and seasonal demand fluctuations",
+   "The advertising budget allocated for the next fiscal year, the number of promotional channels available, and the target demographic's media consumption habits",
+   "Current brand loyalty, existing customer base familiarity with the core product, and the company's ability to maintain consistent quality across variants"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Product line extension decisions hinge on leveraging existing brand equity and customer relationships—factors like established brand loyalty, customer familiarity, and proven quality control are stronger rationales than external competitive counts or logistical constraints. While advertising and packaging matter, they support rather than drive the extension decision itself.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -15,12 +15,12 @@
  {
   "question": "During the development of a new service offering, a marketing team must determine the positioning strategy. The team has identified that competitors emphasize low cost, the target market values reliability, and the company has superior technology. Which positioning approach best integrates these three elements?",
   "options": [
-   "Positioning based on brand loyalty and market reputation, treating technology, price, and reliability as secondary differentiators in all communications",
-   "Positioning based primarily on competitive pricing advantage, supplemented by messaging about technology features and dependability claims",
+   "Positioning that highlights technology exclusively, with price and reliability mentioned only in footnotes of marketing materials",
    "Positioning centered on quality and reliability supported by advanced technology, while acknowledging the pricing is premium relative to budget alternatives",
-   "Positioning that highlights technology exclusively, with price and reliability mentioned only in footnotes of marketing materials"
+   "Positioning based primarily on competitive pricing advantage, supplemented by messaging about technology features and dependability claims",
+   "Positioning based on brand loyalty and market reputation, treating technology, price, and reliability as secondary differentiators in all communications"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Effective positioning integrates multiple factors—in this case, quality/reliability aligns with customer values, technology justifies premium pricing, and honest acknowledgment of cost differences builds credibility. Over-emphasizing one factor (price, technology alone, or brand history) at the expense of the customer's stated priority (reliability) undermines positioning coherence.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -28,12 +28,12 @@
  {
   "question": "A manufacturer is reviewing pricing strategy for a mature product in a competitive market. The product has strong brand recognition, moderate production costs, and faces pressure from lower-cost substitutes. Which combination of pricing factors should be weighted most heavily in this scenario?",
   "options": [
-   "Consumer price sensitivity and market share growth targets, ignoring production efficiency and brand differentiation opportunities",
    "Production costs and wholesale distributor margins, with minimal regard for competitor pricing or brand perception data",
    "Seasonal demand patterns and packaging material costs, prioritized over competitive positioning and customer retention metrics",
-   "Brand loyalty and perceived quality advantages, balanced against competitor pricing, while monitoring cost pressures on margins"
+   "Brand loyalty and perceived quality advantages, balanced against competitor pricing, while monitoring cost pressures on margins",
+   "Consumer price sensitivity and market share growth targets, ignoring production efficiency and brand differentiation opportunities"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "In mature, competitive markets, pricing must balance the company's own cost structure and profit needs against external competitive pressures while capitalizing on brand equity—pricing too low destroys margin, pricing too high without brand justification loses share. Production costs alone (option B) ignore market reality; chasing share without profit (option C) is unsustainable; and operational factors like packaging (option D) influence cost but not pricing strategy directly.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -55,8 +55,8 @@
   "question": "A marketing team is developing a campaign for a new product that occupies a middle position in the market: not the lowest-cost option, but significantly less expensive than premium competitors, with moderate feature differentiation. Which positioning and promotion strategy best supports this market position?",
   "options": [
    "Advertise exclusively in luxury media and upscale publications to position the product as aspirational despite its moderate pricing",
-   "Focus all promotional messaging on price savings relative to premium competitors, minimizing any mention of product features or quality attributes",
    "Use celebrity endorsements in mass-market channels while avoiding any specific mention of product features, benefits, or pricing strategy",
+   "Focus all promotional messaging on price savings relative to premium competitors, minimizing any mention of product features or quality attributes",
    "Emphasize value-for-money and practical benefits compared to premium brands, while using advertising channels that reach budget-conscious but quality-aware consumers efficiently"
   ],
   "correct_index": 3,
@@ -68,11 +68,11 @@
   "question": "In the advertising industry workflow, which stage typically requires collaboration between creative teams and media planners to balance artistic vision with budget constraints and audience reach?",
   "options": [
    "The concept ideation phase, where creative briefs are developed using media consumption studies to ensure the advertising message aligns with channel-specific audience behaviors",
-   "The post-campaign analysis phase, where creative performance metrics are compared against media spending efficiency to determine ROI and brand lift outcomes",
    "The strategy development and media planning phase, where creative concepts are evaluated against media costs, placement opportunities, and target audience accessibility",
-   "The research and audience segmentation phase, where demographic data informs which media channels will maximize impressions while maintaining creative authenticity"
+   "The research and audience segmentation phase, where demographic data informs which media channels will maximize impressions while maintaining creative authenticity",
+   "The post-campaign analysis phase, where creative performance metrics are compared against media spending efficiency to determine ROI and brand lift outcomes"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The strategy development and media planning phase is where creative and media teams must negotiate to produce work that is both artistically sound and strategically viable within budget and reach parameters. The research phase occurs earlier and focuses on gathering insights; post-campaign analysis evaluates results rather than balancing during creation; and ideation, while informed by media data, does not typically require the same level of active constraint negotiation between teams.",
   "difficulty": "hard",
   "knowledge_area": "The Advertising Industry & Careers"
@@ -80,10 +80,10 @@
  {
   "question": "A professional transitioning into an advertising career would need to develop competence in visual communication, strategic thinking, and client management. Which combination of these skills would be most critical for success in an account management role specifically?",
   "options": [
+   "Visual communication to create compelling presentations, strategic thinking to develop media strategies, and research skills to conduct competitive advertising analysis",
    "Analytical skills to interpret audience data, strategic thinking to recommend media channels, and creative thinking to propose alternative campaign angles to clients",
-   "Client management to handle day-to-day communication and problem-solving, visual communication to present concepts persuasively, and project coordination to manage timelines and deliverables",
    "Strategic thinking to understand campaign objectives, client management to maintain relationships and gather requirements, and analytical skills to measure campaign performance against KPIs",
-   "Visual communication to create compelling presentations, strategic thinking to develop media strategies, and research skills to conduct competitive advertising analysis"
+   "Client management to handle day-to-day communication and problem-solving, visual communication to present concepts persuasively, and project coordination to manage timelines and deliverables"
   ],
   "correct_index": 2,
   "explanation": "Account management roles bridge creative strategy and client needs, requiring strategic thinking to understand business objectives, strong client management to serve as the point of contact and gather insights, and analytical capability to demonstrate value through performance metrics. Visual communication and creative thinking are more central to creative roles; project coordination, while useful, is secondary to the relationship and strategic judgment that define account management success.",
@@ -93,12 +93,12 @@
  {
   "question": "Within advertising industry operations, different functional areas—such as creative, media buying, research, and account management—each contribute distinct value. Which of the following most accurately describes how these areas interconnect to drive campaign effectiveness?",
   "options": [
-   "Creative teams develop concepts independently based on brand guidelines, media buyers purchase placements based on lowest cost-per-impression, and research validates audience reach after the campaign launches",
-   "Media buyers select channels first based on audience availability, creative teams develop concepts for those specific channels, and research validates that messaging matches media platform norms",
    "Research teams identify audience insights and competitive positioning that inform both creative strategy and media channel selection, while account managers coordinate execution and media buyers negotiate placements based on creative requirements",
-   "Account managers direct all strategic decisions based on client feedback, creative teams produce assets, research measures effectiveness, and media buyers optimize based on real-time performance data"
+   "Creative teams develop concepts independently based on brand guidelines, media buyers purchase placements based on lowest cost-per-impression, and research validates audience reach after the campaign launches",
+   "Account managers direct all strategic decisions based on client feedback, creative teams produce assets, research measures effectiveness, and media buyers optimize based on real-time performance data",
+   "Media buyers select channels first based on audience availability, creative teams develop concepts for those specific channels, and research validates that messaging matches media platform norms"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Effective advertising depends on research generating insights that guide both creative strategy and media decisions upstream, while account managers ensure coordination and media buyers execute placements strategically. The other options present flawed workflows: option B isolates functions and ignores strategy; option C gives account managers inappropriate creative control; and option D reverses the proper sequence by allowing media availability to drive creative strategy rather than strategic intent driving media selection.",
   "difficulty": "hard",
   "knowledge_area": "The Advertising Industry & Careers"
@@ -106,10 +106,10 @@
  {
   "question": "An advertising professional seeking to build a successful career would need to demonstrate adaptability across evolving platforms, consumer behaviors, and technology tools. Which characteristic most distinguishes professionals who advance to leadership roles in this industry?",
   "options": [
-   "Proficiency in a single advertising discipline—such as copywriting or media planning—combined with deep knowledge of traditional media channels and consumer psychology principles",
+   "Technical skills in design software and advertising platforms, combined with an understanding of brand positioning theory and the capacity to manage tight project deadlines",
    "Expertise in data analysis and audience segmentation, coupled with experience presenting findings to executives and predicting consumer behavior through statistical modeling",
    "The ability to integrate learning from multiple disciplines, translate business problems into creative strategy, and mentor junior staff while remaining flexible with emerging platforms and tools",
-   "Technical skills in design software and advertising platforms, combined with an understanding of brand positioning theory and the capacity to manage tight project deadlines"
+   "Proficiency in a single advertising discipline—such as copywriting or media planning—combined with deep knowledge of traditional media channels and consumer psychology principles"
   ],
   "correct_index": 2,
   "explanation": "Leadership in advertising demands integrative thinking—bridging strategy, creativity, and execution—along with adaptability and the ability to develop others, not just deep expertise in one domain. Option A reflects outdated specialization; option C emphasizes analysis over strategic leadership; and option D, while valuable, focuses on technical execution rather than the cross-functional judgment needed to lead teams and navigate industry change.",
@@ -120,11 +120,11 @@
   "question": "The advertising industry functions through the coordination of clients seeking brand communication, advertising agencies producing strategies and creative work, and media companies selling audience access. Within this ecosystem, which responsibility primarily belongs to the advertising agency rather than to the client or media company?",
   "options": [
    "Identifying target audience segments through proprietary research, forecasting consumer demand based on campaign exposure, and maintaining the client's brand assets and marketing databases",
-   "Translating client business objectives into strategic advertising recommendations, developing creative concepts that align with audience insights, and managing the execution of campaigns across selected media",
    "Defining the brand's long-term market position, allocating annual marketing budgets across all channels, and establishing internal brand governance policies for the organization",
-   "Negotiating the lowest possible rates with media publishers, guaranteeing audience reach and engagement metrics, and providing the technology platforms for campaign tracking and optimization"
+   "Negotiating the lowest possible rates with media publishers, guaranteeing audience reach and engagement metrics, and providing the technology platforms for campaign tracking and optimization",
+   "Translating client business objectives into strategic advertising recommendations, developing creative concepts that align with audience insights, and managing the execution of campaigns across selected media"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The advertising agency's core responsibility is to translate client business needs into strategic and creative work, serving as the specialized intermediary between brand strategy and media execution. The client retains budget and brand governance decisions; media companies control rates and audience access; and while agencies may conduct research, they typically do not own client databases or guarantee outcomes—those remain client and media responsibilities respectively.",
   "difficulty": "hard",
   "knowledge_area": "The Advertising Industry & Careers"
@@ -132,12 +132,12 @@
  {
   "question": "A beverage company allocates 8% of projected annual revenue to advertising, while a competitor with similar market position spends 12% of revenue on the same initiatives. Which budget-setting strategies are these companies most likely employing?",
   "options": [
-   "The beverage company uses objective and task; the competitor uses percentage of sales with historical adjustment factors",
    "Both companies employ the percentage of sales approach, but the competitor adjusts allocation based on competitive spending patterns",
    "The beverage company uses percentage of sales; the competitor uses objective and task method to match market pressures",
+   "The beverage company uses objective and task; the competitor uses percentage of sales with historical adjustment factors",
    "The beverage company uses competition matching while the competitor uses response model to optimize incremental returns"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The percentage of sales method ties spending directly to revenue (8% and 12% are clear revenue percentages), though the competitor's higher allocation suggests sensitivity to competitive dynamics within that framework. The other options incorrectly pair the strategies—competition matching would mean spending similar percentages, not different ones, and neither company's approach as described reflects the objective and task or response model methods.",
   "difficulty": "hard",
   "knowledge_area": "Financial Planning for Advertising"
@@ -145,12 +145,12 @@
  {
   "question": "When evaluating advertising budget adequacy, a manager reviews both the advertising expense ratio (ad spend divided by revenue) and year-over-year brand awareness lift measured through customer surveys. Which financial and operational outcomes is this manager most directly assessing?",
   "options": [
+   "The competitive positioning of the brand and the correlation between budget size and customer purchase frequency",
    "The efficiency of ad spending relative to sales growth and whether ad expenditure generates measurable brand awareness",
    "The return on investment in media channels and the effectiveness of sales promotions independent of advertising",
-   "The competitive positioning of the brand and the correlation between budget size and customer purchase frequency",
    "The total cost of customer acquisition and the relationship between ad frequency and retail distribution expansion"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The advertising expense ratio measures spending efficiency relative to revenue (a financial metric), while brand awareness lift measures whether advertising actually moved customer perception (an operational/awareness outcome). The other options conflate unrelated metrics or introduce factors (purchase frequency, sales promotions, distribution) not tied to the manager's review methodology.",
   "difficulty": "hard",
   "knowledge_area": "Financial Planning for Advertising"
@@ -158,10 +158,10 @@
  {
   "question": "A regional chain must decide between allocating its advertising budget using the objective and task method versus the response model approach. The objective and task method would require first defining specific brand awareness targets, while the response model would analyze historical data on spending levels and resulting sales. Which factor most directly influences which strategy is more appropriate?",
   "options": [
-   "The company's market share position and the competitive intensity within the retail grocery sector",
+   "The total size of the advertising budget and the number of media channels available for spending allocation",
    "The timing of the fiscal year and the frequency of financial reporting cycles within the organization",
    "The availability of reliable historical sales and advertising spending data paired with clarity on measurable campaign objectives",
-   "The total size of the advertising budget and the number of media channels available for spending allocation"
+   "The company's market share position and the competitive intensity within the retail grocery sector"
   ],
   "correct_index": 2,
   "explanation": "The objective and task method requires clear, measurable goals; the response model requires robust historical data linking spending to sales outcomes. The choice between them hinges on whether the company has data-driven evidence of advertising response and whether it can articulate specific, quantifiable objectives. Budget size, market share, and reporting cycles do not determine which methodology is more suitable.",
@@ -171,12 +171,12 @@
  {
   "question": "A technology firm's advertising budget varies significantly from year to year based on product launch cycles, competitive promotional intensity, and overall market growth rates. Which of the following best describes how these variables function within budget planning?",
   "options": [
-   "They establish the baseline financial reports needed to justify advertising expenses to shareholders annually",
    "They influence the choice between percentage of sales and response model methods exclusively in volatile markets",
    "They are external factors affecting advertising budget that require responsive adjustment rather than static allocation percentages",
+   "They establish the baseline financial reports needed to justify advertising expenses to shareholders annually",
    "They determine the company's target rate of return on advertising investment and set minimum spending thresholds"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Product cycles, competitive intensity, and market growth are recognized factors that affect (fluctuate) the advertising budget—they demand flexibility rather than rigid formulas like fixed percentage of sales. The other options either misidentify these as determinants of ROI targets or reporting requirements, or incorrectly constrain their impact to specific budget-setting methods.",
   "difficulty": "hard",
   "knowledge_area": "Financial Planning for Advertising"
@@ -186,10 +186,10 @@
   "options": [
    "The traditional retailer's lower spending proves greater efficiency, indicating that in-store promotions yield better returns than digital advertising spending",
    "Both retailers achieve similar percentage returns, so advertising budget allocation is equally efficient across both channels and business models",
-   "The e-commerce retailer achieves an 8.4:1 return ratio while the traditional retailer achieves a 7:1 ratio, making direct comparison unreliable without adjusting for profit margins and channel-specific cost structures",
-   "The e-commerce retailer generates superior returns because its absolute advertising spend is higher and produces proportionally greater attributed revenue"
+   "The e-commerce retailer generates superior returns because its absolute advertising spend is higher and produces proportionally greater attributed revenue",
+   "The e-commerce retailer achieves an 8.4:1 return ratio while the traditional retailer achieves a 7:1 ratio, making direct comparison unreliable without adjusting for profit margins and channel-specific cost structures"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Rate of return on advertising (attributed revenue ÷ ad spend) shows e-commerce at 8.4:1 and traditional retail at 7:1, but raw return ratios don't account for profit margins, customer lifetime value, or channel-specific cost structures—making direct comparison misleading without deeper financial analysis. The other options commit the error of comparing return ratios across different business models without acknowledging these variables, or incorrectly assume that raw efficiency numbers determine strategic budget decisions.",
   "difficulty": "hard",
   "knowledge_area": "Financial Planning for Advertising"
@@ -197,12 +197,12 @@
  {
   "question": "When developing an advertising plan, a firm conducts a SWOT analysis before setting objectives. Which of the following best describes why this sequencing is essential?",
   "options": [
-   "SWOT analysis measures consumer awareness levels and brand perception metrics that guide the execution phase.",
-   "SWOT analysis evaluates competitor creative strategies and messaging to ensure the firm's advertisements are more innovative.",
    "SWOT analysis identifies market opportunities and internal constraints that directly inform realistic and targeted advertising objectives.",
-   "SWOT analysis determines the total advertising budget and allocates resources across media channels before objectives are finalized."
+   "SWOT analysis evaluates competitor creative strategies and messaging to ensure the firm's advertisements are more innovative.",
+   "SWOT analysis determines the total advertising budget and allocates resources across media channels before objectives are finalized.",
+   "SWOT analysis measures consumer awareness levels and brand perception metrics that guide the execution phase."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "A SWOT analysis must precede objective-setting because strengths, weaknesses, opportunities, and threats provide the foundation for realistic goals. The other options describe later steps (budgeting, creative execution, and evaluation) or misrepresent what SWOT analysis reveals about competitive positioning.",
   "knowledge_area": "The Advertising Plan",
   "difficulty": "hard"
@@ -210,10 +210,10 @@
  {
   "question": "An advertising team has completed SWOT and objective-setting phases and must now move to creative strategy development. Which analyses should already be in place to inform creative decisions?",
   "options": [
-   "Brand loyalty surveys, focus group feedback, and purchase intention studies conducted after advertisements launch",
    "Media cost comparisons, production timelines, and vendor negotiations completed during the budget allocation process",
+   "Post-campaign sales data, customer purchase history, and redemption rates from previous promotional cycles",
    "Market segmentation analysis, competitive positioning assessment, and audience behavior research conducted during planning phases",
-   "Post-campaign sales data, customer purchase history, and redemption rates from previous promotional cycles"
+   "Brand loyalty surveys, focus group feedback, and purchase intention studies conducted after advertisements launch"
   ],
   "correct_index": 2,
   "explanation": "Creative strategy is informed by analyses performed during the planning and objective-setting phases—market segmentation, competitive positioning, and audience insights. Options B, C, and D represent budget, execution, and evaluation phases respectively, occurring after or independent of creative strategy development.",
@@ -223,12 +223,12 @@
  {
   "question": "During the evaluation phase of an advertising plan, a firm discovers that campaign awareness exceeded targets but sales conversion fell below objectives. Which earlier planning step is most likely responsible for this mismatch?",
   "options": [
+   "The advertising objectives did not clearly connect brand awareness goals to specific, measurable sales or lead-generation targets.",
    "The budget allocation process over-invested in broad reach channels instead of high-conversion audience segments.",
-   "The SWOT analysis failed to identify sufficient internal production capacity to fulfill demand from aware consumers.",
    "The creative strategy relied too heavily on competitor analysis rather than on the firm's actual product differentiation.",
-   "The advertising objectives did not clearly connect brand awareness goals to specific, measurable sales or lead-generation targets."
+   "The SWOT analysis failed to identify sufficient internal production capacity to fulfill demand from aware consumers."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Misalignment between awareness and conversion typically reflects objectives that were not tightly linked to business outcomes. Well-designed objectives translate awareness goals into specific conversion, engagement, or sales metrics. Options A, C, and D address execution or resource issues that would produce different failure patterns (capacity problems, weak messaging, or channel inefficiency).",
   "knowledge_area": "The Advertising Plan",
   "difficulty": "hard"
@@ -249,12 +249,12 @@
  {
   "question": "Two competing advertising plans both set identical awareness and sales objectives but diverge in creative strategy and media allocation. Which analytical work from the planning phase most likely explains why their strategies should differ?",
   "options": [
+   "Budget constraints, production timelines, and vendor availability assessments that determine which creative assets can be produced in-house.",
    "Market segmentation analysis, competitive positioning research, and SWOT findings specific to each firm's strengths and target audience.",
    "Post-launch testing results, focus group reactions, and message testing scores gathered during the creative development phase.",
-   "Historical campaign performance data, customer lifetime value models, and prior-period conversion rates from each company's sales records.",
-   "Budget constraints, production timelines, and vendor availability assessments that determine which creative assets can be produced in-house."
+   "Historical campaign performance data, customer lifetime value models, and prior-period conversion rates from each company's sales records."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Even identical objectives require different creative and media strategies when firms have different competitive positions, audience segments, and capabilities—all revealed in SWOT and market analysis. Options B, C, and D relate to budget execution, past results, or testing phases, which follow strategy formulation rather than drive strategic differentiation.",
   "knowledge_area": "The Advertising Plan",
   "difficulty": "hard"
@@ -262,12 +262,12 @@
  {
   "question": "A creative team is developing an advertisement and must choose between video, print, and interactive digital formats. Which consideration most directly distinguishes the selection of one creative format from another during the creation stage?",
   "options": [
-   "The client's brand guidelines and whether the advertisement will run during peak viewing hours or off-peak seasons",
-   "The production budget constraints and timeline requirements that determine whether animation or live-action is feasible",
+   "The target audience demographics and media consumption habits that align with each format's distribution channels",
    "The copywriting team's expertise with narrative structure versus the art director's background in visual composition",
-   "The target audience demographics and media consumption habits that align with each format's distribution channels"
+   "The client's brand guidelines and whether the advertisement will run during peak viewing hours or off-peak seasons",
+   "The production budget constraints and timeline requirements that determine whether animation or live-action is feasible"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Different creative formats (video, print, interactive digital) are selected based on where and how the target audience consumes media, not simply on budget or timeline. While production constraints matter, format selection is fundamentally driven by matching the creative approach to audience behavior and media habits. The other options address production logistics or client preferences rather than the core distinction between formats themselves.",
   "difficulty": "hard",
   "knowledge_area": "Creation of the Advertisement"
@@ -276,11 +276,11 @@
   "question": "During the copywriting and art production stages of advertisement creation, a copywriter submits headline and body copy while the art director simultaneously develops visual layouts. What is the primary purpose of coordinating these parallel processes?",
   "options": [
    "To guarantee the final advertisement can be translated into multiple languages without altering visual proportions",
+   "To confirm the copywriter's vocabulary level matches the educational background of the target demographic",
    "To verify that production costs for typography remain within budget and printing specifications are met",
-   "To ensure the headline length does not exceed the visual space allocated and messaging tone matches the visual style",
-   "To confirm the copywriter's vocabulary level matches the educational background of the target demographic"
+   "To ensure the headline length does not exceed the visual space allocated and messaging tone matches the visual style"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Coordinating copywriting and art production ensures that text and visuals work together cohesively—the copy must fit the allocated space and the tone must align with the visual approach. This integration is essential to the creation stage itself. While translation, budget, and demographic considerations may arise later, the primary purpose of coordinating these parallel creative processes is achieving unified messaging and design.",
   "difficulty": "hard",
   "knowledge_area": "Creation of the Advertisement"
@@ -288,12 +288,12 @@
  {
   "question": "An advertiser wants to evaluate whether an advertisement effectively communicated the brand message to its intended audience. Which combination of methods would provide both immediate quantitative feedback and deeper qualitative insight into message comprehension?",
   "options": [
+   "Recording website traffic data after the advertisement airs and interviewing random shoppers about their shopping habits",
    "Analyzing social media engagement metrics and administering online polls about customer purchase intent",
    "Tracking click-through rates on digital ads and conducting focus groups to assess brand recall and message interpretation",
-   "Measuring sales revenue increases in the month following the campaign launch and surveying customers on product satisfaction",
-   "Recording website traffic data after the advertisement airs and interviewing random shoppers about their shopping habits"
+   "Measuring sales revenue increases in the month following the campaign launch and surveying customers on product satisfaction"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Evaluating advertising effectiveness requires both measurement of immediate response (click-through rates provide quantitative data) and assessment of deeper understanding (focus groups reveal whether the message was actually comprehended and how it was interpreted). Sales and satisfaction measure different outcomes (purchase behavior versus ad message clarity), and traffic data combined with general shopping interviews do not target message comprehension directly.",
   "difficulty": "hard",
   "knowledge_area": "Creation of the Advertisement"
@@ -301,12 +301,12 @@
  {
   "question": "When using simple approaches to determine advertising effectiveness, a marketer observes that an advertisement generated 250 website visits, 18 product inquiries, and 7 purchases within one week. Which metric most directly indicates whether the advertisement successfully communicated its intended message?",
   "options": [
-   "The number of product inquiries relative to website visits, which reflects whether viewers understood the offer and wanted more information",
-   "The conversion rate of inquiries to purchases, which proves the advertisement's ability to move prospects through the sales funnel",
    "The number of purchases relative to website visits, which demonstrates the overall return on advertising investment and profitability",
-   "The total number of website visits, which shows the broad reach of the advertisement across the entire target market segment"
+   "The number of product inquiries relative to website visits, which reflects whether viewers understood the offer and wanted more information",
+   "The total number of website visits, which shows the broad reach of the advertisement across the entire target market segment",
+   "The conversion rate of inquiries to purchases, which proves the advertisement's ability to move prospects through the sales funnel"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Message communication effectiveness is indicated by whether viewers understood what the advertisement was offering well enough to take the next step—requesting more information. The inquiry-to-visit ratio reflects comprehension of the message. While purchases and conversion rates measure campaign success overall, they depend on many factors beyond message clarity (pricing, sales follow-up, product quality). Website visits alone measure reach but not message effectiveness.",
   "difficulty": "hard",
   "knowledge_area": "Creation of the Advertisement"
@@ -314,12 +314,12 @@
  {
   "question": "A company is comparing two different creative approaches for the same product: one uses emotional storytelling and another uses factual product specifications. Both advertisements will air simultaneously across identical media channels. What is the most effective simple method to evaluate which creative format better communicates the intended message?",
   "options": [
-   "Survey audience members who saw both versions about which advertisement they found more memorable and what they recalled about the product benefits",
    "Track which version generates more website traffic and measure the time visitors spend viewing product pages from each advertisement",
+   "Compare the production costs of each creative version to determine which format required less investment in copywriting and art direction",
    "Analyze which creative format received more positive comments on social media platforms and higher engagement with brand posts",
-   "Compare the production costs of each creative version to determine which format required less investment in copywriting and art direction"
+   "Survey audience members who saw both versions about which advertisement they found more memorable and what they recalled about the product benefits"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "To determine which creative approach better communicates the message, you need to measure what the audience actually understood and remembered about the product—not just their engagement or traffic patterns. A direct survey asking about recall and message comprehension isolates whether the creative format successfully conveyed the intended benefits. Traffic and social engagement may reflect entertainment value or sharing behavior rather than message clarity, and production cost is unrelated to effectiveness.",
   "difficulty": "hard",
   "knowledge_area": "Creation of the Advertisement"
@@ -327,12 +327,12 @@
  {
   "question": "A company is deciding between extending its existing product line versus developing an entirely new product. Which rationale best supports extending the current line rather than launching a new product?",
   "options": [
-   "Reach new market segments that the current brand cannot address and establish premium positioning in untapped demographic territories",
-   "Reduce competition from rival firms by occupying shelf space across multiple price points and forcing competitors into niche markets",
+   "Leverage existing brand equity and established distribution channels while meeting adjacent customer needs with lower development risk",
    "Eliminate the need for packaging redesign and labeling updates that would otherwise confuse existing loyal customers about brand identity",
-   "Leverage existing brand equity and established distribution channels while meeting adjacent customer needs with lower development risk"
+   "Reduce competition from rival firms by occupying shelf space across multiple price points and forcing competitors into niche markets",
+   "Reach new market segments that the current brand cannot address and establish premium positioning in untapped demographic territories"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Product line extension leverages existing brand recognition and distribution infrastructure to serve related customer needs with lower risk than new product development. The other options—reaching entirely new segments, competing on breadth, or avoiding packaging changes—may occur but are not primary rationales for extension versus new development.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -353,12 +353,12 @@
  {
   "question": "A beverage company is developing a new sports drink product. In which sequence do the following steps typically occur during new product/service development: (1) test the formulation with focus groups, (2) identify consumer demand for enhanced hydration, (3) launch in select regional markets, (4) refine the formula based on feedback?",
   "options": [
-   "3, 2, 4, 1 — launch early, discover if demand exists, revise and test, finalize formulation last",
    "2, 4, 1, 3 — assess market demand, modify features without testing, validate with consumers, then commercialize",
-   "1, 2, 3, 4 — prototype first, confirm demand exists, roll out nationally, adjust formula post-launch",
-   "2, 1, 4, 3 — identify need, test concept, refine based on data, then expand distribution regionally"
+   "2, 1, 4, 3 — identify need, test concept, refine based on data, then expand distribution regionally",
+   "3, 2, 4, 1 — launch early, discover if demand exists, revise and test, finalize formulation last",
+   "1, 2, 3, 4 — prototype first, confirm demand exists, roll out nationally, adjust formula post-launch"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Standard new product development begins with identifying consumer need, proceeds to concept testing with target users, incorporates feedback into refinement, and concludes with regional market testing before full launch. The sequence 2-1-4-3 follows this logical progression from opportunity identification through validation to commercialization.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -366,10 +366,10 @@
  {
   "question": "Which set of factors most accurately reflects the relationship between price determination, packaging, and the marketing mix in positioning a premium consumer product?",
   "options": [
-   "Price elasticity is controlled through promotional intensity, whereas packaging and labeling are tactical tools managed independently by the marketing department",
-   "Price positioning works alongside premium packaging and clear labeling to communicate brand value and justify margin levels to channel partners",
    "Price must align with quality signals from packaging and labeling while remaining lower than mass-market alternatives to ensure competitive volume",
-   "Price is determined solely by production costs, while packaging and labeling serve only regulatory compliance and shelf differentiation purposes"
+   "Price positioning works alongside premium packaging and clear labeling to communicate brand value and justify margin levels to channel partners",
+   "Price is determined solely by production costs, while packaging and labeling serve only regulatory compliance and shelf differentiation purposes",
+   "Price elasticity is controlled through promotional intensity, whereas packaging and labeling are tactical tools managed independently by the marketing department"
   ],
   "correct_index": 1,
   "explanation": "Price, packaging, and labeling are integrated elements of the marketing mix that collectively signal product value and positioning; premium packaging and clear labeling justify higher prices and communicate brand positioning. The other options either reverse the relationship (lower price for premium), reduce packaging to mere compliance, or treat pricing and packaging as disconnected, all of which misrepresent how these elements work together.",
@@ -380,11 +380,11 @@
   "question": "A company must decide whether to invest in advanced packaging that provides additional product protection and shelf visibility versus maintaining its current packaging to reduce costs. Which factor would most influence this choice as part of the marketing functions decision?",
   "options": [
    "The advertising budget allocation and whether the packaging change would require increased promotional spending to communicate the update to consumers",
+   "The production timeline and whether the new packaging can be manufactured in the existing facility without disrupting current product output",
    "The importance of branding, packaging, and labeling to differentiate the product and the function of packaging to preserve product integrity and appeal",
-   "The distribution network capacity and whether current logistics partners have warehouse space to accommodate larger inventory volumes from packaging changes",
-   "The production timeline and whether the new packaging can be manufactured in the existing facility without disrupting current product output"
+   "The distribution network capacity and whether current logistics partners have warehouse space to accommodate larger inventory volumes from packaging changes"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Packaging serves both functional (protection, preservation) and strategic (branding, differentiation) marketing purposes; this choice directly reflects the marketing function of packaging. While timeline, promotion, and logistics matter operationally, they are secondary to the core marketing rationale—whether the packaging investment strengthens brand positioning and product value perception.",
   "difficulty": "hard",
   "knowledge_area": "Basic Marketing Functions"
@@ -392,12 +392,12 @@
  {
   "question": "A manufacturer offers retailers a discount on bulk orders of a product line that must be purchased within 30 days to qualify. This promotional tool is best classified as which type of trade promotion?",
   "options": [
-   "A deal loader that bundles complementary products at a discounted rate",
-   "Push money designed to incentivize retail staff to hand-sell the product",
    "A trade allowance that reduces the cost per unit for qualified bulk purchases",
-   "A loyalty program that rewards retailers for repeat orders over a calendar quarter"
+   "A deal loader that bundles complementary products at a discounted rate",
+   "A loyalty program that rewards retailers for repeat orders over a calendar quarter",
+   "Push money designed to incentivize retail staff to hand-sell the product"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "A trade allowance is a discount on purchases that meet volume or timing conditions, reducing the per-unit cost for qualifying bulk orders. Push money rewards individual retail staff members for selling, deal loaders bundle products together, and loyalty programs reward repeat behavior over time—none fit this scenario.",
   "knowledge_area": "Developing an Effective Sales Promotion Strategy",
   "difficulty": "hard"
@@ -407,10 +407,10 @@
   "options": [
    "A sweepstakes structure supported by POP displays and rebate coupons",
    "Price deals and rebate offers reinforced through a sweepstakes-style token program",
-   "POP displays and premiums integrated with a contest mechanism for token exchange",
-   "Sampling and POP displays combined with a premium-based loyalty incentive"
+   "Sampling and POP displays combined with a premium-based loyalty incentive",
+   "POP displays and premiums integrated with a contest mechanism for token exchange"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The campaign uses POP displays (coolers, shelf talkers, checkout displays), premiums (branded merchandise rewards), and a token-collection mechanism that functions as a premium redemption program rather than a sweepstakes or contest. Sampling and rebates are not mentioned in the scenario.",
   "knowledge_area": "Developing an Effective Sales Promotion Strategy",
   "difficulty": "hard"
@@ -418,12 +418,12 @@
  {
   "question": "A snack manufacturer provides retail sales staff with a $0.50 incentive for each unit of a new product sold during a promotional period. A competing manufacturer instead offers retailers a case-discount allowance on all purchases of their product line during the same window. Which best distinguishes these two approaches?",
   "options": [
-   "The first uses push money to motivate retail staff; the second uses a trade allowance to reduce retailer cost per case",
    "The first is a rebate program for retail employees; the second is a loyalty program for bulk repeat purchases",
+   "The first uses push money to motivate retail staff; the second uses a trade allowance to reduce retailer cost per case",
    "The first is a consumer coupon targeting end-customers; the second is a deal loader targeting retail management",
    "The first is a sampling incentive for sales staff; the second is a sweepstakes offer for retailers"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Push money pays individual sales staff for hand-selling a product, while a trade allowance is a discount on wholesale purchases to reduce retailer cost. The other options misidentify the promotional tools—coupons and deal loaders target different channels, rebates and loyalty programs serve different purposes, and sampling and sweepstakes do not apply here.",
   "knowledge_area": "Developing an Effective Sales Promotion Strategy",
   "difficulty": "hard"
@@ -432,11 +432,11 @@
   "question": "A cosmetics brand runs three simultaneous promotions: free samples of a new foundation at department store counters, a mail-in rebate of $5 for customers who purchase two items, and a holiday drawing where shoppers who spend $50 or more are entered to win a gift basket. Which consumer promotion types are represented across these three initiatives?",
   "options": [
    "Sampling, price deals, and a contest requiring purchases of specific product combinations",
+   "POP displays, coupons, and a sweepstakes tied to aggregate spending thresholds",
    "Sampling, rebates, and a sweepstakes designed to appeal to different consumer segments",
-   "Premiums, rebates, and a loyalty program structured around minimum transaction amounts",
-   "POP displays, coupons, and a sweepstakes tied to aggregate spending thresholds"
+   "Premiums, rebates, and a loyalty program structured around minimum transaction amounts"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The three initiatives represent sampling (free product trials), rebates (mail-in discount for multi-unit purchases), and a sweepstakes (random drawing for those meeting a spending threshold). Price deals and contests involve purchase conditions or product combinations, loyalty programs reward repeat behavior over time, POP displays are physical materials, and coupons are pre-purchase discounts—none of these alternate terms fit as accurately.",
   "knowledge_area": "Developing an Effective Sales Promotion Strategy",
   "difficulty": "hard"
@@ -444,12 +444,12 @@
  {
   "question": "A retailer receives a promotional package from a supplier that includes a discount on product cost, a per-unit payment to store staff for in-store demonstrations, and a chance to win additional inventory discounts through a random drawing. Which of the following best categorizes the components of this promotion?",
   "options": [
-   "A rebate program, premium giveaway, and a loyalty incentive combined as trade promotions",
-   "A deal loader, sampling incentive, and a sweepstakes structured for retail participation",
    "A trade allowance, push money, and a sweepstakes offered as trade promotion elements",
-   "A trade allowance, push money, and a consumer contest layered into a single program"
+   "A rebate program, premium giveaway, and a loyalty incentive combined as trade promotions",
+   "A trade allowance, push money, and a consumer contest layered into a single program",
+   "A deal loader, sampling incentive, and a sweepstakes structured for retail participation"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The trade allowance reduces the retailer's product cost, push money pays retail staff to demonstrate the product, and the random drawing for inventory discounts is a sweepstakes mechanism—all designed as trade promotions targeting the retailer and its staff. Deal loaders bundle products, sampling involves free product trials, consumer contests require skill, and rebates/premiums target end-customers rather than retail partners.",
   "knowledge_area": "Developing an Effective Sales Promotion Strategy",
   "difficulty": "hard"
@@ -457,12 +457,12 @@
  {
   "question": "A beverage company introduces a new energy drink with premium ingredients and extensive marketing support. During the first year, sales grow 45% but profitability remains negative due to high promotional costs. Which stage of the product life cycle best describes this scenario, and why is this outcome typical?",
   "options": [
+   "Growth stage, where market acceptance has been established but distribution expenses exceed revenue contributions",
    "Maturity stage, where competitive pressures force promotional spending that temporarily reduces net profit despite volume increases",
    "Decline stage, where the company maintains market presence through aggressive pricing and advertising to slow market erosion",
-   "Introduction stage, where customer awareness is being built through substantial marketing investment that outpaces initial sales margins",
-   "Growth stage, where market acceptance has been established but distribution expenses exceed revenue contributions"
+   "Introduction stage, where customer awareness is being built through substantial marketing investment that outpaces initial sales margins"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The introduction stage is characterized by rising sales but negative or minimal profitability because companies invest heavily in consumer awareness, distribution, and trial—costs that exceed early revenue. Growth stage products show increasing profitability alongside sales growth; maturity brings competitive commoditization; decline involves shrinking markets.",
   "difficulty": "hard",
   "knowledge_area": "Product Life Cycle"
@@ -470,12 +470,12 @@
  {
   "question": "A smartphone manufacturer discovers that its flagship model, once dominating 35% of the market, has experienced a 12% sales decline year-over-year despite maintaining the same advertising budget. A new competitor's superior features have captured market share, and consumer interest in refreshing older models is declining. Which life cycle stage applies, and what does the sales pattern indicate?",
   "options": [
-   "Introduction stage, where market resistance to new technology categories prevents the product from achieving expected adoption rates",
-   "Growth stage, where temporary market share loss reflects normal competitive cycling during rapid category expansion",
+   "Maturity stage, where saturated market conditions and newer competitive offerings cause sales stagnation despite sustained promotional effort",
    "Decline stage, where reduced consumer demand and competitive displacement lead to sales erosion even with maintained marketing expenditure",
-   "Maturity stage, where saturated market conditions and newer competitive offerings cause sales stagnation despite sustained promotional effort"
+   "Growth stage, where temporary market share loss reflects normal competitive cycling during rapid category expansion",
+   "Introduction stage, where market resistance to new technology categories prevents the product from achieving expected adoption rates"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Declining sales despite unchanged marketing spending, combined with competitive displacement and waning refresh interest, characterize the decline stage. Maturity shows stable sales and market share; introduction involves slow initial adoption; growth includes expanding overall market size and profitability.",
   "difficulty": "hard",
   "knowledge_area": "Product Life Cycle"
@@ -483,8 +483,8 @@
  {
   "question": "An athletic apparel brand applies product life cycle analysis to its winter sports line. The line shows stable sales volume, fierce price competition from three major rivals, high inventory turnover, and requires continuous feature innovation to maintain shelf space. Marketing efficiency (sales per advertising dollar) has declined 22% from the previous year. Which stage describes this product, and what strategic implication follows?",
   "options": [
-   "Growth stage, signaling opportunity to increase promotional budgets and distribution channels to capture expanding consumer interest",
    "Decline stage, requiring a shift toward harvest strategies, cost reduction, and potential product line consolidation",
+   "Growth stage, signaling opportunity to increase promotional budgets and distribution channels to capture expanding consumer interest",
    "Introduction stage, suggesting the need for educational marketing to overcome buyer awareness gaps and trial barriers",
    "Maturity stage, indicating that defending market position requires innovation and efficiency improvements rather than further market expansion spending"
   ],
@@ -496,12 +496,12 @@
  {
   "question": "A frozen food company is evaluating two product lines: Product A shows 8% annual sales growth with improving unit margins and expanding retail distribution; Product B shows 3% annual sales decline with stable unit margins but shrinking shelf space allocation across major retailers. If the company must reallocate marketing resources, which products are in different life cycle stages and what is the primary reason for different resource allocation?",
   "options": [
-   "Product A is in maturity stage and Product B is in introduction stage; resources should shift to B because new products require awareness investment before returning to profitability",
-   "Product A is in decline stage and Product B is in growth stage; resources should prioritize B because established products can sustain margins through efficiency gains alone",
+   "Product A is in growth stage and Product B is in decline stage; resources should shift to A because growth-stage products offer margin expansion potential and market opportunity",
    "Product A is in introduction stage and Product B is in maturity stage; resources should focus on A because new entrants face steeper competitive barriers requiring support",
-   "Product A is in growth stage and Product B is in decline stage; resources should shift to A because growth-stage products offer margin expansion potential and market opportunity"
+   "Product A is in maturity stage and Product B is in introduction stage; resources should shift to B because new products require awareness investment before returning to profitability",
+   "Product A is in decline stage and Product B is in growth stage; resources should prioritize B because established products can sustain margins through efficiency gains alone"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Product A's expanding distribution, growing sales, and improving margins indicate growth stage, warranting investment to accelerate market capture. Product B's shrinking shelf space, declining sales, and stable margins signal decline, justifying a harvest or exit approach. Growth-stage products offer the highest return on incremental marketing investment.",
   "difficulty": "hard",
   "knowledge_area": "Product Life Cycle"
@@ -509,12 +509,12 @@
  {
   "question": "A consumer electronics retailer observes that its tablet product line exhibits the following characteristics across its major competitors: similar features and specifications, prices within a narrow 8% band, emphasis on bundle offers and loyalty programs, market size growing 2% annually, and customer switching between brands driven primarily by promotional timing. Which life cycle stage best explains this competitive environment, and what does the promotional emphasis reveal?",
   "options": [
-   "Maturity stage, where product parity and market saturation drive competition toward non-price factors like promotions and customer retention programs",
-   "Introduction stage, where price bundling and loyalty programs are used to overcome consumer skepticism toward unfamiliar product categories",
    "Growth stage, where expanding market size and feature differentiation allow brands to compete through service enhancements and loyalty incentives",
+   "Introduction stage, where price bundling and loyalty programs are used to overcome consumer skepticism toward unfamiliar product categories",
+   "Maturity stage, where product parity and market saturation drive competition toward non-price factors like promotions and customer retention programs",
    "Decline stage, where price competition and promotional intensity increase as manufacturers attempt to maintain volume amid shrinking total demand"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Product parity, narrow price bands, slow market growth (2%), and customer switching based on promotional timing are maturity stage characteristics. Competitors compete on service, loyalty, and bundling rather than features or innovation. Introduction involves education and overcoming skepticism; growth features expanding markets and feature differentiation; decline shows accelerating price erosion.",
   "difficulty": "hard",
   "knowledge_area": "Product Life Cycle"
@@ -522,12 +522,12 @@
  {
   "question": "A multinational beverage company discovers that its standardized advertising campaign resonates differently across age groups in the same market. Which factor best explains why the company must adjust its messaging to account for this variance?",
   "options": [
-   "The presence of multi-generational audiences with distinct values, media consumption habits, and cultural references requires tailored creative approaches rather than one-size-fits-all campaigns.",
+   "Global advertising regulations mandate that companies create separate campaigns for each demographic cohort, with no crossover permitted in visual or verbal elements.",
    "Ethnic market segments are growing at different rates, necessitating budget allocation shifts that automatically change how advertisements are produced and distributed.",
    "Multiculturalism requires companies to increase their overall advertising spend by a fixed percentage, which forces creative teams to produce more variations of existing content.",
-   "Global advertising regulations mandate that companies create separate campaigns for each demographic cohort, with no crossover permitted in visual or verbal elements."
+   "The presence of multi-generational audiences with distinct values, media consumption habits, and cultural references requires tailored creative approaches rather than one-size-fits-all campaigns."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Multi-generational audiences (Boomers, Gen X, Millennials, Gen Z) have fundamentally different worldviews and media behaviors, requiring substantively different advertising strategies—not just budget increases or regulatory compliance. The other options misidentify either the mechanism (cost/regulation) or the actual driver (ethnic growth rates alone), rather than focusing on how generational differences within a single market demand distinct approaches.",
   "difficulty": "hard",
   "knowledge_area": "Diversity & Advertising"
@@ -536,8 +536,8 @@
   "question": "An automotive manufacturer expanding into Southeast Asian markets learns that consumer preferences for vehicle features, payment structures, and aspirational messaging differ significantly from North American campaigns. What underlying principle should guide the company's advertising strategy development?",
   "options": [
    "Advertising needs vary by geographic region due to differences in economic development, infrastructure, consumer values, and cultural norms, requiring localized rather than globally uniform creative strategies.",
-   "All emerging markets share identical consumer profiles, so companies should deploy a single pan-Asian campaign with translations of existing North American advertisements.",
    "Geographic expansion requires companies to maintain consistent global branding by using identical imagery, spokespersons, and product positioning across all international markets.",
+   "All emerging markets share identical consumer profiles, so companies should deploy a single pan-Asian campaign with translations of existing North American advertisements.",
    "Regional advertising differences stem primarily from language barriers, which can be solved by hiring local translators to adapt existing campaigns without changing core messaging."
   ],
   "correct_index": 0,
@@ -548,12 +548,12 @@
  {
   "question": "A food company analyzing growing ethnic markets observes that these segments demonstrate high brand loyalty, distinct purchasing patterns, and increasing purchasing power. Which characteristic of growing ethnic markets most directly impacts how the company should position its advertising?",
   "options": [
-   "The expansion of ethnic markets always correlates with declining sales in mainstream markets, forcing companies to choose between advertising to one segment or the other.",
-   "Growing ethnic markets are characterized by price sensitivity alone, requiring all advertising to emphasize discount pricing and promotional offers rather than product quality or brand values.",
    "Growing ethnic markets typically show lower digital media adoption, requiring companies to rely exclusively on traditional broadcast and print advertising channels.",
-   "Ethnic market segments exhibit unique cultural preferences, family structures, and value systems that determine relevant product benefits, appropriate messaging tone, and preferred media channels for effective reach."
+   "Ethnic market segments exhibit unique cultural preferences, family structures, and value systems that determine relevant product benefits, appropriate messaging tone, and preferred media channels for effective reach.",
+   "The expansion of ethnic markets always correlates with declining sales in mainstream markets, forcing companies to choose between advertising to one segment or the other.",
+   "Growing ethnic markets are characterized by price sensitivity alone, requiring all advertising to emphasize discount pricing and promotional offers rather than product quality or brand values."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Growing ethnic markets are defined by distinct cultural values, family dynamics, and communication preferences that shape what benefits resonate, how messages should be framed, and which media channels reach them effectively. The other options either mischaracterize technology adoption, create false trade-offs with mainstream markets, or reduce ethnic markets to price sensitivity—none of which captures the core insight that cultural distinctiveness drives advertising strategy.",
   "difficulty": "hard",
   "knowledge_area": "Diversity & Advertising"
@@ -561,12 +561,12 @@
  {
   "question": "An appliance manufacturer observes that diversity in its consumer base—spanning multiple ethnicities, generations, and income levels within a single country—creates conflicting advertising priorities. How does this multiculturalism most fundamentally impact the company's advertising approach?",
   "options": [
-   "Multiculturalism in advertising markets eliminates the need for market research, since companies can assume all diverse consumers share identical purchasing motivations and media habits.",
-   "The presence of multiple cultural groups within a market mandates that companies must select a single primary culture to target, excluding other segments to maintain message clarity.",
    "Multicultural markets require advertising to focus exclusively on cultural differences and avoid any universal brand messaging, preventing the company from establishing a coherent corporate identity.",
-   "Multicultural audiences require the company to develop multiple campaign variations or segments, each addressing the distinct values, communication styles, and product priorities of specific demographic groups rather than assuming one message works universally."
+   "The presence of multiple cultural groups within a market mandates that companies must select a single primary culture to target, excluding other segments to maintain message clarity.",
+   "Multicultural audiences require the company to develop multiple campaign variations or segments, each addressing the distinct values, communication styles, and product priorities of specific demographic groups rather than assuming one message works universally.",
+   "Multiculturalism in advertising markets eliminates the need for market research, since companies can assume all diverse consumers share identical purchasing motivations and media habits."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Multiculturalism demands segmentation and tailored messaging because different cultural groups prioritize different values, consume media differently, and respond to different communication styles—yet all segments can strengthen the brand through inclusive, diverse campaigns. The other options either eliminate market research, force false exclusivity, or swing too far toward fragmentation by rejecting all universal messaging.",
   "difficulty": "hard",
   "knowledge_area": "Diversity & Advertising"
@@ -587,12 +587,12 @@
  {
   "question": "A salesperson has identified a prospect and made initial contact, but during the conversation realizes the prospect's stated needs differ significantly from what the salesperson assumed before the meeting. At which point in the sales process should the salesperson recalibrate their approach?",
   "options": [
-   "During the determine needs phase by asking clarifying questions to understand the prospect's actual requirements",
    "During the approach phase by repositioning the conversation toward the salesperson's primary product offering",
+   "During the determine needs phase by asking clarifying questions to understand the prospect's actual requirements",
    "During the present phase by adjusting the product demonstration to address the initially assumed needs",
    "During the leads phase by requesting updated prospect information before the next call"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The determine needs phase is where the salesperson should uncover and clarify the prospect's actual requirements through questioning. Recalibrating at this stage prevents presenting solutions misaligned with the prospect's real situation. Waiting until the present phase or forcing the assumed needs wastes time and reduces the likelihood of closing.",
   "difficulty": "hard",
   "knowledge_area": "Personal Selling & Sales Promotion"
@@ -601,11 +601,11 @@
   "question": "A retail company notices that customers frequently purchase one product category but rarely try a competing category they also stock. The marketing team decides to implement a sales promotion strategy. Which primary reason for using sales promotion best addresses this business challenge?",
   "options": [
    "To strengthen customer loyalty by rewarding repeat purchases of the existing category",
-   "To influence behavior by creating urgency through limited-time discount offers on all categories",
    "To influence purchasing decisions by increasing shelf visibility and signage",
-   "To encourage trial of the competing product category through incentives or sampling programs"
+   "To encourage trial of the competing product category through incentives or sampling programs",
+   "To influence behavior by creating urgency through limited-time discount offers on all categories"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Encouraging trial is the specific reason for sales promotion when the goal is to get customers to try a new or underutilized product. Sampling, discounts on that category, or bundle offers remove barriers to trying something unfamiliar. The other options address loyalty, visibility, or urgency but don't specifically target the trial barrier.",
   "difficulty": "hard",
   "knowledge_area": "Personal Selling & Sales Promotion"
@@ -613,9 +613,9 @@
  {
   "question": "During a sales presentation, a prospect expresses concern that the proposed solution costs significantly more than a competitor's offering. The salesperson has documented this as an objection to address. Which step in the sales process is the salesperson currently executing, and what should happen next?",
   "options": [
-   "The present step; the salesperson should move directly to closing the sale to avoid further objections",
-   "The approach step; the salesperson should acknowledge the competitor and immediately propose a discounted alternative package",
    "The determine needs step; the salesperson should revisit the prospect's requirements to confirm alignment with the higher-cost solution",
+   "The approach step; the salesperson should acknowledge the competitor and immediately propose a discounted alternative package",
+   "The present step; the salesperson should move directly to closing the sale to avoid further objections",
    "The overcome objections step; the salesperson should provide evidence of superior value and differentiation to justify the price difference"
   ],
   "correct_index": 3,
@@ -626,12 +626,12 @@
  {
   "question": "A B2B sales team implements a multi-touch follow-up process after closing deals, including check-ins at 30, 60, and 90 days post-sale. Based on the sales process framework, which outcome is this follow-up strategy primarily designed to achieve?",
   "options": [
-   "To generate new leads by asking existing customers for referrals and contact information",
    "To strengthen customer loyalty and establish a foundation for repeat business and account growth",
-   "To determine unmet needs by conducting a formal requirements analysis with the customer",
-   "To overcome objections from prospects who declined the initial proposal"
+   "To overcome objections from prospects who declined the initial proposal",
+   "To generate new leads by asking existing customers for referrals and contact information",
+   "To determine unmet needs by conducting a formal requirements analysis with the customer"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Follow-up after closing is essential to ensure customer satisfaction, address any implementation concerns, and build the relationship for future sales—directly strengthening loyalty and repeat business potential. While follow-up may generate referrals or uncover future needs, the primary role of post-sale follow-up in the sales process is relationship building and customer retention. This step occurs after the sale is already closed, distinguishing it from lead generation or needs analysis.",
   "difficulty": "hard",
   "knowledge_area": "Personal Selling & Sales Promotion"
@@ -639,9 +639,9 @@
  {
   "question": "A salesperson successfully identifies qualified leads and schedules meetings, but data shows that 40% of these prospects never return calls after the initial approach contact. To improve conversion rates, the sales manager theorizes that the approach step requires refinement. Which of the following adjustments best addresses the core purpose of the approach step?",
   "options": [
-   "Conduct more thorough research on prospect company financials and organizational structure before the call",
-   "Present product features and pricing information earlier in the conversation to capture interest immediately",
    "Schedule follow-up calls within 48 hours and use multiple contact channels to increase the likelihood of connection",
+   "Present product features and pricing information earlier in the conversation to capture interest immediately",
+   "Conduct more thorough research on prospect company financials and organizational structure before the call",
    "Establish rapport, credibility, and a clear purpose for the meeting that motivates the prospect to engage further"
   ],
   "correct_index": 3,

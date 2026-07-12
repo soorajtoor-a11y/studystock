@@ -2,12 +2,12 @@
  {
   "question": "When preparing a career plan, which combination of elements should be prioritized to address employment barriers faced by underrepresented groups in business?",
   "options": [
-   "Developing interview scripts, networking within immediate circles, and selecting positions that require minimal educational background or experience",
-   "Completing standardized certifications, applying only to large corporations, and requesting accommodations during the interview process",
    "Focusing exclusively on technical skills, attending industry conferences, and maintaining a portfolio that emphasizes previous employment history",
-   "Identifying skill gaps, researching inclusive employers, and connecting with professional networks that actively support diverse talent pipelines"
+   "Identifying skill gaps, researching inclusive employers, and connecting with professional networks that actively support diverse talent pipelines",
+   "Completing standardized certifications, applying only to large corporations, and requesting accommodations during the interview process",
+   "Developing interview scripts, networking within immediate circles, and selecting positions that require minimal educational background or experience"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Addressing employment barriers for nontraditional groups requires a multifaceted approach that includes self-assessment of skill development, research into employers with genuine diversity initiatives, and building professional networks that actively seek diverse candidates. The other options either oversimplify the barrier-removal process or focus on strategies that may inadvertently reinforce existing obstacles rather than remedying them.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -17,10 +17,10 @@
   "options": [
    "Copies of job postings applied to, rejection letters addressed by hiring managers, and thank-you notes sent after informational interviews with industry professionals",
    "Personal references, high school transcripts, and certificates from online courses completed in the past two years to show current learning engagement",
-   "Cover letters from unsuccessful applications, performance reviews from previous positions, and informal feedback from colleagues regarding workplace contributions",
-   "Work samples demonstrating skill progression, letters of recommendation from supervisors, and documentation of completed professional development activities alongside updated resume versions"
+   "Work samples demonstrating skill progression, letters of recommendation from supervisors, and documentation of completed professional development activities alongside updated resume versions",
+   "Cover letters from unsuccessful applications, performance reviews from previous positions, and informal feedback from colleagues regarding workplace contributions"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "A strong career-advancement portfolio combines tangible work samples showing skill development, credible third-party validation through recommendations, and evidence of ongoing professional development to present a comprehensive narrative of growth. The distractors include elements that may exist in a portfolio but do not collectively demonstrate the kind of competency progression and professional commitment that advances career opportunities.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -28,12 +28,12 @@
  {
   "question": "During a follow-up after an employment application, which approach best balances persistence with professionalism while demonstrating genuine interest in the position?",
   "options": [
-   "Messaging multiple employees on professional networks within 48 hours, forwarding your resume to each contact to ensure visibility among decision-makers",
-   "Sending a handwritten thank-you card within two business days, requesting an interview timeline and offering three specific dates for availability",
    "Waiting five to seven business days, contacting the hiring manager via email with a brief reminder of your qualifications and sincere interest in the role",
-   "Calling the company daily until speaking directly with someone, reiterating your availability and willingness to accept any offered compensation"
+   "Messaging multiple employees on professional networks within 48 hours, forwarding your resume to each contact to ensure visibility among decision-makers",
+   "Calling the company daily until speaking directly with someone, reiterating your availability and willingness to accept any offered compensation",
+   "Sending a handwritten thank-you card within two business days, requesting an interview timeline and offering three specific dates for availability"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Appropriate follow-up timing (five to seven business days) and method (professional email) demonstrate respect for the hiring process while the brief, focused message confirms interest without appearing desperate. The other options either violate professional norms through excessive contact, presume familiarity, or risk being perceived as pushy rather than genuinely interested.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -41,9 +41,9 @@
  {
   "question": "Which combination of behaviors would be considered inappropriate during a job interview and could significantly damage a candidate's prospects?",
   "options": [
+   "Asking clarifying questions about the role, maintaining eye contact throughout the conversation, and following up with a thank-you note within 24 hours",
    "Researching the company beforehand, arriving ten minutes early, and speaking confidently about how your skills match the job description",
    "Dressing professionally according to company culture, listening actively to interviewer questions, and providing specific examples of relevant accomplishments",
-   "Asking clarifying questions about the role, maintaining eye contact throughout the conversation, and following up with a thank-you note within 24 hours",
    "Providing vague answers about work experience, checking your phone during the interview, and discussing salary expectations before the employer raises compensation"
   ],
   "correct_index": 3,
@@ -54,12 +54,12 @@
  {
   "question": "When resigning from a position, which sequence of steps demonstrates both professional responsibility and protection of your career reputation?",
   "options": [
-   "Announcing your departure to coworkers, requesting immediate leave to begin job searching, negotiating a severance package, and transferring your client contacts to a personal network",
-   "Securing a written offer from a new employer, submitting a formal resignation letter with appropriate notice period, meeting with your manager to discuss transition, and documenting your responsibilities for successor",
    "Verbally informing your supervisor during a casual conversation, offering to train your replacement on an informal basis, and gradually reducing your work output before your last day",
-   "Posting your resignation on company communication channels, requesting final paycheck including unused vacation days, and removing company files from your work station immediately"
+   "Posting your resignation on company communication channels, requesting final paycheck including unused vacation days, and removing company files from your work station immediately",
+   "Securing a written offer from a new employer, submitting a formal resignation letter with appropriate notice period, meeting with your manager to discuss transition, and documenting your responsibilities for successor",
+   "Announcing your departure to coworkers, requesting immediate leave to begin job searching, negotiating a severance package, and transferring your client contacts to a personal network"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Proper resignation procedure includes securing your next position first, providing formal notice with adequate transition time, communicating professionally with management, and ensuring a structured handoff of responsibilities to maintain relationships and professional standing. The distractors represent approaches that damage professional reputation through lack of formality, breach of confidentiality, or failure to support organizational continuity.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -67,12 +67,12 @@
  {
   "question": "A company implements a disaster recovery plan that includes both data backup procedures and employee communication protocols. Which of the following best describes the dual purpose of including employee communication in an emergency plan?",
   "options": [
-   "Employee communication enables the company to comply with Sarbanes-Oxley requirements by maintaining a record of all business continuity decisions made by leadership.",
-   "Employee communication provides a method to gather employee feedback about safety concerns and to identify which staff members need additional ergonomic training.",
+   "Employee communication ensures staff can be notified of evacuation procedures and receive real-time updates on facility status, reducing confusion and potential injuries during a crisis.",
    "Employee communication allows management to document who was present during the emergency for liability purposes and to track attendance records after the incident.",
-   "Employee communication ensures staff can be notified of evacuation procedures and receive real-time updates on facility status, reducing confusion and potential injuries during a crisis."
+   "Employee communication provides a method to gather employee feedback about safety concerns and to identify which staff members need additional ergonomic training.",
+   "Employee communication enables the company to comply with Sarbanes-Oxley requirements by maintaining a record of all business continuity decisions made by leadership."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Emergency and disaster plans must include clear communication protocols to safely guide employees through crises and keep them informed. While documentation and compliance are secondary benefits, the primary purpose of employee communication in emergencies is immediate safety and situational awareness. The other options conflate emergency planning with unrelated objectives like performance evaluation, ergonomics training, or regulatory compliance.",
   "difficulty": "hard",
   "knowledge_area": "Ethics/Safety"
@@ -80,12 +80,12 @@
  {
   "question": "An employee discovers that a colleague has been accessing confidential client files without authorization to complete routine reports. Under office confidentiality and privacy policies, which action represents the most ethically sound and legally compliant response?",
   "options": [
-   "Inform the colleague immediately of the policy violation and request that they stop, avoiding escalation unless the behavior continues over the next two weeks.",
-   "Access the same files yourself to verify what information was viewed, then report both incidents together to demonstrate the scope of the problem.",
    "Document the dates and file names accessed, then present evidence to the colleague to give them an opportunity to explain before any formal action is taken.",
-   "Report the unauthorized access to the appropriate supervisor or compliance officer rather than confronting the colleague directly, ensuring the breach is documented and investigated through proper channels."
+   "Report the unauthorized access to the appropriate supervisor or compliance officer rather than confronting the colleague directly, ensuring the breach is documented and investigated through proper channels.",
+   "Inform the colleague immediately of the policy violation and request that they stop, avoiding escalation unless the behavior continues over the next two weeks.",
+   "Access the same files yourself to verify what information was viewed, then report both incidents together to demonstrate the scope of the problem."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Privacy and security policies require that unauthorized access be reported through official channels to ensure proper investigation, documentation, and remediation. This protects both the organization and affected clients legally. Confronting the colleague informally delays action, self-investigating creates additional violations, and offering informal chances to explain circumvents security protocols designed to protect confidential data.",
   "difficulty": "hard",
   "knowledge_area": "Ethics/Safety"
@@ -106,12 +106,12 @@
  {
   "question": "When analyzing an ethical issue in which a manager is pressuring employees to misrepresent project completion status to senior leadership, which characteristic of professional conduct is most directly undermined, and what governance mechanism should address it?",
   "options": [
-   "Courtesy is compromised because the manager's tone and approach to the request violates norms of respectful workplace interaction that should be addressed through management training.",
-   "Honesty is undermined and must be corrected through an immediate security audit to ensure that falsified data is not stored in company systems or shared with external stakeholders.",
    "Loyalty is compromised because employees must choose between supporting the manager and supporting the company, resulting in a conflict that requires human resources mediation.",
-   "Integrity is compromised because honest and truthful communication about project status is required under both professional conduct standards and Sarbanes-Oxley accountability requirements for accurate business reporting."
+   "Integrity is compromised because honest and truthful communication about project status is required under both professional conduct standards and Sarbanes-Oxley accountability requirements for accurate business reporting.",
+   "Courtesy is compromised because the manager's tone and approach to the request violates norms of respectful workplace interaction that should be addressed through management training.",
+   "Honesty is undermined and must be corrected through an immediate security audit to ensure that falsified data is not stored in company systems or shared with external stakeholders."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Misrepresenting project status directly violates integrity—the core characteristic requiring truthful conduct—and exposes the company to legal risk under Sarbanes-Oxley, which mandates accurate business reporting and documentation. While loyalty, courtesy, and data security are relevant concerns, integrity is the specific professional conduct characteristic most directly violated by dishonest communication, and regulatory compliance mechanisms specifically address this risk.",
   "difficulty": "hard",
   "knowledge_area": "Ethics/Safety"
@@ -132,12 +132,12 @@
  {
   "question": "A manager is designing a new employee orientation program and must choose between three approaches. Which combination of elements best addresses both compliance requirements and long-term productivity in the onboarding process?",
   "options": [
-   "Distributing the employee handbook, scheduling initial payroll paperwork, introducing the employee to their workstation, and planning follow-up training sessions",
    "Reviewing job descriptions, explaining work processes, covering company policies, and assessing employee motivation levels during the first week",
+   "Distributing the employee handbook, scheduling initial payroll paperwork, introducing the employee to their workstation, and planning follow-up training sessions",
    "Presenting organizational history, outlining dress code expectations, demonstrating key procedures, and establishing communication channels with supervisors",
    "Collecting background verification, assigning work schedules, explaining performance evaluation criteria, and introducing team problem-solving methods"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Effective new employee orientation integrates job description clarity, process instruction, policy communication, and assessment of motivational fit—all critical to both immediate compliance and sustained engagement. The other options include necessary elements but omit either the motivational component or systematic process explanation that ensures long-term productivity beyond initial setup tasks.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -145,12 +145,12 @@
  {
   "question": "During a performance evaluation review, an employee disputes their rating on teamwork and knowledge sharing. The manager must balance acknowledging the employee's perspective while maintaining evaluation standards. Which approach best demonstrates both evaluative objectivity and relationship-building?",
   "options": [
-   "Reviewing documented examples of collaborative projects, discussing specific instances where knowledge was or was not shared, exploring barriers to participation, and identifying mutual development goals",
    "Explaining that evaluations are final, providing the written rating justification, listing company teamwork policies, and asking the employee to sign the evaluation form",
    "Asking the employee for their self-assessment, revising the rating if they disagree, documenting their concerns in the file, and offering additional training resources",
-   "Comparing the employee's rating to peers in similar roles, acknowledging their effort on recent assignments, noting areas for improvement, and scheduling a follow-up in six months"
+   "Comparing the employee's rating to peers in similar roles, acknowledging their effort on recent assignments, noting areas for improvement, and scheduling a follow-up in six months",
+   "Reviewing documented examples of collaborative projects, discussing specific instances where knowledge was or was not shared, exploring barriers to participation, and identifying mutual development goals"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "A hard evaluation discussion requires grounding feedback in concrete examples while remaining open to the employee's input—this approach uses documented evidence, explores context, and collaboratively sets forward goals. The other options either close dialogue prematurely, rely on comparison (which may lack specificity), or undermine evaluation integrity by revising ratings based solely on disagreement.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -158,12 +158,12 @@
  {
   "question": "A supervisor must redistribute workload across a team of five employees after a staff member takes medical leave. The supervisor needs to maintain both individual productivity and team morale. Which set of actions best integrates workload distribution with relationship maintenance?",
   "options": [
+   "Reviewing performance evaluations to identify high performers, assigning them the most critical work, informing the team of the redistribution rationale, and adjusting dress code flexibility as a morale gesture",
    "Assigning additional duties based on current job descriptions, consulting with each employee about capacity, redistributing tasks to match individual strengths, and establishing check-in points to monitor workload impact",
    "Prioritizing urgent work first, assigning backlog tasks to available staff, asking for volunteer overtime, and planning temporary hiring to restore full capacity",
-   "Reviewing performance evaluations to identify high performers, assigning them the most critical work, informing the team of the redistribution rationale, and adjusting dress code flexibility as a morale gesture",
    "Calculating total workload hours, dividing tasks equally among remaining staff, implementing the new schedule immediately, and documenting all assignments in employee records"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Effective workload redistribution requires grounding decisions in job descriptions, individual input on capacity, matching tasks to employee strengths, and ongoing communication—this maintains both productivity and trust. The other options either treat distribution as purely mechanical, rely on performance ratings as proxies for willingness, or address symptoms (overtime/hiring) without first optimizing existing team deployment.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -172,11 +172,11 @@
   "question": "A manager is updating the company's policies and procedures manual following several inconsistencies in how different departments handle customer complaints. The manager must ensure the update supports both compliance and employee discretion. Which approach best achieves this balance?",
   "options": [
    "Listing complaint categories, specifying required documentation formats, detailing the chain of command for escalation, and requiring employee sign-offs acknowledging they have reviewed updates",
-   "Documenting core complaint-handling steps, defining when escalation is required, providing examples of appropriate employee responses in different scenarios, and specifying documentation and follow-up protocols",
    "Outlining general customer service principles, explaining the rationale behind each procedure, allowing departments to customize approaches, and scheduling quarterly reviews to assess effectiveness",
-   "Establishing strict protocols for all complaint types, requiring manager approval before any employee response, standardizing language across all departments, and including specific timeframes for resolution"
+   "Establishing strict protocols for all complaint types, requiring manager approval before any employee response, standardizing language across all departments, and including specific timeframes for resolution",
+   "Documenting core complaint-handling steps, defining when escalation is required, providing examples of appropriate employee responses in different scenarios, and specifying documentation and follow-up protocols"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Policy updates must provide clear structure (steps, escalation triggers, documentation requirements) while enabling judgment through examples and context—this supports consistent compliance without eliminating necessary discretion. The other options either impose rigid control that limits appropriate responses or provide insufficient guidance for consistent execution across departments.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -184,12 +184,12 @@
  {
   "question": "A team is tasked with solving a recurring problem: customer orders are frequently delayed because different departments prioritize work differently. The team includes members from sales, operations, and fulfillment. Which problem-solving approach best leverages the team's diverse perspectives while establishing sustainable procedures?",
   "options": [
-   "Facilitating group discussion about obstacles, recording all suggestions, consulting management about feasible solutions, and instituting changes based on feasibility and cost impact",
    "Assigning a cross-functional task force to audit current processes, benchmarking against industry standards, recommending a best-practice procedure, and implementing it department-wide",
-   "Conducting a series of meetings to understand each department's concerns, developing a single priority ranking system, publishing the system, and training all staff on its application",
-   "Having each department present its prioritization criteria, identifying conflicts, negotiating shared metrics, documenting the agreed process, and assigning ownership for monitoring adherence"
+   "Facilitating group discussion about obstacles, recording all suggestions, consulting management about feasible solutions, and instituting changes based on feasibility and cost impact",
+   "Having each department present its prioritization criteria, identifying conflicts, negotiating shared metrics, documenting the agreed process, and assigning ownership for monitoring adherence",
+   "Conducting a series of meetings to understand each department's concerns, developing a single priority ranking system, publishing the system, and training all staff on its application"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "This approach transforms conflict into shared understanding by surfacing each department's reasoning, building consensus on joint metrics, and creating accountability—solving the root cause rather than symptoms. The other options either gather input without resolving underlying tensions, rely on external benchmarks that may not fit local constraints, or delay decision-making by deferring to management without team ownership.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -197,12 +197,12 @@
  {
   "question": "A company's monthly bank reconciliation shows a deposit of $2,400 recorded in the accounting system but not yet appearing on the bank statement. How should this timing difference be handled in the reconciliation process?",
   "options": [
-   "Remove the deposit from the accounting records and wait for bank confirmation before re-recording",
-   "Subtract the deposit from the company's book balance to correct an accounting error",
    "Add the deposit to the bank statement balance since it represents a legitimate company transaction in transit",
+   "Subtract the deposit from the company's book balance to correct an accounting error",
+   "Remove the deposit from the accounting records and wait for bank confirmation before re-recording",
    "Deduct the deposit from both the bank and book balances to prevent double-counting"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Deposits in transit are legitimate company transactions already recorded in the books but not yet cleared by the bank. These are added to the bank statement balance during reconciliation to explain timing differences. Subtracting from the book balance would incorrectly remove a valid transaction, and removing it entirely would misstate company finances.",
   "knowledge_area": "Finance",
   "difficulty": "hard"
@@ -210,12 +210,10 @@
  {
   "question": "When preparing a payroll register, an employee's gross pay is $1,840, with federal withholding of $184, Social Security of $114, Medicare of $27, and health insurance of $95. What is the correct net pay amount?",
   "options": [
-   "$1,420",
-   "$1,420",
-   "$1,420",
-   "1420"
+   "1420",
+   "$1,420"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Net pay is calculated by subtracting all deductions from gross pay: $1,840 − ($184 + $114 + $27 + $95) = $1,840 − $420 = $1,420. Proper payroll completion requires accurate arithmetic and understanding which amounts reduce an employee's take-home pay.",
   "knowledge_area": "Finance",
   "difficulty": "hard"
@@ -223,12 +221,12 @@
  {
   "question": "During a petty cash recount, the physical cash on hand totals $87.35, while the petty cash register shows a balance of $145.00. The last recorded transaction was a $32.50 supply purchase. Which action should be taken to restore the fund to its authorized level of $150?",
   "options": [
-   "Add $62.65 to the current balance and reconcile receipts to the petty cash register weekly",
    "Write a check for $62.65 to replenish the fund and record the $57.65 shortage as a miscellaneous expense",
-   "Deduct $57.65 from the petty cash account and verify all receipts before taking further action",
-   "Issue a check for $150 to replace the entire fund and investigate the discrepancy separately"
+   "Add $62.65 to the current balance and reconcile receipts to the petty cash register weekly",
+   "Issue a check for $150 to replace the entire fund and investigate the discrepancy separately",
+   "Deduct $57.65 from the petty cash account and verify all receipts before taking further action"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A petty cash shortage of $57.65 ($145 − $87.35) must be recorded as an expense, and the fund must be replenished with a check for $62.65 to return it to the $150 authorized level. This approach documents the loss and restores the fund to its proper balance in a single transaction.",
   "knowledge_area": "Finance",
   "difficulty": "hard"
@@ -236,12 +234,9 @@
  {
   "question": "An office manager is developing an expense budget for the upcoming fiscal year. Last year's actual office supply costs were $3,200, and utility expenses were $4,800. The manager anticipates a 6% increase in supplies and a 3% increase in utilities due to facility expansion. What is the total budgeted amount for these two categories?",
   "options": [
-   "$8,288",
-   "$8,288",
-   "$8,288",
    "$8,288"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Office supplies budget: $3,200 × 1.06 = $3,392; Utilities budget: $4,800 × 1.03 = $4,944; Combined total: $3,392 + $4,944 = $8,336. Budgeting requires applying percentage increases to historical data to project future costs accurately.",
   "knowledge_area": "Finance",
   "difficulty": "hard"
@@ -249,12 +244,12 @@
  {
   "question": "A company issues a purchase requisition for equipment valued at $850. The requisition is approved and sent to the vendor, who invoices the company for the full amount. Before payment is made, which document should be used to authorize and record the payment, and what is its primary function?",
   "options": [
-   "An expense account transfer form should be completed to allocate the cost across the appropriate general ledger accounts",
    "A cash disbursement schedule should be created to track payment due dates and discount opportunities",
-   "An accounts payable aging report should be filed to document vendor payment history and creditworthiness",
-   "A payment voucher should be prepared to authorize the payment and create a record linking the requisition, purchase order, invoice, and receiving report"
+   "A payment voucher should be prepared to authorize the payment and create a record linking the requisition, purchase order, invoice, and receiving report",
+   "An expense account transfer form should be completed to allocate the cost across the appropriate general ledger accounts",
+   "An accounts payable aging report should be filed to document vendor payment history and creditworthiness"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "A payment voucher is the authorization and control document that ensures the requisition, purchase order, invoice, and receiving documentation all match before payment is released. This three-way match prevents unauthorized or duplicate payments and creates an audit trail. An expense allocation, disbursement schedule, or aging report serve different purposes and do not authorize payment.",
   "knowledge_area": "Finance",
   "difficulty": "hard"
@@ -262,12 +257,12 @@
  {
   "question": "When reconciling a bank statement, the company's cash balance shows $8,450 but the bank statement shows $9,200. The company has outstanding checks totaling $1,100 and has recorded a deposit in transit of $650. Which of the following would explain the remaining discrepancy?",
   "options": [
-   "A deposit recorded twice by the company in error, creating a $300 overstatement of cash",
    "A bank service charge of $300 that the company has not yet recorded in its general ledger",
    "An NSF check from a customer for $300 that the bank deducted but the company still has on its books",
+   "A deposit recorded twice by the company in error, creating a $300 overstatement of cash",
    "A petty cash fund shortage of $300 that reduces the company's actual cash position"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Outstanding checks ($1,100) and the deposit in transit ($650) are timing differences between the company and bank records. The math: $8,450 + $650 - $1,100 = $8,000, but the bank shows $9,200. An NSF check of $300 deducted by the bank but still on the company's books would create this $1,200 gap: $9,200 - $300 = $8,900, and $8,450 + $650 - $1,100 = $8,000 with the NSF reducing the true balance to $7,700 actually available. The NSF is a liability that the company must adjust for in its records.",
   "difficulty": "hard",
   "knowledge_area": "Finance"
@@ -275,12 +270,12 @@
  {
   "question": "A company is preparing its monthly payroll and discovers that employee gross wages total $24,500 but the payroll tax expense account shows $3,200 for the month. The payroll accountant must allocate payroll taxes across three categories: Social Security/Medicare (7.65% of gross), federal withholding (15% of gross), and state withholding (4% of gross). Which of the following represents the correct total payroll tax burden the company should record as a liability?",
   "options": [
-   "$2,940 as the employer's matching contribution for Social Security and Medicare taxes only",
-   "$5,145 as the sum of all employer and employee tax obligations on the gross wages",
+   "$4,900 reflecting the statutory employer contribution plus the required employee deductions",
    "$3,872 representing Social Security, Medicare, and federal withholding combined on employee salaries",
-   "$4,900 reflecting the statutory employer contribution plus the required employee deductions"
+   "$2,940 as the employer's matching contribution for Social Security and Medicare taxes only",
+   "$5,145 as the sum of all employer and employee tax obligations on the gross wages"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The company's total payroll tax burden includes both employer-paid taxes and employee deductions withheld. Calculate: Social Security/Medicare at 7.65% × $24,500 = $1,874.25 (employer match) + $1,874.25 (employee) = $3,748.50; federal withholding at 15% × $24,500 = $3,675 (employee); state at 4% × $24,500 = $980 (employee). Total liabilities = $3,748.50 + $3,675 + $980 = $8,403.50 in total obligations, though the company only directly pays the employer portion ($1,874.25 + $980 = $2,854.25) plus deposits withheld amounts. The $5,145 figure represents a portion of the full burden.",
   "difficulty": "hard",
   "knowledge_area": "Finance"
@@ -288,12 +283,12 @@
  {
   "question": "During a budget review, a manager notices that the office supplies expense category is projected at $3,200 for the quarter but actual spending through two months is $2,450. The manager wants to implement an expense-control strategy. Which combination of actions would most effectively manage the remaining budget while maintaining operational function?",
   "options": [
-   "Reduce the quarterly budget allocation retroactively to $2,400 and deny all non-emergency supply requests for month three",
-   "Freeze all supply purchases immediately and carry the unused $750 forward to the next quarter for contingency spending",
    "Establish a weekly purchase requisition approval process and require cost comparisons for orders over $100 in the remaining month",
-   "Increase spending to $3,200 by the end of the quarter to fully utilize the allocated budget and prevent future reductions"
+   "Increase spending to $3,200 by the end of the quarter to fully utilize the allocated budget and prevent future reductions",
+   "Reduce the quarterly budget allocation retroactively to $2,400 and deny all non-emergency supply requests for month three",
+   "Freeze all supply purchases immediately and carry the unused $750 forward to the next quarter for contingency spending"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Effective expense control balances budget adherence with operational needs. A weekly requisition review with cost comparisons ($750 remaining budget ÷ 1 month = $250/week threshold) allows management oversight and vendor negotiation without operational disruption. Freezing purchases (option A) risks supply shortages; retroactive budget cuts (option C) are inflexible; spending to match the budget (D) defeats cost control. The approval process and comparison requirement create accountability while preserving the ability to make necessary purchases.",
   "difficulty": "hard",
   "knowledge_area": "Finance"
@@ -301,12 +296,12 @@
  {
   "question": "A company maintains a petty cash fund of $500 for small office expenses. At month-end recount, the fund contains $127 in cash plus receipts totaling: office supplies $156, postage $89, and client meals $92. When reconciling the petty cash fund, which entry should the accountant record?",
   "options": [
+   "Debit office supplies $156, postage $89, meals $92, and credit miscellaneous expense $337 for unaccounted cash",
    "Debit expense accounts $337, debit cash short/over $36, and credit petty cash $373 to reestablish the $500 balance",
    "Debit office supplies $156, postage $89, meals $92, short/over $36, and credit cash $373 to restore the fund balance",
-   "Debit expense accounts $337 and credit petty cash $337 to replenish the fund to $500",
-   "Debit office supplies $156, postage $89, meals $92, and credit miscellaneous expense $337 for unaccounted cash"
+   "Debit expense accounts $337 and credit petty cash $337 to replenish the fund to $500"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Petty cash reconciliation requires recording expenses and accounting for differences. The receipts total $337 ($156 + $89 + $92), but the cash shortage is $36 (fund should have $500 - $127 = $373 in receipts, but only $337 is documented). The entry records each expense category separately and accounts for the $36 overage in the short/over account, then credits the main cash account $373 to reimburse the petty cash fund to its $500 balance. This ensures all expense categories are properly recorded and any discrepancies are tracked.",
   "difficulty": "hard",
   "knowledge_area": "Finance"
@@ -315,11 +310,11 @@
   "question": "A purchase requisition for $2,800 in office equipment is submitted with quotes from two vendors: Vendor A at $2,800 with 30-day terms, and Vendor B at $2,925 with 60-day terms and a free maintenance contract for one year. The company's accounts payable department must evaluate which vendor to recommend. Which factor should be weighted most heavily in the payment voucher approval process?",
   "options": [
    "The payment terms length alone, since longer terms reduce immediate cash pressure and allow deferral of expense recognition",
-   "The total cash outlay amount, since Vendor A's lower price preserves working capital for other operational needs",
+   "The terms and total cost of ownership, since Vendor B's maintenance contract may offset the $125 premium and extended terms align with cash flow projections",
    "The equipment quality and vendor reliability, since the cheapest option often results in higher replacement costs within two years",
-   "The terms and total cost of ownership, since Vendor B's maintenance contract may offset the $125 premium and extended terms align with cash flow projections"
+   "The total cash outlay amount, since Vendor A's lower price preserves working capital for other operational needs"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Sound payment voucher decisions balance price, terms, and total cost of ownership. Vendor B's $125 premium is offset by the free one-year maintenance contract (reducing future expense), and 60-day terms improve cash flow management compared to Vendor A's 30-day terms—a 30-day advantage for cash planning. Simply choosing the lowest price (A) ignores the value of services; focusing only on payment terms (C) overlooks cost; and equipment quality (D) is speculative without vendor data. The accountant should approve the vendor that minimizes total cost while supporting the company's cash flow position.",
   "difficulty": "hard",
   "knowledge_area": "Finance"
@@ -327,12 +322,12 @@
  {
   "question": "A business receives 500 pages of historical sales contracts and wants to make them searchable while preserving originals. Which combination of systems would best serve both the retrieval and preservation objectives?",
   "options": [
-   "A numerical filing system for contract reference numbers linked to a reference library containing scanned images and a tickler system for contract renewal dates",
-   "Scanning equipment to convert documents to digital format, paired with a chronological filing system for the original contracts organized by execution date",
+   "Converting files using scanning equipment to create a subject-organized reference library, while maintaining chronological filing of originals by transaction completion date",
    "Document storage and retrieval software integrated with subject-based filing for originals, supported by a scanning system for backup digital copies",
-   "Converting files using scanning equipment to create a subject-organized reference library, while maintaining chronological filing of originals by transaction completion date"
+   "A numerical filing system for contract reference numbers linked to a reference library containing scanned images and a tickler system for contract renewal dates",
+   "Scanning equipment to convert documents to digital format, paired with a chronological filing system for the original contracts organized by execution date"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The numerical filing system for contracts creates an indexing structure, scanning converts them to searchable digital format, and the tickler system manages renewal or follow-up actions—addressing both accessibility and preservation. The other options either emphasize preservation over retrieval (option 0), separate digital and physical systems without clear linkage (option 2), or duplicate the scanning/filing without clear priority (option 3).",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -340,12 +335,12 @@
  {
   "question": "During a records audit, a manager discovers that three filing cabinets contain outdated vendor correspondence from 2015–2017, customer payment receipts from 2012–2014, and internal memos with no apparent business value. According to records management best practices, what should guide the decision to purge versus retain these files?",
   "options": [
-   "The physical age of documents, the condition of filing cabinets, and whether digital copies exist in the company's email archives",
-   "Retention schedules based on legal hold requirements, tax code retention periods, and documented business necessity for historical reference",
    "Employee preference for cabinet space, the cost of scanning equipment to digitize records, and whether files are organized alphabetically or chronologically",
-   "The original cost of filing supplies, the number of customer complaints referencing old records, and the company's current inventory count methods"
+   "The original cost of filing supplies, the number of customer complaints referencing old records, and the company's current inventory count methods",
+   "The physical age of documents, the condition of filing cabinets, and whether digital copies exist in the company's email archives",
+   "Retention schedules based on legal hold requirements, tax code retention periods, and documented business necessity for historical reference"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Record purge decisions must follow legal and regulatory retention schedules, not arbitrary factors like storage capacity or file condition. Option 1 correctly identifies that retention is driven by compliance requirements, tax code mandates, and actual business value. The other options confuse purging criteria with storage logistics (option 1), filing organization (option 2), or unrelated business metrics (option 3).",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -353,12 +348,12 @@
  {
   "question": "An office maintains four filing systems: alphabetical for vendor names, numerical for invoice numbers, chronological for monthly reports, and subject-based for project folders. A new employee must locate a specific vendor's Q3 invoices from the current year. Which sequence of systems should the employee consult for the fastest retrieval?",
   "options": [
-   "First the numerical system to pull all invoices from the current year, then alphabetical to sort by vendor, then chronological to extract Q3 entries",
-   "First the subject-based system to determine the project, then the chronological system to limit to Q3, then the numerical system to pull specific invoices",
    "First the alphabetical system to identify the vendor, then the numerical system to match invoice numbers, then chronological to confirm the Q3 timeframe",
+   "First the subject-based system to determine the project, then the chronological system to limit to Q3, then the numerical system to pull specific invoices",
+   "First the numerical system to pull all invoices from the current year, then alphabetical to sort by vendor, then chronological to extract Q3 entries",
    "First the chronological system to isolate Q3 months, then the subject-based system to filter by project, then alphabetical to find the vendor"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The most efficient path starts with the alphabetical vendor name (narrowing to one vendor), proceeds to the numerical invoice index (isolating relevant document IDs), and finishes with chronological confirmation (verifying Q3 dates). This minimizes redundant searching. The other sequences either filter by time first (options 0 and 2), which is inefficient when a specific vendor is known, or by number first (option 3), which requires a subsequent alphabetical sort.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -366,9 +361,9 @@
  {
   "question": "A law firm's tickler file system is designed to remind staff of contract renewal dates, court filing deadlines, and client follow-up appointments. The firm switches from a manual card-based system to a digital calendar with automated alerts. Which aspect of the original tickler function is most at risk of being lost in this conversion?",
   "options": [
+   "The ability to cross-reference renewal dates with the numerical invoice filing system and the chronological client contact logs stored in the reference library",
    "The connection between tickler reminders and the subject-based filing system that maintains historical records and links to scanned backup copies of contract documents",
    "The alphabetical organization of vendor names in the tickler file, which ensures compliance with document storage and retrieval protocols established for all systems",
-   "The ability to cross-reference renewal dates with the numerical invoice filing system and the chronological client contact logs stored in the reference library",
    "The requirement to physically sort cards by date, which forces staff to review upcoming items and prevents critical deadlines from being overlooked due to system failures"
   ],
   "correct_index": 3,
@@ -379,12 +374,12 @@
  {
   "question": "A company's reference library contains a mix of current industry publications, competitor clippings from 2018–2021, historical sales trend reports, and archival research files. The department receives a budget for document management improvements and must decide between expanding the reference library or converting existing files using scanning equipment. Which factors should weigh most heavily in this decision?",
   "options": [
-   "The frequency with which staff consult historical versus current materials, the storage cost per document, and whether alphabetical or chronological filing is currently used",
    "The business value and usage patterns of existing materials, the cost-benefit of digitization versus retention in original form, and regulatory or compliance requirements for archived documents",
+   "The number of pages in the reference library, whether the company has a tickler system for reviewing materials, and whether vendor correspondence is currently filed numerically",
    "Whether clippings are organized by subject, the age of the publications, and whether the scanning equipment meets the technical requirements for high-resolution image capture",
-   "The number of pages in the reference library, whether the company has a tickler system for reviewing materials, and whether vendor correspondence is currently filed numerically"
+   "The frequency with which staff consult historical versus current materials, the storage cost per document, and whether alphabetical or chronological filing is currently used"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Sound records management decisions prioritize actual usage and business need (not age alone), weighing the true cost of storage and retrieval against digitization benefits, and ensuring compliance with legal retention rules. Option 2 correctly identifies these factors. The other options conflate filing method choices (option 0), technical specifications (option 1), or administrative attributes (option 3) with the strategic budget decision.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -394,8 +389,8 @@
   "options": [
    "Chronological filing for initial storage with a numerical cross-reference index tied to customer account numbers",
    "Alphabetical filing by customer surname with chronological notations on each file for date-sequence sorting",
-   "Numerical filing by invoice number with a tickler file subset tracking follow-up dates by customer",
-   "Subject filing organized by transaction type with numerical tabs subdividing each subject by client ID"
+   "Subject filing organized by transaction type with numerical tabs subdividing each subject by client ID",
+   "Numerical filing by invoice number with a tickler file subset tracking follow-up dates by customer"
   ],
   "correct_index": 1,
   "explanation": "Alphabetical filing by customer name provides the primary retrieval path, while chronological notations within each customer file enable date-based lookups without requiring a separate filing system. The other options either create redundant cross-referencing burdens (option A), misapply subject filing to a client-date problem (option C), or prioritize invoice tracking over correspondence management (option D).",
@@ -407,10 +402,10 @@
   "options": [
    "Transfer files to off-site archival storage and maintain a reference index for potential historical retrieval",
    "Scan all documents into the digital system, shred originals, and retain digital copies indefinitely",
-   "Flag files in the tickler system with a review date six months before the legal retention deadline expires",
-   "Purge the records after confirming retention policies allow disposal and documenting the purge date and method"
+   "Purge the records after confirming retention policies allow disposal and documenting the purge date and method",
+   "Flag files in the tickler system with a review date six months before the legal retention deadline expires"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Purging records that have met their retention period and are no longer needed is a core document management function; it must follow policy and include documentation for audit compliance. Option B preserves obsolete materials unnecessarily, option C wastes resources scanning documents marked for disposal, and option D delays necessary purging while monitoring retention rather than executing it.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -419,11 +414,11 @@
   "question": "A warehouse receives 500 new inventory items daily from multiple suppliers, each with a unique SKU, quantity, date received, and location code. The inventory manager must enable staff to locate any item by SKU, by received date, or by storage location. Which filing approach most efficiently supports all three retrieval methods?",
   "options": [
    "Use a chronological filing system by received date as primary storage with subject subdivisions by supplier and numerical location codes",
+   "Maintain a numerical filing system organized by SKU with supplementary chronological logs and a location cross-reference table",
    "Create three separate alphabetical files: one by supplier name, one by location code, and one by received date range",
-   "Establish a subject filing system categorized by product type with tickler files updating inventory counts weekly",
-   "Maintain a numerical filing system organized by SKU with supplementary chronological logs and a location cross-reference table"
+   "Establish a subject filing system categorized by product type with tickler files updating inventory counts weekly"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Numerical filing by SKU serves as the primary system since SKU is the unique identifier, while supplementary chronological logs and cross-reference tables enable date and location lookups without duplicating physical files. Option B creates three redundant full sets of records, option C prioritizes product category over the required retrieval methods, and option D makes retrieval by SKU cumbersome despite it being the fastest lookup path.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -431,12 +426,12 @@
  {
   "question": "A legal firm uses a tickler file system to track court filing deadlines and client follow-up dates. A case requires actions on the 15th of each month for twelve consecutive months, but the tickler file is currently organized chronologically by calendar date only. What modification would preserve the tickler system's effectiveness while accommodating recurring monthly actions?",
   "options": [
-   "Maintain the chronological tickler file and create a reference library index cross-referencing recurring dates to specific cases and action items",
    "Add subject dividers within the chronological structure labeled by case number, with monthly reminder cards filed on the 15th",
+   "Maintain the chronological tickler file and create a reference library index cross-referencing recurring dates to specific cases and action items",
    "Establish a subject-based tickler system organized by case type in place of the chronological system, with all dates listed on one card per case",
    "Convert the tickler system to numerical organization based on case file numbers and implement a separate deadline-tracking spreadsheet"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Adding subject dividers (case numbers) within the existing chronological structure preserves the tickler file's date-driven function while organizing recurring actions logically by case, ensuring the 15th-of-month card is pulled and reviewed each month. Option B abandons the tickler system's core strength (automatic date-based prompts), option C loses the chronological advantage that surfaces action items at the right time, and option D creates a cumbersome secondary lookup process instead of integrating the solution.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -446,10 +441,10 @@
   "options": [
    "Scan all materials simultaneously, reorganize scanned files chronologically, and maintain paper originals until the new digital system is fully indexed",
    "Convert microfiche to digital images first, integrate digitized files into the existing paper-based alphabetical system, then scan remaining paper files",
-   "Establish a temporary numerical system for all incoming scanned batches, maintain reference libraries for each format separately, and defer filing reorganization until scanning completes",
-   "Purge outdated records before scanning, establish the target filing structure on digital media first, then scan and file items into the new system by category"
+   "Purge outdated records before scanning, establish the target filing structure on digital media first, then scan and file items into the new system by category",
+   "Establish a temporary numerical system for all incoming scanned batches, maintain reference libraries for each format separately, and defer filing reorganization until scanning completes"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Purging first eliminates conversion waste, establishing the target structure before scanning ensures files are organized correctly upon digitization, and converting by category enables users to transition to the new system in phases without losing access. Option A wastes scanning effort on records for disposal and creates indexing delays, option C perpetuates format fragmentation and forces re-filing of already-scanned content, and option D defers system integration indefinitely and maintains retrieval inefficiency throughout the transition.",
   "difficulty": "hard",
   "knowledge_area": "Database/Information Management"
@@ -457,12 +452,12 @@
  {
   "question": "A manager is redesigning the employee handbook to reflect recent changes in remote work policy and confidentiality procedures. Which approach best balances legal compliance with employee comprehension during this update?",
   "options": [
+   "Revise only the sections that changed and distribute them separately to minimize employee confusion",
    "Post the updated manual on the company intranet and assume employees will review it at their own pace",
-   "Schedule small-group review sessions where employees can ask questions and clarify ambiguous language",
    "Distribute the revised manual with highlighted changes and require signed acknowledgment from all staff within one week",
-   "Revise only the sections that changed and distribute them separately to minimize employee confusion"
+   "Schedule small-group review sessions where employees can ask questions and clarify ambiguous language"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Updating policy manuals requires both documentation and comprehension. Group review sessions ensure employees understand changes, ask clarifying questions, and can apply procedures correctly—going beyond passive distribution. Signed acknowledgment alone does not confirm understanding, and separate section distribution creates reference inconsistencies.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -470,12 +465,12 @@
  {
   "question": "During a performance evaluation, an employee disputes a rating on teamwork, claiming they regularly shared knowledge with colleagues. The manager observes the employee rarely volunteers information and often withholds expertise. How should the manager address this discrepancy?",
   "options": [
-   "Agree that the employee has shared some knowledge and adjust the rating upward to reflect those moments",
    "Clarify that sharing knowledge only counts when done in formal team meetings, not informal conversations",
    "Document specific instances where knowledge-sharing did not occur and explain how this differs from collaborative behavior that contributes to team problem-solving",
-   "Suggest the employee attend a communication workshop before discussing the evaluation further"
+   "Suggest the employee attend a communication workshop before discussing the evaluation further",
+   "Agree that the employee has shared some knowledge and adjust the rating upward to reflect those moments"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Analyzing performance evaluations requires concrete, behavioral evidence. Documenting specific examples of absent or insufficient knowledge-sharing demonstrates the gap between the employee's self-assessment and observable contribution to team goals. This approach is fair, measurable, and actionable.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -483,12 +478,12 @@
  {
   "question": "A new employee orientation program includes both a one-day classroom session on company culture and a two-week mentorship assignment with an experienced team member. Which combination of these methods most effectively addresses both compliance requirements and practical job readiness?",
   "options": [
-   "The classroom session covers legal and policy compliance while the mentorship develops real-world task competence and relationship-building within the team",
+   "Both methods should teach identical content to ensure no compliance gaps are missed during onboarding",
    "The classroom session should cover all procedures so the mentorship can focus entirely on productivity and speed",
    "The mentorship alone is sufficient because experienced staff naturally explain policies as situations arise during daily work",
-   "Both methods should teach identical content to ensure no compliance gaps are missed during onboarding"
+   "The classroom session covers legal and policy compliance while the mentorship develops real-world task competence and relationship-building within the team"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Effective orientation requires structured training for compliance and compliance documentation alongside hands-on mentorship for job-specific skills and workplace integration. The classroom addresses institutional knowledge and mandatory requirements while mentorship builds relationships and practical competence—together they fulfill both objectives.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -496,12 +491,12 @@
  {
   "question": "A manager must schedule staff across three shifts while accommodating employee requests for specific days off, ensuring adequate coverage for customer service, and distributing less-desirable hours fairly. Which method best demonstrates effective workload and schedule coordination?",
   "options": [
+   "Create a rotating schedule template that honors most requests while systematically alternating unpopular shifts among all eligible staff, documented in advance",
    "Group all difficult scheduling demands on part-time employees to protect full-time staff from inconvenience",
    "Allow employees to self-select their preferred schedules and fill gaps with whoever remains available",
-   "Create a rotating schedule template that honors most requests while systematically alternating unpopular shifts among all eligible staff, documented in advance",
    "Assign permanent preferred shifts to senior employees and rotate remaining staff through all shifts monthly"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Coordinating staff schedules requires balancing operational needs, individual preferences, and equity. A documented rotating template acknowledges requests while preventing favoritism and ensuring fair distribution of undesirable hours—demonstrating both organizational competence and respect for employee wellbeing.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -523,8 +518,8 @@
   "question": "When preparing to resign from a position, which sequence of actions best demonstrates professional conduct according to career development standards?",
   "options": [
    "Provide written notice to your supervisor, outline transition responsibilities, and offer to train your replacement before your final day",
-   "Request a meeting with HR to discuss severance, notify your supervisor verbally, and begin looking for a replacement candidate",
    "Inform colleagues of your departure first, then submit a formal resignation letter, and discuss transition plans with management",
+   "Request a meeting with HR to discuss severance, notify your supervisor verbally, and begin looking for a replacement candidate",
    "Schedule an exit interview with your manager, provide documentation of your duties, and complete knowledge-transfer sessions with designated staff"
   ],
   "correct_index": 0,
@@ -535,10 +530,10 @@
  {
   "question": "A job applicant with a nontraditional background—such as a career gap due to family caregiving—is facing employment barriers. Which combination of strategies would most effectively address both the barrier and strengthen the candidate's competitiveness?",
   "options": [
-   "Document the gap transparently on the resume, pursue industry-specific training during the application process, and network exclusively with nontraditional hiring groups",
+   "Explain the gap only if asked in the interview, list all duties performed unpaid, and request flexible work arrangements upfront",
    "Frame the gap as a career-development opportunity in the cover letter, highlight transferable skills gained during that time, and pursue relevant professional certifications",
-   "Omit the employment gap from the resume, focus on volunteer work during the gap period, and emphasize recent certifications earned",
-   "Explain the gap only if asked in the interview, list all duties performed unpaid, and request flexible work arrangements upfront"
+   "Document the gap transparently on the resume, pursue industry-specific training during the application process, and network exclusively with nontraditional hiring groups",
+   "Omit the employment gap from the resume, focus on volunteer work during the gap period, and emphasize recent certifications earned"
   ],
   "correct_index": 1,
   "explanation": "Addressing employment barriers requires proactive transparency and skill-building: framing the gap positively in your cover letter, identifying and articulating transferable skills from that experience, and obtaining relevant certifications all work together to remove barriers while making the candidate more competitive. Simply omitting the gap (A) risks credibility issues, waiting to explain it only if asked (C) seems evasive, and the approach in (D) overlooks the value of mainstream professional networks.",
@@ -548,12 +543,12 @@
  {
   "question": "When developing a professional portfolio and maintaining professional documents, which practice best ensures both current relevance and long-term career advancement utility?",
   "options": [
-   "Update your portfolio quarterly with recent accomplishments, organize documents by job title, and maintain both digital and printed versions for interviews",
-   "Archive completed projects in a portfolio system, update your resume only when changing positions, and keep professional documents in a secure cloud location",
    "Curate portfolio examples that align with each target role, maintain current versions of all key documents, and refresh your professional materials before actively job searching",
-   "Include work samples that demonstrate your strongest skills, review and revise portfolio materials annually, and ensure documents meet industry-standard formatting guidelines"
+   "Archive completed projects in a portfolio system, update your resume only when changing positions, and keep professional documents in a secure cloud location",
+   "Include work samples that demonstrate your strongest skills, review and revise portfolio materials annually, and ensure documents meet industry-standard formatting guidelines",
+   "Update your portfolio quarterly with recent accomplishments, organize documents by job title, and maintain both digital and printed versions for interviews"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "A strong portfolio requires regular maintenance (annual review), strategic curation that showcases your best work, and consistent professional formatting—all of which signal career-readiness to employers and support long-term advancement. While quarterly updates (A) may be excessive and quarterly updates (D) is reactive, an annual review cycle (B) is standard practice and ensures your materials stay relevant without constant revising. Waiting until job search (D) creates rushed, last-minute preparation.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -561,12 +556,12 @@
  {
   "question": "During a job interview, a candidate is asked about a weakness. Which response demonstrates the most appropriate interview behavior while maintaining professional credibility?",
   "options": [
-   "Acknowledge a past struggle with a particular task, describe a relevant course or mentor that helped you overcome it, and show how you now apply that skill successfully",
-   "Admit a genuine skill gap, explain concrete steps taken or planned to improve it, and demonstrate self-awareness through a specific example from your experience",
    "State that you have no significant weaknesses, emphasize your positive attributes instead, and steer the conversation toward why you are the ideal candidate",
-   "Deflect to a strength by saying you work too hard or care too much, redirect the question back to your accomplishments, and avoid discussing any area needing growth"
+   "Acknowledge a past struggle with a particular task, describe a relevant course or mentor that helped you overcome it, and show how you now apply that skill successfully",
+   "Deflect to a strength by saying you work too hard or care too much, redirect the question back to your accomplishments, and avoid discussing any area needing growth",
+   "Admit a genuine skill gap, explain concrete steps taken or planned to improve it, and demonstrate self-awareness through a specific example from your experience"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Appropriate interview behavior requires honest self-reflection paired with demonstrated initiative: naming a genuine gap, showing concrete improvement steps, and using a specific example proves self-awareness and growth mindset. Response (C) is also strong and very similar, but (A) is superior because it frames the weakness more forward-looking (steps *taken or planned*) rather than looking backward at a *past* struggle, signaling readiness for future growth. Deflecting (B) or denying weaknesses (D) damages credibility.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -574,12 +569,12 @@
  {
   "question": "When exploring business careers through various sources to inform a career plan, which approach most comprehensively evaluates a potential career path?",
   "options": [
+   "Research job descriptions online, review salary ranges on employment websites, and attend a single industry networking event to gather firsthand insights",
    "Explore professional associations and industry publications, conduct informational interviews with career changers in the field, and review entry-level position requirements",
    "Interview professionals currently in the field about day-to-day responsibilities, investigate educational requirements and certifications, and analyze workforce demand and growth projections",
-   "Read company websites and annual reports, shadow an employee for one day, and compare benefits packages across three employers in the industry",
-   "Research job descriptions online, review salary ranges on employment websites, and attend a single industry networking event to gather firsthand insights"
+   "Read company websites and annual reports, shadow an employee for one day, and compare benefits packages across three employers in the industry"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "A comprehensive career exploration requires multiple research angles: direct input from practitioners about actual work, clarity on educational pathways and credentials, and labor-market data about job availability and trajectory. Response (B) integrates these three critical dimensions, whereas (A) lacks depth on educational requirements, (C) emphasizes company-level details over broader career realities, and (D) overweights networking at the expense of practical job analysis and growth data.",
   "difficulty": "hard",
   "knowledge_area": "Career Development"
@@ -587,12 +582,12 @@
  {
   "question": "A manager notices that two team members have conflicting work schedules that affect project deadlines. When developing a revised schedule, which factor should receive the highest priority to maintain both productivity and positive workplace relationships?",
   "options": [
-   "Rotating all staff members through every shift equally to ensure fairness and prevent scheduling resentment",
+   "Balancing individual workload capacity with project timeline requirements while preserving team morale and collaboration",
    "Assigning the most critical tasks to the employee with the longest tenure and proven reliability",
    "Consulting the employee handbook to identify standard scheduling practices used in similar departments",
-   "Balancing individual workload capacity with project timeline requirements while preserving team morale and collaboration"
+   "Rotating all staff members through every shift equally to ensure fairness and prevent scheduling resentment"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Effective schedule coordination (objective 4) requires weighing both operational demands and human relations—workload distribution must consider individual capacity while maintaining the productive relationships that support team performance. The other options neglect either the relational dimension or apply one-size-fits-all rules that ignore context.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -601,11 +596,11 @@
   "question": "During a performance evaluation discussion, an employee becomes defensive about feedback on missed deadlines. Which approach best demonstrates both honest evaluation and the commitment to maintain a productive work relationship?",
   "options": [
    "Focusing the conversation exclusively on documented instances of missed deadlines with exact dates and consequences",
+   "Reframing the feedback as a team problem rather than an individual issue to avoid damaging the working relationship",
    "Postponing the evaluation discussion until the employee is in a better emotional state to receive criticism",
-   "Acknowledging the specific performance concern, exploring the underlying causes affecting performance, and collaboratively identifying support or resources needed",
-   "Reframing the feedback as a team problem rather than an individual issue to avoid damaging the working relationship"
+   "Acknowledging the specific performance concern, exploring the underlying causes affecting performance, and collaboratively identifying support or resources needed"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Discussing and analyzing employee performance evaluations (objective 6) requires balancing accountability with relational understanding—addressing the concern directly while exploring causes and jointly problem-solving maintains both honesty and trust. Avoiding feedback, listing only facts without context, or deflecting responsibility all undermine either the evaluation's validity or the relationship.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -613,12 +608,12 @@
  {
   "question": "A new employee seems isolated and is not yet integrated into the team's informal knowledge-sharing networks. Which strategy most effectively combines structured orientation with the development of productive peer relationships during the critical first weeks?",
   "options": [
-   "Assigning a peer mentor who works similar shifts, introducing the new hire to established team practices, and facilitating participation in informal team interactions",
-   "Distributing written procedure manuals and scheduling daily check-ins with HR to ensure compliance with company policies",
    "Pairing the new employee with the most senior team member to establish hierarchical clarity and respect for organizational structure",
-   "Requiring completion of all formal training modules before allowing the employee to participate in team meetings or social activities"
+   "Assigning a peer mentor who works similar shifts, introducing the new hire to established team practices, and facilitating participation in informal team interactions",
+   "Requiring completion of all formal training modules before allowing the employee to participate in team meetings or social activities",
+   "Distributing written procedure manuals and scheduling daily check-ins with HR to ensure compliance with company policies"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Conducting new employee orientation (objective 9) and creating productive relationships (objective 10) requires integrating both formal training and social belonging—a peer mentor provides procedural knowledge while enabling relationship-building and knowledge-sharing. The other approaches either isolate the employee from peers, overemphasize formal process at the expense of team connection, or establish distance rather than collaboration.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -626,12 +621,12 @@
  {
   "question": "When developing job descriptions for three newly created support positions, a manager wants to ensure the descriptions will support both clear performance expectations and team collaboration. What should be prioritized in these descriptions?",
   "options": [
-   "Detailed lists of all daily tasks, reporting lines, and individual performance benchmarks without reference to team-based outcomes",
+   "Clearly defined responsibilities and success metrics balanced with collaborative competencies, cross-functional dependencies, and contribution to shared team goals",
    "Broad statements about company values and culture with minimal task-specific details to allow flexible interpretation",
    "Emphasis on professional credentials, certifications, and personal qualifications required for each position",
-   "Clearly defined responsibilities and success metrics balanced with collaborative competencies, cross-functional dependencies, and contribution to shared team goals"
+   "Detailed lists of all daily tasks, reporting lines, and individual performance benchmarks without reference to team-based outcomes"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Contributing to job descriptions (objective 5) for a team context requires defining individual accountability while clarifying how roles interconnect and support collective work—this foundation enables both clear evaluation and collaborative effort. Descriptions limited to individual tasks, focused only on credentials, or too vague undermine either performance clarity or team coordination.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"
@@ -639,12 +634,12 @@
  {
   "question": "A staff member suggests a process improvement that would increase efficiency but requires other team members to modify their established work habits. How should a leader evaluate and respond to this suggestion in a way that demonstrates both good judgment and team leadership?",
   "options": [
+   "Immediately implementing the suggestion to reward the employee's initiative and demonstrate openness to ideas",
    "Rejecting the suggestion because established procedures have already been documented in the policy manual",
    "Assessing the improvement's operational merit, consulting affected team members to understand implementation concerns, and building buy-in before proceeding with change",
-   "Referring the suggestion to upper management to avoid the appearance of favoritism or unfair treatment among team members",
-   "Immediately implementing the suggestion to reward the employee's initiative and demonstrate openness to ideas"
+   "Referring the suggestion to upper management to avoid the appearance of favoritism or unfair treatment among team members"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Working in teams to solve problems (objective 11) and exhibiting motivating leadership (objective 12) requires balancing innovation with collaborative change management—evaluating merit while involving affected staff builds both better solutions and team ownership. Implementing without input, deflecting to management, or defaulting to past practice each misses either the improvement opportunity or the relational foundation for sustainable change.",
   "difficulty": "hard",
   "knowledge_area": "Human Relations"

@@ -2,12 +2,12 @@
  {
   "question": "A business memo states: 'The meeting is scheduled for next Tuesday; however, we may need to reschedule if the client confirms their availability by Friday.' Which punctuation choice best explains why a semicolon rather than a comma is used before 'however'?",
   "options": [
-   "A semicolon separates introductory phrases from main clauses, while a comma would incorrectly suggest the second clause depends on the first",
-   "A semicolon distinguishes compound sentences from complex ones, while a comma would blur the distinction between dependent and independent ideas",
+   "A semicolon joins two independent clauses that are closely related in thought, whereas a comma would create a splice between statements of equal weight",
    "A semicolon introduces a contrasting idea with a transitional adverb, whereas a comma can only connect simple subjects and predicates",
-   "A semicolon joins two independent clauses that are closely related in thought, whereas a comma would create a splice between statements of equal weight"
+   "A semicolon distinguishes compound sentences from complex ones, while a comma would blur the distinction between dependent and independent ideas",
+   "A semicolon separates introductory phrases from main clauses, while a comma would incorrectly suggest the second clause depends on the first"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "A semicolon joins two independent clauses, especially when a transitional adverb like 'however' appears; a comma alone between independent clauses creates a comma splice. The other options misstate when semicolons and commas are used—semicolons do not introduce contrasting ideas per se, and commas are not limited to simple subjects and predicates.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -29,11 +29,11 @@
   "question": "A document contains the following sentence: 'The client's approval—which arrived yesterday—is essential for moving forward with the proposal.' Which statement best explains the dash usage and contrasts it with alternative punctuation?",
   "options": [
    "Dashes signal a break in thought that requires capitalization, whereas semicolons could only separate two complete independent clauses",
+   "Dashes separate appositive phrases from the main clause, whereas hyphens would incorrectly join the phrase to the noun it modifies",
    "Dashes set off parenthetical information with emphasis and visual separation, whereas parentheses would downplay the importance of the interrupting clause",
-   "Dashes function as a colon replacement that introduces a definition, whereas commas would weaken the connection between the main clause and the aside",
-   "Dashes separate appositive phrases from the main clause, whereas hyphens would incorrectly join the phrase to the noun it modifies"
+   "Dashes function as a colon replacement that introduces a definition, whereas commas would weaken the connection between the main clause and the aside"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Dashes create emphasis and visual break around parenthetical information; parentheses would minimize the importance of the interruption. Option B mischaracterizes dash function as defining; Option C conflates dashes with capitalization rules; Option D confuses appositives with the purpose of dashes in this context and misrepresents hyphen usage.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -41,12 +41,12 @@
  {
   "question": "Which sentence correctly applies rules for capitalizing titles, proper nouns, and abbreviations in business communication?",
   "options": [
-   "Professor elizabeth reynolds, Ph.D., will lead the training session for all new employees in our Boston office next month.",
-   "The Vice President of Sales presented the report at the Annual Marketing Conference in New York last Tuesday morning.",
    "Our Chief financial Officer, mr. James Patterson, will attend the meeting with representatives from the U.S. Chamber of Commerce.",
-   "The Department of Human Resources issued a memo regarding changes to our 401(k) plan and health insurance options."
+   "The Department of Human Resources issued a memo regarding changes to our 401(k) plan and health insurance options.",
+   "Professor elizabeth reynolds, Ph.D., will lead the training session for all new employees in our Boston office next month.",
+   "The Vice President of Sales presented the report at the Annual Marketing Conference in New York last Tuesday morning."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Option A correctly capitalizes the title when used directly before a name and capitalizes proper nouns and adjectives (Vice President, Annual, New York). Option B incorrectly lowercases 'mr.' and 'financial'; Option C incorrectly capitalizes 'Department' when not used as part of a formal name; Option D incorrectly lowercases 'Professor' before the name.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -54,12 +54,12 @@
  {
   "question": "A business proposal includes the phrase: 'The project timeline spans three quarters—Q1 through Q3—requiring coordination between five departments.' Regarding number style, punctuation, and abbreviation, which alternative would violate standard business writing conventions?",
   "options": [
-   "The project timeline spans Quarters 1 through 3—requiring coordination between five departments across the fiscal year.",
-   "The project timeline spans 3 quarters, specifically Q1 through Q3, requiring coordination between five departments.",
+   "The project timeline spans three quarters—first quarter through third quarter—requiring coordination between five departments.",
    "The project timeline spans 3 quarters—Q1 through Q3—requiring coordination between 5 departments.",
-   "The project timeline spans three quarters—first quarter through third quarter—requiring coordination between five departments."
+   "The project timeline spans 3 quarters, specifically Q1 through Q3, requiring coordination between five departments.",
+   "The project timeline spans Quarters 1 through 3—requiring coordination between five departments across the fiscal year."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Option C violates standard practice by capitalizing 'Quarters' as if it were a proper noun and by removing the dash pairing that clarifies the quarterly range, replacing it with a comma that disrupts the parallel structure. Options A and B follow standard conventions (numbers as figures or words are both acceptable, and dashes create proper emphasis). Option D uses a comma instead of dashes but remains acceptable in less formal contexts.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -67,12 +67,12 @@
  {
   "question": "A student writes: \"The CEO said, 'we need to focus on innovation.' However, the board disagreed.\" Which punctuation error occurs in this sentence?",
   "options": [
-   "A semicolon must replace the period after 'innovation' because the two independent clauses are closely related in meaning and thought.",
    "A comma is needed after the opening quotation mark to separate the speaker tag from the quoted material being introduced.",
    "The single quotation marks should be replaced with double quotation marks because American English standard practice requires double marks for direct quotations.",
-   "The closing quotation mark should appear after the period, not before it, because the quoted material is a complete sentence within the larger sentence."
+   "The closing quotation mark should appear after the period, not before it, because the quoted material is a complete sentence within the larger sentence.",
+   "A semicolon must replace the period after 'innovation' because the two independent clauses are closely related in meaning and thought."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "American English convention requires double quotation marks for direct quotations, not single marks. Single quotation marks are used only for quotations within quotations. The other options misidentify non-existent errors: the closing punctuation placement is correct, no comma follows an opening quotation mark, and the period correctly ends the sentence.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -80,12 +80,12 @@
  {
   "question": "Which sentence correctly applies the rules for dashes, hyphens, and parentheses together?",
   "options": [
-   "The well known executive—who had thirty five years of experience—emphasized that long term planning (which requires careful analysis,) is essential for growth.",
-   "The well-known executive—who had thirty-five years of experience—emphasized that long-term planning (which requires careful analysis) is essential for growth.",
    "The well-known executive—who had thirty-five years of experience—emphasized that long-term planning—which requires careful analysis—is essential for growth.",
-   "The well known executive (who had thirty five years of experience) emphasized that long term planning (which requires careful analysis) is essential for growth."
+   "The well known executive (who had thirty five years of experience) emphasized that long term planning (which requires careful analysis) is essential for growth.",
+   "The well-known executive—who had thirty-five years of experience—emphasized that long-term planning (which requires careful analysis) is essential for growth.",
+   "The well known executive—who had thirty five years of experience—emphasized that long term planning (which requires careful analysis,) is essential for growth."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Option A correctly hyphenates compound adjectives ('well-known,' 'thirty-five,' 'long-term') and uses an em dash to set off an appositive phrase, while parentheses correctly enclose a non-essential comment without internal punctuation. Option B fails to hyphenate compound adjectives and adds an incorrect comma inside the parentheses. Option C uses dashes where parentheses would be more appropriate for a parenthetical remark. Option D omits necessary hyphens in compound modifiers.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -95,8 +95,8 @@
   "options": [
    "Change 'Dont' to 'Don't' and change 'its' to 'it's' because contractions require apostrophes between omitted letters, and the possessive pronoun here is incorrectly written instead of the contraction.",
    "Change 'Dont' to 'Don't' and change 'managers'' to 'managers' because the apostrophe in contractions must appear between letters, and plural possessives require only a final apostrophe.",
-   "Change 'managers'' to 'manager's' and change 'its' to 'it's' because the singular manager owns the report, and the contraction of 'it is' requires an apostrophe.",
-   "Change 'Dont' to 'Don't,' change 'managers'' to 'managers,' and change 'its' to 'it's' because contractions and possessives use apostrophes, but 'its' is the possessive pronoun and requires no apostrophe."
+   "Change 'Dont' to 'Don't,' change 'managers'' to 'managers,' and change 'its' to 'it's' because contractions and possessives use apostrophes, but 'its' is the possessive pronoun and requires no apostrophe.",
+   "Change 'managers'' to 'manager's' and change 'its' to 'it's' because the singular manager owns the report, and the contraction of 'it is' requires an apostrophe."
   ],
   "correct_index": 0,
   "explanation": "The sentence requires two corrections: 'Don't' (contraction of 'do not' with apostrophe between omitted letters) and 'it's' (contraction of 'it is,' not the possessive 'its'). The phrase 'managers' report' correctly uses the plural possessive, which requires only a final apostrophe after the 's.' Option A incorrectly changes the plural possessive. Option C misidentifies the ownership. Option D creates an unnecessary third change.",
@@ -107,11 +107,11 @@
   "question": "Which sentence demonstrates correct use of quotation marks, ellipses, and related punctuation in reporting a statement?",
   "options": [
    "The director stated \"We must reduce costs by fifteen percent... though some expenses are non-negotiable.\" and then she outlined the budget cuts required.",
-   "The director stated, \"We must reduce costs by fifteen percent ... though some expenses are non-negotiable,\" and then she outlined the budget cuts required.",
    "The director stated, \"We must reduce costs by fifteen percent... though some expenses are non-negotiable,\" and then she outlined the budget cuts required.",
+   "The director stated, \"We must reduce costs by fifteen percent ... though some expenses are non-negotiable,\" and then she outlined the budget cuts required.",
    "The director stated, \"We must reduce costs by fifteen percent—though some expenses are non-negotiable,\" and then she outlined the budget cuts required."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Option A correctly places a comma after 'stated' to introduce the quotation, uses the ellipsis (three spaced dots) to show a trailing thought, and places the closing quotation mark after the final punctuation inside the quote. Option B omits the comma before the quotation. Option C incorrectly spaces the ellipsis (four dots with extra space). Option D uses an em dash where the ellipsis is more appropriate for indicating an unfinished or trailing thought.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -119,12 +119,12 @@
  {
   "question": "A business memo contains: \"The new policy applies to all U.S. employees, including those in the northeast region.\" Which capitalization and number-writing error occurs here?",
   "options": [
-   "\"northeast\" should be capitalized as \"Northeast\" because regions and geographical directions functioning as proper nouns require capitalization when referring to specific areas.",
-   "\"U.S.\" should be \"U.s.\" because abbreviations of compass directions require lowercase letters after the first letter, matching standard directional notation.",
    "No error exists; \"U.S.\" correctly abbreviates United States with periods after each letter, and \"northeast\" remains lowercase because it functions as a common directional adjective rather than a proper noun.",
+   "\"U.S.\" should be \"U.s.\" because abbreviations of compass directions require lowercase letters after the first letter, matching standard directional notation.",
+   "\"northeast\" should be capitalized as \"Northeast\" because regions and geographical directions functioning as proper nouns require capitalization when referring to specific areas.",
    "\"all U.S. employees\" should read \"all U.s. employees\" because abbreviations in business writing follow a rule that requires lowercase after the first capital letter to appear less formal."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The sentence is correctly written. 'U.S.' is the standard abbreviation for United States with periods after each letter. 'Northeast' remains lowercase here because it is used as a common directional adjective modifying 'region' rather than as a proper noun (which would require capitalization only when it refers to a formally defined region like 'the Northeast'). Options A and B misstate capitalization rules, and Option C invents a non-existent abbreviation convention.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -133,9 +133,9 @@
   "question": "In the sentence 'The project manager, along with her team members, are preparing the proposal for tomorrow's deadline,' which grammatical issue is present?",
   "options": [
    "The verb 'are' is correct because 'team members' functions as the true subject when paired with 'along with.'",
-   "The adverb 'tomorrow's' modifies 'deadline' incorrectly and should be changed to the adjective 'tomorrow.'",
+   "The pronoun 'her' creates an ambiguous reference that should be replaced with 'their' to match the plural verb form.",
    "The verb 'are' should be 'is' because the subject 'project manager' is singular, and intervening phrases do not affect subject-verb agreement.",
-   "The pronoun 'her' creates an ambiguous reference that should be replaced with 'their' to match the plural verb form."
+   "The adverb 'tomorrow's' modifies 'deadline' incorrectly and should be changed to the adjective 'tomorrow.'"
   ],
   "correct_index": 2,
   "explanation": "Subject-verb agreement rules state that the subject 'project manager' (singular) remains the grammatical subject regardless of intervening phrases like 'along with her team members.' The verb must be 'is,' not 'are.' The other options misidentify the rule: 'along with' does not create a compound subject, 'her' appropriately agrees with the singular subject, and 'tomorrow's' is correctly used as a possessive noun modifying 'deadline.'",
@@ -147,10 +147,10 @@
   "options": [
    "Each team member should evaluate themselves on their communication skills during the quarterly performance review process.",
    "Maria and myself reviewed the contract, and we ensured that the terms were acceptable to ourselves.",
-   "The employees taught themselves the new software system, which helped them improve their efficiency and productivity.",
-   "The manager asked the interns and him to complete the report themselves by the end of the week."
+   "The manager asked the interns and him to complete the report themselves by the end of the week.",
+   "The employees taught themselves the new software system, which helped them improve their efficiency and productivity."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The sentence uses 'themselves' correctly as a reflexive pronoun with the plural antecedent 'employees,' and all pronouns maintain proper agreement. Option B incorrectly uses 'him' when 'he' is needed after 'asked'; Option C misuses 'myself' for 'I' in a compound subject and adds redundant 'ourselves'; Option D uses 'themselves' with a singular antecedent 'each team member,' which requires 'himself or herself' or the singular 'themself.'",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -158,12 +158,12 @@
  {
   "question": "In the sentence 'Running late for the meeting, the conference materials were left on my desk by accident,' which error is demonstrated?",
   "options": [
-   "A misplaced adverb: 'by accident' should move to the beginning of the sentence to modify the entire clause rather than just the verb.",
-   "An irregular verb error: 'were left' should be 'was left' because it refers to a single collection of materials rather than individual items.",
    "A subject-verb disagreement: the plural subject 'materials' incorrectly matches with a singular verb form in the prepositional phrase.",
-   "A dangling modifier: the participle phrase 'Running late for the meeting' cannot logically modify 'conference materials,' which do not run late."
+   "An irregular verb error: 'were left' should be 'was left' because it refers to a single collection of materials rather than individual items.",
+   "A dangling modifier: the participle phrase 'Running late for the meeting' cannot logically modify 'conference materials,' which do not run late.",
+   "A misplaced adverb: 'by accident' should move to the beginning of the sentence to modify the entire clause rather than just the verb."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "This sentence contains a classic dangling modifier because 'Running late for the meeting' cannot logically attach to 'conference materials'—only a person can run late. The sentence should read 'Running late for the meeting, I left the conference materials on my desk by accident.' Option B incorrectly describes the function of adverbial placement; Option C misidentifies the verb tense choice; Option D mistakes a prepositional phrase for the subject of the main verb.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -172,11 +172,11 @@
   "question": "Which sentence correctly demonstrates a compound-complex sentence structure with proper punctuation and conjunctions?",
   "options": [
    "Because the budget was limited, the marketing director proposed alternatives, yet the stakeholders rejected them and funding remained insufficient.",
-   "The consultant recommended three strategies, so the executives adopted the first one, but the second strategy was also valuable and it improved outcomes.",
    "The client approved the proposal, and the team began implementation; however, unexpected delays emerged, which required careful management.",
+   "The consultant recommended three strategies, so the executives adopted the first one, but the second strategy was also valuable and it improved outcomes.",
    "Although the deadline approached rapidly, the developers worked overtime, or the project would have failed, and the client's satisfaction was ultimately achieved."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Option A correctly combines two independent clauses with a coordinating conjunction ('and'), then adds a dependent clause ('which required careful management') to create a compound-complex structure with proper semicolon usage before the conjunctive adverb. Option B has a comma splice issue; Option C uses 'so' and 'but' awkwardly in sequence without proper clause relationships; Option D misuses 'or' (which suggests alternatives rather than consequences) and creates confusion about clause relationships.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -184,12 +184,12 @@
  {
   "question": "In the sentence 'The data analysis, along with customer feedback and market research, suggest that the new product strategy should be revised,' what is the primary grammatical error?",
   "options": [
+   "The verb 'suggest' should be 'suggests' because the subject 'data analysis' is singular; intervening elements do not create a compound subject.",
    "The pronoun 'that' creates a faulty reference and should be replaced with 'which' to properly introduce a relative clause modifying the entire independent clause.",
-   "The preposition 'along with' incorrectly functions as a coordinating conjunction and should be replaced with 'and' to establish true compound subjects.",
    "The noun phrase 'customer feedback and market research' introduces a double negative construction that contradicts the affirmative intent of the main clause.",
-   "The verb 'suggest' should be 'suggests' because the subject 'data analysis' is singular; intervening elements do not create a compound subject."
+   "The preposition 'along with' incorrectly functions as a coordinating conjunction and should be replaced with 'and' to establish true compound subjects."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The singular subject 'data analysis' requires the singular verb 'suggests,' not 'suggest.' Phrases introduced by 'along with' are parenthetical and do not affect subject-verb agreement; only a coordinating conjunction like 'and' would create a compound subject. Option B incorrectly addresses the 'that' clause; Option C misunderstands the function of 'along with'; Option D misidentifies the sentence structure entirely—there is no double negative present.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -197,12 +197,12 @@
  {
   "question": "Which sentence contains a dangling modifier that creates ambiguity about what is being modified?",
   "options": [
-   "While reviewing the quarterly report, the spreadsheet errors became apparent to the entire team.",
+   "The consultant reviewed the contract before signing it with the legal department.",
    "After completing the presentation, the audience asked clarifying questions about the proposal.",
    "The manager explained the policy to employees who had recently joined the department.",
-   "The consultant reviewed the contract before signing it with the legal department."
+   "While reviewing the quarterly report, the spreadsheet errors became apparent to the entire team."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "In option A, 'while reviewing the quarterly report' dangles because it appears to modify 'spreadsheet errors,' but logically the team (not the errors) was doing the reviewing. Options B, C, and D all have clear subjects that logically perform the action in their introductory phrases, making them grammatically correct.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -210,12 +210,12 @@
  {
   "question": "In the sentence 'Each of the employees were informed about the policy change yesterday,' which grammatical error is present?",
   "options": [
-   "A preposition is incorrectly used in the prepositional phrase at the sentence beginning.",
-   "A reflexive pronoun is incorrectly used in place of an objective pronoun.",
+   "A plural verb form incorrectly agrees with a singular collective subject.",
    "An adverb is misplaced, creating confusion about when the action occurred.",
-   "A plural verb form incorrectly agrees with a singular collective subject."
+   "A preposition is incorrectly used in the prepositional phrase at the sentence beginning.",
+   "A reflexive pronoun is incorrectly used in place of an objective pronoun."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The subject 'each' is singular and requires the singular verb 'was,' not the plural verb 'were.' Options A, C, and D do not apply: there is no reflexive pronoun, the adverb placement is correct, and the preposition 'of' is properly used in the phrase 'of the employees.'",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -223,8 +223,8 @@
  {
   "question": "Which sentence correctly uses a compound-complex structure with proper coordination and subordination?",
   "options": [
-   "The report was submitted on time, but the analysis section required additional documentation because errors were found.",
    "The project manager assigned tasks, and the team members completed them while maintaining quality standards.",
+   "The report was submitted on time, but the analysis section required additional documentation because errors were found.",
    "The client requested revisions because the design proposal did not meet expectations, and we provided updated mockups.",
    "The marketing campaign launched successfully, and it reached the target audience, which increased brand awareness significantly."
   ],
@@ -236,10 +236,10 @@
  {
   "question": "Which sentence contains an error in pronoun reference that could confuse readers about the antecedent?",
   "options": [
-   "The consultant presented the recommendations to the board, explaining how they would improve operational efficiency.",
+   "The department heads reviewed the policy manual, and it clarified the procedures for expense reimbursement.",
    "The supervisor discussed the budget with the accountant, and she provided detailed explanations about the figures.",
    "After the meeting concluded, the participants reviewed their notes and submitted feedback to management.",
-   "The department heads reviewed the policy manual, and it clarified the procedures for expense reimbursement."
+   "The consultant presented the recommendations to the board, explaining how they would improve operational efficiency."
   ],
   "correct_index": 1,
   "explanation": "In option A, the pronoun 'she' is ambiguous—it could refer to either the supervisor or the accountant, leaving the reader uncertain about who provided the explanations. Options B, C, and D have clear antecedents: 'their' refers to participants, 'they' refers to recommendations, and 'it' refers to the policy manual, respectively.",
@@ -249,8 +249,8 @@
  {
   "question": "Which sentence incorrectly uses an irregular verb form in past tense or past participle?",
   "options": [
-   "The consultant has spoke with three clients about the proposed contract amendments this week.",
    "The manager had broken the quarterly sales records after implementing the new incentive structure.",
+   "The consultant has spoke with three clients about the proposed contract amendments this week.",
    "The team has chosen the vendor based on their reputation and competitive pricing in the industry.",
    "The accountant had wrote the financial statements before the audit committee reviewed them yesterday."
   ],
@@ -262,12 +262,12 @@
  {
   "question": "A speaker uses the phrase 'mankind' when addressing an audience that includes multiple gender identities. A listener later points out this choice was exclusionary. Which oral communication concept does this scenario best illustrate?",
   "options": [
-   "Using bias-free language to demonstrate respect for all audience members",
-   "Differentiating pronunciation from enunciation to ensure clarity",
    "Interpreting nonverbal cues that signal audience discomfort or disagreement",
-   "Expressing opinions positively by acknowledging diverse viewpoints respectfully"
+   "Expressing opinions positively by acknowledging diverse viewpoints respectfully",
+   "Differentiating pronunciation from enunciation to ensure clarity",
+   "Using bias-free language to demonstrate respect for all audience members"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The scenario directly addresses word choice and its impact on inclusivity, which is the core of using bias-free language. While nonverbal cues and tactful expression are relevant skills, the question focuses specifically on the language selection itself and its exclusionary effect on the audience.",
   "knowledge_area": "Oral Communication Concepts",
   "difficulty": "hard"
@@ -275,12 +275,12 @@
  {
   "question": "During a presentation, a speaker clearly articulates each syllable of technical terms but pronounces 'often' as 'OFF-ten' instead of 'OFF-un,' which is standard in most American English dialects. Which distinction best explains what the speaker demonstrated?",
   "options": [
-   "Correct pronunciation paired with poor enunciation of unfamiliar terminology",
    "Strong enunciation but nonstandard pronunciation of a common word",
-   "Sensitivity to audience needs by adapting word choice to regional dialect preferences",
-   "Active listening barriers that prevented the speaker from hearing native speakers"
+   "Correct pronunciation paired with poor enunciation of unfamiliar terminology",
+   "Active listening barriers that prevented the speaker from hearing native speakers",
+   "Sensitivity to audience needs by adapting word choice to regional dialect preferences"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Enunciation refers to the clarity and distinctness of individual sounds and syllables (which the speaker did well with technical terms), while pronunciation refers to how words are actually said according to standard usage. The speaker's treatment of 'often' shows good enunciation but nonstandard pronunciation. The other options confuse these concepts or introduce unrelated listening and audience adaptation skills.",
   "knowledge_area": "Oral Communication Concepts",
   "difficulty": "hard"
@@ -288,12 +288,12 @@
  {
   "question": "A team leader notices that during meetings, one employee consistently looks down at their notes, avoids eye contact, and uses minimal hand gestures, while another employee maintains steady eye contact, uses purposeful hand movements, and faces the speaker directly. Both employees ask clarifying questions at similar rates. Which conclusion about these employees is most supported by oral communication principles?",
   "options": [
+   "The first employee's note-taking indicates stronger objectivity in listening, while the second employee relies too heavily on visual interpretation",
    "Both employees are equally skilled at asking questions to clarify information, but they differ in how they use nonverbal cues to communicate attentiveness",
-   "The second employee likely demonstrates better sensitivity to audience engagement through body language interpretation",
    "The first employee is a more active listener because they rely on written notes to record major points",
-   "The first employee's note-taking indicates stronger objectivity in listening, while the second employee relies too heavily on visual interpretation"
+   "The second employee likely demonstrates better sensitivity to audience engagement through body language interpretation"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Both employees show evidence of active listening through their questions, but the question asks about the broader pattern of nonverbal communication. The second employee's eye contact, gesture use, and body positioning are nonverbal techniques that signal engagement and understanding, while the first employee's downward focus and minimal gestures suggest lower nonverbal engagement—even though note-taking can support listening. Option 2 overstates interpretation of audience engagement, and options 1 and 4 create false distinctions between listening skills.",
   "knowledge_area": "Oral Communication Concepts",
   "difficulty": "hard"
@@ -302,11 +302,11 @@
   "question": "A speaker is explaining a multi-step process to a mixed-experience audience. Midway through, she notices some audience members frowning and shifting in their seats. She pauses and asks, 'Is the pace too fast, or would it help if I broke this into smaller chunks?' Which two oral communication techniques is she demonstrating simultaneously?",
   "options": [
    "Using proper oral presentation techniques and recording major points of the audience's feedback",
+   "Following spoken directions and expressing opinions positively to maintain audience rapport",
    "Interpreting nonverbal cues and asking questions to clarify audience understanding and needs",
-   "Illustrating sensitivity to audience needs and differentiating between pronunciation and enunciation",
-   "Following spoken directions and expressing opinions positively to maintain audience rapport"
+   "Illustrating sensitivity to audience needs and differentiating between pronunciation and enunciation"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The speaker reads the frowning and shifting (nonverbal cues) and responds by asking a clarifying question to understand what the audience needs. These are two distinct techniques working together. The other options either bundle unrelated concepts or misidentify what the speaker is doing—she is not demonstrating pronunciation distinctions, following directions, or recording feedback in this scenario.",
   "knowledge_area": "Oral Communication Concepts",
   "difficulty": "hard"
@@ -328,9 +328,9 @@
   "question": "A business memo states: 'The quarterly reports—which are due by Friday—need your signatures; however, the budget projections must be finalized first.' Which punctuation choice best demonstrates the distinction between the dash, semicolon, and comma in this sentence?",
   "options": [
    "The dashes set off a parenthetical remark, the semicolon links two independent clauses, and the comma precedes a conjunctive adverb",
-   "The dashes isolate a nonessential clause, the semicolon separates two independent clauses, and the comma joins the independent clause to a dependent phrase",
+   "The dashes emphasize an aside, the semicolon connects related independent clauses without a conjunction, and the comma introduces an explanation",
    "The dashes clarify a proper noun, the semicolon creates a pause before a dependent clause, and the comma separates coordinate adjectives modifying 'reports'",
-   "The dashes emphasize an aside, the semicolon connects related independent clauses without a conjunction, and the comma introduces an explanation"
+   "The dashes isolate a nonessential clause, the semicolon separates two independent clauses, and the comma joins the independent clause to a dependent phrase"
   ],
   "correct_index": 0,
   "explanation": "The semicolon correctly joins two independent clauses (with or without a conjunctive adverb like 'however'), dashes set off parenthetical or nonessential information, and commas precede conjunctive adverbs when they connect independent clauses. Option A conflates the semicolon's function, Option C overstates the dash's emphasis, and Option D misidentifies the semicolon and comma roles entirely.",
@@ -341,11 +341,11 @@
   "question": "In a professional letter, which sentence demonstrates correct capitalization and punctuation for a title and quotation together?",
   "options": [
    "The Marketing Director, Ms. Chen, stated, \"we will expand our product line by Q3.\"",
-   "The Marketing Director, Ms. Chen, stated: \"We will expand our product line by Q3.\"",
    "The marketing director Ms. Chen stated: \"We will expand our product line by Q3.\"",
-   "The marketing director, Ms. Chen, stated, \"We will expand our product line by Q3.\""
+   "The marketing director, Ms. Chen, stated, \"We will expand our product line by Q3.\"",
+   "The Marketing Director, Ms. Chen, stated: \"We will expand our product line by Q3.\""
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Titles before names require capitalization ('Marketing Director'), and a colon correctly introduces a complete quotation when it follows an independent clause. The capital 'W' in 'We' is required because the quotation is a complete sentence. Options A and D use a comma instead of a colon, which is incorrect for introducing a quoted sentence; Option B fails to capitalize the title.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -353,12 +353,12 @@
  {
   "question": "A company's style guide requires: 'Use apostrophes for contractions and possessives, but distinguish between its/it's and whose/who's.' Which sentence violates this rule?",
   "options": [
-   "It's critical that the team know whose deadline is approaching and who's prepared their deliverables.",
-   "The CEO's assistant confirmed that the report's findings are sound and that it's ready for distribution.",
+   "The branch manager's report shows its sales projections have improved significantly this quarter.",
    "The department lost it's budget proposal, but whose responsibility is it to resubmit the revised version?",
-   "The branch manager's report shows its sales projections have improved significantly this quarter."
+   "It's critical that the team know whose deadline is approaching and who's prepared their deliverables.",
+   "The CEO's assistant confirmed that the report's findings are sound and that it's ready for distribution."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "'It's' is a contraction meaning 'it is' and is incorrect here; the possessive pronoun 'its' is needed. Similarly, 'whose' is the possessive form, not 'who's' (who is). Option A uses both forms backward. Options B, C, and D use contractions and possessives correctly throughout.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -366,12 +366,12 @@
  {
   "question": "Which sentence correctly applies the rules for numbers, ellipses, and hyphenation in business writing?",
   "options": [
+   "The Q2 projections show twenty-five percent growth, and the report notes 'the data remains incomplete in three key areas . . . .'",
    "The Q2 projections show 25-percent growth, and the report notes 'the data remains... incomplete in three key areas.'",
    "The Q2 projections show 25 percent growth, and the report notes 'the data remains... incomplete in three key areas.'",
-   "The Q2 projections show twenty-five percent growth, and the report notes 'the data remains incomplete in three key areas . . . .'",
    "The Q2 projections show 25-percent growth, and the report notes 'the data remains incomplete... in three key areas.'"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Percentages in business writing use the numeral form without hyphens ('25 percent'), and ellipses should be three spaced dots within a quotation to show omission. Option A hyphenates the percentage, Option B spells out the number and uses four dots, and Option D hyphenates the percentage; only Option C follows standard business punctuation conventions.",
   "difficulty": "hard",
   "knowledge_area": "Punctuation and Capitalization"
@@ -379,9 +379,9 @@
  {
   "question": "In a formal business document, which sentence correctly uses quotation marks, punctuation, and capitalization for a direct quote and title reference together?",
   "options": [
-   "The Employee Handbook states, \"all staff must review the Company Policy on Data Security annually,\" which is a mandatory requirement.",
    "The employee handbook states, \"All staff must review the Company Policy on Data Security annually;\" which is a mandatory requirement.",
    "The employee handbook states, \"all staff must review the 'Company Policy on Data Security' annually,\" which is a mandatory requirement.",
+   "The Employee Handbook states, \"all staff must review the Company Policy on Data Security annually,\" which is a mandatory requirement.",
    "The employee handbook states: \"All staff must review the 'Company Policy on Data Security' annually,\" which is a mandatory requirement."
   ],
   "correct_index": 3,
@@ -392,12 +392,12 @@
  {
   "question": "When editing for clarity in a business document, which revision best demonstrates improved conciseness without losing essential information?",
   "options": [
-   "Original: 'The report contains information that is relevant and important to the decision.' Revised: 'The report contains relevant and important information to the decision-making process.'",
-   "Original: 'In order to ensure that all team members are in agreement, we should hold a meeting.' Revised: 'We should hold a meeting in order to make sure that everyone on the team agrees.'",
+   "Original: 'The manager will make a decision regarding the proposal at a time in the near future.' Revised: 'The manager will decide on the proposal soon.'",
    "Original: 'Due to the fact that errors were found, the document requires additional review and correction.' Revised: 'Errors were discovered in the document, which means it needs to be reviewed and corrected again.'",
-   "Original: 'The manager will make a decision regarding the proposal at a time in the near future.' Revised: 'The manager will decide on the proposal soon.'"
+   "Original: 'In order to ensure that all team members are in agreement, we should hold a meeting.' Revised: 'We should hold a meeting in order to make sure that everyone on the team agrees.'",
+   "Original: 'The report contains information that is relevant and important to the decision.' Revised: 'The report contains relevant and important information to the decision-making process.'"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The first revision reduces wordiness ('will make a decision' to 'will decide,' 'at a time in the near future' to 'soon') while preserving all critical meaning. The other options either add words, introduce redundancy, or fail to meaningfully improve conciseness despite minor rewording.",
   "knowledge_area": "Proofreading & Editing",
   "difficulty": "hard"
@@ -405,12 +405,12 @@
  {
   "question": "Which sentence demonstrates the most effective word choice for a professional business context?",
   "options": [
-   "The team is enthusiastic about the initiative, as it provides tangible mechanisms to advance strategic priorities and measurable outcomes.",
-   "We are super pumped that this new thing will make our work easier and help us get better results than we had before.",
    "The team was really excited about the new initiative because it was going to help them accomplish their goals in a big way.",
-   "The implementation of the quarterly objectives framework will facilitate alignment among departmental units and enhance operational efficiency metrics."
+   "The team is enthusiastic about the initiative, as it provides tangible mechanisms to advance strategic priorities and measurable outcomes.",
+   "The implementation of the quarterly objectives framework will facilitate alignment among departmental units and enhance operational efficiency metrics.",
+   "We are super pumped that this new thing will make our work easier and help us get better results than we had before."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "This option balances professional vocabulary ('enthusiastic,' 'strategic priorities') with concrete benefit language ('tangible mechanisms,' 'measurable outcomes') appropriate for business communication. The first uses informal language and vague intensifiers; the second is over-jargonized and unclear; the fourth is too casual for professional context.",
   "knowledge_area": "Proofreading & Editing",
   "difficulty": "hard"
@@ -418,12 +418,12 @@
  {
   "question": "A document contains three sentences: (1) 'The client requested modifications to the contract terms.' (2) 'They wanted the payment schedule adjusted.' (3) 'The liability clauses needed revision by the legal team.' When edited for consistency, which version best maintains parallel structure?",
   "options": [
-   "The client requested modifications to contract terms, wanted adjustments to the payment schedule, and needed the legal team to revise liability clauses.",
+   "The client requested that contract terms be modified, the payment schedule be adjusted, and the liability clauses be revised by legal.",
    "The client requested modifications to the contract terms, the payment schedule adjustment, and liability clause revisions from legal.",
-   "The client made requests for contract term modifications, adjustments to payment schedules, and revisions of liability clauses by the legal team.",
-   "The client requested that contract terms be modified, the payment schedule be adjusted, and the liability clauses be revised by legal."
+   "The client requested modifications to contract terms, wanted adjustments to the payment schedule, and needed the legal team to revise liability clauses.",
+   "The client made requests for contract term modifications, adjustments to payment schedules, and revisions of liability clauses by the legal team."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "This version uses consistent parallel structure with the pattern 'be [past participle]' across all three clauses, maintaining grammatical balance. Option 1 mixes gerunds with noun phrases; option 3 uses inconsistent modifiers ('by legal' only in the final clause); option 4 uses noun phrases inconsistently with modifiers.",
   "knowledge_area": "Proofreading & Editing",
   "difficulty": "hard"
@@ -431,10 +431,10 @@
  {
   "question": "When comparing a draft document to its final version, an editor notices the draft states 'employees must follow all polices outlined in the manual,' while the final version reads 'employees must follow all policies outlined in the employee manual.' Which editorial principle drove this change?",
   "options": [
-   "Addition of a proper noun to ensure consistency with organizational naming conventions",
    "Substitution of informal language with formal register to enhance professional tone throughout the document",
+   "Elimination of ambiguity by replacing a vague term with a more precise industry-standard descriptor",
    "Correction of a spelling error and improvement of completeness through clarifying specification",
-   "Elimination of ambiguity by replacing a vague term with a more precise industry-standard descriptor"
+   "Addition of a proper noun to ensure consistency with organizational naming conventions"
   ],
   "correct_index": 2,
   "explanation": "The change corrects the misspelling 'polices' to 'policies' and adds 'employee' to clarify which manual is referenced, addressing both correctness and completeness. While precision and professionalism are improved, they are secondary effects; the primary editorial drivers are the spelling correction and clarifying specification.",
@@ -444,12 +444,12 @@
  {
   "question": "A document includes these proofreader's marks on a sentence: delete 'very,' change 'alot' to 'a lot,' insert comma after 'deadline,' and replace 'utilize' with 'use.' Which of the following best reflects the intent of these edits?",
   "options": [
-   "Standardize terminology by removing colloquialisms, correcting capitalization errors, and substituting concise vocabulary for verbose phrasing",
-   "Remove unnecessary intensifiers, correct spelling and grammar errors, and replace overly formal or imprecise language with clearer alternatives",
+   "Enhance professional tone by addressing informal word choices, implementing consistent punctuation rules, and eliminating non-standard verb usage",
    "Improve sentence readability by eliminating redundant adjectives and ensuring punctuation accuracy in complex sentence structures",
-   "Enhance professional tone by addressing informal word choices, implementing consistent punctuation rules, and eliminating non-standard verb usage"
+   "Standardize terminology by removing colloquialisms, correcting capitalization errors, and substituting concise vocabulary for verbose phrasing",
+   "Remove unnecessary intensifiers, correct spelling and grammar errors, and replace overly formal or imprecise language with clearer alternatives"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "These edits target conciseness ('very'), correctness ('alot' → 'a lot'), clarity of punctuation (comma insertion), and word choice effectiveness ('utilize' → 'use'), which together represent the core principles of editing for clarity, correctness, and conciseness. The other options emphasize secondary effects or mischaracterize the specific errors being addressed.",
   "knowledge_area": "Proofreading & Editing",
   "difficulty": "hard"
@@ -457,12 +457,12 @@
  {
   "question": "Which sentence contains a misplaced modifier that changes the intended meaning, and how should it be corrected?",
   "options": [
-   "The director explained the policy to the employees using a presentation slide, making the complex rules easier to understand for the audience.",
    "The committee rejected the budget proposal submitted last month due to insufficient detail, which was a reasonable decision given the circumstances.",
    "Walking into the conference room, the agenda was already displayed on the screen, suggesting the meeting had been carefully prepared beforehand.",
-   "The manager reviewed the proposal written by the intern with considerable interest, which means the intern wrote it with care."
+   "The manager reviewed the proposal written by the intern with considerable interest, which means the intern wrote it with care.",
+   "The director explained the policy to the employees using a presentation slide, making the complex rules easier to understand for the audience."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The phrase 'Walking into the conference room' is a dangling modifier—it has no clear subject performing the action. The sentence implies the agenda was walking, not a person. The other sentences have clear antecedents for their modifying phrases. This is a hard distinction because all sentences are grammatically complex and initially plausible.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -470,12 +470,12 @@
  {
   "question": "Identify which sentence demonstrates correct subject-verb agreement when the subject is a collective noun requiring careful attention to context.",
   "options": [
+   "The audience were enthusiastic about the presentation, with each member offering constructive feedback during the discussion afterward.",
    "The team of project managers have been assigned their individual responsibilities for the quarterly deliverables.",
    "The committee has approved the budget revisions, and its members will vote on the implementation strategy next week.",
-   "The audience were enthusiastic about the presentation, with each member offering constructive feedback during the discussion afterward.",
    "The group of executives have agreed to the merger terms, but the board are still reviewing the financial documents carefully."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Option C correctly treats 'committee' as a singular collective noun ('has approved') and uses the singular possessive pronoun 'its.' Options A and D inconsistently mix singular and plural verbs with the same collective noun. Option B incorrectly uses the plural verb 'were' with the singular 'audience.' Hard because all options contain plausible-sounding collective noun constructions.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -483,12 +483,12 @@
  {
   "question": "Which sentence correctly demonstrates the distinction between a transitive verb and an intransitive verb in context?",
   "options": [
+   "The manager explained the budget to the staff, and the employees listened carefully to every word spoken during the meeting.",
    "The accountant calculated the quarterly revenues yesterday, while the auditor examined the records that were submitted for review.",
    "The presenter spoke passionately about the new initiative, and the team responded with enthusiasm to the proposal that was presented.",
-   "The manager explained the budget to the staff, and the employees listened carefully to every word spoken during the meeting.",
    "The director laid the foundation for the policy change, and the committee rose in agreement when the vote was called to order."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Option A uses 'explained' (transitive—requires a direct object: 'the budget') and 'listened' (intransitive—requires no object). Options B, C, and D all pair transitive verbs correctly but do not show a clear contrast between transitive and intransitive use. This is hard because all sentences are grammatically correct and contain both action verbs and objects.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -498,10 +498,10 @@
   "options": [
    "After the executives reviewed the strategic plan and the financial projections, they agreed to implement the recommendations that were detailed.",
    "The board members and the department heads submitted their reports on time, demonstrating strong commitment to the deadline set by leadership.",
-   "The supervisor met with the consultant to discuss the proposal, but she was unavailable to explain the specific requirements that were needed.",
-   "When Maria spoke to her colleague about the deadline, she confirmed that the project would be completed before the end of the fiscal year."
+   "When Maria spoke to her colleague about the deadline, she confirmed that the project would be completed before the end of the fiscal year.",
+   "The supervisor met with the consultant to discuss the proposal, but she was unavailable to explain the specific requirements that were needed."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Option A contains an ambiguous pronoun reference: 'she' could refer to either the supervisor or the consultant, making the sentence unclear. Options B and C have clear plural antecedents ('they,' 'their'), and Option D has a clear singular antecedent ('she' = Maria). This is hard because all sentences are otherwise grammatically sound, and the error is subtle rather than obvious.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -509,12 +509,12 @@
  {
   "question": "Which sentence correctly uses an irregular verb and demonstrates the proper tense in a compound-complex sentence structure?",
   "options": [
-   "The team begun the project last month, and although the deadline was extended, they have completed most of the deliverables that were required.",
    "After the meeting was held and the policy was announced, the employees had understood the changes, and they begun implementing the new procedures immediately.",
-   "The accountant had wrote the financial report before the board meeting, so the executives could review the document that outlined the fiscal projections.",
-   "The vendor had brought the supplies on time, and because the equipment was installed before Tuesday, the team could start the operation that had began yesterday."
+   "The team begun the project last month, and although the deadline was extended, they have completed most of the deliverables that were required.",
+   "The vendor had brought the supplies on time, and because the equipment was installed before Tuesday, the team could start the operation that had began yesterday.",
+   "The accountant had wrote the financial report before the board meeting, so the executives could review the document that outlined the fiscal projections."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Option A correctly uses 'begun' (past participle of 'begin') with the helping verb 'have' in 'have completed,' and properly demonstrates the compound-complex structure with clear temporal relationships. Options B, C, and D all contain irregular verb errors ('wrote' should be 'written,' 'begun' should be 'began,' 'began' should be 'begun'). This is hard because distinguishing between past and past participle forms of irregular verbs requires precision.",
   "difficulty": "hard",
   "knowledge_area": "Grammar"
@@ -548,10 +548,10 @@
  {
   "question": "When evaluating the quality and reliability of two sources on workplace communication best practices—one from a peer-reviewed journal and one from a company blog post—what factors should you examine to differentiate fact from opinion in each?",
   "options": [
-   "The journal article contains only facts because peer review ensures accuracy; the blog post contains only opinions because it is written by employees without formal credentials",
-   "Check both for evidence-based claims versus unsupported assertions, identify the author's credentials and potential bias, examine citation practices, and determine whether conclusions follow logically from presented data",
    "Assume the journal article is reliable because it is published in print, and assume the blog post is unreliable because digital sources lack editorial oversight and verification processes",
-   "The journal article uses complex language indicating credibility; the blog post uses simple language indicating it is meant for general audiences rather than decision-makers"
+   "Check both for evidence-based claims versus unsupported assertions, identify the author's credentials and potential bias, examine citation practices, and determine whether conclusions follow logically from presented data",
+   "The journal article uses complex language indicating credibility; the blog post uses simple language indicating it is meant for general audiences rather than decision-makers",
+   "The journal article contains only facts because peer review ensures accuracy; the blog post contains only opinions because it is written by employees without formal credentials"
   ],
   "correct_index": 1,
   "explanation": "Evaluating source reliability requires examining evidence, author credentials, bias, citations, and logical reasoning in both formats—not assuming credibility based on publication type. Peer-reviewed sources are generally more rigorous, but both journal articles and blogs can contain opinions or unsupported claims that must be critically assessed.",
@@ -561,12 +561,12 @@
  {
   "question": "A manager receives a procedure document that is difficult to follow because it contains vague terminology, inconsistent formatting, and a dense paragraph structure. How would you summarize the important points while addressing the document's readability issues?",
   "options": [
-   "Use critical reading techniques to identify which sentences are facts versus opinions; eliminate the opinions to simplify the document, then speed-read it to verify all steps remain clear",
-   "Identify main concepts through in-depth reading; reorganize unclear passages into a bulleted list with defined terms; use white space to improve readability while preserving the original intent",
+   "Extract key steps by scanning rapidly for action verbs; note that the original's poor readability means the summary should match its style so readers experience the same challenge",
    "Rewrite the entire document using simpler vocabulary; replace the paragraph format with a table; note in your summary that readability factors like terminology and formatting significantly affect comprehension",
-   "Extract key steps by scanning rapidly for action verbs; note that the original's poor readability means the summary should match its style so readers experience the same challenge"
+   "Identify main concepts through in-depth reading; reorganize unclear passages into a bulleted list with defined terms; use white space to improve readability while preserving the original intent",
+   "Use critical reading techniques to identify which sentences are facts versus opinions; eliminate the opinions to simplify the document, then speed-read it to verify all steps remain clear"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Effective summarization requires in-depth reading to understand the core message, then restructuring content to improve readability through organization, definition of terms, and visual formatting. The summary should clarify rather than replicate the original's confusing elements while maintaining accurate content.",
   "difficulty": "hard",
   "knowledge_area": "Reading Comprehension"
@@ -574,12 +574,12 @@
  {
   "question": "An employee must analyze a complex financial table with multiple columns showing five-year trends, abbreviations for account categories, and footnotes explaining methodology. Which combination of reading skills and note-taking strategies would yield the most accurate interpretation?",
   "options": [
-   "Speed-read all five years of data to identify patterns; take brief notes on the lowest values only; skip the footnotes as they are supplementary to understanding the main table structure",
    "Scan headings and abbreviations to build a mental map; read the footnotes in-depth to understand methodology; then systematically extract and note key figures while comparing trends across columns and years",
+   "Use critical listening techniques while reading the table aloud; take notes on abbreviations first; then perform in-depth reading of columns in sequence, cross-referencing with footnotes to capture full context",
    "Scan the table to locate the highest and lowest values; skim the footnotes to understand what the abbreviations mean; use speed-reading to quickly note the overall trend without recording specific figures",
-   "Use critical listening techniques while reading the table aloud; take notes on abbreviations first; then perform in-depth reading of columns in sequence, cross-referencing with footnotes to capture full context"
+   "Speed-read all five years of data to identify patterns; take brief notes on the lowest values only; skip the footnotes as they are supplementary to understanding the main table structure"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Accurate interpretation requires scanning to understand structure, in-depth reading of footnotes to grasp methodology and abbreviations, and systematic note-taking that captures both figures and context. Skipping footnotes or using speed-reading risks misunderstanding the data's meaning and limitations.",
   "difficulty": "hard",
   "knowledge_area": "Reading Comprehension"
@@ -587,12 +587,12 @@
  {
   "question": "A speaker uses the phrase 'that's a girl's job' when discussing workplace tasks. Which aspect of oral communication does this primarily violate?",
   "options": [
-   "Using bias-free language to ensure all audience members feel valued and included",
    "Expressing opinions tactfully while still conveying conviction and relevant perspectives",
+   "Pronouncing words correctly to maintain credibility and ensure audience understanding",
    "Demonstrating sensitivity to audience needs by adapting tone and word choice appropriately",
-   "Pronouncing words correctly to maintain credibility and ensure audience understanding"
+   "Using bias-free language to ensure all audience members feel valued and included"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The phrase contains gender bias, which directly contradicts the principle of using bias-free language in oral communication. While the other options address valid oral communication concepts, they do not target the specific language bias issue present in this statement.",
   "difficulty": "hard",
   "knowledge_area": "Oral Communication Concepts"
@@ -600,12 +600,12 @@
  {
   "question": "During a presentation to a diverse audience including non-native speakers and individuals with hearing difficulties, a speaker delivers content quickly with minimal visual aids. Which two concepts are most directly compromised?",
   "options": [
-   "Expressing opinions positively and interpreting nonverbal cues from the audience members",
    "Identifying listening barriers and asking clarifying questions to confirm understanding",
    "Illustrating sensitivity to audience needs and following proper oral presentation techniques",
-   "Correctly pronouncing words and differentiating pronunciation from enunciation standards"
+   "Correctly pronouncing words and differentiating pronunciation from enunciation standards",
+   "Expressing opinions positively and interpreting nonverbal cues from the audience members"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Sensitivity to audience needs requires adjusting delivery for diverse listeners, and proper presentation techniques include pacing and visual support. The speaker's fast delivery and lack of aids fail both principles. The other options address important but distinct aspects of oral communication not directly compromised by this scenario.",
   "difficulty": "hard",
   "knowledge_area": "Oral Communication Concepts"
@@ -613,12 +613,12 @@
  {
   "question": "A listener hears a colleague say 'I seen the report already' and assumes the person is uneducated, which prevents them from fully absorbing the report's important findings. This scenario most directly illustrates a barrier to which of the following?",
   "options": [
-   "Nonverbal interpretation, because the listener failed to assess the speaker's body language cues",
-   "Bias-free language, because the speaker's grammar choice excludes them from professional discussion",
    "Enunciation clarity, because mispronunciation of words obscures the speaker's intended meaning",
-   "Active listening, because judgment about language use interferes with objective message reception"
+   "Nonverbal interpretation, because the listener failed to assess the speaker's body language cues",
+   "Active listening, because judgment about language use interferes with objective message reception",
+   "Bias-free language, because the speaker's grammar choice excludes them from professional discussion"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The listener's negative judgment about the speaker's grammar creates a personal barrier that prevents objective listening and message comprehension. Active listening requires setting aside such judgments to focus on content. The other options misidentify the actual problem: the issue is the listener's bias, not the speaker's language choice, enunciation, or nonverbal cues.",
   "difficulty": "hard",
   "knowledge_area": "Oral Communication Concepts"
@@ -626,12 +626,12 @@
  {
   "question": "When giving directions to a new employee for closing the store, a manager notices the employee pausing frequently and looking confused, then asks, 'Do you understand the sequence for locking the back door, or should I explain it differently?' This approach primarily demonstrates which two related concepts?",
   "options": [
-   "Differentiating pronunciation from enunciation and using bias-free language in workplace settings",
-   "Asking clarifying questions and illustrating sensitivity to audience comprehension needs",
    "Expressing opinions positively while identifying listening barriers in real time",
-   "Following spoken directions and using proper oral presentation techniques with staff members"
+   "Differentiating pronunciation from enunciation and using bias-free language in workplace settings",
+   "Following spoken directions and using proper oral presentation techniques with staff members",
+   "Asking clarifying questions and illustrating sensitivity to audience comprehension needs"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The manager asks a clarifying question ('Do you understand...') and adapts the explanation based on the employee's nonverbal cues, both showing sensitivity to that person's learning needs. The other options describe different oral communication skills not exemplified by this adaptive questioning approach.",
   "difficulty": "hard",
   "knowledge_area": "Oral Communication Concepts"
@@ -640,11 +640,11 @@
   "question": "A presenter says, 'The budget allocations—and I want to emphasize this carefully—are not arbitrary; they reflect our strategic priorities,' while maintaining steady eye contact and an open posture. Which two aspects of oral communication are most effectively combined here?",
   "options": [
    "Correctly choosing words and pronouncing them distinctly to ensure audience understanding",
+   "Expressing opinions tactfully while using proper oral presentation techniques to reinforce credibility",
    "Describing processes clearly and illustrating sensitivity to diverse audience member needs",
-   "Interpreting nonverbal cues and asking clarifying questions to confirm listener understanding",
-   "Expressing opinions tactfully while using proper oral presentation techniques to reinforce credibility"
+   "Interpreting nonverbal cues and asking clarifying questions to confirm listener understanding"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "The presenter uses tactful language ('not arbitrary' rather than a blunt statement) and combines it with strong presentation technique (eye contact, posture, vocal emphasis) to deliver a potentially controversial opinion persuasively. The other options describe valuable skills but do not address the specific integration of tactful opinion expression with effective presentation delivery shown here.",
   "difficulty": "hard",
   "knowledge_area": "Oral Communication Concepts"

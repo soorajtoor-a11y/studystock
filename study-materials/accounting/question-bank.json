@@ -2,12 +2,12 @@
  {
   "question": "A company's check register shows a balance of $8,450, but the bank statement balance is $8,620. After investigation, the accountant identifies an outstanding check for $310 and a deposit in transit of $140. Which of the following should be the reconciled balance?",
   "options": [
-   "$8,450, because the check register reflects actual company transactions",
-   "$8,560, after adjusting for the outstanding check and deposit in transit",
+   "$8,620, because the bank statement is the authoritative source document",
    "$8,450, adjusted only for the NSF check that appears on the bank statement",
-   "$8,620, because the bank statement is the authoritative source document"
+   "$8,560, after adjusting for the outstanding check and deposit in transit",
+   "$8,450, because the check register reflects actual company transactions"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The reconciled balance is calculated by starting with either the check register or bank statement and adjusting for timing differences. From the bank statement of $8,620, subtract the outstanding check ($310) and add the deposit in transit ($140), arriving at $8,560. Outstanding checks and deposits in transit are timing differences that explain why the two balances differ, not errors requiring journal entries.",
   "difficulty": "hard",
   "knowledge_area": "Bank Reconciliation"
@@ -15,9 +15,9 @@
  {
   "question": "During bank reconciliation, an accountant discovers that a check written for $1,200 was recorded in the check register as $2,100. The bank statement correctly shows $1,200. What adjusting entry should be made?",
   "options": [
-   "Make no entry, since the bank statement is correct and will eventually match the register",
    "Debit Cash $1,200 and credit the bank account reconciliation account $1,200",
    "Debit Cash $900 and credit the expense account $900 to correct the understatement",
+   "Make no entry, since the bank statement is correct and will eventually match the register",
    "Debit the relevant expense account $900 and credit Cash $900 to correct the overstatement"
   ],
   "correct_index": 3,
@@ -28,12 +28,12 @@
  {
   "question": "A bank statement shows a service charge of $35 and interest earned of $12 that do not appear in the company's check register. The check register balance is $5,280 and the bank statement balance is $5,333. After identifying these items and an outstanding check for $185, what is the correct reconciled balance?",
   "options": [
-   "$5,280, which is the company's adjusted balance after journalizing bank items",
    "$5,333, which represents the bank's final balance before outstanding checks",
+   "$5,257, reflecting the service charge deduction and the interest addition",
    "$5,260, after adjusting the check register for all bank charges and reconciling items",
-   "$5,257, reflecting the service charge deduction and the interest addition"
+   "$5,280, which is the company's adjusted balance after journalizing bank items"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Start with the check register balance of $5,280, subtract the service charge ($35), and add the interest earned ($12) to get $5,257. This is the adjusted check register balance. Alternatively, from the bank statement of $5,333, subtract the outstanding check of $185 to also reach $5,257. The service charge and interest are adjustments to the company's records, not timing differences, and require journal entries.",
   "difficulty": "hard",
   "knowledge_area": "Bank Reconciliation"
@@ -41,12 +41,12 @@
  {
   "question": "An accountant is preparing a bank reconciliation statement and identifies the following: check register balance $12,400, bank statement balance $12,575, outstanding checks totaling $480, deposit in transit of $305, and an error in the check register where a $220 debit to Cash was posted as $200. Which amount represents the correct reconciled balance after all adjustments?",
   "options": [
-   "$12,380, after subtracting the outstanding checks and the check register posting error",
    "$12,395, after correcting the posting error and accounting for timing differences",
-   "$12,400, the check register balance adjusted for the deposit in transit only",
-   "$12,575, the bank statement balance less the outstanding checks and deposit in transit"
+   "$12,575, the bank statement balance less the outstanding checks and deposit in transit",
+   "$12,380, after subtracting the outstanding checks and the check register posting error",
+   "$12,400, the check register balance adjusted for the deposit in transit only"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The check register balance of $12,400 must be corrected for the $20 posting error (should be $220, not $200), bringing it to $12,420. Then subtract the outstanding checks ($480) and add the deposit in transit ($305) to arrive at $12,395. Alternatively, from the bank statement of $12,575, subtract outstanding checks ($480) and add the deposit in transit ($305), yielding the same $12,395 reconciled balance.",
   "difficulty": "hard",
   "knowledge_area": "Bank Reconciliation"
@@ -54,12 +54,12 @@
  {
   "question": "A company receives its bank statement showing NSF (non-sufficient funds) checks of $650 from customers, plus a bank error that incorrectly charged $175 to the company's account instead of to another customer's account. The check register balance is $9,840 and the bank statement balance is $9,015. Assuming deposits in transit of $500 and outstanding checks of $825, what is the correct reconciled balance?",
   "options": [
-   "$9,840, adjusted only for the timing differences of deposits and outstanding checks",
-   "$9,190, after adjusting for NSF checks, the bank error, and outstanding checks",
    "$9,165, after correcting for NSF checks and the bank error but excluding timing differences",
-   "$9,015, because the bank statement reflects the bank's official record"
+   "$9,840, adjusted only for the timing differences of deposits and outstanding checks",
+   "$9,015, because the bank statement reflects the bank's official record",
+   "$9,190, after adjusting for NSF checks, the bank error, and outstanding checks"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Start with the check register balance of $9,840. Subtract the NSF checks ($650) and add back the bank error ($175—the company should not bear this charge) to get $9,365. Then subtract outstanding checks ($825) and add the deposit in transit ($500) to arrive at $9,190. The NSF checks and bank error are adjusting entries that affect the reconciled balance; timing differences like outstanding checks and deposits in transit explain the temporary imbalance.",
   "difficulty": "hard",
   "knowledge_area": "Bank Reconciliation"
@@ -68,11 +68,11 @@
   "question": "During the accounting cycle, a company records a credit sale but does not receive payment immediately. At period-end, which step ensures this transaction appears in both the income statement and balance sheet with proper cutoff?",
   "options": [
    "Posting journal entries to the general ledger and preparing a trial balance to verify debit-credit equality",
-   "Journalizing transactions in the general journal and footing all ledger accounts to verify balances",
    "Adjusting accounts for accrued revenues, prepaid expenses, and depreciation before closing temporary accounts",
-   "Analyzing source documents and recording transactions chronologically in the cash receipts journal"
+   "Analyzing source documents and recording transactions chronologically in the cash receipts journal",
+   "Journalizing transactions in the general journal and footing all ledger accounts to verify balances"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Adjusting entries (step 5 of the accounting cycle) capture accrued revenues like credit sales not yet paid, ensuring proper matching of revenue to the period earned. Posting, trial balance preparation, and cash journalizing occur earlier in the cycle and do not address accrual adjustments.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -80,12 +80,12 @@
  {
   "question": "A balance sheet shows total assets of $850,000 and total liabilities of $325,000. If the company records an additional $45,000 in owner contributions during the period, what is the owner's capital at period-end using the accounting equation?",
   "options": [
+   "Owner's capital is $480,000, obtained by removing both liabilities and the contribution amount from assets",
    "Owner's capital is $525,000, derived from assets minus the sum of liabilities and contributions",
    "Owner's capital is $615,000, found by subtracting liabilities from assets and adding the new contributions",
-   "Owner's capital is $480,000, obtained by removing both liabilities and the contribution amount from assets",
    "Owner's capital is $570,000, calculated as the difference between total assets and total liabilities"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The accounting equation is Assets = Liabilities + Owner's Capital. Rearranging: Owner's Capital = $850,000 − $325,000 + $45,000 = $615,000. The $45,000 contribution increases owner's capital because it represents owner investment in the business.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -93,12 +93,12 @@
  {
   "question": "A company acquires equipment on credit and later pays half the liability in cash. In the double-entry accounting system, how do these two transactions affect the accounting equation components?",
   "options": [
-   "Accounts payable increases liabilities and equipment decreases by the same amount; then cash and accounts payable both decrease equally, maintaining asset totals",
-   "Equipment and cash both increase as assets; accounts payable increases as a liability; then both decrease, resulting in a net decrease in total assets and liabilities",
+   "Equipment increases assets and accounts payable increases liabilities; then cash decreases assets and accounts payable decreases liabilities, leaving total assets unchanged",
    "Equipment increases assets while owner's capital decreases; then cash increases assets and both accounts payable and owner's capital increase, balancing the equation",
-   "Equipment increases assets and accounts payable increases liabilities; then cash decreases assets and accounts payable decreases liabilities, leaving total assets unchanged"
+   "Accounts payable increases liabilities and equipment decreases by the same amount; then cash and accounts payable both decrease equally, maintaining asset totals",
+   "Equipment and cash both increase as assets; accounts payable increases as a liability; then both decrease, resulting in a net decrease in total assets and liabilities"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The first transaction debits Equipment (asset +) and credits Accounts Payable (liability +), keeping the equation balanced. The second transaction debits Accounts Payable (liability −) and credits Cash (asset −), reducing both sides equally while maintaining Assets = Liabilities + Owner's Equity.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -107,9 +107,9 @@
   "question": "Which set of financial statements best illustrates the relationship between profitability during a period and the financial position at a specific point in time?",
   "options": [
    "The income statement and balance sheet together show how revenues and expenses earned during the period contributed to changes in owner's equity and asset values",
-   "The income statement and cash flow statement together reveal which revenue sources converted to cash and which expense items remain as payable liabilities",
    "The balance sheet and statement of owner's equity together demonstrate how beginning capital plus net income minus distributions affected ending owner's capital",
-   "The cash flow statement and balance sheet together show how net income generated during the year affected cash resources and overall asset composition"
+   "The cash flow statement and balance sheet together show how net income generated during the year affected cash resources and overall asset composition",
+   "The income statement and cash flow statement together reveal which revenue sources converted to cash and which expense items remain as payable liabilities"
   ],
   "correct_index": 0,
   "explanation": "The income statement reports profit or loss (net income) for the period, while the balance sheet reports the financial position (assets, liabilities, equity) at period-end. Together, they show how period profitability affected the equity and asset composition of the business on a specific date.",
@@ -119,12 +119,12 @@
  {
   "question": "GAAP requires consistent application of accounting methods across periods. Which primary purpose does this requirement serve in conjunction with the accounting standards framework?",
   "options": [
-   "To establish uniform accounting rules that prevent companies from using depreciation, inventory methods, or revenue recognition practices that differ from governmental standards",
-   "To eliminate the need for auditors to review transactions and instead allow preparers to choose methods that minimize reported expenses and liabilities",
+   "To simplify tax calculations and reduce the administrative burden of filing federal income tax returns and quarterly regulatory filings",
    "To ensure that financial statements prepared under GAAP are comparable across time and between companies, enabling reliable decision-making by investors and creditors",
-   "To simplify tax calculations and reduce the administrative burden of filing federal income tax returns and quarterly regulatory filings"
+   "To eliminate the need for auditors to review transactions and instead allow preparers to choose methods that minimize reported expenses and liabilities",
+   "To establish uniform accounting rules that prevent companies from using depreciation, inventory methods, or revenue recognition practices that differ from governmental standards"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "GAAP's consistency requirement ensures comparability—both for the same company over time and across different companies—so that financial statement users can make informed economic decisions without being misled by arbitrary changes in accounting methods. This is a core purpose of GAAP as a regulatory framework.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -132,12 +132,12 @@
  {
   "question": "When preparing a worksheet, which of the following combinations of source documents is most critical to ensure adjustments are recorded accurately?",
   "options": [
-   "Bank reconciliation statements, depreciation schedules, and accrued expense supporting documentation to verify all period-end adjustments",
    "General ledger account balances, employee payroll records, and vendor statements to confirm cash receipts and disbursements",
-   "Prior-period reversing entries, petty cash reconciliations, and outstanding check listings to identify corrections needed",
-   "Subsidiary ledgers, customer invoices, and purchase orders to cross-reference transaction amounts against the trial balance"
+   "Subsidiary ledgers, customer invoices, and purchase orders to cross-reference transaction amounts against the trial balance",
+   "Bank reconciliation statements, depreciation schedules, and accrued expense supporting documentation to verify all period-end adjustments",
+   "Prior-period reversing entries, petty cash reconciliations, and outstanding check listings to identify corrections needed"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The worksheet adjustment process requires source documents that directly support end-of-period adjustments—depreciation schedules, accrual documentation, and bank reconciliations. The other options contain useful internal records but do not provide the specific evidence needed to justify and record the adjusting entries on the worksheet.",
   "difficulty": "hard",
   "knowledge_area": "Worksheet"
@@ -145,12 +145,12 @@
  {
   "question": "On a completed worksheet, an accountant notices the Adjusted Trial Balance debit column totals $385,400 and the credit column totals $385,400, but the Income Statement columns do not balance. Which of the following is the most likely explanation?",
   "options": [
-   "A contra-revenue or contra-expense account was omitted entirely from the worksheet, preventing proper matching of revenues and expenses for the period",
    "An adjustment was recorded in the wrong account, causing the Balance Sheet columns to be out of balance by the same amount as the Income Statement error",
-   "A revenue or expense account balance was extended incorrectly from the Adjusted Trial Balance to the Income Statement columns during the worksheet preparation process",
-   "The original trial balance contained an error that was not caught because debits and credits happened to offset in the unadjusted columns"
+   "The original trial balance contained an error that was not caught because debits and credits happened to offset in the unadjusted columns",
+   "A contra-revenue or contra-expense account was omitted entirely from the worksheet, preventing proper matching of revenues and expenses for the period",
+   "A revenue or expense account balance was extended incorrectly from the Adjusted Trial Balance to the Income Statement columns during the worksheet preparation process"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "If the Adjusted Trial Balance balances but the Income Statement does not, the error occurred during the transfer of accounts from the Adjusted Trial Balance to the Income Statement columns, not in the adjustments themselves. A revenue or expense account balance was likely transposed, extended to the wrong column, or recorded for the wrong amount. The other options would cause the Adjusted Trial Balance itself to be out of balance.",
   "difficulty": "hard",
   "knowledge_area": "Worksheet"
@@ -158,12 +158,12 @@
  {
   "question": "When recording adjustments on a worksheet for supplies used during the period, which accounts must appear in both the Adjusted Trial Balance and the Income Statement sections for the adjustment to flow through correctly?",
   "options": [
+   "Supplies Expense in the Balance Sheet liability column and Supplies in the Income Statement credit column to record the obligation for future replacement",
    "Supplies in the Income Statement debit column and Allowance for Supplies in the Balance Sheet debit column to separate current and prior-period usage",
    "Supplies Expense in the Income Statement debit column and Supplies in the Balance Sheet asset column to reflect both the period cost and remaining inventory",
-   "Supplies Expense in the Balance Sheet liability column and Supplies in the Income Statement credit column to record the obligation for future replacement",
    "Accumulated Supplies in the Income Statement credit column and Supplies Inventory in the Balance Sheet asset column to track cumulative adjustments"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The supplies adjustment increases Supplies Expense (which flows to the Income Statement debit column) and decreases Supplies (an asset in the Balance Sheet section). Both accounts must appear in the Adjusted Trial Balance and be extended properly to their respective sections for the adjustment to affect both net income and the balance sheet. The other options either misname accounts or misplace them in incorrect columns.",
   "difficulty": "hard",
   "knowledge_area": "Worksheet"
@@ -172,11 +172,11 @@
   "question": "During worksheet preparation, an accountant recorded an adjustment for accrued interest payable of $2,400 but failed to extend Interest Payable to the Balance Sheet columns. What is the immediate impact on the reported financial statements?",
   "options": [
    "Total assets and total liabilities will both be understated equally, so the balance sheet will balance but equity will be misstated by $2,400",
-   "Net income will be understated and liabilities will be overstated on the balance sheet, creating an unequal difference between reported and actual equity",
+   "The Income Statement will show correct net income but the Balance Sheet will fail to balance because the liability side will be short by $2,400",
    "Net income will be understated by $2,400 and total liabilities will be understated by $2,400, causing the balance sheet to remain in balance despite the error",
-   "The Income Statement will show correct net income but the Balance Sheet will fail to balance because the liability side will be short by $2,400"
+   "Net income will be understated and liabilities will be overstated on the balance sheet, creating an unequal difference between reported and actual equity"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "If Interest Expense was extended to the Income Statement (correctly reducing net income) but Interest Payable was not extended to the Balance Sheet liability section, the Balance Sheet will be out of balance: assets will equal one amount but liabilities plus equity will be $2,400 short. The Income Statement balances separately, but the Balance Sheet's debit and credit sides no longer equal. The other options incorrectly assume the error affects both statements symmetrically or that the balance sheet somehow remains in balance.",
   "difficulty": "hard",
   "knowledge_area": "Worksheet"
@@ -197,12 +197,12 @@
  {
   "question": "During the accounting cycle, after transactions are journalized and posted to the general ledger, which step must be completed before adjusting entries can be prepared?",
   "options": [
+   "Prepare a trial balance to verify that debits equal credits in all ledger accounts",
    "Close all temporary accounts and transfer balances to the retained earnings account",
    "Analyze source documents and record reversing entries for the next fiscal period",
-   "Reconcile the general ledger with subsidiary ledgers and update the chart of accounts",
-   "Prepare a trial balance to verify that debits equal credits in all ledger accounts"
+   "Reconcile the general ledger with subsidiary ledgers and update the chart of accounts"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The trial balance is prepared after posting to verify that the fundamental accounting equation is balanced before adjustments. Closing entries occur after the adjusted trial balance, reversing entries follow the closing process, and reconciliation is an ongoing control procedure, not a required cycle step at this stage.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -210,12 +210,12 @@
  {
   "question": "A company purchases equipment for $50,000 cash, paying $15,000 immediately and signing a note payable for $35,000. Which statement accurately reflects the effect on the accounting equation?",
   "options": [
+   "Assets increase by $50,000; Liabilities increase by $35,000; Equity decreases by $15,000",
    "Assets increase by $50,000; Liabilities increase by $35,000; Equity remains unchanged",
    "Assets increase by $50,000; Liabilities decrease by $15,000; Equity increases by $35,000",
-   "Assets increase by $50,000; Liabilities increase by $35,000; Equity decreases by $15,000",
    "Assets increase by $35,000; Liabilities increase by $35,000; Equity decreases by $15,000"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The equipment asset increases total assets by $50,000, and the note payable increases liabilities by $35,000, balancing the equation (Assets = Liabilities + Equity). The $15,000 cash payment reduces assets but does not create an equity decrease—it simply converts one asset (cash) into another (equipment), keeping total assets constant at the net effect.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -223,12 +223,12 @@
  {
   "question": "Under double-entry accounting principles, when a company records depreciation expense on equipment, which pair of account changes correctly applies debit and credit rules?",
   "options": [
-   "Debit accumulated depreciation; credit equipment to record the reduction in useful life",
+   "Debit depreciation expense; credit accumulated depreciation as a contra-asset account",
    "Debit depreciation expense; credit equipment to reduce its book value",
    "Debit equipment; credit depreciation expense to allocate the cost systematically",
-   "Debit depreciation expense; credit accumulated depreciation as a contra-asset account"
+   "Debit accumulated depreciation; credit equipment to record the reduction in useful life"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Depreciation expense is debited (increasing expense, which reduces equity), and accumulated depreciation—a contra-asset account—is credited, reducing the net book value of equipment without directly altering the equipment account. Crediting the equipment account directly is incorrect, and reversing the debit/credit relationship violates the expense recognition principle.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -236,12 +236,12 @@
  {
   "question": "A firm receives a $30,000 customer advance payment for goods to be delivered in the next quarter. How should this transaction be recorded, and which financial statement is immediately affected?",
   "options": [
+   "Debit cash and credit accounts receivable; the balance sheet shows an asset increase with no statement impact yet",
    "Debit accounts receivable and credit revenue; the income statement recognizes the sale when the advance is received",
    "Debit cash and credit revenue; the income statement shows revenue immediately upon receipt",
-   "Debit cash and credit unearned revenue; the balance sheet liability increases until the goods are delivered",
-   "Debit cash and credit accounts receivable; the balance sheet shows an asset increase with no statement impact yet"
+   "Debit cash and credit unearned revenue; the balance sheet liability increases until the goods are delivered"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The advance payment must be recorded as unearned revenue (a liability) until the performance obligation is satisfied by delivering goods. Only the balance sheet is affected at receipt; revenue is recognized later when goods are delivered, following the revenue recognition principle of GAAP.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -249,12 +249,12 @@
  {
   "question": "Which of the following best describes how GAAP guides the selection and presentation of accounting methods across multiple periods?",
   "options": [
-   "GAAP provides optional frameworks that entities may adopt or disregard depending on industry practices and management preferences",
-   "GAAP establishes consistency and comparability standards, requiring that accounting methods remain constant unless a change is disclosed and justified",
+   "GAAP mandates the exclusive use of FIFO inventory valuation and straight-line depreciation for all entities",
    "GAAP allows entities to switch accounting methods annually to optimize reported earnings and minimize tax obligations",
-   "GAAP mandates the exclusive use of FIFO inventory valuation and straight-line depreciation for all entities"
+   "GAAP establishes consistency and comparability standards, requiring that accounting methods remain constant unless a change is disclosed and justified",
+   "GAAP provides optional frameworks that entities may adopt or disregard depending on industry practices and management preferences"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "GAAP requires consistency in applying accounting methods from period to period and mandates disclosure when changes occur, enhancing comparability for users. GAAP does not require uniform methods across all entities (allowing multiple acceptable methods), prohibits arbitrary changes to manipulate results, and is mandatory under U.S. financial reporting standards, not optional.",
   "difficulty": "hard",
   "knowledge_area": "Terminology, Concepts, and Practices"
@@ -262,12 +262,12 @@
  {
   "question": "When preparing a worksheet, which of the following groups of source documents must be compiled before the trial balance columns can be completed?",
   "options": [
-   "Unadjusted account balances from the general ledger, prior-period closing entries, and revenue recognition documents",
-   "Trial balance account listings, subsidiary ledger reconciliations, and balance sheet classifications",
    "General ledger account balances, bank reconciliation statements, and depreciation schedules",
-   "General ledger account balances, adjusted trial balance figures, and income statement projections"
+   "Unadjusted account balances from the general ledger, prior-period closing entries, and revenue recognition documents",
+   "General ledger account balances, adjusted trial balance figures, and income statement projections",
+   "Trial balance account listings, subsidiary ledger reconciliations, and balance sheet classifications"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The worksheet's trial balance columns require the unadjusted account balances from the general ledger as the starting point. Bank reconciliation and depreciation schedules are source documents needed to identify adjustments, not to establish the initial trial balance. The other options either confuse adjusted figures with unadjusted ones or reference documents that serve adjustment purposes rather than trial balance preparation.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -275,9 +275,9 @@
  {
   "question": "A company's worksheet shows accumulated depreciation of $18,000 in the trial balance. During adjustment, depreciation expense of $3,000 is recorded. How should these figures appear in the adjustment columns and adjusted trial balance columns?",
   "options": [
-   "Depreciation Expense shows a debit of $3,000 in adjustments and a credit of $3,000 in adjusted trial balance; Accumulated Depreciation shows a credit of $3,000 in both columns",
    "Both accounts show $3,000 in the adjustment columns as a debit-credit pair, then Depreciation Expense appears at $3,000 and Accumulated Depreciation at $18,000 in adjusted trial balance",
    "Depreciation Expense shows a credit of $3,000 in adjustments and $3,000 in adjusted trial balance; Accumulated Depreciation shows a debit of $3,000 in adjustments and $15,000 in adjusted trial balance",
+   "Depreciation Expense shows a debit of $3,000 in adjustments and a credit of $3,000 in adjusted trial balance; Accumulated Depreciation shows a credit of $3,000 in both columns",
    "Depreciation Expense shows a debit of $3,000 in adjustments and $3,000 in adjusted trial balance; Accumulated Depreciation shows a credit of $3,000 in adjustments and $21,000 in adjusted trial balance"
   ],
   "correct_index": 3,
@@ -288,9 +288,9 @@
  {
   "question": "On a completed worksheet, the income statement columns show a net income of $45,000, but the balance sheet debit column totals $320,000 and the credit column totals $365,000. What is the most likely explanation for this relationship?",
   "options": [
-   "The net income of $45,000 should have been deducted from the balance sheet debit column to reflect retained earnings",
-   "The net income of $45,000 was added to the balance sheet credit column to balance assets with liabilities and equity",
    "The balance sheet columns are out of balance because adjusted account totals were transferred incorrectly from the trial balance",
+   "The net income of $45,000 was added to the balance sheet credit column to balance assets with liabilities and equity",
+   "The net income of $45,000 should have been deducted from the balance sheet debit column to reflect retained earnings",
    "The income statement columns were netted incorrectly, and the $45,000 figure does not properly flow to the balance sheet"
   ],
   "correct_index": 1,
@@ -301,12 +301,12 @@
  {
   "question": "A worksheet adjustment for accrued salaries of $2,400 is recorded in the adjustment columns. Which combination of accounts and column placements correctly reflects this adjustment through the worksheet sections?",
   "options": [
+   "Salaries Expense is debited $2,400 in the trial balance and again in adjustments, doubling the expense shown in the income statement",
    "Salaries Payable is debited $2,400 in adjustments and the income statement columns, then credited in the balance sheet columns",
    "Salaries Expense is debited $2,400 in adjustments and appears as a debit in the income statement; Salaries Payable is credited $2,400 in adjustments and appears as a credit in the balance sheet",
-   "Salaries Expense is credited $2,400 in adjustments and appears as a credit in the income statement; Salaries Payable is debited $2,400 in adjustments and appears as a debit in the balance sheet",
-   "Salaries Expense is debited $2,400 in the trial balance and again in adjustments, doubling the expense shown in the income statement"
+   "Salaries Expense is credited $2,400 in adjustments and appears as a credit in the income statement; Salaries Payable is debited $2,400 in adjustments and appears as a debit in the balance sheet"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Accrued salaries require a debit to Salaries Expense (income statement account) and a credit to Salaries Payable (balance sheet liability account) in the adjustment columns. These adjusted figures then flow to their respective sections: Salaries Expense to the income statement debit column and Salaries Payable to the balance sheet credit column. The other options either reverse the debit-credit relationship, misplace accounts in worksheet sections, or incorrectly duplicate entries.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -314,12 +314,12 @@
  {
   "question": "When a worksheet is prepared with the trial balance columns showing Equipment at $75,000 and Accumulated Depreciation at $12,000, and an adjustment for $5,000 depreciation is recorded, what accounts and amounts should appear in the balance sheet columns?",
   "options": [
-   "Equipment appears as a debit of $80,000; Accumulated Depreciation appears as a credit of $17,000",
-   "Equipment appears as a debit of $75,000; Accumulated Depreciation appears as a credit of $17,000",
+   "Equipment appears as a debit of $75,000; Accumulated Depreciation appears as a credit of $12,000",
    "Equipment appears as a debit of $70,000; Accumulated Depreciation appears as a credit of $12,000",
-   "Equipment appears as a debit of $75,000; Accumulated Depreciation appears as a credit of $12,000"
+   "Equipment appears as a debit of $75,000; Accumulated Depreciation appears as a credit of $17,000",
+   "Equipment appears as a debit of $80,000; Accumulated Depreciation appears as a credit of $17,000"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Equipment (an asset) remains at its original cost of $75,000 in the balance sheet debit column; depreciation adjustments never change the asset's historical cost. Accumulated Depreciation is a contra-asset credited in the balance sheet, and its adjusted balance is $12,000 (trial balance) plus $5,000 (adjustment) = $17,000. The other options either alter the equipment cost, fail to update accumulated depreciation correctly, or both.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -327,12 +327,12 @@
  {
   "question": "A company reports $480,000 in current assets, $320,000 in equipment at net book value, and $95,000 in intangible assets. If total liabilities equal $520,000, what is the owner's equity?",
   "options": [
-   "$295,000, found by adding current assets and intangible assets, then subtracting liabilities",
-   "$410,000, derived from current assets plus equipment minus the intangible asset portion",
    "$375,000, calculated by subtracting total liabilities from the sum of all asset categories",
-   "$575,000, determined by combining all assets and deducting the current portion of liabilities"
+   "$410,000, derived from current assets plus equipment minus the intangible asset portion",
+   "$575,000, determined by combining all assets and deducting the current portion of liabilities",
+   "$295,000, found by adding current assets and intangible assets, then subtracting liabilities"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Owner's equity equals total assets minus total liabilities. Total assets are $480,000 + $320,000 + $95,000 = $895,000; equity is $895,000 − $520,000 = $375,000. The other options incorrectly exclude asset categories or misapply the accounting equation.",
   "difficulty": "hard",
   "knowledge_area": "Balance Sheet"
@@ -340,12 +340,12 @@
  {
   "question": "When preparing a balance sheet, a company discovers that accounts receivable of $62,000 includes $8,000 from a related party due in 18 months and $12,000 in disputed amounts under collection. How should these items be classified?",
   "options": [
-   "The full $62,000 as a current asset with a note disclosing the related-party transaction and dispute, since all receivables are presumed current unless contractually stated otherwise",
-   "All $62,000 as current assets because accounts receivable are always classified by their nature, not collection timeline or dispute status",
    "$50,000 as current assets after writing off the disputed amount, with $12,000 expensed and the $8,000 related-party amount in other current assets",
-   "The $54,000 as current assets, reclassify $8,000 as long-term receivables, and create an allowance for the $12,000 disputed portion"
+   "The $54,000 as current assets, reclassify $8,000 as long-term receivables, and create an allowance for the $12,000 disputed portion",
+   "All $62,000 as current assets because accounts receivable are always classified by their nature, not collection timeline or dispute status",
+   "The full $62,000 as a current asset with a note disclosing the related-party transaction and dispute, since all receivables are presumed current unless contractually stated otherwise"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Receivables due beyond 12 months must be reclassified as long-term assets, and disputed amounts require an allowance rather than a write-off (which would be premature). The $54,000 collectible within the operating cycle stays current; the $8,000 related-party amount belongs in non-current receivables; and the $12,000 disputes are estimated through an allowance account that reduces the current asset total.",
   "difficulty": "hard",
   "knowledge_area": "Balance Sheet"
@@ -353,9 +353,9 @@
  {
   "question": "A balance sheet shows inventory valued at $145,000 under FIFO, machinery with accumulated depreciation of $78,000 against a cost of $310,000, and prepaid expenses of $19,000. If this company switched inventory methods from FIFO to weighted average and the inventory balance would become $151,000, which statement about the revised balance sheet is accurate?",
   "options": [
-   "Prepaid expenses must be reclassified as current liabilities to offset the inventory increase and maintain the fundamental accounting equation",
    "Total assets would increase by $6,000, but owner's equity would remain unchanged because inventory is already recorded at historical cost",
    "Machinery would be revalued downward to reflect the inventory method change, ensuring the balance sheet equation remains in balance",
+   "Prepaid expenses must be reclassified as current liabilities to offset the inventory increase and maintain the fundamental accounting equation",
    "The inventory change of $6,000 would flow through retained earnings, increasing owner's equity by the same amount net of any tax effect"
   ],
   "correct_index": 3,
@@ -366,12 +366,12 @@
  {
   "question": "During balance sheet preparation, management identifies $34,000 in accounts payable that relates to equipment received but not yet formally invoiced, $28,000 in wages payable due on the following Friday, and $47,000 in a note payable with equal $12,000 installments due yearly. How should these liabilities be split between current and non-current classifications?",
   "options": [
-   "Current liabilities total $90,000; non-current liabilities total $35,000, separating the current portion of the note from amounts due beyond 12 months",
+   "Current liabilities total $109,000; non-current liabilities total $0, since all payables are claims due to third parties within the operating cycle",
    "Current liabilities total $62,000; non-current liabilities total $47,000, excluding uninvoiced amounts until formal invoice receipt",
-   "Current liabilities total $74,000; non-current liabilities total $35,000, with the uninvoiced equipment recorded as accrued payable in current liabilities",
-   "Current liabilities total $109,000; non-current liabilities total $0, since all payables are claims due to third parties within the operating cycle"
+   "Current liabilities total $90,000; non-current liabilities total $35,000, separating the current portion of the note from amounts due beyond 12 months",
+   "Current liabilities total $74,000; non-current liabilities total $35,000, with the uninvoiced equipment recorded as accrued payable in current liabilities"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Current liabilities include the $34,000 uninvoiced payable (accrued when goods are received), the $28,000 wages payable (due soon), and the $12,000 current portion of the note = $74,000. Non-current liabilities include the remaining $35,000 of the note ($47,000 − $12,000). Option A miscalculates the note split; option C improperly excludes accrued liabilities; option D ignores the long-term portion of the note.",
   "difficulty": "hard",
   "knowledge_area": "Balance Sheet"
@@ -379,12 +379,12 @@
  {
   "question": "A company's balance sheet reports stockholders' equity of $580,000 composed of common stock of $400,000, retained earnings of $195,000, and treasury stock. Separately, the statement of shareholders' equity shows that net income for the period was $85,000 and dividends paid totaled $31,000. What is the treasury stock balance on the balance sheet?",
   "options": [
-   "($85,000), an amount representing the excess of net income over the beginning retained earnings balance",
+   "($76,000), a contra-equity account reducing total stockholders' equity to the reported $580,000",
    "($68,000), derived from the difference between the beginning balance and cumulative share repurchases during the period",
-   "($114,000), calculated by subtracting the current period earnings and dividends from the equity components shown",
-   "($76,000), a contra-equity account reducing total stockholders' equity to the reported $580,000"
+   "($85,000), an amount representing the excess of net income over the beginning retained earnings balance",
+   "($114,000), calculated by subtracting the current period earnings and dividends from the equity components shown"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Treasury stock is a contra-equity account (negative). Total equity = Common Stock + Retained Earnings − Treasury Stock; therefore $580,000 = $400,000 + $195,000 − Treasury Stock, solving to Treasury Stock = $(76,000). The net income and dividends are already reflected in retained earnings; they don't determine treasury stock, which tracks share repurchases.",
   "difficulty": "hard",
   "knowledge_area": "Balance Sheet"
@@ -392,12 +392,12 @@
  {
   "question": "A company purchases manufacturing equipment for $80,000 with a salvage value of $8,000 and a useful life of 10 years. Using the straight-line method, what is the annual depreciation expense, and how should this be recorded in the depreciation expense account?",
   "options": [
-   "Annual depreciation of $7,200 is recorded as a debit to depreciation expense and a credit to accumulated depreciation",
-   "Annual depreciation of $8,800 is recorded as a debit to depreciation expense and a credit to the equipment account",
    "Annual depreciation of $8,000 is recorded as a debit to accumulated depreciation and a credit to the equipment account",
-   "Annual depreciation of $7,200 is recorded as a debit to the equipment account and a credit to depreciation expense"
+   "Annual depreciation of $7,200 is recorded as a debit to depreciation expense and a credit to accumulated depreciation",
+   "Annual depreciation of $7,200 is recorded as a debit to the equipment account and a credit to depreciation expense",
+   "Annual depreciation of $8,800 is recorded as a debit to depreciation expense and a credit to the equipment account"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Under the straight-line method, annual depreciation is calculated as (Cost − Salvage Value) ÷ Useful Life = ($80,000 − $8,000) ÷ 10 = $7,200 per year. The journal entry debits depreciation expense and credits accumulated depreciation, which is a contra-asset account that reduces the book value of the equipment on the balance sheet.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -406,8 +406,8 @@
   "question": "A printing press is purchased for $120,000 and is expected to produce 500,000 units over its useful life with a salvage value of $10,000. During the first year, the press produces 65,000 units. Which depreciation amount and method best reflects the press's actual usage?",
   "options": [
    "Depreciation of $22,000 using the straight-line method, allocating the depreciable base equally across all periods",
-   "Depreciation of $14,300 using the sum-of-the-years'-digits method, front-loading depreciation in early years",
    "Depreciation of $24,000 using the double-declining balance method, accelerating wear based on production intensity",
+   "Depreciation of $14,300 using the sum-of-the-years'-digits method, front-loading depreciation in early years",
    "Depreciation of $15,730 using the units of production method, since the asset's value declines based on actual output"
   ],
   "correct_index": 3,
@@ -418,10 +418,10 @@
  {
   "question": "A company acquires a delivery truck for $45,000 with no salvage value and a 5-year useful life. Using the double-declining balance method, what is the depreciation expense for Year 2, and what is the truck's book value at the end of Year 2?",
   "options": [
-   "Year 2 depreciation of $9,000 and book value of $27,000, using a constant 40% rate applied to the original cost each period",
    "Year 2 depreciation of $7,200 and book value of $18,000, reflecting accelerated depreciation in the early years of the asset's life",
+   "Year 2 depreciation of $10,125 and book value of $16,875, calculating declining depreciation with adjusted salvage value assumptions",
    "Year 2 depreciation of $8,100 and book value of $19,800, applying the 40% DDB rate to the prior year's book value",
-   "Year 2 depreciation of $10,125 and book value of $16,875, calculating declining depreciation with adjusted salvage value assumptions"
+   "Year 2 depreciation of $9,000 and book value of $27,000, using a constant 40% rate applied to the original cost each period"
   ],
   "correct_index": 2,
   "explanation": "Double-declining balance uses a rate of 2 ÷ 5 = 40% applied to the declining book value each year. Year 1: $45,000 × 40% = $18,000 depreciation, leaving $27,000 book value. Year 2: $27,000 × 40% = $10,800 depreciation, leaving $16,200 book value. (Note: The provided option closest to this calculation shows the correct methodology; verify Year 2 depreciation of $8,100 with book value of $19,800 reflects alternative year-end calculations.)",
@@ -431,12 +431,12 @@
  {
   "question": "A company purchases computer equipment for $36,000 with a salvage value of $4,000 and a useful life of 8 years. Which depreciation method would result in the highest depreciation expense in Year 1, and what would that amount be?",
   "options": [
-   "Sum-of-the-years'-digits method at $8,000, applying a declining rate to the depreciable base starting at the highest fraction",
    "Straight-line method at $4,000, allocating the depreciable base uniformly across all periods of the asset's life",
    "Double-declining balance method at $9,000, using twice the straight-line rate applied to the original cost in the first year",
-   "Units of production method at $8,500, based on expected usage patterns documented in the asset acquisition record"
+   "Units of production method at $8,500, based on expected usage patterns documented in the asset acquisition record",
+   "Sum-of-the-years'-digits method at $8,000, applying a declining rate to the depreciable base starting at the highest fraction"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The double-declining balance method produces the highest Year 1 depreciation: DDB Rate = 2 ÷ 8 = 25%; Year 1 Depreciation = $36,000 × 25% = $9,000. Sum-of-the-years'-digits would be ($36,000 − $4,000) × (8 ÷ 36) = $7,111, and straight-line is ($36,000 − $4,000) ÷ 8 = $4,000. The double-declining balance method accelerates depreciation in early years by ignoring salvage value and doubling the straight-line rate.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -444,12 +444,12 @@
  {
   "question": "A manufacturer records depreciation on plant assets using the sum-of-the-years'-digits method. An asset costs $60,000 with a salvage value of $6,000 and a 6-year useful life. What is the depreciation expense for Year 3, and how should the accumulated depreciation account reflect this transaction?",
   "options": [
-   "Depreciation of $9,600, debited to the plant asset account and credited to accumulated depreciation, using the mid-point amortization factor for year three",
-   "Depreciation of $10,800, debited to depreciation expense and credited to accumulated depreciation, representing the declining fraction (4/21) of the depreciable base",
+   "Depreciation of $12,000, debited to depreciation expense and credited to accumulated depreciation, applying the fraction (5/21) to the original cost minus salvage value",
    "Depreciation of $14,400, debited to accumulated depreciation and credited to depreciation expense, reflecting the declining-balance approach for mid-life asset use",
-   "Depreciation of $12,000, debited to depreciation expense and credited to accumulated depreciation, applying the fraction (5/21) to the original cost minus salvage value"
+   "Depreciation of $9,600, debited to the plant asset account and credited to accumulated depreciation, using the mid-point amortization factor for year three",
+   "Depreciation of $10,800, debited to depreciation expense and credited to accumulated depreciation, representing the declining fraction (4/21) of the depreciable base"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Sum-of-the-years'-digits uses the fraction (Years Remaining ÷ Sum of All Years). Sum = 6 + 5 + 4 + 3 + 2 + 1 = 21; Depreciable Base = $60,000 − $6,000 = $54,000. Year 3 has 4 years remaining, so Year 3 Depreciation = $54,000 × (4 ÷ 21) = $10,286 (approximately $10,800 accounting for rounding). The entry debits depreciation expense and credits accumulated depreciation to track cumulative wear against the asset's original cost.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -458,9 +458,9 @@
   "question": "A manufacturing company purchases machinery for $480,000 with an estimated salvage value of $30,000 and a useful life of 10 years. The company expects to produce 150,000 units over the asset's life and actually produced 18,000 units in year one. Which depreciation method would result in the highest first-year depreciation expense?",
   "options": [
    "Double-declining balance method, which applies a 20% rate to the full asset cost of $480,000",
-   "Straight-line method, which allocates $45,000 annually over the 10-year useful life",
+   "Sum of the years' digits method, which multiplies the depreciable base by 10/55 in year one",
    "Units of production method, which charges $3.00 per unit based on actual production",
-   "Sum of the years' digits method, which multiplies the depreciable base by 10/55 in year one"
+   "Straight-line method, which allocates $45,000 annually over the 10-year useful life"
   ],
   "correct_index": 0,
   "explanation": "The double-declining balance method produces $96,000 in year-one depreciation ($480,000 × 40%), the highest of all methods shown. Straight-line yields $45,000, units of production yields $54,000 (18,000 × $3.00), and sum of the years' digits yields $81,818 (($480,000 − $30,000) × 10/55). DDB ignores salvage value and uses double the straight-line rate applied to the book value.",
@@ -471,11 +471,11 @@
   "question": "During the first three years of an asset's five-year life, a company used the double-declining balance method and recorded accumulated depreciation of $78,400 on a $100,000 asset with no salvage value. In year four, the company switches to the straight-line method for the remaining useful life. What depreciation expense should be recorded in year four?",
   "options": [
    "Original cost of $100,000 divided by remaining life of 2 years equals $50,000",
-   "Remaining book value of $21,600 divided by remaining life of 2 years equals $10,800",
    "Depreciable base of $78,400 divided by remaining useful life of 2 years equals $39,200",
+   "Remaining book value of $21,600 divided by remaining life of 2 years equals $10,800",
    "Book value of $21,600 multiplied by 40% per the original DDB rate equals $8,640"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "When switching depreciation methods, the remaining book value ($100,000 − $78,400 = $21,600) is depreciated straight-line over the remaining 2 years of useful life, yielding $10,800 annual expense. The original DDB rate no longer applies after the switch, and depreciation cannot exceed the remaining book value regardless of original cost or accumulated depreciation balances.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -483,12 +483,12 @@
  {
   "question": "A delivery company depreciates its fleet using the units of production method. At year-end, the fleet's total book value is $156,000, accumulated depreciation is $84,000, and total mileage since purchase is 420,000 miles. In the current year, the vehicles traveled 52,500 miles. What was the original cost of the fleet?",
   "options": [
-   "Original cost was $228,000, computed from accumulated depreciation divided by average annual mileage",
    "Original cost was $240,000, calculated as book value plus accumulated depreciation",
+   "Original cost was $195,000, derived from current book value minus year's depreciation charge",
    "Original cost was $312,000, determined by doubling the current book value",
-   "Original cost was $195,000, derived from current book value minus year's depreciation charge"
+   "Original cost was $228,000, computed from accumulated depreciation divided by average annual mileage"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Original cost equals book value plus accumulated depreciation: $156,000 + $84,000 = $240,000. Under units of production, depreciation per unit is constant, so the relationship between accumulated depreciation and original cost does not depend on timing or method selection, only on the fraction of total units consumed to date.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -497,11 +497,11 @@
   "question": "A company acquired equipment on January 1, Year 1 for $360,000 with a ten-year useful life and $40,000 salvage value. Using the sum of the years' digits method, accumulated depreciation through December 31, Year 3 totaled $153,600. Which journal entry correctly records Year 4 depreciation?",
   "options": [
    "Depreciation Expense $44,800 / Accumulated Depreciation—Equipment $44,800",
-   "Depreciation Expense $38,400 / Accumulated Depreciation—Equipment $38,400",
    "Depreciation Expense $41,600 / Accumulated Depreciation—Equipment $41,600",
-   "Depreciation Expense $35,200 / Accumulated Depreciation—Equipment $35,200"
+   "Depreciation Expense $35,200 / Accumulated Depreciation—Equipment $35,200",
+   "Depreciation Expense $38,400 / Accumulated Depreciation—Equipment $38,400"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The depreciable base is $320,000 ($360,000 − $40,000). In Year 4, the fraction is 7/55 (remaining years 7 out of the sum 1+2+...+10=55), so depreciation is $320,000 × 7/55 = $40,727. Given the stated accumulated depreciation, Year 4 expense is approximately $38,400, reflecting the declining expense pattern inherent in sum-of-the-years'-digits depreciation. The journal entry debits Depreciation Expense and credits the contra-asset account.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -509,12 +509,12 @@
  {
   "question": "An asset was purchased for $500,000 on July 1, Year 1 with a 20-year life and $20,000 salvage value. The company uses straight-line depreciation and records depreciation to the nearest half-year. At the end of Year 3, what is the asset's net book value?",
   "options": [
-   "Net book value of $423,500, calculated as original cost minus 1.5 years of annual depreciation",
-   "Net book value of $395,000, determined by subtracting three full years' depreciation from cost",
+   "Net book value of $412,000, computed as original cost less depreciation of $88,000 over the period",
    "Net book value of $408,750, derived from cost minus 2.25 years' depreciation at $12,000 annually",
-   "Net book value of $412,000, computed as original cost less depreciation of $88,000 over the period"
+   "Net book value of $395,000, determined by subtracting three full years' depreciation from cost",
+   "Net book value of $423,500, calculated as original cost minus 1.5 years of annual depreciation"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Annual depreciation is ($500,000 − $20,000) ÷ 20 = $24,000. From July 1, Year 1 through December 31, Year 3 is 2.5 years, which rounds to 2.25 years under half-year convention; however, recalculating: Year 1 gets 0.5 years ($12,000), Years 2 and 3 each get 1 year ($24,000 each), totaling $60,000 accumulated depreciation, yielding net book value of $440,000. The option showing $408,750 reflects an alternative acceptable interpretation of the accumulated depreciation period.",
   "difficulty": "hard",
   "knowledge_area": "Depreciation"
@@ -522,12 +522,12 @@
  {
   "question": "When preparing a worksheet, which of the following sets of information must be gathered before recording adjustments in the adjustment columns?",
   "options": [
-   "Prior-period closing balances, current general ledger account balances, and the chart of accounts structure only",
    "The unadjusted trial balance totals, depreciation schedules, accrued expense documentation, and prepaid asset records",
-   "Customer invoice amounts, supplier payment terms, bank deposit slips, and outstanding check registers",
-   "Inventory count sheets, fixed asset purchase receipts, loan amortization tables, and insurance policy documents"
+   "Prior-period closing balances, current general ledger account balances, and the chart of accounts structure only",
+   "Inventory count sheets, fixed asset purchase receipts, loan amortization tables, and insurance policy documents",
+   "Customer invoice amounts, supplier payment terms, bank deposit slips, and outstanding check registers"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Preparing adjustments requires the unadjusted trial balance as the starting point, plus supporting schedules and documentation for each adjustment (depreciation, accruals, prepaid items, etc.). The other options contain transaction-level details or prior-period data that are not needed to identify what adjustments are required on the worksheet.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -535,12 +535,12 @@
  {
   "question": "A company's worksheet shows a supplies account with an unadjusted balance of $8,400. The physical count reveals $2,100 of supplies remain on hand. Which columns on the worksheet will be affected by the adjustment for supplies expense?",
   "options": [
-   "The unadjusted trial balance columns and the adjustment columns, bypassing the adjusted trial balance",
    "The adjustment credit column and the balance sheet asset column, with no income statement effect",
+   "The adjustment columns and both the income statement and balance sheet columns",
    "The adjustment debit column and the adjusted trial balance credit column only",
-   "The adjustment columns and both the income statement and balance sheet columns"
+   "The unadjusted trial balance columns and the adjustment columns, bypassing the adjusted trial balance"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "The supplies adjustment ($6,300 expense) requires entries in both adjustment columns, flows through to the adjusted trial balance, appears as supplies expense in the income statement columns, and reduces supplies on the balance sheet. All four column groups are affected because the adjustment impacts both the asset account and creates an expense in the current period.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -549,11 +549,11 @@
   "question": "During worksheet preparation, an accountant discovers that a $5,000 insurance payment recorded in December covers the next 18 months of coverage. How should this adjustment be reflected across the worksheet's column sections?",
   "options": [
    "Debit supplies expense and credit prepaid insurance in the adjustment columns; the adjustment flows equally to both income statement and balance sheet sections",
+   "Debit insurance expense and credit prepaid insurance in the adjustment columns; prepaid insurance and the insurance expense amount both appear in the income statement columns",
    "Credit prepaid insurance and debit insurance expense in the adjustment columns; only the income statement section reflects the monthly expense allocation",
-   "Debit prepaid insurance and credit insurance expense in the adjustment columns; prepaid insurance appears on the balance sheet and insurance expense on the income statement",
-   "Debit insurance expense and credit prepaid insurance in the adjustment columns; prepaid insurance and the insurance expense amount both appear in the income statement columns"
+   "Debit prepaid insurance and credit insurance expense in the adjustment columns; prepaid insurance appears on the balance sheet and insurance expense on the income statement"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The adjustment reduces the prepaid asset for the portion consumed and recognizes the appropriate insurance expense. Prepaid insurance (the unused portion) belongs on the balance sheet, while the monthly expense portion belongs on the income statement. The adjustment columns feed both destinations on the worksheet.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -561,12 +561,12 @@
  {
   "question": "When completing a worksheet, which sequence most accurately describes how the trial balance, adjustments, and adjusted trial balance sections interact?",
   "options": [
-   "The adjusted trial balance totals are determined first; adjustments are then subtracted or added to the unadjusted trial balance to show the change impact",
-   "Adjustments modify the unadjusted trial balance directly; the adjusted trial balance section then recalculates all totals before forwarding to financial statements",
    "Adjustments are recorded in the unadjusted trial balance columns only; the adjusted trial balance section merely reprints those figures without independent calculation",
-   "The unadjusted trial balance carries forward to the adjusted trial balance; adjustments are entered in separate columns to calculate the final adjusted account balances"
+   "The adjusted trial balance totals are determined first; adjustments are then subtracted or added to the unadjusted trial balance to show the change impact",
+   "The unadjusted trial balance carries forward to the adjusted trial balance; adjustments are entered in separate columns to calculate the final adjusted account balances",
+   "Adjustments modify the unadjusted trial balance directly; the adjusted trial balance section then recalculates all totals before forwarding to financial statements"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The standard worksheet flow is: unadjusted balances enter the first column pair, adjustments appear in their own column pair, and the adjusted trial balance columns combine both by adding or subtracting the adjustment to each account's unadjusted balance. This structure ensures clarity and allows easy verification of adjustment accuracy.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -576,10 +576,10 @@
   "options": [
    "An extension error has occurred, because the income statement debits and credits should equal each other before net income is calculated and transferred to retained earnings",
    "The balance sheet accounts were omitted from the income statement columns, so the imbalance is expected and the $37,300 will balance when liabilities and equity are added",
-   "The revenue and expense accounts are correctly extended to the income statement; the difference of $37,300 represents the net income that will appear in the balance sheet columns as retained earnings",
-   "Revenue accounts were mistakenly extended to the debit side of the income statement, creating a $37,300 error that must be corrected before preparing financial statements"
+   "Revenue accounts were mistakenly extended to the debit side of the income statement, creating a $37,300 error that must be corrected before preparing financial statements",
+   "The revenue and expense accounts are correctly extended to the income statement; the difference of $37,300 represents the net income that will appear in the balance sheet columns as retained earnings"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The income statement columns intentionally do not balance when there is net income. The $37,300 difference ($156,200 debits − $118,900 credits) represents net income, which is then extended to the balance sheet columns to increase retained earnings. This is the normal, correct behavior of a completed worksheet.",
   "knowledge_area": "Worksheet",
   "difficulty": "hard"
@@ -588,11 +588,11 @@
   "question": "An accountant discovers that a supervisor has been accessing client financial records without authorization to review personal investment strategies. Which ethical principle is most directly violated, and what should the accountant's first step be?",
   "options": [
    "The security principle is violated; the accountant should implement role-based access controls and conduct a full system audit of all supervisor activities.",
-   "The confidentiality principle is violated; the accountant should document the access logs and report to the compliance officer or audit committee while maintaining records of the incident.",
    "The professional conduct principle is violated; the accountant should immediately terminate the supervisor's system access and notify all affected clients of the breach.",
+   "The confidentiality principle is violated; the accountant should document the access logs and report to the compliance officer or audit committee while maintaining records of the incident.",
    "The information privacy principle is violated; the accountant should request that the supervisor sign a new confidentiality agreement before taking further action."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "While all options address legitimate ethical concerns, the direct violation is confidentiality—unauthorized access to client records breaches the duty to protect sensitive information. The appropriate first response is documentation and escalation through proper channels (compliance/audit), not unilateral termination or renegotiation of agreements, which bypass formal investigation procedures.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -600,12 +600,12 @@
  {
   "question": "A company policy requires employees to report suspected fraud within 24 hours to the internal audit department, but an employee's close colleague asks her to delay reporting a minor expense discrepancy for one week to allow time to 'clarify the records.' How should the accountant respond?",
   "options": [
-   "Suggest an alternative approach where both the employee and colleague jointly investigate the records together before submitting a single consolidated report.",
    "Decline the request and report the suspected discrepancy within the required 24-hour window, as adhering to established company rules and timely reporting are core ethical obligations.",
-   "Request written approval from the employee's manager before proceeding, since the delay involves a colleague and may affect their employment status.",
-   "Agree to the delay because the discrepancy is minor and the colleague is trustworthy, but document the conversation to protect herself if questions arise later."
+   "Suggest an alternative approach where both the employee and colleague jointly investigate the records together before submitting a single consolidated report.",
+   "Agree to the delay because the discrepancy is minor and the colleague is trustworthy, but document the conversation to protect herself if questions arise later.",
+   "Request written approval from the employee's manager before proceeding, since the delay involves a colleague and may affect their employment status."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Adhering to established company rules and policies is an explicit ethical obligation (item 5 in the source material). Delaying fraud reporting—regardless of the amount or the relationship—undermines internal controls and professional conduct. The accountant must follow the 24-hour reporting requirement; allowing personal relationships or minor amounts to influence compliance is poor business ethics.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -613,12 +613,12 @@
  {
   "question": "An employee working in accounts payable receives a data breach notice indicating that vendor tax identification numbers and banking details were exposed in a cloud storage misconfiguration. The employee recognizes that implementing additional encryption and access logging would have prevented the breach. Which two action steps best reflect good ethical behavior in this situation?",
   "options": [
-   "Immediately notify all affected vendors of the breach, implement multi-factor authentication on all cloud accounts, and conduct a security audit to identify other gaps.",
-   "Document the breach details internally, strengthen vendor communication protocols, and request budget approval for a third-party security assessment before taking corrective action.",
+   "Alert the IT department to patch the misconfiguration, temporarily restrict vendor access to sensitive systems, and schedule a meeting with department heads to review privacy policy compliance.",
    "Inform senior management that the company's previous security measures were inadequate, recommend implementing role-based access controls and automated alerts for unauthorized access attempts, and provide training on data handling.",
-   "Alert the IT department to patch the misconfiguration, temporarily restrict vendor access to sensitive systems, and schedule a meeting with department heads to review privacy policy compliance."
+   "Immediately notify all affected vendors of the breach, implement multi-factor authentication on all cloud accounts, and conduct a security audit to identify other gaps.",
+   "Document the breach details internally, strengthen vendor communication protocols, and request budget approval for a third-party security assessment before taking corrective action."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Good ethical behavior in a breach scenario includes both transparency with leadership about failed safeguards and proactive security measures (encryption, access controls, alerts) that minimize future loss and restore trust. Notifying vendors is important but less central to correcting the internal security posture; recommending concrete improvements and training demonstrates accountability for professional conduct and information privacy obligations.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -626,12 +626,12 @@
  {
   "question": "Two accountants discover the same accounting error—a $50,000 misclassification in revenue recognition. One accountant believes the error should be corrected immediately and reported to management, while the other argues that because the error nets to zero across two periods and the fiscal year closes in two weeks, correction can wait until next quarter. What is the primary ethical distinction between these positions?",
   "options": [
-   "The first accountant implements security measures to prevent future similar errors, while the second identifies the root cause of the error to improve controls before correction.",
+   "The first accountant prioritizes confidentiality by containing the error within management, while the second prioritizes efficiency by deferring the correction to reduce disruption.",
    "The first accountant respects company regulations regarding audit trails, while the second recognizes that materiality thresholds permit deferral of immaterial errors in the short term.",
-   "The first accountant adheres to professional conduct and established company policies by ensuring timely and accurate reporting, while the second compromises these standards by allowing timing convenience to drive financial reporting decisions.",
-   "The first accountant prioritizes confidentiality by containing the error within management, while the second prioritizes efficiency by deferring the correction to reduce disruption."
+   "The first accountant implements security measures to prevent future similar errors, while the second identifies the root cause of the error to improve controls before correction.",
+   "The first accountant adheres to professional conduct and established company policies by ensuring timely and accurate reporting, while the second compromises these standards by allowing timing convenience to drive financial reporting decisions."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Professional conduct and adherence to established rules require immediate correction and disclosure of errors regardless of whether they are self-correcting or timing-convenient. Delaying a material error's correction to align with deadline pressure violates these core ethical obligations and represents poor business ethics, even if the net effect is temporary neutralization. Materiality and confidentiality are not valid justifications for deferring financial reporting integrity.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"
@@ -639,12 +639,12 @@
  {
   "question": "An accountant is offered a significant personal loan at a below-market interest rate by a vendor that supplies critical materials to her company. The vendor explicitly states the offer is 'a gesture of appreciation for the smooth working relationship.' Which ethical consideration is most relevant to the accountant's decision?",
   "options": [
-   "The accountant should request that the vendor formalize the loan in a written agreement specifying repayment terms, thereby establishing a documented business relationship that complies with company policy.",
    "The accountant should accept the loan only if she discloses it to the audit committee and obtains written approval, since transparency mitigates any appearance of conflict.",
-   "The accountant should accept the loan if the interest rate is still above the cost of capital to the vendor, ensuring the vendor does not incur a loss on the arrangement.",
-   "The accountant should decline the loan because accepting it could impair her independence and create an obligation that influences her objectivity in evaluating vendor contracts and payments."
+   "The accountant should decline the loan because accepting it could impair her independence and create an obligation that influences her objectivity in evaluating vendor contracts and payments.",
+   "The accountant should request that the vendor formalize the loan in a written agreement specifying repayment terms, thereby establishing a documented business relationship that complies with company policy.",
+   "The accountant should accept the loan if the interest rate is still above the cost of capital to the vendor, ensuring the vendor does not incur a loss on the arrangement."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Accepting personal favors or loans from vendors directly threatens the accountant's professional independence and objectivity—core characteristics of professional conduct. The implicit expectation of reciprocity ('gesture of appreciation') creates a situation where the accountant's future judgments on vendor matters could be unconsciously or consciously biased. Disclosure and formalization do not eliminate the ethical problem; declining is the appropriate response to preserve objectivity.",
   "difficulty": "hard",
   "knowledge_area": "Ethics"

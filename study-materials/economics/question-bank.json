@@ -2,12 +2,12 @@
  {
   "question": "During an economic expansion, consumer spending increases while inflation simultaneously rises at 4% annually. How would a business most likely be affected by these simultaneous conditions compared to a period of stable prices with identical spending growth?",
   "options": [
-   "Revenue grows faster than in stable conditions, but profit margins may compress due to rising input costs and wage pressures that outpace price increases",
    "Both revenue and profit margins expand proportionally since consumer demand directly correlates with business profitability in all market phases",
+   "Revenue grows faster than in stable conditions, but profit margins may compress due to rising input costs and wage pressures that outpace price increases",
    "Revenue remains constant across both scenarios because consumer spending levels determine business outcomes independent of inflation rates",
    "Profit margins widen significantly because businesses can raise prices freely while production costs remain fixed in inflationary environments"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "While increased consumer spending boosts revenue in both scenarios, inflation erodes profit margins by raising input costs, labor expenses, and financing charges—effects that don't occur with stable prices. A business cannot always pass full cost increases to consumers without losing competitiveness, creating a margin squeeze despite higher nominal sales.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -15,10 +15,10 @@
  {
   "question": "An economy shows GDP growth of 3% annually, yet unemployment rises from 4% to 5.5% during the same period. Which business cycle phase and corresponding strategic implication best explains this apparent contradiction?",
   "options": [
+   "Late-cycle slowdown where GDP growth masks underlying weakness, signaling businesses should prepare for imminent contraction and reduce leverage",
    "Peak expansion where tight labor markets force wage inflation, indicating businesses must accelerate automation to maintain competitiveness",
-   "Trough phase where simultaneous negative growth and high unemployment precede recovery, prompting businesses to invest heavily in capacity",
    "Early recovery phase where structural unemployment persists as job creation lags productivity gains, suggesting businesses should delay major hiring commitments",
-   "Late-cycle slowdown where GDP growth masks underlying weakness, signaling businesses should prepare for imminent contraction and reduce leverage"
+   "Trough phase where simultaneous negative growth and high unemployment precede recovery, prompting businesses to invest heavily in capacity"
   ],
   "correct_index": 2,
   "explanation": "Rising unemployment despite positive GDP growth typically signals early recovery, where businesses use automation and efficiency gains to grow output without proportional headcount increases. This structural lag means job creation hasn't yet matched economic growth, warranting cautious hiring by businesses until labor market tightness truly emerges.",
@@ -28,12 +28,12 @@
  {
   "question": "Interest rates rise from 3% to 5.5% over six months while inflation holds steady at 2.5%. How would this change in the real interest rate most directly impact a business considering a major capital investment financed through debt?",
   "options": [
-   "Capital investments become instantly more profitable because higher rates encourage consumer saving, which boosts business revenues and cash flow",
+   "Investment decisions remain unaffected since real rates depend on inflation expectations rather than actual rate changes or nominal borrowing costs",
    "Borrowing costs decrease relatively because nominal rate increases offset steady inflation, improving project returns and accelerating investment timelines",
-   "Borrowing costs increase in real terms by approximately 2%, reducing net present value of the investment and potentially making previously viable projects uneconomical",
-   "Investment decisions remain unaffected since real rates depend on inflation expectations rather than actual rate changes or nominal borrowing costs"
+   "Capital investments become instantly more profitable because higher rates encourage consumer saving, which boosts business revenues and cash flow",
+   "Borrowing costs increase in real terms by approximately 2%, reducing net present value of the investment and potentially making previously viable projects uneconomical"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The real interest rate (nominal rate minus inflation) rises from 0.5% to 3%, directly increasing the discount rate applied to future project cash flows and raising the cost of debt financing. This 2.5 percentage point increase in real borrowing costs reduces the present value of long-term capital projects, making marginally profitable investments no longer viable.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -41,12 +41,12 @@
  {
   "question": "Consumer spending patterns show a 2% year-over-year increase while durable goods orders fall 3% and consumer confidence indices decline. What does this divergence suggest about the reliability of consumer spending as a leading economic indicator in the near term?",
   "options": [
-   "The indicators are consistent and reinforce economic strength because total spending increases demonstrate the durability of consumer demand across all categories",
-   "Consumer confidence is the primary indicator to monitor since spending increases prove consumers are optimistic regardless of order trends or survey data",
    "Consumer spending growth is likely unsustainable because falling durable orders and confidence precede broader pullbacks, signaling spending may contract within two to three quarters despite current gains",
-   "Durable goods orders are irrelevant to spending forecasts because they measure business inventory rather than household consumption patterns and intentions"
+   "Durable goods orders are irrelevant to spending forecasts because they measure business inventory rather than household consumption patterns and intentions",
+   "Consumer confidence is the primary indicator to monitor since spending increases prove consumers are optimistic regardless of order trends or survey data",
+   "The indicators are consistent and reinforce economic strength because total spending increases demonstrate the durability of consumer demand across all categories"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Falling durable goods orders and declining confidence are leading indicators that typically precede declines in total consumer spending by two to three quarters. The current spending growth likely reflects depleted savings or credit spending rather than sustainable income growth, making this divergence a warning sign that near-term spending contraction is probable.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -54,10 +54,10 @@
  {
   "question": "GDP components show that business investment declined 5% while government spending increased 4% and net exports improved 2%, yet overall GDP grew only 1%. Which structural economic concern does this composition suggest for long-term business planning?",
   "options": [
-   "The economy is experiencing healthy diversification because government and export sectors are compensating for normal cyclical investment fluctuations in businesses",
+   "Business investment declines are favorable because they free capital for consumer spending, which is the most important GDP component for business profitability",
    "Private sector growth has weakened substantially, and GDP expansion depends on temporary government stimulus rather than productive business investment, raising sustainability concerns",
-   "Government spending increases ensure stable long-term growth by substituting for private investment, eliminating business cycle volatility and reducing corporate planning uncertainty",
-   "Business investment declines are favorable because they free capital for consumer spending, which is the most important GDP component for business profitability"
+   "The economy is experiencing healthy diversification because government and export sectors are compensating for normal cyclical investment fluctuations in businesses",
+   "Government spending increases ensure stable long-term growth by substituting for private investment, eliminating business cycle volatility and reducing corporate planning uncertainty"
   ],
   "correct_index": 1,
   "explanation": "Business investment is the primary driver of long-term productive capacity and competitiveness; its 5% decline signals weakness in private-sector confidence despite modest overall GDP growth. When government spending and exports artificially prop up GDP while core business investment contracts, growth lacks a sustainable foundation, suggesting the economy may face future slowdowns once temporary stimulus fades.",
@@ -67,12 +67,12 @@
  {
   "question": "A manufacturing firm increases its workforce from 50 to 100 employees while keeping capital equipment constant. Initially, output per worker rises, but after hiring 75 employees, each additional worker contributes less to total output than the previous hire. Which economic principle best explains this pattern?",
   "options": [
+   "Specialization of labor, which increases productivity when workers focus on narrower, repetitive tasks within the production process",
    "Organized labor negotiations, which reduce per-worker efficiency as union contracts standardize wage rates across skill levels",
    "The law of diminishing returns, where adding variable inputs to fixed factors eventually produces smaller incremental gains",
-   "Specialization of labor, which increases productivity when workers focus on narrower, repetitive tasks within the production process",
    "Economies of scale, which decrease unit costs as the firm spreads its total fixed costs across a larger number of output units"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The scenario directly illustrates diminishing marginal returns—output per worker initially increases due to better task division, then decreases as the fixed equipment becomes a bottleneck. While specialization and economies of scale are real concepts, they describe long-term productivity gains, not the declining incremental contribution shown here. Organized labor affects wage structures, not marginal physical product.",
   "difficulty": "hard",
   "knowledge_area": "Cost/Profit Relationships"
@@ -82,8 +82,8 @@
   "options": [
    "Division of labor increases worker proficiency and specialization minimizes task-switching losses and tool changeover time",
    "Productivity gains from reduced employee turnover and specialization that aligns worker skills with specific production bottlenecks",
-   "Specialization reduces training time and organized labor allows the firm to hire lower-wage workers for repetitive subtasks",
-   "Organized labor agreements and division of labor that permit the bakery to operate equipment for longer daily production windows"
+   "Organized labor agreements and division of labor that permit the bakery to operate equipment for longer daily production windows",
+   "Specialization reduces training time and organized labor allows the firm to hire lower-wage workers for repetitive subtasks"
   ],
   "correct_index": 0,
   "explanation": "The improvement comes from specialization (workers becoming expert at one task) and division of labor (breaking production into discrete steps that reduce inefficiency from task-switching). Option A conflates specialization with wage suppression. Option C overstates turnover's role. Option D misattributes gains to labor agreements and extended hours, not task structure.",
@@ -93,12 +93,12 @@
  {
   "question": "A logistics company operates a warehouse with 10 loading docks and a fixed inventory management system. As the firm hires more dock workers, total packages processed per day increases from 5,000 to 8,000, then to 9,500, then to 9,700, and finally to 9,650 when a 50th worker is hired. Which statement most accurately interprets this data in context of productivity and cost relationships?",
   "options": [
-   "Diminishing returns set in around the 40th worker, and the 50th worker's near-zero or negative contribution signals the firm has exceeded its efficient labor scale given fixed dock capacity",
    "Specialization benefits have been fully exhausted, and the firm should invest in additional capital equipment rather than hire more workers to restore productivity growth",
+   "The firm has reached optimal productivity and should immediately cease hiring because the 50th worker produced a negative marginal product",
    "Organized labor has begun to impose work-sharing agreements that reduce individual worker output as staffing levels increase beyond union-negotiated thresholds",
-   "The firm has reached optimal productivity and should immediately cease hiring because the 50th worker produced a negative marginal product"
+   "Diminishing returns set in around the 40th worker, and the 50th worker's near-zero or negative contribution signals the firm has exceeded its efficient labor scale given fixed dock capacity"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The data shows classic diminishing returns: each additional worker adds less output than the previous one (3,000 → 1,500 → 200 → −50 package increments), indicating the fixed dock infrastructure is becoming the constraint. Option A incorrectly calls for immediate dismissal; a firm typically operates at slightly negative marginal product as long as average product remains positive. Option C invokes labor agreements without textual support. Option D correctly identifies the capital constraint but misses the precise economic principle at work.",
   "difficulty": "hard",
   "knowledge_area": "Cost/Profit Relationships"
@@ -106,10 +106,10 @@
  {
   "question": "Two competing firms manufacture automotive parts. Firm A maintains generalist workers who rotate through assembly, quality control, and packaging; Firm B assigns each worker to one station. After one year, Firm B's output per worker-hour exceeds Firm A's by 22%, though both firms invested equally in training. Which factors most directly explain Firm B's advantage?",
   "options": [
-   "Firm B's workers experience lower job dissatisfaction from routine tasks, which decreases absenteeism and raises the firm's measured productivity rates",
+   "Firm B's workers are members of organized labor, which mandates efficiency bonuses for workers who remain in a single role",
    "Firm B has structured its production through specialization and division of labor, reducing task-switching costs and enabling workers to reach higher proficiency levels",
    "Firm B has implemented diminishing returns recovery by concentrating its fixed capital investment on equipment that supports narrow, repetitive worker tasks",
-   "Firm B's workers are members of organized labor, which mandates efficiency bonuses for workers who remain in a single role"
+   "Firm B's workers experience lower job dissatisfaction from routine tasks, which decreases absenteeism and raises the firm's measured productivity rates"
   ],
   "correct_index": 1,
   "explanation": "Firm B's advantage stems directly from specialization (workers becoming expert at one task) and division of labor (eliminating inefficiency from task transitions and tool changeover). Option A incorrectly attributes the gain to union structure. Option C confuses job satisfaction with productivity measurement. Option D misapplies diminishing returns, which describes input-output relationships, not capital allocation strategy.",
@@ -119,12 +119,12 @@
  {
   "question": "An agricultural cooperative studies the relationship between fertilizer application and corn yield per acre. With 0 units of fertilizer, yield is 80 bushels; at 1 unit, 140 bushels; at 2 units, 190 bushels; at 3 units, 230 bushels; at 4 units, 260 bushels. The farmer must decide whether to apply a 5th unit. Which economic principle should guide this decision, and what does the data pattern reveal?",
   "options": [
-   "Productivity gains show increasing returns, which implies that capital investment in irrigation systems should precede further fertilizer spending to sustain yield growth",
    "The law of diminishing returns is evident because incremental yield gains are declining (60, 50, 40, 30 bushels per unit), so the 5th unit will likely produce marginal benefit below earlier applications",
+   "Specialization of fertilizer types should be analyzed; the yield increases suggest the farmer has not yet optimized crop variety selection alongside nutrient inputs",
    "Organized labor productivity applies because farm workers require different wage incentives as fertilizer application intensity increases, affecting the cost structure of total yield",
-   "Specialization of fertilizer types should be analyzed; the yield increases suggest the farmer has not yet optimized crop variety selection alongside nutrient inputs"
+   "Productivity gains show increasing returns, which implies that capital investment in irrigation systems should precede further fertilizer spending to sustain yield growth"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The decreasing marginal product (60 → 50 → 40 → 30 bushels per additional unit) is textbook diminishing returns, signaling that each additional unit of variable input (fertilizer) applied to the fixed factor (land) produces smaller increments. The farmer should apply the 5th unit only if its expected yield gain justifies its cost. Option A confuses specialization with crop selection. Option C conflates labor wages with diminishing returns to inputs. Option D misreads increasing unit yields as increasing returns (which refers to scale, not marginal contribution).",
   "difficulty": "hard",
   "knowledge_area": "Cost/Profit Relationships"
@@ -132,12 +132,12 @@
  {
   "question": "A manufacturing firm increases its workforce by 20% but output rises only 12%. Which economic principle best explains this outcome, and what does it reveal about the firm's production stage?",
   "options": [
-   "The law of diminishing returns is occurring because additional workers are contributing less to total output than previous workers, indicating the firm has exceeded its optimal production capacity.",
+   "Productivity has declined due to poor management decisions in organizing labor, though the firm could recover gains by implementing stricter scheduling and quality control measures.",
    "The firm is experiencing negative returns to scale because fixed costs are spreading across more workers, making each unit of labor exponentially less effective than before.",
    "Specialization and division of labor have reached their maximum efficiency, preventing new hires from adding proportional value despite receiving identical training and equipment.",
-   "Productivity has declined due to poor management decisions in organizing labor, though the firm could recover gains by implementing stricter scheduling and quality control measures."
+   "The law of diminishing returns is occurring because additional workers are contributing less to total output than previous workers, indicating the firm has exceeded its optimal production capacity."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The law of diminishing returns states that beyond a certain point, adding more of one input (labor) while holding others constant (equipment, facility) yields progressively smaller increases in output. The 20% increase in workers producing only a 12% increase in output demonstrates that additional workers are contributing less marginal output, a classic sign the firm is past its optimal point. Options B and D misapply specialization and scale concepts respectively; Option C suggests a management problem rather than an economic law.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -145,12 +145,12 @@
  {
   "question": "Two businesses operate in the same industry with identical equipment and facility sizes. Business A employs 15 workers with clearly defined roles in production, quality, and logistics. Business B employs 18 workers with overlapping responsibilities and less defined specialization. Which factor accounts for Business A's higher output per worker, and how does this relate to organizational efficiency?",
   "options": [
-   "Business A benefits from specialization and division of labor, where workers focus on narrow tasks, build expertise in those areas, and reduce the inefficiencies caused by frequent task-switching and skill dilution.",
-   "Business A achieves better scheduling efficiency by employing fewer people across more shifts, which minimizes idle time and ensures continuous facility utilization throughout extended operating hours.",
    "Business A has lower productivity costs because fewer workers means reduced wage expenses, allowing the firm to allocate more capital toward automation and equipment upgrades.",
-   "Business A's workers exhibit higher individual motivation due to smaller team size, which increases focus and reduces the coordination problems that emerge when organized labor negotiations become complex."
+   "Business A's workers exhibit higher individual motivation due to smaller team size, which increases focus and reduces the coordination problems that emerge when organized labor negotiations become complex.",
+   "Business A benefits from specialization and division of labor, where workers focus on narrow tasks, build expertise in those areas, and reduce the inefficiencies caused by frequent task-switching and skill dilution.",
+   "Business A achieves better scheduling efficiency by employing fewer people across more shifts, which minimizes idle time and ensures continuous facility utilization throughout extended operating hours."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Specialization and division of labor increase productivity by allowing workers to develop deep expertise in specific tasks, reduce switching costs, and work more efficiently within their area of focus. Business A's clearly defined roles exemplify this principle; Business B's overlapping responsibilities create inefficiencies. Option B confuses lower headcount with higher output per worker, which are distinct concepts. Options C and D address motivation and scheduling rather than the core productivity mechanism of specialization.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -158,12 +158,12 @@
  {
   "question": "A firm measures its output as 500 units per week with 10 full-time employees. After training workers in new techniques and reorganizing workflow processes, it achieves 650 units per week with the same 10 employees. Which concept does this improvement primarily demonstrate, and what is the firm's productivity change?",
   "options": [
-   "Productivity has increased from 50 to 65 units per worker per week, reflecting improvements in how efficiently the firm organizes labor and deploys existing resources rather than adding new inputs.",
    "The law of diminishing returns has been temporarily reversed, showing that the firm can add output indefinitely by continuing to optimize processes without hiring additional workers or capital.",
-   "Specialization has increased by 30% per worker, indicating that job roles have become more narrowly focused and workers have achieved greater expertise in their assigned tasks within production.",
-   "Organized labor has become more efficient, suggesting that union negotiations improved wage structures and reduced the conflict between management and workers, allowing better cooperation."
+   "Productivity has increased from 50 to 65 units per worker per week, reflecting improvements in how efficiently the firm organizes labor and deploys existing resources rather than adding new inputs.",
+   "Organized labor has become more efficient, suggesting that union negotiations improved wage structures and reduced the conflict between management and workers, allowing better cooperation.",
+   "Specialization has increased by 30% per worker, indicating that job roles have become more narrowly focused and workers have achieved greater expertise in their assigned tasks within production."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Productivity—the output produced per unit of input—improved from 50 to 65 units per worker weekly. This gains stems from better organization of labor and workflow efficiency, not from hiring more workers or adding capital. Option B confuses the output increase with specialization, which is a structural change not measured here. Option C incorrectly attributes gains to labor relations rather than operational efficiency. Option D misapplies diminishing returns; process improvements are not the same as indefinite returns.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -185,8 +185,8 @@
   "question": "A software development company restructures its team so that developers specialize in either front-end or back-end systems, whereas previously all developers worked on both areas. Output per developer increases 25%, but the company also observes that onboarding new developers takes longer and communication between front-end and back-end teams requires more coordination. How do these dynamics illustrate the relationship between specialization, productivity, and organizational cost?",
   "options": [
    "Productivity improvements from specialization are offset entirely by organized labor disputes, meaning the company must negotiate better agreements with employees to realize the full benefits of the restructured team roles.",
-   "The company has successfully implemented the law of diminishing returns by assigning workers to narrower roles, which reduces marginal productivity initially but generates long-term gains as workers move down the learning curve.",
    "The 25% productivity gain proves that specialization eliminates all inefficiencies related to task-switching, and the longer onboarding and coordination issues are temporary problems that will disappear once workers become fully experienced.",
+   "The company has successfully implemented the law of diminishing returns by assigning workers to narrower roles, which reduces marginal productivity initially but generates long-term gains as workers move down the learning curve.",
    "Specialization and division of labor boost productivity per developer through deeper expertise and reduced task-switching, but create offsetting costs in training time and inter-team coordination, resulting in a net efficiency gain only if communication structures are well-designed."
   ],
   "correct_index": 3,
@@ -197,12 +197,12 @@
  {
   "question": "A central bank raises interest rates by 2% during a period of moderate economic growth. Which outcome best explains why businesses might simultaneously increase capital expenditures while consumer spending declines?",
   "options": [
+   "Businesses anticipate future inflation and invest now before rates rise further, while consumers delay purchases because debt service costs increase and savings yields improve",
    "Capital expenditures rise because firms refinance existing debt at lower rates, while consumer spending falls because of reduced employment in the financial services sector",
-   "Rising rates signal economic strength to investors, encouraging expansion, yet consumers interpret the increase as a recession indicator and reduce spending preemptively",
    "Higher rates reduce borrowing costs for firms while increasing disposable income through wage growth, offsetting lower consumer demand from higher credit card rates",
-   "Businesses anticipate future inflation and invest now before rates rise further, while consumers delay purchases because debt service costs increase and savings yields improve"
+   "Rising rates signal economic strength to investors, encouraging expansion, yet consumers interpret the increase as a recession indicator and reduce spending preemptively"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "This scenario tests understanding of how interest rates affect different economic actors differently and require students to distinguish between business investment signals and consumer behavior. Businesses invest ahead of further rate increases (forward-looking behavior), while consumers respond to increased debt-service burdens and attractive savings rates. The other options misstate causal mechanisms: option A contradicts the premise, option C confuses signal interpretation, and option D incorrectly claims debt refinancing occurs at lower rates in a rising-rate environment.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -210,12 +210,12 @@
  {
   "question": "During the contraction phase of a business cycle, a retailer observes that their inventory turnover ratio is declining while accounts payable are extending beyond normal terms. How do these simultaneous indicators reflect the economic impact on business activities?",
   "options": [
-   "Declining inventory turnover reflects suppliers reducing inventory shipments, while extended payables demonstrate the retailer is improving its working capital management through better forecasting",
    "Inventory turnover decreases because customer returns are rising during recessions, and payables extend because regulatory requirements demand longer documentation periods for transactions",
-   "Slower inventory movement indicates weakening consumer demand, and extended payables suggest the firm is conserving cash by negotiating longer payment periods with suppliers",
-   "Lower turnover signals that the retailer is intentionally building stock for the expansion phase, and extended payment terms reflect improved vendor relationships and creditworthiness"
+   "Lower turnover signals that the retailer is intentionally building stock for the expansion phase, and extended payment terms reflect improved vendor relationships and creditworthiness",
+   "Declining inventory turnover reflects suppliers reducing inventory shipments, while extended payables demonstrate the retailer is improving its working capital management through better forecasting",
+   "Slower inventory movement indicates weakening consumer demand, and extended payables suggest the firm is conserving cash by negotiating longer payment periods with suppliers"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "This question requires students to interpret multiple business metrics within the contraction phase context and understand cash flow management. Slower turnover during contractions reflects reduced consumer spending, and extending payables is a liquidity preservation tactic—both are adaptive business responses to declining demand. Option B misattributes causation to suppliers, option C introduces irrelevant regulatory factors, and option D contradicts contraction-phase behavior (building inventory and extending terms are defensive, not growth-oriented moves).",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -223,12 +223,12 @@
  {
   "question": "If inflation rises to 6% annually while nominal GDP grows at 4%, which statement most accurately describes the economic impact on business pricing strategy and real economic growth?",
   "options": [
-   "Real GDP growth is negative at approximately 2%, meaning the economy produced fewer real goods and services despite nominal output increases, pressuring firms to reduce production costs",
+   "Businesses must raise prices above inflation to maintain profit margins, but real GDP contraction indicates overall productive capacity is declining in real terms",
    "Inflation of 6% exceeds nominal growth, meaning price increases consume the gains from output expansion, and firms face margin pressure unless they can improve operational efficiency",
-   "Nominal growth of 4% allows firms to increase prices proportionally to inflation while maintaining sales volume, and the positive nominal figure ensures business expansion continues unaffected",
-   "Businesses must raise prices above inflation to maintain profit margins, but real GDP contraction indicates overall productive capacity is declining in real terms"
+   "Real GDP growth is negative at approximately 2%, meaning the economy produced fewer real goods and services despite nominal output increases, pressuring firms to reduce production costs",
+   "Nominal growth of 4% allows firms to increase prices proportionally to inflation while maintaining sales volume, and the positive nominal figure ensures business expansion continues unaffected"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "This question tests understanding of the distinction between nominal and real GDP, and how inflation impacts business decision-making. Real GDP is calculated as nominal growth minus inflation (4% - 6% = -2%), indicating actual productive output contracted—a critical distinction for business planning. Option A misidentifies the direction of real growth; option C ignores the inflation impact on purchasing power; option D, while acknowledging margin pressure, fails to clarify that real GDP is negative, which is the key economic indicator.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -237,11 +237,11 @@
   "question": "An economy experiences rising unemployment concurrent with falling consumer spending and declining business investment. Which phase of the business cycle is most likely occurring, and why do all three indicators move in the same direction?",
   "options": [
    "Trough phase, because unemployment is highest at the bottom of the cycle, consumer spending is minimal, and businesses have already reduced investment to pre-cycle levels",
-   "Peak phase, because unemployment naturally rises as firms prepare for the inevitable downturn by limiting hours, while consumers and investors simultaneously become cautious",
    "Contraction phase, because reduced consumer income from job losses decreases demand, prompting businesses to cut investment and defer hiring, creating a reinforcing downward cycle",
-   "Expansion phase, because rising unemployment encourages workers to increase savings and businesses invest in training, both reducing consumption and capital spending temporarily"
+   "Expansion phase, because rising unemployment encourages workers to increase savings and businesses invest in training, both reducing consumption and capital spending temporarily",
+   "Peak phase, because unemployment naturally rises as firms prepare for the inevitable downturn by limiting hours, while consumers and investors simultaneously become cautious"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "This scenario tests understanding of how economic indicators move together during business cycles and the feedback mechanisms between unemployment, consumer behavior, and business investment. During contraction, job losses reduce consumer purchasing power, triggering demand declines that cause businesses to cut investment and hiring—a self-reinforcing negative spiral. Option A mischaracterizes expansion dynamics; option C confuses peak causality; option D describes the trough (lowest point) rather than the transition into contraction where these indicators are moving downward.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -249,12 +249,12 @@
  {
   "question": "A nation's central bank maintains interest rates at 3% while inflation accelerates from 2% to 5%. How does this real interest rate change affect the economic incentives for consumer borrowing, business capital investment, and savers?",
   "options": [
-   "Real rates increase to 8%, making borrowing more expensive and discouraging capital investment, which reduces consumer spending through lower future income expectations",
-   "Real rates remain constant at 3% because nominal rates are fixed regardless of inflation, so consumer and business borrowing behaviors are unaffected while savers benefit from higher nominal returns",
    "Real rates decline from 1% to -2%, incentivizing borrowers to increase spending and investment while penalizing savers, as inflation erodes savings faster than interest income accrues",
-   "Real rates become negative, which eliminates the incentive for any borrowing or investment because negative returns guarantee losses to all borrowers regardless of inflation expectations"
+   "Real rates increase to 8%, making borrowing more expensive and discouraging capital investment, which reduces consumer spending through lower future income expectations",
+   "Real rates become negative, which eliminates the incentive for any borrowing or investment because negative returns guarantee losses to all borrowers regardless of inflation expectations",
+   "Real rates remain constant at 3% because nominal rates are fixed regardless of inflation, so consumer and business borrowing behaviors are unaffected while savers benefit from higher nominal returns"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "This question tests the distinction between nominal and real interest rates and their behavioral impact on economic actors. Real rate = nominal rate minus inflation; the decline from 1% to -2% means borrowers face lower real costs (encouraging debt), while savers experience negative real returns (discouraging saving). Option B ignores the inflation impact on real purchasing power; option C inverts the real rate calculation; option D misinterprets negative rates—negative real rates encourage borrowing, not eliminate it, because borrowed money repaid later is worth more in today's terms.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -262,12 +262,12 @@
  {
   "question": "A developing nation transitions from a centrally planned economy to a mixed economic system. Which of the following best describes the primary advantage this shift provides to small business entrepreneurs?",
   "options": [
-   "Entrepreneurs gain access to government-allocated resources and guaranteed market prices set by central planners",
-   "Entrepreneurs eliminate all forms of government intervention, allowing completely unrestricted production and pricing decisions",
    "Entrepreneurs can respond to consumer demand signals through market prices while maintaining some regulatory safeguards and social programs",
+   "Entrepreneurs eliminate all forms of government intervention, allowing completely unrestricted production and pricing decisions",
+   "Entrepreneurs gain access to government-allocated resources and guaranteed market prices set by central planners",
    "Entrepreneurs receive direct subsidies from the state and operate under mandatory production quotas determined annually"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "A mixed economy allows entrepreneurs the flexibility of market mechanisms—responding to price signals and consumer demand—while retaining government oversight that protects workers and the public. The other options describe either pure command economy features (options A and D) or pure market economy ideology without realistic safety nets (option C).",
   "difficulty": "hard",
   "knowledge_area": "Economic Systems"
@@ -275,12 +275,12 @@
  {
   "question": "In a market economy, small businesses and entrepreneurship reduce barriers to entry by offering specialized products and creating competition. How does this competitive pressure most directly affect established firms' profit margins?",
   "options": [
-   "Established firms must improve efficiency, innovate, and offer competitive pricing to retain market share and sustain profitability",
    "Established firms increase prices to recover lost revenue from new market entrants and maintain their original profit levels",
-   "Established firms lobby governments to impose licensing requirements that prevent small businesses from entering the market",
-   "Established firms expand production volume significantly to dominate shelf space and overwhelm smaller competitors through economies of scale"
+   "Established firms must improve efficiency, innovate, and offer competitive pricing to retain market share and sustain profitability",
+   "Established firms expand production volume significantly to dominate shelf space and overwhelm smaller competitors through economies of scale",
+   "Established firms lobby governments to impose licensing requirements that prevent small businesses from entering the market"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Competition forces established firms to become more efficient and responsive to consumer needs—they cannot simply raise prices without losing customers to competitors offering better value. Options A and C represent avoidance tactics rather than competitive responses, while option D does not guarantee profit margin maintenance.",
   "difficulty": "hard",
   "knowledge_area": "Economic Systems"
@@ -289,9 +289,9 @@
   "question": "A private enterprise owner faces rising labor costs, increased raw material prices, and declining consumer demand simultaneously. Which combination of these factors would most significantly increase the business's risk profile while reducing its profit potential?",
   "options": [
    "Rising labor costs offset by lower raw material prices, with stable consumer demand protecting revenue",
-   "Declining consumer demand alone, managed through price increases that improve per-unit profit margins",
+   "Rising raw material prices offset by efficiency improvements that reduce labor costs proportionally",
    "Rising labor costs and raw material prices combined with declining consumer demand, reducing both revenue and increasing cost pressures",
-   "Rising raw material prices offset by efficiency improvements that reduce labor costs proportionally"
+   "Declining consumer demand alone, managed through price increases that improve per-unit profit margins"
   ],
   "correct_index": 2,
   "explanation": "Risk increases when multiple negative factors converge: higher input costs squeeze margins while falling demand reduces total revenue, creating a dual pressure that threatens both survival and profitability. The other options describe scenarios where one or more mitigating factors offset the damage.",
@@ -301,12 +301,12 @@
  {
   "question": "How do private enterprise principles of ownership, profit incentives, and resource allocation through market competition collectively shape a firm's approach to product development compared to a command economy alternative?",
   "options": [
-   "Private enterprises and command economies use identical market research methods but differ only in who receives the profits generated",
    "Private enterprises develop products based on centrally determined needs and allocate resources according to five-year production plans",
-   "Private enterprises focus product development on consumer preferences revealed through market demand, directing resources toward innovations that generate competitive advantage",
-   "Private enterprises develop products randomly and rely entirely on government approval before production can begin"
+   "Private enterprises and command economies use identical market research methods but differ only in who receives the profits generated",
+   "Private enterprises develop products randomly and rely entirely on government approval before production can begin",
+   "Private enterprises focus product development on consumer preferences revealed through market demand, directing resources toward innovations that generate competitive advantage"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Private enterprise profits create incentives for firms to understand and meet consumer demand, driving innovation and efficient resource allocation toward products customers actually want. Command economies rely on central planning rather than market signals, and the other options mischaracterize either private enterprise or command economy operations.",
   "difficulty": "hard",
   "knowledge_area": "Economic Systems"
@@ -314,12 +314,12 @@
  {
   "question": "Consider two businesses in the same industry: Firm A operates in a highly fragmented market with numerous competitors and low entry barriers, while Firm B operates with significant brand recognition, established supplier relationships, and high capital requirements. Which statement most accurately compares their profit-factor exposure?",
   "options": [
-   "Firm A and Firm B face identical profit pressures because industry structure does not affect individual business outcomes",
    "Firm B faces greater risk because established competitors are more likely to enter its market segment and undercut its prices",
-   "Firm A faces greater competitive pricing pressure and lower pricing power but may achieve higher profits through rapid innovation cycles",
-   "Firm B automatically earns higher profits regardless of operational efficiency because of its market position and brand equity"
+   "Firm A and Firm B face identical profit pressures because industry structure does not affect individual business outcomes",
+   "Firm B automatically earns higher profits regardless of operational efficiency because of its market position and brand equity",
+   "Firm A faces greater competitive pricing pressure and lower pricing power but may achieve higher profits through rapid innovation cycles"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Firm A's fragmented market structure limits pricing power and increases competitive pressure on margins, but lower barriers allow rapid pivots and innovation. Firm B's barriers protect margins but create inflexibility; neither structure guarantees profits automatically. Market structure significantly influences profit potential through both opportunity and constraint.",
   "difficulty": "hard",
   "knowledge_area": "Economic Systems"
@@ -327,12 +327,12 @@
  {
   "question": "When consumer spending declines while unemployment rates remain stable, which combination of economic indicators would most accurately signal an approaching recession rather than temporary market adjustment?",
   "options": [
-   "A rising GDP paired with increased consumer confidence and stable interest rates across all lending categories",
-   "Stable inflation rates combined with moderate GDP growth and consistent consumer purchasing patterns over two quarters",
    "Increasing interest rates paired with higher wages and growing small business formation across multiple economic sectors",
-   "Declining retail sales alongside weakening business investment, even as employment figures show minimal change"
+   "Declining retail sales alongside weakening business investment, even as employment figures show minimal change",
+   "Stable inflation rates combined with moderate GDP growth and consistent consumer purchasing patterns over two quarters",
+   "A rising GDP paired with increased consumer confidence and stable interest rates across all lending categories"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "A true recession signal requires multiple indicators moving together—declining consumer spending coupled with weakening business investment demonstrates broad economic contraction, while stable unemployment alone cannot offset these negative signals. The other options describe healthier economic conditions where either growth continues or stabilization occurs, which would not reliably predict recession.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -340,10 +340,10 @@
  {
   "question": "During a period of moderate inflation, a business must choose between locking in a fixed-rate loan at 6% or accepting a variable-rate loan tied to current interest rates at 4%. Which analysis most accurately captures the competing economic risks in this decision?",
   "options": [
-   "The variable rate is always superior during inflation because interest rates naturally decline; the fixed rate guarantees losses if the central bank reduces rates",
    "The fixed rate protects against all future economic shocks; the variable rate becomes worthless if unemployment rises regardless of inflation trends",
+   "Both rates carry identical risk profiles since inflation will eventually neutralize the 2% difference; the business should choose based solely on cash flow timing",
    "The fixed rate protects against future interest-rate increases but locks in a higher cost; the variable rate offers immediate savings but exposes the firm to rate risk if inflation accelerates further",
-   "Both rates carry identical risk profiles since inflation will eventually neutralize the 2% difference; the business should choose based solely on cash flow timing"
+   "The variable rate is always superior during inflation because interest rates naturally decline; the fixed rate guarantees losses if the central bank reduces rates"
   ],
   "correct_index": 2,
   "explanation": "This question tests understanding of how inflation and interest rates interact: fixed rates lock in today's costs but prevent future rate increases, while variable rates offer near-term savings but expose firms to rising costs if inflation persists. The other options either misunderstand rate relationships or overstate the certainty of inflation impacts.",
@@ -367,11 +367,11 @@
   "question": "Comparing two scenarios: Scenario A shows stable GDP growth of 3% annually with unemployment at 4.5% and inflation at 2%; Scenario B shows volatile GDP swinging between 1% and 5% annually with unemployment ranging from 3.8% to 5.5% and inflation between 1.5% and 3%. Which economic environment poses greater strategic risk to a diversified manufacturing business, and why?",
   "options": [
    "Scenario A is riskier because moderate inflation of 2% reduces purchasing power; Scenario B's lower inflation band protects profit margins and consumer demand",
+   "Both scenarios present equal risk since the average indicators are nearly identical; businesses should focus only on long-term GDP trends regardless of volatility",
    "Scenario A is riskier because stable indicators create complacency; Scenario B's volatility provides early warning signals through dramatic swings in inflation",
-   "Scenario B is riskier because unpredictable business cycles create uncertainty in labor availability, input costs, and demand; stable conditions allow confident forecasting",
-   "Both scenarios present equal risk since the average indicators are nearly identical; businesses should focus only on long-term GDP trends regardless of volatility"
+   "Scenario B is riskier because unpredictable business cycles create uncertainty in labor availability, input costs, and demand; stable conditions allow confident forecasting"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Scenario B's volatility creates real operational risk: oscillating unemployment affects labor availability and wage pressures, swinging inflation unpredictably impacts input costs and pricing strategy, and GDP volatility destabilizes demand forecasting—all critical for manufacturing. Scenario A's stability allows businesses to plan capital investment, labor needs, and supply chains with confidence despite marginally higher average inflation.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -379,12 +379,12 @@
  {
   "question": "When the Federal Reserve raises interest rates by 0.75% to combat inflation, a retail business sees its borrowing costs increase from 5% to 5.75%, yet consumer spending initially remains unchanged. What does this lag suggest about the business cycle phase, and what should the retailer anticipate?",
   "options": [
+   "The economy is in expansion with significant momentum; the delayed consumer response indicates interest-rate immunity, so the retailer should increase leverage immediately",
    "Rising rates are at peak effectiveness for inflation control; consumers have not yet reduced spending because savings were drawn down in prior periods, but demand will likely weaken within 2-3 quarters as debt servicing costs accumulate",
    "Interest rates have no measurable impact on consumer behavior; the unchanged spending proves inflation is driven by supply constraints alone, requiring continued rate increases indefinitely",
-   "The economy is in expansion with significant momentum; the delayed consumer response indicates interest-rate immunity, so the retailer should increase leverage immediately",
    "The rate increase signals imminent recession; the retailer must liquidate inventory immediately because consumer spending will drop within the next month due to wealth effects"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Interest-rate transmission to consumer spending operates with a lag—people continue spending briefly from existing savings or credit, but rising rates gradually reduce purchasing power as debt becomes costlier, typically showing effects after 2-3 quarters. The other options either overstate rate transmission speed (recession within a month is unrealistic) or deny its impact entirely, misunderstanding how monetary policy affects real behavior.",
   "difficulty": "hard",
   "knowledge_area": "Economic Indicators"
@@ -392,12 +392,12 @@
  {
   "question": "When a country experiences persistent trade deficits due to currency appreciation, which combination of exchange rate effects and domestic economic consequences most accurately describes the underlying mechanism?",
   "options": [
-   "A stronger currency reduces export competitiveness abroad while increasing import affordability domestically, leading to higher unemployment in export sectors and lower consumer prices overall.",
-   "Exchange rate volatility directly causes central bank intervention to increase money supply, which artificially stimulates export demand and reduces reliance on imported goods.",
+   "A weaker currency encourages foreign investment in domestic assets while simultaneously reducing the purchasing power of domestic consumers in global markets, creating trade surpluses.",
    "Currency appreciation decreases the real cost of imported raw materials for manufacturers while improving export volumes through higher international demand, strengthening the current account.",
-   "A weaker currency encourages foreign investment in domestic assets while simultaneously reducing the purchasing power of domestic consumers in global markets, creating trade surpluses."
+   "A stronger currency reduces export competitiveness abroad while increasing import affordability domestically, leading to higher unemployment in export sectors and lower consumer prices overall.",
+   "Exchange rate volatility directly causes central bank intervention to increase money supply, which artificially stimulates export demand and reduces reliance on imported goods."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "When a currency appreciates, exports become more expensive for foreign buyers (reducing competitiveness) while imports become cheaper for domestic consumers (increasing import demand). This mechanism drives trade deficits and can harm export-dependent sectors. The other options either reverse the direction of exchange rate effects or misidentify consequences like trade surpluses or artificially driven export growth.",
   "difficulty": "hard",
   "knowledge_area": "Global Trade"
@@ -406,9 +406,9 @@
   "question": "A multinational corporation operating across ASEAN member states encounters different labor costs, intellectual property protections, and regulatory frameworks in each country. How do these factors interact with major trade alliance impacts on the firm's strategic decisions?",
   "options": [
    "Trade alliances reduce tariff barriers and harmonize certain standards, but labor costs, IP protections, and regulatory environments remain differentiated—forcing the firm to balance cost savings against compliance complexity.",
-   "Trade alliances like ASEAN eliminate all labor cost differentials and standardize intellectual property law, allowing the firm to consolidate operations into a single efficient location.",
+   "Trade alliance membership guarantees equal treatment of all member firms regardless of origin, meaning the corporation faces identical regulatory costs as domestic competitors in each jurisdiction.",
    "Alliances primarily reduce political risk through military cooperation agreements, which indirectly lowers the firm's insurance costs and allows wage reduction strategies across all member states.",
-   "Trade alliance membership guarantees equal treatment of all member firms regardless of origin, meaning the corporation faces identical regulatory costs as domestic competitors in each jurisdiction."
+   "Trade alliances like ASEAN eliminate all labor cost differentials and standardize intellectual property law, allowing the firm to consolidate operations into a single efficient location."
   ],
   "correct_index": 0,
   "explanation": "Trade alliances like ASEAN reduce tariffs and can harmonize some standards, but they do not equalize all business conditions—labor markets, IP enforcement, and regulatory regimes remain distinct across countries. Firms must still manage these differences while capturing alliance benefits. The other options incorrectly suggest complete standardization, equal treatment guarantees, or conflate military/political risk with regulatory environment.",
@@ -418,12 +418,12 @@
  {
   "question": "Two developing nations with similar resource endowments and labor availability pursue opposite trade strategies: one specializes in raw material exports to capital-rich nations, while the other invests in domestic manufacturing capacity and protectionist tariffs. How does each country's level of economic development interact with long-term trade outcomes?",
   "options": [
-   "Both strategies produce identical long-term outcomes because comparative advantage ensures each nation eventually specializes according to its natural resource base, regardless of initial policy choices.",
-   "The raw material exporter develops faster because commodity prices rise during development cycles, providing steady revenue to finance infrastructure, while protectionist policies consistently stifle growth in nascent industries.",
    "The protectionist manufacturer achieves trade surplus immediately through tariff walls, guaranteeing higher GDP growth than the raw material exporter, whose foreign exchange earnings prove insufficient for development.",
-   "The raw material exporter captures immediate foreign exchange gains but risks dependency and limited value-added growth, while the protectionist manufacturer builds industrial capacity and negotiating power, though at higher short-term consumer costs."
+   "Both strategies produce identical long-term outcomes because comparative advantage ensures each nation eventually specializes according to its natural resource base, regardless of initial policy choices.",
+   "The raw material exporter captures immediate foreign exchange gains but risks dependency and limited value-added growth, while the protectionist manufacturer builds industrial capacity and negotiating power, though at higher short-term consumer costs.",
+   "The raw material exporter develops faster because commodity prices rise during development cycles, providing steady revenue to finance infrastructure, while protectionist policies consistently stifle growth in nascent industries."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Economic development level shapes trade strategy outcomes: specialization in raw materials provides quick foreign exchange but can create resource dependency with limited value-added growth, while protected infant industries build capacity and future competitiveness despite short-term costs. The other options either assume identical outcomes regardless of policy, guarantee outcomes that depend on global commodity cycles, or misstate the timing of protectionist benefits.",
   "difficulty": "hard",
   "knowledge_area": "Global Trade"
@@ -433,8 +433,8 @@
   "options": [
    "Nations with histories of exploitation often adopt cautious regulatory frameworks and negotiate harder on IP rights and profit repatriation terms, reflecting learned distrust that affects foreign investor confidence and capital flows.",
    "Historical grievances have no measurable impact on current trade negotiations because international law and WTO rules standardize all agreements, making past conflicts irrelevant to future partnerships.",
-   "Political instability in a nation's past guarantees future instability and prevents meaningful trade relationships, so former colonial territories remain perpetually excluded from major trade alliances regardless of current governance.",
-   "Countries that experienced colonialism automatically receive preferential trade terms and lower tariff rates from developed nations, erasing competitive disadvantages and enabling rapid convergence with developed economies."
+   "Countries that experienced colonialism automatically receive preferential trade terms and lower tariff rates from developed nations, erasing competitive disadvantages and enabling rapid convergence with developed economies.",
+   "Political instability in a nation's past guarantees future instability and prevents meaningful trade relationships, so former colonial territories remain perpetually excluded from major trade alliances regardless of current governance."
   ],
   "correct_index": 0,
   "explanation": "Historical experiences of exploitation, debt crises, or political instability shape a nation's regulatory caution, negotiating stance on sensitive terms like IP and repatriation, and investor perception of risk—all of which influence modern trade relationships. These effects are real though not deterministic. The other options either ignore history's influence, assume automatic compensation, or treat past instability as guaranteeing permanent exclusion.",
@@ -444,12 +444,12 @@
  {
   "question": "Electronic communication tools enable real-time coordination of supply chains across continents, yet geographic distance, time zones, and infrastructure quality still constrain global business efficiency. Which combination of geography and technology factors best explains the persistence of these constraints?",
   "options": [
-   "Geographic distance has become irrelevant because electronic tools and logistics automation allow firms to source from any location without cost premiums, making location decisions purely cultural rather than economic.",
    "Technology has eliminated geographic constraints entirely, so firms with better communication platforms always operate cheaper supply chains than competitors, regardless of physical location or local infrastructure capacity.",
-   "While instant communication reduces information delays, geography still affects shipping times, transportation costs, port quality, and infrastructure reliability—factors technology cannot overcome—forcing firms to balance communication speed against physical logistics realities.",
-   "Time zone differences create permanent competitive disadvantages for companies spanning multiple continents, preventing any firm from achieving efficient 24-hour operations despite communication technology advances."
+   "Geographic distance has become irrelevant because electronic tools and logistics automation allow firms to source from any location without cost premiums, making location decisions purely cultural rather than economic.",
+   "Time zone differences create permanent competitive disadvantages for companies spanning multiple continents, preventing any firm from achieving efficient 24-hour operations despite communication technology advances.",
+   "While instant communication reduces information delays, geography still affects shipping times, transportation costs, port quality, and infrastructure reliability—factors technology cannot overcome—forcing firms to balance communication speed against physical logistics realities."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Electronic communication accelerates information exchange but cannot eliminate physical logistics constraints—shipping still takes weeks, ports vary in quality, and infrastructure costs depend on geography. Firms must optimize across both real-time communication and physical-world realities. The other options either overstate technology's reach or understate it, and one incorrectly assumes time zones prevent efficient operations.",
   "difficulty": "hard",
   "knowledge_area": "Global Trade"
@@ -457,12 +457,12 @@
  {
   "question": "A manufacturing firm increases its workforce from 50 to 75 workers while maintaining the same capital equipment and facility size. Output rises from 500 units per day to 680 units per day. Which concept best explains why the per-worker output gain diminishes with each additional worker hired?",
   "options": [
-   "Specialization allows workers to develop deeper expertise in narrower tasks, but coordination costs eventually exceed efficiency gains from task focus",
    "Organized labor agreements typically impose seniority rules that prevent newly hired workers from achieving the same output levels as tenured staff",
    "The law of diminishing returns operates as fixed capital assets become congested, reducing the marginal productivity of successive new workers",
-   "Productivity initially rises due to division of labor, but workplace culture deteriorates as group size increases beyond optimal team dynamics"
+   "Productivity initially rises due to division of labor, but workplace culture deteriorates as group size increases beyond optimal team dynamics",
+   "Specialization allows workers to develop deeper expertise in narrower tasks, but coordination costs eventually exceed efficiency gains from task focus"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The law of diminishing returns states that as additional units of a variable input (workers) are added to fixed inputs (equipment and facility), marginal output eventually declines. The firm sees initial gains but the rate of increase slows as workers compete for limited machinery and space. The other options describe related but distinct concepts—specialization benefits, labor union effects, and team dynamics—that do not directly explain the mathematical principle of diminishing marginal returns.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -470,12 +470,12 @@
  {
   "question": "Two identical bakeries adopt different production strategies. Bakery A maintains one worker performing all tasks (mixing, shaping, baking, packaging). Bakery B assigns each of its four workers to a single specialized stage of production. Bakery A produces 200 loaves daily; Bakery B produces 320 loaves daily with the same total labor hours. Which factor most directly accounts for this productivity difference?",
   "options": [
-   "Bakery A experiences higher rates of worker absenteeism due to task monotony, whereas Bakery B's task variety naturally improves employee retention and attendance",
    "Division of labor in Bakery B allows workers to develop expertise in specific tasks, minimize transition time between activities, and operate at higher efficiency within their roles",
    "Bakery B's workers require less training time because each role is simpler, reducing overall onboarding costs and improving output capacity",
+   "Bakery A experiences higher rates of worker absenteeism due to task monotony, whereas Bakery B's task variety naturally improves employee retention and attendance",
    "Bakery B benefits from economies of scale that reduce per-unit ingredient costs, allowing faster production cycles and higher daily output volumes"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Division of labor increases productivity by allowing workers to specialize in specific tasks, develop deeper expertise, and reduce the time lost switching between different activities. Bakery B's higher output with equal labor hours directly reflects this efficiency gain from specialization, not training costs, employee retention, or ingredient pricing. While the other options may have real business effects, they do not explain the immediate productivity difference demonstrated in this scenario.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -483,12 +483,12 @@
  {
   "question": "A logistics company measures productivity as packages processed per labor hour. Last year the ratio was 8.5 packages per hour with a workforce of 120 employees. This year, after investing in sorting automation and cross-training workers in multiple facility roles, the ratio rose to 12.3 packages per hour with 110 employees. Which statement most accurately describes what these metrics reveal about the company's productivity change?",
   "options": [
-   "Productivity increased because technological advancement and skill diversification enhanced output per unit of labor input, though total employment declined",
-   "Productivity remained stable because the reduction in workforce size offset efficiency gains, resulting in similar total packages processed annually",
    "Productivity cannot be assessed without knowing the total hours worked annually, since hourly rates may mask absolute changes in daily output volume",
+   "Productivity remained stable because the reduction in workforce size offset efficiency gains, resulting in similar total packages processed annually",
+   "Productivity increased because technological advancement and skill diversification enhanced output per unit of labor input, though total employment declined",
    "Productivity decreased relative to prior standards because workers now require broader training, which creates inefficiencies despite higher per-hour metrics"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Productivity is fundamentally measured as output per unit of input. The company's increase from 8.5 to 12.3 packages per labor hour represents a direct improvement in productivity—more output per labor hour—regardless of total headcount. Automation and cross-training are mechanisms that enhance productivity by allowing fewer workers to process more packages. Options B and C misinterpret the metric; option D overlooks that per-hour productivity is a valid and comparable measure across time periods.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -496,12 +496,12 @@
  {
   "question": "A construction contractor observes that adding a fifth equipment operator to a crew of four (with 10 pieces of heavy machinery) increases daily output from 60 to 72 cubic yards of material moved. Adding a sixth operator increases output to 78 cubic yards, and adding a seventh increases it to 80 cubic yards. The marginal product of the seventh operator is most limited by which constraint?",
   "options": [
+   "Union work-hour restrictions that mandate rest periods and shift rotations, reducing the actual productive hours available as crew size expands",
    "The finite stock of heavy machinery that must be shared among all operators, creating idle time and underutilization of the variable labor input",
    "The contractor's inability to procure additional raw materials at the same rate, causing bottlenecks in material supply that constrain operator productivity",
-   "Diminishing returns from specialization because operators cannot develop task focus when forced to rotate among an increasing number of fixed equipment pieces",
-   "Union work-hour restrictions that mandate rest periods and shift rotations, reducing the actual productive hours available as crew size expands"
+   "Diminishing returns from specialization because operators cannot develop task focus when forced to rotate among an increasing number of fixed equipment pieces"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "This scenario demonstrates the law of diminishing returns: as variable inputs (operators) increase while fixed inputs (machinery) remain constant, marginal output declines (2, 6, then 2 cubic yards per new operator). The seventh operator contributes only 2 yards because there are only 10 pieces of equipment for 7 workers, creating a bottleneck. The other options address labor agreements, material supply, and specialization—real business factors but not the direct constraint shown by the diminishing marginal product numbers.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -509,12 +509,12 @@
  {
   "question": "A textile mill shifted from a traditional model where each worker completed garments start-to-finish, to an assembly-line model where workers specialize in single tasks (cutting, sewing seams, attaching buttons, pressing). Output per shift doubled, yet total worker count increased by only 20 percent. An economist analyzing this change would attribute the productivity gain primarily to which mechanism?",
   "options": [
-   "Specialization and division of labor, which enables workers to master specific tasks, eliminates switching costs, and raises the efficiency and speed of each role",
    "Reduced training requirements per worker, since assembly tasks are simpler than integrated garment production, lowering onboarding costs",
+   "Technological advancement in pressing and sewing equipment that automates portions of production and reduces the skill level needed for each station",
    "Organized labor agreements that standardize piece-rate compensation and incentivize workers to increase output to maximize individual earnings",
-   "Technological advancement in pressing and sewing equipment that automates portions of production and reduces the skill level needed for each station"
+   "Specialization and division of labor, which enables workers to master specific tasks, eliminates switching costs, and raises the efficiency and speed of each role"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The scenario explicitly states workers now perform single specialized tasks rather than completing whole garments, and output doubled with a modest 20 percent increase in workers—a classic result of division of labor. Specialization enables workers to develop expertise, reduce task-switching time, and operate more efficiently in their narrow role. While simpler training, labor incentives, and automation may contribute, the core mechanism described—assigning each worker a single stage of production—is the definition of division of labor and its productivity gains.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -522,12 +522,12 @@
  {
   "question": "A business implements a subscription-based model to generate recurring revenue while reducing customer acquisition costs. Which combination of business activities and organizational adaptations best describes this approach?",
   "options": [
-   "Service delivery and customer relationship management activities integrated across a flat organizational design that prioritizes data analytics and personalized engagement",
-   "Sales and marketing activities controlled centrally through a traditional division of labor that separates customer acquisition from retention functions",
    "Manufacturing and logistics activities managed by decentralized teams operating independently to maximize production volume and reduce overhead expenses",
-   "Production and distribution activities coordinated through a hierarchical structure that emphasizes quarterly performance metrics and cost minimization strategies"
+   "Service delivery and customer relationship management activities integrated across a flat organizational design that prioritizes data analytics and personalized engagement",
+   "Production and distribution activities coordinated through a hierarchical structure that emphasizes quarterly performance metrics and cost minimization strategies",
+   "Sales and marketing activities controlled centrally through a traditional division of labor that separates customer acquisition from retention functions"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A subscription model requires continuous service delivery and strong customer relationship management, supported by organizational structures that can analyze customer data and adapt quickly. This differs from the production-focused, hierarchical, and sales-separated approaches that better suit transactional business models rather than relationship-based recurring revenue strategies.",
   "difficulty": "hard",
   "knowledge_area": "Nature of Business"
@@ -536,11 +536,11 @@
   "question": "As regulatory requirements and consumer expectations shift in a global marketplace, a business must balance profitability with ethical sourcing practices and environmental compliance. How do these pressures illustrate the interconnection between business ethics, organizational adaptation, and the external business environment?",
   "options": [
    "Ethics and environmental compliance are separate concerns from market competition; businesses adapt by lobbying regulators rather than changing internal operations or supply chain practices",
-   "The business environment includes regulatory, social, and competitive pressures that force ethical decisions; adaptation requires redesigning supply chains and governance structures, embedding sustainability into the business model itself",
    "Business ethics apply only to large corporations; small businesses operating globally can maintain profitability by following the least stringent environmental regulations in their target markets",
-   "Global operations eliminate the need for local ethical standards; businesses adapt by outsourcing all manufacturing to regions with minimal oversight and then marketing products as responsibly sourced"
+   "Global operations eliminate the need for local ethical standards; businesses adapt by outsourcing all manufacturing to regions with minimal oversight and then marketing products as responsibly sourced",
+   "The business environment includes regulatory, social, and competitive pressures that force ethical decisions; adaptation requires redesigning supply chains and governance structures, embedding sustainability into the business model itself"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Business ethics, market adaptation, and environmental factors are interconnected forces that require integrated organizational change, not separate or avoidant responses. Genuine adaptation means embedding ethical and sustainable practices into core operations and supply chains, recognizing that the business environment now includes regulatory and social demands, not just competition.",
   "difficulty": "hard",
   "knowledge_area": "Nature of Business"
@@ -548,12 +548,12 @@
  {
   "question": "Two companies operate in the same industry but adopt fundamentally different organizational designs: Company A uses a centralized, function-based hierarchy, while Company B uses a decentralized, network-based structure with cross-functional teams. How do these design choices reflect different strategic responses to the global business environment?",
   "options": [
+   "Company A prioritizes efficiency and standardization in stable, predictable markets; Company B prioritizes agility and innovation in dynamic, uncertain global markets requiring rapid adaptation across regions",
    "Company B's decentralization always produces higher profitability regardless of market conditions; Company A's centralization guarantees compliance with global regulations in all jurisdictions",
    "Both structures are equally effective in responding to global pressures; the choice between them depends solely on the personal preference of executives rather than market strategy",
-   "Company A's hierarchy is optimal for all environments; Company B's network structure is a marketing tactic with no operational impact on how the business responds to global market changes",
-   "Company A prioritizes efficiency and standardization in stable, predictable markets; Company B prioritizes agility and innovation in dynamic, uncertain global markets requiring rapid adaptation across regions"
+   "Company A's hierarchy is optimal for all environments; Company B's network structure is a marketing tactic with no operational impact on how the business responds to global market changes"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Organizational design is a strategic choice tied to environmental complexity and business strategy. Centralized hierarchies suit stable, predictable environments where efficiency and standardization matter; decentralized networks enable the flexibility needed in volatile global markets where rapid innovation and local responsiveness are competitive advantages.",
   "difficulty": "hard",
   "knowledge_area": "Nature of Business"
@@ -562,11 +562,11 @@
   "question": "A firm operates through a hybrid model combining direct-to-consumer e-commerce with licensed franchises in emerging markets. This structure reflects which factors affecting the business environment and corresponding organizational adaptations?",
   "options": [
    "Labor cost reduction and regulatory uniformity across markets; highly centralized decision-making with standardized processes applied identically in all geographic regions",
-   "Technological advancement enabling digital sales and economic variation across regions requiring localized control; distributed organizational design with technology platforms connecting independent units",
    "Government subsidies for e-commerce and elimination of cultural differences; a simple two-tier organizational structure separating online and offline teams without coordination mechanisms",
+   "Technological advancement enabling digital sales and economic variation across regions requiring localized control; distributed organizational design with technology platforms connecting independent units",
    "Consumer preference for single distribution channels and stable political conditions globally; vertical integration with all operations owned and controlled by corporate headquarters"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The hybrid model reflects two critical environmental factors: technology enabling direct digital sales and economic/regulatory variation requiring adapted, localized business approaches. This requires a distributed organizational structure where the technology platform coordinates independent units—franchises operate with local autonomy while maintaining brand standards through digital systems.",
   "difficulty": "hard",
   "knowledge_area": "Nature of Business"
@@ -574,12 +574,12 @@
  {
   "question": "When evaluating how a global manufacturing firm adapted its business model during a period of supply chain disruption, rapid labor cost inflation, and shifting consumer demand toward sustainable products, which combination most accurately represents the interconnected pressures from the business environment that drove organizational change?",
   "options": [
-   "Geopolitical and pandemic risks altered logistics feasibility; rising labor costs reduced margin stability; consumer values shifted toward environmental responsibility; the firm restructured sourcing, adopted automation, and redesigned products to balance profitability with sustainability commitments",
-   "Government subsidies eliminated supply chain challenges; consumer demand for sustainability decreased overall; labor costs became irrelevant after the first quarterly loss; the firm needed no organizational changes",
    "Technological change made global operations impossible; environmental regulations required the firm to exit all markets; consumer preferences returned to traditional products; the firm abandoned all modern business practices",
-   "Increased competition alone forced the firm to reduce prices; automation eliminated all labor costs permanently; sustainability is a separate initiative unrelated to supply chain or business model decisions"
+   "Government subsidies eliminated supply chain challenges; consumer demand for sustainability decreased overall; labor costs became irrelevant after the first quarterly loss; the firm needed no organizational changes",
+   "Increased competition alone forced the firm to reduce prices; automation eliminated all labor costs permanently; sustainability is a separate initiative unrelated to supply chain or business model decisions",
+   "Geopolitical and pandemic risks altered logistics feasibility; rising labor costs reduced margin stability; consumer values shifted toward environmental responsibility; the firm restructured sourcing, adopted automation, and redesigned products to balance profitability with sustainability commitments"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Real organizational adaptation responds to multiple, interconnected environmental pressures simultaneously—geopolitical/operational risks, labor economics, and value-driven consumer demand—not single factors in isolation. The firm's restructuring of sourcing, adoption of automation, and product redesign represent integrated responses that address all three pressures while sustaining competitiveness and ethical positioning.",
   "difficulty": "hard",
   "knowledge_area": "Nature of Business"
@@ -588,9 +588,9 @@
   "question": "A manufacturing firm increases its workforce from 50 to 75 employees while keeping capital equipment constant. Initially, output per worker rises, but after adding the 60th employee, output per worker begins to decline despite total production still increasing. Which economic principle best explains this pattern?",
   "options": [
    "The law of diminishing returns, where adding more variable inputs to fixed capital eventually reduces marginal productivity per unit of input",
+   "The principle of division of labor, where excessive job separation prevents workers from understanding the complete production process",
    "Decreasing productivity from organized labor, since larger unions negotiate higher wages that reduce per-worker output incentives",
-   "Specialization of labor, where workers become more focused on individual tasks and lose the ability to coordinate across production stages",
-   "The principle of division of labor, where excessive job separation prevents workers from understanding the complete production process"
+   "Specialization of labor, where workers become more focused on individual tasks and lose the ability to coordinate across production stages"
   ],
   "correct_index": 0,
   "explanation": "The law of diminishing returns states that as you add more of a variable input (labor) to a fixed input (equipment), the marginal output per additional worker eventually falls. Here, the 60th worker contributes less additional output than earlier workers because equipment becomes a bottleneck. The other options describe different economic concepts that don't directly explain declining marginal productivity from resource imbalance.",
@@ -600,10 +600,10 @@
  {
   "question": "An assembly line is reorganized so that each worker performs one specific task repeatedly instead of rotating through multiple tasks. Initially, per-worker output increases by 15%, but the firm later struggles to fill open positions and experiences higher turnover. Which two concepts are in tension in this scenario?",
   "options": [
-   "Specialization improves productivity per worker, but the law of diminishing returns prevents further gains when capital equipment limits total output volume",
-   "Specialization increases productivity in the short term, but organized labor responds to monotony by reducing morale and participation rates over time",
    "Division of labor raises productivity through task focus, but diminishing returns on worker satisfaction eventually outweigh gains in task efficiency",
-   "Productivity gains from specialization conflict with the organizational need to maintain flexibility when workers become overspecialized on single tasks"
+   "Specialization increases productivity in the short term, but organized labor responds to monotony by reducing morale and participation rates over time",
+   "Productivity gains from specialization conflict with the organizational need to maintain flexibility when workers become overspecialized on single tasks",
+   "Specialization improves productivity per worker, but the law of diminishing returns prevents further gains when capital equipment limits total output volume"
   ],
   "correct_index": 1,
   "explanation": "This scenario illustrates the benefit of specialization (focused task training increases output) clashing with organized labor dynamics and worker morale (repetitive work drives turnover and absenteeism). While other options mention real concepts, they don't capture the core tension: specialization's short-term efficiency gain versus labor's organized response to job monotony and reduced participation. The organized labor dimension is key to explaining the hiring and retention crisis.",
@@ -613,12 +613,12 @@
  {
   "question": "A software development company assigns each programmer to a different module of a large application. Programmer A becomes expert in database architecture, Programmer B in user interface, and Programmer C in security protocols. Over a year, the team's output increases 40%, but integration problems and communication bottlenecks rise. This outcome reflects which relationship?",
   "options": [
-   "Productivity gains from division of labor can be offset by coordination costs when specialists cannot easily communicate across functional boundaries",
-   "The law of diminishing returns applies to programmer specialization, causing marginal output to decline as expertise deepens in narrow domains",
+   "Specialization increases productivity only when all workers specialize simultaneously; sequential specialization creates inefficiency as workers wait for others to develop expertise",
    "Organized labor agreements restrict how much specialization is permitted, limiting the productivity benefits that would otherwise accrue from task division",
-   "Specialization increases productivity only when all workers specialize simultaneously; sequential specialization creates inefficiency as workers wait for others to develop expertise"
+   "Productivity gains from division of labor can be offset by coordination costs when specialists cannot easily communicate across functional boundaries",
+   "The law of diminishing returns applies to programmer specialization, causing marginal output to decline as expertise deepens in narrow domains"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "This question tests the nuanced relationship between specialization and productivity: while division of labor increases individual productivity (40% output gain), it can create integration costs that reduce net organizational efficiency. The other options misapply concepts—diminishing returns doesn't describe deepening expertise itself, organized labor doesn't prevent specialization here, and simultaneity of specialization isn't an economic principle affecting productivity.",
   "knowledge_area": "Cost/Profit Relationships",
   "difficulty": "hard"
@@ -626,9 +626,9 @@
  {
   "question": "A bakery operates with 3 ovens and hires workers on a variable basis. With 2 workers, daily output is 200 loaves. Adding a third worker increases output to 280 loaves. Adding a fourth worker increases output to 340 loaves. Adding a fifth worker increases output to 380 loaves. Which worker's addition demonstrates the beginning of diminishing returns?",
   "options": [
-   "The second worker, whose addition of 80 loaves represents a smaller percentage gain than the transition from one to two workers would have been",
-   "The fifth worker, whose addition contributed 40 loaves compared to the fourth worker's contribution of 60 loaves to total output",
    "The fourth worker, whose marginal contribution of 60 loaves per day is less than the third worker's marginal contribution of 80 loaves",
+   "The fifth worker, whose addition contributed 40 loaves compared to the fourth worker's contribution of 60 loaves to total output",
+   "The second worker, whose addition of 80 loaves represents a smaller percentage gain than the transition from one to two workers would have been",
    "The third worker, whose contribution of 80 loaves marks the point where incremental gains start to slow relative to the first worker's baseline contribution"
   ],
   "correct_index": 1,

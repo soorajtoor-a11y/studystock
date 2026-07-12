@@ -1,218 +1,235 @@
 QUESTION GENERATION RULES — FBLA StudyBot
 These rules are injected into EVERY question generation request. They are not suggestions.
+Violating any rule is a generation failure. Rewrite before responding.
 ============================================================
 
-SECTION 0 — WHAT FBLA TESTS ACTUALLY LOOK LIKE
-===============================================
-Real FBLA objective tests are 100-question, 50-minute multiple-choice exams. The questions
-are balanced: roughly half test vocabulary and definitions; the other half test understanding
-of how concepts work or how to apply them in a realistic scenario. They are NOT trick
-questions. They are NOT hyper-specialized edge cases. A prepared student who genuinely
-studied should score 70-80%. The difficulty comes from KNOWING the material, not from
-confusing wording.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 0 — ANSWER POSITION DISTRIBUTION  (NON-NEGOTIABLE)    ║
+╚══════════════════════════════════════════════════════════════╝
 
-Example real FBLA question styles (study these before generating):
+Across every set of questions you generate, the correct answer MUST be
+distributed as close to 25% A / 25% B / 25% C / 25% D as possible.
 
-  DEFINITION/TERM RECALL (≈35% of questions):
-    "The amount of time required to produce and place an advertisement is called"
-    A) frequency    B) reach    C) lead time    D) exposure
-    → Correct: C
+In every batch of 4 questions: A is correct once, B once, C once, D once.
+In every batch of 8: each letter appears exactly twice. And so on.
 
-  CONCEPT COMPLETION (≈25% of questions):
-    "All of the processes used to identify, create, and maintain exchange
-     relationships that satisfy individuals and organizations make up"
-    A) logistics    B) operations    C) marketing    D) management
-    → Correct: C
+This is enforced at the code level after generation, but you must also
+honor it yourself during writing. Here is how:
 
-  WHICH-OF-THE-FOLLOWING APPLICATION (≈20% of questions):
-    "Which of the following would all decrease the supply of a product?"
-    A) Lower resource costs, more suppliers, and favorable technology
-    B) Higher business taxes, higher resource costs, and fewer suppliers
-    C) Government subsidies, lower wages, and improved production methods
-    D) Increased consumer income, lower prices, and rising demand
-    → Correct: B
+  STEP 1 — Before writing your first question, decide the correct-answer
+           positions for ALL questions in the batch using this rotation:
+           For a batch of 5: positions 0,1,2,3,0 → A,B,C,D,A
+           For a batch of 4: positions 0,1,2,3   → A,B,C,D
+           Vary the starting point across batches so you don't always begin at A.
 
-  ALL-EXCEPT ELIMINATION (≈10% of questions):
-    "Consumer demand is influenced by all of the following EXCEPT"
-    A) income level    B) weather    C) consumer preferences    D) price of the good
-    → Correct: B  (weather does not influence demand)
+  STEP 2 — Write each question by composing the options IN ORDER around
+           the pre-assigned correct position.
+           "Correct answer goes at position X. Now write option X correctly,
+            then fill the other three positions with plausible distractors."
 
-  SCENARIO / PROFESSIONAL JUDGMENT (≈10% of questions):
-    "A coworker publicly takes credit for your idea. The most professional first step is to"
-    A) Confront them angrily in front of the team
-    B) Email the entire department clarifying ownership
-    C) Request a private conversation to address the issue
-    D) Ignore it entirely to avoid conflict
-    → Correct: C
+  STEP 3 — Before outputting, count: how many A / B / C / D answers are
+           in this batch? If any letter appears more than ⌈n/4⌉ + 1 times
+           in a batch of n, shuffle until balanced.
+
+DO NOT default to placing the correct answer at position 0 (A).
+DO NOT place the correct answer wherever it "feels natural" to write it first.
+The correct answer must be equally likely to be at any position.
 
 ============================================================
 
-RULE #1 — ANSWER POSITION DISTRIBUTION (MOST IMPORTANT FOR FAIRNESS)
-=====================================================================
-Across every batch of questions, the correct answer MUST be evenly distributed.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 1 — WHAT FBLA QUESTIONS ACTUALLY LOOK LIKE            ║
+╚══════════════════════════════════════════════════════════════╝
 
-1a. In any group of 4 questions, each letter (A/B/C/D, i.e., index 0/1/2/3) should
-    appear as the correct answer exactly once. In groups of 8, each appears twice. Etc.
-    Do not cluster correct answers.
+Real FBLA objective tests: 100 questions, 50 minutes, 4 answer choices.
+They test whether a student genuinely studied — not trivia, not graduate-level
+analysis. A prepared student should score ~70-80%. An unprepared student ~25%.
 
-1b. NEVER write a question where the correct answer is identifiable by its POSITION.
-    Students who know "the answer is usually C" should be wrong exactly 75% of the time.
+The difficulty comes from KNOWING THE MATERIAL, not from confusing wording.
 
-1c. Specifically: do NOT default to placing the correct answer at position 0 (A).
-    When you draft a question, consciously assign the correct answer to a randomly
-    chosen position — not whichever feels most natural to write first.
+You must mix question types in the following proportions:
 
-1d. Enforce this self-check: If you look at your last 4 questions and A was correct
-    more than once, REWRITE the remaining ones so B, C, or D is correct instead.
+  35% — DEFINITION / TERM RECALL
+         "The amount of time required to produce and place an advertisement is called ___"
+         A) frequency   B) reach   C) lead time ✓   D) exposure
+         The stem names a concept. The options are 4 real terms from the same topic.
+
+  25% — CONCEPT COMPLETION
+         "All of the processes used to identify, create, and maintain exchange
+          relationships that satisfy individuals and organizations make up ___"
+         A) logistics   B) operations   C) marketing ✓   D) management
+         The stem describes a definition. The options are plausible field names.
+
+  20% — WHICH-OF-THE-FOLLOWING APPLICATION
+         "Which of the following would all decrease supply of a product?"
+         A) Lower resource costs, more suppliers, favorable technology
+         B) Higher business taxes, higher resource costs, fewer suppliers ✓
+         C) Government subsidies, lower wages, improved production methods
+         D) Increased consumer income, lower prices, rising demand
+         Tests knowing cause-effect or which items belong in a category.
+
+  10% — ALL-OF-THE-FOLLOWING EXCEPT (capitalize EXCEPT)
+         "Consumer demand is influenced by all of the following EXCEPT"
+         A) income level   B) weather ✓   C) consumer preferences   D) price
+         One option is the odd one out. The other three are genuinely true.
+
+  10% — SCENARIO / PROFESSIONAL JUDGMENT
+         "A coworker takes credit for your idea in a meeting. The most professional
+          first step is to ___"
+         A) Confront them angrily in front of the team
+         B) Email the entire department to clarify ownership
+         C) Request a private conversation to address the issue ✓
+         D) Ignore it entirely to avoid conflict
+         A realistic workplace or business situation with one clearly best answer.
+
+DO NOT ask questions so general that anyone would know the answer.
+DO NOT ask trivia-level edge cases the outline doesn't emphasize.
+DO NOT ask anything requiring professional-level expertise beyond the event.
 
 ============================================================
 
-RULE #2 — OPTION LENGTH BALANCE (NEVER VIOLATE)
-================================================
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 2 — OPTION LENGTH BALANCE                              ║
+╚══════════════════════════════════════════════════════════════╝
+
 The correct answer must NEVER be identifiable by its length.
 
-2a. All four options must be of comparable length — within roughly 25% of each other
-    in word count. If the correct answer needs 10 words, write distractors of 8-12 words.
-2b. NEVER write one detailed/qualified correct answer and three short vague distractors.
-2c. NEVER write one vague correct answer surrounded by three suspiciously specific ones.
-2d. Self-check: "If a student who knows NOTHING picks the longest option, do they beat
-    random chance?" If yes, rewrite the options.
+2a. All four options must be within roughly 25% of each other in word count.
+    If the correct answer is 10 words, write distractors of 8–12 words.
+2b. NEVER write one detailed correct answer and three vague fillers.
+2c. NEVER write one vague correct answer surrounded by three elaborate wrong ones.
+2d. Self-check: "If a student who knows nothing picks the longest option,
+    do they beat random chance?" If yes — rewrite.
 
-BAD (length gives it away):
+BAD:
   Q: What does "lay on the table" do?
   A) Kills the motion
   B) Delays it
-  C) Sets the pending business aside temporarily so the assembly can attend to
-     something more urgent without setting a time to resume    ← obviously correct
+  C) Sets pending business aside temporarily so the assembly can address
+     something urgent without setting a time to resume    ← obviously correct
   D) Ends debate
 
-GOOD (balanced lengths):
+GOOD:
   Q: What does the motion "lay on the table" do?
   A) Kills the main motion for the current session without a vote
-  B) Sets pending business aside temporarily for a more urgent matter
-  C) Closes debate immediately and forces an immediate vote
-  D) Delays the motion to a specific time at the next meeting
+  B) Sets pending business aside temporarily for a more urgent matter ✓
+  C) Closes debate immediately and forces an immediate vote on the question
+  D) Postpones the motion to a specific time at the next meeting
 
 ============================================================
 
-RULE #3 — DISTRACTOR QUALITY
-==============================
-3a. Every wrong answer must be PLAUSIBLE — something a half-prepared student might
-    genuinely choose. Draw distractors from the same study material: neighboring
-    concepts, commonly confused terms, related-but-wrong processes.
-3b. No joke options. No absurd options. An option nobody would pick is a 3-option
-    question in disguise.
-3c. Exactly ONE option may be correct. Re-read all distractors to confirm none is
-    defensibly right. If two could be argued, rewrite.
-3d. Use "All of the above" / "None of the above" in at most 1 in 20 questions.
-3e. Every option must LOOK like it could be the real textbook answer. Wrong options
-    are wrong because they name the right KIND of thing but apply it to the wrong
-    context — not because they are vague or made-up sounding.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 3 — DISTRACTOR QUALITY                                 ║
+╚══════════════════════════════════════════════════════════════╝
 
-BAD (wrong options are filler):
-  A. The trial balance and prior-period figures
-  B. Account balances, depreciation schedules, and accrued documents  ← only detailed one
-  C. Customer names and transaction dates
-  D. The owner's personal tax records
+3a. Every wrong answer must be PLAUSIBLE. A half-prepared student should
+    genuinely consider it. Draw distractors from the same source material:
+    neighboring concepts, commonly confused terms, related-but-wrong processes.
+3b. No joke options. No obviously absurd options.
+    An option nobody would pick is a 3-option question in disguise.
+3c. Exactly ONE option may be correct. Re-read all distractors to confirm
+    none is also defensibly right. If two could be argued, rewrite.
+3d. Use "All of the above" / "None of the above" in at most 1 in 20 questions.
+3e. Every option must LOOK like it could be the real textbook answer. Wrong
+    options should be wrong because they name the right KIND of thing in the
+    wrong context — not because they are vague or made-up.
+
+BAD (fillers are vague):
+  A) The trial balance and prior-period figures
+  B) Account balances, depreciation schedules, and accrued docs    ← only real one
+  C) Customer names and transaction dates
+  D) The owner's personal tax records
 
 GOOD (all sound like textbook answers):
-  A. Adjusted trial balance columns, prior-period comparatives, and ledger control totals
-  B. Account balances from the trial balance, depreciation schedules, and accrued docs
-  C. Subsidiary ledger schedules, bank reconciliation statement, and cash flow projections
-  D. Reversing entries from the prior period, petty cash balance, and outstanding POs
+  A) Adjusted trial balance columns, prior-period comparatives, and ledger totals
+  B) Account balances, depreciation schedules, and accrued expense docs ✓
+  C) Subsidiary ledger schedules, bank reconciliation, and cash flow projections
+  D) Reversing entries, petty cash balance, and outstanding purchase orders
 
 ============================================================
 
-RULE #4 — QUESTION SUBSTANCE AND STYLE
-=======================================
-4a. Every question must trace to a SPECIFIC fact or concept in the loaded study
-    materials. Do not invent facts not present in the source material.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 4 — NO OTHER GIVEAWAY PATTERNS                         ║
+╚══════════════════════════════════════════════════════════════╝
 
-4b. TARGET QUESTION MIX (follow the ratios from Section 0):
-    - ~35% definition/term recall
-    - ~25% concept completion
-    - ~20% which-of-the-following application
-    - ~10% all-except elimination (capitalize EXCEPT/NOT)
-    - ~10% scenario / professional judgment
-
-4c. Weight topics according to the test-item counts in the event outline when listed.
-
-4d. Negative stems ("Which is NOT...") in at most 1 in 5 questions; capitalize NOT/EXCEPT.
-
-4e. No trick questions. Difficulty must come from KNOWING the material, not from
-    misleading or ambiguous wording.
-
-4f. Keep stems self-contained. An expert should be able to answer the question
-    without needing to read the options first.
-
-4g. No absolute words ("always," "never," "only") unless the real fact genuinely
-    uses them — test-savvy students eliminate absolutes, so using them as bait or
-    signal is a bias, not a test.
-
-4h. No grammar leaks — every option must fit the question stem grammatically
+4a. No grammar leaks — every option must fit the question stem grammatically
     (watch a/an, singular/plural, verb tense).
+4b. Avoid absolute words ("always," "never," "only") unless the real fact
+    genuinely uses them — test-savvy students eliminate absolutes as a habit.
+    Either use them in correct answers sometimes, or avoid them entirely.
+4c. Do not make the correct answer the only option that repeats a keyword
+    from the question stem.
+4d. In numeric questions, the correct value should not consistently sit
+    between two extreme wrong values.
+4e. Negative stems ("Which is NOT...") in at most 1 in 5 questions.
+    Capitalize NOT and EXCEPT.
 
 ============================================================
 
-RULE #5 — DIFFICULTY CALIBRATION (MEDIUM / REALISTIC FBLA LEVEL)
-==================================================================
-Target: a student who has studied the material for 2-3 hours should get ~70-75%
-correct. A student who has not studied should get ~25-30% (near chance).
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 5 — QUESTION SUBSTANCE                                 ║
+╚══════════════════════════════════════════════════════════════╝
 
-5a. DO ask: definitions of terms that require study (not common knowledge)
-         process steps and sequences (e.g., steps in the sales process)
-         cause-and-effect relationships (e.g., what happens to price when supply drops)
-         distinctions between similar concepts (e.g., reach vs. frequency vs. lead time)
-         realistic workplace/business application scenarios
-
-5b. DO NOT ask: trivia-level edge cases the outline doesn't emphasize
-               questions so general that any adult would know the answer
-               questions that require memorizing obscure numbers or dates
-               questions so technical they require professional training beyond the event
-
-5c. Distractors must use REAL business/event terminology — not gibberish. A distractor
-    that is a real concept from the same topic (just the wrong one) is ideal.
+5a. Every question must trace to a SPECIFIC fact or concept in the loaded
+    study material. Do not invent facts not in the source.
+5b. Weight topics according to the "(N test items)" counts in the event
+    outline when they are listed.
+5c. Keep stems self-contained. An expert should be able to answer the
+    question cold, without reading the options first.
+5d. No trick questions. Difficulty must come from knowing the material,
+    not from ambiguous or misleading wording.
 
 ============================================================
 
-RULE #6 — FLASHCARDS
-======================
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 6 — FLASHCARDS                                         ║
+╚══════════════════════════════════════════════════════════════╝
+
 6a. One atomic fact per card — never bundle two facts.
-6b. Front = a precise prompt; Back = the answer in 1-2 sentences, key term first.
-6c. For verbatim material (creed, pledge, mission), use fill-in-the-blank with one blank.
+6b. Front = precise prompt. Back = answer in 1-2 sentences, key term first.
+6c. For verbatim material (creed, pledge, mission), use fill-in-the-blank
+    with exactly one blank.
 6d. Reverse where useful (term → definition AND definition → term).
 
 ============================================================
 
-RULE #7 — EXPLANATIONS
-========================
-7a. Every question must include a 2-3 sentence explanation of WHY the correct answer
-    is right — not just restating it.
-7b. If possible, briefly note what makes one of the wrong options tempting.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 7 — EXPLANATIONS                                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+7a. Every question must include a 2-3 sentence explanation of WHY the
+    correct answer is right — not just a restatement of it.
+7b. Briefly note what makes one of the wrong options tempting.
 7c. Name the knowledge area the question came from.
 
 ============================================================
 
-RULE #8 — OUTPUT FORMAT
-========================
-8a. Respond with ONLY a valid JSON array — no markdown fences, no preamble, no trailing text.
+╔══════════════════════════════════════════════════════════════╗
+║  RULE 8 — OUTPUT FORMAT                                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+8a. Respond with ONLY a valid JSON array — no markdown fences, no preamble,
+    no trailing text.
 8b. Each object must have exactly these fields:
-      "question":      string (the question stem),
+      "question":      string,
       "options":       array of exactly 4 strings,
-      "correct_index": integer 0-3,
+      "correct_index": integer 0–3,
       "explanation":   2-3 sentence string,
-      "knowledge_area": string (topic/section from the source material),
-      "difficulty":    string (pass through whatever difficulty label is requested)
+      "knowledge_area": string,
+      "difficulty":    string (pass through whatever was requested)
 8c. Do not repeat a question already asked this session.
 
 ============================================================
 
-FINAL SELF-CHECK BEFORE EVERY OUTPUT
-[ ] Are all four options within ~25% word count of each other?
-[ ] Would a student picking "the longest option" fail to beat chance?
+MANDATORY SELF-CHECK — RUN THIS BEFORE EVERY OUTPUT
+[ ] Did I pre-assign correct positions before writing, using a 0-1-2-3 rotation?
+[ ] Is the distribution of correct letters A/B/C/D as even as possible?
+[ ] Are all four options within ~25% of each other in word count?
+[ ] Would a student who picks the longest option fail to beat chance?
 [ ] Is exactly one option correct, and are all three distractors genuinely plausible?
-[ ] Is the correct answer position (A/B/C/D) varied — not clustered at A?
+[ ] Do all four options LOOK like real textbook answers?
 [ ] Does every question trace to the loaded study material?
-[ ] Does the difficulty feel like a real FBLA test, not a trivia game or a graduate exam?
+[ ] Does the difficulty match real FBLA level — not too easy, not graduate-level?
+[ ] Do question types match the target mix (35/25/20/10/10)?
 
-If any box fails, rewrite before responding.
+If ANY box fails — rewrite before responding.

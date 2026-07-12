@@ -2,12 +2,12 @@
  {
   "question": "Which of the following correctly sequences three pivotal moments in FBLA's organizational development from 1937 onward?",
   "options": [
+   "Founding in 1937, formation of the first state organization in 1940, and merger with related business youth groups in 1960",
    "FBLA founding in 1937, expansion to the first regional conference in 1945, and introduction of competitive events in 1952",
    "Founding by J. Dan Ley in 1937, opening of the first chapter in New York, and launch of the national leadership conference in 1946",
-   "Founding in 1937, formation of the first state organization in 1940, and merger with related business youth groups in 1960",
    "FBLA founding in 1937, establishment of the first chapter in Boston, and adoption of the national creed in the 1950s"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The FBLA was founded in 1937 by J. Dan Ley, with the first chapter established in New York. The national leadership conference began in 1946, marking a key milestone in the organization's growth. The other options contain plausible but historically inaccurate details about early chapters, conference timelines, and organizational milestones.",
   "knowledge_area": "History",
   "difficulty": "hard"
@@ -15,12 +15,12 @@
  {
   "question": "FBLA's founder and the location of the first chapter represent which pair of foundational elements?",
   "options": [
-   "Richard J. Marshall initiated the organization with the first chapter in Chicago in 1938",
-   "Thomas E. Bradford established the first chapter in Philadelphia in 1936",
+   "J. Dan Ley founded FBLA with the first chapter in New York in 1937",
    "George H. Stevens established the first chapter in Columbus, Ohio, in 1937",
-   "J. Dan Ley founded FBLA with the first chapter in New York in 1937"
+   "Thomas E. Bradford established the first chapter in Philadelphia in 1936",
+   "Richard J. Marshall initiated the organization with the first chapter in Chicago in 1938"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "J. Dan Ley is the recognized founder of FBLA, and the first chapter was established in New York in 1937. The other options name plausible early educational leaders and real cities associated with FBLA growth, but with incorrect founding details and dates that fall outside or misalign with the actual founding year.",
   "knowledge_area": "History",
   "difficulty": "hard"
@@ -28,12 +28,12 @@
  {
   "question": "In the chronology of FBLA's expansion, how does the establishment of state organizations relate to the launch of national competitive events?",
   "options": [
-   "State organizations emerged in 1939, preceding the introduction of national competitive events in 1952",
-   "National competitive events began in 1948, with state organization structure standardized in 1953",
    "Both structures developed simultaneously in 1945 as part of a single organizational overhaul",
-   "State organizations were formalized in 1941, followed by national competitive events in 1950"
+   "State organizations were formalized in 1941, followed by national competitive events in 1950",
+   "National competitive events began in 1948, with state organization structure standardized in 1953",
+   "State organizations emerged in 1939, preceding the introduction of national competitive events in 1952"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "FBLA's state organizations were established in the early 1940s, providing a regional infrastructure that supported the later introduction of structured national competitive events around 1952. The other options present plausible alternative timelines with real FBLA growth years, but misalign the sequence of state organization and competitive event development.",
   "knowledge_area": "History",
   "difficulty": "hard"
@@ -41,12 +41,12 @@
  {
   "question": "Which of the following identifies a key leader in FBLA's early development and a significant organizational shift attributed to their tenure?",
   "options": [
-   "J. Dan Ley expanded the organization nationally during the 1940s through systematic state chapter recruitment",
-   "Edward M. Sullivan created the first corporate partnership program and sponsored scholarships in 1951",
    "George B. Rafferty established the first regional conferences and formalized the competitive events structure in the 1950s",
-   "Robert J. Carlson introduced the national leadership development curriculum in 1948"
+   "J. Dan Ley expanded the organization nationally during the 1940s through systematic state chapter recruitment",
+   "Robert J. Carlson introduced the national leadership development curriculum in 1948",
+   "Edward M. Sullivan created the first corporate partnership program and sponsored scholarships in 1951"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "J. Dan Ley, FBLA's founder, led the organization's national expansion during the 1940s by building state chapters and establishing the foundational framework. The other options name real FBLA figures and plausible initiatives tied to competitive development, regional growth, and business partnerships, but attribute incorrect leaders or inaccurate timelines to these developments.",
   "knowledge_area": "History",
   "difficulty": "hard"
@@ -54,12 +54,12 @@
  {
   "question": "How did FBLA's transition from a single chapter in 1937 to a multi-state organization by the early 1950s support the eventual establishment of national competitive events?",
   "options": [
-   "The growth of state chapters created a competitive structure that naturally led to state competitions, which then evolved into national championships",
+   "Regional expansion enabled FBLA to standardize event formats across state organizations, providing the infrastructure for national tournaments by 1952",
    "Chapter expansion by region allowed state coordinators to test local competitions, the results of which informed national event design and implementation",
    "Multi-state membership growth justified the development of a national office, which coordinated the inaugural national conference and competitive framework",
-   "Regional expansion enabled FBLA to standardize event formats across state organizations, providing the infrastructure for national tournaments by 1952"
+   "The growth of state chapters created a competitive structure that naturally led to state competitions, which then evolved into national championships"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The spread of FBLA across multiple states provided the organizational and logistical foundation necessary to standardize competitive event formats and establish national tournaments around 1952. Each alternative option presents a plausible mechanism linking chapter growth to national events—competitive hierarchy, administrative centralization, and grassroots testing—but misrepresents the primary driver of how state expansion directly enabled national standardization.",
   "knowledge_area": "History",
   "difficulty": "hard"
@@ -67,12 +67,12 @@
  {
   "question": "In what year did Hamden L. Forkner Sr. propose a unified national organization to consolidate the scattered local business clubs operating in high schools, and at which institution did he hold his academic position?",
   "options": [
-   "1937 at Teachers College, Columbia University, where Forkner developed his shorthand system",
+   "1958 at the University of Northern Iowa, launching the postsecondary division",
    "1940 at the National Council for Business Education headquarters in New York",
    "1942 at Science Hill High School in Johnson City, Tennessee, as a charter member",
-   "1958 at the University of Northern Iowa, launching the postsecondary division"
+   "1937 at Teachers College, Columbia University, where Forkner developed his shorthand system"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Hamden L. Forkner Sr., a professor at Columbia University's Teachers College and inventor of Forkner shorthand, proposed the national organization in 1937. The other dates mark later milestones: 1940 was when the name FBLA was chosen and the organization was established; 1942 was when the first chapter chartered; and 1958 was when Phi Beta Lambda was created.",
   "difficulty": "hard",
   "knowledge_area": "HISTORY (timeline questions are guaranteed)"
@@ -80,12 +80,12 @@
  {
   "question": "Which of the following correctly matches a divisional expansion or reorganization to both its year and the grade levels or membership category it served?",
   "options": [
+   "2022: The major rebrand renamed all divisions, with Phi Beta Lambda becoming FBLA Collegiate and other divisions restructured",
    "1979: The Alumni Division was founded to serve former FBLA members transitioning into professional careers and networks",
    "1994: FBLA-Middle Level was established to extend membership eligibility to students in grades 5–9",
-   "1969: FBLA gained independent nonprofit status, separating from NBEA sponsorship and incorporating as FBLA-PBL, Inc.",
-   "2022: The major rebrand renamed all divisions, with Phi Beta Lambda becoming FBLA Collegiate and other divisions restructured"
+   "1969: FBLA gained independent nonprofit status, separating from NBEA sponsorship and incorporating as FBLA-PBL, Inc."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "FBLA-Middle Level was created in 1994 to serve students in grades 5–9, expanding the organization downward from high school. The other options contain either correct years paired with imprecise descriptions (1969 and 2022) or correct concepts paired with the wrong year (1979 created the Alumni Division, not with the career-transition emphasis stated).",
   "difficulty": "hard",
   "knowledge_area": "HISTORY (timeline questions are guaranteed)"
@@ -93,12 +93,12 @@
  {
   "question": "Between the chartering of FBLA's first chapter and the opening of the National Center headquarters, approximately how many years elapsed, and in which state was the headquarters ultimately located?",
   "options": [
-   "54 years elapsed; the National Center opened in Reston, Virginia, in 1996 on property acquired from NBEA",
-   "37 years elapsed; the National Center was built in Johnson City, Tennessee, at the original Science Hill High School site",
    "49 years elapsed; the National Center opened in Reston, Virginia, on land donated by the Conrad N. Hilton Foundation",
-   "52 years elapsed; the National Center was established in Reston, Virginia, following a 1981 land donation"
+   "52 years elapsed; the National Center was established in Reston, Virginia, following a 1981 land donation",
+   "54 years elapsed; the National Center opened in Reston, Virginia, in 1996 on property acquired from NBEA",
+   "37 years elapsed; the National Center was built in Johnson City, Tennessee, at the original Science Hill High School site"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "The first FBLA chapter was chartered on February 3, 1942, at Science Hill High School, and the National Center opened in 1991 in Reston, Virginia—52 years later. The Conrad N. Hilton Foundation donated 1.6 acres in Reston in 1981; this land became the site of the headquarters when it opened in 1991.",
   "difficulty": "hard",
   "knowledge_area": "HISTORY (timeline questions are guaranteed)"
@@ -106,12 +106,12 @@
  {
   "question": "Which leadership appointment and the year it occurred is correctly paired with the organizational development that preceded it by fewer than ten years?",
   "options": [
-   "Jean Buckley was appointed President and CEO in 1997, following the opening of the National Center in 1991",
-   "Hamden L. Forkner Sr. founded FBLA in 1940 as the first Executive Director before the first chapter chartered in 1942",
    "Alexander T. Graham was appointed President and CEO in 2019, following the 2022 major rebrand and divisional restructuring",
-   "Edward D. Miller became the first full-time Executive Director in 1973, following FBLA's independent status in 1969"
+   "Edward D. Miller became the first full-time Executive Director in 1973, following FBLA's independent status in 1969",
+   "Jean Buckley was appointed President and CEO in 1997, following the opening of the National Center in 1991",
+   "Hamden L. Forkner Sr. founded FBLA in 1940 as the first Executive Director before the first chapter chartered in 1942"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Jean Buckley's 1997 appointment followed the 1991 National Center opening by six years, making it the closest match. Option A is correct in pairing but the timeframe is exactly 4 years, which is plausible but not fewer than ten—actually, it is fewer. Option C reverses the timeline (rebrand was 2022, appointment was 2019), and Option D misattributes Forkner's role and reverses the chapter-founding sequence.",
   "difficulty": "hard",
   "knowledge_area": "HISTORY (timeline questions are guaranteed)"
@@ -119,12 +119,12 @@
  {
   "question": "Which statement about FBLA's divisional structure and its evolution is most accurate according to the organization's documented timeline?",
   "options": [
-   "Phi Beta Lambda was created in 1958 as the postsecondary division, with the first chapter at the University of Northern Iowa, and retained that name until the 2022 rebrand renamed it FBLA Collegiate",
-   "The Alumni Division, founded in 1979, was redesignated the Professional Division and eventually became FBLA Network following the 1987 membership milestone",
    "FBLA-Middle Level was the second divisional expansion after Phi Beta Lambda, created in 1994 to include students in grades 5–9 as part of FBLA's downward extension",
-   "All four current divisions—FBLA High School, FBLA Middle School, FBLA Collegiate, and FBLA Network—existed under those exact names before the 2022 rebrand unified their nomenclature"
+   "All four current divisions—FBLA High School, FBLA Middle School, FBLA Collegiate, and FBLA Network—existed under those exact names before the 2022 rebrand unified their nomenclature",
+   "The Alumni Division, founded in 1979, was redesignated the Professional Division and eventually became FBLA Network following the 1987 membership milestone",
+   "Phi Beta Lambda was created in 1958 as the postsecondary division, with the first chapter at the University of Northern Iowa, and retained that name until the 2022 rebrand renamed it FBLA Collegiate"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Phi Beta Lambda was created in 1958 as the postsecondary division with its first chapter at the University of Northern Iowa, and in 2022 it was officially renamed FBLA Collegiate as part of the major rebrand. Option B conflates unrelated events; Option C is correct in substance but less precise; Option D is incorrect because the divisions were renamed in 2022, not previously bearing those names.",
   "difficulty": "hard",
   "knowledge_area": "HISTORY (timeline questions are guaranteed)"
@@ -132,12 +132,12 @@
  {
   "question": "At the chapter level, which officer is responsible for overseeing membership records and attendance while working alongside the president to execute organizational decisions?",
   "options": [
-   "The secretary, who maintains member contact information, records meeting minutes, and coordinates with regional representatives on membership trends",
    "The vice president, who recruits new members, maintains the membership roster, and ensures chapter bylaws align with state governance",
-   "The parliamentarian, who documents membership eligibility, reviews enrollment procedures, and advises on structural changes to membership standards",
-   "The treasurer, who tracks membership dues, manages chapter finances, and reports enrollment numbers to state leadership annually"
+   "The secretary, who maintains member contact information, records meeting minutes, and coordinates with regional representatives on membership trends",
+   "The treasurer, who tracks membership dues, manages chapter finances, and reports enrollment numbers to state leadership annually",
+   "The parliamentarian, who documents membership eligibility, reviews enrollment procedures, and advises on structural changes to membership standards"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The secretary holds responsibility for membership records and attendance at the chapter level while partnering with the president on operational execution. The treasurer manages finances rather than membership logistics, the vice president focuses on recruitment and policy alignment, and the parliamentarian advises on governance rules—none of these roles carry the secretary's record-keeping and coordination duties.",
   "knowledge_area": "Structure and Governance",
   "difficulty": "hard"
@@ -145,12 +145,12 @@
  {
   "question": "Which combination of FBLA divisions and their corresponding grade levels represents the correct organizational structure?",
   "options": [
-   "Intermediate Level serves grades 6–8, Secondary Level serves grades 9–11, and Advanced Level serves college and career professionals",
-   "Elementary Level serves grades 3–5, High School serves grades 8–12, and Post-Secondary serves all students in higher education institutions",
+   "Middle Level serves grades 6–8, High School serves grades 9–12, and Professional serves working business professionals and post-secondary students",
    "Junior Level serves grades 5–7, High School serves grades 9–12, and College serves full-time and part-time undergraduate students in accredited programs",
-   "Middle Level serves grades 6–8, High School serves grades 9–12, and Professional serves working business professionals and post-secondary students"
+   "Intermediate Level serves grades 6–8, Secondary Level serves grades 9–11, and Advanced Level serves college and career professionals",
+   "Elementary Level serves grades 3–5, High School serves grades 8–12, and Post-Secondary serves all students in higher education institutions"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "FBLA's three divisions are Middle Level (grades 6–8), High School (grades 9–12), and Professional (working professionals and post-secondary students). The other options incorrectly label divisions or misalign grade boundaries; for example, High School does not include grade 8, and there is no Junior, College, Elementary, or Advanced designation in FBLA's official structure.",
   "knowledge_area": "Structure and Governance",
   "difficulty": "hard"
@@ -158,10 +158,10 @@
  {
   "question": "At the state level, FBLA is organized into how many regions, and what is the primary function of regional representatives in relation to chapter governance?",
   "options": [
-   "Six regions that validate chapter charter applications, conduct officer training sessions, and enforce state bylaws within their geographic territories",
+   "Ten regions that organize district competitions, supervise officer elections at chapter meetings, and approve chapter annual budgets before state submission",
    "Eight regions that coordinate state conferences, communicate policy updates to chapters, and oversee competitive event registration for assigned chapters",
    "Twelve regions that manage state ambassador programs, audit chapter financial records, and establish competitive standards for event participation",
-   "Ten regions that organize district competitions, supervise officer elections at chapter meetings, and approve chapter annual budgets before state submission"
+   "Six regions that validate chapter charter applications, conduct officer training sessions, and enforce state bylaws within their geographic territories"
   ],
   "correct_index": 1,
   "explanation": "FBLA operates with eight regions at the state level, and regional representatives coordinate state conference participation, relay policy and procedural updates to chapters, and manage competitive event logistics for chapters within their regions. The other options either misstate the number of regions or assign functions that belong to different governance positions, such as charter validation or budget approval authority.",
@@ -172,8 +172,8 @@
   "question": "The national organization of FBLA includes elected national officers who serve specific terms. Which of the following accurately describes both the typical election process and the geographic representation model for these positions?",
   "options": [
    "National officers are elected by state delegations at the national conference and represent broad geographic regions to ensure representation across all 50 states and territories",
-   "National officers are selected by a nominating committee from state leadership and assigned to represent specific states on a rotating schedule for one-year terms",
    "National officers are elected by chapter presidents during state conferences and serve fixed two-year terms with mandatory representation from the largest state divisions",
+   "National officers are selected by a nominating committee from state leadership and assigned to represent specific states on a rotating schedule for one-year terms",
    "National officers are appointed by the national board of directors and rotate through state assignments annually to maintain regional balance and continuity"
   ],
   "correct_index": 0,
@@ -184,12 +184,12 @@
  {
   "question": "How does the chapter officer election process at the local level differ from state and national elections in terms of voting eligibility and the timeline for assuming office?",
   "options": [
-   "Chapter officers are nominated by the previous year's board and voted on by school administrators, assuming office immediately upon election with no waiting period required",
    "Chapter officers are selected by a state-appointed committee and begin their duties within 30 days of the state conference, with eligibility determined by academic standing in their school",
-   "Chapter officers are elected by chapter members during meetings, assume office at the start of the next school or fiscal year, and eligibility is limited to members in good standing with no prior officer violations",
-   "Chapter officers are elected by chapter members at the annual conference, assume office the following calendar year, and must have completed at least one year of chapter membership"
+   "Chapter officers are elected by chapter members at the annual conference, assume office the following calendar year, and must have completed at least one year of chapter membership",
+   "Chapter officers are nominated by the previous year's board and voted on by school administrators, assuming office immediately upon election with no waiting period required",
+   "Chapter officers are elected by chapter members during meetings, assume office at the start of the next school or fiscal year, and eligibility is limited to members in good standing with no prior officer violations"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Chapter officers are elected by chapter members during regularly scheduled meetings, with voting eligibility restricted to members in good standing; they typically assume office at the beginning of the next school or fiscal year. The other options incorrectly involve external appointment (administrators or state committees), immediate assumption of duties without transition, or timeline misalignments that do not match standard chapter governance practices.",
   "knowledge_area": "Structure and Governance",
   "difficulty": "hard"
@@ -197,12 +197,12 @@
  {
   "question": "Which of the following best describes the relationship between state-level FBLA conferences and the National Leadership Conference in the competitive pathway?",
   "options": [
-   "State conferences serve as qualifying events where top competitors advance to the National Leadership Conference",
-   "National Leadership Conference determines which states may hold regional qualifying conferences the following year",
    "State and National conferences operate as separate tracks with no advancement requirements between them",
+   "National Leadership Conference determines which states may hold regional qualifying conferences the following year",
+   "State conferences serve as qualifying events where top competitors advance to the National Leadership Conference",
    "State conferences are optional training sessions held after National Leadership Conference participation ends"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The conference ladder structure positions state conferences as the primary qualifying venue; top performers at state events earn the opportunity to compete at the National Leadership Conference. The other options misrepresent the hierarchical nature of the conference progression.",
   "knowledge_area": "Programs, Conferences, and Competitive Events",
   "difficulty": "hard"
@@ -210,12 +210,12 @@
  {
   "question": "A high school member competes in the Public Speaking competitive event at the state conference and advances to nationals. At the National Leadership Conference, she wishes to enter the Desktop Publishing event instead. Which statement most accurately reflects FBLA eligibility rules for this situation?",
   "options": [
+   "Members must compete in the same event category at nationals as they qualified in at the state level",
    "Members advancing to nationals retain the right to select any event they are eligible for, regardless of their state-level entry",
    "Members may switch events between state and national levels only if their state chapter approves the change in writing",
-   "Event switching is permitted at nationals provided the member has not exceeded the maximum number of total event entries",
-   "Members must compete in the same event category at nationals as they qualified in at the state level"
+   "Event switching is permitted at nationals provided the member has not exceeded the maximum number of total event entries"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "FBLA competitive rules require that members compete in the same event at the national level in which they qualified at the state level. Switching events between competition levels violates the standard eligibility framework that ensures fair advancement.",
   "knowledge_area": "Programs, Conferences, and Competitive Events",
   "difficulty": "hard"
@@ -223,12 +223,12 @@
  {
   "question": "The Business Achievement Awards program and the Torch Award program both recognize FBLA member and chapter accomplishments. How do these two recognition programs differ in their primary focus?",
   "options": [
-   "Business Achievement Awards recognize individual member leadership development while Torch Awards recognize chapter-wide community service and impact",
    "Both programs use identical criteria but Torch Awards are presented at state conferences while Business Achievement Awards are only awarded at the national level",
    "Business Achievement Awards emphasize competitive event performance, while Torch Awards recognize financial growth and membership recruitment numbers",
+   "Business Achievement Awards recognize individual member leadership development while Torch Awards recognize chapter-wide community service and impact",
    "Torch Awards are limited to chapters in their first three years of operation, whereas Business Achievement Awards apply to all members regardless of chapter age"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The recognition programs target different dimensions of FBLA involvement: Business Achievement Awards focus on individual member growth and leadership, while Torch Awards highlight chapters' broader community engagement and organizational impact. This distinction ensures multiple pathways for recognition.",
   "knowledge_area": "Programs, Conferences, and Competitive Events",
   "difficulty": "hard"
@@ -237,11 +237,11 @@
   "question": "Which competitive event category encompasses both individual and team-based events, and what consideration must chapters make when planning event entries within this category?",
   "options": [
    "Service events are primarily individual competitions, but chapters may form teams to compete in designated service events at the state level only",
-   "Leadership events are structured as individual competitions exclusively; team entries are restricted to emerging leader chapters under five years old",
    "Business communications events include both solo presentations and collaborative case study events; chapters must balance roster assignments to avoid member overcommitment",
+   "Leadership events are structured as individual competitions exclusively; team entries are restricted to emerging leader chapters under five years old",
    "Finance and accounting events allow both individual and team participation; chapters may enter unlimited teams in accounting events at nationals"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Business communications events span both individual formats (like presentations) and team-based formats (like collaborative cases). Chapters must strategically manage their member roster to ensure competitive readiness without overloading individual participants. The other options either conflate categories or misstate eligibility constraints.",
   "knowledge_area": "Programs, Conferences, and Competitive Events",
   "difficulty": "hard"
@@ -249,9 +249,9 @@
  {
   "question": "A chapter qualifies nine competitors for the National Leadership Conference across multiple events. Under FBLA's competitive event structure, what is the primary administrative consideration the chapter advisor must address regarding the team composition and event assignments?",
   "options": [
-   "Chapters are required to designate one team captain per event who has previously competed at nationals in that same competitive event",
    "Chapters must ensure each competitor is registered in only one event to prevent conflicts during the competition schedule at nationals",
    "Advisors must submit a secondary roster of two alternate competitors for every three team members to comply with national capacity limits",
+   "Chapters are required to designate one team captain per event who has previously competed at nationals in that same competitive event",
    "The chapter must verify that all nine members meet the event-specific eligibility requirements and that assignments align with grade-level and membership status restrictions"
   ],
   "correct_index": 3,
@@ -262,12 +262,12 @@
  {
   "question": "According to the FBLA Creed, which groups are identified as essential to mutual understanding and cooperation for the future?",
   "options": [
-   "Business, government, labor, religious, family, educational institutions, and international organizations",
    "Business, industry, labor, religious, family, educational institutions, and people around the world",
    "Business, industry, labor, social, family, educational institutions, and community leaders",
-   "Industry, commerce, labor, civic, family, educational institutions, and global corporations"
+   "Industry, commerce, labor, civic, family, educational institutions, and global corporations",
+   "Business, government, labor, religious, family, educational institutions, and international organizations"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The Creed's second belief explicitly lists 'business, industry, labor, religious, family, and educational institutions, as well as people around the world.' Options B and C substitute incorrect institutional categories (government/commerce, civic/social), while D replaces 'religious' with 'social,' altering the core institutions named.",
   "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
   "difficulty": "hard"
@@ -275,12 +275,12 @@
  {
   "question": "Which FBLA Goal directly addresses the development of practical financial responsibility among members?",
   "options": [
-   "Encourage and practice efficient money management",
-   "Develop competent, aggressive business leadership and strengthen confidence in students and their work",
    "Create more interest in and understanding of American business enterprise and encourage scholarship",
-   "Assist students in the establishment of occupational goals and facilitate transition from school to work"
+   "Encourage and practice efficient money management",
+   "Assist students in the establishment of occupational goals and facilitate transition from school to work",
+   "Develop competent, aggressive business leadership and strengthen confidence in students and their work"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Goal 6 explicitly states 'Encourage and practice efficient money management.' Option A combines Goals 1 and 2, Option C merges Goals 8 and 9, and Option D blends Goals 3 and 7—all plausible FBLA Goals but none addressing financial responsibility directly.",
   "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
   "difficulty": "hard"
@@ -288,12 +288,12 @@
  {
   "question": "In the FBLA Code of Ethics, which commitment emphasizes both execution quality and role clarity in task performance?",
   "options": [
+   "Performing all of my actions and duties ethically with the utmost honesty, accountability, and transparency",
    "Being receptive to constructive feedback and seeking opportunities for personal and professional growth",
    "Complying with both the specific guidelines and the overarching principles of my school's policies and FBLA's standards",
-   "Undertaking each task with a clear understanding of my responsibilities, aiming to execute all work to the highest standard",
-   "Performing all of my actions and duties ethically with the utmost honesty, accountability, and transparency"
+   "Undertaking each task with a clear understanding of my responsibilities, aiming to execute all work to the highest standard"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Commitment 2 uniquely pairs clear responsibility understanding with highest-standard execution. Option B (Commitment 3) focuses on ethical conduct and transparency, Option C (Commitment 5) targets feedback receptivity, and Option D (Commitment 6) addresses policy compliance—all legitimate Code elements but lacking the responsibility-and-quality pairing.",
   "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
   "difficulty": "hard"
@@ -301,12 +301,12 @@
  {
   "question": "According to the FBLA Mission Statement, which pair of elements are students prepared to become through FBLA involvement?",
   "options": [
-   "Competent business leaders with patriotic commitment to American enterprise",
    "Confident and aggressive business leaders prepared for useful occupational citizenship",
    "Diverse and inclusive business leaders with clear understanding of global market responsibilities",
-   "Community-minded business leaders equipped for relevant career preparation and leadership experiences"
+   "Community-minded business leaders equipped for relevant career preparation and leadership experiences",
+   "Competent business leaders with patriotic commitment to American enterprise"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The Mission Statement specifies students become 'community-minded business leaders' through 'relevant career preparation and leadership experiences.' Options A and C introduce concepts (patriotism, aggressive leadership, occupational citizenship) from the Goals and Creed rather than the Mission, while Option D paraphrases Code of Ethics language rather than the Mission's precise framing.",
   "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
   "difficulty": "hard"
@@ -314,12 +314,12 @@
  {
   "question": "Which FBLA Creed belief most directly connects personal occupational duty to ethical community impact?",
   "options": [
-   "Every person should prepare for a useful occupation and carry on that occupation in a manner that brings the greatest good to the greatest number",
    "Education is the right of every person and every person has the right to earn a living at a useful occupation",
    "Every person has the responsibility to work efficiently and to think clearly in order to make the world a better place",
+   "Every person should prepare for a useful occupation and carry on that occupation in a manner that brings the greatest good to the greatest number",
    "Every person should actively work toward improving social, political, community, and family life through individual effort"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Belief 3 explicitly binds occupational preparation and conduct to the ethical standard of 'greatest good to the greatest number.' Option B (Beliefs 1 and 5) addresses rights but not ethical conduct impact, Option C (Belief 4) focuses on community improvement broadly without occupational framing, and Option D (Belief 7) emphasizes efficiency and thinking without the occupational-to-community connection.",
   "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
   "difficulty": "hard"
@@ -327,12 +327,12 @@
  {
   "question": "A high school member completes the LEADER level of the Business Achievement Awards program and wants to advance to the next recognition tier. Which of the following represents the highest achievement level she can reach through this self-paced program on FBLA Connect?",
   "options": [
+   "The AMERICA level, which is recognized at the National Leadership Conference and represents the pinnacle of the Business Achievement Awards progression",
    "The NATIONAL level, which grants automatic qualification to compete in one objective test event at the National Leadership Conference",
-   "The EXECUTIVE level, which provides access to career portfolio programs and skills certifications beyond the standard four-tier structure",
    "The PROFESSIONAL level, which qualifies members for exclusive business scholarships and member discounts across all FBLA regional conferences",
-   "The AMERICA level, which is recognized at the National Leadership Conference and represents the pinnacle of the Business Achievement Awards progression"
+   "The EXECUTIVE level, which provides access to career portfolio programs and skills certifications beyond the standard four-tier structure"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The AMERICA level is the highest tier of the Business Achievement Awards program, recognized at NLC. The other options reference level names that do not exist in the current BAA structure, or conflate BAA with separate programs like scholarships and career portfolios.",
   "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
   "difficulty": "hard"
@@ -340,12 +340,12 @@
  {
   "question": "A chapter has four members competing in the same Presentation event at the State Leadership Conference, and two of them place in the top positions. Under current FBLA rules, how many of these two members can compete in that same event again at the National Leadership Conference?",
   "options": [
-   "Only one member may compete in that event at NLC, and the other must select a different competitive event category",
    "Both members may compete in that event at NLC only if they register before the March 1 dues deadline and complete the Competitive Events Policy & Procedures Manual",
-   "Neither member may compete in that event at NLC, because top-10 finishers at states cannot repeat their event at nationals",
-   "Both members may compete in that event at NLC, provided they each also enter one chapter event and comply with the dress code"
+   "Only one member may compete in that event at NLC, and the other must select a different competitive event category",
+   "Both members may compete in that event at NLC, provided they each also enter one chapter event and comply with the dress code",
+   "Neither member may compete in that event at NLC, because top-10 finishers at states cannot repeat their event at nationals"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Top-10 NLC finishers cannot repeat their event at a subsequent National Leadership Conference. This rule applies to state-level placement as well when those members advance to nationals. The dues deadline and manual review are separate eligibility requirements, not exceptions to the repeat-event restriction.",
   "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
   "difficulty": "hard"
@@ -353,12 +353,12 @@
  {
   "question": "During the National Leadership Conference in July, a team competing in a Role Play event arrives five minutes late to their scheduled performance slot. According to FBLA policy, what consequence applies to this team's competition score?",
   "options": [
-   "A five-point penalty is assessed to the team's final score for late arrival",
    "A three-point penalty is assessed, and the team's performance time is reduced by half",
+   "A five-point penalty is assessed to the team's final score for late arrival",
    "The team must re-perform the Role Play at the end of the event block without penalty",
    "The team forfeits the Role Play event entirely and may not receive a placement ranking"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "FBLA rules specify 5 penalty points for dress code violations or late arrival at competitive events. The other options describe sanctions not found in the stated policy; forfeiture and re-performance slots are not mentioned, and the penalty is specifically 5 points, not 3.",
   "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
   "difficulty": "hard"
@@ -366,12 +366,12 @@
  {
   "question": "A member completes 200 cumulative service hours through chapter and individual projects over two school years. Which recognition program acknowledges this milestone, and what is the primary vehicle through which members track and verify these hours?",
   "options": [
-   "The Community Service Awards program, which recognizes service in tiers including a 200-hour threshold, with hours tracked through chapter records and FBLA Connect",
    "The Business Achievement Awards program at the LEADER level, which requires documented service hours submitted through the Competitive Events Policy & Procedures Manual",
    "The chapter annual business reporting requirement, which mandates 200 hours of member service as a condition of competing at the State Leadership Conference",
+   "The Community Service Awards program, which recognizes service in tiers including a 200-hour threshold, with hours tracked through chapter records and FBLA Connect",
    "The Community Service Awards program, which ties service hours directly to eligibility for the National Fall Leadership Conference and regional conference attendance"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The Community Service Awards program explicitly recognizes cumulative service hours in tiers (historically 50, 200, 500 hours). Hours are tracked by chapters and recorded on the FBLA Connect national platform. BAA is a separate, self-paced business and leadership program; service hours are not a requirement for conference attendance or event eligibility.",
   "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
   "difficulty": "hard"
@@ -379,12 +379,12 @@
  {
   "question": "A high school chapter wants to ensure all its members are eligible to compete at the National Leadership Conference in the summer. Beyond completing individual and chapter competitive event registrations, which calendar deadline is the most critical compliance requirement for NLC eligibility?",
   "options": [
-   "Registration of the chapter's Community Service Project before the November 15 American Enterprise Day deadline",
    "Submission of all chapter member dues to the national office by March 1 at 11:59 p.m. Eastern",
+   "Registration of the chapter's Community Service Project before the November 15 American Enterprise Day deadline",
    "Completion of the Competitive Events Policy & Procedures Manual quiz by February 15 during FBLA Week",
    "Notification to the state conference director of final team rosters by April 30 before the State Leadership Conference"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The dues deadline of March 1, 11:59 p.m. Eastern is the critical eligibility requirement for NLC participation. While the Competitive Events Policy & Procedures Manual must be known, no specific quiz deadline is mentioned; American Enterprise Day and state roster deadlines are not NLC eligibility requirements.",
   "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
   "difficulty": "hard"
@@ -392,9 +392,9 @@
  {
   "question": "A competitor arrives at an FBLA state competition wearing dress slacks, a collared dress shirt, and polished leather shoes but no blazer or tie. Under the dress code policy, what is the most likely outcome?",
   "options": [
-   "The competitor is permitted to compete without penalty because the core elements of business professional dress are present.",
    "The competitor receives a 5-point penalty but may continue competing if the school requests a waiver within one hour.",
    "The competitor is immediately disqualified and cannot participate in any events due to incomplete professional attire.",
+   "The competitor is permitted to compete without penalty because the core elements of business professional dress are present.",
    "The competitor must change into acceptable attire or face a 5-point penalty and possible denial of participation depending on compliance."
   ],
   "correct_index": 3,
@@ -405,12 +405,12 @@
  {
   "question": "During a written competition event, a judge observes a competitor glance at their smartwatch for approximately two seconds before quickly placing their hand under the table. The competitor claims they were checking the time to manage their pacing. How should this incident be classified under FBLA policy?",
   "options": [
+   "A conduct violation that may result in disqualification only if the competitor accessed external information or communicated with another person.",
    "An Honor Code violation because any visible electronic device during an event is treated as unauthorized aid regardless of intent.",
    "A dress code violation that results in a 5-point penalty if the device was part of their worn accessories or attire.",
-   "A minor time-management tool use with no policy violation since the device was not visibly in use during the actual test.",
-   "A conduct violation that may result in disqualification only if the competitor accessed external information or communicated with another person."
+   "A minor time-management tool use with no policy violation since the device was not visibly in use during the actual test."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The Honor Code explicitly requires that electronic devices be off and stored during events, and a visible device is treated as an Honor Code violation. The policy does not distinguish between intentional use and accidental visibility—the visibility itself triggers the violation, making intent or actual unauthorized aid irrelevant to the classification.",
   "difficulty": "hard",
   "knowledge_area": "POLICIES (dress code, conduct)"
@@ -418,12 +418,12 @@
  {
   "question": "A member attends an official FBLA state leadership conference in jeans and a button-down shirt, arguing that the shirt is collared and business-appropriate enough. A chapter officer informs them the attire violates the dress code. Which of the following best explains why jeans are prohibited under FBLA policy?",
   "options": [
-   "Jeans are listed in the 'not acceptable' category because they resemble casual weekend clothing rather than formal business wear.",
-   "The policy prohibits denim fabric in all contexts to maintain consistency with formal evening business events and black-tie functions.",
    "The dress code policy specifies that dress slacks or professional trousers are required components of business professional attire, and jeans do not satisfy this requirement.",
-   "Jeans are classified as athletic wear and do not meet the business professional standard expected in modern corporate workplaces."
+   "Jeans are classified as athletic wear and do not meet the business professional standard expected in modern corporate workplaces.",
+   "Jeans are listed in the 'not acceptable' category because they resemble casual weekend clothing rather than formal business wear.",
+   "The policy prohibits denim fabric in all contexts to maintain consistency with formal evening business events and black-tie functions."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "The dress code explicitly lists dress slacks as an example of acceptable professional attire and jeans in the 'not acceptable' list. The distinction is grounded in the standard of what mirrors modern corporate workplace expectations, and jeans fail to meet the specific professional trouser requirement—not merely because they are casual, but because they do not match the dress slacks standard outlined in the policy.",
   "difficulty": "hard",
   "knowledge_area": "POLICIES (dress code, conduct)"
@@ -431,10 +431,10 @@
  {
   "question": "An officer candidate for state office wears athletic shoes to the officer interview portion of a state conference, claiming they have a minor foot injury and the shoes are medically necessary for comfort. The interview panel notes the violation. Under FBLA policy, what is the correct response?",
   "options": [
-   "The candidate should provide medical documentation, and the interview panel will grant an exception since health accommodations override the dress code policy.",
-   "The candidate must change shoes immediately or withdraw from the interview, as the dress code applies equally to all attendees at official FBLA functions without exception.",
    "The candidate is permitted to compete with the violation noted, but enforcement of the 5-point penalty or participation denial is discretionary based on the severity of the violation.",
-   "The candidate may continue the interview but will receive a 5-point penalty that may affect their overall conference standing or candidacy."
+   "The candidate must change shoes immediately or withdraw from the interview, as the dress code applies equally to all attendees at official FBLA functions without exception.",
+   "The candidate may continue the interview but will receive a 5-point penalty that may affect their overall conference standing or candidacy.",
+   "The candidate should provide medical documentation, and the interview panel will grant an exception since health accommodations override the dress code policy."
   ],
   "correct_index": 1,
   "explanation": "The dress code policy states it applies to ALL attendees at official FBLA functions—including officer candidates—and lists athletic shoes as not acceptable. The policy does not provide medical exceptions or discretionary enforcement; the standard is absolute, and noncompliance can result in denial of participation, which would affect an officer interview.",
@@ -445,11 +445,11 @@
   "question": "Two competitors finish a team business event and immediately go to a social gathering hosted by FBLA in the hotel ballroom, where one competitor is dressed in athletic wear and the other in a blazer and dress pants. Which competitor, if either, is subject to the dress code policy?",
   "options": [
    "Only the competitor in athletic wear if the gathering is mandatory, but the blazer-wearing competitor has no obligation if the event is optional or voluntary.",
+   "Neither competitor, because once an official competition event concludes, members may change attire for casual FBLA-hosted gatherings without violation.",
    "Only the competitor in athletic wear, because social events are not considered 'official FBLA functions' and therefore fall outside dress code jurisdiction.",
-   "Both competitors, because the dress code applies to all attendees at all official FBLA functions, which includes sanctioned social and networking events.",
-   "Neither competitor, because once an official competition event concludes, members may change attire for casual FBLA-hosted gatherings without violation."
+   "Both competitors, because the dress code applies to all attendees at all official FBLA functions, which includes sanctioned social and networking events."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The dress code policy explicitly states it applies to ALL attendees at official FBLA functions. An FBLA-hosted ballroom gathering is an official function, so both competitors are subject to the dress code regardless of whether they just finished competing. The policy does not carve out exceptions for post-competition events or distinguish between mandatory and optional official functions.",
   "difficulty": "hard",
   "knowledge_area": "POLICIES (dress code, conduct)"
@@ -457,12 +457,12 @@
  {
   "question": "A high school FBLA chapter wants to send voting delegates to the National Leadership Conference. Which organizational level must the chapter's state first satisfy before it can participate in national elections?",
   "options": [
-   "The state chapter must certify that each of its local chapters has a business education teacher serving as adviser.",
-   "The state chapter must maintain at least 5 active local chapters and elect its own state officer team including a president.",
    "The state chapter must organize at least 5 district-level sections and register them with the National Center in Reston.",
-   "The state chapter must have at least 5 active local chapters within its district and employ a state parliamentarian."
+   "The state chapter must have at least 5 active local chapters within its district and employ a state parliamentarian.",
+   "The state chapter must maintain at least 5 active local chapters and elect its own state officer team including a president.",
+   "The state chapter must certify that each of its local chapters has a business education teacher serving as adviser."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "State chapters are required to have at least 5 active local chapters and elect their own state officer team (commonly president, VP, secretary, treasurer, parliamentarian, and sometimes additional positions). This organizational requirement at the state level enables participation in the national governance structure, including sending voting delegates to the National Leadership Conference.",
   "difficulty": "hard",
   "knowledge_area": "STRUCTURE AND GOVERNANCE"
@@ -470,12 +470,12 @@
  {
   "question": "Which of the following best describes the relationship between FBLA High School's national officer structure and the five regional vice presidents?",
   "options": [
+   "The five regional vice presidents, along with the president, secretary, treasurer, and parliamentarian, form the nine-member national officer team and each represents one of the five national regions.",
    "Each regional vice president supervises the state chapters within that region and reports directly to the state presidents.",
    "Each of the five vice presidents manages the professional staff at the National Center and oversees the Board of Directors.",
-   "Regional vice presidents are elected by state chapters and coordinate district-level competitions before the National Leadership Conference.",
-   "The five regional vice presidents, along with the president, secretary, treasurer, and parliamentarian, form the nine-member national officer team and each represents one of the five national regions."
+   "Regional vice presidents are elected by state chapters and coordinate district-level competitions before the National Leadership Conference."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "FBLA High School has nine national officers: a president, secretary, treasurer, parliamentarian, and five vice presidents—one representing each of the five national regions (Eastern, Southern, North Central, Mountain Plains, and Western). These officers are elected by voting delegates at the National Leadership Conference and serve one-year terms.",
   "difficulty": "hard",
   "knowledge_area": "STRUCTURE AND GOVERNANCE"
@@ -483,12 +483,12 @@
  {
   "question": "A business leader is considering joining FBLA's governing structure. According to the source material, which division and organizational component would most directly involve a professional who is not a current student or teacher?",
   "options": [
-   "The Board of Directors, which includes the CEO, business leaders, state educators, and business education teachers.",
+   "The FBLA Network division, which includes professionals, alumni, and supporters in a membership category outside the student divisions.",
    "The FBLA Collegiate division, which elects its own officers and accepts professionals as dual-member participants.",
    "The National Center in Reston, VA, where state professionals lead day-to-day operations under the President & CEO.",
-   "The FBLA Network division, which includes professionals, alumni, and supporters in a membership category outside the student divisions."
+   "The Board of Directors, which includes the CEO, business leaders, state educators, and business education teachers."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The Board of Directors explicitly includes business leaders alongside the CEO, state educators, and business education teachers. While FBLA Network also includes professionals and supporters, the Board of Directors is the governance component most directly described as including business leaders in a decision-making capacity.",
   "difficulty": "hard",
   "knowledge_area": "STRUCTURE AND GOVERNANCE"
@@ -496,12 +496,12 @@
  {
   "question": "A middle school student joins a local FBLA chapter in October. Which sequence correctly traces the organizational hierarchy through which this student's chapter reports and participates?",
   "options": [
-   "Local chapter -> district/region/section -> state chapter -> one of five national regions -> national officers",
    "Local chapter -> state chapter -> national region -> national officers -> Board of Directors",
-   "Local chapter -> business education department -> state advisers -> state officer team -> National Center",
-   "Local chapter -> regional vice president -> state chapter -> national region -> National Leadership Conference"
+   "Local chapter -> regional vice president -> state chapter -> national region -> National Leadership Conference",
+   "Local chapter -> district/region/section -> state chapter -> one of five national regions -> national officers",
+   "Local chapter -> business education department -> state advisers -> state officer team -> National Center"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The organizational structure flows from the local chapter (school-based) through the district/region/section level (which varies by state), then to the state chapter (which requires at least 5 active local chapters), and finally to one of the five national regions (Eastern, Southern, North Central, Mountain Plains, or Western), where national officers representing that region provide leadership.",
   "difficulty": "hard",
   "knowledge_area": "STRUCTURE AND GOVERNANCE"
@@ -522,12 +522,12 @@
  {
   "question": "A member arrives at an FBLA meeting wearing business casual attire that includes a collared shirt, dress pants, and casual sneakers. Under the dress code policy, what is the most accurate assessment of this outfit?",
   "options": [
+   "The outfit violates the dress code because sneakers do not meet the formal footwear requirement for official FBLA events and meetings.",
    "The outfit fully complies because all items are considered business appropriate and professional in most workplace settings.",
    "The outfit is acceptable since the member is wearing at least three dress code components and sneakers are common in modern business environments.",
-   "The outfit partially complies with the upper-body requirements but fails to meet the complete dress code standard for footwear and formal presentation.",
-   "The outfit violates the dress code because sneakers do not meet the formal footwear requirement for official FBLA events and meetings."
+   "The outfit partially complies with the upper-body requirements but fails to meet the complete dress code standard for footwear and formal presentation."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The dress code policy requires formal business attire, which includes appropriate closed-toe dress shoes, not casual sneakers. While the member's shirt and pants may be acceptable, footwear is a specified component that must meet formal standards. This question tests whether students can apply the dress code policy to a realistic scenario with mixed compliance.",
   "knowledge_area": "Policies",
   "difficulty": "hard"
@@ -535,12 +535,12 @@
  {
   "question": "During a competitive event, a student makes a critical error in their presentation materials and is unsure whether reporting it violates the Honor Code or is the ethical action required by it. What does the Honor Code policy require in situations involving academic or competitive integrity?",
   "options": [
-   "Members should report errors only if other competitors have already identified them first or if judges ask directly.",
-   "Members may delay reporting errors until after the competition concludes to avoid affecting their placement or score.",
    "Members are permitted to correct minor errors silently without formal disclosure as long as the final submission remains technically accurate.",
-   "Members must immediately disclose errors or rule violations they discover, maintaining honesty regardless of competitive disadvantage or timing."
+   "Members may delay reporting errors until after the competition concludes to avoid affecting their placement or score.",
+   "Members must immediately disclose errors or rule violations they discover, maintaining honesty regardless of competitive disadvantage or timing.",
+   "Members should report errors only if other competitors have already identified them first or if judges ask directly."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The Honor Code requires members to maintain integrity by disclosing errors and violations promptly, even if doing so creates a disadvantage. The policy prioritizes honesty and ethical conduct over competitive advantage. The other options represent compromises on integrity that the Honor Code explicitly rejects.",
   "knowledge_area": "Policies",
   "difficulty": "hard"
@@ -548,12 +548,12 @@
  {
   "question": "A new FBLA member reads both the Code of Conduct and the Honor Code and notices that some principles appear to overlap. How should the member understand the relationship between the Code of Conduct and the Honor Code?",
   "options": [
+   "The Code of Conduct and Honor Code are identical policies with different names used in different regions of FBLA.",
    "The Code of Conduct covers general behavioral expectations while the Honor Code specifically addresses academic integrity and competitive honesty.",
    "The Honor Code is an older version of the Code of Conduct and has been superseded, so only the Code of Conduct applies.",
-   "The Code of Conduct and Honor Code are identical policies with different names used in different regions of FBLA.",
    "The Code of Conduct applies only during official events, while the Honor Code applies only to classroom-based preparation activities."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The Code of Conduct and Honor Code are complementary policies serving distinct purposes: the Code of Conduct governs overall member behavior and conduct at FBLA events, while the Honor Code specifically addresses integrity in academic work and competitive participation. Both apply concurrently and reinforce each other. Understanding this distinction is essential for applying the policies correctly.",
   "knowledge_area": "Policies",
   "difficulty": "hard"
@@ -561,12 +561,12 @@
  {
   "question": "An FBLA member learns that membership renewal requires submitting required documentation by a specific deadline each school year. What is the primary purpose of enforcing strict membership deadline policies?",
   "options": [
-   "To create an administrative burden that discourages inactive members from remaining on the membership rolls without participation.",
+   "To allow FBLA to collect membership fees at the last possible moment before the deadline to maximize revenue retention.",
    "To establish a fixed cutoff date that prevents any new members from joining after the deadline has passed during the entire school year.",
-   "To ensure accurate roster management, confirm continued member commitment, and maintain organizational records for competitions and events.",
-   "To allow FBLA to collect membership fees at the last possible moment before the deadline to maximize revenue retention."
+   "To create an administrative burden that discourages inactive members from remaining on the membership rolls without participation.",
+   "To ensure accurate roster management, confirm continued member commitment, and maintain organizational records for competitions and events."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Membership deadlines serve the operational and organizational purposes of maintaining accurate records, confirming active member commitment, and ensuring proper planning for competitions and events. While deadlines do create a structure, their primary function is administrative integrity, not restriction. The other options misrepresent the purpose as punitive, financial, or absolute barriers.",
   "knowledge_area": "Policies",
   "difficulty": "hard"
@@ -574,12 +574,12 @@
  {
   "question": "A member submits a competitive event entry one day after the stated membership renewal deadline but before the event competition date itself. According to FBLA membership policies, which outcome most accurately reflects policy enforcement?",
   "options": [
-   "The entry is conditionally accepted pending late-fee payment, which allows flexibility while ensuring accountability for deadline compliance.",
    "The entry is rejected because membership renewal deadline and event entry deadline are distinct, and the member missed the renewal deadline.",
+   "The entry is conditionally accepted pending late-fee payment, which allows flexibility while ensuring accountability for deadline compliance.",
    "The entry is accepted because the competition date has not yet occurred, and membership status is determined at the event, not at renewal time.",
    "The entry status is determined by whether the member has participated in prior FBLA events, not by renewal deadline timeliness."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "FBLA membership policies establish that renewal deadlines are separate and distinct from event entry deadlines, and membership status must be current at the renewal deadline to maintain standing. Missing the membership renewal deadline removes a member's eligibility for subsequent competitions, even if event entry would occur later. Late membership renewal generally does not restore retroactive eligibility for that membership period.",
   "knowledge_area": "Policies",
   "difficulty": "hard"
@@ -587,12 +587,12 @@
  {
   "question": "At the conference ladder structure, which tier typically serves as the entry point for most FBLA members before advancing to state and national levels?",
   "options": [
-   "National conferences, where participants compete after completing qualification rounds at smaller venues",
-   "Regional conferences, where members compete in preliminary events and earn qualification points for advancement",
    "District conferences, which function as the foundational competitive tier with mandatory participation for all chapters",
-   "Local chapter meetings, where members develop skills before moving to larger regional or state competitions"
+   "Local chapter meetings, where members develop skills before moving to larger regional or state competitions",
+   "National conferences, where participants compete after completing qualification rounds at smaller venues",
+   "Regional conferences, where members compete in preliminary events and earn qualification points for advancement"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Regional conferences serve as the primary entry tier in the FBLA conference ladder, allowing members to compete, gain experience, and earn points to qualify for state and national events. District conferences, while foundational, are not universally required, and local chapter meetings focus on skill development rather than competitive advancement in the formal ladder structure.",
   "difficulty": "hard",
   "knowledge_area": "Programs, Conferences, and Competitive Events"
@@ -600,12 +600,12 @@
  {
   "question": "An FBLA member participates in both a team event and an individual event at the state conference. According to FBLA eligibility rules, which of the following accurately describes the constraints on event participation at this competitive level?",
   "options": [
-   "Members may participate in multiple events if their chapter has paid the corresponding entry fees and they meet grade-level requirements",
-   "Members may enter both team and individual events at the same conference if they have attended at least one prior competitive event",
    "Members are restricted to a single competitive event per member per conference to ensure fair distribution across chapters",
+   "Members may enter both team and individual events at the same conference if they have attended at least one prior competitive event",
+   "Members may participate in multiple events if their chapter has paid the corresponding entry fees and they meet grade-level requirements",
    "Members may enter one individual event and one team event per conference, provided both are in different competitive categories"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "FBLA eligibility allows members to participate in multiple events at conferences based on chapter fee payments and individual grade-level/membership status, not on a per-member cap. The restriction is financial (entry fees) and status-based (grade, membership) rather than a blanket one-event limit. The other options incorrectly limit participation across categories or add arbitrary prior-event requirements not part of standard FBLA rules.",
   "difficulty": "hard",
   "knowledge_area": "Programs, Conferences, and Competitive Events"
@@ -613,10 +613,10 @@
  {
   "question": "Which of the following best describes how the Business Achievement Awards recognition program differs from competitive event placements in FBLA's structure?",
   "options": [
-   "Business Achievement Awards measure member attendance and participation rates, while event placements evaluate technical knowledge and problem-solving skills in real-time competitions",
+   "Business Achievement Awards are awarded only to chapters that place in the top three at national conferences, whereas event placements are distributed at all competitive levels",
    "Business Achievement Awards recognize overall chapter excellence and community service throughout the year, while event placements rank individual or team performance in specific competitive skill categories",
-   "Business Achievement Awards are determined by peer voting at conferences, while event placements are scored solely by professional judges without member input",
-   "Business Achievement Awards are awarded only to chapters that place in the top three at national conferences, whereas event placements are distributed at all competitive levels"
+   "Business Achievement Awards measure member attendance and participation rates, while event placements evaluate technical knowledge and problem-solving skills in real-time competitions",
+   "Business Achievement Awards are determined by peer voting at conferences, while event placements are scored solely by professional judges without member input"
   ],
   "correct_index": 1,
   "explanation": "Business Achievement Awards recognize sustained chapter achievement, growth, and community engagement across the full year, contrasting with event placements, which assess specific competitive skills in discrete contests. The other options mischaracterize the criteria and scope: awards are not limited to top-three chapters, don't measure only attendance, and aren't determined by peer voting in the manner described.",
@@ -627,8 +627,8 @@
   "question": "In the FBLA competitive event categories, events requiring extensive research and documentation before the competition date differ in structure from those evaluated on improvisational problem-solving. Which pair best exemplifies this distinction?",
   "options": [
    "Business Plan events require advance research and written submission, while Sales events test real-time client interaction and persuasion techniques",
-   "Accounting events require pre-prepared spreadsheets and documentation, while Parliamentary Procedure events test on-the-spot knowledge of motions and rules",
    "Corporate Responsibility events require documented community service hours submitted prior to competition, while Marketing events assess strategy development during the competition itself",
+   "Accounting events require pre-prepared spreadsheets and documentation, while Parliamentary Procedure events test on-the-spot knowledge of motions and rules",
    "Case Study events require submission of written analysis before competition day, while Public Speaking events assess delivery and content quality during live presentation"
   ],
   "correct_index": 0,
@@ -639,12 +639,12 @@
  {
   "question": "A chapter is evaluating which competitive events align with its strength in financial analysis and bookkeeping. Under FBLA's event structure, which combination of events would best leverage this specialized focus while meeting diversity requirements across event categories?",
   "options": [
-   "Accounting, Management Information Systems, and Personal Finance — covering technology, accounting, and individual wealth management topics",
-   "Accounting and Financial Analysis from the finance category, paired with Business Communications from a different category for breadth",
+   "Accounting, Financial Analysis, and Auditing — all fall within the finance/accounting competitive category and develop related technical skills",
    "Accounting, Economics, and Entrepreneurship — representing different categories while maintaining a business and financial literacy theme across all three",
-   "Accounting, Financial Analysis, and Auditing — all fall within the finance/accounting competitive category and develop related technical skills"
+   "Accounting and Financial Analysis from the finance category, paired with Business Communications from a different category for breadth",
+   "Accounting, Management Information Systems, and Personal Finance — covering technology, accounting, and individual wealth management topics"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The best approach balances specialized strength (Accounting and Financial Analysis within the finance category) with deliberate breadth (Business Communications from another category), ensuring the chapter leverages its expertise while developing well-rounded competitive capability. The other options either cluster too heavily in one category, lack true thematic coherence, or bundle unrelated skill areas without clear strategic advantage.",
   "difficulty": "hard",
   "knowledge_area": "Programs, Conferences, and Competitive Events"

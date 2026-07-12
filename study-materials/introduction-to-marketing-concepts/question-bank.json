@@ -2,10 +2,10 @@
  {
   "question": "A manufacturer is evaluating whether to use direct distribution or indirect channels through wholesalers and retailers. Which factor best reflects the core scope of channel management in making this decision?",
   "options": [
-   "The manufacturer's choice of transportation method and warehouse location logistics",
+   "The promotional campaigns coordinated between the manufacturer and retail staff",
    "The pricing strategy applied at each retail location to maintain brand consistency",
    "The flow of products, information, and ownership through intermediaries to reach end consumers",
-   "The promotional campaigns coordinated between the manufacturer and retail staff"
+   "The manufacturer's choice of transportation method and warehouse location logistics"
   ],
   "correct_index": 2,
   "explanation": "Channel management's scope encompasses the entire flow of products, information, and ownership through the channel network—not just logistics, pricing, or promotion alone. The core nature of channel management is designing and maintaining the path goods take from producer to consumer, including all intermediaries involved.",
@@ -15,12 +15,12 @@
  {
   "question": "An online retailer uses automated inventory management software linked directly to supplier warehouses, while a traditional brick-and-mortar chain relies on manual ordering and periodic inventory counts. How do these approaches differ in their use of technology within channel management?",
   "options": [
-   "The online retailer uses technology to enable real-time information flow and reduce stock-outs, whereas the traditional chain experiences delays in demand visibility",
    "The online retailer's approach requires fewer distribution centers, while the traditional chain must invest in larger warehouses",
+   "The online retailer uses technology to enable real-time information flow and reduce stock-outs, whereas the traditional chain experiences delays in demand visibility",
    "The online retailer reduces channel costs, while the traditional chain maintains stronger customer relationships through in-person contact",
    "The online retailer depends on technology for payment processing, while the traditional chain uses technology only for accounting records"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Technology in channel management enables faster information exchange and coordination. The online retailer's automated, real-time system improves visibility and responsiveness throughout the channel, whereas the traditional chain's manual process creates information delays that can lead to inventory imbalances.",
   "knowledge_area": "Channel Management",
   "difficulty": "hard"
@@ -28,8 +28,8 @@
  {
   "question": "A beverage company distributes through three different channel structures: company-owned vending machines, independent vending operators, and supermarket chains. Which statement most accurately reflects the nature of these different channels of distribution?",
   "options": [
-   "Each channel operates independently with no shared marketing or inventory information between the company and its intermediaries",
    "Each channel requires identical pricing and promotional support regardless of the retail environment or customer demographics",
+   "Each channel operates independently with no shared marketing or inventory information between the company and its intermediaries",
    "Each channel serves a different product line, with vending machines carrying premium beverages and supermarkets selling only budget brands",
    "Each channel varies in length and intermediary composition, affecting the company's control, cost structure, and consumer access point"
   ],
@@ -41,12 +41,12 @@
  {
   "question": "Two manufacturers in the same industry manage their channels very differently: Company A uses supply chain visibility software and demand forecasting tools, while Company B relies on order-based replenishment from distributors. How does technology create a competitive difference in channel management scope?",
   "options": [
+   "Company A can anticipate demand fluctuations and coordinate inventory proactively across the channel, reducing inefficiencies and response time",
    "Company B maintains stronger relationships with distributors through personal contact, improving long-term partnership stability",
    "Company B avoids the high cost of technology implementation, allowing it to pass savings directly to end consumers",
-   "Company A eliminates the need for intermediaries, shortening the distribution network and simplifying operations",
-   "Company A can anticipate demand fluctuations and coordinate inventory proactively across the channel, reducing inefficiencies and response time"
+   "Company A eliminates the need for intermediaries, shortening the distribution network and simplifying operations"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Technology's role in channel management includes enabling proactive coordination and visibility rather than reactive order fulfillment. Company A's forecasting and visibility tools allow better alignment of supply with demand across the entire channel network, improving efficiency that order-based systems cannot achieve.",
   "knowledge_area": "Channel Management",
   "difficulty": "hard"
@@ -54,10 +54,10 @@
  {
   "question": "A sporting goods manufacturer is deciding whether to expand its distribution through discount retailers, specialty outdoor shops, or both. This decision involves understanding the relationship between channel structure and market coverage. Which element is central to managing this channel decision?",
   "options": [
-   "Choosing which channel partner will invest in the largest advertising budget to promote the brand nationally",
    "Identifying which channel requires the lowest wholesale price to ensure retailer profitability and sales volume",
+   "Selecting the channel that stocks the widest product assortment to maximize shelf space and reduce competitor visibility",
    "Determining how product flow, information exchange, and ownership transfer will differ across each channel type to reach target market segments",
-   "Selecting the channel that stocks the widest product assortment to maximize shelf space and reduce competitor visibility"
+   "Choosing which channel partner will invest in the largest advertising budget to promote the brand nationally"
   ],
   "correct_index": 2,
   "explanation": "Channel management's scope requires understanding how different channel structures—their length, intermediaries, and processes—affect product flow, information, and control. The manufacturer must align channel choice with market coverage goals and how each channel will function operationally, not just focus on pricing, advertising, or assortment decisions.",
@@ -68,11 +68,11 @@
   "question": "A sales representative discovers that a product feature—its reinforced steel frame—directly addresses a customer's stated concern about durability in high-traffic environments. Which step of the selling process does this exemplify?",
   "options": [
    "Closing the sale, where the rep summarizes objections raised and reinforces the product's competitive positioning",
-   "Approaching the customer, where the rep establishes rapport and permission to present solutions",
+   "Presenting the product, where features are connected to specific customer benefits and pain points",
    "Prospecting and qualifying, where the rep identifies customers whose needs align with available inventory",
-   "Presenting the product, where features are connected to specific customer benefits and pain points"
+   "Approaching the customer, where the rep establishes rapport and permission to present solutions"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Connecting a product feature (reinforced steel frame) to a customer benefit (durability for high-traffic use) is the core of the presentation step. Prospecting identifies leads, approaching builds rapport, and closing secures commitment—but the linking of features to benefits occurs during presentation. This requires understanding both product information and the customer's specific needs.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -80,12 +80,12 @@
  {
   "question": "A company's selling policy requires representatives to document all product specifications discussed during initial customer conversations but permits customization discussions only after the customer has confirmed interest in a trial period. How does this policy most directly shape the selling process?",
   "options": [
-   "It allocates budget and resources for product training so representatives can answer technical questions during prospecting",
-   "It defines the customer service standards that sales reps must maintain when responding to post-purchase support inquiries",
+   "It establishes the sequence and boundaries of the selling process steps, ensuring standardized information sharing before negotiation occurs",
    "It determines which product features will be emphasized in marketing materials and promotional campaigns to potential buyers",
-   "It establishes the sequence and boundaries of the selling process steps, ensuring standardized information sharing before negotiation occurs"
+   "It defines the customer service standards that sales reps must maintain when responding to post-purchase support inquiries",
+   "It allocates budget and resources for product training so representatives can answer technical questions during prospecting"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Selling policies directly govern how the selling process unfolds—what information must be shared when, and at what stage negotiation or customization can begin. This policy controls the sequence of steps. Customer service standards (B) address post-sale support, training budgets (C) support process execution but don't shape it, and marketing emphasis (D) targets broader promotion rather than the selling process sequence.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -93,12 +93,12 @@
  {
   "question": "A sales team analyzes product information to distinguish between features (waterproof exterior, lightweight construction, extended battery life) and their corresponding benefits for different customer segments. Why is this analysis essential to the selling function?",
   "options": [
-   "It allows management to set pricing strategies based on production costs and competitor benchmarks across different market segments",
-   "It enables representatives to match specific product capabilities to customer-specific problems and priorities, strengthening the value proposition in customer conversations",
    "It justifies the scope of the selling function by demonstrating that product knowledge exceeds what customer service teams require",
-   "It reduces the need for customer service interventions by ensuring that only fully informed customers complete purchases"
+   "It reduces the need for customer service interventions by ensuring that only fully informed customers complete purchases",
+   "It allows management to set pricing strategies based on production costs and competitor benchmarks across different market segments",
+   "It enables representatives to match specific product capabilities to customer-specific problems and priorities, strengthening the value proposition in customer conversations"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Feature-to-benefit analysis is foundational to effective selling because it enables reps to tailor their presentation to what matters to each customer, rather than listing features indiscriminately. This directly supports the selling process. Pricing strategy (B) is a separate management function, scope justification (C) is an internal argument unrelated to selling effectiveness, and reducing service calls (D) is a secondary outcome, not the primary purpose.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -106,12 +106,12 @@
  {
   "question": "During a sales interaction, a customer raises concerns about product compatibility with existing systems. The representative responds by acknowledging the concern, explaining how the product integrates with common platforms, and offering to arrange a technical demonstration. Which two components of the selling relationship does this response demonstrate?",
   "options": [
+   "Customer service and company selling policies, because the rep managed expectations and adhered to standard demonstration procedures",
    "The nature of the selling function and company selling policies, because the rep followed protocol and explained the scope of product support",
-   "Customer service and the selling process, because the rep addressed a concern, provided relevant information, and advanced the relationship forward",
    "Product information acquisition and the selling process, because the rep gathered compatibility data and moved toward closing",
-   "Customer service and company selling policies, because the rep managed expectations and adhered to standard demonstration procedures"
+   "Customer service and the selling process, because the rep addressed a concern, provided relevant information, and advanced the relationship forward"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The representative demonstrated customer service (responding to a concern with solutions and support) and advanced the selling process (moving from objection handling toward commitment via a demo). Product information acquisition (A) is background work, not evident here. Nature of the selling function (C) and policy adherence (D) are less central than the interactive selling process and service response the rep displayed.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -119,12 +119,12 @@
  {
   "question": "A salesperson notices that two customers with similar stated budgets and timelines respond very differently to the same product presentation—one emphasizes reliability and total cost of ownership, while the other prioritizes aesthetic design and brand reputation. What does this observation suggest about the relationship between customer service and the selling process?",
   "options": [
-   "Customer service quality must remain consistent across all interactions, so the selling process should standardize messaging regardless of customer priorities",
    "The selling process requires ongoing attention to individual customer values and concerns, making customer service—the ability to address specific needs—integral to advancing sales relationships",
    "Customer service interventions should occur only after the sale closes, so sellers should focus on completing transactions without addressing subjective preferences",
+   "Customer service quality must remain consistent across all interactions, so the selling process should standardize messaging regardless of customer priorities",
    "The selling process operates independently from customer service; post-sale support is managed separately and does not influence how products are presented"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "This observation demonstrates that effective selling is not one-size-fits-all; it requires understanding and responding to each customer's distinct priorities—a core element of customer service as a selling component. Customer service enables the selling process by ensuring needs are heard and addressed. Standardized messaging (A) ignores individual customer values, separating service from process (C) misses their integration, and delaying service until after sale (D) undermines relationship-based selling.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -132,12 +132,12 @@
  {
   "question": "A company uses institutional promotion to enhance its corporate image while simultaneously launching a new product line with aggressive pricing and celebrity endorsements. Which promotional objective is primarily served by the institutional approach in this scenario?",
   "options": [
+   "Generating short-term revenue through direct consumer purchase incentives and limited-time promotional offers",
    "Increasing market share by positioning the product against established competitors in the same category",
    "Building long-term goodwill and organizational reputation rather than driving immediate sales of a specific offering",
-   "Generating short-term revenue through direct consumer purchase incentives and limited-time promotional offers",
    "Reducing production costs by creating awareness that justifies economies of scale in manufacturing"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Institutional promotion focuses on enhancing the organization's overall image and goodwill, distinct from product promotion which drives sales of specific offerings. While the product line uses aggressive tactics for immediate sales, institutional promotion takes a longer view of stakeholder relationships and brand reputation.",
   "difficulty": "hard",
   "knowledge_area": "Promotion"
@@ -145,10 +145,10 @@
  {
   "question": "Within the promotional mix, a marketing team allocates budget across personal selling, advertising, sales promotion, and public relations. If the goal is to build credibility through third-party endorsement while avoiding direct brand messaging, which element is most strategically appropriate?",
   "options": [
-   "Sales promotion, which uses coupons and contests to incentivize trial and encourage repeat purchase behavior",
+   "Personal selling, which allows salespeople to address objections and build trust through one-on-one relationships",
    "Public relations, which leverages media coverage and third-party sources to communicate organizational messages",
    "Advertising, which provides paid media placement across television, print, digital, and outdoor channels",
-   "Personal selling, which allows salespeople to address objections and build trust through one-on-one relationships"
+   "Sales promotion, which uses coupons and contests to incentivize trial and encourage repeat purchase behavior"
   ],
   "correct_index": 1,
   "explanation": "Public relations generates credibility through third-party coverage and earned media rather than direct brand control, making it ideal for building trust without appearing self-promotional. The other elements are either direct brand messaging (advertising), one-on-one sales (personal selling), or incentive-driven (sales promotion).",
@@ -158,10 +158,10 @@
  {
   "question": "A manufacturer must choose between digital advertising, radio spots, print magazines, and streaming video platforms to reach a target demographic of affluent professionals aged 35–55. Which media consideration most directly influences this decision among these options?",
   "options": [
-   "The frequency of message repetition and the production quality standards required by broadcast regulations",
+   "The geographic coverage area and the ability to measure sales uplift within specific regional territories",
    "The cost per thousand impressions and the demographic profile of each medium's typical audience composition",
-   "The creative flexibility allowed by each format and the historical market share held by competing brands",
-   "The geographic coverage area and the ability to measure sales uplift within specific regional territories"
+   "The frequency of message repetition and the production quality standards required by broadcast regulations",
+   "The creative flexibility allowed by each format and the historical market share held by competing brands"
   ],
   "correct_index": 1,
   "explanation": "Media selection fundamentally depends on reaching the right audience efficiently, which is measured by cost per thousand impressions (CPM) and audience demographics that align with the target market. While other factors matter, matching medium audience profiles to target demographics is the primary driver for affluent professionals.",
@@ -171,12 +171,12 @@
  {
   "question": "A beverage company uses television advertising to build brand awareness, in-store sampling to encourage trial, a dedicated sales team to secure shelf space, and social media engagement to address customer concerns. How do these promotional elements collectively function within the overall marketing strategy?",
   "options": [
-   "Advertising creates awareness, sales promotion drives trial, personal selling secures distribution, and public relations manages relationships",
-   "Television advertising dominates market share while sampling, sales teams, and social media serve as secondary support tactics",
    "Sampling and social media are primary drivers of revenue while advertising and sales teams maintain brand visibility between promotions",
-   "Each element targets a different stage of consumer decision-making and channel, creating redundancy to maximize retention rates"
+   "Television advertising dominates market share while sampling, sales teams, and social media serve as secondary support tactics",
+   "Each element targets a different stage of consumer decision-making and channel, creating redundancy to maximize retention rates",
+   "Advertising creates awareness, sales promotion drives trial, personal selling secures distribution, and public relations manages relationships"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The promotional mix elements serve distinct but complementary roles: advertising builds awareness (mass communication), sales promotion drives trial (incentives), personal selling secures distribution (relationship-building with retailers), and public relations maintains stakeholder engagement (two-way communication). Together they support the full customer journey.",
   "difficulty": "hard",
   "knowledge_area": "Promotion"
@@ -184,12 +184,12 @@
  {
   "question": "When a marketing manager evaluates whether promotion should emphasize the organization's environmental stewardship or the superior performance features of a specific product, what distinction is being made?",
   "options": [
-   "Selecting between promotional tactics that build long-term loyalty versus those that generate short-term sales volume immediately",
    "Choosing between direct response advertising and brand-building advertising based on campaign duration and budget allocation",
    "Deciding whether to use personal selling for complex messages or mass media for simple, feature-oriented messages",
-   "Distinguishing between institutional promotion focused on organizational values and product promotion focused on item-specific benefits"
+   "Distinguishing between institutional promotion focused on organizational values and product promotion focused on item-specific benefits",
+   "Selecting between promotional tactics that build long-term loyalty versus those that generate short-term sales volume immediately"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Institutional promotion highlights the organization itself—its values, reputation, and mission—while product promotion emphasizes the attributes and benefits of specific offerings. Environmental stewardship reflects organizational positioning, whereas performance features reflect product-level differentiation.",
   "difficulty": "hard",
   "knowledge_area": "Promotion"
@@ -197,12 +197,12 @@
  {
   "question": "A company conducting market identification discovers two distinct customer segments with different purchasing patterns. Which aspect of marketing strategy would most directly determine how the company allocates resources between these segments?",
   "options": [
-   "The employment opportunities available in the marketing department and the skill levels of current marketing personnel",
-   "The marketing functions of promotion and distribution that reach customers through both direct sales and retail channels",
    "The company's understanding of market segmentation and target market selection within its overall competitive positioning",
+   "The marketing functions of promotion and distribution that reach customers through both direct sales and retail channels",
+   "The employment opportunities available in the marketing department and the skill levels of current marketing personnel",
    "The global economic factors affecting currency exchange rates and international trade agreements in emerging markets"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Market identification requires understanding how different segments exist and which ones the company will prioritize—this is core to marketing strategy development. The other options address distinct areas (functions, global economics, employment) but don't directly guide resource allocation between identified markets.",
   "difficulty": "hard",
   "knowledge_area": "Marketing Fundamentals"
@@ -210,12 +210,12 @@
  {
   "question": "During the development of a marketing plan, a firm must evaluate how consumer purchasing decisions are influenced by both psychological and social factors. How does this evaluation connect to the broader marketing planning process?",
   "options": [
-   "It establishes the employment structure and compensation models required for the marketing department's organizational hierarchy",
+   "It informs the identification of customer needs and motivations that shape market targeting and messaging strategy",
    "It determines which promotional channels will generate the highest immediate sales volume and quickest inventory turnover",
    "It defines the global economic conditions and tariff structures that affect the cost of importing finished products",
-   "It informs the identification of customer needs and motivations that shape market targeting and messaging strategy"
+   "It establishes the employment structure and compensation models required for the marketing department's organizational hierarchy"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Understanding buying behavior is essential to effective marketing planning because it reveals why customers make choices, which directly influences targeting and communication strategy. The other options address functions, organizational structure, and external economics—important but secondary to understanding customer motivation in the planning phase.",
   "difficulty": "hard",
   "knowledge_area": "Marketing Fundamentals"
@@ -225,10 +225,10 @@
   "options": [
    "Marketing analyzes supply chain logistics, warehouse management, and inventory systems to reduce operational costs and delivery timelines",
    "Marketing manages employment recruitment, training, and retention of sales personnel across international distribution centers and regional offices",
-   "Marketing identifies customer needs, coordinates organizational resources, and creates value propositions that differentiate the company in competitive global environments",
-   "Marketing generates revenue through advertising campaigns and direct sales activities that immediately increase market share and profitability"
+   "Marketing generates revenue through advertising campaigns and direct sales activities that immediately increase market share and profitability",
+   "Marketing identifies customer needs, coordinates organizational resources, and creates value propositions that differentiate the company in competitive global environments"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "This answer captures marketing's strategic role in understanding customers, aligning resources, and building competitive differentiation—not just revenue generation. The other options reduce marketing to specific functions (sales, personnel management, logistics) rather than its broader importance as a strategic business process.",
   "difficulty": "hard",
   "knowledge_area": "Marketing Fundamentals"
@@ -236,12 +236,12 @@
  {
   "question": "When a company designs its marketing functions to include both product development and customer analysis, it is fundamentally addressing which core marketing challenge?",
   "options": [
-   "Ensuring that products match customer needs and preferences while maintaining profitability across multiple distribution channels and price points",
    "Creating advertising campaigns that communicate product features to the widest possible audience through television, digital, and print media",
+   "Ensuring that products match customer needs and preferences while maintaining profitability across multiple distribution channels and price points",
    "Developing employee training programs to improve sales technique and customer service interaction skills at retail locations",
    "Establishing partnerships with suppliers and vendors to secure competitive pricing and reliable inventory replenishment schedules"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Integrating product development with customer analysis reflects the fundamental marketing challenge of creating offerings that satisfy identified market needs. The other options address specific activities (promotion, supply partnerships, training) rather than the core alignment between what the company offers and what customers actually want.",
   "difficulty": "hard",
   "knowledge_area": "Marketing Fundamentals"
@@ -250,11 +250,11 @@
   "question": "A career-focused individual evaluates employment opportunities in marketing by considering roles in market research, advertising, and brand management. What underlying marketing concept connects these diverse career paths?",
   "options": [
    "Each opportunity specializes in a specific geographic region or demographic segment to maximize local market penetration efficiency",
-   "Each career path focuses exclusively on digital platforms and social media strategies to reach younger consumer age groups",
    "Each position requires expertise in financial accounting, budgeting methodology, and return-on-investment calculation techniques",
-   "Each role applies different marketing functions to understand, communicate with, and retain customers in target markets"
+   "Each role applies different marketing functions to understand, communicate with, and retain customers in target markets",
+   "Each career path focuses exclusively on digital platforms and social media strategies to reach younger consumer age groups"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Market research, advertising, and brand management all serve the broader marketing mission of understanding and connecting with customers—they represent different functions within that unified purpose. The other options incorrectly narrow these roles to accounting expertise, geographic specialization, or digital-only focus, missing the unifying marketing concept.",
   "difficulty": "hard",
   "knowledge_area": "Marketing Fundamentals"
@@ -262,12 +262,12 @@
  {
   "question": "A salesperson identifies that a customer needs reliable delivery schedules and competitive pricing. Which approach best demonstrates analyzing product information to connect these customer priorities to specific selling benefits?",
   "options": [
-   "Presenting the product's historical market performance and comparing it to competitor offerings in the same category",
+   "Describing the company's distribution network capabilities and volume discount structure that directly address the stated needs",
    "Highlighting the product's manufacturing process and explaining how quality control reduces defects during shipping",
    "Detailing the product's warranty coverage and after-sales support services that enhance long-term customer relationships",
-   "Describing the company's distribution network capabilities and volume discount structure that directly address the stated needs"
+   "Presenting the product's historical market performance and comparing it to competitor offerings in the same category"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Analyzing product information requires connecting specific product or company features to the customer's stated needs. The correct answer directly links distribution network (delivery reliability) and pricing structure (competitive cost) to the customer's priorities. The other options present product information but do not strategically match it to the identified customer requirements.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -275,9 +275,9 @@
  {
   "question": "During a sales interaction, a customer expresses frustration about receiving inconsistent support after purchase from a previous vendor. How should the salesperson frame customer service within the selling relationship to address this concern?",
   "options": [
+   "Suggest that superior customer service is available only for high-volume accounts and depends on order size and frequency",
    "Emphasize that post-sale support is a separate department and direct the customer to contact them only after the transaction closes",
    "Acknowledge the past experience but explain that all vendors face similar challenges with support consistency over time",
-   "Suggest that superior customer service is available only for high-volume accounts and depends on order size and frequency",
    "Position ongoing customer service as an integral part of the selling relationship that extends beyond the initial transaction to build trust"
   ],
   "correct_index": 3,
@@ -288,12 +288,12 @@
  {
   "question": "A salesperson must explain why a product's rapid production cycle time matters to a retail buyer managing seasonal inventory. Which explanation best demonstrates understanding the difference between a product feature and its selling benefit in this context?",
   "options": [
-   "The feature is that the supplier maintains high inventory levels; the benefit is that backorders are minimized and fulfillment is faster",
-   "The feature is that the product ships via expedited carrier; the benefit is that customers receive their orders within one week",
+   "The feature is that the product uses automated manufacturing; the benefit is that quality remains consistent across all production batches",
    "The feature is that production occurs in 14 days; the benefit is that you can order closer to peak season and reduce excess inventory costs",
-   "The feature is that the product uses automated manufacturing; the benefit is that quality remains consistent across all production batches"
+   "The feature is that the product ships via expedited carrier; the benefit is that customers receive their orders within one week",
+   "The feature is that the supplier maintains high inventory levels; the benefit is that backorders are minimized and fulfillment is faster"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "A feature is a characteristic of the product or service; a benefit is the value or advantage it delivers to the specific customer. The correct answer identifies the rapid production cycle (feature) and links it to the buyer's specific problem (seasonal inventory management and cost reduction—the benefit). The other options either confuse feature and benefit or address different customer priorities rather than the stated retail inventory challenge.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -303,10 +303,10 @@
   "options": [
    "It prevents salespeople from building relationships with customers by limiting their ability to make immediate pricing decisions in negotiations",
    "It transfers all pricing authority to the finance department and removes discretion from front-line sales personnel entirely",
-   "It guarantees that all customers receive identical pricing regardless of purchase volume, competitive pressure, or market conditions",
-   "It ensures that pricing decisions remain transparent, maintain margin integrity, and provide data for analyzing which customer segments require price concessions"
+   "It ensures that pricing decisions remain transparent, maintain margin integrity, and provide data for analyzing which customer segments require price concessions",
+   "It guarantees that all customers receive identical pricing regardless of purchase volume, competitive pressure, or market conditions"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Company selling policies establish guidelines that protect profitability while enabling effective selling. The correct answer reflects how documentation and approval processes create accountability, preserve margins, and generate business intelligence. The other options mischaracterize the policy's purpose—policies enable selling within guardrails, not prevent it; they establish consistency without eliminating context-based decisions; and they maintain oversight rather than eliminate sales input.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -314,12 +314,12 @@
  {
   "question": "A salesperson gathers technical specifications, competitive pricing, delivery terms, and warranty information about a product. In the selling process, which step comes immediately after acquiring this product information?",
   "options": [
-   "Delivering the product and scheduling a follow-up appointment to ensure customer satisfaction and retention",
    "Contacting customers in the prospect database to schedule initial meetings and determine their interest in the product category",
-   "Analyzing the product information to identify which features and benefits align with the customer's specific business challenges",
-   "Closing the sale by presenting the final price quote and requesting the customer's signature on the purchase order"
+   "Closing the sale by presenting the final price quote and requesting the customer's signature on the purchase order",
+   "Delivering the product and scheduling a follow-up appointment to ensure customer satisfaction and retention",
+   "Analyzing the product information to identify which features and benefits align with the customer's specific business challenges"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Acquiring product information is foundational, but the selling process requires connecting that information to customer needs. The correct answer identifies analysis—determining which features and benefits matter to the specific customer—as the logical next step after gathering data. The other options represent later steps (closing, post-sale service, prospecting) that follow analysis and customer understanding, not steps that immediately follow information acquisition.",
   "difficulty": "hard",
   "knowledge_area": "Selling"
@@ -327,12 +327,12 @@
  {
   "question": "A company collects data on customer purchase frequency, competitor pricing strategies, and seasonal demand patterns. Which aspect of marketing-information management does this activity primarily address?",
   "options": [
-   "Identifying the types of data required to support strategic and tactical marketing decisions across multiple business functions",
-   "Establishing quality controls to ensure data accuracy while determining which metrics require real-time monitoring versus periodic review",
    "Developing software infrastructure to store historical records and creating backup systems for disaster recovery purposes",
-   "Training marketing staff on how to interpret statistical reports and present findings to senior management committees"
+   "Identifying the types of data required to support strategic and tactical marketing decisions across multiple business functions",
+   "Training marketing staff on how to interpret statistical reports and present findings to senior management committees",
+   "Establishing quality controls to ensure data accuracy while determining which metrics require real-time monitoring versus periodic review"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Marketing-information management involves recognizing what data is needed to inform decisions at various levels. The scenario describes collecting different types of data (customer behavior, competitive intelligence, market trends) that support decision-making, which is the core function of identifying data needs. The other options address implementation, infrastructure, or communication—important but distinct from identifying what data is needed.",
   "difficulty": "hard",
   "knowledge_area": "Marketing-Information Management"
@@ -340,10 +340,10 @@
  {
   "question": "During quarterly planning, a marketing team debates whether to monitor daily social media engagement metrics or conduct monthly focus groups to evaluate brand perception. What principle of marketing research should guide this decision?",
   "options": [
-   "Real-time monitoring systems are inherently superior to periodic research methods because they reduce the risk of making decisions based on outdated information",
    "Primary research through focus groups always provides more reliable results than secondary data from digital platforms, regardless of the research objective",
+   "Marketing research scope should prioritize quantitative methods over qualitative approaches whenever budget constraints limit the ability to conduct both simultaneously",
    "Research methods should match the decision timeline and the type of insight required, balancing frequency of data collection with the nature of change in the phenomenon being measured",
-   "Marketing research scope should prioritize quantitative methods over qualitative approaches whenever budget constraints limit the ability to conduct both simultaneously"
+   "Real-time monitoring systems are inherently superior to periodic research methods because they reduce the risk of making decisions based on outdated information"
   ],
   "correct_index": 2,
   "explanation": "Effective marketing research design requires aligning data collection methods and frequency with decision needs and how quickly the measured phenomenon changes. Social media engagement shifts rapidly and supports tactical decisions, while brand perception changes slowly and suits periodic research. The other options present false hierarchies—neither method is universally superior; context determines appropriateness.",
@@ -353,12 +353,12 @@
  {
   "question": "A manufacturer needs to understand why sales declined in a particular region despite maintaining competitive pricing and product availability. Which type of marketing data would be most essential to collect, and why?",
   "options": [
-   "Supplier delivery times and production costs to determine whether operational inefficiencies contributed to the regional sales decline",
-   "Competitor advertising spending and media placement frequency to identify whether increased promotional activity diverted customer purchases",
+   "Qualitative feedback on customer decision-making factors and perceptions, alongside quantitative sales data segmented by customer demographics and purchase history",
    "Customer satisfaction scores and brand awareness metrics from pre-established tracking studies to establish baseline performance comparisons",
-   "Qualitative feedback on customer decision-making factors and perceptions, alongside quantitative sales data segmented by customer demographics and purchase history"
+   "Supplier delivery times and production costs to determine whether operational inefficiencies contributed to the regional sales decline",
+   "Competitor advertising spending and media placement frequency to identify whether increased promotional activity diverted customer purchases"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Diagnosing an unexplained sales decline requires both qualitative customer insights (perceptions, motivations) and quantitative analysis (segmentation, trends) to identify root causes beyond price and availability. This combination exemplifies marketing research scope. Options A, C, and D focus on either incomplete data sources or factors already ruled out by the scenario conditions.",
   "difficulty": "hard",
   "knowledge_area": "Marketing-Information Management"
@@ -366,12 +366,12 @@
  {
   "question": "A retailer monitors point-of-sale transaction data, customer return patterns, and market share fluctuations monthly. Another retailer collects the same metrics weekly and supplements them with quarterly consumer surveys. How do these approaches differ in their scope of marketing-information management?",
   "options": [
-   "The first retailer emphasizes reactive problem-solving through historical analysis, while the second emphasizes predictive modeling through real-time metrics only",
    "The second retailer's more frequent monitoring and mixed-method approach provides greater comprehensiveness in tracking both performance indicators and underlying customer perceptions, though at higher operational cost",
+   "The first retailer focuses exclusively on internal data while the second integrates external research, requiring different organizational structures",
    "Both approaches monitor identical phenomena, so the difference is merely in reporting frequency rather than in the actual scope of information being managed",
-   "The first retailer focuses exclusively on internal data while the second integrates external research, requiring different organizational structures"
+   "The first retailer emphasizes reactive problem-solving through historical analysis, while the second emphasizes predictive modeling through real-time metrics only"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The second retailer's approach is broader in scope because it combines frequent quantitative monitoring (internal transaction data) with periodic qualitative research (consumer surveys), capturing both operational performance and customer motivations. This represents greater comprehensiveness in marketing-information management. The first approach is narrower, relying only on transaction and market data without direct customer insight.",
   "difficulty": "hard",
   "knowledge_area": "Marketing-Information Management"
@@ -380,11 +380,11 @@
   "question": "A business decides to investigate whether changing its promotional messaging will improve market share, but uncertainty exists about which customer segments will respond most strongly. What does this scenario illustrate about the relationship between marketing data needs and marketing research?",
   "options": [
    "Marketing data collection should always precede marketing research because historical metrics establish baselines necessary for designing any research study",
-   "Marketing research is a preliminary activity that confirms market trends, whereas marketing data collection is the ongoing process of monitoring performance after decisions are implemented",
    "Marketing data identifies what is currently happening in the market, while marketing research explores why changes might occur and tests assumptions before major decisions",
-   "Both marketing data and marketing research serve identical purposes, so the distinction between them is primarily a matter of terminology rather than functional difference"
+   "Both marketing data and marketing research serve identical purposes, so the distinction between them is primarily a matter of terminology rather than functional difference",
+   "Marketing research is a preliminary activity that confirms market trends, whereas marketing data collection is the ongoing process of monitoring performance after decisions are implemented"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "This scenario shows marketing data (current market share, segment information) differs from marketing research (investigation of potential outcomes and customer response patterns). Research answers 'why' and 'what if' questions to test decisions before implementation. Data answers 'what is' questions about existing conditions. The other options conflate the two or mischaracterize their relationship.",
   "difficulty": "hard",
   "knowledge_area": "Marketing-Information Management"
@@ -392,12 +392,12 @@
  {
   "question": "A manufacturer introduces a new breakfast cereal, invests heavily in promotion during the growth stage, then reduces marketing spending as the product matures. Which two elements of product/service management most directly explain this decision-making pattern?",
   "options": [
-   "Product positioning and warranty standards, because mature products require repositioning and enhanced guarantees to maintain market share",
-   "Grading standards and branding strategy, because maturity requires stricter quality controls and stronger brand identity messaging",
    "Service guarantees and product scope, because mature products need expanded service offerings and broader distribution to sustain sales",
-   "Product life cycle stages and product mix strategy, because each stage demands different marketing intensities and resource allocation across the portfolio"
+   "Grading standards and branding strategy, because maturity requires stricter quality controls and stronger brand identity messaging",
+   "Product life cycle stages and product mix strategy, because each stage demands different marketing intensities and resource allocation across the portfolio",
+   "Product positioning and warranty standards, because mature products require repositioning and enhanced guarantees to maintain market share"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The scenario directly reflects how product life cycle stages drive marketing spending decisions, and how these decisions fit within the broader product mix strategy. Positioning, warranties, and grading are important product management tools, but they do not explain the shift in promotional intensity across life cycle stages.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -405,8 +405,8 @@
  {
   "question": "Two competing soft drink brands use identical formulas and packaging but target different consumer segments through distinct positioning strategies. Which aspect of product/service management accounts for this market differentiation despite product similarity?",
   "options": [
-   "Product life cycle management, which enables brands to serve different stages of consumer preference development",
    "Grading and standards application, which permits brands to market identical formulations under different quality certifications",
+   "Product life cycle management, which enables brands to serve different stages of consumer preference development",
    "Product mix decisions, which allow each brand to offer multiple flavor variants within different price tiers",
    "Product positioning, which leverages brand identity, messaging, and target audience selection to create distinct market identities"
   ],
@@ -418,12 +418,12 @@
  {
   "question": "A bicycle manufacturer adds electric-assist models and rental-service offerings to its traditional product line while maintaining its core mechanical bicycle business. Which product management concept best describes the strategic decision underlying this expansion?",
   "options": [
-   "Strengthening the product mix by adding complementary product lines and service extensions to broaden market reach and revenue streams",
    "Managing product life cycle decline by introducing new product variants before existing models reach market saturation",
+   "Advancing product positioning by rebranding the entire portfolio to appeal to environmentally conscious and technology-focused consumers",
    "Implementing warranty enhancement across the portfolio to support premium pricing on newly introduced electric and service-based offerings",
-   "Advancing product positioning by rebranding the entire portfolio to appeal to environmentally conscious and technology-focused consumers"
+   "Strengthening the product mix by adding complementary product lines and service extensions to broaden market reach and revenue streams"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "The addition of electric models and rental services represents deliberate product mix expansion—adding new products and services to the existing lineup to serve broader customer needs and market segments. While positioning, life cycle, and warranty strategies are involved in the overall plan, the core decision reflects product mix management.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -431,12 +431,12 @@
  {
   "question": "A furniture retailer implements a detailed grading system for wood quality, finish durability, and cushion firmness to help customers evaluate upholstered sofas. How do these standards and grades function within the retailer's product/service management approach?",
   "options": [
-   "They communicate objective quality attributes to consumers, reduce purchase uncertainty, and support positioning the brand as a quality-focused provider",
    "They define the product mix boundaries by identifying which wood types and fill materials qualify for inclusion in the premium product line",
    "They establish warranty parameters that define coverage duration and replacement procedures for defective components",
+   "They communicate objective quality attributes to consumers, reduce purchase uncertainty, and support positioning the brand as a quality-focused provider",
    "They determine product life cycle progression by measuring when items transition from growth to maturity based on quality performance data"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Grades and standards serve as marketing and quality-communication tools that help customers understand product attributes, reduce decision risk, and reinforce brand positioning around quality. While warranties, life cycle management, and product mix decisions use quality information, the primary function of grading systems is transparency and quality positioning.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -444,12 +444,12 @@
  {
   "question": "A software company offers a basic subscription tier with limited support and a premium tier with 24/7 technical assistance and advanced features. Both tiers carry identical product liability statements but different service-level guarantees. Which product/service management elements are being strategically differentiated here?",
   "options": [
-   "Product branding and warranty structure, using service guarantees to build brand equity while maintaining consistent liability protection",
    "Product life cycle stages and grading standards, positioning each tier at different maturity phases with quality assurance matched to price points",
    "Product positioning and the product mix, creating distinct service bundles targeted at different customer segments with varying need levels",
-   "Service guarantees and product scope, expanding the scope of support offerings while narrowing the product liability to protect profitability"
+   "Service guarantees and product scope, expanding the scope of support offerings while narrowing the product liability to protect profitability",
+   "Product branding and warranty structure, using service guarantees to build brand equity while maintaining consistent liability protection"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The company is using product mix strategy (offering multiple tiers) and positioning (targeting different customer segments) to address different market needs while maintaining the same core product. Warranties/guarantees are involved, but the core strategic move is differentiating the product mix and how each tier is positioned in the marketplace.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -457,12 +457,12 @@
  {
   "question": "A manufacturer introduces a product in the growth phase of its life cycle and must decide between expanding distribution channels and increasing promotional spending. Which factor most directly influences how product life cycle stage affects this marketing decision?",
   "options": [
-   "The competitive intensity and market saturation level at each stage determines the optimal allocation between distribution and promotion investments",
    "Consumer awareness and willingness to try the product varies by life cycle stage, making promotion more effective during introduction and distribution more critical during growth",
    "Retailer demand for inventory and shelf space fluctuates across life cycle stages, requiring marketers to adjust their channel strategy accordingly",
+   "The competitive intensity and market saturation level at each stage determines the optimal allocation between distribution and promotion investments",
    "The product's profit margin and cash flow position at different life cycle stages constrains which marketing activities the firm can afford to prioritize"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "During introduction, consumers lack awareness, so promotion is essential to build trial. During growth, the market is ready to buy, making distribution expansion critical to capture demand. The other options describe real constraints but do not directly explain how life cycle stage shapes the introduction-to-growth decision.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -470,12 +470,12 @@
  {
   "question": "A coffee roaster uses grades and standards to differentiate its product line, assigning different roast levels to different market segments. How do grades and standards function in this marketing context?",
   "options": [
-   "Grades and standards reduce production costs by establishing minimum acceptable quality thresholds, enabling the roaster to compete on price rather than feature differentiation",
-   "Grades and standards simplify the supply chain by standardizing roast times and temperatures across all product lines, improving operational efficiency and inventory management",
    "Grades and standards ensure compliance with government labeling regulations and food safety requirements, protecting the roaster from legal liability in all markets",
-   "Grades and standards communicate quality consistency and define product attributes, allowing the roaster to position distinct offerings and help consumers select based on preference"
+   "Grades and standards communicate quality consistency and define product attributes, allowing the roaster to position distinct offerings and help consumers select based on preference",
+   "Grades and standards reduce production costs by establishing minimum acceptable quality thresholds, enabling the roaster to compete on price rather than feature differentiation",
+   "Grades and standards simplify the supply chain by standardizing roast times and temperatures across all product lines, improving operational efficiency and inventory management"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Grades and standards in marketing communicate product attributes and quality levels, enabling positioning and helping consumers make informed choices. While the other options describe legitimate business functions, they do not reflect how grades and standards are primarily used as marketing tools to differentiate and position products.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -483,12 +483,12 @@
  {
   "question": "A software company offers both a limited warranty covering defects for 12 months and an extended guarantee program covering accidental damage for 3 years at an additional cost. How do these two tools serve different purposes in product/service management?",
   "options": [
-   "The warranty establishes baseline consumer confidence in product reliability and builds trust, while the guarantee differentiates the product in a competitive market and creates an additional revenue stream",
-   "The warranty protects the manufacturer from liability claims, while the guarantee provides customers peace of mind and generates additional revenue through the extended service option",
+   "The warranty is legally required by consumer protection laws, while the guarantee is a voluntary marketing choice that increases customer satisfaction ratings",
    "The warranty reduces return rates by addressing manufacturing defects early, while the guarantee extends product life and delays customer replacement purchases",
-   "The warranty is legally required by consumer protection laws, while the guarantee is a voluntary marketing choice that increases customer satisfaction ratings"
+   "The warranty establishes baseline consumer confidence in product reliability and builds trust, while the guarantee differentiates the product in a competitive market and creates an additional revenue stream",
+   "The warranty protects the manufacturer from liability claims, while the guarantee provides customers peace of mind and generates additional revenue through the extended service option"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Warranties establish that the product meets basic quality standards and build consumer confidence. Guarantees go beyond legal requirements to differentiate the offering and create competitive advantage while generating incremental revenue. The other options mischaracterize the primary marketing functions of these tools.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -496,8 +496,8 @@
  {
   "question": "A consumer goods company manages a product mix that includes budget, mid-tier, and premium versions of the same base product, sold through different retail channels. What strategic consideration most directly relates to managing this product mix?",
   "options": [
-   "The product mix should consolidate production processes across all variants to achieve economies of scale and reduce per-unit manufacturing and distribution costs",
    "The product mix should prioritize the premium version because it generates the highest profit margin per unit and builds stronger brand perception among core consumers",
+   "The product mix should consolidate production processes across all variants to achieve economies of scale and reduce per-unit manufacturing and distribution costs",
    "The product mix requires uniform branding and messaging across all variants to maintain brand recognition and prevent consumer confusion in the marketplace",
    "The product mix must ensure each variant has distinct features and pricing that reduce cannibalization while appealing to different customer segments and maximizing overall revenue"
   ],
@@ -509,12 +509,12 @@
  {
   "question": "A hotel chain positions its properties using factors including amenities, price point, location type, and target guest profile. How do these positioning factors interact to shape overall product/service management decisions?",
   "options": [
-   "Positioning factors are primarily cosmetic choices that differentiate the brand visually but do not affect the core product attributes or service delivery standards",
-   "Positioning factors influence only external marketing and branding, while operational decisions about housekeeping, maintenance, and guest services remain independent",
+   "Positioning factors determine which market segments the property targets and create a coherent identity that guides decisions about facility upgrades, service standards, and marketing communication",
    "Positioning factors establish the property's operational budget and staffing levels, with amenities and service standards scaled to match the price point and location",
-   "Positioning factors determine which market segments the property targets and create a coherent identity that guides decisions about facility upgrades, service standards, and marketing communication"
+   "Positioning factors are primarily cosmetic choices that differentiate the brand visually but do not affect the core product attributes or service delivery standards",
+   "Positioning factors influence only external marketing and branding, while operational decisions about housekeeping, maintenance, and guest services remain independent"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Product/service positioning factors—amenities, price, location, target guest—define the overall value proposition and drive all downstream management decisions about service delivery, facility investment, and brand communication. The other options either overemphasize budget constraints, falsely separate marketing from operations, or mischaracterize positioning as superficial.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -523,11 +523,11 @@
   "question": "A company introduces a new smartphone with advanced features, achieves strong market penetration within two years, then experiences declining sales as competitors launch similar products. Which stage of the product life cycle is most directly affecting the marketing decisions the company must make during this period?",
   "options": [
    "Growth stage, demanding emphasis on product differentiation and competitive pricing to maintain market share against emerging rivals",
-   "Decline stage, calling for harvest strategies and potential product reformulation to extend the product's competitive relevance",
    "Introduction stage, requiring aggressive promotional spending and selective distribution to build brand awareness before competitors enter",
-   "Maturity stage, necessitating focus on cost reduction and promotional intensity to defend against substitutes and channel conflict"
+   "Maturity stage, necessitating focus on cost reduction and promotional intensity to defend against substitutes and channel conflict",
+   "Decline stage, calling for harvest strategies and potential product reformulation to extend the product's competitive relevance"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The scenario describes a mature product facing typical maturity-stage pressures: strong initial adoption followed by competitive saturation and declining sales. During maturity, companies must intensify promotions and reduce costs to survive margin compression. Growth stage focuses on expansion, not yet facing this level of competitive pressure; decline involves abandoning or heavily reformulating products, which is premature here.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -537,10 +537,10 @@
   "options": [
    "Warranty and guarantee strength, because the premium brand offers extended freshness guarantees and replacement assurances that reduce consumer perceived risk",
    "Product mix strategy, where the premium brand bundles its canned vegetables with complementary products to create a perceived value-add",
-   "Brand perception and reputation, cultivated through consistent messaging about quality, heritage, or sustainability that justifies premium pricing despite functional equivalence",
-   "Differentiation through grade and standard compliance, since one brand meets organic certification while the other meets conventional safety standards"
+   "Differentiation through grade and standard compliance, since one brand meets organic certification while the other meets conventional safety standards",
+   "Brand perception and reputation, cultivated through consistent messaging about quality, heritage, or sustainability that justifies premium pricing despite functional equivalence"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "When two functionally identical products carry different prices, the gap is almost always attributable to branding—perception, trust, and positioning—not to standards compliance or warranties (which the stem notes are equivalent). Brand positioning shapes how consumers perceive value regardless of objective product similarities. Product bundling and warranty differences are explicitly ruled out by the scenario.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -548,12 +548,12 @@
  {
   "question": "A retailer uses USDA Prime, Choice, and Select beef grades to organize its meat department into three price-tiered sections. A manufacturer of industrial lubricants, by contrast, establishes technical specifications for viscosity, flash point, and oxidation stability rather than grades. What is the primary distinction in how these companies are using standards and grades to support their marketing strategies?",
   "options": [
-   "The retailer establishes grades to comply with federal food safety law, while the manufacturer establishes standards to meet customer-specific contractual requirements for engine performance",
    "The retailer uses grades to simplify consumer choice and segment demand by price sensitivity, while the manufacturer uses standards to ensure product consistency and communicate performance to industrial buyers",
-   "The retailer implements grades to guarantee meat freshness and reduce waste, while the manufacturer applies standards to qualify for industry certifications and avoid liability claims",
-   "The retailer employs grades to differentiate its private-label brand from competitors, while the manufacturer uses standards to justify premium pricing in a commodity market"
+   "The retailer employs grades to differentiate its private-label brand from competitors, while the manufacturer uses standards to justify premium pricing in a commodity market",
+   "The retailer establishes grades to comply with federal food safety law, while the manufacturer establishes standards to meet customer-specific contractual requirements for engine performance",
+   "The retailer implements grades to guarantee meat freshness and reduce waste, while the manufacturer applies standards to qualify for industry certifications and avoid liability claims"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Grades (like USDA beef categories) are used in consumer markets to enable comparison and segmentation by quality and price; standards are technical specifications used in B2B and industrial markets to communicate measurable performance criteria. The retailer grades visible consumer goods for immediate choice; the lubricant manufacturer specifies performance to industrial buyers who need reproducibility and reliability.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -562,11 +562,11 @@
   "question": "A furniture manufacturer offers a 10-year structural warranty on its sofas but only a 2-year fabric durability guarantee, and it clearly discloses that fabric wear from normal use is not covered under either protection. How do these warranty and guarantee terms reflect the company's approach to product/service management?",
   "options": [
    "The terms establish a product mix strategy by encouraging customers to purchase additional fabric protection plans and frame reinforcement services alongside the base sofa",
-   "The terms satisfy legal requirements for consumer product safety while using the limited fabric guarantee to shift maintenance responsibility entirely to the end user",
    "The terms acknowledge different failure modes and customer expectations, allocating company liability to the structural elements most critical to product value while setting realistic expectations for wear items",
+   "The terms satisfy legal requirements for consumer product safety while using the limited fabric guarantee to shift maintenance responsibility entirely to the end user",
    "The terms position the sofa as a premium product by using extended warranties as a branding tool to signal superior craftsmanship and reduce perceived purchase risk"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The differentiated warranty lengths reflect a realistic assessment of what fails first and what represents genuine value: frames last longer than fabrics, and the explicit exclusion of normal wear is honest product management. This is not primarily a branding tactic, product bundling strategy, or risk-shifting—it's a transparent communication of where the manufacturer takes responsibility and where the customer owns usage outcomes.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -574,12 +574,12 @@
  {
   "question": "A beverage company manufactures cola, lemonade, and bottled water under a single brand umbrella, pricing them at $2.49, $1.99, and $1.49 per bottle respectively. The company simultaneously introduces a premium craft soda line under a separate brand at $3.49, targeting a different consumer segment. Which aspect of the company's product/service management strategy is best illustrated by this portfolio structure?",
   "options": [
-   "Product life cycle management, placing mature beverages like cola at lower margins to fund the introduction of growth-stage products like craft sodas into emerging markets",
-   "Grade and standard implementation, using tiered pricing to signal quality differences and allow consumers to self-select based on federal beverage composition standards",
    "Product mix depth, demonstrated by multiple price points and flavor varieties within a single brand that maximize shelf space and appeal to various income levels",
-   "Product mix breadth and brand positioning, where distinct brands target different market segments while a core brand portfolio addresses diverse beverage needs and price sensitivities"
+   "Grade and standard implementation, using tiered pricing to signal quality differences and allow consumers to self-select based on federal beverage composition standards",
+   "Product mix breadth and brand positioning, where distinct brands target different market segments while a core brand portfolio addresses diverse beverage needs and price sensitivities",
+   "Product life cycle management, placing mature beverages like cola at lower margins to fund the introduction of growth-stage products like craft sodas into emerging markets"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The scenario shows breadth (cola, lemonade, water as diverse product categories) within the core brand and a separate premium brand targeting a different positioning. This illustrates how a company manages multiple brands and price tiers to serve different customer segments—the essence of product mix breadth and strategic positioning. Depth refers to variations within one product; grades apply to quality standardization, not pricing strategy; the life-cycle claim ignores the intentional segmentation strategy.",
   "difficulty": "hard",
   "knowledge_area": "Product/Service Management"
@@ -588,8 +588,8 @@
   "question": "A manufacturer introduces a new smartphone model, establishes quality grades for components, and creates a warranty covering defects for two years. Which of these activities primarily reflects product/service management's role in defining market expectations?",
   "options": [
    "Using grades and standards to communicate quality levels to consumers while establishing warranties that specify coverage limits and duration",
-   "Positioning the product against competitor offerings by adjusting the price point and selecting distribution channels for market reach",
    "Managing the product life cycle stage by collecting customer feedback and planning for eventual product discontinuation or replacement",
+   "Positioning the product against competitor offerings by adjusting the price point and selecting distribution channels for market reach",
    "Identifying the target market segment and conducting promotional campaigns to build brand awareness across multiple media platforms"
   ],
   "correct_index": 0,
@@ -600,12 +600,12 @@
  {
   "question": "A consumer goods company manages a product mix that includes budget, mid-tier, and premium versions of the same basic product, each with different branding and positioning strategies. What is the primary strategic benefit of this approach to product mix management?",
   "options": [
-   "Creating multiple entry points for different customer segments while maintaining distinct brand identities and price positioning across the portfolio",
    "Expanding market share by ensuring that each tier captures competitors' customers through aggressive price-based promotional tactics",
+   "Creating multiple entry points for different customer segments while maintaining distinct brand identities and price positioning across the portfolio",
    "Reducing overall research and development costs by applying the same product formulation and quality standards to all market segments simultaneously",
    "Simplifying supply chain logistics by using identical manufacturing processes across all three product tiers with only cosmetic packaging differences"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "A multi-tiered product mix allows a company to serve diverse customer segments with appropriate price points and brand positioning, maximizing market penetration across income levels. The other options misrepresent the strategy: identical processes would undermine positioning, uniform R&D doesn't reflect tiered development, and price wars alone don't constitute strategic product mix management.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -615,10 +615,10 @@
   "options": [
    "Reducing production capacity immediately, consolidating the product mix by eliminating related offerings, and shifting all marketing budget to emerging product categories",
    "Introducing the product into entirely new geographic markets with identical branding and positioning while maintaining premium pricing from the introduction stage",
-   "Refining product features through minor innovation, adjusting positioning to emphasize durability and reliability, and exploring new distribution channels to sustain market presence",
-   "Launching extensive new advertising campaigns with celebrity endorsements, significantly increasing the price point, and discontinuing all after-sale customer support services"
+   "Launching extensive new advertising campaigns with celebrity endorsements, significantly increasing the price point, and discontinuing all after-sale customer support services",
+   "Refining product features through minor innovation, adjusting positioning to emphasize durability and reliability, and exploring new distribution channels to sustain market presence"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "In maturity, companies typically refine features, reposition to emphasize lasting value, and find new distribution to extend the cycle—not through dramatic repricing or service cuts. The other options either maintain introduction-stage strategies (incorrect for maturity), make premature or unnecessary eliminations, or fail to address the specific challenges of declining growth with appropriate positioning adjustments.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"
@@ -626,8 +626,8 @@
  {
   "question": "A software company uses industry certifications, performance benchmarks, and third-party testing results as key elements of its product positioning strategy. How do these standards-based positioning tools relate to the broader scope of product/service management?",
   "options": [
-   "Industry certifications primarily support promotional messaging and have minimal impact on actual product development, lifecycle management, or customer satisfaction outcomes",
    "Standards-based positioning is most effective when applied only during the growth stage of the product life cycle and becomes less relevant in mature market conditions",
+   "Industry certifications primarily support promotional messaging and have minimal impact on actual product development, lifecycle management, or customer satisfaction outcomes",
    "Positioning based on standards is a separate marketing function that operates independently from product management and does not influence product design or warranty policies",
    "Standards and certifications serve as credibility anchors in positioning by translating quality grades into measurable, comparable claims that differentiate the product in the competitive marketplace"
   ],
@@ -639,12 +639,12 @@
  {
   "question": "A retailer notices that two competing brands occupy nearly identical price points, feature comparable warranty coverage, and target the same customer demographic, yet one brand maintains significantly higher sales. The most likely explanation rooted in product/service management is that the stronger-performing brand has achieved superior positioning through which factors?",
   "options": [
+   "Earlier introduction timing into the market, resulting in higher customer familiarity and established supply chain relationships that competitors cannot replicate",
    "A broader product mix portfolio that includes budget and premium variants, enabling the brand to capture a wider range of price-sensitive customer segments",
    "Brand identity, perceived quality differentiation, and consistent messaging about product attributes that resonate more strongly with the target segment's values and expectations",
-   "Earlier introduction timing into the market, resulting in higher customer familiarity and established supply chain relationships that competitors cannot replicate",
    "Lower production costs that allow for greater advertising expenditure and more frequent promotional discounts throughout the product's life cycle stages"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "When price and warranty are equal, positioning through brand identity, perceived quality, and messaging alignment become the differentiators in product/service management. Cost structure, product mix breadth, and entry timing are factors in competition but don't explain why two products with identical price and warranty perform differently—perception and brand positioning do.",
   "knowledge_area": "Product/Service Management",
   "difficulty": "hard"

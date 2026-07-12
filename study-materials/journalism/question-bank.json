@@ -2,12 +2,12 @@
  {
   "question": "A journalist investigating a corporate merger discovers that a former employee and a current board member both have relevant but conflicting accounts of the decision-making process. Which principle best guides how the journalist should weigh these sources in determining newsworthiness?",
   "options": [
-   "Source credibility and proximity to the event determine the hierarchy of reporting, but both perspectives contribute to understanding the full scope of the story's impact.",
-   "The current board member's account should take precedence because holding an official position makes their testimony more authoritative than a former employee's.",
    "Both sources are equally valid regardless of their position, and the journalist must present them without any attempt to verify which account aligns with documented evidence.",
+   "The current board member's account should take precedence because holding an official position makes their testimony more authoritative than a former employee's.",
+   "Source credibility and proximity to the event determine the hierarchy of reporting, but both perspectives contribute to understanding the full scope of the story's impact.",
    "Former employees are inherently biased and should be excluded from the reporting process to maintain journalistic objectivity and avoid misleading the audience."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Strong journalism relies on understanding source roles and reliability while recognizing that multiple perspectives—especially from people with different vantage points—strengthen reporting. A former employee may have direct knowledge, while a current board member has institutional perspective; neither should be dismissed outright. The journalist's role is to evaluate source credibility within context, not to exclude voices or treat all sources as equally reliable without verification.",
   "knowledge_area": "Basic Journalism Principles",
   "difficulty": "hard"
@@ -15,12 +15,12 @@
  {
   "question": "A breaking news story involves a local school closure due to an infrastructure failure. A reporter has confirmed the basic facts but lacks detail on the timeline of when the problem was discovered and who authorized the closure decision. How do the foundational news-gathering questions help prioritize what information is still missing?",
   "options": [
+   "The 'where' and 'what' questions are sufficient because readers primarily need to know the location and nature of the closure, not the decision-making process.",
    "The 'when' and 'who' questions reveal gaps in temporal sequence and decision-making authority that are essential to explaining causation and responsibility in the story.",
    "All six questions carry equal weight, so the reporter should gather information on all of them before filing any story to ensure completeness.",
-   "The 'where' and 'what' questions are sufficient because readers primarily need to know the location and nature of the closure, not the decision-making process.",
    "The 'why' and 'how' questions are most critical because they explain the technical nature of the failure rather than administrative or logistical details."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The foundational 'who, what, when, where, why, and how' framework reveals which gaps undermine story clarity. Here, 'when' (timeline of discovery) and 'who' (decision-maker) are critical to explaining causation and accountability—readers cannot fully understand the story without understanding the sequence and authority behind the decision. The other questions provide context, but these two directly address the narrative's integrity.",
   "knowledge_area": "Basic Journalism Principles",
   "difficulty": "hard"
@@ -28,12 +28,12 @@
  {
   "question": "Two journalists debate whether a story about a new community initiative meets news value standards. One argues it is newsworthy because it represents change and directly affects residents; the other questions whether the story has sufficient impact or timeliness given competing events. What principle explains why both journalists' reasoning reflects underlying constants in newsworthiness, despite their different conclusions?",
   "options": [
-   "Only impact and timeliness are true constants in journalism; proximity is outdated and explains why the journalists reached different conclusions about the same story.",
-   "News values change fundamentally with each major societal shift, so comparing two journalists' assessments proves that no constants guide newsworthiness decisions.",
    "News values such as proximity, impact, and timeliness remain consistent frameworks for evaluation even when journalists weigh them differently in context, allowing legitimate disagreement about application without disagreement about the principles themselves.",
-   "Newsworthiness is entirely subjective and varies based on each journalist's personal interpretation, so no constant principles exist to guide the evaluation process."
+   "Newsworthiness is entirely subjective and varies based on each journalist's personal interpretation, so no constant principles exist to guide the evaluation process.",
+   "News values change fundamentally with each major societal shift, so comparing two journalists' assessments proves that no constants guide newsworthiness decisions.",
+   "Only impact and timeliness are true constants in journalism; proximity is outdated and explains why the journalists reached different conclusions about the same story."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "While journalists may weigh and apply news values differently based on context, the underlying criteria—impact, timeliness, proximity, prominence, and human interest—remain constant across eras and editorial decisions. The disagreement between these journalists reflects different judgments about how to balance and prioritize these fixed values, not a lack of shared principles. This constancy allows journalism to maintain coherence even as societal contexts evolve.",
   "knowledge_area": "Basic Journalism Principles",
   "difficulty": "hard"
@@ -41,9 +41,9 @@
  {
   "question": "A journalist is opening a story about a local election with the sentence: 'Voters will decide the future of the school board on November 5th.' A senior editor returns the draft, noting that while the sentence answers some foundational questions, it fails to function as a strong lead. What makes this sentence weak as a lead despite its factual accuracy?",
   "options": [
-   "The sentence uses too many facts and should be simplified to a single question in order to comply with journalistic lead standards.",
    "The sentence focuses on voters rather than candidates, which violates the principle that leads must always center on individual actors rather than collective decisions.",
    "The sentence is too short and requires additional descriptive language about the historical context of school board elections before readers can understand its importance.",
+   "The sentence uses too many facts and should be simplified to a single question in order to comply with journalistic lead standards.",
    "The sentence identifies 'when' and 'what' but omits 'who' is running and the central issue at stake, leaving readers without the specific information needed to understand the story's significance or relevance to their lives."
   ],
   "correct_index": 3,
@@ -56,10 +56,10 @@
   "options": [
    "Journalism is the rapid reporting of breaking events regardless of verification status, prioritizing speed to publication over accuracy and source evaluation.",
    "Journalism is any communication that informs the public, including advertising, public relations, and entertainment content presented alongside news.",
-   "Journalism is the collection of stories and facts that journalists report on for newspapers, television, and online platforms without regard to the method.",
-   "Journalism is the systematic gathering, verification, and presentation of factual information about matters of public interest through established channels with editorial judgment and accountability to audiences."
+   "Journalism is the systematic gathering, verification, and presentation of factual information about matters of public interest through established channels with editorial judgment and accountability to audiences.",
+   "Journalism is the collection of stories and facts that journalists report on for newspapers, television, and online platforms without regard to the method."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "A complete definition of journalism must include verification, public interest focus, established editorial channels, and accountability—elements that separate journalism from mere information sharing, propaganda, or entertainment. The mentor's challenge points out that a definition limited to 'gathering and presenting factual information' could describe any activity that shares true statements, missing journalism's distinctive commitment to verification, democratic purpose, and institutional responsibility. The refined definition captures these distinguishing features.",
   "knowledge_area": "Basic Journalism Principles",
   "difficulty": "hard"
@@ -69,8 +69,8 @@
   "options": [
    "Loss of classified advertising to online platforms and higher operational expenses for maintaining digital presence alongside print production",
    "Reduction in subscriber fees and decreased demand for investigative reporting from local news audiences",
-   "Shift in reader demographics to older audiences and rising costs for newsprint materials and distribution logistics",
-   "Competition from radio broadcasting and elimination of syndication agreements with national news organizations"
+   "Competition from radio broadcasting and elimination of syndication agreements with national news organizations",
+   "Shift in reader demographics to older audiences and rising costs for newsprint materials and distribution logistics"
   ],
   "correct_index": 0,
   "explanation": "The correct answer identifies two interconnected economic realities: the migration of high-margin classified ads to platforms like Craigslist and Facebook, combined with the capital and operational expenses of maintaining dual print and digital operations. The other options either misidentify revenue sources (syndication, subscriber fees are not the primary driver of newspaper economics) or focus on supply-side costs without addressing the fundamental advertising revenue collapse.",
@@ -80,12 +80,12 @@
  {
   "question": "A digital-native news startup is evaluating multiple funding models: venture capital investment with growth-focused timelines, philanthropic foundation grants tied to specific investigative projects, reader subscription revenue, and programmatic display advertising. Which funding source typically creates the most tension with editorial independence in a journalism organization?",
   "options": [
+   "Foundation grants restricted to particular investigative topics, limiting newsroom flexibility to cover emerging stories outside grant parameters",
    "Venture capital funding that demands rapid audience growth and profitability within 3-5 years, potentially pressuring editorial choices toward sensationalism",
    "Reader subscription revenue that incentivizes content optimized for subscriber preferences rather than public interest journalism",
-   "Programmatic display advertising dependent on traffic metrics, encouraging clickbait headlines and engagement-maximizing editorial decisions",
-   "Foundation grants restricted to particular investigative topics, limiting newsroom flexibility to cover emerging stories outside grant parameters"
+   "Programmatic display advertising dependent on traffic metrics, encouraging clickbait headlines and engagement-maximizing editorial decisions"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "While all four funding sources create editorial pressures, venture capital's demand for rapid scaling and exit profitability typically forces the broadest distortion of editorial judgment—requiring growth metrics that often conflict with long-form, investigative, or locally-focused reporting. Foundation grants restrict scope but don't reorient the entire mission; subscriptions and programmatic ads create specific incentive misalignments but operate within narrower editorial domains than VC pressure for explosive growth.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -95,10 +95,10 @@
   "options": [
    "Newsroom salaries, because cutting experienced reporters and editors diminishes investigative capacity and content credibility most visibly",
    "Distribution costs, because reducing print editions and optimizing delivery networks directly decreases audience size and advertising inventory",
-   "Digital infrastructure expenses, because eliminating backend systems reduces reporting capability and audience reach while appearing to save money",
-   "Technology platforms, because migrating to cheaper content management systems introduces operational disruptions and staff retraining requirements"
+   "Technology platforms, because migrating to cheaper content management systems introduces operational disruptions and staff retraining requirements",
+   "Digital infrastructure expenses, because eliminating backend systems reduces reporting capability and audience reach while appearing to save money"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Digital infrastructure is the hardest expense to cut because it's both invisible to readers and essential—eliminating servers or analytics tools doesn't immediately appear cost-justified to stakeholders, yet it degrades reporting capability, audience metrics, and competitive positioning. Newsroom cuts are painful but transparent; distribution cuts obviously shrink reach; technology migrations have visible costs. Infrastructure cuts create a false sense of savings while systematically undermining journalism operations.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -106,12 +106,12 @@
  {
   "question": "Social media platforms have fundamentally altered journalism economics by becoming distribution channels, audience measurement tools, and advertising competitors simultaneously. Which of these describes the primary economic paradox this creates for traditional news organizations?",
   "options": [
-   "Platforms increase production costs through demand for constant content updates while reducing subscription revenue from readers who access news through social feeds",
-   "Platforms provide free distribution and audience analytics while capturing advertising revenue that previously funded journalism, forcing publications to compete on algorithms rather than editorial quality",
    "Platforms employ thousands of former journalists, reducing talent availability and wage competitiveness while fragmenting the audience across competing networks",
-   "Platforms subsidize news organizations through content licensing fees while simultaneously stealing audiences through algorithmic recommendations favoring entertainment over reporting"
+   "Platforms subsidize news organizations through content licensing fees while simultaneously stealing audiences through algorithmic recommendations favoring entertainment over reporting",
+   "Platforms provide free distribution and audience analytics while capturing advertising revenue that previously funded journalism, forcing publications to compete on algorithms rather than editorial quality",
+   "Platforms increase production costs through demand for constant content updates while reducing subscription revenue from readers who access news through social feeds"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "The core paradox is that Facebook and Google offer publishers free distribution and detailed audience data—making them essential to journalism reach—while simultaneously monetizing that audience through advertising that newspapers once controlled. This creates structural dependency: publications need platforms for distribution but lose revenue control. The other options either oversimplify platform economics or misstate the direction of financial flows.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -119,12 +119,12 @@
  {
   "question": "A journalism career progression typically moves through multiple salary tiers and roles: entry-level reporters ($35,000–$45,000), mid-career specialized reporters ($55,000–$75,000), senior reporters/editors ($80,000–$110,000), and management/executive positions ($120,000+). What economic reality most significantly constrains journalists' advancement through these tiers in the current media landscape?",
   "options": [
-   "Newsroom contraction and consolidation have reduced the number of senior positions and specialized reporting beats, creating bottlenecks that limit advancement opportunities even for qualified mid-career journalists",
    "Freelance and contract work has become the dominant employment model, eliminating the stability needed to sustain career progression and professional development timelines",
-   "Competition from cable news networks and national digital outlets attracts top talent to coastal cities, creating regional salary disparities that devalue local journalism experience",
-   "Digital advertising rates are lower than print advertising rates, reducing total newsroom budgets and preventing salary increases that historically rewarded experience"
+   "Newsroom contraction and consolidation have reduced the number of senior positions and specialized reporting beats, creating bottlenecks that limit advancement opportunities even for qualified mid-career journalists",
+   "Digital advertising rates are lower than print advertising rates, reducing total newsroom budgets and preventing salary increases that historically rewarded experience",
+   "Competition from cable news networks and national digital outlets attracts top talent to coastal cities, creating regional salary disparities that devalue local journalism experience"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Structural contraction—the elimination of mid-size local papers and consolidation into large chains—has dramatically reduced the total number of senior editing and specialized reporting positions. Even talented mid-career journalists cannot advance because there are fewer rungs on the ladder, not because individual salaries are too low. The other factors (lower CPMs, freelancing prevalence, geographic competition) affect compensation but don't explain the bottleneck that prevents advancement itself.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -133,9 +133,9 @@
   "question": "A journalist writing a feature article shifts from third-person narrative to first-person reflection when describing a source's emotional response. Which perspective choice best serves this narrative strategy?",
   "options": [
    "First-person creates intimacy and authenticity when quoting the source's thoughts, while third-person maintains editorial separation in analysis",
+   "Third-person establishes authority throughout, and first-person should be reserved for opinion pieces rather than feature reporting",
    "Third-person provides necessary distance while first-person inserts the journalist's personal bias, undermining credibility in a feature context",
-   "First-person maintains objectivity while allowing readers to experience the source's feelings directly through their own voice and interpretation",
-   "Third-person establishes authority throughout, and first-person should be reserved for opinion pieces rather than feature reporting"
+   "First-person maintains objectivity while allowing readers to experience the source's feelings directly through their own voice and interpretation"
   ],
   "correct_index": 0,
   "explanation": "Hard news and features use third-person for objectivity, but first-person can be strategically employed in features to create reader connection when attributed to sources or used reflexively. The answer correctly identifies that first-person builds intimacy while third-person preserves journalistic distance—a key distinction in perspective application. The other options either misstate the relationship between perspective and credibility or misapply perspective conventions.",
@@ -145,12 +145,12 @@
  {
   "question": "When abbreviating a source's academic credential (Ph.D., M.D., B.A.) in a news article, which principle governs correct usage?",
   "options": [
-   "Academic abbreviations always omit periods when used in bylines or attribution but include periods in parenthetical references to sources",
-   "Periods in abbreviations are optional in modern journalism, but consistency within an article demands the same style be applied to all credential types",
+   "Credentials after a name require periods in abbreviations and should be set off by commas; those before a name typically appear without punctuation",
    "Academic abbreviations should include periods and appear before the source's name with a comma, following formal letter-writing convention",
-   "Credentials after a name require periods in abbreviations and should be set off by commas; those before a name typically appear without punctuation"
+   "Academic abbreviations always omit periods when used in bylines or attribution but include periods in parenthetical references to sources",
+   "Periods in abbreviations are optional in modern journalism, but consistency within an article demands the same style be applied to all credential types"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Modern journalism style (AP, Chicago) treats abbreviation punctuation as a consistency matter rather than an absolute rule, though AP favors periods. The key principle is that whatever style is chosen must be applied uniformly across an article. The other options impose outdated formal rules or create false distinctions that don't reflect actual journalism standards.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -158,12 +158,12 @@
  {
   "question": "A digital news outlet formats a breaking story for web, while a print newspaper covers the same event the next day. How do media format differences typically influence headline structure and article organization?",
   "options": [
+   "Web headlines prioritize keyword density and searchability with longer constructions; print headlines use shorter, punchier language for scannability and space constraints",
    "Both formats use identical headline and lede structures, but web requires shorter paragraphs and hyperlinks, while print requires longer paragraphs for readability",
    "Web formats demand immediate context and searchable keywords in headlines; print format permits delayed ledes and headline creativity due to reader expectations",
-   "Web headlines prioritize keyword density and searchability with longer constructions; print headlines use shorter, punchier language for scannability and space constraints",
    "Print articles follow the inverted pyramid strictly to fit column width, while web stories can use narrative structure because scrolling allows flexible pacing"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Web journalism emphasizes search optimization and immediate information retrieval in headlines, while print allows more creative wordplay because readers encounter it physically and expect different pacing. The inverted pyramid applies to both, but print's fixed space and web's scanning behavior shape headline and ledes differently. The other options either reverse the emphasis or falsely claim identical structures.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -171,12 +171,12 @@
  {
   "question": "A sports journalist writes: 'The team's defense, like a fortress wall, stood against the onslaught of opposing drives.' Which media terminology does this sentence primarily employ, and why is that choice effective in sports journalism?",
   "options": [
-   "Alliteration using repeated 's' sounds reinforces the metaphorical wall imagery and creates rhythmic momentum that mirrors the physical action being described",
    "Simile creates direct comparison and appeals to readers' visual understanding of defensive strength through an everyday reference point familiar to most audiences",
-   "Onomatopoeia in 'onslaught' mimics the sound of impact and combines with the fortress metaphor to create vivid sensory detail about defensive performance",
-   "Metaphor establishes implicit comparison and intensifies emotion by merging the team's identity with protection, avoiding the distancing effect of 'like' or 'as'"
+   "Alliteration using repeated 's' sounds reinforces the metaphorical wall imagery and creates rhythmic momentum that mirrors the physical action being described",
+   "Metaphor establishes implicit comparison and intensifies emotion by merging the team's identity with protection, avoiding the distancing effect of 'like' or 'as'",
+   "Onomatopoeia in 'onslaught' mimics the sound of impact and combines with the fortress metaphor to create vivid sensory detail about defensive performance"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The sentence uses 'like a fortress wall'—a textbook simile—which works in sports journalism because it offers an accessible, concrete comparison readers instantly visualize. While metaphor could work here, the presence of 'like' makes this definitively a simile. The other options identify real techniques but misname or misapply the primary device in this sentence.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -184,9 +184,9 @@
  {
   "question": "An arts critic writes: 'The soprano's voice soared, shimmered, and sparkled through the aria, while the orchestra swelled and surged beneath her.' Which combination of techniques strengthens this description?",
   "options": [
+   "Onomatopoeia in 'soared' and 'sparkled' paired with metaphorical 'swelled' language and alliterative 's' sounds create a cohesive sensory experience mirroring vocal and instrumental dynamics",
    "Simile linking voice qualities to natural phenomena, alliteration throughout, and onomatopoeia in orchestra sounds establish rhythm matching the musical composition itself",
    "Metaphor comparing the voice to light phenomena combined with alliteration in 'sw' sounds deepens the emotional resonance while the verb choices imply upward motion",
-   "Onomatopoeia in 'soared' and 'sparkled' paired with metaphorical 'swelled' language and alliterative 's' sounds create a cohesive sensory experience mirroring vocal and instrumental dynamics",
    "Alliteration in 's' and 'sp' sounds paired with onomatopoeia in 'surged' creates sonic texture that mirrors the musical language and reinforces the performance's energy"
   ],
   "correct_index": 3,
@@ -197,10 +197,10 @@
  {
   "question": "A journalist is investigating a story about corporate misconduct. A confidential source provides damaging evidence but requests anonymity to protect their employment. Which consideration MOST directly reflects the ethical tension between protecting the source and serving the public interest?",
   "options": [
-   "The journalist must disclose the source's identity to law enforcement if subpoenaed, balancing legal obligations against ethical shield laws that vary by jurisdiction.",
-   "The journalist must weigh the source's safety and livelihood against the public's right to know, considering whether shield laws and precedent provide adequate protection.",
    "The journalist should publish the source's name to establish credibility, since anonymous sources undermine reader trust in investigative reporting.",
-   "The journalist should delay publication until the source finds new employment, ensuring personal protection while maintaining the story's newsworthiness."
+   "The journalist must weigh the source's safety and livelihood against the public's right to know, considering whether shield laws and precedent provide adequate protection.",
+   "The journalist should delay publication until the source finds new employment, ensuring personal protection while maintaining the story's newsworthiness.",
+   "The journalist must disclose the source's identity to law enforcement if subpoenaed, balancing legal obligations against ethical shield laws that vary by jurisdiction."
   ],
   "correct_index": 1,
   "explanation": "Protecting confidential sources is a core journalistic ethical principle, but journalists must balance this against the public's right to information and their legal obligations. The third option correctly identifies the central ethical dilemma: weighing source protection against public interest while considering available legal safeguards like shield laws. The other options either oversimplify the tension or suggest practices that violate journalistic ethics.",
@@ -211,9 +211,9 @@
   "question": "The Pentagon Papers case and New York Times Co. v. United States established precedent regarding prior restraint and national security. How did this landmark decision influence journalists' understanding of their ethical and legal rights?",
   "options": [
    "It established that the government bears a heavy burden to prevent publication on national security grounds, strengthening journalists' ethical authority to publish information even when officials claim harm.",
-   "It mandated that journalists must cooperate with government agencies on classified materials, balancing press freedom with the state's duty to protect military operations.",
+   "It required journalists to verify classified information through official channels before publishing, ensuring accuracy while protecting sensitive intelligence sources.",
    "It confirmed that national security classifications always override First Amendment protections, requiring journalists to submit stories for government review before publication.",
-   "It required journalists to verify classified information through official channels before publishing, ensuring accuracy while protecting sensitive intelligence sources."
+   "It mandated that journalists must cooperate with government agencies on classified materials, balancing press freedom with the state's duty to protect military operations."
   ],
   "correct_index": 0,
   "explanation": "The Pentagon Papers case affirmed that prior restraint is unconstitutional and that the government must meet a high bar to prevent publication based on national security claims. This decision empowered journalists ethically and legally to pursue stories of public importance, even when officials oppose disclosure. The other options misrepresent the ruling by suggesting journalists must defer to government classification or submit to prior review.",
@@ -223,12 +223,12 @@
  {
   "question": "A journalist discovers that a government official has been using public funds for personal expenses. The official threatens legal action for defamation if the story is published. Under the actual malice standard established in New York Times Co. v. Sullivan, what is the journalist's ethical and legal position?",
   "options": [
-   "The journalist may publish the story if the evidence is truthful and gathered through responsible reporting methods, since public officials must meet the higher actual malice standard to prove defamation.",
    "The journalist must refrain from publishing to avoid litigation costs, prioritizing personal financial security over the story's public importance.",
-   "The journalist must submit the story to the official for approval before publication, allowing them to respond and potentially prevent false accusations.",
-   "The journalist should publish only if the official's conduct is unanimous among sources, ensuring absolute certainty before claiming involvement in wrongdoing."
+   "The journalist may publish the story if the evidence is truthful and gathered through responsible reporting methods, since public officials must meet the higher actual malice standard to prove defamation.",
+   "The journalist should publish only if the official's conduct is unanimous among sources, ensuring absolute certainty before claiming involvement in wrongdoing.",
+   "The journalist must submit the story to the official for approval before publication, allowing them to respond and potentially prevent false accusations."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "New York Times Co. v. Sullivan established that public officials suing for defamation must prove actual malice—that the journalist knew the statement was false or acted with reckless disregard for truth. This standard protects journalists who publish truthful information or report in good faith, even if the subject objects. The other options either misrepresent the actual malice standard or suggest practices (seeking approval, requiring unanimous sources) that contradict journalistic ethics.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -236,12 +236,12 @@
  {
   "question": "A journalist receives information from a source about widespread environmental violations at a manufacturing plant. The source admits they obtained the documents through unauthorized access to company servers. How should the journalist evaluate the ethical implications of publishing this information?",
   "options": [
+   "The journalist should refuse publication entirely, since using stolen documents makes the reporter complicit in the crime and violates professional ethics regardless of public importance.",
    "The journalist should publish only the source's allegations without reproducing the stolen documents, eliminating legal risk while still protecting the source's identity.",
    "The journalist should weigh the severity of the alleged violations, the authenticity of the documents, and the public health impact against the ethical concerns of using illegally obtained materials and potential legal liability.",
-   "The journalist should refuse publication entirely, since using stolen documents makes the reporter complicit in the crime and violates professional ethics regardless of public importance.",
    "The journalist should publish immediately without verification, since the documents came from an insider and therefore must be reliable and newsworthy."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Journalists face complex ethical decisions when presented with illegally obtained information. While the unauthorized access is problematic, journalists must weigh this against the public interest, verify authenticity, and consider their legal exposure. The third option correctly describes this balancing act. Option A is too absolute, Option B ignores verification obligations, and Option D incompletely addresses the ethical dilemma.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -249,12 +249,12 @@
  {
   "question": "During an investigation, a journalist learns that a prominent nonprofit leader has been embezzling funds meant for charitable programs. Before publishing, the journalist must consider how the story will impact vulnerable populations served by the nonprofit. Which ethical framework BEST guides this decision?",
   "options": [
-   "The journalist should evaluate the public's right to know about fraud against the real harms the story may cause to vulnerable clients, publishing responsibly while minimizing collateral damage to innocent populations.",
    "The journalist should publish the story only if the nonprofit's leadership voluntarily cooperates with the investigation and approves the narrative.",
    "The journalist should delay publication until the nonprofit's board can implement new financial controls, ensuring the organization survives and continues serving clients.",
-   "The journalist should publish immediately without considering consequences to beneficiaries, since accountability and transparency always take precedence in journalism ethics."
+   "The journalist should publish immediately without considering consequences to beneficiaries, since accountability and transparency always take precedence in journalism ethics.",
+   "The journalist should evaluate the public's right to know about fraud against the real harms the story may cause to vulnerable clients, publishing responsibly while minimizing collateral damage to innocent populations."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Ethical journalism requires balancing multiple responsibilities: accountability, public interest, and minimizing harm to innocent parties. The third option reflects this complexity by acknowledging that journalists must publish important truths while considering how to do so responsibly. Options A and D suggest deferring to institutional interests, while Option B ignores journalism's duty to minimize collateral damage to vulnerable populations.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -262,12 +262,12 @@
  {
   "question": "A regional newspaper has seen print advertising revenue decline by 40% over the past five years while digital subscriptions have grown modestly. Which of the following best explains the economic challenge this publication faces in maintaining its current reporting staff?",
   "options": [
-   "Social media platforms have eliminated the need for professional journalists, forcing publications to rely on user-generated content that requires minimal editorial oversight and training.",
-   "Declining print advertising correlates directly with reduced reader engagement, meaning fewer people are accessing news content through any distribution channel.",
    "Digital platforms allow publications to charge higher subscription rates than print editions, offsetting losses but requiring significant investment in paywall technology.",
-   "Print advertising historically represented a stable, high-margin revenue stream, and the shift to digital subscriptions generates lower per-unit revenue despite growth in readership numbers."
+   "Print advertising historically represented a stable, high-margin revenue stream, and the shift to digital subscriptions generates lower per-unit revenue despite growth in readership numbers.",
+   "Social media platforms have eliminated the need for professional journalists, forcing publications to rely on user-generated content that requires minimal editorial oversight and training.",
+   "Declining print advertising correlates directly with reduced reader engagement, meaning fewer people are accessing news content through any distribution channel."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Print advertising traditionally provided substantial revenue per ad placement with high profit margins, whereas digital advertising and subscriptions generate smaller revenue per transaction. This structural shift creates a funding gap that directly impacts a publication's ability to maintain its payroll, including journalists. The other options misstate the relationship between platforms and journalist employment, misidentify the cause of readership decline, or invert the actual pricing dynamics.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -275,12 +275,12 @@
  {
   "question": "A news organization is evaluating whether to expand its investigative journalism unit, which requires significant upfront investment in reporter training, legal review, and extended reporting timelines before publication. Which economic factor most directly constrains this expansion decision?",
   "options": [
-   "The high fixed costs of investigative projects create cash flow pressure when paired with unpredictable revenue from social media referral traffic and the extended period before stories generate measurable subscriber value.",
-   "Expanding the investigative unit requires hiring entry-level journalists, whose lower salaries offset the expense of extended reporting timelines and reduce overall operational costs.",
    "Investigative stories typically command premium subscription rates and advertising rates, creating immediate revenue spikes that publishers can reinvest in additional reporting capacity and infrastructure.",
-   "Investigative journalism attracts readers primarily through viral social media sharing, which reduces the need for traditional advertising revenue streams and lowers the urgency of editorial planning."
+   "Investigative journalism attracts readers primarily through viral social media sharing, which reduces the need for traditional advertising revenue streams and lowers the urgency of editorial planning.",
+   "The high fixed costs of investigative projects create cash flow pressure when paired with unpredictable revenue from social media referral traffic and the extended period before stories generate measurable subscriber value.",
+   "Expanding the investigative unit requires hiring entry-level journalists, whose lower salaries offset the expense of extended reporting timelines and reduce overall operational costs."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Investigative journalism requires substantial upfront expenses (salaries, legal costs, extended reporting) before any revenue is realized, creating a cash flow mismatch that pressures smaller publishers. While investigative work may eventually attract readers, the uncertain timeline and modest conversion rates make funding expansion difficult without substantial reserves or dedicated underwriting. The other options either misunderstand the revenue dynamics of investigative journalism or ignore the time-lag problem between investment and return.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -288,12 +288,12 @@
  {
   "question": "Two journalists with identical education and experience work at competing publications—one a digital-native outlet supported primarily by venture capital and advertising, the other a legacy newspaper with steady print circulation and mixed revenue streams. Which statement most accurately reflects likely differences in their salary trajectories and job security?",
   "options": [
-   "Both journalists will experience identical salary growth because journalism education and market-rate compensation for reporting roles are standardized across all publication types and ownership structures.",
    "The legacy newspaper journalist will command higher salary because print advertising generates more revenue per employee, and the stability of print readers ensures predictable payroll funding regardless of market conditions.",
-   "The venture-backed journalist will likely earn higher initial salary but face greater employment volatility if advertising revenue underperforms or investor funding cycles shift, while the legacy publication journalist may have more stable compensation tied to circulation performance.",
-   "The venture-backed journalist will earn substantially less but enjoy perfect job security due to investor commitments, while the legacy newspaper journalist faces constant layoff risk as print circulation continues declining."
+   "The venture-backed journalist will earn substantially less but enjoy perfect job security due to investor commitments, while the legacy newspaper journalist faces constant layoff risk as print circulation continues declining.",
+   "Both journalists will experience identical salary growth because journalism education and market-rate compensation for reporting roles are standardized across all publication types and ownership structures.",
+   "The venture-backed journalist will likely earn higher initial salary but face greater employment volatility if advertising revenue underperforms or investor funding cycles shift, while the legacy publication journalist may have more stable compensation tied to circulation performance."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Venture-backed outlets often offer competitive salaries to attract talent but operate with unpredictable funding cycles dependent on investor appetite and advertising performance, creating employment instability. Legacy publishers typically offer more modest but stable compensation linked to their established revenue streams, though those streams themselves are declining. The other options either falsely equalize compensation structures across different business models or invert the actual security and salary relationships.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -301,12 +301,12 @@
  {
   "question": "A publication's cost structure includes salaries (45% of expenses), technology infrastructure (25%), and distribution/production (20%), with the remainder allocated to legal and administrative overhead. If the organization must reduce expenses by 15% due to declining advertising revenue, which cost category presents the most complex economic trade-off?",
   "options": [
-   "Reducing distribution and production costs is straightforward because these are fixed expenses with minimal connection to editorial quality or audience growth.",
    "Reducing salaries by the necessary amount would require cutting journalists or experience levels, which directly diminishes reporting quality and competitive advantage, yet this category represents the largest single expense.",
+   "Reducing distribution and production costs is straightforward because these are fixed expenses with minimal connection to editorial quality or audience growth.",
    "Reducing legal and administrative overhead provides the fastest path to the target savings with no impact on journalism operations or audience metrics.",
    "Reducing technology infrastructure allows immediate savings but risks losing digital distribution capacity and analytics capabilities that drive subscriber acquisition and advertiser reach metrics."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "While reducing salaries would achieve the necessary 15% reduction (since salaries are 45% of expenses), cutting reporter positions or experience levels undermines the core product—editorial quality—and long-term competitiveness, creating a strategic paradox. Technology and distribution reductions also have operational consequences, and overhead is too small (10%) to achieve the target alone. This reveals the fundamental tension between financial pressure and journalistic sustainability.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -314,12 +314,12 @@
  {
   "question": "A mid-market news organization currently derives 60% of revenue from print advertising, 25% from digital advertising, and 15% from subscriptions. Market research indicates print advertising will decline 8% annually for the next three years while digital advertising grows 12% annually and subscriptions grow 5% annually. Based purely on these projections, which organizational outcome is most likely if the publication does not fundamentally restructure its cost model?",
   "options": [
-   "The 5% subscription growth and 12% digital advertising growth will exactly offset the 8% print decline, stabilizing overall revenue and allowing the publication to maintain current staffing and reporting investments indefinitely.",
-   "Despite growth in digital and subscription revenue, the absolute dollar decline in print advertising combined with slower growth rates in replacement revenue streams will likely create a cumulative funding shortfall requiring either expense reductions or new revenue sources.",
    "Digital advertising growth of 12% annually is sufficient to replace declining print revenue within two years, positioning the publication for expansion into new reporting categories and increased journalist hiring.",
-   "The organization will experience immediate cash flow crisis within the first year because print advertising revenue loss will occur faster than digital channels can generate replacement funds."
+   "The organization will experience immediate cash flow crisis within the first year because print advertising revenue loss will occur faster than digital channels can generate replacement funds.",
+   "The 5% subscription growth and 12% digital advertising growth will exactly offset the 8% print decline, stabilizing overall revenue and allowing the publication to maintain current staffing and reporting investments indefinitely.",
+   "Despite growth in digital and subscription revenue, the absolute dollar decline in print advertising combined with slower growth rates in replacement revenue streams will likely create a cumulative funding shortfall requiring either expense reductions or new revenue sources."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Starting from a 60% print revenue base declining at 8% annually while smaller bases (25% digital at 12%, 15% subscriptions at 5%) grow creates a structural mismatch—the faster-growing segments are too small to replace the larger, shrinking segment quickly enough. Over three years, this creates cumulative shortfall requiring cost restructuring. The other options either assume perfect revenue replacement, ignore the mathematical base effect, or create false urgency with an immediate crisis claim.",
   "difficulty": "hard",
   "knowledge_area": "Economics and Business of Journalism"
@@ -327,12 +327,12 @@
  {
   "question": "A journalist writing a feature article about local business owners uses first-person perspective to describe her own observations while interviewing subjects. Which perspective technique is she primarily employing, and what is its main journalistic purpose?",
   "options": [
-   "First-person perspective to establish credibility and transparency while allowing readers to understand the reporter's role in gathering and interpreting information",
    "Second-person perspective to establish direct reader engagement and create accountability for the narrative voice in investigative reporting",
-   "Omniscient perspective to provide comprehensive coverage of all business owner viewpoints while eliminating the need for direct source attribution",
-   "Third-person perspective to maintain editorial distance while still allowing the reporter to inject personal analysis and interpretation into the story structure"
+   "Third-person perspective to maintain editorial distance while still allowing the reporter to inject personal analysis and interpretation into the story structure",
+   "First-person perspective to establish credibility and transparency while allowing readers to understand the reporter's role in gathering and interpreting information",
+   "Omniscient perspective to provide comprehensive coverage of all business owner viewpoints while eliminating the need for direct source attribution"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "First-person perspective in journalism establishes the reporter's credibility and makes transparent the reporter's role in the story, helping readers understand potential biases. While third-person maintains distance and omniscient perspective is rarely used in journalism, first-person allows personal observation while maintaining journalistic integrity when used appropriately.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -340,12 +340,12 @@
  {
   "question": "When writing for different media sources, a journalist must choose between using 'Dr.' before a source's name in print news versus spelling out 'Doctor' in a web article targeting mobile readers. What principle about abbreviation usage does this decision reflect?",
   "options": [
+   "Academic and medical abbreviations like 'Dr.' are appropriate in formal print journalism but should be spelled out in web content where space constraints and formatting conventions differ from traditional newsprint",
    "Print publications require all titles abbreviated to save column space, while digital platforms must spell out all professional designations to improve accessibility and readability on small screens",
    "All professional titles must remain abbreviated consistently across all media platforms to maintain uniform style and prevent confusion about credential types among diverse reader audiences",
-   "Academic and medical abbreviations like 'Dr.' are appropriate in formal print journalism but should be spelled out in web content where space constraints and formatting conventions differ from traditional newsprint",
    "Abbreviations should never appear in journalism since they reduce clarity, and reporters should spell out every professional designation regardless of publication format or intended audience"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Different media sources have different style conventions and formatting requirements; print journalism traditionally uses abbreviations like 'Dr.' to conserve space, while web and mobile platforms prioritize readability and may spell out titles more often. Understanding context-appropriate abbreviation usage is essential for writing effectively across multiple platforms.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -353,12 +353,12 @@
  {
   "question": "A broadcast news reporter uses onomatopoeia in a radio report about a manufacturing plant expansion, while a print journalist covering the same story uses simile to describe the facility's growth. How do these device choices reflect format-specific storytelling techniques?",
   "options": [
-   "Print requires onomatopoeia to engage readers who lack audio cues, while broadcast uses simile to help listeners follow complex narrative structures without visual aids",
    "Both devices serve identical purposes across media, so the choice between them depends only on the reporter's personal writing preference rather than the medium's inherent strengths",
    "Onomatopoeia works best in radio because listeners respond to sound-word descriptions, while simile suits print since readers can visualize comparative language more effectively in written text",
+   "Print requires onomatopoeia to engage readers who lack audio cues, while broadcast uses simile to help listeners follow complex narrative structures without visual aids",
    "Simile is superior for all journalism because it creates more sophisticated comparisons, while onomatopoeia is outdated and rarely used in modern professional broadcast reporting"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Onomatopoeia (sound-word descriptions like 'whoosh' or 'bang') enhances radio and audio content where listeners rely on auditory language; simile (comparative language like 'as large as' or 'like') works effectively in print where readers visualize written comparisons. Format-specific devices leverage each medium's unique strengths.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -366,12 +366,12 @@
  {
   "question": "In a feature story about urban revitalization, a journalist writes: 'The downtown district breathed new life into abandoned storefronts' and 'The renovation project moved forward with determined stride.' Which media terminology concepts does the journalist use, and what distinguishes them?",
   "options": [
+   "Both sentences use alliteration because they repeat consonant sounds at the beginning of words to create rhythmic emphasis and memorable phrasing in narrative journalism",
    "The first sentence uses metaphor by comparing the district to a living entity with agency, while the second uses personification by attributing human qualities like stride to an inanimate project",
    "Both sentences use onomatopoeia to describe the auditory experience of renovation work, with the first focusing on growth sounds and the second emphasizing the sounds of physical labor",
-   "The first sentence uses metaphor to attribute life qualities to a district, while the second uses alliteration to create parallel structure and emphasize forward movement through repetitive 'd' sounds",
-   "Both sentences use alliteration because they repeat consonant sounds at the beginning of words to create rhythmic emphasis and memorable phrasing in narrative journalism"
+   "The first sentence uses metaphor to attribute life qualities to a district, while the second uses alliteration to create parallel structure and emphasize forward movement through repetitive 'd' sounds"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The first sentence is a metaphor comparing the district to a living thing; the second combines personification (attributing human action 'stride' to a project) and alliteration through repeated 'd' sounds ('determined,' 'downtown'). Understanding which device is primary helps distinguish between layered techniques used in sophisticated feature writing.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -379,12 +379,12 @@
  {
   "question": "A journalist decides between using 'and/or' versus standard 'or' in a news brief about qualification requirements, and separately debates whether to use 'CEO' versus 'Chief Executive Officer' in a profile headline. What do these decisions illustrate about format-specific grammar and abbreviation conventions?",
   "options": [
+   "Style is purely individual choice in journalism, so neither 'and/or' nor abbreviations follow predictable conventions, and writers should use whichever option feels most natural in their writing",
    "Both decisions depend on medium-specific style guides, publication constraints, and audience expectations: briefs may use 'and/or' and abbreviations for efficiency, while profiles may spell out terms for clarity and formality",
    "News publications never use 'and/or' because it violates grammar rules, and headlines must always abbreviate titles to conserve space regardless of how confusing abbreviations might be to readers",
-   "News briefs permit 'and/or' because space is limited and ambiguity is acceptable, while headlines always spell out titles completely to maintain formality and editorial credibility standards",
-   "Style is purely individual choice in journalism, so neither 'and/or' nor abbreviations follow predictable conventions, and writers should use whichever option feels most natural in their writing"
+   "News briefs permit 'and/or' because space is limited and ambiguity is acceptable, while headlines always spell out titles completely to maintain formality and editorial credibility standards"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Publication format, style guides, and audience expectations all shape grammar and abbreviation decisions; news briefs often prioritize space-saving techniques like 'and/or' and abbreviations, while features and profiles may spell out terms for clarity and formal tone. These choices reflect each medium's unique constraints and audience needs.",
   "knowledge_area": "Grammar & Format",
   "difficulty": "hard"
@@ -392,12 +392,12 @@
  {
   "question": "A journalist is developing a story about a proposed city budget increase. When applying news values to assess newsworthiness, which factor would most directly influence whether this story merits front-page coverage rather than a brief mention?",
   "options": [
-   "The budget increase includes funding for several city projects, involves documents from the municipal finance office, and requires interviews with at least three sources",
+   "The budget proposal affects a large segment of the community, generates disagreement among stakeholders, and will influence local taxes and services for residents",
    "The city council meeting occurred during business hours, the proposal was announced through an official press release, and the story requires background research on fiscal policy",
-   "The timing of the announcement coincides with a holiday weekend, and the story involves multiple government departments and significant public financial impact",
-   "The budget proposal affects a large segment of the community, generates disagreement among stakeholders, and will influence local taxes and services for residents"
+   "The budget increase includes funding for several city projects, involves documents from the municipal finance office, and requires interviews with at least three sources",
+   "The timing of the announcement coincides with a holiday weekend, and the story involves multiple government departments and significant public financial impact"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Newsworthiness depends on impact, conflict, and relevance to a broad audience—not on logistics like timing of the announcement, availability of sources, or research requirements. The correct answer identifies genuinely newsworthy values: significant community impact, disagreement among stakeholders, and direct influence on public welfare. The other options confuse practical reporting steps or neutral factors with actual news values.",
   "difficulty": "hard",
   "knowledge_area": "Basic Journalism Principles"
@@ -406,9 +406,9 @@
   "question": "When a journalist states that news values have remained constant despite societal change, which scenario best illustrates this principle in practice?",
   "options": [
    "A financial market story from 2000 presented stock indices and trading volume; a comparable 2024 market story now leads with cryptocurrency fluctuations and algorithmic trading patterns",
-   "Reporting on a university graduation ceremony in 1990 included speeches and attendance figures; current graduation coverage now includes livestream accessibility and alumni donation records instead",
+   "Coverage of local election results emphasized candidate background and policy positions in 1975; today the same election story highlights social media engagement and polling data from multiple news cycles",
    "A story about a major industrial accident in 1985 focused on impact to workers and community safety; a similar workplace disaster today is reported with the same emphasis on human consequence and broader effects on public welfare",
-   "Coverage of local election results emphasized candidate background and policy positions in 1975; today the same election story highlights social media engagement and polling data from multiple news cycles"
+   "Reporting on a university graduation ceremony in 1990 included speeches and attendance figures; current graduation coverage now includes livestream accessibility and alumni donation records instead"
   ],
   "correct_index": 2,
   "explanation": "The constant news values are impact, human interest, and relevance to public welfare—not the specific details or formats used to report them. Option B demonstrates how the core value of consequence to people and community remained central across decades, even as reporting tools evolved. The other options show how reporting *methods* and *specific angles* have changed, not that underlying news values have remained stable.",
@@ -418,12 +418,12 @@
  {
   "question": "A reporter interviews a city planning official, a neighborhood resident, and an environmental consultant about a proposed downtown development. Which most accurately describes the journalistic role of these sources in relation to the six basic news-gathering questions?",
   "options": [
-   "Each source provides expertise on different aspects of the story, helping the journalist answer overlapping versions of who/what/when/where/why/how from multiple perspectives and credibility angles",
-   "Sources collectively supply factual details about the project timeline, budget, and location, while the journalist uses independent research to establish cause and effect relationships",
    "The planning official answers what and when; the resident answers where and why; the consultant answers how, while the journalist independently determines who is responsible for the decision",
-   "The three sources together ensure comprehensive coverage by dividing the six questions among them, with each source responsible for answering two of the basic journalistic questions"
+   "Each source provides expertise on different aspects of the story, helping the journalist answer overlapping versions of who/what/when/where/why/how from multiple perspectives and credibility angles",
+   "The three sources together ensure comprehensive coverage by dividing the six questions among them, with each source responsible for answering two of the basic journalistic questions",
+   "Sources collectively supply factual details about the project timeline, budget, and location, while the journalist uses independent research to establish cause and effect relationships"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Sources don't mechanically divide up the six questions; instead, they provide overlapping, credible perspectives that help answer the same questions in depth. The correct answer reflects that strong reporting layers multiple viewpoints on the same questions to build credibility and complexity. Options B, C, and D incorrectly compartmentalize the role of sources or suggest artificial divisions of responsibility between journalist and sources.",
   "difficulty": "hard",
   "knowledge_area": "Basic Journalism Principles"
@@ -431,12 +431,12 @@
  {
   "question": "Two journalists writing about the same school funding proposal each open with a different angle: one leads with the dollar amount and timeline, the other leads with projected impact on classroom sizes and teacher hiring. How do these different leads relate to the definition and role of a strong lead in journalism?",
   "options": [
-   "Both leads are equally strong because they include specific numbers and timelines, which are the primary characteristics that make a lead newsworthy and memorable",
    "Each lead is strong within its own story frame because it hooks the reader with the most significant, immediate consequence or tension relevant to that story's angle, and both satisfy the reader's most pressing question",
-   "The impact lead is stronger because human consequence always outweighs financial data in journalism; the timeline lead omits the emotional or behavioral stakes of the story",
-   "The dollar-and-timeline lead is stronger because it provides factual baseline information; the impact lead is secondary detail that belongs in the second paragraph"
+   "The dollar-and-timeline lead is stronger because it provides factual baseline information; the impact lead is secondary detail that belongs in the second paragraph",
+   "Both leads are equally strong because they include specific numbers and timelines, which are the primary characteristics that make a lead newsworthy and memorable",
+   "The impact lead is stronger because human consequence always outweighs financial data in journalism; the timeline lead omits the emotional or behavioral stakes of the story"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A strong lead doesn't follow a formula of \"numbers first\" or \"human interest first\"—it identifies and presents the single most significant, urgent element that answers why the reader should care *about this particular story*. Both leads can be strong because they serve different story frames; strength comes from clarity about audience priority, not from content type. Options A and B impose false hierarchies, while Option D overgeneralizes by claiming human consequence always dominates.",
   "difficulty": "hard",
   "knowledge_area": "Basic Journalism Principles"
@@ -444,12 +444,12 @@
  {
   "question": "A journalist researching a story about youth homelessness must decide whether to interview only people currently experiencing homelessness, or to also include social workers, shelter directors, city officials, and family members of homeless individuals. Which most directly explains why source selection relates to journalism's definition and core principles?",
   "options": [
-   "Including multiple source types provides a more complete and credible answer to the who, what, when, where, why, and how of the issue, and allows the journalist to identify truth across competing claims or explanations",
-   "Multiple sources increase the length and complexity of the story, which strengthens journalism's role as a watchdog by providing readers with extensive documentation of the problem",
    "A diverse source list demonstrates that the journalist attempted to contact all available experts, which fulfills journalism's commitment to impartiality by making the reporting process itself visible to readers",
-   "Interviewing people in different roles ensures that every paragraph contains a direct quote, which is the standard practice that defines professional journalism and distinguishes it from opinion writing"
+   "Multiple sources increase the length and complexity of the story, which strengthens journalism's role as a watchdog by providing readers with extensive documentation of the problem",
+   "Interviewing people in different roles ensures that every paragraph contains a direct quote, which is the standard practice that defines professional journalism and distinguishes it from opinion writing",
+   "Including multiple source types provides a more complete and credible answer to the who, what, when, where, why, and how of the issue, and allows the journalist to identify truth across competing claims or explanations"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Source selection directly serves journalism's foundational purpose: gathering accurate information to answer the basic questions and uncovering truth. Multiple perspectives on the same issue help the journalist verify facts, understand complexity, and avoid distortion from any single viewpoint. Options B, C, and D confuse peripheral practices (story length, quote frequency, transparency of process) with the core journalistic purpose of accurate information-gathering. The correct answer connects source role to journalism's definition.",
   "difficulty": "hard",
   "knowledge_area": "Basic Journalism Principles"
@@ -457,12 +457,12 @@
  {
   "question": "A journalist is investigating a story about corporate fraud and has developed a confidential source within the company. The source demands anonymity, fearing retaliation. The journalist's news organization receives a subpoena demanding the source's identity. Which ethical and legal principle most directly governs how the journalist should respond?",
   "options": [
-   "Ethical codes permit journalists to break confidentiality agreements if the story reaches a significant national audience and public interest is served.",
-   "State regulations mandate that journalists disclose sources only to law enforcement, but protection applies when the disclosure involves private citizens rather than public figures.",
    "Federal law requires all journalists to reveal sources when subpoenaed, regardless of state protections or the potential harm to the source.",
-   "Shield laws protect journalists from disclosing confidential sources, though protection varies by jurisdiction and circumstances such as public safety may override confidentiality."
+   "State regulations mandate that journalists disclose sources only to law enforcement, but protection applies when the disclosure involves private citizens rather than public figures.",
+   "Shield laws protect journalists from disclosing confidential sources, though protection varies by jurisdiction and circumstances such as public safety may override confidentiality.",
+   "Ethical codes permit journalists to break confidentiality agreements if the story reaches a significant national audience and public interest is served."
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Shield laws do protect journalist-source confidentiality, though the level of protection and circumstances that may override it vary significantly by state and federal context. The other options either misstate the law (federal mandate overriding all state protections), confuse ethical discretion with legal obligation (audience size determining confidentiality), or incorrectly characterize when protection applies based on the subject's public status.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -470,12 +470,12 @@
  {
   "question": "During an investigation into local government corruption, a journalist obtains confidential internal emails through a source who may have accessed them unlawfully. The story is newsworthy and in the public interest. What ethical tension does this situation most directly create for the journalist?",
   "options": [
+   "The conflict between maintaining source confidentiality and the legal requirement to report the source's theft to police within 48 hours.",
    "The tension between the duty to inform the public and the obligation to avoid enabling or benefiting from illegal conduct, even when the source's identity is protected.",
    "The balance between pursuing accountability and the prohibition on journalists ever using information obtained through any unlawful means, regardless of public impact.",
-   "The distinction between publishing stolen government documents versus publishing stolen private sector documents under First Amendment protections.",
-   "The conflict between maintaining source confidentiality and the legal requirement to report the source's theft to police within 48 hours."
+   "The distinction between publishing stolen government documents versus publishing stolen private sector documents under First Amendment protections."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Journalists face a genuine ethical dilemma when presented with unlawfully obtained information: the value of informing the public must be weighed against complicity in illegal conduct. The other options either impose false legal requirements (mandatory reporting within 48 hours), create inaccurate legal distinctions based on sector type, or suggest an absolute prohibition that journalists do not uniformly recognize, as ethical frameworks acknowledge context-dependent reasoning.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -484,11 +484,11 @@
   "question": "A journalist's investigation into a nonprofit's misuse of charitable funds identifies several executives but also reveals that one executive's teenage child attends school in the district where the nonprofit operates. Including the executive's family information in the story could heighten public awareness of wrongdoing, though the child is not involved in misconduct. How should the journalist evaluate this editorial decision?",
   "options": [
    "The journalist must exclude all family information because privacy laws categorically prohibit publication of any details about minors associated with persons under investigation.",
-   "The journalist should weigh whether naming the executive's family connection serves a specific, material purpose in explaining the wrongdoing versus whether it risks harming an uninvolved minor for marginal added context.",
+   "The journalist should include family information only if the news organization's legal team confirms that no lawsuit under defamation or invasion of privacy statutes is probable.",
    "The journalist may publish the family connection only if the child's school attendance directly enabled the executive's fraudulent conduct or created a conflict of interest.",
-   "The journalist should include family information only if the news organization's legal team confirms that no lawsuit under defamation or invasion of privacy statutes is probable."
+   "The journalist should weigh whether naming the executive's family connection serves a specific, material purpose in explaining the wrongdoing versus whether it risks harming an uninvolved minor for marginal added context."
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Ethical decision-making requires journalists to balance public interest against potential harm to uninvolved parties, especially minors. The question hinges on whether information serves a substantive journalistic purpose or merely sensationalizes. The other options either misstate privacy law (no categorical prohibition), impose a false causation requirement, or reduce ethics to legal liability avoidance rather than genuine editorial judgment.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -496,12 +496,12 @@
  {
   "question": "In the aftermath of the Pentagon Papers case and subsequent development of shield laws, how did the legal and ethical landscape for journalists change regarding the publication of classified government information?",
   "options": [
-   "Shield laws created an automatic exemption for journalists from all criminal charges related to publishing classified documents, regardless of national security implications.",
+   "Courts increasingly recognized that journalists have a qualified privilege to publish classified information if the public interest in disclosure outweighs national security harm, though the scope of this privilege varies by jurisdiction and context.",
    "The Supreme Court ruled that journalists must obtain government approval before publishing any information related to defense or foreign policy, establishing a prior restraint standard.",
-   "Federal law established an absolute prohibition on publishing any classified information, with journalists receiving the same liability as government officials who leak materials.",
-   "Courts increasingly recognized that journalists have a qualified privilege to publish classified information if the public interest in disclosure outweighs national security harm, though the scope of this privilege varies by jurisdiction and context."
+   "Shield laws created an automatic exemption for journalists from all criminal charges related to publishing classified documents, regardless of national security implications.",
+   "Federal law established an absolute prohibition on publishing any classified information, with journalists receiving the same liability as government officials who leak materials."
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "The Pentagon Papers case and subsequent legal developments established that journalists have qualified protection for publishing matters of genuine public interest, though courts balance this against legitimate security concerns. The other options misrepresent the law: there is no absolute prohibition equal to government liability, shield laws provide qualified not absolute protection, and prior restraint was rejected as unconstitutional in the Pentagon Papers decision itself.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -509,12 +509,12 @@
  {
   "question": "A journalist publishes an investigative series naming a business owner as the subject of a criminal investigation, correctly reporting that police are investigating financial crimes. However, the journalist later learns the investigation was closed without charges and the owner was completely exonerated. The journalist published accurate information about the investigation's existence. What ethical obligation does the journalist face?",
   "options": [
-   "The journalist should publish a follow-up story correcting the record and acknowledging the exoneration, recognizing that accuracy requires not only truthful initial reporting but updating the public when facts materially change.",
-   "The journalist has no obligation to publish an update because the original story was factually accurate and the investigation's resolution is the responsibility of police to communicate.",
+   "The journalist must publish a retraction stating the original story was false, since the investigation ultimately revealed no wrongdoing and therefore reporting on it caused reputational harm.",
    "The journalist should publish a brief clarification only if the original story's headline or lead paragraph is now demonstrably false, leaving body text unchanged to preserve archival accuracy.",
-   "The journalist must publish a retraction stating the original story was false, since the investigation ultimately revealed no wrongdoing and therefore reporting on it caused reputational harm."
+   "The journalist should publish a follow-up story correcting the record and acknowledging the exoneration, recognizing that accuracy requires not only truthful initial reporting but updating the public when facts materially change.",
+   "The journalist has no obligation to publish an update because the original story was factually accurate and the investigation's resolution is the responsibility of police to communicate."
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Ethical journalism requires updating the public record when material facts change, especially regarding someone's exoneration or cleared status. Publishing about an investigation without later reporting its resolution and the subject's vindication creates a misleading permanent record. The other options either deny the journalist's ongoing responsibility to accuracy, conflate accuracy with no obligation to update, or impose a false retraction standard that confuses initial truth with final responsibility.",
   "knowledge_area": "Law and Ethics",
   "difficulty": "hard"
@@ -522,8 +522,8 @@
  {
   "question": "A journalist is investigating a story about corporate fraud and receives confidential documents from an insider source who demands anonymity. The journalist's editor requests the source's identity to verify credibility. How should the journalist balance legal obligation with ethical source protection?",
   "options": [
-   "Publish the documents without editorial verification to avoid revealing the source's identity to anyone within the newsroom",
    "Negotiate with the source to allow partial identification that protects the source while satisfying editorial verification standards",
+   "Publish the documents without editorial verification to avoid revealing the source's identity to anyone within the newsroom",
    "Refuse to disclose the source's identity, citing journalist-source privilege and the ethical duty to protect confidentiality, even if it risks legal subpoena",
    "Disclose the source's identity to the editor, as journalistic shield laws require verification of all confidential information before publication"
   ],
@@ -535,12 +535,12 @@
  {
   "question": "The Pentagon Papers case (1971) and New York Times Co. v. Sullivan (1964) both shaped journalism law, yet they addressed different legal principles. Which statement accurately distinguishes these two landmark decisions?",
   "options": [
-   "Pentagon Papers defined fair use for republishing classified documents, while Sullivan introduced the concept of journalistic shield laws",
    "Sullivan protected newspapers from injunctions on national security grounds, while Pentagon Papers established the actual malice standard",
-   "Sullivan granted absolute immunity for any criticism of government officials, while Pentagon Papers limited national security restrictions",
-   "Pentagon Papers established prior restraint protections while Sullivan clarified libel standards for public figures"
+   "Pentagon Papers established prior restraint protections while Sullivan clarified libel standards for public figures",
+   "Pentagon Papers defined fair use for republishing classified documents, while Sullivan introduced the concept of journalistic shield laws",
+   "Sullivan granted absolute immunity for any criticism of government officials, while Pentagon Papers limited national security restrictions"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "New York Times Co. v. Sullivan established that public figures must prove actual malice to win libel cases, raising the standard for defamation claims. The Pentagon Papers case prevented prior restraint of publication despite national security claims. These decisions address different legal boundaries: one about what journalists can publish without liability, the other about whether the government can stop publication in advance.",
   "difficulty": "hard",
   "knowledge_area": "Law and Ethics"
@@ -548,12 +548,12 @@
  {
   "question": "A local news outlet publishes a story about a wrongful conviction based on a source's eyewitness account, later proven unreliable. The convicted person sues for libel. The journalist claims the story was published in good faith with verification efforts. How do libel laws protect or expose the journalist in this scenario?",
   "options": [
+   "The journalist faces liability if the story is proven false and caused harm, even with good-faith verification, unless actual malice can be disproven",
    "The journalist is protected because the source was a willing participant and provided the information voluntarily",
-   "The journalist cannot be sued because published accounts of legal proceedings receive absolute immunity from defamation claims",
    "The journalist is shielded by neutral reportage doctrine, which protects accurate accounts of disputed claims regardless of truth",
-   "The journalist faces liability if the story is proven false and caused harm, even with good-faith verification, unless actual malice can be disproven"
+   "The journalist cannot be sued because published accounts of legal proceedings receive absolute immunity from defamation claims"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Libel requires proof that a statement is false, defamatory, and published with fault—the level of fault depends on whether the plaintiff is a public figure. Good-faith effort is relevant but doesn't guarantee protection; the journalist must show the story was substantially true or published without actual malice (reckless disregard for truth). Simply having a source or acting in good faith doesn't eliminate liability if the published statement is false.",
   "difficulty": "hard",
   "knowledge_area": "Law and Ethics"
@@ -561,12 +561,12 @@
  {
   "question": "An investigative journalist discovers that a public official embezzled funds, but the official threatens legal action for defamation if the story runs. The journalist has solid documentation but knows the official will likely sue regardless. What ethical and legal considerations should guide the publication decision?",
   "options": [
-   "The threat of litigation should delay publication until a lawyer certifies zero legal risk, prioritizing safety over newsworthiness",
-   "Publication is justified if the information is substantially true, in the public interest, and obtained through legitimate reporting methods, despite litigation risk",
    "The journalist should publish anonymously to avoid personal liability, using a pseudonym to maintain ethical distance from potential defamation claims",
-   "The story should be withheld until the official is convicted in criminal court, establishing truth through judicial process rather than journalism"
+   "The threat of litigation should delay publication until a lawyer certifies zero legal risk, prioritizing safety over newsworthiness",
+   "The story should be withheld until the official is convicted in criminal court, establishing truth through judicial process rather than journalism",
+   "Publication is justified if the information is substantially true, in the public interest, and obtained through legitimate reporting methods, despite litigation risk"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "A journalist's duty to inform the public about public corruption can outweigh litigation risk, especially when the story is substantially true and serves legitimate public interest. Legal threats alone should not suppress truthful reporting; the journalist should verify facts rigorously and rely on truth and good-faith reporting as defenses. Waiting for conviction delays accountability, and anonymity doesn't shield legal responsibility.",
   "difficulty": "hard",
   "knowledge_area": "Law and Ethics"
@@ -574,12 +574,12 @@
  {
   "question": "A journalist receives leaked government documents marked classified and considers publishing them to expose illegal surveillance. Both the First Amendment and the Espionage Act apply to this situation. How should the journalist weigh these competing legal and ethical obligations?",
   "options": [
-   "The First Amendment always supersedes the Espionage Act, allowing journalists to publish classified information without legal consequence",
-   "The journalist is legally protected by reporter's privilege, which exempts news organizations from Espionage Act liability for publishing classified material",
    "Classification status automatically prevents publication; the journalist must report the documents to law enforcement instead of pursuing the story",
-   "The journalist may publish if the public interest in transparency outweighs national security harm, but faces potential prosecution under the Espionage Act despite First Amendment protections"
+   "The journalist is legally protected by reporter's privilege, which exempts news organizations from Espionage Act liability for publishing classified material",
+   "The journalist may publish if the public interest in transparency outweighs national security harm, but faces potential prosecution under the Espionage Act despite First Amendment protections",
+   "The First Amendment always supersedes the Espionage Act, allowing journalists to publish classified information without legal consequence"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "The Supreme Court has not granted journalists absolute protection to publish classified information. While the First Amendment provides strong protections, the Espionage Act can still apply, creating genuine legal risk. A journalist must weigh the public interest in exposure against national security concerns and personal legal jeopardy; pursuing the story ethically means understanding both the legal exposure and the significance of what is being revealed.",
   "difficulty": "hard",
   "knowledge_area": "Law and Ethics"
@@ -587,12 +587,12 @@
  {
   "question": "Which Supreme Court case established that prior restraint on publication violates the First Amendment, setting a precedent that governments bear a heavy burden in censoring press materials?",
   "options": [
-   "Near v. Minnesota, which struck down a state law allowing prior restraint of newspapers deemed to publish malicious content",
-   "New York Times Co. v. Sullivan, which ruled that public officials must prove actual malice to win libel suits against journalists",
+   "Brandenburg v. Ohio, which clarified that incitement to imminent lawless action receives no First Amendment protection",
    "Texas v. Johnson, which extended First Amendment protection to symbolic speech including flag burning as political expression",
-   "Brandenburg v. Ohio, which clarified that incitement to imminent lawless action receives no First Amendment protection"
+   "New York Times Co. v. Sullivan, which ruled that public officials must prove actual malice to win libel suits against journalists",
+   "Near v. Minnesota, which struck down a state law allowing prior restraint of newspapers deemed to publish malicious content"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Near v. Minnesota (1931) was the landmark case establishing that prior restraint—government censorship before publication—is unconstitutional except in rare national security cases. The other cases address libel law, incitement doctrine, and symbolic speech respectively, which are distinct First Amendment issues separate from prior restraint.",
   "knowledge_area": "History of Journalism",
   "difficulty": "hard"
@@ -600,12 +600,12 @@
  {
   "question": "Edward R. Murrow and Walter Cronkite both shaped broadcast journalism during different eras; which statement accurately distinguishes their primary contributions?",
   "options": [
-   "Murrow created the first investigative television program in the 1950s, while Cronkite established the first radio news network during the 1930s",
-   "Murrow developed the inverted pyramid style for newspaper writing, while Cronkite invented the concept of the evening broadcast news program format",
+   "Murrow reported exclusively on domestic politics and social movements, while Cronkite pioneered international war correspondence from multiple continents",
    "Murrow pioneered radio reporting from war zones and set standards for broadcast integrity during WWII, while Cronkite became the defining television news anchor whose measured delivery established CBS Evening News credibility",
-   "Murrow reported exclusively on domestic politics and social movements, while Cronkite pioneered international war correspondence from multiple continents"
+   "Murrow developed the inverted pyramid style for newspaper writing, while Cronkite invented the concept of the evening broadcast news program format",
+   "Murrow created the first investigative television program in the 1950s, while Cronkite established the first radio news network during the 1930s"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Murrow's legacy centers on radio reporting from London during WWII and setting journalistic standards for broadcast news, while Cronkite became the most trusted television news anchor of the network era. The other options misstate their roles—Murrow did not invent the inverted pyramid (that was newspaper journalism), and Cronkite did not create the first news program.",
   "knowledge_area": "History of Journalism",
   "difficulty": "hard"
@@ -613,12 +613,12 @@
  {
   "question": "During the Vietnam War, the role of embedded and non-embedded journalists created tension between military objectives and press freedom; which outcome most directly resulted from this conflict?",
   "options": [
-   "News organizations voluntarily agreed to pool all reporting through a single government-approved outlet to maintain battlefield security",
-   "The government passed the War Powers Act, which required all journalists to submit stories for military censorship before publication",
    "Journalists like Walter Cronkite and others reported skeptically on official claims, influencing public perception and contributing to decreased support for the war effort",
-   "The U.S. military eliminated all journalist access to combat zones, leading to a complete ban on war correspondence for the duration of the conflict"
+   "News organizations voluntarily agreed to pool all reporting through a single government-approved outlet to maintain battlefield security",
+   "The U.S. military eliminated all journalist access to combat zones, leading to a complete ban on war correspondence for the duration of the conflict",
+   "The government passed the War Powers Act, which required all journalists to submit stories for military censorship before publication"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Vietnam War coverage, particularly Cronkite's 1968 assessment and broader skeptical reporting, shifted American public opinion against the war and demonstrated journalism's power to challenge official narratives. The military did not ban journalists, pass censorship laws, or create mandatory pooling arrangements; instead, the conflict illustrated the tension between access and editorial independence.",
   "knowledge_area": "History of Journalism",
   "difficulty": "hard"
@@ -627,11 +627,11 @@
   "question": "The rise of digital media and online news platforms in the 2000s disrupted traditional print circulation models; which shift most accurately describes the industry transition during this period?",
   "options": [
    "Television networks acquired struggling newspapers to consolidate their monopolies on news distribution and eliminate all competing media outlets",
-   "Major print publications like the New York Times and Wall Street Journal moved toward digital-first strategies and paywalls as print advertising revenue declined and online readership grew",
    "Print journalism abandoned investigative reporting entirely in favor of aggregating stories from social media and user-generated content platforms",
-   "Newspapers transitioned from daily to weekly publication schedules to reduce costs while maintaining print subscriber bases and competing with cable television networks"
+   "Newspapers transitioned from daily to weekly publication schedules to reduce costs while maintaining print subscriber bases and competing with cable television networks",
+   "Major print publications like the New York Times and Wall Street Journal moved toward digital-first strategies and paywalls as print advertising revenue declined and online readership grew"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Newspapers responded to digital disruption by developing digital subscriptions and paywalls while reducing reliance on print advertising, exemplified by the Times' paywall strategy and digital expansion. The other options misrepresent the transition—publications did not reduce to weekly schedules, networks did not monopolize through acquisition, and serious outlets did not abandon investigative work.",
   "knowledge_area": "History of Journalism",
   "difficulty": "hard"
@@ -640,11 +640,11 @@
   "question": "The Pulitzer Prize and the Peabody Award both recognize excellence in journalism and broadcast media, but they differ in scope and selection criteria; which distinction is accurate?",
   "options": [
    "The Pulitzer Prize is awarded only to newspaper journalists, while the Peabody Award is given only to broadcast journalists working in television news",
-   "The Peabody Award predates the Pulitzer Prize by forty years and was the first major journalism award established in American media history",
    "The Pulitzer Prize awards journalism across print, online, and photography categories judged by newspaper editors and journalists, while the Peabody Award recognizes excellence in television, radio, and digital media assessed by media professionals and scholars",
-   "Both awards use identical judging panels drawn from major news organizations and have overlapping recipient categories with no distinction between print and broadcast work"
+   "Both awards use identical judging panels drawn from major news organizations and have overlapping recipient categories with no distinction between print and broadcast work",
+   "The Peabody Award predates the Pulitzer Prize by forty years and was the first major journalism award established in American media history"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "The Pulitzer Prize (established 1917) recognizes print and digital journalism through category-based judging by media professionals, while the Peabody Award (established 1941) covers television, radio, and digital media with judges including scholars and industry experts. The options incorrectly suggesting Pulitzer is print-only, Peabody is broadcast-only, or that Peabody predates Pulitzer conflate the awards' distinct histories and scopes.",
   "knowledge_area": "History of Journalism",
   "difficulty": "hard"

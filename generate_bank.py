@@ -150,17 +150,40 @@ def enforce_difficulty(questions, difficulty):
         q['difficulty'] = difficulty
     return questions
 
-def shuffle_answer_positions(questions):
-    """Randomly reorder each question's options so correct_index is evenly distributed.
+def shuffle_answer_positions(questions, position_counts):
+    """Deterministically assign correct-answer positions to enforce 25-25-25-25 distribution.
 
-    LLMs tend to place the correct answer at position 0 (A). This fixes that by
-    shuffling options after generation and updating correct_index to match.
+    Instead of random shuffling (which still clusters), we track how many times each
+    position (0=A, 1=B, 2=C, 3=D) has been used and always place the next correct answer
+    at whichever position is most under-represented. Ties broken randomly.
+
+    position_counts is a mutable list [nA, nB, nC, nD] shared across all batches
+    for a single bank so the balance is maintained globally, not just per batch.
     """
     for q in questions:
         correct_text = q['options'][q['correct_index']]
-        random.shuffle(q['options'])
-        q['correct_index'] = q['options'].index(correct_text)
+        # Pick the position with the lowest usage count
+        min_count = min(position_counts)
+        candidates = [i for i, c in enumerate(position_counts) if c == min_count]
+        target = random.choice(candidates)
+        # Rebuild options list with correct answer at target position
+        others = [o for o in q['options'] if o != correct_text]
+        random.shuffle(others)
+        q['options'] = others[:target] + [correct_text] + others[target:]
+        q['correct_index'] = target
+        position_counts[target] += 1
     return questions
+
+
+def check_distribution(bank, label=""):
+    """Print A/B/C/D ratio for the bank. Called every 100 questions."""
+    counts = [0, 0, 0, 0]
+    for q in bank:
+        counts[q['correct_index']] += 1
+    total = len(bank)
+    letters = 'ABCD'
+    ratio = '  '.join(f"{letters[i]}:{counts[i]}({counts[i]/total*100:.0f}%)" for i in range(4))
+    print(f"  [distribution @ {total}q{' '+label if label else ''}]  {ratio}")
 
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
@@ -221,7 +244,14 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
         print(f"  {event}: already has {len(bank)} questions — skipping")
         return
 
-    # weighted list of sections to draw from
+    # Track correct-answer position counts across the whole bank so
+    # shuffle_answer_positions can enforce 25-25-25-25 globally.
+    position_counts = [0, 0, 0, 0]
+    for q in bank:
+        position_counts[q['correct_index']] += 1
+
+    last_check = (len(bank) // 100) * 100  # next check threshold
+
     weights = [s["weight"] for s in sections]
     print(f"  {event}: {len(bank)}/{TARGET_PER_EVENT} questions, "
           f"{len(sections)} sections")
@@ -237,9 +267,8 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
         for attempt in (1, 2):                      # retry bad JSON once
             try:
                 raw = call_model(client, prompt)
-                got = shuffle_answer_positions(
-                    enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
-                )
+                parsed = enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
+                got = shuffle_answer_positions(parsed, position_counts)
                 break
             except ValueError as e:
                 print(f"    bad JSON from model (attempt {attempt}): {e}")
@@ -252,10 +281,15 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
                 json.dump(bank, f, indent=1, ensure_ascii=False)
             print(f"    +{len(got)} ({section['name']}) "
                   f"-> {len(bank)}/{TARGET_PER_EVENT}")
+            # Print distribution check every 100 questions
+            if len(bank) >= last_check + 100:
+                last_check += 100
+                check_distribution(bank)
         time.sleep(RATE_DELAY)
 
     print(f"  DONE {event}: {len(bank)} questions saved to "
           f"{os.path.relpath(bank_path, BASE)}")
+    check_distribution(bank, label="final")
     push_event(event, bank_path, len(bank))
 
 # ------------------------------ MAIN --------------------------------

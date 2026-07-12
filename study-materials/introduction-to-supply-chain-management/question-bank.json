@@ -2,12 +2,12 @@
  {
   "question": "A company implements an integrated system to monitor both material movement and real-time inventory data across its distribution network. Which two fundamental flows are being coordinated to enhance supply chain efficiency?",
   "options": [
-   "Physical flows of goods and information flows of demand signals, enabling synchronized inventory decisions and reduced stockouts",
+   "Transportation flows and financial flows, ensuring that logistics costs align with revenue forecasts and profit margins",
    "Procurement flows and production flows, optimizing the timing of raw material orders and manufacturing cycle adjustments",
    "Supplier relationship flows and customer feedback flows, creating transparency between manufacturing partners and end-user preferences",
-   "Transportation flows and financial flows, ensuring that logistics costs align with revenue forecasts and profit margins"
+   "Physical flows of goods and information flows of demand signals, enabling synchronized inventory decisions and reduced stockouts"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Physical and information flows are the two foundational flows in SCM—tangible goods move through the network while data about demand, inventory, and status flows back and forth to enable coordination. The other options describe important SCM components but do not define the two core flow types; supplier relationships, customer feedback, transportation costs, procurement timing, and production are all secondary outcomes or inputs that depend on managing physical and information flows first.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -15,10 +15,10 @@
  {
   "question": "An international retailer sources products from multiple countries and must navigate varying import duties, customs clearance procedures, and regional trade agreements. How do these elements collectively influence the company's overall supply chain strategy?",
   "options": [
-   "They reduce demand forecasting accuracy by introducing unpredictable customer behavior patterns across different markets and regions",
+   "They eliminate the need for logistics management by consolidating all shipments into a single customs entry point with unified regulations",
    "They establish cost structures, delivery timelines, and compliance obligations that reshape sourcing decisions, supplier selection, and pricing strategies",
-   "They increase demand for physical warehouse space by requiring duplicate inventory systems in each country to comply with local tariff codes",
-   "They eliminate the need for logistics management by consolidating all shipments into a single customs entry point with unified regulations"
+   "They reduce demand forecasting accuracy by introducing unpredictable customer behavior patterns across different markets and regions",
+   "They increase demand for physical warehouse space by requiring duplicate inventory systems in each country to comply with local tariff codes"
   ],
   "correct_index": 1,
   "explanation": "Import duties, customs regulations, and trade agreements fundamentally reshape SCM decisions—companies must factor tariff costs, compliance timelines, and legal requirements into sourcing and supplier strategies. The other options misrepresent the impact: demand forecasting depends on customer demand, not tariffs; customs procedures do not eliminate logistics management; and tariffs do not automatically necessitate duplicate inventory systems across countries.",
@@ -28,12 +28,12 @@
  {
   "question": "Three organizations across different industries—food manufacturing, automotive, and technology—are each implementing demand forecasting systems. Which rationale best explains why SCM practices, including forecasting approaches, must be tailored across these distinct sectors?",
   "options": [
-   "Technology companies can eliminate demand forecasting entirely because digital products have zero physical logistics requirements and unlimited production capacity",
    "Each industry faces unique product lifecycles, supply lead times, demand volatility patterns, and regulatory requirements that demand customized forecasting methodologies and inventory policies",
+   "Food manufacturing requires more advanced forecasting than automotive and technology because perishable goods have shorter shelf lives than durable products",
    "Automotive and technology industries use identical SCM practices because both produce complex manufactured goods with global supply chains and similar demand patterns",
-   "Food manufacturing requires more advanced forecasting than automotive and technology because perishable goods have shorter shelf lives than durable products"
+   "Technology companies can eliminate demand forecasting entirely because digital products have zero physical logistics requirements and unlimited production capacity"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Supply chain practices must reflect industry-specific characteristics: food deals with perishability and short shelf life, automotive with long lead times and modular production, and technology with rapid obsolescence and digital distribution options. Forecasting methodologies and strategies vary accordingly. The other options contain inaccurate generalizations: perishability is one factor but does not make food forecasting universally harder; technology still requires logistics for hardware; and automotive and technology differ significantly in product lifecycles and demand patterns.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -41,12 +41,12 @@
  {
   "question": "A supply chain manager must decide whether to invest in real-time tracking systems and supplier relationship management software. Which aspect of SCM growth most directly supports this capital investment decision?",
   "options": [
-   "The information revolution, which has made data visibility, rapid communication, and coordinated decision-making critical competitive advantages in supply chain operations",
-   "Demand forecasting improvements, which eliminate the need for safety stock and allow companies to operate with minimal technology infrastructure investments",
    "The global impact on SCM, which requires companies to expand warehouse facilities across all continents to reduce shipping distances",
+   "Demand forecasting improvements, which eliminate the need for safety stock and allow companies to operate with minimal technology infrastructure investments",
+   "The information revolution, which has made data visibility, rapid communication, and coordinated decision-making critical competitive advantages in supply chain operations",
    "Strategic orientation for saving money, which mandates that all companies prioritize the lowest-cost supplier regardless of quality or delivery reliability"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "The information revolution is a primary driver of SCM growth—advanced data systems enable visibility, faster communication, and coordinated decisions across complex global networks, justifying technology investments. The other options misrepresent SCM principles: global impact requires strategic sourcing but not necessarily facility expansion everywhere; demand forecasting does not eliminate safety stock; and strategic cost orientation does not mean blindly selecting cheapest suppliers without considering service quality.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -55,11 +55,11 @@
   "question": "A company redesigns its supply chain to reduce waste in packaging, minimize carbon emissions during transport, and create durable products that last longer for customers. This initiative reflects which core value-creation objective in modern supply chain management?",
   "options": [
    "Strategic orientation for saving money, which proves that eco-friendly packaging and carbon reduction always cost less than traditional supply chain methods",
-   "Global impact on SCM, which mandates that all companies must adopt identical environmental standards across every country and regulatory jurisdiction",
    "Creation of new value for customers, society, and the environment by balancing profitability with sustainability and social responsibility considerations",
-   "Demand forecasting efficiency, which predicts that environmentally conscious consumers will purchase more units of durable goods annually"
+   "Demand forecasting efficiency, which predicts that environmentally conscious consumers will purchase more units of durable goods annually",
+   "Global impact on SCM, which mandates that all companies must adopt identical environmental standards across every country and regulatory jurisdiction"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Modern SCM recognizes that value creation extends beyond customer transactions to include societal and environmental benefits—sustainable practices, reduced waste, and product durability align profit with purpose. The other options confuse different SCM concepts: forecasting predicts demand but doesn't define value creation; cost savings do not guarantee that sustainability is always cheaper; and global standards vary by jurisdiction rather than being uniformly mandated.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -67,9 +67,9 @@
  {
   "question": "A supply chain manager is evaluating whether to establish a regional distribution center or source products directly from overseas suppliers. Which combination of factors should primarily drive this decoupling point decision?",
   "options": [
+   "Product shelf life expectations, warehouse automation technology, and current competitor network configurations",
    "Supplier reliability ratings, transportation mode availability, and the total number of active customer accounts in the region",
    "Seasonal demand patterns, supplier payment terms, and the geographic distance from the manufacturing plant",
-   "Product shelf life expectations, warehouse automation technology, and current competitor network configurations",
    "Customer demand variability, lead time requirements, and inventory holding costs versus the fixed costs of maintaining a distribution facility"
   ],
   "correct_index": 3,
@@ -80,12 +80,12 @@
  {
   "question": "When implementing algorithms for capital cost optimization in a supply chain network, a manager discovers that reducing the number of warehouses decreases fixed facility costs but increases transportation expenses to customers. What does this scenario most directly illustrate?",
   "options": [
-   "The failure of synchronizing material flow techniques when the supply network lacks adequate decoupling points",
-   "The necessity of inventory maximization strategies to offset higher per-unit transportation costs and improve profit margins",
    "The trade-off between proximity to customer and operational efficiency, requiring algorithms to find the cost-minimizing network configuration",
+   "The necessity of inventory maximization strategies to offset higher per-unit transportation costs and improve profit margins",
+   "The failure of synchronizing material flow techniques when the supply network lacks adequate decoupling points",
    "The impact of market signals on consumer demand, which necessitates frequent recalibration of facility locations"
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Capital cost optimization algorithms must balance competing objectives: proximity benefits (reduced transport costs, faster delivery) against efficiency benefits (fewer warehouses, lower fixed costs). This trade-off is central to network design. The scenario does not involve inventory maximization or demand signals; it is fundamentally a location-efficiency problem.",
   "difficulty": "hard",
   "knowledge_area": "Improving Supply Chain Network Performance"
@@ -93,12 +93,12 @@
  {
   "question": "A company uses market signals and consumer demand data to adjust its product sourcing decisions quarterly. Which of the following best explains how this practice improves supply chain network performance?",
   "options": [
+   "By establishing fixed supplier contracts based on prior-year demand forecasts, which reduces negotiation complexity and stabilizes procurement budgets",
    "By increasing inventory levels at decoupling points to buffer against demand volatility and ensure product availability across all customer segments",
    "By aligning sourcing locations and supplier selection with shifting customer preferences and demand patterns, reducing obsolescence risk and improving asset utilization",
-   "By establishing fixed supplier contracts based on prior-year demand forecasts, which reduces negotiation complexity and stabilizes procurement budgets",
    "By synchronizing material flow schedules to match historical seasonal patterns, thereby minimizing warehouse automation costs and transportation expenses"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Responsive sourcing decisions tied to market signals ensure the supply chain sources what customers actually want, reducing waste and improving efficiency. This contrasts with reactive inventory buffers or rigid historical schedules. While supplier contracts matter, fixed arrangements ignore market signals and prevent the network from meeting evolving consumer needs efficiently.",
   "difficulty": "hard",
   "knowledge_area": "Improving Supply Chain Network Performance"
@@ -106,12 +106,12 @@
  {
   "question": "During a supply chain network evaluation, a manager must assess whether synchronizing material flow with customer demand will improve performance more than establishing additional decoupling points. What is the critical distinction between these two approaches?",
   "options": [
-   "Synchronizing material flow aims to reduce inventory and pipeline delays by aligning supply timing with demand, while decoupling points accept inventory to decouple demand variability from supply timing",
-   "Synchronizing material flow requires advance consumer demand forecasts, while decoupling points rely solely on historical sales data and supplier lead times",
+   "Synchronizing material flow applies only to finished goods, while decoupling points manage raw materials and work-in-process inventory across manufacturing stages",
    "Decoupling points reduce transportation costs to customers, while synchronizing material flow optimizes the allocation of warehouse labor and automation resources",
-   "Synchronizing material flow applies only to finished goods, while decoupling points manage raw materials and work-in-process inventory across manufacturing stages"
+   "Synchronizing material flow requires advance consumer demand forecasts, while decoupling points rely solely on historical sales data and supplier lead times",
+   "Synchronizing material flow aims to reduce inventory and pipeline delays by aligning supply timing with demand, while decoupling points accept inventory to decouple demand variability from supply timing"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "These represent two different philosophies: synchronization minimizes inventory by timing supply to match demand, while decoupling strategically holds inventory to absorb variability. Both can improve performance, but they work through opposite mechanisms. The choice depends on demand predictability, lead times, and cost structures—not on data sources, transportation costs, or product stage.",
   "difficulty": "hard",
   "knowledge_area": "Improving Supply Chain Network Performance"
@@ -119,12 +119,12 @@
  {
   "question": "A company evaluates how its supply chain network meets and improves customer needs across three distinct segments: price-sensitive bulk buyers, time-sensitive urgent orders, and customization-focused specialty clients. Which evaluation process best reflects the complexity of serving these segments?",
   "options": [
-   "Optimizing capital costs by consolidating suppliers and distribution facilities, then measuring customer satisfaction through Net Promoter Score surveys and retention rates",
    "Assessing how decoupling point placement, proximity strategies, and sourcing decisions differ by segment to balance cost, speed, and flexibility trade-offs for each group",
    "Synchronizing material flow schedules across all three segments using a single demand forecast to simplify logistics coordination and reduce operational overhead",
-   "Implementing inventory maximization policies uniformly across all segments to ensure service level consistency and reduce per-unit holding costs overall"
+   "Implementing inventory maximization policies uniformly across all segments to ensure service level consistency and reduce per-unit holding costs overall",
+   "Optimizing capital costs by consolidating suppliers and distribution facilities, then measuring customer satisfaction through Net Promoter Score surveys and retention rates"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "Different customer segments have fundamentally different needs, requiring differentiated network strategies. The evaluation must examine whether decoupling placement, proximity-efficiency balance, and sourcing fit each segment's priorities—speed, cost, or flexibility. Uniform policies, single forecasts, or cost-only optimization ignore segment-specific trade-offs and fail to evaluate true network performance across diverse customer needs.",
   "difficulty": "hard",
   "knowledge_area": "Improving Supply Chain Network Performance"
@@ -132,12 +132,12 @@
  {
   "question": "In supply chain management, how does forecasting differ from customer relationship management in terms of operational focus?",
   "options": [
-   "Forecasting relies exclusively on historical sales data from the past two years, whereas customer relationship management uses only real-time transaction information to guide purchasing decisions.",
-   "Forecasting determines supplier pricing strategies and negotiation tactics, while customer relationship management establishes distribution network routes and warehouse locations.",
+   "Forecasting identifies which products will be discontinued, whereas customer relationship management predicts which customers will switch to competitors in the next quarter.",
    "Forecasting predicts future demand patterns to optimize inventory levels, while customer relationship management focuses on building long-term buyer loyalty and satisfaction through personalized interactions and service quality.",
-   "Forecasting identifies which products will be discontinued, whereas customer relationship management predicts which customers will switch to competitors in the next quarter."
+   "Forecasting relies exclusively on historical sales data from the past two years, whereas customer relationship management uses only real-time transaction information to guide purchasing decisions.",
+   "Forecasting determines supplier pricing strategies and negotiation tactics, while customer relationship management establishes distribution network routes and warehouse locations."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Forecasting in SCM is a predictive tool for demand planning and inventory optimization, while CRM is a relationship-focused function emphasizing customer retention and satisfaction. The other options incorrectly pair forecasting and CRM with data sources, pricing functions, or customer attrition—none of which are their primary distinctions.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Topics"
@@ -145,10 +145,10 @@
  {
   "question": "How does supply market intelligence support procurement decisions in ways that global distribution expansion requires?",
   "options": [
+   "Supply market intelligence eliminates the need for forecasting by consolidating all customer feedback into a single database that procurement uses to determine order quantities.",
    "Supply market intelligence certifies that all suppliers meet sustainability standards before any global distribution expansion can occur in developing markets.",
-   "Supply market intelligence automates the entire purchasing process by replacing human negotiators with algorithms that calculate the lowest cost across all global suppliers regardless of delivery speed.",
    "Supply market intelligence gathers data on supplier capabilities, pricing trends, and geopolitical risks in multiple regions to inform procurement choices that align with expanded distribution networks and international sourcing opportunities.",
-   "Supply market intelligence eliminates the need for forecasting by consolidating all customer feedback into a single database that procurement uses to determine order quantities."
+   "Supply market intelligence automates the entire purchasing process by replacing human negotiators with algorithms that calculate the lowest cost across all global suppliers regardless of delivery speed."
   ],
   "correct_index": 2,
   "explanation": "Supply market intelligence involves gathering and analyzing data on suppliers, markets, and risks to guide procurement strategy—critical when expanding distribution globally. The distractors incorrectly suggest SМI automates purchasing, replaces forecasting, or serves as a certification barrier, none of which reflect its actual role in supporting informed procurement across international operations.",
@@ -158,12 +158,12 @@
  {
   "question": "When designing SCM strategies for healthcare, which two functions are most interdependent: inventory management logistics, sales and operations planning, or procurement and sustainability standards?",
   "options": [
-   "Inventory management logistics and procurement are most interdependent because healthcare suppliers are legally required to maintain zero-waste warehouses under all circumstance.",
    "Inventory management logistics and sales and operations planning are most interdependent in healthcare because fluctuating patient volumes and emergency demand require tight coordination between stock levels and production forecasts.",
-   "Sales and operations planning directly controls transportation planning routes, making them more interdependent than any pairing involving procurement in healthcare environments.",
-   "Procurement and sustainability standards are most interdependent in healthcare SCM because sourcing decisions must balance supplier environmental practices with regulatory compliance and patient safety requirements across medical supply chains."
+   "Procurement and sustainability standards are most interdependent in healthcare SCM because sourcing decisions must balance supplier environmental practices with regulatory compliance and patient safety requirements across medical supply chains.",
+   "Inventory management logistics and procurement are most interdependent because healthcare suppliers are legally required to maintain zero-waste warehouses under all circumstance.",
+   "Sales and operations planning directly controls transportation planning routes, making them more interdependent than any pairing involving procurement in healthcare environments."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "In healthcare SCM, inventory management and S&OP are tightly linked because unpredictable demand (emergencies, patient surges) requires real-time balance between available stock and operational capacity. While procurement and sustainability matter in healthcare, the inventory-demand coordination is the most critical interdependence. The other options conflate separate functions or introduce false regulatory claims.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Topics"
@@ -171,9 +171,9 @@
  {
   "question": "How do analytics and transportation planning work together to reduce total supply chain cost in global distribution networks?",
   "options": [
-   "Analytics predicts which suppliers will go bankrupt next year, while transportation planning automatically reroutes all shipments to domestic carriers to avoid international risk.",
-   "Analytics determines the optimal inventory safety stock levels at each warehouse, while transportation planning negotiates supplier contracts to secure volume discounts.",
    "Analytics measures customer satisfaction scores, and transportation planning uses those scores to decide whether to use air freight or ocean freight for each shipment.",
+   "Analytics determines the optimal inventory safety stock levels at each warehouse, while transportation planning negotiates supplier contracts to secure volume discounts.",
+   "Analytics predicts which suppliers will go bankrupt next year, while transportation planning automatically reroutes all shipments to domestic carriers to avoid international risk.",
    "Analytics identifies demand patterns and cost drivers across regions, enabling transportation planning to optimize route selection, carrier choice, and consolidation strategies that minimize total cost while meeting service level commitments."
   ],
   "correct_index": 3,
@@ -184,12 +184,12 @@
  {
   "question": "Which relationship best explains how sales and operations planning, forecasting, and inventory management logistics form an integrated SCM cycle?",
   "options": [
-   "Inventory management logistics calculates how many units to order, forecasting decides which suppliers will deliver them, and S&OP determines the warehouse location for storage.",
-   "Forecasting identifies seasonal sales trends, inventory management logistics sets prices to match demand, and S&OP communicates plans to customers through marketing channels.",
    "S&OP defines the company's sustainability goals, forecasting estimates carbon emissions per shipment, and inventory management logistics certifies all packaging materials as recyclable.",
-   "Forecasting predicts customer demand; S&OP aligns production, inventory, and sales capacity to meet that demand; inventory management logistics then executes the plan through optimal stock positioning and replenishment timing."
+   "Forecasting predicts customer demand; S&OP aligns production, inventory, and sales capacity to meet that demand; inventory management logistics then executes the plan through optimal stock positioning and replenishment timing.",
+   "Forecasting identifies seasonal sales trends, inventory management logistics sets prices to match demand, and S&OP communicates plans to customers through marketing channels.",
+   "Inventory management logistics calculates how many units to order, forecasting decides which suppliers will deliver them, and S&OP determines the warehouse location for storage."
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "These three functions form a closed loop: forecasting generates demand signals, S&OP coordinates the enterprise response (production and inventory plans), and inventory management logistics deploys stock efficiently. The distractors incorrectly assign sustainability decisions to S&OP, pricing logic to inventory management, or marketing communication to S&OP.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Topics"
@@ -199,10 +199,10 @@
   "options": [
    "Purchasing selects the lowest-cost suppliers while SCM manages inventory buffers to compensate for supply variability",
    "Purchasing negotiates supplier contracts independently, then SCM coordinates delivery schedules based on inventory forecasts",
-   "SCM determines facility locations first, then purchasing identifies suppliers closest to those facilities regardless of cost structure",
-   "Purchasing and SCM jointly analyze total cost of ownership across suppliers, transport modes, and facility locations to align procurement with distribution strategy"
+   "Purchasing and SCM jointly analyze total cost of ownership across suppliers, transport modes, and facility locations to align procurement with distribution strategy",
+   "SCM determines facility locations first, then purchasing identifies suppliers closest to those facilities regardless of cost structure"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Purchasing's relationship with SCM requires integrated decision-making on total cost, not sequential or siloed processes. The correct answer reflects how purchasing and SCM must collaborate on supplier selection, transportation, and network design simultaneously to create value. The other options show purchasing and SCM acting independently or purchasing optimizing for a single variable (cost or proximity) without SCM integration.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -212,10 +212,10 @@
   "options": [
    "Analyze the labor availability and real estate prices in potential hub locations, then calculate warehouse operating expenses per unit handled",
    "Evaluate current customer proximity to existing warehouses and customer satisfaction scores to minimize disruption to established relationships",
-   "Assess supplier proximity to hub locations and negotiate volume discounts to offset the cost of expanded transportation networks",
-   "Compare fixed facility costs, variable transportation costs from hubs to customers, and service-level trade-offs such as delivery speed and inventory holding costs"
+   "Compare fixed facility costs, variable transportation costs from hubs to customers, and service-level trade-offs such as delivery speed and inventory holding costs",
+   "Assess supplier proximity to hub locations and negotiate volume discounts to offset the cost of expanded transportation networks"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Efficient facility network design requires analyzing the trade-off between facility costs (fixed) and distribution costs (variable), including how consolidation affects service levels. The correct answer captures the multi-dimensional nature of the decision. The other options focus on single factors (labor/real estate, customer satisfaction, supplier proximity) without addressing the integrated cost and service analysis needed for network optimization.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -225,10 +225,10 @@
   "options": [
    "Distribution centers operate with higher automation, improving throughput per employee and reducing the number of handling errors during order fulfillment",
    "Suppliers receive longer payment terms, allowing them to invest in quality improvements that reduce defect rates in finished goods",
-   "Increased visibility across all suppliers and logistics providers reduces forecast error, enabling lower safety stock levels and faster inventory turns without stockouts",
-   "Purchasing establishes long-term contracts with selected suppliers, guaranteeing volume commitments in exchange for price reductions"
+   "Purchasing establishes long-term contracts with selected suppliers, guaranteeing volume commitments in exchange for price reductions",
+   "Increased visibility across all suppliers and logistics providers reduces forecast error, enabling lower safety stock levels and faster inventory turns without stockouts"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Supply chain integration creates value by aligning information and processes across partners, which directly reduces costs and improves service. The correct answer shows how integration (shared forecasts, visibility) drives tangible benefits (lower safety stock, faster turns). The other options describe supplier management, facility operations, or purchasing leverage—real SCM activities—but do not show how integration itself creates value by reducing variability or inefficiency.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -237,11 +237,11 @@
   "question": "A company must decide whether to use a third-party logistics provider or develop in-house transportation. How should supply and demand management principles factor into this strategic choice?",
   "options": [
    "In-house fleets are cost-effective only if the company operates in a single geographic region with uniform customer distribution and consistent order frequencies",
-   "In-house transportation should be selected when supplier lead times are long, whereas third-party providers work better when customer demand is seasonal",
+   "Third-party logistics providers offer variable-cost flexibility to match demand volatility, while in-house fleets provide asset control and cost predictability if demand is stable and high-volume",
    "Third-party logistics providers are preferred because they handle supplier relationships and reduce procurement complexity regardless of demand patterns",
-   "Third-party logistics providers offer variable-cost flexibility to match demand volatility, while in-house fleets provide asset control and cost predictability if demand is stable and high-volume"
+   "In-house transportation should be selected when supplier lead times are long, whereas third-party providers work better when customer demand is seasonal"
   ],
-  "correct_index": 3,
+  "correct_index": 1,
   "explanation": "Supply and demand management requires matching supply chain capabilities to demand characteristics. The correct answer reflects how demand volatility drives the choice between fixed assets (in-house) and variable costs (third-party). The other options incorrectly link the decision to supplier lead times, seasonal demand without addressing cost structure, supplier relationships, or geographic factors without considering the demand-supply matching principle.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -262,12 +262,12 @@
  {
   "question": "A manufacturing company implements an integrated IT system that connects its suppliers, production facilities, and distribution centers in real time. Which of the following best describes the primary impact of this technology on supply chain management?",
   "options": [
-   "IT enables visibility across supply chain nodes, reduces lead times through automated ordering, and allows companies to respond faster to demand fluctuations and disruptions.",
-   "IT creates digital records of all transactions and provides better data for financial audits, which helps companies comply with regulations and improve their credit ratings with suppliers.",
    "IT improves communication between departments and enables companies to maintain larger safety stock levels, reducing the risk of stockouts while lowering overall procurement costs.",
-   "IT automates warehouse operations and reduces the need for human oversight, allowing companies to eliminate middle managers and consolidate all logistics into a single regional hub."
+   "IT automates warehouse operations and reduces the need for human oversight, allowing companies to eliminate middle managers and consolidate all logistics into a single regional hub.",
+   "IT creates digital records of all transactions and provides better data for financial audits, which helps companies comply with regulations and improve their credit ratings with suppliers.",
+   "IT enables visibility across supply chain nodes, reduces lead times through automated ordering, and allows companies to respond faster to demand fluctuations and disruptions."
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "IT's core impact on SCM is enhanced visibility, speed, and responsiveness—enabling real-time coordination across supply chain nodes and faster reaction to changes. While IT does improve communication and record-keeping, those are secondary benefits; the primary strategic advantage is agility and demand responsiveness, not safety stock or financial compliance alone.",
   "difficulty": "hard",
   "knowledge_area": "Contemporary Issues"
@@ -275,12 +275,12 @@
  {
   "question": "An e-business platform allows retailers to sell directly to consumers online while simultaneously using the same system to manage orders with their suppliers and logistics partners. How does this e-business model most significantly alter traditional supply chain financial flows?",
   "options": [
-   "It eliminates the wholesale tier entirely, allowing retailers to pay suppliers in installments rather than upfront, and shifts inventory ownership to the logistics provider until final delivery.",
    "It accelerates cash conversion by reducing the time between customer payment and supplier payment, shortens inventory holding periods, and creates new touchpoints for financial settlement throughout the chain.",
    "It requires retailers to maintain larger cash reserves because orders are processed more quickly, and it reduces the role of banks in supply chain financing since transactions occur entirely online.",
+   "It eliminates the wholesale tier entirely, allowing retailers to pay suppliers in installments rather than upfront, and shifts inventory ownership to the logistics provider until final delivery.",
    "It simplifies financial reconciliation by consolidating all invoices into a single monthly statement, reduces disputes over pricing, and allows retailers to negotiate longer payment terms with all suppliers simultaneously."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "E-business reshapes financial flow by compressing timelines—customers pay immediately, inventory moves faster, and settlement occurs across multiple nodes in near real-time. This improves working capital rather than requiring larger reserves, and it creates multiple financial touchpoints (not one consolidated statement), fundamentally altering when and how money moves through the chain.",
   "difficulty": "hard",
   "knowledge_area": "Contemporary Issues"
@@ -288,12 +288,12 @@
  {
   "question": "A shift in international trade policies suddenly increases tariffs on imported components, while simultaneously, consumer demand moves heavily toward online purchasing. Which two contemporary issues most directly explain why a company's supply chain decisions must change in response?",
   "options": [
-   "Economic events increase supplier bargaining power, forcing companies to adopt new IT systems, while e-commerce enables direct consumer feedback that improves product design and reduces returns.",
-   "Political and economic events alter sourcing options and cost structures, while e-commerce changes the required distribution network and customer delivery expectations.",
    "Competition intensifies because tariffs harm all suppliers equally, and e-commerce requires companies to invest in automation technology to reduce labor costs throughout manufacturing.",
-   "Political events create opportunities for vertical integration, while e-commerce allows companies to negotiate better terms with fewer, larger distributors instead of many regional partners."
+   "Political events create opportunities for vertical integration, while e-commerce allows companies to negotiate better terms with fewer, larger distributors instead of many regional partners.",
+   "Political and economic events alter sourcing options and cost structures, while e-commerce changes the required distribution network and customer delivery expectations.",
+   "Economic events increase supplier bargaining power, forcing companies to adopt new IT systems, while e-commerce enables direct consumer feedback that improves product design and reduces returns."
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Political and economic events (tariffs) directly reshape sourcing decisions and cost structures, while e-commerce transforms distribution requirements from wholesale-centric to direct-to-consumer fulfillment. The other options conflate these issues with competition, technology investment, or supplier relationships—secondary effects rather than the direct SCM redesign drivers.",
   "difficulty": "hard",
   "knowledge_area": "Contemporary Issues"
@@ -301,12 +301,12 @@
  {
   "question": "Two competitors in the same market face identical supplier costs and raw material availability. However, one company uses IT to optimize its inventory turns and distribution network, while the other invests in building redundant supplier relationships and safety stock. How does competition most directly drive these different supply chain decisions?",
   "options": [
-   "The first company reduces its IT expenses by operating a leaner supply chain, while the second company builds competitive advantage through exclusive supplier contracts that prevent rivals from accessing the same materials.",
-   "The first company targets price-sensitive customers in urban markets, while the second targets rural or remote markets where logistics costs are higher and multiple suppliers are less accessible.",
+   "The first company partners with logistics providers to externalize risk, while the second company assumes inventory risk internally to maintain control and ensure faster response times to competitors' price changes.",
    "The first company competes on cost and speed by improving efficiency, while the second prioritizes reliability and service levels to differentiate itself and justify premium pricing to customers.",
-   "The first company partners with logistics providers to externalize risk, while the second company assumes inventory risk internally to maintain control and ensure faster response times to competitors' price changes."
+   "The first company reduces its IT expenses by operating a leaner supply chain, while the second company builds competitive advantage through exclusive supplier contracts that prevent rivals from accessing the same materials.",
+   "The first company targets price-sensitive customers in urban markets, while the second targets rural or remote markets where logistics costs are higher and multiple suppliers are less accessible."
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Competition drives companies to pursue different strategic tradeoffs based on their target market positioning. The IT-focused approach competes on efficiency and speed (cost/responsiveness advantage), while the redundancy approach competes on reliability and service level—a differentiation strategy. The other options incorrectly attribute the decisions to cost reduction, geographic segmentation, or risk transfer rather than competitive positioning.",
   "difficulty": "hard",
   "knowledge_area": "Contemporary Issues"
@@ -314,9 +314,9 @@
  {
   "question": "A global supply chain includes manufacturing in a region experiencing political instability and distribution through e-commerce channels that operate 24/7 with real-time customer expectations. A supply disruption occurs at the manufacturing site. Which combination of contemporary issues best explains the company's response options?",
   "options": [
-   "Economic volatility requires the company to reduce inventory across all channels, political instability forces nearshoring decisions, and e-commerce allows the company to pause online orders temporarily without losing customers.",
-   "Political events increase supplier switching costs, IT systems automatically identify the disruption and notify customers, and competition with other online retailers means the company must absorb extra shipping costs to maintain service levels.",
    "Economic factors limit the company's ability to build new facilities, e-commerce platforms allow automatic refunds without manual processing, and competition forces the company to diversify suppliers in regions with lower labor costs.",
+   "Political events increase supplier switching costs, IT systems automatically identify the disruption and notify customers, and competition with other online retailers means the company must absorb extra shipping costs to maintain service levels.",
+   "Economic volatility requires the company to reduce inventory across all channels, political instability forces nearshoring decisions, and e-commerce allows the company to pause online orders temporarily without losing customers.",
    "Political risk makes alternative sourcing necessary, e-commerce demands rapid fulfillment capability, and IT systems enable the visibility needed to reroute orders through existing inventory and alternate suppliers."
   ],
   "correct_index": 3,
@@ -327,10 +327,10 @@
  {
   "question": "A manufacturing company is evaluating how to integrate its procurement department with supply chain management functions. Which approach best demonstrates how purchasing supports overall SCM strategy rather than operating in isolation?",
   "options": [
-   "Purchasing maintains supplier relationships independently and transfers purchase orders to SCM only after contracts are finalized",
-   "Purchasing aligns sourcing decisions with demand forecasts and works with SCM to synchronize supplier lead times with production schedules",
    "Purchasing focuses exclusively on cost reduction through vendor negotiations while SCM handles logistics planning separately",
-   "Purchasing selects vendors based on unit price alone while SCM coordinates with distribution centers to optimize inventory"
+   "Purchasing aligns sourcing decisions with demand forecasts and works with SCM to synchronize supplier lead times with production schedules",
+   "Purchasing selects vendors based on unit price alone while SCM coordinates with distribution centers to optimize inventory",
+   "Purchasing maintains supplier relationships independently and transfers purchase orders to SCM only after contracts are finalized"
   ],
   "correct_index": 1,
   "explanation": "Purchasing creates SCM value by integrating sourcing strategy with demand planning and supplier coordination, not by operating as a separate cost-cutting function. The correct answer reflects bidirectional alignment between procurement and broader supply chain objectives, whereas the distractors show purchasing either isolated from SCM concerns or pursuing conflicting goals.",
@@ -341,9 +341,9 @@
   "question": "During supply chain design, a company must decide whether to use dedicated contract manufacturers, multiple competing suppliers, or a single integrated subcontractor. What criterion should most influence this decision in the context of supply chain integration?",
   "options": [
    "How well each option supports visibility, information sharing, and coordinated planning across the integrated supply network",
-   "The geographic location of each potential partner and their existing warehouse facilities within the region",
    "The annual revenue and market share ranking of each supplier to ensure partnerships with industry leaders",
-   "The current inventory levels and production capacity utilization rates at each potential subcontractor's facilities"
+   "The current inventory levels and production capacity utilization rates at each potential subcontractor's facilities",
+   "The geographic location of each potential partner and their existing warehouse facilities within the region"
   ],
   "correct_index": 0,
   "explanation": "Supply chain integration prioritizes partners who enable collaborative planning, real-time data exchange, and synchronized operations—not just geographic convenience or financial metrics. The correct answer identifies integration capability as the deciding factor, while distractors focus on logistics convenience, company prestige, or operational snapshots that do not reflect integration depth.",
@@ -354,11 +354,11 @@
   "question": "A retailer experiences significant demand volatility across seasons but wants to maintain service levels while minimizing working capital tied up in inventory. Which supply and demand management strategy best addresses this dual objective?",
   "options": [
    "Negotiate longer supplier lead times to allow production smoothing and implement automated reorder points at fixed thresholds",
-   "Implement demand forecasting with supplier visibility, use flexible capacity agreements, and align production to actual demand signals",
    "Increase safety stock across all product categories and require suppliers to maintain buffer inventory at distribution hubs",
+   "Implement demand forecasting with supplier visibility, use flexible capacity agreements, and align production to actual demand signals",
    "Reduce the number of SKUs carried and implement just-in-time delivery from the nearest regional warehouse to each store"
   ],
-  "correct_index": 1,
+  "correct_index": 2,
   "explanation": "Effective supply-demand management balances forecasting transparency with operational flexibility, avoiding both excess inventory and stockouts. The correct answer combines demand visibility, supplier collaboration, and responsive production—whereas distractors either lock in inflexible lead times, build static buffers that waste capital, or oversimplify through SKU reduction.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -367,11 +367,11 @@
   "question": "A company is redesigning its facility network and must choose between consolidating distribution into two large regional hubs or maintaining five smaller local facilities. Which efficiency consideration most directly reflects optimal facility network design for supply chain objectives?",
   "options": [
    "The total square footage and real estate costs of each facility option divided by the number of customer locations served",
-   "The number of suppliers that can deliver to each facility and the cost savings from bulk purchasing agreements per region",
    "Total transportation and handling costs, facility overhead, inventory carrying costs, and service level delivery time are all evaluated together",
-   "The existing workforce size at each location and the capital required to lease or construct new warehouse space"
+   "The existing workforce size at each location and the capital required to lease or construct new warehouse space",
+   "The number of suppliers that can deliver to each facility and the cost savings from bulk purchasing agreements per region"
   ],
-  "correct_index": 2,
+  "correct_index": 1,
   "explanation": "Efficient facility design requires holistic cost-service optimization across transportation, fixed costs, working capital, and customer responsiveness—not real estate cost alone or supplier access. The correct answer encompasses the full trade-off landscape, while distractors isolate single factors like real estate, supplier convenience, or labor that do not capture network design complexity.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -379,12 +379,12 @@
  {
   "question": "A company identifies that uncontrolled spending across procurement categories, logistics providers, and third-party services is eroding supply chain profitability. What scope of expense management is most appropriate for SCM to address this issue comprehensively?",
   "options": [
-   "Implement spending caps on each department's budget and require approval from finance before any purchase order exceeds a threshold",
    "Consolidate all purchases into a single vendor to reduce negotiation overhead and achieve volume-based pricing discounts",
-   "Focus audits on individual purchase orders and negotiate unit prices with each supplier to reduce cost per transaction",
-   "Analyze and control costs across sourcing, inbound transportation, facility operations, outbound distribution, and service contracts as integrated categories"
+   "Implement spending caps on each department's budget and require approval from finance before any purchase order exceeds a threshold",
+   "Analyze and control costs across sourcing, inbound transportation, facility operations, outbound distribution, and service contracts as integrated categories",
+   "Focus audits on individual purchase orders and negotiate unit prices with each supplier to reduce cost per transaction"
   ],
-  "correct_index": 3,
+  "correct_index": 2,
   "explanation": "Supply chain expense management must address costs across all interconnected functions—procurement, transportation, facilities, and services—rather than controlling them in isolation. The correct answer reflects integrated cost governance, whereas distractors either focus narrowly on unit pricing, impose inflexible budget constraints, or rely on single-sourcing that sacrifices strategic flexibility.",
   "difficulty": "hard",
   "knowledge_area": "Supply Chain Planning and Design"
@@ -392,12 +392,12 @@
  {
   "question": "A company implements demand forecasting alongside improved information flows to optimize inventory levels. Which two essential supply chain components are being integrated to enhance operational efficiency?",
   "options": [
-   "E-commerce platforms and customs regulations to streamline the creation of new environmental value",
+   "Demand forecasting and information flows to align production schedules with anticipated customer requirements",
    "Physical flows and strategic orientation for cost reduction through shared real-time data systems",
-   "Logistics management and import tariffs to coordinate cross-border shipments with regulatory compliance procedures",
-   "Demand forecasting and information flows to align production schedules with anticipated customer requirements"
+   "E-commerce platforms and customs regulations to streamline the creation of new environmental value",
+   "Logistics management and import tariffs to coordinate cross-border shipments with regulatory compliance procedures"
   ],
-  "correct_index": 3,
+  "correct_index": 0,
   "explanation": "Demand forecasting and information flows work together to enable companies to anticipate customer needs and adjust supply accordingly. Physical flows and strategic cost orientation are separate concepts, while import tariffs and customs regulations are external compliance factors rather than integrated operational components. E-commerce and customs are also distinct functional areas.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -406,11 +406,11 @@
   "question": "Global competition has driven supply chain management growth by requiring firms to manage relationships across multiple countries while navigating tariffs, customs regulations, and trade agreements simultaneously. Which factor BEST explains why this complexity represents a major reason for SCM expansion?",
   "options": [
    "E-commerce growth and global competition combined eliminate the need for traditional customs procedures and tariff negotiations",
-   "The information revolution enables real-time tracking of physical and information flows across international borders, reducing delays and compliance risks",
    "Relationship management across dispersed suppliers requires strategic logistics orientation to minimize total cost while maintaining service levels",
-   "Import and export regulations create barriers that force companies to invest in specialized supply chain expertise and legal oversight"
+   "Import and export regulations create barriers that force companies to invest in specialized supply chain expertise and legal oversight",
+   "The information revolution enables real-time tracking of physical and information flows across international borders, reducing delays and compliance risks"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "The information revolution has been a primary driver of SCM growth by allowing companies to coordinate complex international operations with visibility into both physical goods movement and data exchange. While relationship management, regulatory expertise, and cost reduction are important SCM elements, they are outcomes of the information revolution rather than independent reasons for growth. E-commerce has not eliminated customs and tariff requirements.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -418,12 +418,12 @@
  {
   "question": "A manufacturer must decide whether to produce goods domestically or outsource to an international supplier. The decision requires analyzing how logistics costs, import tariffs, customs clearance delays, and risk exposure interact to create customer value. Which supply chain dimension encompasses all these interconnected considerations?",
   "options": [
+   "Strategic orientation for cost savings through relationship management and supplier consolidation in low-wage countries",
    "The global impact on supply chain management, including how tariffs, customs, legal aspects, and logistics shape international operations",
    "Demand forecasting and e-commerce integration to predict customer preferences across different geographic markets",
-   "Strategic orientation for cost savings through relationship management and supplier consolidation in low-wage countries",
    "Logistics management and physical flows optimization to minimize transportation time and warehouse inventory holding costs"
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "The global impact on SCM encompasses tariffs, customs regulations, legal frameworks, and logistics as interconnected forces that determine feasibility and profitability of international sourcing. Demand forecasting and e-commerce are demand-side tools, logistics management focuses narrowly on transportation, and cost-savings strategy omits the compliance and risk dimensions. Only the global impact lens captures the full complexity of international sourcing decisions.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -431,12 +431,12 @@
  {
   "question": "An organization seeks to create new value for customers, society, and the environment simultaneously while managing physical product flows and information flows across its supply chain. How do these three value dimensions relate to core supply chain management functions?",
   "options": [
-   "All three depend on integrated physical and information flows that enable transparency, accountability, and sustainable decision-making across supply chain partners",
    "Customer and environmental value are created through strategic cost orientation, while social value is created through global competition and market expansion",
+   "Customer value emerges from demand forecasting accuracy, social value from ethical relationship management practices, and environmental value from logistics efficiency optimization",
    "Environmental value requires tariff negotiation and customs compliance, customer value requires e-commerce platforms, and social value requires import-export diversification",
-   "Customer value emerges from demand forecasting accuracy, social value from ethical relationship management practices, and environmental value from logistics efficiency optimization"
+   "All three depend on integrated physical and information flows that enable transparency, accountability, and sustainable decision-making across supply chain partners"
   ],
-  "correct_index": 0,
+  "correct_index": 3,
   "explanation": "Creating value for customers, society, and environment requires leveraging both physical and information flows to enable visibility, coordination, and sustainable practices across the entire supply chain. While demand forecasting, relationship management, and logistics each contribute to specific outcomes, only integrated physical and information flows enable simultaneous accountability to all three stakeholders. Tariffs, e-commerce, and cost reduction are tools, not sources of multi-stakeholder value.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -444,12 +444,12 @@
  {
   "question": "Two companies operate in the same industry but differ in supply chain strategy. Company A emphasizes relationship management and information transparency to reduce risk across multiple suppliers, while Company B pursues a strategic orientation focused primarily on cost minimization. Which statement best distinguishes how these approaches reflect different drivers of supply chain management growth?",
   "options": [
-   "Company A leverages demand forecasting and e-commerce integration; Company B relies on customs optimization and import tariff negotiation as competitive advantages",
    "Company A reflects growth driven by the information revolution and relationship management prioritization; Company B reflects growth driven by global competition and tariff reduction",
+   "Company A addresses global competition through relationship management and legal compliance, while Company B addresses customer value creation through demand forecasting",
    "Company A's approach mitigates legal and customs risks while Company B's approach maximizes logistics efficiency and physical flow speed across borders",
-   "Company A addresses global competition through relationship management and legal compliance, while Company B addresses customer value creation through demand forecasting"
+   "Company A leverages demand forecasting and e-commerce integration; Company B relies on customs optimization and import tariff negotiation as competitive advantages"
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "The information revolution and relationship management represent complementary drivers of SCM growth that enable risk mitigation through visibility and partnership, as reflected in Company A's strategy. Global competition drives cost optimization, which aligns with Company B's focus, though both compete globally. Demand forecasting, e-commerce, and tariff handling are functional tools, not fundamental drivers. Logistics efficiency and customer value are outcomes, not drivers of SCM expansion.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -458,9 +458,9 @@
   "question": "A manufacturing firm uses demand forecasting to adjust production levels monthly in response to market changes, while a competitor maintains fixed production quantities regardless of demand fluctuations. Which planning approach does each company employ?",
   "options": [
    "The first company uses dynamic planning; the second uses static planning based on historical capacity constraints.",
-   "The first company follows static planning to ensure consistency; the second uses dynamic planning to minimize inventory.",
+   "The first company applies static planning with quarterly reviews; the second uses dynamic planning for cost reduction.",
    "The first company implements dynamic planning adjusted for demand; the second relies on static planning with preset schedules.",
-   "The first company applies static planning with quarterly reviews; the second uses dynamic planning for cost reduction."
+   "The first company follows static planning to ensure consistency; the second uses dynamic planning to minimize inventory."
   ],
   "correct_index": 2,
   "explanation": "Dynamic planning adjusts production in response to changing demand forecasts, while static planning maintains fixed schedules regardless of market conditions. The first company's monthly adjustments to market changes exemplify dynamic planning; the competitor's fixed quantities reflect static planning.",
@@ -471,11 +471,11 @@
   "question": "During master production schedule (MPS) determination, a plant manager must account for forecasted demand of 500 units, confirmed customer orders of 350 units, and safety stock requirements of 100 units for the upcoming period. Which factors directly influence the MPS calculation?",
   "options": [
    "Confirmed customer orders adjusted by a percentage buffer, independent of both forecasts and safety stock.",
+   "Only confirmed customer orders and safety stock levels, excluding forecast data that may prove inaccurate.",
    "Safety stock and forecast data only, since confirmed orders represent committed inventory already allocated.",
-   "Forecasted demand, confirmed customer orders, and safety stock requirements to balance supply with expected needs.",
-   "Only confirmed customer orders and safety stock levels, excluding forecast data that may prove inaccurate."
+   "Forecasted demand, confirmed customer orders, and safety stock requirements to balance supply with expected needs."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "The master production schedule integrates forecasted demand, confirmed orders, and safety stock to determine production quantities that satisfy known commitments and anticipated demand while maintaining protection against variability. Each component plays a distinct role in the MPS calculation.",
   "difficulty": "hard",
   "knowledge_area": "Production Planning and Control"
@@ -483,12 +483,12 @@
  {
   "question": "A supply chain manager is preparing documentation for production. She must list all components, subassemblies, and quantities required to manufacture one final product unit. Raw materials include steel frames and fasteners; subassemblies include pre-welded chassis and assembled control panels. What document is she creating?",
   "options": [
-   "A finished goods manifest documenting completed units ready for distribution and their corresponding storage locations.",
    "A bill of material (BOM) that specifies every component and subassembly with exact quantities needed per unit.",
+   "A raw materials inventory schedule showing current stock levels and reorder points for all purchased items.",
    "A work-in-process tracking sheet that monitors production stages from component assembly through final quality testing.",
-   "A raw materials inventory schedule showing current stock levels and reorder points for all purchased items."
+   "A finished goods manifest documenting completed units ready for distribution and their corresponding storage locations."
   ],
-  "correct_index": 1,
+  "correct_index": 0,
   "explanation": "A bill of material (BOM) is a structured listing of all components, subassemblies, and materials required to produce one unit of the final product, including exact quantities. The manager's task of documenting components, subassemblies, and their quantities per unit is the definition of BOM creation.",
   "difficulty": "hard",
   "knowledge_area": "Production Planning and Control"
@@ -496,10 +496,10 @@
  {
   "question": "In a manufacturing facility, materials arrive from suppliers and move through machining, assembly, and quality inspection stages before reaching the warehouse. At what point in this process are materials classified as work-in-process (WIP) rather than raw materials?",
   "options": [
+   "Once materials are received from suppliers and stored in the raw materials warehouse pending production scheduling.",
    "Once materials are allocated to a specific customer order and assigned a production batch number in the system.",
-   "Once materials complete quality inspection and await transfer to the finished goods warehouse for order fulfillment.",
    "Once materials enter production and undergo transformation through machining, assembly, or other conversion processes.",
-   "Once materials are received from suppliers and stored in the raw materials warehouse pending production scheduling."
+   "Once materials complete quality inspection and await transfer to the finished goods warehouse for order fulfillment."
   ],
   "correct_index": 2,
   "explanation": "Work-in-process refers to materials that have entered production and are undergoing transformation through manufacturing operations such as machining or assembly. Raw materials remain in that classification until production begins; once conversion activities start, they become WIP.",
@@ -509,12 +509,12 @@
  {
   "question": "A company manufactures consumer electronics. Units are completed on the assembly line, tested, packaged, and moved to the distribution warehouse where they await customer orders. Separately, the finance team measures inventory turnover and the operations team aims to minimize storage duration. Which SCM inventory classification do these completed units represent, and what is the primary goal for managing them?",
   "options": [
+   "Raw materials inventory; the goal is to maintain optimal stock levels to prevent production disruptions and excess waste.",
    "Finished goods inventory; the goal is to move units to customers quickly to reduce holding costs and improve cash flow.",
-   "Work-in-process inventory; the goal is to minimize time in each production stage to improve throughput and reduce defects.",
    "Safety stock inventory; the goal is to buffer against demand variability while balancing carrying costs and service levels.",
-   "Raw materials inventory; the goal is to maintain optimal stock levels to prevent production disruptions and excess waste."
+   "Work-in-process inventory; the goal is to minimize time in each production stage to improve throughput and reduce defects."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Finished goods are completed products awaiting customer shipment. The primary goal is to move them quickly to customers to minimize holding costs, reduce the risk of obsolescence, and improve cash flow. The scenario's emphasis on warehouse storage and customer orders confirms finished goods classification.",
   "difficulty": "hard",
   "knowledge_area": "Production Planning and Control"
@@ -522,12 +522,12 @@
  {
   "question": "When analyzing how logistics impacts supply chain management, which of the following represents the most comprehensive relationship between these two functions?",
   "options": [
-   "Logistics coordinates transportation routes and carrier selection, while SCM manages customer relationships and the creation of new value propositions for society and the environment.",
+   "Logistics focuses on warehouse operations and inventory storage, whereas SCM addresses the broader strategic decisions about sourcing and global market expansion opportunities.",
    "Logistics handles only the physical movement of goods from suppliers to manufacturers, while SCM coordinates all upstream and downstream processes including demand forecasting and customer value creation.",
-   "Logistics manages both physical goods movement and information flows across the entire network, enabling SCM to optimize costs, timelines, and strategic relationships between all supply chain partners.",
-   "Logistics focuses on warehouse operations and inventory storage, whereas SCM addresses the broader strategic decisions about sourcing and global market expansion opportunities."
+   "Logistics coordinates transportation routes and carrier selection, while SCM manages customer relationships and the creation of new value propositions for society and the environment.",
+   "Logistics manages both physical goods movement and information flows across the entire network, enabling SCM to optimize costs, timelines, and strategic relationships between all supply chain partners."
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "Logistics is foundational to SCM because it manages both physical goods movement and information flows, which enables SCM to optimize the entire network. The other options create artificial divisions between logistics and SCM or incorrectly limit logistics scope to narrow functions rather than recognizing its role in enabling broader supply chain coordination.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -535,12 +535,12 @@
  {
   "question": "In the context of global supply chains, how do tariffs, customs regulations, and trade agreements collectively influence the strategic orientation of a company toward cost savings and risk management?",
   "options": [
-   "Customs regulations establish the legal framework for all international shipments, tariffs are assessed only on manufactured goods rather than raw materials, and trade agreements guarantee stable pricing across all member nations indefinitely.",
-   "Trade agreements reduce tariffs predictably, allowing companies to lock in lower costs, while customs regulations primarily affect documentation timelines without impacting the total landed cost of imports.",
    "Tariffs increase product costs at the point of entry, customs regulations determine clearance procedures and compliance costs, and trade agreements can eliminate or reduce tariffs—collectively forcing strategic sourcing and routing decisions that affect both expenses and supply disruption risk.",
-   "Trade agreements standardize import taxes globally, tariffs are negotiated individually with each supplier, and customs regulations vary by product category but do not affect the overall supply chain design or geographic sourcing strategy."
+   "Trade agreements standardize import taxes globally, tariffs are negotiated individually with each supplier, and customs regulations vary by product category but do not affect the overall supply chain design or geographic sourcing strategy.",
+   "Customs regulations establish the legal framework for all international shipments, tariffs are assessed only on manufactured goods rather than raw materials, and trade agreements guarantee stable pricing across all member nations indefinitely.",
+   "Trade agreements reduce tariffs predictably, allowing companies to lock in lower costs, while customs regulations primarily affect documentation timelines without impacting the total landed cost of imports."
   ],
-  "correct_index": 2,
+  "correct_index": 0,
   "explanation": "Tariffs, customs regulations, and trade agreements are interconnected policy levers that directly shape sourcing location, routing decisions, and supply chain resilience. The correct answer reflects how companies must strategically respond to these variables, while the distractors contain plausible-sounding but incorrect oversimplifications—such as assuming tariffs apply only to certain product types or that trade agreements guarantee pricing stability.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -548,12 +548,12 @@
  {
   "question": "Which statement best explains why the information revolution has been a primary driver of supply chain management growth, particularly in relation to demand forecasting and relationship management?",
   "options": [
-   "Digital systems enable real-time visibility into inventory levels and customer orders across the entire network, allowing companies to forecast demand more accurately and strengthen collaborative relationships with suppliers and customers through shared data.",
-   "The information revolution reduced the need for long-term supplier relationships because companies can now source globally on a transaction-by-transaction basis without maintaining ongoing partnerships or contracts.",
    "Real-time information sharing between companies and their suppliers increased the complexity of demand forecasting but improved relationship management by reducing the frequency of communication required to maintain supply agreements.",
-   "Automated forecasting software eliminated demand uncertainty entirely, allowing companies to operate with minimal safety stock and reduce their need for negotiated trade agreements or customs compliance protocols."
+   "Digital systems enable real-time visibility into inventory levels and customer orders across the entire network, allowing companies to forecast demand more accurately and strengthen collaborative relationships with suppliers and customers through shared data.",
+   "Automated forecasting software eliminated demand uncertainty entirely, allowing companies to operate with minimal safety stock and reduce their need for negotiated trade agreements or customs compliance protocols.",
+   "The information revolution reduced the need for long-term supplier relationships because companies can now source globally on a transaction-by-transaction basis without maintaining ongoing partnerships or contracts."
   ],
-  "correct_index": 0,
+  "correct_index": 1,
   "explanation": "Information technology enables the transparency and coordination necessary for accurate demand forecasting and collaborative relationships—both key drivers of SCM growth. The distractors introduce plausible-sounding but incorrect claims: that digital systems replace relationships, that automation eliminates all uncertainty, or that information sharing paradoxically increases complexity while reducing communication needs.",
   "difficulty": "hard",
   "knowledge_area": "Essential Supply Chain Management Concepts"
@@ -561,8 +561,8 @@
  {
   "question": "When a company evaluates how to create new value for customers, society, and the environment simultaneously, which approach reflects an integrated supply chain management perspective rather than a purely transactional logistics function?",
   "options": [
-   "Minimizing order fulfillment time by using the nearest warehouse, reducing packaging waste to lower material costs, and partnering with suppliers in developing nations to improve their economic conditions while securing lower input prices.",
    "Reducing inventory holding costs through just-in-time delivery, using digital tracking systems to improve delivery accuracy for customers, and consolidating shipments to decrease the number of transportation routes needed annually.",
+   "Minimizing order fulfillment time by using the nearest warehouse, reducing packaging waste to lower material costs, and partnering with suppliers in developing nations to improve their economic conditions while securing lower input prices.",
    "Sourcing from certified sustainable suppliers to reduce environmental risk, designing reverse logistics networks to recover and recycle products, and structuring supplier relationships to improve working conditions and community investment in strategic sourcing regions.",
    "Optimizing transportation routes to reduce fuel consumption and cost, selecting suppliers based on labor practice compliance, and designing products with recyclable materials to appeal to environmentally conscious customers."
   ],
@@ -574,10 +574,10 @@
  {
   "question": "How do physical flows and information flows differ in their roles within supply chain management, and why must both be optimized together rather than independently?",
   "options": [
-   "Physical flows represent the movement of products from manufacturers to retailers, while information flows consist only of payment transactions and invoicing; companies typically optimize physical flows first and then adjust information systems afterward.",
-   "Physical flows move tangible goods through warehouses and transportation networks, while information flows transmit demand signals and inventory data; optimizing both together ensures that inventory movements match actual customer needs and that suppliers can plan production accordingly.",
    "Information flows are internal to a company's planning department, while physical flows involve external suppliers and customers; the two operate independently because information is managed by IT and physical logistics is managed by operations.",
-   "Physical flows include raw materials, components, and finished goods movement, while information flows track only quality certifications and regulatory compliance; both must be optimized together to meet safety standards and reduce product recalls."
+   "Physical flows move tangible goods through warehouses and transportation networks, while information flows transmit demand signals and inventory data; optimizing both together ensures that inventory movements match actual customer needs and that suppliers can plan production accordingly.",
+   "Physical flows include raw materials, components, and finished goods movement, while information flows track only quality certifications and regulatory compliance; both must be optimized together to meet safety standards and reduce product recalls.",
+   "Physical flows represent the movement of products from manufacturers to retailers, while information flows consist only of payment transactions and invoicing; companies typically optimize physical flows first and then adjust information systems afterward."
   ],
   "correct_index": 1,
   "explanation": "Physical and information flows are interdependent: inventory must physically move where it's needed (driven by accurate information), and information must flow fast enough to enable efficient physical movement. The correct answer captures this synchronization. The distractors create false separations—treating information as payment-only, as purely internal, or as limited to compliance—rather than recognizing information flow as the command system directing physical flow.",
@@ -587,12 +587,12 @@
  {
   "question": "A manufacturer of high-perishability food products must balance freshness with market reach. Which combination of channel structure and intermediary function best addresses both time utility and risk distribution in this scenario?",
   "options": [
-   "A one-level channel where the manufacturer ships directly to retailers, eliminating intermediaries but requiring the manufacturer to absorb spoilage risk and manage rapid transport logistics",
    "A three-level channel adding agents between manufacturer and wholesaler to negotiate terms, though this extends the supply chain and increases time delays that compromise product perishability",
-   "A two-level channel using wholesalers who provide storage and sorting functions, share perishability risk, and reduce the manufacturer's direct delivery burden while maintaining freshness windows",
-   "A dual distribution model combining direct-to-retailer showrooms with internet ordering, which prioritizes place utility over perishability concerns and requires customers to accept longer delivery windows"
+   "A dual distribution model combining direct-to-retailer showrooms with internet ordering, which prioritizes place utility over perishability concerns and requires customers to accept longer delivery windows",
+   "A one-level channel where the manufacturer ships directly to retailers, eliminating intermediaries but requiring the manufacturer to absorb spoilage risk and manage rapid transport logistics",
+   "A two-level channel using wholesalers who provide storage and sorting functions, share perishability risk, and reduce the manufacturer's direct delivery burden while maintaining freshness windows"
   ],
-  "correct_index": 2,
+  "correct_index": 3,
   "explanation": "High-perishability products require intermediaries who provide both storage/sorting functions and share spoilage risk—a two-level channel's core strengths. One-level channels eliminate risk-sharing benefits; three-level channels add unnecessary delay; dual distribution doesn't solve the perishability timing problem. The question tests how product characteristics drive channel selection.",
   "knowledge_area": "Channels of Distribution",
   "difficulty": "hard"
@@ -600,12 +600,12 @@
  {
   "question": "In a supply chain, facilitation differs from the core functions of assembly, storage, sorting, and transport. Which pair of services best exemplifies facilitation's role in reducing friction between channel members?",
   "options": [
-   "Financing arrangements and market information sharing that coordinate flow and reduce uncertainty without physically transforming or moving the product",
+   "Warehousing consolidation and load-break activities that organize inventory by customer destination before final shipment to retail locations",
    "Transportation scheduling and route optimization that minimize transit time while maintaining product integrity during multi-stage distribution",
-   "Packaging standardization and labeling compliance that ensure products meet retailer requirements at the point of warehouse receipt",
-   "Warehousing consolidation and load-break activities that organize inventory by customer destination before final shipment to retail locations"
+   "Financing arrangements and market information sharing that coordinate flow and reduce uncertainty without physically transforming or moving the product",
+   "Packaging standardization and labeling compliance that ensure products meet retailer requirements at the point of warehouse receipt"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Facilitation includes financing, information, and coordination services that enable channel partners to work together—not physical logistics functions. Storage, sorting, assembly, and transport are core marketing channel functions; packaging and labeling support those functions but are not facilitation. This tests the distinction between facilitation and the four primary marketing channel functions.",
   "knowledge_area": "Channels of Distribution",
   "difficulty": "hard"
@@ -614,9 +614,9 @@
   "question": "An automotive parts manufacturer considers whether intermediaries should handle pre-sale and post-purchase services. How do these services create efficiency and reduce the manufacturer's direct operational burden?",
   "options": [
    "Pre-sale information and coordination services provided by intermediaries build customer confidence and product knowledge, enabling faster sales cycles and reducing the manufacturer's need for direct customer education and support staff",
-   "Post-purchase maintenance and repair services handled by intermediaries create recurring revenue streams for both parties, whereas pre-sale inventory holding reduces manufacturer warehouse costs but increases retailer risk exposure",
+   "Pre-sale services such as technical specification guidance and maintenance training allow intermediaries to qualify customers and reduce manufacturer support requests, while post-purchase financing spreads customer payments over time without direct involvement",
    "Intermediaries bundle pre-sale consultations with post-purchase coordination services to create bundled offerings that command premium pricing, allowing the manufacturer to reduce distribution costs while maintaining customer satisfaction",
-   "Pre-sale services such as technical specification guidance and maintenance training allow intermediaries to qualify customers and reduce manufacturer support requests, while post-purchase financing spreads customer payments over time without direct involvement"
+   "Post-purchase maintenance and repair services handled by intermediaries create recurring revenue streams for both parties, whereas pre-sale inventory holding reduces manufacturer warehouse costs but increases retailer risk exposure"
   ],
   "correct_index": 0,
   "explanation": "Intermediaries' pre-sale services (information, coordination) and post-purchase services (maintenance, financing, support) reduce the manufacturer's direct customer-facing costs and support burden while improving sales efficiency. Option 0 conflates efficiency with customer payment logistics; Option 2 focuses on revenue but not efficiency; Option 3 emphasizes bundling and premium pricing rather than operational reduction. This tests understanding of how service distribution creates SCM efficiencies.",
@@ -626,12 +626,12 @@
  {
   "question": "A technical equipment manufacturer must choose between a one-level, two-level, and three-level channel structure. Which factor most directly influences this choice, and how does it interact with the product's characteristics?",
   "options": [
-   "Market size and geographic dispersion require longer channels when customers are spread across regions with varying technical expertise, making agent and wholesaler intermediaries necessary to provide pre-sale guidance suited to local product technicality levels",
    "Product cost and distribution frequency interact such that high-cost, low-frequency purchases never justify intermediary margins, making one-level direct-to-customer channels the only economically viable option",
-   "Company manufacturing capacity and inventory levels dictate channel choice, such that high-capacity manufacturers must use three-level channels to absorb production surplus, whereas lower-capacity firms use direct one-level sales",
-   "Competitive positioning in premium versus mass markets determines channel length, because premium segments always require one-level direct sales while mass markets require two-level or three-level channels regardless of product cost"
+   "Competitive positioning in premium versus mass markets determines channel length, because premium segments always require one-level direct sales while mass markets require two-level or three-level channels regardless of product cost",
+   "Market size and geographic dispersion require longer channels when customers are spread across regions with varying technical expertise, making agent and wholesaler intermediaries necessary to provide pre-sale guidance suited to local product technicality levels",
+   "Company manufacturing capacity and inventory levels dictate channel choice, such that high-capacity manufacturers must use three-level channels to absorb production surplus, whereas lower-capacity firms use direct one-level sales"
   ],
-  "correct_index": 0,
+  "correct_index": 2,
   "explanation": "Channel choice depends on market characteristics (size, geography, customer expertise) intersecting with product characteristics (technicality, cost). Technical products in dispersed markets benefit from intermediaries (agents, wholesalers) who provide specialized guidance at local levels—a three-level advantage. Option 1 oversimplifies premium/mass distinctions; Option 2 confuses capacity with channel logistics; Option 3 ignores that high-cost products often use longer channels for specialization. This tests multi-factor channel selection reasoning.",
   "knowledge_area": "Channels of Distribution",
   "difficulty": "hard"
@@ -640,11 +640,11 @@
   "question": "Risk sharing between manufacturers and channel intermediaries operates differently across one-level, two-level, and three-level channels. Which statement accurately describes how intermediary involvement redistributes supply chain risk?",
   "options": [
    "Manufacturers retain all demand risk in one-level channels because retailers have final consumer contact, while two-level and three-level channels shift obsolescence and spoilage risk to wholesalers and agents who hold inventory longer",
-   "Intermediaries in two-level channels absorb perishability and demand risk by holding stock, reducing the manufacturer's exposure to market fluctuations, whereas three-level channels diffuse risk across multiple parties but complicate coordination and accountability",
+   "Risk in three-level channels concentrates on agents because they negotiate terms between manufacturer and wholesaler, making them the primary risk-bearers regardless of inventory ownership or market exposure",
    "One-level channels eliminate financial risk for manufacturers since retailers bear all inventory cost, while two-level and three-level channels increase manufacturer liability by extending payment terms through longer channel networks",
-   "Risk in three-level channels concentrates on agents because they negotiate terms between manufacturer and wholesaler, making them the primary risk-bearers regardless of inventory ownership or market exposure"
+   "Intermediaries in two-level channels absorb perishability and demand risk by holding stock, reducing the manufacturer's exposure to market fluctuations, whereas three-level channels diffuse risk across multiple parties but complicate coordination and accountability"
   ],
-  "correct_index": 1,
+  "correct_index": 3,
   "explanation": "Longer channels distribute risk across more parties—wholesalers and agents absorb inventory, demand, and spoilage risk in two- and three-level channels, reducing the manufacturer's exposure. Option 0 reverses the risk flow; Option 2 confuses inventory costs with financial risk; Option 3 overemphasizes agents' role while ignoring wholesalers' inventory risk. This tests how channel structure affects risk distribution across supply chain partners.",
   "knowledge_area": "Channels of Distribution",
   "difficulty": "hard"

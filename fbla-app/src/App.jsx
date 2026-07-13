@@ -198,9 +198,11 @@ function FlashcardPane({ event, objectiveText, count, onBack }) {
         </div>
       </div>
       <div className="pane-loading">
-        <div className="pane-spinner" />
+        <div className="pane-orb">
+          <span className="pane-orb-ring" />
+          <span className="pane-orb-core" />
+        </div>
         <p className="pane-loading-title">Generating {count} flashcards…</p>
-        <p className="pane-loading-sub">Powered by Claude AI</p>
       </div>
     </div>
   )
@@ -319,9 +321,11 @@ function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
         </div>
       </div>
       <div className="pane-loading">
-        <div className="pane-spinner" />
+        <div className="pane-orb">
+          <span className="pane-orb-ring" />
+          <span className="pane-orb-core" />
+        </div>
         <p className="pane-loading-title">Generating {count} questions…</p>
-        <p className="pane-loading-sub">Powered by Claude AI</p>
       </div>
     </div>
   )

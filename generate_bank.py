@@ -195,6 +195,24 @@ def already_asked_block(prior_questions):
             "is now OFF LIMITS, including asking about it with different "
             "wording (RULE 8c):\n" + lines)
 
+ANSWER_INDICATOR_RE = re.compile(
+    r"\s*(?:✓|✔|☑|✅|\*+|\(\s*correct\s*\)|\[\s*correct\s*\]|<-+\s*correct)\s*$",
+    re.IGNORECASE,
+)
+
+def strip_answer_indicators(text):
+    """Defense-in-depth against leaked answer-indicators (RULE 4f). The
+    rules-file fix (removing inline check-mark annotations from illustrative
+    examples, which the model was literally copying into real option text)
+    addresses the root cause, but this strips any indicator that slips
+    through anyway. Mirrors server.js's stripAnswerIndicators exactly."""
+    cleaned = text
+    while True:
+        new = ANSWER_INDICATOR_RE.sub("", cleaned).rstrip()
+        if new == cleaned:
+            return cleaned
+        cleaned = new
+
 def parse_questions(raw, area_name):
     """Extract and validate a JSON array of questions from model output."""
     start, end = raw.find("["), raw.rfind("]")
@@ -210,6 +228,7 @@ def parse_questions(raw, area_name):
                 and isinstance(q.get("correct_index"), int)
                 and 0 <= q["correct_index"] <= 3
                 and isinstance(q.get("explanation"), str)):
+            q["options"] = [strip_answer_indicators(o) for o in q["options"]]
             q["knowledge_area"] = area_name
             q["difficulty"] = DIFFICULTY
             if q.get("type") not in QUESTION_TYPES:
@@ -398,10 +417,23 @@ def generate_event_tier(client, event, rules, state, dry_run=False):
         section = random.choices(sections, weights=weights, k=1)[0]
         n = min(BATCH_SIZE, target - len(bank))
         prior = [q["question"] for q in bank if q.get("knowledge_area") == section["name"]]
+        # Same rotation fix as the section tier: whenever this section gets
+        # picked again, focus on different objectives within it rather than
+        # whichever one the model reaches for by default every time.
+        objectives = split_objectives(section["body"])
+        if objectives:
+            batch_index = len(prior) // BATCH_SIZE
+            picks = [objectives[(batch_index * 2 + k) % len(objectives)]["text"]
+                     for k in range(min(2, len(objectives)))]
+            focus = ("Distribute this batch's questions across these specific "
+                      "objectives from within the section — don't fixate on "
+                      "just one topic: " + " | ".join(picks))
+        else:
+            focus = ""
         prompt = PROMPT_TEMPLATE.format(
             rules=rules, event=event, area=section["name"],
             difficulty_tier=difficulty_tier(event),
-            focus="", body=section["body"][:6000], n=n,
+            focus=focus, body=section["body"][:6000], n=n,
             already_asked=already_asked_block(prior),
         )
         got = _generate_batch(client, prompt, section["name"], state)
@@ -442,12 +474,28 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
         if len(bank) >= target:
             continue
         print(f"  {event} / {key}: {len(bank)}/{target}")
+        # Without explicit rotation, every batch sees the same whole-section
+        # body and gravitates toward whichever one objective it finds most
+        # salient (e.g. a 25-question Computer Hardware pool turning into
+        # mostly "types of computers / supercomputers" questions and never
+        # touching the other 9 objectives). Rotate 2 objectives into focus
+        # per batch so a section's full breadth actually gets covered.
+        objectives = split_objectives(section["body"])
+        batch_index = len(bank) // BATCH_SIZE
         while len(bank) < target:
             n = min(BATCH_SIZE, target - len(bank))
+            if objectives:
+                picks = [objectives[(batch_index * 2 + k) % len(objectives)]["text"]
+                         for k in range(min(2, len(objectives)))]
+                focus = ("Distribute this batch's questions across these specific "
+                          "objectives from within the section — don't fixate on "
+                          "just one topic: " + " | ".join(picks))
+            else:
+                focus = ""
             prompt = PROMPT_TEMPLATE.format(
                 rules=rules, event=event, area=key,
                 difficulty_tier=difficulty_tier(event),
-                focus="", body=section["body"][:6000], n=n,
+                focus=focus, body=section["body"][:6000], n=n,
                 already_asked=already_asked_block([q["question"] for q in bank]),
             )
             got = _generate_batch(client, prompt, key, state)
@@ -457,6 +505,7 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
                 with open(bank_path, "w", encoding="utf-8") as f:
                     json.dump(banks, f, indent=1, ensure_ascii=False)
                 print(f"    +{len(got)} -> {len(bank)}/{target}")
+            batch_index += 1
             time.sleep(RATE_DELAY)
 
     push_event(event, bank_path, sum(len(v) for v in banks.values()))

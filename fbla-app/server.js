@@ -61,6 +61,97 @@ function extractRelevantSection(outlineText, objectiveText) {
   return match || sections[0] || outlineText;
 }
 
+// Mechanical safety net for RULE 2 (option length balance) on the live
+// on-the-fly path. Bulk generation (generate_bank.py) has real code-level
+// enforcement for answer-position balance — shuffle_answer_positions()
+// reassigns positions after generation, it doesn't just hope the model
+// followed the prompt. The live path here had NO equivalent: it served
+// whatever the model returned with zero validation, relying entirely on
+// prompt compliance every single call. That's why length-bias kept slipping
+// through here specifically even after the prompt was strengthened twice.
+// This doesn't achieve full RULE 2 compliance (that needs judgment), but it
+// mechanically catches the egregious, observed failure mode: the correct
+// answer being obviously the longest, most-hedged option. A batch that
+// fails this check is rejected and retried with a fresh API call — same
+// retry mechanism as a malformed-JSON response.
+function hasObviousLengthTell(q) {
+  const letters = ['A', 'B', 'C', 'D'];
+  const wordCount = s => (s || '').trim().split(/\s+/).filter(Boolean).length;
+  const correctCount = wordCount(q.options?.[q.answer]);
+  if (!correctCount) return false;
+  const otherCounts = letters.filter(l => l !== q.answer).map(l => wordCount(q.options?.[l]));
+  const avgOther = otherCounts.reduce((a, b) => a + b, 0) / otherCounts.length;
+  // Combined relative + absolute check: catches genuinely hedged/detailed
+  // correct answers (the real observed failure) without over-triggering on
+  // short-option questions where a 1-word natural difference is meaningless.
+  return (correctCount - avgOther) >= 3 && correctCount > avgOther * 1.2;
+}
+
+function findLengthTellViolations(questions) {
+  return (questions || []).filter(hasObviousLengthTell);
+}
+
+// ---------------------------------------------------------------------------
+// Duplicate-question prevention for the live on-the-fly path. The bulk
+// generator (generate_bank.py) already does this via already_asked_block() —
+// this mirrors it exactly, but the live path never had ANY version of it,
+// within a single batch or across separate quiz requests for the same
+// objective. That's a real gap: nothing stopped the same fact from being
+// asked twice in one 15-question response, or a user re-generating a quiz
+// on the same objective and getting near-identical questions every time.
+// ---------------------------------------------------------------------------
+
+function normalizeQuestionText(s) {
+  return (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// Catches exact/near-exact repeats WITHIN one generated batch (normalized
+// string match — won't catch a fact reworded in genuinely different words,
+// but that's what the already-asked memory below is for across requests).
+function findDuplicateViolations(questions) {
+  const seen = new Set();
+  const violations = [];
+  for (const q of (questions || [])) {
+    const norm = normalizeQuestionText(q.question);
+    if (seen.has(norm)) violations.push(q);
+    else seen.add(norm);
+  }
+  return violations;
+}
+
+// In-memory, per-process cache of recently-served question text, keyed by
+// exactly what makes a pool distinct (event + scope + the objective/section
+// text). Resets on server restart — acceptable, this is a "don't repeat
+// yourself in the same session" aid, not a durable record like the bulk
+// generator's bank files. Capped per key so it can't grow unbounded.
+const RECENT_QUESTIONS_CACHE = new Map();
+const RECENT_QUESTIONS_CAP = 60;
+
+function recentQuestionsKey(event, scope, objective) {
+  return `${event}::${scope}::${objective}`;
+}
+
+function getRecentQuestions(event, scope, objective) {
+  return RECENT_QUESTIONS_CACHE.get(recentQuestionsKey(event, scope, objective)) || [];
+}
+
+function rememberQuestions(event, scope, objective, questions) {
+  const key = recentQuestionsKey(event, scope, objective);
+  const existing = RECENT_QUESTIONS_CACHE.get(key) || [];
+  const updated = existing.concat((questions || []).map(q => q.question)).slice(-RECENT_QUESTIONS_CAP);
+  RECENT_QUESTIONS_CACHE.set(key, updated);
+}
+
+// Mirrors generate_bank.py's already_asked_block() exactly — same wording,
+// same contract with RULE 8c in the shared rules file.
+function alreadyAskedBlock(priorQuestions) {
+  if (!priorQuestions || priorQuestions.length === 0) {
+    return 'ALREADY ASKED IN THIS KNOWLEDGE AREA: (none yet — this is the first batch, no restrictions from prior questions.)';
+  }
+  const lines = priorQuestions.map((q, i) => `  ${i + 1}. ${q}`).join('\n');
+  return `ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is now OFF LIMITS, including asking about it again with different wording (RULE 8c):\n${lines}`;
+}
+
 // Retry a fallible async fn up to maxAttempts times total.
 async function withRetry(fn, maxAttempts = 3) {
   let lastErr;
@@ -131,14 +222,43 @@ function loadBank(event) {
 
 function bankToQuizFormat(q) {
   const letters = ['A', 'B', 'C', 'D'];
-  return {
+  return sanitizeQuestion({
     question:       q.question,
     options:        { A: q.options[0], B: q.options[1], C: q.options[2], D: q.options[3] },
     answer:         letters[q.correct_index],
     explanation:    q.explanation,
     knowledge_area: q.knowledge_area,
     difficulty:     q.difficulty,
-  };
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Defense-in-depth against leaked answer-indicators (RULE 4f). The rules-file
+// fix (removing inline "✓" markers from illustrative examples, which the
+// model was literally copying into real option text) addresses the root
+// cause, but this strips any indicator that slips through anyway — whether
+// from a fresh AI response or an already-baked pre-generated bank file.
+// Applied on every serving path (bank AND live) so it can never regress.
+// ---------------------------------------------------------------------------
+const ANSWER_INDICATOR_RE = /\s*(?:✓|✔|☑|✅|\*+|\(\s*correct\s*\)|\[\s*correct\s*\]|<-+\s*correct)\s*$/i;
+function stripAnswerIndicators(text) {
+  if (!text) return text;
+  let cleaned = String(text);
+  let prev;
+  do {
+    prev = cleaned;
+    cleaned = cleaned.replace(ANSWER_INDICATOR_RE, '').trimEnd();
+  } while (cleaned !== prev);
+  return cleaned;
+}
+function sanitizeQuestion(q) {
+  if (!q || !q.options) return q;
+  const options = {};
+  for (const k of Object.keys(q.options)) options[k] = stripAnswerIndicators(q.options[k]);
+  return { ...q, options };
+}
+function sanitizeQuestions(questions) {
+  return (questions || []).map(sanitizeQuestion);
 }
 
 function shuffle(arr) {
@@ -153,9 +273,45 @@ function shuffle(arr) {
 // Each scope has its own pre-generated bank size. The bank is only ever
 // served when the request asks for exactly that many questions — anything
 // smaller generates fresh so it isn't just a random subset of the bigger
-// pre-generated pool. Section and objective banks don't exist yet, so those
-// scopes always fall through to live generation for now.
+// pre-generated pool.
 const SCOPE_BANK_MAX = { event: 50, section: 25, objective: 15 };
+const SCOPE_BANK_FILENAME = { section: 'question-bank-sections.json', objective: 'question-bank-objectives.json' };
+
+// Serve `count` questions from the pre-generated section/objective bank, if
+// one exists for this event and the request's objective text resolves to a
+// pool in it. Returns null (never throws) on any miss — the caller always
+// falls through to live generation, same as the event-tier path.
+function serveScopedBank(event, scope, objective, difficulty) {
+  const filename = SCOPE_BANK_FILENAME[scope];
+  if (!filename) return null;
+  const bankPath = path.join(MATERIALS_DIR, event, filename);
+  if (!fs.existsSync(bankPath)) return null;
+
+  let data;
+  try { data = JSON.parse(fs.readFileSync(bankPath, 'utf8')); }
+  catch { return null; }
+
+  let pool = null;
+  if (scope === 'objective') {
+    // Objective-scope requests send the raw objective sentence verbatim —
+    // it's the exact key generate_bank.py used when building this pool.
+    pool = data[objective] || null;
+  } else if (scope === 'section') {
+    // Section-scope requests send "A. Title: obj1; obj2; ..." (see
+    // buildSectionText in App.jsx) — pull out just the title to match the
+    // bank's section-name keys.
+    const m = (objective || '').match(/^[A-Z]{1,2}\.\s+(.+?):\s/);
+    pool = m ? (data[m[1]] || null) : null;
+  }
+  if (!pool || pool.length === 0) return null;
+
+  let filtered = pool;
+  if (difficulty) {
+    const byDiff = pool.filter(q => q.difficulty === difficulty);
+    if (byDiff.length) filtered = byDiff;
+  }
+  return shuffle(filtered).map(bankToQuizFormat);
+}
 
 // Mirrors generate_bank.py's difficulty_tier() exactly, so on-the-fly
 // generation is calibrated by RULE 1B the same way bulk generation is —
@@ -434,7 +590,7 @@ function normalizeCards(cards) {
 // Prompt builders
 // ---------------------------------------------------------------------------
 
-function buildGenPrompt(type, count, objective, outline, difficulty, extras = '', event = '') {
+function buildGenPrompt(type, count, objective, outline, difficulty, extras = '', event = '', alreadyAsked = []) {
   const studyBlock = [
     outline ? `--- EVENT OUTLINE ---\n${outline.slice(0, 1500).trim()}` : '',
     extras  ? `--- STUDY CONTENT ---\n${extras.slice(0, 3000).trim()}`  : '',
@@ -453,6 +609,10 @@ realistically appear on this specific event's real objective test.
 
 Generate exactly ${count} multiple-choice questions about: "${objective}"
 ${studyBlock ? `\n${studyBlock}\n` : ''}
+${alreadyAskedBlock(alreadyAsked)}
+
+Every question — including every one of the ${count} you write in THIS
+response relative to each other — must test a genuinely different fact.
 Format — every object must have these exact keys:
 [{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"2-3 sentences: why correct and why the wrong choices are wrong","knowledge_area":"topic area","difficulty":"${difficulty}"}]
 
@@ -495,7 +655,8 @@ app.post('/api/quiz', async (req, res) => {
   const { event, objective, count, difficulty, scope } = req.body;
   console.log(`[quiz] event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
 
-  // Fast path: exact-max-count event request — serve the pre-generated bank.
+  // Fast path: exact-max-count request — serve the pre-generated bank for
+  // this scope, if one exists and has a matching pool.
   if (scope === 'event' && count === SCOPE_BANK_MAX.event) {
     const banked = serveFromBank(event, difficulty);
     if (banked) {
@@ -503,12 +664,26 @@ app.post('/api/quiz', async (req, res) => {
       return res.json({ questions: banked, source: 'bank' });
     }
     console.log(`[bank] miss — falling through to AI`);
+  } else if ((scope === 'section' || scope === 'objective') && count === SCOPE_BANK_MAX[scope]) {
+    const banked = serveScopedBank(event, scope, objective, difficulty);
+    if (banked) {
+      console.log(`[bank] serving ${banked.length} ${difficulty} ${scope} questions for ${event}`);
+      return res.json({ questions: banked, source: 'bank' });
+    }
+    console.log(`[bank] miss (${scope}) — falling through to AI`);
   }
 
   // Slow path: generate with AI
   const outline = extractRelevantSection(getOutline(event), objective);
   const extras  = getExtras(event);
-  const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty, extras, event);
+  const priorQuestions = getRecentQuestions(event, scope, objective);
+  const prompt = buildGenPrompt('quiz', count, objective, outline, difficulty, extras, event, priorQuestions);
+
+  // Track the least-bad attempt across retries so a request NEVER hard-fails
+  // just because of these mechanical checks — a quiz with one imperfect
+  // question beats no quiz at all. The checks still drive real retries first.
+  let bestAttempt = null;
+  let bestViolationCount = Infinity;
 
   try {
     const questions = await withRetry(async () => {
@@ -516,10 +691,32 @@ app.post('/api/quiz', async (req, res) => {
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
       else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(count * 350, 16384) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
-      return extractJSON(raw);
+      const parsed = sanitizeQuestions(extractJSON(raw));
+      const lengthViolations = findLengthTellViolations(parsed);
+      const dupeViolations   = findDuplicateViolations(parsed);
+      const totalViolations  = lengthViolations.length + dupeViolations.length;
+
+      if (totalViolations < bestViolationCount) {
+        bestAttempt = parsed;
+        bestViolationCount = totalViolations;
+      }
+      if (totalViolations) {
+        const reasons = [];
+        if (lengthViolations.length) reasons.push(`${lengthViolations.length} length-tell`);
+        if (dupeViolations.length)   reasons.push(`${dupeViolations.length} duplicate`);
+        console.warn(`[quiz] ${reasons.join(', ')} violation(s) — retrying: "${(lengthViolations[0] || dupeViolations[0]).question.slice(0, 60)}..."`);
+        throw new Error('Generated questions failed quality checks — retrying');
+      }
+      return parsed;
     });
+    rememberQuestions(event, scope, objective, questions);
     res.json({ questions: questions.slice(0, count), source: 'ai' });
   } catch (err) {
+    if (bestAttempt) {
+      console.warn(`[quiz] all attempts had violations — serving least-bad available (${bestViolationCount} violation(s))`);
+      rememberQuestions(event, scope, objective, bestAttempt);
+      return res.json({ questions: bestAttempt.slice(0, count), source: 'ai' });
+    }
     console.error('Quiz error:', err.message);
     res.status(500).json({ error: err.message });
   }

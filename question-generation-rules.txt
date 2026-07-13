@@ -51,35 +51,37 @@ You must mix question types in the following proportions:
 
   38% — DEFINITION / TERM RECALL
          "The amount of time required to produce and place an advertisement is called ___"
-         A) frequency   B) reach   C) lead time ✓   D) exposure
+         A) frequency   B) reach   C) lead time   D) exposure   (Correct: C)
          The stem names a concept. The options are 4 real terms from the same topic.
 
   27% — CONCEPT COMPLETION
          "All of the processes used to identify, create, and maintain exchange
           relationships that satisfy individuals and organizations make up ___"
-         A) logistics   B) operations   C) marketing ✓   D) management
+         A) logistics   B) operations   C) marketing   D) management   (Correct: C)
          The stem describes a definition. The options are plausible field names.
 
   22% — WHICH-OF-THE-FOLLOWING APPLICATION
          "Which of the following would all decrease supply of a product?"
          A) Lower resource costs, more suppliers, favorable technology
-         B) Higher business taxes, higher resource costs, fewer suppliers ✓
+         B) Higher business taxes, higher resource costs, fewer suppliers
          C) Government subsidies, lower wages, improved production methods
          D) Increased consumer income, lower prices, rising demand
+         (Correct: B)
          Tests knowing cause-effect or which items belong in a category.
 
   8% — ALL-OF-THE-FOLLOWING EXCEPT (capitalize EXCEPT)
          "Consumer demand is influenced by all of the following EXCEPT"
-         A) income level   B) weather ✓   C) consumer preferences   D) price
+         A) income level   B) weather   C) consumer preferences   D) price   (Correct: B)
          One option is the odd one out. The other three are genuinely true.
 
   5% — SCENARIO / APPLIED JUDGMENT (kept deliberately rare — see guardrail below)
          "A company wants to consolidate several underused physical servers onto
           fewer machines to cut hardware costs. The best solution is to ___"
          A) Install additional RAM in each existing server
-         B) Deploy virtualization to run multiple virtual servers on shared hardware ✓
+         B) Deploy virtualization to run multiple virtual servers on shared hardware
          C) Purchase more physical servers to spread out the load
          D) Configure a VPN connection between the servers
+         (Correct: B)
          The scenario is just a wrapper — the actual thing being tested is a SPECIFIC
          technical concept (virtualization) from the source material.
 
@@ -166,14 +168,12 @@ must not happen again:
   Q: An employee discovers her company's customer database was accessed
      without authorization. The first step she should take is to ___
   A) report the incident to her manager and follow the company's incident
-     response procedure                                    ← correct AND
-                                                               by far the
-                                                               longest, most
-                                                               hedged option
+     response procedure
   B) post a warning on the company website about the breach
   C) immediately shut down all company servers to prevent further access
   D) contact individual customers directly via personal email before
      notifying leadership
+  (A is correct AND by far the longest, most hedged option — that's the flaw)
   This is wrong on two counts at once: the correct answer is the longest
   option (length gives it away), AND the question is generic workplace
   common sense rather than something this event actually teaches (see the
@@ -198,15 +198,18 @@ BAD:
   A) Kills the motion
   B) Delays it
   C) Sets pending business aside temporarily so the assembly can address
-     something urgent without setting a time to resume    ← obviously correct
+     something urgent without setting a time to resume
   D) Ends debate
+  (C is obviously correct — that's the flaw: it's stated like a full definition
+   while the others are terse fragments)
 
 GOOD:
   Q: What does the motion "lay on the table" do?
   A) Kills the main motion for the current session without a vote
-  B) Sets pending business aside temporarily for a more urgent matter ✓
+  B) Sets pending business aside temporarily for a more urgent matter
   C) Closes debate immediately and forces an immediate vote on the question
   D) Postpones the motion to a specific time at the next meeting
+  (Correct: B)
 
 ============================================================
 
@@ -250,13 +253,8 @@ GOOD:
     A) Run a hard drive diagnostic to check for physical disk errors
     B) Check for and install any available operating system updates
     C) Verify sufficient disk space is available and check RAM usage
-    D) Completely erase all files and reinstall the operating system  ← correct,
-                                                                          but so
-                                                                          extreme
-                                                                          it needs
-                                                                          no IT
-                                                                          knowledge
-                                                                          to spot
+    D) Completely erase all files and reinstall the operating system
+    (D is correct, but so extreme it needs no IT knowledge to spot — that's the flaw)
     Fix: make the odd-one-out a REASONABLE-SOUNDING step that is simply out of
     order or the wrong tool for THIS symptom — e.g. "Reformat the hard drive
     and restore from the most recent backup" (still drastic enough to be a
@@ -280,15 +278,18 @@ GOOD:
 
 BAD (fillers are vague):
   A) The trial balance and prior-period figures
-  B) Account balances, depreciation schedules, and accrued docs    ← only real one
+  B) Account balances, depreciation schedules, and accrued docs
   C) Customer names and transaction dates
   D) The owner's personal tax records
+  (B is the only real one — that's the flaw: the other three are vague filler,
+   making B stand out as obviously correct)
 
 GOOD (all sound like textbook answers):
   A) Adjusted trial balance columns, prior-period comparatives, and ledger totals
-  B) Account balances, depreciation schedules, and accrued expense docs ✓
+  B) Account balances, depreciation schedules, and accrued expense docs
   C) Subsidiary ledger schedules, bank reconciliation, and cash flow projections
   D) Reversing entries, petty cash balance, and outstanding purchase orders
+  (Correct: B)
 
 ============================================================
 
@@ -307,6 +308,20 @@ GOOD (all sound like textbook answers):
     between two extreme wrong values.
 4e. Negative stems ("Which is NOT...") in at most 1 in 5 questions.
     Capitalize NOT and EXCEPT.
+4f. NEVER put any answer-indicator inside the text of an option — no "✓",
+    "*", "(correct)", "[correct]", checkmark emoji, or similar mark. The
+    option text is shown to the student BEFORE they answer, so any such
+    mark instantly gives away the answer. This has shipped as a real bug:
+    an option's text ended with a literal "✓" and spoiled the answer before
+    the student clicked anything. Every example in this document that shows
+    which option is correct does so on a SEPARATE line below the options
+    (e.g. "(Correct: B)") — that annotation is for you, the model, to
+    understand the example. It is never part of the option text itself and
+    must never appear inside any option string you output. Only the
+    designated answer field (e.g. "answer" or "correct_index") in the JSON
+    output identifies the correct option — option text must be a clean,
+    self-contained statement with zero markup, symbols, or hints revealing
+    correctness.
 
 ============================================================
 

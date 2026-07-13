@@ -296,12 +296,46 @@ GOOD:
 3e. Every option must LOOK like it could be the real textbook answer. Wrong
     options should be wrong because they name the right KIND of thing in the
     wrong context — not because they are vague, made-up, or exaggerated.
+    Exception: see 3g for the one deliberate, narrow case where a fabricated
+    term is not just allowed but the whole point.
 3f. Every wrong option — in every question type, not just scenarios — must be
     an action, term, or fact a real, reasonably-informed-but-mistaken person
     might actually offer. Self-check before finalizing: "Could someone
     eliminate this option using only common sense, with zero knowledge of
     this event's subject matter?" If yes, it fails this rule — rewrite it as
     a genuine, specific, subject-grounded distractor.
+3g. NARROW EXCEPTION — invented-but-plausible-SOUNDING terms, for
+    "identify the real one" questions ONLY. For a question that asks the
+    student to pick the one item that is/is NOT an actual example of a named
+    category (e.g. "Which of the following is NOT an actual type of
+    malware?", "Which of these is a real network protocol?"), a distractor
+    does not have to be a real term at all — it only has to be constructed
+    from real-sounding roots/prefixes/suffixes so that only someone who
+    actually knows the real terminology can rule it out. This is a
+    DIFFERENT, GOOD technique from the extreme/strawman failures documented
+    elsewhere in this rule — a fabricated term that sounds plausible is
+    genuinely tempting, not a giveaway.
+    Example: "Which of the following is NOT an actual type of malware?"
+    A) Trojan horse   B) Ransomware   C) Blackhole virus   D) Worm
+    (Blackhole virus is invented — it is not a real malware category — but
+    it is built from real malware vocabulary ("virus" + a plausible-sounding
+    descriptor) so it reads as entirely believable next to three genuine
+    terms. This is exactly the kind of tempting-but-wrong option 3g calls
+    for; do not use an obviously-silly or unrelated invented name instead.)
+    Scope this NARROWLY:
+      - Only for identification/recall questions about a named category of
+        terms (malware types, protocols, file formats, hardware standards,
+        software categories) — never for scenario/application/EXCEPT
+        questions about actions or procedures, where an invented term would
+        just be confusing, not tempting.
+      - Do not overuse — most questions should still follow 3a-3f's
+        real-term approach. This is one available technique for one
+        question shape, not a new default.
+      - The invented term must never be presented as a fact or asserted as
+        true anywhere (stem, explanation, or correct answer) — it exists
+        only as a wrong option, so RULE 5a's "don't invent facts" is not in
+        tension with this: the fabrication is the point of the distractor,
+        not a claim about the world.
 
 BAD (fillers are vague):
   A) The trial balance and prior-period figures

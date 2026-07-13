@@ -99,16 +99,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "A sound card and a network adapter both function as expansion cards, but they differ fundamentally in what they manage. A sound card manages audio signals, while a network adapter manages ___",
+   "question": "A device that produces physical copies of digital documents and images stored on a computer is called a(n) ___",
    "options": [
-    "data communication and network connectivity",
-    "power distribution and thermal management",
-    "video output and display resolution",
-    "storage capacity and file transfer speed"
+    "printer",
+    "plotter",
+    "monitor",
+    "projector"
    ],
    "correct_index": 0,
-   "explanation": "A network adapter is responsible for enabling a computer to connect to and communicate across network connections, whether wired (Ethernet) or wireless (WiFi). While both expansion cards enhance computer functionality, they serve different purposes: sound cards handle audio, network adapters handle network communication. The other options describe functions of graphics cards, storage devices, and power supplies.",
-   "type": "concept_completion",
+   "explanation": "A printer is the standard output device that converts digital files into physical paper copies. While a plotter is also an output device, it is specialized for large-format technical drawings rather than general document printing. Monitors and projectors display images but do not produce physical hardcopies.",
+   "type": "definition_recall",
    "knowledge_area": "Computer Hardware",
    "difficulty": "hard"
   },
@@ -323,16 +323,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The overall set of capabilities required to run a software application—including minimum processor speed, available memory, storage space, and compatible operating systems—is referred to as the software's ___",
+   "question": "A computer that is small, self-contained, and designed for use by a single individual for personal or business tasks is called a(n) ___",
    "options": [
-    "performance specifications",
-    "expansion requirements",
-    "system compatibility",
-    "hardware requirements"
+    "workstation server",
+    "tablet device",
+    "mainframe computer",
+    "personal computer"
    ],
    "correct_index": 3,
-   "explanation": "Hardware requirements specify the minimum and recommended computer components and resources needed to run software effectively. This term encompasses CPU speed, RAM, disk space, and other physical system specifications that must be met for proper software operation.",
-   "type": "concept_completion",
+   "explanation": "A personal computer (PC) is specifically designed for individual use and is the most common type of computer found in homes and small offices. It differs from mainframes, which serve many users simultaneously, and from specialized systems like workstations or servers, which are built for specific enterprise tasks.",
+   "type": "definition_recall",
    "knowledge_area": "Computer Hardware",
    "difficulty": "hard"
   },
@@ -479,15 +479,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "The structured process that includes planning, design, development, testing, and deployment stages used to create and improve software is called the ___",
+   "question": "A program designed to help a user create, edit, and organize text documents is called ___",
    "options": [
-    "system integration framework",
-    "Software Development Life Cycle",
-    "software deployment cycle",
-    "application testing protocol"
+    "a compiler",
+    "a word processor",
+    "an operating system",
+    "a database management system"
    ],
    "correct_index": 1,
-   "explanation": "The Software Development Life Cycle (SDLC) is the formal, multi-phase framework that guides software creation from initial concept through final release and maintenance. This includes distinct stages like requirements gathering, design, coding, testing, and deployment that ensure quality and consistency.",
+   "explanation": "A word processor is application software specifically built for creating and formatting text documents. The other options are either system software (operating system, compiler) or a different type of application software (database management system) used for storing and retrieving structured data rather than document creation.",
    "type": "definition_recall",
    "knowledge_area": "Software Fundamentals",
    "difficulty": "hard"
@@ -591,16 +591,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The coordinated arrangement of activities that allows multiple software programs to run simultaneously on a single computer by dividing processor time and memory among them makes up ___",
+   "question": "A program that allows a user to create, format, and print visual presentations with slides containing text, images, and animations is called ___",
    "options": [
-    "hardware abstraction layering",
-    "virtual memory allocation",
-    "driver compatibility management",
-    "multitasking and resource allocation"
+    "a spreadsheet application",
+    "a graphic design utility",
+    "a database management system",
+    "a presentation software"
    ],
    "correct_index": 3,
-   "explanation": "Multitasking and resource allocation is the system software function that enables concurrent execution of multiple programs by distributing processor time, memory, and hardware access. This is distinct from virtual memory (which expands available memory using disk storage), hardware abstraction (which shields applications from hardware details), and driver management (which translates software commands to hardware actions) — all of which are separate system software functions.",
-   "type": "concept_completion",
+   "explanation": "Presentation software is specifically designed for creating slideshows with multimedia elements for conveying information to an audience. While spreadsheet applications handle numerical data and graphic design utilities focus on visual artwork, presentation software is the category that encompasses slide-based presentations with text, images, and animations.",
+   "type": "definition_recall",
    "knowledge_area": "Software Fundamentals",
    "difficulty": "hard"
   },
@@ -859,16 +859,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The process by which an operating system manages how applications are stored, located, and retrieved from a storage device, including how folders are organized and file attributes are tracked, is part of the ___",
+   "question": "The ability of an operating system to run multiple programs concurrently by rapidly switching the processor between them, creating the appearance that all programs are executing at the same time, is called ___",
    "options": [
-    "boot sequence",
-    "file management system",
-    "caching layer",
-    "partitioning scheme"
+    "partitioning",
+    "concurrent processing",
+    "caching",
+    "virtual memory allocation"
    ],
    "correct_index": 1,
-   "explanation": "File management systems handle the organization, storage, and retrieval of files on disk, including directory structures and metadata. While partitioning divides the physical disk and boot relates to startup, file management specifically governs how applications and data are organized and accessed during normal operation.",
-   "type": "concept_completion",
+   "explanation": "Concurrent processing (also called concurrency or time-sharing in some contexts) is the core OS capability that allows multiple programs to appear to run simultaneously by switching processor attention between them. This is distinct from caching (speed optimization), partitioning (disk organization), and virtual memory (RAM extension)—all of which are separate OS functions.",
+   "type": "definition_recall",
    "knowledge_area": "Operating Systems",
    "difficulty": "hard"
   },
@@ -957,16 +957,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The level of access a user has to specific files, folders, and system resources, which determines what actions (read, write, execute) they are permitted to perform on those resources, makes up the user's ___",
+   "question": "The ability of an operating system to manage and allocate resources such as processing power, memory, and storage devices to ensure all hardware components function correctly and efficiently is called ___",
    "options": [
-    "account privileges and permissions",
-    "system configuration",
-    "profile settings",
-    "authentication credentials"
+    "resource allocation",
+    "hardware coordination",
+    "device management",
+    "system optimization"
    ],
    "correct_index": 0,
-   "explanation": "Account privileges and permissions define what a user can actually do with files and resources on a system. Authentication credentials verify who a user is, profile settings store personal preferences, and system configuration refers to OS-wide settings — none of these specifically describe the scope of allowed actions on individual resources.",
-   "type": "concept_completion",
+   "explanation": "Resource allocation is the core OS function of managing and distributing hardware resources (CPU time, RAM, storage) among applications and processes. This is a foundational concept distinct from the already-covered core OS functions, booting, and file systems.",
+   "type": "definition_recall",
    "knowledge_area": "Operating Systems",
    "difficulty": "hard"
   },
@@ -1169,15 +1169,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "In team collaboration platforms, a feature that allows multiple users to work on the same document simultaneously in real time is referred to as ___",
+   "question": "In a word processing application, the feature that allows a user to store frequently-used text, formatting, or graphic elements for quick insertion into new documents is called a(n) ___",
    "options": [
-    "document encryption",
-    "asynchronous updating",
-    "version control backup",
-    "co-authoring"
+    "clipboard",
+    "style guide",
+    "macro",
+    "template"
    ],
    "correct_index": 3,
-   "explanation": "Co-authoring enables multiple team members to edit a shared document at the same time, seeing each other's changes instantly. This distinguishes it from version control (which tracks changes over time) and asynchronous updating (which involves batched, non-simultaneous changes).",
+   "explanation": "A template in word processing is a pre-formatted document structure that stores reusable content, layouts, and formatting, allowing users to save time by starting with a ready-made foundation rather than formatting from scratch each time. This is distinct from a macro (automation tool), a style guide (formatting rules document), or the clipboard (temporary storage for cut/copied items). Templates are a standard feature in all modern word processors for business correspondence and formal documents.",
    "type": "definition_recall",
    "knowledge_area": "Software Applications",
    "difficulty": "hard"
@@ -1239,16 +1239,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The collection of programs and tools that enable users to create, organize, analyze, and share information for workplace tasks is known as ___",
+   "question": "A spreadsheet application is primarily used to organize and manage data in what structure?",
    "options": [
-    "network protocols",
-    "software applications",
-    "operating system utilities",
-    "database management systems"
+    "Folders and subfolders for file storage",
+    "Rows and columns for numerical organization",
+    "Slides and transitions for presentations",
+    "Layers and frames for visual design"
    ],
    "correct_index": 1,
-   "explanation": "Software applications are the programs designed to help users accomplish specific work tasks, manage data, and communicate in a business environment. This is distinct from operating systems (which manage hardware) and database systems (which are specialized software for data storage). The term encompasses word processors, spreadsheets, email clients, and collaboration tools as a category.",
-   "type": "concept_completion",
+   "explanation": "A spreadsheet application organizes data into a grid of rows and columns where numerical values, text, and formulas can be stored and calculated. This structure allows users to perform calculations, create charts, and analyze data efficiently. The other options describe features specific to design software, file management systems, or presentation tools.",
+   "type": "definition_recall",
    "knowledge_area": "Software Applications",
    "difficulty": "hard"
   },
@@ -1549,15 +1549,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "The ability of artificial intelligence to process and understand unstructured information—such as images, audio, and text—without being preprogrammed for each specific type of input makes up ___",
+   "question": "The ability of artificial intelligence to understand and respond to spoken or written human language is called ___",
    "options": [
-    "rule-based automation and decision trees",
-    "sensory perception and cognitive understanding",
-    "algorithmic optimization and computational efficiency",
-    "supervised learning and data classification"
+    "Pattern recognition",
+    "Natural language processing",
+    "Machine learning",
+    "Sensory perception"
    ],
    "correct_index": 1,
-   "explanation": "Sensory perception and cognitive understanding describes AI's capacity to interpret and make sense of raw sensory data (images, sound, text) and extract meaning from it—a core capability that distinguishes modern AI from older rule-based systems. The question tests understanding of how AI goes beyond explicit programming to handle diverse, unstructured real-world inputs. This is distinct from the already-tested 'cognitive processing and perception' concept by focusing specifically on the ability to process diverse input types without per-type programming.",
+   "explanation": "Natural language processing (NLP) is the specific AI capability that enables systems to understand, interpret, and generate human language in both text and speech forms. The other options describe different AI functions—sensory perception handles visual and audio data interpretation, pattern recognition identifies trends in data, and machine learning is the broader process of improving through experience.",
    "type": "definition_recall",
    "knowledge_area": "Modern Technologies",
    "difficulty": "hard"
@@ -1717,15 +1717,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "The ability of artificial intelligence to understand complex patterns in large datasets, extract meaningful insights from unstructured information, and make informed recommendations based on those insights makes up ___",
+   "question": "The ability of artificial intelligence to recognize and identify objects, people, and scenes in photographs and video feeds is called ___",
    "options": [
-    "Cognitive processing and decision support",
-    "Sensor calibration",
-    "Network bandwidth management",
-    "Data compression"
+    "Computer vision",
+    "Predictive analytics",
+    "Natural language processing",
+    "Machine learning"
    ],
    "correct_index": 0,
-   "explanation": "Cognitive processing and decision support capture the core function of AI—analyzing patterns, extracting insights, and supporting human decision-making. This distinguishes AI from simpler data management tasks like compression or network administration.",
+   "explanation": "Computer vision is the AI capability that enables systems to interpret and analyze visual information from images and video. This is distinct from natural language processing (which handles text and speech), machine learning (the broader learning mechanism), and predictive analytics (forecasting future events from data).",
    "type": "definition_recall",
    "knowledge_area": "Modern Technologies",
    "difficulty": "hard"
@@ -1999,16 +1999,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "Which of the following would ALL be layers or functions within the Open Systems Interconnection model that help data move from one computer to another?",
+   "question": "A network protocol that automatically assigns IP addresses to devices on a network so they can communicate without manual configuration is called ___",
    "options": [
-    "Physical layer for electrical signals, Data Link layer for frames, Network layer for IP routing, and Transport layer for end-to-end communication",
-    "Presentation layer for file storage, Session layer for user login, Application layer for web browsers, and Physical layer for cables only",
-    "Modem layer for internet connection, ISP layer for service providers, Cloud layer for remote storage, and Security layer for antivirus protection",
-    "Authentication layer for passwords, Encryption layer for VPNs, Firewall layer for packet blocking, and Backup layer for data recovery"
+    "DHCP",
+    "TCP",
+    "SMTP",
+    "DNS"
    ],
    "correct_index": 0,
-   "explanation": "The OSI model's Physical, Data Link, Network, and Transport layers directly manage the movement of data between computers—handling signals, framing, routing, and reliable delivery respectively. Option B confuses OSI layers with other network concepts, Option C lists security tools rather than OSI layers, and Option D mixes network hardware and services but not actual OSI layers.",
-   "type": "which_of_following",
+   "explanation": "DHCP (Dynamic Host Configuration Protocol) is the standard protocol that automatically distributes IP addresses to networked devices, eliminating the need for manual assignment. TCP is a connection-oriented protocol for reliable data transmission, DNS resolves domain names to IP addresses, and SMTP handles email transmission — none of these handle automatic IP address assignment.",
+   "type": "definition_recall",
    "knowledge_area": "Networking Concepts",
    "difficulty": "hard"
   },
@@ -2055,16 +2055,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The process by which a network device automatically assigns IP addresses to computers and devices that connect to a network, along with other configuration details like gateway and DNS settings, is managed by ___",
+   "question": "A network topology in which computers are connected in a line, with each device linked to exactly two neighbors, is called a(n) ___",
    "options": [
-    "a router that forwards packets between subnets",
-    "a switch that filters traffic by MAC address",
-    "a DHCP server that leases addresses from a pool",
-    "a modem that connects to the internet service provider"
+    "bus topology",
+    "mesh topology",
+    "tree topology",
+    "linear topology"
    ],
    "correct_index": 2,
-   "explanation": "DHCP (Dynamic Host Configuration Protocol) servers automatically assign IP addresses and configuration parameters to devices requesting network access. Routers forward traffic between networks, switches manage local connections, and modems establish ISP connectivity—none of these automate IP address assignment.",
-   "type": "concept_completion",
+   "explanation": "A tree topology is a hierarchical network structure where computers branch off from a central trunk line, resembling an inverted tree. This differs from a bus topology (all devices on one cable) and mesh topology (every device connected to every other device), and is a foundational network design that students studying intro networking must recognize.",
+   "type": "definition_recall",
    "knowledge_area": "Networking Concepts",
    "difficulty": "hard"
   },
@@ -2407,16 +2407,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "The processes and technologies that work together to identify, prevent, and respond to unauthorized access attempts and cyber threats to a company's systems and data make up ___",
+   "question": "The process of removing unwanted data or redundant records from a database to improve performance and maintain data quality is called ___",
    "options": [
-    "data classification",
-    "cybersecurity",
-    "server administration",
-    "network topology"
+    "data compression",
+    "data cleaning",
+    "data validation",
+    "data encryption"
    ],
    "correct_index": 1,
-   "explanation": "Cybersecurity encompasses all defensive measures—software, hardware, and procedures—used to protect systems and data from unauthorized access and malicious activity. Network topology describes how devices are arranged, while data classification and server administration are specific functions rather than the umbrella concept.",
-   "type": "concept_completion",
+   "explanation": "Data cleaning is the fundamental practice of identifying and removing inaccurate, incomplete, or duplicate records from a database to ensure reliable information and system efficiency. This is distinct from data validation (checking data format), encryption (securing data), and compression (reducing file size)—each serves a different purpose in information management.",
+   "type": "definition_recall",
    "knowledge_area": "Information Management Concepts",
    "difficulty": "hard"
   },
@@ -2435,16 +2435,16 @@
    "difficulty": "hard"
   },
   {
-   "question": "Encryption is a fundamental tool for protecting sensitive data, but organizations also implement redundancy and offsite storage strategies to address which specific information security goal?",
+   "question": "The practice of protecting sensitive information from unauthorized access, theft, or corruption through technical tools and organizational procedures is called ___",
    "options": [
-    "preventing data loss from hardware failure or disaster",
-    "verifying the identity of employees accessing the network",
-    "monitoring and logging all user activity on company computers",
-    "detecting when unauthorized users attempt to access files"
+    "data security",
+    "access control",
+    "information management",
+    "data governance"
    ],
    "correct_index": 0,
-   "explanation": "Redundancy (having backup copies) and offsite storage (keeping copies away from the original location) specifically protect against data loss from failures, disasters, or physical damage—the core principle of disaster recovery and business continuity. Encryption prevents unauthorized reading; detection and identity verification are access controls; logging is an audit function—each serves a different security goal.",
-   "type": "concept_completion",
+   "explanation": "Data security refers to the overall practices and technologies used to protect information from unauthorized access and misuse. While data governance manages how data is used and protected through policy, and access control is one specific tool within security, data security is the broad term for the protection practices themselves.",
+   "type": "definition_recall",
    "knowledge_area": "Information Management Concepts",
    "difficulty": "hard"
   },

@@ -135,6 +135,22 @@ Management, Intro to FBLA):
   application questions even if they'd get the pure definitions right. A
   prepared freshman/sophomore who studied should score ~70-80%.
 
+  PLAIN-RECALL FLOOR (real user feedback — do not drop this): within the
+  55-60% definition/recall share, AT LEAST HALF must be PLAIN, single-fact
+  recall — a term paired with real-but-not-closely-confusable wrong options
+  (from the same general topic, not near-neighbors) — not every recall
+  question should hinge on distinguishing two commonly-confused terms. Real
+  feedback after reviewing generated INTRO-tier content: even with the
+  confusable-term allowance above, the material was trending consistently
+  too hard because nearly every recall question involved some fine
+  distinction, leaving no easy wins. Every INTRO-tier batch must include a
+  few genuinely simple, confidence-building questions — a straightforward
+  "what is this called" that a moderately-prepared student answers
+  immediately and correctly — not just questions that require active
+  discrimination between similar terms. Not every user studying an intro
+  event knows the material inside and out; some easier, plain-definition
+  questions belong in every batch alongside the tougher distinctions.
+
 STANDARD TIER — every other event (Accounting, Advanced Accounting,
 Business Law, Cybersecurity, Securities and Investments, etc.):
   These assume real coursework in the subject. Target per batch:
@@ -192,6 +208,19 @@ must not happen again:
     should vary randomly; "longest = correct" must not be a reliable signal
     in either direction, and the correct answer should not systematically be
     the most hedged or qualified-sounding option.
+2f. VARY THE OVERALL LENGTH TEXTURE ACROSS A BATCH — real user feedback: the
+    lengthening technique in 2e is good but becomes exhausting when EVERY
+    question in a set has long, hedged, elaborate options. That is a
+    different failure from 2a-2e (which are about relative length WITHIN one
+    question) — this is about the MIX across many questions. A healthy batch
+    has real variety: some questions (especially plain single-term recall —
+    see RULE 1B's plain-recall floor for INTRO tier) should have all four
+    options SHORT and direct — a term or a few words, no hedging, no extra
+    clauses — while others (concept_completion, scenario/application
+    questions) can reasonably run longer. Do not let every option in every
+    question become a full clause with qualifiers; that is its own giveaway
+    pattern (everything sounds equally "official") and makes the set feel
+    uniformly hard even when no single question technically violates 2a-2e.
 
 BAD:
   Q: What does "lay on the table" do?

@@ -98,15 +98,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Which of the following are all functions of an operating system?",
+  "question": "Which of the following combinations would ALL be appropriate strategies for configuring a new user account on a desktop operating system?",
   "options": [
-   "Managing hardware resources, controlling software execution, and providing a user interface",
-   "Installing antivirus software, backing up data automatically, and creating user accounts only",
-   "Compiling source code, encrypting all user files, and monitoring internet bandwidth",
-   "Rendering graphics, streaming video content, and managing network protocols exclusively"
+   "Create a standard user account with limited permissions, enable automatic security updates, and configure a strong password policy",
+   "Use a guest account for temporary access, remove file permissions entirely to simplify management, and allow unrestricted software installation",
+   "Assign administrative privileges to all new accounts, disable the firewall to improve performance, and skip password requirements for convenience",
+   "Grant full system access to every account created, turn off automatic updates to prevent disruptions, and set identical passwords for all users"
   ],
   "correct_index": 0,
-  "explanation": "The core functions of an operating system include resource management (CPU, memory, storage), process control (running and stopping applications), and providing an interface for user interaction. The other options include specialized tasks (compilation, antivirus) or describe application-level features rather than core OS responsibilities.",
+  "explanation": "Creating standard user accounts with limited permissions, enabling automatic updates, and enforcing strong passwords are all established OS configuration best practices that protect system security and user data. The other options bundle account setup choices that either disable essential protections (disabling firewalls, removing permissions) or create significant security vulnerabilities (administrative access for all users, weak or shared passwords). This tests understanding of which configuration steps together form a secure, functional user setup.",
   "type": "which_of_following",
   "knowledge_area": "Operating Systems",
   "difficulty": "hard"
@@ -126,15 +126,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "A user's computer frequently freezes when running multiple applications simultaneously. Which of the following steps would be most appropriate to investigate first?",
+  "question": "A user's computer frequently displays a blue screen of death and restarts unexpectedly. After checking that the system has adequate storage space and RAM usage is normal, which of the following troubleshooting steps should be performed next?",
   "options": [
-   "Replace the motherboard and reinstall all drivers",
-   "Disable the hard drive and rely solely on virtual memory",
-   "Check available RAM and monitor running processes using built-in OS tools",
-   "Reformat the hard drive and perform a clean OS installation"
+   "Perform a complete hard drive format and restore from backup without checking system logs first",
+   "Disable all startup programs and remove recently installed software without investigating root causes",
+   "Install the latest operating system updates and patches to address potential kernel or driver issues",
+   "Immediately replace the motherboard and reinstall the entire operating system from scratch"
   ],
   "correct_index": 2,
-  "explanation": "Checking RAM availability and monitoring active processes using system tools (like Task Manager on Windows) helps identify whether memory exhaustion or a runaway process is causing freezing—a non-destructive troubleshooting step that addresses the symptom directly. Replacing hardware and reformatting are drastic actions that bypass diagnosis; disabling the hard drive would cripple the system entirely.",
+  "explanation": "Blue screen errors are often caused by outdated drivers or kernel-level bugs that OS updates specifically address. This targeted step follows the logical troubleshooting sequence of checking resources first, then applying patches before attempting hardware replacement or drastic data actions. The other options either skip investigation of the actual cause or jump to irreversible actions prematurely.",
   "type": "scenario_judgment",
   "knowledge_area": "Operating Systems",
   "difficulty": "hard"
@@ -224,15 +224,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Which of the following would all be reasons to apply software updates and patches regularly?",
+  "question": "Which of the following is NOT an actual type of malware?",
   "options": [
-   "Change the user interface every month, prevent hardware from aging, and boost internet speed",
-   "Add new features, fix bugs, close security vulnerabilities, and improve performance",
-   "Reduce software costs, eliminate all user support requests, and increase disk space",
-   "Remove unnecessary programs, downgrade older features, and automatically upgrade all installed applications"
+   "Trojan horse",
+   "Shadowcrypt virus",
+   "Spyware",
+   "Ransomware"
   ],
   "correct_index": 1,
-  "explanation": "Software updates and patches serve multiple critical purposes: adding features, fixing bugs, closing security holes, and improving overall system performance. The other options contain false or unrealistic claims—patches don't reduce costs, eliminate all support requests, change the interface unpredictably, or affect hardware aging, internet speed, or automatically upgrade unrelated software.",
+  "explanation": "Shadowcrypt virus is a fabricated malware category that does not correspond to any real, standard classification in security literature. Ransomware, trojan horses, and spyware are all well-established, genuine malware types with distinct behaviors and attack methods that appear in actual security frameworks and antivirus software definitions.",
   "type": "which_of_following",
   "knowledge_area": "Software Fundamentals",
   "difficulty": "hard"
@@ -294,15 +294,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "The primary purpose of team collaboration software such as Microsoft Teams or Zoom is to ___",
+  "question": "Team collaboration software such as Microsoft Teams enables which of the following core functions in a business environment?",
   "options": [
-   "Create and distribute formatted printed documents",
-   "Enable real-time communication, video conferencing, and shared workspace for team projects",
-   "Store and organize financial data for accounting purposes",
-   "Manage customer contact information and sales leads"
+   "Creating formatted documents with advanced page layout and styling options for printing",
+   "Synchronous and asynchronous communication, file sharing, and virtual meetings in a centralized workspace",
+   "Sending individual text-based messages with attachments to external recipients only",
+   "Organizing numerical data into rows and columns for calculations and financial analysis"
   ],
   "correct_index": 1,
-  "explanation": "Collaboration software like Microsoft Teams and Zoom are built specifically to facilitate real-time communication, video meetings, and shared digital workspaces where teams can coordinate on projects. This distinguishes them from applications designed for data management, document creation, or contact organization.",
+  "explanation": "Team collaboration software is specifically designed to support real-time and delayed communication, allow teams to store and access shared files, and host video or audio meetings all within one integrated platform. The other options describe distinct application types—word processing, spreadsheet, and email—which serve different primary functions than team collaboration tools.",
   "type": "definition_recall",
   "knowledge_area": "Software Applications",
   "difficulty": "hard"
@@ -322,15 +322,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Common workplace applications such as email, word processing, and spreadsheets serve which of the following functions?",
+  "question": "Email application features that enable efficient business communication and document sharing among team members are collectively known as ___",
   "options": [
-   "Eliminating the need for any written policies or training procedures",
-   "Providing entertainment and social media access during work hours",
-   "Enabling document creation, data management, communication, and information sharing among team members",
-   "Replacing all need for in-person meetings and phone communication"
+   "network bandwidth management",
+   "scheduling protocols",
+   "collaborative messaging capabilities",
+   "data encryption standards"
   ],
   "correct_index": 2,
-  "explanation": "Workplace applications are fundamental tools for creating documents, organizing data, communicating with colleagues, and sharing information efficiently. These core functions support business operations and collaboration without eliminating other forms of workplace interaction.",
+  "explanation": "Collaborative messaging capabilities refer to the suite of email features—such as shared inboxes, file attachments, reply-all functionality, and read receipts—that allow team members to communicate and exchange documents efficiently in a business setting. The other options describe networking infrastructure, timing systems, or security measures rather than the communication and sharing features that define email's role in workplace collaboration.",
   "type": "concept_completion",
   "knowledge_area": "Software Applications",
   "difficulty": "hard"
@@ -532,15 +532,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "All of the following are functions of network devices in a typical client-server environment EXCEPT",
+  "question": "In a client-server network environment, all of the following are true EXCEPT",
   "options": [
-   "A switch establishes direct connections between all clients and the server simultaneously without any intermediary routing",
-   "A server stores centralized data and applications that multiple client computers access and request resources from",
-   "A router directs data packets between different networks and manages traffic between the local network and the internet",
-   "A modem converts between analog signals from an Internet Service Provider and digital signals for network devices"
+   "Each client computer operates independently without relying on a central server",
+   "Clients send requests to the server, which processes them and returns results",
+   "The server manages user authentication and access permissions for connected clients",
+   "The server stores centralized data and resources that multiple clients access"
   ],
   "correct_index": 0,
-  "explanation": "A switch connects devices within a single network using MAC addresses and does not route between different networks or establish simultaneous direct connections to all devices at once. The other three are accurate descriptions: modems handle analog-to-digital conversion, routers direct traffic between networks, and servers provide centralized resources to clients.",
+  "explanation": "In a client-server environment, clients depend on the central server for resources, data storage, and services—they do not operate independently. The other three options accurately describe core characteristics of client-server architecture: centralized data management, authentication control, and the request-response model between clients and the server.",
   "type": "all_except",
   "knowledge_area": "Networking Concepts",
   "difficulty": "hard"

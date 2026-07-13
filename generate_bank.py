@@ -387,19 +387,48 @@ def concept_words(text):
     words = re.findall(r"[a-z]+", (text or "").lower())
     return {w for w in words if len(w) >= 4 and w not in GENERIC_ANSWER_WORDS}
 
-def _word_fuzzy_match(a, b, min_len=4):
-    """Two words "match" if identical, or share a >=min_len-character prefix
+def _word_fuzzy_match(a, b, min_len=4, fuzzy_floor=5):
+    """Two words "match" if identical, or — ONLY when both are at least
+    `fuzzy_floor` characters long — share a >=min_len-character prefix
     (catches word-form variants like "defragmentation"/"defragmenter" or
-    "caching"/"cache" without needing real stemming)."""
+    "caching"/"cache" without needing real stemming). The fuzzy_floor guard
+    is load-bearing: without it, a short word like "data" (4 chars) prefix-
+    matches "database" (also starts "data") even though they're different
+    concepts — a real false-positive storm found in review, where 5
+    unrelated questions (data governance, data selling, data breaches,
+    network encryption, data loss) all got flagged as duplicates of a
+    "database" question purely because they each contained some word
+    starting with "data". Below the floor, only an EXACT match counts."""
     if a == b:
         return True
-    if min(len(a), len(b)) < min_len:
+    if min(len(a), len(b)) < fuzzy_floor:
         return False
     return a[:min_len] == b[:min_len]
 
+# Words that are too common/generic WITHIN this IT-heavy source material to
+# trust as a lone, single-word match signal — e.g. "file" alone shows up in
+# "file system", "file permissions", "file compression", "file sharing",
+# none of which are the same fact. Unlike GENERIC_ANSWER_WORDS (stripped
+# everywhere), these words still count as part of a MULTI-word concept set
+# (e.g. "access permissions" is fine) — they're only disqualified from
+# single-handedly triggering a match on their own. Found via real false
+# positives: "operating" (from "operating system") trivially matched inside
+# an unrelated 9-word troubleshooting-scenario answer; "file" (from "file
+# system") trivially matched "file permissions", a genuinely different fact.
+WEAK_ANCHOR_WORDS = {
+    "file", "files", "data", "access", "user", "users", "resource",
+    "resources", "operating", "information", "network", "networks",
+    "digital",
+}
+
 def _set_covered(small, big):
-    """True if every word in `small` has a fuzzy match somewhere in `big`."""
+    """True if every word in `small` has a fuzzy match somewhere in `big`.
+    A single-word `small` set is refused if that word is a weak anchor (see
+    WEAK_ANCHOR_WORDS) — one generic word incidentally appearing inside an
+    unrelated answer is not enough evidence of a real duplicate."""
     if not small:
+        return False
+    if len(small) == 1 and next(iter(small)) in WEAK_ANCHOR_WORDS:
         return False
     return all(any(_word_fuzzy_match(w, bw) for bw in big) for w in small)
 

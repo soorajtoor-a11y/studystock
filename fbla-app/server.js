@@ -150,18 +150,43 @@ function conceptWords(text) {
   return new Set(words.filter(w => w.length >= 4 && !GENERIC_ANSWER_WORDS.has(w)));
 }
 
-// Two words "match" if identical, or share a >=minLen-character prefix
-// (catches word-form variants like "defragmentation"/"defragmenter" or
-// "caching"/"cache" without needing real stemming).
-function wordsFuzzyMatch(a, b, minLen = 4) {
+// Two words "match" if identical, or — ONLY when both are at least
+// fuzzyFloor characters long — share a >=minLen-character prefix (catches
+// word-form variants like "defragmentation"/"defragmenter" or
+// "caching"/"cache" without needing real stemming). The fuzzyFloor guard is
+// load-bearing: without it, a short word like "data" (4 chars) prefix-
+// matches "database" (also starts "data") even though they're different
+// concepts — a real false-positive storm found in review, where 5 unrelated
+// questions (data governance, data selling, data breaches, network
+// encryption, data loss) all got flagged as duplicates of a "database"
+// question purely because they each contained some word starting with
+// "data". Below the floor, only an EXACT match counts. Mirrors
+// generate_bank.py's _word_fuzzy_match exactly.
+function wordsFuzzyMatch(a, b, minLen = 4, fuzzyFloor = 5) {
   if (a === b) return true;
-  if (Math.min(a.length, b.length) < minLen) return false;
+  if (Math.min(a.length, b.length) < fuzzyFloor) return false;
   return a.slice(0, minLen) === b.slice(0, minLen);
 }
 
-// True if every word in `small` has a fuzzy match somewhere in `big`.
+// Words too common/generic WITHIN this IT-heavy source material to trust as
+// a lone, single-word match signal — e.g. "file" alone shows up in "file
+// system", "file permissions", "file compression", "file sharing", none of
+// which are the same fact. Unlike GENERIC_ANSWER_WORDS (stripped
+// everywhere), these words still count as part of a MULTI-word concept set
+// — they're only disqualified from single-handedly triggering a match on
+// their own. Mirrors generate_bank.py's WEAK_ANCHOR_WORDS exactly.
+const WEAK_ANCHOR_WORDS = new Set([
+  'file', 'files', 'data', 'access', 'user', 'users', 'resource',
+  'resources', 'operating', 'information', 'network', 'networks', 'digital',
+]);
+
+// True if every word in `small` has a fuzzy match somewhere in `big`. A
+// single-word `small` set is refused if that word is a weak anchor — one
+// generic word incidentally appearing inside an unrelated answer is not
+// enough evidence of a real duplicate.
 function setCovered(small, big) {
   if (small.size === 0) return false;
+  if (small.size === 1 && WEAK_ANCHOR_WORDS.has([...small][0])) return false;
   for (const w of small) {
     if (![...big].some(bw => wordsFuzzyMatch(w, bw))) return false;
   }

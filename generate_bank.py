@@ -2,29 +2,37 @@
 generate_bank.py — FBLA StudyBot question factory
 ==================================================
 Batch-generates multiple-choice questions for every event in
-study-materials/, following question-generation-rules.txt, and saves
-them to question-bank.json inside each event folder.
+study-materials/, following question-generation-rules.txt.
+
+Three tiers, each its own bank file per event:
+  --tier event      50 questions total     -> question-bank.json
+  --tier section    25 questions/section   -> question-bank-sections.json
+  --tier objective  15 questions/objective -> question-bank-objectives.json
 
 USAGE
-  python3 generate_bank.py                 # generate for all events
-  python3 generate_bank.py accounting      # one event only
-  python3 generate_bank.py --dry-run       # no API calls; show the
-                                           # sections it found per event
+  python3 generate_bank.py --tier event                 # all events
+  python3 generate_bank.py --tier section accounting    # one event only
+  python3 generate_bank.py --tier objective --dry-run   # no API calls
 
-SETUP (one time)
-  1. pip3 install google-genai
-  2. Create keys.py next to this file containing:
-         GOOGLE_KEY = "your-gemini-api-key"
-     (keys.py must be in .gitignore — never push it!)
+CHECKPOINTING (see generation_checkpoint.json)
+  One global, persistent A/B/C/D position counter and question-type counter
+  spans the ENTIRE run across all tiers — not reset per file. Every time the
+  running total crosses a multiple of 1,000 questions, the script:
+    1. Prints the exact cumulative A/B/C/D distribution and type mix.
+    2. If any letter is outside 25% +/- 3%, every bank generated so far
+       (any tier) is automatically re-shuffled back into balance. This is
+       mandatory, not advisory.
+  The script exits when a tier finishes — it does NOT auto-chain into the
+  next tier. Re-run with the next --tier value to continue.
 
 DESIGN (matches the plan we made)
   - 5 questions per API request (small batches = reliable JSON)
   - Sends ONLY the relevant knowledge-area section, not whole files
   - Validates every question; retries once on bad JSON, then skips
-  - Sleeps between requests to respect free-tier rate limits;
-    on a rate-limit error, waits 60s and continues
+  - Sleeps between requests to respect rate limits; on a rate-limit
+    error, waits 60s and continues
   - Saves progress after every batch -> safe to stop and resume
-  - Weights questions by "(N test items)" counts when present
+  - Weights section-tier questions by "(N test items)" counts when present
 """
 
 import json
@@ -36,13 +44,45 @@ import time
 
 # ----------------------------- SETTINGS -----------------------------
 MODEL = "claude-haiku-4-5-20251001"  # cheapest Claude model; swap to sonnet for higher quality
-TARGET_PER_EVENT = 50        # questions per event
 BATCH_SIZE = 5               # questions per API request
-RATE_DELAY = 7               # seconds between requests (free tier safe)
+RATE_DELAY = 7               # seconds between requests (rate-limit safe)
 RATE_LIMIT_WAIT = 60         # seconds to wait after a 429/quota error
 BASE = os.path.dirname(os.path.abspath(__file__))
 MATERIALS = os.path.join(BASE, "study-materials")
 RULES_FILE = os.path.join(BASE, "question-generation-rules.txt")
+CHECKPOINT_FILE = os.path.join(BASE, "generation_checkpoint.json")
+
+# The one calibrated FBLA-caliber standard (see question-generation-rules.txt
+# RULE 1) — there is no easy/medium/hard variance anymore, only this.
+DIFFICULTY = "hard"
+
+TIER_TARGET = {"event": 50, "section": 25, "objective": 15}
+TIER_BANK_FILENAME = {
+    "event": "question-bank.json",
+    "section": "question-bank-sections.json",
+    "objective": "question-bank-objectives.json",
+}
+
+# RULE 1's five question categories and their target mix (must sum to 100).
+QUESTION_TYPES = {
+    "definition_recall":  35,
+    "concept_completion": 25,
+    "which_of_following": 20,
+    "all_except":         10,
+    "scenario_judgment":  10,
+}
+
+CHECKPOINT_EVERY = 1000
+DISTRIBUTION_TOLERANCE = 3  # percentage points either side of 25%
+
+# Difficulty tier is mechanical, per RULE 1B in question-generation-rules.txt:
+# every "introduction-to-*" event is INTRO tier, everything else is STANDARD
+# tier. This is independent of the --tier CLI flag (event/section/objective
+# generation scope) and does not change if an event's source material does.
+INTRO_EVENT_PREFIX = "introduction-to-"
+
+def difficulty_tier(event):
+    return "INTRO" if event.startswith(INTRO_EVENT_PREFIX) else "STANDARD"
 
 # ----------------------------- API KEY ------------------------------
 def get_client():
@@ -58,7 +98,7 @@ def get_client():
 
 # ------------------------ READ STUDY MATERIAL ------------------------
 def read_event_text(event_dir):
-    """Concatenate every .txt in the event folder except the bank."""
+    """Concatenate every .txt in the event folder except the banks."""
     parts = []
     for name in sorted(os.listdir(event_dir)):
         if name.endswith(".txt"):
@@ -66,9 +106,10 @@ def read_event_text(event_dir):
                 parts.append(f.read())
     return "\n\n".join(parts)
 
-SECTION_RE = re.compile(r"^([A-Z]{1,2})\.\s+(.+)$")   # "A. Journalizing"
-PART_RE = re.compile(r"^PART\s+\d+\s*[—-]\s*(.+)$")   # "PART 2 — HISTORY"
-WEIGHT_RE = re.compile(r"\((\d+)\s*(?:test\s*)?items?\)", re.I)
+SECTION_RE   = re.compile(r"^([A-Z]{1,2})\.\s+(.+)$")   # "A. Journalizing"
+PART_RE      = re.compile(r"^PART\s+\d+\s*[—-]\s*(.+)$")  # "PART 2 — HISTORY"
+WEIGHT_RE    = re.compile(r"\((\d+)\s*(?:test\s*)?items?\)", re.I)
+OBJECTIVE_RE = re.compile(r"^(\d+)\.\s+(.+)$")          # "1. Prepare a ..."
 
 def split_sections(text):
     """Split study text into knowledge-area sections.
@@ -97,6 +138,15 @@ def split_sections(text):
             best[s["name"]] = s
     return list(best.values())
 
+def split_objectives(section_body):
+    """Return [{num, text}, ...] objective lines within a section body."""
+    objs = []
+    for line in section_body.splitlines():
+        m = OBJECTIVE_RE.match(line.strip())
+        if m:
+            objs.append({"num": m.group(1), "text": m.group(2).strip()})
+    return objs
+
 # --------------------------- GENERATION -----------------------------
 PROMPT_TEMPLATE = """{rules}
 
@@ -105,13 +155,21 @@ SOURCE MATERIAL (generate questions ONLY from this section):
 
 Event: {event}
 Knowledge area: {area}
-Difficulty: ALL {n} questions must be at {difficulty} difficulty.
-
+Difficulty tier: {difficulty_tier} — follow RULE 1B's distribution for this
+tier exactly. Do not drift toward "hard" as a goal; match what would
+realistically appear on this specific event's real objective test.
+{focus}
 {body}
 ============================================================
+{already_asked}
+============================================================
 
-Generate exactly {n} multiple-choice questions from the source
-material above, following every generation rule.
+Generate exactly {n} multiple-choice questions from the source material
+above, following every generation rule — including the RULE 1 question-type
+mix (38% definition_recall / 27% concept_completion / 22% which_of_following
+/ 8% all_except / 5% scenario_judgment) and the RULE 1B difficulty tier
+distribution stated above. Every question must test a fact DIFFERENT from
+everything in the ALREADY ASKED list above — see RULE 8c.
 
 Respond with ONLY a JSON array (no code fences, no other text) of
 {n} objects, each with exactly these fields:
@@ -119,8 +177,23 @@ Respond with ONLY a JSON array (no code fences, no other text) of
   "options": array of exactly 4 strings,
   "correct_index": integer 0-3,
   "explanation": 2-3 sentence string,
-  "difficulty": "{difficulty}"
+  "type": one of "definition_recall", "concept_completion",
+          "which_of_following", "all_except", "scenario_judgment"
 """
+
+def already_asked_block(prior_questions):
+    """Render the list of question stems already generated for this exact
+    knowledge-area/objective pool, so a stateless API call has real memory
+    of what to avoid repeating (see RULE 8c). Without this, batches default
+    to the same "safest" facts every time — e.g. the same OS-booting
+    definition asked 7 different ways across a 25-question pool."""
+    if not prior_questions:
+        return ("ALREADY ASKED IN THIS KNOWLEDGE AREA: (none yet — this is "
+                "the first batch, no restrictions from prior questions.)")
+    lines = "\n".join(f"  {i+1}. {q}" for i, q in enumerate(prior_questions))
+    return ("ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts "
+            "is now OFF LIMITS, including asking about it with different "
+            "wording (RULE 8c):\n" + lines)
 
 def parse_questions(raw, area_name):
     """Extract and validate a JSON array of questions from model output."""
@@ -138,52 +211,13 @@ def parse_questions(raw, area_name):
                 and 0 <= q["correct_index"] <= 3
                 and isinstance(q.get("explanation"), str)):
             q["knowledge_area"] = area_name
-            q.setdefault("difficulty", "easy")
+            q["difficulty"] = DIFFICULTY
+            if q.get("type") not in QUESTION_TYPES:
+                q["type"] = None  # flagged, not guessed
             good.append(q)
     if not good:
         raise ValueError("no valid questions in response")
     return good
-
-def enforce_difficulty(questions, difficulty):
-    """Override whatever the model wrote so the tag always matches the request."""
-    for q in questions:
-        q['difficulty'] = difficulty
-    return questions
-
-def shuffle_answer_positions(questions, position_counts):
-    """Deterministically assign correct-answer positions to enforce 25-25-25-25 distribution.
-
-    Instead of random shuffling (which still clusters), we track how many times each
-    position (0=A, 1=B, 2=C, 3=D) has been used and always place the next correct answer
-    at whichever position is most under-represented. Ties broken randomly.
-
-    position_counts is a mutable list [nA, nB, nC, nD] shared across all batches
-    for a single bank so the balance is maintained globally, not just per batch.
-    """
-    for q in questions:
-        correct_text = q['options'][q['correct_index']]
-        # Pick the position with the lowest usage count
-        min_count = min(position_counts)
-        candidates = [i for i, c in enumerate(position_counts) if c == min_count]
-        target = random.choice(candidates)
-        # Rebuild options list with correct answer at target position
-        others = [o for o in q['options'] if o != correct_text]
-        random.shuffle(others)
-        q['options'] = others[:target] + [correct_text] + others[target:]
-        q['correct_index'] = target
-        position_counts[target] += 1
-    return questions
-
-
-def check_distribution(bank, label=""):
-    """Print A/B/C/D ratio for the bank. Called every 100 questions."""
-    counts = [0, 0, 0, 0]
-    for q in bank:
-        counts[q['correct_index']] += 1
-    total = len(bank)
-    letters = 'ABCD'
-    ratio = '  '.join(f"{letters[i]}:{counts[i]}({counts[i]/total*100:.0f}%)" for i in range(4))
-    print(f"  [distribution @ {total}q{' '+label if label else ''}]  {ratio}")
 
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
@@ -218,10 +252,126 @@ def push_event(event, bank_path, n):
     except subprocess.CalledProcessError as e:
         print(f"  Git push failed for {event}: {getattr(e, 'stderr', '') or e}")
 
+# ------------------------- GLOBAL CHECKPOINT -------------------------
+def load_checkpoint():
+    if os.path.exists(CHECKPOINT_FILE):
+        with open(CHECKPOINT_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return {
+        "position_counts": [0, 0, 0, 0],
+        "type_counts": {k: 0 for k in QUESTION_TYPES},
+        "total": 0,
+        "last_checkpoint_total": 0,
+        "tiers_completed": [],
+    }
 
-def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
+def save_checkpoint(state):
+    with open(CHECKPOINT_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=1)
+
+def assign_positions(questions, state):
+    """Greedy least-used-position assignment — always place the next correct
+    answer at whichever of A/B/C/D is currently most under-represented,
+    globally across the whole run. Updates `state` in place."""
+    for q in questions:
+        correct_text = q["options"][q["correct_index"]]
+        min_count = min(state["position_counts"])
+        candidates = [i for i, c in enumerate(state["position_counts"]) if c == min_count]
+        target = random.choice(candidates)
+        others = [o for o in q["options"] if o != correct_text]
+        random.shuffle(others)
+        q["options"] = others[:target] + [correct_text] + others[target:]
+        q["correct_index"] = target
+        state["position_counts"][target] += 1
+        if q.get("type") in state["type_counts"]:
+            state["type_counts"][q["type"]] += 1
+        state["total"] += 1
+    return questions
+
+def distribution_lines(counts):
+    total = sum(counts) or 1
+    letters = "ABCD"
+    pct = [c / total * 100 for c in counts]
+    lines = [f"    {letters[i]}: {counts[i]:5d}  ({pct[i]:5.2f}%)" for i in range(4)]
+    return lines, pct
+
+def type_lines(type_counts):
+    total = sum(type_counts.values())
+    lines = []
+    for t, target_pct in QUESTION_TYPES.items():
+        c = type_counts.get(t, 0)
+        actual = (c / total * 100) if total else 0.0
+        lines.append(f"    {t:20s} {c:5d}  ({actual:5.2f}%, target {target_pct}%)")
+    return lines
+
+def rebalance_all_banks(state):
+    """Re-shuffle every existing bank's answer positions from scratch so the
+    GLOBAL distribution snaps back to 25/25/25/25. This is the mandatory,
+    no-exceptions correction path — triggered whenever a checkpoint finds
+    any letter more than 3 points off 25%."""
+    print("    !! distribution out of tolerance — rebalancing every generated bank...")
+    state["position_counts"] = [0, 0, 0, 0]
+    state["type_counts"] = {k: 0 for k in QUESTION_TYPES}
+    events = sorted(d for d in os.listdir(MATERIALS) if os.path.isdir(os.path.join(MATERIALS, d)))
+    for tier, filename in TIER_BANK_FILENAME.items():
+        for event in events:
+            path = os.path.join(MATERIALS, event, filename)
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+            pools = list(data.values()) if isinstance(data, dict) else [data]
+            for pool in pools:
+                assign_positions(pool, state)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=1, ensure_ascii=False)
+    save_checkpoint(state)
+    print("    rebalance complete — every bank now reflects the corrected positions.")
+
+def maybe_checkpoint(state):
+    """Called after every batch is appended. Fires once per 1,000-question
+    boundary crossed since the last checkpoint."""
+    if state["total"] // CHECKPOINT_EVERY <= state["last_checkpoint_total"] // CHECKPOINT_EVERY:
+        return
+    print(f"\n  === CHECKPOINT @ {state['total']} questions (global, all tiers) ===")
+    lines, pct = distribution_lines(state["position_counts"])
+    for line in lines:
+        print(line)
+    print("    --- question-type mix ---")
+    for line in type_lines(state["type_counts"]):
+        print(line)
+
+    bad = any(abs(p - 25) > DISTRIBUTION_TOLERANCE for p in pct)
+    if bad:
+        rebalance_all_banks(state)
+        lines, _ = distribution_lines(state["position_counts"])
+        print("    post-rebalance distribution:")
+        for line in lines:
+            print(line)
+    else:
+        print(f"    distribution within tolerance (25% +/- {DISTRIBUTION_TOLERANCE}%) — no action needed")
+
+    state["last_checkpoint_total"] = state["total"]
+    save_checkpoint(state)
+
+def final_tier_report(state, tier):
+    print(f"\n=== TIER COMPLETE: {tier} ===")
+    lines, _ = distribution_lines(state["position_counts"])
+    print("  cumulative global A/B/C/D distribution:")
+    for line in lines:
+        print(line)
+    print("  cumulative question-type mix:")
+    for line in type_lines(state["type_counts"]):
+        print(line)
+    print(f"  total questions generated so far (all tiers): {state['total']}")
+    state["tiers_completed"] = sorted(set(state.get("tiers_completed", [])) | {tier})
+    save_checkpoint(state)
+
+# ---------------------------- TIER: EVENT ----------------------------
+def generate_event_tier(client, event, rules, state, dry_run=False):
     event_dir = os.path.join(MATERIALS, event)
-    bank_path = os.path.join(event_dir, "question-bank.json")
+    bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["event"])
+    target = TIER_TARGET["event"]
 
     text = read_event_text(event_dir)
     sections = split_sections(text)
@@ -231,90 +381,196 @@ def generate_event(client, event, rules, dry_run=False, difficulty="hard"):
 
     if dry_run:
         print(f"  {event}: {len(sections)} sections")
-        for s in sections:
-            print(f"      [{s['weight']:>3} wt] {s['name']}  "
-                  f"({len(s['body'])} chars)")
         return
 
     bank = []
     if os.path.exists(bank_path):
         with open(bank_path, encoding="utf-8") as f:
             bank = json.load(f)
-    if len(bank) >= TARGET_PER_EVENT:
-        print(f"  {event}: already has {len(bank)} questions — skipping")
+    if len(bank) >= target:
+        print(f"  {event}: already has {len(bank)}/{target} — skipping")
         return
 
-    # Track correct-answer position counts across the whole bank so
-    # shuffle_answer_positions can enforce 25-25-25-25 globally.
-    position_counts = [0, 0, 0, 0]
-    for q in bank:
-        position_counts[q['correct_index']] += 1
-
-    last_check = (len(bank) // 100) * 100  # next check threshold
-
     weights = [s["weight"] for s in sections]
-    print(f"  {event}: {len(bank)}/{TARGET_PER_EVENT} questions, "
-          f"{len(sections)} sections")
+    print(f"  {event}: {len(bank)}/{target} questions, {len(sections)} sections")
 
-    while len(bank) < TARGET_PER_EVENT:
+    while len(bank) < target:
         section = random.choices(sections, weights=weights, k=1)[0]
-        n = min(BATCH_SIZE, TARGET_PER_EVENT - len(bank))
-        prompt = PROMPT_TEMPLATE.format(rules=rules, event=event,
-                                        area=section["name"],
-                                        body=section["body"][:6000], n=n,
-                                        difficulty=difficulty)
-        got = None
-        for attempt in (1, 2):                      # retry bad JSON once
-            try:
-                raw = call_model(client, prompt)
-                parsed = enforce_difficulty(parse_questions(raw, section["name"]), difficulty)
-                got = shuffle_answer_positions(parsed, position_counts)
-                break
-            except ValueError as e:
-                print(f"    bad JSON from model (attempt {attempt}): {e}")
-            except Exception as e:
-                print(f"    API error: {e} — waiting {RATE_LIMIT_WAIT}s")
-                time.sleep(RATE_LIMIT_WAIT)
+        n = min(BATCH_SIZE, target - len(bank))
+        prior = [q["question"] for q in bank if q.get("knowledge_area") == section["name"]]
+        prompt = PROMPT_TEMPLATE.format(
+            rules=rules, event=event, area=section["name"],
+            difficulty_tier=difficulty_tier(event),
+            focus="", body=section["body"][:6000], n=n,
+            already_asked=already_asked_block(prior),
+        )
+        got = _generate_batch(client, prompt, section["name"], state)
         if got:
             bank.extend(got)
             with open(bank_path, "w", encoding="utf-8") as f:
                 json.dump(bank, f, indent=1, ensure_ascii=False)
-            print(f"    +{len(got)} ({section['name']}) "
-                  f"-> {len(bank)}/{TARGET_PER_EVENT}")
-            # Print distribution check every 100 questions
-            if len(bank) >= last_check + 100:
-                last_check += 100
-                check_distribution(bank)
+            print(f"    +{len(got)} ({section['name']}) -> {len(bank)}/{target}")
         time.sleep(RATE_DELAY)
 
-    print(f"  DONE {event}: {len(bank)} questions saved to "
-          f"{os.path.relpath(bank_path, BASE)}")
-    check_distribution(bank, label="final")
+    print(f"  DONE {event}: {len(bank)} questions saved to {os.path.relpath(bank_path, BASE)}")
     push_event(event, bank_path, len(bank))
 
+# --------------------------- TIER: SECTION ---------------------------
+def generate_section_tier(client, event, rules, state, dry_run=False):
+    event_dir = os.path.join(MATERIALS, event)
+    bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["section"])
+    target = TIER_TARGET["section"]
+
+    text = read_event_text(event_dir)
+    sections = split_sections(text)
+    if not sections:
+        print(f"  !! {event}: no knowledge-area sections found, skipping")
+        return
+
+    if dry_run:
+        print(f"  {event}: {len(sections)} sections x {target} questions each")
+        return
+
+    banks = {}
+    if os.path.exists(bank_path):
+        with open(bank_path, encoding="utf-8") as f:
+            banks = json.load(f)
+
+    for section in sections:
+        key = section["name"]
+        bank = banks.get(key, [])
+        if len(bank) >= target:
+            continue
+        print(f"  {event} / {key}: {len(bank)}/{target}")
+        while len(bank) < target:
+            n = min(BATCH_SIZE, target - len(bank))
+            prompt = PROMPT_TEMPLATE.format(
+                rules=rules, event=event, area=key,
+                difficulty_tier=difficulty_tier(event),
+                focus="", body=section["body"][:6000], n=n,
+                already_asked=already_asked_block([q["question"] for q in bank]),
+            )
+            got = _generate_batch(client, prompt, key, state)
+            if got:
+                bank.extend(got)
+                banks[key] = bank
+                with open(bank_path, "w", encoding="utf-8") as f:
+                    json.dump(banks, f, indent=1, ensure_ascii=False)
+                print(f"    +{len(got)} -> {len(bank)}/{target}")
+            time.sleep(RATE_DELAY)
+
+    push_event(event, bank_path, sum(len(v) for v in banks.values()))
+
+# -------------------------- TIER: OBJECTIVE --------------------------
+def generate_objective_tier(client, event, rules, state, dry_run=False):
+    event_dir = os.path.join(MATERIALS, event)
+    bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["objective"])
+    target = TIER_TARGET["objective"]
+
+    text = read_event_text(event_dir)
+    sections = split_sections(text)
+    if not sections:
+        print(f"  !! {event}: no knowledge-area sections found, skipping")
+        return
+
+    all_objectives = [(s, o) for s in sections for o in split_objectives(s["body"])]
+    if dry_run:
+        print(f"  {event}: {len(all_objectives)} objectives x {target} questions each")
+        return
+
+    banks = {}
+    if os.path.exists(bank_path):
+        with open(bank_path, encoding="utf-8") as f:
+            banks = json.load(f)
+
+    for section, obj in all_objectives:
+        key = obj["text"]
+        bank = banks.get(key, [])
+        if len(bank) >= target:
+            continue
+        print(f"  {event} / {section['name']} #{obj['num']}: {len(bank)}/{target}")
+        while len(bank) < target:
+            n = min(BATCH_SIZE, target - len(bank))
+            focus = f"Focus ONLY on this specific objective — do not draw questions from the rest of the section: \"{obj['text']}\""
+            prompt = PROMPT_TEMPLATE.format(
+                rules=rules, event=event, area=section["name"],
+                difficulty_tier=difficulty_tier(event),
+                focus=focus, body=section["body"][:6000], n=n,
+                already_asked=already_asked_block([q["question"] for q in bank]),
+            )
+            got = _generate_batch(client, prompt, section["name"], state)
+            if got:
+                bank.extend(got)
+                banks[key] = bank
+                with open(bank_path, "w", encoding="utf-8") as f:
+                    json.dump(banks, f, indent=1, ensure_ascii=False)
+                print(f"    +{len(got)} -> {len(bank)}/{target}")
+            time.sleep(RATE_DELAY)
+
+    push_event(event, bank_path, sum(len(v) for v in banks.values()))
+
+# --------------------------- SHARED HELPER ---------------------------
+def _generate_batch(client, prompt, area_name, state):
+    """One retry-guarded batch call: parse -> assign positions -> checkpoint."""
+    for attempt in (1, 2):
+        try:
+            raw = call_model(client, prompt)
+            parsed = parse_questions(raw, area_name)
+            got = assign_positions(parsed, state)
+            maybe_checkpoint(state)
+            return got
+        except ValueError as e:
+            print(f"    bad JSON from model (attempt {attempt}): {e}")
+        except Exception as e:
+            print(f"    API error: {e} — waiting {RATE_LIMIT_WAIT}s")
+            time.sleep(RATE_LIMIT_WAIT)
+    return None
+
 # ------------------------------ MAIN --------------------------------
+TIER_FN = {
+    "event":     generate_event_tier,
+    "section":   generate_section_tier,
+    "objective": generate_objective_tier,
+}
+
 def main():
-    args = [a for a in sys.argv[1:]]
+    args = list(sys.argv[1:])
     dry_run = "--dry-run" in args
-    args = [a for a in args if not a.startswith("--")]
+    args = [a for a in args if not a.startswith("--dry-run")]
+
+    tier = "event"
+    if "--tier" in args:
+        i = args.index("--tier")
+        tier = args[i + 1]
+        args = args[:i] + args[i + 2:]
+    if tier not in TIER_FN:
+        sys.exit(f"--tier must be one of {list(TIER_FN)}")
 
     events = sorted(d for d in os.listdir(MATERIALS)
                     if os.path.isdir(os.path.join(MATERIALS, d)))
     if args:
         events = [e for e in events if e in args]
         if not events:
-            sys.exit(f"No matching event folder. Options: use folder names "
-                     f"from study-materials/")
+            sys.exit("No matching event folder. Use folder names from study-materials/")
 
     with open(RULES_FILE, encoding="utf-8") as f:
         rules = f.read()
 
     client = None if dry_run else get_client()
-    print(f"Events to process: {len(events)}"
+    state = load_checkpoint()
+    print(f"Tier: {tier} | Events to process: {len(events)}"
           + (" (DRY RUN — no API calls)" if dry_run else ""))
+    print(f"Starting from global checkpoint: {state['total']} questions generated so far.")
+
     for event in events:
-        generate_event(client, event, rules, dry_run, difficulty="hard")
-    print("All done.")
+        TIER_FN[tier](client, event, rules, state, dry_run)
+
+    if not dry_run:
+        final_tier_report(state, tier)
+        print(f"\n{tier} tier finished. Re-run with a different --tier to continue —"
+              f" this script does not auto-chain into the next tier.")
+    else:
+        print("Dry run complete — no changes made.")
 
 if __name__ == "__main__":
     main()

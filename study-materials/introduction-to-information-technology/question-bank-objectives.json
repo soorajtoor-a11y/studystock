@@ -1,0 +1,214 @@
+{
+ "Describe different types of computers and their use cases (mainframe, personal, tablet, supercomputer, etc.).": [
+  {
+   "question": "The component that executes instructions and performs calculations in a computer is called the ___",
+   "options": [
+    "motherboard",
+    "graphics processing unit",
+    "central processing unit",
+    "random access memory"
+   ],
+   "correct_index": 2,
+   "explanation": "The CPU (central processing unit) is the primary processor that executes all instructions and performs arithmetic and logical operations. The GPU handles graphics rendering, RAM is temporary storage, and the motherboard connects all components.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A solid-state drive differs from a traditional hard disk drive primarily in that an SSD ___",
+   "options": [
+    "stores data on flash memory chips with no moving mechanical parts",
+    "has moving parts and slower data access times than flash memory",
+    "requires defragmentation to maintain optimal performance over time",
+    "uses magnetic spinning platters to store data permanently"
+   ],
+   "correct_index": 0,
+   "explanation": "SSDs use flash memory with no moving parts, making them faster and more durable than mechanical hard disk drives. HDDs rely on spinning platters and read/write heads, which makes them slower and prone to mechanical failure.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered valid reasons to upgrade a computer's RAM?",
+   "options": [
+    "The system frequently freezes during multitasking, programs load slowly, and the hard drive makes clicking sounds",
+    "The power supply makes unusual noises, the cooling fan runs constantly at high speed, and the motherboard battery needs replacement",
+    "The monitor displays pixelated graphics, the keyboard is unresponsive, and the wireless connection drops intermittently",
+    "The computer struggles to run multiple applications simultaneously, video editing software lags significantly, and the system displays low-memory warnings"
+   ],
+   "correct_index": 3,
+   "explanation": "Insufficient RAM causes multitasking slowdowns, application lag, and memory warnings—all direct indicators that more RAM is needed. The symptoms in option A include a hard drive failure (clicking), which requires hard drive replacement. Options C and D describe graphics, input, and power-supply issues unrelated to RAM capacity.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The purpose of a graphics card is to ___",
+   "options": [
+    "convert digital signals into wireless radio frequencies for network transmission",
+    "render images, video, and 3D graphics and send the output to a display device",
+    "manage data transfer between the hard drive and random access memory",
+    "increase the speed of the processor and reduce overall system latency"
+   ],
+   "correct_index": 1,
+   "explanation": "A graphics card (GPU) is specifically designed to process and render visual data, including images, videos, and 3D graphics, then output to a monitor. The CPU handles general processing speed, the motherboard/chipset manages memory-storage transfer, and network adapters handle wireless transmission.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network adapter's primary responsibility in a computer system is to manage all of the following EXCEPT ___",
+   "options": [
+    "enabling communication between the computer and other networked devices",
+    "establishing a connection to a local area network or wireless network",
+    "regulating the voltage supplied to the motherboard and other internal components",
+    "converting data into signals that can be transmitted over network cables or through the air"
+   ],
+   "correct_index": 2,
+   "explanation": "A network adapter handles network connectivity, signal conversion, and device communication—but voltage regulation is the power supply's job, not the network adapter's. The power supply ensures proper electrical distribution, while the adapter focuses exclusively on network operations.",
+   "type": "all_except",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The amount of fast, temporary memory that a computer uses to store data actively being processed by the CPU is called ___",
+   "options": [
+    "RAM",
+    "cache memory",
+    "storage capacity",
+    "virtual memory"
+   ],
+   "correct_index": 0,
+   "explanation": "RAM (Random Access Memory) is the computer's working memory that temporarily holds data and programs currently in use. It is much faster than storage drives but is cleared when the computer powers off. The other options refer to different memory types—virtual memory is disk space used as overflow, cache is a smaller, faster buffer between CPU and RAM, and storage capacity refers to permanent disk space.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of adding new hardware components to a computer system or replacing existing parts with newer, more powerful versions to improve performance is called ___",
+   "options": [
+    "configuration",
+    "initialization",
+    "installation",
+    "upgrading"
+   ],
+   "correct_index": 3,
+   "explanation": "Upgrading refers specifically to replacing or adding hardware to enhance system performance or capacity. Installation is the initial placement of hardware, configuration is setting it up to work, and initialization is preparing a device for first use. Upgrading is the intentional process of replacing existing parts with better ones.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following best describes the relationship between a computer's CPU speed and overall system performance?",
+   "options": [
+    "CPU speed is the only factor that determines how fast a computer runs overall",
+    "CPU speed has no measurable impact on system performance in modern computers",
+    "Higher CPU speed alone does not guarantee better performance if RAM, storage speed, and other components are bottlenecks",
+    "A computer's performance depends entirely on the size of the hard drive, not the CPU"
+   ],
+   "correct_index": 2,
+   "explanation": "System performance depends on multiple components working together—a fast CPU with slow RAM or a congested storage drive will still perform poorly. CPU speed is important but is only one piece of the performance puzzle. The other options either overstate CPU's role or undervalue it entirely, missing the holistic nature of system performance.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered valid hardware components for a computer to connect to and communicate with external devices?",
+   "options": [
+    "USB ports, Bluetooth wireless technology, and network adapter cards",
+    "Internal cooling fans, power supplies, and thermal paste",
+    "BIOS firmware, device drivers, and system partitions",
+    "CPU cores, RAM modules, and motherboard chipsets"
+   ],
+   "correct_index": 0,
+   "explanation": "USB ports, Bluetooth, and network adapters are all connectivity components that enable communication with external peripherals and networks. The other options are either internal system components (CPU, RAM, cooling), firmware/software elements (BIOS, drivers), or consumables (thermal paste) rather than connectivity hardware designed for external communication.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business wants to set up workstations for graphic design work that requires rendering high-quality 3D models and video editing. Which of the following hardware components would be least critical for this use case?",
+   "options": [
+    "A large amount of RAM to hold project files in memory during editing",
+    "A dedicated graphics processing unit with substantial video memory",
+    "A multi-core CPU with high clock speed for parallel processing",
+    "A standard integrated keyboard with basic mechanical switches"
+   ],
+   "correct_index": 3,
+   "explanation": "Graphic design and video editing demands place heavy loads on the GPU, CPU, and RAM—all three are mission-critical components. A standard keyboard is a basic peripheral; while necessary for input, the choice between keyboard types has minimal impact on rendering performance or editing capability compared to the specialized hardware demands of the work. This requires knowing that GPU, CPU, and RAM are bottleneck factors in professional graphics work.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A hard disk drive stores data on spinning magnetic platters, while a solid-state drive stores data using flash memory with no moving parts. Based on this difference, which of the following is a key advantage of an SSD over an HDD?",
+   "options": [
+    "It consumes less power only when the computer is in sleep mode",
+    "It provides faster data access speeds and greater durability due to the absence of mechanical components",
+    "It has a larger maximum storage capacity for the same physical size",
+    "It requires more frequent defragmentation to maintain performance"
+   ],
+   "correct_index": 1,
+   "explanation": "SSDs use flash memory without moving parts, enabling faster access speeds and better resistance to physical shock and wear compared to HDDs with spinning platters. This is a fundamental distinction between the two storage technologies that directly impacts system responsiveness and reliability.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The component responsible for controlling all data flow within a computer and coordinating communication between the CPU, RAM, memory, and other components is called the ___",
+   "options": [
+    "motherboard",
+    "power supply unit",
+    "heat sink",
+    "expansion slot"
+   ],
+   "correct_index": 0,
+   "explanation": "The motherboard is the main circuit board that houses the CPU, RAM slots, and expansion slots, and serves as the central hub connecting all hardware components through various buses and controllers. Without the motherboard's coordination functions, individual components could not communicate or work together.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company is selecting storage devices for a file server that must handle frequent read/write operations from multiple users simultaneously and maintain data integrity over several years. Which of the following would all be suitable storage solutions for this application?",
+   "options": [
+    "Optical media storage, tape cartridges, and single-drive external USB storage",
+    "USB flash drives, external hard drives connected via USB 2.0, and floppy disk archives",
+    "SSDs with RAID configuration, redundant backup drives, and uninterruptible power supplies",
+    "SD memory cards, portable external drives, and cloud-only storage without local backups"
+   ],
+   "correct_index": 2,
+   "explanation": "SSDs provide fast, reliable performance for frequent operations; RAID configuration protects against drive failure; backup drives ensure data recovery; and uninterruptible power supplies prevent data loss during power events. These are all standard enterprise-grade choices for mission-critical file servers.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are valid reasons to install an expansion card in a desktop computer EXCEPT ___",
+   "options": [
+    "to enable wireless connectivity or improve network communication speed",
+    "to replace the CPU when the original processor becomes too slow for modern software",
+    "to add advanced 3D graphics processing capability for gaming or video editing",
+    "to increase the number of USB ports available on the back of the computer"
+   ],
+   "correct_index": 1,
+   "explanation": "Graphics cards, USB expansion cards, and network adapters are all legitimate expansion card solutions for adding or upgrading specific capabilities. However, the CPU is soldered or socket-mounted directly to the motherboard and cannot be installed as an expansion card; it must be replaced by removing the old processor from its socket.",
+   "type": "all_except",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An office manager needs to purchase new computers for employees who primarily perform email, document editing, web browsing, and basic spreadsheet work. The manager is comparing a mainframe system, a personal computer, a tablet, and a supercomputer. Which option would be the most appropriate choice for this typical office workflow?",
+   "options": [
+    "A supercomputer, because it delivers the fastest performance available in the market",
+    "A tablet, because it is the most portable and requires the smallest physical footprint in the office",
+    "A mainframe system, because it can serve multiple departments simultaneously with centralized security",
+    "A personal computer, because it provides the necessary processing power and software compatibility for standard business tasks at a reasonable cost"
+   ],
+   "correct_index": 3,
+   "explanation": "Personal computers are designed specifically for individual office workers and provide the right balance of capability, cost, and software support for email, documents, web, and spreadsheets—standard business applications. While mainframes and supercomputers are overkill and tablets lack the necessary software and input methods for productivity work, a PC matches the actual use case.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  }
+ ]
+}

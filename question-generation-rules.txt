@@ -49,18 +49,18 @@ The difficulty comes from KNOWING THE MATERIAL, not from confusing wording.
 
 You must mix question types in the following proportions:
 
-  35% — DEFINITION / TERM RECALL
+  38% — DEFINITION / TERM RECALL
          "The amount of time required to produce and place an advertisement is called ___"
          A) frequency   B) reach   C) lead time ✓   D) exposure
          The stem names a concept. The options are 4 real terms from the same topic.
 
-  25% — CONCEPT COMPLETION
+  27% — CONCEPT COMPLETION
          "All of the processes used to identify, create, and maintain exchange
           relationships that satisfy individuals and organizations make up ___"
          A) logistics   B) operations   C) marketing ✓   D) management
          The stem describes a definition. The options are plausible field names.
 
-  20% — WHICH-OF-THE-FOLLOWING APPLICATION
+  22% — WHICH-OF-THE-FOLLOWING APPLICATION
          "Which of the following would all decrease supply of a product?"
          A) Lower resource costs, more suppliers, favorable technology
          B) Higher business taxes, higher resource costs, fewer suppliers ✓
@@ -68,19 +68,31 @@ You must mix question types in the following proportions:
          D) Increased consumer income, lower prices, rising demand
          Tests knowing cause-effect or which items belong in a category.
 
-  10% — ALL-OF-THE-FOLLOWING EXCEPT (capitalize EXCEPT)
+  8% — ALL-OF-THE-FOLLOWING EXCEPT (capitalize EXCEPT)
          "Consumer demand is influenced by all of the following EXCEPT"
          A) income level   B) weather ✓   C) consumer preferences   D) price
          One option is the odd one out. The other three are genuinely true.
 
-  10% — SCENARIO / PROFESSIONAL JUDGMENT
-         "A coworker takes credit for your idea in a meeting. The most professional
-          first step is to ___"
-         A) Confront them angrily in front of the team
-         B) Email the entire department to clarify ownership
-         C) Request a private conversation to address the issue ✓
-         D) Ignore it entirely to avoid conflict
-         A realistic workplace or business situation with one clearly best answer.
+  5% — SCENARIO / APPLIED JUDGMENT (kept deliberately rare — see guardrail below)
+         "A company wants to consolidate several underused physical servers onto
+          fewer machines to cut hardware costs. The best solution is to ___"
+         A) Install additional RAM in each existing server
+         B) Deploy virtualization to run multiple virtual servers on shared hardware ✓
+         C) Purchase more physical servers to spread out the load
+         D) Configure a VPN connection between the servers
+         The scenario is just a wrapper — the actual thing being tested is a SPECIFIC
+         technical concept (virtualization) from the source material.
+
+GUARDRAIL — THE "OBVIOUS ANSWER" TEST (applies to every question, especially
+scenario/applied-judgment ones):
+  Before finalizing any question, ask: "Would an adult with ZERO knowledge of
+  this event's subject matter still pick the correct answer just from general
+  common sense or workplace etiquette?" If yes, the question is testing common
+  sense, not the material — rewrite it around a specific term, procedure, or
+  concept from the source material instead (as in the virtualization example
+  above). Generic professional-conduct scenarios ("report the incident to your
+  manager," "have a private conversation," "research the company first") are
+  BANNED — they are guessable without ever having studied this event.
 
 DO NOT ask questions so general that anyone would know the answer.
 DO NOT ask trivia-level edge cases the outline doesn't emphasize.
@@ -89,10 +101,83 @@ DO NOT ask anything requiring professional-level expertise beyond the event.
 ============================================================
 
 ╔══════════════════════════════════════════════════════════════╗
+║  RULE 1B — DIFFICULTY TIER  (locked in — this is the only     ║
+║  difficulty mode; there is no easy/medium/hard selector)      ║
+╚══════════════════════════════════════════════════════════════╝
+
+Every event belongs to exactly one tier, stated on each request as
+"Difficulty tier: INTRO" or "Difficulty tier: STANDARD". Follow that
+tier's distribution exactly — never blend them, never drift toward
+"hard" as a goal in itself. The target in BOTH tiers is the same:
+realistic — what would actually appear on THAT event's real objective
+test — never artificially inflated wording or invented complexity.
+
+INTRO TIER — every "Introduction to ___" event (9th/10th-grade
+eligible: Intro to Business Concepts, Intro to Parliamentary
+Procedure, Intro to Information Technology, Intro to Business
+Communication, Intro to Business Procedures, Intro to Marketing
+Concepts, Intro to Retail and Merchandising, Intro to Supply Chain
+Management, Intro to FBLA):
+  Still gentler than STANDARD tier — but not so gentle that a student can
+  pass without real studying. Target per batch: ~55-60% direct
+  definition/recall, ~40-45% light application, where "application" now
+  explicitly INCLUDES distinguishing between two closely related or
+  commonly-confused terms (e.g. LAN vs WAN, a good vs a service, RAM vs
+  storage) — not just "if X then Y" one-step reasoning. The old blanket ban
+  on "fine technical distinctions" is lifted; a mild, single distinction
+  between two real terms is exactly the kind of thing that requires having
+  studied, and is fair game. What is STILL banned: multi-step computation,
+  and judgment-call scenarios with more than one defensible answer — those
+  stay STANDARD-tier only. Nothing crazy, just realistic: the goal is that a
+  student who only skimmed the material should miss the distinction and
+  application questions even if they'd get the pure definitions right. A
+  prepared freshman/sophomore who studied should score ~70-80%.
+
+STANDARD TIER — every other event (Accounting, Advanced Accounting,
+Business Law, Cybersecurity, Securities and Investments, etc.):
+  These assume real coursework in the subject. Target per batch:
+  ~15-20% direct definition/recall of technical terms, ~50% medium
+  (one applied step — classify an account, fix one journal entry,
+  identify the next step in a defined sequence, apply one specific
+  rule to a short scenario), ~30% hard (multi-step computation, or a
+  scenario that genuinely requires subject mastery — e.g. compute
+  depreciation, complete a correcting entry with real dollar amounts,
+  apply a specific technical/legal rule to a case). "Hard" here means
+  technically demanding because the SUBJECT is technical — never
+  obfuscated wording, never a trick. A prepared student should still
+  score ~70-80%.
+
+If the event slug starts with "introduction-to-", it is INTRO tier.
+Every other event is STANDARD tier. This split is mechanical and
+does not change based on how much or how little source material is
+loaded for a given request.
+
+============================================================
+
+╔══════════════════════════════════════════════════════════════╗
 ║  RULE 2 — OPTION LENGTH BALANCE                              ║
 ╚══════════════════════════════════════════════════════════════╝
 
-The correct answer must NEVER be identifiable by its length.
+The correct answer must NEVER be identifiable by its length. This is
+NON-NEGOTIABLE — the exact failure mode below has shipped in real output and
+must not happen again:
+
+  REAL FAILURE (do not repeat this pattern):
+  Q: An employee discovers her company's customer database was accessed
+     without authorization. The first step she should take is to ___
+  A) report the incident to her manager and follow the company's incident
+     response procedure                                    ← correct AND
+                                                               by far the
+                                                               longest, most
+                                                               hedged option
+  B) post a warning on the company website about the breach
+  C) immediately shut down all company servers to prevent further access
+  D) contact individual customers directly via personal email before
+     notifying leadership
+  This is wrong on two counts at once: the correct answer is the longest
+  option (length gives it away), AND the question is generic workplace
+  common sense rather than something this event actually teaches (see the
+  "obvious answer" guardrail in RULE 1). Both problems must be fixed together.
 
 2a. All four options must be within roughly 25% of each other in word count.
     If the correct answer is 10 words, write distractors of 8–12 words.
@@ -100,6 +185,13 @@ The correct answer must NEVER be identifiable by its length.
 2c. NEVER write one vague correct answer surrounded by three elaborate wrong ones.
 2d. Self-check: "If a student who knows nothing picks the longest option,
     do they beat random chance?" If yes — rewrite.
+2e. ACTIVELY INVERT THE PATTERN, don't just neutralize it: in roughly 1 of
+    every 4-5 questions, deliberately make ONE WRONG option the longest or
+    most detailed one in the set — a plausible-sounding distractor with
+    extra (wrong) specifics. Across any batch, which position is longest
+    should vary randomly; "longest = correct" must not be a reliable signal
+    in either direction, and the correct answer should not systematically be
+    the most hedged or qualified-sounding option.
 
 BAD:
   Q: What does "lay on the table" do?
@@ -122,17 +214,69 @@ GOOD:
 ║  RULE 3 — DISTRACTOR QUALITY                                 ║
 ╚══════════════════════════════════════════════════════════════╝
 
+┌─────────────────────────────────────────────────────────────────┐
+│ THE ONE LINE TO REMEMBER FROM THIS ENTIRE RULE:                  │
+│                                                                    │
+│   EVERY DISTRACTOR MUST BE POWERFUL, CLEAR, AND TEMPTING.         │
+│                                                                    │
+│   NOT TOO SHORT  — a one- or two-word throwaway is a giveaway.    │
+│   NOT CRAZY       — an extreme, reckless, or absurd option is a   │
+│                      giveaway just as badly.                      │
+│   JUST REASONABLE — something a real person who ALMOST knows the  │
+│                      material would seriously consider picking.   │
+│                                                                    │
+│   A distractor that fails this is not a distractor. It's a hint.  │
+│   Read every option you write and ask: "Is this powerful, clear,  │
+│   and tempting?" If the honest answer is no, delete it and write  │
+│   a real one before moving on. This is not optional and not a     │
+│   style preference — a weak distractor breaks the whole question. │
+└─────────────────────────────────────────────────────────────────┘
+
 3a. Every wrong answer must be PLAUSIBLE. A half-prepared student should
     genuinely consider it. Draw distractors from the same source material:
     neighboring concepts, commonly confused terms, related-but-wrong processes.
-3b. No joke options. No obviously absurd options.
-    An option nobody would pick is a 3-option question in disguise.
+3b. NO EXTREME OR STRAWMAN OPTIONS — NON-NEGOTIABLE, applies to EVERY question
+    type, not just scenarios. An option nobody would pick regardless of
+    whether they studied is a 3-option question in disguise, and it makes the
+    real answer identifiable through elimination instead of knowledge. This
+    specifically includes the "ALL-OF-THE-FOLLOWING EXCEPT / which would NOT"
+    question type, where the odd-one-out answer is the easiest place for this
+    to sneak in — it must be a genuine, subtly-wrong step or fact, never a
+    drastic worst-case action.
+
+    REAL FAILURE (do not repeat this pattern):
+    Q: A user's computer frequently crashes and shows random error messages.
+       Which of the following would NOT be a likely first troubleshooting step?
+    A) Run a hard drive diagnostic to check for physical disk errors
+    B) Check for and install any available operating system updates
+    C) Verify sufficient disk space is available and check RAM usage
+    D) Completely erase all files and reinstall the operating system  ← correct,
+                                                                          but so
+                                                                          extreme
+                                                                          it needs
+                                                                          no IT
+                                                                          knowledge
+                                                                          to spot
+    Fix: make the odd-one-out a REASONABLE-SOUNDING step that is simply out of
+    order or the wrong tool for THIS symptom — e.g. "Reformat the hard drive
+    and restore from the most recent backup" (still drastic enough to be a
+    genuine last resort, but phrased as a normal troubleshooting action rather
+    than a catastrophic one) or "Replace the power supply unit" (plausible
+    hardware fix, just not indicated by these symptoms). The wrong answer
+    should require knowing the correct troubleshooting ORDER, not just
+    common sense about what's reckless.
 3c. Exactly ONE option may be correct. Re-read all distractors to confirm
     none is also defensibly right. If two could be argued, rewrite.
 3d. Use "All of the above" / "None of the above" in at most 1 in 20 questions.
 3e. Every option must LOOK like it could be the real textbook answer. Wrong
     options should be wrong because they name the right KIND of thing in the
-    wrong context — not because they are vague or made-up.
+    wrong context — not because they are vague, made-up, or exaggerated.
+3f. Every wrong option — in every question type, not just scenarios — must be
+    an action, term, or fact a real, reasonably-informed-but-mistaken person
+    might actually offer. Self-check before finalizing: "Could someone
+    eliminate this option using only common sense, with zero knowledge of
+    this event's subject matter?" If yes, it fails this rule — rewrite it as
+    a genuine, specific, subject-grounded distractor.
 
 BAD (fillers are vague):
   A) The trial balance and prior-period figures
@@ -210,26 +354,69 @@ GOOD (all sound like textbook answers):
 
 8a. Respond with ONLY a valid JSON array — no markdown fences, no preamble,
     no trailing text.
-8b. Each object must have exactly these fields:
-      "question":      string,
-      "options":       array of exactly 4 strings,
-      "correct_index": integer 0–3,
-      "explanation":   2-3 sentence string,
-      "knowledge_area": string,
-      "difficulty":    string (pass through whatever was requested)
-8c. Do not repeat a question already asked this session.
+8b. This rules block is shared by more than one caller, and different
+    callers need different JSON shapes (e.g. "options" as an array with a
+    "correct_index" integer vs. "options" as an {"A":...,"B":...,"C":...,
+    "D":...} object with an "answer" letter). The EXACT field names and
+    shape are always specified separately, below this rules block, in the
+    task-specific instructions for this particular request — that spec is
+    authoritative. Match it exactly. Do NOT default to a schema you recall
+    from elsewhere, do NOT add fields the task instructions didn't ask for,
+    and if the two ever seem to disagree, the task-specific instructions
+    that follow this block win.
+8c. UNIQUENESS — if a section labeled "ALREADY ASKED IN THIS KNOWLEDGE AREA"
+    appears in the source material below, read it before writing anything.
+    It is real, not a formality: every fact listed there is off limits,
+    INCLUDING asking about it again with different wording. Same underlying
+    fact + different phrasing = still a duplicate. (No such section appears
+    for single-question live requests — this rule applies when it's present.)
+
+    REAL FAILURE (do not repeat this pattern — this actually shipped):
+    Across one 25-question Operating Systems pool, the SAME fact — "the
+    process of loading the OS into memory when a computer powers on is
+    called booting" — was asked 7 different times, each just reworded:
+      "The process by which a computer loads the operating system into
+       memory when powered on is called ___"
+      "The process of loading the operating system into memory when a
+       computer is powered on is called ___"
+      "The process of a computer loading the operating system into memory
+       and preparing the hardware for use is called ___"
+      "The process by which a computer loads the operating system from
+       storage into memory when powered on is called ___"
+      ...and 3 more near-identical phrasings.
+    These are ONE fact, not seven. Only the first occurrence is acceptable —
+    every later one is a rule violation, no matter how the sentence is
+    rearranged.
+
+    "Same topic, different question" is required and expected — a knowledge
+    area like Operating Systems easily supports 25+ genuinely distinct facts
+    (purpose, examples/platforms, booting, virtual memory, file systems,
+    command-line tools, permissions, multitasking, drivers, updates,
+    troubleshooting steps, etc.). If you're tempted to reword an
+    already-asked fact, that's the signal to pick a DIFFERENT fact from the
+    source material instead — not to rephrase the same one.
 
 ============================================================
 
 MANDATORY SELF-CHECK — RUN THIS BEFORE EVERY OUTPUT
+[ ] Is every distractor POWERFUL, CLEAR, and TEMPTING — not too short, not
+    crazy, just reasonable enough that an almost-prepared student would
+    seriously consider it (RULE 3)? This is the single most important check
+    on this list. If any distractor fails it, fix it before anything else.
 [ ] Did I pre-assign correct positions before writing, using a 0-1-2-3 rotation?
 [ ] Is the distribution of correct letters A/B/C/D as even as possible?
 [ ] Are all four options within ~25% of each other in word count?
 [ ] Would a student who picks the longest option fail to beat chance?
-[ ] Is exactly one option correct, and are all three distractors genuinely plausible?
+[ ] In this batch, has at least one WRONG option been made the longest one (RULE 2e)?
+[ ] Is exactly one option correct, and are all three distractors genuinely plausible
+    actions/choices — not strawmen (RULE 3f)?
 [ ] Do all four options LOOK like real textbook answers?
+[ ] Would an adult with ZERO knowledge of this event still guess the correct
+    answer from common sense alone? If yes, rewrite around a specific term or
+    concept from the source material (RULE 1 guardrail).
 [ ] Does every question trace to the loaded study material?
-[ ] Does the difficulty match real FBLA level — not too easy, not graduate-level?
-[ ] Do question types match the target mix (35/25/20/10/10)?
+[ ] Does this batch match its stated difficulty tier's distribution (RULE 1B) —
+    not drifting easier or harder than that tier's target?
+[ ] Do question types match the target mix (38/27/22/8/5)?
 
 If ANY box fails — rewrite before responding.

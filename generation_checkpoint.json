@@ -1,0 +1,21 @@
+{
+ "position_counts": [
+  416,
+  417,
+  416,
+  416
+ ],
+ "type_counts": {
+  "definition_recall": 35,
+  "concept_completion": 17,
+  "which_of_following": 22,
+  "all_except": 24,
+  "scenario_judgment": 17
+ },
+ "total": 1665,
+ "last_checkpoint_total": 1550,
+ "tiers_completed": [
+  "event",
+  "section"
+ ]
+}

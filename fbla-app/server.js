@@ -150,31 +150,35 @@ function shuffle(arr) {
   return a;
 }
 
-// Try to serve `count` questions from the bank matching `difficulty`.
-// For section-scoped requests, filter by knowledge_area.
-// Returns an array of quiz-format questions, or null if bank can't satisfy.
-function serveFromBank(event, objective, count, difficulty) {
+// Each scope has its own pre-generated bank size. The bank is only ever
+// served when the request asks for exactly that many questions — anything
+// smaller generates fresh so it isn't just a random subset of the bigger
+// pre-generated pool. Section and objective banks don't exist yet, so those
+// scopes always fall through to live generation for now.
+const SCOPE_BANK_MAX = { event: 50, section: 25, objective: 15 };
+
+// Mirrors generate_bank.py's difficulty_tier() exactly, so on-the-fly
+// generation is calibrated by RULE 1B the same way bulk generation is —
+// every "introduction-to-*" event is INTRO tier, everything else STANDARD.
+function difficultyTier(event) {
+  return (event || '').startsWith('introduction-to-') ? 'INTRO' : 'STANDARD';
+}
+
+// Serve the full pre-generated bank for an exact-max-count event request.
+// Returns an array of quiz-format questions, or null if the bank is missing.
+function serveFromBank(event, difficulty) {
   const bank = loadBank(event);
-  if (!bank) return null;
+  if (!bank || bank.length === 0) return null;
 
-  let pool = difficulty ? bank.filter(q => q.difficulty === difficulty) : bank;
-
-  // If this is a section-scoped request (not a full-event review), try to
-  // narrow to matching knowledge areas by checking for overlap in words.
-  const isFullEvent = objective.toLowerCase().includes('complete review');
-  if (!isFullEvent) {
-    const objWords = new Set(
-      objective.toLowerCase().split(/\W+/).filter(w => w.length > 4)
-    );
-    const sectionPool = pool.filter(q => {
-      const areaWords = (q.knowledge_area || '').toLowerCase().split(/\W+/);
-      return areaWords.some(w => w.length > 4 && objWords.has(w));
-    });
-    if (sectionPool.length >= count) pool = sectionPool;
+  // Prefer questions matching the requested difficulty, but never fail just
+  // because the bank doesn't stock that difficulty — fall back to everything.
+  let pool = bank;
+  if (difficulty) {
+    const byDiff = bank.filter(q => q.difficulty === difficulty);
+    if (byDiff.length) pool = byDiff;
   }
 
-  if (pool.length < count) return null;
-  return shuffle(pool).slice(0, count).map(bankToQuizFormat);
+  return shuffle(pool).map(bankToQuizFormat);
 }
 
 // ---------------------------------------------------------------------------
@@ -430,13 +434,7 @@ function normalizeCards(cards) {
 // Prompt builders
 // ---------------------------------------------------------------------------
 
-function buildGenPrompt(type, count, objective, outline, difficulty, extras = '') {
-  const diffGuide = {
-    easy:   'Simple recall and basic understanding only.',
-    medium: 'Mix of recall and application.',
-    hard:   'In-depth analysis and nuanced understanding.',
-  }[difficulty] || 'Mix of recall and application.';
-
+function buildGenPrompt(type, count, objective, outline, difficulty, extras = '', event = '') {
   const studyBlock = [
     outline ? `--- EVENT OUTLINE ---\n${outline.slice(0, 1500).trim()}` : '',
     extras  ? `--- STUDY CONTENT ---\n${extras.slice(0, 3000).trim()}`  : '',
@@ -448,8 +446,12 @@ function buildGenPrompt(type, count, objective, outline, difficulty, extras = ''
 --- TASK ---
 Output ONLY a valid JSON array. No text before or after the array.
 
+Event: ${event}
+Difficulty tier: ${difficultyTier(event)} — follow RULE 1B's distribution for
+this tier exactly. Do not drift toward "hard" as a goal; match what would
+realistically appear on this specific event's real objective test.
+
 Generate exactly ${count} multiple-choice questions about: "${objective}"
-Difficulty: ${difficulty} — ${diffGuide}
 ${studyBlock ? `\n${studyBlock}\n` : ''}
 Format — every object must have these exact keys:
 [{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"2-3 sentences: why correct and why the wrong choices are wrong","knowledge_area":"topic area","difficulty":"${difficulty}"}]
@@ -457,7 +459,13 @@ Format — every object must have these exact keys:
 Rules:
 - "answer" must be exactly A, B, C, or D
 - No text outside the array
-- The array MUST end with ]`;
+- The array MUST end with ]
+- LAST CHECK BEFORE YOU RESPOND, ONE OPTION AT A TIME: every wrong option
+  must be POWERFUL, CLEAR, and TEMPTING — not too short, not crazy, just
+  reasonable enough that a student who almost knows this material would
+  seriously consider picking it. A distractor that's a one-word throwaway
+  or an extreme/absurd choice is not a distractor, it's a hint. Fix any
+  option that fails this before outputting.`;
   }
 
   return `Output ONLY a valid JSON array. No text before or after the array.
@@ -480,21 +488,27 @@ Rules:
 // Routes
 // ---------------------------------------------------------------------------
 
-// Quiz generation — serves from pre-generated bank when available, falls back to AI
+// Quiz generation — serves from the pre-generated bank only when the request
+// asks for exactly that scope's full bank size; every other count generates
+// fresh with AI so it's never just a sampled subset of the bigger bank.
 app.post('/api/quiz', async (req, res) => {
-  const { event, objective, count, difficulty } = req.body;
+  const { event, objective, count, difficulty, scope } = req.body;
+  console.log(`[quiz] event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
 
-  // Fast path: serve from pre-generated bank (instant, no AI cost)
-  const banked = serveFromBank(event, objective, count, difficulty);
-  if (banked) {
-    console.log(`[bank] serving ${banked.length} ${difficulty} questions for ${event}`);
-    return res.json({ questions: banked, source: 'bank' });
+  // Fast path: exact-max-count event request — serve the pre-generated bank.
+  if (scope === 'event' && count === SCOPE_BANK_MAX.event) {
+    const banked = serveFromBank(event, difficulty);
+    if (banked) {
+      console.log(`[bank] serving ${banked.length} ${difficulty} questions for ${event}`);
+      return res.json({ questions: banked, source: 'bank' });
+    }
+    console.log(`[bank] miss — falling through to AI`);
   }
 
   // Slow path: generate with AI
   const outline = extractRelevantSection(getOutline(event), objective);
   const extras  = getExtras(event);
-  const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty, extras);
+  const prompt  = buildGenPrompt('quiz', count, objective, outline, difficulty, extras, event);
 
   try {
     const questions = await withRetry(async () => {
@@ -566,4 +580,15 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`StudyStock — provider: ${PROVIDER} — port: ${PORT}`));
+const server = app.listen(PORT, () => console.log(`StudyStock — provider: ${PROVIDER} — port: ${PORT}`));
+server.on('error', (err) => console.error('[server] listen error:', err));
+
+// Guaranteed keep-alive: if the listen handle somehow isn't holding the event
+// loop open in this environment, this timer will, so the process can't exit 0.
+setInterval(() => {}, 1 << 30);
+
+// Diagnostics — surface exactly how/if the process ever stops.
+process.on('beforeExit', (code) => console.log('[server] beforeExit (event loop drained) code', code));
+process.on('exit',        (code) => console.log('[server] exit code', code));
+process.on('uncaughtException',  (err) => console.error('[server] uncaughtException:', err));
+process.on('unhandledRejection', (err) => console.error('[server] unhandledRejection:', err));

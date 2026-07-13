@@ -65,11 +65,11 @@ TIER_BANK_FILENAME = {
 
 # RULE 1's five question categories and their target mix (must sum to 100).
 QUESTION_TYPES = {
-    "definition_recall":  35,
-    "concept_completion": 25,
-    "which_of_following": 20,
-    "all_except":         10,
-    "scenario_judgment":  10,
+    "definition_recall":  38,
+    "concept_completion": 27,
+    "which_of_following": 22,
+    "all_except":         8,
+    "scenario_judgment":  5,
 }
 
 CHECKPOINT_EVERY = 1000

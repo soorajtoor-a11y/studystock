@@ -682,8 +682,19 @@ app.post('/api/quiz', async (req, res) => {
   // Track the least-bad attempt across retries so a request NEVER hard-fails
   // just because of these mechanical checks — a quiz with one imperfect
   // question beats no quiz at all. The checks still drive real retries first.
+  //
+  // Ranked by [dupeCount, lengthCount] lexicographically, NOT a flat sum — a
+  // real bug shipped in generate_bank.py's identical logic where a 3-attempt
+  // tie (1 dupe on attempt 1, 1 length-tell on attempts 2 and 3 — all "1
+  // total violation") kept attempt 1 by default (first-seen wins ties under
+  // strict <), landing an actual duplicate question in a live bank. A
+  // duplicate is strictly worse than a length-tell (a wasted, unusable
+  // question vs. a partial quality issue), so it must never lose a
+  // tie-break to one. Mirrored here since this path has the same shape.
   let bestAttempt = null;
-  let bestViolationCount = Infinity;
+  let bestRank = null;
+  const rankOf = (dupeCount, lengthCount) => [dupeCount, lengthCount];
+  const rankLess = (a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
 
   try {
     const questions = await withRetry(async () => {
@@ -694,13 +705,13 @@ app.post('/api/quiz', async (req, res) => {
       const parsed = sanitizeQuestions(extractJSON(raw));
       const lengthViolations = findLengthTellViolations(parsed);
       const dupeViolations   = findDuplicateViolations(parsed);
-      const totalViolations  = lengthViolations.length + dupeViolations.length;
+      const rank = rankOf(dupeViolations.length, lengthViolations.length);
 
-      if (totalViolations < bestViolationCount) {
+      if (!bestRank || rankLess(rank, bestRank)) {
         bestAttempt = parsed;
-        bestViolationCount = totalViolations;
+        bestRank = rank;
       }
-      if (totalViolations) {
+      if (dupeViolations.length || lengthViolations.length) {
         const reasons = [];
         if (lengthViolations.length) reasons.push(`${lengthViolations.length} length-tell`);
         if (dupeViolations.length)   reasons.push(`${dupeViolations.length} duplicate`);
@@ -713,7 +724,8 @@ app.post('/api/quiz', async (req, res) => {
     res.json({ questions: questions.slice(0, count), source: 'ai' });
   } catch (err) {
     if (bestAttempt) {
-      console.warn(`[quiz] all attempts had violations — serving least-bad available (${bestViolationCount} violation(s))`);
+      const [dupeN, lengthN] = bestRank;
+      console.warn(`[quiz] all attempts had violations — serving least-bad available (${dupeN} duplicate, ${lengthN} length-tell)`);
       rememberQuestions(event, scope, objective, bestAttempt);
       return res.json({ questions: bestAttempt.slice(0, count), source: 'ai' });
     }

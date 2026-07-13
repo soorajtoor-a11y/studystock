@@ -1365,15 +1365,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "Which of the following tasks would all be appropriate uses for a spreadsheet application in a business environment?",
+   "question": "Which of the following would all be appropriate uses for a presentation application in a business environment?",
    "options": [
-    "Tracking monthly sales figures, calculating quarterly revenue totals, and creating a bar chart to compare performance across regions",
-    "Scheduling team meetings, sending calendar invitations to attendees, and recording the discussion for absent employees",
-    "Broadcasting a live presentation with slide animations, adding speaker notes to each slide, and distributing the file to remote viewers",
-    "Composing a formal letter to clients, setting up an automated signature, and tracking document revisions made by different team members"
+    "Designing a quarterly sales pitch with animated slide transitions, embedded video clips, and speaker notes for delivery to clients",
+    "Organizing employee contact information in rows and columns, filtering by department, and sorting by hire date",
+    "Creating a financial budget with formulas, calculating quarterly totals, and generating revenue trend charts",
+    "Sending a message to all department staff, attaching multiple supporting documents, and maintaining a searchable record of responses"
    ],
    "correct_index": 0,
-   "explanation": "Tracking numerical data, performing calculations, and generating visual charts are core spreadsheet functions. The other options describe word processing (formal letters and revision tracking), email and calendar features (meeting scheduling), and presentation software (animations and live broadcasting).",
+   "explanation": "Presentation applications are designed for creating visual slideshows with animations, multimedia elements, and speaker notes — exactly what option B describes for a sales pitch. The other options describe core tasks better suited to spreadsheets (budget and charts), email (message distribution and record-keeping), and database/spreadsheet functions (contact organization and filtering).",
    "type": "which_of_following",
    "knowledge_area": "Software Applications",
    "difficulty": "hard"

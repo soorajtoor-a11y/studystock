@@ -744,22 +744,30 @@ def _generate_batch(client, prompt, area_name, state, prior_questions=None, even
     enforcement exactly so bulk-generated banks get the same guarantee.
     Tracks the least-bad attempt across retries so one stubborn batch never
     silently produces nothing — worst case it keeps the best available
-    attempt instead of skipping the batch outright."""
+    attempt instead of skipping the batch outright.
+
+    The "best" comparison ranks by (dupe_count, length_count) as a tuple, NOT
+    a flat sum — a real bug shipped where a 3-attempt tie (1 dupe on attempt
+    1, 1 length-tell on attempts 2 and 3 — all "1 total violation") kept
+    attempt 1 by default (first-seen wins ties under strict <), landing an
+    actual duplicate question in a live bank. A duplicate is strictly worse
+    than a length-tell (it's a wasted, unusable question; a length-tell is a
+    partial quality issue), so it must never lose a tie-break to one."""
     best = None
-    best_violation_count = None
+    best_rank = None
     for attempt in (1, 2, 3):
         try:
             raw = call_model(client, prompt)
             parsed = parse_questions(raw, area_name)
             length_violations = find_length_violations(parsed)
             dupe_violations = find_duplicate_violations(parsed, prior_questions)
-            total_violations = len(length_violations) + len(dupe_violations)
+            rank = (len(dupe_violations), len(length_violations))
 
-            if best is None or total_violations < best_violation_count:
+            if best is None or rank < best_rank:
                 best = parsed
-                best_violation_count = total_violations
+                best_rank = rank
 
-            if total_violations:
+            if dupe_violations or length_violations:
                 reasons = []
                 if length_violations:
                     reasons.append(f"{len(length_violations)} length-tell")
@@ -780,7 +788,9 @@ def _generate_batch(client, prompt, area_name, state, prior_questions=None, even
             time.sleep(RATE_LIMIT_WAIT)
 
     if best is not None:
-        print(f"    all attempts had violations — using least-bad available ({best_violation_count} violation(s))")
+        dupe_n, length_n = best_rank
+        print(f"    all attempts had violations — using least-bad available "
+              f"({dupe_n} duplicate, {length_n} length-tell)")
         got = assign_positions(best, state)
         maybe_checkpoint(state)
         _run_state["questions"].extend(got)

@@ -159,6 +159,7 @@ Difficulty tier: {difficulty_tier} — follow RULE 1B's distribution for this
 tier exactly. Do not drift toward "hard" as a goal; match what would
 realistically appear on this specific event's real objective test.
 {focus}
+{type_focus}
 {body}
 ============================================================
 {already_asked}
@@ -167,9 +168,10 @@ realistically appear on this specific event's real objective test.
 Generate exactly {n} multiple-choice questions from the source material
 above, following every generation rule — including the RULE 1 question-type
 mix (38% definition_recall / 27% concept_completion / 22% which_of_following
-/ 8% all_except / 5% scenario_judgment) and the RULE 1B difficulty tier
-distribution stated above. Every question must test a fact DIFFERENT from
-everything in the ALREADY ASKED list above — see RULE 8c.
+/ 8% all_except / 5% scenario_judgment), the concrete per-batch type-mix
+target stated above, and the RULE 1B difficulty tier distribution stated
+above. Every question must test a fact DIFFERENT from everything in the
+ALREADY ASKED list above — see RULE 8c.
 
 Respond with ONLY a JSON array (no code fences, no other text) of
 {n} objects, each with exactly these fields:
@@ -180,6 +182,61 @@ Respond with ONLY a JSON array (no code fences, no other text) of
   "type": one of "definition_recall", "concept_completion",
           "which_of_following", "all_except", "scenario_judgment"
 """
+
+def type_mix_directive(n):
+    """Compute which question types are most under-represented relative to
+    RULE 1's 38/27/22/8/5 target, and tell the model exactly how many of each
+    type to write for THIS batch. Static prompt text alone ("aim for these
+    proportions") was proven insufficient — a real regenerated 50-question
+    event tier drifted to all_except 14% (target 8%) and scenario_judgment
+    14% (target 5%) while concept_completion fell to 12% (target 27%),
+    because nothing made the target concrete on a per-batch basis. This is
+    the same lever that fixed topic-clustering (see the objective-rotation
+    focus text below) — turn a static aspiration into a live, adaptive,
+    per-batch instruction.
+
+    Deliberately scoped to THIS RUN's own type counts (_run_state), not the
+    global checkpoint's lifetime type_counts — the global counts span every
+    event ever generated (contaminated by ~1,550 pre-fix questions from
+    before "type" even existed, and by other events' own independent drift),
+    so using them here suppressed all_except/scenario_judgment for an entire
+    fresh event bank for the wrong reason (they were globally, not locally,
+    over-represented). A fresh run should self-correct against its OWN
+    drift, not inherit unrelated history."""
+    run_types = {}
+    for q in _run_state["questions"]:
+        t = q.get("type")
+        if t in QUESTION_TYPES:
+            run_types[t] = run_types.get(t, 0) + 1
+    total = sum(run_types.values())
+    if total < 20:
+        # Too little history to compute a meaningful deficit yet — fall back
+        # to the flat target so early batches aren't skewed by noise.
+        deficits = dict(QUESTION_TYPES)
+    else:
+        deficits = {
+            t: target_pct - (run_types.get(t, 0) / total * 100)
+            for t, target_pct in QUESTION_TYPES.items()
+        }
+
+    ranked = sorted(deficits.items(), key=lambda kv: -kv[1])
+    weights = [(t, max(d, 0.1)) for t, d in ranked]
+    weight_sum = sum(w for _, w in weights)
+    counts = {}
+    remaining = n
+    for i, (t, w) in enumerate(weights):
+        if i == len(weights) - 1:
+            c = remaining
+        else:
+            c = min(round(n * w / weight_sum), remaining)
+        counts[t] = c
+        remaining -= c
+    counts = {t: c for t, c in counts.items() if c > 0}
+    parts = ", ".join(f"{c} {t}" for t, c in counts.items())
+    return (f"TYPE MIX FOR THIS BATCH (RULE 1, made concrete using this "
+            f"run's own mix so far — not optional): write exactly "
+            f"{parts}. These counts already account for which types have "
+            f"been over/under-used so far in this run — follow them.")
 
 def already_asked_block(prior_questions):
     """Render the list of question stems already generated for this exact
@@ -396,6 +453,69 @@ def rebalance_all_banks(state):
     save_checkpoint(state)
     print("    rebalance complete — every bank now reflects the corrected positions.")
 
+SELF_CHECK_EVERY = 100
+_run_state = {"questions": [], "last_self_check": 0}
+
+def _length_tell_rate(questions):
+    if not questions:
+        return 0.0
+    flagged = sum(1 for q in questions if has_obvious_length_tell(q))
+    return flagged / len(questions) * 100
+
+def self_check(event, area_label):
+    """Fires automatically every SELF_CHECK_EVERY (100) questions generated
+    within this run — silent, no stop, no user interaction. Per the user's
+    explicit request: check every 100 on our own, only report to the user at
+    the real 1,000-question global checkpoint (maybe_checkpoint, unchanged).
+    Verifies the 3 axes the user asked to be held consistent across the
+    whole run: answer distribution, difficulty-tier conformity, and
+    distractor quality/length. This is IN ADDITION TO, not a replacement
+    for, the per-batch mechanical checks in _generate_batch (which reject
+    and retry a batch outright) — this is a rolling audit of the last 100
+    questions actually accepted, to catch slow drift a single-batch check
+    can't see."""
+    qs = _run_state["questions"]
+    total = len(qs)
+    if total - _run_state["last_self_check"] < SELF_CHECK_EVERY:
+        return
+    _run_state["last_self_check"] = (total // SELF_CHECK_EVERY) * SELF_CHECK_EVERY
+
+    window = qs[-SELF_CHECK_EVERY:]
+    letters = "ABCD"
+    pos_counts = [0, 0, 0, 0]
+    for q in window:
+        pos_counts[q["correct_index"]] += 1
+    pct = [c / len(window) * 100 for c in pos_counts]
+
+    type_counts = {}
+    for q in window:
+        t = q.get("type")
+        if t:
+            type_counts[t] = type_counts.get(t, 0) + 1
+
+    length_rate = _length_tell_rate(window)
+
+    print(f"\n  --- self-check @ {total} questions this run ({area_label}) ---")
+    print("    distribution (last %d): %s" % (
+        len(window), ", ".join(f"{letters[i]} {pct[i]:.1f}%" for i in range(4))))
+    dist_bad = any(abs(p - 25) > DISTRIBUTION_TOLERANCE for p in pct)
+    if dist_bad:
+        print("    FLAG: distribution drifted >3pts off 25% in this window "
+              "(global checkpoint auto-rebalances at the next 1,000 boundary)")
+
+    type_summary = ", ".join(
+        f"{t} {c}/{len(window)} ({c/len(window)*100:.0f}%)"
+        for t, c in sorted(type_counts.items())
+    ) or "n/a"
+    print(f"    type mix (last {len(window)}): {type_summary}")
+    print(f"    difficulty tier: {difficulty_tier(event)} (mechanical, per RULE 1B — event name unchanged mid-run)")
+
+    print(f"    length-tell rate: {length_rate:.1f}% of window flagged as obviously-longest-correct-answer")
+    if length_rate > 15:
+        print(f"    FLAG: length-tell rate {length_rate:.1f}% is high — distractor length balance may be drifting")
+
+    print("  --- end self-check ---\n")
+
 def maybe_checkpoint(state):
     """Called after every batch is appended. Fires once per 1,000-question
     boundary crossed since the last checkpoint."""
@@ -482,10 +602,11 @@ def generate_event_tier(client, event, rules, state, dry_run=False):
         prompt = PROMPT_TEMPLATE.format(
             rules=rules, event=event, area=section["name"],
             difficulty_tier=difficulty_tier(event),
-            focus=focus, body=section["body"][:6000], n=n,
+            focus=focus, type_focus=type_mix_directive(n),
+            body=section["body"][:6000], n=n,
             already_asked=already_asked_block(prior),
         )
-        got = _generate_batch(client, prompt, section["name"], state, prior)
+        got = _generate_batch(client, prompt, section["name"], state, prior, event)
         if got:
             bank.extend(got)
             with open(bank_path, "w", encoding="utf-8") as f:
@@ -544,10 +665,11 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
             prompt = PROMPT_TEMPLATE.format(
                 rules=rules, event=event, area=key,
                 difficulty_tier=difficulty_tier(event),
-                focus=focus, body=section["body"][:6000], n=n,
+                focus=focus, type_focus=type_mix_directive(n),
+                body=section["body"][:6000], n=n,
                 already_asked=already_asked_block([q["question"] for q in bank]),
             )
-            got = _generate_batch(client, prompt, key, state, [q["question"] for q in bank])
+            got = _generate_batch(client, prompt, key, state, [q["question"] for q in bank], event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -593,10 +715,11 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
             prompt = PROMPT_TEMPLATE.format(
                 rules=rules, event=event, area=section["name"],
                 difficulty_tier=difficulty_tier(event),
-                focus=focus, body=section["body"][:6000], n=n,
+                focus=focus, type_focus=type_mix_directive(n),
+                body=section["body"][:6000], n=n,
                 already_asked=already_asked_block([q["question"] for q in bank]),
             )
-            got = _generate_batch(client, prompt, section["name"], state, [q["question"] for q in bank])
+            got = _generate_batch(client, prompt, section["name"], state, [q["question"] for q in bank], event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -608,9 +731,9 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
     push_event(event, bank_path, sum(len(v) for v in banks.values()))
 
 # --------------------------- SHARED HELPER ---------------------------
-def _generate_batch(client, prompt, area_name, state, prior_questions=None):
+def _generate_batch(client, prompt, area_name, state, prior_questions=None, event=None):
     """Retry-guarded batch call: parse -> mechanical quality checks ->
-    assign positions -> checkpoint.
+    assign positions -> checkpoint -> rolling self-check.
 
     The quality checks (length-tell, duplicates) are CODE-LEVEL, not just
     prompt instructions — prompt-only enforcement was proven insufficient at
@@ -647,6 +770,8 @@ def _generate_batch(client, prompt, area_name, state, prior_questions=None):
 
             got = assign_positions(parsed, state)
             maybe_checkpoint(state)
+            _run_state["questions"].extend(got)
+            self_check(event, area_name)
             return got
         except ValueError as e:
             print(f"    bad JSON from model (attempt {attempt}): {e}")
@@ -658,6 +783,8 @@ def _generate_batch(client, prompt, area_name, state, prior_questions=None):
         print(f"    all attempts had violations — using least-bad available ({best_violation_count} violation(s))")
         got = assign_positions(best, state)
         maybe_checkpoint(state)
+        _run_state["questions"].extend(got)
+        self_check(event, area_name)
         return got
     return None
 

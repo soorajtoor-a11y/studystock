@@ -1,0 +1,702 @@
+[
+ {
+  "question": "A software application designed to organize data into rows and columns for calculations, data analysis, and creating charts is called a(n) ___",
+  "options": [
+   "presentation tool",
+   "email client",
+   "word processor",
+   "spreadsheet"
+  ],
+  "correct_index": 3,
+  "explanation": "A spreadsheet application (such as Microsoft Excel) is specifically built for numerical data, formulas, and analysis. Word processors handle text, presentation tools create slide decks, and email clients manage messages—none of these primary functions match spreadsheet use.",
+  "type": "definition_recall",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are primary functions of team collaboration software such as Microsoft Teams EXCEPT",
+  "options": [
+   "sending instant messages and maintaining conversation threads",
+   "storing and organizing financial records for tax compliance",
+   "sharing files and documents in a centralized workspace",
+   "conducting virtual meetings and video conferences with team members"
+  ],
+  "correct_index": 1,
+  "explanation": "Team collaboration software is designed for communication, file sharing, and meetings—not for managing financial or tax records, which belong in accounting or compliance systems. This question tests understanding of what collaboration tools are designed to do versus what they are not.",
+  "type": "all_except",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When a business needs to create a professional document with formatted text, headers, footers, and images arranged on a page, the most appropriate application type is a(n) ___",
+  "options": [
+   "word processor",
+   "database program",
+   "email application",
+   "presentation software"
+  ],
+  "correct_index": 0,
+  "explanation": "Word processors (like Microsoft Word) are designed to create, format, and layout text-based documents with images and sophisticated page design. Email is for messages, presentations are for slide decks, and databases store structured data—word processing is the correct tool for document creation and formatting.",
+  "type": "concept_completion",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following tasks would be best suited to using a spreadsheet rather than a word processor?",
+  "options": [
+   "Composing an employee handbook with chapters, a table of contents, and page numbers",
+   "Writing a professional business letter to a client with letterhead and signature block",
+   "Creating a monthly budget, tracking expenses, and calculating totals using formulas",
+   "Drafting a memo with multiple paragraphs and company-branded formatting"
+  ],
+  "correct_index": 2,
+  "explanation": "Spreadsheets excel at numerical calculations, formulas, and data organization—making them ideal for budgets and expense tracking. Word processors are the correct choice for letters, memos, and handbooks because they focus on text formatting and document layout rather than calculations.",
+  "type": "which_of_following",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A project manager needs to coordinate a team distributed across three time zones, share project files, and hold weekly check-in meetings without traveling. The most appropriate tool would be ___",
+  "options": [
+   "team collaboration software such as Microsoft Teams or Zoom",
+   "an email application to send individual messages to each team member",
+   "a word processor to document all communication in one file",
+   "a presentation tool to create slide decks for each meeting"
+  ],
+  "correct_index": 0,
+  "explanation": "Team collaboration software like Microsoft Teams and Zoom is purpose-built for remote meetings, file sharing, and team communication across distances—it consolidates communication, files, and video conferencing in one platform. While email could send messages and word processors could document notes, collaboration software is the integrated tool designed specifically for distributed team coordination.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Data that is stored on servers maintained by a third-party provider and accessed over the internet is called ___",
+  "options": [
+   "local storage",
+   "network-attached storage",
+   "cloud storage",
+   "archive storage"
+  ],
+  "correct_index": 2,
+  "explanation": "Cloud storage refers to data kept on remote servers owned by service providers like AWS or Microsoft Azure, accessible anywhere via internet connection. Local storage, by contrast, is data on a personal device's hard drive or SSD, while network-attached storage is a dedicated device on a local network.",
+  "type": "definition_recall",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The organized collection of related data stored and accessed through a computer system is known as a ___",
+  "options": [
+   "data warehouse",
+   "file directory",
+   "server farm",
+   "database"
+  ],
+  "correct_index": 3,
+  "explanation": "A database is a structured collection of data organized for efficient storage, retrieval, and management. While a data warehouse also stores data, it is typically much larger and used for analytics; a file directory is simply a folder structure, not an organized data system.",
+  "type": "definition_recall",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are examples of data storage methods?",
+  "options": [
+   "Database queries, backup protocols, and file compression",
+   "Solid-state drives, cloud servers, and external hard drives",
+   "Firewalls, encryption software, and antivirus programs",
+   "Internet service providers, routers, and network switches"
+  ],
+  "correct_index": 1,
+  "explanation": "Solid-state drives (SSDs), cloud servers, and external hard drives are all physical or cloud-based storage methods. The other options include security tools (firewalls, encryption), network infrastructure (routers, ISPs), and data management processes (queries, backups) — none of which are storage methods themselves.",
+  "type": "which_of_following",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company wants to ensure it can restore critical business data in case of a natural disaster that damages its main office location. The practice the company should implement is ___",
+  "options": [
+   "installing additional firewalls at each entrance",
+   "disaster recovery planning with offsite backups",
+   "requiring employees to use stronger passwords monthly",
+   "encrypting all customer email addresses in the database"
+  ],
+  "correct_index": 1,
+  "explanation": "Disaster recovery planning with offsite backups specifically addresses data restoration after catastrophic events like natural disasters. Stronger passwords and additional firewalls improve security but do not recover lost data; email encryption protects data privacy but does not enable recovery from physical damage.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Information management is important for an organization for all of the following reasons EXCEPT",
+  "options": [
+   "to determine which employees should receive salary increases",
+   "to ensure data is organized and easily retrieved when needed",
+   "to comply with privacy regulations and protect customer data",
+   "to plan for recovery of critical data in case of system failure"
+  ],
+  "correct_index": 0,
+  "explanation": "Salary decisions are human resources or payroll functions unrelated to information management. Compliance with privacy laws, efficient data organization and retrieval, and disaster recovery planning are all core reasons organizations implement information management systems.",
+  "type": "all_except",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A computer designed to process large volumes of data and support hundreds of simultaneous users in a corporate environment is called a(n) ___",
+  "options": [
+   "workstation",
+   "personal computer",
+   "mainframe",
+   "supercomputer"
+  ],
+  "correct_index": 2,
+  "explanation": "A mainframe is a large, powerful computer built to handle massive data processing tasks and support many users at once in enterprise settings. Personal computers and workstations are smaller systems for individual or small-group use, while supercomputers are specialized for scientific computation rather than general business data processing.",
+  "type": "definition_recall",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The component that temporarily stores data and instructions that the CPU is actively using during processing is the ___",
+  "options": [
+   "solid-state drive",
+   "hard drive",
+   "graphics card",
+   "RAM"
+  ],
+  "correct_index": 3,
+  "explanation": "RAM (random-access memory) serves as fast, temporary storage for active data and program instructions while the CPU executes them. Hard drives and SSDs provide permanent storage and are much slower than RAM; graphics cards handle visual rendering rather than general data storage.",
+  "type": "definition_recall",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following best describes how CPU, RAM, and storage work together in a computer system?",
+  "options": [
+   "The CPU retrieves data directly from the hard drive, which is faster than using RAM, so RAM is used only as a backup",
+   "The storage device executes instructions while RAM manages peripheral connections and the CPU handles only display output",
+   "RAM holds active data for the CPU to process quickly, while storage devices retain data permanently when the computer is off",
+   "The CPU processes information from storage, RAM is used only for external file transfers, and the hard drive controls system temperature"
+  ],
+  "correct_index": 2,
+  "explanation": "RAM provides fast access to data the CPU needs during active processing, while storage (hard drive or SSD) holds data permanently. The CPU retrieves data from RAM far faster than directly from storage, which is why RAM acts as an intermediary between the CPU and permanent storage. The other options describe incorrect relationships between these core components.",
+  "type": "concept_completion",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are all legitimate reasons to add an expansion card to a computer system?",
+  "options": [
+   "Replace the motherboard, upgrade the processor, and add cooling fans",
+   "Improve graphics performance, enhance audio output, and add network connectivity",
+   "Increase the size of the hard drive, expand RAM capacity, and boost the power supply",
+   "Install an operating system, update firmware, and configure BIOS settings"
+  ],
+  "correct_index": 1,
+  "explanation": "Graphics cards, sound cards, and network adapters are all expansion cards that add specific capabilities to a system. The other options either describe upgrades that are not expansion cards (like replacing the motherboard or upgrading RAM through DIMM slots rather than cards) or describe software/configuration tasks rather than hardware additions.",
+  "type": "which_of_following",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business wants to purchase tablets for field employees who need portable access to email and company documents but do not require the processing power of a laptop. Which aspect of tablets makes them suitable for this use case?",
+  "options": [
+   "They include built-in printers and scanners, allowing employees to print and scan documents anywhere without peripherals",
+   "Tablets connect to the internet faster than any other device and automatically back up all files to the company server",
+   "Tablets have expandable storage and can run enterprise-grade accounting software like all personal computers",
+   "Their portability, touch interface, battery efficiency, and ability to run productivity apps meet the needs without unnecessary processing power"
+  ],
+  "correct_index": 3,
+  "explanation": "Tablets are purpose-built for mobile, lightweight use with sufficient capability for email, document viewing, and web access—exactly matching this business need. They excel at portability and battery life while requiring less power than laptops. The other options either overstate tablet capabilities (they don't all run enterprise software or include built-in printers) or describe features unrelated to the business's actual requirement.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A network that connects computers within a single building or campus is called a(n) ___",
+  "options": [
+   "wide area network",
+   "virtual private network",
+   "metropolitan area network",
+   "local area network"
+  ],
+  "correct_index": 3,
+  "explanation": "A LAN (local area network) covers a geographically limited area such as a single office, building, or campus, whereas a WAN spans much larger distances across cities or countries. This distinction is fundamental to understanding network scope and scale.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of converting data into a code to prevent unauthorized access is called ___",
+  "options": [
+   "authentication",
+   "packet sniffing",
+   "encryption",
+   "tunneling"
+  ],
+  "correct_index": 2,
+  "explanation": "Encryption transforms readable data into an unreadable format using mathematical algorithms, ensuring that only authorized parties with the correct key can decode it. Authentication verifies identity, packet sniffing captures network traffic, and tunneling creates a secure channel—each serves a different security purpose.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following describes the primary function of a router in a network?",
+  "options": [
+   "Convert digital signals from a computer into analog signals for transmission over telephone lines",
+   "Direct data packets between different networks and determine the best path for information to travel",
+   "Capture and analyze all network traffic to detect viruses and malware threats",
+   "Store files and manage user access permissions for all connected computers"
+  ],
+  "correct_index": 1,
+  "explanation": "A router forwards data packets between networks and uses routing tables to determine the optimal path for data delivery. Storing files is the server's role, traffic analysis is done by security tools, and signal conversion is the modem's function—each device has a distinct purpose in network infrastructure.",
+  "type": "which_of_following",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A network architecture in which all computers are equal peers and can share resources directly with each other is best described as a ___",
+  "options": [
+   "peer-to-peer network",
+   "thin client network",
+   "star topology",
+   "client-server environment"
+  ],
+  "correct_index": 0,
+  "explanation": "In a peer-to-peer (P2P) network, each computer functions as both a client and server, allowing direct resource sharing without a central server. Client-server networks rely on a central server, thin client networks use a central server to run applications, and star topology describes physical cable layout rather than network architecture type.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The tool used to trace the path that data packets take as they travel from a source computer to a destination across a network is ___",
+  "options": [
+   "ipconfig",
+   "nslookup",
+   "ping",
+   "tracert"
+  ],
+  "correct_index": 3,
+  "explanation": "The tracert (trace route) command shows each hop and the time it takes for packets to reach a destination, helping diagnose routing problems. Ping tests basic connectivity to a single host, ipconfig displays network configuration settings, and nslookup queries DNS records—each tool serves a different diagnostic purpose in troubleshooting.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Software that manages computer hardware and provides a platform for running applications is classified as ___",
+  "options": [
+   "system software",
+   "application software",
+   "utility software",
+   "specialized software"
+  ],
+  "correct_index": 0,
+  "explanation": "System software includes the operating system and core programs that manage hardware resources and enable the computer to function. Application software and specialized software run on top of system software but do not manage hardware directly; utility software is a subset of system software focused on maintenance tasks.",
+  "type": "definition_recall",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The purpose of regularly applying software updates and patches is to ___",
+  "options": [
+   "increase the storage capacity of the hard drive",
+   "replace the entire operating system each month",
+   "fix security vulnerabilities, improve performance, and add new features",
+   "reduce the number of applications installed"
+  ],
+  "correct_index": 2,
+  "explanation": "Updates and patches address security flaws, optimize system performance, and introduce new functionality to keep software current and safe. They do not affect storage capacity, require full OS replacement, or reduce application count—those are either unrelated or counterproductive to the purpose of patching.",
+  "type": "concept_completion",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following BEST describes the relationship between system software and application software?",
+  "options": [
+   "Application software manages hardware while system software creates user-facing features",
+   "System software provides the foundation and resources that application software needs to run",
+   "Application software runs independently without requiring system software to operate",
+   "System software and application software perform identical functions on different computers"
+  ],
+  "correct_index": 1,
+  "explanation": "System software (operating system, drivers) manages hardware resources and provides core services, while application software depends on system software to access those resources and execute its functions. The other options misrepresent the dependency relationship or reverse the roles of the two software types.",
+  "type": "concept_completion",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are examples of system utilities that help maintain computer performance and security?",
+  "options": [
+   "Social media platforms, email clients, and web browsers",
+   "CAD software, accounting programs, and video editing applications",
+   "Antivirus software, disk management tools, and backup programs",
+   "Microsoft Word, Adobe Photoshop, and Google Chrome"
+  ],
+  "correct_index": 2,
+  "explanation": "System utilities are specialized programs that perform maintenance, protection, and optimization tasks—antivirus programs defend against threats, disk management tools organize storage, and backup tools protect data. The other options are general applications or specialized software that serve user-facing tasks rather than system maintenance.",
+  "type": "which_of_following",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An engineer uses specialized CAD software to design mechanical parts, while a small business uses general accounting software to track expenses. Both are examples of software that is chosen based on ___",
+  "options": [
+   "the color of the user's monitor",
+   "the brand of the computer's processor",
+   "the total number of employees in the organization",
+   "specific job requirements and use cases in different work environments"
+  ],
+  "correct_index": 3,
+  "explanation": "Both users selected software tailored to their specific professional needs—CAD for engineering design and accounting software for financial management. This illustrates how specialized and application software are chosen to match particular job tasks and industry requirements, not based on hardware specs, aesthetics, or company size alone.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A network architecture in which a central server provides resources and services to multiple client computers is called a ___",
+  "options": [
+   "ring topology",
+   "client-server network",
+   "wireless LAN",
+   "peer-to-peer network"
+  ],
+  "correct_index": 1,
+  "explanation": "A client-server network uses a central server to manage resources and handle requests from client computers, which is the defining characteristic of this architecture. This differs from peer-to-peer networks where all computers share resources equally without a central authority.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be effective measures to protect against phishing attacks?",
+  "options": [
+   "Installing firewalls, enabling pop-up blockers, and verifying sender email addresses before clicking links",
+   "Disconnecting from the internet entirely, unplugging all network cables, and storing data on external drives",
+   "Using only wireless connections, disabling encryption, and opening all email attachments",
+   "Removing all passwords, connecting to public Wi-Fi networks, and avoiding authentication"
+  ],
+  "correct_index": 0,
+  "explanation": "Firewalls filter malicious traffic, pop-up blockers prevent malicious websites from opening, and verifying sender identity are all legitimate security practices that reduce phishing risk. The other options either introduce vulnerabilities or are impractical solutions unrelated to phishing prevention.",
+  "type": "which_of_following",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The use of a private tunnel through the internet to securely transmit data between a user and a network is called a ___",
+  "options": [
+   "packet sniffer",
+   "network gateway",
+   "bandwidth limiter",
+   "virtual private network"
+  ],
+  "correct_index": 3,
+  "explanation": "A Virtual Private Network (VPN) creates an encrypted tunnel that protects data transmitted over the internet and masks the user's location and identity. This is a fundamental security practice that isolates private communications from public network traffic.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The characteristics of how network nodes are physically or logically arranged and connected together make up a ___",
+  "options": [
+   "network protocol",
+   "network interface",
+   "network topology",
+   "network authentication"
+  ],
+  "correct_index": 2,
+  "explanation": "A network topology describes the arrangement and connection pattern of nodes (computers and devices) in a network—such as star, bus, or ring configurations. Network protocols, by contrast, are the rules governing communication, not the physical or logical arrangement.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are common network connectivity technologies EXCEPT",
+  "options": [
+   "DHCP, which automatically assigns IP addresses to devices on a network",
+   "Bluetooth, which enables short-range wireless communication between devices",
+   "Ethernet, which uses wired cables to connect computers at high speed",
+   "Wi-Fi, which transmits data wirelessly over radio frequencies"
+  ],
+  "correct_index": 0,
+  "explanation": "Ethernet, Wi-Fi, and Bluetooth are all physical connectivity technologies that enable devices to communicate with each other. DHCP is a network protocol that assigns IP addresses—it is not a connectivity technology itself, making it the odd one out in this list.",
+  "type": "all_except",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A solid-state drive (SSD) differs from a hard disk drive (HDD) primarily in that an SSD ___",
+  "options": [
+   "uses magnetic platters that spin to read and write data",
+   "has no moving parts and stores data on flash memory chips",
+   "requires more power to operate than traditional storage devices",
+   "can only store a fraction of the data that an HDD can hold"
+  ],
+  "correct_index": 1,
+  "explanation": "SSDs use flash memory with no moving parts, making them faster and more durable than HDDs, which rely on spinning magnetic platters. This distinction is fundamental to understanding modern storage technology and is a key difference students must know to evaluate storage choices.",
+  "type": "definition_recall",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The primary function of a graphics card (GPU) in a computer system is to ___",
+  "options": [
+   "manage all data storage and file organization on the hard drive",
+   "process and render visual output, freeing the CPU to handle other tasks",
+   "control the speed and voltage of the processor during operation",
+   "distribute internet connectivity to wireless and wired peripherals"
+  ],
+  "correct_index": 1,
+  "explanation": "A graphics card specializes in rendering images and video by handling visual processing independently from the CPU. This allows the main processor to focus on other computing tasks, improving overall system performance—a key reason for adding this expansion card to a system.",
+  "type": "definition_recall",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A user's computer is running slowly and programs are frequently freezing. Which of the following would be the best first troubleshooting steps?",
+  "options": [
+   "Check RAM usage and available hard drive space, then close unnecessary programs",
+   "Remove and reseat all expansion cards to ensure proper connections",
+   "Replace the motherboard and reinstall the operating system entirely",
+   "Upgrade the power supply unit and replace the CPU with a newer model"
+  ],
+  "correct_index": 0,
+  "explanation": "Slow performance and freezing commonly result from insufficient RAM or storage space, making these the logical first diagnostics before attempting hardware replacement. This systematic approach reflects real troubleshooting methodology where simpler causes are ruled out before expensive hardware changes.",
+  "type": "which_of_following",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sound card serves all of the following purposes in a computer system EXCEPT",
+  "options": [
+   "processing audio data and converting it to signals sent to speakers",
+   "improving audio quality by handling sound independently from the CPU",
+   "managing the display of video content on external monitors",
+   "providing multiple audio input and output ports for microphones and headphones"
+  ],
+  "correct_index": 2,
+  "explanation": "A sound card is dedicated to audio processing and input/output; video display management is the role of a graphics card. Students must understand that each expansion card has a specific purpose, and confusing the functions of different cards indicates incomplete study of hardware components.",
+  "type": "all_except",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A small business is upgrading its network infrastructure and needs computers that can handle multiple simultaneous printer connections while maintaining strong wireless connectivity. Which expansion card would be most essential to add to existing computers that lack built-in network capability?",
+  "options": [
+   "A graphics card to display network status on multiple monitors",
+   "A sound card to amplify network signals through audio output",
+   "An expansion card that combines USB ports for printer cables only",
+   "A network adapter to enable both wired and wireless internet connections"
+  ],
+  "correct_index": 3,
+  "explanation": "A network adapter (expansion card) provides the connectivity needed for both wired and wireless network access, which is essential for printing and data communication in a business setting. This scenario requires knowing that a network adapter is the specific tool for enabling network capability—not a generic expansion card or a card designed for a different purpose.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A network device that receives data packets and forwards them to the appropriate port based on the destination MAC address is called a(n) ___",
+  "options": [
+   "modem",
+   "firewall",
+   "gateway",
+   "switch"
+  ],
+  "correct_index": 3,
+  "explanation": "A switch operates at Layer 2 (Data Link) of the OSI model and intelligently directs frames between ports using MAC address tables, unlike a router which operates at Layer 3. The modem converts analog signals to digital data for internet connectivity, while a firewall filters traffic based on security rules.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A network environment in which a single powerful computer manages all user accounts, files, and permissions while individual workstations request services from this central machine makes up a(n) ___",
+  "options": [
+   "backbone system",
+   "client-server network",
+   "thin client architecture",
+   "mesh topology"
+  ],
+  "correct_index": 1,
+  "explanation": "In a client-server environment, centralized resources and control flow through dedicated server computers that handle authentication, file storage, and service delivery. A thin client is a related but distinct model where clients have minimal processing power and rely heavily on the server; a mesh topology describes physical arrangement of connections, not the resource-management relationship.",
+  "type": "concept_completion",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following correctly pairs a network device with its primary function?",
+  "options": [
+   "Modem — translates logical IP addresses into physical MAC addresses on the local network",
+   "Hub — intelligently learns MAC addresses and maintains a forwarding table for efficient frame delivery",
+   "Router — connects separate networks and forwards packets based on IP addresses and routing tables",
+   "Switch — converts analog signals from an internet service provider into digital data for computer use"
+  ],
+  "correct_index": 2,
+  "explanation": "A router's core function is inter-network communication and packet forwarding based on IP routing logic. A modem handles analog-to-digital conversion, not address translation; a switch works at Layer 2 with MAC addresses and learns port associations, not IP routing; a hub is a passive broadcast device with no intelligent forwarding.",
+  "type": "which_of_following",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of a network device or user to verify their identity using a password, certificate, or biometric method is known as ___",
+  "options": [
+   "authentication",
+   "authorization",
+   "integrity checking",
+   "non-repudiation"
+  ],
+  "correct_index": 0,
+  "explanation": "Authentication is the process of verifying who someone is (or what a device is), typically through credentials like passwords or certificates. Authorization comes after authentication and determines what resources an authenticated user can access; integrity checking ensures data has not been modified; non-repudiation prevents denial of an action.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's IT team discovers that network traffic between two buildings is being monitored by an attacker who watches unencrypted data packets. All of the following would help protect against this threat EXCEPT ___",
+  "options": [
+   "increasing the physical distance between network switches in each building",
+   "enabling encryption on all wireless access points",
+   "deploying a VPN to create a secure tunnel for sensitive traffic",
+   "implementing packet sniffing detection tools and monitoring for suspicious activity"
+  ],
+  "correct_index": 0,
+  "explanation": "Physical distance between switches does not prevent an attacker positioned on the network path from capturing packets; encryption, VPNs, and monitoring are the actual defenses against packet sniffing. A VPN creates an encrypted tunnel that hides packet contents, encryption protects data in transit, and active monitoring can detect the attack itself.",
+  "type": "all_except",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The delivery of computing resources such as servers, storage, and applications over the internet on a pay-as-you-go basis is called ___",
+  "options": [
+   "artificial intelligence",
+   "virtualization",
+   "the cloud",
+   "Internet of Things"
+  ],
+  "correct_index": 2,
+  "explanation": "The cloud is specifically the model of delivering IT resources remotely over the internet rather than hosting them locally. This definition distinguishes it from virtualization (running multiple systems on shared hardware), IoT (networked physical devices), and AI (machine intelligence).",
+  "type": "definition_recall",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company wants to reduce its physical server footprint and hardware costs while maintaining the ability to run multiple operating systems independently. Which technology allows the company to accomplish this goal?",
+  "options": [
+   "Artificial intelligence to automate server management tasks",
+   "Internet of Things to connect all devices to a central monitoring hub",
+   "Cloud computing for off-site data backup only",
+   "Virtualization to run multiple virtual machines on a single physical server"
+  ],
+  "correct_index": 3,
+  "explanation": "Virtualization enables a single physical server to host multiple independent virtual machines, each running its own operating system and applications, which directly solves the stated problem of reducing physical hardware while maintaining functionality. Cloud computing (option A) focuses on remote delivery rather than local consolidation; IoT and AI address different problems entirely.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are key applications of cloud technology?",
+  "options": [
+   "Email hosting, software updates, and physical device synchronization through sensors",
+   "Data storage, software-as-a-service applications, and web hosting on remote servers",
+   "Automated decision-making, real-time machine vision, and connecting household appliances to networks",
+   "Running multiple operating systems simultaneously on one processor and machine learning analysis"
+  ],
+  "correct_index": 1,
+  "explanation": "Cloud applications include remote data storage, SaaS platforms, and hosting—all delivered over the internet. Option A incorrectly includes sensor synchronization (IoT). Option B mixes virtualization with AI. Option D focuses on AI and IoT rather than cloud services.",
+  "type": "which_of_following",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Virtualization allows organizations to improve IT efficiency through all of the following EXCEPT",
+  "options": [
+   "reducing overall hardware and energy costs",
+   "enabling faster deployment of new virtual systems",
+   "automating decision-making by analyzing large datasets independently",
+   "consolidating multiple servers onto fewer physical machines"
+  ],
+  "correct_index": 2,
+  "explanation": "Virtualization directly addresses server consolidation, cost reduction, and rapid deployment of virtual machines. Automating decision-making through data analysis is the function of artificial intelligence, not virtualization—that is the odd one out that does not result from virtualization technology.",
+  "type": "all_except",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The technology that simulates computer hardware, allowing multiple independent operating systems to run on a single physical machine, serves what primary purpose?",
+  "options": [
+   "Enabling efficient resource sharing and reducing the number of physical servers needed",
+   "Optimizing cloud storage capacity across geographically distributed data centers",
+   "Connecting physical devices and sensors to the internet for data collection and monitoring",
+   "Processing large amounts of data to identify patterns and make automated decisions"
+  ],
+  "correct_index": 0,
+  "explanation": "Virtualization's primary purpose is to abstract physical hardware so multiple virtual machines can share the same physical resources, reducing server footprint and costs. Option A describes cloud infrastructure distribution; option C describes IoT; option D describes AI—each serves a different primary purpose.",
+  "type": "concept_completion",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of devices to collect, exchange, and act on data over the internet without human intervention is a core characteristic of ___",
+  "options": [
+   "cloud computing",
+   "virtualization",
+   "artificial intelligence",
+   "the Internet of Things"
+  ],
+  "correct_index": 3,
+  "explanation": "The Internet of Things (IoT) describes a network of physical devices embedded with sensors and connectivity that automatically collect and share data. This definition distinguishes IoT from cloud computing (a service delivery model), virtualization (OS simulation), and AI (machine learning and automation).",
+  "type": "definition_recall",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Algorithms that enable machines to learn from data and improve their performance without explicit programming represent the core concept of ___",
+  "options": [
+   "server redundancy",
+   "artificial intelligence",
+   "network infrastructure",
+   "data virtualization"
+  ],
+  "correct_index": 1,
+  "explanation": "Artificial intelligence (AI) encompasses machine learning, where systems improve decisions through data analysis rather than hard-coded rules. Network infrastructure, data virtualization, and server redundancy are infrastructure concepts, not learning-based intelligence systems.",
+  "type": "definition_recall",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following represents a real-world application where artificial intelligence is commonly used to improve business outcomes?",
+  "options": [
+   "Purchasing additional bandwidth from an internet service provider",
+   "Storing backup copies of files on external hard drives only",
+   "Predictive maintenance that forecasts equipment failures before they occur",
+   "Running multiple virtual machines on a single server to reduce costs"
+  ],
+  "correct_index": 2,
+  "explanation": "Predictive maintenance uses AI algorithms to analyze equipment data and predict failures in advance, reducing downtime and costs. The other options describe backup storage, virtualization infrastructure, and network provisioning—none of which involve machine learning or intelligent decision-making.",
+  "type": "which_of_following",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "IoT devices differ from traditional connected devices in that IoT systems typically feature all of the following EXCEPT",
+  "options": [
+   "Built-in sensors that measure environmental conditions or performance metrics",
+   "Automatic data collection with minimal human oversight",
+   "The ability to communicate findings across networks in real time",
+   "Centralized control requiring a human operator to initiate every action"
+  ],
+  "correct_index": 3,
+  "explanation": "IoT systems are designed to operate autonomously with minimal human intervention; they automatically collect and share data without requiring a human operator to initiate each action. The other three options—automatic data collection, embedded sensors, and real-time communication—are defining characteristics of IoT.",
+  "type": "all_except",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail company wants to reduce waste by predicting which products will expire or go out of stock. The technology best suited to accomplish this is ___",
+  "options": [
+   "installing additional hard drives in the warehouse",
+   "artificial intelligence that analyzes inventory patterns and forecasts demand",
+   "moving all inventory records to a virtual machine",
+   "increasing the number of network routers in the facility"
+  ],
+  "correct_index": 1,
+  "explanation": "AI systems excel at pattern recognition and predictive analysis, allowing the company to forecast inventory needs and prevent waste by learning from historical sales data. Installing storage hardware, using virtual machines, or adding network equipment do not address the predictive intelligence requirement.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard"
+ }
+]

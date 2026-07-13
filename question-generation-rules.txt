@@ -263,6 +263,33 @@ GOOD:
     hardware fix, just not indicated by these symptoms). The wrong answer
     should require knowing the correct troubleshooting ORDER, not just
     common sense about what's reckless.
+    This failure mode is NOT limited to EXCEPT/NOT questions — it happens just
+    as easily in a positively-framed "which of the following would ALL be
+    ___" question, where each option bundles 2-3 sub-items and it's tempting
+    to make the wrong options bundles of obviously-reckless actions instead
+    of genuinely plausible ones.
+
+    REAL FAILURE (do not repeat this pattern):
+    Q: Which of the following combinations would ALL be effective steps to
+       improve basic network security?
+    A) Disconnect all devices from the internet, remove all routers, and
+       disable authentication systems entirely
+    B) Install packet sniffing software on all devices, remove encryption
+       protocols, and configure the network for open access
+    C) Enable encryption on wireless networks, require strong password
+       authentication, and use a firewall to monitor traffic
+    D) Disable all encryption to simplify administration, allow guest access
+       without passwords, and disable automatic updates
+    (C is correct, but A and B are so absurd — "disable authentication
+    entirely," "remove encryption protocols" — that the question is
+    answerable with zero networking knowledge, just by spotting the two
+    options that sound like sabotage)
+    Fix: every bundled wrong option must contain at least one item that
+    sounds like a genuine, defensible security practice — the flaw should be
+    a real gap (e.g. "enable encryption and a firewall, but skip password
+    complexity requirements") not a pile of actions no one would ever
+    recommend. If you can't write a wrong bundle where a half-prepared
+    student would hesitate, the question needs a different angle.
 3c. Exactly ONE option may be correct. Re-read all distractors to confirm
     none is also defensibly right. If two could be argued, rewrite.
 3d. Use "All of the above" / "None of the above" in at most 1 in 20 questions.

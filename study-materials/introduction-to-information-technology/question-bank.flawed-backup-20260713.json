@@ -1,0 +1,702 @@
+[
+ {
+  "question": "A business document that requires numbered lists, formatting, and spell-check would most appropriately be created using which application type?",
+  "options": [
+   "Presentation software",
+   "Word processing",
+   "Email",
+   "Spreadsheet"
+  ],
+  "correct_index": 1,
+  "explanation": "Word processing applications like Microsoft Word are designed for creating, formatting, and editing text-based documents such as letters, reports, and memos. While email can contain text, it is not the primary tool for creating complex formatted documents. Spreadsheets and presentation software serve different purposes—data organization and visual communication, respectively.",
+  "type": "which_of_following",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a business context, team collaboration software such as Microsoft Teams is primarily used for ___",
+  "options": [
+   "Enabling real-time communication, file sharing, and project coordination among team members",
+   "Designing graphical presentations for client pitches",
+   "Storing and organizing files in a local hard drive",
+   "Creating financial budgets and tracking expenses"
+  ],
+  "correct_index": 0,
+  "explanation": "Team collaboration software like Microsoft Teams is built specifically to facilitate communication, allow multiple users to share files and documents, and coordinate work on shared projects in real time. While such platforms may have file storage capabilities, their primary function is enabling collaboration. Budgeting and presentation design are handled by other specialized applications.",
+  "type": "definition_recall",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following tasks would all be most efficiently completed using a spreadsheet application?",
+  "options": [
+   "Calculating monthly sales totals, organizing employee payroll data, and tracking quarterly expenses",
+   "Formatting a business letter, creating a memo, and proofreading company policies",
+   "Sending meeting invitations, scheduling calendar events, and confirming attendee availability",
+   "Recording video conference calls, transcribing meeting notes, and distributing audio files"
+  ],
+  "correct_index": 0,
+  "explanation": "Spreadsheet applications like Microsoft Excel are designed for numerical data entry, calculations, and organizing information in rows and columns—making them ideal for financial tracking, budgets, and payroll. Sending invitations requires email, document creation requires word processing, and video tasks require specialized communication or media software.",
+  "type": "which_of_following",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Email application features used in business and collaboration contexts include all of the following EXCEPT",
+  "options": [
+   "Organizing messages into folders and using filters to sort incoming mail",
+   "Creating numerical formulas to calculate financial data across multiple rows",
+   "Attaching documents and files to messages sent to recipients",
+   "Using distribution lists to send a single message to multiple team members simultaneously"
+  ],
+  "correct_index": 1,
+  "explanation": "Email applications facilitate communication by allowing attachments, folder organization, and group messaging, but they do not include the ability to create formulas or perform mathematical calculations—that is the primary function of spreadsheet software. Attempting to use email for numerical computation is inefficient and outside the application's designed purpose.",
+  "type": "all_except",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A team member asks you which application they should use to create a visual summary of quarterly sales data for an upcoming board meeting. The most appropriate recommendation would be ___",
+  "options": [
+   "Word processing, because it supports tables and can format numbers with proper alignment",
+   "Presentation software, because it enables creation of slides with charts, graphs, and visual formatting",
+   "Spreadsheet, because it can organize raw numerical data but not create visual charts",
+   "Email, because it allows attachments and can distribute the final summary quickly"
+  ],
+  "correct_index": 1,
+  "explanation": "Presentation software is designed to create visually compelling summaries with charts, graphs, and formatted slides suitable for formal business presentations. While spreadsheets handle raw data and word processors can create tables, presentation software is the tool specifically built to communicate data visually to an audience. Email is for distribution, not creation.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Software Applications",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The practice of storing data on remote servers accessed through the internet is called ___",
+  "options": [
+   "cloud storage",
+   "database migration",
+   "local storage",
+   "backup redundancy"
+  ],
+  "correct_index": 0,
+  "explanation": "Cloud storage refers to storing data on remote servers accessed via the internet, rather than on physical devices in your location. This method allows access from multiple devices and locations. Local storage, backup redundancy, and database migration are distinct concepts related to data management but do not define this specific storage method.",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "A plan designed to restore business operations and recover data after a major system failure or disaster is called ___",
+  "options": [
+   "system backup",
+   "disaster recovery",
+   "access control",
+   "data encryption"
+  ],
+  "correct_index": 1,
+  "explanation": "Disaster recovery is the comprehensive plan and set of procedures to restore business functions and data following a major disruption or disaster. While system backups and data encryption are important security measures, they are not the overall recovery plan itself. Access control manages who can use systems but does not address recovery after failure.",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Which of the following are examples of disaster recovery practices?",
+  "options": [
+   "Maintaining offsite backups, regular testing of recovery procedures, and documented recovery plans",
+   "Relying solely on cloud providers without internal recovery procedures or documentation",
+   "Storing backups only on local servers and testing recovery once per year",
+   "Keeping all critical data on a single device and updating it manually each week"
+  ],
+  "correct_index": 0,
+  "explanation": "Effective disaster recovery includes multiple practices: maintaining offsite backups to protect against physical location disasters, regularly testing recovery procedures to ensure they work, and having documented plans so staff know how to respond. Storing backups only locally, relying entirely on external providers without internal procedures, or keeping data on a single device all represent inadequate disaster recovery practices.",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "Personal data protection is influenced by all of the following EXCEPT",
+  "options": [
+   "digital security practices like encryption and strong passwords",
+   "physical security measures such as locked doors and surveillance systems",
+   "the physical attractiveness of a company's office building",
+   "regulations that require companies to safeguard customer information"
+  ],
+  "correct_index": 2,
+  "explanation": "While regulations, physical security measures, and digital security practices all directly protect personal data, the physical attractiveness of a building has no bearing on data protection. This question tests whether students can distinguish relevant security factors from irrelevant aesthetic ones.",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "An employee discovers that a vendor's website was breached and customer email addresses were stolen and sold to marketing companies. What should the company do first?",
+  "options": [
+   "Immediately notify affected customers and check relevant privacy regulations for disclosure requirements",
+   "Delete all records from that vendor to avoid legal liability",
+   "Wait to see if customers complain before taking any action",
+   "Post a general message on social media that the breach occurred somewhere else"
+  ],
+  "correct_index": 0,
+  "explanation": "The most professional and legally sound first step is to notify affected customers and review privacy regulations (like GDPR or state breach notification laws) that often mandate disclosure. Waiting for complaints, destroying records, or making vague public statements would fail to protect customers and could violate legal requirements. Transparency and swift action demonstrate responsibility and reduce legal exposure.",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard",
+  "type": "scenario_judgment"
+ },
+ {
+  "question": "The practice of storing data on remote servers accessed via the internet rather than on local devices is called ___",
+  "options": [
+   "data archiving",
+   "cloud storage",
+   "server replication",
+   "backup redundancy"
+  ],
+  "correct_index": 1,
+  "explanation": "Cloud storage refers to storing data on remote servers accessed over the internet, as opposed to local storage on personal devices or company servers. This method offers flexibility, scalability, and off-site protection. The other options describe different data management practices but not remote internet-based storage.",
+  "type": "definition_recall",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business wants to protect customer records in case of a system failure or natural disaster. Which of the following is the primary purpose of disaster recovery planning?",
+  "options": [
+   "To ensure business continuity and minimize data loss during unexpected events",
+   "To prevent employees from accessing sensitive company information",
+   "To reduce the cost of employee training and onboarding",
+   "To eliminate the need for regular data backups"
+  ],
+  "correct_index": 0,
+  "explanation": "Disaster recovery planning ensures that an organization can continue operations and restore data after unexpected events like system failures or natural disasters, minimizing downtime and data loss. While cost reduction and employee training are business concerns, they are not the primary purpose of disaster recovery. Disaster recovery actually requires regular backups and does not eliminate access controls.",
+  "type": "which_of_following",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are examples of physical security practices to protect information EXCEPT",
+  "options": [
+   "controlling visitor access to office areas",
+   "installing locks on server room doors",
+   "requiring employees to use strong passwords",
+   "using security cameras to monitor facilities"
+  ],
+  "correct_index": 2,
+  "explanation": "Strong passwords are a digital security practice, not a physical one. Physical security focuses on controlling tangible access to locations and equipment—locks, cameras, and visitor management all protect physical spaces where information is stored. Password policies protect information at the digital level.",
+  "type": "all_except",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Personal data collected by online retailers, social media platforms, and mobile apps is often stored in large databases. This practice relates directly to ___",
+  "options": [
+   "software licensing compliance",
+   "data collection, storage, and privacy risks",
+   "intellectual property protection",
+   "server redundancy and uptime management"
+  ],
+  "correct_index": 1,
+  "explanation": "The collection and storage of personal data by digital companies raises privacy concerns and potential security risks, including unauthorized access and data theft. While intellectual property and licensing are important regulatory topics, they do not directly address personal data collection. Server redundancy ensures availability, not privacy protection.",
+  "type": "concept_completion",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An employee discovers that her company's customer database has been accessed without authorization. The first step she should take is to ___",
+  "options": [
+   "report the incident to her manager and follow the company's incident response procedure",
+   "post a warning on the company website about the breach",
+   "immediately shut down all company servers to prevent further access",
+   "contact individual customers directly via personal email before notifying leadership"
+  ],
+  "correct_index": 0,
+  "explanation": "The proper first response to a security breach is to report it through established company channels so that management can activate incident response procedures, which typically include containing the breach, investigating it, and communicating appropriately. Shutting down servers without coordination can cause more damage, and contacting customers without coordination can spread misinformation and worsen the situation. A structured response prevents further harm and ensures compliance.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Information Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "System software that manages computer hardware and allows applications to run is called ___",
+  "options": [
+   "application software",
+   "operating system",
+   "specialized software",
+   "utility software"
+  ],
+  "correct_index": 1,
+  "explanation": "An operating system (OS) is the core system software that manages all hardware resources and provides the platform for applications to function. Application software runs on top of the OS, while utilities and specialized software serve specific purposes but do not manage the hardware directly.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "What do antivirus programs, disk defragmentation tools, and backup utilities have in common?",
+  "options": [
+   "They are specialized software designed for specific industries only",
+   "They are application programs that create content for users",
+   "They are all types of operating systems that control hardware",
+   "They are system utilities that maintain computer health and performance"
+  ],
+  "correct_index": 3,
+  "explanation": "Antivirus programs, disk management tools, and backup utilities are all examples of system utilities—software designed to monitor, maintain, and optimize computer performance. They support the OS and hardware but do not create user content or manage core system functions like an OS does.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "concept_completion"
+ },
+ {
+  "question": "Which of the following are reasons why software updates and patches are important?",
+  "options": [
+   "They increase the file size of programs and improve storage capacity",
+   "They eliminate the need for antivirus software entirely",
+   "They fix security vulnerabilities, add new features, and improve stability",
+   "They require users to reinstall the operating system completely"
+  ],
+  "correct_index": 2,
+  "explanation": "Software updates and patches address security flaws, enhance functionality, and improve overall system stability. They do not increase file size as a benefit, eliminate the need for antivirus protection, or require full OS reinstallation—these are common misconceptions about updates.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "A professional video editing company needs software to create and render high-quality films. All of the following would be appropriate specialized software choices EXCEPT",
+  "options": [
+   "Adobe Premiere Pro or Final Cut Pro for video editing and timeline management",
+   "Color grading software like DaVinci Resolve for post-production work",
+   "3D rendering software such as Cinema 4D or Blender for visual effects",
+   "A general word processing application for managing production schedules"
+  ],
+  "correct_index": 3,
+  "explanation": "A word processor is general application software designed for creating documents, not specialized video production software. While a production company might use it for schedules, it is not appropriate specialized software for video creation. The other three options are purpose-built tools designed specifically for video production tasks.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "An employee opens an email attachment and accidentally downloads malware that begins deleting files. The most appropriate first step is to",
+  "options": [
+   "immediately disconnect the computer from the network and contact IT support",
+   "restart the computer to clear the malware from temporary memory",
+   "continue working while running a manual disk defragmentation to remove the malware",
+   "send an email to all colleagues warning them about the attachment"
+  ],
+  "correct_index": 0,
+  "explanation": "Disconnecting from the network immediately stops the malware from spreading and prevents further damage, and notifying IT ensures professional intervention. Continuing work, defragmenting, emailing colleagues, or simply restarting all delay containment and may allow the malware to spread or cause more harm before IT can investigate.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "scenario_judgment"
+ },
+ {
+  "question": "The delivery of computing services—including servers, storage, databases, and software—over the internet on a pay-as-you-go basis is called ___.",
+  "options": [
+   "the Internet of Things",
+   "artificial intelligence",
+   "the cloud",
+   "virtualization"
+  ],
+  "correct_index": 2,
+  "explanation": "Cloud computing is the foundational model for delivering IT resources remotely and on demand. This is a core definition from the Modern Technologies outline and appears frequently on real FBLA tests as a baseline concept.",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "The technology that allows a single physical computer to run multiple separate operating systems and applications independently is known as ___.",
+  "options": [
+   "partitioning",
+   "virtualization",
+   "emulation",
+   "containerization"
+  ],
+  "correct_index": 1,
+  "explanation": "Virtualization creates isolated virtual machines on one physical server, enabling efficient resource use and isolation. It is a distinct technology from simple disk partitioning and is explicitly listed in the source outline.",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Which of the following are practical applications of cloud technology in modern business?",
+  "options": [
+   "Storing files on personal hard drives, maintaining on-site databases, and hosting servers in company offices",
+   "Email services, file storage, and software accessed through web browsers without local installation",
+   "Purchasing perpetual software licenses, managing local networks, and hiring full-time infrastructure staff",
+   "Physical server maintenance, manual backups, and in-house IT infrastructure only"
+  ],
+  "correct_index": 1,
+  "explanation": "Cloud applications include web-accessible services like email, storage, and SaaS solutions that eliminate the need for local installation and maintenance. The other options describe traditional on-premise IT approaches, not cloud services.",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "The network of physical devices—such as sensors, cameras, and appliances—that collect and share data over the internet is called ___.",
+  "options": [
+   "machine learning",
+   "artificial intelligence",
+   "cloud infrastructure",
+   "the Internet of Things"
+  ],
+  "correct_index": 3,
+  "explanation": "The Internet of Things (IoT) describes interconnected physical devices that gather and transmit data. It is a distinct technology from AI and machine learning, and is explicitly included in the Modern Technologies outline.",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Artificial intelligence is relevant to all of the following business uses EXCEPT ___.",
+  "options": [
+   "analyzing patterns in large customer datasets to predict future demand",
+   "recommending products to customers based on their browsing history",
+   "automatically organizing computer files into folders based on user-defined rules",
+   "automating customer service responses using chatbots"
+  ],
+  "correct_index": 2,
+  "explanation": "Simply organizing files into folders based on fixed, pre-written rules is basic automation, not AI. True AI learns patterns and adapts; the other three options all involve machine learning or decision-making that improves over time.",
+  "knowledge_area": "Modern Technologies",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "A network that connects computers within a single building or campus location is called a ___",
+  "options": [
+   "Local Area Network",
+   "Wide Area Network",
+   "Personal Area Network",
+   "Metropolitan Area Network"
+  ],
+  "correct_index": 0,
+  "explanation": "A Local Area Network (LAN) is specifically designed to connect devices over a limited geographic area, such as a building or campus. A WAN covers much larger distances, while MAN and PAN serve other specific purposes. This is a foundational networking concept.",
+  "type": "definition_recall",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following best describes what a router does in a network?",
+  "options": [
+   "Directs data packets between different networks and manages traffic flow",
+   "Connects all devices on a LAN using copper or fiber optic cables",
+   "Converts analog telephone signals into digital data for internet access",
+   "Prevents unauthorized access by blocking all incoming network traffic"
+  ],
+  "correct_index": 0,
+  "explanation": "A router's primary function is to direct data packets between networks and manage traffic flow between them. A switch connects devices on a LAN, a modem converts signals, and a firewall blocks unauthorized traffic. Understanding device functions is essential to network troubleshooting.",
+  "type": "concept_completion",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be examples of common network security threats?",
+  "options": [
+   "Encryption, authentication, and VPN protocols",
+   "Packet sniffing, phishing attacks, and computer viruses",
+   "Firewalls, intrusion detection systems, and antivirus software",
+   "Ethernet cables, Wi-Fi routers, and Bluetooth devices"
+  ],
+  "correct_index": 1,
+  "explanation": "Viruses, phishing, and packet sniffing are all active security threats that can compromise network data and systems. The first option lists security protections, the third lists connectivity technologies, and the fourth lists defensive tools. Recognizing threats versus defenses is critical for network security.",
+  "type": "which_of_following",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The Open System Interconnection (OSI) model consists of all of the following layers EXCEPT",
+  "options": [
+   "Application",
+   "Transport",
+   "Encryption",
+   "Physical"
+  ],
+  "correct_index": 2,
+  "explanation": "The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. Encryption is a security function that operates within multiple layers, but it is not itself a separate OSI layer. This tests whether students understand the actual layered structure versus security concepts that span those layers.",
+  "type": "all_except",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A coworker reports that users in one department cannot reach shared files on the company server, though other departments can still access them. The most logical first troubleshooting step would be to ___",
+  "options": [
+   "Request that IT upgrade the company's internet bandwidth plan",
+   "Reinstall the operating system on every affected user's computer",
+   "Replace all network cables in the affected department immediately",
+   "Check whether the switch connecting that department is powered on and properly seated"
+  ],
+  "correct_index": 3,
+  "explanation": "Checking physical connectivity—whether the switch is on and properly connected—is the logical first troubleshooting step because a disconnected or powered-down switch would prevent entire departments from accessing the network. Replacing cables and reinstalling OS are premature, and bandwidth is unlikely to affect access to local server shares. This reflects standard network troubleshooting procedure.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Networking Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which a computer loads the operating system into memory when powered on is called ___.",
+  "options": [
+   "booting",
+   "partitioning",
+   "virtual memory",
+   "caching"
+  ],
+  "correct_index": 0,
+  "explanation": "Booting is the startup sequence that loads the OS kernel and essential system files into RAM. This is a foundational OS concept distinct from partitioning (disk division), caching (temporary data storage), and virtual memory (RAM extension using disk space).",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Which of the following best describes the primary purpose of an operating system?",
+  "options": [
+   "To prevent users from accessing the internet",
+   "To automatically delete old software programs",
+   "To manage hardware resources and provide a platform for applications to run",
+   "To store all user files permanently on the hard drive"
+  ],
+  "correct_index": 2,
+  "explanation": "An operating system acts as an intermediary between users/applications and hardware, allocating resources like CPU, memory, and disk. It provides the foundation for all other software. The other options describe secondary features or misconceptions about OS function.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "concept_completion"
+ },
+ {
+  "question": "Which of the following would all be considered types of operating systems?",
+  "options": [
+   "Internet Explorer, Chrome, Firefox, and Safari",
+   "USB, SSD, HDD, and RAM",
+   "Microsoft Word, Excel, PowerPoint, and Access",
+   "Windows, macOS, Linux, and Android"
+  ],
+  "correct_index": 3,
+  "explanation": "Windows, macOS, Linux, and Android are all operating systems that manage hardware and run applications—spanning desktop and mobile platforms. Option B lists web browsers, Option C lists application software, and Option D lists storage hardware components, none of which are operating systems.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "A user reports that their Windows computer will not start and displays a blue screen with an error message before restarting repeatedly. All of the following are reasonable troubleshooting steps EXCEPT ___.",
+  "options": [
+   "Review system logs or error messages for clues about the failure",
+   "Immediately replace the operating system without backing up any data",
+   "Check for recent software or driver updates that may have caused conflicts",
+   "Boot the computer in Safe Mode to isolate the problem"
+  ],
+  "correct_index": 1,
+  "explanation": "Replacing the OS without backing up data would destroy user files and is reckless troubleshooting. The other three steps—Safe Mode, update review, and log inspection—are standard diagnostic approaches that preserve data and help identify root causes before taking drastic action.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "A new employee has just been assigned a company laptop with Windows 10 and needs to be ready to work within the hour. The IT manager should prioritize which action first?",
+  "options": [
+   "Install every available Windows update immediately, even if it requires multiple restarts",
+   "Set up the user account, configure file permissions, and ensure the employee can access required network resources",
+   "Download and install 20 third-party applications the employee might eventually need",
+   "Change the administrator password to a complex string and write it on a sticky note for the employee"
+  ],
+  "correct_index": 1,
+  "explanation": "Account setup and permission configuration are the essential first steps to get an employee productive and secure. While updates are important, they can be scheduled later; unnecessary apps create security risk; and sharing admin passwords violates security best practices. This reflects real OS configuration priorities in a professional environment.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "scenario_judgment"
+ },
+ {
+  "question": "A computer component that temporarily stores data and instructions the CPU is currently using is called a(n) ___.",
+  "options": [
+   "graphics card",
+   "motherboard",
+   "RAM",
+   "hard drive"
+  ],
+  "correct_index": 2,
+  "explanation": "RAM (Random Access Memory) is the fast, temporary storage that the CPU accesses during active processing. A hard drive stores data permanently but much more slowly; a graphics card handles video output; a motherboard is the main circuit board connecting all components.",
+  "type": "definition_recall",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following best describes the primary role of a CPU in a computer system?",
+  "options": [
+   "It permanently stores files and operating system data for long-term access",
+   "It manages the visual display and converts digital signals into images on a monitor",
+   "It connects peripheral devices such as keyboards and mice to the main system",
+   "It executes instructions and performs calculations that control all computer operations"
+  ],
+  "correct_index": 3,
+  "explanation": "The CPU (Central Processing Unit) is the computer's brain—it fetches and executes instructions from memory and performs the logical operations that make computing possible. Storage devices hold data; graphics cards handle display; connectivity devices link peripherals.",
+  "type": "concept_completion",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all improve overall computer performance?",
+  "options": [
+   "Increasing RAM, upgrading to a solid-state drive, and installing a faster CPU",
+   "Disabling graphics acceleration, filling the hard drive to capacity, and unplugging peripherals",
+   "Disconnecting network adapters, removing RAM modules, and installing a slower processor",
+   "Using older expansion cards, adding more external USB drives, and reducing cooling"
+  ],
+  "correct_index": 0,
+  "explanation": "More RAM allows faster data access during processing; an SSD provides faster storage than traditional hard drives; a faster CPU executes instructions more quickly. Together, these upgrades directly boost system speed and responsiveness.",
+  "type": "which_of_following",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A computer's components and capabilities are affected by all of the following EXCEPT:",
+  "options": [
+   "the amount of RAM installed",
+   "the storage capacity of the hard drive",
+   "the brand and color of the external case",
+   "the processing speed of the CPU"
+  ],
+  "correct_index": 2,
+  "explanation": "The external case's brand and color are purely aesthetic and do not affect performance, processing power, or data storage. RAM, CPU speed, and hard drive capacity directly determine what the computer can do and how fast it operates.",
+  "type": "all_except",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Your company is considering whether to purchase tablets or personal computers for office staff. The most appropriate first step would be to ___.",
+  "options": [
+   "consult with a random selection of employees about their personal preferences",
+   "upgrade all existing hardware before considering any new purchases",
+   "order tablets immediately since they are cheaper than desktop computers",
+   "identify the specific tasks and software the staff need to complete daily"
+  ],
+  "correct_index": 3,
+  "explanation": "Understanding the actual work requirements ensures the hardware chosen can handle the necessary tasks and software. This prevents purchasing inappropriate equipment. Cost, employee preference, and existing inventory are considerations, but they come after assessing what the work actually demands.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Computer Hardware",
+  "difficulty": "hard"
+ },
+ {
+  "question": "System software that manages computer hardware and allows applications to run is called ___",
+  "options": [
+   "Specialized software",
+   "Operating system",
+   "Application software",
+   "Utility software"
+  ],
+  "correct_index": 1,
+  "explanation": "An operating system (OS) is the core system software that manages hardware resources and provides a platform for applications to run. Application software performs specific user tasks, while utilities perform maintenance functions—neither manages hardware at the OS level.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Which of the following best describes why software updates and patches are important?",
+  "options": [
+   "They fix security vulnerabilities, improve performance, and add new features",
+   "They make software run slower so users appreciate newer computers",
+   "They allow software companies to charge users more money each year",
+   "They are required by law in all countries worldwide"
+  ],
+  "correct_index": 0,
+  "explanation": "Software updates and patches address security holes, enhance performance, and introduce new capabilities—all of which protect systems and improve user experience. The other options misrepresent the purpose or mechanism of updates.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "The process of planning, designing, building, testing, and deploying software is known as ___",
+  "options": [
+   "Software debugging",
+   "System maintenance",
+   "Software development life cycle",
+   "Hardware integration"
+  ],
+  "correct_index": 2,
+  "explanation": "The Software Development Life Cycle (SDLC) encompasses all stages from initial planning through deployment and maintenance. Debugging is one tool within the SDLC; hardware integration and system maintenance are separate processes.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "All of the following are examples of system utilities EXCEPT",
+  "options": [
+   "Antivirus software",
+   "Word processing software",
+   "Disk defragmentation tool",
+   "Backup and restore tools"
+  ],
+  "correct_index": 1,
+  "explanation": "Word processing software is application software that performs a specific user task (creating documents), not a system utility. Antivirus, disk tools, and backup utilities maintain and protect the system itself, making them true system utilities.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "A graphic design company needs software to edit images and create layouts for client projects. The most appropriate choice would be ___",
+  "options": [
+   "Specialized design software such as Adobe Creative Suite",
+   "An antivirus program to protect files during editing",
+   "General word processing software used by all employees",
+   "Only the operating system provided with the computer"
+  ],
+  "correct_index": 0,
+  "explanation": "Specialized software like Adobe Creative Suite is designed specifically for professional graphic design tasks and includes industry-standard tools. General word processing, an OS alone, and antivirus software do not provide the specialized functions needed for image editing and layout design.",
+  "knowledge_area": "Software Fundamentals",
+  "difficulty": "hard",
+  "type": "scenario_judgment"
+ },
+ {
+  "question": "The process by which a computer loads the operating system into memory when powered on is called ___.",
+  "options": [
+   "virtual memory",
+   "partitioning",
+   "caching",
+   "booting"
+  ],
+  "correct_index": 3,
+  "explanation": "Booting is the startup sequence where the OS is loaded from storage into RAM so the computer can begin normal operation. This is a foundational OS concept covering basic processes mentioned in the outline.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "definition_recall"
+ },
+ {
+  "question": "Which of the following best describes the purpose of an operating system?",
+  "options": [
+   "Creating backup copies of data and restoring lost documents",
+   "Installing antivirus software and protecting against malware threats",
+   "Managing hardware resources, providing a user interface, and enabling software applications to run",
+   "Storing files permanently on a hard drive and managing backup schedules"
+  ],
+  "correct_index": 2,
+  "explanation": "An OS serves as the intermediary between hardware and applications, allocating resources like processor time and memory, offering user interaction, and allowing programs to execute. The other options describe specific functions or tools, not the OS's overall purpose.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "concept_completion"
+ },
+ {
+  "question": "Which of the following would all be considered types of operating systems?",
+  "options": [
+   "Android, iOS, Windows, and macOS",
+   "Python, Java, C++, and JavaScript",
+   "Microsoft Office, Google Drive, Dropbox, and OneDrive",
+   "Chrome, Firefox, Safari, and Edge"
+  ],
+  "correct_index": 0,
+  "explanation": "Android and iOS are mobile operating systems, while Windows and macOS are desktop operating systems. The outline specifically lists these as platform OS examples. The other options represent programming languages, cloud storage services, and web browsers respectively.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "which_of_following"
+ },
+ {
+  "question": "A user's computer frequently crashes without warning and displays random error messages. Which of the following would NOT be a likely first troubleshooting step?",
+  "options": [
+   "Run a hard drive diagnostic to check for physical disk errors",
+   "Check for and install any available operating system updates",
+   "Verify sufficient disk space is available and check RAM usage",
+   "Completely erase all files and reinstall the operating system from scratch"
+  ],
+  "correct_index": 3,
+  "explanation": "Complete OS reinstallation is a last-resort solution after simpler fixes—not a first step. Checking updates, running diagnostics, and monitoring system resources are reasonable initial troubleshooting actions that address common crash causes without risking data loss.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "all_except"
+ },
+ {
+  "question": "A coworker asks you how to prevent unauthorized access to their new laptop. The most appropriate first step is to ___.",
+  "options": [
+   "Disable all network connectivity to ensure complete isolation",
+   "Set up a strong user account password and enable login authentication",
+   "Install multiple antivirus programs to block all malicious software",
+   "Enable full-disk encryption immediately to protect all data"
+  ],
+  "correct_index": 1,
+  "explanation": "Setting up user account authentication is the foundational OS-level security step that controls who can access the device, which aligns with the outline's mention of account setup and permissions. The other options represent more advanced or impractical security measures.",
+  "knowledge_area": "Operating Systems",
+  "difficulty": "hard",
+  "type": "scenario_judgment"
+ }
+]

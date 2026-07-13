@@ -518,15 +518,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Which of the following would ALL be effective steps to improve basic network security?",
+  "question": "Which of the following is a primary function of a router in a network?",
   "options": [
-   "Disconnect all devices from the internet, remove all routers from the network, and disable authentication systems entirely",
-   "Install packet sniffing software on all devices, remove encryption protocols, and configure the network for open access",
-   "Enable encryption on wireless networks, require strong password authentication, and use a firewall to monitor traffic",
-   "Disable all encryption to simplify network administration, allow guest access without passwords, and disable automatic updates"
+   "Convert analog signals from an Internet Service Provider into digital signals for computer use",
+   "Filter incoming packets based on MAC addresses and prevent unauthorized devices from connecting",
+   "Forward data packets between different networks and determine the best path for data to travel",
+   "Amplify electrical signals to extend the distance data can travel over copper cables"
   ],
   "correct_index": 2,
-  "explanation": "Encryption, authentication, and firewalls are three complementary security practices that work together to protect network data and access. The other options describe actions that would severely compromise security—disabling encryption, removing authentication, or using packet sniffing would expose the network to attacks.",
+  "explanation": "A router's primary function is to forward data packets between different networks and determine optimal routing paths, which is essential for connecting LANs to WANs and to the internet. The other options describe functions of different network devices: signal amplification is a repeater's role, MAC filtering is a switch function, and signal conversion is a modem's purpose. Understanding router functionality is central to grasping how networks interconnect.",
   "type": "which_of_following",
   "knowledge_area": "Networking Concepts",
   "difficulty": "hard"

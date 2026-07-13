@@ -1,18 +1,18 @@
 {
  "position_counts": [
-  600,
-  600,
-  600,
-  600
+  634,
+  633,
+  634,
+  634
  ],
  "type_counts": {
-  "definition_recall": 256,
-  "concept_completion": 149,
-  "which_of_following": 157,
-  "all_except": 154,
-  "scenario_judgment": 134
+  "definition_recall": 308,
+  "concept_completion": 180,
+  "which_of_following": 184,
+  "all_except": 170,
+  "scenario_judgment": 143
  },
- "total": 2400,
+ "total": 2535,
  "last_checkpoint_total": 2000,
  "tiers_completed": [
   "event",

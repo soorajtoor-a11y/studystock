@@ -22,6 +22,14 @@ const MATERIALS_DIR   = path.join(__dirname, '..', 'study-materials');
 const BOT_RULES_PATH  = path.join(__dirname, '..', 'bot-rules.txt');
 const GEN_RULES_PATH  = path.join(__dirname, '..', 'question-generation-rules.txt');
 
+// Org/event slugs are folder names used directly in path.join() below —
+// whitelist to plain slug characters so a request can never escape
+// MATERIALS_DIR via a crafted "org" or "event" value.
+const SAFE_SLUG_RE = /^[a-zA-Z0-9_-]+$/;
+function isSafeSlug(s) {
+  return typeof s === 'string' && SAFE_SLUG_RE.test(s);
+}
+
 // Read generation rules once at startup so every prompt gets them
 let GEN_RULES = '';
 try { GEN_RULES = fs.readFileSync(GEN_RULES_PATH, 'utf8'); }
@@ -105,25 +113,110 @@ function normalizeQuestionText(s) {
   return (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
 }
 
-// Catches exact/near-exact repeats WITHIN one generated batch (normalized
-// string match — won't catch a fact reworded in genuinely different words,
-// but that's what the already-asked memory below is for across requests).
-function findDuplicateViolations(questions) {
-  const seen = new Set();
+function answerText(q) {
+  const letter = q && q.answer;
+  return (q && q.options && letter) ? (q.options[letter] || '') : '';
+}
+
+// Generic "wrapper" words that vary between two phrasings of the SAME fact
+// (e.g. "antivirus program" vs "antivirus software") — stripped before
+// comparing concept words so they don't count as the meaningful part of the
+// answer. Deliberately does NOT include words like "storage", "data",
+// "network", "information", "security" — those ARE meaningful differentiators
+// ("local storage" vs "cloud storage" are genuinely different facts and must
+// never be flagged as the same concept). Mirrors generate_bank.py exactly.
+const GENERIC_ANSWER_WORDS = new Set([
+  'software', 'program', 'programs', 'tool', 'tools', 'utility', 'utilities',
+  'system', 'systems', 'application', 'applications', 'service', 'services',
+  'feature', 'features', 'technology', 'technologies', 'method', 'methods',
+  'practice', 'practices', 'measure', 'measures', 'process', 'processes',
+  'management', 'manager', 'control', 'controls', 'planning', 'protection',
+  'capability', 'capabilities', 'function', 'functions', 'operation',
+  'operations', 'concept', 'concepts', 'type', 'types', 'device', 'devices',
+]);
+
+// Reduce an answer's text to its core concept word(s) for duplicate-FACT
+// detection (distinct from findDuplicateViolations's exact-text check).
+// A mechanical PROXY for "is this the same underlying fact", not true
+// semantic understanding — verified against every real case found in a
+// manual 175-question review (antivirus, backup, defragmentation, caching,
+// virtualization, copyright, information security, data collection, and
+// database operations/management were each tested 2+ times per 25-question
+// pool with different wording, none caught by exact-text matching), plus a
+// stress test to avoid flagging legitimately different facts that share a
+// word (e.g. "local storage" vs "cloud storage" must NOT match).
+function conceptWords(text) {
+  const words = (text || '').toLowerCase().match(/[a-z]+/g) || [];
+  return new Set(words.filter(w => w.length >= 4 && !GENERIC_ANSWER_WORDS.has(w)));
+}
+
+// Two words "match" if identical, or share a >=minLen-character prefix
+// (catches word-form variants like "defragmentation"/"defragmenter" or
+// "caching"/"cache" without needing real stemming).
+function wordsFuzzyMatch(a, b, minLen = 4) {
+  if (a === b) return true;
+  if (Math.min(a.length, b.length) < minLen) return false;
+  return a.slice(0, minLen) === b.slice(0, minLen);
+}
+
+// True if every word in `small` has a fuzzy match somewhere in `big`.
+function setCovered(small, big) {
+  if (small.size === 0) return false;
+  for (const w of small) {
+    if (![...big].some(bw => wordsFuzzyMatch(w, bw))) return false;
+  }
+  return true;
+}
+
+function isConceptRepeat(textA, textB) {
+  const a = conceptWords(textA), b = conceptWords(textB);
+  if (a.size === 0 || b.size === 0) return false;
+  return setCovered(a, b) || setCovered(b, a);
+}
+
+// Catches two DIFFERENT failure modes:
+//   1. EXACT/near-exact question-TEXT repeats (normalized string match) —
+//      the original check.
+//   2. CONCEPT repeats — the SAME underlying fact retested with different
+//      wording, which (1) can never catch. Real, severe failure found by a
+//      manual review: one 25-question pool had copyright defined twice,
+//      information security defined twice, data collection defined twice,
+//      database operations/management defined twice, and a
+//      disaster-recovery theme spanning 5 of 25 questions — NONE of them
+//      exact-text matches. Mirrors generate_bank.py's identical fix exactly.
+// `priorQuestions` is the list of full prior question objects (not just
+// text) so both question-text and correct-answer text are available.
+function findDuplicateViolations(questions, priorQuestions) {
+  priorQuestions = priorQuestions || [];
+  const seenText = new Set(priorQuestions.map(p => normalizeQuestionText(p.question)));
+  const seenAnswers = priorQuestions.map(answerText).filter(Boolean);
   const violations = [];
+  const batchAnswers = [];
   for (const q of (questions || [])) {
     const norm = normalizeQuestionText(q.question);
-    if (seen.has(norm)) violations.push(q);
-    else seen.add(norm);
+    const ans = answerText(q);
+    const isTextDupe = seenText.has(norm);
+    const isConceptDupe = Boolean(ans) && (
+      seenAnswers.some(prior => isConceptRepeat(ans, prior)) ||
+      batchAnswers.some(prev => isConceptRepeat(ans, prev))
+    );
+    if (isTextDupe || isConceptDupe) {
+      violations.push(q);
+    } else {
+      seenText.add(norm);
+      if (ans) batchAnswers.push(ans);
+    }
   }
   return violations;
 }
 
-// In-memory, per-process cache of recently-served question text, keyed by
-// exactly what makes a pool distinct (event + scope + the objective/section
-// text). Resets on server restart — acceptable, this is a "don't repeat
-// yourself in the same session" aid, not a durable record like the bulk
-// generator's bank files. Capped per key so it can't grow unbounded.
+// In-memory, per-process cache of recently-served full question objects,
+// keyed by exactly what makes a pool distinct (event + scope + the
+// objective/section text). Resets on server restart — acceptable, this is a
+// "don't repeat yourself in the same session" aid, not a durable record
+// like the bulk generator's bank files. Capped per key so it can't grow
+// unbounded. Stores full objects (not just question text) so the
+// concept-repeat check has access to each prior answer's text too.
 const RECENT_QUESTIONS_CACHE = new Map();
 const RECENT_QUESTIONS_CAP = 60;
 
@@ -138,18 +231,30 @@ function getRecentQuestions(event, scope, objective) {
 function rememberQuestions(event, scope, objective, questions) {
   const key = recentQuestionsKey(event, scope, objective);
   const existing = RECENT_QUESTIONS_CACHE.get(key) || [];
-  const updated = existing.concat((questions || []).map(q => q.question)).slice(-RECENT_QUESTIONS_CAP);
+  const updated = existing.concat(questions || []).slice(-RECENT_QUESTIONS_CAP);
   RECENT_QUESTIONS_CACHE.set(key, updated);
 }
 
 // Mirrors generate_bank.py's already_asked_block() exactly — same wording,
-// same contract with RULE 8c in the shared rules file.
+// same contract with RULE 8c in the shared rules file. Includes both the
+// prior question text AND an explicit list of prior correct-answer concepts
+// — the question-text list alone was proven insufficient (the model doesn't
+// reliably recognize its own reworded version as "the same thing" from
+// question text alone; naming the exact answer CONCEPT directly is a much
+// harder-to-ignore signal). `priorQuestions` is the list of full prior
+// question objects (needs both .question and .options/.answer).
 function alreadyAskedBlock(priorQuestions) {
   if (!priorQuestions || priorQuestions.length === 0) {
     return 'ALREADY ASKED IN THIS KNOWLEDGE AREA: (none yet — this is the first batch, no restrictions from prior questions.)';
   }
-  const lines = priorQuestions.map((q, i) => `  ${i + 1}. ${q}`).join('\n');
-  return `ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is now OFF LIMITS, including asking about it again with different wording (RULE 8c):\n${lines}`;
+  const qLines = priorQuestions.map((q, i) => `  ${i + 1}. ${q.question}`).join('\n');
+  const answers = [...new Set(priorQuestions.map(answerText).filter(Boolean))];
+  const aLines = answers.map(a => `  - ${a}`).join('\n');
+  return `ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is now OFF LIMITS, including asking about it again with different wording (RULE 8c):
+${qLines}
+
+CORRECT ANSWERS ALREADY USED IN THIS POOL — do NOT write a new question whose correct answer is any of these concepts, even phrased completely differently or asked from a different angle. Pick a genuinely DIFFERENT fact from the source material instead:
+${aLines}`;
 }
 
 // Retry a fallible async fn up to maxAttempts times total.
@@ -213,8 +318,8 @@ function extractJSON(raw) {
 // Pre-generated question bank helpers
 // ---------------------------------------------------------------------------
 
-function loadBank(event) {
-  const bankPath = path.join(MATERIALS_DIR, event, 'question-bank.json');
+function loadBank(org, event) {
+  const bankPath = path.join(MATERIALS_DIR, org, event, 'question-bank.json');
   if (!fs.existsSync(bankPath)) return null;
   try { return JSON.parse(fs.readFileSync(bankPath, 'utf8')); }
   catch { return null; }
@@ -281,10 +386,10 @@ const SCOPE_BANK_FILENAME = { section: 'question-bank-sections.json', objective:
 // one exists for this event and the request's objective text resolves to a
 // pool in it. Returns null (never throws) on any miss — the caller always
 // falls through to live generation, same as the event-tier path.
-function serveScopedBank(event, scope, objective, difficulty) {
+function serveScopedBank(org, event, scope, objective, difficulty) {
   const filename = SCOPE_BANK_FILENAME[scope];
   if (!filename) return null;
-  const bankPath = path.join(MATERIALS_DIR, event, filename);
+  const bankPath = path.join(MATERIALS_DIR, org, event, filename);
   if (!fs.existsSync(bankPath)) return null;
 
   let data;
@@ -322,8 +427,8 @@ function difficultyTier(event) {
 
 // Serve the full pre-generated bank for an exact-max-count event request.
 // Returns an array of quiz-format questions, or null if the bank is missing.
-function serveFromBank(event, difficulty) {
-  const bank = loadBank(event);
+function serveFromBank(org, event, difficulty) {
+  const bank = loadBank(org, event);
   if (!bank || bank.length === 0) return null;
 
   // Prefer questions matching the requested difficulty, but never fail just
@@ -341,15 +446,34 @@ function serveFromBank(event, difficulty) {
 // File helpers
 // ---------------------------------------------------------------------------
 
+app.get('/api/orgs', (req, res) => {
+  const orgs = fs.readdirSync(MATERIALS_DIR)
+    .filter(f => fs.statSync(path.join(MATERIALS_DIR, f)).isDirectory())
+    .map(org => {
+      const orgDir = path.join(MATERIALS_DIR, org);
+      const eventCount = fs.readdirSync(orgDir)
+        .filter(f => fs.statSync(path.join(orgDir, f)).isDirectory())
+        .length;
+      return { id: org, eventCount };
+    });
+  res.json(orgs.sort((a, b) => a.id.localeCompare(b.id)));
+});
+
 app.get('/api/events', (req, res) => {
-  const events = fs.readdirSync(MATERIALS_DIR)
-    .filter(f => fs.statSync(path.join(MATERIALS_DIR, f)).isDirectory());
+  const org = req.query.org;
+  if (!org || !isSafeSlug(org)) return res.json([]);
+  const orgDir = path.join(MATERIALS_DIR, org);
+  if (!fs.existsSync(orgDir)) return res.json([]);
+  const events = fs.readdirSync(orgDir)
+    .filter(f => fs.statSync(path.join(orgDir, f)).isDirectory());
   res.json(events.sort());
 });
 
-app.get('/api/events/:event/outline', (req, res) => {
-  const outlinePath = path.join(MATERIALS_DIR, req.params.event, 'event-outline.txt');
-  const contentPath = path.join(MATERIALS_DIR, req.params.event, 'study-content.txt');
+app.get('/api/events/:org/:event/outline', (req, res) => {
+  const { org, event } = req.params;
+  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+  const outlinePath = path.join(MATERIALS_DIR, org, event, 'event-outline.txt');
+  const contentPath = path.join(MATERIALS_DIR, org, event, 'study-content.txt');
   if (!fs.existsSync(outlinePath)) return res.status(404).json({ error: 'Not found' });
   let content = fs.readFileSync(outlinePath, 'utf8');
   if (fs.existsSync(contentPath)) {
@@ -362,27 +486,27 @@ app.get('/api/events/:event/outline', (req, res) => {
   res.json({ content });
 });
 
-function getOutline(event) {
-  const p  = path.join(MATERIALS_DIR, event, 'event-outline.txt');
-  const p2 = path.join(MATERIALS_DIR, event, 'event-outline 2.txt');
+function getOutline(org, event) {
+  const p  = path.join(MATERIALS_DIR, org, event, 'event-outline.txt');
+  const p2 = path.join(MATERIALS_DIR, org, event, 'event-outline 2.txt');
   let content = fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '';
   if (fs.existsSync(p2)) content += '\n\n' + fs.readFileSync(p2, 'utf8');
   return content;
 }
 
-function getExtras(event) {
+function getExtras(org, event) {
   return ['notes.txt', 'vocab.txt', 'mistakes.txt', 'study-content.txt']
-    .map(f => path.join(MATERIALS_DIR, event, f))
+    .map(f => path.join(MATERIALS_DIR, org, event, f))
     .filter(fs.existsSync)
     .map(f => `--- ${path.basename(f)} ---\n${fs.readFileSync(f, 'utf8')}`)
     .join('\n\n');
 }
 
-function buildSystemPrompt(event, objectiveText, mode) {
+function buildSystemPrompt(org, event, objectiveText, mode) {
   const botRules = fs.readFileSync(BOT_RULES_PATH, 'utf8');
-  const outline  = getOutline(event);
+  const outline  = getOutline(org, event);
   const section  = extractRelevantSection(outline, objectiveText);
-  const extras   = getExtras(event);
+  const extras   = getExtras(org, event);
   return `${botRules}
 
 --- RELEVANT OUTLINE SECTION ---
@@ -652,20 +776,21 @@ Rules:
 // asks for exactly that scope's full bank size; every other count generates
 // fresh with AI so it's never just a sampled subset of the bigger bank.
 app.post('/api/quiz', async (req, res) => {
-  const { event, objective, count, difficulty, scope } = req.body;
-  console.log(`[quiz] event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
+  const { org, event, objective, count, difficulty, scope } = req.body;
+  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+  console.log(`[quiz] org=${org} event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
 
   // Fast path: exact-max-count request — serve the pre-generated bank for
   // this scope, if one exists and has a matching pool.
   if (scope === 'event' && count === SCOPE_BANK_MAX.event) {
-    const banked = serveFromBank(event, difficulty);
+    const banked = serveFromBank(org, event, difficulty);
     if (banked) {
       console.log(`[bank] serving ${banked.length} ${difficulty} questions for ${event}`);
       return res.json({ questions: banked, source: 'bank' });
     }
     console.log(`[bank] miss — falling through to AI`);
   } else if ((scope === 'section' || scope === 'objective') && count === SCOPE_BANK_MAX[scope]) {
-    const banked = serveScopedBank(event, scope, objective, difficulty);
+    const banked = serveScopedBank(org, event, scope, objective, difficulty);
     if (banked) {
       console.log(`[bank] serving ${banked.length} ${difficulty} ${scope} questions for ${event}`);
       return res.json({ questions: banked, source: 'bank' });
@@ -674,8 +799,8 @@ app.post('/api/quiz', async (req, res) => {
   }
 
   // Slow path: generate with AI
-  const outline = extractRelevantSection(getOutline(event), objective);
-  const extras  = getExtras(event);
+  const outline = extractRelevantSection(getOutline(org, event), objective);
+  const extras  = getExtras(org, event);
   const priorQuestions = getRecentQuestions(event, scope, objective);
   const prompt = buildGenPrompt('quiz', count, objective, outline, difficulty, extras, event, priorQuestions);
 
@@ -704,7 +829,7 @@ app.post('/api/quiz', async (req, res) => {
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       const parsed = sanitizeQuestions(extractJSON(raw));
       const lengthViolations = findLengthTellViolations(parsed);
-      const dupeViolations   = findDuplicateViolations(parsed);
+      const dupeViolations   = findDuplicateViolations(parsed, priorQuestions);
       const rank = rankOf(dupeViolations.length, lengthViolations.length);
 
       if (!bestRank || rankLess(rank, bestRank)) {
@@ -736,9 +861,10 @@ app.post('/api/quiz', async (req, res) => {
 
 // Flashcard generation — retries up to 3 times total, slices to exact count
 app.post('/api/flashcards', async (req, res) => {
-  const { event, objective, count } = req.body;
-  const outline = extractRelevantSection(getOutline(event), objective);
-  const extras  = getExtras(event);
+  const { org, event, objective, count } = req.body;
+  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+  const outline = extractRelevantSection(getOutline(org, event), objective);
+  const extras  = getExtras(org, event);
   const prompt  = buildGenPrompt('flashcard', count, objective, outline, '', extras);
 
   try {
@@ -760,7 +886,8 @@ app.post('/api/flashcards', async (req, res) => {
 
 // Chat / Explain — SSE streaming
 app.post('/api/chat', async (req, res) => {
-  const { messages, event, objective, mode } = req.body;
+  const { messages, org, event, objective, mode } = req.body;
+  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');
@@ -769,7 +896,7 @@ app.post('/api/chat', async (req, res) => {
   res.socket?.setNoDelay?.(true);
 
   try {
-    const systemPrompt = buildSystemPrompt(event, objective, mode);
+    const systemPrompt = buildSystemPrompt(org, event, objective, mode);
     if (PROVIDER === 'anthropic') await streamAnthropic(systemPrompt, messages, res);
     else if (PROVIDER === 'gemini') await streamGemini(systemPrompt, messages, res);
     else await streamOllama(systemPrompt, messages, res);

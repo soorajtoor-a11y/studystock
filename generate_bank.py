@@ -84,6 +84,21 @@ INTRO_EVENT_PREFIX = "introduction-to-"
 def difficulty_tier(event):
     return "INTRO" if event.startswith(INTRO_EVENT_PREFIX) else "STANDARD"
 
+def discover_events():
+    """Return sorted (org, event) tuples for every event folder nested one
+    level under an organization folder in study-materials/ (e.g. fbla/,
+    deca/, hosa/). Non-directory entries (README.md, stray .txt files) at
+    either level are skipped."""
+    pairs = []
+    for org in sorted(os.listdir(MATERIALS)):
+        org_dir = os.path.join(MATERIALS, org)
+        if not os.path.isdir(org_dir):
+            continue
+        for event in sorted(os.listdir(org_dir)):
+            if os.path.isdir(os.path.join(org_dir, event)):
+                pairs.append((org, event))
+    return pairs
+
 # ----------------------------- API KEY ------------------------------
 def get_client():
     try:
@@ -239,18 +254,35 @@ def type_mix_directive(n):
             f"been over/under-used so far in this run — follow them.")
 
 def already_asked_block(prior_questions):
-    """Render the list of question stems already generated for this exact
-    knowledge-area/objective pool, so a stateless API call has real memory
-    of what to avoid repeating (see RULE 8c). Without this, batches default
-    to the same "safest" facts every time — e.g. the same OS-booting
-    definition asked 7 different ways across a 25-question pool."""
+    """Render the list of question stems AND the list of correct-answer
+    concepts already used in this pool, so a stateless API call has real
+    memory of what to avoid repeating (see RULE 8c). The question-text list
+    alone was proven insufficient — a real 25-question pool had the same
+    fact (copyright, information security, virtualization's core definition,
+    etc.) retested 2-5 times with different wording, because the model
+    doesn't reliably recognize its own reworded version as "the same thing"
+    from question text alone. Naming the exact answer CONCEPT directly, as
+    its own explicit banned list, is a much harder-to-ignore signal — same
+    principle as RULE 8c, made concrete. `prior_questions` is the list of
+    full prior question dicts (needs both .question and
+    .options/.correct_index, not just text)."""
+    prior_questions = prior_questions or []
     if not prior_questions:
         return ("ALREADY ASKED IN THIS KNOWLEDGE AREA: (none yet — this is "
                 "the first batch, no restrictions from prior questions.)")
-    lines = "\n".join(f"  {i+1}. {q}" for i, q in enumerate(prior_questions))
-    return ("ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts "
-            "is now OFF LIMITS, including asking about it with different "
-            "wording (RULE 8c):\n" + lines)
+    q_lines = "\n".join(f"  {i+1}. {p['question']}" for i, p in enumerate(prior_questions))
+    answers = [a for a in (answer_text(p) for p in prior_questions) if a]
+    a_lines = "\n".join(f"  - {a}" for a in dict.fromkeys(answers))
+    return (
+        "ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is "
+        "now OFF LIMITS, including asking about it again with different "
+        "wording (RULE 8c):\n" + q_lines + "\n\n"
+        "CORRECT ANSWERS ALREADY USED IN THIS POOL — do NOT write a new "
+        "question whose correct answer is any of these concepts, even "
+        "phrased completely differently or asked from a different angle. "
+        "Pick a genuinely DIFFERENT fact from the source material instead:\n"
+        + a_lines
+    )
 
 ANSWER_INDICATOR_RE = re.compile(
     r"\s*(?:✓|✔|☑|✅|\*+|\(\s*correct\s*\)|\[\s*correct\s*\]|<-+\s*correct)\s*$",
@@ -320,6 +352,73 @@ def has_obvious_length_tell(q):
 def find_length_violations(questions):
     return [q for q in questions if has_obvious_length_tell(q)]
 
+def answer_text(q):
+    idx = q.get("correct_index")
+    options = q.get("options")
+    if not isinstance(options, list) or not isinstance(idx, int) or not (0 <= idx < len(options)):
+        return ""
+    return options[idx]
+
+# Generic "wrapper" words that vary between two phrasings of the SAME fact
+# (e.g. "antivirus program" vs "antivirus software") — stripped before
+# comparing concept words so they don't count as the meaningful part of the
+# answer. Deliberately does NOT include words like "storage", "data",
+# "network", "information", "security" — those ARE meaningful differentiators
+# ("local storage" vs "cloud storage" are genuinely different facts and must
+# never be flagged as the same concept).
+GENERIC_ANSWER_WORDS = {
+    "software", "program", "programs", "tool", "tools", "utility", "utilities",
+    "system", "systems", "application", "applications", "service", "services",
+    "feature", "features", "technology", "technologies", "method", "methods",
+    "practice", "practices", "measure", "measures", "process", "processes",
+    "management", "manager", "control", "controls", "planning", "protection",
+    "capability", "capabilities", "function", "functions", "operation",
+    "operations", "concept", "concepts", "type", "types", "device", "devices",
+}
+
+def concept_words(text):
+    """Reduce an answer's text to its core concept word(s) for duplicate-FACT
+    detection (distinct from find_duplicate_violations's exact-text check).
+    Strips generic wrapper words so two phrasings of the same fact reduce to
+    the same set (e.g. "antivirus program" and "antivirus software" both
+    become {"antivirus"}). A mechanical PROXY for "is this the same
+    underlying fact", not true semantic understanding — see
+    find_duplicate_violations for why this exists and what it caught."""
+    words = re.findall(r"[a-z]+", (text or "").lower())
+    return {w for w in words if len(w) >= 4 and w not in GENERIC_ANSWER_WORDS}
+
+def _word_fuzzy_match(a, b, min_len=4):
+    """Two words "match" if identical, or share a >=min_len-character prefix
+    (catches word-form variants like "defragmentation"/"defragmenter" or
+    "caching"/"cache" without needing real stemming)."""
+    if a == b:
+        return True
+    if min(len(a), len(b)) < min_len:
+        return False
+    return a[:min_len] == b[:min_len]
+
+def _set_covered(small, big):
+    """True if every word in `small` has a fuzzy match somewhere in `big`."""
+    if not small:
+        return False
+    return all(any(_word_fuzzy_match(w, bw) for bw in big) for w in small)
+
+def is_concept_repeat(text_a, text_b):
+    """True if two answer texts are almost certainly testing the SAME
+    underlying fact, just phrased differently. Verified against every real
+    case found in a manual 175-question review: antivirus, backup,
+    defragmentation, caching, virtualization, copyright, information
+    security, data collection, and database operations/management were each
+    tested 2+ times per 25-question pool with different wording, none of it
+    caught by exact-text matching. Also verified NOT to false-positive on
+    genuinely different facts that happen to share a word, e.g. "local
+    storage" vs "cloud storage" (correctly NOT flagged — different concepts,
+    good complementary distractors)."""
+    a, b = concept_words(text_a), concept_words(text_b)
+    if not a or not b:
+        return False
+    return _set_covered(a, b) or _set_covered(b, a)
+
 def normalize_question_text(s):
     s = (s or "").lower()
     s = re.sub(r"[^a-z0-9\s]", "", s)
@@ -327,21 +426,44 @@ def normalize_question_text(s):
     return s
 
 def find_duplicate_violations(questions, prior_questions=None):
-    """Mechanical, code-level duplicate check — mirrors server.js's
-    findDuplicateViolations. already_asked_block() gives the model
-    prompt-level memory of prior questions in this pool, but that alone was
-    proven insufficient (the "booting asked 7 ways" failure happened WITH
-    that prompt text in place). This actually verifies the model honored it,
-    checking both within the new batch and against everything already
-    accumulated for this exact knowledge-area/objective pool."""
-    seen = {normalize_question_text(p) for p in (prior_questions or [])}
+    """Mechanical, code-level duplicate check. Catches two DIFFERENT failure
+    modes:
+      1. EXACT/near-exact question-TEXT repeats (normalized string match) —
+         the original check, mirrors server.js's findDuplicateViolations.
+      2. CONCEPT repeats — the SAME underlying fact retested with different
+         wording, which (1) can never catch. Real, severe failure found by a
+         manual 175-question review: one 25-question pool had copyright
+         defined twice, information security defined twice, data collection
+         defined twice, database operations/management defined twice, and a
+         disaster-recovery theme spanning 5 of 25 questions — NONE of them
+         exact-text matches, all of them the model gravitating back to the
+         same "safe" high-salience facts despite already_asked_block()
+         listing the prior question text. Detected via is_concept_repeat()
+         comparing each new question's correct-answer text against every
+         prior correct answer in this pool (both within the new batch and
+         against everything already accumulated).
+    `prior_questions` is now the list of full prior question DICTS (not just
+    text) so both question-text and correct-answer text are available —
+    every caller must pass full question objects."""
+    prior_questions = prior_questions or []
+    seen_text = {normalize_question_text(p.get("question")) for p in prior_questions}
+    seen_answers = [a for a in (answer_text(p) for p in prior_questions) if a]
     violations = []
+    batch_answers = []
     for q in questions:
         norm = normalize_question_text(q.get("question"))
-        if norm in seen:
+        ans = answer_text(q)
+        is_text_dupe = norm in seen_text
+        is_concept_dupe = bool(ans) and (
+            any(is_concept_repeat(ans, prior_ans) for prior_ans in seen_answers)
+            or any(is_concept_repeat(ans, prev) for prev in batch_answers)
+        )
+        if is_text_dupe or is_concept_dupe:
             violations.append(q)
         else:
-            seen.add(norm)
+            seen_text.add(norm)
+            if ans:
+                batch_answers.append(ans)
     return violations
 
 def call_model(client, prompt):
@@ -362,20 +484,20 @@ def call_model(client, prompt):
             else:
                 raise
 
-def push_event(event, bank_path, n):
+def push_event(org, event, bank_path, n):
     """Commit and push the question bank for one event to GitHub."""
     import subprocess
     rel = os.path.relpath(bank_path, BASE)
     try:
         subprocess.run(["git", "add", rel], cwd=BASE, check=True, capture_output=True)
         subprocess.run(
-            ["git", "commit", "-m", f"Add {n} questions for {event}"],
+            ["git", "commit", "-m", f"Add {n} questions for {org}/{event}"],
             cwd=BASE, check=True, capture_output=True, text=True,
         )
         subprocess.run(["git", "push", "origin", "main"], cwd=BASE, check=True, capture_output=True)
         print(f"  Pushed to GitHub: {rel}")
     except subprocess.CalledProcessError as e:
-        print(f"  Git push failed for {event}: {getattr(e, 'stderr', '') or e}")
+        print(f"  Git push failed for {org}/{event}: {getattr(e, 'stderr', '') or e}")
 
 # ------------------------- GLOBAL CHECKPOINT -------------------------
 def load_checkpoint():
@@ -437,10 +559,10 @@ def rebalance_all_banks(state):
     print("    !! distribution out of tolerance — rebalancing every generated bank...")
     state["position_counts"] = [0, 0, 0, 0]
     state["type_counts"] = {k: 0 for k in QUESTION_TYPES}
-    events = sorted(d for d in os.listdir(MATERIALS) if os.path.isdir(os.path.join(MATERIALS, d)))
+    pairs = discover_events()
     for tier, filename in TIER_BANK_FILENAME.items():
-        for event in events:
-            path = os.path.join(MATERIALS, event, filename)
+        for org, event in pairs:
+            path = os.path.join(MATERIALS, org, event, filename)
             if not os.path.exists(path):
                 continue
             with open(path, encoding="utf-8") as f:
@@ -556,8 +678,8 @@ def final_tier_report(state, tier):
     save_checkpoint(state)
 
 # ---------------------------- TIER: EVENT ----------------------------
-def generate_event_tier(client, event, rules, state, dry_run=False):
-    event_dir = os.path.join(MATERIALS, event)
+def generate_event_tier(client, org, event, rules, state, dry_run=False):
+    event_dir = os.path.join(MATERIALS, org, event)
     bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["event"])
     target = TIER_TARGET["event"]
 
@@ -585,7 +707,7 @@ def generate_event_tier(client, event, rules, state, dry_run=False):
     while len(bank) < target:
         section = random.choices(sections, weights=weights, k=1)[0]
         n = min(BATCH_SIZE, target - len(bank))
-        prior = [q["question"] for q in bank if q.get("knowledge_area") == section["name"]]
+        prior = [q for q in bank if q.get("knowledge_area") == section["name"]]
         # Same rotation fix as the section tier: whenever this section gets
         # picked again, focus on different objectives within it rather than
         # whichever one the model reaches for by default every time.
@@ -615,11 +737,11 @@ def generate_event_tier(client, event, rules, state, dry_run=False):
         time.sleep(RATE_DELAY)
 
     print(f"  DONE {event}: {len(bank)} questions saved to {os.path.relpath(bank_path, BASE)}")
-    push_event(event, bank_path, len(bank))
+    push_event(org, event, bank_path, len(bank))
 
 # --------------------------- TIER: SECTION ---------------------------
-def generate_section_tier(client, event, rules, state, dry_run=False):
-    event_dir = os.path.join(MATERIALS, event)
+def generate_section_tier(client, org, event, rules, state, dry_run=False):
+    event_dir = os.path.join(MATERIALS, org, event)
     bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["section"])
     target = TIER_TARGET["section"]
 
@@ -667,9 +789,9 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
                 difficulty_tier=difficulty_tier(event),
                 focus=focus, type_focus=type_mix_directive(n),
                 body=section["body"][:6000], n=n,
-                already_asked=already_asked_block([q["question"] for q in bank]),
+                already_asked=already_asked_block(bank),
             )
-            got = _generate_batch(client, prompt, key, state, [q["question"] for q in bank], event)
+            got = _generate_batch(client, prompt, key, state, bank, event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -679,11 +801,11 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
             batch_index += 1
             time.sleep(RATE_DELAY)
 
-    push_event(event, bank_path, sum(len(v) for v in banks.values()))
+    push_event(org, event, bank_path, sum(len(v) for v in banks.values()))
 
 # -------------------------- TIER: OBJECTIVE --------------------------
-def generate_objective_tier(client, event, rules, state, dry_run=False):
-    event_dir = os.path.join(MATERIALS, event)
+def generate_objective_tier(client, org, event, rules, state, dry_run=False):
+    event_dir = os.path.join(MATERIALS, org, event)
     bank_path = os.path.join(event_dir, TIER_BANK_FILENAME["objective"])
     target = TIER_TARGET["objective"]
 
@@ -717,9 +839,9 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
                 difficulty_tier=difficulty_tier(event),
                 focus=focus, type_focus=type_mix_directive(n),
                 body=section["body"][:6000], n=n,
-                already_asked=already_asked_block([q["question"] for q in bank]),
+                already_asked=already_asked_block(bank),
             )
-            got = _generate_batch(client, prompt, section["name"], state, [q["question"] for q in bank], event)
+            got = _generate_batch(client, prompt, section["name"], state, bank, event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -728,7 +850,7 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
                 print(f"    +{len(got)} -> {len(bank)}/{target}")
             time.sleep(RATE_DELAY)
 
-    push_event(event, bank_path, sum(len(v) for v in banks.values()))
+    push_event(org, event, bank_path, sum(len(v) for v in banks.values()))
 
 # --------------------------- SHARED HELPER ---------------------------
 def _generate_batch(client, prompt, area_name, state, prior_questions=None, event=None):
@@ -818,24 +940,26 @@ def main():
     if tier not in TIER_FN:
         sys.exit(f"--tier must be one of {list(TIER_FN)}")
 
-    events = sorted(d for d in os.listdir(MATERIALS)
-                    if os.path.isdir(os.path.join(MATERIALS, d)))
+    pairs = discover_events()
     if args:
-        events = [e for e in events if e in args]
-        if not events:
-            sys.exit("No matching event folder. Use folder names from study-materials/")
+        # Accept either a bare event slug ("accounting") or an org-qualified
+        # one ("fbla/accounting") since event names are no longer guaranteed
+        # unique across organizations.
+        pairs = [(o, e) for (o, e) in pairs if e in args or f"{o}/{e}" in args]
+        if not pairs:
+            sys.exit("No matching event folder. Use folder names from study-materials/<org>/")
 
     with open(RULES_FILE, encoding="utf-8") as f:
         rules = f.read()
 
     client = None if dry_run else get_client()
     state = load_checkpoint()
-    print(f"Tier: {tier} | Events to process: {len(events)}"
+    print(f"Tier: {tier} | Events to process: {len(pairs)}"
           + (" (DRY RUN — no API calls)" if dry_run else ""))
     print(f"Starting from global checkpoint: {state['total']} questions generated so far.")
 
-    for event in events:
-        TIER_FN[tier](client, event, rules, state, dry_run)
+    for org, event in pairs:
+        TIER_FN[tier](client, org, event, rules, state, dry_run)
 
     if not dry_run:
         final_tier_report(state, tier)

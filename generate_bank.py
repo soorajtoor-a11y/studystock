@@ -238,6 +238,55 @@ def parse_questions(raw, area_name):
         raise ValueError("no valid questions in response")
     return good
 
+def word_count(s):
+    return len((s or "").strip().split())
+
+def has_obvious_length_tell(q):
+    """Mechanical, code-level port of server.js's hasObviousLengthTell.
+    Prompt-only instructions (RULE 2) were proven insufficient at scale: the
+    pre-generated Intro-to-IT banks shipped with the same length-bias problem
+    live generation had, because nothing actually checked the output here —
+    only server.js's live path had a real enforcement gate. Combined
+    relative+absolute threshold, calibrated against a real observed failure
+    (the security-breach example in RULE 2)."""
+    options = q.get("options")
+    idx = q.get("correct_index")
+    if not isinstance(options, list) or len(options) != 4 or not isinstance(idx, int):
+        return False
+    correct_count = word_count(options[idx])
+    if not correct_count:
+        return False
+    other_counts = [word_count(o) for i, o in enumerate(options) if i != idx]
+    avg_other = sum(other_counts) / len(other_counts)
+    return (correct_count - avg_other) >= 3 and correct_count > avg_other * 1.2
+
+def find_length_violations(questions):
+    return [q for q in questions if has_obvious_length_tell(q)]
+
+def normalize_question_text(s):
+    s = (s or "").lower()
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def find_duplicate_violations(questions, prior_questions=None):
+    """Mechanical, code-level duplicate check — mirrors server.js's
+    findDuplicateViolations. already_asked_block() gives the model
+    prompt-level memory of prior questions in this pool, but that alone was
+    proven insufficient (the "booting asked 7 ways" failure happened WITH
+    that prompt text in place). This actually verifies the model honored it,
+    checking both within the new batch and against everything already
+    accumulated for this exact knowledge-area/objective pool."""
+    seen = {normalize_question_text(p) for p in (prior_questions or [])}
+    violations = []
+    for q in questions:
+        norm = normalize_question_text(q.get("question"))
+        if norm in seen:
+            violations.append(q)
+        else:
+            seen.add(norm)
+    return violations
+
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
     while True:
@@ -436,7 +485,7 @@ def generate_event_tier(client, event, rules, state, dry_run=False):
             focus=focus, body=section["body"][:6000], n=n,
             already_asked=already_asked_block(prior),
         )
-        got = _generate_batch(client, prompt, section["name"], state)
+        got = _generate_batch(client, prompt, section["name"], state, prior)
         if got:
             bank.extend(got)
             with open(bank_path, "w", encoding="utf-8") as f:
@@ -498,7 +547,7 @@ def generate_section_tier(client, event, rules, state, dry_run=False):
                 focus=focus, body=section["body"][:6000], n=n,
                 already_asked=already_asked_block([q["question"] for q in bank]),
             )
-            got = _generate_batch(client, prompt, key, state)
+            got = _generate_batch(client, prompt, key, state, [q["question"] for q in bank])
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -547,7 +596,7 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
                 focus=focus, body=section["body"][:6000], n=n,
                 already_asked=already_asked_block([q["question"] for q in bank]),
             )
-            got = _generate_batch(client, prompt, section["name"], state)
+            got = _generate_batch(client, prompt, section["name"], state, [q["question"] for q in bank])
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -559,12 +608,43 @@ def generate_objective_tier(client, event, rules, state, dry_run=False):
     push_event(event, bank_path, sum(len(v) for v in banks.values()))
 
 # --------------------------- SHARED HELPER ---------------------------
-def _generate_batch(client, prompt, area_name, state):
-    """One retry-guarded batch call: parse -> assign positions -> checkpoint."""
-    for attempt in (1, 2):
+def _generate_batch(client, prompt, area_name, state, prior_questions=None):
+    """Retry-guarded batch call: parse -> mechanical quality checks ->
+    assign positions -> checkpoint.
+
+    The quality checks (length-tell, duplicates) are CODE-LEVEL, not just
+    prompt instructions — prompt-only enforcement was proven insufficient at
+    scale (see RULE 2/8c in the rules file and
+    feedback_fbla_question_generation_rules.md): each batch is an
+    independent, stateless API call, and across hundreds of them some will
+    drift even with perfect prompt text. This mirrors server.js's live-path
+    enforcement exactly so bulk-generated banks get the same guarantee.
+    Tracks the least-bad attempt across retries so one stubborn batch never
+    silently produces nothing — worst case it keeps the best available
+    attempt instead of skipping the batch outright."""
+    best = None
+    best_violation_count = None
+    for attempt in (1, 2, 3):
         try:
             raw = call_model(client, prompt)
             parsed = parse_questions(raw, area_name)
+            length_violations = find_length_violations(parsed)
+            dupe_violations = find_duplicate_violations(parsed, prior_questions)
+            total_violations = len(length_violations) + len(dupe_violations)
+
+            if best is None or total_violations < best_violation_count:
+                best = parsed
+                best_violation_count = total_violations
+
+            if total_violations:
+                reasons = []
+                if length_violations:
+                    reasons.append(f"{len(length_violations)} length-tell")
+                if dupe_violations:
+                    reasons.append(f"{len(dupe_violations)} duplicate")
+                print(f"    {', '.join(reasons)} violation(s) (attempt {attempt}) — retrying")
+                continue
+
             got = assign_positions(parsed, state)
             maybe_checkpoint(state)
             return got
@@ -573,6 +653,12 @@ def _generate_batch(client, prompt, area_name, state):
         except Exception as e:
             print(f"    API error: {e} — waiting {RATE_LIMIT_WAIT}s")
             time.sleep(RATE_LIMIT_WAIT)
+
+    if best is not None:
+        print(f"    all attempts had violations — using least-bad available ({best_violation_count} violation(s))")
+        got = assign_positions(best, state)
+        maybe_checkpoint(state)
+        return got
     return None
 
 # ------------------------------ MAIN --------------------------------

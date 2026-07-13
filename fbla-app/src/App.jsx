@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
+import Landing from './Landing'
+import fblaMark from './assets/fbla-mark.png'
 import './App.css'
 
 function formatEventName(slug) {
@@ -100,7 +102,7 @@ function EventPickerPage({ events, onSelect, onBack }) {
 }
 
 // ── Home Page ─────────────────────────────────────────────────────────────────
-function HomePage({ eventCount, onStart }) {
+function HomePage({ onStart }) {
   return (
     <div className="home-page">
       <div className="home-hero">
@@ -131,25 +133,6 @@ function HomePage({ eventCount, onStart }) {
             <div className="home-card-icon explain">💡</div>
             <div className="home-card-title">Explain Mode</div>
             <div className="home-card-desc">The AI breaks down any objective in plain language with a real-world example. Follow up with your own questions.</div>
-          </div>
-        </div>
-
-        <p className="home-section-label">By the Numbers</p>
-        <div className="home-stats">
-          <div className="home-stat">
-            <span className="home-stat-pre">All</span>
-            <span className="home-stat-num">{eventCount || 31}</span>
-            <span className="home-stat-label">Objective Tests</span>
-          </div>
-          <div className="home-stat">
-            <span className="home-stat-pre">Up to</span>
-            <span className="home-stat-num">100</span>
-            <span className="home-stat-label">Questions per Quiz</span>
-          </div>
-          <div className="home-stat">
-            <span className="home-stat-pre">Make as many as</span>
-            <span className="home-stat-num">50</span>
-            <span className="home-stat-label">Detailed Flash Cards</span>
           </div>
         </div>
 
@@ -282,7 +265,7 @@ function FlashcardPane({ event, objectiveText, count, onBack }) {
 }
 
 // ── Quiz Pane ─────────────────────────────────────────────────────────────────
-function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
+function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
   const [questions, setQuestions] = useState(null)
   const [current,   setCurrent]   = useState(0)
   const [selected,  setSelected]  = useState(null)
@@ -295,7 +278,7 @@ function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
     fetch('/api/quiz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ event, objective: objectiveText, count, difficulty }),
+      body: JSON.stringify({ event, objective: objectiveText, count, difficulty, scope }),
     })
       .then(r => r.json())
       .then(d => { if (d.error) setError(d.error); else setQuestions(d.questions) })
@@ -312,8 +295,6 @@ function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
     if (current + 1 >= questions.length) setDone(true)
     else { setCurrent(c => c + 1); setSelected(null); setRevealed(false) }
   }
-
-  const diffLabel = { easy: 'Easy', medium: 'Medium', hard: 'Hard' }[difficulty] || difficulty
 
   if (error) return (
     <div className="study-pane">
@@ -336,11 +317,10 @@ function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
           <span className="study-divider">›</span>
           <span className="study-obj">{objectiveText}</span>
         </div>
-        <span className={`diff-badge diff-${difficulty}`}>{diffLabel}</span>
       </div>
       <div className="pane-loading">
         <div className="pane-spinner" />
-        <p className="pane-loading-title">Generating {count} {diffLabel?.toLowerCase()} questions…</p>
+        <p className="pane-loading-title">Generating {count} questions…</p>
         <p className="pane-loading-sub">Powered by Claude AI</p>
       </div>
     </div>
@@ -379,7 +359,6 @@ function QuizPane({ event, objectiveText, count, difficulty, onBack }) {
           <span className="study-divider">›</span>
           <span className="study-obj">{objectiveText}</span>
         </div>
-        <span className={`diff-badge diff-${difficulty}`}>{diffLabel}</span>
         <span className="progress-pill">{current + 1} / {questions.length}</span>
       </div>
 
@@ -557,16 +536,15 @@ function StudyPane({ event, objectiveText, onBack }) {
 }
 
 // ── Mode Picker ───────────────────────────────────────────────────────────────
-const DIFFICULTIES = [
-  { key: 'easy',   label: 'Easy',   desc: 'Simple recall & overall understanding',          dot: 'easy'   },
-  { key: 'medium', label: 'Medium', desc: 'A reasonable balance of recall and application', dot: 'medium' },
-  { key: 'hard',   label: 'Hard',   desc: 'In-depth analysis & advanced understanding',     dot: 'hard'   },
-]
+// Every quiz question is generated at the same calibrated difficulty (see
+// question-generation-rules.txt RULE 1) — there's no user-facing choice.
+const QUIZ_DIFFICULTY = 'hard'
 
-function ModePicker({ title, desc, onSelect, onClose, hideExplain }) {
+function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'event' }) {
+  const QUIZ_COUNTS = { event: [10, 25, 50], section: [10, 15, 25], objective: [5, 10, 15] }
+  const quizCounts = QUIZ_COUNTS[scope] ?? [10, 25, 50]
   const [step,       setStep]       = useState('mode')
-  const [quizCount,  setQuizCount]  = useState(10)
-  const [difficulty, setDifficulty] = useState('medium')
+  const [quizCount,  setQuizCount]  = useState(quizCounts[0])
   const [fcCount,    setFcCount]    = useState(10)
 
   return (
@@ -619,30 +597,11 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain }) {
             <button className="mp-back-link" onClick={() => setStep('mode')}>← Back</button>
             <p className="mp-prompt">How many questions?</p>
             <div className="count-row">
-              {[10, 25, 50, 100].map(n => (
+              {quizCounts.map(n => (
                 <button key={n} className={`count-btn ${quizCount === n ? 'active' : ''}`} onClick={() => setQuizCount(n)}>{n}</button>
               ))}
             </div>
-            <button className="primary-btn" onClick={() => setStep('quiz-difficulty')}>Choose Difficulty →</button>
-          </>
-        )}
-
-        {step === 'quiz-difficulty' && (
-          <>
-            <button className="mp-back-link" onClick={() => setStep('quiz-count')}>← Back</button>
-            <p className="mp-prompt">Difficulty level</p>
-            <div className="diff-list">
-              {DIFFICULTIES.map(d => (
-                <button key={d.key} className={`diff-row ${difficulty === d.key ? 'active' : ''}`} onClick={() => setDifficulty(d.key)}>
-                  <span className={`diff-dot diff-dot-${d.dot}`} />
-                  <div>
-                    <span className="diff-row-label">{d.label}</span>
-                    <span className="diff-row-desc">{d.desc}</span>
-                  </div>
-                </button>
-              ))}
-            </div>
-            <button className="primary-btn" onClick={() => onSelect('quiz', quizCount, difficulty)}>Start Quiz →</button>
+            <button className="primary-btn" onClick={() => onSelect('quiz', quizCount, QUIZ_DIFFICULTY)}>Start Quiz →</button>
           </>
         )}
       </div>
@@ -654,8 +613,8 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain }) {
 function StudyPanel({ event, outline, onStudy }) {
   const [picker, setPicker] = useState(null)
 
-  function openPicker(title, desc, objectiveText, hideExplain = false) {
-    setPicker({ title, desc, objectiveText, hideExplain })
+  function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event') {
+    setPicker({ title, desc, objectiveText, hideExplain, scope })
   }
 
   function buildFullEventText() {
@@ -696,8 +655,8 @@ function StudyPanel({ event, outline, onStudy }) {
               </div>
             </div>
             <div className="sp-btns">
-              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true)}>📝 Quiz</button>
-              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true)}>🃏 Cards</button>
+              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section')}>📝 Quiz</button>
+              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section')}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
             </div>
           </div>
@@ -709,7 +668,8 @@ function StudyPanel({ event, outline, onStudy }) {
           title={picker.title}
           desc={picker.desc}
           hideExplain={picker.hideExplain}
-          onSelect={(mode, count, diff) => { setPicker(null); onStudy(picker.objectiveText, mode, count, diff) }}
+          scope={picker.scope}
+          onSelect={(mode, count, diff) => { setPicker(null); onStudy(picker.objectiveText, mode, count, diff, picker.scope) }}
           onClose={() => setPicker(null)}
         />
       )}
@@ -777,7 +737,8 @@ function EventView({ event, onStudy }) {
         <ModePicker
           title={selected.num}
           desc={selected.text}
-          onSelect={(mode, count, diff) => { setSelected(null); onStudy(selected.text, mode, count, diff) }}
+          scope="objective"
+          onSelect={(mode, count, diff) => { setSelected(null); onStudy(selected.text, mode, count, diff, 'objective') }}
           onClose={() => setSelected(null)}
         />
       )}
@@ -786,21 +747,21 @@ function EventView({ event, onStudy }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, onSelect, onHome }) {
+function Sidebar({ events, page, activeEvent, onSelect, onHome, onLanding, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
     : events
 
   return (
-    <aside className="sidebar">
-      <div className="sidebar-logo">
-        <div className="sidebar-logo-mark">FB</div>
+    <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
+      <button className="sidebar-logo" onClick={onLanding} title="Back to StudyStock overview">
+        <img className="sidebar-logo-mark" src={fblaMark} alt="" />
         <div className="sidebar-logo-text">
           <span className="sidebar-logo-name">StudyStock</span>
           <span className="sidebar-logo-sub">FBLA Study Tool</span>
         </div>
-      </div>
+      </button>
 
       <div className="sidebar-top">
         <button className={`sidebar-home-btn ${page === 'home' ? 'active' : ''}`} onClick={onHome}>
@@ -854,27 +815,33 @@ function Sidebar({ events, page, activeEvent, onSelect, onHome }) {
 // ── App Root ──────────────────────────────────────────────────────────────────
 export default function App() {
   const [events,      setEvents]      = useState([])
-  const [page,        setPage]        = useState('home')   // 'home' | 'picker' | 'event'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'home' | 'picker' | 'event'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
+  const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
 
   useEffect(() => {
     fetch('/api/events').then(r => r.json()).then(list => setEvents(list.sort()))
   }, [])
 
-  function handleHome()          { setPage('home');   setActiveEvent(null); setStudy(null) }
-  function handlePickerOpen()    { setPage('picker'); setStudy(null) }
-  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null) }
-  function handleStudy(text, mode, count, diff) { setStudy({ text, mode, count, diff }) }
+  function handleLanding()       { setPage('landing'); setActiveEvent(null); setStudy(null); setNavOpen(false) }
+  function handleHome()          { setPage('home');   setActiveEvent(null); setStudy(null); setNavOpen(false) }
+  function handlePickerOpen()    { setPage('picker'); setStudy(null); setNavOpen(false) }
+  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false) }
+  function handleStudy(text, mode, count, diff, scope) { setStudy({ text, mode, count, diff, scope }) }
   function handleBack()          { setStudy(null) }
+
+  if (page === 'landing') {
+    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} eventCount={events.length} />
+  }
 
   let content
   if (study && activeEvent) {
-    if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} objectiveText={study.text} count={study.count} difficulty={study.diff} onBack={handleBack} />
+    if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} onBack={handleBack} />
     else if (study.mode === 'flashcard') content = <FlashcardPane event={activeEvent} objectiveText={study.text} count={study.count} onBack={handleBack} />
     else                                 content = <StudyPane      event={activeEvent} objectiveText={study.text} onBack={handleBack} />
   } else if (page === 'home') {
-    content = <HomePage eventCount={events.length} onStart={handlePickerOpen} />
+    content = <HomePage onStart={handlePickerOpen} />
   } else if (page === 'picker') {
     content = <EventPickerPage events={events} onSelect={handleSelectEvent} onBack={handleHome} />
   } else if (page === 'event' && activeEvent) {
@@ -885,12 +852,18 @@ export default function App() {
 
   return (
     <div className="app">
+      <button className="mobile-menu-btn" onClick={() => setNavOpen(o => !o)} aria-label="Toggle menu">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fillRule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 4a1 1 0 100 2h14a1 1 0 100-2H3z" clipRule="evenodd" /></svg>
+      </button>
+      {navOpen && <div className="sidebar-backdrop" onClick={() => setNavOpen(false)} />}
       <Sidebar
         events={events}
         page={page}
         activeEvent={activeEvent}
         onSelect={handleSelectEvent}
         onHome={handleHome}
+        onLanding={handleLanding}
+        open={navOpen}
       />
       <main className="main">{content}</main>
     </div>

@@ -378,15 +378,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Antivirus software is primarily designed to ___",
+  "question": "A utility program that scans a computer for malicious software and removes detected threats is called ___",
   "options": [
-   "detect and remove malicious software and protect against threats",
-   "increase processing speed",
-   "optimize internet bandwidth usage",
-   "organize and retrieve stored files"
+   "antivirus software",
+   "a firewall",
+   "a security patch",
+   "malware detection"
   ],
   "correct_index": 0,
-  "explanation": "Antivirus software scans for, detects, and removes viruses, malware, and other threats to system security. It does not affect processing speed, file organization, or bandwidth — it is focused entirely on protecting against malicious software.",
+  "explanation": "Antivirus software is the specific category of system utility designed to identify, quarantine, and remove malicious programs. A firewall protects against unauthorized network access, malware detection is a function rather than a software category, and a security patch is an update—none are the correct term for this protective utility.",
   "type": "definition_recall",
   "knowledge_area": "Software Fundamentals",
   "difficulty": "hard"
@@ -560,15 +560,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "A user experiences a blue screen of death on their Windows computer after installing new hardware. Which of the following would all be appropriate troubleshooting steps?",
+  "question": "Which of the following would ALL be effective methods for managing file permissions and user access on a desktop operating system?",
   "options": [
-   "Remove the new hardware, check for driver updates, and restart the computer in Safe Mode",
-   "Ignore the error and continue using the computer normally until it crashes again",
-   "Delete all user files, disable antivirus software, and overclock the processor",
-   "Immediately replace the motherboard, reinstall Windows from scratch, and purchase new RAM"
+   "Assigning read-only access to shared folders, creating separate user accounts with restricted privileges, and using file encryption for sensitive documents",
+   "Installing multiple antivirus programs on top of each other, disabling the firewall completely, and bypassing security prompts",
+   "Disabling all user authentication entirely, granting administrator rights to every account, and allowing unrestricted access to system files",
+   "Removing all password requirements, setting all files to public access, and eliminating user account separation"
   ],
   "correct_index": 0,
-  "explanation": "Removing the problematic hardware, updating drivers, and using Safe Mode are standard troubleshooting steps for blue screen errors. These methods help isolate the cause without drastic hardware replacement or ignoring the issue. The other options either represent extreme measures, reckless behavior, or actions that would worsen the problem.",
+  "explanation": "File permission management requires controlling access through accounts with different privilege levels, restricting folder visibility, and protecting sensitive data through encryption—all realistic OS security practices. The other options describe genuinely harmful actions that would compromise system security, but framed as plausible-sounding choices a student might consider if unfamiliar with proper OS administration (e.g. thinking more authentication tools or fewer restrictions might solve access problems).",
   "type": "which_of_following",
   "knowledge_area": "Operating Systems",
   "difficulty": "hard"
@@ -616,15 +616,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "Linux, Windows, and macOS are all operating systems that support multi-user environments, file permissions, and regular security updates EXCEPT",
+  "question": "Which of the following would NOT be a function of an operating system?",
   "options": [
-   "Windows implements user account control to prevent unauthorized changes to system settings and protect sensitive files",
-   "All three operating systems support granular permissions and multi-user functionality",
-   "macOS enforces permissions through Access Control Lists that determine which users can read, write, or execute files",
-   "Linux requires users to have administrator privileges to modify file permissions and access restricted system directories"
+   "Managing user accounts and file permissions to control data access",
+   "Designing and manufacturing the physical circuitry inside the computer's CPU",
+   "Allocating processor time and memory resources to running applications",
+   "Providing a user interface that allows users to interact with hardware and software"
   ],
   "correct_index": 1,
-  "explanation": "All three modern desktop/server operating systems do support multi-user environments with configurable permissions—Linux through chmod/chown, Windows through user accounts and ACLs, and macOS through similar permission models. The question tests whether a student knows that this capability is standard across these platforms, not an exception.",
+  "explanation": "Operating systems manage software and hardware resources, control user access, and provide interfaces—but they do not physically design or manufacture hardware components. That is the responsibility of hardware engineers and manufacturers. The other three options are all genuine functions of an OS that would appear in any textbook definition.",
   "type": "all_except",
   "knowledge_area": "Operating Systems",
   "difficulty": "hard"

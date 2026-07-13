@@ -859,15 +859,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "The ability of an operating system to run multiple programs concurrently by rapidly switching the processor between them, creating the appearance that all programs are executing at the same time, is called ___",
+   "question": "A software utility that allows a user to navigate through directories, view file contents, and move or copy files from the command line is performing what type of function?",
    "options": [
-    "partitioning",
-    "concurrent processing",
-    "caching",
-    "virtual memory allocation"
+    "Process monitoring and application termination",
+    "File management and directory navigation",
+    "Hardware driver installation and verification",
+    "Automatic system update scheduling and deployment"
    ],
    "correct_index": 1,
-   "explanation": "Concurrent processing (also called concurrency or time-sharing in some contexts) is the core OS capability that allows multiple programs to appear to run simultaneously by switching processor attention between them. This is distinct from caching (speed optimization), partitioning (disk organization), and virtual memory (RAM extension)—all of which are separate OS functions.",
+   "explanation": "File management utilities like `dir`, `ls`, `cd`, `copy`, and `move` are command-line tools designed specifically to help users interact with the file system—viewing directory contents, changing directories, and manipulating files. This is distinct from process monitoring (tasklist/taskkill), driver installation, or update configuration, each of which serves a different OS function.",
    "type": "definition_recall",
    "knowledge_area": "Operating Systems",
    "difficulty": "hard"
@@ -2055,15 +2055,15 @@
    "difficulty": "hard"
   },
   {
-   "question": "A network topology in which computers are connected in a line, with each device linked to exactly two neighbors, is called a(n) ___",
+   "question": "A network tool that traces the path a data packet takes as it travels from a source computer to a destination across multiple routers and networks is called ___",
    "options": [
-    "bus topology",
-    "mesh topology",
-    "tree topology",
-    "linear topology"
+    "ping",
+    "IP scanner",
+    "tracert",
+    "packet analyzer"
    ],
    "correct_index": 2,
-   "explanation": "A tree topology is a hierarchical network structure where computers branch off from a central trunk line, resembling an inverted tree. This differs from a bus topology (all devices on one cable) and mesh topology (every device connected to every other device), and is a foundational network design that students studying intro networking must recognize.",
+   "explanation": "Tracert (trace route) is a diagnostic utility that maps the route packets take through a network by displaying each hop and measuring latency at each step. Ping tests basic connectivity to a single destination, while packet analyzers and IP scanners serve different purposes in network troubleshooting.",
    "type": "definition_recall",
    "knowledge_area": "Networking Concepts",
    "difficulty": "hard"

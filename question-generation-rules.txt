@@ -8,32 +8,13 @@ Violating any rule is a generation failure. Rewrite before responding.
 ╚══════════════════════════════════════════════════════════════╝
 
 Across every set of questions you generate, the correct answer MUST be
-distributed as close to 25% A / 25% B / 25% C / 25% D as possible.
-
-In every batch of 4 questions: A is correct once, B once, C once, D once.
-In every batch of 8: each letter appears exactly twice. And so on.
-
-This is enforced at the code level after generation, but you must also
-honor it yourself during writing. Here is how:
-
-  STEP 1 — Before writing your first question, decide the correct-answer
-           positions for ALL questions in the batch using this rotation:
-           For a batch of 5: positions 0,1,2,3,0 → A,B,C,D,A
-           For a batch of 4: positions 0,1,2,3   → A,B,C,D
-           Vary the starting point across batches so you don't always begin at A.
-
-  STEP 2 — Write each question by composing the options IN ORDER around
-           the pre-assigned correct position.
-           "Correct answer goes at position X. Now write option X correctly,
-            then fill the other three positions with plausible distractors."
-
-  STEP 3 — Before outputting, count: how many A / B / C / D answers are
-           in this batch? If any letter appears more than ⌈n/4⌉ + 1 times
-           in a batch of n, shuffle until balanced.
-
-DO NOT default to placing the correct answer at position 0 (A).
-DO NOT place the correct answer wherever it "feels natural" to write it first.
-The correct answer must be equally likely to be at any position.
+distributed as close to 25% A / 25% B / 25% C / 25% D as possible (each
+letter correct roughly once per 4 questions). Pre-assign a rotating position
+(A,B,C,D,A,... varying the starting letter per batch) before writing each
+question, then write that question's options around it. DO NOT default to
+position A or place the correct answer wherever feels natural to write
+first — it must be equally likely at any position. Before outputting, count
+A/B/C/D occurrences in the batch and rebalance if skewed.
 
 ============================================================
 
@@ -176,24 +157,14 @@ loaded for a given request.
 ║  RULE 2 — OPTION LENGTH BALANCE                              ║
 ╚══════════════════════════════════════════════════════════════╝
 
-The correct answer must NEVER be identifiable by its length. This is
-NON-NEGOTIABLE — the exact failure mode below has shipped in real output and
-must not happen again:
+The correct answer must NEVER be identifiable by its length. NON-NEGOTIABLE.
 
-  REAL FAILURE (do not repeat this pattern):
-  Q: An employee discovers her company's customer database was accessed
-     without authorization. The first step she should take is to ___
-  A) report the incident to her manager and follow the company's incident
-     response procedure
-  B) post a warning on the company website about the breach
-  C) immediately shut down all company servers to prevent further access
-  D) contact individual customers directly via personal email before
-     notifying leadership
-  (A is correct AND by far the longest, most hedged option — that's the flaw)
-  This is wrong on two counts at once: the correct answer is the longest
-  option (length gives it away), AND the question is generic workplace
-  common sense rather than something this event actually teaches (see the
-  "obvious answer" guardrail in RULE 1). Both problems must be fixed together.
+  SHIPPED FAILURE — do not repeat: A) "report the incident to her manager
+  and follow the company's incident response procedure" (correct, and by
+  far the longest/most-hedged option — length alone gives it away) vs three
+  short options (B/C/D, one sentence each). Two flaws at once: correct
+  answer = longest, AND the question was generic workplace common sense,
+  not event-specific (RULE 1's obvious-answer guardrail). Fix both together.
 
 2a. All four options must be within roughly 25% of each other in word count.
     If the correct answer is 10 words, write distractors of 8–12 words.
@@ -276,49 +247,28 @@ GOOD:
     to sneak in — it must be a genuine, subtly-wrong step or fact, never a
     drastic worst-case action.
 
-    REAL FAILURE (do not repeat this pattern):
-    Q: A user's computer frequently crashes and shows random error messages.
-       Which of the following would NOT be a likely first troubleshooting step?
-    A) Run a hard drive diagnostic to check for physical disk errors
-    B) Check for and install any available operating system updates
-    C) Verify sufficient disk space is available and check RAM usage
-    D) Completely erase all files and reinstall the operating system
-    (D is correct, but so extreme it needs no IT knowledge to spot — that's the flaw)
-    Fix: make the odd-one-out a REASONABLE-SOUNDING step that is simply out of
-    order or the wrong tool for THIS symptom — e.g. "Reformat the hard drive
-    and restore from the most recent backup" (still drastic enough to be a
-    genuine last resort, but phrased as a normal troubleshooting action rather
-    than a catastrophic one) or "Replace the power supply unit" (plausible
-    hardware fix, just not indicated by these symptoms). The wrong answer
-    should require knowing the correct troubleshooting ORDER, not just
-    common sense about what's reckless.
-    This failure mode is NOT limited to EXCEPT/NOT questions — it happens just
-    as easily in a positively-framed "which of the following would ALL be
-    ___" question, where each option bundles 2-3 sub-items and it's tempting
-    to make the wrong options bundles of obviously-reckless actions instead
-    of genuinely plausible ones.
+    SHIPPED FAILURE (EXCEPT-style): "...Which would NOT be a likely first
+    troubleshooting step?" with the correct odd-one-out being "Completely
+    erase all files and reinstall the operating system" — so extreme it
+    needs zero IT knowledge to spot. Fix: make the odd-one-out REASONABLE-
+    SOUNDING and just out of order or the wrong tool for THIS symptom (e.g.
+    "Reformat the hard drive and restore from the most recent backup," or
+    "Replace the power supply unit" — plausible, just not indicated here).
+    The wrong answer should require knowing the correct troubleshooting
+    ORDER, not just common sense about what's reckless.
 
-    REAL FAILURE (do not repeat this pattern):
-    Q: Which of the following combinations would ALL be effective steps to
-       improve basic network security?
-    A) Disconnect all devices from the internet, remove all routers, and
-       disable authentication systems entirely
-    B) Install packet sniffing software on all devices, remove encryption
-       protocols, and configure the network for open access
-    C) Enable encryption on wireless networks, require strong password
-       authentication, and use a firewall to monitor traffic
-    D) Disable all encryption to simplify administration, allow guest access
-       without passwords, and disable automatic updates
-    (C is correct, but A and B are so absurd — "disable authentication
-    entirely," "remove encryption protocols" — that the question is
-    answerable with zero networking knowledge, just by spotting the two
-    options that sound like sabotage)
-    Fix: every bundled wrong option must contain at least one item that
-    sounds like a genuine, defensible security practice — the flaw should be
-    a real gap (e.g. "enable encryption and a firewall, but skip password
-    complexity requirements") not a pile of actions no one would ever
-    recommend. If you can't write a wrong bundle where a half-prepared
-    student would hesitate, the question needs a different angle.
+    Same failure, positively framed: NOT limited to EXCEPT/NOT questions — a
+    "which of the following would ALL be ___" question with 2-3-item bundles
+    per option is just as vulnerable. SHIPPED FAILURE: a network-security
+    question where two wrong bundles read "disconnect all devices... disable
+    authentication systems entirely" and "remove encryption protocols...
+    configure the network for open access" — so absurd the question was
+    answerable with zero networking knowledge, just by spotting which
+    bundles "sound like sabotage." Fix: every bundled wrong option must
+    contain at least one genuinely defensible-sounding item — the flaw
+    should be a real gap (e.g. "enable encryption and a firewall, but skip
+    password complexity requirements"), never a pile of actions no one would
+    ever recommend.
 3c. Exactly ONE option may be correct. Re-read all distractors to confirm
     none is also defensibly right. If two could be argued, rewrite.
 3d. Use "All of the above" / "None of the above" in at most 1 in 20 questions.
@@ -333,38 +283,19 @@ GOOD:
     eliminate this option using only common sense, with zero knowledge of
     this event's subject matter?" If yes, it fails this rule — rewrite it as
     a genuine, specific, subject-grounded distractor.
-3g. NARROW EXCEPTION — invented-but-plausible-SOUNDING terms, for
-    "identify the real one" questions ONLY. For a question that asks the
-    student to pick the one item that is/is NOT an actual example of a named
-    category (e.g. "Which of the following is NOT an actual type of
-    malware?", "Which of these is a real network protocol?"), a distractor
-    does not have to be a real term at all — it only has to be constructed
-    from real-sounding roots/prefixes/suffixes so that only someone who
-    actually knows the real terminology can rule it out. This is a
-    DIFFERENT, GOOD technique from the extreme/strawman failures documented
-    elsewhere in this rule — a fabricated term that sounds plausible is
-    genuinely tempting, not a giveaway.
-    Example: "Which of the following is NOT an actual type of malware?"
-    A) Trojan horse   B) Ransomware   C) Blackhole virus   D) Worm
-    (Blackhole virus is invented — it is not a real malware category — but
-    it is built from real malware vocabulary ("virus" + a plausible-sounding
-    descriptor) so it reads as entirely believable next to three genuine
-    terms. This is exactly the kind of tempting-but-wrong option 3g calls
-    for; do not use an obviously-silly or unrelated invented name instead.)
-    Scope this NARROWLY:
-      - Only for identification/recall questions about a named category of
-        terms (malware types, protocols, file formats, hardware standards,
-        software categories) — never for scenario/application/EXCEPT
-        questions about actions or procedures, where an invented term would
-        just be confusing, not tempting.
-      - Do not overuse — most questions should still follow 3a-3f's
-        real-term approach. This is one available technique for one
-        question shape, not a new default.
-      - The invented term must never be presented as a fact or asserted as
-        true anywhere (stem, explanation, or correct answer) — it exists
-        only as a wrong option, so RULE 5a's "don't invent facts" is not in
-        tension with this: the fabrication is the point of the distractor,
-        not a claim about the world.
+3g. NARROW EXCEPTION for "identify the real one" questions ONLY (e.g.
+    "Which of the following is NOT an actual type of malware?"): a
+    distractor doesn't have to be a real term — build one from real-sounding
+    roots/prefixes so only someone who knows the real terminology can rule
+    it out. Example: A) Trojan horse B) Ransomware C) Blackhole virus (fake,
+    but built from real malware vocabulary — reads as believable, not silly)
+    D) Worm. Scope NARROWLY: only for named-category identification
+    (malware, protocols, file formats, hardware standards) — never for
+    scenario/action questions, where a fake term is just confusing. Don't
+    overuse — most questions still follow 3a-3f's real-term approach. The
+    invented term must never be asserted as true anywhere (stem or
+    explanation) — it exists only as a wrong option, so this doesn't
+    conflict with RULE 5a's "don't invent facts."
 
 BAD (fillers are vague):
   A) The trial balance and prior-period figures
@@ -398,20 +329,13 @@ GOOD (all sound like textbook answers):
     between two extreme wrong values.
 4e. Negative stems ("Which is NOT...") in at most 1 in 5 questions.
     Capitalize NOT and EXCEPT.
-4f. NEVER put any answer-indicator inside the text of an option — no "✓",
-    "*", "(correct)", "[correct]", checkmark emoji, or similar mark. The
-    option text is shown to the student BEFORE they answer, so any such
-    mark instantly gives away the answer. This has shipped as a real bug:
-    an option's text ended with a literal "✓" and spoiled the answer before
-    the student clicked anything. Every example in this document that shows
-    which option is correct does so on a SEPARATE line below the options
-    (e.g. "(Correct: B)") — that annotation is for you, the model, to
-    understand the example. It is never part of the option text itself and
-    must never appear inside any option string you output. Only the
-    designated answer field (e.g. "answer" or "correct_index") in the JSON
-    output identifies the correct option — option text must be a clean,
-    self-contained statement with zero markup, symbols, or hints revealing
-    correctness.
+4f. NEVER put any answer-indicator inside an option's text — no "✓", "*",
+    "(correct)", checkmark emoji, or similar. SHIPPED FAILURE: an option's
+    text once ended with a literal "✓", spoiling the answer before the
+    student clicked anything. Every "(Correct: B)"-style annotation in this
+    document is a note for YOU, the model — never copy it into actual option
+    text. Only the JSON answer field identifies the correct option; option
+    text itself must be clean, with zero markup or hints.
 
 ============================================================
 
@@ -476,22 +400,13 @@ GOOD (all sound like textbook answers):
     fact + different phrasing = still a duplicate. (No such section appears
     for single-question live requests — this rule applies when it's present.)
 
-    REAL FAILURE (do not repeat this pattern — this actually shipped):
-    Across one 25-question Operating Systems pool, the SAME fact — "the
+    SHIPPED FAILURE: across one 25-question Operating Systems pool, "the
     process of loading the OS into memory when a computer powers on is
-    called booting" — was asked 7 different times, each just reworded:
-      "The process by which a computer loads the operating system into
-       memory when powered on is called ___"
-      "The process of loading the operating system into memory when a
-       computer is powered on is called ___"
-      "The process of a computer loading the operating system into memory
-       and preparing the hardware for use is called ___"
-      "The process by which a computer loads the operating system from
-       storage into memory when powered on is called ___"
-      ...and 3 more near-identical phrasings.
-    These are ONE fact, not seven. Only the first occurrence is acceptable —
-    every later one is a rule violation, no matter how the sentence is
-    rearranged.
+    called booting" was asked 7 different times, each just reworded (e.g.
+    "The process by which a computer loads the OS into memory when powered
+    on..." vs "The process of a computer loading the OS into memory and
+    preparing hardware for use..."). These are ONE fact, not seven — only
+    the first occurrence is acceptable, no matter how later ones reword it.
 
     "Same topic, different question" is required and expected — a knowledge
     area like Operating Systems easily supports 25+ genuinely distinct facts

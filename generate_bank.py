@@ -174,6 +174,7 @@ Difficulty tier: {difficulty_tier} — follow RULE 1B's distribution for this
 tier exactly. Do not drift toward "hard" as a goal; match what would
 realistically appear on this specific event's real objective test.
 {focus}
+{objectives_block}
 {type_focus}
 {body}
 ============================================================
@@ -195,7 +196,7 @@ Respond with ONLY a JSON array (no code fences, no other text) of
   "correct_index": integer 0-3,
   "explanation": 2-3 sentence string,
   "type": one of "definition_recall", "concept_completion",
-          "which_of_following", "all_except", "scenario_judgment"
+          "which_of_following", "all_except", "scenario_judgment"{objective_field}
 """
 
 def type_mix_directive(n):
@@ -283,6 +284,26 @@ def already_asked_block(prior_questions):
         "Pick a genuinely DIFFERENT fact from the source material instead:\n"
         + a_lines
     )
+
+def objective_tagging_block(objectives):
+    """Section-tier only: mirrors server.js's live-generation equivalent.
+    Tells the model to tag every question with which specific objective (by
+    number) it tests, so bulk-generated section banks can eventually power
+    the same per-objective results breakdown the live path already supports.
+    Returns (objectives_block, objective_field) — both empty strings for the
+    event/objective tiers, which don't call this."""
+    if not objectives:
+        return "", ""
+    listing = "\n".join(f"{o['num']}. {o['text']}" for o in objectives)
+    objectives_block = (
+        "\n--- OBJECTIVES IN THIS SECTION ---\n"
+        "Tag every question with \"objective_num\" — the number of the ONE "
+        "objective below that it most directly tests. Use ONLY these exact "
+        "numbers, and pick the single best match even if a question could "
+        "loosely touch more than one:\n" + listing
+    )
+    objective_field = ',\n  "objective_num": integer (matching one of the objective numbers listed above)'
+    return objectives_block, objective_field
 
 ANSWER_INDICATOR_RE = re.compile(
     r"\s*(?:✓|✔|☑|✅|\*+|\(\s*correct\s*\)|\[\s*correct\s*\]|<-+\s*correct)\s*$",
@@ -750,14 +771,16 @@ def generate_event_tier(client, org, event, rules, state, dry_run=False):
                       "just one topic: " + " | ".join(picks))
         else:
             focus = ""
-        prompt = PROMPT_TEMPLATE.format(
-            rules=rules, event=event, area=section["name"],
-            difficulty_tier=difficulty_tier(event),
-            focus=focus, type_focus=type_mix_directive(n),
-            body=section["body"][:6000], n=n,
-            already_asked=already_asked_block(prior),
-        )
-        got = _generate_batch(client, prompt, section["name"], state, prior, event)
+        def build_prompt(n, extra_prior, section=section, focus=focus):
+            return PROMPT_TEMPLATE.format(
+                rules=rules, event=event, area=section["name"],
+                difficulty_tier=difficulty_tier(event),
+                focus=focus, objectives_block="", objective_field="",
+                type_focus=type_mix_directive(n),
+                body=section["body"][:6000], n=n,
+                already_asked=already_asked_block(extra_prior),
+            )
+        got = _generate_batch(client, build_prompt, section["name"], state, n, prior, event)
         if got:
             bank.extend(got)
             with open(bank_path, "w", encoding="utf-8") as f:
@@ -813,14 +836,18 @@ def generate_section_tier(client, org, event, rules, state, dry_run=False):
                           "just one topic: " + " | ".join(picks))
             else:
                 focus = ""
-            prompt = PROMPT_TEMPLATE.format(
-                rules=rules, event=event, area=key,
-                difficulty_tier=difficulty_tier(event),
-                focus=focus, type_focus=type_mix_directive(n),
-                body=section["body"][:6000], n=n,
-                already_asked=already_asked_block(bank),
-            )
-            got = _generate_batch(client, prompt, key, state, bank, event)
+            objectives_block, objective_field = objective_tagging_block(objectives)
+            def build_prompt(n, extra_prior, key=key, focus=focus,
+                              objectives_block=objectives_block, objective_field=objective_field):
+                return PROMPT_TEMPLATE.format(
+                    rules=rules, event=event, area=key,
+                    difficulty_tier=difficulty_tier(event),
+                    focus=focus, objectives_block=objectives_block, objective_field=objective_field,
+                    type_focus=type_mix_directive(n),
+                    body=section["body"][:6000], n=n,
+                    already_asked=already_asked_block(extra_prior),
+                )
+            got = _generate_batch(client, build_prompt, key, state, n, bank, event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -863,14 +890,16 @@ def generate_objective_tier(client, org, event, rules, state, dry_run=False):
         while len(bank) < target:
             n = min(BATCH_SIZE, target - len(bank))
             focus = f"Focus ONLY on this specific objective — do not draw questions from the rest of the section: \"{obj['text']}\""
-            prompt = PROMPT_TEMPLATE.format(
-                rules=rules, event=event, area=section["name"],
-                difficulty_tier=difficulty_tier(event),
-                focus=focus, type_focus=type_mix_directive(n),
-                body=section["body"][:6000], n=n,
-                already_asked=already_asked_block(bank),
-            )
-            got = _generate_batch(client, prompt, section["name"], state, bank, event)
+            def build_prompt(n, extra_prior, section=section, focus=focus):
+                return PROMPT_TEMPLATE.format(
+                    rules=rules, event=event, area=section["name"],
+                    difficulty_tier=difficulty_tier(event),
+                    focus=focus, objectives_block="", objective_field="",
+                    type_focus=type_mix_directive(n),
+                    body=section["body"][:6000], n=n,
+                    already_asked=already_asked_block(extra_prior),
+                )
+            got = _generate_batch(client, build_prompt, section["name"], state, n, bank, event)
             if got:
                 bank.extend(got)
                 banks[key] = bank
@@ -882,7 +911,8 @@ def generate_objective_tier(client, org, event, rules, state, dry_run=False):
     push_event(org, event, bank_path, sum(len(v) for v in banks.values()))
 
 # --------------------------- SHARED HELPER ---------------------------
-def _generate_batch(client, prompt, area_name, state, prior_questions=None, event=None):
+def _generate_batch(client, prompt_builder, area_name, state, target_n,
+                     prior_questions=None, event=None, max_attempts=4):
     """Retry-guarded batch call: parse -> mechanical quality checks ->
     assign positions -> checkpoint -> rolling self-check.
 
@@ -893,61 +923,75 @@ def _generate_batch(client, prompt, area_name, state, prior_questions=None, even
     independent, stateless API call, and across hundreds of them some will
     drift even with perfect prompt text. This mirrors server.js's live-path
     enforcement exactly so bulk-generated banks get the same guarantee.
-    Tracks the least-bad attempt across retries so one stubborn batch never
-    silently produces nothing — worst case it keeps the best available
-    attempt instead of skipping the batch outright.
 
-    The "best" comparison ranks by (dupe_count, length_count) as a tuple, NOT
-    a flat sum — a real bug shipped where a 3-attempt tie (1 dupe on attempt
-    1, 1 length-tell on attempts 2 and 3 — all "1 total violation") kept
-    attempt 1 by default (first-seen wins ties under strict <), landing an
-    actual duplicate question in a live bank. A duplicate is strictly worse
-    than a length-tell (it's a wasted, unusable question; a length-tell is a
-    partial quality issue), so it must never lose a tie-break to one."""
-    best = None
-    best_rank = None
-    for attempt in (1, 2, 3):
+    SURGICAL RETRY, not whole-batch retry: a real cost problem was found —
+    when a batch of 5 had just 1 bad question, the old logic threw away all
+    5 and paid full price (the entire ~7,700-token rules file resent, plus 5
+    fresh questions of output) to regenerate from scratch. Now each attempt
+    only asks for the remaining GAP (target_n - questions already kept from
+    earlier attempts), via `prompt_builder(n, extra_prior)` which rebuilds
+    the prompt for exactly that count, with the already-kept-good questions
+    folded into the already-asked memory so they can't be re-asked. This
+    eliminates real waste (regenerating already-fine content) without
+    weakening the quality bar at all — every kept question still passes the
+    exact same mechanical checks it always did.
+
+    `prompt_builder(n, extra_prior)` must return a complete prompt string
+    for exactly `n` new questions, given `extra_prior` = prior_questions
+    plus anything kept so far in this call."""
+    kept = []
+    remaining = target_n
+    worst_rank_seen = None
+    for attempt in range(1, max_attempts + 1):
+        extra_prior = (prior_questions or []) + kept
+        prompt = prompt_builder(remaining, extra_prior)
         try:
             raw = call_model(client, prompt)
             parsed = parse_questions(raw, area_name)
-            length_violations = find_length_violations(parsed)
-            dupe_violations = find_duplicate_violations(parsed, prior_questions)
-            rank = (len(dupe_violations), len(length_violations))
-
-            if best is None or rank < best_rank:
-                best = parsed
-                best_rank = rank
-
-            if dupe_violations or length_violations:
-                reasons = []
-                if length_violations:
-                    reasons.append(f"{len(length_violations)} length-tell")
-                if dupe_violations:
-                    reasons.append(f"{len(dupe_violations)} duplicate")
-                print(f"    {', '.join(reasons)} violation(s) (attempt {attempt}) — retrying")
-                continue
-
-            got = assign_positions(parsed, state)
-            maybe_checkpoint(state)
-            _run_state["questions"].extend(got)
-            self_check(event, area_name)
-            return got
         except ValueError as e:
             print(f"    bad JSON from model (attempt {attempt}): {e}")
+            continue
         except Exception as e:
             print(f"    API error: {e} — waiting {RATE_LIMIT_WAIT}s")
             time.sleep(RATE_LIMIT_WAIT)
+            continue
 
-    if best is not None:
-        dupe_n, length_n = best_rank
-        print(f"    all attempts had violations — using least-bad available "
-              f"({dupe_n} duplicate, {length_n} length-tell)")
-        got = assign_positions(best, state)
-        maybe_checkpoint(state)
-        _run_state["questions"].extend(got)
-        self_check(event, area_name)
-        return got
-    return None
+        length_violations = find_length_violations(parsed)
+        dupe_violations = find_duplicate_violations(parsed, extra_prior)
+        bad_ids = {id(q) for q in length_violations} | {id(q) for q in dupe_violations}
+        good = [q for q in parsed if id(q) not in bad_ids]
+        rank = (len(dupe_violations), len(length_violations))
+        if worst_rank_seen is None or rank > worst_rank_seen:
+            worst_rank_seen = rank
+
+        if bad_ids:
+            reasons = []
+            if length_violations:
+                reasons.append(f"{len(length_violations)} length-tell")
+            if dupe_violations:
+                reasons.append(f"{len(dupe_violations)} duplicate")
+            print(f"    {', '.join(reasons)} violation(s) among {len(parsed)} "
+                  f"(attempt {attempt}) — kept {len(good)} good, retrying just the gap")
+
+        kept.extend(good)
+        remaining = target_n - len(kept)
+        if remaining <= 0:
+            break
+
+    if not kept:
+        return None
+    if len(kept) < target_n:
+        print(f"    only got {len(kept)}/{target_n} fully-clean questions after "
+              f"{max_attempts} attempts — shipping the partial batch (every "
+              f"question shipped still individually passed all checks; none of "
+              f"the flat 'least-bad, violations-and-all' fallback this used to have)")
+
+    kept = kept[:target_n]
+    got = assign_positions(kept, state)
+    maybe_checkpoint(state)
+    _run_state["questions"].extend(got)
+    self_check(event, area_name)
+    return got
 
 # ------------------------------ MAIN --------------------------------
 TIER_FN = {

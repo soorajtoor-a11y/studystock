@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The time required for products to move through the distribution network from manufacturer to customer is called ___.",
+  "options": [
+   "lead time",
+   "order fulfillment",
+   "supply velocity",
+   "inventory turnover"
+  ],
+  "correct_index": 0,
+  "explanation": "Lead time is the specific supply chain term for the duration products spend moving through distribution channels. It is a critical metric for managing customer expectations and inventory levels. The other terms refer to related but distinct SCM concepts.",
+  "type": "definition_recall",
+  "knowledge_area": "Contemporary Issues",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In supply chain management, the movement of money between suppliers, manufacturers, distributors, and customers to pay for goods and services is part of ___.",
+  "options": [
+   "inventory control",
+   "demand forecasting",
+   "financial flow",
+   "logistics management"
+  ],
+  "correct_index": 2,
+  "explanation": "Financial flow is the component of SCM that tracks and manages the payment and monetary transactions across all parties in the supply chain. It ensures that cash, invoices, and credit terms move smoothly from customer back through distributors to suppliers. Logistics, inventory, and forecasting manage the physical or informational side of the chain, not the monetary one.",
+  "type": "definition_recall",
+  "knowledge_area": "Contemporary Issues",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are ways e-business has impacted supply chain management EXCEPT ___.",
+  "options": [
+   "increased complexity requiring manual oversight at every distribution point",
+   "real-time tracking of shipments and inventory levels across the network",
+   "faster data exchange between suppliers, manufacturers, and customers",
+   "improved visibility and transparency in order fulfillment"
+  ],
+  "correct_index": 0,
+  "explanation": "E-business has actually reduced the need for manual oversight by automating data sharing and enabling real-time monitoring—the opposite of what option B claims. Options A, C, and D are all genuine benefits that e-business has brought to supply chains. The question tests whether students understand which improvements e-business actually delivers.",
+  "type": "all_except",
+  "knowledge_area": "Contemporary Issues",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The shift toward online retail and digital marketplaces has fundamentally altered how products reach end consumers, requiring supply chains to adapt their ___ to serve direct-to-consumer and omnichannel models.",
+  "options": [
+   "inventory audits",
+   "distribution channels",
+   "supplier contracts",
+   "quality assurance protocols"
+  ],
+  "correct_index": 1,
+  "explanation": "E-commerce has forced supply chains to rethink distribution channels, moving away from traditional brick-and-mortar retail toward fulfillment centers, last-mile delivery networks, and direct shipping. The other options are parts of SCM but are not fundamentally reshaped by e-commerce adoption in the way distribution channels are.",
+  "type": "definition_recall",
+  "knowledge_area": "Contemporary Issues",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The adoption of e-commerce platforms and digital ordering systems has transformed supply chain operations by enabling real-time inventory visibility, faster order processing, and direct customer feedback. These changes collectively represent ___.",
+  "options": [
+   "demand forecasting",
+   "channel integration",
+   "logistics optimization",
+   "supply chain digitization"
+  ],
+  "correct_index": 3,
+  "explanation": "E-commerce impact on SCM is fundamentally about digitization—moving from manual, paper-based processes to digital, automated systems that connect all parties in the chain. This enables the speed and transparency that modern supply chains require, distinguishing it from the other options which are either outcomes of digitization or separate SCM functions.",
+  "type": "concept_completion",
+  "knowledge_area": "Contemporary Issues",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of connecting suppliers, manufacturers, logistics providers, and customers into one coordinated system to improve efficiency and reduce costs is called ___.",
+  "options": [
+   "facility network optimization",
+   "supply chain fragmentation",
+   "supply chain integration",
+   "demand forecasting"
+  ],
+  "correct_index": 2,
+  "explanation": "Supply chain integration is the deliberate connection of all supply chain partners into a unified, coordinated system. This differs from fragmentation (disconnected systems), demand forecasting (predicting customer needs), and facility network optimization (designing warehouse locations).",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Planning and Design",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are all key activities involved in describing how suppliers, subcontractors, transport providers, and distribution centers are selected and structured?",
+  "options": [
+   "Evaluating vendor capabilities, negotiating contracts, defining roles, and establishing performance metrics",
+   "Reducing tariffs, automating warehouses, and consolidating shipping routes",
+   "Forecasting seasonal demand, adjusting inventory levels, and reducing order frequencies",
+   "Training employees, implementing safety protocols, and monitoring equipment maintenance"
+  ],
+  "correct_index": 0,
+  "explanation": "Selecting and structuring supply chain partners requires evaluating their capabilities, negotiating terms, defining clear roles, and setting measurable performance standards. Option B focuses on demand management, C on cost reduction, and D on operational safety—none address partner selection and structural design.",
+  "type": "which_of_following",
+  "knowledge_area": "Supply Chain Planning and Design",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are components of efficient facility network design EXCEPT",
+  "options": [
+   "capacity planning to match warehouse size with expected demand",
+   "strategic location of warehouses to minimize shipping distances and costs",
+   "configuration of distribution centers to serve regional markets effectively",
+   "detailed tracking of individual supplier profit margins"
+  ],
+  "correct_index": 3,
+  "explanation": "Efficient facility network design focuses on warehouse locations (A), capacity aligned with demand (B), and distribution center configuration (D). Tracking individual supplier profit margins (C) is a purchasing or vendor management task, not a facility network design activity.",
+  "type": "all_except",
+  "knowledge_area": "Supply Chain Planning and Design",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The coordination of product availability with actual customer demand throughout the supply chain involves ___.",
+  "options": [
+   "transportation cost reduction",
+   "facility location analysis",
+   "inventory forecasting and demand balancing",
+   "supplier contract negotiation"
+  ],
+  "correct_index": 2,
+  "explanation": "Managing supply and demand means aligning how much product is available with how much customers want, using forecasting and balancing techniques. Supplier negotiation (B), cost reduction (C), and location analysis (D) are separate supply chain functions that don't directly address supply-demand coordination.",
+  "type": "concept_completion",
+  "knowledge_area": "Supply Chain Planning and Design",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of linking purchasing decisions with supplier selection, quality standards, and performance metrics to create a unified system across the supply chain is known as ___.",
+  "options": [
+   "demand forecasting",
+   "supply chain alignment",
+   "logistics optimization",
+   "facility consolidation"
+  ],
+  "correct_index": 1,
+  "explanation": "Supply chain alignment refers to the coordinated integration of purchasing, supplier management, and performance evaluation into one cohesive system. This is distinct from demand forecasting (which predicts customer needs) and logistics optimization (which focuses on transportation efficiency), making alignment the correct concept here.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Planning and Design",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability to use spreadsheet software to analyze data, create forecasts, and manage supply chain metrics is referred to as ___",
+  "options": [
+   "Data visualization literacy",
+   "Excel knowledge",
+   "Systems integration expertise",
+   "Database management proficiency"
+  ],
+  "correct_index": 1,
+  "explanation": "Excel knowledge is a critical technical skill for supply chain managers because it enables them to organize large datasets, perform calculations, and generate reports essential to supply chain operations. While database management and data visualization are related skills, Excel specifically is highlighted as a core competency for successful supply chain professionals.",
+  "type": "definition_recall",
+  "knowledge_area": "Characteristics for Successful Supply Chain Managers",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A supply chain manager's ability to resolve conflicts between departments, listen actively to team members, and work through operational challenges collaboratively describes ___",
+  "options": [
+   "Inventory control expertise",
+   "Strategic planning capability",
+   "Vendor management competence",
+   "People and problem-solving skills"
+  ],
+  "correct_index": 3,
+  "explanation": "People and problem-solving skills encompass both interpersonal abilities and the capacity to work through complex operational issues with a team-focused approach. These skills enable managers to navigate the human and procedural dimensions of supply chain management, which is essential for effective leadership and operational success.",
+  "type": "definition_recall",
+  "knowledge_area": "Characteristics for Successful Supply Chain Managers",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The combination of technical abilities, emotional intelligence, and collaborative mindset that allow a supply chain manager to lead teams, solve problems, and adapt to changing conditions makes up ___",
+  "options": [
+   "Core managerial competencies",
+   "Supply chain resilience",
+   "Operational efficiency",
+   "Logistics infrastructure"
+  ],
+  "correct_index": 0,
+  "explanation": "Core managerial competencies in supply chain management integrate leadership skills, problem-solving abilities, and the interpersonal strengths needed to guide teams through complex, dynamic environments. This concept pulls together multiple required characteristics—communication, people skills, flexibility, and technical knowledge—into a unified framework for manager success.",
+  "type": "concept_completion",
+  "knowledge_area": "Characteristics for Successful Supply Chain Managers",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all support a supply chain manager's effectiveness in their role?",
+  "options": [
+   "Resistance to organizational change, limited technology background, and preference for working alone",
+   "Avoidance of cross-functional meetings, minimal spreadsheet experience, and inflexible processes",
+   "Advanced Excel skills, strong problem-solving abilities, and collaborative communication",
+   "Poor listening skills, limited data analysis ability, and narrow focus on single departments"
+  ],
+  "correct_index": 2,
+  "explanation": "A successful supply chain manager requires Excel proficiency for data management, problem-solving skills to address operational challenges, and collaborative communication to work effectively across departments and with team members. The other options describe weaknesses or gaps that would hinder rather than support managerial effectiveness.",
+  "type": "which_of_following",
+  "knowledge_area": "Characteristics for Successful Supply Chain Managers",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all enhance a supply chain manager's ability to perform effectively in a fast-paced, global environment?",
+  "options": [
+   "Avoiding cross-functional meetings, strict adherence to outdated procedures, and minimal team involvement in decisions",
+   "Isolation from team feedback, reliance on manual processes, and reluctance to embrace continuous improvement",
+   "Multilingual communication abilities, cultural awareness, and adaptability to changing market conditions",
+   "Preference for single-supplier relationships, resistance to new technologies, and focus on short-term cost reduction"
+  ],
+  "correct_index": 2,
+  "explanation": "Multilingual communication, cultural awareness, and adaptability directly support a manager's effectiveness in global supply chains where coordination across borders and rapid response to market shifts are essential. The other three options describe counterproductive behaviors—supplier concentration, resistance to technology, and poor communication—that would undermine performance in a dynamic environment.",
+  "type": "which_of_following",
+  "knowledge_area": "Characteristics for Successful Supply Chain Managers",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A distribution channel that moves products through a manufacturer, then directly to a retailer, and finally to the customer is called a(n) ___",
+  "options": [
+   "one-level channel",
+   "two-level channel",
+   "indirect channel",
+   "three-level channel"
+  ],
+  "correct_index": 0,
+  "explanation": "A one-level channel has exactly one intermediary (the retailer) between manufacturer and customer. Two-level channels add a wholesaler; three-level channels add both an agent and a wholesaler. This is a straightforward structure recognition question testing channel architecture.",
+  "type": "definition_recall",
+  "knowledge_area": "Channels of Distribution",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of a distribution channel to ensure customers receive products at the right location and at the right moment in time reflects which core channel function?",
+  "options": [
+   "Ownership transfer",
+   "Place and time utility",
+   "Sorting and assembly",
+   "Risk sharing"
+  ],
+  "correct_index": 1,
+  "explanation": "Place and time utility refers to making products available where and when customers need them—a fundamental value that distribution channels create. Risk sharing is a separate benefit; ownership transfer is legal documentation; sorting is a logistics task. This tests understanding of how channels create customer value.",
+  "type": "concept_completion",
+  "knowledge_area": "Channels of Distribution",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following factors would all influence a manufacturer's choice of distribution channel?",
+  "options": [
+   "Historical exchange rates, international tariff codes, and competitor advertising budgets",
+   "Retail store hours, consumer social media preferences, and shipping container sizes",
+   "Customer wealth, warehouse location, and employee vacation schedules",
+   "Product perishability, competitive intensity in the market, and the company's financial resources"
+  ],
+  "correct_index": 3,
+  "explanation": "Product characteristics (perishability), competition, and company resources are all explicitly cited as factors impacting channel choice. The other bundles mix genuinely relevant factors with irrelevant logistics details (store hours, vacation schedules) or external factors outside channel strategy (exchange rates, tariff codes). This tests recognizing which real determinants drive channel decisions.",
+  "type": "which_of_following",
+  "knowledge_area": "Channels of Distribution",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Intermediaries in a distribution channel perform all of the following functions EXCEPT",
+  "options": [
+   "Creating ownership utility by transferring product title to the next party",
+   "Providing financing and maintenance services after the sale",
+   "Sorting and assembling products into customer-ready assortments",
+   "Manufacturing the finished product from raw materials"
+  ],
+  "correct_index": 3,
+  "explanation": "Manufacturing is the producer's role, not an intermediary function. Intermediaries do perform sorting, provide post-purchase services, and facilitate ownership transfer through the channel. This tests understanding of the boundary between manufacturing (producer) and distribution (channel members).",
+  "type": "all_except",
+  "knowledge_area": "Channels of Distribution",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The functions of creating assortments of products from multiple suppliers, dividing large shipments into smaller quantities, and providing information to buyers about available products make up which core distribution channel activity?",
+  "options": [
+   "Risk sharing",
+   "Facilitation",
+   "Sorting and assembly",
+   "Post-purchase service"
+  ],
+  "correct_index": 2,
+  "explanation": "Sorting and assembly—breaking down bulk inventory, creating product assortments, and organizing goods for retailers and customers—are essential marketing channel functions that add place and form utility. Facilitation refers to support services like financing and information sharing, while risk sharing addresses how channel members distribute business risks.",
+  "type": "concept_completion",
+  "knowledge_area": "Channels of Distribution",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A point in the supply chain where inventory is held to decouple supply from demand is called a(n) ___.",
+  "options": [
+   "decoupling point",
+   "demand forecasting hub",
+   "buffer zone",
+   "safety stock location"
+  ],
+  "correct_index": 0,
+  "explanation": "A decoupling point is a specific location in the supply chain where inventory is strategically positioned to separate upstream supply processes from downstream demand, allowing each to operate independently. This enables faster response to customer demand while maintaining stable production schedules. The other terms describe related concepts but not the specific structural element that decouples supply from demand.",
+  "type": "definition_recall",
+  "knowledge_area": "Improving Supply Chain Network Performance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of using metrics and data analysis to determine how well a supply chain is meeting customer expectations and organizational goals is called ___.",
+  "options": [
+   "supplier negotiation",
+   "performance evaluation",
+   "demand forecasting",
+   "inventory balancing"
+  ],
+  "correct_index": 1,
+  "explanation": "Performance evaluation is the systematic process of assessing supply chain effectiveness through measurable metrics. This concept directly addresses how organizations determine whether their supply chain operations are successfully meeting both customer needs and business objectives. The other options refer to different supply chain functions that support but do not constitute the evaluation process itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Improving Supply Chain Network Performance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The strategies, processes, and systems used to identify, understand, and consistently deliver what customers actually want and need throughout their interaction with a supply chain make up ___.",
+  "options": [
+   "demand planning",
+   "customer needs fulfillment",
+   "logistics management",
+   "supplier quality control"
+  ],
+  "correct_index": 1,
+  "explanation": "Customer needs fulfillment encompasses the comprehensive approach to meeting and improving customer satisfaction by aligning supply chain operations with what customers require—from product availability and delivery speed to quality and responsiveness. This concept goes beyond simple order fulfillment to include understanding customer expectations and continuously improving how the supply chain serves them. The other options are related functions but do not capture the holistic customer-centered focus.",
+  "type": "concept_completion",
+  "knowledge_area": "Improving Supply Chain Network Performance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all help a supply chain improve its ability to meet the needs of a cost-sensitive customer segment?",
+  "options": [
+   "Increase product variety, add expedited shipping options, and implement premium packaging",
+   "Use advanced technology systems, implement 24/7 customer support, and create specialized product lines",
+   "Expand delivery locations, offer multiple service tiers, and increase inventory levels",
+   "Optimize transportation routes, reduce warehousing costs, and negotiate bulk supplier discounts"
+  ],
+  "correct_index": 3,
+  "explanation": "Cost-sensitive customers prioritize affordability, so improvements must focus on reducing expenses throughout the supply chain—optimizing routes lowers transportation costs, reducing warehouse expenses cuts operational overhead, and bulk discounts decrease product costs that can be passed along. These strategies directly address the primary concern of a budget-conscious customer segment. The other options either add costly features (expedited shipping, premium packaging, expanded locations) or premium services that do not align with cost sensitivity.",
+  "type": "which_of_following",
+  "knowledge_area": "Improving Supply Chain Network Performance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of moving products closer to customers' locations to reduce delivery time and transportation costs while maintaining service quality is called ___.",
+  "options": [
+   "inventory maximization",
+   "demand synchronization",
+   "proximity to the customer",
+   "decoupling optimization"
+  ],
+  "correct_index": 2,
+  "explanation": "Proximity to the customer is a supply chain strategy that positions inventory and distribution closer to end consumers to improve efficiency and responsiveness. This contrasts with centralized warehousing and reduces the distance products must travel, lowering both time and cost. Inventory maximization, decoupling optimization, and demand synchronization are related but distinct supply chain concepts.",
+  "type": "definition_recall",
+  "knowledge_area": "Improving Supply Chain Network Performance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of using data and statistical methods to examine supply chain information and identify patterns or trends is called ___",
+  "options": [
+   "analytics",
+   "sustainability",
+   "procurement",
+   "forecasting"
+  ],
+  "correct_index": 0,
+  "explanation": "Analytics is the systematic examination of data to uncover insights and inform decision-making in supply chain operations. Forecasting predicts future demand, procurement acquires materials, and sustainability focuses on environmental responsibility—all different SCM functions.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Topics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the processes, strategies, and systems an organization uses to acquire, develop, and maintain relationships with its customers and suppliers make up ___",
+  "options": [
+   "relationship management",
+   "supply market intelligence",
+   "inventory logistics",
+   "sales and operations planning"
+  ],
+  "correct_index": 0,
+  "explanation": "Relationship management encompasses the full range of activities to build and sustain connections with key supply chain partners. Supply market intelligence gathers information about suppliers; sales and operations planning coordinates production and sales; inventory logistics handles stock movement—all more specific functions within relationship management.",
+  "type": "concept_completion",
+  "knowledge_area": "Supply Chain Topics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be components of sustainability in supply chain management?",
+  "options": [
+   "Prioritizing cost-cutting alone, ignoring supplier working conditions, and producing excess stock",
+   "Minimizing waste, reducing carbon emissions, and using ethical labor practices",
+   "Maximizing inventory levels, increasing transportation distances, and outsourcing all manufacturing",
+   "Focusing exclusively on speed, eliminating quality checks, and using single-source suppliers"
+  ],
+  "correct_index": 1,
+  "explanation": "Sustainability in SCM integrates environmental responsibility, social ethics, and long-term viability into supply chain decisions. Options B, C, and D describe practices that are either wasteful, unethical, or operationally risky—they contradict sustainability principles.",
+  "type": "which_of_following",
+  "knowledge_area": "Supply Chain Topics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturing facility is redesigning its supply chain to reduce its environmental impact while maintaining profitability. The facility should focus on achieving ___",
+  "options": [
+   "elimination of quality control to lower operational costs",
+   "maximum transportation volume to capture economies of scale",
+   "supplier diversification and frequent logistics network changes",
+   "sustainability by reducing waste, optimizing transportation routes, and sourcing responsibly"
+  ],
+  "correct_index": 3,
+  "explanation": "Sustainability in SCM balances environmental responsibility with operational efficiency—achieved through waste reduction, optimized logistics, and ethical sourcing practices that lower both environmental impact and long-term costs. The other options either increase waste (A and D) or create inefficient supply chain disruption (B).",
+  "type": "scenario_judgment",
+  "knowledge_area": "Supply Chain Topics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic process of collecting and examining supply chain data to uncover patterns, trends, and insights that inform business decisions is known as ___",
+  "options": [
+   "forecasting",
+   "demand planning",
+   "supply market intelligence",
+   "procurement"
+  ],
+  "correct_index": 2,
+  "explanation": "Supply market intelligence is the process of gathering and analyzing information about suppliers, market conditions, and competitive dynamics in the supply chain. While analytics examines data patterns, supply market intelligence specifically focuses on external market and supplier information that influences strategic decisions.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Topics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A product portfolio is best described as",
+  "options": [
+   "a financial document outlining quarterly sales projections",
+   "the complete range of products that a company produces and sells",
+   "the physical warehouse location where finished goods are stored",
+   "the supply chain route used to distribute products to retailers"
+  ],
+  "correct_index": 1,
+  "explanation": "A product portfolio is the complete range of products a company offers to its customers. It encompasses all items the company produces and sells, allowing management to see the full breadth of their offerings and make strategic decisions about which products to develop, maintain, or discontinue.",
+  "type": "definition_recall",
+  "knowledge_area": "Product Portfolio Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which a company analyzes sales data, customer demand, and market trends to decide which products to manufacture and offer to customers is called",
+  "options": [
+   "inventory rotation",
+   "supply chain optimization",
+   "product portfolio management",
+   "demand forecasting"
+  ],
+  "correct_index": 2,
+  "explanation": "Product portfolio management is the strategic process of determining what products a company will produce and sell based on analysis of company capabilities, market opportunities, customer needs, and profitability. This process ensures the company offers the right mix of products to meet demand while managing resources efficiently.",
+  "type": "concept_completion",
+  "knowledge_area": "Product Portfolio Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The Pareto principle, when applied to product portfolio management, suggests that a company's sales and profits are typically driven by ___.",
+  "options": [
+   "a large number of low-value products sold in equal quantities",
+   "the total number of products offered rather than their individual performance",
+   "an equal distribution of demand across all items in the product line",
+   "a small percentage of products that generate the majority of revenue and profits"
+  ],
+  "correct_index": 3,
+  "explanation": "The Pareto principle (also called the 80/20 rule) states that roughly 80% of sales and profits typically come from about 20% of a company's products. This concept is fundamental to product portfolio decisions, helping managers identify which items deserve priority and resources.",
+  "type": "concept_completion",
+  "knowledge_area": "Product Portfolio Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be indicators that a product is slow-moving and heading toward obsolescence?",
+  "options": [
+   "Declining sales trends, excess inventory buildup, and decreasing customer interest",
+   "Consistently high sales volume, strong customer demand, and rapid inventory turnover",
+   "Growing market share, increasing profit margins, and expanding distribution channels",
+   "New product launches, increased marketing spend, and seasonal demand spikes"
+  ],
+  "correct_index": 0,
+  "explanation": "Slow-moving products heading toward obsolescence are characterized by falling sales, inventory that sits longer without moving, and waning customer interest. These signals tell a company that the product may need to be discontinued, redesigned, or removed from the portfolio to free up resources for faster-moving items.",
+  "type": "which_of_following",
+  "knowledge_area": "Product Portfolio Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retailer notices that 20% of its product inventory generates 80% of its total sales and profits, while the remaining 80% of products account for only 20% of sales. This distribution reflects ___.",
+  "options": [
+   "supply chain optimization",
+   "inventory obsolescence",
+   "the Pareto principle",
+   "demand forecasting accuracy"
+  ],
+  "correct_index": 2,
+  "explanation": "The Pareto principle states that a relatively small percentage of products typically drive the majority of a company's revenue and profits, which is exactly what the retailer's 20/80 split demonstrates. Understanding this principle helps companies focus resources and inventory investment on their highest-performing products.",
+  "type": "definition_recall",
+  "knowledge_area": "Product Portfolio Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The transformation of raw materials into finished goods through production processes is the primary responsibility of which supply chain function?",
+  "options": [
+   "Warehousing and inventory storage",
+   "Manufacturing",
+   "Customer service and support",
+   "Transportation and logistics"
+  ],
+  "correct_index": 1,
+  "explanation": "Manufacturing converts raw materials into finished products that can be distributed to customers. This is a core supply chain function that directly adds value to materials. The other options support different stages of the supply chain but do not perform the actual production transformation.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Process",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are key responsibilities within a supply chain EXCEPT",
+  "options": [
+   "Setting retail prices based on competitor advertising campaigns",
+   "Converting raw materials into finished products through production",
+   "Receiving customer orders and managing delivery expectations",
+   "Managing inventory levels and warehouse storage"
+  ],
+  "correct_index": 0,
+  "explanation": "While pricing is a business function, it is not a core supply chain responsibility—that falls to marketing and sales strategy. Manufacturing, customer service (order management and delivery), and inventory management are all essential supply chain processes. Pricing strategy operates independently of supply chain operations.",
+  "type": "all_except",
+  "knowledge_area": "Supply Chain Process",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The coordination of receiving products, storing them efficiently, and managing stock levels to meet customer demand defines the concept of",
+  "options": [
+   "procurement strategy",
+   "demand forecasting",
+   "quality assurance",
+   "inventory management"
+  ],
+  "correct_index": 3,
+  "explanation": "Inventory management encompasses receiving, storing, and controlling stock to balance customer needs with operational efficiency. It directly supports the supply chain's ability to fulfill orders on time. Demand forecasting, procurement, and quality assurance are separate but related functions that support inventory decisions.",
+  "type": "concept_completion",
+  "knowledge_area": "Supply Chain Process",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be important roles that customer service plays in a supply chain?",
+  "options": [
+   "Responding to order inquiries, managing delivery schedules, and resolving product issues",
+   "Manufacturing finished goods, negotiating supplier contracts, and operating production equipment",
+   "Forecasting raw material needs, sourcing new suppliers, and negotiating bulk discounts",
+   "Designing product packaging, monitoring quality control, and implementing production improvements"
+  ],
+  "correct_index": 0,
+  "explanation": "Customer service directly engages with clients throughout the order and delivery process, addressing inquiries, managing expectations, and handling concerns. These activities ensure customer satisfaction and loyalty. The other options describe manufacturing, procurement, and quality functions that operate behind the scenes.",
+  "type": "which_of_following",
+  "knowledge_area": "Supply Chain Process",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of moving finished products from manufacturing facilities to distribution centers and ultimately to customers is known as",
+  "options": [
+   "warehousing operations",
+   "transportation management",
+   "inventory management",
+   "product returns processing"
+  ],
+  "correct_index": 1,
+  "explanation": "Transportation management specifically refers to the planning, execution, and optimization of moving goods through the supply chain. While inventory management stores products and warehousing holds them, transportation is the distinct function responsible for the physical movement of finished goods from one location to another.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Process",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The practice of hiring external companies to handle specific business functions that were previously managed in-house is called ___.",
+  "options": [
+   "logistics consolidation",
+   "vertical integration",
+   "supply chain diversification",
+   "outsourcing"
+  ],
+  "correct_index": 3,
+  "explanation": "Outsourcing is the deliberate decision to contract external organizations to perform functions previously done internally, allowing companies to focus on core competencies. This is a foundational supply chain strategy that reduces costs and increases flexibility. The other options refer to different supply chain approaches—vertical integration expands internal control, diversification spreads risk across suppliers, and consolidation reduces the number of logistics providers.",
+  "type": "definition_recall",
+  "knowledge_area": "Supply Chain Coordination and Decision Making",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are benefits of outsourcing in supply chain management EXCEPT",
+  "options": [
+   "allowing focus on core business functions",
+   "accessing specialized expertise and technology",
+   "guaranteeing complete control over all product quality standards",
+   "reducing operational costs and overhead"
+  ],
+  "correct_index": 2,
+  "explanation": "While outsourcing provides cost reduction, specialized expertise, and strategic focus, it inherently requires sharing control with external partners—companies cannot guarantee complete control over all quality standards when outsourcing. This represents a genuine trade-off: outsourcing sacrifices some direct control in exchange for efficiency and specialization. The other three options are legitimate, documented advantages of outsourcing.",
+  "type": "all_except",
+  "knowledge_area": "Supply Chain Coordination and Decision Making",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The processes used to evaluate how well a supply chain is meeting organizational and customer objectives make up ___.",
+  "options": [
+   "vendor compliance tracking",
+   "supply chain auditing",
+   "supply chain performance measurement",
+   "logistics benchmarking"
+  ],
+  "correct_index": 2,
+  "explanation": "Supply chain performance measurement is the systematic evaluation of whether the supply chain achieves its goals—cost efficiency, on-time delivery, quality, and customer satisfaction. This encompasses metrics like order fulfillment rate, inventory turnover, and lead time. While auditing, benchmarking, and compliance tracking are related activities, they are narrower practices within the broader framework of performance measurement.",
+  "type": "concept_completion",
+  "knowledge_area": "Supply Chain Coordination and Decision Making",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all improve measured supply chain performance?",
+  "options": [
+   "Adding more distribution centers, increasing product variety, expanding customer base",
+   "Raising supplier prices, decreasing forecast accuracy, slowing inventory turnover",
+   "Increasing inventory storage costs, extending delivery times, reducing supplier reliability",
+   "Reducing order cycle time, improving on-time delivery rate, lowering defect rates"
+  ],
+  "correct_index": 3,
+  "explanation": "Reducing order cycle time, improving on-time delivery, and lowering defects directly improve the core metrics by which supply chain performance is measured—speed, reliability, and quality. These are all within management's direct control through process improvements. The other options contain factors that either increase costs without proportional benefit or actively degrade measurable performance outcomes.",
+  "type": "which_of_following",
+  "knowledge_area": "Supply Chain Coordination and Decision Making",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all represent ways to measure supply chain performance?",
+  "options": [
+   "Customer satisfaction ratings, inventory accuracy, delivery reliability, and cost per unit shipped",
+   "Marketing campaign reach, brand awareness metrics, product pricing strategy, and promotional discounts",
+   "Number of suppliers, warehouse square footage, employee headcount, and equipment age",
+   "Competitor pricing analysis, market share percentage, product feature count, and advertising spend"
+  ],
+  "correct_index": 0,
+  "explanation": "Supply chain performance measurement focuses on operational outcomes and customer-facing metrics—satisfaction ratings reflect customer experience, inventory accuracy indicates operational efficiency, delivery reliability measures dependability, and cost per unit tracks financial performance. The other options include operational characteristics, marketing metrics, and competitive factors that do not directly measure supply chain performance.",
+  "type": "which_of_following",
+  "knowledge_area": "Supply Chain Coordination and Decision Making",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The movement of goods, information, and resources through the supply chain from suppliers to customers is called ___.",
+  "options": [
+   "supply chain integration",
+   "logistics",
+   "strategic orientation",
+   "demand forecasting"
+  ],
+  "correct_index": 1,
+  "explanation": "Logistics is the core process that physically moves and manages goods and information throughout the supply chain. While demand forecasting predicts customer needs and strategic orientation focuses on cost savings, neither describes the actual movement of goods that logistics handles.",
+  "type": "definition_recall",
+  "knowledge_area": "Essential Supply Chain Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are reasons for the growth of supply chain management EXCEPT",
+  "options": [
+   "improved relationship management between trading partners",
+   "increased global competition requiring efficiency",
+   "the information revolution enabling real-time tracking",
+   "the elimination of the need for relationship management"
+  ],
+  "correct_index": 3,
+  "explanation": "SCM growth has actually increased the importance of relationship management, not eliminated it. The information revolution, global competition, and stronger supplier-customer relationships are all documented drivers of SCM growth; the incorrect option contradicts this by claiming relationship management is no longer needed.",
+  "type": "all_except",
+  "knowledge_area": "Essential Supply Chain Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company expanding into international markets must coordinate suppliers, customs processes, tariffs, and logistics partners. These interconnected elements that work together to move goods from origin to final destination make up the ___.",
+  "options": [
+   "demand forecast network",
+   "logistics management system",
+   "entire supply chain",
+   "strategic cost center"
+  ],
+  "correct_index": 2,
+  "explanation": "The entire supply chain encompasses all suppliers, processes, regulations, and logistics partners involved in delivering products from origin to customer. While logistics management and demand forecasting are parts of it, and cost savings are a goal, only 'entire supply chain' describes the full interconnected system spanning multiple organizations and functions.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Essential Supply Chain Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail company wants to reduce operational costs while maintaining on-time delivery to its stores. Which of the following strategies would NOT directly support this goal?",
+  "options": [
+   "Increase the number of distribution centers regardless of actual demand patterns",
+   "Adopt a strategic orientation focused on cost minimization through route optimization and supplier consolidation",
+   "Implement demand forecasting to reduce excess inventory and carrying costs",
+   "Negotiate favorable payment terms with suppliers to improve cash flow"
+  ],
+  "correct_index": 0,
+  "explanation": "Increasing the number of distribution centers without regard to demand would increase fixed costs (facility operations, staffing, overhead) and operational complexity, directly working against the cost-reduction goal. The other three options—strategic cost orientation, demand forecasting, and favorable supplier terms—all support reducing costs while sustaining service levels.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Essential Supply Chain Management Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Work-in-process (WIP) refers to ___",
+  "options": [
+   "materials and components that have completed all manufacturing stages and are ready for shipment to customers",
+   "raw materials and partially completed products currently being manufactured on the production floor",
+   "the inventory of finished goods held in distribution centers waiting to be sold",
+   "supplies ordered from vendors that have not yet arrived at the manufacturing facility"
+  ],
+  "correct_index": 1,
+  "explanation": "Work-in-process specifically identifies materials and products that are in the middle stages of production—not yet complete, but past the raw material stage. This distinguishes WIP from finished goods (complete and ready to ship) and raw materials (not yet started).",
+  "type": "definition_recall",
+  "knowledge_area": "Production Planning and Control",
+  "difficulty": "hard"
+ }
+]

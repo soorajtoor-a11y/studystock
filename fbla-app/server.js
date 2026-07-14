@@ -359,6 +359,11 @@ function bankToQuizFormat(q) {
     explanation:    q.explanation,
     knowledge_area: q.knowledge_area,
     difficulty:     q.difficulty,
+    // Only present on banks regenerated after per-objective breakdown was
+    // added — older banks simply omit it, and the frontend falls back to
+    // the plain score screen when any question in a section-scope quiz is
+    // missing this field.
+    objective_num:  q.objective_num,
   });
 }
 
@@ -739,13 +744,27 @@ function normalizeCards(cards) {
 // Prompt builders
 // ---------------------------------------------------------------------------
 
-function buildGenPrompt(type, count, objective, outline, difficulty, extras = '', event = '', alreadyAsked = []) {
+function buildGenPrompt(type, count, objective, outline, difficulty, extras = '', event = '', alreadyAsked = [], objectivesList = null) {
   const studyBlock = [
     outline ? `--- EVENT OUTLINE ---\n${outline.slice(0, 1500).trim()}` : '',
     extras  ? `--- STUDY CONTENT ---\n${extras.slice(0, 3000).trim()}`  : '',
   ].filter(Boolean).join('\n\n');
 
   if (type === 'quiz') {
+    // Section-scope requests pass the section's individual objectives so
+    // every question can be tagged with the one it tests — this is what
+    // powers the per-objective results breakdown. Event/objective-scope
+    // requests pass null and skip this entirely (event-scope breakdown
+    // uses the existing knowledge_area field instead; objective-scope
+    // doesn't need a breakdown at all).
+    const objectivesBlock = (objectivesList && objectivesList.length) ? `
+--- OBJECTIVES IN THIS SECTION ---
+Tag every question with "objective_num" — the number of the ONE objective
+below that it most directly tests. Use ONLY these exact numbers, and pick
+the single best match even if a question could loosely touch more than one:
+${objectivesList.map(o => `${o.num}. ${o.text}`).join('\n')}
+` : '';
+
     return `${GEN_RULES}
 
 --- TASK ---
@@ -758,12 +777,13 @@ realistically appear on this specific event's real objective test.
 
 Generate exactly ${count} multiple-choice questions about: "${objective}"
 ${studyBlock ? `\n${studyBlock}\n` : ''}
+${objectivesBlock}
 ${alreadyAskedBlock(alreadyAsked)}
 
 Every question — including every one of the ${count} you write in THIS
 response relative to each other — must test a genuinely different fact.
-Format — every object must have these exact keys:
-[{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"2-3 sentences: why correct and why the wrong choices are wrong","knowledge_area":"topic area","difficulty":"${difficulty}"}]
+Format — every object must have these exact keys${objectivesBlock ? ' (including "objective_num")' : ''}:
+[{"question":"...","options":{"A":"...","B":"...","C":"...","D":"..."},"answer":"A","explanation":"2-3 sentences: why correct and why the wrong choices are wrong","knowledge_area":"topic area","difficulty":"${difficulty}"${objectivesBlock ? ',"objective_num":1' : ''}}]
 
 Rules:
 - "answer" must be exactly A, B, C, or D
@@ -801,7 +821,7 @@ Rules:
 // asks for exactly that scope's full bank size; every other count generates
 // fresh with AI so it's never just a sampled subset of the bigger bank.
 app.post('/api/quiz', async (req, res) => {
-  const { org, event, objective, count, difficulty, scope } = req.body;
+  const { org, event, objective, count, difficulty, scope, objectives } = req.body;
   if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
   console.log(`[quiz] org=${org} event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
 
@@ -827,61 +847,61 @@ app.post('/api/quiz', async (req, res) => {
   const outline = extractRelevantSection(getOutline(org, event), objective);
   const extras  = getExtras(org, event);
   const priorQuestions = getRecentQuestions(event, scope, objective);
-  const prompt = buildGenPrompt('quiz', count, objective, outline, difficulty, extras, event, priorQuestions);
+  const objectivesList = scope === 'section' && Array.isArray(objectives) ? objectives : null;
 
-  // Track the least-bad attempt across retries so a request NEVER hard-fails
-  // just because of these mechanical checks — a quiz with one imperfect
-  // question beats no quiz at all. The checks still drive real retries first.
-  //
-  // Ranked by [dupeCount, lengthCount] lexicographically, NOT a flat sum — a
-  // real bug shipped in generate_bank.py's identical logic where a 3-attempt
-  // tie (1 dupe on attempt 1, 1 length-tell on attempts 2 and 3 — all "1
-  // total violation") kept attempt 1 by default (first-seen wins ties under
-  // strict <), landing an actual duplicate question in a live bank. A
-  // duplicate is strictly worse than a length-tell (a wasted, unusable
-  // question vs. a partial quality issue), so it must never lose a
-  // tie-break to one. Mirrored here since this path has the same shape.
-  let bestAttempt = null;
-  let bestRank = null;
-  const rankOf = (dupeCount, lengthCount) => [dupeCount, lengthCount];
-  const rankLess = (a, b) => a[0] !== b[0] ? a[0] < b[0] : a[1] < b[1];
+  // SURGICAL RETRY, not whole-batch retry — mirrors generate_bank.py's
+  // identical fix exactly. Old behavior: if even 1 of `count` questions had
+  // a violation, the WHOLE batch was thrown away and a fresh `count` was
+  // requested from scratch (full rules-file resend + full output, paid
+  // again, to redo work that was mostly already fine). Now each retry only
+  // asks for the remaining GAP (count - kept.length so far), with the
+  // kept-good questions folded into the already-asked memory so they can't
+  // be re-asked. This is a pure cost win with a quality win attached: the
+  // old "least-bad available, violations and all" fallback is gone — every
+  // question that ships now individually passed every check, even if that
+  // means occasionally shipping fewer than `count` questions after
+  // exhausting retries, never a flawed one.
+  let kept = [];
 
   try {
-    const questions = await withRetry(async () => {
+    await withRetry(async () => {
+      const remaining = count - kept.length;
+      const extraPrior = priorQuestions.concat(kept);
+      const prompt = buildGenPrompt('quiz', remaining, objective, outline, difficulty, extras, event, extraPrior, objectivesList);
+
       let raw = '';
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
-      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(count * 350, 16384) });
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(remaining * 350, 16384) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       const parsed = sanitizeQuestions(extractJSON(raw));
       const lengthViolations = findLengthTellViolations(parsed);
-      const dupeViolations   = findDuplicateViolations(parsed, priorQuestions);
-      const rank = rankOf(dupeViolations.length, lengthViolations.length);
+      const dupeViolations   = findDuplicateViolations(parsed, extraPrior);
+      const badSet = new Set([...lengthViolations, ...dupeViolations]);
+      const good = parsed.filter(q => !badSet.has(q));
 
-      if (!bestRank || rankLess(rank, bestRank)) {
-        bestAttempt = parsed;
-        bestRank = rank;
-      }
-      if (dupeViolations.length || lengthViolations.length) {
+      if (badSet.size) {
         const reasons = [];
         if (lengthViolations.length) reasons.push(`${lengthViolations.length} length-tell`);
         if (dupeViolations.length)   reasons.push(`${dupeViolations.length} duplicate`);
-        console.warn(`[quiz] ${reasons.join(', ')} violation(s) — retrying: "${(lengthViolations[0] || dupeViolations[0]).question.slice(0, 60)}..."`);
-        throw new Error('Generated questions failed quality checks — retrying');
+        console.warn(`[quiz] ${reasons.join(', ')} violation(s) among ${parsed.length} — kept ${good.length} good, retrying just the gap`);
       }
-      return parsed;
+
+      kept = kept.concat(good);
+      if (kept.length < count) {
+        throw new Error(`Only ${kept.length}/${count} clean questions so far — retrying for the rest`);
+      }
     });
-    rememberQuestions(event, scope, objective, questions);
-    res.json({ questions: questions.slice(0, count), source: 'ai' });
   } catch (err) {
-    if (bestAttempt) {
-      const [dupeN, lengthN] = bestRank;
-      console.warn(`[quiz] all attempts had violations — serving least-bad available (${dupeN} duplicate, ${lengthN} length-tell)`);
-      rememberQuestions(event, scope, objective, bestAttempt);
-      return res.json({ questions: bestAttempt.slice(0, count), source: 'ai' });
+    if (!kept.length) {
+      console.error('Quiz error:', err.message);
+      return res.status(500).json({ error: err.message });
     }
-    console.error('Quiz error:', err.message);
-    res.status(500).json({ error: err.message });
+    console.warn(`[quiz] only got ${kept.length}/${count} fully-clean questions after retries — serving the partial batch (every question shipped still individually passed all checks)`);
   }
+
+  const questions = kept.slice(0, count);
+  rememberQuestions(event, scope, objective, questions);
+  res.json({ questions, source: 'ai' });
 });
 
 // Flashcard generation — retries up to 3 times total, slices to exact count

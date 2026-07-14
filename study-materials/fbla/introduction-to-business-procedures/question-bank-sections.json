@@ -1,0 +1,3022 @@
+{
+ "Human Relations": [
+  {
+   "question": "The process of introducing a new employee to the organization, its culture, policies, and job responsibilities is called ___",
+   "options": [
+    "orientation",
+    "onboarding documentation",
+    "performance review",
+    "job training"
+   ],
+   "correct_index": 0,
+   "explanation": "Orientation is the formal process that welcomes new employees and familiarizes them with company culture, policies, procedures, and their specific role. While job training focuses on skill development for the position itself, orientation provides the broader organizational context and is typically the first structured interaction a new hire experiences.",
+   "type": "definition_recall",
+   "objective_num": 9,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager notices that her team frequently misses deadlines because work is unevenly distributed—some employees are overloaded while others have spare capacity. Which of the following would best address this problem?",
+   "options": [
+    "Reduce the total number of projects the team accepts",
+    "Assign all new projects to the most efficient employee to ensure quality",
+    "Require all employees to work the same hours regardless of task volume",
+    "Analyze current workload and redistribute tasks based on each employee's capacity and skills"
+   ],
+   "correct_index": 3,
+   "explanation": "Coordinating staff workload distribution involves assessing individual capacity and skill levels, then assigning work fairly to balance the load. This prevents burnout on overloaded employees and maximizes overall team productivity. Simply equalizing hours or concentrating work with one person ignores the real issue—unequal task distribution.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of a manager to influence and guide employees toward achieving organizational goals while building their confidence and commitment is called ___",
+   "options": [
+    "supervision",
+    "performance management",
+    "delegation",
+    "motivation and leadership"
+   ],
+   "correct_index": 3,
+   "explanation": "Motivation and leadership are the core behaviors that inspire employees to perform well and invest in the organization's success. While supervision oversees tasks, delegation assigns work, and performance management evaluates outcomes, motivation and leadership specifically address influencing behavior and building employee engagement and commitment.",
+   "type": "definition_recall",
+   "objective_num": 12,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The set of structured activities designed to teach new employees the specific skills, knowledge, and procedures required to perform their job effectively is called ___",
+   "options": [
+    "job training",
+    "mentorship",
+    "career development",
+    "performance coaching"
+   ],
+   "correct_index": 0,
+   "explanation": "Job training is the formal instructional process that equips employees with the technical skills, tools, and procedural knowledge needed to succeed in their specific role. Mentorship and coaching are ongoing support, while career development addresses long-term growth; training focuses on the immediate, practical preparation for job competence.",
+   "type": "definition_recall",
+   "objective_num": 9,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are key components of an effective new employee orientation EXCEPT",
+   "options": [
+    "Introduction to organizational culture, values, and departmental team members",
+    "A detailed overview of company policies, benefits, and workplace expectations",
+    "A comprehensive performance evaluation assessing the employee's strengths and development areas",
+    "Tour of physical facilities and explanation of safety procedures and emergency protocols"
+   ],
+   "correct_index": 2,
+   "explanation": "Orientation introduces the employee to the organization and prepares them for their role—it includes policies, culture, facilities, and team introductions. A comprehensive performance evaluation, however, measures job performance after the employee has had time to work and develop skills; it is not part of initial orientation but rather occurs later as part of ongoing performance management. Evaluations assess what an employee has accomplished, not what they need to learn on day one.",
+   "type": "all_except",
+   "objective_num": 9,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written summary of an employee's job duties, required qualifications, reporting relationships, and performance expectations is called a(n) ___.",
+   "options": [
+    "performance evaluation",
+    "job description",
+    "employee record",
+    "work procedure manual"
+   ],
+   "correct_index": 1,
+   "explanation": "A job description is a formal document that outlines the specific duties, qualifications, and expectations for a position. It serves as a foundational tool for hiring, training, and evaluating employee performance. This is distinct from a performance evaluation, which assesses how well an employee is fulfilling those duties.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ongoing process of collecting, organizing, and securely storing documents such as attendance records, performance reviews, training certifications, and disciplinary actions related to individual employees is called ___.",
+   "options": [
+    "performance benchmarking",
+    "workload distribution",
+    "employee records maintenance",
+    "policy documentation"
+   ],
+   "correct_index": 2,
+   "explanation": "Employee records maintenance is the systematic management of all personnel documents required for legal compliance, HR decision-making, and employee development tracking. This includes attendance, evaluations, certifications, and discipline documentation. It differs from policy documentation, which covers organizational rules rather than individual employee information.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The structured conversation between a manager and employee in which the manager discusses the employee's accomplishments, areas for improvement, goal progress, and career development needs makes up ___.",
+   "options": [
+    "job training",
+    "a performance evaluation meeting",
+    "workload coordination",
+    "staff scheduling"
+   ],
+   "correct_index": 1,
+   "explanation": "A performance evaluation meeting is a formal discussion where managers and employees review job performance, accomplishments, and areas for growth. This two-way dialogue is essential for clarifying expectations and supporting employee development. It is distinct from job training, which focuses on teaching new skills rather than assessing past performance.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The documented process of regularly reviewing an employee's job performance, discussing strengths and weaknesses, and setting goals for improvement is part of ___",
+   "options": [
+    "performance management and feedback",
+    "job training and skill development",
+    "employee compensation planning",
+    "recruitment and hiring procedures"
+   ],
+   "correct_index": 0,
+   "explanation": "Performance management encompasses the ongoing cycle of evaluation, feedback, and goal-setting that helps employees understand expectations and develop professionally. This is distinct from one-time training or compensation decisions, and occurs after an employee is already hired.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining how effectively work is distributed among team members to ensure no single employee becomes overloaded while others remain underutilized is called ___",
+   "options": [
+    "performance evaluation",
+    "skill assessment",
+    "job rotation",
+    "workload balancing"
+   ],
+   "correct_index": 3,
+   "explanation": "Workload balancing is the management practice of distributing tasks fairly based on each employee's capacity and skills. Job rotation moves employees between positions, performance evaluation judges past work quality, and skill assessment measures ability—none of these directly address the ongoing distribution of current work.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written statement that outlines the required skills, experience, and personal qualities needed for someone to succeed in a specific job role is called a(n) ___.",
+   "options": [
+    "performance standard",
+    "job specification",
+    "employee handbook",
+    "training manual"
+   ],
+   "correct_index": 1,
+   "explanation": "A job specification details the qualifications and competencies required to perform a job effectively. It differs from a job description, which focuses on duties and responsibilities; a specification emphasizes the person-based requirements (education, skills, certifications) needed to fill the role.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The informal, day-to-day interactions and mutual respect between coworkers that enable them to communicate openly, support one another, and function effectively as a unit is called ___.",
+   "options": [
+    "organizational culture",
+    "task coordination",
+    "team synergy",
+    "working relationships"
+   ],
+   "correct_index": 3,
+   "explanation": "Working relationships are the interpersonal bonds and communication patterns that develop between team members. This foundation of trust and respect is essential for collaboration, knowledge-sharing, and problem-solving in groups.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying a specific problem a team faces, gathering input from multiple team members with different perspectives, and reaching a shared solution that each person commits to implement makes up ___.",
+   "options": [
+    "performance feedback",
+    "conflict resolution",
+    "collaborative problem-solving",
+    "task delegation"
+   ],
+   "correct_index": 2,
+   "explanation": "Collaborative problem-solving emphasizes the collective effort, diverse viewpoints, and shared commitment that distinguish team-based problem resolution from individual decision-making or simple information-sharing.",
+   "type": "concept_completion",
+   "objective_num": 11,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be components typically included in a comprehensive job description?",
+   "options": [
+    "Job title, primary duties, required qualifications, and reporting relationships",
+    "Employee salary history, personal references, and previous employers only",
+    "Training completion dates, certifications earned, and promotion timelines",
+    "Performance review scores, disciplinary records, and attendance data"
+   ],
+   "correct_index": 0,
+   "explanation": "A job description documents the core elements of a position: what it's called, what the person does, what they need to know or be able to do, and who they report to. Options A, C, and D refer to employee records, performance data, or individual achievement history — important information, but not standard job description components.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The documented set of actions and steps that team members follow to complete a task or project in a consistent and efficient manner is called a(n) ___",
+   "options": [
+    "training module",
+    "work process or procedure",
+    "performance metric",
+    "job specification"
+   ],
+   "correct_index": 1,
+   "explanation": "A work process or procedure is the documented sequence of steps and actions employees follow to complete tasks consistently. This is distinct from a job specification (which describes qualifications needed) or performance metrics (which measure outcomes). Understanding and documenting procedures ensures efficiency and consistency across the team.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of clearly defining the sequence of steps employees should follow to complete a recurring task consistently and efficiently is called ___",
+   "options": [
+    "job specification",
+    "task methodology",
+    "work documentation",
+    "procedural standardization"
+   ],
+   "correct_index": 3,
+   "explanation": "Procedural standardization refers to establishing documented, consistent sequences of steps that ensure tasks are completed the same way each time, improving efficiency and quality. This is distinct from job specification (which describes qualifications) or simple task methodology (which is too vague). The question tests the specific term for the practice of formalizing how work gets done.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A supervisor realizes her team frequently struggles to prioritize competing deadlines because there is no clear guidance on which tasks should take priority. She decides to create a written set of guidelines that outlines how the team should handle situations when multiple urgent requests arrive simultaneously. This action is an example of ___",
+   "options": [
+    "analyzing workload distribution methods",
+    "establishing employee training protocols",
+    "updating policy and procedures manuals",
+    "conducting a performance review"
+   ],
+   "correct_index": 2,
+   "explanation": "Updating policy and procedures manuals means documenting and revising the written guidelines that govern how work gets done and decisions are made. By writing down prioritization rules, the supervisor is creating documented procedures that the team can reference. This is distinct from performance review (which evaluates individuals) or training protocols (which teach new skills).",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When updating a procedures manual to reflect changes in how the accounts receivable team processes customer payments, all of the following should be included in the updated document EXCEPT",
+   "options": [
+    "Names and phone numbers of individual customers who typically make large payments",
+    "The tools or systems employees must use to record each payment in the accounting software",
+    "The criteria for identifying a payment that requires manager approval before processing",
+    "The specific sequence of verification steps the team must follow before depositing a check"
+   ],
+   "correct_index": 0,
+   "explanation": "A procedures manual documents the steps, tools, and rules employees follow—not personal customer contact information. Names and phone numbers of individual customers belong in a customer relationship management system or customer records, not in a procedural document meant to guide how work is done. The other three options are all legitimate procedural details.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical reasons to update a procedures manual EXCEPT",
+   "options": [
+    "An employee requests a raise or promotion",
+    "A new software system is implemented that changes how employees complete a task",
+    "A team discovers a more efficient way to handle a recurring process",
+    "A regulatory requirement changes and the old process no longer complies"
+   ],
+   "correct_index": 0,
+   "explanation": "An employee's compensation or career advancement request is a personnel matter handled through performance evaluation and discussion, not through procedures manual updates. The manual is updated when processes change, regulations shift, or efficiency improvements are identified—not for individual salary or promotion decisions.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The act of deciding which tasks should be completed first based on urgency, importance, and available resources is called ___",
+   "options": [
+    "workload delegation",
+    "staff coordination",
+    "performance management",
+    "task prioritization"
+   ],
+   "correct_index": 3,
+   "explanation": "Task prioritization is the core process of determining which work should be done first when multiple demands compete for attention and resources. This skill is essential for both individual employees and managers organizing team workflows.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Human Relations",
+   "difficulty": "hard"
+  }
+ ],
+ "Technology Concepts": [
+  {
+   "question": "A folder structure that organizes files by date, project, or department is an example of what type of management practice?",
+   "options": [
+    "File compression",
+    "Data backup",
+    "Directory hierarchy",
+    "Permission settings"
+   ],
+   "correct_index": 2,
+   "explanation": "A directory hierarchy is the organized, nested structure of folders and subfolders that groups related files logically. This is a foundational file management practice that makes files easier to locate and maintain. The other options refer to different file management tasks (compression reduces size, backup creates copies, permissions control access) but not to organizational structure itself.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be reasons to upgrade a computer's RAM?",
+   "options": [
+    "Limited internet bandwidth, poor wireless signal strength, incompatible network adapter",
+    "Frequent program crashes, file corruption errors, inability to run multiple applications simultaneously",
+    "Excessive heat generation, outdated motherboard connections, aging power supply",
+    "Slower hard drive performance, reduced monitor refresh rate, lower video card memory"
+   ],
+   "correct_index": 1,
+   "explanation": "Insufficient RAM causes the system to use slower hard drive space as virtual memory, leading to crashes, slow multitasking, and file errors—all symptoms that RAM upgrade directly addresses. The other options describe problems stemming from storage capacity, cooling systems, power delivery, or network issues, which are independent of RAM capacity.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of moving software from one computer to another to preserve a license or free up system resources is called",
+   "options": [
+    "virtualizing",
+    "migrating",
+    "reinstalling",
+    "patching"
+   ],
+   "correct_index": 1,
+   "explanation": "Software migration is the planned transfer of software from one system to another, often to consolidate systems or move to newer hardware while keeping the license active. Reinstalling means installing fresh on the same or different system without moving it; virtualizing runs software in a sandbox environment; patching applies updates to existing installations.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business wants to reduce the number of physical servers in its data center to lower maintenance costs and energy consumption. Which of the following actions would accomplish this goal?",
+   "options": [
+    "Schedule servers to shut down during low-traffic periods",
+    "Upgrade each server's power supply to a higher-capacity unit",
+    "Install larger cooling fans in the server room to improve airflow",
+    "Deploy virtualization software to run multiple virtual servers on fewer physical machines"
+   ],
+   "correct_index": 3,
+   "explanation": "Virtualization allows multiple independent virtual servers to run on a single physical machine, directly reducing the number of physical devices needed while maintaining separate operating environments. This is the core technique for server consolidation. Better cooling and power supplies improve efficiency but don't reduce server count; scheduled shutdowns save energy but not hardware costs.",
+   "type": "scenario_judgment",
+   "objective_num": 3,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Creating backup copies of files, organizing them into logical folders, and using consistent naming conventions are all part of what broader practice?",
+   "options": [
+    "Network configuration",
+    "System diagnostics",
+    "File management",
+    "Data encryption"
+   ],
+   "correct_index": 2,
+   "explanation": "File management encompasses organizing, naming, backing up, and maintaining files and folders systematically. These practices ensure files are findable, safe, and properly maintained. Encryption protects data confidentiality, diagnostics check system health, and network configuration manages device connectivity—none of these describe the organizational and preservation practices listed.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a software vendor provides technical support for troubleshooting and installation issues, what is this service commonly called?",
+   "options": [
+    "Help desk support",
+    "Warranty documentation",
+    "Software licensing agreement",
+    "System backup protocol"
+   ],
+   "correct_index": 0,
+   "explanation": "A help desk is a dedicated support service that assists users with technical problems, software installation, and general troubleshooting. This is distinct from a warranty (which covers hardware defects) or a licensing agreement (which governs usage rights). Help desk support is a primary resource mentioned in the material for users needing assistance.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate uses of a spreadsheet application in a business setting?",
+   "options": [
+    "Designing a company website, editing video marketing content, and managing social media posts",
+    "Organizing photo galleries, creating slide presentations, and recording audio files",
+    "Creating a budget forecast, calculating payroll totals, and tracking inventory quantities",
+    "Writing employee job descriptions, drafting contract terms, and composing customer emails"
+   ],
+   "correct_index": 2,
+   "explanation": "Spreadsheet applications are designed for numerical calculations, data organization, and quantitative analysis—tasks like budgeting, payroll, and inventory tracking. The other options involve web design, video editing, document writing, multimedia, and presentation tools, which are outside spreadsheet functionality. This tests understanding of which productivity software is appropriate for specific business tasks.",
+   "type": "which_of_following",
+   "objective_num": 7,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic process of organizing business data into folders, using consistent file names, and establishing a logical structure for easy retrieval is part of which broader business practice?",
+   "options": [
+    "Information organization",
+    "Network administration",
+    "System documentation",
+    "Data encryption"
+   ],
+   "correct_index": 0,
+   "explanation": "Information organization encompasses all the practices related to structuring, naming, and storing business data so it can be located and used efficiently. While encryption protects data and documentation records procedures, neither is the broad category that includes folder structures and naming conventions. This concept is central to the Technology Concepts objective of managing files and folders.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business needs to choose between downloading software directly from the vendor's website versus purchasing it through a licensed reseller. Which of the following would all be valid reasons to use a licensed reseller instead?",
+   "options": [
+    "Faster download speeds, lower file sizes, and compatibility with older operating systems",
+    "Volume discounts, centralized license management, and vendor-backed technical support",
+    "Elimination of software updates, reduced storage requirements, and access to trial versions",
+    "Ability to install on unlimited computers, freedom from license agreements, and free upgrades for life"
+   ],
+   "correct_index": 1,
+   "explanation": "Licensed resellers provide key business advantages: bulk pricing for multiple licenses, centralized management tools that help track usage across the organization, and direct vendor support channels. Direct downloads lack these organizational and licensing benefits, making resellers the practical choice for business deployments.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of selecting and setting up specific software tools tailored to match the unique operational needs and workflow of a particular business function or industry is called ___.",
+   "options": [
+    "Workflow standardization",
+    "System optimization",
+    "Software licensing",
+    "Software implementation"
+   ],
+   "correct_index": 3,
+   "explanation": "Software implementation refers to the deliberate selection, configuration, and deployment of software to fit organizational or industry-specific requirements. This is distinct from generic installation—it involves assessing needs first and then customizing the tool to that context.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business needs to determine what computer specifications, software licenses, and office equipment are necessary to support a new accounting department. This process of evaluating what resources are needed before making purchases is called a(n) ___.",
+   "options": [
+    "resource allocation",
+    "needs assessment",
+    "equipment inventory",
+    "vendor audit"
+   ],
+   "correct_index": 1,
+   "explanation": "A needs assessment is the systematic evaluation process used to identify and document what hardware, software, and equipment a business requires to meet its operational goals before purchasing decisions are made. This precedes purchasing and helps ensure the right resources are selected for the job.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be factors to consider when conducting a needs assessment for a small law firm's software requirements?",
+   "options": [
+    "The age of the building, the number of parking spaces available, and the local internet service provider's advertising",
+    "The vendor's headquarters location, the software's release date, and whether competitors use the same platform",
+    "The color scheme of the office, the brand preferences of staff members, and the location of the nearest tech support center",
+    "The number of client cases, types of legal documents required, and integration with existing filing systems"
+   ],
+   "correct_index": 3,
+   "explanation": "A needs assessment focuses on functional and operational requirements: how many users, what tasks must be performed, and how the new software must work with existing systems. Office aesthetics, building features, and vendor location details are not relevant to determining whether software meets the firm's actual business needs.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manufacturing business needs accounting software, customer relationship management (CRM) software, and inventory tracking software for its three departments. All of the following would be important considerations during software selection EXCEPT",
+   "options": [
+    "whether the software can import and export data in common formats for inter-department communication",
+    "the technical support options available if users encounter errors or need training on the software",
+    "the color and visual theme of the software's user interface",
+    "the upfront licensing costs and ongoing subscription or maintenance fees for each application"
+   ],
+   "correct_index": 2,
+   "explanation": "Visual appearance and color scheme are not functional requirements for software selection in a business context—departments care about compatibility, cost, and support, not whether the interface is blue or green. The other three factors directly impact whether the software meets the business's operational and financial needs.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail business is deciding between purchasing general-purpose accounting software or industry-specific retail management software. Which of the following would all be advantages of selecting software designed specifically for the retail industry?",
+   "options": [
+    "Built-in inventory tracking, point-of-sale integration, pre-configured retail reporting features",
+    "Lower upfront cost, simpler user interface, broader compatibility with non-retail systems",
+    "Automatic price adjustments, elimination of the need for staff training, direct connection to supplier databases",
+    "Fewer software updates required, ability to run on older hardware, universal applicability across all business types"
+   ],
+   "correct_index": 0,
+   "explanation": "Industry-specific software like retail management tools includes features tailored to that sector—inventory tracking, POS integration, and retail-focused reports—making operations more efficient. General-purpose software, by contrast, requires customization and lacks these pre-built features. The other options either misrepresent software selection criteria or describe unrealistic advantages.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of evaluating existing computer hardware and determining which components meet current business demands and which should be upgraded or replaced is part of ___.",
+   "options": [
+    "vendor selection",
+    "equipment assessment",
+    "system configuration",
+    "performance benchmarking"
+   ],
+   "correct_index": 1,
+   "explanation": "Equipment assessment—a specific component of needs assessment—involves examining what hardware is currently in use and what upgrades or replacements are required to support business operations. This is distinct from system configuration (setting up equipment), performance benchmarking (testing speed), or vendor selection (choosing a supplier).",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to open files, run applications, and manage system settings through icons, menus, and windows rather than typed commands is a core feature of which type of interface?",
+   "options": [
+    "Graphical user interface",
+    "Command-line interface",
+    "Network protocol interface",
+    "Application programming interface"
+   ],
+   "correct_index": 0,
+   "explanation": "A graphical user interface (GUI) uses visual elements like icons, menus, and windows to allow users to interact with the operating system without needing to type commands. This is the standard interface in modern operating systems like Windows and macOS, making it fundamental to navigating an OS.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be valid reasons to choose web-based (cloud) applications over locally installed software for a small business?",
+   "options": [
+    "Faster processing speed, lower cost per user license, no dependency on internet connectivity",
+    "Ability to run on older computers without upgrades, maximum data privacy through local storage only, simplified IT support requirements",
+    "Unlimited storage capacity, complete offline functionality, one-time purchase with no subscription fees",
+    "No software installation required, automatic updates handled by the vendor, accessible from any device with internet"
+   ],
+   "correct_index": 3,
+   "explanation": "Cloud applications eliminate the need for local installation, automatically deliver updates, and allow users to work from any internet-connected device—major advantages for small businesses with limited IT staff. The other options either misstate cloud benefits or incorrectly describe traditional software advantages.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When learning how to use a new software application, all of the following are effective help resources EXCEPT",
+   "options": [
+    "Built-in help menus and tutorials accessible through the Help menu",
+    "Online user communities and forums where other users share solutions",
+    "Requesting a new software license from the original software vendor",
+    "Vendor-provided online documentation, video tutorials, or knowledge bases"
+   ],
+   "correct_index": 2,
+   "explanation": "Requesting a new software license does not help a user learn how to use existing software—it is an administrative or purchasing action, not a learning resource. The other three options are all actual help resources that provide instructions and guidance on software functionality.",
+   "type": "all_except",
+   "objective_num": 6,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A small marketing firm needs to choose software for editing product photos, creating social media graphics, and producing short promotional videos. Which of the following would all be appropriate multimedia software selections for these tasks?",
+   "options": [
+    "Adobe Photoshop for image editing, Canva for graphics design, and Adobe Premiere Pro for video editing",
+    "Windows Explorer for file management, Internet Explorer for web browsing, and Notepad for text editing",
+    "Microsoft Word for document creation, Google Sheets for spreadsheet work, and Slack for team communication",
+    "QuickBooks for accounting, Salesforce for customer relationship management, and Trello for project tracking"
+   ],
+   "correct_index": 0,
+   "explanation": "Adobe Photoshop, Canva, and Adobe Premiere Pro are all multimedia software tools designed specifically for image editing, graphic design, and video production—the exact tasks described. The other bundles include productivity software (Word, Sheets, Slack), business function software (QuickBooks, Salesforce, Trello), and system utilities (Explorer, browser, text editor), none of which are multimedia tools.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A marketing department needs software to create animated banner ads, edit product photographs, and design animated social media content. Which of the following would ALL be appropriate multimedia software selections for these specific tasks?",
+   "options": [
+    "Microsoft Excel for layout planning, Adobe InDesign for image editing, and YouTube Studio for animation creation",
+    "Google Sheets for image organization, Audacity for photo effects, and PowerPoint for animation design",
+    "LibreOffice Writer for graphic composition, GIMP for photo editing, and OBS Studio for social media content",
+    "Adobe Animate for animations, Adobe Photoshop for photo editing, and Canva for social media design"
+   ],
+   "correct_index": 3,
+   "explanation": "Adobe Animate is the industry-standard tool for creating animations and interactive content; Adobe Photoshop is the standard for professional photo editing; and Canva is widely used for quick social media graphic design. The incorrect options bundle tools incorrectly (Excel for layout, InDesign for image editing rather than layout, or Audacity which is audio-focused). A student who studied multimedia software selection would recognize the correct pairing of tools to specific creative tasks.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Technology Concepts",
+   "difficulty": "hard"
+  }
+ ],
+ "Communication Skills": [
+  {
+   "question": "The ability to pay close attention to what someone is saying, ask clarifying questions, and avoid interrupting is called ___",
+   "options": [
+    "verbal communication",
+    "active listening",
+    "message retention",
+    "nonverbal feedback"
+   ],
+   "correct_index": 1,
+   "explanation": "Active listening is a specific communication skill that involves fully concentrating on what the speaker is saying, asking questions to clarify understanding, and not interrupting. This is a foundational listening skill tested in business communication. The other options describe related but distinct communication concepts—verbal communication is the use of words, nonverbal feedback is body language, and message retention is memory of information.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a speaker crosses their arms, avoids eye contact, and leans away from you during a conversation, these _____ suggest the person may be uncomfortable or defensive.",
+   "options": [
+    "listening techniques",
+    "verbal cues",
+    "nonverbal cues",
+    "feedback responses"
+   ],
+   "correct_index": 2,
+   "explanation": "Nonverbal cues are body language signals—posture, facial expressions, eye contact, and gestures—that communicate meaning without words. In this scenario, crossed arms, lack of eye contact, and leaning away are all nonverbal cues that convey emotional state. Verbal cues are spoken words; listening techniques are active strategies for hearing; feedback responses are replies given after receiving a message.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are components of clear written instructions EXCEPT",
+   "options": [
+    "step-by-step procedures in logical order",
+    "definitions of any unfamiliar terms",
+    "specific deadlines and deliverables",
+    "the writer's personal opinions about the task"
+   ],
+   "correct_index": 3,
+   "explanation": "Written instructions should be objective, clear, and actionable—they should contain steps in order, deadlines, and definitions of technical terms. The writer's personal opinions are not part of effective instructions; they introduce bias and distract from the task itself. The other three options are all standard elements that make instructions understandable and followable.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of creating a welcoming environment for a visitor, greeting them respectfully, and making introductions between them and the appropriate staff member makes up ___",
+   "options": [
+    "telephone transfer protocol",
+    "message taking",
+    "visitor reception and greeting",
+    "call screening"
+   ],
+   "correct_index": 2,
+   "explanation": "Visitor reception and greeting is the systematic practice of welcoming clients or visitors at the front desk, making them feel comfortable, and connecting them with the right person. This includes greeting etiquette and proper introductions. Call screening is filtering incoming calls; message taking is recording information from callers; telephone transfer is moving a call to another line.",
+   "type": "concept_completion",
+   "objective_num": 10,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When giving written instructions to an employee, including clear steps in logical order, specific deadlines, and expected outcomes helps ensure that the employee can ___.",
+   "options": [
+    "decide whether to accept the assignment",
+    "understand the task requirements and complete the work accurately",
+    "avoid asking questions about the assignment",
+    "finish the work faster than originally scheduled"
+   ],
+   "correct_index": 1,
+   "explanation": "Well-composed written instructions with clear steps, deadlines, and expected outcomes enable the employee to understand exactly what is needed and how to complete the task successfully. This directly supports the objective of composing instructions that can be followed effectively. The other options either misrepresent the purpose of clear instructions or are not the primary goal.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The immediate transmission of written messages between computers or devices over a network or internet connection is called ___",
+   "options": [
+    "email",
+    "file synchronization",
+    "cloud storage",
+    "data archiving"
+   ],
+   "correct_index": 0,
+   "explanation": "Email is the standard term for electronic mail—the rapid, direct transmission of written messages between networked devices. File synchronization, cloud storage, and data archiving are related but distinct digital processes that do not describe the primary function of sending written messages.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The secure transfer of documents or large files from one computer to another over a network, often used to share information between departments or with external partners, describes ___",
+   "options": [
+    "file transmission",
+    "network latency",
+    "bandwidth optimization",
+    "protocol encryption"
+   ],
+   "correct_index": 0,
+   "explanation": "File transmission is the process of moving documents or data files electronically from one location to another. While bandwidth, latency, and encryption are technical network concepts, they do not describe the core action of transferring files themselves.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are advantages of electronic communication methods in a business environment EXCEPT",
+   "options": [
+    "Communication occurs instantly without requiring both parties to be present at the same time",
+    "Written records provide documentation and accountability for instructions and agreements",
+    "Tone and personal relationship-building are conveyed as clearly as in face-to-face interaction",
+    "Messages can be stored and retrieved for future reference"
+   ],
+   "correct_index": 2,
+   "explanation": "While electronic communications offer speed, storage, and documentation, they inherently lack the nonverbal cues, vocal tone, and immediate personal connection of face-to-face interaction—making relationship-building and emotional communication less effective. The other three are genuine strengths of electronic methods.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to evaluate which emerging digital tools will most effectively meet a business's specific communication needs—weighing factors such as security, speed, cost, and user accessibility—describes ___",
+   "options": [
+    "digital infrastructure planning",
+    "communication technology assessment",
+    "technology adoption",
+    "network administration"
+   ],
+   "correct_index": 1,
+   "explanation": "Communication technology assessment is the process of evaluating new or emerging tools to determine whether and how they fit organizational communication requirements. Technology adoption is broader and less focused on evaluation; digital infrastructure planning and network administration are separate technical functions rather than assessment activities.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When using fax technology to send a document to a client, which of the following would ALL be necessary for successful transmission?",
+   "options": [
+    "A scanner, wireless network capability, and the recipient's mobile phone number",
+    "An internet connection, cloud storage access, and the recipient's email address",
+    "A copier machine, multiple backup phone lines, and the recipient's physical mailing address",
+    "A fax machine, a telephone line connection, and the recipient's fax number"
+   ],
+   "correct_index": 3,
+   "explanation": "Fax transmission requires three essential components: the fax machine itself, a telephone line to carry the signal, and the recipient's fax number. The other options either describe email/digital file transfer requirements, mobile technology, or traditional mail—not fax-specific processes.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When you need to reach someone by phone but they are unavailable, leaving a detailed message that includes your name, callback number, reason for calling, and best time to reach you is called ___",
+   "options": [
+    "call screening",
+    "message taking",
+    "call transfer",
+    "call placement"
+   ],
+   "correct_index": 1,
+   "explanation": "Message taking is the process of recording and communicating information when a caller cannot reach their intended recipient. This distinguishes it from call screening (filtering incoming calls), call transfer (routing to another extension), and call placement (initiating an outbound call).",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to determine when a caller is trying to reach the wrong department, politely redirecting them to the correct extension or office without making them feel dismissed, is a key part of ___",
+   "options": [
+    "call placement techniques",
+    "conference call management",
+    "telephone number maintenance",
+    "call screening and routing"
+   ],
+   "correct_index": 3,
+   "explanation": "Call screening and routing involves evaluating incoming calls, identifying their purpose or intended recipient, and directing them appropriately—which includes the courtesy and skill of redirecting a misdirected caller. The other options focus on different telephone communication tasks.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be proper techniques for placing an outbound business call?",
+   "options": [
+    "Identify yourself and your organization at the start, state the purpose of your call clearly, and ask if the person has time to speak with you",
+    "Interrupt the person briefly to confirm they received your previous email, discuss multiple unrelated topics in one call, and end abruptly once your main point is made",
+    "Skip introducing yourself if you are calling a regular client, speak rapidly to respect their time, and assume they know why you are calling",
+    "Ask permission before transferring the call to voicemail, speak in a rushed tone to sound efficient, and provide your callback number only if asked"
+   ],
+   "correct_index": 0,
+   "explanation": "The correct answer lists three professional call-placement techniques: introducing yourself and your organization, stating your purpose clearly, and asking if the recipient has time—all of which show respect and set a professional tone. The other options contain practices that are rude, unclear, or ineffective (skipping introductions, speaking hastily, interrupting, or discussing multiple topics without focus).",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When answering a business telephone, using a clear, friendly tone, stating the department or company name and your own name, and offering immediate assistance to the caller are all standard practices EXCEPT",
+   "options": [
+    "offering to take a message if the person they called is unavailable",
+    "confirming you have the correct phone number before transferring the call",
+    "assuming the caller's purpose before they explain it",
+    "asking the caller to wait while you verify their account or retrieve their information"
+   ],
+   "correct_index": 2,
+   "explanation": "Assuming the caller's purpose before they explain it is a poor telephone practice that shows inattention and can lead to misdirection or frustration. The other three—waiting for verification, confirming the number before transfer, and offering to take messages—are all professional call-answering techniques.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The structured format that lists the topics to be discussed in a meeting, the order in which they will be addressed, and the time allocated for each item is called a(n) ___.",
+   "options": [
+    "Meeting transcript",
+    "Agenda",
+    "Action item list",
+    "Meeting summary"
+   ],
+   "correct_index": 1,
+   "explanation": "An agenda is the formal document that outlines the topics to be covered in a meeting, the sequence of discussion, and often the time allocated for each item. It serves as a roadmap for the meeting and helps ensure that discussions stay on track and all necessary items are covered. A meeting transcript is a written record after the fact, an action item list focuses only on tasks assigned, and a summary is a recap after the meeting concludes.",
+   "type": "definition_recall",
+   "objective_num": 13,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a caller asks to speak with someone who is temporarily unavailable, placing their call on hold while you locate the person or check their availability is called ___",
+   "options": [
+    "call holding",
+    "call routing",
+    "call transfer",
+    "call screening"
+   ],
+   "correct_index": 0,
+   "explanation": "Call holding is the technique of temporarily pausing a call while the receptionist locates the intended recipient or checks their status. This differs from transfer (moving the call to another line) and screening (determining whether to connect the call). The distinction requires understanding the specific sequence of phone-handling steps.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of moving an incoming call from one telephone line or extension to another line—such as from a receptionist to a department manager—describes ___",
+   "options": [
+    "conference calling",
+    "call diversion",
+    "call transfer",
+    "call prioritization"
+   ],
+   "correct_index": 2,
+   "explanation": "Call transfer is the specific technique of connecting a caller's line to a different extension or department. Conference calling adds multiple parties to one conversation, prioritization determines call order, and diversion routes calls elsewhere entirely. Transfer is the fundamental, direct handoff between lines.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business needs to record and store the contact information for key clients, vendors, and internal departments in a way that all staff can access and update quickly. Which of the following would ALL support this goal?",
+   "options": [
+    "A single paper phonebook stored in one office, handwritten notes on desk calendars, and verbal directions to find contact information",
+    "Random storage of business cards, memory-based recall of extension numbers, and informal hallway conversations about who to call",
+    "Personal contact lists kept in individual employees' desks, verbal reminders of phone numbers, and periodic emails listing new contacts",
+    "A shared digital contact database with search function, printed backup directory, and a designated staff member responsible for updates"
+   ],
+   "correct_index": 3,
+   "explanation": "A shared, searchable contact database with backup and designated maintenance ensures all staff can quickly find and access accurate, current information. The other options rely on individual memory, scattered storage, or outdated formats that prevent consistent, reliable access across the organization. This tests understanding of professional information organization and accessibility standards.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When handling a caller's message, all of the following are important details to record EXCEPT",
+   "options": [
+    "the caller's full name and callback telephone number",
+    "a brief summary of the reason for the call",
+    "the date and time the call was received",
+    "the caller's personal opinions about why they are calling"
+   ],
+   "correct_index": 3,
+   "explanation": "While a message-taker must capture the caller's name, number, date, time, and the reason for their call, the caller's personal opinions are neither relevant nor necessary to document. The message's purpose is to convey factual information the recipient needs to return the call appropriately, not to record subjective commentary.",
+   "type": "all_except",
+   "objective_num": 6,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A receptionist realizes that an incoming caller is trying to reach the accounting department, but the caller has dialed the sales line by mistake. The best approach is to ___",
+   "options": [
+    "tell the caller they have reached the wrong number and hang up immediately",
+    "transfer the caller to the accounting department after politely confirming the correct destination",
+    "assume the caller knows what they want and keep them on the line until they figure out they called wrong",
+    "ask the caller why they called sales, then reluctantly give them the accounting number"
+   ],
+   "correct_index": 1,
+   "explanation": "Professional call screening requires the receptionist to politely redirect misdirected callers to the correct department without making them feel dismissed or frustrated. Confirming the destination before transfer ensures the caller reaches the right person and reflects good customer service. The other options either abandon the caller, make them feel inconvenienced, or create confusion.",
+   "type": "scenario_judgment",
+   "objective_num": 6,
+   "knowledge_area": "Communication Skills",
+   "difficulty": "hard"
+  }
+ ],
+ "Decision Making/Management": [
+  {
+   "question": "The process of setting goals, allocating resources, directing activities, and measuring results to accomplish organizational objectives is known as ___",
+   "options": [
+    "leadership",
+    "supervision",
+    "management",
+    "coordination"
+   ],
+   "correct_index": 2,
+   "explanation": "Management encompasses the core functions of planning, organizing, directing, and controlling organizational activities to reach goals. While leadership, coordination, and supervision are related concepts, management is the overarching function that includes all these activities.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following activities would all be part of the management function of organizing?",
+   "options": [
+    "Recruiting employees, assigning duties and responsibilities, establishing reporting relationships",
+    "Determining objectives, forecasting future conditions, developing action plans",
+    "Motivating employees, providing feedback, communicating expectations to staff",
+    "Monitoring progress, evaluating results, taking corrective action when needed"
+   ],
+   "correct_index": 0,
+   "explanation": "Organizing involves structuring the business by recruiting personnel, defining job roles and responsibilities, and establishing the chain of command. The other options represent different management functions: controlling (monitoring and correcting), planning (setting objectives and strategies), and directing (motivating and communicating).",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The management function that involves gathering relevant data, examining it for patterns, arranging it in useful formats, and combining different pieces to support decision-making is ___",
+   "options": [
+    "problem analysis",
+    "information synthesis",
+    "data collection",
+    "resource allocation"
+   ],
+   "correct_index": 1,
+   "explanation": "Information synthesis is the process of taking analyzed, organized data and combining it into meaningful conclusions to guide decisions. Data collection is only the first step, problem analysis is narrower in scope, and resource allocation is a different management function altogether.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ongoing cycle of establishing what needs to be accomplished, breaking down tasks into steps, determining the sequence of activities, and assigning them to team members describes ___",
+   "options": [
+    "conflict resolution",
+    "performance monitoring",
+    "quality control",
+    "workflow procedures"
+   ],
+   "correct_index": 3,
+   "explanation": "Workflow procedures are the systematic methods and sequences established to complete work efficiently and ensure all tasks are accomplished in proper order. This directly supports the management objective of setting priorities and developing efficient processes. The other options address different management concerns such as team dynamics, evaluation, or quality standards.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Planning, organizing, directing, and controlling are the four main functions of management. Which of these functions involves allocating people, money, time, and equipment to achieve organizational goals?",
+   "options": [
+    "Controlling",
+    "Planning",
+    "Organizing",
+    "Directing"
+   ],
+   "correct_index": 2,
+   "explanation": "Organizing is the management function that focuses on arranging and allocating resources—including personnel, budget, materials, and time—into a structured framework to accomplish the objectives established during planning. Directing involves motivating and leading employees, while controlling measures results against standards.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager who makes decisions with minimal input from employees and maintains strict control over all workplace activities is demonstrating which leadership style?",
+   "options": [
+    "Autocratic leadership",
+    "Delegative leadership",
+    "Transformational leadership",
+    "Participative leadership"
+   ],
+   "correct_index": 0,
+   "explanation": "Autocratic leadership is characterized by centralized decision-making authority and minimal employee involvement in the decision process. This style contrasts with participative leadership, which actively seeks employee input, and delegative leadership, which transfers decision-making responsibility to subordinates.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be responsibilities typically held by middle management?",
+   "options": [
+    "Implementing strategic plans, supervising front-line employees, and reporting performance to senior management",
+    "Completing assigned daily tasks, meeting individual production goals, and requesting supplies from supervisors",
+    "Establishing company vision, hiring senior executives, and setting long-term organizational direction",
+    "Setting overall company strategy, determining annual budgets, and approving major capital expenditures"
+   ],
+   "correct_index": 0,
+   "explanation": "Middle management bridges senior leadership and front-line employees by translating strategic plans into actionable steps, supervising operational teams, and communicating performance results upward. The other options describe responsibilities of senior management (A, D) or individual contributors (C).",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process by which a manager identifies what the organization needs to accomplish, determines how resources will be distributed, and establishes a timeline for execution is called ___",
+   "options": [
+    "Directing",
+    "Planning",
+    "Controlling",
+    "Staffing"
+   ],
+   "correct_index": 1,
+   "explanation": "Planning is the management function that involves setting objectives, deciding how to achieve them, and mapping out resource allocation and timelines. Controlling measures results against goals, directing guides employee actions, and staffing involves hiring and placing personnel.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager who seeks input from team members, encourages collaboration, and supports employee development is demonstrating which leadership style?",
+   "options": [
+    "Autocratic leadership",
+    "Laissez-faire leadership",
+    "Transactional leadership",
+    "Democratic leadership"
+   ],
+   "correct_index": 3,
+   "explanation": "Democratic leadership involves soliciting employee input, valuing collaboration, and fostering professional growth — all key characteristics that distinguish it from autocratic (command-and-control) or laissez-faire (hands-off) approaches. This style is associated with higher employee engagement and motivation in most organizational settings.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be effective leader characteristics that support organizational success?",
+   "options": [
+    "Strict enforcement of rules, minimal delegation, and resistance to new ideas",
+    "Isolation from team concerns, limited feedback, and focus solely on short-term profits",
+    "Strong communication skills, emotional intelligence, and the ability to motivate others",
+    "Avoidance of difficult conversations, micromanagement of daily tasks, and priority on personal advancement"
+   ],
+   "correct_index": 2,
+   "explanation": "Effective leaders communicate clearly, understand and manage emotions in themselves and others, and inspire teams toward shared goals—these are foundational characteristics supported by organizational behavior research. The other options describe ineffective practices that damage team morale, reduce retention, and hinder long-term performance.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of establishing standards for acceptable work output, inspecting completed work against those standards, and taking corrective action when output falls below expectations is called ___",
+   "options": [
+    "performance evaluation",
+    "productivity monitoring",
+    "workflow analysis",
+    "quality control"
+   ],
+   "correct_index": 3,
+   "explanation": "Quality control is the systematic process of setting and maintaining standards for work quality, inspecting output, and correcting deficiencies. Performance evaluation focuses on assessing employee behavior and competence rather than product or output standards. Workflow analysis examines how tasks move through a process but doesn't inherently include quality measurement or correction.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying gaps between expected performance and actual results, then implementing changes to bring performance back into line is called ___",
+   "options": [
+    "controlling",
+    "prioritization",
+    "forecasting",
+    "delegation"
+   ],
+   "correct_index": 0,
+   "explanation": "Controlling is the management function that monitors performance against standards and takes corrective action when needed. This distinguishes it from planning (setting standards) or organizing (allocating resources) — controlling specifically closes the gap between what was expected and what actually happened.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ongoing process of determining which tasks are most critical to organizational success, arranging them in order of importance, and allocating time and resources accordingly describes ___",
+   "options": [
+    "team development",
+    "performance monitoring",
+    "priority setting",
+    "conflict resolution"
+   ],
+   "correct_index": 2,
+   "explanation": "Priority setting is the process of identifying what matters most and sequencing work accordingly — it is distinct from team development (building group cohesion) or conflict resolution (addressing disagreements). This allows managers to focus limited resources on the highest-impact activities.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are steps a manager would take when developing an efficient workflow EXCEPT",
+   "options": [
+    "Breaking complex tasks into smaller, sequential steps",
+    "Determining employee compensation based on individual preferences",
+    "Assigning specific tasks to team members with the skills to complete them",
+    "Identifying which activities can be performed in parallel to reduce total time"
+   ],
+   "correct_index": 1,
+   "explanation": "Compensation decisions are a personnel/HR function, not a workflow design step. Efficient workflow focuses on task sequencing, parallelization, and matching work to capable team members — not on pay structures. The other three options are all genuine workflow-development techniques.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When organizing an office workflow, a manager should document task sequences, assign clear responsibilities, and identify dependencies between steps. All of the following would be reasons to do this EXCEPT",
+   "options": [
+    "To reduce bottlenecks and minimize idle time between workflow stages",
+    "To clarify who is accountable for each step in the process",
+    "To ensure employees understand which tasks must be completed before others can begin",
+    "To determine which employees are most deserving of salary increases"
+   ],
+   "correct_index": 3,
+   "explanation": "Salary decisions are based on performance evaluation and compensation policy, not on task sequencing in workflow design. The other three options are legitimate reasons to document and organize workflow procedures—they all support efficiency, accountability, and logical task ordering.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a manager establishes that an employee will increase customer response time from 48 hours to 24 hours by the end of Q2, the manager is engaged in which of the following processes?",
+   "options": [
+    "Allocating departmental budget resources",
+    "Resolving workplace conflicts between team members",
+    "Identifying, writing, and monitoring workplace performance goals",
+    "Measuring organizational culture"
+   ],
+   "correct_index": 2,
+   "explanation": "This question tests the specific process of setting a measurable, time-bound performance target for an employee. The other options represent different management activities, but only identifying, writing, and monitoring performance goals directly describes what the manager is doing when establishing this specific, measurable expectation.",
+   "type": "concept_completion",
+   "objective_num": 9,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager is trying to help an underperforming employee improve. The manager should establish clear performance goals for the employee. All of the following would be characteristics of well-written performance goals EXCEPT",
+   "options": [
+    "aligned with the employee's core job responsibilities",
+    "based on the employee's personal interests rather than job requirements",
+    "tied to a realistic deadline by which improvement should be demonstrated",
+    "measurable and specific, with a clear target such as '90% accuracy on daily reports'"
+   ],
+   "correct_index": 1,
+   "explanation": "Workplace performance goals must focus on job requirements and organizational needs, not on personal interests unrelated to the employee's role. Well-written goals are specific, measurable, time-bound, and directly linked to the employee's actual responsibilities. Personal interests are irrelevant to job performance expectations.",
+   "type": "all_except",
+   "objective_num": 9,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A supervisor notices that an employee's title appears three levels below the department head on the organizational chart, with two other positions between them. What can the supervisor conclude about this employee's role?",
+   "options": [
+    "The employee is a front-line worker with limited decision-making authority outside their immediate assigned tasks",
+    "The employee holds a senior management position with direct authority over most of the department",
+    "The employee manages the company's finances and reports directly to the chief executive officer",
+    "The employee is likely in a supervisory or specialist position with some authority, but not responsible for departmental strategy"
+   ],
+   "correct_index": 0,
+   "explanation": "An organizational chart's hierarchical positioning shows decision-making authority and scope of responsibility. An employee three levels below the department head is typically a front-line worker or junior specialist—removed from strategic decisions and primarily responsible for executing assigned tasks rather than supervising others or setting departmental direction.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of establishing specific, measurable targets that an employee should reach within a defined time period, documenting them in writing, and regularly reviewing progress against them is part of ___",
+   "options": [
+    "employee recruitment",
+    "workforce development and performance management",
+    "organizational structure design",
+    "quality assurance auditing"
+   ],
+   "correct_index": 1,
+   "explanation": "Writing and monitoring performance goals—with specificity, measurability, and regular review—is a core element of performance management. Recruitment focuses on hiring; structure design focuses on roles and reporting; quality assurance focuses on product or service standards, not individual employee performance targets.",
+   "type": "concept_completion",
+   "objective_num": 9,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a manager sits down with an employee to establish performance goals, the manager should ensure the goals are tied directly to organizational needs and job responsibilities. All of the following would be appropriate considerations in setting such a goal EXCEPT",
+   "options": [
+    "the core duties outlined in the employee's job description",
+    "how achievement of the goal supports departmental or organizational strategy",
+    "measurable outcomes and a realistic completion date",
+    "the employee's advancement aspirations and desired career path"
+   ],
+   "correct_index": 3,
+   "explanation": "Performance goals should align with the job role and organizational strategy, not primarily with the employee's personal career wishes—those are inputs to development planning, not job-performance-goal setting. Well-written performance goals are grounded in job duties, organizational priorities, measurable outcomes, and realistic timelines.",
+   "type": "all_except",
+   "objective_num": 9,
+   "knowledge_area": "Decision Making/Management",
+   "difficulty": "hard"
+  }
+ ],
+ "Career Development": [
+  {
+   "question": "A document that lists your work experience, education, skills, and achievements in a format designed to be quickly scanned by an employer is called a(n) ___",
+   "options": [
+    "resume",
+    "cover letter",
+    "application letter",
+    "portfolio"
+   ],
+   "correct_index": 0,
+   "explanation": "A resume is a concise summary document highlighting relevant work history, education, and skills for a specific job opening. It differs from a cover letter (which introduces you and explains your interest) and a portfolio (which showcases samples of your work).",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The initial written communication you send to a prospective employer expressing your interest in a specific job opening and explaining why you are a strong candidate is called a(n) ___",
+   "options": [
+    "follow-up letter",
+    "professional portfolio",
+    "application letter",
+    "employment application"
+   ],
+   "correct_index": 2,
+   "explanation": "An application letter (or cover letter) introduces you to an employer, states the position you are seeking, and highlights relevant qualifications. It accompanies your resume and should be customized for each job. A follow-up letter is sent after an interview, not before applying.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of gathering and organizing samples of your academic work, projects, certifications, and accomplishments to demonstrate your skills and progress to potential employers is called developing a(n) ___",
+   "options": [
+    "professional portfolio",
+    "employment record",
+    "career plan",
+    "reference list"
+   ],
+   "correct_index": 0,
+   "explanation": "A professional portfolio is a curated collection of evidence demonstrating your capabilities, knowledge, and achievements. It goes beyond a resume by showing actual examples of your work and can include projects, certifications, letters of recommendation, and other documentation of your professional growth.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered appropriate behaviors during a job interview?",
+   "options": [
+    "Texting during the interview, interrupting the interviewer, and wearing casual athletic clothing",
+    "Providing one-word answers, avoiding questions about the company, and dressing in completely formal attire",
+    "Arriving 10–15 minutes early, making eye contact, and researching the company beforehand",
+    "Asking about salary before discussing the role, speaking negatively about previous employers, and checking your phone repeatedly"
+   ],
+   "correct_index": 2,
+   "explanation": "Arriving early, maintaining eye contact, and preparing research demonstrate professionalism and genuine interest. The other options contain clearly inappropriate behaviors—interrupting or texting shows disrespect; discussing salary first is premature; speaking negatively about past employers raises red flags; and one-word answers fail to engage meaningfully with the interviewer.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of actively seeking and engaging in activities designed to move forward in your career, such as attending professional conferences, obtaining certifications, or networking with industry professionals, is known as ___",
+   "options": [
+    "career planning",
+    "skills inventory",
+    "job shadowing",
+    "career advancement"
+   ],
+   "correct_index": 3,
+   "explanation": "Career advancement refers to the deliberate actions and activities a person undertakes to progress professionally and improve their employment prospects. While career planning sets long-term goals and job shadowing observes a specific role, career advancement encompasses the broader range of proactive professional-development activities.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of maintaining organized records of your certifications, licenses, training courses completed, and measurable career accomplishments over time is known as ___",
+   "options": [
+    "career planning",
+    "professional documentation",
+    "employment verification",
+    "skill certification"
+   ],
+   "correct_index": 1,
+   "explanation": "Professional documentation refers to keeping organized records of credentials, training, and accomplishments that demonstrate your qualifications and career growth. Career planning is the broader process of setting career goals; employment verification is checking past employment; skill certification refers to obtaining a credential itself rather than maintaining records of it.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered sources for researching potential business careers?",
+   "options": [
+    "Career fairs, company websites, and employment agency listings",
+    "Job postings, resume templates, and online networking sites exclusively",
+    "Industry websites, professional associations, and informational interviews with working professionals",
+    "Social media posts, classified advertisements, and personal referrals only"
+   ],
+   "correct_index": 2,
+   "explanation": "Industry websites, professional associations, and informational interviews are all reliable primary and secondary sources that provide in-depth information about careers, work environments, and skill requirements. While job postings and career fairs are helpful, option C limits research to job-seeking tools rather than true career exploration sources. Option B relies too heavily on unvetted social media and classifieds.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A formal document that outlines your career goals, identifies the skills and education you need to achieve those goals, and establishes a timeline for acquiring them is called a(n) ___",
+   "options": [
+    "cover letter",
+    "career plan",
+    "professional portfolio",
+    "employment application"
+   ],
+   "correct_index": 1,
+   "explanation": "A career plan is a strategic document that maps your professional direction by setting specific goals, identifying required competencies, and creating a realistic timeline for development. This differs from a portfolio (which showcases completed work) or application materials (which respond to specific job openings).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered effective ways to explore business careers?",
+   "options": [
+    "Focusing exclusively on entry-level positions, ignoring professional certifications, and skipping industry conferences",
+    "Limiting your search to jobs posted on social media, relying only on your school's career office, and avoiding contact with working professionals",
+    "Asking friends casually about their jobs, waiting to see what internships are offered in spring, and reading random news articles",
+    "Attending career fairs, conducting informational interviews with professionals, and researching industry trade publications"
+   ],
+   "correct_index": 3,
+   "explanation": "Career fairs, informational interviews, and industry publications are all direct, active research methods that provide credible insight into real business careers and work environments. The other options either rely on passive or incomplete information sources, or actively discourage thorough exploration of career pathways.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "During a job interview, a candidate fidgets with their phone, avoids looking at the interviewer, arrives 25 minutes late without explanation, and interrupts the interviewer twice while answering questions. Which of these behaviors would NOT be considered inappropriate for a professional interview setting?",
+   "options": [
+    "None of the above—all are inappropriate",
+    "Avoiding eye contact with the interviewer",
+    "Arriving significantly late without prior notification",
+    "Fidgeting with a phone during the conversation"
+   ],
+   "correct_index": 0,
+   "explanation": "All four behaviors listed in the scenario—phone fidgeting, poor eye contact, arriving late without notice, and interrupting—are universally considered inappropriate in professional interview settings because they signal disinterest, disrespect, and lack of preparation. There is no behavior among them that would be acceptable.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written summary of your educational background, certifications, and specific technical skills that an employer can quickly review to assess your qualifications for a role is called a(n) ___",
+   "options": [
+    "employment reference list",
+    "cover letter",
+    "job application form",
+    "skills inventory"
+   ],
+   "correct_index": 3,
+   "explanation": "A skills inventory is a targeted document that focuses on listing certifications, technical competencies, and educational credentials in an easy-to-scan format. While a resume covers similar ground, a skills inventory emphasizes specific abilities and qualifications more prominently, making it distinct from a general resume. This tool is particularly useful when applying for technical or specialized positions.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying your strengths, weaknesses, interests, and values, then setting specific career targets and determining the education or experience needed to reach them, is known as ___",
+   "options": [
+    "job shadowing",
+    "career self-assessment and planning",
+    "occupational research",
+    "mentorship alignment"
+   ],
+   "correct_index": 1,
+   "explanation": "Career self-assessment and planning involves introspection about your own attributes and explicit goal-setting tied to concrete steps and timelines. While job shadowing and mentorship are useful career-exploration tools, they are not the systematic, personal evaluation process described. Occupational research focuses outward on job markets, not inward on self-knowledge.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of career-advancement activities that help build professional growth and industry connections?",
+   "options": [
+    "Updating your resume quarterly, reorganizing your filing cabinet, and creating a personal website",
+    "Declining overtime, avoiding social events with coworkers, and limiting your public visibility",
+    "Pursuing advanced certifications, attending industry conferences, and joining professional associations",
+    "Taking unrelated hobbies seriously, volunteering for non-work causes, and changing jobs annually"
+   ],
+   "correct_index": 2,
+   "explanation": "Career-advancement activities are deliberate, professional steps taken to develop expertise, expand networks, and remain competitive in your field—such as certifications, conferences, and professional associations. The other options either focus on administrative or personal tasks unrelated to career growth, or describe behaviors that would actually hinder advancement. Recognizing which activities genuinely move you forward professionally is essential to utilizing them effectively.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "During a job interview, you realize partway through that you did not fully understand one of the interviewer's questions. The most professional response would be to ___",
+   "options": [
+    "politely ask the interviewer to clarify or rephrase the question",
+    "answer a different question that you feel more confident about",
+    "nod and guess at an answer based on what you think they meant",
+    "change the subject by asking about company benefits instead"
+   ],
+   "correct_index": 0,
+   "explanation": "Asking for clarification demonstrates professionalism, honesty, and a genuine desire to provide a thoughtful answer rather than guess. Guessing, changing the subject, or answering a different question would either mislead the interviewer or avoid the original inquiry, both of which harm your credibility. Requesting clarification is a sign of careful listening and respect for the interview process.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying the specific actions, milestones, and timeline you will follow to advance your career over the next 3–5 years—including skills to develop, certifications to pursue, and positions you aim to reach—is known as ___",
+   "options": [
+    "skills development pathway",
+    "professional networking",
+    "long-term career trajectory",
+    "career advancement strategy"
+   ],
+   "correct_index": 0,
+   "explanation": "A skills development pathway outlines the concrete steps and timeline for acquiring new competencies needed to reach your career goals, distinguishing it from broad networking (relationship-building without a specific plan), general career advancement (the goal itself, not the plan), or trajectory (a description of where you're headed, not the actionable plan to get there).",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When resigning from a position, which of the following would all be considered appropriate steps to take before leaving your job?",
+   "options": [
+    "Announce your departure on social media, discuss salary details with coworkers, and refuse to document your duties",
+    "Offer no explanation, withhold access codes, and criticize management publicly before departing",
+    "Provide advance notice, complete outstanding projects, and train your replacement",
+    "Delete all company files from your computer, remove personal items immediately, and skip the exit interview"
+   ],
+   "correct_index": 2,
+   "explanation": "Professional resignation practices include giving appropriate advance notice (typically two weeks), finishing or handing off your current work responsibly, and helping transition your duties to ensure business continuity. The other options reflect unprofessional or potentially harmful actions that damage workplace relationships and could affect future references.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A limitation that prevents certain groups—such as older workers, individuals with disabilities, or those from underrepresented communities—from accessing equal job opportunities due to stereotypes, lack of accessible facilities, or limited networking connections is known as a(n) ___",
+   "options": [
+    "job qualification",
+    "employment barrier",
+    "industry standard",
+    "workplace preference"
+   ],
+   "correct_index": 1,
+   "explanation": "An employment barrier is any factor—whether systemic, cultural, or structural—that limits a person's or group's access to job opportunities. These barriers affect nontraditional workers and require targeted remedies such as diversity hiring initiatives, accessibility improvements, or mentorship programs. The other terms do not describe this obstacle.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "You are preparing to resign from your current position in two weeks. Your manager asks you to document your daily responsibilities, key projects, and important contacts before you leave. What is the most professional reason to complete this task thoroughly?",
+   "options": [
+    "It demonstrates to your manager that you were overworked and deserve a raise at your next job",
+    "It allows you to negotiate a higher severance package and bonus",
+    "It is required by law and will prevent legal action against you after you leave",
+    "It ensures a smooth transition for your replacement and maintains the company's operations and your professional reputation"
+   ],
+   "correct_index": 3,
+   "explanation": "Thorough documentation of your duties and projects during resignation supports business continuity, helps your replacement succeed, and leaves you with a positive professional reference—all critical for career advancement. This reflects professional responsibility and workplace etiquette rather than legal obligation, leverage, or complaint. Completing this task strengthens your reputation in the industry.",
+   "type": "scenario_judgment",
+   "objective_num": 5,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered remedies or strategies to address employment barriers faced by nontraditional workers?",
+   "options": [
+    "Elimination of all job experience requirements, universal guaranteed employment, and removal of skill assessments",
+    "Flexible work schedules, accessible workplace facilities, and mentorship programs that provide networking support",
+    "Increased background checks, stricter dress codes, and preference for workers with traditional career paths",
+    "Higher salary offers, priority hiring in leadership roles, and mandatory retirement at age 65"
+   ],
+   "correct_index": 1,
+   "explanation": "Effective remedies for employment barriers include workplace accommodations (flexible schedules, accessible facilities), mentorship and professional networking support, and targeted recruitment efforts that broaden candidate pools. Option B includes inappropriate or counterproductive measures like mandatory retirement (illegal in many cases). Options C and D would either eliminate legitimate job qualifications or reinforce barriers, making them ineffective solutions.",
+   "type": "which_of_following",
+   "objective_num": 7,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of notifying your employer of your intention to leave a job, typically including a formal letter and a specified notice period to allow time for transition planning, is known as ___",
+   "options": [
+    "position separation",
+    "career termination",
+    "employment withdrawal",
+    "job resignation"
+   ],
+   "correct_index": 3,
+   "explanation": "Job resignation is the formal process of notifying an employer that you intend to leave your position. While 'position separation' is related, resignation specifically emphasizes the formal notification and notice-period component that allows employers to plan for your departure.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Career Development",
+   "difficulty": "hard"
+  }
+ ],
+ "Business Operations": [
+  {
+   "question": "The process of arranging your desk, filing system, and frequently used materials in logical locations to minimize wasted time searching is called ___.",
+   "options": [
+    "workstation efficiency",
+    "desk optimization",
+    "workstation organization",
+    "material staging"
+   ],
+   "correct_index": 2,
+   "explanation": "Workstation organization is the specific term for arranging a workspace to improve productivity and reduce wasted motion. The other terms are either too general or not the standard business terminology used in operations management.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A method of copying that produces high-quality color output, handles custom sizes, and is ideal for small-volume marketing materials is ___.",
+   "options": [
+    "digital printing",
+    "photocopying",
+    "letterpress printing",
+    "offset printing"
+   ],
+   "correct_index": 0,
+   "explanation": "Digital printing is the reprographic method best suited for small-volume, high-quality color jobs with flexibility in sizing. Offset printing is for large volumes, photocopying is basic black-and-white, and letterpress is outdated for business use.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of scheduling tasks by their urgency and importance, blocking time for each activity, and reviewing progress daily is an example of ___.",
+   "options": [
+    "workload delegation",
+    "time management",
+    "schedule coordination",
+    "productivity tracking"
+   ],
+   "correct_index": 1,
+   "explanation": "Time management is the broader discipline that encompasses prioritization, time blocking, and regular review of work completion. The other terms describe related concepts but do not capture the full scope of scheduling and organizing tasks effectively.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company's reprographics strategy should include all of the following EXCEPT",
+   "options": [
+    "purchasing the most expensive copier available to ensure durability",
+    "establishing procedures for paper stock, toner, and maintenance",
+    "selecting equipment based on quality, speed, and cost per page",
+    "analyzing the volume and type of copying needed monthly"
+   ],
+   "correct_index": 0,
+   "explanation": "Purchasing the most expensive equipment is not a sound reprographics strategy—cost-effectiveness and matching the tool to actual need are what matter. A genuine strategy analyzes volume, selects based on appropriate criteria (quality, speed, cost), and maintains clear supply and service procedures.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The coordination and execution of workplace activities—such as scheduling conference rooms, sending meeting invitations, arranging catering, and confirming attendance—fall under the responsibility of ___.",
+   "options": [
+    "mail processing",
+    "equipment maintenance",
+    "travel arrangement",
+    "meeting and event coordination"
+   ],
+   "correct_index": 3,
+   "explanation": "Meeting and event coordination specifically covers the planning and logistical support needed to organize workplace gatherings and activities. Travel arrangement handles reservations and itineraries, mail processing handles correspondence, and equipment maintenance addresses machines and supplies.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business structure in which one person owns and operates the company, is personally liable for all debts, and keeps all profits is called a(n) ___.",
+   "options": [
+    "corporation",
+    "cooperative",
+    "sole proprietorship",
+    "partnership"
+   ],
+   "correct_index": 2,
+   "explanation": "A sole proprietorship is the simplest business ownership structure with a single owner who has unlimited personal liability and receives all profits. This is distinct from partnerships (multiple owners) and corporations (separate legal entity with limited liability).",
+   "type": "definition_recall",
+   "objective_num": 14,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When arranging business travel, the document that outlines the traveler's schedule of flights, hotel stays, meetings, and return transportation is called a(n) ___.",
+   "options": [
+    "travel authorization form",
+    "itinerary",
+    "expense report",
+    "reservation confirmation"
+   ],
+   "correct_index": 1,
+   "explanation": "An itinerary is a detailed travel schedule that documents all legs of the trip, including departure and arrival times, accommodations, and planned activities. A reservation confirmation confirms booking details, while an expense report documents costs after travel is complete.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When arranging business travel, a traveler must secure which of the following components?",
+   "options": [
+    "Flight reservations, hotel accommodations, ground transportation arrangements, and travel insurance with maximum coverage limits",
+    "Flight reservations, ground transportation arrangements, restaurant reservations, and emergency evacuation procedures",
+    "Hotel accommodations, ground transportation, meeting room bookings, and approval from the finance department",
+    "Flight reservations, hotel accommodations, ground transportation arrangements, and meeting room bookings at the destination"
+   ],
+   "correct_index": 3,
+   "explanation": "Essential travel arrangements include transportation (flights and ground), lodging, and local mobility at the destination—not personal services like restaurant reservations or internal approvals. While travel insurance can be valuable, it is not always a required component of basic travel arrangement.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business structure in which two or more people share ownership, management responsibilities, and liability for the company's debts is called a(n) ___.",
+   "options": [
+    "cooperative",
+    "franchise",
+    "partnership",
+    "corporation"
+   ],
+   "correct_index": 2,
+   "explanation": "A partnership is defined by shared ownership and mutual liability among two or more partners. This distinguishes it from a sole proprietorship (one owner) and a corporation (separate legal entity with limited liability). The partnership structure is common in professional services and small businesses where partners want to combine resources and expertise.",
+   "type": "definition_recall",
+   "objective_num": 14,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of planning and organizing all details related to an employee's business trip—including booking accommodations, arranging transportation, scheduling meetings, and confirming all logistics—is called ___.",
+   "options": [
+    "travel coordination",
+    "scheduling",
+    "logistics management",
+    "destination planning"
+   ],
+   "correct_index": 0,
+   "explanation": "Travel coordination encompasses the full range of planning tasks required to arrange a business trip successfully. While scheduling and logistics are related terms, travel coordination is the specific business operations term that captures the coordinated effort of securing all travel components and aligning them with the traveler's business objectives.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The regular inspection and servicing of office equipment at scheduled intervals to prevent breakdowns and extend equipment lifespan is called ___.",
+   "options": [
+    "equipment troubleshooting",
+    "equipment inventory management",
+    "repair documentation",
+    "preventive maintenance"
+   ],
+   "correct_index": 3,
+   "explanation": "Preventive maintenance is the proactive practice of inspecting and servicing equipment on a schedule before problems occur, rather than waiting for equipment to fail. This approach reduces unexpected downtime and extends the life of office machines like printers, copiers, and scanners. Troubleshooting and repair documentation are reactive responses that occur after a problem is already present.",
+   "type": "definition_recall",
+   "objective_num": 12,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a printer displays an error code and stops functioning, the process of identifying the cause—such as checking for paper jams, verifying toner levels, and confirming network connectivity—before calling a repair technician is an example of ___.",
+   "options": [
+    "troubleshooting office equipment problems",
+    "equipment calibration",
+    "preventive maintenance scheduling",
+    "supply chain management"
+   ],
+   "correct_index": 0,
+   "explanation": "Troubleshooting is the systematic process of identifying the root cause of equipment malfunctions by testing basic components and conditions. Checking for jams, toner, and connectivity are standard troubleshooting steps that often resolve issues without professional repair. Equipment calibration refers to fine-tuning precision settings, and preventive maintenance is scheduled upkeep, neither of which applies to responding to an active malfunction.",
+   "type": "concept_completion",
+   "objective_num": 10,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate preventive maintenance tasks for office equipment?",
+   "options": [
+    "Replacing all hardware annually regardless of condition, bypassing firmware updates, and avoiding equipment use to prevent wear",
+    "Waiting for equipment to break before replacing parts, using refurbished toner cartridges exclusively, and ignoring manufacturer guidelines",
+    "Cleaning printer rollers, replacing toner cartridges before they fail, and running regular cleaning cycles on copier lenses",
+    "Storing equipment in humid environments, operating machinery beyond recommended duty cycles, and using generic replacement parts only"
+   ],
+   "correct_index": 2,
+   "explanation": "Preventive maintenance includes routine cleaning, timely replacement of consumables before depletion, and scheduled servicing to catch wear early. The first option lists three concrete, realistic tasks that follow manufacturer guidelines and prevent equipment failure. The other options either delay maintenance until equipment fails (reactive, not preventive), ignore best practices, or introduce poor practices that damage equipment.",
+   "type": "which_of_following",
+   "objective_num": 12,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An office copier begins producing dark, streaked copies. Before requesting a repair technician, the administrative assistant should troubleshoot by checking which of the following first?",
+   "options": [
+    "Whether the copier was recently purchased from the lowest-cost vendor available",
+    "Whether the copier's glass surface is clean and whether developer toner is at appropriate levels",
+    "The total number of copies the machine has produced since installation last year",
+    "The age of the copier's warranty and whether the manufacturer still supports the model"
+   ],
+   "correct_index": 1,
+   "explanation": "Dark, streaked copies typically result from a dirty glass surface or low/contaminated toner—both of which are quick, inexpensive troubleshooting steps before calling for professional service. Checking the copier's glass and toner levels is a standard first step that resolves the majority of print-quality issues without downtime or repair costs. Warranty status, vendor selection history, and total usage do not directly diagnose the visual print defect.",
+   "type": "scenario_judgment",
+   "objective_num": 10,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ongoing process of keeping office equipment in good working condition through scheduled inspections, lubrication of moving parts, replacement of worn consumables, and regular cleaning to extend equipment life and prevent unexpected failures makes up ___.",
+   "options": [
+    "service diagnostics",
+    "repair management",
+    "equipment troubleshooting",
+    "maintenance procedures"
+   ],
+   "correct_index": 3,
+   "explanation": "Maintenance procedures encompass all the scheduled, routine actions taken to keep equipment functioning properly and to prevent breakdowns before they occur. This is proactive, occurring at regular intervals, whereas troubleshooting is reactive—done only when a problem arises.",
+   "type": "concept_completion",
+   "objective_num": 12,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A service that picks up and delivers packages on a scheduled basis, offering tracking and signature confirmation for important documents and parcels, is known as a(n) ___.",
+   "options": [
+    "expedited shipping method",
+    "inter-office mail system",
+    "courier service",
+    "postal forwarding program"
+   ],
+   "correct_index": 2,
+   "explanation": "A courier service is a specialized mail and package delivery option that provides scheduled pickup, delivery, tracking, and signature confirmation—distinct from standard postal services or internal mail systems. This service is essential when documents require guaranteed delivery and proof of receipt.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The supplies that must be regularly monitored and replaced in office equipment to maintain consistent operation and print quality are called ___.",
+   "options": [
+    "backup components",
+    "consumables",
+    "spare parts inventory",
+    "equipment upgrades"
+   ],
+   "correct_index": 1,
+   "explanation": "Consumables are supplies such as toner, paper, ink cartridges, and drums that are used up during normal equipment operation and must be regularly replenished to keep printers and copiers functioning properly. This differs from spare parts, which are replacements for broken components, or upgrades, which improve functionality.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are reasons to use a courier service for business communications EXCEPT ___.",
+   "options": [
+    "cost savings compared to all other shipping methods available",
+    "secure handling of confidential or time-sensitive materials",
+    "guaranteed delivery by a specific time with tracking",
+    "signature confirmation proof of receipt"
+   ],
+   "correct_index": 0,
+   "explanation": "While courier services offer guaranteed delivery, tracking, signature confirmation, and secure handling of sensitive materials, they are typically more expensive than standard postal mail—not cheaper. Cost savings is not a reason to choose courier services; speed, security, and proof of delivery are the primary advantages.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The consumable items in office equipment—such as printer toner, copier developer, and paper trays—that must be monitored regularly to prevent performance degradation and ensure consistent output quality are part of the process of ___.",
+   "options": [
+    "scheduling repair appointments",
+    "budgeting for office expenses",
+    "maintaining office equipment",
+    "managing supply inventory"
+   ],
+   "correct_index": 2,
+   "explanation": "Maintaining office equipment specifically includes tracking and replacing consumables (toner, developer, paper, ink cartridges) as part of routine upkeep. While inventory management and budgeting are related, the core responsibility of equipment maintenance is ensuring these supplies are on hand and replaced before they run out or degrade performance.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When an office runs low on printer toner or copier paper, the process of checking current inventory levels, determining when supplies will be depleted, and ordering replacements before they run out is called ___.",
+   "options": [
+    "equipment maintenance",
+    "reprographics coordination",
+    "supply chain management",
+    "inventory monitoring"
+   ],
+   "correct_index": 3,
+   "explanation": "Inventory monitoring is the systematic tracking of supply levels to ensure timely reordering and prevent equipment downtime due to depleted consumables. While supply chain management is broader and reprographics coordination focuses on copying tasks, inventory monitoring specifically addresses the ongoing check-and-reorder cycle for office supplies.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Business Operations",
+   "difficulty": "hard"
+  }
+ ],
+ "Database/Information Management": [
+  {
+   "question": "A system that uses dates or follow-up times to remind staff when documents or tasks require attention is called a ___.",
+   "options": [
+    "tickler file",
+    "purge schedule",
+    "reference library",
+    "chronological filing system"
+   ],
+   "correct_index": 0,
+   "explanation": "A tickler file is specifically designed to prompt action on documents or tasks at designated future dates. It ensures nothing is overlooked by systematically reminding staff of upcoming deadlines or required follow-ups. This differs from a chronological filing system, which simply orders documents by date without an action-reminder function.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of organizing and tracking quantities, locations, and details of items on hand to ensure accurate stock levels and availability is called ___.",
+   "options": [
+    "reference cataloging",
+    "inventory record maintenance",
+    "historical archiving",
+    "document retrieval"
+   ],
+   "correct_index": 1,
+   "explanation": "Inventory record maintenance is the formal process of preparing and managing detailed records that account for all items, their quantities, and their locations. This enables businesses to know what stock is available, where it is stored, and when reordering is needed. Reference cataloging relates to organizing reference materials rather than physical stock.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are established methods for organizing files in a document storage system EXCEPT ___.",
+   "options": [
+    "grouping documents randomly as they are stored to save filing time",
+    "arranging documents in order of their receipt date",
+    "arranging documents in numerical order by account or case number",
+    "arranging documents by subject matter or topic"
+   ],
+   "correct_index": 0,
+   "explanation": "Filing systems must follow consistent, logical patterns such as alphabetical, subject, numerical, or chronological order to enable efficient retrieval. Random arrangement defeats the entire purpose of a filing system and makes documents impossible to locate reliably. The other three options represent standard, established filing methods used in professional record management.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic removal of outdated, obsolete, or no-longer-needed documents and records from active files to reduce storage space and improve organizational efficiency is part of a process called ___.",
+   "options": [
+    "retrieving",
+    "tickling",
+    "alphabetizing",
+    "purging"
+   ],
+   "correct_index": 3,
+   "explanation": "Purging is the intentional process of identifying and removing records that have reached the end of their useful life or retention period. This keeps filing systems lean, reduces physical and digital storage demands, and ensures that active files contain only current, relevant materials. Retrieving refers to locating files; tickling refers to reminder systems; alphabetizing refers to organization method.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be standard reasons to maintain a clippings file and historical records collection?",
+   "options": [
+    "To organize documents by subject and to arrange files in chronological date order",
+    "To track current inventory counts and to monitor real-time stock movement",
+    "To preserve past articles, news items, and industry research for future reference and background information",
+    "To remind staff of upcoming deadlines and to prompt follow-up on pending tasks"
+   ],
+   "correct_index": 2,
+   "explanation": "A clippings file and historical records collection serve to capture and preserve external information, articles, and background materials for research and reference purposes—supporting informed decision-making over time. Option A describes inventory tracking, Option C describes a tickler system's function, and Option D describes filing organization methods; only Option B reflects the actual purpose of reference libraries and historical record maintenance.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document storage system that arranges files by subject matter—grouping related materials together regardless of date or name—uses which organizing method?",
+   "options": [
+    "Alphabetical filing",
+    "Subject filing",
+    "Numerical filing",
+    "Chronological filing"
+   ],
+   "correct_index": 1,
+   "explanation": "Subject filing organizes documents by topic or category, making it easy to locate all materials related to one subject in one place. This differs from alphabetical (by name), numerical (by assigned code), and chronological (by date) methods, each of which prioritizes a different organizing principle.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to quickly locate, retrieve, and access stored documents when needed is a core goal of any ___.",
+   "options": [
+    "scanning protocol",
+    "purging schedule",
+    "document storage and retrieval system",
+    "reference library collection"
+   ],
+   "correct_index": 2,
+   "explanation": "A document storage and retrieval system is designed specifically to organize, store, and enable fast access to files. While purging, reference libraries, and scanning are all related office functions, only a storage and retrieval system has efficient location and access as its primary purpose.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be accurate reasons to maintain detailed, organized document storage and retrieval systems?",
+   "options": [
+    "To make it impossible for staff to access files and to prevent any cross-referencing between related documents",
+    "To allow random placement of files and to eliminate the need for any naming or categorization standards",
+    "To create unnecessary paperwork and to increase the volume of documents kept in active storage",
+    "To reduce clutter in filing cabinets and to ensure employees can find information quickly without wasting time searching"
+   ],
+   "correct_index": 3,
+   "explanation": "Organized document storage systems exist to reduce physical clutter and enable staff to locate files efficiently—two fundamental organizational goals. The other options describe chaotic or counterproductive practices (randomization, lack of standards, document hoarding, intentional inaccessibility) that actively undermine effective file management.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When organizing documents by the order in which they were created or received, regardless of subject or name, a business is using which filing method?",
+   "options": [
+    "Chronological filing",
+    "Alphabetical filing",
+    "Subject filing",
+    "Numerical filing"
+   ],
+   "correct_index": 0,
+   "explanation": "Chronological filing arranges documents by date of creation or receipt, creating a time-based sequence. This method is useful for tracking events, correspondence, or transactions in the order they occurred, though it can make retrieval difficult without knowing the approximate date.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of organizing files in a manner where documents are assigned and stored according to a sequence of consecutive numbers is called",
+   "options": [
+    "Chronological filing",
+    "Numerical filing",
+    "Subject filing",
+    "Alphabetical filing"
+   ],
+   "correct_index": 1,
+   "explanation": "Numerical filing assigns each document or record a unique number and stores files in ascending numerical order. This method is particularly useful for invoices, case files, purchase orders, and other documents that naturally receive sequential identification numbers.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A filing system that assigns documents to consecutive numbers and stores them according to that numeric sequence serves which primary purpose?",
+   "options": [
+    "To arrange documents based on when follow-up actions or reviews are needed",
+    "To organize files alphabetically by the names of the people or departments involved",
+    "To group related materials together by topic regardless of when they were created",
+    "To assign each document a unique identifier for quick location and retrieval using numerical order"
+   ],
+   "correct_index": 3,
+   "explanation": "Numerical filing assigns each document a consecutive number that determines its storage location, making it easy to retrieve documents if you know their assigned number. This system is commonly used for items like invoice numbers, case numbers, or purchase order numbers where each document receives a unique sequential identifier.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be considerations when deciding whether a stored document should be purged from active files?",
+   "options": [
+    "The document contains sensitive information, the filing cabinet is full, and the document was created over two years ago",
+    "The document is outdated, legal retention requirements have been met, and it is no longer needed for current operations",
+    "The document was filed alphabetically, it has never been retrieved, and it is smaller than other documents in the system",
+    "The document is organized numerically, it belongs to a former employee, and it is printed on colored paper"
+   ],
+   "correct_index": 1,
+   "explanation": "Purging decisions should be based on whether documents are outdated, whether legal or business retention requirements have been satisfied, and whether they serve any ongoing operational purpose. These criteria ensure that organizations remove only truly unnecessary records while protecting documents that must be kept for legal, compliance, or business reasons.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL support the goal of maintaining an effective document storage and retrieval system?",
+   "options": [
+    "Using consistent filing methods, establishing clear labeling procedures, and regularly updating how documents are organized based on business needs",
+    "Keeping all documents indefinitely regardless of age, organizing files by the physical size of the papers, and limiting access to only one staff member",
+    "Storing files randomly in whatever location is most convenient, using multiple different filing methods within the same cabinet, and avoiding written filing procedures",
+    "Filing documents by the color of the folder, changing filing methods each month to avoid monotony, and discarding all files every six months"
+   ],
+   "correct_index": 0,
+   "explanation": "Effective document storage relies on consistency in filing methods, clear labeling so anyone can find documents, and periodic updates to keep the system aligned with organizational changes. These practices ensure that documents can be located quickly and reliably when needed, reducing wasted time and improving operational efficiency.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The primary purpose of maintaining a well-organized document storage and retrieval system in a business is to ___.",
+   "options": [
+    "Reduce the need for any alphabetical or numerical sorting procedures",
+    "Maximize the number of filing cabinets needed in the office",
+    "Enable employees to locate and access documents quickly and efficiently when required",
+    "Create redundant copies of all stored files for backup purposes"
+   ],
+   "correct_index": 2,
+   "explanation": "An effective document storage and retrieval system exists to support quick access and efficient location of information when needed. This reduces wasted time searching and improves operational efficiency. The other options either contradict the goal or describe unrelated practices.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be situations where a business should consider purging a document from its active filing system?",
+   "options": [
+    "The document is rarely accessed, all applicable legal retention periods have elapsed, and the information is no longer needed for current business operations",
+    "The document is referenced frequently by multiple departments, legal hold requirements remain active, and retention policies still apply",
+    "The document contains confidential employee information, ongoing litigation involves the matter, and audit procedures may still reference it",
+    "The document was filed less than one year ago, departmental policy suggests keeping it, and similar documents are stored elsewhere in the system"
+   ],
+   "correct_index": 0,
+   "explanation": "Documents should be purged when they are outdated, no longer serve a business purpose, legal retention requirements have been satisfied, and they are no longer actively used. The other options all contain reasons to retain the document—frequent use, active legal holds, ongoing litigation, or recent filing dates.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document that has been converted into a digital image format using a scanner and then saved to a computer system or cloud storage is referred to as a(n) ___.",
+   "options": [
+    "archived file",
+    "indexed reference",
+    "purged record",
+    "scanned document"
+   ],
+   "correct_index": 3,
+   "explanation": "A scanned document is the specific term for a physical document that has been digitized using scanning equipment and stored electronically. This process is fundamental to converting paper records into digital formats for easier retrieval and reduced physical storage needs. The other options refer to different document management concepts—archived files are older records moved to secondary storage, indexed references are cataloged materials, and purged records are deleted items.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a tickler file system is organized, entries are typically arranged by ___.",
+   "options": [
+    "physical location in the filing cabinet",
+    "alphabetical order of document titles",
+    "follow-up date or action deadline",
+    "document subject matter and category"
+   ],
+   "correct_index": 2,
+   "explanation": "A tickler file system's defining feature is that it uses future dates or action deadlines to trigger staff reminders about pending tasks or documents that require attention. Organizing by follow-up date ensures employees see items at exactly the right time. The other options describe different filing methods—subject organization, alphabetical ordering, and location-based storage—none of which are the core purpose of a tickler system.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are advantages of converting paper documents to digital scanned files EXCEPT",
+   "options": [
+    "reduced physical storage space requirements",
+    "elimination of the need for any backup systems",
+    "ability to share documents electronically with remote employees",
+    "faster document retrieval and access times"
+   ],
+   "correct_index": 1,
+   "explanation": "While scanning creates digital copies that reduce physical storage and enable quick retrieval, it does not eliminate the need for backup systems—in fact, digital files require robust backups to prevent data loss. Converting to scanned documents offers real benefits like smaller footprints, faster searches, and remote access, but these advantages do not negate the critical importance of backup and disaster recovery procedures.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company receives hundreds of vendor invoices each month. To ensure invoices are paid on time and key renewal dates are not missed, the accounting department decides to implement a tickler file. The primary way this system should organize entries is by ___.",
+   "options": [
+    "invoice amount from highest to lowest",
+    "vendor name in alphabetical order",
+    "invoice number sequence",
+    "payment due date or contract renewal date"
+   ],
+   "correct_index": 3,
+   "explanation": "A tickler file's core function is to alert staff to action deadlines; organizing by payment due date or renewal date ensures the accounting team receives timely reminders to process payments or renew contracts before the deadline passes. This timing-based organization is what makes a tickler system effective for managing time-sensitive tasks. Alphabetical vendor order, amount sorting, and invoice numbering would help locate specific invoices but would not trigger action reminders at the right moment.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a paper document is converted into a digital format using scanning equipment and stored electronically, the process of organizing, naming, and storing these digital copies to ensure they can be easily retrieved later is called ___.",
+   "options": [
+    "data conversion and file management",
+    "document purging",
+    "inventory record tracking",
+    "tickler file indexing"
+   ],
+   "correct_index": 0,
+   "explanation": "Data conversion and file management refers to the systematic process of converting paper records into digital scanned files and organizing them in a retrieval system so they remain accessible. This is distinct from purging (removing old files), tickler systems (follow-up reminders), or inventory tracking (stock management).",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Database/Information Management",
+   "difficulty": "hard"
+  }
+ ],
+ "Ethics/Safety": [
+  {
+   "question": "A written plan that outlines the procedures employees must follow if a fire, natural disaster, or other emergency occurs is called a(n) ___.",
+   "options": [
+    "risk assessment document",
+    "business continuity strategy",
+    "emergency action plan",
+    "incident response protocol"
+   ],
+   "correct_index": 2,
+   "explanation": "An emergency action plan is the formal document that details specific evacuation routes, assembly points, communication procedures, and employee responsibilities during emergencies. While related concepts like business continuity and incident response exist, the emergency action plan is the foundational written procedure required by OSHA for workplace safety.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying potential workplace hazards, evaluating the risk they pose, and taking steps to reduce or eliminate that risk makes up ___.",
+   "options": [
+    "ergonomic assessment",
+    "risk management",
+    "compliance auditing",
+    "incident investigation"
+   ],
+   "correct_index": 1,
+   "explanation": "Risk management is the systematic approach to identifying hazards, evaluating their likelihood and impact, and implementing controls to mitigate them. This proactive process is central to workplace safety policy and helps organizations prevent accidents before they occur, distinguishing it from incident investigation, which responds after an event.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are components of a comprehensive emergency/disaster plan EXCEPT",
+   "options": [
+    "roles and responsibilities during an emergency",
+    "designated evacuation routes and assembly points",
+    "employee salary and benefit information",
+    "communication procedures and emergency contacts"
+   ],
+   "correct_index": 2,
+   "explanation": "Employee salary and benefit information is personnel data with no connection to emergency response procedures. A true emergency plan includes evacuation routes, communication systems, contact lists, and clearly defined roles so employees know exactly what to do during a crisis—salary data is irrelevant to emergency preparedness.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate steps to protect employee privacy and comply with privacy legislation in an office environment?",
+   "options": [
+    "Limit access to sensitive files, use secure passwords, shred confidential documents, and encrypt email containing personal information",
+    "Ignore data protection laws, share customer information with vendors without consent, and store all records in open filing cabinets",
+    "Collect unlimited personal data, store it indefinitely, refuse to comply with data-access requests, and deny employees knowledge of what is collected",
+    "Post employee personal information on the company intranet, store passwords on sticky notes, keep all files unlocked, and forward client details freely"
+   ],
+   "correct_index": 0,
+   "explanation": "Privacy compliance requires controlling access (limiting who can view sensitive data), using strong authentication (secure passwords), properly destroying records (shredding), and protecting data in transit (encrypting email). These concrete practices align with legislation like GDPR, CCPA, and standard data protection policies. The other options describe practices that violate privacy law and expose the organization to liability.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The responsibility of employees to keep company information, client details, and trade secrets private and secure is a core element of ___.",
+   "options": [
+    "marketing strategy",
+    "confidentiality policies",
+    "customer relationship management",
+    "performance evaluation"
+   ],
+   "correct_index": 1,
+   "explanation": "Confidentiality policies establish the expectations and procedures for protecting sensitive company and client information from unauthorized disclosure or misuse. These policies define what information is confidential, who may access it, and the consequences of breaches, making them fundamental to office security and legal compliance.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of gathering, using, and protecting personal information about employees and clients—including birth dates, Social Security numbers, medical records, and contact details—in compliance with legal standards makes up ___.",
+   "options": [
+    "information governance",
+    "access control",
+    "data inventory",
+    "privacy management"
+   ],
+   "correct_index": 3,
+   "explanation": "Privacy management encompasses the collection, handling, and safeguarding of personal information under laws like HIPAA and state privacy statutes. While access control and information governance are related, privacy management specifically emphasizes the legal and ethical handling of personal data.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all help an office protect against both internal and external security breaches?",
+   "options": [
+    "Encrypt all printed documents, require biometric scanning for entry, install security cameras in break rooms, and monitor all phone calls",
+    "Install antivirus software, eliminate all employee access to external websites, disconnect network drives, and disable email",
+    "Require regular password changes, restrict file access by role, monitor employee login activity, and use multi-factor authentication",
+    "Conduct background checks on all vendors, prohibit visitors from entering the building, lock all filing cabinets, and ban personal devices"
+   ],
+   "correct_index": 2,
+   "explanation": "Option A combines access controls (password/role restrictions), monitoring (login activity), and modern authentication (multi-factor)—all proven defenses against both internal misuse and external attacks. The other options either go too far (eliminating email and internet), are impractical (monitoring all calls), or address only physical security rather than data security.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ethical obligation of employees to act with integrity in their work—keeping promises, following company policies, avoiding conflicts of interest, and representing the organization honestly—reflects ___.",
+   "options": [
+    "ergonomic compliance",
+    "professional conduct and integrity",
+    "emergency preparedness protocols",
+    "risk mitigation standards"
+   ],
+   "correct_index": 1,
+   "explanation": "Professional conduct and integrity describe the character-based obligations employees owe their employer and clients—honesty, loyalty, reliability, and ethical behavior. Risk mitigation and emergency preparedness are structural safety measures, while ergonomics addresses physical workspace design, neither of which capture the ethical dimensions of integrity and trustworthiness.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ethical and legal responsibility to keep sensitive workplace information—such as client financial records, strategic business plans, employee medical data, and proprietary research—protected from unauthorized access and disclosure makes up ___.",
+   "options": [
+    "confidentiality obligations",
+    "access control",
+    "information security",
+    "data governance"
+   ],
+   "correct_index": 0,
+   "explanation": "Confidentiality obligations refer to the duty employees have to safeguard company and client sensitive information as part of professional conduct and legal compliance. While data governance and access control are tools used to enforce confidentiality, confidentiality obligations is the broader ethical and legal principle that governs why such protections exist. This concept is fundamental to office ethics and privacy policies.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An employee discovers that a coworker has been using company equipment to access personal social media accounts and download files during work hours. Which of the following would all be appropriate components of a responsible technology use policy designed to prevent this kind of misuse?",
+   "options": [
+    "Block access to all social media sites, disable USB ports on all computers, and require written approval before any software installation",
+    "Prohibit all personal use of company devices, monitor all employee activity continuously, and terminate any employee who violates the policy once",
+    "Allow unlimited personal use as long as work tasks are completed, avoid any monitoring to respect privacy, and rely solely on the honor system",
+    "Establish clear guidelines on acceptable use, implement periodic audits of system access logs, and provide training on company technology policies"
+   ],
+   "correct_index": 3,
+   "explanation": "A balanced responsible technology use policy should include clear guidelines, regular monitoring through audit trails, and employee education—not blanket bans or zero-tolerance approaches that are impractical, nor a system that relies purely on trust without any safeguards. Option B reflects industry best practices for managing technology use while maintaining both security and reasonable employee treatment, in line with professional ethics and risk management principles.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Information that must be protected because it belongs to the company and provides a competitive advantage—such as client lists, pricing strategies, and manufacturing processes—is known as ___.",
+   "options": [
+    "employee benefits data",
+    "public disclosure records",
+    "proprietary information or trade secrets",
+    "archived business correspondence"
+   ],
+   "correct_index": 2,
+   "explanation": "Trade secrets and proprietary information are confidential assets unique to a company that give it a market edge. This is distinct from general employee data or public records, which do not require the same level of confidentiality protection. Understanding what constitutes proprietary information is essential for office confidentiality policies.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of intentionally or accidentally sending sensitive company documents, client information, or employee data to unauthorized recipients through email or file-sharing platforms is called ___.",
+   "options": [
+    "access control management",
+    "encryption protocol",
+    "data classification",
+    "information disclosure or data breach"
+   ],
+   "correct_index": 3,
+   "explanation": "An information disclosure or data breach occurs when confidential information is exposed to people who should not have access to it. This is a critical security concern that organizations guard against through confidentiality policies and training. Distinguishing this from other security mechanisms like encryption or access controls reflects understanding of how breaches actually happen.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are consequences an employee may face for misusing company technology—such as using work equipment for personal business or accessing non-work websites during company time—EXCEPT",
+   "options": [
+    "immediate termination without any prior documentation",
+    "mandatory retraining on acceptable use policies",
+    "loss of remote access privileges",
+    "written warnings or disciplinary action"
+   ],
+   "correct_index": 0,
+   "explanation": "While serious technology misuse can result in termination, immediate dismissal without any documentation or prior warning would violate most fair employment practices and company policy procedures. Realistic consequences include progressive discipline (warnings first), loss of access privileges, and retraining, but not jumping directly to termination. This tests understanding of proportional, documented enforcement of technology use policies.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The requirement that employees limit the sharing of work information only to those who have a legitimate need to know it in order to perform their job duties reflects the principle of ___.",
+   "options": [
+    "full transparency in the workplace",
+    "data minimization and need-to-know access",
+    "shared network permissions",
+    "open-door communication"
+   ],
+   "correct_index": 1,
+   "explanation": "The need-to-know principle ensures that confidential information is shared only with employees whose job responsibilities require it, reducing the risk of unauthorized disclosure. This is a foundational concept in office confidentiality and data protection. It differs from open communication policies and general access, which would expose sensitive information unnecessarily.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be signs that an employee may be misusing company technology or violating acceptable use policies?",
+   "options": [
+    "Frequently changing passwords, running antivirus scans, and clearing cache and cookies regularly",
+    "Updating security patches, enabling automatic backups, and reporting suspicious network activity",
+    "Installing unapproved software, sharing login credentials with coworkers, and connecting personal mobile devices without authorization",
+    "Logging in during standard business hours, using email for work-related tasks, and accessing approved cloud storage"
+   ],
+   "correct_index": 2,
+   "explanation": "Installing unauthorized software, sharing credentials, and connecting unapproved devices are clear violations of responsible technology use—they bypass security controls and create breach risks. The other options represent either normal work activity (option A) or proper security practices (options B and D). Recognizing actual misuse patterns is essential for enforcing technology policies effectively.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of arranging workstations, equipment, and furniture to minimize strain, fatigue, and injury risk while employees perform their job duties is called ___.",
+   "options": [
+    "occupational safety",
+    "workplace accessibility",
+    "physical compliance",
+    "ergonomics"
+   ],
+   "correct_index": 3,
+   "explanation": "Ergonomics specifically focuses on designing and arranging the work environment to fit the worker's body and movements, reducing repetitive strain injuries and discomfort. While workplace accessibility and occupational safety are related concepts, ergonomics is the precise term for this design and arrangement practice.",
+   "type": "definition_recall",
+   "objective_num": 9,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Proper ergonomic practices in an office environment reduce the risk of all of the following EXCEPT",
+   "options": [
+    "eye strain from improper monitor height and screen distance",
+    "network security breaches and unauthorized access to files",
+    "carpal tunnel syndrome and repetitive strain injuries",
+    "back pain and neck strain from poor posture"
+   ],
+   "correct_index": 1,
+   "explanation": "Network security breaches relate to data protection and technology security, not to ergonomics or physical workplace design. Proper ergonomics—monitor positioning, chair height, keyboard placement, and break schedules—directly prevents repetitive strain injuries, posture-related pain, and eye strain, making those three options genuine consequences of poor ergonomics.",
+   "type": "all_except",
+   "objective_num": 9,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The financial reporting law that requires public companies to establish internal controls, document financial transactions thoroughly, and maintain accurate records to prevent fraud and protect shareholder interests is called ___.",
+   "options": [
+    "the Sarbanes-Oxley Act",
+    "the Securities and Exchange Commission Charter",
+    "the Equal Employment Opportunity Act",
+    "the Fair Labor Standards Act"
+   ],
+   "correct_index": 0,
+   "explanation": "The Sarbanes-Oxley Act (SOX) specifically mandates corporate financial accountability, internal control documentation, and audit procedures following major corporate scandals. The Fair Labor Standards Act covers wages and hours; the EEOC Act addresses employment discrimination; and the SEC Charter establishes the regulatory body—none address financial reporting controls and fraud prevention as SOX does.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all help an office comply with both ergonomic best practices and legal accessibility mandates under the ADA?",
+   "options": [
+    "Establish clear password policies; shred all confidential documents; install firewalls to block unauthorized access attempts",
+    "Encrypt all email communications; restrict file access based on employee role; implement multi-factor authentication on all accounts",
+    "Require all employees to attend monthly compliance training; document every file transfer; conduct quarterly security audits of the network",
+    "Adjust monitor stands and keyboard trays to fit different body heights; provide screen magnification software for employees with vision impairments"
+   ],
+   "correct_index": 3,
+   "explanation": "This option directly combines ergonomic adjustments (monitor stands and keyboard trays for individual body needs) with legal ADA accessibility requirements (assistive technology like screen magnification). The other three options focus on data security, encryption, and confidentiality—important office practices but unrelated to ergonomics and ADA accessibility compliance.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate ways an office can comply with the Americans with Disabilities Act (ADA) when setting up workstations?",
+   "options": [
+    "Provide adjustable desk heights, ensure wheelchair accessibility at entryways, and install accessible restroom facilities",
+    "Require all employees to disclose medical conditions, limit job duties based on physical ability, and assign seating without employee input",
+    "Use only standing desks, eliminate all assistive technology, and standardize all workstation heights to one setting",
+    "Install security cameras at all workstations, restrict employee movement between areas, and require written medical documentation for any accommodation request"
+   ],
+   "correct_index": 0,
+   "explanation": "The ADA requires employers to provide reasonable accommodations such as adjustable workstations, accessible facilities, and assistive technology. The other options either violate ADA requirements (forcing disclosure, eliminating accommodations) or introduce unrelated or discriminatory practices (standardized heights, surveillance).",
+   "type": "which_of_following",
+   "objective_num": 10,
+   "knowledge_area": "Ethics/Safety",
+   "difficulty": "hard"
+  }
+ ],
+ "Finance": [
+  {
+   "question": "The process of comparing a bank statement with your business's internal cash records to ensure they match is called ___",
+   "options": [
+    "deposit verification",
+    "bank reconciliation",
+    "cash flow analysis",
+    "ledger balancing"
+   ],
+   "correct_index": 1,
+   "explanation": "Bank reconciliation is the specific accounting process of matching the bank statement balance to the company's recorded cash balance, identifying any discrepancies. This is a foundational banking transaction skill tested in introductory finance. The other options refer to related but distinct financial processes.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The system used to track all money flowing into and out of a business, including when it arrives and where it goes, is called ___",
+   "options": [
+    "expense allocation",
+    "accounts payable",
+    "cash flow",
+    "depreciation tracking"
+   ],
+   "correct_index": 2,
+   "explanation": "Cash flow refers to the movement of money through a business—both inflows and outflows—and is critical for understanding a company's financial health. Understanding cash flow is essential for budgeting and expense management in business procedures. The other terms describe specific accounting methods rather than overall money movement.",
+   "type": "concept_completion",
+   "objective_num": 9,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are standard components of a deposit slip EXCEPT",
+   "options": [
+    "the total amount of the deposit",
+    "itemized list of checks and cash being deposited",
+    "the depositor's account number and name",
+    "the employee's annual salary information"
+   ],
+   "correct_index": 3,
+   "explanation": "A deposit slip records account details, itemized deposits, and totals—but never includes employee salary information, which belongs on payroll documents instead. Salary data is confidential personnel information unrelated to banking transactions. The other three items are standard, necessary parts of every deposit slip.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager must pay for three office supplies orders totaling $87, $142, and $56. Using a calculator with a numeric keypad, which sequence of keypad actions would most efficiently calculate the total expense?",
+   "options": [
+    "Press 142, then 87, then 56, then +, then +, then =",
+    "Press 87, then +, then 142, then +, then 56, then =",
+    "Press 87, then ×, then 142, then ÷, then 56, then =",
+    "Press 56, then -, then 142, then +, then 87, then ="
+   ],
+   "correct_index": 1,
+   "explanation": "Adding three expenses requires pressing each number with addition (+) operators between them, then equals (=) to get the correct sum of $285. This straightforward use of the addition function on a numeric keypad is the standard method for summing multiple business expenses. The other sequences use incorrect operators (subtraction, multiplication, division) or improper keypad sequencing that would not produce the correct total.",
+   "type": "scenario_judgment",
+   "objective_num": 3,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written request used by an employee or department to order goods or services from a vendor is called a(n) ___",
+   "options": [
+    "expense report",
+    "invoice",
+    "purchase requisition",
+    "payment voucher"
+   ],
+   "correct_index": 2,
+   "explanation": "A purchase requisition is the formal document that initiates a purchase by requesting specific goods or services from an approved vendor. It differs from an invoice (which a vendor sends after delivery) and a payment voucher (which authorizes payment after goods are received).",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document that authorizes the payment of goods or services and includes details such as the amount owed, invoice number, and vendor information is called a(n) ___",
+   "options": [
+    "payment voucher",
+    "purchase order",
+    "account payable",
+    "expense report"
+   ],
+   "correct_index": 0,
+   "explanation": "A payment voucher is the formal authorization document used to approve and record a payment to a vendor. It includes invoice details and ensures the business has proper documentation before money is released. An expense report is submitted by employees for reimbursement, not used for vendor payments.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are reasons to implement expense-control strategies in a business EXCEPT",
+   "options": [
+    "to reduce unnecessary spending and improve profitability",
+    "to monitor departmental spending against approved budgets",
+    "to increase the number of vendors and suppliers used",
+    "to establish a clear audit trail for all financial transactions"
+   ],
+   "correct_index": 2,
+   "explanation": "Increasing the number of vendors and suppliers would typically increase complexity and costs, not control expenses. Real expense-control strategies focus on reducing unnecessary spending, maintaining audit trails, and monitoring spending against budgets. Using more vendors often conflicts with negotiating better prices and maintaining oversight.",
+   "type": "all_except",
+   "objective_num": 6,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following steps would all be appropriate when completing a purchase requisition?",
+   "options": [
+    "Request payment terms that exceed the business's typical 30-day cycle",
+    "Specify the exact item description, required quantity, and delivery date",
+    "Leave the quantity field blank and let the vendor decide how much to send",
+    "Include only verbal approval from management without written documentation"
+   ],
+   "correct_index": 1,
+   "explanation": "A properly completed purchase requisition must include specific item details, exact quantities needed, and required delivery dates so the vendor can fulfill the order accurately and on time. Leaving fields blank, relying on verbal approval, or negotiating non-standard payment terms introduces errors and removes the documentary record necessary for proper purchasing procedures.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document that lists all outstanding invoices from a vendor and serves as a request for payment is called a(n) ___",
+   "options": [
+    "statement of account",
+    "accounts payable register",
+    "invoice ledger",
+    "vendor receipt"
+   ],
+   "correct_index": 0,
+   "explanation": "A statement of account is a summary document sent by vendors showing all unpaid invoices and the total amount due, used to request payment. This differs from a purchase requisition (which orders goods) and a payment voucher (which authorizes a specific payment). It is a key record in managing business payables.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of physically verifying that goods received from a vendor match the quantity, quality, and specifications listed on the original purchase requisition is part of ___",
+   "options": [
+    "quality assurance compliance",
+    "inventory verification",
+    "vendor auditing",
+    "receiving and inspection procedures"
+   ],
+   "correct_index": 3,
+   "explanation": "Receiving and inspection procedures ensure that ordered goods arrive complete, undamaged, and as specified before they are accepted and recorded in inventory. This step protects the business from overpaying for missing or defective items and is a critical control in the procurement process. It bridges the purchase requisition and payment voucher stages.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A small cash reserve kept on hand for minor office expenses like postage, office supplies, and employee reimbursements is called a(n) ___",
+   "options": [
+    "contingency reserve",
+    "operating fund",
+    "discretionary account",
+    "petty cash fund"
+   ],
+   "correct_index": 3,
+   "explanation": "A petty cash fund is a small amount of cash maintained by a business for routine, low-dollar expenses that would be inefficient to process through regular payment channels. This is a standard accounting practice for managing minor expenditures quickly without requiring full approval procedures.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of setting spending limits, tracking expenses against planned amounts, and reducing unnecessary costs to improve profitability and financial health is called ___",
+   "options": [
+    "asset management",
+    "liability reduction",
+    "expense control",
+    "revenue forecasting"
+   ],
+   "correct_index": 2,
+   "explanation": "Expense control refers to the systematic approach of managing and limiting spending across an organization. Businesses use this strategy to ensure resources are used efficiently and financial goals are met.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a business is preparing an event budget, all of the following should be included EXCEPT",
+   "options": [
+    "estimated costs for venue rental and catering",
+    "the manager's personal entertainment preferences",
+    "contingency costs for unexpected expenses",
+    "anticipated revenue from ticket sales or sponsorships"
+   ],
+   "correct_index": 1,
+   "explanation": "A business budget must include all reasonable, quantifiable costs and revenue projections, plus a contingency buffer. Personal preferences of individual managers are subjective and not relevant to objective financial planning—they do not belong in a professional budget document.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A detailed financial plan that projects all expected income and expenses for a specific time period and is used to control spending and measure performance against targets is called a(n) ___",
+   "options": [
+    "budget",
+    "balance sheet",
+    "income statement",
+    "general ledger"
+   ],
+   "correct_index": 0,
+   "explanation": "A budget is a forward-looking financial plan that estimates revenues and expenses for a future period. It serves as both a planning tool and a control mechanism to monitor actual spending against planned amounts.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a petty cash fund is established, the initial cash placed into it is recorded by writing a check to the fund custodian. At the end of each period, the custodian submits receipts for all cash spent, and a new check replenishes the fund to its original balance. This process of restocking the petty cash fund to its set amount is called ___",
+   "options": [
+    "fund replenishment",
+    "cash reallocation",
+    "expense verification",
+    "fund reconciliation"
+   ],
+   "correct_index": 0,
+   "explanation": "Fund replenishment is the specific process of restocking petty cash back to its original authorized balance after expenses have been documented and verified. This is a distinct operation from general reconciliation and is a standard accounting procedure for maintaining petty cash controls.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document that shows all transactions processed by a bank on a business account during a specific period, including deposits, withdrawals, and fees, is called a(n) ___",
+   "options": [
+    "account ledger",
+    "cash register tape",
+    "transaction log",
+    "bank statement"
+   ],
+   "correct_index": 3,
+   "explanation": "A bank statement is the official record provided by the bank showing all account activity for a given period. It is distinct from an account ledger (which is internal to the business) and serves as the primary document used to verify that recorded cash matches actual bank balances.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of documenting an employee's gross wages, tax withholdings, deductions, and net pay for each pay period in order to maintain accurate payroll records and ensure compliance with labor laws is called ___",
+   "options": [
+    "wage assignment",
+    "compensation tracking",
+    "payroll documentation",
+    "earnings reconciliation"
+   ],
+   "correct_index": 2,
+   "explanation": "Payroll documentation encompasses the complete record-keeping of employee compensation details including gross pay, all required tax and benefit deductions, and final net pay. This is essential for both legal compliance and internal financial accuracy, distinguishing it from simple wage assignment or earnings tracking.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be necessary fields to include on a completed deposit slip?",
+   "options": [
+    "Depositor name, the bank's routing number, employee ID, and total deposit amount only",
+    "Account number, depositor name, date, and itemized list of checks and currency amounts",
+    "Date, account number, list of all business expenses for the month, and check amounts",
+    "Depositor name, business license number, itemized currency and check amounts, and approval signature"
+   ],
+   "correct_index": 1,
+   "explanation": "A standard deposit slip requires the account number for routing the deposit correctly, the depositor's name for identification, the date for record-keeping, and an itemized breakdown showing individual checks and currency denominations so the bank can verify the deposit contents. The other options include either irrelevant fields (employee ID, business license, expense lists) or omit critical information needed for proper processing.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical components included in an employee's payroll record EXCEPT",
+   "options": [
+    "net pay and date of payment",
+    "the employee's medical history and insurance carrier details",
+    "gross pay amount for each pay period",
+    "deductions for federal income tax, Social Security, and Medicare"
+   ],
+   "correct_index": 1,
+   "explanation": "Payroll records track compensation-related information: gross pay, required tax and benefit deductions, net pay, and payment dates. Medical history and insurance carrier details belong in employee personnel files or benefits administration records, not in the payroll document itself, making this the one item that does not belong in a payroll record.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written authorization from a business to a vendor that specifies what goods or services are needed, along with the required quantity and delivery date, is called a(n) ___",
+   "options": [
+    "payment requisition",
+    "invoice request",
+    "vendor agreement",
+    "purchase order"
+   ],
+   "correct_index": 3,
+   "explanation": "A purchase order is the formal document a business sends to a vendor to request specific goods or services with exact quantities and delivery requirements. While similar to a purchase requisition (which is internal), a purchase order is the external document sent directly to the vendor to commit to the purchase.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Finance",
+   "difficulty": "hard"
+  }
+ ],
+ "Information Processing": [
+  {
+   "question": "The process of locating and pulling specific data from a database using keywords or logical criteria is called a(n) ___",
+   "options": [
+    "search query",
+    "sorting function",
+    "form filter",
+    "data merge"
+   ],
+   "correct_index": 0,
+   "explanation": "A search query is the specific method used to extract information from a database by entering search terms or conditions. This differs from sorting (organizing existing results) or merging (combining files), and is the foundational tool for generating reports from structured data.",
+   "type": "definition_recall",
+   "objective_num": 9,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The act of making multiple copies of a finished document and delivering them to intended recipients is part of the ___ process",
+   "options": [
+    "data integration",
+    "file conversion",
+    "reproduction and distribution",
+    "document proofing"
+   ],
+   "correct_index": 2,
+   "explanation": "Reproduction and distribution encompasses creating multiple copies of a document and delivering them to the appropriate people or departments. This is distinct from proofing (checking for errors), integration (combining files), or conversion (changing file formats).",
+   "type": "definition_recall",
+   "objective_num": 17,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a business document must be shared across departments using different software platforms, the document should first undergo ___",
+   "options": [
+    "collaborative editing",
+    "template creation",
+    "database extraction",
+    "file format conversion"
+   ],
+   "correct_index": 3,
+   "explanation": "File format conversion allows a document created in one program (such as Word) to be saved and opened in another program (such as Google Docs or a different word processor). This ensures compatibility across different systems and platforms used by various departments.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be reasons to extract information using search queries rather than manually reviewing an entire database?",
+   "options": [
+    "Saving time, reducing errors, and focusing on relevant data only",
+    "Merging multiple files, scanning physical documents, and converting file types",
+    "Creating backup copies, improving document formatting, and increasing file size",
+    "Developing visual presentations, editing spreadsheets, and proofing documents"
+   ],
+   "correct_index": 0,
+   "explanation": "Search queries efficiently locate only the data meeting specific criteria, which saves time, reduces the chance of overlooking information, and eliminates the need to process irrelevant records. The other options describe unrelated document processing tasks that do not address the purpose of querying a database.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to create business documents is supported by all of the following functions EXCEPT",
+   "options": [
+    "saving documents in multiple file formats for different users",
+    "using templates to standardize formatting and structure",
+    "scanning physical papers and converting them to digital format",
+    "merging data from multiple sources into a single document"
+   ],
+   "correct_index": 2,
+   "explanation": "Scanning is the process of converting physical documents into digital images or data—it is a means of capturing existing information, not creating new documents. The other three options (merge, templates, and format conversion) directly support the creation and customization of business documents.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of reading through a document carefully to find and correct spelling, grammar, punctuation, and formatting errors is called ___",
+   "options": [
+    "formatting",
+    "proofreading",
+    "transcription",
+    "editing"
+   ],
+   "correct_index": 1,
+   "explanation": "Proofreading is the systematic review of a document to identify and correct errors in spelling, grammar, punctuation, and overall presentation. While editing involves making content changes, proofreading focuses specifically on catching mistakes and ensuring accuracy before final distribution.",
+   "type": "definition_recall",
+   "objective_num": 13,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining a completed document for accuracy, clarity, and consistency before it is finalized and shared is part of ___",
+   "options": [
+    "database integration",
+    "file conversion",
+    "document reproduction",
+    "document review and refinement"
+   ],
+   "correct_index": 3,
+   "explanation": "Document review and refinement encompasses the stages of checking content, correcting errors, and ensuring the document meets quality standards. This process includes both proofreading for mechanical errors and editing for clarity and coherence, making it essential before any document is distributed.",
+   "type": "concept_completion",
+   "objective_num": 13,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be tasks involved in completing preprinted and electronic forms accurately?",
+   "options": [
+    "Entering required information clearly, verifying accuracy, and ensuring all mandatory fields are completed",
+    "Creating macros to auto-fill fields, merging data from external sources, and generating reports",
+    "Converting the form to a different software program, printing multiple copies, and distributing them",
+    "Scanning the form, saving it in multiple formats, and creating a backup copy"
+   ],
+   "correct_index": 0,
+   "explanation": "Completing forms accurately requires entering information clearly, checking that data is correct, and confirming that every required field has been filled in. The other options describe related but separate processes—format conversion, reproduction, and automation—rather than the core tasks of form completion itself.",
+   "type": "which_of_following",
+   "objective_num": 11,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An employee receives a handwritten note from a client containing important business information. To make this information usable in the company's digital systems, the employee should ___",
+   "options": [
+    "create a new form and ask the client to resubmit the information electronically",
+    "scan the image and store it without converting the content to editable text",
+    "transcribe the handwritten content into a typed document, then verify accuracy against the original",
+    "file the handwritten note in a physical folder without any further action"
+   ],
+   "correct_index": 2,
+   "explanation": "Transcribing the handwritten note into a typed document makes the information accessible, searchable, and compatible with digital business systems, while verifying against the original ensures accuracy during the conversion process. This approach integrates the information into the company's workflow effectively, unlike storing it as an uneditable image or requesting resubmission.",
+   "type": "scenario_judgment",
+   "objective_num": 2,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When completing electronic forms in a business system, which of the following would all help ensure the form is filled out correctly and completely?",
+   "options": [
+    "Leaving optional fields blank, skipping fields you don't understand, and submitting immediately to save time",
+    "Reading all field labels carefully, verifying data before submission, and confirming all required fields contain information",
+    "Using the same information for every field to maintain consistency, copying data from other employees, and ignoring validation messages",
+    "Entering data in any format that fits, deleting instructions to save space, and resubmitting if the system rejects it"
+   ],
+   "correct_index": 1,
+   "explanation": "Accurate form completion requires careful reading of labels, data verification, and ensuring all mandatory fields are filled—these practices prevent errors and incomplete submissions. The other options introduce shortcuts and careless habits that lead to rejection, rework, or data quality problems.",
+   "type": "which_of_following",
+   "objective_num": 11,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word processing feature that automatically fills in repetitive text or standard phrases based on a few typed characters is called a(n) ___",
+   "options": [
+    "macro",
+    "auto-correct",
+    "template",
+    "auto-complete"
+   ],
+   "correct_index": 3,
+   "explanation": "Auto-complete predicts and inserts commonly-typed text or phrases to speed up document creation, distinct from a macro (which records a sequence of actions) or a template (which is a pre-formatted document structure). Auto-correct, by contrast, fixes spelling mistakes automatically rather than completing partial words.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of arranging records in a database or list according to a specified order—such as alphabetically by last name or numerically by date—is known as ___",
+   "options": [
+    "filtering",
+    "indexing",
+    "sorting",
+    "merging"
+   ],
+   "correct_index": 2,
+   "explanation": "Sorting rearranges data into a specified sequence; filtering removes unwanted records to display only those matching criteria, while merging combines separate documents or datasets, and indexing creates a reference structure for faster retrieval. The question specifically asks about arranging records in order, which is the definition of sorting.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be reasons to use the Find & Replace function in a word processor rather than manually editing text throughout a document?",
+   "options": [
+    "A company name appears 47 times in a 50-page report and must be updated consistently and quickly",
+    "A single word appears once in the document and needs to be changed to a synonym",
+    "The document is a simple one-page memo with minimal formatting that needs no changes",
+    "The document contains only a few instances of the text, and manual editing is already complete"
+   ],
+   "correct_index": 0,
+   "explanation": "Find & Replace is most valuable when the same text appears many times throughout a document and consistency is critical—using it ensures every instance is updated simultaneously and reduces the risk of missing occurrences. The other options describe scenarios (one occurrence, few instances, or a simple short document) where manual editing would be efficient and appropriate, defeating the purpose of automation.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to create and manage business documents is supported by all of the following word processing functions EXCEPT",
+   "options": [
+    "using macros to automate repetitive formatting and editing tasks",
+    "extracting numerical data from a spreadsheet to generate statistical reports",
+    "creating a mail merge to send personalized letters to multiple recipients",
+    "applying a template to establish consistent formatting and structure across similar documents"
+   ],
+   "correct_index": 1,
+   "explanation": "Extracting data from a spreadsheet to generate reports is a spreadsheet and database function, not a word processing function—it falls under information extraction and reporting, not document creation and management. Mail merge, templates, and macros are all core word processing features that directly support creating and managing business documents efficiently.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word processing feature that allows you to find every instance of a specific word or phrase and replace it with different text throughout an entire document is called a(n) ___",
+   "options": [
+    "Find & Replace tool",
+    "spell-check utility",
+    "auto-correct function",
+    "text formatting option"
+   ],
+   "correct_index": 0,
+   "explanation": "The Find & Replace tool is a core word processing function that locates all occurrences of specified text and substitutes them efficiently, rather than requiring manual editing of each instance. This is distinct from auto-correct, which fixes common typos automatically, and spell-check, which identifies misspelled words without replacing them across a document.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a database, a field is best described as ___",
+   "options": [
+    "a search function that locates specific data using keywords",
+    "a horizontal row containing all information about one record",
+    "a single column that contains one type of data for all records",
+    "a complete collection of related records organized in one file"
+   ],
+   "correct_index": 2,
+   "explanation": "A field is a single column in a database table that stores one specific type of data (such as customer name or email address) for every record. The other options describe a record (B), a database or table (C), or a search query (D)—all related but distinct database concepts.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to organize data visually for business presentations and reports is supported by all of the following EXCEPT",
+   "options": [
+    "constructing a line graph that displays revenue trends across multiple quarters",
+    "creating a pie chart to show the percentage breakdown of sales by region",
+    "developing a bar chart comparing product performance against competitor data",
+    "performing a full-text search across all stored customer records to identify patterns"
+   ],
+   "correct_index": 3,
+   "explanation": "Creating and formatting tables, charts, and graphs are visual data organization tools used in presentations and reports. Performing a full-text search (D) is a database query function that retrieves data rather than organizing it visually. The other three options are all legitimate charting and graphing techniques.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of establishing rules and relationships between tables in a database to ensure data accuracy and prevent redundancy is called ___",
+   "options": [
+    "indexing",
+    "normalization",
+    "filtering",
+    "aggregating"
+   ],
+   "correct_index": 1,
+   "explanation": "Normalization is the database design practice of organizing tables and defining relationships to eliminate duplicate data and maintain consistency. Indexing speeds up searches (A), filtering limits displayed records (C), and aggregating summarizes data (D)—all are database functions but not the structural process described.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The visual arrangement of data in rows and columns, with headings and formatting applied to highlight key information and make the data easier to interpret, is called a(n) ___",
+   "options": [
+    "formatted table",
+    "spreadsheet formula",
+    "database record",
+    "pivot table"
+   ],
+   "correct_index": 0,
+   "explanation": "A formatted table is the structured display of data in rows and columns with applied formatting, headings, and styling to improve clarity and readability. A pivot table (A) is a specific summarization tool; a database record (C) is a single row of data; and a spreadsheet formula (D) is a calculation—each serves a different purpose.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to organize and present numerical and categorical data visually in business reports is supported by all of the following EXCEPT",
+   "options": [
+    "generating a bar graph to compare employee productivity metrics across departments",
+    "creating a pie chart to show the percentage breakdown of quarterly sales by region",
+    "establishing a primary key constraint to prevent duplicate entries in a customer database",
+    "building a scatter plot to display the relationship between advertising spend and revenue"
+   ],
+   "correct_index": 2,
+   "explanation": "A primary key constraint is a database function used to ensure data integrity and prevent duplicates—it has no role in organizing or presenting data visually. Charts, graphs, and plots (pie, bar, scatter) are all direct tools for creating visual representations of data in business reports.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Information Processing",
+   "difficulty": "hard"
+  }
+ ]
+}

@@ -729,12 +729,31 @@ async function streamGemini(systemPrompt, messages, res) {
 // Anthropic callers
 // ---------------------------------------------------------------------------
 
+// Everything before this marker in a quiz prompt is GEN_RULES — the static
+// rules-file text, byte-identical on every call — so we cache it. Everything
+// after is the per-request variable content (event, objective, already-asked
+// memory, etc). Mirrors generate_bank.py's identical optimization exactly:
+// the API concatenates the two text blocks back into EXACTLY the original
+// prompt, so the model sees identical input and output behavior is
+// unchanged — only the repeated prefix is billed cheaper. Flashcard prompts
+// don't contain this marker (they don't include GEN_RULES at all), so they
+// safely fall through to the original single-string behavior, unaffected.
+const CACHE_SPLIT_MARKER = '--- TASK ---';
+function buildMessageContent(prompt) {
+  const idx = prompt.indexOf(CACHE_SPLIT_MARKER);
+  if (idx <= 0) return prompt;
+  return [
+    { type: 'text', text: prompt.slice(0, idx), cache_control: { type: 'ephemeral' } },
+    { type: 'text', text: prompt.slice(idx) },
+  ];
+}
+
 async function callAnthropic(prompt) {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   const msg = await client.messages.create({
     model: 'claude-haiku-4-5-20251001', max_tokens: 4096,
-    messages: [{ role: 'user', content: prompt }],
+    messages: [{ role: 'user', content: buildMessageContent(prompt) }],
   });
   return msg.content[0].text;
 }

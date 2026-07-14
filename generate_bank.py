@@ -6,8 +6,8 @@ study-materials/, following question-generation-rules.txt.
 
 Three tiers, each its own bank file per event:
   --tier event      50 questions total     -> question-bank.json
-  --tier section    25 questions/section   -> question-bank-sections.json
-  --tier objective  15 questions/objective -> question-bank-objectives.json
+  --tier section    20 questions/section   -> question-bank-sections.json
+  --tier objective  10 questions/objective -> question-bank-objectives.json
 
 USAGE
   python3 generate_bank.py --tier event                 # all events
@@ -56,7 +56,7 @@ CHECKPOINT_FILE = os.path.join(BASE, "generation_checkpoint.json")
 # RULE 1) — there is no easy/medium/hard variance anymore, only this.
 DIFFICULTY = "hard"
 
-TIER_TARGET = {"event": 50, "section": 25, "objective": 15}
+TIER_TARGET = {"event": 50, "section": 20, "objective": 10}
 TIER_BANK_FILENAME = {
     "event": "question-bank.json",
     "section": "question-bank-sections.json",
@@ -585,6 +585,21 @@ def assign_positions(questions, state):
         state["total"] += 1
     return questions
 
+def least_used_indices(usage_counts, k):
+    """Return the k lowest-usage indices (ties broken randomly) and bump
+    their counts. Same greedy-least-used mechanism as assign_positions
+    above, applied to section/objective selection so full-event and
+    section-tier batches split roughly EQUALLY across subtopics/objectives
+    instead of weighted-random luck or a modulo rotation that can drift
+    uneven — real user request: coverage breadth, not just topic-weighted
+    sampling."""
+    k = min(k, len(usage_counts))
+    order = sorted(range(len(usage_counts)), key=lambda i: (usage_counts[i], random.random()))
+    picks = order[:k]
+    for i in picks:
+        usage_counts[i] += 1
+    return picks
+
 def distribution_lines(counts):
     total = sum(counts) or 1
     letters = "ABCD"
@@ -751,21 +766,25 @@ def generate_event_tier(client, org, event, rules, state, dry_run=False):
         print(f"  {event}: already has {len(bank)}/{target} — skipping")
         return
 
-    weights = [s["weight"] for s in sections]
     print(f"  {event}: {len(bank)}/{target} questions, {len(sections)} sections")
 
+    # Equal-per-section selection, not weighted/random luck — real user
+    # request: full-event tests should cover subtopics roughly evenly, not
+    # skew toward whichever section has the highest outline item-count.
+    section_usage = [0] * len(sections)
+    objective_usage_by_section = {}
+
     while len(bank) < target:
-        section = random.choices(sections, weights=weights, k=1)[0]
+        section = sections[least_used_indices(section_usage, 1)[0]]
         n = min(BATCH_SIZE, target - len(bank))
         prior = [q for q in bank if q.get("knowledge_area") == section["name"]]
-        # Same rotation fix as the section tier: whenever this section gets
-        # picked again, focus on different objectives within it rather than
-        # whichever one the model reaches for by default every time.
+        # Same equal-coverage principle within the section: pick whichever
+        # objectives have been focused on least so far, not a modulo
+        # rotation that can drift uneven depending on batch/objective counts.
         objectives = split_objectives(section["body"])
         if objectives:
-            batch_index = len(prior) // BATCH_SIZE
-            picks = [objectives[(batch_index * 2 + k) % len(objectives)]["text"]
-                     for k in range(min(2, len(objectives)))]
+            usage = objective_usage_by_section.setdefault(section["name"], [0] * len(objectives))
+            picks = [objectives[i]["text"] for i in least_used_indices(usage, 2)]
             focus = ("Distribute this batch's questions across these specific "
                       "objectives from within the section — don't fixate on "
                       "just one topic: " + " | ".join(picks))
@@ -822,15 +841,17 @@ def generate_section_tier(client, org, event, rules, state, dry_run=False):
         # body and gravitates toward whichever one objective it finds most
         # salient (e.g. a 25-question Computer Hardware pool turning into
         # mostly "types of computers / supercomputers" questions and never
-        # touching the other 9 objectives). Rotate 2 objectives into focus
-        # per batch so a section's full breadth actually gets covered.
+        # touching the other 9 objectives). Equal-coverage pick — always
+        # focus the objectives used LEAST so far, not a modulo rotation
+        # (which can drift uneven depending on how objective count divides
+        # against the 2-per-batch pick size) — so a section's full breadth
+        # gets covered roughly evenly, not just "eventually, probably."
         objectives = split_objectives(section["body"])
-        batch_index = len(bank) // BATCH_SIZE
+        objective_usage = [0] * len(objectives)
         while len(bank) < target:
             n = min(BATCH_SIZE, target - len(bank))
             if objectives:
-                picks = [objectives[(batch_index * 2 + k) % len(objectives)]["text"]
-                         for k in range(min(2, len(objectives)))]
+                picks = [objectives[i]["text"] for i in least_used_indices(objective_usage, 2)]
                 focus = ("Distribute this batch's questions across these specific "
                           "objectives from within the section — don't fixate on "
                           "just one topic: " + " | ".join(picks))
@@ -854,7 +875,6 @@ def generate_section_tier(client, org, event, rules, state, dry_run=False):
                 with open(bank_path, "w", encoding="utf-8") as f:
                     json.dump(banks, f, indent=1, ensure_ascii=False)
                 print(f"    +{len(got)} -> {len(bank)}/{target}")
-            batch_index += 1
             time.sleep(RATE_DELAY)
 
     push_event(org, event, bank_path, sum(len(v) for v in banks.values()))

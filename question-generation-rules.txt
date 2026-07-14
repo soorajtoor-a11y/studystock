@@ -345,8 +345,13 @@ GOOD (all sound like textbook answers):
 
 5a. Every question must trace to a SPECIFIC fact or concept in the loaded
     study material. Do not invent facts not in the source.
-5b. Weight topics according to the "(N test items)" counts in the event
-    outline when they are listed.
+5b. Coverage breadth over topic weighting: which subtopic/objective THIS
+    batch should focus on is now assigned mechanically (equal coverage
+    across sections for full-event tests, across objectives for section
+    tests — real user request, not weighted by outline item-counts
+    anymore). Just follow the specific focus given to you below; don't
+    second-guess it by drifting back to whichever topic seems most heavily
+    weighted in the source material.
 5c. Keep stems self-contained. An expert should be able to answer the
     question cold, without reading the options first.
 5d. No trick questions. Difficulty must come from knowing the material,

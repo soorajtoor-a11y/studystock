@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The process of identifying and understanding groups of customers who share similar needs, characteristics, or behaviors is called",
+  "options": [
+   "marketing strategy",
+   "market segmentation",
+   "consumer research",
+   "brand positioning"
+  ],
+  "correct_index": 1,
+  "explanation": "Market segmentation is the specific practice of dividing a market into distinct groups based on shared characteristics. While consumer research informs segmentation and marketing strategy guides it, segmentation is the actual process of identifying those customer groups.",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are reasons marketing is important in a global economy EXCEPT",
+  "options": [
+   "it allows organizations to understand and respond to customer preferences worldwide",
+   "it helps businesses adapt products to meet the needs of different cultures and regions",
+   "it facilitates exchange of goods and services across international borders",
+   "it enables companies to eliminate all competition and control market prices"
+  ],
+  "correct_index": 3,
+  "explanation": "While marketing helps companies compete effectively, no ethical marketing practice eliminates competition or allows price control. The other three options—cultural adaptation, understanding customer preferences, and enabling international exchange—are genuine, widely-recognized benefits of marketing in a global economy.",
+  "type": "all_except",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The organized effort to increase consumer awareness and interest in a company's products through promotional activities and communication is called",
+  "options": [
+   "financial planning",
+   "product development",
+   "marketing promotion",
+   "supply chain management"
+  ],
+  "correct_index": 2,
+  "explanation": "Marketing promotion encompasses advertising, public relations, sales support, and other activities designed to build awareness and drive customer interest. While product development and supply chain management are related business functions, promotion specifically targets the communication and awareness-building aspect of marketing.",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are activities involved in identifying a market EXCEPT",
+  "options": [
+   "establishing the final price point that will be charged for the product",
+   "analyzing demographic characteristics such as age, income, and location",
+   "determining the geographic boundaries where potential customers are located",
+   "researching the shared needs and behaviors that define a customer group"
+  ],
+  "correct_index": 0,
+  "explanation": "Market identification focuses on finding and understanding WHO the customers are and WHERE they are located—demographics, geography, and shared characteristics. Pricing strategy, while important to marketing overall, is not part of the identification process itself; it comes after a market is identified. Setting a price point is a separate marketing planning step that occurs once the market is known.",
+  "type": "all_except",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be considered important reasons for the existence of marketing in a global economy?",
+  "options": [
+   "Removing the role of retailers, centralizing all production under one company, and abolishing consumer choice",
+   "Preventing international trade, limiting customer choices to domestic products only, and establishing government-mandated pricing",
+   "Creating consumer awareness, facilitating exchange between buyers and sellers, and helping businesses adapt to changing customer preferences",
+   "Eliminating the need for product research, reducing competition through price controls, and ensuring all companies achieve equal market share"
+  ],
+  "correct_index": 2,
+  "explanation": "Marketing's core purposes include building awareness, enabling transactions between parties, and responding to evolving customer needs in a competitive global marketplace. The other options contain logically impossible or economically unrealistic claims—marketing cannot eliminate competition, restrict trade, or force equal market outcomes; those contradict how free markets function.",
+  "type": "which_of_following",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The set of all businesses and processes involved in moving a product from the producer to the final consumer is called a ___.",
+  "options": [
+   "channel of distribution",
+   "supply chain",
+   "logistics network",
+   "inventory system"
+  ],
+  "correct_index": 0,
+  "explanation": "A channel of distribution is the specific pathway through which products flow from manufacturer to consumer, including all intermediaries like wholesalers and retailers. While supply chain is related, it is broader and includes procurement and production; a channel of distribution is the marketing-focused distribution pathway itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Channel Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Technology in channel management is used to accomplish all of the following EXCEPT",
+  "options": [
+   "track inventory levels in real time across multiple locations",
+   "manage and analyze data about customer purchasing behavior",
+   "communicate directly with channel members about orders and product availability",
+   "manufacture products at lower cost than traditional factories"
+  ],
+  "correct_index": 3,
+  "explanation": "Technology in channel management improves communication, visibility, and decision-making among channel partners—not manufacturing processes themselves. Manufacturing cost reduction is an operations and production function, not a channel management function. The other three are core uses of technology within distribution channels.",
+  "type": "all_except",
+  "knowledge_area": "Channel Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturing company uses software to track real-time inventory, alert distributors when stock is low, and coordinate delivery schedules automatically. This technology primarily supports which aspect of channel management?",
+  "options": [
+   "Training retail employees on product features",
+   "Improving communication and coordination among channel partners",
+   "Setting competitive retail prices for products",
+   "Creating marketing advertisements for consumers"
+  ],
+  "correct_index": 1,
+  "explanation": "This scenario describes technology that enables real-time data sharing and coordination between the manufacturer and its channel partners (distributors). This is a core application of technology in channel management—streamlining information flow and collaboration, not pricing, employee training, or consumer advertising.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Channel Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The scope of channel management includes planning how products reach customers, selecting appropriate intermediaries, and ___.",
+  "options": [
+   "designing product packaging and labels",
+   "maintaining and supporting channel relationships",
+   "conducting nationwide television advertising campaigns",
+   "determining the cost of manufacturing raw materials"
+  ],
+  "correct_index": 1,
+  "explanation": "Channel management's scope covers the strategic selection, coordination, and ongoing support of all parties involved in distribution. Maintaining strong channel relationships ensures efficient product flow and customer satisfaction. Product design, advertising, and manufacturing costs fall outside the scope of channel management itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Channel Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The decisions and activities involved in directing the flow of goods and services from producers through intermediaries to end consumers is known as ___.",
+  "options": [
+   "retail distribution",
+   "supply chain logistics",
+   "inventory control",
+   "channel management"
+  ],
+  "correct_index": 3,
+  "explanation": "Channel management is the term that describes the full set of decisions and activities for moving products through the distribution pathway. While supply chain logistics is related, it focuses more narrowly on the physical movement and storage aspects, whereas channel management encompasses the broader decisions about intermediaries, relationships, and strategy.",
+  "type": "definition_recall",
+  "knowledge_area": "Channel Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A set of predetermined specifications that products must meet to ensure consistency and quality is called a(n) ___.",
+  "options": [
+   "brand identity",
+   "guarantee",
+   "standard",
+   "warranty"
+  ],
+  "correct_index": 2,
+  "explanation": "Standards are the established specifications and criteria that products must satisfy to ensure quality and consistency in the marketplace. Warranties and guarantees are customer protections, while brand identity refers to how a brand is perceived.",
+  "type": "definition_recall",
+  "knowledge_area": "Product/Service Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of creating a unique identity and image for a product or service that distinguishes it from competitors is known as ___.",
+  "options": [
+   "branding",
+   "market segmentation",
+   "product differentiation",
+   "product positioning"
+  ],
+  "correct_index": 0,
+  "explanation": "Branding is the strategic process of developing a distinctive identity, name, symbol, and image for a product or service to build customer recognition and loyalty. While product positioning and differentiation are related marketing concepts, branding specifically encompasses the creation and communication of that unique identity.",
+  "type": "definition_recall",
+  "knowledge_area": "Product/Service Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The complete set of all products and services that a company offers to its customers makes up the ___.",
+  "options": [
+   "service bundle",
+   "product mix",
+   "brand portfolio",
+   "product line"
+  ],
+  "correct_index": 1,
+  "explanation": "The product mix is the total collection of all products and services a company manufactures and sells across all categories and brands. A product line refers to related products within one category, while brand portfolio and service bundle are narrower concepts.",
+  "type": "concept_completion",
+  "knowledge_area": "Product/Service Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A written promise that a product will perform as stated or will be repaired or replaced if it fails within a specified period is called a(n) ___.",
+  "options": [
+   "certification",
+   "guarantee",
+   "warranty",
+   "specification"
+  ],
+  "correct_index": 2,
+  "explanation": "A warranty is a manufacturer's or seller's written commitment to stand behind a product's performance or quality for a defined time period. While a guarantee is similar, warranty is the more precise marketing term for this formal promise, often appearing in product documentation and marketing materials.",
+  "type": "definition_recall",
+  "knowledge_area": "Product/Service Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate uses of grades and standards in marketing a consumer product?",
+  "options": [
+   "Eliminating the need for product testing, reducing ingredient transparency, and allowing misleading advertising claims",
+   "Creating unnecessary complexity for retailers, increasing shipping costs, and slowing production timelines",
+   "Replacing consumer research entirely, obsoleting competitor analysis, and removing the need for market testing",
+   "Communicating safety certifications to customers, helping manufacturers control quality, and informing quality-based pricing"
+  ],
+  "correct_index": 3,
+  "explanation": "Grades and standards serve marketing by communicating product safety to consumers, maintaining manufacturing consistency, and enabling price differentiation based on quality tiers. The other options describe nonsensical or counterproductive outcomes—standards exist to build transparency and trust, not to eliminate testing or mislead customers.",
+  "type": "which_of_following",
+  "knowledge_area": "Product/Service Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic process of collecting, analyzing, and applying data to support marketing decisions and improve business performance is called ___",
+  "options": [
+   "marketing-information management",
+   "market segmentation",
+   "competitive analysis",
+   "consumer profiling"
+  ],
+  "correct_index": 0,
+  "explanation": "Marketing-information management is the core discipline that encompasses gathering and using data to drive marketing strategy and decision-making. This term directly defines the scope and nature of how organizations systematize their approach to marketing data.",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be examples of data that a marketing department needs to monitor for effective decision-making?",
+  "options": [
+   "Customer purchasing patterns, competitor pricing, and consumer preferences",
+   "Employee salary history, equipment maintenance schedules, and supplier invoices",
+   "Warehouse inventory rotation dates, payroll tax records, and facility repairs",
+   "Production machine specifications, human resources policies, and accounting ledger entries"
+  ],
+  "correct_index": 0,
+  "explanation": "Marketing decisions require external and customer-focused data: understanding what customers buy, how competitors price their offerings, and what drives consumer choices. The other options contain operational, financial, or internal data that support different business functions but are not primary inputs for marketing strategy.",
+  "type": "which_of_following",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A local coffee shop owner wants to determine whether to add more seating and outdoor space to the store. The owner should gather marketing data about all of the following EXCEPT",
+  "options": [
+   "whether customers have expressed interest in outdoor seating",
+   "the detailed personal tax returns of business competitors in the area",
+   "how frequently existing customers visit and how long they stay",
+   "local demographic trends and foot traffic patterns near the location"
+  ],
+  "correct_index": 1,
+  "explanation": "Marketing data focuses on customer behavior, market conditions, and competitive positioning—not the private financial records of competitors, which are both irrelevant to this decision and ethically off-limits. The owner needs data on customer usage, preferences, and the local market environment to make an informed decision about expansion.",
+  "type": "all_except",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The collection, analysis, and interpretation of data about market conditions, competitor activities, and consumer behavior to guide business strategy is called ___",
+  "options": [
+   "consumer analytics",
+   "brand positioning",
+   "marketing research",
+   "market segmentation"
+  ],
+  "correct_index": 2,
+  "explanation": "Marketing research is the systematic process of gathering and analyzing data about markets, competitors, and consumers to support strategic decisions. While market segmentation and consumer analytics are related activities, marketing research is the umbrella term for the overall data-collection and analysis process described in the question.",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retail chain wants to decide whether to expand its product line into a new category. Which of the following would all be types of marketing data the company should gather to make this decision?",
+  "options": [
+   "The age of the store buildings, the number of employees per location, and supplier contact information",
+   "The company's profit margins from last year, the loan terms from the bank, and the CEO's personal preferences",
+   "Current inventory levels, employee work schedules, and warehouse square footage",
+   "Consumer demand for the new category, competitor offerings in that category, and trends in customer spending patterns"
+  ],
+  "correct_index": 3,
+  "explanation": "Consumer demand, competitor analysis, and spending trends are all market-focused data that directly inform whether a product expansion would succeed. The other options contain operational data (inventory, schedules, building age), financial data unrelated to market conditions (loan terms, profit margins), or non-market factors (personal preferences) rather than data about the actual market opportunity.",
+  "type": "which_of_following",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of communicating information about a product, service, or organization to influence consumer purchasing decisions and build brand awareness is called ___.",
+  "options": [
+   "merchandising",
+   "distribution",
+   "advertising",
+   "promotion"
+  ],
+  "correct_index": 3,
+  "explanation": "Promotion is the marketing function responsible for communicating with consumers to influence their decisions and awareness. While advertising is one tool within promotion, promotion itself is the broader function that encompasses all communication activities designed to inform and persuade.",
+  "type": "definition_recall",
+  "knowledge_area": "Promotion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The role of promotion as a marketing function includes all of the following EXCEPT",
+  "options": [
+   "informing consumers about product features and availability",
+   "persuading customers to purchase goods and services",
+   "manufacturing products at the lowest possible cost",
+   "maintaining customer awareness and brand loyalty"
+  ],
+  "correct_index": 2,
+  "explanation": "Manufacturing is a production or operations function, not a promotional one. Promotion's actual roles are informing, persuading, and maintaining brand awareness—communication-based activities. Manufacturing costs and production efficiency fall outside the scope of the promotional mix.",
+  "type": "all_except",
+  "knowledge_area": "Promotion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of an advertisement to reach a large audience within a short timeframe, combined with the repetition of the message across multiple broadcasts or publications, describes which marketing concept?",
+  "options": [
+   "Media planning",
+   "Frequency and reach",
+   "Distribution",
+   "Customer segmentation"
+  ],
+  "correct_index": 1,
+  "explanation": "Frequency refers to how often an advertisement appears, while reach describes how many people in the target audience see it. Together, these two elements determine the overall effectiveness and exposure of a promotional message.",
+  "type": "definition_recall",
+  "knowledge_area": "Promotion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are functions of promotion in marketing EXCEPT",
+  "options": [
+   "Determining the wholesale price that manufacturers charge to retailers",
+   "Creating desire and encouraging purchase of goods and services",
+   "Informing consumers about product availability and features",
+   "Building and maintaining a positive brand image for the organization"
+  ],
+  "correct_index": 0,
+  "explanation": "Pricing strategy, including wholesale pricing between manufacturers and retailers, is a distinct element of the marketing mix separate from promotion. Promotion's functions center on communication and persuasion, not pricing decisions.",
+  "type": "all_except",
+  "knowledge_area": "Promotion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following best describes why a company would use institutional promotion?",
+  "options": [
+   "To train retail staff on how to demonstrate product features to end customers",
+   "To provide detailed specifications and pricing information about a new product line",
+   "To encourage consumers to purchase a specific item through discounts and limited-time offers",
+   "To increase consumer awareness and loyalty to the organization's brand and values"
+  ],
+  "correct_index": 3,
+  "explanation": "Institutional promotion builds organizational reputation and goodwill, making brand awareness and consumer loyalty its primary goals. The other options describe product-focused tactics, sales promotions, or internal training—all distinct from institutional promotion's broader image-building purpose.",
+  "type": "which_of_following",
+  "knowledge_area": "Promotion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of communicating with customers before, during, and after a sale to build lasting relationships is called ___.",
+  "options": [
+   "product positioning",
+   "selling",
+   "market segmentation",
+   "promotional advertising"
+  ],
+  "correct_index": 1,
+  "explanation": "Selling is fundamentally about creating and maintaining exchange relationships through communication at every stage of the customer journey. While product positioning, market segmentation, and advertising are related marketing activities, only selling encompasses the direct relationship-building process across the entire customer lifecycle.",
+  "type": "definition_recall",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In the context of selling relationships, effective customer service creates ___.",
+  "options": [
+   "customer loyalty, repeat purchases, and positive word-of-mouth referrals",
+   "lower production costs and faster inventory turnover",
+   "more aggressive sales quotas for salespeople",
+   "reduced need for advertising and promotional budgets"
+  ],
+  "correct_index": 0,
+  "explanation": "Strong customer service builds trust and satisfaction, which naturally lead to repeat business, customer loyalty, and positive recommendations to others—the foundation of sustainable selling relationships. While customer service may indirectly support other business outcomes, loyalty and referrals are its direct, measurable results in the selling relationship context.",
+  "type": "concept_completion",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are key responsibilities of a salesperson in building strong customer relationships EXCEPT",
+  "options": [
+   "following up after the sale to ensure customer satisfaction",
+   "listening to customer concerns and addressing objections",
+   "gathering competitor pricing data to undercut market prices",
+   "learning the features and benefits of products being sold"
+  ],
+  "correct_index": 2,
+  "explanation": "While salespeople monitor the competitive landscape, their primary responsibility is not to engage in price-cutting competition but to add value through knowledge and service. Undercutting prices damages margins and relationships; instead, salespeople build relationships through follow-up, product knowledge, and attentive listening. The other three options are standard relationship-building practices in professional selling.",
+  "type": "all_except",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of a salesperson to understand a customer's needs and adapt their approach to create a personalized buying experience is a core element of which aspect of selling?",
+  "options": [
+   "Building and maintaining customer relationships",
+   "Product feature identification",
+   "Inventory management",
+   "Competitive pricing analysis"
+  ],
+  "correct_index": 0,
+  "explanation": "Building and maintaining customer relationships requires salespeople to listen actively, understand individual customer needs, and tailor their communication and solutions accordingly. This personalization is what transforms a transaction into a relationship. The other options are either operational tasks or product-focused activities that do not directly address relationship building.",
+  "type": "concept_completion",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are components of effective customer service in a selling relationship EXCEPT",
+  "options": [
+   "Providing accurate product information and clear explanations",
+   "Following up after a sale to ensure satisfaction and address concerns",
+   "Setting artificially high prices to maximize short-term profit margins",
+   "Responding to customer inquiries within a reasonable timeframe"
+  ],
+  "correct_index": 2,
+  "explanation": "Effective customer service focuses on supporting and satisfying customers through responsiveness, follow-up, and honest communication—all of which build trust and loyalty. Setting artificially inflated prices for short-term gain undermines customer relationships and contradicts the purpose of customer service, which is to create lasting value and satisfaction. The other three options are genuine components of strong customer service.",
+  "type": "all_except",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The total amount a business charges customers for its products or services is called the ___.",
+  "options": [
+   "profit margin",
+   "markup percentage",
+   "revenue target",
+   "price"
+  ],
+  "correct_index": 3,
+  "explanation": "Price is the monetary value assigned to a product or service that customers must pay. While profit margin, markup, and revenue are related financial concepts, price specifically refers to the amount charged to customers at the point of sale.",
+  "type": "definition_recall",
+  "knowledge_area": "Pricing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following factors would typically affect a company's pricing decisions?",
+  "options": [
+   "Government building codes, employee retirement benefits, and packaging design trends",
+   "Competition in the market, production costs, and customer demand",
+   "Employee vacation schedules, office supply inventory, and manager preferences",
+   "Weather patterns, industry awards, and historical company traditions"
+  ],
+  "correct_index": 1,
+  "explanation": "Competition, production costs, and customer demand are core factors that directly influence how a business sets prices. The other options contain factors that may be tangentially related to business operations but do not directly determine pricing decisions.",
+  "type": "which_of_following",
+  "knowledge_area": "Pricing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The amount of money a business must spend to create or obtain a product before selling it is referred to as ___.",
+  "options": [
+   "cost of goods",
+   "distribution fee",
+   "market value",
+   "selling expense"
+  ],
+  "correct_index": 0,
+  "explanation": "Cost of goods (or cost of goods sold) represents the direct expenses to produce or acquire products for resale, and is a fundamental factor in pricing decisions because prices must typically exceed costs to generate profit. Selling expense, market value, and distribution fee are distinct concepts in pricing and accounting.",
+  "type": "definition_recall",
+  "knowledge_area": "Pricing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The pricing function is most directly affected by all of the following EXCEPT",
+  "options": [
+   "the level of consumer demand for the product",
+   "the amount competitors charge for similar products",
+   "the color of the company's office walls",
+   "how much it costs to manufacture or acquire the product"
+  ],
+  "correct_index": 2,
+  "explanation": "The color of office walls is an aesthetic internal design choice that has no bearing on pricing strategy. Competition, production costs, and consumer demand are substantive market and operational factors that directly shape pricing decisions. This question tests whether students can distinguish factors that materially affect pricing from those that do not.",
+  "type": "all_except",
+  "knowledge_area": "Pricing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The difference between what a business charges customers for a product and the cost to produce that product is known as ___.",
+  "options": [
+   "overhead expense",
+   "markup",
+   "revenue",
+   "profit margin"
+  ],
+  "correct_index": 3,
+  "explanation": "Profit margin is the difference between selling price and production cost, expressed as a percentage or dollar amount. Markup refers to the amount added to cost to set the price, while revenue is total income before expenses. This tests understanding of a core pricing metric.",
+  "type": "definition_recall",
+  "knowledge_area": "Pricing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A product feature is a characteristic or specification of the product itself, while a product benefit describes how that feature solves a problem or creates value for the customer. Which of the following best completes this relationship?",
+  "options": [
+   "Benefits are only relevant when selling luxury products, not everyday items.",
+   "Benefits are what customers actually care about because they address customer needs and desires.",
+   "Features and benefits are the same thing and the terms are used interchangeably in selling.",
+   "Features are always more important to customers than benefits because they are concrete and measurable."
+  ],
+  "correct_index": 1,
+  "explanation": "Benefits connect product features directly to customer value—a customer buys a feature only insofar as it solves a problem or meets a need. A salesperson's job is to translate features into benefits relevant to that specific customer. This distinction is central to effective product information analysis in selling.",
+  "type": "concept_completion",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's selling policies typically address all of the following EXCEPT",
+  "options": [
+   "the location and architectural design of the company's corporate headquarters",
+   "the discount structures and pricing authority available to salespeople",
+   "guidelines for how salespeople should handle customer complaints and returns",
+   "the specific geographic territory each salesperson is assigned to manage"
+  ],
+  "correct_index": 0,
+  "explanation": "Selling policies govern how the sales function is executed—pricing, authority, territory, customer-service standards, and compliance. Corporate real estate and building design are operational or facilities matters, not selling policies. A salesperson needs to know policy parameters; they do not need building architecture to perform their role.",
+  "type": "all_except",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When a salesperson learns that a customer needs a solution to reduce energy costs in their warehouse, the salesperson then researches lighting systems and explains how energy-efficient LED fixtures lower monthly utility bills and reduce environmental impact. This process of connecting product knowledge to customer needs is called ___.",
+  "options": [
+   "feature analysis",
+   "competitive positioning",
+   "price negotiation",
+   "benefit translation"
+  ],
+  "correct_index": 3,
+  "explanation": "Benefit translation is the core practice of moving from 'what the product is' (LED fixtures, technical specs) to 'what it does for the customer' (lower costs, environmental responsibility). This bridges product information with customer motivation and is essential for effective selling communication.",
+  "type": "concept_completion",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which a salesperson researches product specifications, gathers technical details, and learns how those product attributes address different customer needs is called ___.",
+  "options": [
+   "customer segmentation",
+   "acquiring product information",
+   "competitive analysis",
+   "lead generation"
+  ],
+  "correct_index": 1,
+  "explanation": "Acquiring product information is the foundational step in selling—salespeople must understand their own products thoroughly before they can translate features into benefits for customers. This is distinct from competitive analysis (studying competitors) or lead generation (finding prospects).",
+  "type": "definition_recall",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be considered selling policies a company establishes to guide its sales team?",
+  "options": [
+   "The company's social media engagement strategy, employee dress code, office break-room policies, and parking lot maintenance",
+   "Advertising budget allocation, promotional discount percentages, employee commission rates, and annual revenue targets",
+   "Minimum order quantities, approved payment terms, territory assignment rules, and customer return procedures",
+   "Product warranty length, manufacturing facility location, supply chain logistics, and raw material sourcing standards"
+  ],
+  "correct_index": 2,
+  "explanation": "Selling policies are operational guidelines that directly govern how salespeople interact with customers and conduct transactions—such as territory rules, order minimums, payment terms, and return procedures. Option B contains company policies unrelated to selling; Options C and D mix unrelated business functions or strategic decisions that aren't customer-facing selling policies.",
+  "type": "which_of_following",
+  "knowledge_area": "Selling",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A marketing professional who develops strategies to promote products through social media, email campaigns, and digital advertising works in which employment area?",
+  "options": [
+   "Digital marketing and advertising",
+   "Product development and research",
+   "Customer service management",
+   "Market distribution and logistics"
+  ],
+  "correct_index": 0,
+  "explanation": "Digital marketing and advertising is a key employment opportunity in marketing that focuses on promotional activities across online channels. This role involves creating and executing strategies to reach target audiences through digital platforms, which is distinct from product development (which focuses on creating products) or logistics (which handles distribution).",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The coordination of research, product design, pricing, promotion, and distribution to achieve organizational goals and satisfy customer needs is known as ___",
+  "options": [
+   "consumer behavior analysis",
+   "market segmentation strategy",
+   "marketing strategy",
+   "competitive positioning"
+  ],
+  "correct_index": 2,
+  "explanation": "A marketing strategy encompasses all the coordinated elements—research, product decisions, pricing, promotion, and distribution—that work together to meet business objectives and customer demands. While market segmentation and competitive positioning are components that may be part of a strategy, the umbrella concept that coordinates all these functions is the marketing strategy itself.",
+  "type": "concept_completion",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are components typically found in a marketing plan EXCEPT",
+  "options": [
+   "situation analysis and market research findings",
+   "target market identification and customer demographics",
+   "pricing strategies and promotional tactics",
+   "manufacturing facility specifications and production timelines"
+  ],
+  "correct_index": 3,
+  "explanation": "A marketing plan focuses on market analysis, customer targeting, pricing, and promotion—elements that guide how a company will reach and serve its customers. Manufacturing facility specifications and production timelines belong in an operational or production plan, not a marketing plan, since marketing is concerned with the customer-facing strategy, not the internal manufacturing process.",
+  "type": "all_except",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A detailed document that outlines a company's marketing objectives, target audience, promotional strategies, and timelines for achieving sales and brand awareness goals is called a(n) ___",
+  "options": [
+   "market analysis report",
+   "marketing plan",
+   "competitive positioning statement",
+   "customer segmentation model"
+  ],
+  "correct_index": 1,
+  "explanation": "A marketing plan is the comprehensive written document that guides all marketing activities by specifying what will be promoted, to whom, how, and when. This is distinct from a market analysis report (which examines competition and trends) or a positioning statement (which focuses only on brand differentiation).",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of developing specific actions and methods to reach target customers, increase sales, build brand loyalty, and achieve competitive advantage in the marketplace is known as ___",
+  "options": [
+   "marketing planning",
+   "customer relationship management",
+   "market research",
+   "distribution logistics"
+  ],
+  "correct_index": 0,
+  "explanation": "Marketing planning encompasses the strategic development and execution of coordinated marketing tactics to accomplish organizational objectives. While market research gathers data and customer relationship management maintains existing customer connections, marketing planning is the broader process of creating and implementing the overall marketing approach.",
+  "type": "concept_completion",
+  "knowledge_area": "Marketing Fundamentals",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The purpose of monitoring marketing data is primarily to ___",
+  "options": [
+   "increase the size of the sales team",
+   "reduce the number of competitors in the marketplace",
+   "eliminate the need for customer service departments",
+   "support informed decision-making and reduce business risk"
+  ],
+  "correct_index": 3,
+  "explanation": "Marketing data is collected and monitored specifically to help marketers make better-informed decisions and understand market conditions, rather than to change external market structure or eliminate internal functions. Data reduces uncertainty and guides strategic choices.",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all represent data points that a marketing department should monitor when evaluating business performance?",
+  "options": [
+   "Sales volume by product category, employee attendance records, and warehouse inventory levels",
+   "Regional sales trends, customer satisfaction scores, and brand awareness metrics",
+   "Manufacturing defect rates, payroll tax withholdings, and office supply budgets",
+   "Executive personal spending habits, supplier invoice dates, and facility maintenance schedules"
+  ],
+  "correct_index": 1,
+  "explanation": "Marketing departments monitor data directly tied to market performance and customer perception — sales trends, customer satisfaction, and brand metrics — not operational data like attendance, maintenance, or payroll functions. These data points reveal how the market is responding to marketing efforts.",
+  "type": "which_of_following",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Data that reveals what customers buy, when they buy it, and how often they return to make purchases is known as ___",
+  "options": [
+   "competitive pricing analysis",
+   "consumer satisfaction metrics",
+   "purchase behavior data",
+   "market segmentation information"
+  ],
+  "correct_index": 2,
+  "explanation": "Purchase behavior data tracks customer transactions and buying patterns, which is essential for understanding demand and inventory needs. This differs from satisfaction metrics (post-purchase feedback), market segmentation (grouping customers), and competitor pricing (external market factors).",
+  "type": "definition_recall",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Information about the overall size of a market, economic conditions affecting consumer spending, and shifts in industry growth rates all contribute to ___",
+  "options": [
+   "environmental and market trend analysis",
+   "product quality benchmarking",
+   "brand loyalty assessment",
+   "employee performance evaluation"
+  ],
+  "correct_index": 0,
+  "explanation": "These data points—market size, economic conditions, and industry growth—are all external environmental factors that shape the broader context for marketing decisions. They allow companies to understand opportunities and threats in their operating environment, separate from internal metrics or competitor-specific data.",
+  "type": "concept_completion",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be types of data a marketing department should monitor to understand market conditions and consumer trends?",
+  "options": [
+   "Real estate property values, local construction permits, and zoning regulations",
+   "Industry growth rates, economic conditions, and demographic shifts in the target population",
+   "Employee salary ranges, internal staff training costs, and payroll deductions",
+   "Supplier inventory levels, warehouse storage capacity, and shipping container availability"
+  ],
+  "correct_index": 1,
+  "explanation": "Industry growth rates, economic conditions, and demographic shifts directly inform marketing decisions by revealing the external environment in which consumers operate. These market-level data points help marketers understand whether the overall market is expanding or contracting and who the potential customers are. The other options relate to internal operations, real estate, or supply chain management—important for business but not the external market data marketing needs to monitor for strategy.",
+  "type": "which_of_following",
+  "knowledge_area": "Marketing-Information Management",
+  "difficulty": "hard"
+ }
+]

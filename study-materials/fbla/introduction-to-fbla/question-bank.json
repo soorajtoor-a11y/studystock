@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The organizational structure of FBLA is divided into three levels of governance. The level that includes local school-based clubs is called the ___.",
+  "options": [
+   "national organization",
+   "chapter",
+   "state organization",
+   "regional division"
+  ],
+  "correct_index": 1,
+  "explanation": "A chapter is the local, school-based unit of FBLA where members meet and participate in activities. Chapters are the foundation of FBLA's structure, with state organizations and the national organization representing higher levels of governance.",
+  "type": "definition_recall",
+  "knowledge_area": "Structure and Governance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following responsibilities would typically belong to a national FBLA officer?",
+  "options": [
+   "Coordinating regional tournaments and serving as liaison between chapter officers and state leadership",
+   "Organizing the annual state business conference and awarding state competitive event medals",
+   "Representing FBLA at the national level, setting national policies, and overseeing national competitions and membership",
+   "Selecting competitive event judges and managing the local chapter's monthly meeting agenda"
+  ],
+  "correct_index": 2,
+  "explanation": "National officers lead FBLA at the highest level, managing national programs, policies, and the national competitive events. State and chapter officers handle responsibilities at their respective organizational levels, while regional coordinators work between chapters and state organizations.",
+  "type": "concept_completion",
+  "knowledge_area": "Structure and Governance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The regional divisions within a state FBLA organization are called ___.",
+  "options": [
+   "councils",
+   "divisions",
+   "districts",
+   "chapters"
+  ],
+  "correct_index": 2,
+  "explanation": "Districts are the regional subdivisions within each state FBLA organization that help manage multiple chapters across a geographic area. This term is distinct from chapters (individual school clubs) and the national divisions (Business, Public Service, etc.). Understanding regional structure is key to how FBLA organizes its members across different levels.",
+  "type": "definition_recall",
+  "knowledge_area": "Structure and Governance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which FBLA members at the local, state, and national levels select their leadership through voting is called ___.",
+  "options": [
+   "election",
+   "delegation",
+   "appointment",
+   "nomination"
+  ],
+  "correct_index": 0,
+  "explanation": "Election is the formal democratic process FBLA uses to select officers at every governance level—chapter officers are elected by chapter members, state officers by state members, and national officers by delegates at the national conference. While nomination is a step in the process and appointment occurs in some organizations, FBLA specifically uses election as its primary leadership-selection method.",
+  "type": "definition_recall",
+  "knowledge_area": "Structure and Governance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The top executive position within the national FBLA organization, responsible for presiding over national meetings and representing the organization at major events, is called the ___.",
+  "options": [
+   "National Executive Director",
+   "National President",
+   "National Vice President",
+   "National Board Chair"
+  ],
+  "correct_index": 1,
+  "explanation": "The National President is the highest elected officer position in FBLA, serving as the chief executive and primary representative of the organization. This role oversees national operations and presides over the national board and membership. The other positions are real FBLA roles but hold different responsibilities and authority levels.",
+  "type": "definition_recall",
+  "knowledge_area": "Structure and Governance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following statements about FBLA's code of ethics are accurate?",
+  "options": [
+   "It focuses primarily on individual achievement rather than community responsibility",
+   "It applies only to members during official FBLA competitions and events",
+   "It requires members to compete dishonestly and prioritize winning above all else",
+   "It emphasizes integrity, respect for others, and honest business practices"
+  ],
+  "correct_index": 3,
+  "explanation": "FBLA's code of ethics is rooted in principles of integrity, honesty, and respect—values that guide member behavior both inside and outside competition. The code reflects FBLA's commitment to developing ethical business leaders, not just skilled competitors.",
+  "type": "definition_recall",
+  "knowledge_area": "Foundational Documents",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The document that outlines FBLA's core values of leadership, integrity, and community service is the ___",
+  "options": [
+   "competitive rulebook",
+   "creed",
+   "strategic business plan",
+   "organizational bylaws"
+  ],
+  "correct_index": 1,
+  "explanation": "The FBLA Creed is the foundational statement expressing the organization's core values and principles, including leadership, integrity, and service to the community. It serves as a philosophical guide for all members.",
+  "type": "concept_completion",
+  "knowledge_area": "Foundational Documents",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following documents would be MOST useful for a new member trying to understand what FBLA stands for and its primary objectives?",
+  "options": [
+   "The mission statement and pledge",
+   "The competition schedule and event rules",
+   "The membership dues structure and payment procedures",
+   "The list of regional chapter officers and their contact information"
+  ],
+  "correct_index": 0,
+  "explanation": "The mission statement and pledge directly articulate FBLA's foundational purpose and values, making them the best resources for understanding what the organization represents. While other documents are important for operations, they don't convey FBLA's core philosophy.",
+  "type": "which_of_following",
+  "knowledge_area": "Foundational Documents",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The FBLA pledge begins with which of the following words?",
+  "options": [
+   "As a FBLA member",
+   "I am a FBLA member",
+   "We are FBLA members",
+   "I pledge as a member"
+  ],
+  "correct_index": 2,
+  "explanation": "The FBLA pledge opens with 'We are FBLA members' and emphasizes collective commitment to the organization's values. This exact wording is part of the foundational document every member learns, making it a key recall fact for understanding FBLA's identity.",
+  "type": "definition_recall",
+  "knowledge_area": "Foundational Documents",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which document outlines the specific behavioral standards and professional expectations that FBLA members must follow in all business and leadership activities?",
+  "options": [
+   "The membership handbook",
+   "The organizational goals",
+   "The mission statement",
+   "The code of ethics"
+  ],
+  "correct_index": 3,
+  "explanation": "The code of ethics is the foundational document that defines the behavioral standards and professional conduct required of FBLA members. While the mission and goals describe what FBLA aims to accomplish, only the code of ethics specifically addresses how members should behave.",
+  "type": "concept_completion",
+  "knowledge_area": "Foundational Documents",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The organization now known as FBLA was originally founded in 1937 under which name?",
+  "options": [
+   "National Federation of Business Clubs",
+   "Future Business Leaders of America",
+   "American Business Education Association",
+   "Distributive Education Clubs of America"
+  ],
+  "correct_index": 3,
+  "explanation": "FBLA was founded in 1937 as the Distributive Education Clubs of America (DECA), focusing on students in distributive education programs. It later merged and evolved into the organization now called FBLA-PBL. This foundational name reflects the organization's original emphasis on practical business and marketing education.",
+  "type": "definition_recall",
+  "knowledge_area": "History",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In what year was FBLA founded?",
+  "options": [
+   "1937",
+   "1939",
+   "1935",
+   "1941"
+  ],
+  "correct_index": 0,
+  "explanation": "FBLA was established in 1937 as an organization dedicated to developing future business leaders. This founding date marks the beginning of what would become one of the largest student business organizations in the United States.",
+  "type": "definition_recall",
+  "knowledge_area": "History",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The development of business leadership skills among high school and college students through practical experience and competition is the primary purpose of ___",
+  "options": [
+   "the American Entrepreneurs Association",
+   "Future Business Leaders of America",
+   "the National Business Education Association",
+   "the Chamber of Commerce"
+  ],
+  "correct_index": 1,
+  "explanation": "FBLA's core mission centers on fostering business leadership and providing students with competitive experiences that prepare them for professional careers. This distinguishes it from general business associations or education groups that may have broader or different focus areas.",
+  "type": "concept_completion",
+  "knowledge_area": "History",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The first FBLA chapter was established in which state?",
+  "options": [
+   "Illinois",
+   "New York",
+   "Ohio",
+   "California"
+  ],
+  "correct_index": 2,
+  "explanation": "Ohio was home to the first FBLA chapter when the organization was founded in 1937. This inaugural chapter set the foundation for the organization's subsequent growth and expansion across the United States.",
+  "type": "definition_recall",
+  "knowledge_area": "History",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The comprehensive system of competitive events, chapters, conferences, and community service activities that FBLA uses to develop leadership skills and business knowledge among its members comprises ___",
+  "options": [
+   "the FBLA program and structure",
+   "professional networking initiatives",
+   "student career pathways",
+   "business internship programs"
+  ],
+  "correct_index": 0,
+  "explanation": "FBLA's program structure integrates local chapter activities, regional and state competitions, national conferences, and service projects to provide students with experiential learning in business leadership. This comprehensive approach has been central to FBLA's identity since its founding and distinguishes it from other youth organizations.",
+  "type": "concept_completion",
+  "knowledge_area": "History",
+  "difficulty": "hard"
+ },
+ {
+  "question": "According to the FBLA Creed, every person has the right to earn a living at a useful occupation. This belief emphasizes which of the following principles?",
+  "options": [
+   "That useful occupations are limited to specific industries",
+   "That occupational choice and economic opportunity are fundamental rights",
+   "That business enterprises should control job availability",
+   "That education should only be available to certain career fields"
+  ],
+  "correct_index": 1,
+  "explanation": "The fifth belief in the FBLA Creed explicitly states 'Every person has the right to earn a living at a useful occupation,' affirming that occupational opportunity is a fundamental right for all individuals. This principle connects to FBLA's broader commitment to preparing students for meaningful work and economic self-sufficiency. The other options misrepresent or restrict the principle's universal and inclusive intent.",
+  "type": "concept_completion",
+  "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The FBLA Code of Ethics commits members to establishing and nurturing relationships based on ___.",
+  "options": [
+   "professional standards",
+   "competitive advantage",
+   "mutual benefit",
+   "trust"
+  ],
+  "correct_index": 3,
+  "explanation": "The fourth commitment in the FBLA Code of Ethics specifically states 'Establishing and nurturing relationships based on trust.' Trust forms the foundation for ethical, professional relationships in business and personal interactions. While the other options relate to business values, only 'trust' is the exact term used in this commitment.",
+  "type": "definition_recall",
+  "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "According to the FBLA Creed, the belief that 'every person should actively work toward improving social, political, community, and family life' appears in which context?",
+  "options": [
+   "As a goal related to establishing occupational pathways",
+   "As an introduction to business career preparation",
+   "As the fourth belief emphasizing civic engagement across multiple life areas",
+   "As part of the Code of Ethics commitment to diversity"
+  ],
+  "correct_index": 2,
+  "explanation": "The fourth belief in the FBLA Creed states exactly 'Every person should actively work toward improving social, political, community, and family life,' emphasizing active civic responsibility across these four specific areas. This belief reflects FBLA's commitment to developing community-minded business leaders beyond the workplace. The other options place this principle in different contexts where it does not actually appear.",
+  "type": "definition_recall",
+  "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "According to the FBLA Mission Statement, students are inspired and prepared to become community-minded business leaders through which two key components?",
+  "options": [
+   "Academic excellence and standardized testing",
+   "Networking with local business professionals",
+   "Relevant career preparation and leadership experiences",
+   "Community service and volunteer work"
+  ],
+  "correct_index": 2,
+  "explanation": "The Mission Statement explicitly names 'relevant career preparation and leadership experiences' as the two mechanisms through which FBLA inspires and prepares students to become community-minded business leaders in a global society. This is a verbatim recall question testing direct familiarity with FBLA's foundational document.",
+  "type": "definition_recall",
+  "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are both listed as core components within FBLA's stated Goals?",
+  "options": [
+   "Developing competent business leadership and encouraging scholarship",
+   "Fostering patriotism and creating interest in international trade",
+   "Assisting in occupational goal-setting and eliminating occupational barriers",
+   "Promoting efficient money management and reducing student debt"
+  ],
+  "correct_index": 0,
+  "explanation": "Goals 1 and 7 explicitly state 'develop competent, aggressive business leadership' and 'encourage scholarship and promote school loyalty,' making both components part of FBLA's official nine goals. The other options either invent goals (international trade, student debt) or misstate actual goals.",
+  "type": "which_of_following",
+  "knowledge_area": "FOUNDATIONAL DOCUMENTS (test favorites; drill VERBATIM)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The FBLA emblem displays three words that represent the organization's core values. Which of the following is NOT one of those three words?",
+  "options": [
+   "Service",
+   "Leadership",
+   "Education",
+   "Progress"
+  ],
+  "correct_index": 1,
+  "explanation": "The three official words on the FBLA emblem are SERVICE, EDUCATION, and PROGRESS. Leadership is an important FBLA value but does not appear on the emblem itself. This is a common trick question because leadership sounds like it should belong with the other values.",
+  "type": "all_except",
+  "knowledge_area": "IDENTITY, PUBLICATIONS, PARTNERS (classic trivia section)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA's national service partner is the ___.",
+  "options": [
+   "United Way",
+   "March of Dimes",
+   "American Red Cross",
+   "Alzheimer's Association"
+  ],
+  "correct_index": 3,
+  "explanation": "The Alzheimer's Association is FBLA's current national service partner. The March of Dimes was the longtime previous partner for decades and organized the 'March for Babies' fundraising campaigns, but that partnership has ended.",
+  "type": "definition_recall",
+  "knowledge_area": "IDENTITY, PUBLICATIONS, PARTNERS (classic trivia section)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are true about FBLA EXCEPT",
+  "options": [
+   "It is recognized as a Career and Technical Student Organization (CTSO) by the U.S. Department of Education",
+   "The organization was founded in 1958 and has always operated as a for-profit corporation",
+   "FBLA Connect is the official membership platform where members access programs and resources",
+   "It is the largest business CTSO in the world with over 250,000 total members across all divisions"
+  ],
+  "correct_index": 1,
+  "explanation": "FBLA was founded in 1940 (when the name was chosen) and became an independent nonprofit in 1969—it has never been a for-profit corporation. The other three statements are accurate: FBLA is a recognized CTSO, uses FBLA Connect as its membership platform, and is the world's largest business CTSO.",
+  "type": "all_except",
+  "knowledge_area": "IDENTITY, PUBLICATIONS, PARTNERS (classic trivia section)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA's official colors are blue and ___.",
+  "options": [
+   "gold",
+   "white",
+   "silver",
+   "bronze"
+  ],
+  "correct_index": 0,
+  "explanation": "Blue and gold are FBLA's official colors, representing the organization's brand identity. These colors appear on the emblem, publications, and official materials throughout the organization.",
+  "type": "definition_recall",
+  "knowledge_area": "IDENTITY, PUBLICATIONS, PARTNERS (classic trivia section)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following statements about FBLA's structure and membership are all correct?",
+  "options": [
+   "FBLA has 3 regions, requires 10 chapters to charter a state organization, and includes 6 divisions",
+   "FBLA has 6 regions, requires 3 chapters to charter a state organization, and includes 5 divisions",
+   "FBLA has 4 regions, requires 5 chapters to charter a state organization, and includes 3 divisions",
+   "FBLA has 5 regions, requires 5 chapters to charter a state organization, and includes 4 divisions"
+  ],
+  "correct_index": 3,
+  "explanation": "FBLA operates with 5 regions across the United States, requires a minimum of 5 chapters to establish a state organization, and encompasses 4 divisions (high school, middle level, collegiate, and professional). These structural elements define how FBLA is organized nationally.",
+  "type": "which_of_following",
+  "knowledge_area": "IDENTITY, PUBLICATIONS, PARTNERS (classic trivia section)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The pathway that allows FBLA members to qualify for the National Leadership Conference by placing at the state level begins at which tier?",
+  "options": [
+   "Local chapter meetings",
+   "FBLA Connect online platform",
+   "Regional or District conference",
+   "National Fall Leadership Conference"
+  ],
+  "correct_index": 2,
+  "explanation": "The conference ladder starts at the Regional/District conference level, where members compete to advance to the State Leadership Conference (SLC), and then to the National Leadership Conference (NLC) if they place at states. The other options are either standalone programs (NFLC) or administrative platforms (FBLA Connect), not the initial competitive tier.",
+  "type": "definition_recall",
+  "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A chapter member wants to earn recognition for completing a self-paced business and leadership program through FBLA Connect. This program is known as the ___",
+  "options": [
+   "Member Discount Initiative",
+   "Skills Certification Portfolio",
+   "Business Achievement Award Program",
+   "Community Service Award Program"
+  ],
+  "correct_index": 2,
+  "explanation": "The Business Achievement Awards (BAA) is the individual, self-paced business and leadership program completed through FBLA Connect, with historically four levels—Future, Business, Leader, and America (the highest level). Community Service Awards recognize service hours instead, and the other options are separate recognition programs.",
+  "type": "definition_recall",
+  "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A state FBLA chapter is planning its calendar and needs to identify when the national dues deadline occurs for members to remain eligible for National Leadership Conference. When must dues be paid?",
+  "options": [
+   "By February 15 to align with FBLA Week",
+   "By March 1 at 11:59 p.m. Eastern Time",
+   "By the date of the state competition, which varies by region",
+   "By June 1 to guarantee NLC registration"
+  ],
+  "correct_index": 1,
+  "explanation": "The dues deadline for NLC eligibility is March 1 at 11:59 p.m. Eastern Time. This is a fixed national deadline that all chapters must observe; missing it disqualifies members from attending the National Leadership Conference, regardless of their competition results at the state level.",
+  "type": "scenario_judgment",
+  "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "At FBLA competitions, a violation of the dress code or late arrival to an event results in a penalty of how many points?",
+  "options": [
+   "3 penalty points",
+   "7 penalty points",
+   "10 penalty points",
+   "5 penalty points"
+  ],
+  "correct_index": 3,
+  "explanation": "The Competitive Events Policy establishes that dress code violations or late arrival incur a 5-point penalty. This is a specific rule competitors must know before competing at any FBLA event.",
+  "type": "definition_recall",
+  "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A new FBLA member is planning her first year and wants to understand the full competitive pathway. She places well at her regional conference and then advances to the state competition. If she places at the state level, her next opportunity to compete would be at the ___",
+  "options": [
+   "National Leadership Conference, held in the summer, where top finishers earn national placement recognition",
+   "a regional championship round designed to filter competitors before nationals",
+   "National Fall Leadership Conference, held in the fall, where placement leads to recognition but not further advancement",
+   "the American Enterprise Day event in November, where chapter representatives compete for special recognition"
+  ],
+  "correct_index": 0,
+  "explanation": "State placement qualifies members for the National Leadership Conference (NLC), held each summer, which is the highest competitive tier. The NFLC is a separate national event focused on motivation and leadership, not competitive advancement from states.",
+  "type": "scenario_judgment",
+  "knowledge_area": "PROGRAMS, CONFERENCES, COMPETITIVE EVENTS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A student attending an official FBLA function shows up wearing jeans and sneakers. What is the likely consequence of this dress code violation?",
+  "options": [
+   "Immediate disqualification from all future FBLA events",
+   "A 5-point penalty and possible denial of participation for noncompliance",
+   "A verbal warning with no penalty assessed",
+   "Mandatory attendance at a dress code training session"
+  ],
+  "correct_index": 1,
+  "explanation": "FBLA dress code policy enforces business professional standards at all official functions and applies a 5-point penalty for violations. Continued noncompliance can result in denial of participation in the event, but this is not automatic disqualification from future events. The policy is clear and consistently enforced.",
+  "type": "which_of_following",
+  "knowledge_area": "POLICIES (dress code, conduct)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The requirement that all FBLA members represent their school, state, and organization with integrity, complete work honestly, and keep electronic devices stored away during events is known as the ___",
+  "options": [
+   "Professional Standards Code",
+   "Competitive Ethics Policy",
+   "Honor Code",
+   "Integrity Agreement"
+  ],
+  "correct_index": 2,
+  "explanation": "The Honor Code is FBLA's formal commitment to honest conduct, including prohibition of unauthorized aid on tests and visibility of electronic devices (which constitutes an automatic violation). This is the official term used in FBLA policy to describe the ethical and conduct standards all members must uphold.",
+  "type": "definition_recall",
+  "knowledge_area": "POLICIES (dress code, conduct)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are examples of unacceptable attire at official FBLA functions EXCEPT",
+  "options": [
+   "Athletic wear and flip-flops",
+   "T-shirts and baseball hats",
+   "Shorts and sneakers",
+   "A professional-length dress and dress shoes"
+  ],
+  "correct_index": 3,
+  "explanation": "The dress code policy explicitly prohibits athletic wear, flip-flops, t-shirts, hats, shorts, and sneakers. A professional-length dress paired with dress shoes is an acceptable example of business professional attire. The other three options all contain unacceptable items according to FBLA policy.",
+  "type": "all_except",
+  "knowledge_area": "POLICIES (dress code, conduct)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The attire expected at official FBLA functions that includes business suits, collared dress shirts, and dress shoes is called ___",
+  "options": [
+   "professional attire",
+   "formal evening dress",
+   "casual business wear",
+   "business casual"
+  ],
+  "correct_index": 0,
+  "explanation": "Professional attire is the term FBLA uses to describe the dress code standard for all official functions. It specifically includes business suits, blazers, collared shirts, and dress shoes — the modern corporate workplace standard that competitors and delegates must follow.",
+  "type": "definition_recall",
+  "knowledge_area": "POLICIES (dress code, conduct)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be considered acceptable attire for an official FBLA function?",
+  "options": [
+   "Business suit, collared dress shirt, and dress shoes",
+   "Athletic wear, jeans, and a hat",
+   "T-shirt, shorts, and flip-flops",
+   "Athletic shoes, casual slacks, and a polo shirt"
+  ],
+  "correct_index": 0,
+  "explanation": "A business suit, collared dress shirt, and dress shoes together represent the full professional attire standard FBLA requires. The other bundles include items explicitly listed as unacceptable — jeans, athletic wear, t-shirts, hats, flip-flops, and athletic shoes.",
+  "type": "which_of_following",
+  "knowledge_area": "POLICIES (dress code, conduct)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The primary national publication distributed to FBLA members to showcase accomplishments, member spotlights, and organizational news is ___.",
+  "options": [
+   "Business Today Magazine",
+   "Tomorrow's Business Leader",
+   "Student Business Journal",
+   "FBLA Voice"
+  ],
+  "correct_index": 3,
+  "explanation": "FBLA Voice is the official publication that keeps members informed about chapter achievements, member profiles, and national updates. It serves as the main communication tool connecting FBLA members across the country.",
+  "type": "definition_recall",
+  "knowledge_area": "Identity, Publications, and Partners",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following correctly identifies FBLA's official colors and their significance?",
+  "options": [
+   "Green and silver, representing growth and innovation",
+   "Red and gold, representing energy and success",
+   "Navy blue and gold, representing stability and achievement",
+   "Blue and white, representing trust and professional excellence"
+  ],
+  "correct_index": 2,
+  "explanation": "Navy blue and gold are FBLA's official colors, chosen to represent the stability and achievement central to the organization's mission. These colors appear on FBLA's emblem, publications, and materials.",
+  "type": "concept_completion",
+  "knowledge_area": "Identity, Publications, and Partners",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are official FBLA partners and supporters EXCEPT",
+  "options": [
+   "The U.S. Department of Labor",
+   "Amazon and Facebook exclusively",
+   "Microsoft and Dell Technologies",
+   "Partnerships with state chambers of commerce"
+  ],
+  "correct_index": 1,
+  "explanation": "While FBLA has partnerships with many corporate and governmental organizations, no single company maintains exclusive partnership status. FBLA collaborates with diverse businesses including tech companies, government agencies, and chambers of commerce, but never grants exclusive partnership to any single entity.",
+  "type": "all_except",
+  "knowledge_area": "Identity, Publications, and Partners",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA's emblem features two words that represent the organization's core mission. These words are ___.",
+  "options": [
+   "Professional Development Alliance",
+   "Business and Achievement",
+   "Future Business Leaders of America",
+   "Future Business Leaders"
+  ],
+  "correct_index": 2,
+  "explanation": "FBLA's emblem displays the full words 'Future Business Leaders of America,' which appear on the official seal and represent the organization's commitment to developing the next generation of business professionals. The other options either truncate the phrase or use unrelated terms not found on the emblem.",
+  "type": "definition_recall",
+  "knowledge_area": "Identity, Publications, and Partners",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA recognizes a designated week each year to celebrate member accomplishments and raise awareness about the organization. During this annual observance, chapters hold special events and community outreach. Which of the following statements about FBLA Week is accurate?",
+  "options": [
+   "FBLA Week is exclusively for senior members and focuses on college recruitment",
+   "FBLA Week is a national observance that celebrates business leadership and member achievements",
+   "FBLA Week occurs in the fall and is coordinated with Back-to-School initiatives",
+   "FBLA Week is held only at the state level and varies by region"
+  ],
+  "correct_index": 1,
+  "explanation": "FBLA Week is a national observance designed to celebrate the organization's mission and highlight member accomplishments across chapters. During this week, members and chapters participate in activities that promote business leadership and strengthen community connections. The other options incorrectly limit or mischaracterize the scope and purpose of this annual event.",
+  "type": "concept_completion",
+  "knowledge_area": "Identity, Publications, and Partners",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In what year was the first FBLA chapter chartered, and at which high school?",
+  "options": [
+   "1937 at Hamden L. Forkner High School in Columbia, New York",
+   "1940 at Central High School in Nashville, Tennessee",
+   "1958 at the University of Northern Iowa in Cedar Falls, Iowa",
+   "February 3, 1942 at Science Hill High School in Johnson City, Tennessee"
+  ],
+  "correct_index": 3,
+  "explanation": "The source material explicitly states that the first FBLA chapter was chartered on February 3, 1942, at Science Hill High School in Johnson City, Tennessee. This is identified as the single most-tested history fact about FBLA's founding. The other options reference real people and organizations but with incorrect years or locations.",
+  "type": "definition_recall",
+  "knowledge_area": "HISTORY (timeline questions are guaranteed)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which FBLA separated from the National Council for Business Education and became its own independent entity in 1969 is best described as ___",
+  "options": [
+   "establishing independent status as a nonprofit educational student association",
+   "merging with the newly created Phi Beta Lambda division",
+   "incorporation into a larger national educational association",
+   "relocating headquarters to Reston, Virginia"
+  ],
+  "correct_index": 0,
+  "explanation": "In 1969, FBLA was granted independent status as a nonprofit educational student association, formally separating from NBEA sponsorship and incorporating as FBLA-PBL, Inc. This represents FBLA's transition to self-governance rather than being sponsored by another organization. The other options describe different milestone events that occurred in other years.",
+  "type": "concept_completion",
+  "knowledge_area": "HISTORY (timeline questions are guaranteed)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following events all occurred during the 1980s and 1990s?",
+  "options": [
+   "The formation of FBLA-Middle Level and the appointment of Jean Buckley as President and CEO",
+   "The creation of Phi Beta Lambda and the appointment of Edward D. Miller as Executive Director",
+   "The founding of the Alumni Division and the granting of independent status",
+   "The National Center land donation and the opening of the National Center in Reston, Virginia"
+  ],
+  "correct_index": 3,
+  "explanation": "The Conrad N. Hilton Foundation donated 1.6 acres in Reston, Virginia in 1981, and the National Center itself opened in Reston in 1991—both events falling within the 1980s-1990s period. Option C occurred in different decades (1979 and 1969), option B spans 1958 to 1973, and option D includes 1994 (which fits) but 1997 (also fits), making them both in the correct period but not as cleanly paired as option A.",
+  "type": "which_of_following",
+  "knowledge_area": "HISTORY (timeline questions are guaranteed)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following statements about FBLA's leadership and organizational changes are accurate?",
+  "options": [
+   "Edward D. Miller was hired as Executive Director in 1958, the same year Phi Beta Lambda was established",
+   "Hamden L. Forkner Sr. served as the first Executive Director of FBLA from 1940 until his retirement in 1973",
+   "Jean Buckley became President and CEO in 1997, and Alexander T. Graham held the same position starting in 2019",
+   "The rebrand in 2022 renamed Phi Beta Lambda to FBLA Professional Division and created a separate FBLA Network for alumni"
+  ],
+  "correct_index": 2,
+  "explanation": "Jean Buckley was appointed President and CEO in 1997, and Alexander T. Graham was appointed to the same role in 2019, making option B factually accurate. Option A incorrectly dates Miller's appointment to 1958 (it was 1973); option C falsely identifies Forkner as an executive director; and option D misstates the 2022 rebrand—Phi Beta Lambda became FBLA Collegiate, not Professional Division.",
+  "type": "which_of_following",
+  "knowledge_area": "HISTORY (timeline questions are guaranteed)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Hamden L. Forkner Sr., a professor at Columbia University's Teachers College, is credited with proposing the creation of a unified national organization for high school business clubs. What significant educational role was Forkner known for before making this proposal?",
+  "options": [
+   "He founded Phi Beta Lambda at the University of Northern Iowa",
+   "He was the creator of the Forkner shorthand system",
+   "He served as President and CEO of FBLA in the 1990s",
+   "He was the first Executive Director of FBLA"
+  ],
+  "correct_index": 1,
+  "explanation": "Hamden L. Forkner Sr. is specifically identified in the source material as the creator of the Forkner shorthand system before he proposed the national organization in 1937. His reputation as an educational innovator made him a credible advocate for uniting scattered local business clubs into one cohesive national structure.",
+  "type": "definition_recall",
+  "knowledge_area": "HISTORY (timeline questions are guaranteed)",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA Middle School, designed for grades 5-9, was established in what year?",
+  "options": [
+   "1994",
+   "1998",
+   "1992",
+   "1996"
+  ],
+  "correct_index": 0,
+  "explanation": "FBLA Middle School was formed in 1994 as FBLA-ML to serve younger students in grades 5-9. This represents the organization's expansion beyond high school into the middle school market.",
+  "type": "definition_recall",
+  "knowledge_area": "STRUCTURE AND GOVERNANCE",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following correctly describes the composition of FBLA's five national regions?",
+  "options": [
+   "Atlantic, Gulf, Midwest, Great Plains, and Pacific, determined by population density of business education programs",
+   "Eastern, Southern, North Central, Mountain Plains, and Western, with international chapters belonging to the Eastern Region",
+   "Eastern, Southern, North Central, Mountain Plains, and Western, with international chapters belonging to the Southern Region",
+   "Northeast, Southeast, Central, Southwest, and Pacific, based on geographic proximity to state capitals"
+  ],
+  "correct_index": 1,
+  "explanation": "FBLA High School and Middle School are organized into exactly five national regions: Eastern, Southern, North Central, Mountain Plains, and Western. International chapters are assigned to the Eastern Region, regardless of their geographic location.",
+  "type": "which_of_following",
+  "knowledge_area": "STRUCTURE AND GOVERNANCE",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The National Leadership Conference elects FBLA High School's nine national officers, who are then installed at the ___",
+  "options": [
+   "National Center in Reston, Virginia",
+   "Opening Business Session",
+   "State Leadership Conference",
+   "Awards of Excellence Program"
+  ],
+  "correct_index": 3,
+  "explanation": "FBLA's nine national officers—President, Secretary, Treasurer, Parliamentarian, and five Vice Presidents (one per region)—are elected at the National Leadership Conference and formally installed at the Awards of Excellence Program. These officers serve one-year terms and direct the annual program of work.",
+  "type": "definition_recall",
+  "knowledge_area": "STRUCTURE AND GOVERNANCE",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The professional staff that runs FBLA's day-to-day operations from the National Center in Reston, VA is led by the ___",
+  "options": [
+   "President & CEO",
+   "National Parliamentarian",
+   "Board of Directors chair",
+   "State chapter president"
+  ],
+  "correct_index": 0,
+  "explanation": "The President & CEO heads the professional staff at the National Center and oversees daily operations. The Board of Directors provides governance oversight but does not manage day-to-day operations; the state chapter president operates at the state level, not national.",
+  "type": "concept_completion",
+  "knowledge_area": "STRUCTURE AND GOVERNANCE",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following correctly lists the levels of FBLA organization from local to national?",
+  "options": [
+   "District/region/section, local chapter, state chapter, national",
+   "National chapter, state chapter, district/region/section, local chapter",
+   "Local chapter, district/region/section, state chapter, national",
+   "Local chapter, state chapter, national chapter, district/region/section"
+  ],
+  "correct_index": 2,
+  "explanation": "The organizational hierarchy flows from the bottom up: a local chapter (school-based) connects to its district/region/section, which reports to the state chapter, which participates in the national organization. This structure ensures coordination while maintaining local autonomy.",
+  "type": "which_of_following",
+  "knowledge_area": "STRUCTURE AND GOVERNANCE",
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The set of conditions, trends, and influences outside an organization that affect how a business operates and competes is known as the ___.",
+  "options": [
+   "competitive advantage",
+   "business environment",
+   "organizational structure",
+   "business model"
+  ],
+  "correct_index": 1,
+  "explanation": "The business environment encompasses all external factors—economic, social, technological, political, and legal—that influence business operations. This includes global trends, market conditions, competition, and regulatory frameworks that shape how organizations must adapt and respond.",
+  "type": "definition_recall",
+  "knowledge_area": "Nature of Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A nation's system of rules, regulations, and laws that guide business operations and protect consumers, workers, and fair competition is called ___.",
+  "options": [
+   "market economy",
+   "business ethics",
+   "free enterprise",
+   "business regulation"
+  ],
+  "correct_index": 3,
+  "explanation": "Business regulation refers to the government's oversight and control of business activities through laws and rules. This includes consumer protection laws, labor standards, antitrust regulations, and environmental rules that establish the legal framework within which businesses must operate.",
+  "type": "definition_recall",
+  "knowledge_area": "Nature of Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The relationship between government and business includes all of the following EXCEPT",
+  "options": [
+   "government setting of wage and salary amounts for all employees",
+   "government regulation of business practices to protect consumers",
+   "government enforcement of contracts and property rights",
+   "government taxation of business income and activities"
+  ],
+  "correct_index": 0,
+  "explanation": "While governments do enforce contracts, regulate business practices, and collect taxes, they do not typically set wage and salary amounts for employees—that is determined by market forces, employers, and labor negotiations. The other three are genuine examples of how government influences business operations.",
+  "type": "all_except",
+  "knowledge_area": "Nature of Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be examples of factors in the external business environment that can affect a company's operations?",
+  "options": [
+   "Product pricing strategy, employee compensation, and marketing budget allocation",
+   "Warehouse location decisions, production scheduling, and inventory control methods",
+   "Economic recession, technological innovation, and changing consumer preferences",
+   "Employee training programs, internal accounting systems, and management hierarchy"
+  ],
+  "correct_index": 2,
+  "explanation": "External business environment factors are outside the organization's direct control and include economic conditions, technology trends, and consumer behavior. The other options list internal business decisions and operations (training, systems, budgets, scheduling) that a company controls directly, not external environmental factors.",
+  "type": "which_of_following",
+  "knowledge_area": "Nature of Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The level of involvement a government has in regulating industries, setting standards, and intervening in economic decisions is referred to as the degree of ___.",
+  "options": [
+   "government intervention",
+   "competitive advantage",
+   "market equilibrium",
+   "international trade policy"
+  ],
+  "correct_index": 0,
+  "explanation": "Government intervention describes how actively a government participates in business through regulation, standards, and economic policy decisions. This is a key concept in understanding the relationship between government and business, and varies significantly across different nations and industries.",
+  "type": "definition_recall",
+  "knowledge_area": "Nature of Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A written document that introduces your qualifications and expresses interest in a specific job position is called a(n) ___.",
+  "options": [
+   "portfolio",
+   "job application",
+   "resume",
+   "cover letter"
+  ],
+  "correct_index": 3,
+  "explanation": "A cover letter is a formal letter accompanying your resume that explains why you are interested in the position and how your skills match the job requirements. It differs from a resume, which is a brief summary of your work experience and education, and from a job application, which is a standardized form completed for a specific employer.",
+  "type": "definition_recall",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of meeting with an employer or hiring manager to discuss your qualifications and fit for a job opening is called a(n) ___.",
+  "options": [
+   "performance review",
+   "job interview",
+   "networking event",
+   "orientation session"
+  ],
+  "correct_index": 1,
+  "explanation": "A job interview is a formal conversation between a candidate and an employer designed to assess the candidate's skills, experience, and suitability for a position. This differs from a networking event (informal professional connection), an orientation session (training for a new hire), or a performance review (evaluation of an existing employee).",
+  "type": "definition_recall",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the activities and preparations that a job seeker must complete to find employment and secure a position make up the process of ___.",
+  "options": [
+   "professional development",
+   "resume building",
+   "job searching",
+   "career counseling"
+  ],
+  "correct_index": 2,
+  "explanation": "Job searching encompasses the entire process of identifying opportunities, completing applications, writing cover letters, interviewing, and negotiating to obtain a position. While the other options are related activities, job searching is the comprehensive term for the overall employment-seeking process.",
+  "type": "concept_completion",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be effective elements to include when preparing for a job interview?",
+  "options": [
+   "Bring multiple copies of your resume, arrive at least 30 minutes early, and interrupt the interviewer to demonstrate confidence",
+   "Research the company culture, practice answering common questions, and plan your route and arrival time",
+   "Memorize scripted responses word-for-word, avoid asking any questions, and wear casual clothing that shows personality",
+   "Discuss salary expectations immediately, focus only on what the job can do for you, and mention personal financial problems"
+  ],
+  "correct_index": 1,
+  "explanation": "Effective interview preparation includes researching the company to understand its values and goals, practicing responses to typical interview questions, and planning logistics like travel time and arrival. These steps demonstrate professionalism and genuine interest. The other options contain either counterproductive behaviors (arriving too early, interrupting) or self-focused approaches (salary focus before learning about the role, discussing personal problems) that would damage your candidacy.",
+  "type": "which_of_following",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate strategies to use when preparing for a job interview?",
+  "options": [
+   "Ignore the job description details, arrive without planning your route, and focus only on listing your previous job titles",
+   "Arrive late to show confidence, wear casual clothing to appear relaxed, and avoid asking questions about the role",
+   "Skip researching the company to keep answers spontaneous, memorize generic responses, and discuss your salary expectations immediately",
+   "Review the job description, learn about the company's mission and values, and prepare examples of your past achievements"
+  ],
+  "correct_index": 3,
+  "explanation": "Reviewing the job description, researching the company, and preparing specific achievement examples are all evidence-based, professional interview preparation strategies that demonstrate genuine interest and readiness. The other options contain actions that would harm your interview performance—arriving late, dressing inappropriately, not researching, or being unprepared—making option A the only bundle of genuinely sound preparation steps. This tests ability to identify a complete set of appropriate interview behaviors.",
+  "type": "which_of_following",
+  "knowledge_area": "Job-Search Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability to work effectively with others, communicate clearly, and solve problems collaboratively is known as what type of skill?",
+  "options": [
+   "Hard skill",
+   "Technical skill",
+   "Soft skill",
+   "Analytical skill"
+  ],
+  "correct_index": 2,
+  "explanation": "Soft skills are interpersonal and workplace behavioral competencies like teamwork, communication, and problem-solving that employers highly value. These differ from hard/technical skills, which are job-specific and learned through training or experience.",
+  "type": "definition_recall",
+  "knowledge_area": "Career Planning",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be examples of business career opportunities?",
+  "options": [
+   "Accountant, marketing manager, and human resources director",
+   "Electrician, plumber, and construction foreman",
+   "Surgeon, nurse, and dental hygienist",
+   "Teacher, principal, and school counselor"
+  ],
+  "correct_index": 0,
+  "explanation": "Accountant, marketing manager, and HR director are all core business career paths across different functions (finance, marketing, and personnel management). The other options represent careers in skilled trades, healthcare, and education respectively.",
+  "type": "which_of_following",
+  "knowledge_area": "Career Planning",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of evaluating your strengths, interests, and values to determine what type of work environment and job will bring you satisfaction makes up ___.",
+  "options": [
+   "job training",
+   "employment verification",
+   "networking",
+   "self-assessment"
+  ],
+  "correct_index": 3,
+  "explanation": "Self-assessment is the reflective process of understanding your personal interests, skills, values, and personality to guide career decisions. Job training develops specific skills, employment verification confirms work history, and networking builds professional relationships—none define the personal evaluation process itself.",
+  "type": "concept_completion",
+  "knowledge_area": "Career Planning",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The set of abilities that enable you to interact positively with colleagues, clients, and supervisors — such as leadership, teamwork, and emotional intelligence — is called ___.",
+  "options": [
+   "Technical skills",
+   "Interpersonal skills",
+   "Analytical skills",
+   "Administrative skills"
+  ],
+  "correct_index": 1,
+  "explanation": "Interpersonal skills are the human-relations capabilities that allow professionals to work effectively in team environments and build strong workplace relationships. Technical skills, by contrast, are job-specific competencies like software or accounting knowledge. Analytical and administrative skills are narrower competencies that do not encompass the full range of people-interaction abilities.",
+  "type": "definition_recall",
+  "knowledge_area": "Career Planning",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be traits that employers typically seek in business job candidates?",
+  "options": [
+   "Adaptability, reliability, and strong communication ability",
+   "Avoidance of responsibility, resistance to change, and poor time management",
+   "Limited experience, lack of curiosity, and unwillingness to learn new tools",
+   "Preference for working alone, rigid adherence to one method, and minimal feedback tolerance"
+  ],
+  "correct_index": 0,
+  "explanation": "Employers consistently value adaptability (the ability to adjust to new situations), reliability (trustworthiness and consistent performance), and strong communication skills as essential for career success in business. The other three options describe traits that would hinder a candidate's advancement and workplace fit, making them genuinely undesirable in any professional setting.",
+  "type": "which_of_following",
+  "knowledge_area": "Career Planning",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A person who identifies a business opportunity, organizes resources, and takes on the risks to create a new venture is called a(n) ___",
+  "options": [
+   "investor",
+   "manager",
+   "entrepreneur",
+   "stockholder"
+  ],
+  "correct_index": 2,
+  "explanation": "An entrepreneur is specifically defined as someone who recognizes an opportunity, assembles the necessary resources, and accepts the financial and personal risks involved in starting a business. While investors provide capital and managers run operations, only the entrepreneur assumes the initial risk and responsibility of creating the venture.",
+  "type": "definition_recall",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be advantages of operating a sole proprietorship?",
+  "options": [
+   "Shared ownership responsibilities, legal separation from personal assets, and continuous operation after owner death",
+   "Multiple owners share losses, formal governance structure required, and unlimited liability for all partners",
+   "Easy to establish, owner keeps all profits, and simple decision-making authority",
+   "Unlimited personal liability, complex tax filings, and difficult access to capital"
+  ],
+  "correct_index": 2,
+  "explanation": "A sole proprietorship is the simplest business structure to start, allows the owner to retain all profits without sharing, and grants the owner complete authority to make decisions. The other options list characteristics of partnerships or corporations, or disadvantages rather than advantages of sole proprietorships.",
+  "type": "which_of_following",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a partnership, all partners have equal responsibility for business debts and the authority to bind the partnership to contracts unless otherwise specified in a written agreement. This shared legal and financial liability is known as ___",
+  "options": [
+   "corporate shielding",
+   "equity distribution",
+   "limited liability",
+   "joint and several liability"
+  ],
+  "correct_index": 3,
+  "explanation": "Joint and several liability means each partner can be held personally responsible for the full amount of partnership debts and obligations, not just their proportional share. This is a defining and often risky feature of general partnerships, distinguishing them from corporations where owners have limited liability.",
+  "type": "definition_recall",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A technology entrepreneur has developed a new app but lacks the capital and legal expertise to launch independently. She is considering three options: forming a sole proprietorship to keep all profits, starting a partnership with a business attorney who will also invest capital, or seeking a venture capitalist investor while maintaining sole control. Which action best addresses her immediate needs?",
+  "options": [
+   "Partner with the attorney to gain both capital and the legal expertise she currently lacks",
+   "Form a sole proprietorship so she retains 100% ownership and all future profits",
+   "Delay the launch until she personally earns enough capital to fund it entirely alone",
+   "Bring in a venture capitalist with no other changes to structure or decision-making"
+  ],
+  "correct_index": 0,
+  "explanation": "A partnership with the attorney addresses two specific gaps at once: she gains the capital needed to launch and the legal expertise required to navigate startup requirements and contracts. While a sole proprietorship preserves ownership, it leaves her without funding or legal support; a venture capitalist provides only capital without the expertise gap; and delaying launch indefinitely is not a business solution.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be characteristics of a sole proprietorship?",
+  "options": [
+   "Multiple owners, shared decision-making authority, and equal personal liability",
+   "Single owner, full personal liability for business debts, and simple business structure",
+   "Single owner, limited personal liability, and ease of transferring ownership",
+   "Single owner, personal liability for debts, and unlimited life of the business"
+  ],
+  "correct_index": 1,
+  "explanation": "A sole proprietorship is defined by a single owner who bears full personal liability for all business debts and maintains a simple, easy-to-establish structure. Option A is incorrect because sole proprietorships have limited life (they end if the owner dies or exits). Option B contradicts the liability aspect—sole proprietors have personal, not limited, liability. Option D describes a partnership, not a sole proprietorship.",
+  "type": "which_of_following",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The rivalry among businesses offering similar products or services, which drives innovation and influences pricing, is called ___",
+  "options": [
+   "competition",
+   "profit margin",
+   "market segmentation",
+   "supply and demand"
+  ],
+  "correct_index": 0,
+  "explanation": "Competition is the direct concept describing rivalry among businesses competing for customers. This rivalry encourages businesses to improve quality, lower prices, and innovate to attract consumers. The other options describe related but distinct economic concepts.",
+  "type": "definition_recall",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the processes and interactions that allow buyers and sellers to exchange goods and services to satisfy needs and wants make up ___",
+  "options": [
+   "a market economy",
+   "entrepreneurship",
+   "private enterprise",
+   "competition"
+  ],
+  "correct_index": 2,
+  "explanation": "Private enterprise encompasses the system in which individuals and businesses own and operate production, make decisions about what to produce, and exchange goods and services. The concept includes ownership rights, profit incentive, and voluntary exchange. The other options describe related but narrower concepts.",
+  "type": "concept_completion",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business's profit is directly reduced when there is an increase in ___",
+  "options": [
+   "the number of repeat customers",
+   "production costs and business expenses",
+   "the efficiency of operations",
+   "customer demand and sales volume"
+  ],
+  "correct_index": 1,
+  "explanation": "Profit equals revenue minus expenses; higher production costs and business expenses directly reduce the bottom-line profit, even if sales remain constant. Increased demand, repeat customers, and operational efficiency all tend to increase or maintain profit levels. The question tests understanding of what factors negatively affect profit.",
+  "type": "concept_completion",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a market economy, the ability of new businesses to enter an industry and compete with established firms is known as ___",
+  "options": [
+   "barrier to entry",
+   "economies of scale",
+   "monopolistic competition",
+   "market freedom"
+  ],
+  "correct_index": 3,
+  "explanation": "Market freedom refers to the unrestricted ability of businesses to enter and exit markets, which is a defining feature of competitive economic systems. This is different from barriers to entry (obstacles that prevent new competitors) and economies of scale (cost advantages from large production). A student who studied the concept of competition in market economies would recognize this as the fundamental characteristic enabling new firms to challenge existing ones.",
+  "type": "definition_recall",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The system in which individuals and businesses own resources and make production decisions to earn profit, operating within a framework of market-determined prices and voluntary exchange, is called ___",
+  "options": [
+   "cooperative economy",
+   "command economy",
+   "capitalist economy",
+   "mixed economy"
+  ],
+  "correct_index": 2,
+  "explanation": "A capitalist economy is defined by private ownership of resources, profit motive, and market-driven decision-making—all features described in the question. This contrasts with command economies (government-directed), mixed economies (blend of market and government control), and cooperative economies (joint ownership and management). Understanding this core economic system concept is essential to studying how competition and profit operate.",
+  "type": "concept_completion",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An economic good is best defined as",
+  "options": [
+   "any service provided by a business to its customers",
+   "something that is freely available to everyone in unlimited quantities",
+   "a natural resource found in the environment without processing",
+   "a product or item that has limited supply and satisfies human wants"
+  ],
+  "correct_index": 3,
+  "explanation": "An economic good is a tangible or intangible item that has value because it is scarce and people desire it. Unlike free goods (which are unlimited), economic goods require production effort and carry an opportunity cost. The other options describe either services specifically, raw resources, or free goods—not economic goods in general.",
+  "type": "definition_recall",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all increase the supply of a product?",
+  "options": [
+   "Lower resource costs, improved production methods, and more suppliers entering the market",
+   "Increased consumer taxes, higher business operating costs, and reduced access to raw materials",
+   "Strong consumer demand, higher prices for finished goods, and more competitors entering the market",
+   "A decrease in production technology, rising wages for workers, and lower resource costs"
+  ],
+  "correct_index": 0,
+  "explanation": "Supply increases when conditions make production cheaper, easier, or more attractive—lower costs, better technology, and more market entrants all contribute. The first option reverses technology and cost effects. The third lists cost-increasing factors that reduce supply. The fourth conflates demand effects with supply; while price can encourage existing suppliers, strong demand alone doesn't increase supply without better production conditions.",
+  "type": "which_of_following",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Economic resources that are used to produce goods and services include all of the following EXCEPT",
+  "options": [
+   "labor and human skills applied to manufacturing",
+   "consumer preferences and personal tastes of individual buyers",
+   "land and natural materials used in production",
+   "capital equipment such as factories and machinery"
+  ],
+  "correct_index": 1,
+  "explanation": "Economic resources—also called factors of production—are the actual inputs needed to make goods and services: land, labor, and capital. Consumer preferences and tastes influence what gets produced and demanded, but they are not themselves a resource or input to the production process. Preferences shape decisions about production, not the ability to produce.",
+  "type": "all_except",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A service is best characterized as",
+  "options": [
+   "A tangible product that can be stored and resold multiple times",
+   "A manufactured item with a fixed price determined by suppliers",
+   "An intangible activity or benefit provided to satisfy human wants",
+   "A scarce resource used directly in the production process"
+  ],
+  "correct_index": 2,
+  "explanation": "A service is an intangible activity or benefit—like haircuts, repairs, or education—that cannot be physically held or stored, unlike goods. Services are consumed at the time they are provided and satisfy human wants through actions rather than tangible products.",
+  "type": "definition_recall",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The interaction between the quantity of a product available and the quantity consumers are willing to buy at various prices creates",
+  "options": [
+   "production efficiency",
+   "market equilibrium",
+   "economic resources",
+   "consumer preferences"
+  ],
+  "correct_index": 1,
+  "explanation": "Market equilibrium is achieved when supply and demand meet—the point where the quantity suppliers want to sell equals the quantity buyers want to purchase at a given price. This balance is fundamental to how prices and quantities are determined in a market economy.",
+  "type": "concept_completion",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic process of recording, classifying, and summarizing financial transactions to show the financial position of a business is called ___",
+  "options": [
+   "budgeting",
+   "forecasting",
+   "auditing",
+   "accounting"
+  ],
+  "correct_index": 3,
+  "explanation": "Accounting is the foundational business activity that captures and organizes financial data to create reports showing what a company owns, owes, and has earned. Auditing verifies accounting records, budgeting projects future finances, and forecasting estimates trends—all different processes that depend on accounting data.",
+  "type": "definition_recall",
+  "knowledge_area": "Types of Business Activities",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The collection, storage, processing, and distribution of data and facts to support decision-making throughout an organization is best described as ___",
+  "options": [
+   "information management",
+   "marketing analysis",
+   "operational planning",
+   "financial reporting"
+  ],
+  "correct_index": 0,
+  "explanation": "Information management encompasses the entire lifecycle of handling data—gathering it, keeping it secure and organized, turning it into usable form, and sharing it where it's needed. While marketing, operations, and finance all use information, information management is the broader activity that serves all business functions.",
+  "type": "concept_completion",
+  "knowledge_area": "Types of Business Activities",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are all typical components of the accounting function in a business?",
+  "options": [
+   "Recording transactions, preparing financial statements, and maintaining accurate ledgers",
+   "Setting prices, promoting products, and identifying target customers",
+   "Purchasing equipment, scheduling production, and managing inventory",
+   "Hiring employees, training staff, and managing payroll schedules"
+  ],
+  "correct_index": 0,
+  "explanation": "The accounting function specifically handles the recording of financial transactions, the creation of financial statements that summarize business activity, and the maintenance of ledgers that track accounts. The other options describe human resources (B), marketing (C), and operations/production (D) respectively.",
+  "type": "which_of_following",
+  "knowledge_area": "Types of Business Activities",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The nature of information management in a business includes all of the following EXCEPT",
+  "options": [
+   "protecting sensitive information from unauthorized access",
+   "ensuring data is organized and accessible to those who need it",
+   "determining compensation levels and employee benefits",
+   "converting raw data into meaningful reports for decision-making"
+  ],
+  "correct_index": 2,
+  "explanation": "Determining compensation and benefits is a core human resources function, not information management. While HR may use information systems to store employee data, designing compensation structures belongs to the human resources activity. The other three options—organizing data, converting it to useful reports, and securing it—are all central to information management.",
+  "type": "all_except",
+  "knowledge_area": "Types of Business Activities",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of planning, organizing, and controlling the resources and activities of a business to achieve its goals is called ___",
+  "options": [
+   "operations",
+   "marketing",
+   "finance",
+   "management"
+  ],
+  "correct_index": 3,
+  "explanation": "Management is the overarching function that involves planning, organizing, directing, and controlling business resources to meet organizational objectives. While operations, finance, and marketing are important business functions, they are all components that fall under the broader management function.",
+  "type": "definition_recall",
+  "knowledge_area": "Types of Business Activities",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability of a worker or business to produce a greater quantity of output in the same amount of time is called ___",
+  "options": [
+   "output maximization",
+   "productivity",
+   "specialization",
+   "efficiency"
+  ],
+  "correct_index": 1,
+  "explanation": "Productivity is the measure of how much output is generated per unit of input (such as per hour of labor). It directly reflects the ability to produce more in the same timeframe, and is a core metric for business performance. The other terms relate to business operations but do not capture this specific input-output relationship.",
+  "type": "definition_recall",
+  "knowledge_area": "Cost/Profit Relationships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When employees focus on performing specific tasks rather than handling all aspects of production, the overall output of the organization typically ___",
+  "options": [
+   "fluctuates based on market demand alone",
+   "remains unchanged unless equipment is upgraded",
+   "increases due to specialization and division of labor",
+   "decreases because workers become bored with repetitive tasks"
+  ],
+  "correct_index": 2,
+  "explanation": "Specialization and division of labor allow workers to develop expertise in narrow tasks, work more efficiently, and reduce time spent switching between different activities. This focused approach increases overall productivity and output. While repetitive work can affect morale, the actual productive capacity and efficiency gains outweigh that concern at the organizational level.",
+  "type": "concept_completion",
+  "knowledge_area": "Cost/Profit Relationships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A factory reorganizes its assembly line so that some workers focus exclusively on quality inspection while others focus on packaging. This change demonstrates how the division of labor can affect a business's ___",
+  "options": [
+   "efficiency and output capacity",
+   "pricing strategy and profit margins",
+   "customer satisfaction and brand loyalty",
+   "hiring and recruitment practices"
+  ],
+  "correct_index": 0,
+  "explanation": "By dividing tasks so workers specialize in specific areas, the factory increases efficiency because each worker develops expertise in their narrow role and wastes less time switching between different tasks. This directly improves output capacity and overall productivity.",
+  "type": "concept_completion",
+  "knowledge_area": "Cost/Profit Relationships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manager notices that her team's overall output has been stagnant despite hiring two additional employees. She suspects the problem is that each team member is still responsible for multiple different types of work. To improve the situation, what should the manager prioritize?",
+  "options": [
+   "Require all employees to work longer hours to compensate for low output",
+   "Immediately reduce the team's workload by cutting less profitable projects",
+   "Replace the least-productive employees with workers from a competing firm",
+   "Reassign tasks so each employee specializes in one or two specific functions"
+  ],
+  "correct_index": 3,
+  "explanation": "Implementing specialization and division of labor allows each worker to focus deeply on specific tasks, reducing context-switching and building expertise—this directly increases productivity. The manager should restructure roles to give each person clear, specialized responsibilities rather than trying to solve the problem through staffing changes or extended hours.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Cost/Profit Relationships",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a general partnership, partners share ownership and management responsibilities, but they also share ___—meaning each partner can be held personally responsible for all business debts and legal obligations.",
+  "options": [
+   "corporate separation",
+   "unlimited liability",
+   "limited liability",
+   "equity dividends"
+  ],
+  "correct_index": 1,
+  "explanation": "Unlimited liability is the legal exposure partners face in a general partnership; each partner's personal assets can be seized to cover partnership debts or settlements. This is a fundamental risk characteristic that distinguishes general partnerships from limited partnerships or corporations.",
+  "type": "concept_completion",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business structure in which one person owns and operates the entire business, keeps all profits, and bears complete personal liability for all debts and legal claims is called a(n) ___",
+  "options": [
+   "corporation",
+   "sole proprietorship",
+   "franchise agreement",
+   "limited partnership"
+  ],
+  "correct_index": 1,
+  "explanation": "A sole proprietorship is the simplest business structure — one owner with full control, full profit retention, and full personal legal and financial responsibility. This is the foundational ownership model before more complex structures like partnerships or corporations.",
+  "type": "definition_recall",
+  "knowledge_area": "Owning a Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Economic resources are classified into three main categories. Which of the following represents all three types?",
+  "options": [
+   "Natural resources, human effort, and financial assets",
+   "Raw materials, factories, and workers",
+   "Land, labor, and capital",
+   "Money, employees, and equipment"
+  ],
+  "correct_index": 2,
+  "explanation": "Land, labor, and capital are the three fundamental categories of economic resources used in production. Land includes natural resources, labor refers to human effort and skills, and capital encompasses all human-made productive assets. This classification is foundational to understanding how economies organize production.",
+  "type": "definition_recall",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the processes used to identify, create, and maintain exchange relationships that satisfy individuals and organizations make up the study of ___.",
+  "options": [
+   "economics",
+   "entrepreneurship",
+   "microeconomics",
+   "macroeconomics"
+  ],
+  "correct_index": 0,
+  "explanation": "Economics as a discipline encompasses all processes related to exchange relationships and satisfying human wants and needs through the use of limited resources. Microeconomics and macroeconomics are subdivisions of economics, while entrepreneurship is a separate business function. This definition captures the broad scope of economic study.",
+  "type": "concept_completion",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When a business invests in new machinery, training programs for employees, and warehouse facilities to expand production capacity, which type of economic resource is being increased?",
+  "options": [
+   "Land and natural resources",
+   "Labor supply",
+   "Consumer goods",
+   "Capital resources"
+  ],
+  "correct_index": 3,
+  "explanation": "Machinery, training programs, and warehouse facilities are all examples of capital resources—human-made productive assets created to help produce other goods and services. While training affects labor quality, it represents an investment in capital. Distinguishing capital from the other resource categories requires understanding that capital is manufactured, not naturally occurring (land) or personal effort (labor).",
+  "type": "concept_completion",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Economic activities are influenced by all of the following factors EXCEPT",
+  "options": [
+   "technological advances in production methods",
+   "the geographic location of competing businesses in other countries",
+   "the personal wealth and spending habits of individual consumers",
+   "the availability of economic resources"
+  ],
+  "correct_index": 1,
+  "explanation": "While international competition exists, the geographic location of competitors in other countries is not a primary direct influence on a specific nation's economic activities—rather, trade policy, comparative advantage, and global market access are the relevant economic factors. Resource availability, technology, and consumer preferences directly shape what and how much a economy produces. This question requires understanding which factors are genuinely causal versus peripheral to economic activity.",
+  "type": "all_except",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Economic activities in a market are affected by all of the following EXCEPT",
+  "options": [
+   "changes in consumer income and purchasing power",
+   "the availability of raw materials and production technology",
+   "the number of competitors operating in the same industry",
+   "the color of packaging used by competing businesses"
+  ],
+  "correct_index": 3,
+  "explanation": "While packaging color may affect branding and visual appeal, it does not directly influence the core economic activities of production, supply, pricing, or demand in a meaningful way. Resource availability, competition, and consumer income directly drive supply and demand decisions and market activity.",
+  "type": "all_except",
+  "knowledge_area": "Fundamental Economic Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sole proprietor who starts a small bakery and eventually expands to multiple locations is an example of ___",
+  "options": [
+   "entrepreneurship",
+   "vertical integration",
+   "market monopoly",
+   "corporate consolidation"
+  ],
+  "correct_index": 0,
+  "explanation": "Entrepreneurship is the practice of starting and operating a new business venture to earn profit and create value. The sole proprietor's action of founding and growing the bakery from a single location to multiple locations exemplifies this concept, as it involves identifying an opportunity, taking risk, and building a business. This directly demonstrates the impact of small business and entrepreneurship on a market economy.",
+  "type": "definition_recall",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The system in which individuals and private businesses control the means of production and make decisions based on profit incentives, prices, and voluntary exchange is called ___",
+  "options": [
+   "command economy",
+   "planned economy",
+   "free enterprise system",
+   "mixed economy"
+  ],
+  "correct_index": 2,
+  "explanation": "The free enterprise system (also called capitalism or market economy) is built on private ownership, voluntary exchange, and profit incentives rather than government control. This system allows businesses to compete, set prices based on market demand, and make production decisions independently. It is the foundational concept underlying private enterprise and competition in market economies.",
+  "type": "concept_completion",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A software developer leaves her job to start a technology consulting firm, investing her savings and working long hours to build the business into a profitable enterprise that now employs fifteen people. This example most directly illustrates which characteristic of a market economy?",
+  "options": [
+   "The role of government in setting production quotas for all industries",
+   "The necessity of labor unions to protect worker rights and wages",
+   "The ability of large corporations to control all aspects of supply and demand",
+   "How individuals pursue personal gain and innovation, creating jobs and economic growth"
+  ],
+  "correct_index": 3,
+  "explanation": "This scenario demonstrates how individual initiative, profit incentive, and personal risk-taking drive economic activity and growth in a market economy. The entrepreneur's decision to start and expand the business, creating jobs in the process, reflects private enterprise principles—not government control, union activity, or corporate dominance.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Small businesses and new entrepreneurs contribute to market economies by doing all of the following EXCEPT",
+  "options": [
+   "introducing innovative products and services that meet changing consumer demands",
+   "creating new jobs and employment opportunities in their communities",
+   "eliminating the need for government regulation and oversight of markets",
+   "increasing consumer choice and encouraging established businesses to improve their offerings"
+  ],
+  "correct_index": 2,
+  "explanation": "While small businesses drive innovation, create jobs, and increase choice, they do not eliminate the need for government regulation—markets still require a framework of rules and oversight. The other three are genuine contributions small businesses make to a healthy market economy.",
+  "type": "all_except",
+  "knowledge_area": "Economic Systems",
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The minimum number of members who must be present to conduct business legally is called a(n) ___",
+  "options": [
+   "quorum",
+   "standing order",
+   "session threshold",
+   "majority vote"
+  ],
+  "correct_index": 0,
+  "explanation": "A quorum is the minimum number of members required to be present for legal business to occur. Without a quorum, any business transacted (except adjourning, recessing, or fixing the time to adjourn) is null and void. This is a foundational parliamentary concept designed to ensure decisions represent a legitimate assembly.",
+  "type": "definition_recall",
+  "knowledge_area": "FOUNDATIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The fundamental rules of an organization that cannot be suspended and can only be amended with previous notice and a two-thirds vote are called ___",
+  "options": [
+   "bylaws",
+   "special rules of order",
+   "standing rules",
+   "parliamentary authority"
+  ],
+  "correct_index": 0,
+  "explanation": "Bylaws are the supreme governing document after the corporate charter and hold the highest authority in the rules hierarchy. They cannot be suspended under any circumstances and require both previous notice and a two-thirds vote to amend, making them far more rigid than standing rules or special rules of order.",
+  "type": "definition_recall",
+  "knowledge_area": "FOUNDATIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The purpose of parliamentary procedure is to ___",
+  "options": [
+   "establish a formal voting system that eliminates debate",
+   "ensure that the chair always maintains control of all decisions",
+   "transact business efficiently while protecting the rights of every member",
+   "guarantee that the majority can override minority objections without restriction"
+  ],
+  "correct_index": 2,
+  "explanation": "Parliamentary procedure balances two equally important goals: efficiency in conducting business and protection of member rights. The system ensures that the majority decides (after the minority has been heard) and that silence gives consent, protecting both organizational progress and individual fairness.",
+  "type": "concept_completion",
+  "knowledge_area": "FOUNDATIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following actions would ALL be in order when no quorum is present?",
+  "options": [
+   "Amend standing rules, conduct elections, recess",
+   "Debate a new proposal, approve a budget, amend the bylaws",
+   "Elect officers, pass special resolutions, adjourn",
+   "Fix the time to adjourn, adjourn, recess"
+  ],
+  "correct_index": 3,
+  "explanation": "When quorum is absent, parliamentary rules restrict business to only four specific actions: fixing the time to which to adjourn, adjourning, recessing, and taking measures to obtain a quorum. Any other business transacted is null and void, so debating proposals, approving budgets, electing officers, or amending rules cannot occur.",
+  "type": "which_of_following",
+  "knowledge_area": "FOUNDATIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The fundamental principle that all members have equal rights and that no member can be favored over another is called ___",
+  "options": [
+   "procedural fairness",
+   "equality of members",
+   "hierarchy of authority",
+   "democratic representation"
+  ],
+  "correct_index": 1,
+  "explanation": "Equality of members is a core principle of parliamentary law stating that all members possess the same rights and privileges unless specifically restricted by the organization's rules. This principle ensures that no single member receives preferential treatment in debate, voting, or procedural matters.",
+  "type": "definition_recall",
+  "knowledge_area": "Principles and Foundations of Parliamentary Law",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A document that contains the basic rules governing an organization's structure, membership, and conduct is called ___",
+  "options": [
+   "standing rules",
+   "parliamentary authority",
+   "special rules of order",
+   "bylaws"
+  ],
+  "correct_index": 3,
+  "explanation": "Bylaws are the written rules that establish an organization's fundamental governance framework, including how it is organized, who can be members, and how it operates. They are more permanent than standing rules and provide the legal foundation for the organization's procedures.",
+  "type": "definition_recall",
+  "knowledge_area": "Principles and Foundations of Parliamentary Law",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The minimum number of members required to be present in order for an assembly to conduct official business is called ___",
+  "options": [
+   "quorum",
+   "a meeting threshold",
+   "an assembly minimum",
+   "a session requirement"
+  ],
+  "correct_index": 0,
+  "explanation": "Quorum is the predetermined minimum number of members who must be present and participating for an assembly to legally transact business. Without a quorum, any actions taken are void and have no binding effect on the organization.",
+  "type": "definition_recall",
+  "knowledge_area": "Principles and Foundations of Parliamentary Law",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The framework of principles and procedures used to conduct fair, orderly meetings and protect the rights of all members makes up ___",
+  "options": [
+   "meeting protocol",
+   "organizational bylaws",
+   "parliamentary law",
+   "governance structure"
+  ],
+  "correct_index": 2,
+  "explanation": "Parliamentary law encompasses the body of principles, procedures, and rules designed to ensure that meetings are conducted fairly, efficiently, and democratically while protecting member rights. It provides the framework within which organizations operate and make decisions.",
+  "type": "concept_completion",
+  "knowledge_area": "Principles and Foundations of Parliamentary Law",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A member wishes to bring a motion before the assembly, but the chair determines that fewer than the required minimum number of members are present. What is the immediate consequence of this situation?",
+  "options": [
+   "The motion is recorded but tabled indefinitely until membership levels increase",
+   "The assembly cannot conduct official business, and the meeting must be adjourned until sufficient members arrive",
+   "The motion may proceed, but any decisions made are tentative and subject to ratification at the next full meeting",
+   "The member may appeal the chair's decision to another officer who can override the requirement"
+  ],
+  "correct_index": 1,
+  "explanation": "When quorum (the minimum number of members required for official business) is not present, the assembly lacks the authority to conduct business or make binding decisions. The meeting must adjourn or wait until sufficient members are present. This directly applies the principle that parliamentary law protects the legitimacy of organizational actions by ensuring adequate member participation.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Principles and Foundations of Parliamentary Law",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The official record of what actions were taken at a meeting, including main motions and their results, is called the ___",
+  "options": [
+   "minutes",
+   "bylaws",
+   "agenda",
+   "order of business"
+  ],
+  "correct_index": 0,
+  "explanation": "Minutes are the official record documenting what was DONE at a meeting—the kind of meeting, date, location, main motions with their makers, and results. They are signed by the secretary and approved at the next meeting. The agenda and order of business are planning tools created before the meeting, while bylaws are standing rules.",
+  "type": "definition_recall",
+  "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which officer is responsible for keeping official records, maintaining the membership roll, and certifying copies of organizational documents?",
+  "options": [
+   "Treasurer",
+   "Secretary",
+   "Parliamentarian",
+   "Vice President"
+  ],
+  "correct_index": 1,
+  "explanation": "The secretary's core duties include keeping the minutes and official records, maintaining the membership roll, providing the president an order of business, reading documents, handling correspondence, and certifying copies. The treasurer handles funds, the parliamentarian advises on procedure, and the vice president presides in the president's absence.",
+  "type": "definition_recall",
+  "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A committee created to handle a specific task that automatically ceases to exist once that task is complete and a final report is made is called a(n) ___",
+  "options": [
+   "standing committee",
+   "committee of the whole",
+   "special committee",
+   "advisory committee"
+  ],
+  "correct_index": 2,
+  "explanation": "A special (also called select or ad hoc) committee is temporary, formed for one specific purpose, and automatically dissolves when its assigned task is done and the final report is delivered. A standing committee is permanent and defined in the bylaws, while a committee of the whole involves the full assembly with relaxed debate rules.",
+  "type": "concept_completion",
+  "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be proper methods for nominating candidates for office?",
+  "options": [
+   "Nomination in writing 30 days prior, approval by the membership, or unanimous consent of officers",
+   "Appointment by the chair only, election by committee, or selection by the treasurer",
+   "Closed nomination by the president, selection by the vice president, or appointment by the secretary",
+   "Nomination from the floor, by a nominating committee, or by ballot"
+  ],
+  "correct_index": 3,
+  "explanation": "The source material identifies nomination from the floor (most common), by a nominating committee, by ballot, by mail, and by petition as valid nomination methods. Option B correctly includes three of these. The other options contain methods not listed as proper nomination procedures or mix real methods with ones that don't appear in the source material.",
+  "type": "which_of_following",
+  "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a meeting, a member wishes to nominate a candidate for treasurer. What procedural requirement must be met before another member can second this nomination?",
+  "options": [
+   "No second is required; nominations from the floor need no second",
+   "The nominee must first be asked if they accept the nomination and wish to serve",
+   "A written ballot must be prepared listing all nominees received so far",
+   "The current treasurer must formally release the position before any nomination is entertained"
+  ],
+  "correct_index": 0,
+  "explanation": "According to the source material, nominations from the floor require NO second—this is a unique exception in parliamentary procedure where a motion-like action proceeds without this standard requirement. This is a specific procedural rule that distinguishes nominations from ordinary motions and tests whether a student knows this particular requirement.",
+  "type": "scenario_judgment",
+  "knowledge_area": "OFFICERS, RECORDS, COMMITTEES, ELECTIONS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which a member formally proposes a matter for the assembly to consider, stated as 'I move that...', is called a(n) ___.",
+  "options": [
+   "nomination",
+   "petition",
+   "address",
+   "motion"
+  ],
+  "correct_index": 3,
+  "explanation": "A motion is the formal proposal made by a member to bring business before the assembly. The exact phrasing 'I move that...' is the proper form; other phrasings like 'I make a motion that' or 'I so move' are improper. This is a foundational term in parliamentary procedure.",
+  "type": "definition_recall",
+  "knowledge_area": "RUNNING BUSINESS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are standard elements that occur during the running of a main motion EXCEPT ___.",
+  "options": [
+   "another member provides a second to show support for consideration",
+   "the chair immediately announces the result without permitting any debate",
+   "the chair states the question before debate begins",
+   "the chair recognizes a member who has risen and addressed the chair"
+  ],
+  "correct_index": 1,
+  "explanation": "While debate is not mandatory for all motions, when a motion is debatable, debate must occur before the vote—the chair does not skip directly to announcing results. The chair states the question, allows debate if appropriate, then puts the question to a vote. The other three options are standard steps in the proper handling of a main motion.",
+  "type": "all_except",
+  "knowledge_area": "RUNNING BUSINESS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which the chair repeats a motion to the assembly after it has been seconded, making it officially belong to the assembly, is called ___.",
+  "options": [
+   "announcing the result",
+   "putting the question",
+   "stating the question",
+   "opening debate"
+  ],
+  "correct_index": 2,
+  "explanation": "Stating the question is step 5 in the six-step process of a main motion—the chair formally recites 'It is moved and seconded that...' to officially place the motion before the assembly. Only after this step does the assembly own the motion and debate may proceed.",
+  "type": "definition_recall",
+  "knowledge_area": "RUNNING BUSINESS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate activities to occur during the 'Reports of officers, boards, standing committees' section of a standard order of business?",
+  "options": [
+   "Members propose new business items, the chair announces upcoming events, and the secretary corrects errors in the previous minutes",
+   "The treasurer presents the financial report, the membership chair announces committee assignments, and the secretary reads the previous meeting's minutes",
+   "Special committees present findings from matters assigned to them, members vote on new business, and the chair declares the meeting adjourned",
+   "The president delivers the annual address, the treasurer submits the financial report, and board chairs present summaries of their activities"
+  ],
+  "correct_index": 3,
+  "explanation": "Reports of officers, boards, and standing committees (step 4 of the standard order) is when organizational leaders formally present updates on their areas. The reading and approval of minutes occurs earlier (step 3), special committees report later (step 5), and new business and adjournment happen much later in the sequence.",
+  "type": "which_of_following",
+  "knowledge_area": "RUNNING BUSINESS",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A voting method in which members vote yes or no simultaneously by voice is called ___",
+  "options": [
+   "voice vote",
+   "ballot vote",
+   "show of hands",
+   "roll call vote"
+  ],
+  "correct_index": 0,
+  "explanation": "A voice vote is the simplest and quickest voting method, where the chair asks for ayes and noes spoken aloud and judges which side has the louder response. This method is used for routine or non-controversial motions when a quick determination is needed.",
+  "type": "definition_recall",
+  "knowledge_area": "Voting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of recording each member's individual vote by name, either orally or in writing, is known as ___",
+  "options": [
+   "absentee voting",
+   "proxy voting",
+   "roll call voting",
+   "cumulative voting"
+  ],
+  "correct_index": 2,
+  "explanation": "Roll call voting creates a permanent record of how each member voted, making it more formal and transparent than a voice vote. This method is used when accuracy is critical or when members request a recorded vote on important matters.",
+  "type": "definition_recall",
+  "knowledge_area": "Voting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A voting method in which members vote by holding up their hands or standing to be counted is called ___",
+  "options": [
+   "ballot voting",
+   "show of hands",
+   "division voting",
+   "unanimous consent"
+  ],
+  "correct_index": 1,
+  "explanation": "A show of hands is a quick voting method where members indicate their vote by raising their hands, and the chair counts visible votes to determine the result. This method is faster than roll call but less formal than written ballot voting, making it common for routine or non-controversial motions.",
+  "type": "definition_recall",
+  "knowledge_area": "Voting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which an assembly verifies that a quorum is present and counts the exact number of votes cast for a motion is known as ___",
+  "options": [
+   "division",
+   "abstention",
+   "cumulative voting",
+   "ballot voting"
+  ],
+  "correct_index": 0,
+  "explanation": "Division is a voting method that ensures accuracy by requiring a formal count of votes, often used when the voice vote result is questioned or when precision is required. It differs from a simple voice vote because it demands an exact head count rather than a chair's judgment of which side sounded louder.",
+  "type": "definition_recall",
+  "knowledge_area": "Voting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following situations would require a two-thirds majority vote rather than a simple majority?",
+  "options": [
+   "Accepting a resignation from an officer or denying a membership application",
+   "Approving routine budget line items and scheduling the next regular meeting",
+   "Approving the minutes from the previous meeting and electing committee members",
+   "Amending the bylaws, suspending standing rules, or closing debate on a motion"
+  ],
+  "correct_index": 3,
+  "explanation": "Actions that restrict member rights or change procedural rules—such as amending bylaws, suspending standing rules, or invoking cloture (closing debate)—require a two-thirds majority to protect the assembly from rash decisions by a simple majority. Routine business matters like approving minutes or electing officers need only a simple majority.",
+  "type": "which_of_following",
+  "knowledge_area": "Voting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The officer responsible for documenting what occurs during a meeting, including motions made, votes taken, and decisions reached, is called the ___",
+  "options": [
+   "parliamentarian",
+   "vice president",
+   "secretary",
+   "treasurer"
+  ],
+  "correct_index": 2,
+  "explanation": "The secretary is the official record-keeper of the organization, responsible for maintaining accurate minutes of every meeting. This is a foundational duty that distinguishes the secretary role from other officers who handle finances, parliamentary procedure, or presidential duties.",
+  "type": "definition_recall",
+  "knowledge_area": "Meetings, Officers, and Records",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following is the correct sequence for the standard order of business in most meetings?",
+  "options": [
+   "Call to order, reports, old business, new business, announcements, adjournment",
+   "Call to order, approval of minutes, reports, old business, new business, announcements, adjournment",
+   "Call to order, old business, approval of minutes, reports, new business, announcements, adjournment",
+   "Approval of minutes, call to order, reports, new business, old business, announcements, adjournment"
+  ],
+  "correct_index": 1,
+  "explanation": "The standard order of business begins with calling the meeting to order, then approving the previous meeting's minutes before moving into officer reports, addressing old business, handling new business, making announcements, and finally adjourning. This sequence ensures that routine items are confirmed early before new matters are introduced.",
+  "type": "concept_completion",
+  "knowledge_area": "Meetings, Officers, and Records",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following items typically belong in the official minutes of a meeting EXCEPT",
+  "options": [
+   "The exact wording of motions made and their outcomes",
+   "The time the meeting was called to order and adjourned",
+   "The names of members present and absent",
+   "The personal opinions and disagreements between specific members"
+  ],
+  "correct_index": 3,
+  "explanation": "Official minutes are a factual record of decisions and actions taken, not a transcript of debate or personal conflicts. While attendance, motions, votes, and times are essential, the subjective opinions or interpersonal disagreements of members do not belong in the formal record—only the business conducted and its outcomes matter.",
+  "type": "all_except",
+  "knowledge_area": "Meetings, Officers, and Records",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The officer responsible for ensuring that the organization follows its bylaws and parliamentary rules during meetings is called the ___",
+  "options": [
+   "parliamentarian",
+   "vice president",
+   "treasurer",
+   "president"
+  ],
+  "correct_index": 0,
+  "explanation": "The parliamentarian is the officer who advises the chair and members on parliamentary procedure and ensures the meeting follows established rules and bylaws. This role is distinct from the president (who presides), the vice president (who assumes the chair's duties when needed), and the treasurer (who manages finances).",
+  "type": "definition_recall",
+  "knowledge_area": "Meetings, Officers, and Records",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following best describes the primary function of a treasurer in an organization?",
+  "options": [
+   "Presiding over all meetings, appointing committee members, and casting tie-breaking votes when necessary",
+   "Maintaining accurate financial records, managing the organization's money, and presenting financial reports to the membership",
+   "Ensuring that all parliamentary procedures are followed correctly during meetings and interpreting the bylaws",
+   "Recording all motions, votes, and decisions made during meetings in the official minutes"
+  ],
+  "correct_index": 1,
+  "explanation": "The treasurer is specifically responsible for financial management—maintaining records, handling funds, and reporting on the organization's financial status. This distinguishes the treasurer's role from the parliamentarian (who interprets rules), the president (who presides), and the secretary (who records minutes).",
+  "type": "concept_completion",
+  "knowledge_area": "Meetings, Officers, and Records",
+  "difficulty": "hard"
+ },
+ {
+  "question": "FBLA's organizational structure is divided into three distinct levels of governance. These levels are known as ___.",
+  "options": [
+   "chapters, regions, and national headquarters",
+   "chapters, districts, and states",
+   "divisions, regions, and the national organization",
+   "local clubs, state federations, and the national board"
+  ],
+  "correct_index": 2,
+  "explanation": "FBLA is organized into divisions (middle school and high school), regions within each state, and the national organization that oversees all state chapters. This three-tier structure allows FBLA to manage competitions and programs from the local level up through the national level.",
+  "type": "definition_recall",
+  "knowledge_area": "FBLA Bylaws and Organization",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The chief elected official of a state FBLA organization who presides over state meetings, represents the state at the national level, and ensures that bylaws are followed is called the ___.",
+  "options": [
+   "State Vice President",
+   "State Parliamentary Officer",
+   "State Executive Director",
+   "State President"
+  ],
+  "correct_index": 3,
+  "explanation": "The State President is the top elected officer in each state FBLA organization, responsible for leadership, representation at the national level, and enforcement of bylaws and policies. This position is elected by state members and holds significant authority in the state's governance structure.",
+  "type": "definition_recall",
+  "knowledge_area": "FBLA Bylaws and Organization",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be responsibilities or functions of FBLA's national organization?",
+  "options": [
+   "Train state presidents only, approve state budgets annually, and supervise chapter-level community service projects",
+   "Manage individual chapter meetings, collect chapter membership dues, and schedule all regional competitions",
+   "Establish bylaws, hold the national conference, and oversee state organization compliance with national policies",
+   "Elect regional officers, approve all chapter names, and conduct local fundraising activities"
+  ],
+  "correct_index": 2,
+  "explanation": "The national organization sets the framework for all FBLA operations through bylaws, convenes the national conference for leadership and competition, and ensures that state organizations follow national standards and policies. State and chapter operations are delegated to lower levels, but national oversight ensures consistency and compliance.",
+  "type": "which_of_following",
+  "knowledge_area": "FBLA Bylaws and Organization",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The structure of FBLA that includes local school chapters, regional groupings, state organizations, and a national headquarters represents a system of ___.",
+  "options": [
+   "tiered governance that allows coordination from local to national levels",
+   "competitive ranking where only the top state organizations influence policy",
+   "decentralized independent operations with no formal connection",
+   "temporary committees that dissolve after each annual conference"
+  ],
+  "correct_index": 0,
+  "explanation": "FBLA operates through a multi-tier system where local chapters feed into regions, regions into state organizations, and states into the national organization—allowing decisions and standards to flow across all levels. This tiered approach enables both local autonomy and national consistency. The other options misrepresent how FBLA's hierarchy actually functions: it is neither disconnected nor purely competitive-ranking based.",
+  "type": "concept_completion",
+  "knowledge_area": "FBLA Bylaws and Organization",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A motion that requires a second before it can be debated or voted on is one that needs approval from at least one other member to proceed. Which of the following motions would NOT require a second?",
+  "options": [
+   "Second the motion",
+   "Point of order",
+   "Adjourn",
+   "Main motion"
+  ],
+  "correct_index": 1,
+  "explanation": "A point of order does not require a second because it is a procedural objection raised by a member to enforce the rules of parliamentary procedure, not a substantive proposal requiring group support. Main motions and motions to adjourn both require seconds. This tests understanding of which motions stand alone as procedural tools versus those needing collective approval.",
+  "type": "all_except",
+  "knowledge_area": "Rules for Each Motion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following motions share the characteristic that they require a second, are debatable, and can be amended?",
+  "options": [
+   "Motion to reconsider and point of privilege",
+   "Main motion and motion to postpone indefinitely",
+   "Motion to table and motion to call the question",
+   "Point of order and motion to adjourn"
+  ],
+  "correct_index": 1,
+  "explanation": "The main motion and motion to postpone indefinitely both require a second, allow debate, and can be amended—they are substantive motions that affect the assembly's business directly. The other options pair motions with different procedural characteristics; for example, motions to table and call the question are non-debatable and non-amendable, designed to speed up proceedings. This question tests recognition of which motions share a common procedural profile.",
+  "type": "which_of_following",
+  "knowledge_area": "Rules for Each Motion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A motion that cannot be amended is classified as what type of motion?",
+  "options": [
+   "Subsidiary",
+   "Incidental",
+   "Unamendable",
+   "Non-debatable"
+  ],
+  "correct_index": 2,
+  "explanation": "An unamendable motion is one to which no changes or modifications can be proposed or added during debate. These motions have fixed purposes and must be voted on in their original form to protect their intended function.",
+  "type": "definition_recall",
+  "knowledge_area": "Rules for Each Motion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The procedural characteristics of motions—such as whether they require a second, whether they are debatable, and what vote is needed—work together to determine how quickly and efficiently an assembly can handle business. Which of the following best describes the purpose of establishing these specific rules for each motion?",
+  "options": [
+   "To match each motion's procedural rules to its urgency and importance in the deliberative process",
+   "To eliminate the need for debate on any motion that affects the group's finances",
+   "To make all motions equally powerful and give every member the same influence",
+   "To prevent any motion from being voted on until at least half the members have spoken"
+  ],
+  "correct_index": 0,
+  "explanation": "Parliamentary rules assign different procedural requirements to different motions based on their purpose and urgency. Urgent motions like \"Call the Question\" are non-debatable to speed closure, while main motions are fully debatable because they shape the group's decisions. This matching ensures procedural efficiency without sacrificing fairness.",
+  "type": "concept_completion",
+  "knowledge_area": "Rules for Each Motion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A motion that is debatable allows members to discuss the merits and implications of the proposal before voting. Which of the following motions is NOT debatable?",
+  "options": [
+   "Motion to commit or refer",
+   "Motion to postpone to a certain time",
+   "Main motion",
+   "Motion to call for the previous question"
+  ],
+  "correct_index": 3,
+  "explanation": "The motion to call for the previous question is a motion that closes debate and forces an immediate vote; it is not debatable itself because allowing debate on it would defeat its purpose of ending discussion. Motions to postpone to a certain time, commit/refer, and main motions are all debatable, allowing members to discuss their merits before the assembly votes.",
+  "type": "definition_recall",
+  "knowledge_area": "Rules for Each Motion",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A committee that is created for a specific purpose and disbanded once its work is completed is called a(n) ___.",
+  "options": [
+   "standing committee",
+   "special committee",
+   "advisory committee",
+   "executive committee"
+  ],
+  "correct_index": 1,
+  "explanation": "A special committee (also called an ad hoc committee) is formed to handle a particular task and is dissolved once that task is finished. Standing committees, by contrast, are permanent and ongoing. This distinction is fundamental to understanding committee structure in parliamentary procedure.",
+  "type": "definition_recall",
+  "knowledge_area": "Committees, Nominations, and Elections",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The formal process by which an organization identifies and presents candidates for elected office is called ___.",
+  "options": [
+   "ballot casting",
+   "acclamation",
+   "ratification",
+   "nomination"
+  ],
+  "correct_index": 3,
+  "explanation": "Nomination is the process of proposing or officially presenting candidates for election to office. Ratification approves what has already been decided; acclamation is a method of electing without a vote; ballot casting is the voting act itself. Nomination is the essential preliminary step that identifies who may run.",
+  "type": "definition_recall",
+  "knowledge_area": "Committees, Nominations, and Elections",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be true about the role of a standing committee?",
+  "options": [
+   "It handles one specific project, is created by special motion, and is disbanded immediately after its report",
+   "It meets only when called by the president and cannot make recommendations to the full assembly",
+   "It continues throughout the organization's existence, handles recurring matters, and addresses ongoing areas of responsibility",
+   "It requires approval from the executive board before any member may serve on it"
+  ],
+  "correct_index": 2,
+  "explanation": "Standing committees are permanent fixtures of an organization's structure; they address continuous, recurring work (membership, finance, programs, etc.) and persist regardless of leadership changes. Special committees, by contrast, are created for a single purpose and dissolved when finished. Understanding this permanence versus temporality is key to distinguishing the two committee types.",
+  "type": "which_of_following",
+  "knowledge_area": "Committees, Nominations, and Elections",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In an election, when candidates are elected without opposition by unanimous agreement of the assembly rather than by a formal vote, the method is called ___.",
+  "options": [
+   "acclamation",
+   "consensus election",
+   "open election",
+   "nomination by voice"
+  ],
+  "correct_index": 0,
+  "explanation": "Acclamation is an election method in which a candidate receives unanimous approval and is elected without a formal ballot or vote—the assembly simply agrees by voice or applause. This is the quickest and most efficient election method when opposition is absent. Nomination is the process of presenting candidates; a voice vote implies contested votes are occurring.",
+  "type": "definition_recall",
+  "knowledge_area": "Committees, Nominations, and Elections",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The procedures that govern how a committee conducts its meetings, debates motions, and makes decisions within its assigned scope are collectively called ___.",
+  "options": [
+   "committee procedure",
+   "delegation authority",
+   "parliamentary protocol",
+   "assembly rules"
+  ],
+  "correct_index": 0,
+  "explanation": "Committee procedure refers to the specific rules and processes that committees follow when operating—how they meet, discuss matters, and reach decisions. While assembly rules and parliamentary protocol are related concepts, they apply more broadly to the whole organization, not specifically to committee operations. Delegation authority is about distributing responsibility, not the mechanics of committee operations.",
+  "type": "definition_recall",
+  "knowledge_area": "Committees, Nominations, and Elections",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The formal proposal of a topic for discussion and decision by the assembly is called a(n) ___",
+  "options": [
+   "appeal",
+   "amendment",
+   "main motion",
+   "point of order"
+  ],
+  "correct_index": 2,
+  "explanation": "A main motion is the fundamental way business is introduced to the assembly for consideration. It is the first motion presented and forms the basis for all subsequent debate and amendments. This is a foundational term in parliamentary procedure.",
+  "type": "definition_recall",
+  "knowledge_area": "Processing Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following accurately describes the correct sequence in handling a main motion?",
+  "options": [
+   "Motion made, amendment proposed, debate begins, vote taken, results announced, motion filed",
+   "State the motion, recognize speakers for debate, consider amendments, vote, announce result, record decision",
+   "Introduce motion, call for amendments first, debate the amendments, vote on main motion, record outcome, adjourn",
+   "Statement of motion, debate, amendment, vote, result announcement, adjournment"
+  ],
+  "correct_index": 1,
+  "explanation": "The correct handling sequence includes stating the motion, allowing debate with proper speaker recognition, considering and voting on amendments to the main motion, announcing the final result, and recording the decision. The other options either omit critical steps like recognition rules or place amendments before debate in an incorrect order.",
+  "type": "which_of_following",
+  "knowledge_area": "Processing Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be recognized as valid parliamentary amendments to a pending motion?",
+  "options": [
+   "A procedural objection, a motion to amend the bylaws, and a withdrawal request",
+   "An adjournment motion, a motion to table, and a point of order",
+   "A division of the question, a motion to reconsider, and a motion for appeal",
+   "A first-degree amendment, a second-degree amendment, and a substitute motion"
+  ],
+  "correct_index": 3,
+  "explanation": "First-degree amendments modify the original motion directly, second-degree amendments modify the first-degree amendment, and a substitute motion proposes an entirely different version—all three are legitimate amendment forms in parliamentary procedure. The other options mix unrelated motions and procedural tools that do not function as amendments.",
+  "type": "which_of_following",
+  "knowledge_area": "Processing Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be proper steps that occur during the consideration and debate phase of a main motion?",
+  "options": [
+   "Announce the result publicly, obtain a second to the motion, record the decision, and adjourn the meeting",
+   "Record the decision in the minutes, announce the result, state the motion, and recognize speakers for debate",
+   "Recognize speakers for debate, consider proposed amendments, take a vote on the motion, and state the result to the assembly",
+   "State the motion to the assembly, allow members to speak for and against it, present proposed changes, and vote on whether to adopt it"
+  ],
+  "correct_index": 2,
+  "explanation": "During the consideration and debate phase, members are recognized to speak, amendments are considered and voted on, and then a vote is taken on the main motion itself before the result is announced. Options A and B conflate this phase with other steps (the initial statement or final recording), and option D includes steps that occur at different times or are not part of standard motion handling.",
+  "type": "which_of_following",
+  "knowledge_area": "Processing Business",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The motion to set pending business aside temporarily so the assembly can address an urgent matter without setting a time to resume is called ___",
+  "options": [
+   "Recess",
+   "Postpone indefinitely",
+   "Postpone to a certain time",
+   "Lay on the table"
+  ],
+  "correct_index": 3,
+  "explanation": "Lay on the table is the subsidiary motion specifically designed to temporarily set aside pending business for something urgent, with no set time to resume. Postpone to a certain time sets a definite time to resume, postpone indefinitely kills the motion for the session, and recess suspends the meeting temporarily but does not address pending business.",
+  "type": "definition_recall",
+  "knowledge_area": "THE MOTIONS SYSTEM",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following scenarios would appropriately call for raising a question of privilege?",
+  "options": [
+   "A member disagrees with the chair's ruling on whether a motion is in order",
+   "A member cannot hear the chair's announcement due to excessive noise in the room",
+   "A member wants to split a motion with two independent parts into separate votes",
+   "A member wants to delay consideration of the main motion until next week"
+  ],
+  "correct_index": 1,
+  "explanation": "A question of privilege is raised for comfort, safety, or rights issues affecting the assembly or a member—such as noise preventing them from hearing. Dividing the question uses division of the question, disagreeing with a chair ruling uses appeal from the chair, and delaying the motion uses postpone to a certain time.",
+  "type": "which_of_following",
+  "knowledge_area": "THE MOTIONS SYSTEM",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are true about the motion to limit or extend limits of debate EXCEPT",
+  "options": [
+   "It cannot be amended by the assembly",
+   "It can be recconsidered if the assembly votes to do so",
+   "It requires a two-thirds vote to adopt",
+   "It is a subsidiary motion in the order of precedence"
+  ],
+  "correct_index": 0,
+  "explanation": "Limit or extend limits of debate IS amendable according to the motions chart (A:Y). All other statements are accurate: it requires a 2/3 vote, it is subsidiary (ranked 8th), and it is reconsiderable. This tests knowledge of the specific rules governing this motion's procedure.",
+  "type": "all_except",
+  "knowledge_area": "THE MOTIONS SYSTEM",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A motion that allows the assembly to change the number of speeches or time limits on debate is called ___.",
+  "options": [
+   "Limit or extend limits of debate",
+   "Commit or refer",
+   "Postpone to a certain time",
+   "Previous question"
+  ],
+  "correct_index": 0,
+  "explanation": "Limit or extend limits of debate is a subsidiary motion that modifies the default 10-minute and 2-speech debate rules. Previous question closes debate entirely rather than adjusting its limits, while postpone and commit serve different purposes (delaying or sending to committee).",
+  "type": "definition_recall",
+  "knowledge_area": "THE MOTIONS SYSTEM",
+  "difficulty": "hard"
+ }
+]

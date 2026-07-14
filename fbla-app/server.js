@@ -181,22 +181,47 @@ const WEAK_ANCHOR_WORDS = new Set([
 ]);
 
 // True if every word in `small` has a fuzzy match somewhere in `big`. A
-// single-word `small` set is refused if that word is a weak anchor — one
-// generic word incidentally appearing inside an unrelated answer is not
-// enough evidence of a real duplicate.
-function setCovered(small, big) {
+// single-word `small` set is refused if that word is a weak anchor — either
+// the static WEAK_ANCHOR_WORDS list, or `extraWeak` (see dynamicWeakWords
+// below) — one generic word incidentally appearing inside an unrelated
+// answer is not enough evidence of a real duplicate.
+function setCovered(small, big, extraWeak) {
+  extraWeak = extraWeak || new Set();
   if (small.size === 0) return false;
-  if (small.size === 1 && WEAK_ANCHOR_WORDS.has([...small][0])) return false;
+  if (small.size === 1) {
+    const w = [...small][0];
+    if (WEAK_ANCHOR_WORDS.has(w) || extraWeak.has(w)) return false;
+  }
   for (const w of small) {
     if (![...big].some(bw => wordsFuzzyMatch(w, bw))) return false;
   }
   return true;
 }
 
-function isConceptRepeat(textA, textB) {
+// Words that show up in many prior answers within THIS event/pool are too
+// common to trust as a lone match signal — same principle as the static
+// WEAK_ANCHOR_WORDS list, but computed per-event instead of hardcoded.
+// WEAK_ANCHOR_WORDS was hand-curated from IT-domain false positives ("file",
+// "operating", "data") and does NOT generalize — proven by a real failure:
+// Parliamentary Procedure flagged 22 false concept-repeats out of 50
+// event-tier questions, almost all because "motion" (that event's single
+// most central term, not anticipated by an IT-derived list) trivially
+// matched any answer that happened to mention it. Mirrors
+// generate_bank.py's dynamic_weak_words exactly.
+function dynamicWeakWords(priorAnswers, minCount = 3, minFrac = 0.15) {
+  const counts = new Map();
+  for (const a of priorAnswers) {
+    for (const w of conceptWords(a)) counts.set(w, (counts.get(w) || 0) + 1);
+  }
+  const total = Math.max(priorAnswers.length, 1);
+  const threshold = Math.max(minCount, Math.floor(total * minFrac));
+  return new Set([...counts.entries()].filter(([, c]) => c >= threshold).map(([w]) => w));
+}
+
+function isConceptRepeat(textA, textB, extraWeak) {
   const a = conceptWords(textA), b = conceptWords(textB);
   if (a.size === 0 || b.size === 0) return false;
-  return setCovered(a, b) || setCovered(b, a);
+  return setCovered(a, b, extraWeak) || setCovered(b, a, extraWeak);
 }
 
 // Catches two DIFFERENT failure modes:
@@ -215,6 +240,7 @@ function findDuplicateViolations(questions, priorQuestions) {
   priorQuestions = priorQuestions || [];
   const seenText = new Set(priorQuestions.map(p => normalizeQuestionText(p.question)));
   const seenAnswers = priorQuestions.map(answerText).filter(Boolean);
+  const extraWeak = dynamicWeakWords(seenAnswers);
   const violations = [];
   const batchAnswers = [];
   for (const q of (questions || [])) {
@@ -222,8 +248,8 @@ function findDuplicateViolations(questions, priorQuestions) {
     const ans = answerText(q);
     const isTextDupe = seenText.has(norm);
     const isConceptDupe = Boolean(ans) && (
-      seenAnswers.some(prior => isConceptRepeat(ans, prior)) ||
-      batchAnswers.some(prev => isConceptRepeat(ans, prev))
+      seenAnswers.some(prior => isConceptRepeat(ans, prior, extraWeak)) ||
+      batchAnswers.some(prev => isConceptRepeat(ans, prev, extraWeak))
     );
     if (isTextDupe || isConceptDupe) {
       violations.push(q);

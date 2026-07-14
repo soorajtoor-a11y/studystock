@@ -442,18 +442,42 @@ WEAK_ANCHOR_WORDS = {
     "digital",
 }
 
-def _set_covered(small, big):
+def _set_covered(small, big, extra_weak=()):
     """True if every word in `small` has a fuzzy match somewhere in `big`.
-    A single-word `small` set is refused if that word is a weak anchor (see
-    WEAK_ANCHOR_WORDS) — one generic word incidentally appearing inside an
-    unrelated answer is not enough evidence of a real duplicate."""
+    A single-word `small` set is refused if that word is a weak anchor —
+    either the static WEAK_ANCHOR_WORDS list, or `extra_weak` (see
+    dynamic_weak_words below) — one generic word incidentally appearing
+    inside an unrelated answer is not enough evidence of a real duplicate."""
     if not small:
         return False
-    if len(small) == 1 and next(iter(small)) in WEAK_ANCHOR_WORDS:
-        return False
+    if len(small) == 1:
+        w = next(iter(small))
+        if w in WEAK_ANCHOR_WORDS or w in extra_weak:
+            return False
     return all(any(_word_fuzzy_match(w, bw) for bw in big) for w in small)
 
-def is_concept_repeat(text_a, text_b):
+def dynamic_weak_words(prior_answers, min_count=3, min_frac=0.15):
+    """Words that show up in many prior answers within THIS event/pool are
+    too common to trust as a lone match signal — same principle as the
+    static WEAK_ANCHOR_WORDS list, but computed per-event instead of
+    hardcoded. WEAK_ANCHOR_WORDS was hand-curated from IT-domain false
+    positives ("file", "operating", "data") and does NOT generalize —
+    proven by a real failure: Parliamentary Procedure flagged 22 false
+    concept-repeats out of 50 event-tier questions, almost all because
+    "motion" (that event's single most central, ubiquitous term, not
+    anticipated by an IT-derived list) trivially matched any answer that
+    happened to mention it. A static list can't anticipate every event's
+    own dominant vocabulary; this adapts automatically using whatever
+    answers have already been generated for this exact pool."""
+    counts = {}
+    for a in prior_answers:
+        for w in concept_words(a):
+            counts[w] = counts.get(w, 0) + 1
+    total = max(len(prior_answers), 1)
+    threshold = max(min_count, int(total * min_frac))
+    return {w for w, c in counts.items() if c >= threshold}
+
+def is_concept_repeat(text_a, text_b, extra_weak=()):
     """True if two answer texts are almost certainly testing the SAME
     underlying fact, just phrased differently. Verified against every real
     case found in a manual 175-question review: antivirus, backup,
@@ -467,7 +491,7 @@ def is_concept_repeat(text_a, text_b):
     a, b = concept_words(text_a), concept_words(text_b)
     if not a or not b:
         return False
-    return _set_covered(a, b) or _set_covered(b, a)
+    return _set_covered(a, b, extra_weak) or _set_covered(b, a, extra_weak)
 
 def normalize_question_text(s):
     s = (s or "").lower()
@@ -498,6 +522,7 @@ def find_duplicate_violations(questions, prior_questions=None):
     prior_questions = prior_questions or []
     seen_text = {normalize_question_text(p.get("question")) for p in prior_questions}
     seen_answers = [a for a in (answer_text(p) for p in prior_questions) if a]
+    extra_weak = dynamic_weak_words(seen_answers)
     violations = []
     batch_answers = []
     for q in questions:
@@ -505,8 +530,8 @@ def find_duplicate_violations(questions, prior_questions=None):
         ans = answer_text(q)
         is_text_dupe = norm in seen_text
         is_concept_dupe = bool(ans) and (
-            any(is_concept_repeat(ans, prior_ans) for prior_ans in seen_answers)
-            or any(is_concept_repeat(ans, prev) for prev in batch_answers)
+            any(is_concept_repeat(ans, prior_ans, extra_weak) for prior_ans in seen_answers)
+            or any(is_concept_repeat(ans, prev, extra_weak) for prev in batch_answers)
         )
         if is_text_dupe or is_concept_dupe:
             violations.append(q)
@@ -516,14 +541,34 @@ def find_duplicate_violations(questions, prior_questions=None):
                 batch_answers.append(ans)
     return violations
 
+# Everything before this marker in the prompt is the static rules block + fixed
+# template header — byte-identical on every call — so we cache it. Everything
+# after is the per-batch variable content. The two text blocks are concatenated
+# by the API into EXACTLY the original prompt, so the model sees identical input
+# and output behavior is unchanged; only the repeated prefix is billed cheaper.
+_CACHE_SPLIT_MARKER = "SOURCE MATERIAL (generate questions ONLY from this section):"
+
+def _build_message_content(prompt):
+    """Split the prompt into a cached prefix + variable remainder. Falls back to
+    the original single-string content if the marker isn't found (identical
+    behavior)."""
+    idx = prompt.find(_CACHE_SPLIT_MARKER)
+    if idx <= 0:
+        return prompt
+    return [
+        {"type": "text", "text": prompt[:idx], "cache_control": {"type": "ephemeral"}},
+        {"type": "text", "text": prompt[idx:]},
+    ]
+
 def call_model(client, prompt):
     """One API call with rate-limit handling."""
+    content = _build_message_content(prompt)
     while True:
         try:
             resp = client.messages.create(
                 model=MODEL,
                 max_tokens=2048,
-                messages=[{"role": "user", "content": prompt}],
+                messages=[{"role": "user", "content": content}],
             )
             return resp.content[0].text
         except Exception as e:

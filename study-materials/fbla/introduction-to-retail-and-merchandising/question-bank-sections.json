@@ -1,0 +1,2116 @@
+{
+ "Foundational Retail Knowledge": [
+  {
+   "question": "The process of planning, organizing, and presenting merchandise in retail environments to attract customers and encourage purchases is called ___.",
+   "options": [
+    "customer service",
+    "merchandising",
+    "inventory management",
+    "marketing"
+   ],
+   "correct_index": 1,
+   "explanation": "Merchandising is the strategic presentation and promotion of products within a retail space to drive sales. While marketing promotes products broadly, merchandising focuses specifically on in-store placement, displays, and visual appeal to influence purchasing decisions.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes used to create, promote, and deliver products or services to consumers to satisfy their needs and wants make up ___.",
+   "options": [
+    "marketing",
+    "retailing",
+    "visual merchandising",
+    "supply chain management"
+   ],
+   "correct_index": 0,
+   "explanation": "Marketing encompasses the entire system of creating customer awareness, promoting products, setting prices, and distributing goods—a broader function than retailing alone. Retailing is the final step where goods are sold directly to consumers; merchandising is the in-store presentation component.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The buying, selling, and distribution of goods and services directly to consumers for personal use is called ___.",
+   "options": [
+    "advertising",
+    "wholesaling",
+    "merchandising",
+    "retailing"
+   ],
+   "correct_index": 3,
+   "explanation": "Retailing is the final step in the supply chain where goods are sold directly to end consumers. The other options describe related but distinct business functions—advertising promotes products, merchandising displays them, and wholesaling sells in bulk to retailers rather than consumers.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be ways that effective merchandising contributes to a retailer's success?",
+   "options": [
+    "Creates brand awareness before products reach stores, negotiates vendor contracts, and trains customer service staff",
+    "Determines which suppliers to work with, sets the retail price for all products, and handles employee payroll",
+    "Increases product visibility, encourages impulse purchases, and improves the overall customer shopping experience",
+    "Reduces production costs, eliminates the need for advertising, and guarantees every item will sell"
+   ],
+   "correct_index": 2,
+   "explanation": "Effective merchandising—through strategic product display, layout, and presentation—directly drives sales by making products attractive and accessible, encouraging customers to purchase more, and enhancing their in-store experience. The other options mix in responsibilities belonging to other retail functions like sourcing, pricing strategy, or human resources.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL represent key reasons that merchandising is important to a retailer's success?",
+   "options": [
+    "Automates checkout processes, reduces labor requirements, and streamlines supply ordering",
+    "Attracts customer attention through visual appeal, supports pricing strategies, and communicates brand identity",
+    "Decreases the need for advertising, eliminates product returns, and guarantees profitable sales",
+    "Reduces inventory holding costs, minimizes floor space usage, and lowers employee training expenses"
+   ],
+   "correct_index": 1,
+   "explanation": "Effective merchandising drives customer interest through strategic display and presentation, reinforces brand messaging, and influences purchasing decisions at the point of sale. The other options either focus on cost reduction (unrelated to merchandising's primary role) or make unsupported guarantees that merchandising alone cannot ensure.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be responsibilities typically handled by merchandisers in a retail environment?",
+   "options": [
+    "Negotiating supplier contracts, setting overall company profit margins, and designing the retail store's building architecture",
+    "Processing customer refunds, scheduling employee shifts, and handling customer complaints at the service desk",
+    "Creating television advertisements, managing the company's social media accounts, and writing product descriptions for the website",
+    "Designing in-store displays, analyzing sales data to inform product placement, and ensuring shelves are stocked with fast-moving items"
+   ],
+   "correct_index": 3,
+   "explanation": "Merchandisers focus on the presentation and strategic arrangement of products within the physical store—displays, shelf placement, and inventory visibility. Options B, C, and D involve supplier relations, external marketing, or customer service operations, which fall outside the merchandiser's typical role. Merchandisers work inside the store environment to optimize how products are presented and accessed.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A merchandiser who reviews point-of-sale data to determine which products are selling quickly and adjusts shelf placement accordingly is primarily engaged in ___.",
+   "options": [
+    "inventory data analysis and product placement optimization",
+    "customer service training",
+    "developing the company's annual marketing budget",
+    "pricing negotiation with suppliers"
+   ],
+   "correct_index": 0,
+   "explanation": "Merchandisers use sales data to make informed decisions about product placement and stock levels, ensuring high-demand items are positioned for maximum visibility and accessibility. This reflects a core merchandising responsibility that directly impacts sales performance.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Retailing has evolved significantly over time, moving from small independent shops to large supermarkets and e-commerce platforms. This transformation reflects changes in consumer behavior, technology, and supply chain management. Which of the following would ALL represent key drivers of retail evolution?",
+   "options": [
+    "Decreased use of inventory systems, rejection of online platforms, and return to barter-based exchanges",
+    "Higher prices for consumers, removal of customer service options, and consolidation into a single retailer",
+    "Increased consumer demand for convenience, development of transportation networks, and adoption of digital shopping technologies",
+    "Elimination of all small businesses, reduction in product variety, and decreased consumer purchasing power"
+   ],
+   "correct_index": 2,
+   "explanation": "The evolution of retailing has been driven by genuine changes in how consumers shop (convenience focus), how goods move (transportation infrastructure), and how transactions occur (technology adoption). The other options describe either impossible scenarios (all small businesses eliminated) or reversions that contradict actual retail history, making them implausible distractors.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Merchandisers in retail settings perform several key functions to support store success, including working with sales data to determine which products should be prominently displayed, ensuring popular items are restocked quickly, and creating visual presentations that highlight new or seasonal goods. These responsibilities demonstrate that merchandisers serve as a link between ___.",
+   "options": [
+    "Company headquarters and regional distribution centers",
+    "Customer preferences and product availability in the store",
+    "Competitor pricing and store profit margins",
+    "Supplier contracts and vendor relationships"
+   ],
+   "correct_index": 1,
+   "explanation": "Merchandisers bridge the gap between what customers want (revealed through sales data and shopping patterns) and how products are made accessible and appealing in the retail environment. By analyzing demand signals and responding through placement and display decisions, they ensure the store's merchandise mix aligns with actual customer behavior and preferences.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail merchandiser who creates eye-catching window displays and arranges products on shelves to highlight seasonal items and new arrivals is primarily focused on which aspect of merchandising?",
+   "options": [
+    "Analyzing customer purchasing patterns through point-of-sale systems",
+    "Negotiating wholesale prices with product suppliers and vendors",
+    "Visual presentation and display design to capture customer attention",
+    "Managing the store's overall budget and financial performance"
+   ],
+   "correct_index": 2,
+   "explanation": "Visual presentation and display design is a core merchandising function that directly influences how customers perceive and interact with products in-store. Creating appealing displays and highlighting specific items are tangible merchandising activities distinct from data analysis, purchasing negotiations, or financial management—all of which fall under different retail roles.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be ways that strong merchandising directly impacts a retailer's financial performance?",
+   "options": [
+    "Increases shelf-space efficiency, boosts impulse purchase rates, and reduces inventory shrinkage through better organization",
+    "Increases supplier discounts, eliminates product returns, and removes the need for store security",
+    "Lowers employee wages, eliminates the need for store managers, and reduces operational hours",
+    "Eliminates the need for marketing campaigns, removes customer service positions, and reduces store square footage"
+   ],
+   "correct_index": 0,
+   "explanation": "Effective merchandising improves how products are organized and presented, which increases impulse purchases, makes better use of limited shelf space, and can reduce product damage or loss through better handling and visibility. The other options describe unrealistic or false outcomes—merchandising does not eliminate other essential retail functions like marketing, staffing, or negotiations with suppliers.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A merchandiser who works closely with store managers to forecast seasonal demand and determine which product categories should receive premium shelf space during peak shopping periods is primarily engaged in which function?",
+   "options": [
+    "Marketing campaign development and promotion",
+    "Inventory logistics and warehouse organization",
+    "Customer service training and staff supervision",
+    "Demand forecasting and space allocation planning"
+   ],
+   "correct_index": 3,
+   "explanation": "Demand forecasting and space allocation planning is a core merchandising function that bridges sales data analysis with strategic shelf placement decisions. This differs from inventory logistics (warehouse-focused), customer service training (floor-staff focused), and marketing campaigns (promotion-focused), making it the specific merchandising responsibility described in the stem.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be ways that merchandisers directly influence a retailer's operational efficiency?",
+   "options": [
+    "Minimizing excess inventory through strategic product placement, reducing out-of-stock situations, and improving warehouse utilization",
+    "Reducing checkout wait times, implementing new payment systems, and training customer service staff",
+    "Setting competitive prices, negotiating supplier contracts, and managing profit margins",
+    "Developing advertising campaigns, managing social media presence, and conducting market research"
+   ],
+   "correct_index": 0,
+   "explanation": "Merchandisers enhance operational efficiency by controlling inventory levels through smart placement decisions, preventing costly stockouts, and organizing products so warehouse and shelf space are used effectively. The other options represent functions in other areas: checkout operations, pricing/procurement, and marketing—not core merchandising responsibilities.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Retailing differs from marketing primarily in that retailing focuses on the ___.",
+   "options": [
+    "Development of brand awareness and advertising campaigns",
+    "Identification of consumer needs through research and surveys",
+    "Creation of new product concepts and prototypes",
+    "Direct sale and distribution of finished goods to end consumers"
+   ],
+   "correct_index": 3,
+   "explanation": "Retailing is the transaction-focused process of selling products directly to consumers, while marketing encompasses the broader strategy of promoting products, understanding customer needs, and building brand preference. A retailer executes the sale; marketing influences the desire to buy.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The shift from corner grocery stores to chain supermarkets during the mid-20th century is primarily attributed to which of the following?",
+   "options": [
+    "Increased consumer preference for specialty products and personalized service",
+    "Growth of suburban communities, automobile ownership, and mass production capabilities",
+    "A decline in consumer purchasing power that made small stores unaffordable",
+    "Government regulations requiring all retailers to consolidate into larger entities"
+   ],
+   "correct_index": 1,
+   "explanation": "The evolution of retailing from small independent shops to large supermarkets was driven by suburban expansion, increased car ownership enabling people to travel farther, and mass production making bulk retail economically viable. These structural changes in society and commerce, not regulations or purchasing power, transformed the retail landscape.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The primary distinction between retailing and marketing is that retailing focuses on the ___, while marketing encompasses all processes involved in promoting and distributing products to consumers.",
+   "options": [
+    "creation of advertisements and brand messaging",
+    "management of supply chain and inventory systems",
+    "direct transaction and physical exchange of goods with customers",
+    "planning and forecasting of consumer demand"
+   ],
+   "correct_index": 2,
+   "explanation": "Retailing is the direct sale and distribution of finished goods to end consumers through physical or digital channels—it is the transaction itself. Marketing, by contrast, is broader and includes all activities from product creation through promotion and delivery. This distinction shows that retailing is one component within the larger marketing ecosystem.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A merchandiser's responsibility to monitor inventory turnover rates and restock best-selling items before shelves become empty is most directly related to which outcome for the retailer?",
+   "options": [
+    "Reducing customer complaints and improving employee morale",
+    "Preventing lost sales opportunities and maintaining consistent product availability",
+    "Expanding the store's square footage and opening new locations",
+    "Lowering the cost of goods sold and increasing supplier discounts"
+   ],
+   "correct_index": 1,
+   "explanation": "When fast-moving items are restocked promptly, customers find what they want when they shop, preventing stockouts that result in lost revenue. This direct link between inventory management and sales continuity is a fundamental way merchandisers drive retail success—avoiding the revenue hit of empty shelves.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The transition from general stores to specialized retail shops during the early 20th century was primarily driven by which of the following factors?",
+   "options": [
+    "Decline in transportation networks and reduced consumer interest in variety",
+    "Government regulations that prohibited multi-category retail stores",
+    "Increased urbanization, growth of manufacturing, and rising consumer purchasing power",
+    "Decreased availability of goods and limited retail competition"
+   ],
+   "correct_index": 2,
+   "explanation": "Urbanization created denser populations that could support specialized shops, manufacturing growth increased product variety and availability, and rising incomes gave consumers more purchasing power to seek specialized goods. This represents a key shift in retail evolution as communities grew beyond the small-town general store model.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The activities a retail organization undertakes to inform customers about available products and encourage them to make purchases are collectively known as ___.",
+   "options": [
+    "promotion",
+    "supply chain coordination",
+    "inventory management",
+    "merchandising"
+   ],
+   "correct_index": 0,
+   "explanation": "Promotion refers specifically to the communication and persuasion activities retailers use to attract customers and drive sales, distinct from merchandising (product placement and display) or broader marketing efforts. This is a core foundational concept in retail operations that merchandisers and store managers must understand to execute effective customer engagement strategies.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A merchandiser analyzes which products customers browse but do not purchase, then adjusts shelf height and lighting to make those items more noticeable. This action primarily demonstrates the merchandiser's role in ___.",
+   "options": [
+    "supply chain logistics and warehouse management",
+    "training sales associates on product features",
+    "negotiating wholesale pricing with vendors",
+    "enhancing product visibility and influencing purchase behavior"
+   ],
+   "correct_index": 3,
+   "explanation": "By strategically altering presentation (shelf position, lighting, prominence), the merchandiser is directly working to increase how noticeable and appealing products appear to customers, which is central to merchandising's goal of encouraging sales. This illustrates how merchandisers bridge the gap between available inventory and customer perception by optimizing the shopping environment.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Foundational Retail Knowledge",
+   "difficulty": "hard"
+  }
+ ],
+ "Customer Service and Sales": [
+  {
+   "question": "The process of verifying the amount of cash in a register at the end of a shift and removing it for deposit is called ___",
+   "options": [
+    "terminal settlement",
+    "register reconciliation",
+    "register closeout",
+    "cash drawer audit"
+   ],
+   "correct_index": 2,
+   "explanation": "Register closeout is the specific term for the end-of-shift process that verifies cash, removes it, and prepares the register for the next shift. While register reconciliation and cash drawer audit are related activities, 'closeout' is the industry-standard term for this complete closing procedure.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The procedures involved in accepting merchandise that a customer no longer wants and either issuing a refund or providing a replacement item make up ___",
+   "options": [
+    "sales reversal",
+    "inventory adjustment",
+    "customer dispute resolution",
+    "the returns and exchanges process"
+   ],
+   "correct_index": 3,
+   "explanation": "Returns and exchanges is the specific retail process that handles unwanted merchandise by either refunding the customer or substituting items. This process is a core customer service function and directly affects both cash handling and inventory management.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A customer wants to return a jacket purchased two weeks ago without a receipt. All of the following would be standard return-process information to request or verify EXCEPT",
+   "options": [
+    "the original purchase price or credit card used",
+    "the customer's home address and phone number",
+    "whether the item has been worn or washed",
+    "the condition of the jacket and any tags still attached"
+   ],
+   "correct_index": 1,
+   "explanation": "While verifying purchase details, condition, and wear are all essential to processing a return, collecting the customer's home address and phone number is not a standard return-verification step—it is useful for customer relationship management, not for evaluating whether the return is valid. The other three pieces of information directly assess eligibility and refund amount.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When opening a register at the start of a shift, a retail associate must verify that the cash drawer contains the correct amount of money. This preliminary amount of cash placed in a register before any sales transactions occur is called ___",
+   "options": [
+    "float",
+    "reserve",
+    "bank",
+    "till"
+   ],
+   "correct_index": 0,
+   "explanation": "A float is the starting amount of cash placed in a register at the beginning of a shift to enable making change for customers. It is separate from sales revenue and must be verified and removed at shift end. The other terms refer to the register itself or banking procedures, not the starting cash amount.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to listen carefully to what a customer is saying, ask clarifying questions, and identify what the customer actually needs rather than what they initially asked for is a core part of ___",
+   "options": [
+    "cash handling procedures",
+    "processing transactions",
+    "determining customer needs",
+    "inventory management"
+   ],
+   "correct_index": 2,
+   "explanation": "Determining customer needs requires active listening and questioning to uncover the customer's true requirements, which may differ from their initial request. This skill ensures the associate recommends products that genuinely fit the customer's situation. The other options describe different retail functions that do not focus on understanding customer intent.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In retail, the process of greeting a customer warmly, making eye contact, and beginning a conversation that builds trust and shows genuine interest in helping them is called ___",
+   "options": [
+    "establishing a customer relationship",
+    "inventory management",
+    "product positioning",
+    "sales forecasting"
+   ],
+   "correct_index": 0,
+   "explanation": "Establishing a customer relationship is the foundational sales skill of creating a welcoming, professional interaction that makes the customer feel valued and comfortable. This differs from product positioning (how a product is marketed) and the other options, which are business operations, not customer-facing techniques.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of asking open-ended questions like 'What brings you in today?' and then listening to understand what a customer truly needs—even if it differs from what they first asked for—is a key part of ___",
+   "options": [
+    "register security protocols",
+    "inventory turnover",
+    "cash reconciliation",
+    "identifying customer needs"
+   ],
+   "correct_index": 3,
+   "explanation": "Identifying customer needs requires active listening and clarifying questions to uncover the actual problem or want, not just accepting the customer's initial statement at face value. This is distinct from inventory management and register operations, which are backend functions.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a customer is looking for a winter jacket and mentions they spend time both outdoors in harsh weather and indoors in climate-controlled spaces, all of the following would be useful product recommendations EXCEPT",
+   "options": [
+    "A versatile fleece-lined windbreaker that packs into a small bag",
+    "A lightweight wool blazer suitable for formal indoor events",
+    "A waterproof, insulated parka with removable lining",
+    "A down-filled coat with sealed seams and a hood"
+   ],
+   "correct_index": 1,
+   "explanation": "A lightweight wool blazer is designed for formal indoor wear and does not address the customer's stated need for outdoor protection in harsh weather. The other three options all offer features—water resistance, insulation, packability, or sealed seams—that address both outdoor durability and indoor practicality.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retail associate helps a customer by asking thoughtful questions about their lifestyle and then matching products to those specific needs, the associate is demonstrating the skill of ___",
+   "options": [
+    "register operation and payment processing",
+    "active listening and needs assessment",
+    "inventory rotation and stock organization",
+    "cash handling and float management"
+   ],
+   "correct_index": 1,
+   "explanation": "Active listening and needs assessment—asking clarifying questions and understanding what a customer truly needs—is central to effective product recommendation. This skill goes beyond simply hearing what a customer says; it requires genuine engagement to identify their actual requirements.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A customer shopping for summer clothing mentions they travel frequently and need items that pack easily and resist wrinkles. All of the following would be appropriate product recommendations EXCEPT",
+   "options": [
+    "heavy denim jackets that maintain their shape when folded",
+    "moisture-wicking synthetic blend shirts that dry quickly",
+    "wrinkle-resistant blend fabrics designed for frequent travelers",
+    "lightweight linen pants that fold compactly for travel"
+   ],
+   "correct_index": 0,
+   "explanation": "Heavy denim jackets contradict the customer's stated needs—they do not pack easily, add bulk and weight to luggage, and wrinkle easily when compressed. The other three options directly match the customer's travel lifestyle and stated preference for packable, wrinkle-resistant clothing.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a customer pays for a purchase using a debit or credit card at the register, the process of authorizing and recording that payment is called ___",
+   "options": [
+    "cash handling",
+    "receipt generation",
+    "transaction processing",
+    "payment verification"
+   ],
+   "correct_index": 2,
+   "explanation": "Transaction processing is the specific retail term for the steps a register performs when accepting a card payment—authorization, recording the sale, and updating inventory. Cash handling refers only to physical currency, payment verification is too narrow (it's just one step), and receipt generation is the output, not the process itself.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The fundamental purpose of greeting a customer promptly, making them feel welcome, and establishing a foundation of trust before moving into a sales conversation is part of ___",
+   "options": [
+    "register reconciliation",
+    "inventory management",
+    "return authorization",
+    "customer relationship building"
+   ],
+   "correct_index": 3,
+   "explanation": "Customer relationship building encompasses the warmth, approachability, and trust-creation that happen at first contact. Inventory management is stock-related, return authorization is for unwanted items, and register reconciliation is a closing-shift accounting task—none address the interpersonal foundation of sales.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A customer approaches the register with three items but seems uncertain about one of them. The retail associate should ask clarifying questions to understand the customer's actual needs before completing the sale. All of the following would be appropriate questions EXCEPT",
+   "options": [
+    "What is your annual household income?",
+    "Are you shopping for yourself or as a gift?",
+    "How do you plan to use this item?",
+    "Is there a specific occasion you're shopping for today?"
+   ],
+   "correct_index": 0,
+   "explanation": "A customer's household income is personal financial information unrelated to their product needs and would be inappropriate and invasive to ask during a sales transaction. The other questions directly help the associate understand the customer's actual context and tailor recommendations or confirm the sale.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retail associate uses the register to enter product codes, quantities, and payment methods to record a customer's purchase, they are performing which of the following core functions?",
+   "options": [
+    "Confirming the customer's identity and checking their credit history",
+    "Inputting transaction data into the point-of-sale system to complete the sale",
+    "Verifying that all merchandise has been physically inspected",
+    "Creating a customer loyalty profile for future marketing"
+   ],
+   "correct_index": 1,
+   "explanation": "Operating a register/terminal means entering product information, quantities, and payment details into the POS system to record and complete the transaction. The other options describe tasks outside register operation—loyalty enrollment, inventory inspection, and identity verification are separate functions.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A customer wants to pay for a purchase using a personal check. All of the following would be standard information a retail associate should verify or request during check processing EXCEPT",
+   "options": [
+    "The date on the check and the customer's signature",
+    "The check number and the issuing bank's routing information",
+    "The customer's driver's license or government-issued ID",
+    "The customer's employment status and current job title"
+   ],
+   "correct_index": 3,
+   "explanation": "Check processing requires ID verification, check number/routing details, and signature confirmation—these prevent fraud and ensure the check is valid. Employment status is personal information unrelated to check validity and is not a standard verification step in retail payment processing.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are core components of effective customer service interactions in retail EXCEPT",
+   "options": [
+    "Listening actively to understand how the customer's lifestyle matches available products",
+    "Asking clarifying questions to uncover what the customer truly needs",
+    "Obtaining the customer's social media handles and marketing preferences before they ask",
+    "Making the customer feel welcome through a prompt, warm greeting"
+   ],
+   "correct_index": 2,
+   "explanation": "Obtaining social media handles and marketing information without the customer's request or clear consent goes beyond standard customer service in the greeting and needs-assessment phases. The other three—clarifying questions, warm greeting, and active listening—are established core practices in retail customer interactions. Privacy and customer consent matter; unsolicited data collection is not a standard component of initial relationship-building.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A customer enters a retail store looking uncertain and browsing without direction. The associate's first priority should be to ___",
+   "options": [
+    "ask for their contact information for the mailing list",
+    "greet them warmly and express genuine availability to help",
+    "begin suggesting the store's most expensive items",
+    "immediately direct them to the clearance section"
+   ],
+   "correct_index": 1,
+   "explanation": "Establishing a relationship with a customer begins with a warm greeting and demonstrating genuine interest in helping them—this removes the customer's uncertainty and creates trust before any sales conversation begins. A genuine, welcoming greeting is the foundation that allows a customer to feel comfortable asking questions or sharing their needs. Immediately pushing sales, asking for contact info, or directing them elsewhere skips the critical relationship-building step.",
+   "type": "scenario_judgment",
+   "objective_num": 1,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are appropriate pieces of information for a retail associate to gather when helping a customer identify their needs EXCEPT",
+   "options": [
+    "the customer's intended use or occasion for the product",
+    "the customer's budget range for the purchase",
+    "the customer's credit score and banking institution",
+    "the customer's preferred brand or style aesthetic"
+   ],
+   "correct_index": 2,
+   "explanation": "A customer's credit score and banking institution are personal financial details unrelated to identifying their actual product needs and are inappropriate and unnecessary to request during a sales conversation. Budget, intended use, and style preference are all directly relevant to understanding what product will truly serve the customer. Gathering banking or financial history crosses into territory that violates customer privacy and has no bearing on the customer's actual needs for the product.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retail associate asks a customer 'How will you be using this item?' or 'What occasions do you have in mind?' rather than simply waiting for the customer to describe what they want, the associate is practicing which skill?",
+   "options": [
+    "Transaction recording and payment authorization",
+    "Return and exchange procedure compliance",
+    "Register operation and cash handling",
+    "Proactive questioning to uncover unstated needs"
+   ],
+   "correct_index": 3,
+   "explanation": "Proactive questioning—asking open-ended or clarifying questions that go beyond what the customer volunteered—is a core part of needs assessment. It helps the associate understand the customer's full context (use case, occasion, lifestyle) so they can match the right product, not just the one the customer initially mentioned. This is distinct from passively listening; it involves actively steering the conversation to uncover needs the customer may not have explicitly stated.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process by which a retail associate collects information about a customer's lifestyle, preferences, and intended use of a product—and then suggests items that match those specific circumstances rather than just the broadest category—is called ___.",
+   "options": [
+    "Needs-based product recommendation",
+    "Price comparison analysis",
+    "Register transaction completion",
+    "Inventory allocation"
+   ],
+   "correct_index": 0,
+   "explanation": "Needs-based product recommendation is the practice of tailoring suggestions to the customer's specific situation—not just recommending the most popular or highest-margin item in a category. It requires first understanding the customer's needs (through questioning and listening) and then matching the product to those needs. This approach builds trust and customer satisfaction because the customer feels understood and advised, not just sold to.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Customer Service and Sales",
+   "difficulty": "hard"
+  }
+ ],
+ "Stock-Handling Procedures": [
+  {
+   "question": "The process of physically inspecting incoming merchandise for damage, verifying quantities match the purchase order, and checking that items are correct is called ___.",
+   "options": [
+    "receiving",
+    "inventory auditing",
+    "merchandise allocation",
+    "stock rotation"
+   ],
+   "correct_index": 0,
+   "explanation": "Receiving is the formal process of accepting and verifying delivered merchandise—checking for damage, confirming item counts and types against documentation, and ensuring the delivery matches what was ordered. This is the foundational step before merchandise moves further into the store.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are important stock-handling techniques for receiving deliveries EXCEPT",
+   "options": [
+    "using proper lifting techniques to prevent personal injury",
+    "organizing merchandise in staging areas before routing to departments",
+    "immediately placing all items on the sales floor to maximize visibility",
+    "carefully unloading items to avoid damage to products"
+   ],
+   "correct_index": 2,
+   "explanation": "Merchandise should never be immediately placed on the sales floor without proper processing, organization, and verification. Items must be staged, counted, inspected, and routed correctly first. The other three options are all genuine safe and efficient receiving practices.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic handling and movement of merchandise from the receiving dock through inspection, storage, and final placement in customer-accessible areas is known as ___.",
+   "options": [
+    "vendor management",
+    "pricing and labeling",
+    "loss prevention",
+    "stock processing"
+   ],
+   "correct_index": 3,
+   "explanation": "Stock processing encompasses the complete journey of merchandise—from unloading at receiving through inspection, temporary storage, and routing to the sales floor. It ensures organized, efficient movement and proper tracking of inventory.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of applying price labels, tags, or electronic codes to merchandise so customers know the selling price is called ___.",
+   "options": [
+    "value adjustment",
+    "price marking",
+    "inventory coding",
+    "cost allocation"
+   ],
+   "correct_index": 1,
+   "explanation": "Price marking is the specific retail term for labeling merchandise with its selling price. This may involve price tags, stickers, or digital codes and is essential for checkout accuracy and customer information.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When merchandise arrives at a retail store, the first step in the receiving process is to ___.",
+   "options": [
+    "immediately unload all boxes onto the sales floor for display",
+    "apply price tags and labels to every product",
+    "sort merchandise by department and move it to the warehouse",
+    "physically inspect items for damage and verify quantities against the purchase order"
+   ],
+   "correct_index": 3,
+   "explanation": "Physical inspection and verification against the purchase order is the critical first step in receiving—it ensures the store received what was ordered, in good condition, and in correct quantities. This step catches discrepancies before merchandise enters the inventory system. The other options occur later in the stock-handling workflow, after receiving is complete.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of systematically moving older merchandise to the front of shelves and placing newer stock behind it to ensure older items sell first is called ___.",
+   "options": [
+    "forward placement",
+    "stock rotation",
+    "shelf merchandising",
+    "inventory cycling"
+   ],
+   "correct_index": 1,
+   "explanation": "Stock rotation is the specific technique of organizing merchandise so that older inventory sells before newer stock, preventing spoilage and obsolescence. This is a core stock-handling practice in retail receiving and storage procedures. The other options refer to related but distinct display or storage concepts.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are important techniques for properly handling merchandise during deliveries EXCEPT",
+   "options": [
+    "stacking heavy boxes on top of fragile items to save floor space",
+    "organizing items by category to streamline the verification process",
+    "checking for signs of damage before unloading boxes from the delivery truck",
+    "using equipment like hand trucks and dollies to move heavy items safely"
+   ],
+   "correct_index": 0,
+   "explanation": "Stacking heavy items on fragile merchandise damages stock and violates safe handling practices—this is the odd-one-out. The correct techniques involve using proper equipment, inspecting for damage, and organizing items logically to protect merchandise and ensure efficiency during the receiving process.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process by which merchandise is directed from receiving to its appropriate location—either the sales floor for immediate customer access or the stockroom for storage—is called ___.",
+   "options": [
+    "merchandise distribution",
+    "inventory allocation",
+    "stock routing",
+    "receiving assignment"
+   ],
+   "correct_index": 2,
+   "explanation": "Stock routing (also called routing) is the specific practice of directing newly received merchandise to either the sales floor or storage areas based on store needs and available shelf space. This is a key step after items are received and verified. Merchandise distribution is broader, and the other terms do not describe this specific directional function.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be proper stock-handling techniques when unloading and processing a delivery?",
+   "options": [
+    "Stack items as high as possible to save floor space, leave boxes blocking aisles temporarily, and mix fragile items with heavy merchandise",
+    "Remove price labels before delivery inspection, transport all items by hand regardless of weight, and store perishables in the receiving area for extended periods",
+    "Unload all items directly onto the sales floor without checking them, arrange boxes randomly in the stockroom, and skip the damage inspection",
+    "Place heavier boxes on lower shelves, use hand trucks for large items, and organize merchandise by category during unloading"
+   ],
+   "correct_index": 3,
+   "explanation": "Proper stock-handling during delivery includes using equipment like hand trucks to prevent employee injury, placing heavier items in lower positions for safety and accessibility, and organizing by category to streamline routing to the sales floor or stockroom. These techniques protect both merchandise and staff while improving efficiency.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of arranging merchandise in storage or on shelves according to a set sequence—such as organizing by product type, brand, or size—is called ___.",
+   "options": [
+    "Stock categorization",
+    "Inventory organization",
+    "Merchandise display",
+    "Stock arrangement"
+   ],
+   "correct_index": 0,
+   "explanation": "Stock categorization (or organizing stock) is the systematic arrangement of merchandise using a logical system so that items are easy to locate, track, and rotate. This process is distinct from price marking or physical rotation and is a key part of the stock-routing and storage process.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When merchandise is received at a retail store but is not immediately needed on the sales floor, the process of temporarily placing it in a designated storage area for later use is called ___.",
+   "options": [
+    "stock rotation",
+    "stock holding",
+    "merchandise staging",
+    "inventory sequencing"
+   ],
+   "correct_index": 2,
+   "explanation": "Merchandise staging is the temporary placement of received goods in a designated storage or holding area before they are moved to the sales floor or final storage location. This distinguishes it from stock rotation (moving older items forward) and differs from the initial receiving inspection process. Stock holding and inventory sequencing are not standard retail terms for this specific step.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of systematically arranging merchandise on shelves and in storage according to size, brand, or product line to improve organization and accessibility is called ___.",
+   "options": [
+    "inventory tiering",
+    "stock planogramming",
+    "stock allocation",
+    "merchandise arrangement"
+   ],
+   "correct_index": 1,
+   "explanation": "Stock planogramming is the systematic organization of merchandise by specific attributes like size, brand, or product type to create logical, accessible shelf layouts and storage patterns. This differs from stock rotation (which prioritizes age of items) and is more specific than general arrangement or allocation. Planogramming is a standard retail merchandising term.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are proper precautions for physically handling fragile items during merchandise delivery EXCEPT",
+   "options": [
+    "Stack multiple heavy boxes on top of fragile merchandise to secure the load",
+    "Use protective padding and wrapping materials to cushion delicate items",
+    "Place fragile boxes on top shelves away from high-traffic areas",
+    "Handle fragile items with care and inspect them immediately upon arrival"
+   ],
+   "correct_index": 0,
+   "explanation": "Stacking heavy boxes on top of fragile merchandise causes damage and is dangerous—it is the opposite of proper stock-handling technique. The other three options represent legitimate precautions: elevating fragiles away from traffic, using protective materials, and prompt inspection. This question tests understanding of safe handling practices versus damaging practices.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be important considerations when deciding whether to place newly received merchandise directly on the sales floor or in the stockroom?",
+   "options": [
+    "The manufacturer's logo, the weight of individual items, and the delivery time",
+    "The employee who unpacked the box, the day of the week it arrived, and the size of the receiving area",
+    "Current sales floor inventory levels, available shelf space, and product demand",
+    "The color of the product packaging, the supplier's invoice number, and the warehouse location"
+   ],
+   "correct_index": 2,
+   "explanation": "Proper stock routing decisions depend on actual retail factors: how much of that item is already on the floor, whether shelf space exists, and whether customers are currently buying it. Invoice numbers, packaging color, manufacturer details, employee names, and delivery timing are irrelevant to the routing decision. Only option A contains genuine business factors that determine where stock should go.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be proper stock-handling techniques when receiving and processing fragile merchandise?",
+   "options": [
+    "Keep all fragile items boxed and sealed until the moment they reach the sales floor, store fragile merchandise in high-temperature areas to test durability, and remove all protective wrapping immediately upon receipt",
+    "Stack fragile items in the back of the stockroom away from the receiving dock, pile heavy merchandise on top of fragile boxes to minimize floor space, and mark all fragile boxes with large red warning labels",
+    "Place fragile merchandise on lower shelves for easier access, store fragile items separately from non-fragile merchandise, and use hand trucks instead of carrying boxes by hand",
+    "Place fragile items on top shelves away from foot traffic, use padding and protective wrapping, and avoid stacking other boxes directly on top of fragile merchandise"
+   ],
+   "correct_index": 3,
+   "explanation": "Proper handling of fragile merchandise requires protective measures such as padding, wrapping, and careful stacking practices—never placing heavy items on top of fragile goods. Fragile items should also be positioned away from high-traffic areas to reduce accident risk. Options B and C contain dangerous or illogical practices (stacking heavy boxes on fragile items, removing protective wrapping prematurely, or exposing items to extreme temperatures for testing), while option D, though containing some good practices, omits the critical protective-wrapping and stacking-safety elements that define proper fragile handling.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate reasons to route newly received merchandise to the stockroom instead of directly to the sales floor?",
+   "options": [
+    "Staff want to apply promotional signage, the items are best sellers, and the delivery arrived early in the day",
+    "Insufficient shelf space available, overstocked items not yet needed, and merchandise requiring damage assessment before sale",
+    "All items are already price marked, customer demand is extremely high, and the receiving dock is full",
+    "The merchandise is fragile, the sales floor is understaffed, and the product is a slow seller"
+   ],
+   "correct_index": 1,
+   "explanation": "Routing to stockroom is driven by practical inventory constraints—lack of display space, excess supply beyond immediate demand, and quality checks needed before sale. The second option assumes items are already processed; the third mixes fragility (a handling concern) with staffing and demand (both sales-floor considerations); the fourth ignores actual space and processing needs.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following actions would NOT be an appropriate stock-handling technique when unloading and processing a shipment of mixed merchandise?",
+   "options": [
+    "Use hand trucks or dollies to transport heavy boxes rather than carrying them manually",
+    "Place all merchandise directly on the sales floor immediately upon arrival to maximize shelf exposure",
+    "Inspect items for shipping damage and verify quantities match the purchase order before storing or routing",
+    "Sort items by product type and destination as they are unloaded to streamline routing decisions"
+   ],
+   "correct_index": 1,
+   "explanation": "Placing all merchandise directly on the sales floor bypasses essential receiving steps—inspection, verification, price marking, and sorting. Proper technique requires items to be processed systematically before routing. The other three options reflect sound stock-handling: organizing by type, using equipment to prevent injury, and verifying accuracy.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be proper considerations when deciding the immediate destination of newly received merchandise upon arrival at the retail store?",
+   "options": [
+    "Employee shift schedules, supplier invoice amounts, and packaging material costs",
+    "Vendor payment terms, product manufacture date, and the color of the shipping boxes",
+    "Store manager's personal preferences, seasonal weather outside, and customer parking availability",
+    "Available floor space, product demand patterns, and merchandise condition after delivery"
+   ],
+   "correct_index": 3,
+   "explanation": "The decision to route merchandise to the sales floor or stockroom depends on practical operational factors: whether floor space exists for the items, whether customer demand currently requires them on display, and whether the goods are undamaged and sale-ready. The other options mix irrelevant factors (shift schedules, parking) with non-operational concerns (payment terms, box color) that do not guide routing decisions.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical reasons a retail store would direct newly received merchandise to a stockroom rather than the sales floor EXCEPT",
+   "options": [
+    "The product is a popular brand name that will definitely sell quickly",
+    "The sales floor already has sufficient inventory of that product in stock",
+    "The item is damaged and must be inspected before it can be sold",
+    "The merchandise requires price marking before it can be displayed to customers"
+   ],
+   "correct_index": 0,
+   "explanation": "A popular brand name or quick sales projection is not a reason to send merchandise to the stockroom—if anything, it would justify immediate floor placement. Damage assessment, overstocking on the floor, and the need for price marking are all legitimate stockroom-routing reasons because they represent either obstacles to sale or inventory management needs.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of assigning merchandise to specific sales floor locations, stockroom sections, or other designated areas based on product type, demand, and available space is called ___.",
+   "options": [
+    "shelf merchandising",
+    "inventory categorization",
+    "stock allocation",
+    "merchandise planogramming"
+   ],
+   "correct_index": 2,
+   "explanation": "Stock allocation is the process of directing and assigning received merchandise to appropriate locations—whether directly to the sales floor for customer access, to the stockroom for later use, or to other designated areas based on organizational needs. Merchandise planogramming refers to the detailed visual arrangement plan for shelves, inventory categorization is grouping by type, and shelf merchandising is the display technique on shelves.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Stock-Handling Procedures",
+   "difficulty": "hard"
+  }
+ ],
+ "Inventory Storage and Control": [
+  {
+   "question": "The practice of storing goods in a facility specifically designed to receive, store, and distribute inventory to retail locations is called ___",
+   "options": [
+    "merchandise allocation",
+    "inventory reconciliation",
+    "warehousing",
+    "point-of-sale management"
+   ],
+   "correct_index": 2,
+   "explanation": "Warehousing is the core function of receiving, storing, and distributing inventory—it is the operational backbone of retail supply. The other options describe different retail functions (POS systems manage transactions, reconciliation tracks discrepancies, allocation distributes specific quantities), but none defines the storage facility itself.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer must consider which of the following when deciding where and how to store inventory in a warehouse?",
+   "options": [
+    "Product fragility, storage space available, temperature and humidity needs, and product accessibility",
+    "Customer names, sales associate preferences, competitor pricing, and store advertising budget",
+    "Register location, shopping cart availability, employee break room size, and parking lot layout",
+    "Supplier invoice dates, employee shift schedules, manager approval timelines, and vendor contact information"
+   ],
+   "correct_index": 0,
+   "explanation": "Storing considerations include the physical and environmental factors that protect inventory and enable efficient retrieval—fragility, space, climate control, and accessibility are all core. The other options mix unrelated retail functions (customer data, staffing, pricing, advertising) that do not directly affect how inventory is physically stored.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of ensuring that the quantity of goods on hand matches the quantity recorded in the inventory system and making adjustments as needed is called ___",
+   "options": [
+    "customer demand forecasting",
+    "inventory maintenance",
+    "merchandise display",
+    "warehouse organization"
+   ],
+   "correct_index": 1,
+   "explanation": "Inventory maintenance is the ongoing process of keeping recorded quantities accurate and aligned with physical stock through monitoring and adjustment. Merchandise display arranges products for sale, warehouse organization refers to the layout system, and forecasting predicts future demand—none directly maintains the accuracy of current inventory records.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of regularly recording the quantity of merchandise in storage, comparing it to inventory records, and identifying any discrepancies is part of ___",
+   "options": [
+    "customer return authorization",
+    "price markdown scheduling",
+    "vendor payment processing",
+    "inventory counting and control"
+   ],
+   "correct_index": 3,
+   "explanation": "Inventory counting and control involve the systematic documentation and verification of stock quantities to detect shrinkage, errors, or theft. Vendor payments are financial transactions, return authorization processes customer refunds, and markdown scheduling manages price reductions—none involves the actual counting and reconciliation of physical inventory.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retail store must decide how to organize storage space to keep fragile items safe while maintaining quick access, it is applying principles of ___",
+   "options": [
+    "warehouse efficiency",
+    "storage organization",
+    "inventory optimization",
+    "merchandise clustering"
+   ],
+   "correct_index": 1,
+   "explanation": "Storage organization refers to the strategic arrangement of merchandise in warehouse space, balancing protective needs (like keeping fragile items secure) with operational efficiency (like ensuring quick access). This concept encompasses decisions about where items are placed based on their physical characteristics and handling requirements.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of using a first-in, first-out method to rotate stock so older merchandise is sold before newer stock is called ___",
+   "options": [
+    "stock rotation",
+    "merchandise cycling",
+    "inventory layering",
+    "shelf management"
+   ],
+   "correct_index": 0,
+   "explanation": "Stock rotation (FIFO) is a fundamental inventory control practice that prevents merchandise from becoming outdated, damaged, or expired. This method ensures older items are sold first, reducing waste and maintaining product quality in retail storage.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of determining optimal inventory levels by analyzing past sales patterns, upcoming demand forecasts, and supplier lead times makes up ___",
+   "options": [
+    "stock reconciliation",
+    "merchandise rotation",
+    "inventory replenishment planning",
+    "inventory auditing"
+   ],
+   "correct_index": 2,
+   "explanation": "Inventory replenishment planning uses historical data and future projections to decide when and how much stock to order, ensuring shelves remain adequately stocked without overstock. This balances customer demand with storage capacity and supplier capabilities.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be important storing considerations when a retailer organizes its warehouse inventory?",
+   "options": [
+    "Customer shopping preferences, store location, and employee scheduling",
+    "Supplier payment terms, vendor relationships, and delivery frequencies",
+    "Advertising campaigns, pricing strategies, and seasonal promotions",
+    "Product weight and dimensions, climate control requirements, and security needs"
+   ],
+   "correct_index": 3,
+   "explanation": "Physical and environmental factors directly affect how inventory must be stored safely and accessibly. Product characteristics (weight, size), environmental controls (temperature, humidity), and loss prevention are all core storage decisions; the other options relate to operations, sales, or management, not storage logistics.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail store manager identifies that a popular shoe size is consistently running out of stock before the weekly shipment arrives. The manager should address this by ___",
+   "options": [
+    "reviewing sales velocity data for that size and adjusting the replenishment order quantity or frequency",
+    "moving the product to a less visible shelf location to reduce customer demand",
+    "reducing the number of other shoe sizes ordered to free up shelf space",
+    "requesting the supplier reduce delivery lead times for all shoe orders"
+   ],
+   "correct_index": 0,
+   "explanation": "Addressing a stock-out requires analyzing the real demand (sales velocity) for that specific size and then adjusting either the quantity ordered or how often it is reordered. This is the core of inventory replenishment planning—matching order quantities and timing to actual demand patterns.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer's inventory control system should include all of the following EXCEPT",
+   "options": [
+    "documentation of discrepancies found during inventory audits",
+    "manufacturer contact information and supplier payment invoices",
+    "procedures for adjusting inventory records when shrinkage or damage is discovered",
+    "regular physical counts of merchandise on hand compared to system records"
+   ],
+   "correct_index": 1,
+   "explanation": "An inventory control system focuses on tracking, counting, and correcting product quantities on hand. Supplier and payment information belongs in procurement or accounts payable systems, not inventory control. The other three options are core inventory control functions: counting, documenting discrepancies, and making adjustments.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a retail warehouse, the practice of arranging inventory based on how frequently items are purchased, placing fast-moving products in easily accessible locations, is called ___",
+   "options": [
+    "inventory stratification",
+    "demand forecasting",
+    "velocity-based placement",
+    "stock rotation sequencing"
+   ],
+   "correct_index": 2,
+   "explanation": "Velocity-based placement is the strategic arrangement of merchandise according to sales frequency — fast-moving items near packing areas, slow movers farther back — to minimize picking time and labor costs. This is distinct from stock rotation (FIFO order) and differs from general warehousing, which is the facility itself rather than an organizing principle within it.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of using historical sales data to predict future demand and determine how many units a retailer should maintain in inventory at any given time is called ___",
+   "options": [
+    "stock velocity analysis",
+    "bin allocation tracking",
+    "perpetual inventory management",
+    "demand forecasting and inventory planning"
+   ],
+   "correct_index": 3,
+   "explanation": "Demand forecasting and inventory planning uses past sales patterns and future demand signals to calculate optimal stock levels — distinct from stock rotation (which is how to manage existing stock) and perpetual inventory management (which is a counting method, not a planning process). This ensures retailers hold enough inventory to meet customer demand without excess carrying costs.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be essential considerations when a retailer decides how to physically arrange and store different product categories within a warehouse?",
+   "options": [
+    "The manufacturer's logo placement on boxes, customer age demographics, and the date the warehouse was built",
+    "Sales velocity of each product category, storage requirements based on product characteristics, and ease of access for picking and restocking",
+    "The retail manager's personal preference, the color of the packaging, and the alphabetical order of supplier names",
+    "The number of employees working the night shift, the brand loyalty of competitors, and the store's total annual revenue"
+   ],
+   "correct_index": 1,
+   "explanation": "Warehouse arrangement decisions hinge on how quickly products sell (velocity), their physical and environmental needs (temperature, humidity, fragility), and operational efficiency (how quickly items can be picked and restocked). The other options contain factors irrelevant to storage organization — personal preference, packaging color, employee shift timing, and historical facility details do not drive warehouse layout decisions.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In inventory control, the practice of recording inventory at specific intervals throughout the year rather than only at year-end is called ___",
+   "options": [
+    "perpetual inventory system",
+    "physical inventory audit",
+    "periodic inventory system",
+    "cycle counting"
+   ],
+   "correct_index": 0,
+   "explanation": "A perpetual inventory system tracks inventory continuously as items are received and sold, updating records in real time. This differs from a periodic system, which only counts inventory at set intervals. Perpetual systems allow retailers to monitor stock levels and identify discrepancies more quickly.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retailer implements procedures to track the movement of goods from the warehouse to the sales floor and monitor how quickly items sell, the retailer is establishing ___",
+   "options": [
+    "merchandise allocation standards",
+    "supplier communication schedules",
+    "shrinkage prevention protocols",
+    "inventory control and monitoring processes"
+   ],
+   "correct_index": 3,
+   "explanation": "Inventory control and monitoring processes include tracking merchandise movement and sales velocity—how fast items leave the warehouse and sell. These processes help retailers understand product performance and make informed decisions about replenishment and storage allocation.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a retail warehouse environment, the practice of positioning high-demand items in locations that require minimal travel time and effort to retrieve is known as ___",
+   "options": [
+    "accessibility routing",
+    "fast-track allocation",
+    "demand-based positioning",
+    "zone picking"
+   ],
+   "correct_index": 2,
+   "explanation": "Demand-based positioning is the strategic placement of frequently purchased products in easily accessible warehouse locations to streamline order fulfillment and reduce picking time. This differs from zone picking, which is a method of dividing the warehouse into sections for multiple pickers to work simultaneously, and from accessibility routing, which is not a standard retail inventory term.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail warehouse must balance several factors when deciding how to arrange and store inventory. Which of the following combinations would all support efficient warehouse organization?",
+   "options": [
+    "Grouping items by supplier, storing seasonal goods in premium locations, and organizing shelves by alphabetical order",
+    "Arranging products by sales frequency, considering climate control needs for sensitive items, and positioning heavy goods at lower heights for safety",
+    "Organizing by retail price point, using maximum vertical space without regard to item weight, and clustering similar brands regardless of demand",
+    "Displaying merchandise by color scheme, rotating stock based on vendor preference, and storing all breakable items in a single locked section"
+   ],
+   "correct_index": 1,
+   "explanation": "Efficient warehouse organization requires arranging products by how quickly they sell, controlling temperature and humidity for sensitive items, and placing heavier merchandise at lower levels to prevent injuries and damage. The other options include practices that either ignore safety, ignore sales patterns, or apply non-strategic organizing principles that would slow retrieval and increase risk.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are key components a retail warehouse should track as part of its inventory monitoring system EXCEPT",
+   "options": [
+    "How quickly individual products sell and which items are moving slower than expected",
+    "The number of units received from suppliers and the dates those shipments arrived",
+    "The names and personal contact information of all customers who have purchased from the retail location",
+    "The quantity of goods on hand compared to what the inventory system shows should be in stock"
+   ],
+   "correct_index": 2,
+   "explanation": "While customer contact information is useful for marketing and customer service, it is not a core component of inventory monitoring and control—that system focuses on receipt tracking, sales velocity, and quantity verification. The other three elements are essential to knowing what inventory exists, how fast it moves, and whether actual stock matches recorded levels.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of using point-of-sale data and past purchasing patterns to calculate how many units of a product should be held in inventory to meet expected customer demand without excessive overstocking is called ___",
+   "options": [
+    "inventory level optimization",
+    "stock depletion forecasting",
+    "safety stock calculation",
+    "reorder point analysis"
+   ],
+   "correct_index": 0,
+   "explanation": "Inventory level optimization is the analytical practice of determining optimal on-hand quantities by examining historical sales data and demand forecasts to balance availability with storage efficiency. While safety stock calculation addresses buffer quantities and reorder point analysis addresses when to order, neither encompasses the full process of determining total optimal inventory levels based on demand patterns.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A sporting goods retailer's warehouse must decide how to arrange inventory for winter coats, lightweight running shoes, and fragile glass water bottles. Which of the following would all be appropriate storing considerations for this mix of products?",
+   "options": [
+    "Storing all items in one consolidated area to reduce warehouse travel time, even if some products require different environmental conditions",
+    "Grouping all items by supplier and keeping them in the same temperature zone regardless of product type",
+    "Organizing all products by their retail price point and ensuring the most expensive items are stored in the most accessible locations",
+    "Placing coats in climate-controlled areas, positioning heavy boxes at lower heights for safety, and storing fragile items in padded or enclosed sections"
+   ],
+   "correct_index": 3,
+   "explanation": "Effective storage considers product characteristics—climate needs, weight, fragility, and handling requirements—to protect merchandise and maintain safety. This combination addresses three distinct storing concerns: environmental control for temperature-sensitive items, safety through proper stacking of heavy goods, and protection of fragile merchandise. The other options either ignore product-specific needs or prioritize convenience over proper storage principles.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Inventory Storage and Control",
+   "difficulty": "hard"
+  }
+ ],
+ "Career Opportunities": [
+  {
+   "question": "A position in retail that focuses on planning product assortments, analyzing sales data, and deciding which items should be stocked in stores is called a(n) ___.",
+   "options": [
+    "store manager",
+    "visual merchandiser",
+    "merchandise planner",
+    "inventory analyst"
+   ],
+   "correct_index": 2,
+   "explanation": "A merchandise planner is responsible for selecting and organizing the product mix that stores will carry, using data analysis to determine assortments. Visual merchandisers focus on display design, store managers oversee daily operations, and inventory analysts track stock levels—different roles with distinct responsibilities.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail employee who creates attractive store window displays and organizes merchandise on the sales floor to highlight key products and seasonal items is working in the field of ___.",
+   "options": [
+    "category management",
+    "customer service",
+    "loss prevention",
+    "visual merchandising"
+   ],
+   "correct_index": 3,
+   "explanation": "Visual merchandising is the practice of designing and arranging product displays to make stores visually appealing and to guide customer purchasing decisions. Loss prevention focuses on security and theft prevention, category management involves product assortment decisions, and customer service centers on direct sales interactions—none of these directly involve the creative design and arrangement of displays.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail professional who analyzes customer shopping patterns, evaluates inventory turnover rates, and makes recommendations about pricing strategies to maximize profitability is working in which career area?",
+   "options": [
+    "Retail analytics and merchandising strategy",
+    "Loss prevention and security",
+    "Customer service and sales",
+    "Store management and operations"
+   ],
+   "correct_index": 0,
+   "explanation": "Retail analytics and merchandising strategy focuses on data-driven decision-making about inventory, pricing, and sales performance—the core activities described in the stem. Store management involves broader operational oversight, while customer service and loss prevention are distinct career paths that don't center on analytical planning.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail store is opening a new location and needs to fill several positions. One role requires someone to oversee all daily store operations, manage staff scheduling, ensure customer service standards, and handle inventory control. This position would best be filled by a candidate with experience as a ___.",
+   "options": [
+    "Sales associate or cashier",
+    "Store manager or assistant manager",
+    "Merchandise buyer",
+    "Visual display specialist"
+   ],
+   "correct_index": 1,
+   "explanation": "A store manager or assistant manager is responsible for overall store operations, staff supervision, customer service oversight, and inventory management—all tasks named in the scenario. A sales associate handles customer transactions, a buyer selects products for purchase, and a display specialist creates visual presentations; none of these roles encompass the broad operational leadership described.",
+   "type": "scenario_judgment",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail professional who helps customers select merchandise, answers questions about product features, processes transactions, and maintains store cleanliness is working in which career area?",
+   "options": [
+    "Retail analytics",
+    "Store operations management",
+    "Sales associate or customer service",
+    "Merchandise planning"
+   ],
+   "correct_index": 2,
+   "explanation": "A sales associate or customer service representative is the entry-level retail position focused on direct customer interaction and point-of-sale activities. This role is foundational to most retail careers and is one of the most common opportunities for people entering the retail field. The other options represent specialized or management-level roles that require additional responsibilities beyond customer-facing sales.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail career that involves selecting and purchasing products from suppliers, negotiating prices, and ensuring adequate inventory levels for store locations is called a(n) ___.",
+   "options": [
+    "buyer",
+    "loss prevention specialist",
+    "merchandiser",
+    "store manager"
+   ],
+   "correct_index": 0,
+   "explanation": "A buyer is responsible for selecting merchandise, negotiating with vendors, and managing inventory purchasing decisions across retail locations. This role requires understanding market trends, cost analysis, and supplier relationships to stock stores effectively.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of coordinating all activities related to moving products from suppliers into retail locations, organizing them efficiently in warehouses and stores, and making them available for customer purchase is called ___.",
+   "options": [
+    "brand positioning",
+    "supply chain management",
+    "customer engagement",
+    "pricing strategy"
+   ],
+   "correct_index": 1,
+   "explanation": "Supply chain management encompasses the entire flow of merchandise from vendors through warehouses to retail shelves, ensuring products arrive on time and in the right quantities. This is a core function that multiple retail careers support.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail career focused on training new employees, enforcing company policies, monitoring sales performance, and ensuring customer satisfaction standards are maintained would typically be held by a(n) ___.",
+   "options": [
+    "customer service representative",
+    "visual merchandiser",
+    "inventory auditor",
+    "shift supervisor or assistant manager"
+   ],
+   "correct_index": 3,
+   "explanation": "Supervisory and management roles like shift supervisors or assistant managers are responsible for team oversight, policy enforcement, performance monitoring, and maintaining service standards during their shifts. These positions bridge store operations and staff development.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A department store is expanding its online presence and needs someone to oversee how products are photographed, described, categorized, and presented on the company website to encourage customer purchases across multiple channels. This role would best be suited for someone with background in ___.",
+   "options": [
+    "merchandising and product presentation",
+    "human resources and staff recruitment",
+    "loss prevention and security management",
+    "accounting and financial analysis"
+   ],
+   "correct_index": 0,
+   "explanation": "This role requires merchandising expertise—the ability to present products attractively and strategically to drive sales, whether in physical stores or digital platforms. Merchandisers understand product positioning, visual appeal, and how presentation influences customer decisions across sales channels.",
+   "type": "scenario_judgment",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The career path that involves selecting seasonal merchandise themes, coordinating promotional campaigns across store locations, and ensuring consistent brand presentation on shelves and in windows is called ___ .",
+   "options": [
+    "Inventory control",
+    "Merchandising coordination",
+    "Customer relationship management",
+    "Store operations management"
+   ],
+   "correct_index": 1,
+   "explanation": "Merchandising coordination encompasses the strategic and tactical work of planning what products appear where, how they're themed and promoted, and maintaining a unified brand look across all sales environments. This distinguishes it from pure inventory management (tracking counts) or store operations (daily staffing and procedures).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail company is hiring someone to oversee the receiving of shipments from suppliers, verify inventory accuracy against purchase orders, and coordinate storage in the warehouse. Which of the following career paths would ALL be relevant to this role?",
+   "options": [
+    "Marketing specialist, promotional coordinator, and brand manager",
+    "Visual merchandiser, floor associate, and customer service representative",
+    "Buyer, merchandise planner, and pricing analyst",
+    "Receiving clerk, inventory auditor, and warehouse coordinator"
+   ],
+   "correct_index": 3,
+   "explanation": "Receiving, inventory verification, and warehouse coordination are all supply-chain and inventory-management functions that directly support the role described. The other options represent sales-floor, planning, or marketing roles that do not primarily involve supplier coordination and warehouse operations.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Career opportunities in retail include all of the following EXCEPT",
+   "options": [
+    "Assistant store manager supervising staff and handling daily operations",
+    "Loss prevention specialist monitoring security and preventing theft",
+    "Seasonal trend forecaster predicting which products will sell year-round",
+    "Receiving clerk verifying shipments and managing warehouse inventory"
+   ],
+   "correct_index": 2,
+   "explanation": "While trend forecasting is an important business function, seasonal trend forecasting as a distinct career is not typically a standalone retail position in most store structures. Loss prevention, store management, and receiving/warehouse roles are core, widely-established retail careers. Trend forecasting is usually handled by corporate merchandising or planning roles, not a specific retail store position.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The coordination of product selection, seasonal themes, promotional timing, and cross-channel presentation to create a consistent brand image and maximize customer appeal across all retail touchpoints is called ___.",
+   "options": [
+    "Sales performance optimization",
+    "Retail operations management",
+    "Merchandising strategy and execution",
+    "Customer relationship management"
+   ],
+   "correct_index": 2,
+   "explanation": "Merchandising strategy and execution involves the deliberate alignment of product presentation, theming, and promotion across all channels to reinforce brand identity and drive sales. This differs from operations management (daily store running), sales optimization (increasing transaction volume), or CRM (customer loyalty programs).",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail professional who oversees the flow of merchandise from warehouse shelves to sales floor displays, organizes stock rotation, and ensures products are accessible and visible to customers is working in which career area?",
+   "options": [
+    "Inventory control and stock management",
+    "Customer service and point-of-sale operations",
+    "Receiving and warehouse logistics",
+    "Sales floor merchandising and product placement"
+   ],
+   "correct_index": 3,
+   "explanation": "Sales floor merchandising and product placement focuses on the physical organization and visibility of products on the retail floor to maximize customer access and sales appeal. This differs from inventory control (backend counting), receiving (incoming shipments), and customer service (transaction-focused roles).",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Career opportunities in merchandising include all of the following EXCEPT",
+   "options": [
+    "hiring and scheduling hourly employees for overnight stocking shifts",
+    "developing color palettes and fixture arrangements to align with seasonal brand themes",
+    "planning promotional displays that highlight best-selling items during peak shopping periods",
+    "coordinating product photography and online category organization for multiple sales channels"
+   ],
+   "correct_index": 0,
+   "explanation": "Hiring and scheduling employees is a store operations and human resources function, not a merchandising career focus. Merchandising roles center on product selection, display design, presentation, and cross-channel coordination—not personnel management and workforce scheduling, which fall under store management.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The retail career that involves researching emerging fashion and home décor trends, evaluating competitor product lines, and recommending new item categories and styles for upcoming seasons is called a(n) ___.",
+   "options": [
+    "customer service representative",
+    "trend forecaster and product strategist",
+    "visual display specialist",
+    "warehouse inventory coordinator"
+   ],
+   "correct_index": 1,
+   "explanation": "A trend forecaster and product strategist anticipates market shifts and recommends new products and categories based on research—this is distinct from simply selecting existing merchandise (which a buyer does) or displaying it. This role combines market analysis with forward-looking strategic decision-making about what the store should stock.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail company needs to fill a position responsible for coordinating training programs for new employees on product knowledge, company procedures, and sales techniques; monitoring staff performance; and recommending promotions or corrective actions. Which of the following career titles would be LEAST appropriate for this role?",
+   "options": [
+    "Trend forecaster and merchandising strategist",
+    "Assistant manager or supervisory lead",
+    "Training coordinator and staff development specialist",
+    "Department or shift supervisor"
+   ],
+   "correct_index": 0,
+   "explanation": "A trend forecaster and merchandising strategist focuses on product selection and market trends, not employee training or performance management—that is a supervisory and human resources function. Training coordination, supervision, and assistant management all directly involve developing staff and ensuring operational standards, making them appropriate fits for this role.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be career responsibilities in retail store operations and management?",
+   "options": [
+    "Researching seasonal color palettes, selecting display props and signage, and designing window themes to attract foot traffic",
+    "Photographing products for the website, writing product descriptions, and optimizing category navigation on e-commerce platforms",
+    "Overseeing daily staff schedules, monitoring adherence to company policies, and resolving customer complaints on the sales floor",
+    "Evaluating supplier quality, negotiating wholesale prices, and authorizing purchase orders for new inventory"
+   ],
+   "correct_index": 2,
+   "explanation": "Store operations and management roles center on the daily running of the physical location—staffing, policy enforcement, and customer-facing problem-solving. Option A describes buyer responsibilities (supplier relations), Option C describes e-commerce merchandising, and Option D describes visual merchandising design; only Option B captures the core operational duties of a store manager or assistant manager.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail company is recruiting for a position responsible for coordinating the physical arrangement of seasonal collections, creating themed product displays across locations, and ensuring consistent brand storytelling in stores and online. This career would involve all of the following EXCEPT",
+   "options": [
+    "Planning promotional timing around holidays and events",
+    "Negotiating supplier contracts and payment terms",
+    "Selecting color schemes and layout patterns for displays",
+    "Coordinating with merchandising teams on brand messaging"
+   ],
+   "correct_index": 1,
+   "explanation": "Supplier negotiation and contract management are buyer responsibilities, not part of merchandising coordination and display planning. The question tests understanding that merchandising professionals focus on presentation and coordination, while procurement functions belong to buying roles.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The retail career focused on ensuring products are available in correct quantities, monitoring shelf space efficiency, and coordinating the timely movement of merchandise from storage areas to sales floors is called a(n) ___.",
+   "options": [
+    "warehouse distribution manager",
+    "retail loss prevention analyst",
+    "customer experience coordinator",
+    "inventory replenishment specialist"
+   ],
+   "correct_index": 3,
+   "explanation": "An inventory replenishment specialist manages stock levels, shelf availability, and the physical flow of products to sales areas—distinct from warehouse management (which oversees bulk storage) or loss prevention (which addresses theft and shrinkage). This role is a core retail operations career.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Career Opportunities",
+   "difficulty": "hard"
+  }
+ ],
+ "Visual Merchandising": [
+  {
+   "question": "The practice of arranging merchandise and store elements to attract customers and encourage purchases is called ___.",
+   "options": [
+    "store layout",
+    "product placement",
+    "inventory management",
+    "visual merchandising"
+   ],
+   "correct_index": 3,
+   "explanation": "Visual merchandising is the specific term for arranging products, displays, and store design to appeal to customers and drive sales. While inventory management, product placement, and store layout are related retail concepts, visual merchandising encompasses the entire strategic use of visual elements to influence buying behavior.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are purposes of visual merchandising in a retail setting EXCEPT",
+   "options": [
+    "influencing customer purchasing decisions and behavior",
+    "determining the wholesale cost of merchandise",
+    "showcasing product features and benefits to customers",
+    "creating an organized and attractive shopping environment"
+   ],
+   "correct_index": 1,
+   "explanation": "Determining wholesale cost is a supply chain and purchasing function, not a purpose of visual merchandising. Visual merchandising's core purposes are to organize the store, attract and guide customers, highlight products, and drive sales through strategic presentation—not to set product pricing or costs.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered part of a retail store's visual merchandising strategy?",
+   "options": [
+    "Hiring additional sales staff, processing employee payroll, and conducting inventory audits",
+    "Training employees on product knowledge, monitoring cash register speed, and updating the company website",
+    "Arranging products by color and size, using strategic lighting, and designing window displays",
+    "Negotiating supplier contracts, managing warehouse stock levels, and setting wholesale prices"
+   ],
+   "correct_index": 2,
+   "explanation": "Visual merchandising encompasses the tangible, visual design elements that shape the customer's in-store experience—product arrangement, lighting, and display design. Hiring, payroll, cash register management, supplier negotiations, and pricing are operational or business functions; website updates relate to digital presence. Only option C includes elements that directly control how the physical retail environment looks and influences customer behavior.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail store uses lighting, color coordination, and product placement to create an appealing shopping environment that encourages customers to spend more time browsing. This coordinated effort to shape the customer's shopping experience is called ___.",
+   "options": [
+    "merchandising psychology",
+    "store layout planning",
+    "display design",
+    "inventory management"
+   ],
+   "correct_index": 0,
+   "explanation": "Merchandising psychology refers to the strategic use of environmental elements—lighting, color, layout, and product arrangement—to influence customer behavior and perception. While display design and store layout planning are related components, merchandising psychology is the broader umbrella term describing how these elements work together to encourage purchasing decisions.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Visual merchandising in a retail environment accomplishes all of the following EXCEPT",
+   "options": [
+    "Guides customer traffic patterns through thoughtful fixture and signage placement",
+    "Highlights seasonal products and new inventory through strategic displays",
+    "Creates an appealing aesthetic that encourages customers to spend more time in the store",
+    "Determines the percentage markup applied to wholesale merchandise costs"
+   ],
+   "correct_index": 3,
+   "explanation": "Determining markup percentages on merchandise is a pricing and accounting function, not a visual merchandising function. Visual merchandising focuses on the presentation, arrangement, and atmosphere of the store—creating an inviting environment, highlighting products, guiding traffic flow, and encouraging purchases through visual appeal.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be direct benefits that retailers achieve through effective visual merchandising?",
+   "options": [
+    "Creating an inviting shopping environment, encouraging longer customer visits, and increasing impulse purchases",
+    "Automating all checkout processes, removing all product displays, and closing fitting rooms",
+    "Reducing inventory costs, lowering employee wages, and decreasing store operating hours",
+    "Eliminating the need for customer service, reducing product quality standards, and minimizing store security"
+   ],
+   "correct_index": 0,
+   "explanation": "Visual merchandising's core function is to make the store environment appealing and to influence customer behavior positively—creating an inviting atmosphere, encouraging browsing, and driving sales through visual appeal. The other options describe either cost-reduction tactics unrelated to merchandising or harmful practices that would damage the retail operation.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The difference between visual merchandising and display is that visual merchandising includes all of the following EXCEPT:",
+   "options": [
+    "Strategic placement of products to guide customer traffic flow",
+    "Pricing and cost markup calculations for products",
+    "Color coordination and lighting throughout the store environment",
+    "Window and floor displays designed to attract customer attention"
+   ],
+   "correct_index": 1,
+   "explanation": "Visual merchandising is about how products and the store environment are arranged and presented to appeal to customers—color, lighting, placement, and displays are all visual merchandising tools. Pricing and cost markup calculations are financial/accounting functions, not visual merchandising functions, making them the odd-one-out that does not belong in the definition.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A distinction between visual merchandising and display is that visual merchandising includes all of the following EXCEPT",
+   "options": [
+    "Color coordination of merchandise and fixtures",
+    "Overall store layout and traffic flow planning",
+    "The wholesale cost analysis of individual products",
+    "Strategic lighting throughout the retail environment"
+   ],
+   "correct_index": 2,
+   "explanation": "Wholesale cost analysis is a pricing and inventory function, not a component of visual merchandising. Visual merchandising focuses on the aesthetic and psychological presentation of merchandise—including layout, color, lighting, and how these elements work together to attract and guide customers. The other three options are all core elements of visual merchandising strategy that retailers use to shape the customer experience.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A store manager observes that customers spend more time in aisles with warm lighting and grouped merchandise, while they move quickly through poorly lit sections with scattered products. The manager's observation most directly reflects which principle of visual merchandising?",
+   "options": [
+    "Employee training programs improve checkout speed and transaction efficiency",
+    "Product rotation schedules should align with seasonal inventory changes",
+    "Environmental design elements intentionally influence customer browsing behavior and dwell time",
+    "Discount pricing strategies drive higher foot traffic to specific departments"
+   ],
+   "correct_index": 2,
+   "explanation": "The manager's observation shows that visual merchandising elements—lighting quality and product organization—directly affect customer behavior (time spent, movement patterns). This demonstrates how deliberate design choices shape the shopping experience. The other options concern inventory management, pricing strategy, and staffing, none of which are illustrated by the customer behavior pattern described.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In visual merchandising, a retailer uses all of the following to influence customer shopping behavior EXCEPT",
+   "options": [
+    "Themed color palettes and complementary product groupings",
+    "The wholesale acquisition cost of merchandise from suppliers",
+    "Ambient music, scent, and lighting that reinforce the store's brand atmosphere",
+    "Strategic placement of high-margin items at eye level and checkout areas"
+   ],
+   "correct_index": 1,
+   "explanation": "Visual merchandising focuses on how the store environment is designed and presented to customers—layout, lighting, color, product placement, and sensory elements. Wholesale acquisition cost is an internal supply chain and accounting matter; it does not shape the customer's visual or emotional experience in the store and is therefore not a tool of visual merchandising strategy.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer wanting to increase customer dwell time and impulse purchases through intentional design would NOT typically focus on which of the following?",
+   "options": [
+    "Calculating the wholesale cost of individual inventory items",
+    "Creating themed product zones with coordinated color palettes",
+    "Using warm lighting to make merchandise appear more inviting",
+    "Positioning high-margin items at eye level in high-traffic areas"
+   ],
+   "correct_index": 0,
+   "explanation": "Calculating wholesale cost is an accounting and purchasing function, not a visual merchandising tactic. The other three—themed zones, warm lighting, and strategic item placement—are all core visual merchandising techniques designed to influence customer behavior and increase time spent browsing and purchasing.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Visual merchandising differs from display in that visual merchandising encompasses the broader strategy of arranging all store elements to influence customer behavior, while display refers to ___",
+   "options": [
+    "the pricing strategy and promotional signage used",
+    "the inventory management system and stock levels",
+    "the overall store layout and traffic flow patterns",
+    "a specific presentation of merchandise in a particular location"
+   ],
+   "correct_index": 3,
+   "explanation": "Display is the individual, localized presentation of products—a window, an endcap, a shelf arrangement—whereas visual merchandising is the holistic strategy that uses displays as one tool among many (lighting, color, store design, layout) to shape the entire shopping experience. This distinction is critical: display is tactical and specific; merchandising is strategic and store-wide.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail store's use of visual merchandising accomplishes all of the following EXCEPT",
+   "options": [
+    "Creating a cohesive aesthetic that reflects the store's brand and appeals to its target customer",
+    "Controlling the wholesale price that the retailer negotiates with suppliers",
+    "Guiding customers through the store layout and directing foot traffic to different departments",
+    "Encouraging customers to spend more time in the store and making unplanned purchases"
+   ],
+   "correct_index": 1,
+   "explanation": "Visual merchandising is an in-store presentation and environmental design strategy; it does not determine or control the wholesale prices paid to suppliers—those prices are negotiated separately as a purchasing and supply-chain function. Visual merchandising does guide traffic flow, reinforce brand identity, and influence shopping duration and impulse buying, all by shaping the customer's visual and spatial experience. Wholesale pricing is determined by supplier negotiations, market conditions, and bulk order quantities, not by how merchandise is displayed in the store.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Display in a retail store accomplishes all of the following EXCEPT ___.",
+   "options": [
+    "Presenting merchandise in an organized and visually appealing way at a single location",
+    "Drawing customer attention to featured items or seasonal promotions through focused presentation",
+    "Showcasing a specific product or category in a particular location within the store",
+    "Creating the overall store atmosphere and customer traffic patterns through integrated design"
+   ],
+   "correct_index": 3,
+   "explanation": "Display refers to the presentation of merchandise at a specific location or in a particular section—a localized, focused tactic. Creating the overall store atmosphere and directing traffic patterns through integrated design is the function of visual merchandising strategy, which is broader and store-wide. Display is a component or tool within visual merchandising, not a substitute for it. This question tests the distinction between display (localized presentation) and visual merchandising (comprehensive environmental strategy).",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a retail setting, visual merchandising can influence all of the following consumer behaviors EXCEPT",
+   "options": [
+    "The wholesale cost negotiated between the retailer and its suppliers",
+    "The path a customer takes as they move through the store",
+    "The amount of time a customer spends browsing in the store",
+    "A customer's decision to make an unplanned purchase"
+   ],
+   "correct_index": 0,
+   "explanation": "Visual merchandising—the arrangement of merchandise, lighting, color, and store layout—directly affects dwell time, impulse buying, and customer traffic patterns. However, wholesale cost negotiation is a supplier-relationship and purchasing function, not an outcome of store design or visual presentation. Wholesale cost is determined through vendor negotiations and market conditions, not through how products are displayed to customers.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered examples of visual merchandising elements that retailers can control?",
+   "options": [
+    "Customer age demographics, competitor pricing strategies, and regional weather patterns",
+    "Wholesale supplier selection, inventory cost tracking, and profit margin calculations",
+    "Window displays, aisle layouts, in-store signage, and overhead lighting design",
+    "Employee scheduling, cash register placement, and customer complaint handling"
+   ],
+   "correct_index": 2,
+   "explanation": "Window displays, aisle layouts, signage, and lighting are all direct visual and spatial elements a retailer can design and control to shape the shopping environment. Wholesale sourcing and cost tracking are supply-chain decisions, demographics and weather are external factors beyond retailer control, and employee scheduling and complaint handling are operational management tasks separate from visual design.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In visual merchandising, the strategic use of color grouping and product arrangement to guide customers through the store and influence their shopping path is an example of which core retail principle?",
+   "options": [
+    "Inventory management and stock rotation systems",
+    "Customer service training and staff interaction protocols",
+    "Pricing strategy and discount promotion scheduling",
+    "Environmental psychology and spatial design influencing buyer behavior"
+   ],
+   "correct_index": 3,
+   "explanation": "Environmental psychology in visual merchandising focuses on how physical design elements—including color, layout, and spatial arrangement—shape how customers move through and perceive the store. This principle is central to visual merchandising's goal of guiding behavior and enhancing the shopping experience, distinct from operational factors like staffing or inventory logistics.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When designing a retail store's overall layout and atmosphere, a retailer accomplishes all of the following through visual merchandising EXCEPT",
+   "options": [
+    "Creating focal points and visual hierarchies that direct customer attention",
+    "Using lighting, signage, and product grouping to reinforce brand identity",
+    "Negotiating lower wholesale costs with suppliers to reduce product prices",
+    "Establishing traffic flow patterns that encourage browsing through multiple sections"
+   ],
+   "correct_index": 2,
+   "explanation": "Visual merchandising shapes the in-store environment and customer experience through design elements, but it does not directly control or negotiate supplier wholesale costs—that is a procurement and vendor-management function, not a visual or environmental design function. The other three options are all direct outcomes of effective visual merchandising strategy.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Effective visual merchandising in a retail store accomplishes all of the following EXCEPT ___.",
+   "options": [
+    "establishing the store's brand identity through consistent color and design themes",
+    "determining the supplier cost at which the retailer initially purchased inventory items",
+    "drawing customer attention to featured products and sale items through strategic placement",
+    "creating visual pathways that encourage customers to explore more of the store"
+   ],
+   "correct_index": 1,
+   "explanation": "Visual merchandising is about the presentation and arrangement of the store environment—brand identity, product placement, customer traffic flow—but it does not determine or control what the retailer originally paid suppliers for goods. That pricing decision happens during procurement and vendor negotiations, not through visual design. The three correct options are all genuine visual merchandising outcomes.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer creates an effective shopping experience through all of the following EXCEPT",
+   "options": [
+    "setting the manufacturer's suggested retail price for each product",
+    "adjusting store lighting to highlight featured product zones",
+    "arranging checkout lanes to match customer traffic flow patterns",
+    "using color coordination to group related merchandise together"
+   ],
+   "correct_index": 0,
+   "explanation": "Setting manufacturer's suggested retail price is a pricing decision, not a visual merchandising practice. The other three—lighting, traffic-flow design, and color grouping—are all direct tools of visual merchandising used to shape the customer's in-store experience and guide their behavior.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Visual Merchandising",
+   "difficulty": "hard"
+  }
+ ],
+ "Display Techniques": [
+  {
+   "question": "A display arrangement in which merchandise is organized by size, color, or style in a neat, organized pattern is called a(n) _____ arrangement.",
+   "options": [
+    "geometric",
+    "seasonal",
+    "impulse",
+    "promotional"
+   ],
+   "correct_index": 0,
+   "explanation": "Geometric arrangements use orderly patterns based on physical characteristics like size, color, or style to create visual harmony and make products easy to locate. This is one of the primary types of display arrangements taught in retail merchandising. The other options describe different display purposes or methods, not the organizational pattern itself.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of removing merchandise, fixtures, and signage from a display location and returning them to storage or inventory is known as _____ the display.",
+   "options": [
+    "resetting",
+    "staging",
+    "rotating",
+    "dismantling"
+   ],
+   "correct_index": 3,
+   "explanation": "Dismantling is the specific retail term for taking down a display completely—removing all merchandise, fixtures, and related materials. This is a core responsibility in display maintenance and is distinct from rotating (changing out some items) or resetting (refreshing an existing display). Proper dismantling ensures organized storage and protects materials for future use.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes used to arrange products, fixtures, and signage to attract customer attention and encourage purchases make up the practice of _____.",
+   "options": [
+    "inventory management",
+    "merchandising displays",
+    "sales forecasting",
+    "product positioning"
+   ],
+   "correct_index": 1,
+   "explanation": "Merchandising displays encompass all the coordinated activities—from selecting arrangements and fixtures to organizing merchandise and creating signage—that work together to showcase products attractively and drive sales. The other options refer to related but distinct retail functions (inventory control, placement strategy, or demand prediction) rather than the complete display practice itself.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of periodically changing some merchandise items while keeping the display structure and fixtures in place is called a display _____.",
+   "options": [
+    "dismantling",
+    "refresh",
+    "rotation",
+    "staging"
+   ],
+   "correct_index": 2,
+   "explanation": "Display rotation is the standard retail term for updating the contents of an existing display without taking it down completely. This keeps displays fresh and engaging for repeat customers while maintaining the underlying structure. Rotation is less labor-intensive than full dismantling and is a routine part of display maintenance.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate reasons to dismantle a store display?",
+   "options": [
+    "Customer traffic is low, the display needs minor repairs, and the product is no longer in stock",
+    "The display has been in place for one week, it is located near the checkout, and competitor stores are using similar displays",
+    "The merchandise has sold well, a new seasonal theme is starting, and floor space is needed for a new product category",
+    "The merchandise is slightly damaged, sales goals have been met, and the store manager prefers a different color scheme"
+   ],
+   "correct_index": 2,
+   "explanation": "Displays are dismantled when they have served their purpose (strong sales), when inventory is depleted or a new season arrives, or when the space is needed for other merchandise. Option A contains three legitimate, business-driven reasons. The other options mix reasons that might warrant rotation or minor adjustments (Option B's repair need, Option C's arbitrary timing/location, Option D's cosmetic preference) rather than full dismantling.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A display arrangement in which merchandise is grouped together based on its function or use—such as all cleaning supplies in one section or all kitchen gadgets in another—is called a(n) _____ arrangement.",
+   "options": [
+    "themed",
+    "seasonal",
+    "color-coordinated",
+    "functional"
+   ],
+   "correct_index": 3,
+   "explanation": "A functional arrangement organizes products by how they are used or what purpose they serve, making it easy for customers to find related items together. This differs from geometric (organized by pattern), themed (organized around a concept), or color-coordinated (organized by visual appearance) arrangements.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all help maintain the visual appeal and effectiveness of an existing retail display?",
+   "options": [
+    "Dust merchandise weekly, restock sold items promptly, and straighten signage and price tags",
+    "Rearrange all products every two days, discontinue price displays, and cover items with plastic wrap",
+    "Reduce lighting intensity, move fixtures to new locations daily, and remove half the merchandise",
+    "Reposition the entire display structure, replace all fixtures monthly, and change the theme weekly"
+   ],
+   "correct_index": 0,
+   "explanation": "Maintaining a display involves regular upkeep—dusting, restocking, and keeping signs neat—to preserve its appeal without major restructuring. The other options either involve unnecessary major changes, reduce effectiveness, or would damage the display's purpose.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of ensuring that a retail display remains clean, organized, and visually appealing over time through regular upkeep and minor adjustments is called display _____.",
+   "options": [
+    "calibration",
+    "maintenance",
+    "staging",
+    "curation"
+   ],
+   "correct_index": 1,
+   "explanation": "Display maintenance refers to the ongoing care and regular upkeep needed to keep a display looking fresh and functional. This includes cleaning, restocking, and straightening items—distinct from staging (initial setup), curation (selecting specific items), or calibration (adjusting measurements).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the work involved in removing products, fixtures, and promotional materials from a display location and preparing them for storage, return to inventory, or reuse elsewhere in the store makes up the process of _____.",
+   "options": [
+    "merchandise staging",
+    "display deconstruction",
+    "fixture rotation",
+    "display maintenance"
+   ],
+   "correct_index": 1,
+   "explanation": "Display deconstruction is the systematic process of taking apart and removing all components of a display—merchandise, fixtures, and signage—for storage or redeployment. This is a distinct retail operation from maintenance (ongoing care), rotation (swapping items), or staging (initial setup).",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail display arrangement in which products are positioned to draw the customer's eye through an intentional visual path—guiding attention from one section to another in a deliberate sequence—is known as a(n) _____ arrangement.",
+   "options": [
+    "flow-based",
+    "linear",
+    "asymmetrical",
+    "modular"
+   ],
+   "correct_index": 0,
+   "explanation": "A flow-based arrangement uses intentional visual pathways and sequencing to guide customers through the display in a planned order, enhancing engagement and purchase likelihood. Linear refers to straight-line organization, asymmetrical to unbalanced positioning, and modular to separate, self-contained units.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A display arrangement in which merchandise is staggered at different heights and depths to create visual interest and guide the customer's eye across the display is called a(n) _____ arrangement.",
+   "options": [
+    "linear",
+    "modular",
+    "tiered",
+    "symmetrical"
+   ],
+   "correct_index": 2,
+   "explanation": "A tiered arrangement uses varying heights and depths to create visual depth and draw attention across the display space. This technique is distinct from geometric, functional, and flow-based arrangements because it focuses specifically on the vertical and spatial variation of merchandise placement.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of checking a retail display regularly for damage, worn signage, faded colors, and displaced merchandise to keep it effective and appealing makes up the concept of display _____.",
+   "options": [
+    "arrangement",
+    "refresh",
+    "curation",
+    "inspection"
+   ],
+   "correct_index": 3,
+   "explanation": "Display inspection is the ongoing process of evaluating and monitoring a display's condition to identify problems before they damage sales appeal. This is distinct from maintenance, which focuses on the corrective actions taken after inspection reveals issues.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the tasks involved in organizing merchandise by product category, arranging fixtures in a logical sequence, and labeling sections clearly to make it easy for customers to locate items make up the practice of _____.",
+   "options": [
+    "display configuration",
+    "inventory staging",
+    "retail layout design",
+    "merchandise positioning"
+   ],
+   "correct_index": 0,
+   "explanation": "Display configuration encompasses the deliberate organization and arrangement of all display elements—merchandise, fixtures, and signage—in a way that supports customer navigation and purchasing. This concept bridges the planning and execution phases of creating an effective retail display.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic process of carefully removing all merchandise, fixtures, hardware, and signage from a display location, sorting items for return to inventory or storage areas, and documenting what was displayed is called display _____.",
+   "options": [
+    "deconstruction",
+    "closure",
+    "disassembly",
+    "breakdown"
+   ],
+   "correct_index": 2,
+   "explanation": "Display disassembly is the formal, organized process of taking apart a display and managing all its components—merchandise, fixtures, and signage—to ensure nothing is lost and materials can be reused or properly stored. This is the industry-standard term for the structured removal process, distinct from informal breakdown or closure.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail display arrangement in which products are grouped by common use or purpose—for example, all beverage items together or all personal care products in one section—is called a(n) _____ arrangement.",
+   "options": [
+    "sectional",
+    "thematic",
+    "categorical",
+    "complementary"
+   ],
+   "correct_index": 3,
+   "explanation": "A complementary arrangement groups products that are used together or serve related purposes, making it easy for customers to find items they need in one location. This differs from a functional arrangement (which organizes by use category) in that complementary focuses on items that work together rather than broad functional categories. This supports the merchandising principle of helping customers shop efficiently by proximity.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a retail display uses multiple levels and positions merchandise at varying heights and depths to guide the customer's eye in a deliberate sequence across the display, this is called a(n) _____ arrangement.",
+   "options": [
+    "modular",
+    "pyramidal",
+    "seasonal",
+    "complementary"
+   ],
+   "correct_index": 1,
+   "explanation": "A pyramidal arrangement deliberately stacks and positions products at different heights to create visual interest and guide customer attention through the display in an intentional flow. This distinguishes it from flat or uniform displays where all items sit at the same level. The term reflects how the varied heights create a shape that draws the eye upward and across.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of ensuring that display fixtures remain properly installed, that all merchandise is upright and visible, and that promotional signage stays securely in place throughout the selling period makes up the concept of display _____.",
+   "options": [
+    "curation",
+    "stabilization",
+    "preservation",
+    "restoration"
+   ],
+   "correct_index": 1,
+   "explanation": "Display stabilization refers to the ongoing effort to keep all physical components of a display—fixtures, merchandise, and signage—secure and in their intended positions. This prevents damage, loss, and drift that would reduce the display's effectiveness. It is distinct from broader maintenance, which includes cleaning and refresh, or from dismantling, which removes everything.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be correct steps in preparing a display for storage after it has been dismantled?",
+   "options": [
+    "Document what was displayed, sort items by category or original location, and clean fixtures before packing",
+    "Leave items scattered on the floor, photograph the empty space, and file a report with corporate",
+    "Immediately donate all merchandise to charity, discard all signage, and return fixtures to the sales floor",
+    "Pack everything together without organizing, label one large box with 'display items,' and store in the back room"
+   ],
+   "correct_index": 0,
+   "explanation": "Proper display storage requires documentation (for future reference or reuse), sorting (to protect items and make future setup easier), and cleaning (to prevent damage during storage). The other options involve waste, poor organization, or incomplete procedures that would make retrieval and reuse difficult or impossible. Following this protocol preserves the value of fixtures and materials.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail display that uses shelves, risers, and platforms to position merchandise at different heights so that products are visible from various angles and create visual interest is called a(n) _____ display.",
+   "options": [
+    "tiered",
+    "elevated",
+    "stepped",
+    "angled"
+   ],
+   "correct_index": 2,
+   "explanation": "A stepped display uses multiple levels and varying heights to showcase merchandise in a way that draws the customer's eye across the entire display and makes all products visible. This differs from a simple flat arrangement and helps prevent merchandise from being hidden behind taller items.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the regular tasks involved in keeping a retail display visually appealing and effective—such as checking for damage, restocking empty spaces, and ensuring signage remains clean and properly positioned—make up the practice of display _____.",
+   "options": [
+    "rotation",
+    "stabilization",
+    "inspection",
+    "monitoring"
+   ],
+   "correct_index": 3,
+   "explanation": "Monitoring encompasses the ongoing, active effort to keep displays in good condition through regular checks and adjustments. While inspection (checking for problems) and rotation (changing merchandise) are related practices, monitoring specifically captures the continuous upkeep work—checking condition, restocking, and repositioning items—that keeps displays effective day-to-day.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Display Techniques",
+   "difficulty": "hard"
+  }
+ ]
+}

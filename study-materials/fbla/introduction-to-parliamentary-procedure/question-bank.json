@@ -322,15 +322,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "The officer responsible for documenting what occurs during a meeting, including motions made, votes taken, and decisions reached, is called the ___",
+  "question": "The officer responsible for collecting dues, paying bills, and presenting financial reports to the membership is called the ___",
   "options": [
-   "parliamentarian",
-   "vice president",
    "secretary",
-   "treasurer"
+   "parliamentarian",
+   "treasurer",
+   "vice president"
   ],
   "correct_index": 2,
-  "explanation": "The secretary is the official record-keeper of the organization, responsible for maintaining accurate minutes of every meeting. This is a foundational duty that distinguishes the secretary role from other officers who handle finances, parliamentary procedure, or presidential duties.",
+  "explanation": "The treasurer handles all financial matters for the organization, including collecting member dues, authorizing and paying bills, and presenting periodic financial reports to keep members informed of the organization's monetary status. This is distinct from the secretary, who maintains records and membership rolls, and the president, who presides over meetings.",
   "type": "definition_recall",
   "knowledge_area": "Meetings, Officers, and Records",
   "difficulty": "hard"
@@ -588,15 +588,15 @@
   "difficulty": "hard"
  },
  {
-  "question": "The formal proposal of a topic for discussion and decision by the assembly is called a(n) ___",
+  "question": "The first step in handling a main motion, in which a member formally proposes a matter for the assembly to consider by stating 'I move that...', is called ___",
   "options": [
-   "appeal",
-   "amendment",
-   "main motion",
-   "point of order"
+   "Seconding the motion",
+   "Stating the question",
+   "Making the motion",
+   "Opening debate"
   ],
   "correct_index": 2,
-  "explanation": "A main motion is the fundamental way business is introduced to the assembly for consideration. It is the first motion presented and forms the basis for all subsequent debate and amendments. This is a foundational term in parliamentary procedure.",
+  "explanation": "Making the motion is the initial step where a member formally introduces a proposal to the assembly using the phrase 'I move that...'. This formally brings the matter before the group for consideration. Stating the question comes later, after a second is obtained, when the chair repeats the motion to the assembly.",
   "type": "definition_recall",
   "knowledge_area": "Processing Business",
   "difficulty": "hard"

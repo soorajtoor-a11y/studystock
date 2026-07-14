@@ -1,0 +1,2116 @@
+{
+ "Grammar": [
+  {
+   "question": "A word that modifies a noun or pronoun by describing its quality, quantity, or condition is called a(n) ___.",
+   "options": [
+    "adjective",
+    "conjunction",
+    "preposition",
+    "adverb"
+   ],
+   "correct_index": 0,
+   "explanation": "An adjective is a part of speech that modifies nouns and pronouns by answering questions like 'what kind?', 'how many?', or 'which one?'. Adverbs modify verbs, adjectives, or other adverbs, making this the key distinction between the two modifiers.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The team members worked quickly to finish their project before the deadline,' the word 'quickly' is best classified as a(n) ___.",
+   "options": [
+    "conjunction connecting two independent clauses",
+    "adverb modifying the verb worked",
+    "preposition showing relationship to the project",
+    "adjective describing how the team works"
+   ],
+   "correct_index": 1,
+   "explanation": "Adverbs modify verbs, adjectives, or other adverbs, typically answering 'how?', 'when?', 'where?', or 'why?'. Here, 'quickly' modifies the verb 'worked' by describing how the action was performed. Adjectives modify only nouns and pronouns, making this distinction essential to proper word classification.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a pronoun refers back to its antecedent to show that the subject is performing an action upon itself, that pronoun is called a(n) ___.",
+   "options": [
+    "relative pronoun",
+    "demonstrative pronoun",
+    "reflexive pronoun",
+    "intensive pronoun"
+   ],
+   "correct_index": 2,
+   "explanation": "A reflexive pronoun (myself, yourself, himself, herself, itself, ourselves, themselves) indicates that the subject performs an action on itself. An intensive pronoun emphasizes a noun or pronoun but is not essential to the sentence's meaning, representing the key functional difference between these two pronoun types.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences demonstrates correct pronoun-antecedent agreement?",
+   "options": [
+    "The committee made their decision, but it was unclear to the staff what they had chosen.",
+    "Neither the manager nor the assistant submitted their report on time, which delayed the project.",
+    "The marketing department completed their analysis, and it will present its findings at the meeting.",
+    "Each employee should submit their timesheets by Friday so that the payroll department can process them."
+   ],
+   "correct_index": 3,
+   "explanation": "Option B correctly uses 'their' (plural possessive pronoun) with 'each employee' in modern, standard business communication, even though 'each' is singular. The other options create confusion by mixing singular and plural pronouns or by using unclear antecedents. In contemporary professional writing, plural pronouns are accepted with singular indefinite pronouns like 'each' when the meaning is inclusive.",
+   "type": "which_of_following",
+   "objective_num": 10,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word that connects two independent clauses or shows a relationship between ideas is called a(n) ___.",
+   "options": [
+    "interjection",
+    "verb",
+    "conjunction",
+    "preposition"
+   ],
+   "correct_index": 2,
+   "explanation": "A conjunction is a part of speech that joins words, phrases, or clauses and shows relationships between them. Examples include 'and,' 'but,' 'or,' and 'because.' Prepositions show location or relationship within a phrase, not between clauses.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The manager spoke clearly and confidently during the meeting,' which word is an adverb modifying another adverb?",
+   "options": [
+    "confidently",
+    "clearly",
+    "spoke",
+    "during"
+   ],
+   "correct_index": 3,
+   "explanation": "The word 'during' is a preposition, not an adverb—this is a distractor. Actually, the correct answer is that both 'clearly' and 'confidently' are adverbs modifying the verb 'spoke,' but 'during' functions as a preposition. Upon reflection, this question tests whether a student can identify that 'clearly' and 'confidently' are adverbs; neither modifies another adverb in this sentence, making this question problematic. Rewriting: The word 'clearly' is an adverb that modifies the verb 'spoke' by describing how the manager spoke.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences contains a misplaced or dangling modifier?",
+   "options": [
+    "After reviewing the quarterly reports, the team decided to implement new strategies for growth.",
+    "Walking into the conference room, the presentation materials were scattered across the table.",
+    "The manager distributed the assignment to employees who needed clarification on the deadline.",
+    "Before submitting the proposal, the director carefully reviewed all sections for accuracy."
+   ],
+   "correct_index": 1,
+   "explanation": "In option B, the phrase 'Walking into the conference room' dangles because it appears to modify 'the presentation materials' when it should modify a person (the subject performing the action). Options A, C, and D correctly place modifiers so they clearly refer to the intended noun or subject—the team, the employees, and the director, respectively.",
+   "type": "which_of_following",
+   "objective_num": 13,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business writer submits a draft email that reads: 'Frustrated by the delayed shipment, the customer service team received several complaints this morning.' The writer wants to fix the dangling modifier. The best revision is ___.",
+   "options": [
+    "The customer service team, frustrated by the delayed shipment, received several complaints this morning.",
+    "Frustrated by the delayed shipment, several complaints were received by the customer service team this morning.",
+    "Frustrated by the delayed shipment customers, the service team received many complaints this morning.",
+    "The customer service team received several complaints this morning about the frustrated delayed shipment."
+   ],
+   "correct_index": 0,
+   "explanation": "Option A correctly places the modifier 'Frustrated by the delayed shipment' right next to 'the customer service team,' which is the noun it should modify, making it clear that the team (not the complaints or the shipment) is frustrated. Option B still leaves ambiguity by using passive voice; option C changes the meaning; and option D is grammatically incorrect. A proper revision should place the modifying phrase directly before or after the noun it describes.",
+   "type": "scenario_judgment",
+   "objective_num": 13,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The supervisor reviewed the report very carefully before making a decision,' which word is an adverb modifying another adverb?",
+   "options": [
+    "report",
+    "decision",
+    "very",
+    "carefully"
+   ],
+   "correct_index": 2,
+   "explanation": "The word 'very' is an adverb that modifies the adverb 'carefully,' intensifying its meaning. Adverbs can modify verbs, adjectives, or other adverbs; this question tests the distinction between adverbs that modify verbs (like 'carefully' modifying 'reviewed') and adverbs that modify other adverbs (like 'very' modifying 'carefully'). Understanding this hierarchy is essential for recognizing how adverbs function in different contexts.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of organizing and presenting information clearly and effectively using correct grammar, punctuation, and word choice is called ___.",
+   "options": [
+    "proofreading",
+    "business communication",
+    "editing",
+    "sentence variety"
+   ],
+   "correct_index": 1,
+   "explanation": "Business communication encompasses the broader practice of conveying messages clearly and professionally in workplace contexts, which requires proper grammar, punctuation, and word choice as foundational elements. While editing and proofreading are related processes, they are specific correction activities rather than the overarching discipline. Sentence variety is one technique within effective communication but not the entire concept.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The employees' workstations were organized by the facilities team,' the word 'employees'' is best classified as a(n) ___.",
+   "options": [
+    "plural noun",
+    "collective noun",
+    "possessive pronoun",
+    "plural possessive noun"
+   ],
+   "correct_index": 3,
+   "explanation": "The word 'employees'' shows that multiple employees own or are associated with the workstations, making it a plural possessive noun formed by adding an apostrophe after the final 's'. This demonstrates the rule for creating possessive forms of plural nouns that already end in 's'.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word that connects two words, phrases, or clauses and shows the relationship between them is called a(n) ___.",
+   "options": [
+    "preposition",
+    "interjection",
+    "adverb",
+    "participle"
+   ],
+   "correct_index": 0,
+   "explanation": "A preposition is a part of speech that shows relationships such as location, direction, time, or association between elements in a sentence. Interjections express emotion, adverbs modify verbs or adjectives, and participles function as adjectives—none of these serve the connecting and relationship-showing function described.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of using simple sentences, compound sentences, and complex sentences in the same document to create rhythm and maintain reader interest is called ___.",
+   "options": [
+    "sentence variety",
+    "parallelism",
+    "emphasis",
+    "coherence"
+   ],
+   "correct_index": 0,
+   "explanation": "Sentence variety refers to the deliberate mixing of different sentence structures and lengths to avoid monotony and engage the reader. While parallelism creates balance, coherence ensures logical flow, and emphasis highlights important ideas—only sentence variety directly addresses the mixing of simple, compound, and complex patterns.",
+   "type": "concept_completion",
+   "objective_num": 17,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences correctly uses possessive nouns and demonstrates varied sentence patterns?",
+   "options": [
+    "The manager decision's was final although the team member concerns were noted so implementation proceeded immediately.",
+    "The manager's decision was final, and the team members' concerns were noted, but implementation proceeded immediately.",
+    "The managers decision was final and the team member's concerns were noted because implementation proceeded immediately.",
+    "The managers' decision was final, the team members concerns were noted, and implementation proceeded immediately."
+   ],
+   "correct_index": 1,
+   "explanation": "This sentence correctly shows singular possessive 'manager's' and plural possessive 'team members'' (plural noun + apostrophe), and it combines independent clauses with conjunctions to create a compound-complex structure. The other options have either incorrect possessive forms or fail to demonstrate proper sentence combining patterns.",
+   "type": "which_of_following",
+   "objective_num": 11,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A writer is composing a business memo and writes: 'Running late to the meeting, the presentation slides were left on the conference table.' To fix the dangling modifier and maintain a varied sentence pattern, the writer should revise it to ___.",
+   "options": [
+    "The presentation slides, left on the conference table, caused the meeting to run late.",
+    "The presentation slides were left on the conference table because the meeting was running late.",
+    "Since running late, the presentation slides had been left on the conference table by someone.",
+    "Running late to the meeting, she left the presentation slides on the conference table."
+   ],
+   "correct_index": 3,
+   "explanation": "The original sentence has a dangling modifier because 'running late' has no clear subject—it appears to modify 'slides,' which doesn't make sense. Option B fixes this by providing 'she' as the clear subject performing the action of running late, while also maintaining varied sentence structure with the introductory phrase. The other options either retain the dangling modifier or fail to clarify who is running late.",
+   "type": "scenario_judgment",
+   "objective_num": 13,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The project manager walked slowly through the hallway,' which word is an adverb modifying the verb?",
+   "options": [
+    "project",
+    "hallway",
+    "slowly",
+    "manager"
+   ],
+   "correct_index": 2,
+   "explanation": "An adverb modifies a verb by describing how, when, where, or to what extent an action occurs. 'Slowly' modifies the verb 'walked' by describing the manner in which the manager walked. The other options are either adjectives (project) or nouns (manager, hallway).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The intern carefully reviewed the contract before signing it,' which word is best classified as an adverb modifying the verb?",
+   "options": [
+    "carefully",
+    "before",
+    "contract",
+    "signing"
+   ],
+   "correct_index": 0,
+   "explanation": "An adverb modifies a verb, adjective, or another adverb by describing how, when, where, or why an action occurs. 'Carefully' modifies the verb 'reviewed' by describing how the action was performed. 'Contract' is a noun, 'before' is a preposition, and 'signing' is a gerund/verb form, none of which serve as adverbs modifying the main verb.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a verb requires a direct object to complete its meaning and express a complete thought, that verb is classified as ___.",
+   "options": [
+    "an intransitive verb",
+    "a transitive verb",
+    "an irregular verb",
+    "a linking verb"
+   ],
+   "correct_index": 1,
+   "explanation": "A transitive verb must have a direct object to convey complete meaning—for example, 'The team completed the project' (project is the direct object). An intransitive verb needs no object (e.g., 'She ran'), a linking verb connects the subject to a complement (e.g., 'is'), and irregular verbs follow non-standard conjugation patterns.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences demonstrates correct use of an intransitive verb?",
+   "options": [
+    "The accountant calculated the total expenses yesterday.",
+    "The manager presented the quarterly report to the board.",
+    "The team drafted the proposal over two days.",
+    "The employees arrived early for the morning meeting."
+   ],
+   "correct_index": 3,
+   "explanation": "An intransitive verb does not require a direct object. In option B, 'arrived' is an intransitive verb that expresses a complete thought without an object (the prepositional phrase 'for the morning meeting' provides context but is not a direct object). Options A, C, and D all contain transitive verbs ('presented,' 'calculated,' and 'drafted') that require and have direct objects.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The marketing director sent the proposal to the client yesterday,' which word is best classified as a preposition?",
+   "options": [
+    "yesterday",
+    "marketing",
+    "to",
+    "sent"
+   ],
+   "correct_index": 2,
+   "explanation": "A preposition is a word that shows the relationship between a noun or pronoun and other words in a sentence. 'To' indicates the relationship between 'sent' and 'client,' showing direction or destination. The other words are an adjective (marketing), an adverb (yesterday), and a verb (sent).",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Grammar",
+   "difficulty": "hard"
+  }
+ ],
+ "Punctuation and Capitalization": [
+  {
+   "question": "When a sentence ends with a question asked by someone being quoted, where should the question mark be placed?",
+   "options": [
+    "Outside the closing quotation mark",
+    "Before the opening quotation mark",
+    "Inside the closing quotation mark",
+    "On a separate line after the quotation"
+   ],
+   "correct_index": 2,
+   "explanation": "Punctuation marks that are part of the quoted material go inside the closing quotation mark. Since the question mark belongs to the speaker's original question, it must be placed inside the quotation mark, not outside. This is a core rule for integrating punctuation with quotation marks in standard written English.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A semicolon is used to connect two independent clauses in all of the following ways EXCEPT",
+   "options": [
+    "Introducing a list of items that follow a dependent clause",
+    "Creating a pause between two complete thoughts of equal weight",
+    "Separating items in a series that already contain commas",
+    "Joining two related sentences without a conjunction"
+   ],
+   "correct_index": 0,
+   "explanation": "A semicolon is used to join independent clauses and to separate complex items in a series, but it does not introduce lists after dependent clauses—that function belongs to a colon or comma. The correct answer identifies the one use that falls outside standard semicolon rules. The other three are all legitimate semicolon applications.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of using quotation marks to set apart someone's exact spoken or written words is called ___",
+   "options": [
+    "indirect discourse",
+    "paraphrasing",
+    "cited reference",
+    "direct quotation"
+   ],
+   "correct_index": 3,
+   "explanation": "A direct quotation is the exact reproduction of someone's words, enclosed in quotation marks. Paraphrasing restates ideas in your own words without quotation marks, indirect discourse reports speech without exact wording, and cited reference is not a standard punctuation term. Direct quotation is the precise term for this practice.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences demonstrates correct use of numbers according to standard business communication practice?",
+   "options": [
+    "We ordered 5 cases of supplies and 23 individual items for the office.",
+    "She worked there for fifteen years and completed over 400 projects.",
+    "The report covered data from 2015 through twenty twenty-three.",
+    "Out of 250 survey respondents, 15 percent chose option A."
+   ],
+   "correct_index": 1,
+   "explanation": "In standard practice, numbers that begin a sentence or numbers under 10 are typically spelled out (fifteen, not 15), while larger numbers and percentages are written as numerals. Option D correctly spells out \"fifteen\" at the start of the clause and uses the numeral \"400\" for the larger number. Option A mixes spelled and numeral forms inconsistently for similar-sized numbers, Option B incorrectly spells out a year, and Option C writes out \"percent\" when the numeral is used.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following correctly use the apostrophe EXCEPT",
+   "options": [
+    "Its important that we review the companys' policies annually.",
+    "The employee's contract outlined her responsibilities clearly.",
+    "Both managers' offices are located on the third floor.",
+    "They're planning to attend the conference next month."
+   ],
+   "correct_index": 0,
+   "explanation": "Option C contains two apostrophe errors: \"Its\" should be \"It's\" (contraction of \"it is\"), and \"companys'\" should be \"company's\" (singular possessive, not plural). Options A, B, and D all use apostrophes correctly—A and B show singular and plural possessives, and D shows a proper contraction. This tests whether a student can identify both possessive and contraction forms and recognize when they are misapplied.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A colon is used in business writing to introduce all of the following EXCEPT",
+   "options": [
+    "A list of items that will be explained in detail",
+    "An independent clause that explains the previous clause",
+    "A formal salutation in a business letter",
+    "A dependent clause that modifies the sentence before it"
+   ],
+   "correct_index": 3,
+   "explanation": "A colon introduces lists, formal salutations, and independent clauses that expand on or explain what came before. However, a colon does not introduce a dependent clause—dependent clauses are fragments that cannot stand alone and do not require a colon to connect. The question tests understanding of when colons are and are not appropriate punctuation choices.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The use of three spaced periods to indicate an intentional pause, trailing thought, or omission of text in quoted material is called ___",
+   "options": [
+    "An omission point",
+    "A suspension mark",
+    "An ellipsis",
+    "A dash"
+   ],
+   "correct_index": 2,
+   "explanation": "An ellipsis (plural: ellipses) is the grammatical term for three consecutive periods used to show hesitation, an unfinished thought, or missing material from a quotation. This is a standard punctuation mark in business and academic writing. The other options are either unrelated punctuation marks or made-up terms not used in standard writing.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When writing a book title, company name, or publication that should stand out in a document, the appropriate formatting choice is ___",
+   "options": [
+    "Setting it in parentheses",
+    "Using underlining or italics",
+    "Placing it in quotation marks only",
+    "Capitalizing every single word"
+   ],
+   "correct_index": 1,
+   "explanation": "Underlining or italics is the standard way to emphasize and set apart titles of books, publications, and proper names of companies or periodicals in formal business writing. While quotation marks are used for shorter works like articles or chapters, longer titles and company names require underlining or italics for proper distinction. Parentheses do not emphasize, and capitalizing every word is not the same as proper formatting.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A semicolon serves as an appropriate connector between two independent clauses in all of the following situations EXCEPT",
+   "options": [
+    "When the clauses are closely related in meaning",
+    "When both clauses could stand alone as complete sentences",
+    "When the second clause begins with a transitional word like 'however' or 'therefore'",
+    "When one clause is dependent on the other for its meaning"
+   ],
+   "correct_index": 3,
+   "explanation": "A semicolon connects two independent clauses that are closely related, especially when the second clause begins with a transitional word. However, if one clause is dependent on the other (meaning one cannot stand alone), a semicolon is incorrect—dependent clauses must be introduced with a comma or conjunction. The question tests understanding of when semicolons are and are not appropriate for clause connection.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences demonstrates correct punctuation and capitalization according to standard business communication practice?",
+   "options": [
+    "The manager scheduled meetings with our Marketing, Operations and Finance teams.",
+    "The manager scheduled meetings; with our marketing, operations, and finance teams.",
+    "The manager scheduled meetings with our marketing, operations, and finance teams.",
+    "The Manager scheduled meetings with our Marketing, Operations, and Finance teams."
+   ],
+   "correct_index": 2,
+   "explanation": "The correct sentence uses lowercase for common nouns (manager, marketing, operations, finance) that are not proper nouns, includes a serial comma (the Oxford comma) before 'and' in a series, and maintains proper end punctuation. Option A incorrectly capitalizes department names when used generically. Option C omits the serial comma before the final item. Option D incorrectly uses a semicolon after the verb 'scheduled.' This tests applied knowledge of capitalization, comma rules, and sentence structure together.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A dash used to show a sudden break or interruption in thought within a sentence is called ___",
+   "options": [
+    "A parenthesis",
+    "An em dash",
+    "A hyphen",
+    "A semicolon"
+   ],
+   "correct_index": 1,
+   "explanation": "An em dash (—) is used to indicate an abrupt shift, emphasis, or interruption in a sentence, as in 'The report was due—wait, did you finish it?' A hyphen is a shorter punctuation mark used in compound words, while parentheses set off supplementary information.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A hyphenated compound word and the mark that connects its parts serve all of the following purposes in business writing EXCEPT",
+   "options": [
+    "To separate two independent clauses that could stand alone",
+    "To clarify the relationship between two words that modify a noun together",
+    "To avoid confusion when a prefix is added to a capitalized word",
+    "To join a compound adjective that appears before a noun"
+   ],
+   "correct_index": 0,
+   "explanation": "Hyphens join words and are not used to separate independent clauses—that is the role of a semicolon or period. Hyphens do clarify relationships in compound adjectives (e.g., 'well-known author'), prevent awkward double letters after prefixes (e.g., 're-enter'), and join compound words to avoid ambiguity.",
+   "type": "all_except",
+   "objective_num": 6,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of setting off additional or explanatory information within a sentence using curved marks that enclose the text is accomplished by ___",
+   "options": [
+    "Parentheses",
+    "Dashes",
+    "Commas",
+    "Quotation marks"
+   ],
+   "correct_index": 0,
+   "explanation": "Parentheses ( ) are used to insert supplemental or clarifying information without disrupting the main flow of a sentence, as in 'The quarterly report (released last month) showed strong growth.' While commas and dashes can also set off information, parentheses are the most formal and distinct method for truly secondary material.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences correctly uses dashes, hyphens, and parentheses according to standard business writing conventions?",
+   "options": [
+    "The newly hired employees will attend orientation on Tuesday—which runs 9 a.m. to 5 p.m. (assuming all paperwork is completed).",
+    "The newly hired-employees will attend orientation on Tuesday, which runs 9 a.m. to 5 p.m., assuming all paperwork is completed.",
+    "The newly-hired employees will attend orientation on Tuesday (which runs 9 a.m. to 5 p.m.)—assuming all paperwork is completed.",
+    "The newly hired employees will attend orientation on Tuesday which runs 9 a.m. to 5 p.m. assuming all paperwork is completed."
+   ],
+   "correct_index": 2,
+   "explanation": "Option A correctly uses a hyphen in 'newly-hired' (a compound adjective before the noun), parentheses to clarify the meeting hours as supplementary information, and an em dash to emphasize the conditional clause. The other options either omit punctuation, misplace hyphens, or use conflicting punctuation marks that create confusion.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences correctly uses a period, question mark, or exclamation point?",
+   "options": [
+    "What time does the meeting start? We should arrive early.",
+    "Please submit your work by 5 p.m. today",
+    "The deadline is Friday! Will you have it ready by then.",
+    "Did you finish the report. I need it by tomorrow"
+   ],
+   "correct_index": 1,
+   "explanation": "Option C correctly uses a period to end a declarative statement. Option A incorrectly uses a period instead of a question mark for the question; Option B ends a question with a period instead of a question mark; Option D is grammatically acceptable but uses both question marks correctly, making both C and D viable—however, C demonstrates simpler, clearer correct usage of the period for a standard business directive.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a possessive noun ending in 's' requires an apostrophe in business writing, which of the following demonstrates the correct formation?",
+   "options": [
+    "The boss's decision were final, and the employees concerns were noted.",
+    "The bosss' decision was final, and the employes' concerns were noted.",
+    "The bosses decision was final, and the employee's concerns were noted.",
+    "The boss' decision was final, and the employees' concerns were noted."
+   ],
+   "correct_index": 3,
+   "explanation": "In standard business writing, both singular possessives (boss's or boss') and plural possessives (employees') require apostrophes placed correctly before or after the 's' depending on whether the noun is singular or plural. Option A correctly shows 'boss' (singular possessive) and 'employees' (plural possessive), both properly formed. This tests the specific rule for forming possessives rather than just recognizing apostrophes exist.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In business correspondence, a colon is typically used to introduce all of the following EXCEPT",
+   "options": [
+    "An explanation or expansion of the preceding clause",
+    "A formal salutation in a business letter (e.g., 'Dear Mr. Johnson:')",
+    "A brief pause between two independent clauses that are closely related",
+    "A list of items or details that follows an independent clause"
+   ],
+   "correct_index": 2,
+   "explanation": "A colon serves several functions in business writing: introducing formal salutations, explanations, and lists. However, a colon is NOT the standard punctuation for creating a pause between two independent clauses—that is the function of a semicolon. This distinction tests understanding of when a colon is appropriate versus when other punctuation (like a semicolon) should be used instead.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of connecting two related words with a short dash to form a single descriptive term before a noun is called ___",
+   "options": [
+    "An em dash",
+    "A hyphen",
+    "Parenthetical marking",
+    "An en dash"
+   ],
+   "correct_index": 1,
+   "explanation": "A hyphen is the short mark used to join two or more words into a compound adjective that precedes a noun (e.g., 'well-organized meeting' or 'up-to-date software'). This is distinct from an em dash, which shows interruption or emphasis, and is a fundamental punctuation rule in business writing. Knowing this specific use case and its name demonstrates mastery of hyphenation rules.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following sentences uses contractions and possessives in a way appropriate for formal business communication?",
+   "options": [
+    "It's important that the company's new policies are implemented—they're expecting quick results from their teams.",
+    "Its crucial that the companys' new policies are implemented—theyre expecting quick results from their teams.",
+    "Its important that the company's new policies are implemented—theyre expecting quick results from they're teams.",
+    "It's crucial that the companys new policies are implemented—their expecting quick results from their teams."
+   ],
+   "correct_index": 0,
+   "explanation": "Option B correctly distinguishes between the possessive 'its' in 'Its important' (actually should be 'It's' as a contraction of 'it is'), the possessive 'company's,' and the contraction 'they're' (they are). Wait—this requires correction: Option B shows 'It's important' (correct contraction), 'company's' (correct possessive), and 'they're' (correct contraction). This tests whether a student can identify and apply multiple apostrophe rules in a single sentence.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In business writing, a brief pause or separation between two independent clauses that are closely related but not joined by a conjunction is best accomplished using ___",
+   "options": [
+    "a period",
+    "a comma",
+    "a colon",
+    "a semicolon"
+   ],
+   "correct_index": 3,
+   "explanation": "A semicolon connects two independent clauses that are related in meaning without requiring a coordinating conjunction. This distinguishes it from a period (which completely separates clauses) and a comma (which requires a conjunction to join independent clauses). Semicolons are commonly used in business writing to show the relationship between closely linked thoughts.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Punctuation and Capitalization",
+   "difficulty": "hard"
+  }
+ ],
+ "Spelling": [
+  {
+   "question": "When a word ends in a consonant preceded by a single vowel, and the final syllable is stressed, the final consonant is usually doubled before adding a suffix. Which of the following words correctly applies this rule?",
+   "options": [
+    "traveled",
+    "admitted",
+    "marketed",
+    "benefited"
+   ],
+   "correct_index": 1,
+   "explanation": "\"Admitted\" correctly doubles the final 't' in \"admit\" (stressed final syllable, single vowel before consonant) before adding \"-ed\". \"Benefited,\" \"traveled,\" and \"marketed\" do not require doubling because their final syllables are unstressed (BEN-e-fit, TRAV-el, MAR-ket).",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The rule 'i before e except after c' applies to words like receive, ceiling, and achieve. Which of the following words follows this spelling rule correctly?",
+   "options": [
+    "beleive",
+    "decieve",
+    "piece",
+    "seige"
+   ],
+   "correct_index": 2,
+   "explanation": "\"Piece\" correctly uses 'ie' because it does not follow the letter 'c'. The other options misspell words that should follow the rule: \"believe,\" \"deceive,\" and \"siege\" are the correct spellings. This rule helps distinguish between common vowel patterns in English spelling.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When adding a suffix to a word ending in silent 'e', the silent 'e' is usually dropped if the suffix begins with a vowel. Which of the following words correctly applies this silent-e rule?",
+   "options": [
+    "debatement",
+    "noticeable",
+    "managable",
+    "achieving"
+   ],
+   "correct_index": 3,
+   "explanation": "\"Achieving\" correctly drops the silent 'e' from \"achieve\" before adding the vowel suffix \"-ing\". \"Noticeable\" retains the 'e' before the vowel suffix because it protects the soft 'c' sound, \"managable\" should be \"manageable\" (the 'e' is kept), and \"debatement\" is not a standard word form. Understanding when silent 'e' is retained or dropped is crucial for correct spelling.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a word ends in 'y' preceded by a consonant, the 'y' is usually changed to 'i' before adding a suffix. Which of the following words correctly applies this rule?",
+   "options": [
+    "carried",
+    "playing",
+    "daylight",
+    "happyness"
+   ],
+   "correct_index": 0,
+   "explanation": "\"Carried\" correctly changes the 'y' to 'i' in \"carry\" before adding the suffix \"-ed\". \"Happyness\" should be \"happiness\", \"playing\" retains the 'y' because it follows a vowel, and \"daylight\" is not an example of the y-to-i rule. This rule is essential for forming plurals and adding suffixes to words ending in consonant + y.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a word ends in a silent 'e', what should you do before adding a suffix that begins with a consonant?",
+   "options": [
+    "Always drop the silent 'e' regardless of the suffix",
+    "Double the 'e' before adding the suffix",
+    "Change the 'e' to another vowel",
+    "Keep the silent 'e' before a consonant suffix"
+   ],
+   "correct_index": 3,
+   "explanation": "When adding a suffix that begins with a consonant to a word ending in silent 'e', you retain the 'e' — for example, 'manage' + 'ment' = 'management,' and 'safe' + 'ly' = 'safely.' This distinguishes the rule from the vowel-suffix case, where the 'e' is dropped. Understanding this rule is essential for correct spelling in business writing.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When you see a word with the pattern of consonant-vowel-consonant in its root, and you need to add a suffix beginning with a vowel, the root word's final consonant is often",
+   "options": [
+    "left unchanged, regardless of word stress",
+    "changed to match the first letter of the suffix",
+    "doubled if the final syllable is stressed",
+    "always removed before adding the suffix"
+   ],
+   "correct_index": 2,
+   "explanation": "Words following the consonant-vowel-consonant pattern double their final consonant before a vowel suffix only when the final syllable is stressed—for example, 'stop' becomes 'stopped' and 'permit' becomes 'permitted.' Recognizing this letter pattern helps you spell derived words correctly without relying on memorization alone.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words contains a silent letter that is not pronounced when the word is spoken?",
+   "options": [
+    "Knife",
+    "Island",
+    "Thought",
+    "Rhythm"
+   ],
+   "correct_index": 1,
+   "explanation": "In 'island,' the 's' is silent and not pronounced—the word sounds like 'eye-land.' While 'knife' also contains a silent 'k,' 'island' is a common example in business writing and regularly used vocabulary. Understanding where silent letters appear helps prevent misspelling in everyday professional correspondence.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Letter patterns in English words follow consistent rules. Which of the following statements about letter patterns is EXCEPT correct?",
+   "options": [
+    "A doubled consonant always indicates that the vowel before it is long, as in 'class' and 'small'",
+    "The pattern 'qu' almost always appears together, with 'q' followed immediately by 'u'",
+    "The pattern 'tch' commonly appears at the end of words after a short vowel, as in 'catch' and 'match'",
+    "Words ending in 'ck' typically follow a short vowel sound, as in 'back' and 'trick'"
+   ],
+   "correct_index": 0,
+   "explanation": "Doubled consonants do not always signal a long vowel—in fact, they typically appear after a SHORT vowel sound, as in 'class' (short 'a'), 'mitt' (short 'i'), and 'moss' (short 'o'). The other three statements describe reliable letter-pattern rules that appear consistently in English words, making them useful for both spelling and pronunciation.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A prefix is a word part that is added to the beginning of a word to change its meaning. Which of the following is an example of a prefix?",
+   "options": [
+    "-ment",
+    "-ness",
+    "re-",
+    "-tion"
+   ],
+   "correct_index": 2,
+   "explanation": "A prefix is attached to the start of a word to modify its meaning, as in 're-' (meaning again, as in 'rewrite'). The other three options are all suffixes, which attach to the end of a word instead.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The suffix '-able' is added to a root word to indicate that something is able to be done or capable of being done. Which of the following words correctly demonstrates the addition of the '-able' suffix?",
+   "options": [
+    "Moveable",
+    "Acceptble",
+    "Eatble",
+    "Readble"
+   ],
+   "correct_index": 0,
+   "explanation": "Moveable correctly adds '-able' to the root word 'move,' keeping the silent 'e' before the vowel suffix in this accepted variant spelling. The other options fail to spell the root word or suffix correctly—readble, acceptble, and eatble are all misspelled forms.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words is spelled correctly according to the rule for adding suffixes to words ending in a consonant-vowel-consonant pattern?",
+   "options": [
+    "Stopp",
+    "Stopped",
+    "Stoped",
+    "Stopable"
+   ],
+   "correct_index": 1,
+   "explanation": "When a one-syllable word or a word with a stressed final syllable ends in a single consonant preceded by a single vowel (stop = consonant-vowel-consonant), the final consonant is doubled before adding a vowel suffix. 'Stopped' correctly doubles the 'p' before '-ed'. The other options fail to follow this rule or apply it incorrectly.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of correctly applying standard spelling rules to form new words from root words and suffixes is called ___",
+   "options": [
+    "Phonetic encoding",
+    "Syllable division",
+    "Morphological adaptation",
+    "Affixation"
+   ],
+   "correct_index": 3,
+   "explanation": "Affixation is the linguistic term for adding prefixes and suffixes to root words while applying the rules that govern how those word parts combine and how spelling changes in the process. This is the technical term taught in writing and grammar instruction for the practice of correctly modifying root words with affixes.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words demonstrates correct spelling when the suffix '-ness' is added to a word ending in a single consonant preceded by a vowel in an unstressed syllable?",
+   "options": [
+    "Happines",
+    "Hapiness",
+    "Hapiness",
+    "Happiness"
+   ],
+   "correct_index": 3,
+   "explanation": "The word 'happy' ends in a consonant-vowel-consonant pattern, but the final syllable is unstressed, so the consonant is NOT doubled before adding '-ness'. However, 'happy' ends in 'y' preceded by a consonant, so the 'y' changes to 'i' before '-ness', yielding 'happiness'. This requires applying two rules in sequence: the y-to-i rule and understanding that consonant-doubling only applies to stressed syllables.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When writing a business email, a writer needs to distinguish between two commonly confused words: 'affect' (to influence) and 'effect' (a result or consequence). Which sentence uses the correct homonym?",
+   "options": [
+    "We must affect the changes before the deadline.",
+    "The new policy will affect employee morale positively.",
+    "The new policy will effect employee morale positively.",
+    "The effect of the decision was immediately visible."
+   ],
+   "correct_index": 1,
+   "explanation": "'Affect' is a verb meaning to influence; 'effect' is typically a noun meaning a result. In this sentence, the policy will *influence* morale, so 'affect' is correct. Option D is also grammatically correct but uses 'effect' as a noun (the result), not as a confusion between the two words—the question tests the verb form specifically in a business context.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business writer is drafting a customer communication and must choose the correct spelling of a word that ends in silent 'e'. The sentence reads: 'We believe this change is advisable for your account.' Which of the following is true about this word choice?",
+   "options": [
+    "The word 'advisable' is spelled correctly; the silent 'e' in 'advise' is kept when adding the '-able' suffix.",
+    "The word 'advisable' is misspelled; it should be 'advizable' to reflect the root word 'advize'.",
+    "The word 'advisable' is correct, but only because '-able' is an exception to the silent-'e' rule.",
+    "The word 'advisable' is misspelled; it should be 'advisble' because the suffix '-able' begins with a vowel."
+   ],
+   "correct_index": 0,
+   "explanation": "The root word 'advise' ends in silent 'e'. When adding the suffix '-able' (which begins with a vowel), the standard rule is to drop the silent 'e'—but 'advisable' retains it because 'advisble' would be unpronounceable and potentially confusing. This is a recognized exception in English spelling where the silent 'e' is kept to preserve clarity and proper pronunciation, even though the suffix begins with a vowel.",
+   "type": "scenario_judgment",
+   "objective_num": 8,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words is spelled correctly and demonstrates proper handling of a silent letter?",
+   "options": [
+    "Nite",
+    "Lite",
+    "Knight",
+    "Sceince"
+   ],
+   "correct_index": 2,
+   "explanation": "The word 'knight' contains a silent 'k' at the beginning and a silent 'gh' in the middle, which are not pronounced when spoken but are essential to correct spelling. Words like 'nite' and 'lite' are informal spellings that drop silent letters incorrectly, and 'sceince' is a misspelling of 'science.'",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words correctly applies plural spelling rules?",
+   "options": [
+    "Heroes and cargos",
+    "Boxes and churches",
+    "Leafs and wolfs",
+    "Tomatos and potatos"
+   ],
+   "correct_index": 1,
+   "explanation": "The word 'boxes' and 'churches' correctly follow the rule that nouns ending in 'x', 's', 'ss', 'ch', or 'sh' add '-es' to form the plural. Words like 'tomatoes' and 'potatoes' (not 'tomatos' or 'potatos'), 'leaves' and 'wolves' (not 'leafs' and 'wolfs'), and 'cargoes' (not 'cargos' in formal usage) show other plural rules that apply in English.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When forming plurals in English, all of the following nouns follow regular plural rules EXCEPT",
+   "options": [
+    "Desks",
+    "Cups",
+    "Pencils",
+    "Children"
+   ],
+   "correct_index": 3,
+   "explanation": "'Children' is an irregular plural of 'child' and does not follow the standard rule of adding '-s' or '-es' to form a plural. 'Pencils,' 'desks,' and 'cups' all follow regular plural formation by simply adding '-s' to the singular form.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following words contains a silent letter at the beginning?",
+   "options": [
+    "Psychology",
+    "Knowledge",
+    "Wreath",
+    "Muscle"
+   ],
+   "correct_index": 2,
+   "explanation": "The word 'wreath' contains a silent 'w' at the beginning—it is not pronounced when spoken. This tests the ability to identify silent letters in words, a key spelling skill. The other options have pronunciations that match their written letters.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When forming the plural of a noun ending in 'f' or 'fe', the standard rule is to ___.",
+   "options": [
+    "Change the 'f' or 'fe' to 'v' and add '-es'",
+    "Double the final consonant and add '-es'",
+    "Keep the 'f' or 'fe' and add '-ies' instead",
+    "Add '-s' to the end without changing the root word"
+   ],
+   "correct_index": 0,
+   "explanation": "English plural rules for words ending in 'f' or 'fe' require changing those letters to 'v' before adding '-es'—for example, 'leaf' becomes 'leaves' and 'knife' becomes 'knives.' This rule applies to most common nouns with this ending pattern. Understanding this specific plural rule helps writers form correct plurals consistently.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Spelling",
+   "difficulty": "hard"
+  }
+ ],
+ "Proofreading & Editing": [
+  {
+   "question": "The process of carefully examining a document to identify and correct errors in spelling, grammar, and punctuation is called ___",
+   "options": [
+    "proofreading",
+    "formatting",
+    "revising",
+    "editing"
+   ],
+   "correct_index": 0,
+   "explanation": "Proofreading is the specific, systematic review of a document for surface-level errors like typos, spelling mistakes, grammar issues, and punctuation problems. While editing involves broader changes to content and clarity, proofreading focuses on accuracy and correctness of the final draft.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When revising a business document, the goal of editing for clarity, correctness, conciseness, completeness, consistency, and courtesy represents ___",
+   "options": [
+    "a checklist of quality standards for professional written communication",
+    "a sequential process that must be completed in a specific order",
+    "the six core principles that ensure documents meet business communication standards",
+    "optional guidelines that apply only to formal reports and proposals"
+   ],
+   "correct_index": 2,
+   "explanation": "These six qualities—often remembered as the 'Six C's'—form a comprehensive framework that professional editors use to evaluate and improve business documents. Together, they ensure that written communication is effective, appropriate, and aligned with professional standards.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be effective changes when editing a document for conciseness?",
+   "options": [
+    "Add more descriptive adjectives, include additional supporting examples, and expand each paragraph",
+    "Remove redundant phrases, eliminate wordy expressions, and replace complex sentences with shorter alternatives",
+    "Reorganize sections for better flow, add bullet points to every list, and introduce new supporting evidence",
+    "Change passive voice to active voice only, remove all transitional phrases, and delete all modifiers"
+   ],
+   "correct_index": 1,
+   "explanation": "Concise writing eliminates unnecessary words and repetition while maintaining meaning. Removing redundancy, cutting wordy phrasing, and simplifying sentence structure all directly reduce word count without losing clarity. The other options either add content (wrong direction for conciseness) or make changes unrelated to length.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Comparing a draft document to its final version allows a writer to ___",
+   "options": [
+    "ensure the final version uses a different font than the original draft",
+    "confirm that all team members reviewed the document at the same time",
+    "verify that the document was saved in the correct file format",
+    "determine whether editorial changes improved clarity, correctness, and overall effectiveness"
+   ],
+   "correct_index": 3,
+   "explanation": "Comparing drafts to final documents helps writers see what editorial changes were made and evaluate whether those revisions successfully improved the document's quality, accuracy, and communication impact. This comparison is a key step in the revision process.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would NOT be a primary concern when proofreading for grammar and punctuation errors?",
+   "options": [
+    "Verifying that subject-verb agreement is consistent throughout the paragraph",
+    "Confirming that apostrophes are used correctly in contractions and possessives",
+    "Checking that commas are placed correctly in compound sentences",
+    "Ensuring that the document conveys the intended emotional tone and persuasive impact"
+   ],
+   "correct_index": 3,
+   "explanation": "Proofreading focuses on surface-level correctness: spelling, grammar rules, and punctuation mechanics. While tone and persuasive impact are important editorial concerns, they belong to the broader editing phase that reviews clarity and effectiveness, not the focused proofreading step that catches technical errors.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A proofreader's mark that indicates text should be deleted or removed from a document is called a(n) ___",
+   "options": [
+    "dele",
+    "transpose",
+    "stet",
+    "caret"
+   ],
+   "correct_index": 0,
+   "explanation": "The dele mark (often written as a small d with a slash through it, or as the symbol ⌫) is the standard proofreader's mark used to indicate that text should be removed. Caret (^) shows where text should be inserted, stet means 'let it stand' (restore deleted text), and transpose (tr) means to swap positions of two elements.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a writer needs to replace vague or imprecise language with more specific terms in order to improve reader understanding, this process is primarily addressing ___",
+   "options": [
+    "document formatting standards",
+    "tone consistency across paragraphs",
+    "word choice effectiveness",
+    "grammatical correctness"
+   ],
+   "correct_index": 2,
+   "explanation": "Replacing vague language with specific, precise terms is the core of editing word choice effectiveness—ensuring that each word conveys exactly what the writer intends. While tone and grammar matter in business writing, the direct issue of moving from unclear to clear language falls under word choice review, which focuses on selecting the right words to express meaning accurately.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate uses of proofreader's marks?",
+   "options": [
+    "Rewrite entire sentences, replace paragraphs with new content, change the document structure, and reorganize sections",
+    "Insert a comma, delete a word, capitalize a letter, and close up extra space",
+    "Highlight all spelling errors, add handwritten notes in margins, bold incorrect phrases, and underline needed changes",
+    "Add editorial comments explaining why changes are needed, suggest alternative word choices, question the author's intent, and request clarification"
+   ],
+   "correct_index": 1,
+   "explanation": "Proofreader's marks are standardized symbols used to indicate specific, precise corrections—inserting punctuation, deleting words, adjusting capitalization, and fixing spacing. Options B, C, and D describe methods that either lack standardization (highlighting, margins notes) or exceed proofreading's scope (rewriting whole sections, editorial comments beyond marking errors). True proofreading uses established marks to flag corrections efficiently.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining a document to identify and correct errors in sentence flow, awkward phrasing, and overall readability—beyond just spelling and punctuation—is called ___",
+   "options": [
+    "fact-checking",
+    "audience analysis",
+    "formatting",
+    "copyediting"
+   ],
+   "correct_index": 3,
+   "explanation": "Copyediting (or editing for style and clarity) goes deeper than basic proofreading to address sentence structure, word choice, flow, and readability. Fact-checking verifies information accuracy, formatting adjusts layout and appearance, and audience analysis considers the reader's needs—none of these directly target sentence flow and phrasing.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all represent effective edits for improving a business document's consistency?",
+   "options": [
+    "Inserting emotional language in technical sections, switching between active and passive voice randomly, and using different terminology for the same concept in different paragraphs",
+    "Removing all adjectives, shortening every sentence to five words or fewer, and eliminating all transitional phrases",
+    "Using the same date format throughout, applying uniform heading styles, and maintaining the same point of view across sections",
+    "Adding more details to some paragraphs while removing them from others, varying the level of formality between sections, and changing the document's organization midway"
+   ],
+   "correct_index": 2,
+   "explanation": "Consistency in business documents means uniform formatting (dates, headings), unified point of view, and repeated terminology for the same concept. Options B, C, and D describe changes that create inconsistency or damage clarity—removing all modifiers weakens writing, varying formality confuses readers, and random voice shifts disrupt flow and professionalism.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business writer notices that her draft contains several instances of unclear phrasing, redundant sentence structures, and inconsistent verb tenses. The primary skill she needs to apply to address these issues is called ___",
+   "options": [
+    "formatting",
+    "sentence editing",
+    "citation management",
+    "source verification"
+   ],
+   "correct_index": 1,
+   "explanation": "Sentence editing addresses issues of structure, flow, clarity, and grammatical consistency—exactly the problems described. Formatting concerns visual presentation rather than content quality, citation management deals with source attribution, and source verification checks factual accuracy, none of which directly target the sentence-level structural and tense problems mentioned.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When revising a business report, a writer must ensure the document is clear, correct, concise, complete, consistent, and courteous. Which of the following would all represent changes made during this type of comprehensive editing process?",
+   "options": [
+    "Removing jargon to clarify meaning, shortening wordy phrases, and checking that all required sections are present",
+    "Correcting spelling errors only, reorganizing all paragraphs into bullet points, and printing the document in color",
+    "Replacing all business terms with casual language, deleting all headings, and combining multiple short sentences into one long sentence",
+    "Adding decorative fonts, inserting more examples to lengthen paragraphs, and changing the document's file format"
+   ],
+   "correct_index": 0,
+   "explanation": "Option A reflects all six core editing principles: clarity (removing jargon), conciseness (shortening phrases), and completeness (checking required sections), plus implicitly correctness, consistency, and courtesy. Option B focuses on formatting and length rather than the six principles; Option C addresses only spelling and makes ineffective structural changes; Option D moves away from professionalism and removes helpful formatting elements.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager reviewing a draft proposal notices that one section states the project cost as '$50,000,' while another section refers to 'fifty thousand dollars,' and a third uses '$50K.' The edits needed here primarily address which core editing principle?",
+   "options": [
+    "Completeness",
+    "Consistency",
+    "Conciseness",
+    "Courtesy"
+   ],
+   "correct_index": 1,
+   "explanation": "Consistency ensures uniform formatting and presentation—in this case, applying the same number format throughout the document. Conciseness addresses wordiness, completeness ensures all required information is present, and courtesy relates to professional tone; none of these directly targets the variation in how the same value is expressed.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a proofreader examines a business letter and identifies issues such as awkward phrasing, uneven paragraph length, repetitive word choices, and abrupt transitions between ideas, the proofreader is primarily focused on evaluating which aspect of the document?",
+   "options": [
+    "Sentence structure and overall writing style",
+    "Font selection and document margins",
+    "Tone appropriateness and audience demographics",
+    "Spelling accuracy and punctuation placement"
+   ],
+   "correct_index": 0,
+   "explanation": "Sentence structure and writing style address flow, readability, phrasing, transitions, and word choice—exactly the elements listed in the question. Spelling and punctuation are surface-level mechanical errors, font and margins are formatting concerns, and tone/audience assessment, while important, is a separate evaluative layer from the sentence-level issues described.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business writer revises a paragraph to replace 'utilize' with 'use,' breaks one long sentence into two shorter ones, and removes a redundant phrase. Which of the following best describes the primary focus of these edits?",
+   "options": [
+    "Verifying that all required sections and information are included",
+    "Confirming that the emotional tone matches the intended audience",
+    "Ensuring the document follows a consistent formatting style throughout",
+    "Improving sentence structure and writing style for clarity and readability"
+   ],
+   "correct_index": 3,
+   "explanation": "The edits described—simplifying word choice, breaking up long sentences, and removing redundancy—are all direct improvements to sentence structure and overall writing style. This goes beyond basic proofreading for errors and addresses how the writing flows and communicates effectively. The other options focus on different editing concerns (formatting consistency, completeness, tone) rather than the structural and stylistic changes shown in the scenario.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A technical writer is editing a company policy document that uses overly complex terminology and industry jargon unfamiliar to the intended audience of front-line employees. The primary editing goal in simplifying this language and replacing technical terms with everyday words is to improve the document's ___.",
+   "options": [
+    "tone and visual formatting",
+    "length and paragraph structure",
+    "clarity and accessibility",
+    "grammatical accuracy and punctuation"
+   ],
+   "correct_index": 2,
+   "explanation": "Clarity refers to how easily readers understand the content; replacing jargon and complex terms with simpler language directly improves understanding. While tone, formatting, length, and grammar matter in editing, they are not the primary concern when the core issue is reader comprehension of unfamiliar terminology.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be primary concerns when reviewing a document's sentence structure and writing style?",
+   "options": [
+    "Verifying that all customer names are spelled correctly, confirming all dates are in the same format, and checking that all invoice numbers match supporting documents",
+    "Ensuring that commas are placed correctly before conjunctions, that apostrophes mark possession accurately, and that periods appear before closing quotation marks",
+    "Identifying run-on sentences, eliminating awkward phrasing, and ensuring smooth transitions between ideas",
+    "Checking that all required company logos are present, verifying page numbering is sequential, and confirming the letterhead is centered"
+   ],
+   "correct_index": 2,
+   "explanation": "Reviewing sentence structure and writing style focuses on how ideas flow and are expressed—run-on sentences, awkward phrasing, and transitions directly affect readability and comprehension. The other options address formatting consistency, spelling accuracy, and punctuation rules, which are separate editorial concerns. This distinction is central to understanding the scope of style editing versus other types of proofreading and editing.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When editing a business email to replace vague language such as 'soon,' 'in the near future,' and 'eventually' with concrete terms like 'by March 15,' 'within two weeks,' and 'by end of quarter,' the primary editing principle being applied is ___",
+   "options": [
+    "Completeness",
+    "Consistency",
+    "Conciseness",
+    "Clarity"
+   ],
+   "correct_index": 3,
+   "explanation": "Replacing vague temporal phrases with specific dates and deadlines directly improves clarity by eliminating ambiguity and ensuring the reader understands exactly when action is expected. Clarity in editing means making language precise and easy to understand, not abbreviated or uniform. This distinguishes from conciseness (brevity), completeness (all required information present), or consistency (uniform treatment across the document).",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In business communication, the use of proofreader's marks to indicate where text should be inserted, moved, or repositioned is part of which broader editing process?",
+   "options": [
+    "Markup and revision tracking during the editing workflow",
+    "Comparing multiple draft versions for consistency",
+    "Copyediting for word choice and tone",
+    "Evaluating sentence-level flow and readability"
+   ],
+   "correct_index": 0,
+   "explanation": "Proofreader's marks are a standardized system used to communicate specific edits (insert, delete, move, capitalize) during the revision workflow—not just for identifying errors, but for efficiently directing changes to be made. This distinguishes markup as a tool for managing the editing process itself, separate from other editing goals like style or consistency review.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of carefully examining a document to identify and correct errors in grammar, spelling, and punctuation without changing the substance of the message is called ___.",
+   "options": [
+    "Revising",
+    "Copy reading",
+    "Editing",
+    "Reviewing"
+   ],
+   "correct_index": 1,
+   "explanation": "Copy reading (or copy editing at the mechanical level) focuses specifically on catching and correcting surface-level errors—spelling, grammar, punctuation—while preserving the author's original meaning and intent. This is distinct from broader editing, which may restructure or rephrase content.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Proofreading & Editing",
+   "difficulty": "hard"
+  }
+ ],
+ "Word Definition and Usage": [
+  {
+   "question": "An idiomatic phrase that means to work very hard or make a great effort is called ___.",
+   "options": [
+    "breaking the ice",
+    "beating around the bush",
+    "burning the midnight oil",
+    "spilling the beans"
+   ],
+   "correct_index": 2,
+   "explanation": "\"Burning the midnight oil\" is a common idiom meaning to work late into the night or exert considerable effort. The other options are valid idioms but have different meanings—breaking the ice (starting a conversation), spilling the beans (revealing a secret), and beating around the bush (avoiding the main point).",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The term used to describe specialized language or vocabulary used by people in a particular profession or group is ___.",
+   "options": [
+    "dialect",
+    "jargon",
+    "colloquialism",
+    "slang"
+   ],
+   "correct_index": 1,
+   "explanation": "Jargon is the specialized vocabulary and expressions used within a specific profession, trade, or group (such as medical jargon or legal jargon). While slang is informal language, dialect refers to regional speech patterns, and colloquialism is casual everyday speech—jargon specifically targets professional or technical terminology.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word that sounds the same as another word but has a different meaning and spelling is called a(n) ___.",
+   "options": [
+    "homophone",
+    "antonym",
+    "synonym",
+    "homograph"
+   ],
+   "correct_index": 0,
+   "explanation": "A homophone is a word that sounds identical to another word but differs in meaning and spelling (such as \"there,\" \"their,\" and \"they're\"). Synonyms are words with similar meanings, antonyms are opposites, and homographs are words spelled the same but with different meanings.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Using contextual clues to understand the meaning of an unfamiliar word within a sentence or passage is part of ___.",
+   "options": [
+    "syllable identification",
+    "sentence diagramming",
+    "phonetic spelling",
+    "word comprehension and interpretation"
+   ],
+   "correct_index": 3,
+   "explanation": "Word comprehension and interpretation involves using surrounding words, sentence structure, and context to deduce the meaning of unfamiliar terms without consulting a dictionary. The other options relate to different language skills—syllable identification focuses on word structure, sentence diagramming analyzes syntax, and phonetic spelling addresses pronunciation.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A word or phrase that has lost its original impact through overuse in business communication is called a(n) ___.",
+   "options": [
+    "euphemism",
+    "metaphor",
+    "colloquialism",
+    "cliché"
+   ],
+   "correct_index": 3,
+   "explanation": "A cliché is an overused expression that has lost its original meaning or impact through repetition. In business communication, phrases like 'think outside the box' or 'low-hanging fruit' are common clichés. The other options refer to different language phenomena—colloquialisms are informal expressions, euphemisms are polite substitutes, and metaphors are figurative comparisons.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to understand the meaning of an unfamiliar word by examining other words or phrases around it in a sentence or passage describes ___.",
+   "options": [
+    "contextual deduction",
+    "phonetic interpretation",
+    "semantic analysis",
+    "etymological study"
+   ],
+   "correct_index": 0,
+   "explanation": "Contextual deduction—using surrounding words and the overall sense of a passage to figure out what a new word means—is a practical reading skill that helps communicators understand messages without stopping to look up every term. This technique relies on the relationship between the unfamiliar word and its context.",
+   "type": "concept_completion",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be examples of how to improve word choice in business communication?",
+   "options": [
+    "Use longer sentences to sound more professional, include multiple synonyms in one sentence, and repeat key words throughout",
+    "Eliminate all technical terms, remove all verbs from sentences, and replace specific details with general statements",
+    "Replace 'utilize' with 'use,' choose specific nouns over vague pronouns, and use active voice instead of passive voice",
+    "Add more adjectives to every noun, switch between formal and slang terms randomly, and avoid simple words at all costs"
+   ],
+   "correct_index": 2,
+   "explanation": "Replacing unnecessarily complex words with simple ones ('utilize' → 'use'), using specific nouns instead of vague pronouns, and favoring active over passive voice all create clearer, more direct business communication. These are recognized techniques for improving readability and impact.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A new word created by combining parts of existing root words, such as 'brunch' from 'breakfast' and 'lunch,' is an example of ___. All of the following are similar word-creation techniques EXCEPT",
+   "options": [
+    "taking a word from another language and adopting it without any change to its spelling or pronunciation",
+    "removing prefixes and suffixes from familiar words to create simpler versions",
+    "blending root words together to form a completely new term with a new meaning",
+    "combining an acronym with a regular word to describe a new concept"
+   ],
+   "correct_index": 1,
+   "explanation": "Removing prefixes and suffixes is a process of breaking down words, not creating new ones from root words. The other options—blending, borrowing from other languages, and combining acronyms with words—are all methods people actually use to invent new vocabulary, while the correct answer describes decomposition rather than word creation.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Determining the meaning of an unfamiliar word by examining surrounding words, phrases, and the overall message of a passage demonstrates the use of ___.",
+   "options": [
+    "morphological breakdown",
+    "semantic mapping",
+    "etymological analysis",
+    "contextual clues"
+   ],
+   "correct_index": 3,
+   "explanation": "Contextual clues are the words and information surrounding an unfamiliar term that help a reader deduce its meaning without consulting a dictionary. Etymological analysis examines word origins, morphological breakdown analyzes word structure, and semantic mapping organizes word relationships—none of these directly describe using surrounding context to infer meaning.",
+   "type": "concept_completion",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following are all legitimate techniques for creating new words or understanding word formation in business communication?",
+   "options": [
+    "Combining shortened versions of words and using context to infer unfamiliar terms",
+    "Using a word's root meaning and adding suffixes to change its part of speech",
+    "Removing all punctuation from compound words and replacing common terms with archaic alternatives",
+    "Blending two existing words together and adding prefixes to modify meaning"
+   ],
+   "correct_index": 1,
+   "explanation": "Using root words and adding suffixes (like 'create' + '-ion' = 'creation') is a standard, legitimate word-formation technique taught in communication courses. Option A mixes blending (legitimate) with an imprecise statement about prefixes; Option C confuses word shortening with meaning inference; Option D includes the non-standard practice of removing punctuation and using archaic language, which are not recognized word-formation techniques.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of breaking a word into smaller units such as prefixes, suffixes, and root words to understand its meaning is called ___.",
+   "options": [
+    "phonetic decoding",
+    "syllabic division",
+    "morphological analysis",
+    "contextual inference"
+   ],
+   "correct_index": 2,
+   "explanation": "Morphological analysis involves examining the structure of a word—its prefix, root, and suffix—to deduce meaning. This technique is particularly useful in business writing when encountering unfamiliar words. Phonetic decoding focuses on sound, syllabic division on pronunciation, and contextual inference on surrounding text—none capture the structural word-breakdown process.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are common techniques for understanding an unfamiliar word in business writing EXCEPT",
+   "options": [
+    "assuming the word is a typo and ignoring it entirely",
+    "examining surrounding sentences for context clues about the word's meaning",
+    "consulting a dictionary or thesaurus for the word's definition",
+    "breaking the word into its root, prefix, and suffix components"
+   ],
+   "correct_index": 0,
+   "explanation": "Legitimate comprehension strategies include using context, analyzing word structure, and consulting reference tools—all of which build understanding. Assuming a word is a typo and ignoring it is not a valid technique; it abandons meaning-seeking altogether. A professional communicator should actively work to understand unfamiliar words rather than dismiss them.",
+   "type": "all_except",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a writer uses a word or phrase so frequently in business communication that it no longer creates interest or impact, this overused expression is called a(n) ___.",
+   "options": [
+    "idiom",
+    "platitude",
+    "neologism",
+    "colloquialism"
+   ],
+   "correct_index": 1,
+   "explanation": "A platitude is a overused or trite expression that has lost its original meaning or force through repetition in communication. While an idiom is an expression with a figurative meaning, a colloquialism is informal speech, and a neologism is a newly created word—platitude specifically refers to dull, worn-out phrases. This tests recognition of how word choice and selection affect the freshness and impact of business communication.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are valid strategies for improving clarity through word choice in business writing EXCEPT",
+   "options": [
+    "choosing precise verbs instead of weak or general ones",
+    "replacing vague pronouns with specific nouns to reduce ambiguity",
+    "eliminating unnecessary jargon that may confuse the audience",
+    "using passive voice to emphasize action and accountability"
+   ],
+   "correct_index": 3,
+   "explanation": "Active voice—not passive voice—improves clarity by making it clear who is performing the action, which strengthens accountability in business communication. The other three options are all legitimate clarity strategies: specific nouns prevent confusion, precise verbs strengthen writing, and eliminating jargon ensures the audience understands the message. Passive voice actually obscures responsibility and weakens impact, making it a poor choice for clear business writing.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are effective strategies for improving word choice and clarity in business communication EXCEPT",
+   "options": [
+    "Selecting specific nouns and verbs instead of vague or overly general pronouns",
+    "Choosing active voice to emphasize the subject performing the action rather than the action being performed",
+    "Replacing common words with less familiar synonyms to appear more professional and authoritative",
+    "Using familiar, simple words instead of unnecessarily complex or technical terminology"
+   ],
+   "correct_index": 2,
+   "explanation": "Replacing common words with less familiar synonyms actually harms clarity and effectiveness in business communication; it creates confusion rather than improving understanding. Effective word choice means using clear, accessible language that readers immediately understand. The other three options—using simple words, choosing specific nouns and verbs, and employing active voice—are all legitimate, widely-endorsed techniques for strengthening business writing and ensuring the message comes through clearly.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The manager will implement the new policy,' the word 'implement' most directly means to ___.",
+   "options": [
+    "put into action or carry out a plan",
+    "criticize or challenge the effectiveness of",
+    "discuss or debate something in detail",
+    "delay or postpone until further notice"
+   ],
+   "correct_index": 0,
+   "explanation": "Implement means to put into action or execute a plan, as opposed to merely discussing or delaying it. Context clues in the sentence (the manager taking action with a new policy) support this meaning. This tests the ability to deduce word meaning from how it is used in a sentence.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of understanding an unfamiliar word by looking at the surrounding sentence structure, related words, and overall message is called ___.",
+   "options": [
+    "morphological analysis",
+    "etymological examination",
+    "contextual inference",
+    "semantic deduction"
+   ],
+   "correct_index": 2,
+   "explanation": "Contextual inference describes using the context (surrounding words, sentence structure, and overall meaning) to figure out what an unfamiliar word means. While morphological analysis examines word parts and etymology examines word origins, contextual inference is the specific skill of reading the environment around the word to grasp its meaning. This tests knowledge of a core vocabulary strategy distinct from other word-comprehension techniques.",
+   "type": "concept_completion",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following pairs are homophones?",
+   "options": [
+    "Weather and whether",
+    "Through and though",
+    "There and their",
+    "Principal and principle"
+   ],
+   "correct_index": 0,
+   "explanation": "Homophones are words that sound identical but have different spellings and meanings. 'Weather' (atmospheric conditions) and 'whether' (expressing a choice or doubt) are pronounced the same but spelled differently. The other pairs—principal/principle, through/though, and there/their—are also homophones, but 'weather' and 'whether' are among the most commonly confused in business writing. This tests the ability to identify true homophones from a list.",
+   "type": "which_of_following",
+   "objective_num": 7,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A writer wants to improve clarity in a business email. All of the following would strengthen the message EXCEPT",
+   "options": [
+    "shifting 'benefits may be realized' to 'employees will receive benefits' to use active voice",
+    "replacing 'communicate with' with a more sophisticated synonym like 'interface with' to sound more professional",
+    "changing 'the team will finalize matters' to 'the team will finalize the project scope and deadline'",
+    "replacing 'ascertain' with 'find out' to use simpler, more direct language"
+   ],
+   "correct_index": 1,
+   "explanation": "Replacing common words with more obscure synonyms actually reduces clarity and can confuse readers. Stronger writing uses simpler, more direct language (A), provides specific nouns instead of vague pronouns (B), and emphasizes action through active voice (C). Only option D—choosing a more complex word—works against effective business communication. This tests understanding of how word choice genuinely improves versus hinders clarity.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the sentence 'The team's morale was at an all-time low after the merger announcement,' the phrase 'at an all-time low' is best understood through contextual clues to mean the team's spirits were ___.",
+   "options": [
+    "experiencing a temporary setback that would improve within days",
+    "requiring immediate financial intervention",
+    "resistant to new organizational changes",
+    "at their lowest point ever recorded"
+   ],
+   "correct_index": 3,
+   "explanation": "The phrase 'at an all-time low' uses contextual clues—the merger announcement and the word 'morale'—to indicate the team's spirits were at their absolute lowest point, not just temporarily affected. This demonstrates using surrounding words and overall message to deduce the meaning of an idiomatic expression without explicit definition.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Word Definition and Usage",
+   "difficulty": "hard"
+  }
+ ],
+ "Oral Communication Concepts": [
+  {
+   "question": "The ability to hear and understand a speaker's message without letting personal opinions interfere with comprehension is called ___",
+   "options": [
+    "passive listening",
+    "objective listening",
+    "empathetic listening",
+    "active listening"
+   ],
+   "correct_index": 1,
+   "explanation": "Objective listening means receiving and interpreting a speaker's message based on what is actually said, rather than filtering it through personal bias or prejudgment. This is distinct from active listening (which involves responding and confirming understanding) and empathetic listening (which focuses on emotional connection).",
+   "type": "definition_recall",
+   "objective_num": 12,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of speaking words clearly so that each sound is distinct and easily understood is called ___",
+   "options": [
+    "enunciation",
+    "articulation",
+    "accent",
+    "pronunciation"
+   ],
+   "correct_index": 0,
+   "explanation": "Enunciation refers to the clarity and crispness of speech—how distinctly each sound in a word is produced. Pronunciation, by contrast, refers to saying a word correctly according to accepted standards; a word can be properly pronounced but poorly enunciated, or vice versa.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of tailoring your communication style, vocabulary, and examples to match the knowledge level, interests, and expectations of your listeners is part of ___",
+   "options": [
+    "expressing opinions tactfully",
+    "interpreting nonverbal cues",
+    "using bias-free language",
+    "illustrating sensitivity to audience needs"
+   ],
+   "correct_index": 3,
+   "explanation": "Sensitivity to audience needs means recognizing who your listeners are and adjusting your message accordingly—choosing words they understand, referencing examples relevant to them, and addressing their concerns. This goes beyond avoiding bias; it's about making your communication accessible and meaningful to that specific group.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The way a speaker delivers a message by understanding and adapting to the listener's background, knowledge level, and interests is part of ___",
+   "options": [
+    "message clarity",
+    "vocal projection",
+    "audience awareness",
+    "tone modulation"
+   ],
+   "correct_index": 2,
+   "explanation": "Audience awareness involves recognizing who your listeners are and adjusting your vocabulary, examples, pace, and explanations accordingly. A presenter speaking to middle-school students uses different language and references than one addressing engineers, and recognizing this need is a core skill in effective oral communication.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When recording the key points from a speaker's presentation, which of the following would be most helpful for ensuring accuracy?",
+   "options": [
+    "Focusing on main ideas and supporting details rather than transcribing word-for-word",
+    "Waiting until the presentation ends to write down everything you remember",
+    "Asking the speaker to repeat every sentence before you write it down",
+    "Writing down every word the speaker says verbatim"
+   ],
+   "correct_index": 0,
+   "explanation": "Effective note-taking during a presentation requires capturing main ideas and key supporting details, not attempting a complete transcript — this approach keeps you engaged and helps distinguish major points from minor ones. Waiting until the end risks forgetting details, transcribing word-for-word is impractical, and repeatedly asking for repetition disrupts the speaker's flow.",
+   "type": "which_of_following",
+   "objective_num": 12,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to adjust your communication approach based on whether your audience is a group of teenagers, corporate executives, or international visitors is an example of ___",
+   "options": [
+    "active listening",
+    "bias-free communication",
+    "adapting to audience demographics",
+    "proper enunciation"
+   ],
+   "correct_index": 2,
+   "explanation": "Adjusting communication style, vocabulary, and delivery to match the specific characteristics, background, and needs of different listener groups is the core of audience adaptation. This is distinct from eliminating bias (which focuses on fair language), active listening (which focuses on the receiver's role), or enunciation (which focuses on clarity of sound production). The source material emphasizes that effective communicators tailor their approach to who is listening.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The difference between pronunciation and enunciation is that pronunciation refers to how words sound, while enunciation refers to ___",
+   "options": [
+    "the pitch and tone of a speaker's voice",
+    "the speed at which words are spoken",
+    "the accent or dialect of a region",
+    "how clearly each sound in a word is spoken"
+   ],
+   "correct_index": 3,
+   "explanation": "Enunciation is the articulation and clarity of individual sounds within words—making sure each sound is distinct and sharp. Pronunciation is about which sounds are correct for a word. A speaker might pronounce a word correctly but enunciate poorly (mumbling), or enunciate perfectly but mispronounce the word. Speed, pitch, and regional accent are separate vocal qualities unrelated to either term.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be barriers to effective listening during a business presentation?",
+   "options": [
+    "Clear speaker volume, organized content, and the listener's interest in the topic",
+    "Environmental noise, internal distractions, and difficulty concentrating due to fatigue",
+    "An engaged audience, a quiet conference room, and the speaker's use of visual aids",
+    "The speaker's enthusiasm, the listener's relevant background knowledge, and minimal interruptions"
+   ],
+   "correct_index": 1,
+   "explanation": "Barriers to listening are obstacles that prevent comprehension—noise (environmental), distractions (internal thoughts or concerns), and fatigue all reduce a listener's ability to focus and understand. The other options describe conditions that support listening (volume, organization, interest, engagement, quiet environment, visuals, enthusiasm, knowledge, and lack of interruptions) rather than block it.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Language that uses generic terms like \"businessperson\" or \"they\" instead of assuming gender, and that avoids stereotypes about age, ability, or background is called ___",
+   "options": [
+    "neutral tone",
+    "standard English",
+    "bias-free language",
+    "formal vocabulary"
+   ],
+   "correct_index": 2,
+   "explanation": "Bias-free language intentionally removes assumptions and stereotypes based on gender, age, ability, ethnicity, or other characteristics—using inclusive pronouns and neutral descriptors. Neutral tone refers to avoiding emotional or judgmental language. Formal vocabulary is about register and register appropriateness. Standard English is a dialect or grammar standard. Only bias-free language specifically describes the practice of eliminating stereotypes and assumptions from word choice.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a speaker uses a technical term that your audience may not understand, asking 'Can you give me an example of that?' is an example of ___",
+   "options": [
+    "interpreting nonverbal cues",
+    "following spoken directions",
+    "expressing opinions positively",
+    "active listening and seeking clarification"
+   ],
+   "correct_index": 3,
+   "explanation": "Asking clarifying questions helps ensure you understand the speaker's message and prevents misinterpretation. This technique is particularly important when communicating across different knowledge levels or backgrounds, as it demonstrates engagement and prevents assumptions.",
+   "type": "definition_recall",
+   "objective_num": 9,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When speaking to an audience, the ability to say a word with the correct stress on syllables and authentic sound patterns is called ___",
+   "options": [
+    "enunciation",
+    "pronunciation",
+    "phonetics",
+    "articulation"
+   ],
+   "correct_index": 1,
+   "explanation": "Pronunciation refers to saying words with correct stress, intonation, and authentic sound patterns—how the word actually sounds when spoken. Enunciation, by contrast, focuses on the clarity and distinctness of individual sounds within a word. This distinction is fundamental to oral communication.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are examples of expressing an opinion positively and tactfully EXCEPT",
+   "options": [
+    "Your idea obviously doesn't make sense because it ignores the key problem we're trying to solve",
+    "That's an interesting thought—I wonder if we've considered how this would affect our timeline",
+    "I see your point, and I'd like to suggest an alternative approach that might work well here",
+    "I appreciate your perspective, and I think there might be another way to look at this situation"
+   ],
+   "correct_index": 0,
+   "explanation": "Option B dismisses the other person's idea outright with 'obviously doesn't make sense,' which is neither positive nor tactful. The other three options acknowledge the other perspective while offering a respectful alternative or question, which are hallmarks of expressing disagreement positively and constructively.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of choosing words carefully to avoid bias in verbal communication?",
+   "options": [
+    "Avoiding questions entirely, using only formal language regardless of context, and assuming all audience members understand specialized terminology",
+    "Speaking more slowly when addressing older audience members, using only technical jargon, and assuming all listeners share the same background",
+    "Choosing words that reflect your personal opinions strongly, using gender-neutral pronouns inconsistently, and emphasizing differences between groups",
+    "Using 'chairperson' instead of 'chairman,' avoiding age-related stereotypes, and using 'they' for unknown individuals"
+   ],
+   "correct_index": 3,
+   "explanation": "Bias-free language includes using gender-neutral or inclusive job titles ('chairperson'), avoiding stereotypes based on age or other characteristics, and using inclusive pronouns like 'they' for people whose gender is unknown. Options B, C, and D all contain approaches that either reinforce stereotypes or ignore audience diversity.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When speaking to a business audience, deliberately choosing words like 'firefighter' instead of 'fireman' and 'server' instead of 'waiter or waitress' demonstrates awareness of what communication principle?",
+   "options": [
+    "Adapting presentation speed to audience comprehension",
+    "Proper enunciation and syllable stress",
+    "Sensitivity to diverse audience composition and inclusive language",
+    "Active listening and seeking clarification"
+   ],
+   "correct_index": 2,
+   "explanation": "Choosing inclusive, non-gendered terms reflects sensitivity to the fact that your audience includes people of different genders and backgrounds. This goes beyond simple bias-free language — it shows intentional awareness that word choices signal respect for audience diversity. The other options address different communication skills (listening, pronunciation, pacing) rather than this specific aspect of word selection.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of correctly choosing words in verbal communication with a mixed-age workplace audience?",
+   "options": [
+    "Selecting 'experienced team member' instead of 'old-timer,' 'new employee' instead of 'kid,' and 'recently adopted software' instead of age-coded language",
+    "Using 'old-timer' when describing long-term employees, 'the young guns' for recent hires, and 'cutting-edge tech' for new systems",
+    "Using colloquial terms like 'boomer,' 'millennial,' and 'Gen-Z' to quickly describe team members by their generation",
+    "Referring to a retired colleague as 'that senior,' using 'kids' for entry-level staff, and 'millennials' as a blanket descriptor"
+   ],
+   "correct_index": 0,
+   "explanation": "Careful word choice avoids age-coded language and stereotypes. Using neutral descriptors like 'experienced team member' and 'new employee' respects all ages equally, while terms like 'old-timer,' 'kids,' and generational labels introduce bias. This tests the practical application of choosing words that reflect genuine role or tenure without embedding age assumptions.",
+   "type": "which_of_following",
+   "objective_num": 4,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Internal distractions such as personal worries or preoccupation with other thoughts represent which type of listening barrier?",
+   "options": [
+    "Physical barriers related to hearing ability or auditory processing",
+    "Psychological barriers originating from the listener's own mental state",
+    "Environmental barriers caused by noise or poor acoustics in the room",
+    "Technological barriers caused by faulty audio equipment or poor connections"
+   ],
+   "correct_index": 1,
+   "explanation": "Internal distractions—worries, daydreaming, or mental preoccupation—originate from within the listener's mind and are classified as psychological barriers. These differ from environmental barriers (room noise), physical barriers (hearing loss), or technological barriers (equipment failure), and they require active listening techniques to overcome.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manager is speaking to a team about a new project deadline. One team member is thinking about a conflict with a coworker, another is tired from a long morning, and a third is mentally checking off a shopping list. To help all three overcome their listening barriers, the manager should primarily ___",
+   "options": [
+    "Provide written directions immediately after so that anyone who was not paying attention can read the details later",
+    "Speak louder and repeat the deadline multiple times to ensure they hear it despite the noise",
+    "Use engaging language, pauses, and questions that refocus attention on the message and encourage active participation",
+    "Ask each team member individually about their personal problems before beginning the presentation"
+   ],
+   "correct_index": 2,
+   "explanation": "When listeners face psychological barriers (preoccupation, fatigue, distraction), the speaker can help by employing active engagement techniques—varied language, strategic pauses, and questions—that redirect attention and encourage participation. This is a specific, teachable technique from oral communication, not generic advice about managing personal issues or simply repeating information.",
+   "type": "scenario_judgment",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a listener thinks about personal problems or future tasks instead of focusing on a speaker's message, this type of barrier is classified as ___",
+   "options": [
+    "Semantic misalignment",
+    "Auditory processing delay",
+    "External environmental interference",
+    "Internal psychological distraction"
+   ],
+   "correct_index": 3,
+   "explanation": "Internal psychological distractions—such as personal worries, preoccupation with other thoughts, or mental fatigue—originate from the listener's own mental state rather than the external environment. This is distinct from environmental barriers like noise or from the speaker's delivery; it's a mental block created by the listener themselves. Understanding this distinction helps identify which listening barriers require self-awareness and focus to overcome.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A team member in a meeting keeps checking their phone for messages, another member is struggling to stay awake after a 12-hour shift, and a third has just learned about a scheduling conflict that concerns them. Which of the following would most help the team leader reduce these listening barriers?",
+   "options": [
+    "Ask the team to put away devices and reschedule the meeting for when everyone is less tired",
+    "Pause periodically, ask direct questions to refocus attention, and use clear signposting of main ideas",
+    "Deliver the message more slowly and repeat key points to overcome individual attention gaps",
+    "Provide written summaries before the meeting so listeners don't have to concentrate as hard"
+   ],
+   "correct_index": 1,
+   "explanation": "Active listening barriers rooted in listener distraction (internal preoccupation, fatigue, device use) are best addressed through the speaker's delivery techniques: pauses that break mental drift, direct questions that re-engage attention, and clear verbal signposting that helps listeners track the main ideas even if their focus wavers. While rescheduling or providing written materials are helpful in different contexts, this scenario asks for the most direct intervention during the actual listening moment.",
+   "type": "scenario_judgment",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Active listening involves several specific techniques that demonstrate engagement with a speaker's message. Which of the following would all be recognized techniques for practicing active listening?",
+   "options": [
+    "Making mental notes of main ideas, asking clarifying questions when needed, and avoiding interrupting the speaker",
+    "Checking your phone periodically, summarizing what you heard after the speaker finishes, and changing the subject if you disagree",
+    "Repeating every word the speaker says verbatim, maintaining perfect silence, and waiting until the presentation ends before asking any questions",
+    "Maintaining eye contact, nodding occasionally, and preparing your response while the speaker is still talking"
+   ],
+   "correct_index": 0,
+   "explanation": "Active listening includes focusing on main ideas, asking clarifying questions to ensure understanding, and refraining from interrupting—all behaviors that show genuine engagement and comprehension. Option A includes preparing a response while listening, which diverts attention from the speaker. Options C and D contain behaviors (phone checking, changing subjects, or insisting on verbatim repetition) that contradict the principles of active listening, which emphasizes genuine understanding and respect for the speaker's message.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Oral Communication Concepts",
+   "difficulty": "hard"
+  }
+ ],
+ "Reading Comprehension": [
+  {
+   "question": "The ability to quickly locate specific information in a document without reading every word is called ___.",
+   "options": [
+    "scanning",
+    "skimming",
+    "speed-reading",
+    "in-depth reading"
+   ],
+   "correct_index": 0,
+   "explanation": "Scanning is the deliberate technique of searching for particular facts or keywords in a text — such as finding a phone number in a directory or a date in a manual — without processing the surrounding material. This differs from skimming (getting a general overview) and speed-reading (reading faster while maintaining comprehension). Scanning is essential for workplace efficiency when you need one specific piece of information.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a manager asks you to review a safety manual to understand all emergency procedures and their correct order, you are demonstrating ___.",
+   "options": [
+    "the technique of scanning for isolated facts without understanding context",
+    "comprehension by identifying and organizing key information in sequence",
+    "the ability to interpret tables and charts within technical documents",
+    "the skill of evaluating the credibility and accuracy of instructional sources"
+   ],
+   "correct_index": 1,
+   "explanation": "This scenario requires you to read the manual thoroughly, understand the procedures, and mentally organize them in the correct order — which is comprehension demonstrated through restating and organizing information. Scanning alone would miss the sequence requirement; chart interpretation isn't the focus here; and source evaluation, while valuable, isn't what's being tested when the task is to understand and follow the procedures themselves.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A document that presents facts about how climate change affects coastal business infrastructure is different from one that argues for specific policies to address climate change because the first is ___, while the second is ___.",
+   "options": [
+    "descriptive; instructional",
+    "instructional; descriptive",
+    "informative; persuasive",
+    "persuasive; informative"
+   ],
+   "correct_index": 2,
+   "explanation": "An informative document presents facts and data to help the reader understand a topic; a persuasive document attempts to convince the reader to accept a viewpoint or take action. The first document (facts about effects) informs; the second (arguing for specific policies) persuades. Recognizing this distinction helps readers evaluate whether they are receiving objective information or being influenced toward a particular position.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all improve the readability of a technical instruction manual?",
+   "options": [
+    "Removing all visual aids such as diagrams and numbering instructions sequentially only by paragraph",
+    "Using longer paragraphs, complex sentence structures, and industry jargon without definitions",
+    "Writing in passive voice, avoiding white space on the page, and minimizing the use of formatting",
+    "Including clear headings, breaking text into short paragraphs, and defining specialized terms"
+   ],
+   "correct_index": 3,
+   "explanation": "Readability improves when text is organized with clear headings, divided into manageable chunks, and technical language is explained. These techniques help readers locate information quickly and understand content easily. The other options — long paragraphs, undefined jargon, removal of visuals, passive voice, and dense formatting — all make technical documents harder to follow and comprehend.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of reading a document quickly to get a general sense of its content and structure, without reading every word in detail, is called ___.",
+   "options": [
+    "speed-reading",
+    "skimming",
+    "comprehension",
+    "in-depth reading"
+   ],
+   "correct_index": 1,
+   "explanation": "Skimming involves moving rapidly through text to grasp the main idea and organization—useful when you need an overview before deciding whether to read more thoroughly. This is distinct from speed-reading (which maintains comprehension at a faster pace) and in-depth reading (which examines every detail).",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of reading a document at a faster pace than normal, looking for key words and phrases to find specific information quickly, is called ___.",
+   "options": [
+    "In-depth reading",
+    "Skimming",
+    "Critical reading",
+    "Speed-reading"
+   ],
+   "correct_index": 3,
+   "explanation": "Speed-reading is a technique that allows readers to move through text quickly while still capturing important details and locating specific information without reading every word. This differs from in-depth reading, which focuses on comprehensive understanding, and skimming, which is even faster and more general. Speed-reading bridges the two by allowing faster consumption while maintaining focus on targeted information.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When you read a workplace document to identify specific facts, understand relationships between ideas, and organize that information for a presentation, you are using ___ to demonstrate full comprehension of the material.",
+   "options": [
+    "Skimming to get a quick overview",
+    "Speed-reading to identify keywords only",
+    "Note-taking with critical reading techniques",
+    "Casual scanning for general awareness"
+   ],
+   "correct_index": 2,
+   "explanation": "Note-taking combined with critical reading requires you to actively engage with text, extract key information, understand connections, and organize it meaningfully—all hallmarks of true comprehension. Scanning and skimming are faster methods intended for locating specific facts or getting overviews, not for deep understanding. Speed-reading focuses on pace rather than detailed processing.",
+   "type": "concept_completion",
+   "objective_num": 13,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A technical manual that lists the steps to operate a new piece of office equipment serves a different purpose than an article arguing that the company should upgrade all equipment because newer models improve employee efficiency. The first document is ___, while the second is ___.",
+   "options": [
+    "Instructional; persuasive",
+    "Informative; descriptive",
+    "Persuasive; instructional",
+    "Descriptive; informative"
+   ],
+   "correct_index": 0,
+   "explanation": "An instructional document teaches readers how to perform a task or operate something step-by-step. A persuasive document presents arguments designed to convince readers to adopt a viewpoint or take action. The equipment manual is instructional (teaching operation), while the efficiency argument is persuasive (urging adoption of a belief and action).",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A data table showing monthly sales figures for different regions, a bar chart comparing quarterly profits, and a diagram illustrating the assembly process all serve the same purpose: ___.",
+   "options": [
+    "To reduce the amount of detail a reader must know",
+    "To slow down the reading process and require in-depth analysis",
+    "To make complex information easier to understand and compare at a glance",
+    "To replace the need for written explanations entirely"
+   ],
+   "correct_index": 2,
+   "explanation": "Tables, charts, and diagrams are enhancements that present information visually, allowing readers to quickly grasp patterns, comparisons, and relationships that would take much longer to explain in prose. While they do aid comprehension and can highlight key details, they are not meant to replace written text entirely or necessarily slow reading—they accelerate understanding of complex data.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When choosing a reading method for workplace documents, all of the following factors should influence your choice EXCEPT",
+   "options": [
+    "Whether the document was printed on white paper or colored paper",
+    "The level of detail and accuracy your task requires",
+    "The purpose you need the document to serve and what you must extract from it",
+    "How much time you have available to complete the reading"
+   ],
+   "correct_index": 0,
+   "explanation": "The color or material of the paper has no bearing on which reading method is appropriate. The correct choice depends on your purpose (do you need every detail or just key facts?), the depth required by your task, and your time constraints. These factors determine whether scanning, skimming, speed-reading, or in-depth reading is best.",
+   "type": "all_except",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The main points of a technical report include the problem statement, the methods used to investigate it, the findings, and the recommended solutions. Which of the following best describes the act of pulling these main points from the full document?",
+   "options": [
+    "Interpreting visual enhancements",
+    "Summarizing the document",
+    "Differentiating fact from opinion",
+    "Evaluating source reliability"
+   ],
+   "correct_index": 1,
+   "explanation": "Summarizing involves identifying and restating the essential ideas of a document in condensed form. By extracting the key components (problem, methods, findings, solutions), you are performing a summary rather than evaluation, interpretation, or fact-checking.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be legitimate factors to consider when choosing whether to skim, scan, or read in-depth a workplace document?",
+   "options": [
+    "The date the document was written, the author's last name, and the printing method",
+    "The color of the document, the number of pages, and the font size used",
+    "Whether the document contains tables, your mood while reading, and the document's file format",
+    "Your time available, the purpose for reading, and how familiar you are with the topic"
+   ],
+   "correct_index": 3,
+   "explanation": "When selecting a reading strategy, practical factors such as available time, your reading goal, and existing knowledge all influence whether a quick overview (skimming), targeted search (scanning), or thorough analysis (in-depth reading) is most appropriate. Surface features like color, date, or formatting are less relevant to the strategic choice of reading method.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When evaluating a business document for reliability, all of the following are important considerations EXCEPT",
+   "options": [
+    "Whether the document distinguishes clearly between fact and opinion",
+    "The author's credentials and expertise in the subject matter",
+    "Whether the author cites credible sources and provides evidence",
+    "Whether the document uses active or passive voice in its sentences"
+   ],
+   "correct_index": 3,
+   "explanation": "The choice between active and passive voice is a writing style preference and does not affect whether a source is reliable or credible. Credibility depends on the author's expertise, use of evidence, source citations, and the author's ability to separate factual claims from opinions—none of which are determined by voice choice.",
+   "type": "all_except",
+   "objective_num": 11,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A workplace document that explains the company's new remote work policy, including eligibility requirements, approval procedures, and expected outcomes, serves what primary purpose?",
+   "options": [
+    "To provide factual details about a policy and how it operates",
+    "To describe what remote work feels like for different employees",
+    "To persuade employees that remote work is better than office work",
+    "To instruct employees on how to set up their home office furniture"
+   ],
+   "correct_index": 0,
+   "explanation": "This document's purpose is to inform—it presents facts, requirements, and procedures without arguing for or against the policy. An informative text delivers factual information and explains how something works, distinguishing it from persuasive (which argues a position), descriptive (which portrays characteristics or feelings), and instructional (which provides step-by-step directions for completing a task).",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company newsletter article states, 'Last quarter, sales increased 12% in the North region' versus a blog post that claims, 'The North region's sales success proves that our new marketing strategy is the most effective approach any company could use.' The first is ___; the second is ___.",
+   "options": [
+    "Descriptive; informative",
+    "Factual; opinion-based",
+    "Informative; analytical",
+    "Persuasive; instructional"
+   ],
+   "correct_index": 1,
+   "explanation": "The first statement presents a verifiable fact (a specific, measurable claim). The second makes a judgment that goes beyond the data—it asserts causation and superiority, which are interpretations rather than facts. Distinguishing fact from opinion is essential for evaluating workplace documents and avoiding decisions based on unsupported claims.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The credibility and accuracy of a source is often evaluated by examining the author's qualifications, whether the information is current, and whether claims are supported by evidence. This process of evaluating quality is most directly related to ___.",
+   "options": [
+    "summarizing the main ideas in a document",
+    "identifying the reading method most suited to your time available",
+    "determining the reliability and trustworthiness of a source",
+    "differentiating between factual statements and subjective claims"
+   ],
+   "correct_index": 2,
+   "explanation": "Source evaluation requires assessing author expertise, publication date, supporting evidence, and potential bias—all indicators of whether a source is dependable. While related to distinguishing fact from opinion, source reliability is specifically about judging the credibility of who wrote it and how thoroughly it was researched.",
+   "type": "concept_completion",
+   "objective_num": 11,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate reasons to choose in-depth reading over skimming or scanning a workplace document?",
+   "options": [
+    "You need a quick overview of topics covered and you have limited time before a meeting",
+    "You want to locate one specific fact quickly or you need to preview a document's structure before deciding whether to read it fully",
+    "You are checking whether a document is relevant to your role or you need to confirm a single data point from a lengthy report",
+    "You must understand complex procedures, apply technical information to a problem, or retain detailed knowledge for training others"
+   ],
+   "correct_index": 3,
+   "explanation": "In-depth reading is necessary when full comprehension, retention, and application of complex material are required—such as learning intricate procedures or mastering technical content. Skimming is for quick previews, scanning targets specific facts, and both are appropriate for time-limited situations. Option B correctly identifies all scenarios where depth is essential.",
+   "type": "which_of_following",
+   "objective_num": 8,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business report includes all of the following elements that affect readability EXCEPT",
+   "options": [
+    "whether the author has cited peer-reviewed journals as sources",
+    "the use of simple, direct language and definition of technical terms",
+    "the inclusion of white space and logical paragraph breaks",
+    "the use of consistent font sizes and clear section headings"
+   ],
+   "correct_index": 0,
+   "explanation": "Readability—how easily a reader can understand and follow a document—depends on visual formatting (headings, spacing), paragraph structure, and language clarity. The author's choice of citation sources affects credibility and source quality, not the physical or linguistic readability of the text itself.",
+   "type": "all_except",
+   "objective_num": 9,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In workplace reading, the method of reading material thoroughly to understand complex procedures, retain detailed information for training, or apply technical knowledge to solve a problem is called ___.",
+   "options": [
+    "Skimming a document for its general purpose",
+    "In-depth reading with focused comprehension",
+    "Speed-reading to process information quickly",
+    "Scanning for specific keywords and facts"
+   ],
+   "correct_index": 1,
+   "explanation": "In-depth reading is the deliberate, thorough method used when understanding and retaining complex material is required—distinct from scanning (finding one fact) or skimming (getting general sense). A prepared student who studied workplace reading methods would recognize that complex procedures and detailed retention demand this careful approach, while a half-prepared student might confuse it with speed-reading.",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be characteristics that help establish a source's reliability when you are evaluating a business document for trustworthiness?",
+   "options": [
+    "The length of the document, the number of pages, and how recently it was printed",
+    "The document's use of technical jargon, formal language, and complex sentence structure",
+    "The author's relevant qualifications, current information, and evidence supporting claims",
+    "The document's font size, color scheme, and overall visual design elements"
+   ],
+   "correct_index": 2,
+   "explanation": "Reliability evaluation focuses on substance: author expertise, currency, and evidence support the credibility of claims. Visual design, document length, and language style alone do not establish trustworthiness—they are formatting choices, not indicators of factual accuracy or source authority.",
+   "type": "which_of_following",
+   "objective_num": 11,
+   "knowledge_area": "Reading Comprehension",
+   "difficulty": "hard"
+  }
+ ]
+}

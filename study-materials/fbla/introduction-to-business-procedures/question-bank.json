@@ -1,0 +1,702 @@
+[
+ {
+  "question": "A written summary of your education, work experience, skills, and accomplishments that you submit to potential employers is called a(n) ___.",
+  "options": [
+   "resume",
+   "cover letter",
+   "portfolio",
+   "application form"
+  ],
+  "correct_index": 0,
+  "explanation": "A resume is a concise document that lists your qualifications and professional background for employers. While a portfolio contains work samples and a cover letter introduces your candidacy, the resume is specifically the standardized summary document requested by most employers during the application process.",
+  "type": "definition_recall",
+  "knowledge_area": "Career Development",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of creating and organizing a collection of your best work samples, certifications, and professional accomplishments to demonstrate your skills and competencies to employers is known as ___.",
+  "options": [
+   "maintaining professional documents",
+   "developing a career plan",
+   "conducting a job search",
+   "building a portfolio"
+  ],
+  "correct_index": 3,
+  "explanation": "A portfolio is a purposeful collection of tangible evidence of your abilities and achievements in your field. Unlike a career plan (which outlines future goals) or a job search (which is the broader process), a portfolio specifically showcases your best work and accomplishments to potential employers.",
+  "type": "definition_recall",
+  "knowledge_area": "Career Development",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Creating a roadmap for your professional future that includes short-term and long-term goals, skill-development targets, and action steps for achieving advancement in your chosen field is the purpose of ___.",
+  "options": [
+   "updating your resume",
+   "developing a career plan",
+   "attending job fairs",
+   "conducting informational interviews"
+  ],
+  "correct_index": 1,
+  "explanation": "Developing a career plan is the deliberate process of identifying where you want to go professionally and mapping out how to get there. While resume updates and networking activities support career development, the career plan itself is the overarching strategic document that guides all other career-related decisions and actions.",
+  "type": "concept_completion",
+  "knowledge_area": "Career Development",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be considered appropriate documents to include in a professional portfolio?",
+  "options": [
+   "Salary expectations, personal credit report, bank statements, and health records",
+   "Personal diary entries, family photos, hobbies list, and social media screenshots",
+   "Course certificates, work samples, performance evaluations, and letters of recommendation",
+   "Childhood achievements, personal blog posts, travel photos, and volunteer hours"
+  ],
+  "correct_index": 2,
+  "explanation": "Professional portfolios should contain job-relevant work samples and credentials such as course certificates, completed projects, evaluations, and recommendations from supervisors or instructors. Personal items, financial records, and non-professional content are not appropriate for a portfolio intended to demonstrate professional competency to employers.",
+  "type": "which_of_following",
+  "knowledge_area": "Career Development",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A written statement expressing your interest in a specific job position and highlighting how your skills and experience match the employer's needs is called a(n) ___.",
+  "options": [
+   "follow-up letter",
+   "employment application",
+   "reference sheet",
+   "cover letter"
+  ],
+  "correct_index": 3,
+  "explanation": "A cover letter is a formal document sent with your resume to introduce yourself to a potential employer and explain why you are interested in and qualified for the position. It differs from a follow-up letter, which is sent after an interview, and an employment application, which is a form completed during the hiring process.",
+  "type": "definition_recall",
+  "knowledge_area": "Career Development",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of assigning employees to specific work periods and managing the distribution of tasks to balance workload across the team is called ___.",
+  "options": [
+   "employee task rotation",
+   "shift management allocation",
+   "staff scheduling and workload coordination",
+   "workload balancing"
+  ],
+  "correct_index": 2,
+  "explanation": "Staff scheduling and workload coordination is the formal term for assigning work periods and distributing tasks to ensure fair balance across employees. This is a core human relations responsibility that prevents burnout and maintains productivity. The other options name related concepts but lack the comprehensive accuracy of the correct term.",
+  "type": "definition_recall",
+  "knowledge_area": "Human Relations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A detailed written statement that outlines the duties, responsibilities, qualifications, and reporting structure for a specific position is called a ___.",
+  "options": [
+   "employee contract",
+   "job description",
+   "work procedure manual",
+   "performance evaluation"
+  ],
+  "correct_index": 1,
+  "explanation": "A job description is the formal document that specifies what a position entails, including required skills and who the employee reports to. It serves as a foundation for hiring, training, and performance evaluation. Performance evaluations assess past work; procedures manuals document processes; contracts are legal agreements—none define the role itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Human Relations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The coordinated effort to match employee strengths, availability, and capacity with organizational tasks in order to maximize efficiency and employee satisfaction describes ___.",
+  "options": [
+   "workload distribution and scheduling coordination",
+   "personnel management",
+   "human resources planning",
+   "staff supervision"
+  ],
+  "correct_index": 0,
+  "explanation": "Workload distribution and scheduling coordination specifically addresses the human relations function of aligning who does what and when to optimize both organizational performance and worker well-being. This concept emphasizes balance and fit rather than generic management or oversight. Personnel management and HR planning are broader umbrella terms; supervision focuses on oversight rather than allocation.",
+  "type": "concept_completion",
+  "knowledge_area": "Human Relations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be key considerations when creating or updating a job description for a staff position?",
+  "options": [
+   "Employee salary history, personal background information, and supervisor preferences",
+   "Company social events, break-room policies, and dress code violations",
+   "Performance review scores, disciplinary records, and attendance patterns",
+   "Primary duties and responsibilities, required education and experience, and reporting structure"
+  ],
+  "correct_index": 3,
+  "explanation": "A job description should capture the actual work to be done, the qualifications needed, and how the position fits into the organizational hierarchy—these elements guide hiring and performance management. Employee salary, background, performance history, and workplace social details belong in other documents or are not typically included in the job description itself. Only the first option contains elements that are standard and appropriate components of a job description.",
+  "type": "which_of_following",
+  "knowledge_area": "Human Relations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A formal written document that specifies the duties, required qualifications, experience level, and supervisory relationships for a staff position is called a(n) ___.",
+  "options": [
+   "employee handbook",
+   "job specification",
+   "performance evaluation form",
+   "training manual"
+  ],
+  "correct_index": 1,
+  "explanation": "A job specification is the formal written statement outlining duties, qualifications, experience, and reporting structure for a position. While an employee handbook provides general workplace policies and a performance evaluation measures past job performance, neither document serves the specific purpose of defining a role's requirements and responsibilities upfront.",
+  "type": "definition_recall",
+  "knowledge_area": "Human Relations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of arranging tasks and responsibilities to achieve organizational goals efficiently is called ___",
+  "options": [
+   "contingency planning",
+   "performance monitoring",
+   "workflow procedures",
+   "conflict resolution"
+  ],
+  "correct_index": 2,
+  "explanation": "Workflow procedures refer to the organized arrangement of tasks and responsibilities designed to move work through an office or department efficiently. This is a foundational concept in developing efficient office operations and relates directly to setting priorities and organizing work systematically.",
+  "type": "definition_recall",
+  "knowledge_area": "Decision Making/Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A backup plan developed in advance to address potential disruptions or unexpected circumstances in business operations is known as ___",
+  "options": [
+   "a contingency plan",
+   "quality control",
+   "workflow analysis",
+   "team structure"
+  ],
+  "correct_index": 0,
+  "explanation": "A contingency plan is a predetermined action strategy created to handle potential business problems or disruptions before they occur. Having contingency plans allows organizations to respond quickly and maintain operations when unexpected situations arise, which is essential for examining potential business problems and offering solutions.",
+  "type": "definition_recall",
+  "knowledge_area": "Decision Making/Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability to understand different viewpoints, acknowledge concerns, and work toward a mutually acceptable resolution when team members disagree represents ___",
+  "options": [
+   "conflict resolution",
+   "organizational hierarchy",
+   "performance evaluation",
+   "workflow delegation"
+  ],
+  "correct_index": 0,
+  "explanation": "Conflict resolution is the process of addressing disagreements within a team by listening to all parties and finding solutions that the group can accept. This skill is critical for developing efficient office teams and maintaining a productive work environment where diverse perspectives are valued.",
+  "type": "concept_completion",
+  "knowledge_area": "Decision Making/Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of breaking down complex business problems into smaller parts, examining each component, and combining the information to make an informed decision is best described as ___",
+  "options": [
+   "delegation",
+   "performance monitoring",
+   "data synthesis and analysis",
+   "priority management"
+  ],
+  "correct_index": 2,
+  "explanation": "Acquiring, analyzing, organizing, and synthesizing information for decisions is a core decision-making function that involves breaking down problems and reassembling the information logically. The other options describe separate management activities that do not inherently involve this analytical process.",
+  "type": "definition_recall",
+  "knowledge_area": "Decision Making/Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of identifying the most important tasks, determining the order in which they should be completed, and structuring work activities to maximize efficiency describes ___",
+  "options": [
+   "monitoring employee performance",
+   "establishing quality standards",
+   "designing team structures",
+   "organizing and prioritizing workflow"
+  ],
+  "correct_index": 3,
+  "explanation": "Setting priorities and developing efficient workflow procedures directly involve identifying what matters most and arranging tasks in a logical sequence. Quality standards and team design are related but do not capture the essence of prioritization and workflow organization.",
+  "type": "concept_completion",
+  "knowledge_area": "Decision Making/Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of arranging and organizing a work area so that necessary tools, documents, and supplies are easily accessible is called ___.",
+  "options": [
+   "equipment maintenance",
+   "workstation organization",
+   "office layout design",
+   "supply inventory management"
+  ],
+  "correct_index": 1,
+  "explanation": "Workstation organization specifically refers to arranging a work area for efficiency and accessibility. The other options relate to broader office management tasks rather than the immediate arrangement of one's personal work space.",
+  "type": "definition_recall",
+  "knowledge_area": "Business Operations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business requires quick delivery of confidential contracts to a client across the country by tomorrow morning, with proof of receipt. The most effective coordination approach would involve ___.",
+  "options": [
+   "scanning the documents and emailing them as an attachment",
+   "arranging an overnight courier or express delivery service with signature confirmation",
+   "requesting the client pick up the documents from your office in person",
+   "using the standard postal service with regular priority mail"
+  ],
+  "correct_index": 1,
+  "explanation": "Overnight courier or express delivery with signature confirmation meets the dual requirement of speed (by tomorrow morning) and accountability (proof of receipt for confidential documents). This is the specific service designed for this exact scenario.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Business Operations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The routine tasks involved in keeping office equipment functioning properly and replacing consumable items like paper, toner, and printer cartridges make up ___.",
+  "options": [
+   "equipment troubleshooting",
+   "supply chain management",
+   "preventive maintenance",
+   "office equipment maintenance"
+  ],
+  "correct_index": 3,
+  "explanation": "Office equipment maintenance encompasses both routine upkeep tasks and replacement of consumable supplies to keep equipment functioning. While preventive maintenance and troubleshooting are related concepts, equipment maintenance is the broader term covering the day-to-day care described.",
+  "type": "definition_recall",
+  "knowledge_area": "Business Operations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are important considerations when establishing procedures to maintain a productive workstation EXCEPT ___.",
+  "options": [
+   "determining which background music best matches your personal taste",
+   "creating a system for organizing files and documents so they are easy to locate",
+   "establishing a schedule for cleaning and organizing the work area regularly",
+   "ensuring adequate supplies are stocked and reordered before they run out"
+  ],
+  "correct_index": 0,
+  "explanation": "Personal music preferences have no bearing on workstation productivity or maintenance procedures—the focus of workstation management is organization, cleanliness, and supply availability. The other three options are all legitimate components of an effective workstation maintenance system.",
+  "type": "all_except",
+  "knowledge_area": "Business Operations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of coordinating overnight delivery services, such as FedEx or UPS, to ensure a package reaches its destination by a specific time with documented proof of arrival is called ___.",
+  "options": [
+   "postal expediting",
+   "mail consolidation",
+   "express courier coordination",
+   "freight forwarding"
+  ],
+  "correct_index": 2,
+  "explanation": "Express courier coordination specifically refers to arranging rapid delivery services with carriers that provide time-guaranteed delivery and tracking/proof of receipt—a core responsibility under coordinating special mail and courier services. The other options describe related but distinct processes: mail consolidation groups items for cost savings, postal expediting uses standard postal services, and freight forwarding handles large cargo shipments.",
+  "type": "definition_recall",
+  "knowledge_area": "Business Operations",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A filing system in which records are organized by date to ensure timely action or follow-up is called a ___.",
+  "options": [
+   "subject filing system",
+   "tickler file system",
+   "chronological filing system",
+   "numerical filing system"
+  ],
+  "correct_index": 1,
+  "explanation": "A tickler file system is specifically designed to organize records by date so that items requiring action are brought to attention at the right time. The other options organize by different criteria (date sequence, numbers, or subjects) but lack the action-reminder purpose that defines a tickler file.",
+  "type": "definition_recall",
+  "knowledge_area": "Database/Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The complete set of procedures used to organize, store, locate, and retrieve documents within an organization comprises a ___.",
+  "options": [
+   "document storage and retrieval system",
+   "scanning protocol",
+   "inventory management method",
+   "data conversion process"
+  ],
+  "correct_index": 0,
+  "explanation": "A document storage and retrieval system encompasses all the processes needed to manage documents throughout their lifecycle. Scanning and data conversion are tools within such systems, while inventory management and tickler files serve different purposes.",
+  "type": "concept_completion",
+  "knowledge_area": "Database/Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be proper reasons to maintain a tickler file system?",
+  "options": [
+   "To convert paper documents into digital format, scan images, and extract data electronically",
+   "To organize historical records, preserve archival documents, and maintain reference libraries",
+   "To reduce storage space, decrease filing costs, and eliminate outdated records",
+   "To ensure timely action on deadlines, track follow-up activities, and prevent missed commitments"
+  ],
+  "correct_index": 3,
+  "explanation": "A tickler file's primary purpose is to prompt action at specific times—ensuring deadlines are met, follow-ups occur, and commitments are not overlooked. The other options describe different filing purposes: space reduction, archival preservation, and document scanning.",
+  "type": "which_of_following",
+  "knowledge_area": "Database/Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When using scanning equipment to convert paper documents into electronic files, all of the following steps are typically necessary EXCEPT",
+  "options": [
+   "assigning unique numerical codes to each scanned document",
+   "removing staples and paper clips to prevent scanner jams",
+   "organizing the original paper copies alphabetically before scanning",
+   "saving the electronic files with clear, searchable metadata"
+  ],
+  "correct_index": 2,
+  "explanation": "While removing fasteners, coding documents for retrieval, and adding metadata are all essential parts of a scanning workflow, organizing originals alphabetically before scanning is not necessary—the documents may be processed in any order, and the alphabetical organization occurs in the electronic system, not the paper stack. This makes it the odd-one-out step.",
+  "type": "all_except",
+  "knowledge_area": "Database/Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of converting paper-based records into digital format using optical scanning technology is known as ___.",
+  "options": [
+   "data conversion and saving",
+   "document purging",
+   "chronological filing",
+   "inventory recording"
+  ],
+  "correct_index": 0,
+  "explanation": "Data conversion and saving via scanning equipment is the specific term for capturing paper documents into electronic form for storage and retrieval. Document purging removes outdated records, chronological filing organizes by date, and inventory recording tracks quantities—none describe the scanning digitization process.",
+  "type": "definition_recall",
+  "knowledge_area": "Database/Information Management",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of entering data into preprinted forms on paper or filling in fields within electronic forms on a computer is called ___.",
+  "options": [
+   "document conversion",
+   "data extraction",
+   "form completion",
+   "query processing"
+  ],
+  "correct_index": 2,
+  "explanation": "Form completion is the standard business term for the act of filling in preprinted or electronic forms with required information. Data extraction refers to pulling information from existing sources, document conversion is changing file formats, and query processing involves searching databases — none of these describe filling in a form.",
+  "type": "definition_recall",
+  "knowledge_area": "Information Processing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are examples of office and online references that help with business procedures EXCEPT",
+  "options": [
+   "thesauruses and dictionaries",
+   "customer sales transaction records",
+   "spell-check and grammar-checking tools",
+   "style guides and formatting standards"
+  ],
+  "correct_index": 1,
+  "explanation": "Customer sales transaction records are business data, not references used to guide how to write or format documents correctly. Spell-checkers, thesauruses, dictionaries, and style guides are all standard office and online references that support proper document preparation and professional communication.",
+  "type": "all_except",
+  "knowledge_area": "Information Processing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be considered valid office or online references when preparing business documents?",
+  "options": [
+   "Email templates, meeting notes, archived project files",
+   "Database tables, spreadsheet formulas, customer contact lists",
+   "Microsoft Word built-in grammar checker, company style guide, employee payroll records",
+   "Grammar checker, dictionary, thesaurus, company formatting standards"
+  ],
+  "correct_index": 3,
+  "explanation": "A grammar checker, dictionary, thesaurus, and company formatting standards are all references — tools and documents specifically designed to guide correct writing and formatting. Employee payroll records, database tables, spreadsheet formulas, and customer data are operational business information, not references for document preparation. Email templates and project files are document examples, not standardized references.",
+  "type": "which_of_following",
+  "knowledge_area": "Information Processing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The combination of skills used to enter, organize, store, retrieve, and present business information through computers and software systems is called ___.",
+  "options": [
+   "information processing",
+   "document distribution",
+   "spreadsheet analysis",
+   "data management"
+  ],
+  "correct_index": 0,
+  "explanation": "Information processing encompasses the full range of activities involved in handling business data and documents — from data entry and editing to creating tables, charts, and reports. Data management is narrower (focused on storage and retrieval), document distribution refers only to sharing, and spreadsheet analysis is just one small part of the larger skill set.",
+  "type": "concept_completion",
+  "knowledge_area": "Information Processing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all help an employee complete business forms more accurately and efficiently?",
+  "options": [
+   "Converting between software programs, extracting data with search queries, creating database reports",
+   "Consulting spell-checkers and grammar tools, using online references, applying consistent formatting standards",
+   "Using office references like style guides, saving documents in multiple formats, scanning paper copies",
+   "Dictating notes, transcribing correspondence, merging document files"
+  ],
+  "correct_index": 1,
+  "explanation": "Spell-checkers, grammar tools, online references, and consistent formatting standards directly support accurate and efficient form completion by catching errors and ensuring professional presentation. Saving in multiple formats and scanning are document management tasks unrelated to accuracy; converting programs, extracting data, dictating, and transcribing are separate information-processing activities not focused on form completion specifically.",
+  "type": "which_of_following",
+  "knowledge_area": "Information Processing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A document that lists all checks, cash, and other items being deposited into a bank account is called a(n) ___",
+  "options": [
+   "reconciliation report",
+   "cash receipt",
+   "bank statement",
+   "deposit slip"
+  ],
+  "correct_index": 3,
+  "explanation": "A deposit slip is the standard banking form used to document what is being deposited—checks, currency, and coins—along with account information. Bank statements show account activity after deposits are processed, not before; reconciliation reports compare deposits to bank records; and cash receipts document money received from customers, not deposits into the bank.",
+  "type": "definition_recall",
+  "knowledge_area": "Finance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of comparing a business's cash records against the bank statement to ensure all transactions match and identify discrepancies is called ___",
+  "options": [
+   "expense allocation",
+   "account auditing",
+   "bank reconciliation",
+   "financial forecasting"
+  ],
+  "correct_index": 2,
+  "explanation": "Bank reconciliation is the specific procedure of matching the business's recorded transactions with the bank's records to verify accuracy and identify any differences such as outstanding checks or deposits in transit. Account auditing is a broader review of financial records; financial forecasting projects future cash flow; and expense allocation divides costs across departments or projects.",
+  "type": "concept_completion",
+  "knowledge_area": "Finance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are standard deductions or withholdings that appear on a payroll document EXCEPT",
+  "options": [
+   "health insurance premiums",
+   "federal income tax",
+   "office supply expenses",
+   "Social Security tax"
+  ],
+  "correct_index": 2,
+  "explanation": "Federal income tax, Social Security tax, and health insurance premiums are all legitimate payroll withholdings deducted from employee paychecks before the net amount is distributed. Office supply expenses are business operating costs that are paid from the company's general funds, not deducted from individual employee paychecks.",
+  "type": "all_except",
+  "knowledge_area": "Finance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An employee's timesheet shows 42 hours worked at $18.50 per hour with no overtime rate differential. When preparing payroll, before any deductions are applied, you would calculate the employee's gross pay as ___",
+  "options": [
+   "$777.00",
+   "$889.25",
+   "$1,023.40",
+   "$814.00"
+  ],
+  "correct_index": 0,
+  "explanation": "Gross pay is calculated by multiplying hours worked by the hourly rate: 42 hours × $18.50/hour = $777.00. This is the amount before any tax withholdings, insurance deductions, or other payroll deductions are applied. The other values result from incorrect multiplications or inclusion of withholdings that belong in net-pay calculations, not gross-pay calculations.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Finance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of matching a business's recorded cash transactions with the bank statement to verify accuracy and find any differences is called ___.",
+  "options": [
+   "ledger balancing",
+   "account reconciliation",
+   "transaction verification",
+   "cash flow analysis"
+  ],
+  "correct_index": 1,
+  "explanation": "Bank reconciliation (or account reconciliation) is the standard accounting procedure for comparing internal records against the bank's statement to ensure all deposits, withdrawals, and fees match and to identify any discrepancies or errors. This is a foundational banking task in business finance.",
+  "type": "definition_recall",
+  "knowledge_area": "Finance",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The practice of paying full attention to a speaker, understanding their message, and responding thoughtfully is called ___",
+  "options": [
+   "verbal communication",
+   "message screening",
+   "call placement",
+   "active listening"
+  ],
+  "correct_index": 3,
+  "explanation": "Active listening is a fundamental communication skill that involves focusing on the speaker, comprehending their meaning, and providing appropriate feedback. This distinguishes it from passive hearing, which is simply receiving sound without engagement or understanding.",
+  "type": "definition_recall",
+  "knowledge_area": "Communication Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be considered good listening skills in a business telephone conversation?",
+  "options": [
+   "Avoiding distractions, taking organized notes, and asking relevant follow-up questions",
+   "Speaking over the caller, jotting down only key words, and interrupting to ask clarifying questions",
+   "Answering calls immediately without screening, speaking in a rushed tone, and assuming the caller's intent",
+   "Using speakerphone to record calls, minimizing eye contact, and answering emails simultaneously"
+  ],
+  "correct_index": 0,
+  "explanation": "Good listening skills include eliminating distractions, documenting important information accurately, and demonstrating engagement through thoughtful questions. The correct option combines focus, documentation, and active participation—all essential to understanding and responding appropriately to callers.",
+  "type": "which_of_following",
+  "knowledge_area": "Communication Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of reviewing caller information before answering or routing a call to determine if the call should be connected, placed on hold, or transferred to another department is called ___",
+  "options": [
+   "conference calling",
+   "call screening",
+   "call transferring",
+   "message placement"
+  ],
+  "correct_index": 1,
+  "explanation": "Call screening is the practice of evaluating incoming calls before fully connecting them, allowing an office to prioritize, filter, or route calls appropriately. This differs from transferring (moving a connected call) or conference calling (connecting multiple parties simultaneously).",
+  "type": "definition_recall",
+  "knowledge_area": "Communication Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are appropriate techniques for answering a business telephone call EXCEPT",
+  "options": [
+   "Greeting the caller warmly and identifying yourself and your department",
+   "Offering to transfer the call or take a message if you cannot assist",
+   "Listening without interrupting while the caller states their purpose",
+   "Asking the caller to repeat their message multiple times to verify accuracy"
+  ],
+  "correct_index": 3,
+  "explanation": "Asking a caller to repeat their message multiple times is inefficient and frustrating; one or two clarifications for accuracy are appropriate, but excessive repetition suggests poor listening and lack of professionalism. The other options—warm greeting, allowing uninterrupted speaking, and offering next steps—are all standard best practices.",
+  "type": "all_except",
+  "knowledge_area": "Communication Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ability to understand and respond appropriately to both spoken words and unspoken signals such as tone of voice, silence, and emotional cues during communication is part of ___",
+  "options": [
+   "telephone directory maintenance",
+   "verbal instruction processing",
+   "interpreting verbal and nonverbal cues",
+   "conference call coordination"
+  ],
+  "correct_index": 2,
+  "explanation": "Interpreting verbal and nonverbal cues means recognizing not just what is said, but how it is said—including tone, pace, pauses, and emotional undertones—to fully understand the caller's true intent and respond appropriately. This skill is essential for effective business communication beyond the literal words spoken.",
+  "type": "concept_completion",
+  "knowledge_area": "Communication Skills",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ethical characteristic that requires an employee to act in the best interest of the organization and refrain from activities that would harm it is called ___",
+  "options": [
+   "honesty",
+   "courtesy",
+   "integrity",
+   "loyalty"
+  ],
+  "correct_index": 3,
+  "explanation": "Loyalty is the commitment to support and defend the organization's interests, even when doing so requires personal sacrifice. While integrity and honesty are also professional characteristics, they focus on truthfulness and moral principles rather than devotion to organizational welfare. Courtesy relates to respectful interpersonal conduct.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics/Safety",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the processes and procedures an organization puts in place to protect sensitive information from unauthorized access, loss, or misuse make up its ___",
+  "options": [
+   "emergency response plan",
+   "security and privacy policy",
+   "ergonomic standard",
+   "compliance framework"
+  ],
+  "correct_index": 1,
+  "explanation": "Security and privacy policies are the formal systems organizations establish to safeguard confidential data, employee records, and proprietary information. While an emergency response plan addresses disaster situations and a compliance framework ensures legal adherence, neither specifically defines the protective measures for information security. Ergonomic standards address workplace physical safety, not data protection.",
+  "type": "concept_completion",
+  "knowledge_area": "Ethics/Safety",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate measures to implement in a comprehensive workplace risk management program?",
+  "options": [
+   "Fire extinguisher training, evacuation drills, and designated emergency assembly points",
+   "Requiring employees to work overtime, increasing production quotas, and reducing break times",
+   "Installing surveillance cameras in all restrooms, monitoring personal emails, and recording all conversations",
+   "Eliminating all employee computer access, restricting phone use, and banning office visitors"
+  ],
+  "correct_index": 0,
+  "explanation": "Fire extinguisher training, evacuation drills, and designated assembly points are legitimate safety measures that prepare employees for physical emergencies and minimize injury. Option B would cripple normal business operations and violate reasonable workplace practices. Option C confuses operational efficiency with risk management and ignores employee welfare. Option D violates privacy rights and employee dignity, crossing ethical and legal boundaries.",
+  "type": "which_of_following",
+  "knowledge_area": "Ethics/Safety",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The ethical principle that means telling the truth and providing accurate information in all business communications and record-keeping is known as ___",
+  "options": [
+   "accountability",
+   "transparency",
+   "honesty",
+   "confidentiality"
+  ],
+  "correct_index": 2,
+  "explanation": "Honesty is the foundational ethical characteristic requiring truthfulness in all professional interactions and documentation. Confidentiality refers to protecting sensitive information rather than communicating truthfully. While accountability and transparency are related professional values, honesty specifically addresses the virtue of truthful conduct and communication.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics/Safety",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all protect an organization against data breaches and confidentiality violations?",
+  "options": [
+   "Reducing IT staff, delaying security updates indefinitely, and maintaining paper records only",
+   "Allowing employees unlimited access to all company databases, sharing login credentials, and storing passwords in accessible documents",
+   "Disabling all security software, removing encryption from email, and publicizing the office layout online",
+   "Password complexity requirements, employee access controls based on job role, and regular security audits"
+  ],
+  "correct_index": 3,
+  "explanation": "Strong passwords, role-based access restrictions, and regular security audits are all proven security practices that limit who can access sensitive data and identify vulnerabilities before they are exploited. Options B and C represent gross security negligence that would invite breaches. Option D undermines security through resource and process failures, making the organization highly vulnerable.",
+  "type": "which_of_following",
+  "knowledge_area": "Ethics/Safety",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A warranty that covers defects in materials and workmanship for a specified period after purchase is called a(n) ___",
+  "options": [
+   "vendor support contract",
+   "manufacturer's warranty",
+   "equipment lease option",
+   "extended service agreement"
+  ],
+  "correct_index": 1,
+  "explanation": "A manufacturer's warranty is the standard guarantee provided by the producer that covers defects in materials and workmanship for a limited time. This is distinct from extended warranties (purchased separately) or vendor support contracts (ongoing service agreements). Understanding this basic term is essential when evaluating purchasing options and comparing vendor offerings.",
+  "type": "definition_recall",
+  "knowledge_area": "Technology Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic examination of an organization's current hardware, software, and equipment to determine what upgrades or replacements are needed makes up the process of ___",
+  "options": [
+   "needs assessment",
+   "vendor evaluation",
+   "system integration",
+   "inventory management"
+  ],
+  "correct_index": 0,
+  "explanation": "A needs assessment is the foundational process of evaluating existing technology and identifying gaps or deficiencies. This differs from inventory management (tracking what exists), vendor evaluation (comparing suppliers), or system integration (combining different systems). Conducting a thorough needs assessment is the first step before making hardware or software recommendations.",
+  "type": "concept_completion",
+  "knowledge_area": "Technology Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be important factors when evaluating hardware vendors?",
+  "options": [
+   "Price alone, fastest shipping available, brand popularity on social media",
+   "Number of online reviews, color and appearance of equipment, how new the vendor's website is",
+   "Reputation for reliability, warranty and support options, pricing and total cost of ownership",
+   "Employee referrals only, geographic location of the vendor, aesthetic design of packaging"
+  ],
+  "correct_index": 2,
+  "explanation": "When selecting a vendor, organizations must consider reliability track record, the quality and scope of warranties and support services, and the complete financial picture including maintenance costs—not just initial price. The other options mix irrelevant factors (social media popularity, website age, packaging aesthetics) with professional evaluation criteria. This question tests understanding of what constitutes a sound purchasing decision.",
+  "type": "which_of_following",
+  "knowledge_area": "Technology Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of obtaining technical assistance from a dedicated team available by phone, email, or chat to resolve technology problems is referred to as using a(n) ___",
+  "options": [
+   "installation guide",
+   "peer support network",
+   "help desk",
+   "technical manual"
+  ],
+  "correct_index": 2,
+  "explanation": "A help desk is a centralized support resource staffed by technicians to assist users with technology issues. This differs from a manual (written reference), peer support (informal assistance from colleagues), or an installation guide (one-time setup instructions). Help desks are a critical help resource that organizations establish to support employee productivity and troubleshoot problems efficiently.",
+  "type": "definition_recall",
+  "knowledge_area": "Technology Concepts",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be effective ways to resolve a technology problem without waiting for a help desk response?",
+  "options": [
+   "Contact the vendor's sales team, request a hardware replacement, and file a complaint",
+   "Check the software manual, search the manufacturer's online knowledge base, and restart the device",
+   "Uninstall all software, delete system files, and reinstall the operating system",
+   "Bypass security settings, disable antivirus protection, and modify system registry files"
+  ],
+  "correct_index": 1,
+  "explanation": "Consulting the manual, searching online help resources, and performing a device restart are all self-service troubleshooting steps that users can safely attempt first. The other options either involve unnecessary destructive actions or are inappropriate escalation paths that would not solve the immediate problem.",
+  "type": "which_of_following",
+  "knowledge_area": "Technology Concepts",
+  "difficulty": "hard"
+ }
+]

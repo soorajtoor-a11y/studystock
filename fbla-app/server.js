@@ -301,11 +301,19 @@ function alreadyAskedBlock(priorQuestions) {
   const qLines = priorQuestions.map((q, i) => `  ${i + 1}. ${q.question}`).join('\n');
   const answers = [...new Set(priorQuestions.map(answerText).filter(Boolean))];
   const aLines = answers.map(a => `  - ${a}`).join('\n');
+  // Real observed slowdown (bulk path, mirrored here for parity): near the
+  // end of a pool the model keeps re-reaching for the same "safe," obvious
+  // facts and colliding with this list. Once it's substantial, give it
+  // explicit permission to go narrower/more specific instead of defaulting
+  // to something similar to what's already covered.
+  const narrowHint = priorQuestions.length >= 8
+    ? `\n\nThis pool already has a substantial number of facts covered. If you're struggling to find a genuinely new angle, it's fine — and expected — to test a more specific technical distinction, a narrower sub-detail, or an edge case within this topic, rather than defaulting to a fact similar to what's already listed above.`
+    : '';
   return `ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is now OFF LIMITS, including asking about it again with different wording (RULE 8c):
 ${qLines}
 
 CORRECT ANSWERS ALREADY USED IN THIS POOL — do NOT write a new question whose correct answer is any of these concepts, even phrased completely differently or asked from a different angle. Pick a genuinely DIFFERENT fact from the source material instead:
-${aLines}`;
+${aLines}${narrowHint}`;
 }
 
 // Retry a fallible async fn up to maxAttempts times total.
@@ -917,12 +925,22 @@ app.post('/api/quiz', async (req, res) => {
   try {
     await withRetry(async () => {
       const remaining = count - kept.length;
+      // Over-request when the gap is small — mirrors generate_bank.py's
+      // identical fix. Near the end of a large quiz (or a repeatedly-
+      // regenerated one on the same objective), asking for exactly 1-2
+      // gives the model almost no room to avoid an already-covered fact.
+      // Asking for a few extra gives it more surface area to find enough
+      // genuinely clean ones in one shot. Never exceeds the original
+      // requested count. Surplus beyond `remaining` is trimmed by the
+      // existing `good.slice`-equivalent logic below (kept only grows by
+      // what's still needed via the final `.slice(0, count)` on `kept`).
+      const requestN = remaining > 2 ? remaining : Math.min(count, remaining + 2);
       const extraPrior = priorQuestions.concat(kept);
-      const prompt = buildGenPrompt('quiz', remaining, objective, outline, difficulty, extras, event, extraPrior, objectivesList);
+      const prompt = buildGenPrompt('quiz', requestN, objective, outline, difficulty, extras, event, extraPrior, objectivesList);
 
       let raw = '';
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
-      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(remaining * 350, 16384) });
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(requestN * 350, 16384) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       const parsed = sanitizeQuestions(extractJSON(raw));
       const lengthViolations = findLengthTellViolations(parsed);

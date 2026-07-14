@@ -274,6 +274,21 @@ def already_asked_block(prior_questions):
     q_lines = "\n".join(f"  {i+1}. {p['question']}" for i, p in enumerate(prior_questions))
     answers = [a for a in (answer_text(p) for p in prior_questions) if a]
     a_lines = "\n".join(f"  - {a}" for a in dict.fromkeys(answers))
+    # Real observed slowdown: near the end of a pool, the model keeps
+    # re-reaching for the same "safe," obvious facts and colliding with this
+    # list over and over — the last 1-2 questions of a nearly-full pool took
+    # 6+ retry attempts in a real run. Once the list is substantial, give it
+    # explicit permission to go narrower/more specific instead of defaulting
+    # to something similar to what's already covered.
+    narrow_hint = ""
+    if len(prior_questions) >= 8:
+        narrow_hint = (
+            "\n\nThis pool already has a substantial number of facts covered. "
+            "If you're struggling to find a genuinely new angle, it's fine — "
+            "and expected — to test a more specific technical distinction, a "
+            "narrower sub-detail, or an edge case within this topic, rather "
+            "than defaulting to a fact similar to what's already listed above."
+        )
     return (
         "ALREADY ASKED IN THIS KNOWLEDGE AREA — every one of these facts is "
         "now OFF LIMITS, including asking about it again with different "
@@ -282,7 +297,7 @@ def already_asked_block(prior_questions):
         "question whose correct answer is any of these concepts, even "
         "phrased completely differently or asked from a different angle. "
         "Pick a genuinely DIFFERENT fact from the source material instead:\n"
-        + a_lines
+        + a_lines + narrow_hint
     )
 
 def objective_tagging_block(objectives):
@@ -1009,7 +1024,16 @@ def _generate_batch(client, prompt_builder, area_name, state, target_n,
     worst_rank_seen = None
     for attempt in range(1, max_attempts + 1):
         extra_prior = (prior_questions or []) + kept
-        prompt = prompt_builder(remaining, extra_prior)
+        # Over-request when the gap is small — real observed slowdown: near
+        # the end of a pool, asking for exactly 1 gives the model almost no
+        # room to avoid an already-covered fact, so it collides and retries
+        # over and over (6+ attempts observed for a single last question in
+        # a real run). Asking for a few extra gives it more surface area to
+        # find at least `remaining` genuinely clean ones in one shot. Any
+        # surplus beyond target_n is trimmed at the end (see final `kept[:
+        # target_n]`) — this never overshoots the exact target count.
+        request_n = remaining if remaining > 2 else min(BATCH_SIZE, remaining + 2)
+        prompt = prompt_builder(request_n, extra_prior)
         try:
             raw = call_model(client, prompt)
             parsed = parse_questions(raw, area_name)

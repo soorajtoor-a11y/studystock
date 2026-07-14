@@ -1,0 +1,2116 @@
+{
+ "Marketing Fundamentals": [
+  {
+   "question": "The process of identifying and analyzing groups of people or organizations with similar needs, wants, and buying behaviors is called ___.",
+   "options": [
+    "competitive analysis",
+    "brand positioning",
+    "product differentiation",
+    "market segmentation"
+   ],
+   "correct_index": 3,
+   "explanation": "Market segmentation is the foundational marketing activity that divides a larger market into distinct groups based on shared characteristics. This is a core function that enables targeted marketing efforts and helps companies allocate resources more effectively to reach the right customers.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company's plan that outlines how it will achieve its marketing goals, including specific actions, timelines, budgets, and performance measures, is known as ___.",
+   "options": [
+    "a sales forecast",
+    "a market opportunity analysis",
+    "a marketing plan",
+    "a distribution strategy"
+   ],
+   "correct_index": 2,
+   "explanation": "A marketing plan is a comprehensive document that details exactly how a company will execute its marketing strategy, including which customers to target, what tactics to use, when to deploy them, and how to measure success. It is distinct from a strategy because it translates strategy into concrete, actionable steps with specific resources and timelines.",
+   "type": "definition_recall",
+   "objective_num": 8,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be factors that influence a consumer's buying behavior?",
+   "options": [
+    "Company profit margins, competitor pricing strategies, and wholesale costs",
+    "Supplier availability, production capacity, and inventory management systems",
+    "Government tariff rates, interest rates set by central banks, and currency exchange fluctuations",
+    "Personal income level, cultural values, and past purchasing experiences"
+   ],
+   "correct_index": 3,
+   "explanation": "Personal income, cultural values, and past experiences are all internal and social factors that directly shape what and how consumers choose to buy. The other options describe business or economic factors that affect sellers, not the individual consumer's decision-making process.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A specific group of consumers with distinct needs, wants, and characteristics that a company targets with tailored marketing efforts is called a ___.",
+   "options": [
+    "marketing mix",
+    "target market",
+    "distribution channel",
+    "product line"
+   ],
+   "correct_index": 1,
+   "explanation": "A target market is the specific group of customers a company aims to reach and serve. This differs from a product line (multiple products), distribution channel (how products reach customers), or marketing mix (the combination of product, price, place, and promotion).",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The collection of all of an organization's efforts to inform, persuade, and remind customers about its products and services makes up ___.",
+   "options": [
+    "public relations",
+    "pricing strategy",
+    "promotion",
+    "market research"
+   ],
+   "correct_index": 2,
+   "explanation": "Promotion is the communication function in marketing that informs, persuades, and reminds customers about products and services. Public relations is narrower (managing reputation), pricing strategy is a separate marketing element, and market research is about gathering customer information—not communicating with customers.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The total number of people or organizations within a geographic area or demographic group that could potentially purchase a product or service is called ___.",
+   "options": [
+    "market size",
+    "market demand",
+    "customer base",
+    "purchasing power"
+   ],
+   "correct_index": 0,
+   "explanation": "Market size refers to the total potential customer population in a defined area or segment. This is distinct from market demand (the quantity consumers want) and purchasing power (their ability to buy), making it a fundamental concept in market identification and analysis.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes and decisions a company uses to develop, organize, and execute its approach to reaching customers and achieving business goals make up ___.",
+   "options": [
+    "marketing strategy",
+    "market research",
+    "customer relationship management",
+    "brand identity"
+   ],
+   "correct_index": 0,
+   "explanation": "A marketing strategy is the comprehensive approach that guides how a company will reach its target customers and meet its objectives. It encompasses planning, organization, and execution decisions, whereas market research is a tool within strategy, CRM manages existing relationships, and brand identity is just one element of the broader strategy.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be job roles available to someone pursuing a career in marketing?",
+   "options": [
+    "Production supervisor, quality control inspector, and supply chain planner",
+    "Network technician, database administrator, and cybersecurity analyst",
+    "Accounts payable specialist, inventory auditor, and payroll administrator",
+    "Market research analyst, brand manager, and marketing coordinator"
+   ],
+   "correct_index": 3,
+   "explanation": "Market research analyst, brand manager, and marketing coordinator are all legitimate marketing career positions that directly involve customer analysis, product positioning, or campaign execution. The other options represent roles in accounting/finance, information technology, and production/operations—distinct career fields outside marketing.",
+   "type": "which_of_following",
+   "objective_num": 5,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are employment opportunities in marketing EXCEPT",
+   "options": [
+    "digital marketing strategist",
+    "inventory control supervisor",
+    "public relations specialist",
+    "social media manager"
+   ],
+   "correct_index": 1,
+   "explanation": "Inventory control supervisors manage warehouse stock and supply chain logistics—operations and supply chain functions, not marketing. Social media manager, public relations specialist, and digital marketing strategist are all direct marketing career paths focused on customer communication, brand management, and promotional activities.",
+   "type": "all_except",
+   "objective_num": 5,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The group of customers or organizations that a business has decided to focus its marketing efforts on, based on shared characteristics and needs, is called a(n) ___.",
+   "options": [
+    "market size",
+    "consumer demographic",
+    "target audience",
+    "market segment"
+   ],
+   "correct_index": 2,
+   "explanation": "A target audience is the specific group of people or organizations a company aims to reach and influence with its marketing messages and products. While market segment describes the broader grouping process, target audience emphasizes the deliberate selection and focus on a chosen group for marketing efforts.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Understanding a customer's purchasing decisions involves recognizing all of the following influences EXCEPT:",
+   "options": [
+    "Social factors such as family recommendations and peer influence",
+    "Economic factors such as available income and credit terms",
+    "Psychological factors such as motivation and self-image",
+    "The total number of competitors in the national market"
+   ],
+   "correct_index": 3,
+   "explanation": "While social, psychological, and economic factors directly shape an individual customer's buying choices and behavior, the total number of competitors in the national market influences a company's overall strategy and market conditions—not a specific customer's personal buying decision. This distinction recognizes what affects individual choice versus what affects market structure.",
+   "type": "all_except",
+   "objective_num": 6,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following would be ways a business uses information gathered during the marketing planning process EXCEPT:",
+   "options": [
+    "Setting sales targets and revenue goals based on market demand forecasts",
+    "Allocating budget and resources to the marketing activities most likely to reach the target audience",
+    "Automatically replacing all current products with completely new ones regardless of customer feedback",
+    "Determining which geographic regions and customer groups to prioritize"
+   ],
+   "correct_index": 2,
+   "explanation": "Marketing planning guides decisions about which customers to target, how to allocate resources, and what goals to pursue—all based on real market data. Automatically replacing all products without considering customer feedback would ignore the entire purpose of marketing planning, which is to make informed, data-driven decisions. Real marketing decisions are grounded in market research and customer insights, not arbitrary overhauls.",
+   "type": "all_except",
+   "objective_num": 7,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process by which factors such as lifestyle, social influences, and psychological motivations shape how a customer decides to make a purchase is part of understanding ___.",
+   "options": [
+    "consumer buying behavior",
+    "promotional strategy",
+    "market size",
+    "brand loyalty"
+   ],
+   "correct_index": 0,
+   "explanation": "Consumer buying behavior encompasses the psychological, social, and lifestyle factors that influence purchasing decisions. This goes beyond demographics to include motivations and influences that shape the entire decision-making process. The other options describe related but distinct marketing concepts—market size measures potential customers, promotional strategy is how companies communicate, and brand loyalty is the outcome of satisfied customers.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business's desire to expand into new geographic regions, the availability of disposable income among potential customers, and competitive pricing in a region would all be examples of factors influencing ___.",
+   "options": [
+    "the promotion budget",
+    "market identification and selection",
+    "the development of a mission statement",
+    "employment in marketing careers"
+   ],
+   "correct_index": 1,
+   "explanation": "Market identification involves recognizing which geographic areas, customer groups, and competitive environments a business should target. Geography, customer income levels, and competitive landscape are all critical factors in determining which markets exist and are worth pursuing. The other options describe different marketing functions—employment opportunities are career paths, mission statements are organizational statements, and promotion budgets are spending allocations.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Understanding how global economic trends, international trade policies, and access to customers in different countries influence a business's ability to compete and grow is central to recognizing marketing's importance in ___.",
+   "options": [
+    "product innovation",
+    "seasonal demand",
+    "consumer psychology",
+    "a global economy"
+   ],
+   "correct_index": 3,
+   "explanation": "Marketing's importance in a global economy lies in helping businesses understand and reach customers across borders, navigate international competition, and adapt to different markets. This recognizes that modern marketing operates within a worldwide context where global forces shape strategy and opportunity.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The activities a business performs to inform, attract, and retain customers—such as product development, pricing, distribution, and customer service—are collectively known as ___.",
+   "options": [
+    "market research",
+    "customer retention",
+    "marketing functions",
+    "promotional tactics"
+   ],
+   "correct_index": 2,
+   "explanation": "Marketing functions are the core operational processes a business uses to deliver value to customers across all aspects of the exchange. This includes identifying customer needs, developing products to meet those needs, setting prices, ensuring products reach the right locations, and maintaining relationships—all activities that support the broader marketing effort.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The activities and decisions a company uses to determine what customers want, evaluate market opportunities, and create a roadmap for reaching those customers with the right product at the right price make up ___.",
+   "options": [
+    "marketing planning",
+    "market research",
+    "competitive analysis",
+    "product development"
+   ],
+   "correct_index": 0,
+   "explanation": "Marketing planning is the comprehensive process of assessing customer needs, identifying opportunities, and establishing a strategic direction—it encompasses research, goal-setting, and tactical decisions. Market research is a tool used within planning; competitive analysis and product development are specific functions that feed into the planning process but are not the planning process itself.",
+   "type": "concept_completion",
+   "objective_num": 7,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of marketing functions—activities that a business performs to create value for and attract customers?",
+   "options": [
+    "Operating manufacturing equipment, shipping products, and handling payroll",
+    "Conducting market research, developing product features, and setting prices",
+    "Setting production schedules, managing inventory levels, and filing corporate tax returns",
+    "Hiring employees, maintaining accounting records, and purchasing raw materials"
+   ],
+   "correct_index": 1,
+   "explanation": "Marketing functions specifically include activities focused on identifying customer needs, developing products, determining pricing, and gathering market information—all directed at attracting and satisfying customers. The other options include internal business operations (production, accounting, payroll) or supply-chain activities that support but are not themselves core marketing functions.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Understanding that a customer's purchase of a luxury vehicle is influenced by both their financial ability to afford it and their desire to project a certain social status reflects recognition of which factor in buying behavior?",
+   "options": [
+    "Both psychological and social influences shape purchasing choices",
+    "Education level is the sole predictor of consumer spending",
+    "Only economic factors matter in buying decisions",
+    "Marketing messages are the primary driver of all purchases"
+   ],
+   "correct_index": 0,
+   "explanation": "Consumer buying behavior is shaped by multiple types of influences—psychological factors (like self-image and status needs) and social factors (like peer perception) work together with economic ability. This question tests understanding that buying decisions are complex and multifaceted, not driven by a single factor or marketing alone.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The activities a business performs to discover what customers need, evaluate opportunities in the marketplace, and plan how to deliver the right product at the right price are collectively called ___.",
+   "options": [
+    "customer retention",
+    "marketing planning",
+    "market positioning",
+    "product development"
+   ],
+   "correct_index": 1,
+   "explanation": "Marketing planning encompasses the discovery of customer needs, evaluation of market opportunities, and the strategic decisions about product, price, and delivery—distinguishing it from the narrower focus of positioning (how a brand is perceived) or the single function of product development alone. This represents the overarching process that guides a company's marketing approach.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Marketing Fundamentals",
+   "difficulty": "hard"
+  }
+ ],
+ "Product/Service Management": [
+  {
+   "question": "The combination of all the different product lines and individual products that a company offers to its customers is called the ___.",
+   "options": [
+    "product positioning",
+    "product branding",
+    "product mix",
+    "product lifecycle"
+   ],
+   "correct_index": 2,
+   "explanation": "The product mix refers to the breadth and depth of all products a company sells. It encompasses both the variety of product lines (breadth) and the number of different products within each line (depth), and is a core strategic decision in product management.",
+   "type": "definition_recall",
+   "objective_num": 5,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would be considered uses of grades and standards in marketing?",
+   "options": [
+    "Establishing price ceilings and determining profit margins for retailers",
+    "Selecting distribution channels and designing promotional campaigns",
+    "Creating brand loyalty programs and developing new product concepts",
+    "Defining consistent quality benchmarks and helping consumers make informed purchasing decisions"
+   ],
+   "correct_index": 3,
+   "explanation": "Grades and standards serve to communicate quality expectations and enable consistent evaluation of products, which helps both marketers and consumers understand what they are purchasing. This standardization builds trust and allows fair comparison between competing products.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In product management, grades and standards serve all of the following purposes EXCEPT",
+   "options": [
+    "establishing minimum quality expectations that protect consumer interests",
+    "helping consumers evaluate and compare competing products based on consistent criteria",
+    "enabling marketers to communicate product quality levels to different customer segments",
+    "determining the retail markup percentage and distributor profit margins"
+   ],
+   "correct_index": 3,
+   "explanation": "While grades and standards communicate quality and protect consumers, they do not directly determine pricing structures or profit margins—those are separate business and financial decisions. Markup and margins are set by the company based on costs, competition, and strategy, not by quality grades.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A product line is best defined as a group of closely related products within a company's offerings that serve a similar purpose or customer need. Which of the following would be an example of a product line?",
+   "options": [
+    "The profit margin applied to products at different retail locations",
+    "The process of determining which products to discontinue based on sales volume",
+    "All beverages a soft drink company manufactures, including sodas, juices, and bottled water",
+    "The total number of individual product units sold by a manufacturer in one fiscal year"
+   ],
+   "correct_index": 2,
+   "explanation": "A product line is a group of related products marketed together under one brand or category. The soft drink example shows beverages grouped by similar function and customer use. The other options describe unrelated concepts: unit sales volume, pricing strategy, and product elimination decisions.",
+   "type": "concept_completion",
+   "objective_num": 5,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The stage of the product life cycle when sales grow rapidly and competition enters the market is called the ___.",
+   "options": [
+    "Maturity stage",
+    "Growth stage",
+    "Decline stage",
+    "Introduction stage"
+   ],
+   "correct_index": 1,
+   "explanation": "The growth stage is characterized by increasing sales as consumers become aware of the product and demand rises, while competitors begin to enter the market. This differs from introduction (slow sales, limited competition) and maturity (slowing growth, market saturation).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following best demonstrates how product positioning influences marketing decisions?",
+   "options": [
+    "A luxury car manufacturer targets high-income professionals and emphasizes craftsmanship, exclusivity, and performance in all advertising and dealership experiences",
+    "A technology company lowers its prices during the maturity stage to prevent smaller competitors from entering the market",
+    "A clothing retailer expands its product mix by adding home furnishings and kitchen equipment to increase overall sales revenue",
+    "A soft drink company removes artificial colors from its formula to reduce production costs and remain competitive with other beverages"
+   ],
+   "correct_index": 0,
+   "explanation": "Positioning—how a company wants customers to perceive and value its product—directly shapes every marketing decision, from target audience selection to messaging to customer experience. The luxury car example shows how a clear position (premium, exclusive, high-performance) drives consistent decisions across advertising, distribution, and brand experience. The other options address pricing strategy, product mix expansion, and cost reduction, which are separate from the positioning concept.",
+   "type": "scenario_judgment",
+   "objective_num": 6,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of distinguishing a product in the marketplace by creating a specific image or identity in the minds of target customers is called ___.",
+   "options": [
+    "segmentation",
+    "branding",
+    "positioning",
+    "differentiation"
+   ],
+   "correct_index": 2,
+   "explanation": "Product positioning is the strategic communication of a product's unique value and place relative to competitors in customers' minds. Branding involves creating brand identity and loyalty; segmentation divides the market into groups; differentiation is the process of making products distinct, but positioning is the specific term for how that distinction is communicated to a target audience.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A written promise that a product will perform as described and that the manufacturer will repair or replace it if it fails within a specified period is called a ___.",
+   "options": [
+    "quality assurance",
+    "guarantee",
+    "product certification",
+    "warranty"
+   ],
+   "correct_index": 3,
+   "explanation": "A warranty is a written commitment by the manufacturer regarding product performance and remedies if defects occur. Guarantees are similar but typically refer to promises made by sellers rather than manufacturers, and the other options describe related but distinct quality-control concepts.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of creating a distinctive identity and recognition for a product or service in customers' minds through consistent messaging, design, and values is called ___.",
+   "options": [
+    "branding",
+    "pricing strategy",
+    "distribution strategy",
+    "market segmentation"
+   ],
+   "correct_index": 0,
+   "explanation": "Branding encompasses all efforts to build a unique and recognizable identity for a product or service. Market segmentation divides customers into groups, while distribution and pricing are separate marketing tools that support but do not define branding itself.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The stage of the product life cycle in which a product experiences declining sales as competition intensifies and consumer interest wanes is called the ___.",
+   "options": [
+    "withdrawal stage",
+    "decline stage",
+    "maturity stage",
+    "saturation stage"
+   ],
+   "correct_index": 1,
+   "explanation": "The decline stage is the final phase of the product life cycle, characterized by falling sales and market share as products become outdated or are replaced by newer alternatives. Understanding this stage helps marketers decide whether to reposition, redesign, or discontinue a product.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manufacturer of athletic shoes wants to understand how to adjust its marketing strategy as demand changes. Which of the following would be marketing decisions most directly affected by where a shoe model sits in its product life cycle?",
+   "options": [
+    "The shoe distributor's warehouse location and inventory management system",
+    "The shoe's color options and the materials used in manufacturing",
+    "The shoe's retail price, promotional intensity, and target customer segment",
+    "The shoe factory's production capacity and employee training programs"
+   ],
+   "correct_index": 2,
+   "explanation": "Price, promotion, and target audience all shift strategically depending on the product life cycle stage—for example, premium pricing and limited promotion during maturity versus aggressive discounting during decline. Manufacturing capacity and warehouse logistics are operational decisions, not marketing strategy choices. Material and color decisions are product design features independent of life cycle stage.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The stage of the product life cycle in which a product first enters the market with slow initial sales and high costs relative to revenue is called the ___.",
+   "options": [
+    "introduction stage",
+    "saturation stage",
+    "maturity stage",
+    "growth stage"
+   ],
+   "correct_index": 0,
+   "explanation": "The introduction stage is the first phase of the product life cycle, characterized by slow sales growth, high production and marketing costs, and consumer unfamiliarity with the new product. This stage requires significant investment before the product gains market acceptance and sales momentum.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In product and service management, the scope of activities includes all of the following EXCEPT",
+   "options": [
+    "Managing how products are positioned in customers' minds relative to competitors",
+    "Selecting which products or services to develop and offer to target customers",
+    "Monitoring product performance and deciding when to discontinue or revise offerings",
+    "Determining the retail price markup percentage that individual store owners charge to end consumers"
+   ],
+   "correct_index": 3,
+   "explanation": "Product/service management focuses on product selection, development, positioning, and performance monitoring—decisions made by the company itself. Retail markup percentages are determined by individual retailers, not by the product management function. The markup is a retail pricing decision that falls outside the scope of product/service management.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be factors that influence how a company positions its products or services in the marketplace?",
+   "options": [
+    "The age of the company and the nationality of its founders",
+    "Target customer demographics, perceived quality, and unique competitive advantages",
+    "The color of product packaging and the language used in user manuals",
+    "The geographic location of company headquarters and the number of employees"
+   ],
+   "correct_index": 1,
+   "explanation": "Product positioning is driven by strategic factors—who the target customer is, what quality level is promised, and what makes the product different from competitors. While packaging color and headquarters location may play minor roles, they are not core positioning factors; demographic targeting, perceived value, and competitive differentiation are the fundamental drivers.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A beverage company is launching a new energy drink and must decide between positioning it as a premium health-focused option for fitness enthusiasts or as a budget-friendly, mass-market alternative. Which aspect of the product's positioning decision is most directly affected by this choice?",
+   "options": [
+    "The flavor and ingredient list of the drink",
+    "The target customer segment, price point, and promotional messaging used to reach consumers",
+    "The supplier country for raw materials and the brand's legal registration status",
+    "The size of the production facility and number of manufacturing shifts"
+   ],
+   "correct_index": 1,
+   "explanation": "Positioning determines which customers a company targets and how it communicates value to them, which directly shapes pricing, advertising tone, and channel selection. While ingredients and production capacity matter operationally, the positioning choice itself is fundamentally about defining the target market and the image the brand projects—reflected in price and messaging.",
+   "type": "scenario_judgment",
+   "objective_num": 6,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The stage of the product life cycle in which a product begins to face increased competition, sales growth slows, and producers begin to cut prices to maintain market share is called the ___.",
+   "options": [
+    "Maturity stage",
+    "Saturation stage",
+    "Decline stage",
+    "Introduction stage"
+   ],
+   "correct_index": 0,
+   "explanation": "The maturity stage is characterized by peak sales, intense competition, and price reductions as the market becomes saturated with similar products. This differs from the introduction stage (when the product first launches) and the decline stage (when sales fall due to loss of consumer interest).",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Product and service management in an organization encompasses all of the following activities EXCEPT",
+   "options": [
+    "Creating product specifications, quality standards, and performance benchmarks",
+    "Managing product life cycle stages and adjusting strategy as products mature",
+    "Developing new product concepts and evaluating their market potential",
+    "Establishing sales quotas and compensation structures for individual sales representatives"
+   ],
+   "correct_index": 3,
+   "explanation": "Product management includes development, lifecycle oversight, and quality standards—all core to managing what the company offers. Sales compensation and quotas, while related to revenue, fall under sales management and human resources, not product/service management itself. This distinction separates product strategy from sales force administration.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A guarantee differs from a warranty in that a guarantee is typically a promise made by a _____ rather than the manufacturer.",
+   "options": [
+    "product distributor only",
+    "third-party testing agency",
+    "retailer or seller",
+    "government regulatory body"
+   ],
+   "correct_index": 2,
+   "explanation": "A guarantee is often offered by the retailer, seller, or merchant as a promise of product performance or satisfaction, whereas a warranty is the manufacturer's written promise. This distinction is important because the party making the promise affects the customer's recourse if the product fails.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company's promise to refund a customer's money if a product does not meet stated expectations or perform as advertised is known as a ___.",
+   "options": [
+    "guarantee",
+    "warranty",
+    "product certification",
+    "quality assurance"
+   ],
+   "correct_index": 0,
+   "explanation": "A guarantee is a promise of refund or satisfaction if the product fails to meet expectations, often made by the seller or retailer rather than the manufacturer. This differs from a warranty, which is a manufacturer's written promise to repair or replace a defective product. The distinction between these two remedies is a key concept in product/service management.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The elements that a company uses to create a distinct market position for its product—such as superior durability, innovative design, or exceptional customer service—are collectively referred to as ___.",
+   "options": [
+    "product life cycle drivers",
+    "brand loyalty indicators",
+    "competitive differentiation factors",
+    "consumer preference benchmarks"
+   ],
+   "correct_index": 2,
+   "explanation": "Competitive differentiation factors are the specific attributes and benefits that set a product apart from rivals in customers' minds. These might include quality, features, service, or price strategy—anything that makes one product noticeably different and more attractive than another. This concept is central to how companies establish and maintain positioning in competitive markets.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Product/Service Management",
+   "difficulty": "hard"
+  }
+ ],
+ "Channel Management": [
+  {
+   "question": "The set of all organizations and individuals involved in moving products from producers to consumers is called a ___.",
+   "options": [
+    "supply chain",
+    "channel of distribution",
+    "logistics network",
+    "retail marketplace"
+   ],
+   "correct_index": 1,
+   "explanation": "A channel of distribution includes all the organizations (wholesalers, retailers, agents) and individuals who participate in the flow of goods from the producer to the final consumer. While supply chain and logistics are related concepts, they focus on operations rather than the network structure itself.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all improve the efficiency of channel management?",
+   "options": [
+    "Reducing communication between manufacturers and retailers, limiting inventory tracking, and delaying order processing",
+    "Removing all digital systems and relying solely on phone calls and manual paperwork",
+    "Increasing the number of intermediaries to create more checkpoints for product inspection",
+    "Using inventory management software, implementing real-time order tracking systems, and automating supply chain data exchange"
+   ],
+   "correct_index": 3,
+   "explanation": "Technology such as inventory management software, real-time tracking, and automated data exchange directly improves channel efficiency by reducing delays, minimizing errors, and improving coordination. The other options either remove helpful tools, increase inefficiency through excessive intermediaries, or rely on outdated manual methods.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Technology in channel management serves to connect producers, intermediaries, and customers by enabling the rapid exchange of information and automation of key processes. This use of technology primarily supports which aspect of channel management?",
+   "options": [
+    "Ensuring that all consumers purchase products at identical prices",
+    "Reducing the total number of products a manufacturer can offer",
+    "Allowing retailers to operate independently without any manufacturer involvement",
+    "Facilitating communication, coordination, and efficient order fulfillment across the distribution network"
+   ],
+   "correct_index": 3,
+   "explanation": "Technology enables real-time communication and coordination among all parties in the distribution channel, allowing for faster order processing, better inventory visibility, and more responsive fulfillment. This coordination and communication is central to managing the channel effectively, not limiting product variety, setting prices uniformly, or removing manufacturer involvement.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all describe aspects of channel management's scope?",
+   "options": [
+    "Selecting intermediaries, setting their performance expectations, and monitoring their activities to ensure customer satisfaction",
+    "Creating all advertising messages, designing all product packaging, and setting all consumer prices nationally",
+    "Operating every retail store directly and eliminating all independent wholesalers and retailers from the market",
+    "Determining retail store hours, designing store layouts, and choosing which employees to hire at each location"
+   ],
+   "correct_index": 0,
+   "explanation": "Channel management encompasses selecting appropriate intermediaries, establishing expectations for their performance, and monitoring how well they execute their role in delivering products to customers. The other options describe retail operations, marketing communications, or supply chain ownership—separate functions that fall outside the scope of channel management.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Channel management involves the coordination of all activities required to move products from the producer through intermediaries to the final consumer. Which of the following would all be responsibilities within this scope?",
+   "options": [
+    "Setting prices for all retailers and controlling their profit margins",
+    "Selecting intermediaries, negotiating terms, and monitoring their performance in fulfilling customer orders",
+    "Eliminating all wholesalers and requiring direct sales to consumers only",
+    "Purchasing inventory from competitors and reselling it under the manufacturer's brand"
+   ],
+   "correct_index": 1,
+   "explanation": "Channel management's scope includes selecting and evaluating intermediaries, establishing performance standards, and overseeing their activities to ensure customer satisfaction—core functions that coordinate the entire flow from producer to consumer. The other options either represent extreme actions not part of normal channel management (eliminating wholesalers entirely, purchasing from competitors) or overreach into pricing control that intermediaries typically handle independently.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of deciding which intermediaries will carry and sell a company's products is called ___.",
+   "options": [
+    "intermediary management",
+    "distribution logistics",
+    "channel selection",
+    "channel promotion"
+   ],
+   "correct_index": 2,
+   "explanation": "Channel selection is the specific process of choosing which wholesalers, retailers, or other intermediaries will distribute a company's products. This is a foundational responsibility within channel management that determines which partners will represent the brand to consumers.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical members of a channel of distribution EXCEPT",
+   "options": [
+    "retail stores",
+    "wholesalers",
+    "product manufacturers",
+    "quality control inspectors"
+   ],
+   "correct_index": 3,
+   "explanation": "Quality control inspectors are internal employees who ensure product standards; they are not part of the channel of distribution. A channel of distribution consists of all organizations and individuals (producers, wholesalers, retailers, agents) involved in moving products from the manufacturer to the final consumer.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Negotiating payment terms, delivery schedules, and performance standards with distributors represents which aspect of channel management's scope?",
+   "options": [
+    "establishing and maintaining intermediary relationships",
+    "retail store layout design",
+    "market research and consumer analysis",
+    "consumer advertising campaigns"
+   ],
+   "correct_index": 0,
+   "explanation": "Establishing and maintaining intermediary relationships includes negotiating the terms under which partners will operate and setting expectations for their performance. This relationship-building activity is core to the scope of channel management, ensuring all parties understand their roles and commitments.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The responsibility for coordinating the timing and quantity of products moving through each stage of the distribution network is part of which aspect of channel management?",
+   "options": [
+    "Channel conflict resolution",
+    "Inventory coordination and logistics management",
+    "Consumer feedback collection",
+    "Intermediary financial auditing"
+   ],
+   "correct_index": 1,
+   "explanation": "Inventory coordination and logistics management is a core responsibility within channel management's scope—ensuring products move efficiently through the network at the right time and in the right quantities. This directly supports the flow of goods from producer to consumer and prevents bottlenecks or excess inventory at any stage.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail company's supply chain includes manufacturers, regional warehouses, distribution centers, and retail stores. Which of the following would all be examples of members within this channel of distribution?",
+   "options": [
+    "Manufacturers, advertising agencies, market researchers, and consumers",
+    "Only retailers and consumers",
+    "Manufacturers, wholesalers, retailers, and consumers",
+    "Wholesalers, freight forwarders, financial institutions, and retailers"
+   ],
+   "correct_index": 2,
+   "explanation": "A channel of distribution includes all organizations involved in the actual movement and sale of products—manufacturers produce, wholesalers and retailers distribute and sell, and consumers purchase. Advertising agencies and market researchers, while part of the broader marketing ecosystem, are not part of the physical product distribution channel itself.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of managing relationships with wholesalers, retailers, and other intermediaries to ensure they effectively promote and sell a company's products is known as ___.",
+   "options": [
+    "intermediary management",
+    "retail coordination",
+    "channel relationship management",
+    "product distribution"
+   ],
+   "correct_index": 2,
+   "explanation": "Channel relationship management refers to the ongoing work of building, maintaining, and monitoring partnerships with the organizations that sell products on behalf of the manufacturer. This includes communication, performance tracking, and ensuring alignment between the producer's goals and the intermediary's efforts.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the activities required to move, store, track, and deliver products through a distribution channel make up ___.",
+   "options": [
+    "retail merchandising",
+    "channel logistics",
+    "consumer purchasing behavior",
+    "intermediary selection"
+   ],
+   "correct_index": 1,
+   "explanation": "Channel logistics encompasses the operational and physical tasks—movement, storage, tracking, and delivery—that occur within the distribution channel. Intermediary selection and retail merchandising are distinct channel management functions, while consumer purchasing behavior is outside the scope of channel operations.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Direct channels of distribution involve manufacturers selling products straight to consumers without intermediaries, while indirect channels rely on wholesalers and retailers to move products to end users. Which of the following would ALL be examples of indirect channel structures?",
+   "options": [
+    "A bakery selling fresh bread at farmers markets and a coffee roaster shipping directly to individual subscribers",
+    "A software company offering downloads directly from its website and a furniture maker selling at trade shows",
+    "An online retailer selling directly to customers and a manufacturer operating its own factory outlet stores",
+    "A beverage company selling through regional distributors to grocery stores, and an apparel maker using independent retailers"
+   ],
+   "correct_index": 3,
+   "explanation": "Indirect channels use intermediaries (distributors and retailers) to reach consumers, whereas the other options describe direct-to-consumer sales models where the manufacturer bypasses middlemen. Understanding the structural difference between direct and indirect distribution is essential to grasping how channel management varies based on the flow of products through different network configurations.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are key decisions made during the channel management process EXCEPT",
+   "options": [
+    "deciding which competitors' products the manufacturer will recommend to customers",
+    "determining the number and type of intermediaries that will handle the product",
+    "setting training and performance standards that wholesalers and retailers must meet",
+    "establishing the specific geographic territories each retailer is permitted to serve"
+   ],
+   "correct_index": 0,
+   "explanation": "Channel managers decide on intermediary selection, territorial boundaries, and performance expectations—all core responsibilities. However, recommending competitors' products is not a channel management decision; it contradicts the manufacturer's sales goals and lies outside the scope of managing the company's own distribution network.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be functions that technology performs within channel management?",
+   "options": [
+    "Automating warehouse storage decisions and eliminating the need for human quality control",
+    "Reducing transportation costs by consolidating all products into a single regional distribution center",
+    "Replacing all face-to-face negotiations with digital contracts and removing intermediaries from the supply chain",
+    "Enabling real-time visibility of inventory levels and automating order processing between channel members"
+   ],
+   "correct_index": 3,
+   "explanation": "Technology in channel management serves to automate routine tasks like order processing and provide visibility across the network, allowing producers, intermediaries, and customers to coordinate more efficiently. The other options misstate technology's role—it enhances human decision-making rather than eliminating it, and it does not require removing intermediaries or consolidating all operations into one location.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of deciding how many intermediaries to use at each level of the distribution network and which specific companies will handle product movement is called ___.",
+   "options": [
+    "intermediary placement",
+    "logistics coordination",
+    "channel intensity",
+    "distribution sequencing"
+   ],
+   "correct_index": 2,
+   "explanation": "Channel intensity refers to the number and type of intermediaries selected at each distribution level—a core decision in channel management's scope. This is distinct from the general concept of channel selection (already covered) and focuses specifically on the depth and breadth of intermediary involvement.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The coordination of all activities needed to move products from a manufacturer through various intermediaries to end consumers—including decisions about which partners to work with, how to communicate with them, and how to ensure product arrives on time and in good condition—makes up ___.",
+   "options": [
+    "channel management",
+    "demand forecasting",
+    "retail management",
+    "product positioning"
+   ],
+   "correct_index": 0,
+   "explanation": "This is the core definition of channel management: the full scope of organizing and coordinating all parties and processes involved in moving products from producer to consumer. The question describes the breadth of responsibilities—partner selection, communication, timeliness, and quality—all central to channel management's scope.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical functions that technology enables within channel management EXCEPT",
+   "options": [
+    "Real-time communication of order status between manufacturer and retailer",
+    "Automatic adjustment of product pricing based on competitor actions",
+    "Electronic tracking of inventory levels across multiple warehouses and distribution centers",
+    "Automated data exchange that reduces manual paperwork and ordering delays"
+   ],
+   "correct_index": 1,
+   "explanation": "Technology in channel management focuses on information flow, inventory visibility, and process automation—not dynamic pricing strategy. While competitors' prices may inform pricing decisions, automatic competitive repricing is a pricing/marketing tool, not a channel management function. The other three options are genuine technology roles in connecting and coordinating channel members.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of managing how products move through each stage of the distribution network, including decisions about which intermediaries participate and how they coordinate their activities, is called ___.",
+   "options": [
+    "Supply chain planning",
+    "Channel management",
+    "Channel logistics",
+    "Inventory coordination"
+   ],
+   "correct_index": 1,
+   "explanation": "Channel management encompasses the full scope of decisions and activities involved in moving products from producer to consumer through intermediaries—from selecting partners to coordinating their efforts. While channel logistics and inventory coordination are components within channel management, they do not capture the full breadth of the scope, which includes relationship management and strategic partner selection.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be ways that technology enhances channel management operations?",
+   "options": [
+    "Eliminating the need for wholesalers, automating all consumer purchasing decisions, and replacing retailers with automated kiosks",
+    "Increasing the number of intermediaries, slowing down order processing to improve accuracy, and requiring all channel members to use identical software systems",
+    "Providing real-time tracking of shipments, automating reorder alerts when inventory falls below thresholds, and enabling digital communication between channel members",
+    "Printing product labels faster, reducing the need for warehouse staff, and monitoring competitor pricing exclusively"
+   ],
+   "correct_index": 2,
+   "explanation": "Real-time tracking, automated inventory alerts, and digital communication are genuine technology capabilities that streamline coordination and information flow within channel management. The other options either misrepresent technology's role (eliminating intermediaries rather than coordinating with them) or describe practices that would hinder rather than enhance channel operations.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Channel Management",
+   "difficulty": "hard"
+  }
+ ],
+ "Marketing-Information Management": [
+  {
+   "question": "The process of collecting, analyzing, and interpreting data about markets, competitors, and customers to guide business decisions is called ___.",
+   "options": [
+    "Marketing research",
+    "Market segmentation",
+    "Competitive analysis",
+    "Consumer profiling"
+   ],
+   "correct_index": 0,
+   "explanation": "Marketing research is the systematic process of gathering and interpreting information to support marketing decisions. While market segmentation, consumer profiling, and competitive analysis are all related marketing activities, they are tools or outputs of research rather than the overarching process itself.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes, systems, and tools used to gather, store, analyze, and apply information about customers, markets, and the effectiveness of marketing efforts make up ___.",
+   "options": [
+    "Sales forecasting",
+    "Brand management",
+    "Product development",
+    "Marketing-information management"
+   ],
+   "correct_index": 3,
+   "explanation": "Marketing-information management encompasses the entire scope of how organizations collect, organize, and use data to make informed marketing decisions. It is broader than brand management, sales forecasting, or product development alone, as it supports all marketing functions.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer wants to understand why sales of a particular product line have declined over the past quarter. Which of the following would all be appropriate types of data to monitor when investigating this decline?",
+   "options": [
+    "Customer satisfaction scores, competitor pricing, and inventory turnover rates",
+    "Marketing budget allocation, customer purchase frequency, and point-of-sale transaction details",
+    "Social media follower count, historical weather patterns, and corporate tax rates",
+    "Employee wages, store location demographics, and supplier delivery schedules"
+   ],
+   "correct_index": 0,
+   "explanation": "Customer satisfaction, competitor pricing, and inventory turnover are all directly relevant to understanding product sales performance. Employee wages, delivery schedules, and corporate tax rates are operational or financial matters not tied to this specific sales problem. Social media followers and weather are too indirect, and while marketing budget and transaction details could help, they lack the competitive context that pricing provides.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Monitoring customer satisfaction ratings, sales volume by product category, and website traffic data are examples of what broader business function?",
+   "options": [
+    "Financial accounting",
+    "Supply chain logistics",
+    "Data that guides marketing decision-making",
+    "Human resources management"
+   ],
+   "correct_index": 2,
+   "explanation": "These specific metrics—satisfaction, sales performance, and customer engagement—are all examples of data points that marketers track to understand what is working and what needs adjustment in their strategies. This type of ongoing data monitoring is central to making effective marketing decisions.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered important reasons for a company to invest in gathering marketing data?",
+   "options": [
+    "To replace all customer service interactions with automated systems",
+    "To guarantee that all marketing campaigns will be successful and eliminate competition entirely",
+    "To reduce the frequency of product launches and minimize innovation",
+    "To identify customer needs and preferences, reduce marketing risks, and improve targeting accuracy"
+   ],
+   "correct_index": 3,
+   "explanation": "Marketing data serves three core purposes: understanding what customers actually want, reducing the risk of failed investments by making informed choices, and ensuring marketing efforts reach the right audience with relevant messages. The other options describe either unrealistic guarantees or counterproductive outcomes.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered appropriate sources or types of data a business might monitor to guide marketing decisions?",
+   "options": [
+    "The owner's family feedback, weather in unrelated cities, and traffic patterns on roads the company doesn't use",
+    "Website visitor behavior, customer purchase history, and competitor pricing strategies",
+    "Employee lunch preferences, the CEO's personal shopping habits, and the color of company vehicles",
+    "Random survey responses from people unrelated to the target market, internal office gossip, and unverified rumors"
+   ],
+   "correct_index": 1,
+   "explanation": "Website behavior, purchase history, and competitor pricing are all directly relevant to understanding the market, customer demand, and competitive positioning. The other options contain data that either has no connection to the target market or lacks credibility and accuracy needed for sound business decisions.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A new online retailer has launched but notices that many customers browse products but do not complete purchases. To address this issue, the company could monitor which of the following types of data to identify the problem?",
+   "options": [
+    "The birth dates of all website visitors and their preferred social media platforms",
+    "How many times employees check their personal email and the favorite foods of executives",
+    "The political affiliations of company shareholders and the personal medical histories of employees",
+    "Shopping cart abandonment rates, checkout page user behavior, and customer feedback about the purchase process"
+   ],
+   "correct_index": 3,
+   "explanation": "Cart abandonment, checkout behavior, and customer feedback directly reveal why purchases are not completing—whether due to confusing navigation, unexpected fees, technical problems, or other friction points. The other options contain personal or irrelevant information that would not help diagnose or solve the conversion problem.",
+   "type": "scenario_judgment",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company collects information about when customers visit its store, how long they browse, and which product categories they look at most. What is the primary purpose of monitoring this type of data?",
+   "options": [
+    "To calculate the total revenue generated each month",
+    "To understand customer shopping patterns and preferences for marketing decisions",
+    "To determine which employees are working efficiently during each shift",
+    "To identify which suppliers are delivering products on time"
+   ],
+   "correct_index": 1,
+   "explanation": "Customer behavior data—visit timing, browsing duration, and product category interest—directly informs marketing decisions by revealing what appeals to customers and when they shop. This helps businesses tailor promotions, inventory, and messaging. The other options address operational or financial concerns unrelated to marketing insight.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Data that shows the percentage of target customers aware of a brand or product is called ___.",
+   "options": [
+    "brand awareness",
+    "market penetration",
+    "customer recall",
+    "market share"
+   ],
+   "correct_index": 0,
+   "explanation": "Brand awareness is a key metric monitoring how well-known a company's products are within the target market. It differs from market penetration (actual purchase rate) and market share (sales compared to competitors), making it a distinct data point marketers track to evaluate marketing communication effectiveness.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of internal data sources a company might monitor to support marketing decisions?",
+   "options": [
+    "Magazine circulation data, television ratings, and public census records",
+    "Industry trend reports, competitor social media activity, and regulatory changes",
+    "Customer purchase history, inventory levels, and employee sales reports",
+    "Focus group feedback, third-party market surveys, and economic forecasts"
+   ],
+   "correct_index": 2,
+   "explanation": "Internal data sources originate from within the company's own systems and operations—purchase history, inventory, and sales reports all come directly from company records. External data (industry reports, competitor monitoring, surveys) and published data (census, media ratings) are fundamentally different categories of information sources.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company collects data for marketing purposes but must decide which pieces of information are most critical. Which of the following would NOT typically be a reason to monitor or collect marketing data?",
+   "options": [
+    "to measure how aware customers are of the brand",
+    "to determine the exact daily weather patterns in each store's location",
+    "to understand what products customers want to buy",
+    "to identify which customer groups are most profitable"
+   ],
+   "correct_index": 1,
+   "explanation": "While weather can indirectly affect consumer behavior, the exact daily weather pattern itself is not marketing data—it's environmental data. Understanding customer wants, brand awareness, and customer profitability are all core reasons to collect marketing data to guide strategy and improve targeting.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company needs to decide whether to launch a new product line in a specific region. Which of the following would all be appropriate data to monitor when making this decision?",
+   "options": [
+    "Government tax rates, national holiday schedules, and international trade agreements",
+    "Employee attendance records, warehouse storage capacity, and supplier payment terms",
+    "Corporate headquarters location, number of distribution centers, and executive salaries",
+    "Regional population demographics, local competitor offerings, and consumer spending patterns"
+   ],
+   "correct_index": 3,
+   "explanation": "Regional demographics, competitor offerings, and consumer spending patterns directly inform the viability and potential success of a new product launch in a specific market. The other options contain information unrelated to understanding the target market or competitive landscape for this decision.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be relevant reasons a company invests in monitoring marketing data?",
+   "options": [
+    "To understand market trends and customer preferences, validate whether marketing strategies are effective, and stay competitive with changing consumer behavior",
+    "To guarantee that every product will be a best-seller and ensure that no marketing campaign will ever fail",
+    "To reduce the number of products offered, lower customer service standards, and maximize profits without any additional effort",
+    "To eliminate the need for sales staff, avoid paying for advertising, and prevent customers from ever comparing competitor offerings"
+   ],
+   "correct_index": 0,
+   "explanation": "Companies monitor marketing data to gain insight into what customers want, measure the success of their own marketing efforts, and respond to shifts in the competitive landscape. These are foundational reasons for data collection that directly support better decision-making.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be examples of data a company might monitor to make better marketing decisions?",
+   "options": [
+    "Market research publication dates, industry conference attendance, and vendor payment histories",
+    "Equipment depreciation rates, auditor recommendations, and supplier contract terms",
+    "Customer demographic profiles, competitor promotional activities, and seasonal sales trends",
+    "Employee work schedules, warehouse storage capacity, and production equipment maintenance records"
+   ],
+   "correct_index": 2,
+   "explanation": "Customer demographics, competitor actions, and seasonal trends are all directly relevant to marketing decision-making and customer understanding. The other options mix internal operational data (schedules, equipment, contracts) that, while important to the business, are not typically the focus of marketing-information monitoring.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company gathers and monitors marketing data for all of the following reasons EXCEPT",
+   "options": [
+    "to identify gaps in the market and spot emerging customer needs",
+    "to understand which customer segments respond most favorably to specific marketing messages",
+    "to determine the structural engineering specifications required for new store locations",
+    "to evaluate whether current marketing strategies are producing desired results"
+   ],
+   "correct_index": 2,
+   "explanation": "Engineering specifications for store construction are a facilities or real-estate concern, not a purpose of marketing-information management. The other three options are legitimate reasons companies monitor marketing data — to tailor messaging, measure campaign success, and spot market opportunities. A student who studied marketing data's purpose would recognize that structural engineering is outside the scope of marketing-information collection.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company gathers marketing data for all of the following reasons EXCEPT",
+   "options": [
+    "to identify gaps between what customers need and what competitors are currently offering",
+    "to determine the chemical composition of product packaging materials",
+    "to track shifts in consumer buying patterns over time",
+    "to measure whether promotional campaigns reached their target audience"
+   ],
+   "correct_index": 1,
+   "explanation": "Identifying competitive gaps, measuring campaign reach, and tracking buying-pattern shifts are all legitimate marketing data applications. Chemical composition of packaging is a product engineering and manufacturing concern, not a marketing-information function—it does not support marketing decision-making.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Organizations gather and monitor marketing data primarily to improve decision-making across all of the following areas EXCEPT",
+   "options": [
+    "calculating the exact square footage required for new warehouse facilities",
+    "evaluating whether current marketing strategies are reaching their intended audience",
+    "understanding shifting consumer preferences and emerging market trends",
+    "identifying which customer groups are most profitable and responsive to specific marketing messages"
+   ],
+   "correct_index": 0,
+   "explanation": "Marketing data guides decisions about customer targeting, market trends, and campaign effectiveness—all customer and market-focused activities. Warehouse facility planning is a real estate and operations decision that does not rely on marketing data; it depends on logistics, inventory capacity, and supply-chain metrics instead. This makes it the function unrelated to the marketing data-gathering process.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Primary data collected directly from customers through surveys, interviews, or focus groups is called ___.",
+   "options": [
+    "market segmentation",
+    "secondary research",
+    "competitive analysis",
+    "primary research"
+   ],
+   "correct_index": 3,
+   "explanation": "Primary research involves gathering original data directly from sources like customers, while secondary research uses existing published information. Primary research is a foundational method in marketing research that allows companies to address specific questions about their target market.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company analyzes existing reports, industry publications, and previously conducted studies to understand market trends without collecting new data. This approach represents ___.",
+   "options": [
+    "qualitative research methodology",
+    "customer focus-group analysis",
+    "secondary research",
+    "experimental market testing"
+   ],
+   "correct_index": 2,
+   "explanation": "Secondary research uses already-published or existing data sources rather than gathering original information. This method is cost-effective and useful for understanding broader market context, though it may not answer company-specific questions as precisely as primary research.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company monitors which of the following to understand why it needs marketing data in the first place?",
+   "options": [
+    "Changes in customer preferences, shifts in competitor strategies, and evolving market conditions",
+    "The historical weather patterns from the past decade in each market",
+    "The complete employment records of all company executives",
+    "The exact geographic coordinates of every retail store location"
+   ],
+   "correct_index": 0,
+   "explanation": "Companies gather marketing data because customer preferences, competitive landscapes, and market conditions continuously change. Understanding these shifts is essential to stay relevant and make informed strategic decisions. The other options are either irrelevant to marketing decision-making or not appropriate sources of marketing intelligence.",
+   "type": "which_of_following",
+   "objective_num": 1,
+   "knowledge_area": "Marketing-Information Management",
+   "difficulty": "hard"
+  }
+ ],
+ "Pricing": [
+  {
+   "question": "The process of determining the amount of money a customer must pay to acquire a product or service is called the ___.",
+   "options": [
+    "margin calculation",
+    "cost analysis",
+    "value proposition",
+    "pricing function"
+   ],
+   "correct_index": 3,
+   "explanation": "The pricing function is the specific process of setting and determining what customers pay for goods or services. This is a core concept in the pricing function's nature and scope, distinct from broader value concepts or cost accounting.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are factors that affect pricing decisions EXCEPT",
+   "options": [
+    "production costs and expenses",
+    "the color of the company's logo",
+    "customer demand and perceived value",
+    "competitor pricing and market conditions"
+   ],
+   "correct_index": 1,
+   "explanation": "While production costs, competitor pricing, and customer demand are all legitimate factors affecting pricing, the color of a company's logo has no direct bearing on pricing decisions. This tests understanding of which real business factors influence price-setting versus superficial brand elements.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be considered when making a pricing decision?",
+   "options": [
+    "Manufacturing overhead, market demand, and customer perceived value",
+    "Consumer brand preferences, competitor pricing, and delivery times",
+    "Shipping methods, employee count, and the fiscal year",
+    "Company profit goals, supplier costs, and production expenses"
+   ],
+   "correct_index": 0,
+   "explanation": "Manufacturing overhead, market demand, and customer perceived value are all direct pricing factors—internal costs, external demand signals, and what customers believe the product is worth all shape price. The other options mix real pricing factors with operational details unrelated to price-setting.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The scope of the pricing function includes all of the following responsibilities EXCEPT",
+   "options": [
+    "establishing price points that balance company profit goals with customer value perception",
+    "monitoring competitor pricing strategies and market trends",
+    "determining the profitability of individual products and services",
+    "designing the physical appearance of product packaging"
+   ],
+   "correct_index": 3,
+   "explanation": "Pricing function responsibilities center on financial and market analysis—profitability, price-setting strategy, and competitive monitoring. Packaging design is a product development or marketing communication function, not a pricing responsibility. This tests understanding of where pricing responsibilities begin and end within a business.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retailer's decision to lower prices on winter coats in spring, maintain standard pricing on year-round items, and increase prices on umbrellas during rainy seasons all reflect the influence of ___ on pricing decisions.",
+   "options": [
+    "the store's physical location only",
+    "employee productivity levels",
+    "seasonal demand and product availability",
+    "government tax regulations"
+   ],
+   "correct_index": 2,
+   "explanation": "Seasonal demand is a key factor affecting pricing—products sell differently at different times of year, and inventory availability varies by season. Smart pricing adjusts to these natural fluctuations: clearing winter stock in spring, maintaining steady prices on year-round essentials, and capitalizing on high demand for umbrellas during rainy periods.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following EXCEPT is a legitimate factor that affects pricing decisions?",
+   "options": [
+    "The cost of raw materials and labor",
+    "The type of font used on the company website",
+    "The number of competitors in the marketplace",
+    "Consumer willingness to pay for the product"
+   ],
+   "correct_index": 1,
+   "explanation": "While competitors, material costs, and consumer demand directly influence what a business can charge, the font on a website has no logical connection to pricing strategy. This question tests whether students can distinguish between pricing factors and irrelevant business details.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The responsibilities of the pricing function include all of the following EXCEPT",
+   "options": [
+    "Analyzing competitor pricing strategies and market positioning",
+    "Designing the visual layout of the company's retail store locations",
+    "Determining the profit margin and revenue targets for products",
+    "Evaluating the relationship between price and product demand"
+   ],
+   "correct_index": 1,
+   "explanation": "The pricing function focuses on financial and market analysis—competitor research, profit optimization, and demand elasticity. Retail store layout design is a visual merchandising or store operations responsibility, not a pricing function. The three other options are core pricing responsibilities that directly influence price-setting decisions.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company's cost to manufacture a product, the prices competitors charge, and how much customers are willing to pay are all examples of what type of influence on pricing decisions?",
+   "options": [
+    "Distribution network design and supplier relationships",
+    "Employee salary levels and company location decisions",
+    "Internal cost factors, competitive positioning, and customer perceived value",
+    "Marketing channel selection and product warranty terms"
+   ],
+   "correct_index": 2,
+   "explanation": "Manufacturing costs (internal), competitor pricing (competitive environment), and customer perceived value (demand-side) are three core factors that directly shape what price a company can and should charge. These represent the primary categories of pricing influences.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The pricing function's scope includes all of the following responsibilities EXCEPT",
+   "options": [
+    "Determining the brand colors and visual identity of company logos",
+    "Evaluating customer demand and willingness to pay at different price points",
+    "Conducting market research to understand competitor pricing strategies",
+    "Analyzing production costs and profit margins for different product lines"
+   ],
+   "correct_index": 0,
+   "explanation": "Pricing function responsibilities are directly tied to setting monetary value: analyzing costs, researching competitors, and assessing customer demand. Determining brand colors and visual identity belongs to brand management or design functions — it influences perception but is not a pricing responsibility itself.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The pricing function is responsible for all of the following EXCEPT",
+   "options": [
+    "Evaluating whether price promotions will improve market share",
+    "Analyzing how economic trends and inflation affect pricing strategy",
+    "Determining how much profit margin a company builds into each product",
+    "Selecting the typeface and color scheme for all company marketing materials"
+   ],
+   "correct_index": 3,
+   "explanation": "Selecting typefaces and color schemes for marketing materials is a graphic design or branding function—not a pricing responsibility. Pricing focuses on dollar value, margin, competitive analysis, and demand response. The other three options all represent legitimate pricing-function duties.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of a business to adjust prices based on changes in supply, demand, and market conditions is known as pricing ___.",
+   "options": [
+    "structure",
+    "strategy",
+    "elasticity",
+    "flexibility"
+   ],
+   "correct_index": 3,
+   "explanation": "Pricing flexibility refers to a company's ability to modify prices in response to market shifts and operational changes. This is a core responsibility within the pricing function that allows businesses to remain competitive and responsive to real-time conditions.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be legitimate factors that affect a company's pricing decisions?",
+   "options": [
+    "Production costs, availability of substitute products in the market, and consumer willingness to pay",
+    "Employee benefits packages, brand logo design, and the CEO's personal preferences",
+    "Retail store square footage, social media follower count, and the company's founding year",
+    "The number of company vehicles in the fleet, the color scheme of the office walls, and employee work schedules"
+   ],
+   "correct_index": 0,
+   "explanation": "Production costs (internal factor), substitute product availability (competitive factor), and consumer willingness to pay (demand factor) are all core pricing determinants. The other options mix unrelated operational details or subjective preferences that do not meaningfully influence pricing strategy.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The responsibility for establishing prices that reflect both the cost of production and the value customers perceive in a product is called the pricing ___.",
+   "options": [
+    "framework",
+    "strategy",
+    "function",
+    "model"
+   ],
+   "correct_index": 2,
+   "explanation": "The pricing function encompasses all activities related to setting prices, including analyzing costs, assessing customer value perception, and monitoring competitive positioning. This is a core responsibility within the broader marketing role. While strategy, model, and framework are related concepts, 'function' is the specific term used to describe the set of responsibilities involved in price-setting.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining how much profit remains after all expenses are covered, in order to determine whether a proposed price is sustainable for a business, is part of the pricing function's ___.",
+   "options": [
+    "distribution scope",
+    "cost analysis and profitability assessment",
+    "customer service role",
+    "promotional strategy"
+   ],
+   "correct_index": 1,
+   "explanation": "The pricing function includes analyzing costs and evaluating whether prices generate sufficient profit to sustain the business. This cost-and-profitability review is a core responsibility within the scope of pricing. Promotional strategy, distribution scope, and customer service, while important to marketing, are not the primary focus of pricing cost analysis.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are responsibilities within the scope of the pricing function EXCEPT",
+   "options": [
+    "Evaluating competitor pricing to ensure the company remains competitive in the market",
+    "Adjusting prices in response to shifts in customer demand and inventory levels",
+    "Selecting the design and layout of the company's retail store locations",
+    "Monitoring how changes in raw material costs affect the profitability of existing prices"
+   ],
+   "correct_index": 2,
+   "explanation": "Selecting and designing retail store locations is part of the merchandising and facilities management function, not pricing. Monitoring costs, adjusting prices, and evaluating competitive positioning are all direct responsibilities of the pricing function. This distinction tests understanding of what falls within pricing's scope versus other marketing functions.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The pricing function involves setting prices that balance the cost to produce a product with the value that customers believe it has. This balancing act is known as reconciling ___ with ___.",
+   "options": [
+    "market share and profit margin",
+    "supply and demand",
+    "competitor pricing and brand reputation",
+    "production costs and perceived value"
+   ],
+   "correct_index": 3,
+   "explanation": "The pricing function must reconcile internal production costs with external customer perception of value—customers will only buy if they believe the price reflects what the product is worth to them. This is a core responsibility of pricing that determines whether a price will be both profitable and acceptable to the market.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a grocery chain decides to mark down fresh produce nearing expiration, maintain regular prices on shelf-stable goods, and raise prices on items in high demand during holidays, these decisions collectively demonstrate that ___ is a key factor shaping the pricing function.",
+   "options": [
+    "supply availability and demand intensity",
+    "product perishability and inventory turnover",
+    "employee wages and distribution costs",
+    "customer loyalty and brand recognition"
+   ],
+   "correct_index": 0,
+   "explanation": "Each pricing decision in the scenario reflects how supply (fresh produce availability/shelf life) and demand (high demand during holidays) drive pricing adjustments. These are core external factors the pricing function must account for to maintain profitability while responding to real market conditions.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The pricing function is responsible for determining prices that recover the costs of doing business while also reflecting what customers believe a product is worth. This dual responsibility is known as reconciling ___.",
+   "options": [
+    "supply constraints with demand elasticity",
+    "cost recovery with perceived value",
+    "competitor pricing with profit margins",
+    "market penetration with brand positioning"
+   ],
+   "correct_index": 1,
+   "explanation": "The pricing function must balance two key considerations: ensuring the business covers its expenses (cost recovery) and setting a price that matches what customers think the product is worth (perceived value). This is a core responsibility that distinguishes effective pricing from arbitrary markups.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be legitimate factors that a business should consider when making a pricing decision?",
+   "options": [
+    "Social media follower count, the CEO's personal preferences, and the number of company vehicles owned",
+    "The color of the company's website background, employee salary costs, and shipping container weight",
+    "Customer income levels, the company's profit margin requirements, and the availability of competing products in the market",
+    "The typeface used in advertisements, stockholder names, and the geographic location of the company's headquarters"
+   ],
+   "correct_index": 2,
+   "explanation": "Customer income, profit margin requirements, and competitor availability are all market-related factors that directly influence how much customers can afford to pay and what alternatives exist. The other options contain irrelevant details (website color, social media metrics, typeface) that do not affect pricing decisions.",
+   "type": "which_of_following",
+   "objective_num": 2,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A pricing decision that accounts for how much money remains after all manufacturing, labor, and overhead expenses are subtracted from revenue is primarily testing the pricing function's responsibility for ___.",
+   "options": [
+    "profitability analysis and sustainability",
+    "promotional strategy and customer loyalty",
+    "inventory management and supply chain efficiency",
+    "brand differentiation and market awareness"
+   ],
+   "correct_index": 0,
+   "explanation": "Evaluating whether a proposed price allows the business to remain profitable—by examining what remains after expenses—is a core part of profitability analysis and determining whether a price is sustainable long-term. This is a direct responsibility within the pricing function's scope.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Pricing",
+   "difficulty": "hard"
+  }
+ ],
+ "Promotion": [
+  {
+   "question": "Advertising that focuses on building a positive image and reputation for an organization rather than promoting a specific product is called ___.",
+   "options": [
+    "comparative advertising",
+    "product advertising",
+    "direct advertising",
+    "institutional advertising"
+   ],
+   "correct_index": 3,
+   "explanation": "Institutional advertising promotes the overall company, brand, or organization to build goodwill and reputation, while product advertising focuses on selling specific goods or services. This distinction is fundamental to understanding the two main types of promotion.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are types of advertising media EXCEPT",
+   "options": [
+    "television and radio",
+    "personal selling and word-of-mouth",
+    "digital and social media platforms",
+    "print magazines and newspapers"
+   ],
+   "correct_index": 1,
+   "explanation": "Personal selling and word-of-mouth are elements of the promotional mix, but they are not advertising media—advertising media are the channels through which advertisements are delivered to an audience. Television, print, digital, and social media are all advertising media because they carry paid advertisements.",
+   "type": "all_except",
+   "objective_num": 4,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The combination of all the different promotional tools and methods a company uses to communicate with and influence its target market is called ___.",
+   "options": [
+    "advertising campaign",
+    "marketing strategy",
+    "consumer engagement",
+    "promotional mix"
+   ],
+   "correct_index": 3,
+   "explanation": "The promotional mix includes advertising, personal selling, public relations, and sales promotion—all the ways an organization communicates its message. This is a core concept that distinguishes promotion as a strategic combination of tools rather than a single activity.",
+   "type": "concept_completion",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail store wants to increase foot traffic during the holiday season. Which of the following promotional strategies would be most appropriate for reaching local customers through mass media?",
+   "options": [
+    "Running advertisements on local television, radio, and in community newspapers",
+    "Printing discount coupons and distributing them directly to neighborhood mailboxes",
+    "Hosting in-store product demonstrations and handing out samples to customers",
+    "Training sales staff to deliver one-on-one product pitches to every shopper"
+   ],
+   "correct_index": 0,
+   "explanation": "Mass media advertising channels—television, radio, and print—reach large audiences efficiently, making them ideal for building broad awareness in a local market. While the other options are valid promotional tactics, they are not mass advertising media; they rely on direct contact or point-of-sale methods instead.",
+   "type": "scenario_judgment",
+   "objective_num": 4,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The primary purpose of promotion in marketing is to ___.",
+   "options": [
+    "set prices for products based on competitor activity",
+    "communicate information about products and persuade people to buy them",
+    "determine which distribution channels to use for delivery",
+    "analyze consumer spending patterns and purchasing trends"
+   ],
+   "correct_index": 1,
+   "explanation": "Promotion is fundamentally about communication and persuasion—informing customers about products and motivating them to purchase. While pricing, distribution, and market analysis are important marketing functions, they are distinct from promotion's core role in the promotional mix.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered elements of a company's promotional mix?",
+   "options": [
+    "product design, pricing strategy, and distribution channels",
+    "consumer research, sales forecasting, and inventory management",
+    "public relations efforts, sponsorships, and event marketing",
+    "competitor analysis, brand naming, and product packaging"
+   ],
+   "correct_index": 2,
+   "explanation": "Public relations, sponsorships, and event marketing are all communication and persuasion tools within the promotional mix. The other options represent different marketing functions: product/pricing/distribution (the other P's of the marketing mix), operational planning tasks, and product development/strategy elements—none of which are promotional tools used to influence consumer awareness and behavior.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The role of promotion in marketing includes all of the following EXCEPT",
+   "options": [
+    "Providing information about product features and benefits",
+    "Creating persuasive messages that influence purchase decisions",
+    "Determining the physical location where products will be sold",
+    "Building brand awareness and recognition in the target market"
+   ],
+   "correct_index": 2,
+   "explanation": "Determining physical location is a distribution function (place), not a promotional function. Promotion focuses on communication—building awareness, persuading consumers, and informing them about products. The other three options are all core roles of promotion in the marketing mix.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Promotion serves several key functions in marketing. Which of the following best describes the overall role of promotion as a marketing function?",
+   "options": [
+    "To determine the price point at which products will be sold in the marketplace",
+    "To communicate information about products, services, and brands while persuading consumers to purchase them",
+    "To manage the physical distribution of goods from manufacturers to retail locations",
+    "To conduct market research and analyze consumer purchasing patterns and trends"
+   ],
+   "correct_index": 1,
+   "explanation": "Promotion's core role is informing and persuading — letting customers know what exists and why they should buy it. The other options describe pricing strategy, logistics, and market research, which are separate marketing functions, not promotion itself.",
+   "type": "concept_completion",
+   "objective_num": 1,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company is deciding how to reach potential customers with information about its new product line. Which of the following would all be considered valid elements of the promotional mix?",
+   "options": [
+    "Sales promotions, supply chain logistics, and retail store layouts",
+    "Product packaging design, warehouse location, and inventory management systems",
+    "Market segmentation, pricing strategies, and competitive analysis reports",
+    "Direct mail campaigns, email newsletters, and social media posts"
+   ],
+   "correct_index": 3,
+   "explanation": "The promotional mix includes all the communication and persuasion tools a company uses — direct mail, email, and social media are all direct promotional channels. The other options mix in unrelated functions like logistics, pricing, and supply chain management.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be forms of sales promotion used by a business to encourage immediate customer action?",
+   "options": [
+    "Coupons, rebates, contests, and limited-time discounts",
+    "In-store consultations, product demonstrations, and one-on-one advice",
+    "Television commercials, billboard advertisements, and radio spots",
+    "Press releases, news coverage, and community sponsorships"
+   ],
+   "correct_index": 0,
+   "explanation": "Sales promotion consists of short-term incentives designed to drive immediate purchase or trial—coupons, rebates, contests, and discounts all fit this definition. The other options represent public relations, advertising media, and personal selling respectively, which are separate promotional mix elements.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Product advertising that aims to inform customers about specific features and benefits of a particular good or service is called ___.",
+   "options": [
+    "personal selling",
+    "public relations",
+    "product advertising",
+    "institutional promotion"
+   ],
+   "correct_index": 2,
+   "explanation": "Product advertising focuses on promoting individual products or services by highlighting their specific attributes and advantages to consumers. This differs from institutional advertising, which builds the company's overall image rather than pushing a particular item.",
+   "type": "definition_recall",
+   "objective_num": 2,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered types of sales promotion?",
+   "options": [
+    "Free samples, loyalty programs, and point-of-sale displays",
+    "Television commercials, radio spots, and magazine advertisements",
+    "Billboards, social media ads, and branded content partnerships",
+    "Press releases, corporate sponsorships, and community relations events"
+   ],
+   "correct_index": 0,
+   "explanation": "Sales promotions are short-term incentives designed to encourage immediate purchase or action—free samples give customers a chance to try a product, loyalty programs reward repeat purchases, and point-of-sale displays attract attention at the moment of purchase. The other options represent advertising, public relations, or other promotional elements.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The elements of the promotional mix include all of the following EXCEPT",
+   "options": [
+    "advertising and sales promotion",
+    "product design and packaging materials",
+    "direct marketing and sponsorships",
+    "personal selling and public relations"
+   ],
+   "correct_index": 1,
+   "explanation": "Product design and packaging are part of the broader marketing mix (the 4 Ps: product, place, price, promotion), but they are not components of the promotional mix itself. The promotional mix specifically consists of the communication and persuasion tools—advertising, sales promotion, personal selling, public relations, and direct marketing—used to reach and influence customers.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be considered forms of sales promotion?",
+   "options": [
+    "Press releases, company newsletters, and media interviews",
+    "Radio sponsorships, outdoor signage, and online banner ads",
+    "Billboards, television commercials, and magazine advertisements",
+    "In-store demonstrations, point-of-purchase displays, and manufacturer's coupons"
+   ],
+   "correct_index": 3,
+   "explanation": "Sales promotion includes short-term incentives designed to encourage immediate customer action, such as demonstrations, displays, and coupons. The other options represent advertising (A), public relations (B), and media advertising channels (D)—not sales promotion tactics.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business uses several different methods to reach and influence its customers, including television advertisements, a loyalty rewards program, a company blog discussing industry trends, and direct conversations with customers about their needs. These combined efforts represent all of the promotional mix elements EXCEPT ___.",
+   "options": [
+    "advertising and paid media placement",
+    "public relations and content marketing",
+    "sales promotion and incentive programs",
+    "market segmentation and targeting strategies"
+   ],
+   "correct_index": 3,
+   "explanation": "Market segmentation (identifying and dividing audiences) is a separate marketing strategy function, not a promotional mix element. The scenario describes advertising, sales promotion, public relations, and personal selling—the four core components of the promotional mix—but segmentation decides WHO to promote to, not HOW to promote.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The primary role of promotion as a marketing function includes all of the following EXCEPT",
+   "options": [
+    "manufacturing products at the lowest possible production cost",
+    "building brand awareness and recognition among target customers",
+    "informing consumers about product features and benefits",
+    "encouraging immediate purchase decisions through incentives"
+   ],
+   "correct_index": 0,
+   "explanation": "Promotion focuses on communication and persuasion—building awareness, informing customers, and driving purchase decisions. Manufacturing and production cost management are operations and production functions, not promotional functions, making this the activity that falls outside promotion's role.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Print media used in advertising primarily refers to promotional messages delivered through ___.",
+   "options": [
+    "billboards and transit shelters",
+    "newspapers, magazines, and brochures",
+    "radio stations and podcasts",
+    "television networks and cable channels"
+   ],
+   "correct_index": 1,
+   "explanation": "Print media encompasses newspapers, magazines, brochures, and other paper-based promotional materials. Television and radio are broadcast media, podcasts are audio media, and billboards/transit shelters are outdoor media—each representing different advertising channels distinct from traditional print.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company's promotional efforts include all of the following EXCEPT",
+   "options": [
+    "sponsoring a local youth sports team to enhance brand visibility",
+    "offering a manufacturer's coupon that reduces the product price for two weeks",
+    "selecting suppliers based on their ability to reduce production costs",
+    "publishing a press release announcing a new partnership with a major retailer"
+   ],
+   "correct_index": 2,
+   "explanation": "Supplier selection and cost management are supply chain and operations functions, not promotional activities. Sponsorships (public relations), coupons (sales promotion), and press releases (public relations) are all legitimate elements of the promotional mix used to communicate with and influence customers.",
+   "type": "all_except",
+   "objective_num": 3,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Advertising delivered through social media platforms, online video streaming services, and search engine marketing is collectively known as ___ media.",
+   "options": [
+    "digital",
+    "broadcast",
+    "outdoor",
+    "print"
+   ],
+   "correct_index": 0,
+   "explanation": "Digital media encompasses all internet-based and electronic advertising channels, including social media, streaming video, and search engines. This category has become essential in modern promotion and differs from broadcast (television/radio), print (newspapers/magazines), and outdoor (billboards/signage) media types.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be classified as traditional broadcast advertising media?",
+   "options": [
+    "Billboard advertisements, transit ads, and in-store signage",
+    "Magazine advertisements, newspaper classifieds, and direct mail catalogs",
+    "Television commercials, radio spots, and podcast sponsorships",
+    "Television commercials, radio spots, and streaming video ads"
+   ],
+   "correct_index": 2,
+   "explanation": "Traditional broadcast media includes television and radio—channels that transmit messages over airwaves or networks to mass audiences. Streaming video ads are digital media, not traditional broadcast; magazine and newspaper ads are print media; billboards and transit ads are outdoor media. Podcast sponsorships, while audio-based, are now primarily digital rather than traditional broadcast.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Promotion",
+   "difficulty": "hard"
+  }
+ ],
+ "Selling": [
+  {
+   "question": "The set of activities involved in persuading customers to purchase products or services, and maintaining relationships with them after the sale, is called ___",
+   "options": [
+    "product distribution",
+    "selling",
+    "customer acquisition",
+    "marketing management"
+   ],
+   "correct_index": 1,
+   "explanation": "Selling is the core function that encompasses both the persuasion process and post-sale relationship maintenance. Marketing management is broader and includes market research and pricing strategy; distribution and acquisition are separate components of the sales process.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The scope of the selling function includes all of the following EXCEPT",
+   "options": [
+    "following up with customers after purchase to ensure satisfaction and encourage repeat business",
+    "prospecting for new customers and qualifying their potential to buy",
+    "presenting product information tailored to individual customer needs",
+    "designing and manufacturing products based on market research data"
+   ],
+   "correct_index": 3,
+   "explanation": "Product design and manufacturing are operations and product development functions, not selling responsibilities. Sellers prospect, qualify, present, and follow up—but the actual design and production of goods belong to operations and engineering teams. This option falls outside the selling function's scope.",
+   "type": "all_except",
+   "objective_num": 1,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Customer service in a selling relationship involves all of the following EXCEPT",
+   "options": [
+    "helping customers use the product effectively",
+    "responding to customer questions and concerns after the purchase",
+    "ensuring the customer receives the promised product or service",
+    "designing new products based solely on competitor offerings"
+   ],
+   "correct_index": 3,
+   "explanation": "Customer service focuses on supporting the customer experience and satisfaction after a sale—answering questions, ensuring delivery, and enabling product use. Designing new products based only on competitors is a product development and competitive strategy function, not a direct customer service responsibility within the selling relationship.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to listen to customer concerns, understand their needs, and respond with appropriate solutions is a key element of what aspect of selling relationships?",
+   "options": [
+    "Sales commission structures",
+    "Inventory management",
+    "Customer service",
+    "Product feature analysis"
+   ],
+   "correct_index": 2,
+   "explanation": "Customer service in selling relationships centers on active listening, empathy, and problem-solving to build trust and satisfaction after the initial sale. This distinguishes customer service from other sales functions like feature analysis or commission tracking, which serve different purposes in the selling process.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the context of selling, the range of activities a salesperson performs—from identifying prospects and presenting products to closing sales and providing follow-up support—defines the _____ of the selling function.",
+   "options": [
+    "scope",
+    "quota",
+    "territory",
+    "commission"
+   ],
+   "correct_index": 0,
+   "explanation": "Scope refers to the breadth and range of responsibilities within a function. A salesperson's scope encompasses everything from prospecting through post-sale relationship management, making it broader than specific elements like commission amounts, geographic territory, or sales quotas.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Information about a product's characteristics, specifications, and performance capabilities that a salesperson uses to explain its value to customers is called ___",
+   "options": [
+    "product positioning",
+    "product information",
+    "competitive analysis",
+    "market segmentation"
+   ],
+   "correct_index": 1,
+   "explanation": "Product information refers to the factual details and specifications a salesperson must acquire and understand to effectively communicate a product's value. This includes technical specs, materials, dimensions, and performance data that enable the salesperson to answer customer questions and address concerns during the selling process.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying which specific product characteristics directly address customer needs and translate product features into customer-focused value statements is called ___",
+   "options": [
+    "benefit analysis",
+    "feature segmentation",
+    "sales forecasting",
+    "customer profiling"
+   ],
+   "correct_index": 0,
+   "explanation": "Benefit analysis is the process of examining product information and determining how its features solve specific customer problems or fulfill needs. A salesperson who identifies that a product feature (like lightweight material) creates a benefit (easier to carry) has performed benefit analysis to support the selling conversation.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would be effective ways for a salesperson to acquire product information for use in selling?",
+   "options": [
+    "Monitor social media trends, analyze monthly sales reports, and review past customer complaints",
+    "Study product manuals, consult with product specialists, and examine product samples firsthand",
+    "Interview the sales manager, review last year's pricing, and track inventory levels",
+    "Review competitor websites, attend industry conferences, and survey customers about their preferences"
+   ],
+   "correct_index": 1,
+   "explanation": "Acquiring product information requires direct engagement with product details and expert sources—reading documentation, speaking with those who know the product deeply, and hands-on examination. These methods provide the factual, technical knowledge a salesperson needs to answer customer questions confidently and highlight relevant features and benefits.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A salesperson's responsibility to understand what a customer truly needs and then match the appropriate product solution to that need is primarily an example of which selling relationship component?",
+   "options": [
+    "Competitive pricing strategy",
+    "Product specification management",
+    "Active listening and needs analysis",
+    "Inventory rotation procedures"
+   ],
+   "correct_index": 2,
+   "explanation": "Active listening and needs analysis is the core selling relationship skill that allows salespeople to diagnose what customers actually require, rather than simply pushing products. The other options relate to operations, strategy, or logistics—not the interpersonal foundation of the selling relationship itself.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A salesperson's collection of facts about product specifications, materials, warranty terms, and availability that enables them to explain value to customers is known as ___",
+   "options": [
+    "market segmentation",
+    "customer demographics",
+    "sales forecasting",
+    "product knowledge"
+   ],
+   "correct_index": 3,
+   "explanation": "Product knowledge encompasses the comprehensive details a salesperson needs to communicate product value—specifications, warranty, availability, and performance. This distinct from customer demographics (buyer characteristics), sales forecasting (predicting future sales), and market segmentation (dividing markets into groups).",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to identify what a customer actually needs and then recommend the product that best solves that specific problem is central to which aspect of the selling process?",
+   "options": [
+    "Closing the sale and obtaining commitment",
+    "Needs assessment and solution matching",
+    "Post-sale follow-up and retention",
+    "Prospecting and lead generation"
+   ],
+   "correct_index": 1,
+   "explanation": "Needs assessment and solution matching is the core selling responsibility where a salesperson uses active listening and questioning to understand customer pain points, then aligns product features to those specific needs. This distinguishes consultative selling from simply presenting features. The other steps occur before or after this critical diagnostic phase.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would be reliable sources a salesperson could consult to acquire detailed product information?",
+   "options": [
+    "Product specifications, internal training materials, and direct conversations with product specialists",
+    "Customer reviews on third-party retail sites and online forums",
+    "Magazine articles about industry trends and historical product launches",
+    "Competitor social media accounts and marketing websites"
+   ],
+   "correct_index": 0,
+   "explanation": "Product specialists, official specifications, and training materials are authoritative internal sources that give a salesperson accurate, comprehensive product details. While competitor research, customer reviews, and industry trends have value, they don't provide the precise technical and practical knowledge needed to explain product value accurately to a prospect.",
+   "type": "which_of_following",
+   "objective_num": 3,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In selling, a feature is a characteristic of the product itself, while a benefit is what that feature does for the customer. When a salesperson describes a laptop's lightweight design as 'easier to carry in your bag during your commute,' the salesperson is translating a _____ into a _____.",
+   "options": [
+    "specification into a warranty",
+    "product advantage into a competitive positioning",
+    "benefit into a feature",
+    "feature into a benefit"
+   ],
+   "correct_index": 3,
+   "explanation": "A feature (lightweight design) is an objective product attribute, while a benefit (easier commute) is the customer-focused value that results from it. Salespeople must continually convert features into benefits to show relevance to each customer's unique situation and needs. This translation is essential to consultative selling.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the context of the selling process, the step where a salesperson identifies potential customers who may have a need for the product or service is called ___.",
+   "options": [
+    "follow-up",
+    "qualifying",
+    "prospecting",
+    "closing"
+   ],
+   "correct_index": 2,
+   "explanation": "Prospecting is the first stage of the selling process where salespeople search for and identify potential buyers. This foundational step sets up all subsequent selling activities, from qualification through closing and customer retention.",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A product's durability, color, size, and material composition are all examples of what a salesperson must understand to effectively communicate value to customers. These characteristics collectively form the ___",
+   "options": [
+    "Market demand",
+    "Customer preferences",
+    "Sales pitch",
+    "Product features"
+   ],
+   "correct_index": 3,
+   "explanation": "Product features are the tangible characteristics and specifications of a product itself—things you can measure, see, or touch. Understanding features is foundational to selling because they are what the salesperson then translates into customer-focused benefits.",
+   "type": "definition_recall",
+   "objective_num": 6,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When a salesperson describes a smartphone's fast processor as 'allowing you to run multiple apps without lag so you can work and stream simultaneously,' the salesperson is demonstrating ___.",
+   "options": [
+    "Customer demographic targeting",
+    "Competitive pricing analysis",
+    "Feature-to-benefit translation",
+    "Product specification knowledge"
+   ],
+   "correct_index": 2,
+   "explanation": "Feature-to-benefit translation is the process of converting a product characteristic (fast processor) into a customer-focused value statement (work and stream without interruption). This directly connects what the product does to how it solves a customer's specific need, which is central to effective selling. Product specification knowledge alone would just state the technical detail; competitive pricing and demographic targeting are separate selling activities.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The step in the selling process where a salesperson learns about a customer's specific pain points, goals, and constraints before recommending a solution is called ___.",
+   "options": [
+    "Needs discovery",
+    "Product positioning",
+    "Closing",
+    "Prospecting"
+   ],
+   "correct_index": 0,
+   "explanation": "Needs discovery is the diagnostic phase where the salesperson asks questions and listens to understand what the customer actually requires. This precedes product recommendation and is distinct from prospecting (finding leads), positioning (how the product is marketed), and closing (finalizing the sale).",
+   "type": "definition_recall",
+   "objective_num": 4,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are ways a salesperson demonstrates strong customer service as part of a selling relationship EXCEPT",
+   "options": [
+    "maintaining communication to address any problems or questions that arise",
+    "recommending only the highest-priced products to maximize commission",
+    "actively listening to customer concerns and responding with tailored solutions",
+    "following up with customers after the sale to ensure satisfaction"
+   ],
+   "correct_index": 1,
+   "explanation": "Recommending only the highest-priced products is self-serving and contradicts genuine customer service, which is built on understanding customer needs and matching them to appropriate solutions. The other three options—follow-up, active listening, and ongoing communication—are core elements of maintaining strong customer relationships after the sale.",
+   "type": "all_except",
+   "objective_num": 2,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A salesperson who regularly follows up with customers after purchase to ensure satisfaction and address any concerns is demonstrating which key component of selling relationships?",
+   "options": [
+    "Post-sale relationship maintenance",
+    "Prospect qualification",
+    "Feature identification",
+    "Product specification analysis"
+   ],
+   "correct_index": 0,
+   "explanation": "Post-sale relationship maintenance involves ongoing communication and support after a transaction to build loyalty and trust. This distinguishes it from the initial selling activities like prospecting or feature analysis, which occur before or during the sale. The ability to maintain relationships after purchase is a critical selling relationship component that encourages repeat business.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of gathering details about a product's materials, performance standards, price points, and available options to communicate its value to potential customers is called ___.",
+   "options": [
+    "Market segmentation",
+    "Product research acquisition",
+    "Competitive analysis",
+    "Customer demographics"
+   ],
+   "correct_index": 1,
+   "explanation": "Product research acquisition refers to the systematic gathering of factual details about products that salespeople need to explain and justify value to customers. This is distinct from market segmentation (dividing customers), competitive analysis (studying rivals), or demographics (customer characteristics). Salespeople must collect specific product data to sell effectively.",
+   "type": "definition_recall",
+   "objective_num": 3,
+   "knowledge_area": "Selling",
+   "difficulty": "hard"
+  }
+ ]
+}

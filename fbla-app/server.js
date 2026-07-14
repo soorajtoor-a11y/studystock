@@ -409,7 +409,7 @@ function shuffle(arr) {
 // served when the request asks for exactly that many questions — anything
 // smaller generates fresh so it isn't just a random subset of the bigger
 // pre-generated pool.
-const SCOPE_BANK_MAX = { event: 50, section: 25, objective: 15 };
+const SCOPE_BANK_MAX = { event: 50, section: 20, objective: 10 };
 const SCOPE_BANK_FILENAME = { section: 'question-bank-sections.json', objective: 'question-bank-objectives.json' };
 
 // Serve `count` questions from the pre-generated section/objective bank, if
@@ -445,7 +445,13 @@ function serveScopedBank(org, event, scope, objective, difficulty) {
     const byDiff = pool.filter(q => q.difficulty === difficulty);
     if (byDiff.length) filtered = byDiff;
   }
-  return shuffle(filtered).map(bankToQuizFormat);
+  // Slice to the scope's max — the pool can legitimately hold MORE than
+  // that (e.g. Intro-to-IT's section pools still have 25 each even though
+  // SCOPE_BANK_MAX.section is now 20, since the extra already-generated
+  // questions were kept rather than thrown away). Sampling a shuffled
+  // subset each time is a deliberate bonus: repeat quiz-takers on the same
+  // section see genuine variety instead of the identical 20 every time.
+  return shuffle(filtered).slice(0, SCOPE_BANK_MAX[scope]).map(bankToQuizFormat);
 }
 
 // Mirrors generate_bank.py's difficulty_tier() exactly, so on-the-fly
@@ -469,7 +475,7 @@ function serveFromBank(org, event, difficulty) {
     if (byDiff.length) pool = byDiff;
   }
 
-  return shuffle(pool).map(bankToQuizFormat);
+  return shuffle(pool).slice(0, SCOPE_BANK_MAX.event).map(bankToQuizFormat);
 }
 
 // ---------------------------------------------------------------------------

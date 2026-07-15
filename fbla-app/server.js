@@ -1037,7 +1037,11 @@ app.post('/api/chat', async (req, res) => {
 if (process.env.NODE_ENV === 'production') {
   const dist = path.join(__dirname, 'dist');
   app.use(express.static(dist));
-  app.get('*', (_req, res) => res.sendFile(path.join(dist, 'index.html')));
+  // Plain middleware (no path pattern) rather than app.get('*', ...) — Express
+  // 5's router (path-to-regexp v7+) rejects a bare "*" wildcard route pattern
+  // at registration time ("Missing parameter name"). A path-less app.use()
+  // catches everything that reached here without needing regex parsing at all.
+  app.use((_req, res) => res.sendFile(path.join(dist, 'index.html')));
 }
 
 const PORT = process.env.PORT || 3001;

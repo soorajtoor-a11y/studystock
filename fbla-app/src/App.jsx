@@ -1378,7 +1378,10 @@ export default function App() {
   useEffect(() => {
     if (!user) { setPins([]); return }
     supabase.from('pinned_events').select('org, event').eq('user_id', user.id)
-      .then(({ data, error }) => { if (!error && data) setPins(data) })
+      .then(({ data, error }) => {
+        if (error) console.error('[pin] failed to load pinned events:', error.message)
+        else if (data) setPins(data)
+      })
   }, [user])
 
   function isPinned(o, ev) { return pins.some(p => p.org === o && p.event === ev) }
@@ -1387,10 +1390,18 @@ export default function App() {
     if (!user) { handleAccount(); return }
     if (isPinned(o, ev)) {
       setPins(prev => prev.filter(p => !(p.org === o && p.event === ev)))
-      await supabase.from('pinned_events').delete().eq('user_id', user.id).eq('org', o).eq('event', ev)
+      const { error } = await supabase.from('pinned_events').delete().eq('user_id', user.id).eq('org', o).eq('event', ev)
+      if (error) {
+        console.error('[pin] delete failed:', error.message)
+        setPins(prev => [...prev, { org: o, event: ev }]) // roll back the optimistic update
+      }
     } else {
       setPins(prev => [...prev, { org: o, event: ev }])
-      await supabase.from('pinned_events').insert({ user_id: user.id, org: o, event: ev })
+      const { error } = await supabase.from('pinned_events').insert({ user_id: user.id, org: o, event: ev })
+      if (error) {
+        console.error('[pin] insert failed:', error.message)
+        setPins(prev => prev.filter(p => !(p.org === o && p.event === ev))) // roll back the optimistic update
+      }
     }
   }
 

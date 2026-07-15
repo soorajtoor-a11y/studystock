@@ -253,23 +253,63 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
 }
 
 // ── Account Page ──────────────────────────────────────────────────────────────
-function AccountPage({ user, onBack }) {
-  const [mode,     setMode]     = useState('signin') // 'signin' | 'signup'
+function AccountPage({ user, recoveryMode, onBack }) {
+  // 'signin' | 'signup' | 'reset' (request a reset email) | 'recovery' (set a
+  // new password after clicking the link in that email — driven by the
+  // parent's recoveryMode, since Supabase signs the user into a temporary
+  // recovery session automatically when they land back from that link).
+  const [mode,     setMode]     = useState('signin')
   const [email,    setEmail]    = useState('')
   const [password, setPassword] = useState('')
   const [error,    setError]    = useState(null)
   const [info,     setInfo]     = useState(null)
   const [busy,     setBusy]     = useState(false)
 
+  useEffect(() => { if (recoveryMode) setMode('recovery') }, [recoveryMode])
+
   async function handleSubmit(e) {
     e.preventDefault()
     setError(null); setInfo(null); setBusy(true)
+
+    if (mode === 'reset') {
+      const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin })
+      setBusy(false)
+      if (error) { setError(error.message); return }
+      setInfo('If an account exists for that email, a reset link has been sent.')
+      return
+    }
+
+    if (mode === 'recovery') {
+      const { error } = await supabase.auth.updateUser({ password })
+      setBusy(false)
+      if (error) { setError(error.message); return }
+      setInfo('Password updated — you\'re signed in.')
+      return
+    }
+
     const { error } = mode === 'signup'
       ? await supabase.auth.signUp({ email, password })
       : await supabase.auth.signInWithPassword({ email, password })
     setBusy(false)
     if (error) { setError(error.message); return }
     if (mode === 'signup') setInfo('Check your email to confirm your account, then log in.')
+  }
+
+  if (mode === 'recovery') {
+    return (
+      <div className="settings-page">
+        <h1 className="settings-title">Set a New Password</h1>
+        <p className="settings-subtitle">You clicked a password reset link — choose a new password below.</p>
+        <form className="account-form" onSubmit={handleSubmit}>
+          <input className="account-input" type="password" placeholder="New password" value={password}
+                 onChange={e => setPassword(e.target.value)} required minLength={6} autoComplete="new-password" autoFocus />
+          {error && <p className="account-error">{error}</p>}
+          {info  && <p className="account-info">{info}</p>}
+          <button className="home-cta" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Update Password'}</button>
+        </form>
+        {info && <button className="account-switch" onClick={onBack}>Continue →</button>}
+      </div>
+    )
   }
 
   if (user) {
@@ -279,6 +319,24 @@ function AccountPage({ user, onBack }) {
         <h1 className="settings-title">Account</h1>
         <p className="settings-subtitle">Signed in as {user.email}</p>
         <button className="home-cta" onClick={() => supabase.auth.signOut()}>Log Out</button>
+      </div>
+    )
+  }
+
+  if (mode === 'reset') {
+    return (
+      <div className="settings-page">
+        <button className="mp-back-link" onClick={onBack}>← Back</button>
+        <h1 className="settings-title">Account</h1>
+        <p className="settings-subtitle">Enter your email and we'll send a password reset link.</p>
+        <form className="account-form" onSubmit={handleSubmit}>
+          <input className="account-input" type="email" placeholder="Email" value={email}
+                 onChange={e => setEmail(e.target.value)} required autoComplete="email" autoFocus />
+          {error && <p className="account-error">{error}</p>}
+          {info  && <p className="account-info">{info}</p>}
+          <button className="home-cta" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Send Reset Email'}</button>
+        </form>
+        <button className="account-switch" onClick={() => { setMode('signin'); setError(null); setInfo(null) }}>← Back to log in</button>
       </div>
     )
   }
@@ -300,6 +358,9 @@ function AccountPage({ user, onBack }) {
           {busy ? 'Please wait…' : mode === 'signup' ? 'Sign Up' : 'Log In'}
         </button>
       </form>
+      {mode === 'signin' && (
+        <button className="account-switch" onClick={() => { setMode('reset'); setError(null); setInfo(null) }}>Forgot password?</button>
+      )}
       <button className="account-switch" onClick={() => { setMode(m => m === 'signup' ? 'signin' : 'signup'); setError(null); setInfo(null) }}>
         {mode === 'signup' ? 'Already have an account? Log in' : "Don't have an account? Sign up"}
       </button>
@@ -1288,13 +1349,21 @@ export default function App() {
   // to jump straight to the org chooser once a session actually appears,
   // rather than back to wherever Account's normal "back" would go.
   const [postLoginRedirect, setPostLoginRedirect] = useState(false)
+  // True from the moment Supabase fires PASSWORD_RECOVERY (the user landed
+  // back from a reset-password email link) until they finish setting a new
+  // password — AccountPage uses this to show the "set new password" form
+  // instead of the normal login form.
+  const [recoveryMode, setRecoveryMode] = useState(false)
 
   // Track the Supabase auth session — getSession() resolves the session
   // already persisted in localStorage from a prior visit; onAuthStateChange
   // keeps `user` current across sign-in/sign-up/sign-out without a reload.
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null))
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => setUser(session?.user ?? null))
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null)
+      if (event === 'PASSWORD_RECOVERY') { setRecoveryMode(true); setPage('account') }
+    })
     return () => sub.subscription.unsubscribe()
   }, [])
 
@@ -1430,7 +1499,7 @@ export default function App() {
     if (page !== 'account') setPrevPage(page)
     setPage('account'); setNavOpen(false)
   }
-  function handleAccountBack() { setPage(prevPage); setNavOpen(false) }
+  function handleAccountBack() { setRecoveryMode(false); setPage(prevPage); setNavOpen(false) }
   function handlePickerOpen() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
@@ -1451,7 +1520,7 @@ export default function App() {
   if (page === 'settings') {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
   } else if (page === 'account') {
-    content = <AccountPage user={user} onBack={handleAccountBack} />
+    content = <AccountPage user={user} recoveryMode={recoveryMode} onBack={handleAccountBack} />
   } else if (page === 'explain-history' && activeEvent && user) {
     content = <ExplainHistoryPage org={org} event={activeEvent} user={user} onBack={handleHistoryBack} onContinue={handleContinueFromHistory} />
   } else if (org && !eventsLoaded) {

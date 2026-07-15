@@ -55,6 +55,27 @@
   --text-3:  oklch(50% 0.018 var(--signal-hue));
   --text-4:  oklch(65% 0.014 var(--signal-hue));
 
+  /* ── Tint — the "subtle accent-tinted background wash" used for hover/
+     active/callout surfaces throughout the app (list-item hover, active
+     buttons, callout boxes). Defaults to the same --signal-50/100 steps as
+     the raw palette in light mode, but is its OWN variable rather than a
+     direct alias — dark mode below redefines just this, as a translucent
+     overlay, while --signal-50/100 themselves stay fixed opaque colors
+     (still needed as-is for things like gradient text and icon chips,
+     which would break if they suddenly went translucent). Anywhere in the
+     app that wants a "light wash of the accent color," reach for --tint /
+     --tint-border, not --signal-50 / --signal-100 directly. ────────────── */
+  --tint:        var(--signal-50);
+  --tint-border: var(--signal-100);
+
+  /* Flashcard mode's dedicated pink accent (independent of --signal-hue —
+     it's a fixed identity color for that one mode, not org-tinted) — same
+     tint/dark-mode-safety treatment as --tint above. */
+  --flash-accent:      oklch(58% 0.160 340);
+  --flash-tint:        oklch(96% 0.020 340);
+  --flash-tint-strong: oklch(90% 0.050 340);
+  --flash-border:      oklch(93% 0.045 340);
+
   /* ── Semantic status (kept independent of the brand accent) ─────────── */
   --green:        oklch(52% 0.140 150);
   --green-bg:     oklch(97% 0.030 150);
@@ -111,6 +132,42 @@
 :root[data-org="fbla"] { --signal-hue: 85; }
 :root[data-org="deca"] { --signal-hue: 253; }
 :root[data-org="hosa"] { --signal-hue: 26; }
+
+/* ── Dark mode — stamped as data-theme="dark" on <html> by App.jsx (Settings
+   tab; persisted to localStorage, defaults to the OS preference). Same
+   pattern as the [data-org] hue overrides above: only the neutral/surface
+   scale and the status tints flip, everything derived from --signal-hue
+   (accent, gradient, sidebar) stays as-is, because the sidebar is a
+   permanently-dark shell in both themes and the accent hue doesn't need to
+   change — only how light or dark the CONTENT surfaces are. ────────────── */
+:root[data-theme="dark"] {
+  --bg:       oklch(17% 0.014 var(--signal-hue));
+  --surface:  oklch(22% 0.016 var(--signal-hue));
+  --border:   oklch(32% 0.020 var(--signal-hue));
+  --border-s: oklch(27% 0.016 var(--signal-hue));
+  --text:     oklch(94% 0.010 var(--signal-hue));
+  --text-2:   oklch(82% 0.012 var(--signal-hue));
+  --text-3:   oklch(64% 0.014 var(--signal-hue));
+  --text-4:   oklch(48% 0.014 var(--signal-hue));
+
+  --tint:        oklch(56% 0.14 var(--signal-hue) / 0.10);
+  --tint-border: oklch(56% 0.14 var(--signal-hue) / 0.22);
+
+  --flash-tint:        oklch(65% 0.16 340 / 0.10);
+  --flash-tint-strong: oklch(65% 0.16 340 / 0.18);
+  --flash-border:      oklch(65% 0.16 340 / 0.30);
+
+  --green-bg:     oklch(25% 0.055 150);
+  --green-border: oklch(40% 0.090 150);
+  --red-bg:       oklch(25% 0.065 25);
+  --red-border:   oklch(40% 0.100 25);
+  --amber-bg:     oklch(25% 0.055 80);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35),  0 1px 1px rgba(0,0,0,0.24);
+  --shadow:    0 3px 12px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30);
+  --shadow-lg: 0 10px 32px rgba(0,0,0,0.55),0 3px 10px rgba(0,0,0,0.35);
+  --shadow-xl: 0 20px 56px rgba(0,0,0,0.65),0 6px 20px rgba(0,0,0,0.40);
+}
 
 html,body { height: 100%; }
 

@@ -650,7 +650,7 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
 const BACKEND = import.meta.env.DEV ? 'http://localhost:3001' : ''
 
 // ── Explain / Chat Pane ───────────────────────────────────────────────────────
-function StudyPane({ event, org, objectiveText, onBack }) {
+function StudyPane({ event, org, objectiveText, general, user, onBack }) {
   const [messages, setMessages] = useState([])
   const [input,    setInput]    = useState('')
   const [loading,  setLoading]  = useState(false)
@@ -660,7 +660,7 @@ function StudyPane({ event, org, objectiveText, onBack }) {
   const didInit   = useRef(false)
 
   useEffect(() => {
-    if (didInit.current) return
+    if (didInit.current || general) return
     didInit.current = true
     sendMessage(`Explain this objective in plain language with a real-world example: "${objectiveText}"`, [])
   }, [])
@@ -713,6 +713,16 @@ function StudyPane({ event, org, objectiveText, onBack }) {
           }
         }
       }
+      // Persist both sides of this exchange for the signed-in user's
+      // per-event Explain history (Pinned events surface a way to review
+      // it later; this itself saves regardless of pin status so nothing's
+      // lost if the user pins the event afterward).
+      if (user) {
+        supabase.from('explain_history').insert([
+          { user_id: user.id, org, event, role: 'user', content: text },
+          { user_id: user.id, org, event, role: 'assistant', content: assistantText },
+        ]).then(({ error }) => { if (error) console.warn('[explain history] save failed:', error.message) })
+      }
     } catch (err) {
       setError(err.message)
       setMessages(prev => prev.filter(m => m.content !== ''))
@@ -732,13 +742,18 @@ function StudyPane({ event, org, objectiveText, onBack }) {
         <button className="back-btn" onClick={onBack}>← Back</button>
         <div className="study-meta">
           <span className="study-event">{formatEventName(event)}</span>
-          <span className="study-divider">›</span>
-          <span className="study-obj">{objectiveText}</span>
+          {!general && (<><span className="study-divider">›</span><span className="study-obj">{objectiveText}</span></>)}
         </div>
         <span className="mode-badge mode-explain">Explain</span>
       </div>
 
       <div className="chat-messages" ref={chatRef}>
+        {general && messages.length === 0 && (
+          <div className="chat-empty-state">
+            <span className="chat-empty-icon">💡</span>
+            <p>Ask anything about {formatEventName(event)} — not tied to one objective.</p>
+          </div>
+        )}
         {messages.map((m, i) => (
           <div key={i} className={`message message-${m.role}`}>
             <div className="message-bubble">
@@ -773,11 +788,71 @@ function StudyPane({ event, org, objectiveText, onBack }) {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && handleSend()}
-          placeholder="Ask a follow-up question…"
+          placeholder={general ? `Ask anything about ${formatEventName(event)}…` : 'Ask a follow-up question…'}
           disabled={loading}
         />
         <button className="send-btn" onClick={handleSend} disabled={loading || !input.trim()}>Send</button>
       </div>
+    </div>
+  )
+}
+
+// ── Explain History (pinned events only) ──────────────────────────────────────
+function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
+  const [rows,  setRows]  = useState(null)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    setRows(null)
+    supabase.from('explain_history').select('role, content, created_at')
+      .eq('user_id', user.id).eq('org', org).eq('event', event)
+      .order('created_at', { ascending: true })
+      .then(({ data, error }) => { if (error) setError(error.message); else setRows(data) })
+  }, [org, event])
+
+  return (
+    <div className="study-pane">
+      <div className="study-header">
+        <button className="back-btn" onClick={onBack}>← Back</button>
+        <div className="study-meta">
+          <span className="study-event">{formatEventName(event)}</span>
+          <span className="study-divider">›</span>
+          <span className="study-obj">Explain History</span>
+        </div>
+      </div>
+
+      {error && (
+        <div className="pane-error">
+          <div className="pane-error-icon">⚠</div>
+          <p>Couldn't load history:</p>
+          <p className="pane-error-msg">{error}</p>
+        </div>
+      )}
+
+      {!error && rows === null && <div className="loading">Loading…</div>}
+
+      {!error && rows && rows.length === 0 && (
+        <div className="chat-empty-state">
+          <span className="chat-empty-icon">💬</span>
+          <p>No saved Explain conversations for this event yet. Use "Ask Anything" from the event page to start one.</p>
+        </div>
+      )}
+
+      {!error && rows && rows.length > 0 && (
+        <div className="chat-messages">
+          {rows.map((m, i) => (
+            <div key={i} className={`message message-${m.role}`}>
+              <div className="message-bubble">{m.content}</div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {!error && rows && rows.length > 0 && (
+        <div className="chat-input-row">
+          <button className="send-btn" onClick={onContinue}>Continue this conversation →</button>
+        </div>
+      )}
     </div>
   )
 }
@@ -887,6 +962,7 @@ function StudyPanel({ event, outline, onStudy }) {
         <div className="sp-btns">
           <button className="sp-btn sp-btn-quiz"  onClick={() => openPicker('Full Event Quiz', formatEventName(event), buildFullEventText(), true)}>📝 Quiz</button>
           <button className="sp-btn sp-btn-flash" onClick={() => openPicker('Full Event Flashcards', formatEventName(event), buildFullEventText(), true)}>🃏 Cards</button>
+          <button className="sp-btn sp-btn-explain" onClick={() => onStudy('', 'explain', undefined, undefined, 'general')}>💡 Ask Anything</button>
         </div>
       </div>
 
@@ -1069,7 +1145,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, user, open }) {
+function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
@@ -1097,6 +1173,39 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
         <OrgSwitcher org={org} orgs={orgs} onChange={onOrgChange} />
       </div>
 
+      {pins.length > 0 && (
+        <>
+          <div className="sidebar-events-header">
+            <span className="sidebar-label">Pinned</span>
+            <span className="sidebar-count-badge">{pins.length}</span>
+          </div>
+          <nav className="sidebar-nav sidebar-nav-pinned">
+            {pins.map(p => (
+              <div
+                key={`${p.org}/${p.event}`}
+                className={`sidebar-item ${p.event === activeEvent && p.org === org && (page === 'event' || page === 'explain-history') ? 'active' : ''}`}
+              >
+                <button className="sidebar-item-main" onClick={() => onSelectPinned(p.org, p.event)} title={formatEventName(p.event)}>
+                  <span className="sidebar-item-dot" />
+                  <span className="sidebar-item-name">{formatEventName(p.event)}</span>
+                  <span className="sidebar-item-org-badge">{ORG_META[p.org]?.name ?? p.org}</span>
+                </button>
+                <button
+                  className="sidebar-pin-btn"
+                  onClick={e => { e.stopPropagation(); onOpenHistory(p.org, p.event) }}
+                  title="Explain history"
+                  aria-label="Explain history for this event"
+                >
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 5.5V10l3 2M17.5 10a7.5 7.5 0 11-7.5-7.5A7.5 7.5 0 0117.5 10z" />
+                  </svg>
+                </button>
+              </div>
+            ))}
+          </nav>
+        </>
+      )}
+
       <div className="sidebar-events-header">
         <span className="sidebar-label">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
         {events.length > 0 && <span className="sidebar-count-badge">{events.length}</span>}
@@ -1118,17 +1227,27 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
       </div>
 
       <nav className="sidebar-nav">
-        {filtered.map(ev => (
-          <button
-            key={ev}
-            className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}
-            onClick={() => onSelect(ev)}
-            title={formatEventName(ev)}
-          >
-            <span className="sidebar-item-dot" />
-            <span className="sidebar-item-name">{formatEventName(ev)}</span>
-          </button>
-        ))}
+        {filtered.map(ev => {
+          const pinned = pins.some(p => p.org === org && p.event === ev)
+          return (
+            <div key={ev} className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}>
+              <button className="sidebar-item-main" onClick={() => onSelect(ev)} title={formatEventName(ev)}>
+                <span className="sidebar-item-dot" />
+                <span className="sidebar-item-name">{formatEventName(ev)}</span>
+              </button>
+              <button
+                className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
+                onClick={e => { e.stopPropagation(); onTogglePin(org, ev) }}
+                title={pinned ? 'Unpin event' : 'Pin event'}
+                aria-label={pinned ? 'Unpin event' : 'Pin event'}
+              >
+                <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+                </svg>
+              </button>
+            </div>
+          )
+        })}
         {filtered.length === 0 && search && (
           <div className="sidebar-no-results">No matches</div>
         )}
@@ -1182,6 +1301,42 @@ export default function App() {
   useEffect(() => {
     if (user && postLoginRedirect) { setPostLoginRedirect(false); setPage('orgpicker') }
   }, [user, postLoginRedirect])
+
+  // Pinned events — [{org, event}], loaded from Supabase for the signed-in
+  // user and kept in sync via optimistic local updates in togglePin (below)
+  // rather than re-fetching after every toggle.
+  const [pins, setPins] = useState([])
+  useEffect(() => {
+    if (!user) { setPins([]); return }
+    supabase.from('pinned_events').select('org, event').eq('user_id', user.id)
+      .then(({ data, error }) => { if (!error && data) setPins(data) })
+  }, [user])
+
+  function isPinned(o, ev) { return pins.some(p => p.org === o && p.event === ev) }
+
+  async function togglePin(o, ev) {
+    if (!user) { handleAccount(); return }
+    if (isPinned(o, ev)) {
+      setPins(prev => prev.filter(p => !(p.org === o && p.event === ev)))
+      await supabase.from('pinned_events').delete().eq('user_id', user.id).eq('org', o).eq('event', ev)
+    } else {
+      setPins(prev => [...prev, { org: o, event: ev }])
+      await supabase.from('pinned_events').insert({ user_id: user.id, org: o, event: ev })
+    }
+  }
+
+  function handleSelectPinned(o, ev) {
+    if (o !== org) setOrg(o)
+    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false)
+  }
+  function handleOpenHistory(o, ev) {
+    if (o !== org) setOrg(o)
+    setActiveEvent(ev); setPage('explain-history'); setStudy(null); setNavOpen(false)
+  }
+  function handleHistoryBack() { setPage('event') }
+  function handleContinueFromHistory() {
+    setStudy({ text: '', mode: 'explain', scope: 'general' }); setPage('event')
+  }
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving to the OS default every load.
   const [theme, setTheme] = useState(() => localStorage.getItem('studystock-theme') || 'system')
@@ -1297,6 +1452,8 @@ export default function App() {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
   } else if (page === 'account') {
     content = <AccountPage user={user} onBack={handleAccountBack} />
+  } else if (page === 'explain-history' && activeEvent && user) {
+    content = <ExplainHistoryPage org={org} event={activeEvent} user={user} onBack={handleHistoryBack} onContinue={handleContinueFromHistory} />
   } else if (org && !eventsLoaded) {
     content = <div className="loading">Loading…</div>
   } else if (org && events.length === 0) {
@@ -1304,7 +1461,7 @@ export default function App() {
   } else if (study && activeEvent) {
     if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
     else if (study.mode === 'flashcard') content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
-    else                                 content = <StudyPane      event={activeEvent} org={org} objectiveText={study.text} onBack={handleBack} />
+    else                                 content = <StudyPane      event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} onBack={handleBack} />
   } else if (page === 'home') {
     content = <HomePage onStart={handlePickerOpen} />
   } else if (page === 'picker') {
@@ -1334,6 +1491,10 @@ export default function App() {
         onSettings={handleSettings}
         onAccount={handleAccount}
         user={user}
+        pins={pins}
+        onTogglePin={togglePin}
+        onSelectPinned={handleSelectPinned}
+        onOpenHistory={handleOpenHistory}
         open={navOpen}
       />
       <main className="main">{content}</main>

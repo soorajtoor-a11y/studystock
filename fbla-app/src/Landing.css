@@ -23,6 +23,9 @@
 .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 16px oklch(47% 0.13 var(--signal-hue) / 0.35); }
 .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 26px oklch(47% 0.13 var(--signal-hue) / 0.42); }
 .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px oklch(47% 0.13 var(--signal-hue) / 0.35); }
+.btn-ghost { background: transparent; color: var(--text-2); }
+.btn-ghost:hover { background: var(--tint); color: var(--text); }
+.lnav-cta-group { display: flex; align-items: center; gap: 6px; }
 .btn-sm { padding: 9px 18px; font-size: 13px; }
 .btn-md { padding: 11px 22px; font-size: 14px; }
 .btn-lg { padding: 14px 28px; font-size: 15.5px; }

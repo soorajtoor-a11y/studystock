@@ -198,7 +198,7 @@ function EventTicker() {
   )
 }
 
-export default function Landing({ onStart, onPickEvent, orgs = [] }) {
+export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
   const scrollRef = useRef(null)
   const [scrolled, setScrolled] = useState(false)
 
@@ -230,7 +230,10 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
             <button className="lnav-link" onClick={() => scrollToId('features')}>Features</button>
             <button className="lnav-link" onClick={() => scrollToId('how-it-works')}>How it works</button>
           </nav>
-          <Button variant="primary" size="sm" onClick={onStart}>Try it free</Button>
+          <div className="lnav-cta-group">
+            <Button variant="ghost" size="sm" onClick={onSignIn}>Sign In</Button>
+            <Button variant="primary" size="sm" onClick={onStart}>Try it free</Button>
+          </div>
         </div>
       </header>
 

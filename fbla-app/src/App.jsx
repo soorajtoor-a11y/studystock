@@ -1165,6 +1165,10 @@ export default function App() {
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
   const [prevPage,    setPrevPage]    = useState('home') // where Settings'/Account's back button returns to
   const [user,        setUser]        = useState(null) // Supabase session user, or null if signed out
+  // Set by the landing page's "Sign In" button; consumed by the effect below
+  // to jump straight to the org chooser once a session actually appears,
+  // rather than back to wherever Account's normal "back" would go.
+  const [postLoginRedirect, setPostLoginRedirect] = useState(false)
 
   // Track the Supabase auth session — getSession() resolves the session
   // already persisted in localStorage from a prior visit; onAuthStateChange
@@ -1174,6 +1178,10 @@ export default function App() {
     const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => setUser(session?.user ?? null))
     return () => sub.subscription.unsubscribe()
   }, [])
+
+  useEffect(() => {
+    if (user && postLoginRedirect) { setPostLoginRedirect(false); setPage('orgpicker') }
+  }, [user, postLoginRedirect])
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving to the OS default every load.
   const [theme, setTheme] = useState(() => localStorage.getItem('studystock-theme') || 'system')
@@ -1248,6 +1256,16 @@ export default function App() {
     if (!org) return handleOrgPicker('home')
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
+  // "Sign In" from the landing nav: open the Account page's login form, and
+  // remember to jump straight to the org chooser once a session actually
+  // exists (the effect below fires on session creation, i.e. a real log in —
+  // signUp() alone doesn't create a session until the email is confirmed).
+  function handleSignIn() {
+    setPrevPage('landing')
+    setPendingDestination('home')
+    setPostLoginRedirect(true)
+    setPage('account'); setNavOpen(false)
+  }
   function handleSettings() {
     if (page !== 'settings') setPrevPage(page)
     setPage('settings'); setNavOpen(false)
@@ -1267,7 +1285,7 @@ export default function App() {
   function handleBack()          { setStudy(null) }
 
   if (page === 'landing') {
-    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} eventCount={events.length} orgs={orgs} />
+    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} onSignIn={handleSignIn} eventCount={events.length} orgs={orgs} />
   }
 
   if (page === 'orgpicker') {

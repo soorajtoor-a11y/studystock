@@ -171,7 +171,7 @@ function HomePage({ onStart }) {
     <div className="home-page">
       <div className="home-hero">
         <div className="home-hero-content">
-<h1 className="home-title">Study<span className="home-title-accent">Stock</span></h1>
+<h1 className="home-title">Study<span className="home-title-accent">StockAI</span></h1>
           <p className="home-subtitle">
             Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
             and get instant explanations — all grounded in the official objectives.
@@ -975,7 +975,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, open }) {
+function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
@@ -985,10 +985,10 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
 
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
-      <button className="sidebar-logo" onClick={onLanding} title="Back to StudyStock overview">
+      <button className="sidebar-logo" onClick={onLanding} title="Back to StudyStockAI overview">
         <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
-          <span className="sidebar-logo-name">StudyStock</span>
+          <span className="sidebar-logo-name">StudyStockAI</span>
           <span className="sidebar-logo-sub">{orgMeta ? `${orgMeta.name} Study Tool` : 'Study Tool'}</span>
         </div>
       </button>
@@ -1050,10 +1050,14 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event' | 'settings'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
+  const [prevPage,    setPrevPage]    = useState('home') // where Settings' back button returns to
+  // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
+  // their choice instead of re-resolving to the OS default every load.
+  const [theme, setTheme] = useState(() => localStorage.getItem('studystock-theme') || 'system')
 
   useEffect(() => {
     fetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
@@ -1080,6 +1084,33 @@ export default function App() {
     else document.documentElement.removeAttribute('data-org')
   }, [org, page])
 
+  // Light/dark mode — same [data-*] attribute-on-<html> pattern as org
+  // theming above, and same scoping decision: the marketing Landing page
+  // and OrgPicker stay their normal light appearance regardless of the
+  // in-app choice (Settings itself only exists inside the app shell, so
+  // there's no page for a visitor to have set a preference from yet).
+  // "system" resolves via prefers-color-scheme and stays live — if the OS
+  // theme flips while "system" is selected, the app follows without a
+  // reload, via the matchMedia change listener below.
+  useEffect(() => {
+    localStorage.setItem('studystock-theme', theme)
+  }, [theme])
+
+  useEffect(() => {
+    const inThemedPage = page !== 'landing' && page !== 'orgpicker'
+    const mql = window.matchMedia('(prefers-color-scheme: dark)')
+    function apply() {
+      if (!inThemedPage) { document.documentElement.removeAttribute('data-theme'); return }
+      const resolved = theme === 'system' ? (mql.matches ? 'dark' : 'light') : theme
+      document.documentElement.setAttribute('data-theme', resolved)
+    }
+    apply()
+    if (theme === 'system' && inThemedPage) {
+      mql.addEventListener('change', apply)
+      return () => mql.removeEventListener('change', apply)
+    }
+  }, [theme, page])
+
   function handleLanding()       { setPage('landing'); setActiveEvent(null); setStudy(null); setNavOpen(false) }
   function handleOrgPicker(dest) { setPendingDestination(dest); setPage('orgpicker'); setNavOpen(false) }
   function handleOrgSelect(o)    { setOrg(o); setPage(pendingDestination); setNavOpen(false) }
@@ -1098,6 +1129,11 @@ export default function App() {
     if (!org) return handleOrgPicker('home')
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
+  function handleSettings() {
+    if (page !== 'settings') setPrevPage(page)
+    setPage('settings'); setNavOpen(false)
+  }
+  function handleSettingsBack() { setPage(prevPage); setNavOpen(false) }
   function handlePickerOpen() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
@@ -1115,7 +1151,9 @@ export default function App() {
   }
 
   let content
-  if (org && !eventsLoaded) {
+  if (page === 'settings') {
+    content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
+  } else if (org && !eventsLoaded) {
     content = <div className="loading">Loading…</div>
   } else if (org && events.length === 0) {
     content = <ComingSoonPage org={org} onSwitchOrg={handleSwitchOrg} />
@@ -1149,6 +1187,7 @@ export default function App() {
         onHome={handleHome}
         onLanding={handleLanding}
         onOrgChange={handleOrgChange}
+        onSettings={handleSettings}
         open={navOpen}
       />
       <main className="main">{content}</main>

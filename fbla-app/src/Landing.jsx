@@ -224,7 +224,7 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
         <div className="lnav-inner">
           <a className="lnav-brand" href="#top" onClick={e => { e.preventDefault(); scrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' }) }}>
             <img className="lnav-mark" src={appMark} alt="" />
-            StudyStock
+            StudyStockAI
           </a>
           <nav className="lnav-links" aria-label="Primary">
             <button className="lnav-link" onClick={() => scrollToId('features')}>Features</button>
@@ -252,9 +252,6 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
               </p>
               <div className="hero-ctas">
                 <Button variant="primary" size="lg" onClick={onStart}>Try it free →</Button>
-                <button className="hero-secondary-link" onClick={onPickEvent}>
-                  Browse all events <span aria-hidden="true">→</span>
-                </button>
               </div>
             </div>
 
@@ -276,8 +273,8 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
           <Reveal as="div" className="home-stats" delay={80}>
             <div className="home-stat">
               <span className="home-stat-pre">All</span>
-              <span className="home-stat-num">{totalEvents}</span>
-              <span className="home-stat-label">Objective Tests</span>
+              <span className="home-stat-num">96</span>
+              <span className="home-stat-label">Objective Tests across 3 Competitions</span>
             </div>
             <div className="home-stat">
               <span className="home-stat-pre">Up to</span>
@@ -286,7 +283,7 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
             </div>
             <div className="home-stat">
               <span className="home-stat-pre">Make as many as</span>
-              <span className="home-stat-num">50</span>
+              <span className="home-stat-num">25</span>
               <span className="home-stat-label">Detailed Flash Cards Per Set</span>
             </div>
           </Reveal>
@@ -333,7 +330,7 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
           <Reveal as="div" className="section-head">
             <Eyebrow>Why it’s better</Eyebrow>
             <h2 className="section-title">Dense guidelines in. A clean quiz out.</h2>
-            <p className="section-desc">The official objectives are thorough — but they’re not built for studying. StudyStock turns them into practice you’ll actually use.</p>
+            <p className="section-desc">The official objectives are thorough — but they’re not built for studying. StudyStockAI turns them into practice you’ll actually use.</p>
           </Reveal>
           <div className="ba-row">
             <Reveal as={Card} className="ba-card ba-before">
@@ -365,7 +362,7 @@ export default function Landing({ onStart, onPickEvent, orgs = [] }) {
       {/* ── Footer ────────────────────────────────────────────────────── */}
       <footer className="lfooter">
         <div className="lfooter-inner">
-          <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> StudyStock</span>
+          <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> StudyStockAI</span>
           <nav className="lfooter-links" aria-label="Footer">
             <button onClick={() => scrollToId('features')}>Features</button>
             <button onClick={onPickEvent}>Events</button>

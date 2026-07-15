@@ -253,9 +253,6 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
                 all grounded in the official competitive event objectives.
                 No prep, no guesswork, just focused practice.
               </p>
-              <div className="hero-ctas">
-                <Button variant="primary" size="lg" onClick={onStart}>Try it free →</Button>
-              </div>
             </div>
 
             <div className="hero-sample">

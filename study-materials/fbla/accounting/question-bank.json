@@ -1,0 +1,702 @@
+[
+ {
+  "question": "In computerized accounting systems, what is the term for the process of moving financial data from manual records into the accounting software to ensure all transactions are captured in the system?",
+  "options": [
+   "Data reconciliation",
+   "Data migration",
+   "Data validation",
+   "Data entry"
+  ],
+  "correct_index": 1,
+  "explanation": "Data migration refers to the process of transferring existing financial records and transaction data from manual systems into a computerized accounting system. This is distinct from data entry (ongoing input of new transactions), data reconciliation (matching accounts), and data validation (checking accuracy of entered data).",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following tasks are performed when using spreadsheet software to prepare a payroll report?",
+  "options": [
+   "Verifying bank deposits, reconciling prior-year balances, and adjusting employee withholding codes",
+   "Calculating gross pay from hours worked, determining tax withholdings, and computing net pay",
+   "Formatting cell colors, hiding employee social security numbers, and creating pivot tables for analysis only",
+   "Entering employee names, storing archived tax documents, and printing physical paychecks"
+  ],
+  "correct_index": 1,
+  "explanation": "Payroll preparation in a spreadsheet involves calculating gross pay based on hours, determining required tax withholdings, and computing net pay. While other options may reference payroll-adjacent tasks, only option A describes the core computational processes integral to payroll report generation.",
+  "type": "which_of_following",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a computerized accounting system, what is the term for the software tool that allows accountants to organize financial data into rows and columns, perform calculations, and generate reports without manually entering each figure?",
+  "options": [
+   "Financial database manager",
+   "General ledger software",
+   "Electronic spreadsheet",
+   "Trial balance generator"
+  ],
+  "correct_index": 2,
+  "explanation": "An electronic spreadsheet is the standard tool for organizing data in rows and columns, creating formulas, and producing financial reports in a computerized environment. This is distinct from general ledger software (which manages accounts), trial balance generators (which produce a specific report), and database managers (which are broader data-storage tools). The spreadsheet's formula capability and report-generation function make it essential for payroll, worksheets, and financial analysis.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process by which an accountant transfers data from paper-based manual accounting records into a computerized system so that all historical transactions are captured and available for analysis and reporting is called ___",
+  "options": [
+   "Data import",
+   "Ledger conversion",
+   "System integration",
+   "Database reconciliation"
+  ],
+  "correct_index": 0,
+  "explanation": "Data import is the term for bringing existing manual records into a computerized system. While system integration is broader and may include hardware/software compatibility, and ledger conversion refers specifically to converting account structures, data import is the precise term for the transfer of transaction data from manual to digital form. This is a critical step when adapting accounting functions to computerized systems.",
+  "type": "concept_completion",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are all standard functions performed when using financial software and spreadsheets to process payroll and generate payroll reports?",
+  "options": [
+   "Validating vendor invoices, approving purchase orders, matching receipts, and recording accruals",
+   "Classifying expenses by cost center, allocating overhead, and preparing budget variance analyses",
+   "Auditing the general ledger, reconciling bank deposits, adjusting prior-period entries, and posting to subsidiary accounts",
+   "Entering employee hours, calculating withholdings, printing checks, and generating earnings statements"
+  ],
+  "correct_index": 3,
+  "explanation": "Processing payroll requires entering hours, calculating tax withholdings and deductions, printing checks for distribution, and generating earnings statements for employees—all core payroll functions performed in spreadsheets and accounting software. The other options describe different accounting processes: option B covers ledger reconciliation, option C addresses cost analysis, and option D focuses on accounts payable—none of which are part of the payroll preparation and check-printing workflow.",
+  "type": "which_of_following",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The section of a worksheet where account balances are listed before any adjustments are made is called the ___",
+  "options": [
+   "adjusted trial balance",
+   "income statement section",
+   "balance sheet section",
+   "trial balance"
+  ],
+  "correct_index": 3,
+  "explanation": "The trial balance section lists all general ledger account balances in their original, unadjusted form before adjustment entries are recorded. This is the starting point on the worksheet before adjustments are made to accounts for items like depreciation, accruals, and prepaid expenses.",
+  "type": "definition_recall",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be examples of adjustments that must be recorded on the worksheet?",
+  "options": [
+   "Depreciation expense, accrued salaries, and supplies used",
+   "Equipment purchases, merchandise inventory, and accounts payable",
+   "Sales returns, discounts allowed, and cost of goods sold",
+   "Cash receipts, customer payments, and bank deposits"
+  ],
+  "correct_index": 0,
+  "explanation": "Adjustments on the worksheet include depreciation (allocating asset cost over time), accrued salaries (expenses incurred but not yet paid), and supplies used (reducing the supplies asset and recording expense). These are all typical year-end adjustments that match revenues and expenses to the period they relate to.",
+  "type": "which_of_following",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of identifying and recording changes to account balances to reflect economic events that have occurred but have not yet been recorded in the general ledger is called ___",
+  "options": [
+   "posting",
+   "journalizing",
+   "adjusting",
+   "reconciling"
+  ],
+  "correct_index": 2,
+  "explanation": "Adjusting is the specific process of making adjusting entries on the worksheet to bring account balances up to date for items like accrued expenses, prepaid items, and depreciation before financial statements are prepared. This ensures financial statements reflect the complete economic activity of the period.",
+  "type": "definition_recall",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company has recorded $12,000 in supplies purchased during the year. At year-end, a physical count shows $3,000 of supplies remain on hand. An adjustment on the worksheet should ___",
+  "options": [
+   "record Supplies at $3,000 and eliminate the Supplies Expense account",
+   "decrease the Supplies account by $9,000 and increase Supplies Expense by $9,000",
+   "increase the Supplies account by $9,000 and increase Supplies Expense by $9,000",
+   "decrease the Supplies account by $3,000 and decrease Supplies Expense by $9,000"
+  ],
+  "correct_index": 1,
+  "explanation": "The supplies used during the period equals the beginning balance plus purchases minus the ending balance on hand ($12,000 − $3,000 = $9,000). The adjustment decreases the Supplies asset account (to reflect only what remains) and records Supplies Expense of $9,000 (the amount actually consumed). This matches the expense to the period in which the supplies were used.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The three main sections of a completed worksheet include all of the following EXCEPT",
+  "options": [
+   "trial balance columns showing unadjusted account balances",
+   "adjustments columns showing proposed journal entries",
+   "cash flow statement columns showing all cash receipts and disbursements",
+   "income statement and balance sheet columns with adjusted balances"
+  ],
+  "correct_index": 2,
+  "explanation": "A standard worksheet contains a trial balance section (unadjusted), adjustments section, and adjusted trial balance section, followed by the income statement and balance sheet sections. The cash flow statement is a separate financial statement not typically included as a worksheet column; it is prepared after the primary financial statements from transaction data.",
+  "type": "all_except",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A liability that is expected to be paid or settled within one year or the normal operating cycle of the business is classified as a(n) ___.",
+  "options": [
+   "contingent liability",
+   "current liability",
+   "long-term liability",
+   "deferred liability"
+  ],
+  "correct_index": 1,
+  "explanation": "Current liabilities are obligations due within one year or one operating cycle, such as accounts payable and short-term notes payable. Long-term liabilities extend beyond one year, while contingent and deferred liabilities are specialized classifications for uncertain or future obligations.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following items would all be classified as current assets?",
+  "options": [
+   "Prepaid insurance, bonds payable, and trademark rights",
+   "Equipment, patents, and accumulated depreciation reserves",
+   "Land, goodwill, and long-term investments",
+   "Cash, accounts receivable, and inventory"
+  ],
+  "correct_index": 3,
+  "explanation": "Current assets are resources expected to be converted to cash or used within one year. Cash, accounts receivable, and inventory all meet this criterion. Equipment and land are fixed assets; patents and goodwill are intangible assets; and bonds payable is a liability, not an asset.",
+  "type": "which_of_following",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The system that organizes all business accounts into categories for recording and reporting financial transactions is called the ___.",
+  "options": [
+   "chart of accounts",
+   "trial balance",
+   "income statement",
+   "general ledger"
+  ],
+  "correct_index": 0,
+  "explanation": "A chart of accounts is a structured list of all accounts a business uses, organized by asset, liability, equity, revenue, and expense categories. The general ledger records individual account transactions; the trial balance tests that debits equal credits; and the income statement is a financial report, not the system organizing accounts.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturing company purchases a production machine for $50,000, which will be used for eight years before being sold for scrap. When recording this transaction, the company should classify the machine as a(n) ___ because it will support operations over multiple years and is not expected to be converted to cash in the normal operating cycle.",
+  "options": [
+   "current asset",
+   "fixed asset",
+   "prepaid expense",
+   "intangible asset"
+  ],
+  "correct_index": 1,
+  "explanation": "Fixed assets (also called long-term or non-current assets) are physical assets with a useful life exceeding one year. The eight-year machine clearly qualifies because it generates revenue across many operating cycles. Current assets are converted to cash within one year; intangible assets lack physical form (like patents); prepaid expenses are short-term costs (like insurance).",
+  "type": "scenario_judgment",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A liability that will not be settled within one year or the normal operating cycle of the business is classified as a(n) ___.",
+  "options": [
+   "long-term liability",
+   "intangible liability",
+   "contingent liability",
+   "deferred liability"
+  ],
+  "correct_index": 0,
+  "explanation": "Long-term liabilities are obligations expected to be paid or settled beyond one year or the business's normal operating cycle, distinguishing them from current liabilities due within a shorter timeframe. This classification is critical for balance sheet presentation and financial analysis, as it separates near-term payment obligations from long-term debt commitments such as mortgages and bonds payable.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic allocation of an asset's cost over its useful life is called ___.",
+  "options": [
+   "impairment",
+   "amortization",
+   "depreciation",
+   "depletion"
+  ],
+  "correct_index": 2,
+  "explanation": "Depreciation is the accounting process of allocating the cost of a tangible plant asset to expense over its estimated useful life. While amortization applies to intangible assets and depletion to natural resources, depreciation is the specific term for physical assets like equipment and buildings.",
+  "type": "definition_recall",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Under the double-declining balance method, the depreciation rate is calculated by ___.",
+  "options": [
+   "dividing the asset's cost by its useful life in years",
+   "dividing the total depreciable cost by the sum of the years' digits",
+   "multiplying the cost by the number of units produced each year",
+   "doubling the straight-line rate and applying it to the remaining book value"
+  ],
+  "correct_index": 3,
+  "explanation": "The double-declining balance method is an accelerated depreciation method that doubles the straight-line depreciation rate and applies it to the declining book value of the asset each period. This results in larger depreciation expenses in early years and smaller amounts in later years.",
+  "type": "definition_recall",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturing company purchased specialized equipment for $80,000 with an estimated useful life of 10 years and a residual value of $8,000. Using the straight-line depreciation method, the company should record annual depreciation expense of ___.",
+  "options": [
+   "$8,000",
+   "$8,800",
+   "$9,600",
+   "$7,200"
+  ],
+  "correct_index": 1,
+  "explanation": "Under the straight-line method, annual depreciation is calculated as (Cost – Residual Value) ÷ Useful Life = ($80,000 – $8,000) ÷ 10 years = $72,000 ÷ 10 = $7,200 per year. This constant annual charge allocates the depreciable base evenly over the asset's life.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Under the sum of the years' digits depreciation method, the denominator is calculated by adding all the years of the asset's useful life together. If a plant asset has a useful life of 5 years, what is the denominator used in the first year's depreciation calculation?",
+  "options": [
+   "25",
+   "5",
+   "10",
+   "15"
+  ],
+  "correct_index": 3,
+  "explanation": "The sum of the years' digits is calculated as 5 + 4 + 3 + 2 + 1 = 15. In the first year, the numerator is 5 (the full useful life remaining), so the depreciation rate is 5/15. This method produces higher depreciation early in an asset's life and lower depreciation in later years.",
+  "type": "definition_recall",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate reasons to select a specific depreciation method for a plant asset?",
+  "options": [
+   "The pattern of asset usage over time, the nature of the asset's value decline, and the desired matching of expenses to revenue",
+   "The useful life in months rather than years, the asset's color and physical appearance, and the depreciation method used by competitors",
+   "The asset's original cost, the number of accounting periods in the fiscal year, and management's tax strategy alone",
+   "The highest possible depreciation expense in year one, the lowest residual value, and the quickest asset disposal"
+  ],
+  "correct_index": 0,
+  "explanation": "The appropriate selection of a depreciation method depends on how the asset is actually used (usage pattern), how its economic value declines over time (nature of decline), and the principle of matching depreciation expense with the periods in which revenue is generated. The other options mix irrelevant criteria (appearance, color) or inappropriate motivations (tax strategy alone, competitor methods) with valid factors.",
+  "type": "which_of_following",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sole proprietorship is characterized by which of the following?",
+  "options": [
+   "The business is a separate legal entity from its owner, and the owner has limited personal liability",
+   "Ownership is shared among two or more individuals who each contribute capital and share profits",
+   "The owner has unlimited personal liability for all business debts and obligations",
+   "The business is owned by shareholders who elect a board of directors to oversee operations"
+  ],
+  "correct_index": 2,
+  "explanation": "In a sole proprietorship, the owner and the business are not legally distinct; therefore, the owner bears unlimited personal liability for all business debts. This is a defining characteristic that distinguishes sole proprietorships from corporations and limited partnerships, where liability protection exists.",
+  "type": "concept_completion",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are typical characteristics of a sole proprietorship EXCEPT",
+  "options": [
+   "Ownership interests are freely transferable to other parties without dissolution",
+   "The owner makes all business decisions without needing to consult partners or a board",
+   "Income is reported on the owner's personal tax return",
+   "The business terminates upon the owner's death or withdrawal"
+  ],
+  "correct_index": 0,
+  "explanation": "In a sole proprietorship, ownership cannot be easily transferred without the business ceasing to exist; the business is inseparable from the owner. The other three options are all true characteristics of sole proprietorships, making transferability the odd one out.",
+  "type": "all_except",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The overall structure by which a business reports financial results to stakeholders, including income statements and balance sheets prepared according to ownership type, describes ___",
+  "options": [
+   "internal control procedures",
+   "financial reporting and information flow",
+   "managerial accounting systems",
+   "audit compliance frameworks"
+  ],
+  "correct_index": 1,
+  "explanation": "Financial reporting and information flow refers to the standardized processes and formats through which different ownership structures communicate their financial position and performance to owners, creditors, and other stakeholders. Each ownership type has distinct reporting requirements based on legal structure.",
+  "type": "definition_recall",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The characteristic that a sole proprietor retains complete control over all business decisions without needing approval from partners or a board of directors is most directly related to which aspect of sole proprietorship structure?",
+  "options": [
+   "Simplified accounting records and reporting procedures",
+   "Unlimited personal liability exposure for business obligations and debts",
+   "Sole ownership and centralized decision-making authority",
+   "The ability to raise capital quickly from external investors"
+  ],
+  "correct_index": 2,
+  "explanation": "Sole ownership means there is only one owner, which results in centralized decision-making authority—no partners to consult or board of directors to oversee operations. This is a defining structural characteristic, distinct from liability exposure or accounting complexity.",
+  "type": "concept_completion",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be advantages of organizing a business as a sole proprietorship rather than a corporation?",
+  "options": [
+   "Limited liability protection, simplified tax filing, and reduced compliance costs",
+   "Shared decision-making authority, formalized governance structure, and enhanced credibility with lenders",
+   "Access to multiple investors, transferable ownership shares, and perpetual existence",
+   "Lower startup costs, ease of formation, and complete managerial control by the owner"
+  ],
+  "correct_index": 3,
+  "explanation": "Sole proprietorships offer lower startup costs (no formal registration fees like corporations), are easy to form (minimal paperwork), and give the owner complete control over all decisions without needing board approval or partner consent. Options A and C describe corporate advantages (liability protection and transferability), while option D describes characteristics that corporations have but that are not advantages of sole proprietorships.",
+  "type": "which_of_following",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The journal in which all transactions that do not fit into special journals are recorded is called the ___.",
+  "options": [
+   "sales journal",
+   "cash receipts journal",
+   "general journal",
+   "accounts payable journal"
+  ],
+  "correct_index": 2,
+  "explanation": "The general journal is the catch-all journal where miscellaneous transactions, adjusting entries, and any entries not appropriate for specialized journals are recorded. This foundational concept distinguishes the general journal from purpose-specific journals like the sales journal or cash receipts journal.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are columns typically found in a multi-column cash receipts journal EXCEPT",
+  "options": [
+   "Accounts Receivable",
+   "Cash",
+   "Sales Discount",
+   "Purchases Discount"
+  ],
+  "correct_index": 3,
+  "explanation": "A cash receipts journal tracks money coming into the business and includes columns for Cash, Sales Discount (for early payment incentives), and Accounts Receivable (customer payments on credit). Purchases Discount belongs in the cash payments journal, not the cash receipts journal, since it applies to money going out to pay suppliers.",
+  "type": "all_except",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of verifying that the total debits in a journal equal the total credits in a journal is called ___.",
+  "options": [
+   "ruling the journal",
+   "proving the journal",
+   "posting the journal",
+   "balancing the ledger"
+  ],
+  "correct_index": 1,
+  "explanation": "Proving the journal means checking that all debits equal all credits—a fundamental control procedure to ensure no transactions were recorded incorrectly or omitted. This differs from ruling the journal, which is the physical act of drawing lines and totals, and from posting, which transfers amounts to the ledger.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The act of drawing a single line before the totals and a double line after the totals in a journal column is known as ___.",
+  "options": [
+   "ruling the journal",
+   "closing the journal",
+   "proving the journal",
+   "auditing the journal"
+  ],
+  "correct_index": 0,
+  "explanation": "Ruling the journal is the mechanical process of marking the end of a journal period with lines and totals, done after proving (verifying debits equal credits) is complete. It provides a clear visual boundary and finalization of the journal's activity for that period.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL be appropriate entries for the cash payments journal?",
+  "options": [
+   "Payment of an invoice to a supplier, payment of property taxes, purchase of inventory on credit",
+   "Payment for office equipment, payment of an account payable, payment of dividends to the owner",
+   "Payment of salaries, payment for supplies on credit, payment of utilities",
+   "Collection of cash from customers, payment of rent, purchase of equipment for cash"
+  ],
+  "correct_index": 1,
+  "explanation": "The cash payments journal records all transactions where cash leaves the business. Option D includes payment for office equipment (asset purchase with cash), payment of an account payable (cash to a supplier), and dividend payments—all legitimate cash outflows. Options A and B mix cash payments with credit transactions or cash receipts, and option C includes a credit purchase, which would not appear in the cash payments journal.",
+  "type": "which_of_following",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The set of accounting standards and procedures established to ensure consistency and comparability in financial reporting across organizations is known as ___.",
+  "options": [
+   "financial statement analysis",
+   "the accounting cycle",
+   "the accounting equation",
+   "Generally Accepted Accounting Principles"
+  ],
+  "correct_index": 3,
+  "explanation": "GAAP (Generally Accepted Accounting Principles) is the standardized framework that governs how accountants prepare and present financial statements, ensuring transparency and uniformity across different companies and industries. This standardization allows investors, creditors, and other stakeholders to compare financial information reliably. The other options describe related but distinct accounting concepts.",
+  "type": "definition_recall",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are recognized authoritative resources for information on current accounting regulations and financial reporting requirements EXCEPT",
+  "options": [
+   "a company's previous years' financial statements without external regulatory confirmation",
+   "the FASB (Financial Accounting Standards Board)",
+   "the Internal Revenue Service (IRS) website for tax code updates",
+   "the SEC (Securities and Exchange Commission)"
+  ],
+  "correct_index": 0,
+  "explanation": "The FASB, SEC, and IRS are all official regulatory and standards-setting bodies that publish current, authoritative guidance on accounting and financial reporting requirements. A company's own prior financial statements, by contrast, are historical records and do not serve as a source for learning about current regulatory updates or new standards—they may reflect outdated or non-compliant practices. Relying on them alone for regulatory information is insufficient.",
+  "type": "all_except",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "GAAP exists primarily to ___",
+  "options": [
+   "eliminate the need for external audits and reduce the cost of financial statement preparation",
+   "provide tax reduction strategies that companies can use to minimize their annual tax liability",
+   "establish uniform accounting standards and ensure consistency and comparability in financial reporting across different organizations",
+   "allow each company to develop its own accounting methods tailored to its specific industry and operational needs"
+  ],
+  "correct_index": 2,
+  "explanation": "GAAP (Generally Accepted Accounting Principles) is designed to standardize accounting practices so that financial statements are consistent and comparable across organizations, enabling stakeholders to make informed decisions. This is a fundamental principle underlying all GAAP regulations. The other options misrepresent GAAP's purpose—it does not eliminate audits, encourage company-specific methods, or serve as a tax strategy.",
+  "type": "concept_completion",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be reliable authoritative resources for current information on financial laws, regulations, and accounting policies?",
+  "options": [
+   "Industry trade publications, competitors' press releases, and the company's accounts payable ledger",
+   "The FASB website, the SEC's investor relations resources, and official IRS publications on tax accounting",
+   "The Financial Accounting Standards Board (FASB), the SEC's official website, and peer-reviewed accounting journal articles",
+   "Local business networking groups, historical textbooks on accounting theory, and informal conversations with accounting staff"
+  ],
+  "correct_index": 1,
+  "explanation": "The FASB, SEC, and IRS are all authoritative, government-backed sources that publish current and binding regulations on financial reporting and accounting standards. Option A includes peer-reviewed journals, which are scholarly but not regulatory authorities. Options B and D mix unreliable sources (competitors' releases, informal discussions, outdated textbooks) with official information, making them unsuitable as primary regulatory resources.",
+  "type": "which_of_following",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The role of accounting in the economy includes all of the following EXCEPT",
+  "options": [
+   "setting prices for goods and services sold by individual companies in competitive markets",
+   "enabling regulators and tax authorities to monitor compliance with financial reporting standards and tax laws",
+   "creating a transparent record of an organization's financial transactions and economic performance over time",
+   "providing financial information that helps investors and creditors make decisions about capital allocation"
+  ],
+  "correct_index": 0,
+  "explanation": "Accounting records and reports financial transactions but does not determine or set the prices at which companies sell their goods and services—that is a function of market competition, supply and demand, and business strategy. The other three options are core roles of accounting: supporting investment decisions, documenting financial activity, and enabling regulatory oversight. Pricing is a management and economics function, not an accounting function.",
+  "type": "all_except",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of transferring debits and credits from a journal to the appropriate general ledger accounts is called ___",
+  "options": [
+   "balancing",
+   "reconciling",
+   "journalizing",
+   "posting"
+  ],
+  "correct_index": 3,
+  "explanation": "Posting is the specific accounting term for transferring journal entries into ledger accounts. Journalizing is the prior step of recording transactions in the journal; balancing and reconciling are verification processes that occur after posting.",
+  "type": "definition_recall",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be necessary steps in preparing a schedule of accounts receivable from the subsidiary ledger?",
+  "options": [
+   "Extract all customer account balances regardless of debit or credit status, eliminate any accounts with zero balances, and post the schedule back to the journal",
+   "Select only credit balances from customer accounts, recalculate all account totals, and adjust the general ledger control account to match",
+   "Extract all customer account balances, verify they are debit balances, and total the schedule to match the general ledger control account",
+   "List only accounts with activity in the current month, ignore previous balances, and prepare the schedule without cross-verification"
+  ],
+  "correct_index": 2,
+  "explanation": "A subsidiary ledger schedule must list all customer balances (which should be debits for accounts receivable), total them, and verify that the total agrees with the general ledger control account—this reconciliation ensures posting accuracy. Options B, C, and D introduce errors: including credit balances, arbitrary filtering, or skipping verification.",
+  "type": "which_of_following",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company posts a $500 debit to Accounts Receivable in the general ledger and a $500 debit to the customer's account in the accounts receivable subsidiary ledger. The reference columns in both the journal and ledger accounts are completed. This transaction satisfies all requirements of posting EXCEPT",
+  "options": [
+   "the posting references create an audit trail between journal and ledger",
+   "the amounts posted to the general ledger and subsidiary ledger are equal",
+   "the subsidiary ledger detail is tied to the general ledger control total",
+   "the transaction is recorded in a chronological sequence in the journal"
+  ],
+  "correct_index": 3,
+  "explanation": "While posting itself requires equal amounts, matching reference columns, and subsidiary-to-control reconciliation, the chronological sequence of transactions in the journal is established during journalizing, not posting. Posting occurs after journalizing is complete and does not determine whether transactions were originally recorded in sequence.",
+  "type": "all_except",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When posting a credit sale of $750 to a customer's account in both the accounts receivable subsidiary ledger and the general ledger control account, which of the following must occur?",
+  "options": [
+   "The same transaction amount is recorded in both ledgers, with the subsidiary ledger account updated and the control account total verified to match",
+   "The general ledger control account is updated immediately while the subsidiary ledger posting occurs at month-end",
+   "The entry is recorded only in the accounts receivable subsidiary ledger and referenced in the general ledger control account",
+   "The amount is debited to the customer's individual account in the subsidiary ledger and credited to the Accounts Receivable control account in the general ledger"
+  ],
+  "correct_index": 0,
+  "explanation": "When posting to both a subsidiary ledger and its related general ledger control account, the same transaction must be recorded in both places to maintain the accuracy and verification relationship between them. The subsidiary ledger account is updated with the individual customer transaction, and the control account balance must be reconcilable to the total of all subsidiary ledger accounts.",
+  "type": "concept_completion",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are components of preparing a schedule of accounts receivable from the subsidiary ledger EXCEPT",
+  "options": [
+   "Listing each customer's name and the balance owed at a specific point in time",
+   "Verifying that all customer accounts contain current transaction dates within the fiscal period",
+   "Recording the ending balance of each customer account from the accounts receivable subsidiary ledger",
+   "Totaling all customer account balances to ensure they equal the Accounts Receivable control account in the general ledger"
+  ],
+  "correct_index": 1,
+  "explanation": "A schedule of accounts receivable includes the customer names, their individual balances, and a total that reconciles to the general ledger control account. However, verifying that transaction dates are current is not a required component of preparing the schedule—the schedule focuses on account balances at a specific date, not the timing of individual transactions within the period.",
+  "type": "all_except",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The total amount of compensation an employee earns before any deductions are withheld is known as ___.",
+  "options": [
+   "disposable wages",
+   "net pay",
+   "gross earnings",
+   "taxable income"
+  ],
+  "correct_index": 2,
+  "explanation": "Gross earnings represent the full compensation owed to an employee for work performed, calculated before withholdings such as federal income tax, Social Security, and Medicare are removed. This is the starting point for all payroll calculations and deductions.",
+  "type": "definition_recall",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The purposes of payroll withholdings and deductions include all of the following EXCEPT ___.",
+  "options": [
+   "meeting legal requirements for federal income tax collection",
+   "funding the employee's voluntary retirement and savings plans",
+   "increasing the employer's net profit by reducing total labor costs",
+   "satisfying state and local tax obligations on employee wages"
+  ],
+  "correct_index": 2,
+  "explanation": "Payroll withholdings and deductions serve to remit taxes owed by employees and fund voluntary benefits such as retirement plans and insurance—they do not increase the employer's profit. Withholdings are held on behalf of the employee and remitted to government or benefit providers; they represent a liability for the employer, not a cost reduction or profit source.",
+  "type": "all_except",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A method of compensation where an employee is paid a fixed amount for each unit of output produced is called ___.",
+  "options": [
+   "salary",
+   "piece-rate pay",
+   "commission-based compensation",
+   "hourly wage"
+  ],
+  "correct_index": 1,
+  "explanation": "Piece-rate pay directly ties compensation to the number of units or items an employee produces, making it distinct from hourly wages (time-based), commissions (sales-based), and fixed salaries. This method is commonly used in manufacturing and production environments where output is easily measurable.",
+  "type": "definition_recall",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of converting employee time records and wage rates into documented proof of earnings and authorized deductions before payment is issued represents ___.",
+  "options": [
+   "employee earnings verification and documentation",
+   "unemployment compensation filing",
+   "the payroll check preparation workflow",
+   "payroll tax liability"
+  ],
+  "correct_index": 0,
+  "explanation": "Preparing payroll checks and vouchers requires verifying and documenting all components of an employee's pay—hours worked, applicable rates, and authorized deductions—to create an accurate, defensible record. This step ensures compliance and provides the employee with proof of how net pay was calculated from gross earnings.",
+  "type": "concept_completion",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A compensation method in which an employee receives a percentage of sales revenue generated is called ___.",
+  "options": [
+   "salary",
+   "hourly wage",
+   "piece-rate pay",
+   "commission"
+  ],
+  "correct_index": 3,
+  "explanation": "Commission is a compensation structure tied directly to sales performance, where the employee earns a percentage of the revenue they generate. This differs from hourly wage (time-based), piece-rate (output-based), and salary (fixed amount), making it the distinct earnings method in this context.",
+  "type": "definition_recall",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be properly classified as current assets on a balance sheet?",
+  "options": [
+   "Equipment, patents, and long-term investments",
+   "Cash, accounts receivable, and inventory",
+   "Accounts payable, salaries payable, and notes payable",
+   "Land, buildings, and accumulated depreciation"
+  ],
+  "correct_index": 1,
+  "explanation": "Current assets are resources expected to be converted to cash or used within one year; cash, accounts receivable, and inventory all meet this criterion. The other options mix non-current assets (equipment, land, buildings) with liabilities (payables) or contra-assets (accumulated depreciation).",
+  "type": "which_of_following",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The resources owned by a business that have monetary value and are expected to provide future economic benefit are called ___.",
+  "options": [
+   "assets",
+   "owner's equity",
+   "liabilities",
+   "net income"
+  ],
+  "correct_index": 0,
+  "explanation": "Assets are the economic resources of a business—everything from cash to equipment to receivables. Liabilities are obligations, owner's equity is the owner's residual claim, and net income is a measure of profitability, not a resource classification.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Obligations of a business that represent amounts owed to creditors and are to be settled in the future are classified as ___.",
+  "options": [
+   "current assets",
+   "owner's equity",
+   "liabilities",
+   "retained earnings"
+  ],
+  "correct_index": 2,
+  "explanation": "Liabilities are debts and obligations owed by the business to external parties. Owner's equity and retained earnings represent the owner's claim on assets, while current assets are resources expected to convert to cash within one year—none of these are obligations owed to creditors.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The owner's residual interest in a business after all liabilities have been deducted from total assets, representing the owner's net claim on the entity's resources, is known as ___.",
+  "options": [
+   "accounts receivable",
+   "net income",
+   "working capital",
+   "owner's equity"
+  ],
+  "correct_index": 3,
+  "explanation": "Owner's equity is calculated as Assets minus Liabilities and represents what would be left for the owner if all debts were paid. Net income is a profitability measure, accounts receivable is an asset, and working capital measures short-term liquidity—none represent the owner's residual claim.",
+  "type": "concept_completion",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's ability to convert an asset into cash quickly without significant loss of value is referred to as ___.",
+  "options": [
+   "leverage",
+   "depreciation",
+   "solvency",
+   "liquidity"
+  ],
+  "correct_index": 3,
+  "explanation": "Liquidity measures how readily an asset can be converted to cash. This concept is fundamental to interpreting balance sheet assets—highly liquid assets like cash and accounts receivable appear near the top of the current assets section, while less liquid assets like inventory and equipment appear lower. Solvency refers to the ability to pay long-term obligations, not short-term asset conversion.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ }
+]

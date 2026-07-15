@@ -1,0 +1,83 @@
+HOSA STUDY OUTLINE — WORLD HEALTH & DISPARITIES (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of global health issues and health disparities: social determinants
+of health, health equity and access to care, global disease burden and
+epidemiologic trends, disparities by race/income/geography, global health
+organizations and initiatives, comparative healthcare systems, cultural
+competence, and ethical issues in global health.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Social Determinants of Health (6 items)
+1. Identify the categories of social determinants of health (economic stability, education access, healthcare access, neighborhood/environment, social/community context).
+2. Explain how income and poverty level affect health outcomes.
+3. Explain how educational attainment correlates with health literacy and outcomes.
+4. Explain how housing conditions and neighborhood environment affect health (e.g., food deserts, lead exposure, air quality).
+5. Explain how employment status and occupational conditions affect health outcomes.
+6. Explain how social support and community context affect health and chronic disease management.
+
+B. Health Equity, Equality & Access to Care (6 items)
+1. Differentiate health equity from health equality with an applied example.
+2. Identify barriers to healthcare access (cost, insurance status, transportation, provider shortages, language).
+3. Explain the concept of a medically underserved area/population and a health professional shortage area.
+4. Identify the effect of health insurance coverage status on preventive care utilization and outcomes.
+5. Explain telehealth's role in improving access to care in rural or underserved areas.
+6. Identify policy approaches used to expand healthcare access (e.g., community health centers, Medicaid expansion).
+
+C. Global Disease Burden & Epidemiology (7 items)
+1. Differentiate communicable (infectious) from noncommunicable (chronic) disease and identify the global burden trend of each.
+2. Identify leading global causes of death and disability (e.g., cardiovascular disease, respiratory infections, malaria, HIV/AIDS).
+3. Explain the epidemiologic transition (shift from infectious to chronic disease burden as nations develop).
+4. Interpret basic epidemiologic measures (incidence vs. prevalence, morbidity vs. mortality rate).
+5. Identify factors contributing to the global re-emergence of infectious diseases (vaccine hesitancy, antimicrobial resistance, urbanization).
+6. Explain the concept of a pandemic vs. epidemic vs. endemic disease with a historical example of each.
+7. Identify the global burden and risk factors of a specified noncommunicable disease (e.g., diabetes, cancer, chronic respiratory disease).
+
+D. Health Disparities by Race, Income & Geography (6 items)
+1. Identify a documented health disparity affecting a specific racial or ethnic population (e.g., maternal mortality disparities, hypertension prevalence).
+2. Explain how rural vs. urban geography affects healthcare access and outcomes.
+3. Explain how income inequality between and within nations correlates with life expectancy and infant mortality.
+4. Identify disparities in infant and maternal mortality rates between high-income and low-income countries.
+5. Explain the concept of health disparities driven by structural/systemic factors versus individual behavior.
+6. Identify disparities in a specified disease's prevalence or outcome linked to socioeconomic status (e.g., diabetes, obesity, asthma).
+
+E. Global Health Organizations & Initiatives (6 items)
+1. Identify the role and structure of the World Health Organization (WHO) in global health governance.
+2. Identify the role of major global health initiatives/organizations (UNICEF, the Global Fund, Gavi the Vaccine Alliance, PEPFAR).
+3. Explain the purpose of the International Health Regulations in coordinating outbreak response.
+4. Identify the role of nongovernmental organizations (NGOs) in global health delivery (e.g., Doctors Without Borders/Médecins Sans Frontières).
+5. Identify a Sustainable Development Goal (SDG) related to health and its target.
+6. Explain the role of the CDC's global health work versus WHO's global mandate.
+
+F. Healthcare Systems Worldwide — Comparative Models (5 items)
+1. Differentiate a single-payer national health system from a multi-payer/private insurance-based system.
+2. Identify characteristics of a specified country's healthcare system model (e.g., Beveridge, Bismarck, national health insurance, out-of-pocket models).
+3. Compare healthcare spending and outcome metrics (life expectancy, infant mortality) across high-income countries.
+4. Explain the concept of universal health coverage and countries' progress toward it.
+5. Identify strengths and limitations of a specified healthcare financing model.
+
+G. Cultural Competence in Global Healthcare Delivery (5 items)
+1. Define cultural competence and cultural humility in a healthcare delivery context.
+2. Identify the role of health beliefs and traditional practices in patient care decisions across cultures.
+3. Identify strategies for overcoming language barriers in patient care (e.g., professional medical interpreters).
+4. Identify potential consequences of a culturally insensitive healthcare interaction.
+5. Explain the importance of understanding religious/cultural practices related to diet, modesty, and end-of-life care.
+
+H. Maternal, Child & Environmental Global Health Issues (5 items)
+1. Identify leading global causes of maternal mortality (hemorrhage, hypertensive disorders, sepsis, unsafe abortion).
+2. Identify leading global causes of under-5 child mortality (pneumonia, diarrheal disease, malaria, neonatal complications).
+3. Explain the role of vaccination programs in reducing global childhood mortality.
+4. Identify the impact of unsafe water and sanitation on global disease burden (e.g., cholera, waterborne parasitic disease).
+5. Explain the health impacts of climate change and environmental degradation on global populations (heat-related illness, vector-borne disease spread, food insecurity).
+
+I. Ethics & Policy in Global Health (4 items)
+1. Identify ethical considerations in global health research and aid (informed consent, exploitation of vulnerable populations).
+2. Explain the concept of health as a human right and relevant international declarations.
+3. Identify ethical tradeoffs in resource allocation during a global health crisis (triage, vaccine distribution equity).
+4. Explain the concept of "brain drain" of health workers from low-income to high-income countries and its effect on health systems.

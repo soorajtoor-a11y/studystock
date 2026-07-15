@@ -1,0 +1,81 @@
+HOSA STUDY OUTLINE — CLINICAL LABORATORY SCIENCE (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the Round 2 skills demonstration).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of the clinical laboratory scientist/medical laboratory technician
+scope of practice, including specimen collection and handling, phlebotomy,
+hematology, urinalysis, clinical microbiology, immunohematology/blood banking,
+and clinical chemistry, along with the safety and quality-control standards
+that govern accurate laboratory testing.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Laboratory Safety & Quality Control (6 items)
+1. Identify standard precautions and PPE required in a clinical laboratory (gloves, gown, face shield).
+2. Describe proper handling and disposal of biohazardous and sharps waste.
+3. Explain the purpose of quality control (QC) materials and control charts in verifying test accuracy.
+4. Interpret a Safety Data Sheet (SDS) and chemical hazard labeling in the lab setting.
+5. Describe proficiency testing and its role in laboratory accreditation (CLIA requirements).
+6. Explain proper specimen labeling and chain-of-custody procedures to prevent misidentification errors.
+
+B. Specimen Collection & Handling (7 items)
+1. Identify types of specimens collected for lab testing (blood, urine, sputum, stool, swabs).
+2. Describe proper patient identification procedures before specimen collection.
+3. Explain requirements for specimen labeling, transport, and storage temperature.
+4. Identify causes of specimen rejection (hemolysis, clotting, insufficient quantity, mislabeling).
+5. Describe the order of draw for venipuncture and its purpose in preventing additive cross-contamination.
+6. Explain proper centrifugation technique for separating serum/plasma from whole blood.
+7. Describe factors affecting specimen integrity (time delay, temperature, light exposure).
+
+C. Phlebotomy (6 items)
+1. Identify venipuncture equipment (evacuated tubes, needles, tourniquet, butterfly needle).
+2. Identify color-coded blood collection tubes and their additives (EDTA lavender, citrate blue, serum-separator gold).
+3. Describe proper venipuncture site selection and technique (antecubital fossa, vein palpation).
+4. Explain capillary puncture (fingerstick/heelstick) technique and appropriate use.
+5. Describe complications of blood collection (hematoma, syncope, nerve injury) and how to respond.
+6. Explain patient identification and consent procedures required before phlebotomy.
+
+D. Hematology (7 items)
+1. Identify components of a complete blood count (CBC): RBC, WBC, hemoglobin, hematocrit, platelet count.
+2. Describe the appearance and function of the five types of white blood cells (neutrophils, lymphocytes, monocytes, eosinophils, basophils).
+3. Explain the procedure and purpose of a peripheral blood smear and differential count.
+4. Identify normal reference ranges and clinical significance of abnormal CBC results (anemia, leukocytosis).
+5. Describe coagulation studies (PT, PTT, INR) and their clinical use in monitoring bleeding disorders.
+6. Explain the purpose of erythrocyte sedimentation rate (ESR) testing.
+7. Describe proper technique for performing a manual cell count using a hemacytometer.
+
+E. Urinalysis (6 items)
+1. Describe the three components of a complete urinalysis: physical, chemical, and microscopic examination.
+2. Interpret reagent (dipstick) test strip results (glucose, protein, ketones, blood, leukocyte esterase, nitrites).
+3. Identify normal and abnormal physical characteristics of urine (color, clarity, specific gravity).
+4. Identify microscopic urine sediment findings (RBCs, WBCs, casts, crystals, bacteria).
+5. Describe proper collection methods for urine specimens (clean-catch midstream, 24-hour collection).
+6. Explain the clinical significance of abnormal urinalysis findings (e.g., glucosuria, proteinuria, hematuria).
+
+F. Clinical Microbiology & Culturing (6 items)
+1. Describe aseptic technique for inoculating culture media with a patient specimen.
+2. Identify common culture media types and their purposes (blood agar, MacConkey agar, chocolate agar).
+3. Explain Gram stain procedure and interpret Gram-positive versus Gram-negative morphology.
+4. Describe the purpose of antibiotic susceptibility (Kirby-Bauer) testing and how to interpret a zone of inhibition.
+5. Identify common pathogens associated with specific infections (E. coli in UTIs, Streptococcus in strep throat).
+6. Explain proper incubation conditions (temperature, atmosphere, time) for bacterial culture growth.
+
+G. Immunohematology / Blood Banking & Typing (6 items)
+1. Explain the ABO blood group system and identify antigens/antibodies for each blood type.
+2. Explain Rh factor typing and its clinical significance (Rh incompatibility, Rhogam).
+3. Describe the purpose and procedure of a type and crossmatch before transfusion.
+4. Identify signs and symptoms of a transfusion reaction and appropriate immediate response.
+5. Describe proper storage requirements and shelf life for blood products (whole blood, packed RBCs, platelets, plasma).
+6. Explain the purpose of antibody screening tests in pretransfusion testing.
+
+H. Clinical Chemistry & Instrumentation (6 items)
+1. Identify common chemistry panel tests and their clinical significance (BMP, lipid panel, liver function tests).
+2. Describe the principle of spectrophotometry in measuring analyte concentration.
+3. Explain proper use and calibration of laboratory instruments (centrifuge, spectrophotometer, analyzer).
+4. Interpret basic reference ranges for common chemistry analytes (glucose, electrolytes, creatinine).
+5. Describe point-of-care testing devices and their appropriate clinical use (glucometer, blood gas analyzer).
+6. Explain sources of pre-analytical, analytical, and post-analytical laboratory error.

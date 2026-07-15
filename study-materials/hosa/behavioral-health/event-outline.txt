@@ -1,0 +1,95 @@
+HOSA STUDY OUTLINE — BEHAVIORAL HEALTH (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of mental health and substance use disorders, therapeutic
+communication and counseling techniques, treatment modalities and levels of
+care, and the legal/ethical framework governing behavioral health services.
+Covers recognition of disorder categories using DSM-5-TR classification,
+crisis intervention and suicide risk, and the roles of the behavioral health
+treatment team.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Foundations & History of Behavioral Health (2 items)
+1. Describe the evolution of mental health care from asylums to community-based treatment (deinstitutionalization).
+2. Identify major theoretical models of mental illness (biological, psychodynamic, behavioral, cognitive, sociocultural).
+
+B. Growth, Development & Personality Theory (3 items)
+1. Apply Erikson's stages of psychosocial development to identify age-appropriate behavior and developmental crises.
+2. Differentiate Freud's structural model of personality (id, ego, superego) and defense mechanisms (denial, projection, repression, regression).
+3. Explain Maslow's hierarchy of needs as it relates to patient motivation and behavior.
+
+C. DSM-5-TR Classification & Diagnostic Process (4 items)
+1. Explain the purpose and structure of the DSM-5-TR as the standard diagnostic classification system.
+2. Differentiate the multiaxial concepts of diagnosis, prognosis, and etiology.
+3. Identify components of a mental status exam (appearance, mood, affect, thought process, orientation).
+4. Distinguish between signs and symptoms as used in a psychiatric assessment.
+
+D. Anxiety, OCD & Trauma-/Stressor-Related Disorders (4 items)
+1. Identify symptoms of generalized anxiety disorder, panic disorder, and specific phobias.
+2. Differentiate obsessive-compulsive disorder (obsessions vs. compulsions) from generalized anxiety.
+3. Identify symptoms and diagnostic criteria of post-traumatic stress disorder (PTSD), including flashbacks and hyperarousal.
+4. Describe acute stress disorder and adjustment disorder and how they differ from PTSD by duration/onset.
+5. Explain the physiological basis of the fight-or-flight response in anxiety disorders.
+
+E. Depressive & Bipolar Disorders (5 items)
+1. Identify diagnostic criteria for major depressive disorder (e.g., anhedonia, sleep/appetite changes, duration).
+2. Differentiate persistent depressive disorder (dysthymia) from major depressive disorder by severity and duration.
+3. Identify manic and hypomanic episode criteria (elevated mood, grandiosity, decreased need for sleep, pressured speech).
+4. Differentiate Bipolar I from Bipolar II disorder based on presence of full manic vs. hypomanic episodes.
+5. Recognize seasonal affective disorder and postpartum depression as specifiers of depressive disorders.
+
+F. Schizophrenia Spectrum & Psychotic Disorders (4 items)
+1. Differentiate positive symptoms (hallucinations, delusions, disorganized speech) from negative symptoms (flat affect, avolition, alogia) of schizophrenia.
+2. Identify types of delusions (persecutory, grandiose, referential) and hallucinations (auditory, visual, tactile).
+3. Distinguish schizophrenia from schizoaffective disorder and brief psychotic disorder by duration and mood component.
+4. Explain the dopamine hypothesis as a biological theory of psychosis.
+
+G. Personality Disorders (2 items)
+1. Classify personality disorders into Cluster A (odd/eccentric), Cluster B (dramatic/erratic), and Cluster C (anxious/fearful).
+2. Identify hallmark features of borderline, antisocial, and narcissistic personality disorders.
+
+H. Substance-Related & Addictive Disorders (4 items)
+1. Differentiate substance use, intoxication, withdrawal, and substance-induced disorders.
+2. Identify withdrawal syndromes and risks for alcohol (delirium tremens), opioids, and benzodiazepines.
+3. Explain the neurobiology of addiction (dopamine reward pathway, tolerance, dependence).
+4. Identify criteria and stages of the CAGE and DSM-5-TR substance use disorder severity scale (mild/moderate/severe).
+
+I. Eating Disorders (3 items)
+1. Differentiate anorexia nervosa, bulimia nervosa, and binge-eating disorder by behavior pattern and medical risk.
+2. Identify medical complications of eating disorders (electrolyte imbalance, cardiac arrhythmia, esophageal damage).
+3. Describe the role of body image distortion in the etiology of eating disorders.
+
+J. Neurodevelopmental & Neurocognitive Disorders (4 items)
+1. Identify core features of autism spectrum disorder and ADHD (inattention, hyperactivity-impulsivity).
+2. Differentiate delirium from dementia by onset, course, and reversibility.
+3. Identify stages and features of Alzheimer's disease and other major neurocognitive disorders.
+4. Describe intellectual disability classification based on adaptive functioning and IQ.
+
+K. Therapeutic Communication & Counseling Techniques (5 items)
+1. Identify therapeutic communication techniques (open-ended questions, reflection, restating, silence, clarification).
+2. Identify nontherapeutic communication blocks (giving advice, false reassurance, changing the subject).
+3. Explain the principles of active listening and empathy in a helping relationship.
+4. Describe motivational interviewing techniques used to address ambivalence in behavior change.
+5. Differentiate directive and non-directive counseling approaches.
+
+L. Treatment Modalities & Psychopharmacology (4 items)
+1. Differentiate individual, group, family, and milieu therapy approaches.
+2. Identify major drug classes used in behavioral health (SSRIs, SNRIs, antipsychotics, mood stabilizers, anxiolytics) and example medications.
+3. Describe cognitive behavioral therapy (CBT) and dialectical behavior therapy (DBT) principles and target populations.
+4. Explain the indications and process of electroconvulsive therapy (ECT).
+
+M. Crisis Intervention & Suicide Prevention (4 items)
+1. Identify risk factors and warning signs of suicide (prior attempts, hopelessness, giving away possessions).
+2. Describe the steps of crisis intervention and de-escalation techniques for an agitated patient.
+3. Explain protective factors that reduce suicide risk (social support, treatment engagement, safety planning).
+4. Differentiate verbal de-escalation from the use of restraints/seclusion as a last resort.
+
+N. Legal, Ethical Issues & Treatment Settings (2 items)
+1. Differentiate voluntary and involuntary commitment and the criteria for emergency detention.
+2. Identify levels of care in behavioral health (inpatient, partial hospitalization, intensive outpatient, outpatient) and confidentiality requirements under HIPAA and 42 CFR Part 2.

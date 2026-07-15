@@ -1,0 +1,91 @@
+HOSA STUDY OUTLINE — PATHOPHYSIOLOGY (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of disease mechanisms and how the body responds to and compensates
+for injury and illness: cellular injury and adaptation, inflammation and
+healing, immunity, infection, neoplasia, fluid/electrolyte/acid-base
+imbalance, genetic disorders, and common diseases by body system with their
+etiology, signs/symptoms, and complications.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Cellular Injury, Adaptation & Death (5 items)
+1. Differentiate reversible from irreversible cellular injury.
+2. Identify causes of cellular injury (hypoxia, ischemia, toxins, free radicals, physical trauma).
+3. Differentiate cellular adaptations (hypertrophy, hyperplasia, atrophy, metaplasia, dysplasia) with an example of each.
+4. Differentiate necrosis from apoptosis as mechanisms of cell death.
+5. Explain the sequence of events in ischemia-reperfusion injury.
+
+B. Inflammation & Healing (5 items)
+1. Identify the cardinal signs of acute inflammation (redness, heat, swelling, pain, loss of function) and their physiologic cause.
+2. Differentiate acute from chronic inflammation by cellular mediators and duration.
+3. Identify the role of key inflammatory mediators (histamine, prostaglandins, cytokines) in the inflammatory response.
+4. Differentiate healing by primary intention vs. secondary intention.
+5. Sequence the phases of wound healing (hemostasis, inflammatory, proliferative, remodeling).
+
+C. Immunity, Hypersensitivity & Autoimmune Disorders (5 items)
+1. Differentiate innate (nonspecific) from adaptive (specific) immunity.
+2. Differentiate humoral (antibody-mediated) from cell-mediated immunity.
+3. Classify the four types of hypersensitivity reactions (Type I anaphylactic, Type II cytotoxic, Type III immune complex, Type IV delayed) with an example disease of each.
+4. Explain the pathophysiology of a specified autoimmune disorder (e.g., systemic lupus erythematosus, rheumatoid arthritis, type 1 diabetes, multiple sclerosis).
+5. Explain the pathophysiology of immunodeficiency (e.g., HIV/AIDS depletion of CD4+ T cells).
+
+D. Infection & Infectious Disease Mechanisms (4 items)
+1. Differentiate pathogen types (bacteria, viruses, fungi, parasites) by structure and mechanism of disease.
+2. Explain the chain of infection (reservoir, portal of exit, mode of transmission, portal of entry, susceptible host).
+3. Differentiate local from systemic infection, and explain the pathophysiology of sepsis/septic shock.
+4. Explain mechanisms of antimicrobial resistance (e.g., MRSA, biofilm formation).
+
+E. Neoplasia & Cancer Biology (4 items)
+1. Differentiate benign from malignant neoplasms by growth pattern, differentiation, and metastatic potential.
+2. Explain the process of metastasis (local invasion, intravasation, circulation, extravasation).
+3. Identify known carcinogenic risk factors (tobacco, UV radiation, HPV, chronic inflammation).
+4. Explain the role of oncogenes and tumor suppressor genes (e.g., BRCA1/2, p53) in carcinogenesis.
+
+F. Fluid, Electrolyte & Acid-Base Imbalances (4 items)
+1. Differentiate fluid volume deficit (dehydration) from fluid volume excess (edema/overload) by clinical signs and causes.
+2. Identify signs/symptoms of a specified electrolyte imbalance (e.g., hyperkalemia, hyponatremia, hypocalcemia).
+3. Differentiate respiratory acidosis/alkalosis from metabolic acidosis/alkalosis by underlying cause.
+4. Interpret compensatory mechanisms for a given acid-base disturbance (e.g., respiratory compensation for metabolic acidosis).
+
+G. Genetic & Congenital Disorders (3 items)
+1. Differentiate inheritance patterns (autosomal dominant, autosomal recessive, X-linked) with an example disorder of each.
+2. Explain the pathophysiology of a specified chromosomal disorder (e.g., trisomy 21/Down syndrome).
+3. Explain the pathophysiology of a specified congenital structural disorder (e.g., congenital heart defect, neural tube defect).
+
+H. Cardiovascular Pathophysiology (5 items)
+1. Explain the pathophysiology of atherosclerosis and its progression to coronary artery disease.
+2. Differentiate the pathophysiology of left-sided vs. right-sided heart failure and their resulting signs/symptoms.
+3. Explain the pathophysiology of myocardial infarction (ischemia, necrosis, and resulting complications).
+4. Explain the pathophysiology of hypertension, including primary vs. secondary causes.
+5. Differentiate the pathophysiology of arterial thrombosis/embolism from venous thromboembolism (DVT/PE).
+
+I. Respiratory Pathophysiology (4 items)
+1. Differentiate the pathophysiology of obstructive (COPD, asthma) from restrictive lung disease (pulmonary fibrosis).
+2. Explain the pathophysiology of pneumonia and its effect on gas exchange.
+3. Explain the pathophysiology of pulmonary edema and acute respiratory distress syndrome (ARDS).
+4. Explain the pathophysiology of hypoxia vs. hypoxemia and their common causes.
+
+J. Renal & Urinary Pathophysiology (3 items)
+1. Differentiate acute kidney injury from chronic kidney disease by onset, cause, and reversibility.
+2. Explain the pathophysiology of glomerulonephritis and its effect on filtration.
+3. Explain the pathophysiology of nephrolithiasis (kidney stone formation) and resulting obstruction.
+
+K. Neurological Pathophysiology (3 items)
+1. Differentiate the pathophysiology of ischemic stroke from hemorrhagic stroke.
+2. Explain the pathophysiology of increased intracranial pressure and its effect on brain perfusion (Cushing's triad).
+3. Explain the pathophysiology of a specified neurodegenerative disorder (e.g., Parkinson's disease, Alzheimer's disease).
+
+L. Endocrine & Metabolic Pathophysiology (3 items)
+1. Differentiate the pathophysiology of type 1 vs. type 2 diabetes mellitus.
+2. Explain the pathophysiology of hyperthyroidism vs. hypothyroidism and their resulting signs/symptoms.
+3. Explain the pathophysiology of diabetic ketoacidosis (DKA), including precipitating causes.
+
+M. Musculoskeletal, GI & Integumentary Pathophysiology (2 items)
+1. Explain the pathophysiology of osteoarthritis vs. osteoporosis.
+2. Explain the pathophysiology of peptic ulcer disease and its major causes (H. pylori infection, NSAID use).

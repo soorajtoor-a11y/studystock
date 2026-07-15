@@ -1,0 +1,121 @@
+HOSA STUDY OUTLINE — HEALTHCARE ISSUES EXAM (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes.
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of current, significant issues affecting the healthcare industry:
+access to and financing of care, quality and delivery of services, ongoing
+healthcare reform debates, emerging public health and technology issues,
+ethical considerations in health policy, and health disparities. Tests the
+ability to evaluate multiple sides of contemporary healthcare policy
+questions.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Healthcare Access & Coverage (9 items)
+1. Explain the purpose and structure of Medicare (parts A, B, C, D) and
+   who it covers.
+2. Explain the purpose and structure of Medicaid and how eligibility is
+   determined.
+3. Identify the major provisions of the Affordable Care Act (ACA),
+   including the individual marketplace and pre-existing condition
+   protections.
+4. Differentiate employer-sponsored insurance, marketplace/individual
+   insurance, and government insurance programs.
+5. Identify populations most likely to be uninsured or underinsured.
+6. Explain the concept of Medicaid expansion and how it varies by state.
+7. Identify barriers to healthcare access beyond insurance (transportation,
+   provider shortages, language/cultural barriers).
+8. Explain the difference between in-network and out-of-network coverage.
+9. Explain the concept of essential health benefits required under the
+   ACA.
+
+B. Healthcare Cost & Financing (7 items)
+1. Identify major drivers of rising healthcare costs (administrative
+   costs, prescription drug prices, chronic disease prevalence,
+   technology).
+2. Differentiate fee-for-service from value-based/capitated payment
+   models.
+3. Explain the purpose of health savings accounts (HSAs) and
+   high-deductible health plans.
+4. Explain how deductibles, copayments, and coinsurance affect a patient's
+   out-of-pocket costs.
+5. Identify the impact of prescription drug pricing on overall healthcare
+   spending.
+6. Explain the concept of medical debt and its effect on patients.
+7. Explain how healthcare spending in the U.S. compares to other developed
+   nations relative to health outcomes.
+
+C. Healthcare Quality & Delivery Systems (7 items)
+1. Differentiate primary, secondary, and tertiary levels of care.
+2. Explain the role of accountable care organizations (ACOs) in
+   coordinating patient care.
+3. Identify quality measures used to evaluate healthcare delivery (patient
+   outcomes, readmission rates, patient satisfaction scores).
+4. Explain the patient-centered medical home model of care delivery.
+5. Explain the role of accreditation bodies (e.g., The Joint Commission) in
+   healthcare quality oversight.
+6. Identify causes and consequences of medical errors and strategies to
+   reduce them.
+7. Explain the concept of care coordination for patients with chronic or
+   complex conditions.
+
+D. Healthcare Reform & Policy Debate (7 items)
+1. Identify arguments for and against a single-payer healthcare system.
+2. Explain the ongoing policy debate over public option health insurance.
+3. Identify major legislative milestones in U.S. healthcare reform.
+4. Explain the role of state versus federal government in regulating
+   healthcare.
+5. Identify current proposals to address prescription drug price reform.
+6. Explain the political and economic tradeoffs debated in healthcare
+   reform proposals.
+7. Explain how healthcare workforce shortages influence policy debates
+   (physician shortages, nursing shortages).
+
+E. Emerging Health Issues & Public Health Crises (7 items)
+1. Identify lessons learned from recent public health emergencies (e.g.,
+   pandemic preparedness and response).
+2. Explain the growing role of mental health and substance use disorder
+   treatment in healthcare policy.
+3. Identify the public health impact of the opioid epidemic and policy
+   responses to it.
+4. Explain the rise of chronic disease management as a public health
+   priority (diabetes, obesity, cardiovascular disease).
+5. Identify emerging infectious disease threats and vaccination policy
+   debates.
+6. Explain the impact of an aging population on healthcare demand and
+   policy.
+7. Identify environmental and climate-related health issues affecting
+   public health policy.
+
+F. Health Technology & Innovation (6 items)
+1. Explain the growth and regulation of telehealth services.
+2. Identify benefits and risks of electronic health records (EHRs) and
+   interoperability.
+3. Explain how artificial intelligence is being applied in diagnosis and
+   healthcare administration.
+4. Identify privacy and security concerns related to health data (HIPAA
+   compliance, cybersecurity).
+5. Explain the impact of wearable health technology on preventive care.
+6. Identify policy questions raised by genetic testing and precision
+   medicine.
+
+G. Ethics in Healthcare Policy (4 items)
+1. Explain ethical tensions between individual liberty and public health
+   mandates (e.g., vaccination requirements).
+2. Identify ethical considerations in the allocation of scarce healthcare
+   resources.
+3. Explain informed consent as it relates to healthcare policy and patient
+   rights.
+4. Identify ethical debates surrounding end-of-life care policy.
+
+H. Health Disparities & Social Determinants (3 items)
+1. Identify social determinants of health (income, education, housing,
+   environment) and their effect on outcomes.
+2. Explain documented health disparities among racial, ethnic, and
+   geographic populations.
+3. Identify policy approaches aimed at reducing health disparities
+   (community health centers, culturally competent care).

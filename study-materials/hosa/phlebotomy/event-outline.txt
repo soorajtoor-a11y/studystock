@@ -1,0 +1,85 @@
+HOSA STUDY OUTLINE — PHLEBOTOMY (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the Round 2 skills demonstration).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge and entry-level skill of the phlebotomist role: patient identification
+and communication, infection control and safety, venipuncture and capillary
+puncture equipment and technique, order of draw and specimen additives, and
+proper handling, labeling, and transport of blood specimens for laboratory
+testing.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Phlebotomist Role, Scope & Legal/Ethical Issues (4 items)
+1. Define the phlebotomist's role within the clinical laboratory and healthcare team.
+2. Explain legal issues including consent, negligence, and chain of custody for legal specimens.
+3. Describe confidentiality requirements under HIPAA when handling patient specimens.
+4. Explain professional conduct and scope-of-practice boundaries for phlebotomists.
+
+B. Infection Control & Safety/OSHA Standards (5 items)
+1. Explain the chain of infection and standard precautions in specimen collection.
+2. Identify proper hand hygiene and personal protective equipment for venipuncture.
+3. Explain OSHA Bloodborne Pathogens Standard requirements for phlebotomists.
+4. Describe proper sharps disposal and needlestick injury/exposure protocol.
+5. Explain proper disinfection of the collection site and equipment.
+
+C. Patient Identification & Communication (4 items)
+1. Explain proper two-identifier patient identification procedure before collection.
+2. Describe communication techniques for explaining the venipuncture procedure to a patient.
+3. Identify steps to take when a patient identification discrepancy is found.
+4. Describe how to handle a patient who refuses or is anxious about blood collection.
+
+D. Venipuncture Equipment & Supplies (6 items)
+1. Identify components of the evacuated tube system (holder, needle, tube).
+2. Identify needle gauges and lengths appropriate for different patients/procedures.
+3. Identify winged infusion (butterfly) sets and their appropriate use.
+4. Identify tourniquet use, placement, and time limits.
+5. Identify syringe method equipment and when it is preferred over the evacuated tube method.
+6. Identify safety-engineered devices required for sharps injury prevention.
+
+E. Venipuncture Site Selection & Technique (6 items)
+1. Identify preferred venipuncture sites (median cubital, cephalic, basilic veins).
+2. Explain proper technique for vein selection, palpation, and site prep.
+3. Identify sites and conditions to avoid (hematoma, mastectomy side, edema, scarring).
+4. Explain proper needle insertion angle and technique.
+5. Describe correct order of steps for a standard venipuncture procedure.
+6. Explain proper technique for bandaging and post-puncture patient instructions.
+
+F. Order of Draw & Tube Additives/Color Codes (6 items)
+1. Identify the standard order of draw for evacuated tubes.
+2. Identify tube color codes and their corresponding additives (e.g., lavender/EDTA, light blue/citrate).
+3. Explain the purpose of anticoagulant versus clot-activator additives.
+4. Explain why order of draw prevents additive carryover/cross-contamination.
+5. Identify tubes requiring immediate mixing versus those that must not be shaken.
+6. Identify special-handling tubes (light-sensitive, chilled, or warmed specimens).
+
+G. Capillary/Dermal Puncture (4 items)
+1. Identify indications for capillary puncture versus venipuncture.
+2. Identify proper capillary puncture sites for adults, infants, and children.
+3. Explain proper lancet technique and depth for capillary puncture.
+4. Describe order of draw for capillary specimen collection.
+
+H. Complications & Special Populations (5 items)
+1. Identify causes and prevention of hematoma formation during venipuncture.
+2. Identify causes and prevention of hemolysis in a blood specimen.
+3. Explain precautions for collecting from pediatric, geriatric, and bariatric patients.
+4. Describe signs of patient complications during draw (syncope, nerve injury, petechiae).
+5. Explain steps to take if a venipuncture attempt fails or a vein collapses.
+
+I. Specimen Handling, Labeling & Transport (5 items)
+1. Explain proper specimen labeling requirements at the bedside/point of collection.
+2. Describe proper specimen transport conditions (temperature, light protection, timing).
+3. Explain criteria for specimen rejection (hemolysis, clotting, mislabeling, insufficient quantity).
+4. Describe proper centrifugation procedures and precautions.
+5. Explain chain-of-custody documentation for forensic or drug-screening specimens.
+
+J. Quality Assurance & Documentation (5 items)
+1. Explain the purpose of quality control and quality assurance in specimen collection.
+2. Describe proper documentation of collection time, site, and any complications.
+3. Explain procedures for reporting a collection error or incident.
+4. Identify requirements for point-of-care testing documentation.
+5. Explain proper storage and disposal of expired collection supplies.

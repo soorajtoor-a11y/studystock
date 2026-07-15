@@ -1,0 +1,84 @@
+HOSA STUDY OUTLINE — CELL BIOLOGY & HISTOLOGY (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+introductory cell biology and histology curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Cell structure and function at the organelle level, the cell cycle and cell
+division, and the microscopic structure of the four primary tissue types
+(epithelial, connective, muscle, nervous) that make up the human body.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Cell Theory & Microscopy (3 items)
+1. State the tenets of cell theory.
+2. Differentiate light microscopy and electron microscopy (TEM/SEM) and their resolution/magnification capabilities.
+3. Describe common histological staining techniques (H&E stain, special stains) and their purposes.
+
+B. Plasma Membrane & Transport (5 items)
+1. Describe the fluid mosaic model and membrane components (phospholipids, proteins, cholesterol, glycocalyx).
+2. Differentiate simple diffusion, facilitated diffusion, and osmosis.
+3. Differentiate primary and secondary active transport (e.g., the Na+/K+ pump).
+4. Describe endocytosis (phagocytosis, pinocytosis, receptor-mediated) and exocytosis.
+5. Explain tonicity and its effect on cells (hypotonic, hypertonic, isotonic solutions).
+
+C. Cytoplasmic Organelles (7 items)
+1. Describe the structure and function of the nucleus and nucleolus.
+2. Describe rough and smooth endoplasmic reticulum functions.
+3. Describe the Golgi apparatus and its role in protein modification and trafficking.
+4. Describe mitochondrial structure and its role in ATP production.
+5. Describe lysosomes and peroxisomes and their digestive/detoxifying functions.
+6. Describe the cytoskeleton components (microfilaments, intermediate filaments, microtubules) and their functions.
+7. Describe centrioles, cilia, and flagella structure and function.
+
+D. Cell Cycle, Mitosis & Meiosis (6 items)
+1. Describe the phases of interphase (G1, S, G2) and cell cycle checkpoints.
+2. Identify the stages of mitosis (prophase, metaphase, anaphase, telophase) and their key events.
+3. Describe cytokinesis in animal vs. plant cells.
+4. Describe the stages of meiosis I and II and crossing over.
+5. Explain the significance of meiosis in producing genetic variation.
+6. Describe apoptosis (programmed cell death) and its regulation.
+
+E. Epithelial Tissue (7 items)
+1. Classify epithelial tissue by cell shape (squamous, cuboidal, columnar) and layering (simple, stratified, pseudostratified).
+2. Identify locations and functions of simple squamous epithelium (e.g., alveoli, capillaries).
+3. Identify locations and functions of simple columnar and stratified squamous epithelium.
+4. Describe transitional epithelium and its location (urinary bladder).
+5. Describe epithelial specializations (microvilli, cilia, goblet cells).
+6. Describe the structure and function of the basement membrane.
+7. Differentiate exocrine and endocrine glands as epithelial derivatives.
+
+F. Connective Tissue (7 items)
+1. Describe the general composition of connective tissue (cells, fibers, ground substance).
+2. Differentiate collagen, elastic, and reticular fibers.
+3. Identify types of connective tissue proper (loose/areolar, adipose, dense regular, dense irregular).
+4. Differentiate hyaline cartilage, elastic cartilage, and fibrocartilage.
+5. Describe bone (osseous) tissue structure (osteon, lamellae, osteocytes, canaliculi).
+6. Describe blood as a connective tissue (plasma, formed elements).
+7. Identify major connective tissue cell types (fibroblasts, macrophages, mast cells, adipocytes).
+
+G. Muscle Tissue (4 items)
+1. Differentiate skeletal, cardiac, and smooth muscle tissue histologically.
+2. Describe the striated appearance and multinucleated structure of skeletal muscle fibers.
+3. Describe intercalated discs and their role in cardiac muscle.
+4. Describe the structure of smooth muscle and its involuntary control.
+
+H. Nervous Tissue (4 items)
+1. Describe neuron structure (cell body, dendrites, axon, myelin sheath).
+2. Differentiate neurons and neuroglia (glial cells) and identify glial cell types.
+3. Describe the histological appearance of gray matter vs. white matter.
+4. Describe the myelin sheath and nodes of Ranvier and their role in signal conduction.
+
+I. Cell Signaling & Protein Trafficking (4 items)
+1. Describe basic types of cell signaling (autocrine, paracrine, endocrine).
+2. Explain receptor-ligand binding and signal transduction basics.
+3. Describe the process of protein synthesis, folding, and secretion (ER to Golgi to vesicle).
+4. Explain the role of molecular motors (kinesin, dynein) in intracellular transport.
+
+J. Tissue Repair & Aging (3 items)
+1. Describe the process of tissue regeneration vs. fibrosis (scar formation).
+2. Explain factors affecting wound healing.
+3. Describe cellular changes associated with aging (senescence, telomere shortening).

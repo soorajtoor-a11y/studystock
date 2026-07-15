@@ -1,0 +1,82 @@
+HOSA STUDY OUTLINE — EMERGENCY MEDICAL TECHNICIAN (EMT) (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the team/performance round).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of prehospital emergency care at the EMT level: patient assessment,
+airway/breathing/circulation management, trauma and medical emergency care,
+and EMS system operations. Covers the same knowledge domain tested in the
+National Registry EMT cognitive exam, scaled to a 50-item HOSA written test.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. EMS Systems & Scope of Practice (5 items)
+1. Describe the roles and scope of practice of EMR, EMT, AEMT, and Paramedic levels.
+2. Explain EMS system components and the chain of survival.
+3. Identify legal/ethical concepts: consent (expressed, implied), refusal of care, abandonment, negligence.
+4. Explain patient confidentiality requirements (HIPAA) in the prehospital setting.
+5. Describe standard precautions and personal protective equipment (PPE) selection by exposure risk.
+
+B. Patient Assessment — Primary Survey (6 items)
+1. Perform a scene size-up (safety, mechanism/nature of illness, number of patients, resources).
+2. Identify steps of the primary assessment (general impression, AVPU, ABCs, priority determination).
+3. Differentiate a patent airway from an obstructed airway and identify immediate interventions.
+4. Assess breathing adequacy (rate, depth, effort) and identify signs of inadequate ventilation.
+5. Assess circulation (pulse, skin color/temperature/condition, obvious bleeding).
+6. Apply the START/JumpSTART triage method in a multiple-casualty incident.
+
+C. Patient Assessment — Secondary Survey & History (5 items)
+1. Perform a focused or rapid full-body secondary assessment based on patient presentation.
+2. Obtain a SAMPLE history (Signs/Symptoms, Allergies, Medications, Past history, Last oral intake, Events).
+3. Use OPQRST to characterize a patient's chief complaint (pain/symptom).
+4. Obtain and interpret baseline vital signs (pulse, respirations, blood pressure, pupils, SpO2).
+5. Document findings and care in a Patient Care Report (PCR), including required legal elements.
+
+D. Airway, Breathing & Ventilation (6 items)
+1. Identify indications and techniques for manual airway maneuvers (head-tilt/chin-lift, jaw-thrust).
+2. Identify indications, sizing, and insertion of oropharyngeal (OPA) and nasopharyngeal (NPA) airways.
+3. Perform suctioning of the upper airway and identify suction time limits by age group.
+4. Apply oxygen delivery devices appropriately (nasal cannula, non-rebreather mask, BVM) by flow rate and concentration.
+5. Perform bag-valve-mask ventilation with correct rate and volume for adult, child, and infant patients.
+6. Recognize signs of inadequate ventilation and hypoxia requiring immediate intervention.
+
+E. Circulation, Bleeding & Shock (6 items)
+1. Differentiate arterial, venous, and capillary bleeding by appearance.
+2. Apply direct pressure, pressure dressings, and tourniquets for severe external hemorrhage control.
+3. Identify signs and symptoms of compensated versus decompensated (hypovolemic) shock.
+4. Explain emergency care priorities for a patient in shock, including positioning and thermal management.
+5. Recognize signs of internal bleeding and appropriate transport priority.
+6. Perform adult, child, and infant CPR per current guidelines, including compression rate and depth.
+
+F. Trauma Management (7 items)
+1. Apply spinal motion restriction criteria and technique based on mechanism of injury.
+2. Splint suspected fractures, dislocations, and sprains using appropriate immobilization devices.
+3. Manage an open chest wound (occlusive dressing) and identify signs of tension pneumothorax.
+4. Manage impaled objects and evisceration injuries per standard protocol.
+5. Assess and manage burns by depth, percentage (rule of nines), and critical-burn criteria.
+6. Identify signs of traumatic brain injury and appropriate emergency care.
+7. Explain the general approach to multi-system trauma and load-and-go versus stay-and-play decisions.
+
+G. Medical Emergencies — Cardiac & Respiratory (5 items)
+1. Recognize signs/symptoms of acute coronary syndrome (chest pain, radiation, associated symptoms).
+2. Explain AED operation, indications, and safety precautions during defibrillation.
+3. Differentiate asthma, COPD, and pulmonary edema presentations and their emergency care.
+4. Recognize signs of a stroke and apply a stroke assessment scale (e.g., Cincinnati Prehospital Stroke Scale).
+5. Identify indications for assisting a patient with prescribed inhalers, nitroglycerin, or epinephrine auto-injectors.
+
+H. Medical Emergencies — Neurological, Diabetic, Allergic, Toxicological (6 items)
+1. Differentiate hypoglycemia from hyperglycemia by signs/symptoms and emergency care.
+2. Recognize and manage generalized seizures and postictal state care.
+3. Recognize signs of anaphylaxis and administer/assist with epinephrine per protocol.
+4. Identify the general approach to poisoning/overdose emergencies (routes of exposure, activated charcoal, naloxone).
+5. Recognize signs of altered mental status and identify common reversible causes (AEIOU-TIPS).
+6. Identify signs of environmental emergencies (heat exhaustion/stroke, hypothermia, frostbite) and field treatment.
+
+I. Special Populations (4 items)
+1. Describe the stages of labor and emergency delivery procedure for an imminent birth.
+2. Identify pediatric assessment differences (pediatric assessment triangle, normal vital sign ranges by age).
+3. Identify geriatric assessment considerations (polypharmacy, atypical presentations, fall risk).
+4. Recognize behavioral emergencies and apply verbal de-escalation and scene safety principles.

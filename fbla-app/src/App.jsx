@@ -1,9 +1,20 @@
 import { useState, useEffect, useRef } from 'react'
 import Landing from './Landing'
-import fblaMark from './assets/fbla-mark.png'
+import { ORG_META, ORG_ORDER } from './orgMeta'
+import appMark from './assets/studystock-mark.png'
 import './App.css'
 
+// DECA event slugs: most cluster exams' folder names end in "-cluster",
+// but these two are organized as clusters in practice while the source
+// slug omits the word — added back here rather than renaming the
+// underlying folder (which is also the API/bank path for that event).
+const EVENT_NAME_OVERRIDES = {
+  'personal-financial-literacy': 'Personal Financial Literacy Cluster',
+  'entrepreneurship': 'Entrepreneurship Cluster',
+}
+
 function formatEventName(slug) {
+  if (EVENT_NAME_OVERRIDES[slug]) return EVENT_NAME_OVERRIDES[slug]
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
@@ -12,7 +23,7 @@ function parseOutline(text) {
   let current = null
   for (const raw of text.split('\n')) {
     const line = raw.trim()
-    const sm = line.match(/^([A-Z])\.\s+(.+?)(?:\s+\((\d+)\s+test items?\))?$/)
+    const sm = line.match(/^([A-Z])\.\s+(.+?)(?:\s+\((\d+)\s+(?:test )?items?\))?$/)
     if (sm) {
       current = { letter: sm[1], title: sm[2], items: sm[3] ? parseInt(sm[3]) : null, objectives: [] }
       sections.push(current)
@@ -22,6 +33,58 @@ function parseOutline(text) {
     if (om && current) current.objectives.push({ num: om[1], text: om[2] })
   }
   return sections
+}
+
+// ── Organization Picker Page ────────────────────────────────────────────────
+function OrgPicker({ orgs, onSelect, onBack }) {
+  const countFor = id => orgs.find(o => o.id === id)?.eventCount
+
+  return (
+    <div className="picker-page org-picker-page">
+      <div className="picker-hero">
+        <button className="picker-back" onClick={onBack}>← Back to Home</button>
+        <h1 className="picker-title">Choose Your Organization</h1>
+        <p className="picker-subtitle">Select a competitive organization to start studying its events</p>
+      </div>
+
+      <div className="picker-body">
+        <div className="org-picker-grid">
+          {ORG_ORDER.map(id => {
+            const meta = ORG_META[id]
+            const count = countFor(id)
+            const [c1, c2] = meta.colors
+            const empty = count === 0
+            return (
+              <button key={id} className={`org-card ${empty ? 'org-card-empty' : ''}`} onClick={() => onSelect(id)} style={{ '--org-c1': c1, '--org-c2': c2 }}>
+                <span className="org-card-icon" style={{ background: `linear-gradient(135deg,${c1},${c2})` }}>{meta.icon}</span>
+                <span className="org-card-name">{meta.name}</span>
+                <span className="org-card-tagline">{meta.tagline}</span>
+                <span className={`org-card-cta ${empty ? 'org-card-cta-soon' : ''}`}>
+                  {empty ? 'Coming soon' : count != null ? `${count} ${meta.unit} →` : 'Start studying →'}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── Coming Soon Page (org with no events yet) ───────────────────────────────
+function ComingSoonPage({ org, onSwitchOrg }) {
+  const meta = ORG_META[org] || { name: org }
+  return (
+    <div className="coming-soon-page">
+      <div className="coming-soon-icon">🚧</div>
+      <h2 className="coming-soon-title">{meta.name} events are coming soon</h2>
+      <p className="coming-soon-desc">
+        We're still building out the {meta.name} study library. Check back soon,
+        or switch to another organization in the meantime.
+      </p>
+      <button className="home-cta" onClick={onSwitchOrg}>Switch Organization →</button>
+    </div>
+  )
 }
 
 // ── Event Picker Page ─────────────────────────────────────────────────────────
@@ -34,12 +97,13 @@ const CARD_PALETTES = [
   ['#0891b2', '#06b6d4'],
 ]
 
-function EventPickerPage({ events, onSelect, onBack }) {
+function EventPickerPage({ events, org, onSelect, onBack }) {
   const [search, setSearch] = useState('')
   const inputRef = useRef(null)
   const filtered = events.filter(e =>
     formatEventName(e).toLowerCase().includes(search.toLowerCase())
   )
+  const unit = ORG_META[org]?.unit ?? 'events'
 
   useEffect(() => { inputRef.current?.focus() }, [])
 
@@ -56,7 +120,7 @@ function EventPickerPage({ events, onSelect, onBack }) {
           <input
             ref={inputRef}
             className="picker-search"
-            placeholder="Search events…"
+            placeholder={`Search ${unit}…`}
             value={search}
             onChange={e => setSearch(e.target.value)}
           />
@@ -66,7 +130,7 @@ function EventPickerPage({ events, onSelect, onBack }) {
         </div>
         {search && (
           <p className="picker-count">
-            {filtered.length} of {events.length} event{events.length !== 1 ? 's' : ''}
+            {filtered.length} of {events.length} {unit}
           </p>
         )}
       </div>
@@ -74,7 +138,7 @@ function EventPickerPage({ events, onSelect, onBack }) {
       <div className="picker-body">
         {filtered.length === 0 ? (
           <div className="picker-empty">
-            No events match <strong>"{search}"</strong>
+            No {unit} match <strong>"{search}"</strong>
           </div>
         ) : (
           <div className="picker-grid">
@@ -150,7 +214,7 @@ function HomePage({ onStart }) {
 }
 
 // ── Flashcard Pane ────────────────────────────────────────────────────────────
-function FlashcardPane({ event, objectiveText, count, onBack }) {
+function FlashcardPane({ event, org, objectiveText, count, onBack }) {
   const [cards,   setCards]   = useState(null)
   const [index,   setIndex]   = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -161,7 +225,7 @@ function FlashcardPane({ event, objectiveText, count, onBack }) {
     fetch('/api/flashcards', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ event, objective: objectiveText, count }),
+      body: JSON.stringify({ org, event, objective: objectiveText, count }),
     })
       .then(r => r.json())
       .then(d => { if (d.error) setError(d.error); else setCards(d.cards) })
@@ -267,30 +331,105 @@ function FlashcardPane({ event, objectiveText, count, onBack }) {
 }
 
 // ── Quiz Pane ─────────────────────────────────────────────────────────────────
-function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
+// Aggregates per-question history into breakdown rows once a quiz is done.
+// Objective-scope quizzes never get a breakdown (too granular to be useful).
+// Section-scope requires every question to carry an objective_num — a quiz
+// served from an older, untagged pre-generated bank silently falls back to
+// no breakdown rather than showing a broken/partial one.
+function computeBreakdown(scope, history, objectivesList) {
+  if (scope === 'event') {
+    return groupHistory(history, h => h.knowledgeArea || 'General')
+  }
+  if (scope === 'section') {
+    if (history.some(h => h.objectiveNum == null)) return null
+    const objMap = new Map((objectivesList || []).map(o => [String(o.num), o.text]))
+    return groupHistory(history, h => String(h.objectiveNum), key => objMap.get(key) || `Objective ${key}`)
+  }
+  return null
+}
+
+function groupHistory(history, keyOf, labelOf = k => k) {
+  const groups = new Map()
+  for (const h of history) {
+    const key = keyOf(h)
+    if (!groups.has(key)) groups.set(key, { key, label: labelOf(key), correct: 0, total: 0 })
+    const g = groups.get(key)
+    g.total++
+    if (h.correct) g.correct++
+  }
+  const rows = [...groups.values()].map(g => ({ ...g, pct: Math.round((g.correct / g.total) * 100) }))
+  return rows.length >= 2 ? rows.sort((a, b) => a.pct - b.pct) : null
+}
+
+function ResultsBreakdown({ rows }) {
+  if (!rows) return null
+  const best  = rows[rows.length - 1]
+  const worst = rows[0]
+  const hasSpread = best.pct !== worst.pct
+
+  return (
+    <div className="results-breakdown">
+      <div className="results-breakdown-header">
+        <span className="results-breakdown-title">Your Breakdown</span>
+        {hasSpread && (
+          <span className="results-breakdown-insight">
+            Strongest: <strong>{best.label}</strong> ({best.pct}%) · Focus on: <strong>{worst.label}</strong> ({worst.pct}%)
+          </span>
+        )}
+      </div>
+      <div className="breakdown-rows">
+        {rows.map(row => {
+          const tier = row.pct >= 80 ? 'strong' : row.pct >= 50 ? 'mixed' : 'weak'
+          return (
+            <div key={row.key} className="breakdown-row">
+              <div className="breakdown-row-top">
+                <span className="breakdown-row-label">{row.label}</span>
+                <span className="breakdown-row-frac">{row.correct}/{row.total} · {row.pct}%</span>
+              </div>
+              <div className="breakdown-row-track">
+                <div className={`breakdown-row-fill breakdown-${tier}`} style={{ width: `${row.pct}%` }} />
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+function QuizPane({ event, org, objectiveText, count, difficulty, scope, objectives, onBack }) {
   const [questions, setQuestions] = useState(null)
   const [current,   setCurrent]   = useState(0)
   const [selected,  setSelected]  = useState(null)
   const [revealed,  setRevealed]  = useState(false)
   const [score,     setScore]     = useState(0)
+  const [history,   setHistory]   = useState([])
   const [done,      setDone]      = useState(false)
   const [error,     setError]     = useState(null)
+  const [partial,   setPartial]   = useState(null)
 
   useEffect(() => {
     fetch('/api/quiz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ event, objective: objectiveText, count, difficulty, scope }),
+      body: JSON.stringify({ org, event, objective: objectiveText, count, difficulty, scope, objectives }),
     })
       .then(r => r.json())
-      .then(d => { if (d.error) setError(d.error); else setQuestions(d.questions) })
+      .then(d => {
+        if (d.error) { setError(d.error); return }
+        setQuestions(d.questions)
+        if (d.requested && d.questions.length < d.requested) setPartial({ got: d.questions.length, requested: d.requested })
+      })
       .catch(e => setError(e.message))
   }, [])
 
   function handleAnswer(letter) {
     if (revealed) return
     setSelected(letter); setRevealed(true)
-    if (letter === questions[current].answer) setScore(s => s + 1)
+    const q = questions[current]
+    const correct = letter === q.answer
+    if (correct) setScore(s => s + 1)
+    setHistory(h => [...h, { correct, knowledgeArea: q.knowledge_area, objectiveNum: q.objective_num }])
   }
 
   function handleNext() {
@@ -330,27 +469,31 @@ function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
     </div>
   )
 
-  if (done) return (
-    <div className="study-pane">
-      <div className="study-header">
-        <button className="back-btn" onClick={onBack}>← Back</button>
-        <span className="study-event">Quiz Complete</span>
-      </div>
-      <div className="quiz-results">
-        <div className="results-circle">
-          <span className="results-num">{score}</span>
-          <span className="results-den">/{questions.length}</span>
+  if (done) {
+    const breakdown = computeBreakdown(scope, history, objectives)
+    return (
+      <div className="study-pane">
+        <div className="study-header">
+          <button className="back-btn" onClick={onBack}>← Back</button>
+          <span className="study-event">Quiz Complete</span>
         </div>
-        <p className="results-pct">{Math.round((score / questions.length) * 100)}%</p>
-        <p className="results-label">
-          {score === questions.length        ? 'Perfect score!' :
-           score >= questions.length * 0.8  ? 'Great job!'      :
-           score >= questions.length * 0.6  ? 'Keep studying!'  : 'Review this topic more!'}
-        </p>
-        <button className="primary-btn" style={{ marginTop: 20, width: 220 }} onClick={onBack}>Back to Objectives</button>
+        <div className={`quiz-results ${breakdown ? 'quiz-results-with-breakdown' : ''}`}>
+          <div className="results-circle">
+            <span className="results-num">{score}</span>
+            <span className="results-den">/{questions.length}</span>
+          </div>
+          <p className="results-pct">{Math.round((score / questions.length) * 100)}%</p>
+          <p className="results-label">
+            {score === questions.length        ? 'Perfect score!' :
+             score >= questions.length * 0.8  ? 'Great job!'      :
+             score >= questions.length * 0.6  ? 'Keep studying!'  : 'Review this topic more!'}
+          </p>
+          <ResultsBreakdown rows={breakdown} />
+          <button className="primary-btn" style={{ marginTop: 20, width: 220 }} onClick={onBack}>Back to Objectives</button>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 
   const q = questions[current]
 
@@ -365,6 +508,12 @@ function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
         </div>
         <span className="progress-pill">{current + 1} / {questions.length}</span>
       </div>
+      {partial && (
+        <p className="pane-partial-note">
+          Only found {partial.got} of the {partial.requested} questions requested that passed every
+          quality check — the rest kept failing our duplicate/length checks after several retries.
+        </p>
+      )}
 
       <div className="quiz-body">
         <div className="quiz-card">
@@ -407,7 +556,7 @@ function QuizPane({ event, objectiveText, count, difficulty, scope, onBack }) {
 const BACKEND = import.meta.env.DEV ? 'http://localhost:3001' : ''
 
 // ── Explain / Chat Pane ───────────────────────────────────────────────────────
-function StudyPane({ event, objectiveText, onBack }) {
+function StudyPane({ event, org, objectiveText, onBack }) {
   const [messages, setMessages] = useState([])
   const [input,    setInput]    = useState('')
   const [loading,  setLoading]  = useState(false)
@@ -440,7 +589,7 @@ function StudyPane({ event, objectiveText, onBack }) {
       const res = await fetch(`${BACKEND}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: newHistory, event, objective: objectiveText, mode: 'explain' }),
+        body: JSON.stringify({ messages: newHistory, org, event, objective: objectiveText, mode: 'explain' }),
       })
 
       if (!res.ok) throw new Error(`Server error ${res.status}`)
@@ -545,7 +694,7 @@ function StudyPane({ event, objectiveText, onBack }) {
 const QUIZ_DIFFICULTY = 'hard'
 
 function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'event' }) {
-  const QUIZ_COUNTS = { event: [10, 25, 50], section: [10, 15, 25], objective: [5, 10, 15] }
+  const QUIZ_COUNTS = { event: [10, 25, 50], section: [10, 15, 20], objective: [5, 10] }
   const quizCounts = QUIZ_COUNTS[scope] ?? [10, 25, 50]
   const [step,       setStep]       = useState('mode')
   const [quizCount,  setQuizCount]  = useState(quizCounts[0])
@@ -588,7 +737,7 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
             <button className="mp-back-link" onClick={() => setStep('mode')}>← Back</button>
             <p className="mp-prompt">How many flashcards?</p>
             <div className="count-row">
-              {[10, 25, 50].map(n => (
+              {[10, 15, 25].map(n => (
                 <button key={n} className={`count-btn ${fcCount === n ? 'active' : ''}`} onClick={() => setFcCount(n)}>{n}</button>
               ))}
             </div>
@@ -617,8 +766,8 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
 function StudyPanel({ event, outline, onStudy }) {
   const [picker, setPicker] = useState(null)
 
-  function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event') {
-    setPicker({ title, desc, objectiveText, hideExplain, scope })
+  function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event', objectives = null) {
+    setPicker({ title, desc, objectiveText, hideExplain, scope, objectives })
   }
 
   function buildFullEventText() {
@@ -659,8 +808,8 @@ function StudyPanel({ event, outline, onStudy }) {
               </div>
             </div>
             <div className="sp-btns">
-              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section')}>📝 Quiz</button>
-              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section')}>🃏 Cards</button>
+              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives)}>📝 Quiz</button>
+              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives)}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
             </div>
           </div>
@@ -673,7 +822,7 @@ function StudyPanel({ event, outline, onStudy }) {
           desc={picker.desc}
           hideExplain={picker.hideExplain}
           scope={picker.scope}
-          onSelect={(mode, count, diff) => { setPicker(null); onStudy(picker.objectiveText, mode, count, diff, picker.scope) }}
+          onSelect={(mode, count, diff) => { setPicker(null); onStudy(picker.objectiveText, mode, count, diff, picker.scope, picker.objectives) }}
           onClose={() => setPicker(null)}
         />
       )}
@@ -682,18 +831,18 @@ function StudyPanel({ event, outline, onStudy }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, onStudy }) {
+function EventView({ event, org, onStudy }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
 
   useEffect(() => {
     setOutline(null); setSelected(null)
-    fetch(`/api/events/${event}/outline`).then(r => r.json()).then(d => {
+    fetch(`/api/events/${org}/${event}/outline`).then(r => r.json()).then(d => {
       const s = parseOutline(d.content); setOutline(s)
       if (s.length > 0) setExpanded({ [s[0].letter]: true })
     })
-  }, [event])
+  }, [event, org])
 
   function toggle(l) { setExpanded(p => ({ ...p, [l]: !p[l] })) }
 
@@ -750,20 +899,97 @@ function EventView({ event, onStudy }) {
   )
 }
 
+// ── Inline Organization Switcher (sidebar dropdown) ─────────────────────────
+function OrgSwitcher({ org, orgs, onChange }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef(null)
+  const orgMeta = ORG_META[org]
+  const countFor = id => orgs.find(o => o.id === id)?.eventCount
+
+  useEffect(() => {
+    if (!open) return
+    function onDocPointerDown(e) {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false)
+    }
+    function onKeyDown(e) { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('mousedown', onDocPointerDown)
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('mousedown', onDocPointerDown)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [open])
+
+  return (
+    <div className="org-switcher" ref={ref}>
+      <button
+        className={`org-switcher-btn ${open ? 'open' : ''}`}
+        onClick={() => setOpen(o => !o)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+      >
+        <span
+          className="org-switcher-icon"
+          style={orgMeta ? { background: `linear-gradient(135deg,${orgMeta.colors[0]},${orgMeta.colors[1]})` } : undefined}
+        >
+          {orgMeta?.icon || '📁'}
+        </span>
+        <span className="org-switcher-name">{orgMeta ? orgMeta.name : 'Choose Org'}</span>
+        <svg className="org-switcher-chevron" viewBox="0 0 20 20" fill="currentColor" width="12" height="12">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="org-switcher-menu" role="listbox">
+          {ORG_ORDER.map(id => {
+            const meta = ORG_META[id]
+            const count = countFor(id)
+            const empty = count === 0
+            const active = id === org
+            return (
+              <button
+                key={id}
+                className={`org-switcher-item ${active ? 'active' : ''}`}
+                role="option"
+                aria-selected={active}
+                onClick={() => { onChange(id); setOpen(false) }}
+              >
+                <span className="org-switcher-item-icon" style={{ background: `linear-gradient(135deg,${meta.colors[0]},${meta.colors[1]})` }}>
+                  {meta.icon}
+                </span>
+                <span className="org-switcher-item-text">
+                  <span className="org-switcher-item-name">{meta.name}</span>
+                  <span className={`org-switcher-item-meta ${empty ? 'soon' : ''}`}>
+                    {empty ? 'Coming soon' : count != null ? `${count} ${meta.unit}` : ''}
+                  </span>
+                </span>
+                {active && <span className="org-switcher-item-check">✓</span>}
+              </button>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, onSelect, onHome, onLanding, open }) {
+function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
     : events
+  const orgMeta = ORG_META[org]
+  const unit = orgMeta?.unit ?? 'events'
 
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
       <button className="sidebar-logo" onClick={onLanding} title="Back to StudyStock overview">
-        <img className="sidebar-logo-mark" src={fblaMark} alt="" />
+        <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
           <span className="sidebar-logo-name">StudyStock</span>
-          <span className="sidebar-logo-sub">FBLA Study Tool</span>
+          <span className="sidebar-logo-sub">{orgMeta ? `${orgMeta.name} Study Tool` : 'Study Tool'}</span>
         </div>
       </button>
 
@@ -774,10 +1000,11 @@ function Sidebar({ events, page, activeEvent, onSelect, onHome, onLanding, open 
           </svg>
           Home
         </button>
+        <OrgSwitcher org={org} orgs={orgs} onChange={onOrgChange} />
       </div>
 
       <div className="sidebar-events-header">
-        <span className="sidebar-label">Events</span>
+        <span className="sidebar-label">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
         {events.length > 0 && <span className="sidebar-count-badge">{events.length}</span>}
       </div>
 
@@ -787,7 +1014,7 @@ function Sidebar({ events, page, activeEvent, onSelect, onHome, onLanding, open 
         </svg>
         <input
           className="sidebar-search"
-          placeholder="Filter events…"
+          placeholder={`Filter ${unit}…`}
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
@@ -818,38 +1045,90 @@ function Sidebar({ events, page, activeEvent, onSelect, onHome, onLanding, open 
 
 // ── App Root ──────────────────────────────────────────────────────────────────
 export default function App() {
+  const [orgs,             setOrgs]             = useState([])   // [{id, eventCount}]
+  const [org,               setOrg]               = useState(null)
+  const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'home' | 'picker' | 'event'
+  const [eventsLoaded, setEventsLoaded] = useState(false)
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
 
   useEffect(() => {
-    fetch('/api/events').then(r => r.json()).then(list => setEvents(list.sort()))
+    fetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
   }, [])
 
+  useEffect(() => {
+    if (!org) { setEvents([]); setEventsLoaded(false); return }
+    setEventsLoaded(false)
+    fetch(`/api/events?org=${org}`).then(r => r.json()).then(list => { setEvents(list.sort()); setEventsLoaded(true) })
+  }, [org])
+
+  // Re-hues the whole app (--signal-hue and everything derived from it) to
+  // match the selected org — see the [data-org] overrides in index.css.
+  // Set on <html> rather than a wrapper div so it applies even on screens
+  // (Landing, OrgPicker) that render outside the app shell.
+  // Deliberately keyed on `page`, not just `org`: the marketing landing
+  // page and the org-picker screen always stay the original teal, even if
+  // an org is already selected (e.g. the user clicked back to the landing
+  // page from inside a DECA-themed session) — org theming is an in-app
+  // thing, not a marketing-page thing.
+  useEffect(() => {
+    const inOrgScopedPage = page !== 'landing' && page !== 'orgpicker'
+    if (org && inOrgScopedPage) document.documentElement.setAttribute('data-org', org)
+    else document.documentElement.removeAttribute('data-org')
+  }, [org, page])
+
   function handleLanding()       { setPage('landing'); setActiveEvent(null); setStudy(null); setNavOpen(false) }
-  function handleHome()          { setPage('home');   setActiveEvent(null); setStudy(null); setNavOpen(false) }
-  function handlePickerOpen()    { setPage('picker'); setStudy(null); setNavOpen(false) }
+  function handleOrgPicker(dest) { setPendingDestination(dest); setPage('orgpicker'); setNavOpen(false) }
+  function handleOrgSelect(o)    { setOrg(o); setPage(pendingDestination); setNavOpen(false) }
+  function handleSwitchOrg() {
+    setOrg(null); setActiveEvent(null); setStudy(null)
+    setPage('orgpicker'); setNavOpen(false)
+  }
+  // Inline switch from the sidebar dropdown — stays inside the app shell
+  // instead of bouncing through the full-page OrgPicker.
+  function handleOrgChange(newOrg) {
+    if (newOrg === org) return
+    setOrg(newOrg); setActiveEvent(null); setStudy(null)
+    setPage('home'); setNavOpen(false)
+  }
+  function handleHome() {
+    if (!org) return handleOrgPicker('home')
+    setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
+  }
+  function handlePickerOpen() {
+    if (!org) return handleOrgPicker('picker')
+    setPage('picker'); setStudy(null); setNavOpen(false)
+  }
   function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false) }
-  function handleStudy(text, mode, count, diff, scope) { setStudy({ text, mode, count, diff, scope }) }
+  function handleStudy(text, mode, count, diff, scope, objectives) { setStudy({ text, mode, count, diff, scope, objectives }) }
   function handleBack()          { setStudy(null) }
 
   if (page === 'landing') {
-    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} eventCount={events.length} />
+    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} eventCount={events.length} orgs={orgs} />
+  }
+
+  if (page === 'orgpicker') {
+    return <OrgPicker orgs={orgs} onSelect={handleOrgSelect} onBack={handleLanding} />
   }
 
   let content
-  if (study && activeEvent) {
-    if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} onBack={handleBack} />
-    else if (study.mode === 'flashcard') content = <FlashcardPane event={activeEvent} objectiveText={study.text} count={study.count} onBack={handleBack} />
-    else                                 content = <StudyPane      event={activeEvent} objectiveText={study.text} onBack={handleBack} />
+  if (org && !eventsLoaded) {
+    content = <div className="loading">Loading…</div>
+  } else if (org && events.length === 0) {
+    content = <ComingSoonPage org={org} onSwitchOrg={handleSwitchOrg} />
+  } else if (study && activeEvent) {
+    if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
+    else if (study.mode === 'flashcard') content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
+    else                                 content = <StudyPane      event={activeEvent} org={org} objectiveText={study.text} onBack={handleBack} />
   } else if (page === 'home') {
     content = <HomePage onStart={handlePickerOpen} />
   } else if (page === 'picker') {
-    content = <EventPickerPage events={events} onSelect={handleSelectEvent} onBack={handleHome} />
+    content = <EventPickerPage events={events} org={org} onSelect={handleSelectEvent} onBack={handleHome} />
   } else if (page === 'event' && activeEvent) {
-    content = <EventView event={activeEvent} onStudy={handleStudy} />
+    content = <EventView event={activeEvent} org={org} onStudy={handleStudy} />
   } else {
     content = <div className="loading">Loading…</div>
   }
@@ -864,9 +1143,12 @@ export default function App() {
         events={events}
         page={page}
         activeEvent={activeEvent}
+        org={org}
+        orgs={orgs}
         onSelect={handleSelectEvent}
         onHome={handleHome}
         onLanding={handleLanding}
+        onOrgChange={handleOrgChange}
         open={navOpen}
       />
       <main className="main">{content}</main>

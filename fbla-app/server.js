@@ -922,6 +922,14 @@ app.post('/api/quiz', async (req, res) => {
   // exhausting retries, never a flawed one.
   let kept = [];
 
+  // Larger scopes need more attempts to converge. A flat 3-attempt budget
+  // was calibrated for 10-20 question gaps (objective/section scope); a
+  // 50-question event-scope quiz can shed enough length-tell/duplicate
+  // violations per batch — especially on dense clinical/technical content —
+  // that 3 attempts silently returns a fraction of what was requested
+  // (e.g. 11/50) with no indication to the caller that it fell short.
+  const retryBudget = Math.max(3, Math.ceil(count / 5) * 2);
+
   try {
     await withRetry(async () => {
       const remaining = count - kept.length;
@@ -959,18 +967,21 @@ app.post('/api/quiz', async (req, res) => {
       if (kept.length < count) {
         throw new Error(`Only ${kept.length}/${count} clean questions so far — retrying for the rest`);
       }
-    });
+    }, retryBudget);
   } catch (err) {
     if (!kept.length) {
       console.error('Quiz error:', err.message);
       return res.status(500).json({ error: err.message });
     }
-    console.warn(`[quiz] only got ${kept.length}/${count} fully-clean questions after retries — serving the partial batch (every question shipped still individually passed all checks)`);
+    console.warn(`[quiz] only got ${kept.length}/${count} fully-clean questions after ${retryBudget} attempts — serving the partial batch (every question shipped still individually passed all checks)`);
   }
 
   const questions = kept.slice(0, count);
   rememberQuestions(event, scope, objective, questions);
-  res.json({ questions, source: 'ai' });
+  // `requested` lets the client tell a genuine partial batch (fewer clean
+  // questions found than asked for) apart from a normal full response,
+  // instead of silently treating whatever came back as "the whole quiz".
+  res.json({ questions, requested: count, source: 'ai' });
 });
 
 // Flashcard generation — retries up to 3 times total, slices to exact count

@@ -1,0 +1,87 @@
+HOSA STUDY OUTLINE — HUMAN HEREDITY (GENETICS) (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+human genetics curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+The principles of human heredity, from Mendelian inheritance and pedigree
+analysis through the chromosomal and molecular basis of inheritance,
+mutations and genetic disorders, population genetics, and modern genetic
+technologies.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Foundations of Heredity (3 items)
+1. Differentiate genotype and phenotype.
+2. Describe Gregor Mendel's experiments with pea plants and his conclusions.
+3. Define key terms (allele, locus, homozygous, heterozygous, dominant, recessive).
+
+B. Mendelian Inheritance Patterns (6 items)
+1. Apply the law of segregation and the law of independent assortment.
+2. Use a Punnett square to solve monohybrid and dihybrid crosses.
+3. Calculate probabilities of offspring genotypes and phenotypes from a cross.
+4. Differentiate complete dominance, incomplete dominance, and codominance.
+5. Explain multiple-allele inheritance (e.g., ABO blood type).
+6. Explain polygenic inheritance and continuous variation (e.g., height, skin color).
+
+C. Pedigree Analysis (5 items)
+1. Interpret pedigree symbols (affected/unaffected individuals, carriers, generations).
+2. Determine the mode of inheritance from a pedigree (autosomal dominant, autosomal recessive).
+3. Determine X-linked dominant and X-linked recessive inheritance patterns from a pedigree.
+4. Calculate the probability of offspring inheriting a trait based on pedigree data.
+5. Differentiate Y-linked and mitochondrial inheritance patterns.
+
+D. Chromosomal Basis of Inheritance (5 items)
+1. Describe the structure of chromosomes (chromatin, centromere, karyotype).
+2. Explain the behavior of chromosomes during meiosis and how it accounts for Mendel's laws.
+3. Explain sex determination in humans (XX/XY, the SRY gene).
+4. Describe X-inactivation (Barr bodies, Lyonization).
+5. Explain linkage, crossing over, and recombination frequency in gene mapping.
+
+E. Chromosomal Abnormalities (4 items)
+1. Describe nondisjunction and its consequences.
+2. Identify common autosomal trisomies (Down syndrome/trisomy 21, trisomy 18, trisomy 13).
+3. Identify common sex chromosome abnormalities (Turner syndrome, Klinefelter syndrome).
+4. Interpret a karyotype to identify chromosomal abnormalities.
+
+F. DNA Structure & Replication (5 items)
+1. Describe the double-helix structure of DNA and complementary base pairing.
+2. Explain semiconservative DNA replication and key enzymes (helicase, DNA polymerase, ligase, primase).
+3. Differentiate leading and lagging strand synthesis, including Okazaki fragments.
+4. Describe telomeres and their role in chromosome stability.
+5. Explain DNA repair mechanisms.
+
+G. Gene Expression & Regulation (5 items)
+1. Describe transcription and translation (the central dogma).
+2. Explain the genetic code and codon-anticodon pairing.
+3. Describe gene regulation basics (promoters, operons, transcription factors).
+4. Explain epigenetics concepts (DNA methylation, histone modification) and their effect on gene expression.
+5. Describe alternative splicing and its role in protein diversity.
+
+H. Mutations & Genetic Disorders (6 items)
+1. Differentiate point mutations, insertions, deletions, and frameshift mutations.
+2. Explain the effect of mutations on protein structure and function.
+3. Describe single-gene (Mendelian) disorders (e.g., cystic fibrosis, sickle cell anemia, Huntington's disease).
+4. Differentiate trinucleotide repeat disorders (e.g., Huntington's disease, fragile X syndrome).
+5. Describe multifactorial/complex genetic disorders (e.g., diabetes, heart disease).
+6. Differentiate germline and somatic mutations.
+
+I. Population Genetics (3 items)
+1. Apply the Hardy-Weinberg equilibrium equation to calculate allele and genotype frequencies.
+2. Explain factors that disrupt Hardy-Weinberg equilibrium (mutation, migration, genetic drift, selection, nonrandom mating).
+3. Explain the founder effect and genetic bottleneck.
+
+J. Modern Genetic Technologies (5 items)
+1. Describe the process and applications of PCR (polymerase chain reaction).
+2. Explain gel electrophoresis and its use in DNA analysis.
+3. Describe CRISPR-Cas9 gene editing technology and its applications.
+4. Explain genetic testing and screening methods (carrier screening, prenatal testing, amniocentesis, newborn screening).
+5. Describe recombinant DNA technology and gene cloning basics.
+
+K. Genetic Counseling & Ethics (3 items)
+1. Describe the role of a genetic counselor in interpreting risk and results.
+2. Explain ethical considerations in genetic testing (privacy, discrimination, informed consent).
+3. Explain the basics of gene therapy and its current applications and limitations.

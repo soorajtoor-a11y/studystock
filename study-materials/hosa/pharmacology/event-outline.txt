@@ -1,0 +1,89 @@
+HOSA STUDY OUTLINE — PHARMACOLOGY (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of pharmacology: drug classifications and mechanisms of action,
+pharmacokinetics and pharmacodynamics, routes of administration and dosage
+forms, dosage calculations, common medications by body system, adverse
+effects and interactions, controlled substance scheduling, and safe
+medication administration.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Pharmacokinetics — Absorption, Distribution, Metabolism, Excretion (5 items)
+1. Define and sequence the four phases of pharmacokinetics (absorption, distribution, metabolism, excretion).
+2. Explain factors affecting drug absorption (route, first-pass metabolism, food interactions).
+3. Explain the concept of drug half-life and its effect on dosing frequency.
+4. Explain the role of the liver (cytochrome P450 enzymes) in drug metabolism.
+5. Explain the role of the kidneys in drug excretion and how renal impairment affects dosing.
+
+B. Pharmacodynamics & Mechanisms of Action (4 items)
+1. Differentiate agonist from antagonist drug action at a receptor.
+2. Explain the concept of therapeutic index and narrow therapeutic range drugs (e.g., warfarin, digoxin, lithium).
+3. Explain the difference between drug potency and drug efficacy.
+4. Explain the concept of a dose-response relationship and ceiling effect.
+
+C. Routes of Administration & Dosage Forms (4 items)
+1. Differentiate enteral routes (oral, sublingual, buccal, rectal) by relative onset of action.
+2. Differentiate parenteral routes (intravenous, intramuscular, subcutaneous, intradermal) by onset and typical use.
+3. Identify appropriate use of topical/transdermal, inhalation, and ophthalmic/otic routes.
+4. Differentiate dosage forms (tablet, capsule, suspension, extended-release, enteric-coated) and their administration considerations.
+
+D. Dosage Calculations & Drug Measurement (4 items)
+1. Calculate a drug dose using the desired-over-have (D/H x Q) method.
+2. Calculate an IV flow rate given volume, time, and drop factor.
+3. Convert between common units of measurement (mg to mcg, mL to L, grains to mg).
+4. Calculate a pediatric dose using body weight (mg/kg) given a prescribed dosing range.
+
+E. Antibiotics & Anti-Infectives (4 items)
+1. Identify the mechanism of action of a specified antibiotic class (e.g., penicillins/cell wall synthesis, macrolides/protein synthesis).
+2. Identify indications and common adverse effects of a specified antibiotic class (e.g., fluoroquinolones, tetracyclines, aminoglycosides).
+3. Explain the concept of antibiotic resistance and appropriate antibiotic stewardship.
+4. Identify the mechanism/use of a specified antiviral, antifungal, or antiparasitic agent.
+
+F. Cardiovascular & Renal Drugs (5 items)
+1. Identify the mechanism of action and use of a specified antihypertensive class (ACE inhibitors, ARBs, beta-blockers, calcium channel blockers).
+2. Identify the mechanism of action and nursing considerations of a specified anticoagulant/antiplatelet (warfarin, heparin, aspirin, clopidogrel).
+3. Identify the mechanism of action and use of a specified diuretic class (loop, thiazide, potassium-sparing).
+4. Identify the mechanism of action and adverse effects of cardiac glycosides (digoxin) and antiarrhythmics.
+5. Identify the mechanism of action and use of statins and other lipid-lowering agents.
+
+G. Analgesics, Anesthetics & CNS Drugs (5 items)
+1. Differentiate opioid from nonopioid (NSAID, acetaminophen) analgesics by mechanism and risk profile.
+2. Identify signs of opioid overdose and the mechanism of action of naloxone as a reversal agent.
+3. Differentiate local, regional, and general anesthesia by mechanism and use.
+4. Identify the mechanism/use of a specified CNS drug class (anticonvulsants, benzodiazepines, antidepressants, antipsychotics).
+5. Identify common adverse effects/black box warnings of a specified CNS medication class.
+
+H. Endocrine & Reproductive Drugs (4 items)
+1. Identify the mechanism of action and administration considerations of insulin and oral antidiabetic agents (e.g., metformin, sulfonylureas).
+2. Identify the mechanism of action and use of corticosteroids, including adverse effects of long-term use.
+3. Identify the mechanism of action and use of thyroid replacement and antithyroid medications.
+4. Identify the mechanism of action and use of hormonal contraceptives and reproductive hormone therapies.
+
+I. Respiratory & GI Drugs (4 items)
+1. Identify the mechanism of action and use of bronchodilators (beta-2 agonists, anticholinergics) and inhaled corticosteroids.
+2. Identify the mechanism of action and use of antihistamines and decongestants.
+3. Identify the mechanism of action and use of proton pump inhibitors, H2 blockers, and antacids.
+4. Identify the mechanism of action and use of antiemetics and laxatives/antidiarrheals.
+
+J. Psychotropic Drugs & Controlled Substance Schedules (4 items)
+1. Differentiate DEA controlled substance schedules I-V by abuse potential and accepted medical use, with an example drug in each.
+2. Identify legal/regulatory requirements for prescribing and dispensing scheduled medications.
+3. Identify signs of physical dependence vs. tolerance vs. addiction.
+4. Identify appropriate safeguards for storage and administration of controlled substances in a clinical setting.
+
+K. Adverse Effects, Interactions & Contraindications (4 items)
+1. Differentiate a side effect from an adverse drug reaction and from an allergic reaction.
+2. Identify a drug-drug interaction and its mechanism (e.g., additive, synergistic, antagonistic).
+3. Identify a drug-food interaction (e.g., warfarin and vitamin K, MAOIs and tyramine, grapefruit juice and statins).
+4. Identify a contraindication for a specified drug given a patient condition (e.g., beta-blockers in asthma, NSAIDs in renal impairment).
+
+L. Drug Regulation, Safety & Administration Rights (3 items)
+1. Identify the role of the FDA in drug approval and the phases of clinical drug trials.
+2. Apply the "rights" of medication administration (right patient, drug, dose, route, time, documentation).
+3. Identify correct procedure for reporting and documenting a medication error.

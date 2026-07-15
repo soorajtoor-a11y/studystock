@@ -1,0 +1,82 @@
+HOSA STUDY OUTLINE — EPIDEMIOLOGY (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the team/performance round).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of the science of epidemiology: disease transmission and natural
+history, measures of disease frequency and association, epidemiologic study
+designs, outbreak investigation, surveillance systems, and levels of disease
+prevention. Emphasizes quantitative reasoning as well as terminology.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Foundations & Basic Concepts (4 items)
+1. Define epidemiology and distinguish descriptive from analytic epidemiology.
+2. Differentiate endemic, epidemic, pandemic, outbreak, and cluster.
+3. Describe the epidemiologic triangle (agent, host, environment).
+4. Explain the chain of infection (reservoir, portal of exit, mode of transmission, portal of entry, susceptible host).
+
+B. Disease Transmission & Natural History (6 items)
+1. Differentiate modes of transmission: direct contact, droplet, airborne, vehicle-borne, vector-borne.
+2. Explain the natural history of disease stages (exposure, latency/incubation, subclinical, clinical, resolution).
+3. Differentiate incubation period from communicable period.
+4. Explain herd immunity and the threshold concept for outbreak control.
+5. Differentiate reservoirs of infection (human, animal/zoonotic, environmental).
+6. Explain the basic reproduction number (R0) and its interpretation for transmissibility.
+
+C. Measures of Disease Frequency (7 items)
+1. Calculate and interpret incidence rate (new cases over a time period).
+2. Calculate and interpret prevalence (point prevalence vs. period prevalence).
+3. Differentiate incidence from prevalence and explain how disease duration affects each.
+4. Calculate and interpret attack rate in an outbreak setting.
+5. Calculate and interpret case fatality rate.
+6. Calculate and interpret crude, specific, and adjusted (standardized) rates.
+7. Interpret mortality and morbidity rate data presented in a table or graph.
+
+D. Measures of Association & Risk (6 items)
+1. Calculate and interpret relative risk (risk ratio) from a 2x2 table.
+2. Calculate and interpret odds ratio from a case-control study 2x2 table.
+3. Explain attributable risk and its use in public health policy decisions.
+4. Interpret a confidence interval and p-value in the context of an epidemiologic finding.
+5. Differentiate confounding from effect modification (interaction).
+6. Identify common types of bias in epidemiologic studies (selection bias, recall bias, information bias).
+
+E. Study Designs (7 items)
+1. Differentiate cohort studies (prospective/retrospective) from case-control studies.
+2. Differentiate cross-sectional studies from longitudinal studies.
+3. Explain the structure and purpose of a randomized controlled trial (RCT).
+4. Identify strengths and limitations of ecological (population-level) studies.
+5. Explain the purpose and structure of a systematic review/meta-analysis.
+6. Identify which study design is best suited to a rare disease versus a rare exposure.
+7. Differentiate experimental from observational study designs.
+
+F. Outbreak Investigation Steps (7 items)
+1. Sequence the standard steps of an outbreak investigation (confirm diagnosis, establish case definition, etc.).
+2. Construct and interpret a case definition (person, place, time criteria).
+3. Interpret an epidemic curve (epi curve) to identify a point-source versus propagated outbreak.
+4. Explain descriptive epidemiology's "person, place, time" framework as applied to outbreak data.
+5. Explain the purpose of generating and testing hypotheses about exposure source during an investigation.
+6. Explain when and why control measures are implemented during an active investigation.
+7. Explain the role of communicating findings to stakeholders and the public after an investigation.
+
+G. Surveillance Systems (5 items)
+1. Differentiate active from passive disease surveillance.
+2. Identify the purpose of nationally notifiable disease reporting.
+3. Describe the role of the CDC and state/local health departments in disease surveillance.
+4. Explain sentinel surveillance and syndromic surveillance systems.
+5. Explain the purpose of vital statistics registries (births, deaths, causes of death) in surveillance.
+
+H. Screening & Diagnostic Testing (4 items)
+1. Calculate and interpret sensitivity and specificity of a screening test.
+2. Calculate and interpret positive predictive value and negative predictive value.
+3. Explain how disease prevalence affects predictive value of a test.
+4. Explain criteria for an effective screening program (e.g., Wilson-Jungner criteria).
+
+I. Prevention Levels & Public Health Application (4 items)
+1. Differentiate primary, secondary, and tertiary prevention with concrete examples of each.
+2. Explain the role of vaccination programs in primary prevention and disease eradication.
+3. Explain how epidemiologic data inform public health policy decisions.
+4. Describe historical epidemiologic milestones (e.g., John Snow and the Broad Street pump).

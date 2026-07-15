@@ -1,0 +1,84 @@
+HOSA STUDY OUTLINE — PHARMACY SCIENCE (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the Round 2 skills demonstration).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge and entry-level skill of the pharmacy technician role: prescription
+processing, drug classifications and dosage forms, pharmacy calculations,
+controlled substance regulations, and safe, legal, and ethical practice in a
+retail or institutional pharmacy setting.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Pharmacy Technician Role, Law & Ethics (5 items)
+1. Define the pharmacy technician's scope of practice and tasks requiring pharmacist verification.
+2. Explain the role of the Board of Pharmacy and state licensing/registration requirements.
+3. Describe key provisions of the Food, Drug, and Cosmetic Act and Durham-Humphrey Amendment.
+4. Explain the difference between OTC, legend (prescription), and controlled medications.
+5. Describe ethical responsibilities including honesty in dispensing and reporting errors.
+
+B. HIPAA, Confidentiality & Pharmacy Regulations (4 items)
+1. Explain patient confidentiality requirements under HIPAA in a pharmacy setting.
+2. Describe requirements for counseling patients under OBRA-90.
+3. Explain recordkeeping requirements for prescriptions and controlled substances.
+4. Identify requirements for medication error reporting and quality assurance programs.
+
+C. Prescription Components & Terminology (5 items)
+1. Identify the required components of a valid prescription (patient info, drug, sig, refills, signature).
+2. Differentiate an inscription, subscription, and signatura on a prescription.
+3. Explain requirements for verbal, written, and electronic prescriptions.
+4. Identify when a prescription requires prior authorization or is non-refillable.
+5. Explain the process for transferring a prescription between pharmacies.
+
+D. Medical/Pharmacy Abbreviations & Sig Codes (5 items)
+1. Interpret common sig code abbreviations (PO, BID, TID, QID, PRN, HS, AC, PC).
+2. Interpret route-of-administration abbreviations (SL, SC/SubQ, IM, IV, PR, OD/OS/OU).
+3. Interpret quantity and measurement abbreviations (gtt, mL, mg, mcg, tab, cap).
+4. Identify Institute for Safe Medication Practices (ISMP) "do not use" abbreviations.
+5. Translate a complete sig (e.g., "1 tab PO BID PRN pain") into patient instructions.
+
+E. Drug Classifications & Common Medications (7 items)
+1. Identify major drug classifications by therapeutic use (antibiotic, antihypertensive, analgesic).
+2. Identify common brand and generic name pairs for widely prescribed medications.
+3. Classify medications by body system affected (cardiovascular, respiratory, endocrine).
+4. Describe common indications, general mechanism, and major side effects for major drug classes.
+5. Identify common drug interactions and contraindications pharmacists screen for.
+6. Differentiate antibiotic classes (penicillins, cephalosporins, macrolides, fluoroquinolones).
+7. Identify common vaccines and biologics dispensed or administered through pharmacies.
+
+F. Dosage Forms & Routes of Administration (5 items)
+1. Identify solid dosage forms (tablet, capsule, caplet, enteric-coated, extended-release).
+2. Identify liquid dosage forms (suspension, solution, elixir, syrup, emulsion).
+3. Identify topical and transdermal dosage forms (cream, ointment, patch, gel).
+4. Identify parenteral routes and their relative onset of action.
+5. Explain special handling for enteric-coated, sublingual, and extended-release forms.
+
+G. Controlled Substances & Scheduling (4 items)
+1. Identify DEA controlled substance schedules (I–V) and an example drug from each.
+2. Explain refill restrictions for each controlled substance schedule.
+3. Describe DEA Form 222 and electronic ordering requirements for Schedule II drugs.
+4. Explain proper storage, inventory counts, and diversion-prevention procedures for controlled substances.
+
+H. Pharmacy Calculations (6 items)
+1. Calculate days' supply given quantity dispensed and directions for use.
+2. Convert between metric, apothecary, and household measurement systems.
+3. Calculate dosage based on body weight (mg/kg) or body surface area.
+4. Calculate the correct quantity to dispense from a prescription's sig and duration.
+5. Calculate dilution and concentration problems (alligation, percent strength).
+6. Calculate intravenous flow rates and drip rates.
+
+I. Dispensing, Inventory & Compounding Basics (5 items)
+1. Describe the steps in the prescription filling and dispensing workflow.
+2. Explain basic non-sterile compounding procedures and equipment (mortar and pestle, graduated cylinder).
+3. Identify principles of proper drug storage (temperature, light, expiration dating).
+4. Explain inventory management practices (par levels, ordering, recalls, returns).
+5. Describe the National Drug Code (NDC) and its use in dispensing and billing.
+
+J. Pharmacy Safety & Error Prevention (4 items)
+1. Identify the "rights" of medication administration/dispensing (right patient, drug, dose, route, time).
+2. Describe common causes of medication errors (look-alike/sound-alike drugs, transcription errors).
+3. Explain proper procedures for handling medication recalls and expired stock.
+4. Identify proper use of personal protective equipment when handling hazardous drugs.

@@ -1,0 +1,2466 @@
+{
+ "Computer Hardware": [
+  {
+   "question": "A computer designed to perform intensive mathematical calculations and simulations for scientific research is called a(n) ___",
+   "options": [
+    "tablet device",
+    "mainframe computer",
+    "personal computer",
+    "supercomputer"
+   ],
+   "correct_index": 3,
+   "explanation": "A supercomputer is a specialized high-performance system built for complex scientific computations, weather modeling, and simulations. Mainframes handle business data processing, personal computers are general-use devices, and tablets are portable consumer devices—none are designed for intensive mathematical calculations.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The component responsible for executing instructions and performing calculations within a computer system is the ___",
+   "options": [
+    "hard disk drive",
+    "central processing unit",
+    "graphics card",
+    "random-access memory"
+   ],
+   "correct_index": 1,
+   "explanation": "The CPU (central processing unit) is the computer's primary processor that executes all instructions and performs calculations. RAM temporarily stores data, the hard drive provides storage, and a graphics card handles video output—none execute the core computational instructions.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The temporary, high-speed memory that allows a computer to store data it is actively using during operations is called ___",
+   "options": [
+    "cache memory",
+    "random-access memory",
+    "virtual memory",
+    "persistent storage"
+   ],
+   "correct_index": 1,
+   "explanation": "RAM (random-access memory) is volatile, high-speed memory used to hold data the computer is currently processing. Once power is lost, RAM clears; this distinguishes it from persistent storage (drives), which retains data. Cache is smaller and even faster than RAM, while virtual memory is disk-based overflow.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business needs a computer system that can process large volumes of customer transactions, maintain centralized databases, and support hundreds of simultaneous users across multiple departments. The system that would BEST serve this purpose is a ___",
+   "options": [
+    "supercomputer for parallel processing",
+    "personal computer networked with others",
+    "tablet device with cloud backup",
+    "mainframe computer that can handle enterprise-scale workloads"
+   ],
+   "correct_index": 3,
+   "explanation": "A mainframe computer is specifically designed for high-volume transaction processing, large database management, and supporting many concurrent users in enterprise environments. Tablets are consumer devices, personal computers lack the multi-user architecture, and supercomputers are optimized for mathematical simulation rather than business transactions.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be common reasons a business might choose to use a personal computer rather than a mainframe or supercomputer for its daily operations?",
+   "options": [
+    "Capacity to perform intensive scientific simulations, mathematical modeling for research purposes, and real-time analysis of massive datasets",
+    "Ability to process thousands of simultaneous transactions, centralized data management across multiple departments, and support for hundreds of users",
+    "Lower initial cost, easier maintenance by non-specialized staff, and sufficient processing power for typical office tasks",
+    "Direct connection to enterprise servers without networking devices, built-in redundancy for mission-critical operations, and automatic backup systems"
+   ],
+   "correct_index": 2,
+   "explanation": "Personal computers are chosen by most businesses for everyday work because they are affordable, do not require specialized IT expertise to maintain, and provide sufficient computing power for typical office applications like word processing, spreadsheets, and email. The other options describe characteristics of mainframes or supercomputers, which are designed for enterprise-scale or research-intensive workloads that most small and medium businesses do not need.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A component that allows a computer to display images and video output on a monitor or other display device is called a(n) ___",
+   "options": [
+    "video card",
+    "motherboard chipset",
+    "graphics processing unit",
+    "display adapter"
+   ],
+   "correct_index": 0,
+   "explanation": "A video card (also called a graphics card or display adapter) is the expansion card responsible for processing and outputting visual data to a monitor. While a graphics processing unit (GPU) is the chip within the card that performs calculations, and a display adapter is a synonym, 'video card' is the standard hardware component term taught in introductory IT courses for this specific function.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying what is causing a hardware malfunction and implementing a fix is called ___",
+   "options": [
+    "virtualization",
+    "calibration",
+    "troubleshooting",
+    "optimization"
+   ],
+   "correct_index": 2,
+   "explanation": "Troubleshooting is the systematic process of diagnosing hardware problems and resolving them. It involves testing components, identifying the root cause, and applying a solution. Optimization refers to improving performance, calibration means adjusting settings, and virtualization involves running virtual systems on physical hardware.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A device that produces physical copies of digital documents and images stored on a computer is called a(n) ___",
+   "options": [
+    "printer",
+    "plotter",
+    "monitor",
+    "projector"
+   ],
+   "correct_index": 0,
+   "explanation": "A printer is the standard output device that converts digital files into physical paper copies. While a plotter is also an output device, it is specialized for large-format technical drawings rather than general document printing. Monitors and projectors display images but do not produce physical hardcopies.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be valid reasons to upgrade a computer's power supply?",
+   "options": [
+    "Replacing the motherboard with a newer model, updating the operating system software, and installing additional RAM modules",
+    "Increasing the monitor's refresh rate, upgrading the keyboard to a mechanical model, and adding wireless peripherals",
+    "Expanding the hard drive capacity, updating device drivers, and installing additional cooling fans to reduce system noise",
+    "Adding multiple high-performance graphics cards, installing additional storage drives, and powering new expansion cards that require dedicated power connectors"
+   ],
+   "correct_index": 3,
+   "explanation": "A power supply upgrade is necessary when adding components that draw significant electrical current, such as high-end graphics cards, multiple storage devices, or power-hungry expansion cards. The other options involve upgrades that either do not significantly increase power draw (software updates, RAM in many cases) or are peripherals that draw minimal power from the system unit itself.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A graphic designer's workstation is running slowly when opening large image files and switching between design applications, even though the hard drive has 200 GB of free space and CPU usage stays below 50%. The designer notices applications often pause briefly before responding to commands. Which component upgrade would most directly improve this performance issue?",
+   "options": [
+    "Upgrade to a larger external hard drive for storing backup copies of design projects",
+    "Install additional RAM to increase the amount of active memory available for running multiple applications simultaneously",
+    "Add a second monitor to distribute the visual workload across multiple displays",
+    "Replace the power supply with a higher-wattage unit to provide more stable electrical delivery"
+   ],
+   "correct_index": 1,
+   "explanation": "The symptom of applications pausing before responding, combined with low CPU usage but plenty of free disk space, indicates the system is running out of active memory (RAM) and must swap data between RAM and storage, which is much slower. Upgrading RAM would allow more applications and data to stay in fast memory, eliminating the pause-and-wait behavior. The other options address unrelated concerns: power supply wattage is stable for current load, external storage is for backup rather than active work, and a second monitor does not reduce memory pressure.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A storage device that uses integrated circuit technology to store data with no moving parts, offering faster access speeds and greater durability than traditional magnetic drives, is called a(n) ___",
+   "options": [
+    "external hard drive",
+    "magnetic tape storage",
+    "solid-state drive",
+    "optical disc"
+   ],
+   "correct_index": 2,
+   "explanation": "An SSD (solid-state drive) uses flash memory with no mechanical components, delivering faster data access and improved reliability compared to mechanical hard drives. This makes SSDs the preferred choice for modern computers requiring quick boot times and responsive performance. HDDs, external drives, and tape storage all rely on different technologies—magnetic or optical—that operate more slowly.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A traditional storage device that uses rotating magnetic platters and a read/write head to access data is commonly called a(n) ___",
+   "options": [
+    "flash drive",
+    "hard disk drive",
+    "memory module",
+    "network-attached storage"
+   ],
+   "correct_index": 1,
+   "explanation": "An HDD (hard disk drive) uses spinning magnetic platters to store and retrieve data, making it a traditional but still widely-used storage solution. While HDDs are slower than SSDs, they remain cost-effective for high-capacity storage needs. Flash drives, NAS systems, and memory modules use entirely different storage technologies and mechanisms.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes and equipment involved in transferring data between computers and across networks, as well as the devices that enable such communication, make up the computer system's ___",
+   "options": [
+    "data transfer protocol",
+    "peripheral management system",
+    "expansion interface",
+    "connectivity infrastructure"
+   ],
+   "correct_index": 3,
+   "explanation": "Connectivity infrastructure encompasses all hardware devices (network adapters, modems, cables) and processes that allow computers to communicate with each other and external networks. This concept combines the network adapter function with the broader idea of how devices establish and maintain connections, distinguishing it from isolated components or communication standards alone.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL represent valid reasons to choose an SSD over an HDD for a computer upgrade?",
+   "options": [
+    "Faster boot and application load times, improved system responsiveness under heavy multitasking, and lower power consumption",
+    "Significantly lower cost per gigabyte, ability to store unlimited data, and compatibility with all legacy systems",
+    "Superior durability against water damage, ability to recover deleted files automatically, and reduced need for regular defragmentation",
+    "Larger maximum storage capacity, quieter operation due to moving parts, and better performance in cold environments"
+   ],
+   "correct_index": 0,
+   "explanation": "SSDs provide genuine performance benefits: faster access speeds improve system responsiveness, lower power draw extends battery life and reduces electricity costs, and no moving parts reduce heat generation. The first option incorrectly claims SSDs have unlimited capacity and lower cost—they are more expensive per gigabyte. The third confuses HDD benefits (larger capacity, moving parts) with SSD advantages, and the fourth mixes unrelated benefits.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An office employee notices his workstation freezes intermittently when switching between web browsers, email applications, and spreadsheets, but the hard drive indicator light remains mostly dark. He checks his system and confirms he has 150 GB of free space available, but his CPU usage only reaches 40% during the freezing episodes. Which component upgrade would BEST address this performance bottleneck?",
+   "options": [
+    "Switch to an external SSD and move all user files to it to reduce internal storage strain",
+    "Upgrade the RAM to allow the system to hold more applications in active memory simultaneously",
+    "Install a second graphics card to accelerate the rendering of web pages and email interfaces",
+    "Replace the hard drive with a larger capacity model to provide more storage headroom"
+   ],
+   "correct_index": 1,
+   "explanation": "The symptoms—freezing during multitasking, low CPU usage, and abundant free hard drive space—point to insufficient RAM preventing smooth transitions between applications. With plenty of storage available and low CPU load, the bottleneck is memory, not processing power or disk capacity. Upgrading RAM allows more application data to remain in active memory, eliminating the lag caused by excessive disk swapping.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A device that allows a computer to connect to networks and communicate with other devices over Ethernet or wireless connections is called a(n) ___",
+   "options": [
+    "network adapter",
+    "expansion slot",
+    "motherboard chipset",
+    "power supply unit"
+   ],
+   "correct_index": 0,
+   "explanation": "A network adapter is an expansion card that enables network connectivity, allowing computers to communicate with other devices and access the internet. This is distinct from other components like the motherboard chipset, which manages internal communication, or the power supply, which provides electrical power.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An external hard drive that connects via USB and stores backup copies of important files from a desktop computer is performing which primary function?",
+   "options": [
+    "Improving the computer's RAM capacity for multitasking",
+    "Upgrading the graphics capabilities for video rendering",
+    "Providing additional permanent storage space outside the main system",
+    "Expanding the computer's processing speed for faster calculations"
+   ],
+   "correct_index": 2,
+   "explanation": "External drives serve as supplementary storage devices, allowing users to store large amounts of data separately from the main computer and create backups. Unlike RAM or graphics cards, they do not enhance processing power; their role is storage expansion and data protection.",
+   "type": "concept_completion",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be valid considerations when deciding whether to install a new graphics card in a computer?",
+   "options": [
+    "The network connection is slow, the printer is outdated, and the sound card is malfunctioning",
+    "The computer's hard drive is full, the keyboard needs replacement, and the user wants to upgrade the BIOS version",
+    "The operating system is five years old, the user manual is missing, and the computer case does not have cooling fans",
+    "The motherboard has an available expansion slot, the power supply has sufficient wattage, and the monitor supports high-resolution output"
+   ],
+   "correct_index": 3,
+   "explanation": "Installing a graphics card requires checking for physical space (expansion slot availability), adequate power delivery (sufficient wattage from the power supply), and ensuring the display can utilize the upgraded capabilities (monitor support). The other options mix unrelated hardware concerns that do not affect graphics card installation.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A tablet computer serves which of the following uses EXCEPT",
+   "options": [
+    "Connecting to the internet for web browsing and communication",
+    "Running mobile applications for productivity and entertainment",
+    "Reading e-books and displaying documents for viewing",
+    "Performing intensive data analysis and server-level database management"
+   ],
+   "correct_index": 3,
+   "explanation": "Tablets are portable devices designed for lightweight tasks like browsing, reading, and running mobile apps—not for intensive enterprise-level operations. Server-level database management and intensive data analysis require the processing power and architecture of mainframes, workstations, or enterprise servers, not portable tablets.",
+   "type": "all_except",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A software company publishes system requirements for their new application stating: processor speed 2.4 GHz, 8 GB RAM, 500 MB free storage, and Windows 10 or later. A user checks his computer and finds: processor 2.0 GHz, 16 GB RAM, 1 TB free storage, and Windows 10. Which component creates the primary barrier to running this software?",
+   "options": [
+    "The amount of available storage space is below the minimum requirement",
+    "The RAM quantity exceeds what the software can efficiently utilize",
+    "The processor speed does not meet the specified minimum threshold",
+    "The operating system version is incompatible with the application"
+   ],
+   "correct_index": 2,
+   "explanation": "The processor speed of 2.0 GHz is the only component that falls below its stated minimum requirement of 2.4 GHz, making it the direct performance barrier. The other components either meet or exceed requirements: 16 GB RAM exceeds the 8 GB minimum, 1 TB storage far exceeds 500 MB, and Windows 10 matches the OS requirement exactly. This tests whether students can interpret hardware requirements by identifying which component actually fails to satisfy the stated specifications.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A device that converts digital documents into electronic image files that can be stored and edited on a computer is called a(n) ___",
+   "options": [
+    "external hard drive",
+    "scanner",
+    "USB hub",
+    "printer"
+   ],
+   "correct_index": 1,
+   "explanation": "A scanner performs the function of digitizing physical documents into image files, allowing them to be stored and manipulated digitally. This is distinct from a printer, which outputs digital data to physical paper, and storage devices, which simply hold files.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The wireless technology that enables short-range communication between devices such as headphones, keyboards, and mice without requiring physical cable connections is called ___",
+   "options": [
+    "Bluetooth",
+    "Ethernet",
+    "USB",
+    "Wi-Fi"
+   ],
+   "correct_index": 0,
+   "explanation": "Bluetooth is a wireless standard specifically designed for short-range personal area networking between devices. While Wi-Fi and Ethernet handle broader network connectivity, Bluetooth is the standard for connecting peripherals like headphones and mice directly to a computer.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical connectivity functions performed by computer peripherals EXCEPT",
+   "options": [
+    "A motherboard amplifies audio signals and routes them to external speakers",
+    "A USB device transfers data and power between computers and external storage",
+    "A scanner reads physical documents and sends electronic copies to the computer",
+    "A printer receives digital data and converts it to physical documents"
+   ],
+   "correct_index": 0,
+   "explanation": "The motherboard is an internal component, not a peripheral—it does not connect externally to the computer. The other three options describe legitimate peripheral connectivity functions: printing output, USB data transfer, and scanning input. A sound card (not the motherboard itself) manages audio signals when connected to speakers.",
+   "type": "all_except",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A computer that is small, self-contained, and designed for use by a single individual for personal or business tasks is called a(n) ___",
+   "options": [
+    "workstation server",
+    "tablet device",
+    "mainframe computer",
+    "personal computer"
+   ],
+   "correct_index": 3,
+   "explanation": "A personal computer (PC) is specifically designed for individual use and is the most common type of computer found in homes and small offices. It differs from mainframes, which serve many users simultaneously, and from specialized systems like workstations or servers, which are built for specific enterprise tasks.",
+   "type": "definition_recall",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be factors that a technician should evaluate when determining whether a user's current computer hardware can support new software?",
+   "options": [
+    "The warranty status of the device, the number of previous software installations, the ambient room temperature, and the type of power outlet",
+    "Available RAM, processor speed and cores, available hard drive storage space, and GPU capabilities",
+    "The age of the operating system, the color of the computer case, the number of USB ports, and the price originally paid",
+    "The manufacturer of the monitor, whether the keyboard is wireless, the brightness of the screen, and internet download speed"
+   ],
+   "correct_index": 1,
+   "explanation": "A technician must compare the software's actual hardware requirements—RAM, processor specifications, storage, and graphics capability—against what the user's system provides. The other options include irrelevant factors like case color, monitor manufacturer, warranty status, and room temperature, which have no bearing on software compatibility.",
+   "type": "which_of_following",
+   "knowledge_area": "Computer Hardware",
+   "difficulty": "hard"
+  }
+ ],
+ "Software Fundamentals": [
+  {
+   "question": "The set of programs that manage hardware resources and provide services to other software is classified as ___",
+   "options": [
+    "specialized software",
+    "utility software",
+    "system software",
+    "application software"
+   ],
+   "correct_index": 2,
+   "explanation": "System software, such as operating systems and device drivers, runs in the background to manage hardware and enable application software to function. Application software performs specific user-facing tasks, while specialized software serves particular industries or professions.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Software programs designed for specific industries or professional purposes, such as AutoCAD for design or SAP for enterprise resource planning, are best described as ___",
+   "options": [
+    "application programs",
+    "operating system extensions",
+    "system utilities",
+    "specialized software"
+   ],
+   "correct_index": 3,
+   "explanation": "Specialized software is built to meet the unique needs of particular fields, industries, or professions and is not intended for general consumer use. Unlike general-purpose application software, specialized programs provide advanced functionality tailored to specific workflows and technical requirements.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of delivering code fixes, security improvements, and feature enhancements to software after its initial release is the purpose of ___",
+   "options": [
+    "software licensing",
+    "software updates and patches",
+    "hardware optimization",
+    "system diagnostics"
+   ],
+   "correct_index": 1,
+   "explanation": "Updates and patches address vulnerabilities, improve performance, and add new capabilities to software throughout its lifecycle. Regular updates are critical for security and stability, protecting systems from emerging threats that did not exist when the software was originally released.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Programs that scan for malicious code, defragment storage devices, and back up important files are all examples of ___",
+   "options": [
+    "specialized industry tools",
+    "operating system kernels",
+    "system software utilities",
+    "application software packages"
+   ],
+   "correct_index": 2,
+   "explanation": "System utilities are specialized tools built into or bundled with an operating system to maintain, protect, and optimize computer performance and data integrity. These utilities operate at the system level to support overall computer functionality rather than serving a specific user-facing task like word processing or design.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be valid reasons to apply software patches and updates?",
+   "options": [
+    "Close security vulnerabilities, improve system performance, and add new user-requested features",
+    "Reduce the number of available applications, eliminate user interface customization, and restrict system access",
+    "Increase the cost of software licensing, require users to purchase new hardware, and disable older features",
+    "Remove all antivirus protections, delete backup files, and prevent users from installing new applications"
+   ],
+   "correct_index": 0,
+   "explanation": "Security fixes, performance improvements, and feature enhancements are the three primary legitimate reasons for releasing updates and patches. Updates protect systems from vulnerabilities and improve stability, making them essential maintenance activities rather than actions that degrade functionality or increase costs.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be essential components that must work together for application software to execute successfully on a computer?",
+   "options": [
+    "The processor interprets instructions, memory stores program data, and the operating system coordinates communication between the application and hardware",
+    "The hard drive stores all active program code, the monitor displays processing results, and the keyboard provides real-time instruction updates to the CPU",
+    "The graphics card processes all application calculations, the network adapter handles file storage, and the BIOS manages user input from peripheral devices",
+    "The motherboard executes all application logic, RAM displays visual output to the user, and the power supply manages software licensing requirements"
+   ],
+   "correct_index": 0,
+   "explanation": "Application software depends on hardware components and the operating system working in coordination: the processor executes instructions, memory provides workspace for program data, and the OS serves as the intermediary managing resource allocation and hardware communication. The other options either misidentify which hardware components perform which functions or attribute software management tasks to components that don't perform them.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of software to communicate with a computer's physical components such as the processor, memory, and storage devices to execute commands is known as ___",
+   "options": [
+    "peripheral management",
+    "hardware abstraction",
+    "driver installation",
+    "software interaction with hardware"
+   ],
+   "correct_index": 3,
+   "explanation": "Software interacts with hardware through a combination of drivers, operating system services, and hardware abstraction layers that translate software instructions into physical device commands. This interaction is fundamental to how any program performs tasks on a computer.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The set of coordinated tasks that an operating system performs to distribute processor time, memory allocation, and hardware access among multiple running programs is called ___",
+   "options": [
+    "multitasking allocation",
+    "memory management",
+    "process scheduling",
+    "hardware distribution"
+   ],
+   "correct_index": 2,
+   "explanation": "Process scheduling is the specific function by which an operating system coordinates which program gets access to the CPU, memory, and other resources at any given moment. While memory management and hardware distribution are related concepts, process scheduling is the overarching term that describes this coordination function. This is distinct from the broader concept of resource management already covered in prior questions.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business wants to protect against malware, organize cluttered hard drives, and ensure important company data is not permanently lost. The functions that address all of these needs would require system utilities for all of the following EXCEPT",
+   "options": [
+    "scanning for viruses and malicious code",
+    "compressing data to reduce overall file sizes",
+    "consolidating fragmented files on storage",
+    "archiving files to external locations and cloud storage"
+   ],
+   "correct_index": 1,
+   "explanation": "While data compression can save space, it does not directly address malware protection, hard drive organization, or data backup purposes. Antivirus utilities protect against malware, disk defragmentation organizes storage, and backup tools ensure data recovery—but file compression is a storage optimization technique separate from these security and recovery functions.",
+   "type": "all_except",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A program designed to help a user create, edit, and organize text documents is called ___",
+   "options": [
+    "a compiler",
+    "a word processor",
+    "an operating system",
+    "a database management system"
+   ],
+   "correct_index": 1,
+   "explanation": "A word processor is application software specifically built for creating and formatting text documents. The other options are either system software (operating system, compiler) or a different type of application software (database management system) used for storing and retrieving structured data rather than document creation.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In the Software Development Life Cycle, the stage where developers write and build the actual program code based on design specifications is called the ___",
+   "options": [
+    "development phase",
+    "testing phase",
+    "deployment phase",
+    "planning phase"
+   ],
+   "correct_index": 0,
+   "explanation": "The development phase is where programmers write the actual source code and build the software according to the design documents created in earlier stages. This phase follows design and precedes testing.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL describe how application software relies on system components to function properly?",
+   "options": [
+    "Application software directly controls the CPU without needing an operating system, manages its own memory independently, and bypasses device drivers",
+    "The operating system allocates memory and processor time, drivers enable communication with peripherals, and the BIOS initializes hardware during startup",
+    "Application programs rewrite their own code based on hardware specifications, replace system utilities with specialized versions, and eliminate the need for regular updates",
+    "The operating system provides access to hardware resources, device drivers translate software commands into hardware actions, and the kernel manages concurrent program execution"
+   ],
+   "correct_index": 3,
+   "explanation": "The correct answer describes three genuine ways system-level components work together to support applications: the OS manages resources, drivers translate commands, and the kernel coordinates execution. The other options contain fundamental errors—applications cannot control the CPU directly without an OS, nor do they rewrite themselves based on hardware specs—making them genuinely tempting wrong choices for a student who understands the basics but not the specific interaction chain.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process by which an operating system allocates processor time, memory, and other hardware resources to different software programs running simultaneously is known as ___",
+   "options": [
+    "system optimization",
+    "hardware abstraction",
+    "resource management",
+    "software compilation"
+   ],
+   "correct_index": 2,
+   "explanation": "Resource management is the core function that allows software to interact with hardware by distributing and controlling access to the computer's physical components. This ensures multiple programs can run without directly conflicting for the same resources.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A small business has multiple software applications running on its computers, including a customer database, accounting software, and email client. For these programs to execute commands and display information on the screen, they must all rely on ___",
+   "options": [
+    "the antivirus program to grant permission for each operation",
+    "specialized device drivers unique to each individual application",
+    "a shared internet connection to process all requests",
+    "the operating system to communicate with hardware and manage resources"
+   ],
+   "correct_index": 3,
+   "explanation": "The operating system acts as the intermediary between all applications and the physical hardware, translating software commands into hardware operations and managing system resources. Without this layer, applications could not access the processor, memory, display, or storage devices.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The stages of the Software Development Life Cycle occur in a specific sequence. Which of the following correctly orders four of the major phases from beginning to end?",
+   "options": [
+    "Planning, design, development, testing, deployment",
+    "Planning, development, design, testing, deployment",
+    "Planning, design, testing, development, deployment",
+    "Design, planning, development, testing, deployment"
+   ],
+   "correct_index": 0,
+   "explanation": "The standard Software Development Life Cycle sequence begins with planning (defining scope and requirements), moves to design (creating system architecture and specifications), then development (writing code), followed by testing (quality assurance), and finally deployment (releasing to users). This order ensures requirements are clear before design, and code is built before testing.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The coordinated set of methods and stages used to plan, design, create, test, and release software products makes up the ___",
+   "options": [
+    "hardware abstraction layer",
+    "software development methodology",
+    "application programming interface",
+    "software deployment framework"
+   ],
+   "correct_index": 1,
+   "explanation": "The Software Development Life Cycle (SDLC) is the comprehensive process that organizes how software is built from initial concept through testing and release. This is distinct from a deployment framework (which focuses only on the release phase) or an API (which is a tool for communication between software components). Understanding the SDLC as a complete, integrated methodology is essential for grasping how professional software is created.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "When software developers discover security flaws in a released program, they issue patches to fix those vulnerabilities before they can be exploited by hackers. This demonstrates which important reason for applying software updates?",
+   "options": [
+    "To remove features that users no longer need",
+    "To increase the cost of the software license",
+    "To prevent unauthorized access and protect against cyber threats",
+    "To require users to purchase new computers"
+   ],
+   "correct_index": 2,
+   "explanation": "Security patches are released specifically to close vulnerabilities that could be exploited by attackers. Keeping software updated ensures that known security weaknesses are fixed before they can be used to compromise systems or steal data, making this one of the most critical reasons for applying updates promptly.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A program that allows a user to create, format, and print visual presentations with slides containing text, images, and animations is called ___",
+   "options": [
+    "a spreadsheet application",
+    "a graphic design utility",
+    "a database management system",
+    "a presentation software"
+   ],
+   "correct_index": 3,
+   "explanation": "Presentation software is specifically designed for creating slideshows with multimedia elements for conveying information to an audience. While spreadsheet applications handle numerical data and graphic design utilities focus on visual artwork, presentation software is the category that encompasses slide-based presentations with text, images, and animations.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be consequences or benefits that result from regularly applying software updates and security patches to a computer system?",
+   "options": [
+    "Closure of security vulnerabilities to prevent attacks, fixing of known software bugs to improve stability, and implementation of performance optimizations",
+    "Elimination of hardware failures, reduction in the cost of electricity used by the computer, and extension of the device's physical lifespan",
+    "Automatic backup of all user files, elimination of the need for an operating system, and conversion of the hard drive to a faster storage device",
+    "Removal of all application software from the computer, reduction in available storage space, and requirement to restart the computer only once per year"
+   ],
+   "correct_index": 0,
+   "explanation": "Software updates and patches serve three primary purposes: fixing security vulnerabilities to prevent breaches, correcting bugs that cause crashes or errors, and improving system performance. Option B correctly identifies all three of these actual benefits, while the other options contain false or exaggerated claims unrelated to the purpose of updates.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Software is considered incompatible with hardware, unable to perform file recovery tasks, or impractical for professional use work in all of the following scenarios EXCEPT",
+   "options": [
+    "A designer tries to use a photo editing tool on a computer whose processor lacks the instruction set required by that software",
+    "A user attempts to run a 32-bit application on a system that supports only 64-bit programs and has insufficient RAM for the application to load",
+    "A student uses spreadsheet software to organize numerical data, perform calculations, and create charts for a research project",
+    "A technician attempts to recover data using a utility designed for a different file system type than the one on the damaged drive"
+   ],
+   "correct_index": 2,
+   "explanation": "Option B (spreadsheet software for organizing data and calculations) is a perfectly appropriate and practical use of application software for its intended purpose. The other three options all represent genuine compatibility problems or mismatches between software and system capabilities—incompatible processor architectures, insufficient hardware, or wrong utility for the task.",
+   "type": "all_except",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A disk management utility that reorganizes fragmented data into contiguous blocks to improve drive performance is called ___",
+   "options": [
+    "encryption",
+    "defragmentation",
+    "partitioning",
+    "compression"
+   ],
+   "correct_index": 1,
+   "explanation": "Defragmentation is a system utility function that rearranges scattered file fragments on a hard drive into contiguous storage blocks, which speeds up file access and overall system performance. Partitioning divides a disk into separate sections, encryption secures data, and compression reduces file size—none address fragmentation.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An antivirus utility scans a user's computer and identifies a program attempting to capture keystrokes and steal passwords. This program would be classified as ___",
+   "options": [
+    "adware",
+    "firmware",
+    "spyware",
+    "middleware"
+   ],
+   "correct_index": 2,
+   "explanation": "Spyware is malicious software designed to monitor and steal sensitive user information such as passwords and keystrokes. Adware displays unwanted advertisements, firmware controls hardware operations, and middleware connects different applications—none fit the behavior of password theft.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be appropriate situations where backup and recovery tools would provide essential value?",
+   "options": [
+    "A user wants to speed up internet connection, needs to remove temporary cache files, and wishes to organize desktop icons",
+    "A user compresses photos to email them, reduces file sizes to free up storage space, and archives old email messages",
+    "A user updates software to the latest version, installs a new printer driver, and enables automatic system diagnostics",
+    "A user accidentally deletes important tax documents, a hard drive fails without warning, and a virus corrupts critical business files"
+   ],
+   "correct_index": 3,
+   "explanation": "Backup and recovery tools restore lost, corrupted, or accidentally deleted files—all three scenarios in option A involve data loss situations where recovery is essential. The other options describe tasks handled by file compression tools, system utilities for maintenance, or software updates, not backup recovery.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The complete set of coordinated phases and activities that software companies use to conceive, build, test, and release a program from initial concept through user deployment makes up the ___",
+   "options": [
+    "systems integration process",
+    "software development lifecycle",
+    "software quality assurance framework",
+    "application programming interface"
+   ],
+   "correct_index": 1,
+   "explanation": "The Software Development Life Cycle (SDLC) is the structured methodology that encompasses all stages from planning and design through development, testing, and final deployment. This is distinct from quality assurance (which is one component within it), systems integration (which is a later operational concern), or an API (which is a technical tool rather than a development process).",
+   "type": "concept_completion",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A government agency processes hundreds of thousands of financial transactions daily and experiences periodic system crashes. The agency wants to install a utility that preserves system stability by monitoring resource usage and stopping processes that consume excessive memory. This utility performs the function of ___",
+   "options": [
+    "task management to allocate hardware resources efficiently",
+    "data encryption to secure sensitive transactions",
+    "file defragmentation to organize disk storage",
+    "malware detection to scan for security threats"
+   ],
+   "correct_index": 0,
+   "explanation": "Task management utilities monitor running processes and system resource allocation (CPU, memory), allowing administrators to stop resource-heavy applications before they destabilize the system. Data encryption protects information, defragmentation organizes storage, and malware detection scans for threats—none directly address resource monitoring and process control.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Fundamentals",
+   "difficulty": "hard"
+  }
+ ],
+ "Operating Systems": [
+  {
+   "question": "A software program that manages hardware resources and provides services to other programs is called a(n) ___",
+   "options": [
+    "operating system",
+    "file system",
+    "device driver",
+    "application suite"
+   ],
+   "correct_index": 0,
+   "explanation": "An operating system is the core software that controls hardware, allocates resources, and enables other programs to run. The other options are components or tools within an OS, not the OS itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of loading the operating system from storage into RAM when a computer is powered on is known as ___",
+   "options": [
+    "virtual memory allocation",
+    "caching",
+    "booting",
+    "partitioning"
+   ],
+   "correct_index": 2,
+   "explanation": "Booting is the startup sequence that initializes the OS and makes the system ready for use. Partitioning divides storage, caching speeds up access, and virtual memory extends RAM—all distinct OS functions that occur after the boot process.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The collection of all processes and functions that an operating system performs to manage hardware, run applications, and provide a user interface make up the ___",
+   "options": [
+    "device firmware",
+    "core OS functions",
+    "system registry",
+    "network protocol stack"
+   ],
+   "correct_index": 1,
+   "explanation": "Core OS functions encompass resource management, application execution, and user interaction—the complete set of responsibilities an OS carries out. Device firmware, network protocols, and the registry are specific components or tools, not the full range of OS functions.",
+   "type": "concept_completion",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be characteristic features of a desktop operating system?",
+   "options": [
+    "Lightweight architecture, limited file system access, and built-in app store restrictions",
+    "Voice-activated controls only, cloud-dependent storage, and no local file management",
+    "Designed primarily for smartphones, optimized for battery life and touchscreen input",
+    "Support for multitasking applications, graphical user interface, and connection to external peripherals"
+   ],
+   "correct_index": 3,
+   "explanation": "Desktop operating systems (Windows, macOS, Linux) support running multiple applications simultaneously, use a graphical interface for user interaction, and allow connection to keyboards, mice, monitors, and printers. Mobile OS characteristics include touchscreen optimization and battery focus; desktop OS is designed for stationary, peripheral-rich environments.",
+   "type": "which_of_following",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A user's computer repeatedly crashes with a blue screen of death (BSOD) error. The first troubleshooting step should be to ___",
+   "options": [
+    "replace the hard drive without backing up any data",
+    "disable all network connections to isolate the system",
+    "check for pending OS updates and install them if available",
+    "immediately reinstall the entire operating system"
+   ],
+   "correct_index": 2,
+   "explanation": "Installing pending OS updates addresses driver conflicts, security patches, and stability fixes that commonly cause blue screen errors. Reinstalling or replacing hardware should be later steps; disabling the network is unlikely to resolve a system-level crash. This follows standard OS troubleshooting order.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The division of a physical hard drive into separate logical sections that can hold different data or operating systems is called ___",
+   "options": [
+    "fragmentation",
+    "virtual memory",
+    "caching",
+    "partitioning"
+   ],
+   "correct_index": 3,
+   "explanation": "Partitioning is the process of dividing a hard drive into distinct logical sections, each of which can be formatted and used independently. Caching is temporary storage for faster access, virtual memory uses disk space as RAM, and fragmentation is the scattered placement of data—none of these define the division of a drive into separate sections.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The technique that uses disk space to extend a computer's RAM, allowing the system to run more applications than physical memory would normally permit, is called ___",
+   "options": [
+    "partitioning",
+    "virtual memory",
+    "defragmentation",
+    "caching"
+   ],
+   "correct_index": 1,
+   "explanation": "Virtual memory allows a computer to use part of the hard drive as additional RAM when physical memory is full, enabling larger or more programs to run. Partitioning divides the drive, caching speeds up data access, and defragmentation reorganizes file fragments—none create a memory extension mechanism.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A file organization system that catalogs how data is stored, retrieved, and managed on a storage device, including folder hierarchies and file attributes, is called a(n) ___",
+   "options": [
+    "file system",
+    "cache layer",
+    "partition scheme",
+    "virtual protocol"
+   ],
+   "correct_index": 0,
+   "explanation": "A file system (such as NTFS, ext4, or APFS) is the organizational structure that determines how files and folders are stored and accessed on a device. Partition schemes divide the drive itself, cache layers speed up access, and virtual protocols do not manage file storage structures.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A desktop operating system would be characterized by all of the following EXCEPT",
+   "options": [
+    "ability to connect to external devices such as printers and monitors",
+    "a graphical user interface for user interaction",
+    "designed for smartphones and tablets with touch-based interaction",
+    "support for multiple simultaneous applications and background processes"
+   ],
+   "correct_index": 2,
+   "explanation": "Desktop operating systems like Windows and macOS are built for traditional computers, not smartphones—touch-based design is a mobile OS characteristic. Desktop OSs do support multitasking, graphical interfaces, and external device connectivity, making those all true characteristics that belong in the set.",
+   "type": "all_except",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An IT support technician troubleshooting a customer's computer finds that applications frequently freeze and the system runs slowly, with high disk activity even when idle. Which of the following would be the LEAST effective next step?",
+   "options": [
+    "Run a malware scan to check for background processes consuming system resources",
+    "Review available disk space and delete temporary files or unneeded applications",
+    "Check the Task Manager to identify processes consuming excessive CPU or memory resources",
+    "Immediately perform a full operating system reinstall to clear all potential slowdowns"
+   ],
+   "correct_index": 3,
+   "explanation": "A full OS reinstall is an extreme last-resort measure that should only follow other systematic diagnostics—it skips the necessary investigation steps that could quickly identify and fix the actual problem. Checking Task Manager, freeing disk space, and scanning for malware are all methodical troubleshooting approaches that should precede a reinstall and are far more likely to resolve the issue.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The temporary storage area that an operating system uses to speed up access to frequently used data from slower storage devices is called ___",
+   "options": [
+    "cache",
+    "virtual memory",
+    "buffer memory",
+    "random access memory"
+   ],
+   "correct_index": 0,
+   "explanation": "Caching is the technique of storing frequently accessed data in a fast, temporary location to reduce retrieval time from slower storage. While virtual memory and RAM are related memory concepts, cache specifically refers to this speed-optimization layer between the processor and main memory.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A software utility that allows a user to navigate through directories, view file contents, and move or copy files from the command line is performing what type of function?",
+   "options": [
+    "Process monitoring and application termination",
+    "File management and directory navigation",
+    "Hardware driver installation and verification",
+    "Automatic system update scheduling and deployment"
+   ],
+   "correct_index": 1,
+   "explanation": "File management utilities like `dir`, `ls`, `cd`, `copy`, and `move` are command-line tools designed specifically to help users interact with the file system—viewing directory contents, changing directories, and manipulating files. This is distinct from process monitoring (tasklist/taskkill), driver installation, or update configuration, each of which serves a different OS function.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A user needs to view a list of currently running processes on their Windows computer to identify which application is consuming excessive system resources. Which of the following command-line utilities would be MOST appropriate for this task?",
+   "options": [
+    "chkdsk and defrag",
+    "ipconfig and ping",
+    "dir and copy",
+    "tasklist and taskkill"
+   ],
+   "correct_index": 3,
+   "explanation": "The tasklist utility displays all running processes and their memory usage, while taskkill can terminate them—both essential for process monitoring and troubleshooting. ipconfig manages network configuration, dir and copy handle file operations, and chkdsk/defrag address disk maintenance, none of which monitor active processes.",
+   "type": "which_of_following",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In Unix-like systems, the ability to restrict or grant access to files and directories based on user identity and group membership, controlling who can read, write, or execute specific resources, is called ___",
+   "options": [
+    "file permissions",
+    "user authentication",
+    "access control lists",
+    "account segmentation"
+   ],
+   "correct_index": 0,
+   "explanation": "File permissions in Unix-like systems use a granular model (read, write, execute) applied to owner, group, and others to control access to files and directories. While authentication verifies user identity and ACLs are a related concept, file permissions is the specific term for this Unix-based access control mechanism.",
+   "type": "concept_completion",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be important steps to take when configuring automatic updates on a desktop operating system?",
+   "options": [
+    "Disable automatic updates entirely and rely only on manual checks performed quarterly by the IT department",
+    "Set updates to install only when the user manually initiates them and disable all automatic notification alerts",
+    "Configure the OS to check for updates regularly and allow the system to download and install security patches automatically",
+    "Enable scheduled updates to run during off-peak hours and configure the system to restart after installation without user intervention"
+   ],
+   "correct_index": 2,
+   "explanation": "Configuring automatic updates involves both regular checking and automatic installation of patches to keep the OS secure and stable. Options A and D represent extremes (forcing restarts without user control, or disabling updates entirely), while option B represents a manual approach that defeats automation. Option C correctly describes the standard practice of enabling regular automatic checks and installations.",
+   "type": "which_of_following",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to assign different levels of access to files and folders based on user roles, ensuring that only authorized users can view, modify, or execute specific resources, is called ___",
+   "options": [
+    "system authentication",
+    "access control permissions",
+    "user account management",
+    "file encryption protocols"
+   ],
+   "correct_index": 1,
+   "explanation": "Access control permissions (also called file permissions or access permissions) allow administrators to restrict what users can do with files and directories based on identity and group membership. This is distinct from user account management, which refers to creating and managing user accounts themselves, and from encryption or authentication, which serve different security functions.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of an operating system to allocate processor time and resources among multiple programs so that they can run at the same time, giving the user the impression of simultaneous execution, is called ___",
+   "options": [
+    "parallel processing",
+    "time-sharing",
+    "load balancing",
+    "concurrent execution"
+   ],
+   "correct_index": 1,
+   "explanation": "Time-sharing is the specific OS technique that divides processor time among multiple running applications, allowing each to execute briefly in turn. This is distinct from true parallel processing (which requires multiple processors) and load balancing (which distributes workload across multiple systems or cores, rather than managing single-threaded time allocation). A student who studied basic OS processes should recognize this foundational concept.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are typical functions an operating system performs to manage hardware and support applications EXCEPT",
+   "options": [
+    "providing a user interface and file system",
+    "managing memory allocation and process scheduling",
+    "designing and manufacturing physical processors",
+    "controlling hardware device drivers and peripheral access"
+   ],
+   "correct_index": 2,
+   "explanation": "Designing and manufacturing physical processors is the responsibility of hardware manufacturers, not the operating system. The OS manages how existing hardware is used, but does not design or build the hardware itself. The other three options are core OS functions: memory/process management, UI/file systems, and device/peripheral control.",
+   "type": "all_except",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of an operating system to manage and allocate resources such as processing power, memory, and storage devices to ensure all hardware components function correctly and efficiently is called ___",
+   "options": [
+    "resource allocation",
+    "hardware coordination",
+    "device management",
+    "system optimization"
+   ],
+   "correct_index": 0,
+   "explanation": "Resource allocation is the core OS function of managing and distributing hardware resources (CPU time, RAM, storage) among applications and processes. This is a foundational concept distinct from the already-covered core OS functions, booting, and file systems.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following combinations would ALL be important considerations when setting up a new user account on a desktop operating system?",
+   "options": [
+    "Install additional hardware drivers, format the entire hard drive, and remove built-in applications",
+    "Configure a guest account only, disable file permissions, and prevent any software installation",
+    "Create a username, delete all existing system files, and disable all network connections",
+    "Assign a strong password, set appropriate file permissions, and enable automatic OS updates"
+   ],
+   "correct_index": 3,
+   "explanation": "Setting up a new user account requires assigning a strong password for security, configuring permissions to control resource access, and ensuring updates are enabled for system stability. The other options include harmful practices: deleting system files and formatting the hard drive would damage the system, and disabling permissions or preventing software installation would severely limit usability.",
+   "type": "which_of_following",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A mobile operating system is optimized primarily for ___",
+   "options": [
+    "workstations requiring advanced graphics rendering and computation",
+    "smartphones and tablets with touch-based interaction and battery efficiency",
+    "mainframe computers that manage enterprise-wide databases",
+    "servers and data centers with high processing demands"
+   ],
+   "correct_index": 1,
+   "explanation": "Mobile operating systems like Android and iOS are specifically designed for smartphones and tablets, emphasizing touch interfaces, power efficiency, and portability. Desktop and server operating systems have different architectural goals and hardware assumptions.",
+   "type": "concept_completion",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to run multiple applications simultaneously while the operating system allocates processor time to each one is called ___",
+   "options": [
+    "kernel management",
+    "virtual memory",
+    "file partitioning",
+    "multitasking"
+   ],
+   "correct_index": 3,
+   "explanation": "Multitasking is the operating system's ability to execute multiple processes concurrently by dividing CPU time among them. Virtual memory and partitioning are storage-related concepts, while kernel management is the broader system supervision.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be necessary steps when setting up device drivers on a newly installed operating system?",
+   "options": [
+    "Install manufacturer-provided drivers, verify hardware is recognized in device settings, and restart the system to apply changes",
+    "Uninstall the current OS and reinstall it with a different version that includes all drivers by default",
+    "Erase the hard drive partition, reformat the entire system, and manually rewrite the device driver code",
+    "Delete all existing driver files, replace them with generic versions, and disable automatic driver updates permanently"
+   ],
+   "correct_index": 0,
+   "explanation": "Setting up drivers correctly requires obtaining manufacturer drivers for each hardware component, ensuring the OS recognizes the devices in its settings interface, and restarting to load the new drivers into memory. The other options involve destructive or impossible actions that either damage the system or bypass the actual driver installation process entirely.",
+   "type": "which_of_following",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A user is setting up a new desktop computer and needs to ensure the operating system recognizes and can communicate with all attached hardware devices such as printers, graphics cards, and network adapters. Which of the following would ALL be necessary steps when installing device drivers for these components?",
+   "options": [
+    "Manually edit the Windows registry to register each device before attempting any driver installation",
+    "Disable all security software before driver installation to prevent interference with the setup process",
+    "Download drivers from manufacturer websites, restart the computer after installation, and verify devices appear in system settings",
+    "Remove all existing drivers first and then install only the latest version from the manufacturer"
+   ],
+   "correct_index": 2,
+   "explanation": "Device drivers require downloading from the manufacturer, system restart to load them, and verification that the OS recognizes the hardware—these are the standard steps in proper driver installation. The other options represent either unnecessary actions (disabling security software) or technically incorrect procedures (manual registry editing, removing all drivers first) that would not be part of a typical initial setup.",
+   "type": "all_except",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of a computer to pause and resume application execution, rapidly switching between multiple programs running simultaneously to create the appearance of parallel processing, is called ___",
+   "options": [
+    "partitioning",
+    "caching",
+    "virtual memory allocation",
+    "context switching"
+   ],
+   "correct_index": 3,
+   "explanation": "Context switching is the OS mechanism that allows rapid switching between running processes, giving users the illusion of simultaneous execution on single-core systems. This is distinct from multitasking (already asked) because it describes the specific technical process underlying that capability, not the user-facing feature itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Operating Systems",
+   "difficulty": "hard"
+  }
+ ],
+ "Software Applications": [
+  {
+   "question": "A business manager needs to create a document with formatted text, headers, and images for a client proposal. Which application type is most appropriate for this task?",
+   "options": [
+    "Presentation application",
+    "Email application",
+    "Word processing application",
+    "Spreadsheet application"
+   ],
+   "correct_index": 2,
+   "explanation": "Word processing applications are specifically designed for creating, formatting, and organizing text-based documents with images and professional layout elements. While a presentation could work, word processing is the standard choice for formal written proposals that require detailed formatting and text flow.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability to organize, calculate, and analyze numerical data in rows and columns is the primary function of a ___",
+   "options": [
+    "spreadsheet application",
+    "email client",
+    "word processor",
+    "presentation application"
+   ],
+   "correct_index": 0,
+   "explanation": "Spreadsheet applications like Excel are built around a grid of rows and columns and provide tools for data organization, mathematical calculations, and data analysis through formulas and charts. This distinguishes them from word processors, which focus on text, and email clients, which handle messaging.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An employee needs to send a message to multiple team members, include a deadline, attach a budget file, and receive confirmation of delivery. Which application would be most appropriate?",
+   "options": [
+    "Word processor to type the message and save it locally",
+    "Email application to send the message, attachments, and track responses",
+    "Spreadsheet to organize the recipient list and deadline dates",
+    "Presentation software to create slides with the information"
+   ],
+   "correct_index": 1,
+   "explanation": "Email applications are designed specifically for sending messages, managing attachments, tracking delivery, and documenting communication with multiple recipients. While other tools could store the information, email is the standard business tool for this exact workflow.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Team collaboration software such as Microsoft Teams and Zoom enables workplace productivity through all of the following EXCEPT",
+   "options": [
+    "Instant messaging and organized channel-based communication",
+    "Real-time video and audio conferencing for remote meetings",
+    "Automatic calculation of financial statements and budget forecasts",
+    "File sharing and document collaboration among team members"
+   ],
+   "correct_index": 2,
+   "explanation": "Collaboration tools excel at communication, file sharing, and real-time meetings, but they do not automatically calculate financial statements or budgets—that is the function of spreadsheet and accounting software. The other three options are core features of modern team collaboration platforms.",
+   "type": "all_except",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following tasks would all be handled most effectively using a spreadsheet application?",
+   "options": [
+    "Draft a formal business letter, apply consistent styling, and share for proofreading",
+    "Schedule a video conference call, send meeting invitations, and record the session",
+    "Create a branded newsletter layout, format text in multiple colors, and embed images",
+    "Track monthly sales revenue, calculate totals by region, and create a trend chart"
+   ],
+   "correct_index": 3,
+   "explanation": "Spreadsheets are purpose-built for numerical tracking, mathematical calculations, and data visualization—making them ideal for revenue tracking, regional totals, and trend analysis. The other options require word processing (letter), presentation software (newsletter), or collaboration/communication tools (video conferencing).",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In email applications, the feature that allows a user to automatically respond to incoming messages while away from the office is called a(n) ___",
+   "options": [
+    "mailbox rule",
+    "out-of-office reply",
+    "forwarding filter",
+    "message archive"
+   ],
+   "correct_index": 1,
+   "explanation": "An out-of-office reply is a specific email feature that automatically sends a predefined message to senders when the user is unavailable. This is distinct from mailbox rules (which manage message routing) and forwarding (which sends messages elsewhere), making it the correct term for automatic absence responses.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The set of all tools and programs used to accomplish specific work tasks, manage data, and facilitate communication in an office environment is referred to as ___",
+   "options": [
+    "business software applications",
+    "network infrastructure",
+    "hardware peripherals",
+    "operating system software"
+   ],
+   "correct_index": 0,
+   "explanation": "Business software applications encompass the suite of tools (word processing, spreadsheet, email, presentation, and collaboration platforms) that workers use to complete their daily tasks and communicate. Operating systems, networks, and hardware are foundational layers, not the applications themselves that users directly interact with to accomplish work.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following capabilities are all standard features of modern email applications used in business?",
+   "options": [
+    "Record and edit audio files, compress video content, and upload media to cloud storage",
+    "Create presentation slides, manage calendar events, and compose formatted documents",
+    "Send and receive messages, attach files, and organize mail into folders for storage",
+    "Automatically generate spreadsheet formulas, track budget variances, and produce financial charts"
+   ],
+   "correct_index": 2,
+   "explanation": "Email applications are specifically designed to handle message transmission, file attachments, and folder organization for email management. The other options describe capabilities of presentation, spreadsheet, and media-editing software respectively, which fall outside standard email functionality.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a word processing application, the feature that allows a user to store frequently-used text, formatting, or graphic elements for quick insertion into new documents is called a(n) ___",
+   "options": [
+    "clipboard",
+    "style guide",
+    "macro",
+    "template"
+   ],
+   "correct_index": 3,
+   "explanation": "A template in word processing is a pre-formatted document structure that stores reusable content, layouts, and formatting, allowing users to save time by starting with a ready-made foundation rather than formatting from scratch each time. This is distinct from a macro (automation tool), a style guide (formatting rules document), or the clipboard (temporary storage for cut/copied items). Templates are a standard feature in all modern word processors for business correspondence and formal documents.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a spreadsheet application, the feature that allows a formula or function to automatically recalculate whenever any of the referenced cell values change is called ___",
+   "options": [
+    "dynamic linking",
+    "live recalculation",
+    "automatic updating",
+    "formula dependency"
+   ],
+   "correct_index": 1,
+   "explanation": "Live recalculation is the standard term for the automatic recalculation of formulas when source data changes in a spreadsheet. This feature is fundamental to spreadsheet functionality, enabling users to update financial models, budgets, and analyses by changing only the input values rather than manually recalculating every dependent cell.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a spreadsheet application, a named location that holds a single value or a range of values and can be referenced in formulas is called a(n) ___",
+   "options": [
+    "named range",
+    "data table",
+    "pivot field",
+    "cell reference"
+   ],
+   "correct_index": 0,
+   "explanation": "A named range is a defined label for a cell or group of cells that makes formulas easier to read and maintain. Unlike a simple cell reference (A1), a named range uses a meaningful name (like 'SalesTotal' or 'QuarterlyBudget') so that formulas become self-documenting. This is a core spreadsheet feature taught in introductory courses and distinct from data tables or pivot fields, which serve different analytical purposes.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of allowing multiple users to view, edit, and save changes to the same document simultaneously across a network connection is called ___",
+   "options": [
+    "real-time synchronization",
+    "cloud backup",
+    "file compression",
+    "version control"
+   ],
+   "correct_index": 0,
+   "explanation": "Real-time synchronization is the technical term for simultaneous, live collaboration on shared documents where all participants see updates instantly. This capability is a core feature of both modern email systems with shared attachments and team collaboration platforms, distinguishing it from older asynchronous workflows where files were emailed back and forth.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following workplace tasks would all be most effectively handled using a word processing application?",
+   "options": [
+    "Schedule a video conference with regional offices, share meeting notes in real time, and record the session for absent team members",
+    "Create a budget summary with subtotals by department, calculate year-over-year growth percentages, and generate a pie chart",
+    "Draft a client contract with numbered sections, add headers and page numbers, and format the document with the company logo and letterhead",
+    "Compile sales figures from five regions, sort by performance rank, and project revenue for the next fiscal year"
+   ],
+   "correct_index": 2,
+   "explanation": "Word processing is the appropriate tool for creating formatted text documents with structured elements like sections, headers, footers, logos, and page formatting—all standard features of a professional contract or formal letter. The other options require spreadsheet calculations (A and D), video conferencing and real-time collaboration features (B), or team collaboration software (B), not word processing.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A spreadsheet application is primarily used to organize and manage data in what structure?",
+   "options": [
+    "Folders and subfolders for file storage",
+    "Rows and columns for numerical organization",
+    "Slides and transitions for presentations",
+    "Layers and frames for visual design"
+   ],
+   "correct_index": 1,
+   "explanation": "A spreadsheet application organizes data into a grid of rows and columns where numerical values, text, and formulas can be stored and calculated. This structure allows users to perform calculations, create charts, and analyze data efficiently. The other options describe features specific to design software, file management systems, or presentation tools.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following capabilities are all functions of modern email applications in a business environment?",
+   "options": [
+    "Create pivot tables to summarize sales data, apply conditional formatting to highlight trends, and generate forecasts",
+    "Record video calls, share screens during live meetings, and transcribe conversations in real time",
+    "Design presentation slides with animations, insert multimedia objects, and configure slide transitions for audience impact",
+    "Compose and send messages, create distribution lists to contact multiple recipients, and mark messages as junk or spam"
+   ],
+   "correct_index": 3,
+   "explanation": "Email applications are specifically designed for composing and sending messages, managing recipient groups through distribution lists, and filtering unwanted mail through spam and junk folder functions—core messaging and organization features. The other options describe spreadsheet features (A), video conferencing and collaboration platform features (B), and presentation software features (D), not email.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In email applications, the feature that allows a user to organize messages by sender, subject, or date received is called a(n) ___",
+   "options": [
+    "signature block",
+    "distribution list",
+    "filter or folder system",
+    "delivery receipt"
+   ],
+   "correct_index": 2,
+   "explanation": "Email filters and folder systems enable users to organize and categorize incoming messages for easier retrieval and management. This is a core organizational feature distinct from distribution lists (for sending to groups), delivery receipts (for tracking), and signature blocks (for message formatting).",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The collection of programs that enable users to create, format, and share documents containing text, images, and structured data across a business is known as ___",
+   "options": [
+    "database management systems",
+    "software applications",
+    "network protocols",
+    "presentation software"
+   ],
+   "correct_index": 1,
+   "explanation": "Software applications is the broad category of programs used to accomplish specific workplace tasks, including word processing, spreadsheets, email, and collaboration tools. The other options are either more specific application types (presentation software, database systems) or entirely different technologies (network protocols) that do not encompass the full range of workplace document and data tools described in the question.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following are all standard features found in modern email applications for business use?",
+   "options": [
+    "Block all external email domains, auto-delete spam after one day, and require biometric authentication",
+    "Automatically generate financial reports, schedule video calls, and encrypt all outgoing documents",
+    "Translate all messages into multiple languages, archive messages permanently, and disable user access after 30 days",
+    "Compose messages, set message priority levels, and create contact groups for distribution"
+   ],
+   "correct_index": 3,
+   "explanation": "Email applications provide message composition, priority flagging (to mark urgent items), and distribution lists (contact groups) as standard features for efficient business communication. The other options contain functions that are either absent from typical email apps, overly restrictive, or belong to different application categories.",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Team collaboration software supports workplace productivity through all of the following EXCEPT",
+   "options": [
+    "automated calculation of payroll and employee tax withholdings",
+    "video conferencing and screen sharing for remote meetings",
+    "document sharing and real-time editing of files",
+    "instant messaging and chat channels for team conversations"
+   ],
+   "correct_index": 0,
+   "explanation": "Team collaboration platforms like Microsoft Teams and Zoom enable messaging, video conferencing, and collaborative file editing, but payroll and tax calculation are functions of human resources or accounting software, not collaboration tools. This distinction reflects the different technical purpose of each application type.",
+   "type": "all_except",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In email applications, the feature that automatically includes the sender's name, title, phone number, and company information at the bottom of every outgoing message is called a(n) ___",
+   "options": [
+    "email signature",
+    "contact profile",
+    "letterhead format",
+    "header template"
+   ],
+   "correct_index": 0,
+   "explanation": "An email signature is a standard feature that appends professional contact information to every message automatically, enhancing business communication consistency. This differs from a header template (message subject line), letterhead (document formatting in word processors), and contact profiles (address book entries).",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A spreadsheet application enables users to perform calculations automatically on numerical data. Which of the following best describes why automatic calculation is valuable in a business context?",
+   "options": [
+    "It organizes text into formatted documents with headers, footers, and numbered sections for formal reports.",
+    "It enables multiple users to compose and send messages simultaneously to different recipients across the organization.",
+    "It updates dependent values instantly when source data changes, saving time and reducing manual errors in financial analysis.",
+    "It allows users to create visual slideshows with animated transitions and embedded video files."
+   ],
+   "correct_index": 2,
+   "explanation": "Automatic calculation in spreadsheets means that when you change a value in one cell, any formulas or totals that reference it recalculate instantly—this is critical for financial forecasting, budget management, and data analysis where accuracy and speed matter. The other options describe features of presentation, email, and word processing applications respectively, not spreadsheet calculation.",
+   "type": "concept_completion",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a business environment, the ability to maintain a persistent record of all conversations, decisions, and shared documents in one central location is a defining feature of ___",
+   "options": [
+    "email applications",
+    "word processing software",
+    "presentation applications",
+    "team collaboration platforms"
+   ],
+   "correct_index": 3,
+   "explanation": "Team collaboration software like Microsoft Teams and Zoom stores all messages, files, and meeting records in one searchable, accessible location so team members can reference past discussions and work—this persistent repository is what distinguishes collaboration platforms from email, which typically operates on individual message-by-message exchanges. This centralization is essential for distributed teams working across time zones and locations.",
+   "type": "definition_recall",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following business tasks would all be most effectively handled using an email application rather than a team collaboration platform?",
+   "options": [
+    "Managing a multi-phase project timeline, assigning tasks to specific team members, and tracking completion status with automated notifications.",
+    "Sending a formal offer letter to a job candidate, attaching a benefits summary document, and requesting a read receipt confirmation.",
+    "Scheduling daily team standups, posting project updates, and storing version-controlled design files in a shared repository.",
+    "Coordinating real-time feedback on a presentation draft, hosting a live video meeting with screen sharing, and archiving the decision in a persistent chat thread."
+   ],
+   "correct_index": 1,
+   "explanation": "Email is the appropriate tool for one-to-one or limited-group formal communications that require documentation and confirmation, such as sending official documents and tracking delivery. The other options all require features that are core to team collaboration platforms: real-time synchronous work (option A and C), persistent shared storage (option A), or complex project management with status tracking (option D).",
+   "type": "which_of_following",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Modern email applications support workplace communication through all of the following EXCEPT",
+   "options": [
+    "Applying color-coding and importance flags to categorize incoming messages by urgency or topic for visual sorting.",
+    "Creating contact groups to send a single message to multiple recipients at once without listing each address individually.",
+    "Hosting live video conferences with screen sharing, breakout rooms, and real-time whiteboarding for collaborative meetings.",
+    "Setting up rules or filters to automatically route messages to specific folders based on sender, subject line, or content keywords."
+   ],
+   "correct_index": 2,
+   "explanation": "Live video conferencing with advanced collaboration features like breakout rooms and real-time whiteboarding is a core function of team collaboration platforms (Microsoft Teams, Zoom), not email applications. Email excels at one-way message delivery, contact management, message organization, and prioritization—but does not provide synchronous video meeting capabilities.",
+   "type": "all_except",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A sales manager wants to create a document that combines text, images, charts, and animations to present quarterly results to executives and investors. The manager needs the ability to add speaker notes for reference during the presentation and control the order and timing of information revealed. Which application type is most appropriate for this task?",
+   "options": [
+    "A word processing application, because it supports formatted text, images, and professional document layout",
+    "A presentation application, because it allows visual slideshows with multimedia and speaker notes to control delivery",
+    "An email application, because it can send the document to multiple recipients with attachments",
+    "A spreadsheet application, because it can organize numerical data and create charts automatically"
+   ],
+   "correct_index": 1,
+   "explanation": "A presentation application is specifically designed to create visual slideshows with text, images, animations, and speaker notes—exactly what the manager needs to deliver an impactful executive presentation. While a spreadsheet could handle the charts and a word processor could include images, neither provides the slide-based structure, animation timing, or speaker notes features that presentation software offers. Email and word processing are tools for different tasks (distribution and document creation, respectively), not presentation delivery.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Software Applications",
+   "difficulty": "hard"
+  }
+ ],
+ "Modern Technologies": [
+  {
+   "question": "The delivery of computing resources such as servers, storage, and applications over the internet on a pay-as-you-go basis is called ___",
+   "options": [
+    "the cloud",
+    "artificial intelligence",
+    "virtualization",
+    "Internet of Things"
+   ],
+   "correct_index": 0,
+   "explanation": "Cloud computing is the on-demand delivery of computing power and storage over the internet. This foundational definition distinguishes cloud from other modern technologies like virtualization (which runs multiple operating systems on one physical machine) and IoT (which connects physical devices to networks).",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The technology that allows a single physical computer to run multiple virtual machines with separate operating systems simultaneously is called ___",
+   "options": [
+    "distributed processing",
+    "containerization",
+    "cloud computing",
+    "virtualization"
+   ],
+   "correct_index": 3,
+   "explanation": "Virtualization enables one physical server to host multiple virtual servers, each with its own operating system, improving hardware efficiency and cost savings. Cloud computing delivers services over the internet, containerization packages applications in lightweight environments, and distributed processing spreads computation across multiple machines — all different from the hardware-level abstraction that virtualization provides.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to use sensor data—such as camera feeds, audio, and thermal readings—to understand its environment, recognize objects and faces, and respond to real-world conditions without being explicitly programmed for each scenario represents ___",
+   "options": [
+    "Virtualization and multi-tenancy",
+    "Sensory perception and environmental awareness",
+    "Elasticity and resource scaling",
+    "Cloud-based infrastructure deployment"
+   ],
+   "correct_index": 1,
+   "explanation": "Sensory perception and environmental awareness refers to AI's capacity to process and interpret data from physical sensors and environmental inputs to understand and react to real-world conditions. This is distinct from the pattern recognition and decision-making already covered in the pool, and focuses specifically on how AI systems interact with sensor data and environmental stimuli. Elasticity is a cloud concept, virtualization is a separate infrastructure technology, and cloud deployment is a service model—none address AI's ability to perceive and understand its environment through sensors.",
+   "type": "concept_completion",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to understand human language, recognize objects in images, and make decisions based on sensory input without being explicitly programmed for each specific task represents ___",
+   "options": [
+    "cognitive processing and perception",
+    "data normalization",
+    "algorithmic optimization",
+    "supervised learning"
+   ],
+   "correct_index": 0,
+   "explanation": "Cognitive processing and perception describes AI's capacity to interpret and act on complex sensory and linguistic information—a core capability that distinguishes modern AI from traditional rule-based systems. This differs from machine learning (already tested), which focuses specifically on learning from data, and from the general term 'artificial intelligence' itself (already tested as a standalone definition).",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following combinations would all be legitimate use cases for cloud computing in an organization?",
+   "options": [
+    "Running proprietary software that requires physical installation disks, maintaining on-site servers for all applications, and restricting employee access to company networks",
+    "Hosting databases on floppy disks, running applications offline without internet connectivity, and using only command-line interfaces for all business operations",
+    "Storing all data exclusively on local hard drives, printing documents to networked printers, and backing up files to external USB drives",
+    "Email and collaboration tools hosted remotely, data storage accessible from multiple locations, and customer relationship management software accessed through a web browser"
+   ],
+   "correct_index": 3,
+   "explanation": "Cloud computing supports remote access to software and data across locations and devices, making email, collaboration tools, cloud storage, and web-based CRM systems ideal applications. The other options describe either outdated or on-premises approaches that bypass cloud benefits entirely — local-only storage, physical installation requirements, and offline-only operation are antithetical to cloud computing's core value proposition.",
+   "type": "which_of_following",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The interconnected network of physical devices embedded with sensors, software, and connectivity that collect and exchange data over the internet is called ___",
+   "options": [
+    "machine learning",
+    "network virtualization",
+    "the Internet of Things",
+    "edge computing"
+   ],
+   "correct_index": 2,
+   "explanation": "The Internet of Things (IoT) is defined as physical devices with embedded sensors and software that connect to gather and share data. Edge computing is a separate technology focused on processing data closer to its source, while machine learning and network virtualization are different concepts entirely.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manufacturing plant uses IoT sensors to monitor equipment performance in real time, predict when machines will fail, and schedule preventive maintenance before breakdowns occur. This application of IoT primarily addresses which business challenge?",
+   "options": [
+    "increasing the physical storage capacity of warehouses",
+    "automating the hiring and payroll processes",
+    "minimizing unplanned downtime and maintenance costs",
+    "reducing customer complaint response times"
+   ],
+   "correct_index": 2,
+   "explanation": "IoT sensors in manufacturing enable predictive maintenance by identifying equipment degradation before failure occurs, directly reducing costly unplanned downtime and emergency repairs. The scenario specifically describes preventive scheduling, which targets operational efficiency and cost reduction—not customer service, storage, or HR functions.",
+   "type": "which_of_following",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are legitimate use cases for artificial intelligence in modern business EXCEPT",
+   "options": [
+    "processing and extracting insights from large datasets faster than human analysts could manually",
+    "using handwriting recognition to approve all personnel hiring decisions without human review",
+    "automating fraud detection by identifying unusual transaction patterns in financial systems",
+    "analyzing customer purchasing patterns to recommend products and personalize shopping experiences"
+   ],
+   "correct_index": 1,
+   "explanation": "While AI can assist in hiring decisions by screening resumes or flagging patterns, using it to make final hiring decisions entirely without human review would violate employment law and ethical standards—AI in this context should augment human judgment, not replace it. The other three are genuine, well-established AI applications in business.",
+   "type": "all_except",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The simulation of human intelligence processes such as learning, reasoning, and self-correction performed by computer systems makes up ___",
+   "options": [
+    "artificial intelligence",
+    "cloud infrastructure",
+    "bandwidth optimization",
+    "data encryption"
+   ],
+   "correct_index": 0,
+   "explanation": "Artificial intelligence is specifically defined as computer systems mimicking human cognitive functions including learning and reasoning. Cloud infrastructure refers to remote computing resources, data encryption protects information, and bandwidth optimization manages network speed—none of these involve simulating human intelligence processes.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of AI systems to learn from experience, improve performance over time, and adapt to new situations without being explicitly programmed for every scenario represents ___",
+   "options": [
+    "the IoT ecosystem",
+    "server clustering",
+    "network latency reduction",
+    "machine learning and adaptive intelligence"
+   ],
+   "correct_index": 3,
+   "explanation": "Machine learning is the core capability that allows AI to improve itself through data and experience rather than requiring manual reprogramming for each new task. The IoT ecosystem refers to connected physical devices, network latency involves data transfer speed, and server clustering is a virtualization technique—none describe AI's learning and adaptation ability.",
+   "type": "concept_completion",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to understand and respond to spoken or written human language is called ___",
+   "options": [
+    "Pattern recognition",
+    "Natural language processing",
+    "Machine learning",
+    "Sensory perception"
+   ],
+   "correct_index": 1,
+   "explanation": "Natural language processing (NLP) is the specific AI capability that enables systems to understand, interpret, and generate human language in both text and speech forms. The other options describe different AI functions—sensory perception handles visual and audio data interpretation, pattern recognition identifies trends in data, and machine learning is the broader process of improving through experience.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to process large volumes of unstructured data, recognize patterns, and make decisions based on those patterns makes up ___",
+   "options": [
+    "virtualized computing",
+    "cloud infrastructure",
+    "pattern recognition and decision-making",
+    "IoT sensor networks"
+   ],
+   "correct_index": 2,
+   "explanation": "AI's core strength is recognizing patterns in data and using them to inform decisions—this is distinct from the infrastructure that hosts it (cloud), the technology that virtualizes hardware, or the devices that collect data (IoT). This describes the fundamental intelligence process itself.",
+   "type": "concept_completion",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be primary benefits that organizations gain from implementing cloud computing services?",
+   "options": [
+    "Requirement to purchase and maintain all hardware in-house, inability to access data from remote locations, and fixed costs regardless of actual usage",
+    "Elimination of all cybersecurity risks, guaranteed 100% data availability at all times, and removal of the need for any IT staff",
+    "Mandatory replacement of all existing software systems, loss of control over data location, and increased expenses for physical server maintenance",
+    "Reduced capital expenditure on physical infrastructure, access to computing resources on demand, and ability to scale resources based on current business needs"
+   ],
+   "correct_index": 3,
+   "explanation": "Cloud computing provides organizations with flexible, scalable computing resources delivered over the internet on a pay-as-you-go basis, eliminating the need for large upfront hardware investments while allowing them to adjust capacity to match demand. The other options either describe non-existent benefits (no cybersecurity risks, 100% availability guarantee), characteristics of on-premises computing, or false drawbacks. This tests understanding of cloud's core value proposition versus common misconceptions.",
+   "type": "which_of_following",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The use of artificial intelligence to assist with business decision-making includes all of the following EXCEPT",
+   "options": [
+    "replacing all human judgment entirely without any human review of AI recommendations",
+    "processing medical images to assist radiologists in detecting abnormalities",
+    "analyzing customer data to identify purchasing trends and forecast demand",
+    "sorting and categorizing large volumes of text documents based on content"
+   ],
+   "correct_index": 0,
+   "explanation": "AI is designed to assist and augment human decision-making, not replace it entirely without oversight—responsible AI use includes human review of critical recommendations. The other options are realistic, legitimate applications where AI processes data and recognizes patterns to support human decision-makers.",
+   "type": "all_except",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A retail company wants to understand which products customers are likely to purchase together, in order to improve product placement and cross-sell strategies. Which application of artificial intelligence would best support this business goal?",
+   "options": [
+    "Autonomous robotics to automatically rearrange shelves based on random algorithms",
+    "Natural language processing to interpret all customer complaints and feedback",
+    "Computer vision to detect when customers are physically near the checkout area",
+    "Analyzing historical purchase data to identify product association patterns and recommend complementary items"
+   ],
+   "correct_index": 3,
+   "explanation": "This scenario specifically tests the student's understanding of how AI's pattern recognition and data analysis capabilities—machine learning applied to historical transaction data—can reveal customer purchasing relationships. The correct answer demonstrates a genuine, practical use case for AI in retail that requires analyzing large datasets to discover patterns, which is distinct from computer vision, NLP, or robotics applications already covered in the ALREADY ASKED pool. This is a realistic application of AI's core strength: learning from data and making informed recommendations based on identified patterns.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A financial institution uses artificial intelligence to analyze customer account transactions in real time, identify suspicious patterns that deviate from each customer's typical spending behavior, and flag high-risk activities for human review before authorizing them. This application of AI primarily demonstrates the use of ___",
+   "options": [
+    "natural language processing to understand customer service requests",
+    "anomaly detection and risk assessment to prevent unauthorized transactions",
+    "autonomous decision-making to approve or deny all transactions without human involvement",
+    "data encryption to protect customer financial information from unauthorized access"
+   ],
+   "correct_index": 1,
+   "explanation": "Anomaly detection—the ability of AI to identify unusual patterns in large datasets and flag deviations from normal behavior—is a concrete, high-value business application distinct from general pattern recognition. The scenario explicitly describes flagging suspicious patterns for human review, which is the hallmark of AI-assisted fraud detection systems used by banks and financial institutions.",
+   "type": "concept_completion",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a virtualization environment, a company running multiple virtual machines on a single physical server would primarily benefit from which of the following?",
+   "options": [
+    "Guaranteed prevention of all hardware failures and system downtime",
+    "Elimination of the need for any operating systems on the host machine",
+    "More efficient use of computing resources and reduced energy consumption",
+    "Increased hardware purchase costs and larger physical data center space requirements"
+   ],
+   "correct_index": 2,
+   "explanation": "Virtualization allows multiple virtual machines to share a single physical machine's resources, reducing waste and energy costs. Options A and D are extreme or false; option C misrepresents how virtualization works.",
+   "type": "which_of_following",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of cloud systems to automatically scale computing resources up or down based on current demand, ensuring organizations pay only for what they use at any given moment, is called ___",
+   "options": [
+    "elasticity",
+    "load balancing",
+    "redundancy",
+    "latency optimization"
+   ],
+   "correct_index": 0,
+   "explanation": "Elasticity is the core cloud characteristic that allows resources to expand or contract dynamically with demand, enabling cost-efficiency. This differs from load balancing (distributing traffic across servers), redundancy (backup systems), and latency optimization (speed improvements), all of which serve different cloud functions.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A smart city initiative deploys connected sensors throughout traffic intersections, water distribution systems, and utility grids. These sensors continuously measure and report conditions to a central system that analyzes the data to optimize traffic flow, detect water leaks, and predict power demand. This application demonstrates IoT's role in ___",
+   "options": [
+    "storing all city records in a single centralized database",
+    "real-time monitoring and predictive decision-making for infrastructure management",
+    "eliminating the need for any human oversight of city operations",
+    "replacing human workers in all municipal jobs"
+   ],
+   "correct_index": 1,
+   "explanation": "This scenario illustrates IoT's capability for real-time data collection and analysis to improve operational efficiency and planning. Options A and C are extreme and misrepresent IoT's role; option D conflates IoT with database management.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are accurate characteristics of artificial intelligence systems EXCEPT",
+   "options": [
+    "They can assist human decision-makers by processing information humans find difficult to analyze",
+    "They can recognize patterns in large datasets and make decisions based on those patterns",
+    "They can learn from historical data and experience to improve performance over time",
+    "They require explicit programming for every single decision rule and cannot adapt to new situations"
+   ],
+   "correct_index": 3,
+   "explanation": "Option B contradicts the defining characteristic of AI—its ability to learn and adapt without being explicitly programmed for every scenario. The other three options accurately describe real AI capabilities from the source material.",
+   "type": "all_except",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Artificial intelligence systems that improve their performance by analyzing data and learning from past interactions, rather than following pre-written rules for every situation, are said to possess ___",
+   "options": [
+    "IoT integration",
+    "Cloud synchronization",
+    "Adaptive learning ability",
+    "Virtualization capability"
+   ],
+   "correct_index": 2,
+   "explanation": "Adaptive learning ability refers to AI's capacity to learn from experience and adjust its responses without explicit reprogramming for each scenario. This distinguishes modern AI from earlier rule-based systems that require manual updates for every new situation.",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following best describes a primary use case for artificial intelligence in modern organizations?",
+   "options": [
+    "Analyzing customer purchase history to predict future buying behavior and personalize product recommendations",
+    "Physically assembling products on a factory floor without any supervision or oversight",
+    "Automatically deleting data files that the system determines are no longer needed",
+    "Replacing all human employees in decision-making roles to eliminate the need for managers"
+   ],
+   "correct_index": 0,
+   "explanation": "Predicting customer behavior and personalizing recommendations is a well-established AI application that leverages pattern recognition and learning from historical data. The other options either misrepresent AI's capabilities (it still requires human oversight in critical decisions) or describe unrelated functions.",
+   "type": "which_of_following",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to recognize and identify objects, people, and scenes in photographs and video feeds is called ___",
+   "options": [
+    "Computer vision",
+    "Predictive analytics",
+    "Natural language processing",
+    "Machine learning"
+   ],
+   "correct_index": 0,
+   "explanation": "Computer vision is the AI capability that enables systems to interpret and analyze visual information from images and video. This is distinct from natural language processing (which handles text and speech), machine learning (the broader learning mechanism), and predictive analytics (forecasting future events from data).",
+   "type": "definition_recall",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Artificial intelligence applications in business are designed to assist with all of the following EXCEPT",
+   "options": [
+    "Scheduling routine maintenance and repairs based on equipment performance data",
+    "Recommending product inventory levels based on historical sales trends",
+    "Automatically approving all financial transactions without any human verification or oversight",
+    "Detecting fraudulent transactions by identifying unusual spending patterns"
+   ],
+   "correct_index": 2,
+   "explanation": "AI is designed to assist human decision-making, not replace it entirely without oversight—especially in critical areas like financial approvals. The other options are all legitimate business uses where AI enhances human judgment through pattern recognition and prediction.",
+   "type": "all_except",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of artificial intelligence to learn from data, recognize complex patterns, and make informed decisions without being explicitly programmed for every possible situation represents ___",
+   "options": [
+    "Predictive analytics and decision support",
+    "Sensory perception and object recognition",
+    "Natural language processing and automation",
+    "Adaptive learning and pattern-based intelligence"
+   ],
+   "correct_index": 3,
+   "explanation": "Adaptive learning and pattern-based intelligence describes AI systems that improve through experience and data analysis rather than relying on pre-written rules. This distinguishes it from narrow, task-specific programming and from pure sensory tasks, making it the core concept of how modern AI systems actually function in business applications.",
+   "type": "concept_completion",
+   "knowledge_area": "Modern Technologies",
+   "difficulty": "hard"
+  }
+ ],
+ "Networking Concepts": [
+  {
+   "question": "A network that connects computers within a single building or campus, typically spanning no more than a few miles, is called a ___",
+   "options": [
+    "virtual private network",
+    "local area network",
+    "metropolitan area network",
+    "wide area network"
+   ],
+   "correct_index": 1,
+   "explanation": "A LAN (local area network) is designed for short-distance connectivity within a limited geographic area, such as an office or school campus. WANs span much larger distances and typically connect multiple LANs together across cities or countries.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of converting data into a coded format so that only authorized parties with the correct key can read it is called ___",
+   "options": [
+    "packet sniffing",
+    "encryption",
+    "authentication",
+    "firewall configuration"
+   ],
+   "correct_index": 1,
+   "explanation": "Encryption transforms readable data into an unreadable format to protect sensitive information during transmission and storage. While authentication verifies user identity and packet sniffing intercepts network traffic, encryption is the specific term for data conversion using cryptographic algorithms.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A secure tunnel through the internet that masks a user's IP address and encrypts their traffic to protect privacy and prevent unauthorized access is called a ___",
+   "options": [
+    "network switch",
+    "modem connection",
+    "virtual private network",
+    "router interface"
+   ],
+   "correct_index": 2,
+   "explanation": "A VPN (virtual private network) creates an encrypted connection between a user's device and a remote server, allowing them to browse securely and anonymously. Routers, switches, and modems are physical devices used in network infrastructure, not privacy or security tools.",
+   "type": "concept_completion",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be effective basic network security practices?",
+   "options": [
+    "Using strong password authentication, enabling encryption on wireless networks, and implementing a firewall to monitor traffic",
+    "Removing all encryption protocols, leaving network ports open to all devices, and monitoring employee emails with packet sniffing",
+    "Disabling automatic security updates, sharing passwords across multiple users, and allowing guest access without authentication",
+    "Using weak passwords to simplify user access, broadcasting the network SSID openly, and skipping antivirus software installation"
+   ],
+   "correct_index": 0,
+   "explanation": "Strong authentication, encryption, and firewalls are the core defensive measures in network security. The other options describe practices that weaken security and expose the network to unauthorized access, data theft, and malware infection.",
+   "type": "which_of_following",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Network security can be compromised by all of the following EXCEPT",
+   "options": [
+    "phishing emails that trick users into revealing login credentials",
+    "a virus that replicates and damages files on infected devices",
+    "a backdoor that allows an attacker secret access to a system",
+    "a router that filters and directs traffic between network segments"
+   ],
+   "correct_index": 3,
+   "explanation": "A router is a protective device that manages network traffic and can enforce security policies; it strengthens rather than compromises security. Backdoors, phishing, and viruses are all genuine threats that attackers exploit to breach network security.",
+   "type": "all_except",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A type of malicious software that disguises itself as legitimate code or a trustworthy program to gain unauthorized access to a computer system is called a(n) ___",
+   "options": [
+    "backdoor",
+    "Trojan horse",
+    "phishing attack",
+    "worm"
+   ],
+   "correct_index": 1,
+   "explanation": "A Trojan horse is malware that masquerades as a legitimate program to trick users into running it, allowing attackers to gain unauthorized system access. While worms and backdoors are also security threats, a Trojan specifically relies on deception about the program's true nature. Phishing is a social engineering attack, not malware itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of breaking into a system or network by exploiting vulnerabilities to establish persistent unauthorized access for future exploitation is called establishing a(n) ___",
+   "options": [
+    "packet sniffer",
+    "authentication gateway",
+    "backdoor",
+    "firewall"
+   ],
+   "correct_index": 2,
+   "explanation": "A backdoor is a hidden entry point deliberately left open (or created through exploitation) that allows an attacker to regain access to a compromised system later without needing to re-exploit it. Firewalls are defensive tools, packet sniffers are monitoring tools, and authentication gateways are security controls—none describe the attacker's persistent access mechanism.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the following are common network security threats EXCEPT",
+   "options": [
+    "Ethernet cables that connect devices within a building",
+    "phishing emails designed to trick users into revealing credentials",
+    "backdoors installed by attackers to maintain unauthorized system access",
+    "viruses embedded in executable files that replicate when run"
+   ],
+   "correct_index": 0,
+   "explanation": "Ethernet cables are a physical connectivity technology, not a security threat—they are passive infrastructure. Phishing, viruses, and backdoors are all genuine security threats that can compromise networks and systems. This question tests the distinction between legitimate networking components and actual attack vectors.",
+   "type": "all_except",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of secretly monitoring and capturing data packets traveling across a network to intercept unencrypted communications is called ___",
+   "options": [
+    "DHCP allocation",
+    "bandwidth throttling",
+    "TCP/IP routing",
+    "packet sniffing"
+   ],
+   "correct_index": 3,
+   "explanation": "Packet sniffing is the act of passively capturing and analyzing network traffic, often used by attackers to steal unencrypted data like passwords or credentials. DHCP allocation assigns IP addresses, TCP/IP routing moves data between networks, and bandwidth throttling limits connection speed—none involve capturing and examining packet contents.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Network connectivity technologies serve to link devices together through different physical and wireless means to enable ___",
+   "options": [
+    "replacement of routers with direct point-to-point cables only",
+    "data storage on centralized servers without any network communication",
+    "elimination of the need for any authentication or user logins",
+    "transmission of data between computers, printers, and other networked devices"
+   ],
+   "correct_index": 3,
+   "explanation": "Connectivity technologies like Ethernet, Wi-Fi, and Bluetooth exist to enable devices to communicate and share data across a network. While servers store data, the primary purpose of these technologies is to transmit information between networked devices. Direct cables, routers, and authentication are related concepts but do not describe the fundamental purpose of connectivity technologies.",
+   "type": "concept_completion",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network device that receives incoming signals from a cable or telephone line and converts them into digital data that a computer can understand is called a(n) ___",
+   "options": [
+    "gateway",
+    "modem",
+    "switch",
+    "firewall"
+   ],
+   "correct_index": 1,
+   "explanation": "A modem (modulator-demodulator) converts analog signals from an internet service provider into digital data for computers, and vice versa. This is its primary function in home and business networks. The other options perform different roles: switches manage traffic between local devices, firewalls filter traffic for security, and gateways connect different network types.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network in which all computers have equal authority and can share files and resources directly with one another without relying on a central server is known as a(n) ___",
+   "options": [
+    "peer-to-peer network",
+    "client-server network",
+    "thin client network",
+    "wide area network"
+   ],
+   "correct_index": 0,
+   "explanation": "In a peer-to-peer (P2P) network, each computer acts as both a client and a server, allowing direct sharing of files and resources without a central authority. This differs from client-server networks where a central server manages resources, and thin client networks where terminals rely entirely on a central server for computing power.",
+   "type": "concept_completion",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network device that manages connections between multiple computers on a local network by reading the destination address of each data frame and directing traffic only to the appropriate port is called a(n) ___",
+   "options": [
+    "hub",
+    "router",
+    "switch",
+    "repeater"
+   ],
+   "correct_index": 2,
+   "explanation": "A switch operates at the data link layer and intelligently forwards frames only to the ports where they are needed, improving network efficiency compared to hubs. Routers work at the network layer to direct traffic between different networks, repeaters simply boost signals, and hubs broadcast to all ports indiscriminately.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be functions or characteristics of a router in a network?",
+   "options": [
+    "Connecting devices within a LAN using MAC addresses, forwarding frames to specific ports, and managing bandwidth between switches",
+    "Amplifying network signals, connecting all devices to a single cable, and preventing collision detection on Ethernet networks",
+    "Assigning IP addresses to devices, converting digital data to analog signals, and storing incoming network packets temporarily",
+    "Directing traffic between different networks, translating between public and private IP addresses, and filtering packets based on security rules"
+   ],
+   "correct_index": 3,
+   "explanation": "A router's key functions include directing traffic between separate networks, performing Network Address Translation (NAT) between public and private IP spaces, and applying security filtering rules. Option A describes switch functions, Option C describes hub and repeater functions, and Option D mixes modem and DHCP server functions—none of which are core router responsibilities.",
+   "type": "which_of_following",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network environment in which user devices (called thin clients) contain minimal software and processing power, with most applications and data storage managed centrally by powerful server computers, is called a(n) ___",
+   "options": [
+    "thin client network",
+    "wide area network",
+    "ad hoc network",
+    "hybrid mesh network"
+   ],
+   "correct_index": 0,
+   "explanation": "In a thin client network, user terminals are lightweight devices that depend almost entirely on a central server for computing resources, applications, and storage, reducing maintenance costs and hardware requirements. This contrasts with peer-to-peer and traditional client-server environments where individual machines retain more local processing power and independence.",
+   "type": "concept_completion",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of breaking into a network by discovering and using weaknesses in its defenses to gain unauthorized entry is called ___",
+   "options": [
+    "network reconnaissance",
+    "threat modeling",
+    "exploiting vulnerabilities",
+    "packet filtering"
+   ],
+   "correct_index": 2,
+   "explanation": "Exploiting vulnerabilities is the specific process of using security weaknesses to gain unauthorized access to a network or system. Network reconnaissance is the initial gathering of information, packet filtering is a defense mechanism, and threat modeling is a security planning approach—none describe the act of breaking in itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In a network, the device that connects a business to the internet from an internet service provider and manages traffic between the local network and the outside world serves as the ___",
+   "options": [
+    "backup power supply for all connected devices",
+    "bridge between the LAN and the wide area network",
+    "encryption tool that scrambles outgoing data",
+    "primary server for storing all company files"
+   ],
+   "correct_index": 1,
+   "explanation": "A router functions as the bridge between a local area network and wider networks (especially the internet), managing the flow of data between them. The server stores files, the backup power supply (UPS) maintains power during outages, and encryption tools protect data—but none of these are the device connecting to the ISP.",
+   "type": "concept_completion",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network protocol that automatically assigns IP addresses to devices on a network so they can communicate without manual configuration is called ___",
+   "options": [
+    "DHCP",
+    "TCP",
+    "SMTP",
+    "DNS"
+   ],
+   "correct_index": 0,
+   "explanation": "DHCP (Dynamic Host Configuration Protocol) is the standard protocol that automatically distributes IP addresses to networked devices, eliminating the need for manual assignment. TCP is a connection-oriented protocol for reliable data transmission, DNS resolves domain names to IP addresses, and SMTP handles email transmission — none of these handle automatic IP address assignment.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network topology in which all computers are connected to a central device like a switch, so that if one computer fails, the rest of the network continues to function normally, is called a(n) ___",
+   "options": [
+    "mesh topology",
+    "bus topology",
+    "ring topology",
+    "star topology"
+   ],
+   "correct_index": 3,
+   "explanation": "Star topology uses a central hub or switch; the failure of any single computer does not break the network because they are not daisy-chained together. Bus topology connects devices in a line, ring topology forms a loop, and mesh topology connects every device to multiple others—all three have different failure characteristics than star.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A computer network is described by all of the following characteristics EXCEPT",
+   "options": [
+    "it requires at least two computers to be connected and able to share data",
+    "it must operate through a central server that directly manages every single user transaction",
+    "it allows multiple devices to communicate and share resources such as printers and storage",
+    "it uses physical cables, wireless signals, or both to transmit information between devices"
+   ],
+   "correct_index": 1,
+   "explanation": "Networks do not require a central server managing every transaction—peer-to-peer networks, for example, allow direct device-to-device communication without a central authority. The other three options correctly describe networks: they need at least two connected computers, use cables and/or wireless transmission, and enable resource sharing.",
+   "type": "all_except",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network protocol that establishes a reliable, ordered connection between two devices by checking that all data packets arrive correctly and resending any that are lost or corrupted is called ___",
+   "options": [
+    "Dynamic Host Configuration Protocol",
+    "Simple Mail Transfer Protocol",
+    "Transmission Control Protocol",
+    "User Datagram Protocol"
+   ],
+   "correct_index": 2,
+   "explanation": "TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable delivery of data through error-checking and acknowledgment mechanisms. UDP is connectionless and does not guarantee delivery, DHCP assigns IP addresses automatically, and SMTP handles email transmission—none of these provide TCP's reliability guarantees.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network tool that traces the path a data packet takes as it travels from a source computer to a destination across multiple routers and networks is called ___",
+   "options": [
+    "ping",
+    "IP scanner",
+    "tracert",
+    "packet analyzer"
+   ],
+   "correct_index": 2,
+   "explanation": "Tracert (trace route) is a diagnostic utility that maps the route packets take through a network by displaying each hop and measuring latency at each step. Ping tests basic connectivity to a single destination, while packet analyzers and IP scanners serve different purposes in network troubleshooting.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be characteristics of a bus network topology?",
+   "options": [
+    "All computers are attached to a single main cable, and data sent by one device travels to all other devices on that cable",
+    "A primary server manages all communication, and client devices relay all requests through that central authority",
+    "Devices are arranged in a circle with each connected to exactly two neighbors, allowing data to travel in one direction around the ring",
+    "All devices connect to a central hub, and the failure of one device does not disrupt network communication for others"
+   ],
+   "correct_index": 0,
+   "explanation": "In a bus topology, all devices connect to a shared main cable and data is broadcast to all nodes on that line. The star topology uses a central hub (option A), the ring topology connects devices in a circle (option C), and the client-server model relies on a central server (option D)—none of these describe the bus topology's shared-cable architecture.",
+   "type": "which_of_following",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network protocol designed for fast, connectionless transmission of data between devices is called ___",
+   "options": [
+    "TCP",
+    "SMTP",
+    "DHCP",
+    "UDP"
+   ],
+   "correct_index": 3,
+   "explanation": "UDP (User Datagram Protocol) sends data packets without establishing a connection or guaranteeing delivery, making it faster than TCP but less reliable. TCP ensures reliable delivery through connections, DHCP assigns IP addresses, and SMTP transmits email—only UDP is designed for fast, connectionless communication.",
+   "type": "definition_recall",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A network in which computers are linked in a circle so that data travels from one device to the next in a single direction until it reaches its destination, and the failure of one computer can disrupt communication for the entire network, is called a(n) ___",
+   "options": [
+    "mesh network",
+    "ring topology",
+    "hybrid network",
+    "star topology"
+   ],
+   "correct_index": 1,
+   "explanation": "A ring topology connects devices in a circular loop where data flows in one direction and depends on each node to forward traffic; a single failed device breaks the ring. Star topology uses a central hub (not vulnerable in the same way), mesh networks provide multiple paths, and hybrid networks combine topologies—only ring topology exhibits this single-direction, sequential vulnerability.",
+   "type": "all_except",
+   "knowledge_area": "Networking Concepts",
+   "difficulty": "hard"
+  }
+ ],
+ "Information Management Concepts": [
+  {
+   "question": "The practice of storing data on remote servers accessed through the internet, rather than on a local computer or physical device, is called ___",
+   "options": [
+    "bandwidth management",
+    "data compression",
+    "cloud storage",
+    "network caching"
+   ],
+   "correct_index": 2,
+   "explanation": "Cloud storage refers specifically to storing data on remote servers maintained by a service provider and accessed via the internet. This contrasts with local storage (on-device) and involves flexibility, scalability, and remote accessibility. The other terms describe different data or network concepts but not this storage method.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "All of the processes involved in organizing, storing, retrieving, and using data to support business decisions and operations make up ___",
+   "options": [
+    "information management",
+    "system encryption",
+    "network administration",
+    "bandwidth optimization"
+   ],
+   "correct_index": 0,
+   "explanation": "Information management encompasses the entire lifecycle of data—how it is collected, organized, stored, retrieved, protected, and applied. Network administration focuses on network infrastructure, encryption protects data in transit, and bandwidth optimization manages network capacity, but none describe the complete data lifecycle.",
+   "type": "concept_completion",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A structured collection of organized data stored in tables with rows and columns, designed to allow efficient searching, sorting, and retrieval of specific information, is called a ___",
+   "options": [
+    "spreadsheet file",
+    "backup archive",
+    "data warehouse",
+    "database"
+   ],
+   "correct_index": 3,
+   "explanation": "A database is specifically designed with structured tables, rows, and columns to support efficient querying and data retrieval operations. While a spreadsheet can organize data, it is not designed for the same database operations. A backup archive is for recovery purposes, and a data warehouse is a larger aggregate repository, not the primary operational structure.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be advantages of using cloud storage for a business?",
+   "options": [
+    "Elimination of all passwords and authentication systems, direct control of underlying server hardware, complete independence from internet service availability",
+    "Remote accessibility from any device, automatic backups and disaster recovery capabilities, reduced need for on-site hardware maintenance",
+    "Permanent data ownership transfer to the cloud provider, immunity from all cyberattacks, guaranteed zero network latency",
+    "No internet connection required to access files, unlimited free storage capacity, automatic deletion of old files"
+   ],
+   "correct_index": 1,
+   "explanation": "Remote accessibility, automatic backups with built-in disaster recovery, and reduced on-site hardware costs are genuine, standard advantages of cloud storage. The other options contain false claims: cloud requires internet access, providers maintain ownership, perfect immunity and zero latency don't exist, and authentication remains necessary; users don't control underlying hardware or gain internet independence.",
+   "type": "which_of_following",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The ability of a database to quickly locate and display only the records that match specific search criteria is an example of which core database operation?",
+   "options": [
+    "Redundancy",
+    "Encryption",
+    "Archiving",
+    "Querying"
+   ],
+   "correct_index": 3,
+   "explanation": "Querying is the fundamental database operation that retrieves specific subsets of data based on conditions or criteria the user specifies—exactly what searching and filtering does. Archiving moves old data to storage, encryption protects data, and redundancy duplicates data for safety, but none describe the retrieval-by-criteria operation itself.",
+   "type": "concept_completion",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A plan that outlines the procedures and resources needed to restore business operations and recover critical data after a system failure or disaster is called a ___",
+   "options": [
+    "system maintenance schedule",
+    "disaster recovery plan",
+    "data migration strategy",
+    "backup protocol"
+   ],
+   "correct_index": 1,
+   "explanation": "A disaster recovery plan is a documented set of procedures designed to help an organization restore critical functions and data after an unplanned outage or disaster. It includes backup locations, recovery timelines, and resource allocation — distinguishing it from routine backups or maintenance schedules, which are ongoing practices rather than emergency plans.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of making copies of critical data and storing them at a different physical location to ensure business continuity in case of emergencies or system failures is called ___",
+   "options": [
+    "offsite backup storage",
+    "data redundancy",
+    "data encryption",
+    "network failover"
+   ],
+   "correct_index": 0,
+   "explanation": "Offsite backup storage specifically refers to maintaining copies of data at a separate, geographically distant location—a key component of disaster recovery and business continuity. Data redundancy is the broader concept of having multiple copies, but does not necessarily imply the offsite/geographic separation element that this question targets. This concept is essential to Information Management and appears in the source material's emphasis on disaster recovery strategies.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be examples of physical security practices that organizations use to protect sensitive information?",
+   "options": [
+    "Implementing password policies, conducting regular security training, and maintaining an audit log of system access attempts",
+    "Using encryption protocols for data in transit, deploying intrusion detection systems, and scheduling regular backup procedures",
+    "Restricting building access with keycards, storing printed documents in locked cabinets, and monitoring server rooms with surveillance cameras",
+    "Installing firewalls on network routers, enabling two-factor authentication, and running antivirus software on all devices"
+   ],
+   "correct_index": 2,
+   "explanation": "Physical security practices are tangible controls that restrict or monitor access to physical locations and materials—keycards, locked storage, and surveillance are all examples. The other options describe digital security measures (firewalls, encryption, authentication, antivirus) rather than physical controls. This question tests understanding of how information security spans both physical and digital domains.",
+   "type": "which_of_following",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Digital security measures used to prevent unauthorized access to computers and networks include all of the following EXCEPT",
+   "options": [
+    "using strong, unique passwords and enabling multi-factor authentication",
+    "installing and regularly updating antivirus and firewall software",
+    "labeling confidential documents and storing them in locked filing cabinets",
+    "keeping operating systems and applications patched with the latest security updates"
+   ],
+   "correct_index": 2,
+   "explanation": "Labeling and physically securing documents in filing cabinets is a physical security measure, not a digital security measure. The other three options—strong passwords, multi-factor authentication, antivirus/firewall software, and security patches—are all digital practices designed to protect computer systems and networks from cyber threats.",
+   "type": "all_except",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A business discovers that a server containing customer financial data has failed and cannot be accessed. The recovery process is fastest because the company ___",
+   "options": [
+    "maintains recent backups in a separate secure location and has documented recovery procedures in place",
+    "hires external consultants to reconstruct lost files using data recovery software",
+    "immediately notifies all customers about the data loss through email and social media",
+    "purchases new hardware and manually rebuilds all databases from scratch using paper records"
+   ],
+   "correct_index": 0,
+   "explanation": "A company with established backups stored separately and documented disaster recovery procedures can restore data quickly and reliably—this is exactly what disaster recovery planning is designed for. Rebuilding from scratch or using recovery consultants would be far slower; notifying customers is important but does not accelerate actual data recovery.",
+   "type": "scenario_judgment",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The unauthorized acquisition and use of personal information, such as names, Social Security numbers, or financial account details, for fraudulent purposes is called ___",
+   "options": [
+    "data retention",
+    "identity theft",
+    "access control",
+    "data encryption"
+   ],
+   "correct_index": 1,
+   "explanation": "Identity theft is the crime of obtaining and using someone else's personal information without permission, typically for financial gain or fraud. This is a specific form of data misuse that differs from legitimate data collection, encryption (which protects data), or access control (which restricts who can view data).",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The collection, use, and protection of personal information by businesses and organizations are governed by a set of regulations and laws that aim to protect individuals' privacy rights and control over their data. This framework of rules and legal requirements makes up ___",
+   "options": [
+    "database security protocols",
+    "cloud storage standards",
+    "intellectual property law",
+    "data governance regulations"
+   ],
+   "correct_index": 3,
+   "explanation": "Data governance regulations are the formal rules, policies, and laws that organizations must follow to handle personal information responsibly and legally. While intellectual property law covers creative works and patents, and database security involves technical protections, data governance regulations specifically address how data is collected, stored, and used in compliance with privacy laws.",
+   "type": "concept_completion",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be common methods that organizations use to collect personal data from individuals?",
+   "options": [
+    "Employee salary negotiations, internal performance reviews, and confidential personnel files",
+    "Customer loyalty programs, social media interactions, and mobile app usage analytics",
+    "Historical weather patterns, publicly available census data, and archived newspaper articles",
+    "Online registration forms, purchase transactions, and website cookies that track user behavior"
+   ],
+   "correct_index": 1,
+   "explanation": "Customer loyalty programs, social media interactions, and mobile app usage analytics are all direct methods organizations actively use to collect personal data about individuals for business purposes. The other options bundle items that either are not primarily data-collection methods (salary negotiations, performance reviews) or are not examples of personal data collection by organizations (weather patterns, census data, historical archives).",
+   "type": "which_of_following",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A set of exclusive legal rights granted to creators or companies that prevents others from copying, reproducing, or selling their original work, software, or inventions without permission is called ___",
+   "options": [
+    "privacy policy",
+    "data licensing",
+    "compliance framework",
+    "intellectual property"
+   ],
+   "correct_index": 3,
+   "explanation": "Intellectual property refers to creations of the mind—such as patents, copyrights, and trademarks—that are protected by law. A privacy policy governs how personal data is handled, data licensing specifies terms for using data, and a compliance framework describes adherence to regulations, but none of these grant exclusive creative rights the way intellectual property does.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Personal data is protected from unauthorized theft and misuse through all of the following EXCEPT",
+   "options": [
+    "selling customer data to third-party marketers for additional revenue",
+    "requiring strong passwords and multi-factor authentication for system access",
+    "regularly monitoring user accounts for suspicious activity and unauthorized logins",
+    "implementing encryption to scramble sensitive information during storage and transmission"
+   ],
+   "correct_index": 0,
+   "explanation": "Selling personal data to third parties without consent is a violation of privacy regulations and a way data is misused—not a protective practice. Encryption, strong authentication, and monitoring are all legitimate security measures that prevent unauthorized access and theft. This question requires understanding which practices genuinely protect data versus which actually expose it to risk.",
+   "type": "all_except",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A system that allows authorized users to access files and applications from any internet-connected device, with data stored on remote servers rather than locally, best describes ___",
+   "options": [
+    "a local area network",
+    "database encryption",
+    "cloud computing",
+    "a backup server"
+   ],
+   "correct_index": 2,
+   "explanation": "Cloud computing enables remote access to data and applications via the internet from any device, distinguishing it from local storage or network-based alternatives. This is a core data storage method that allows flexibility and accessibility across locations.",
+   "type": "concept_completion",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining a database to retrieve and display only the records that satisfy particular search conditions is called ___",
+   "options": [
+    "indexing",
+    "filtering",
+    "archiving",
+    "sorting"
+   ],
+   "correct_index": 1,
+   "explanation": "Filtering is the database operation that searches for and displays records matching specific criteria, allowing users to narrow large datasets to relevant results. This differs from sorting (arranging order) or indexing (creating reference structures).",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be ways that hackers or malicious actors commonly steal personal data from individuals and organizations?",
+   "options": [
+    "Legitimate public records searches, court filings, and government census data",
+    "Customer feedback surveys, product reviews, and market research questionnaires",
+    "Phishing emails, malware downloads, and data breaches through unpatched system vulnerabilities",
+    "Authorized database queries, employee access logs, and IT system audits"
+   ],
+   "correct_index": 2,
+   "explanation": "Phishing, malware, and exploiting security vulnerabilities are all actual attack vectors used to steal personal data illegally. The other options describe legitimate methods of data collection or internal monitoring, not theft or unauthorized acquisition.",
+   "type": "which_of_following",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Information stored on personal computers or dedicated company servers located on-site, accessible only within a local network or through direct connection, describes ___",
+   "options": [
+    "distributed storage",
+    "hierarchical storage",
+    "redundant storage",
+    "on-premises storage"
+   ],
+   "correct_index": 3,
+   "explanation": "On-premises (or on-site) storage keeps data locally on company hardware rather than remotely, providing direct control and immediate access within the organization's facilities. This contrasts with cloud and other remote storage methods.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Data protection and security in organizations are governed by all of the following EXCEPT",
+   "options": [
+    "employee wages and labor compensation rates",
+    "industry regulations specifying minimum security requirements and breach notification procedures",
+    "privacy laws that define how personal information must be collected, stored, and used",
+    "compliance standards that require regular software updates and access control policies"
+   ],
+   "correct_index": 0,
+   "explanation": "Employee compensation is a human resources and payroll matter unrelated to data protection or security regulations. Privacy laws, compliance standards, and security regulations all directly govern how organizations must protect information.",
+   "type": "all_except",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A set of procedures and tools designed to enable a business to continue essential functions during or immediately after a disruptive event, such as a natural disaster or system failure, is called a ___",
+   "options": [
+    "backup storage system",
+    "network firewall configuration",
+    "data encryption protocol",
+    "business continuity plan"
+   ],
+   "correct_index": 3,
+   "explanation": "A business continuity plan specifically outlines how an organization will maintain critical operations and resume normal functions when disrupted. While backup storage and disaster recovery are related concepts, they are components of a broader continuity strategy rather than the complete framework itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of removing unwanted data or redundant records from a database to improve performance and maintain data quality is called ___",
+   "options": [
+    "data compression",
+    "data cleaning",
+    "data validation",
+    "data encryption"
+   ],
+   "correct_index": 1,
+   "explanation": "Data cleaning is the fundamental practice of identifying and removing inaccurate, incomplete, or duplicate records from a database to ensure reliable information and system efficiency. This is distinct from data validation (checking data format), encryption (securing data), and compression (reducing file size)—each serves a different purpose in information management.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would ALL be examples of digital security practices that organizations use to protect sensitive information?",
+   "options": [
+    "Installing surveillance cameras in office hallways, assigning employees unique access badges, and storing sensitive documents in locked filing cabinets",
+    "Requiring strong passwords with mixed characters, installing antivirus and anti-malware software, and enabling multi-factor authentication for user accounts",
+    "Separating network segments by department, using encryption for data transmitted over networks, and performing regular vulnerability scans",
+    "Conducting regular employee training on cybersecurity awareness, implementing a written information security policy, and designating a data protection officer"
+   ],
+   "correct_index": 2,
+   "explanation": "Digital security specifically addresses technical and procedural controls for protecting data in electronic form—encryption, authentication, malware detection, and network monitoring are all digital measures. Option A mixes digital practices (passwords, antivirus, multi-factor authentication) that are correct; option B describes physical security; option C includes policy and training elements that support but are not themselves digital security practices.",
+   "type": "which_of_following",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The practice of protecting sensitive information from unauthorized access, theft, or corruption through technical tools and organizational procedures is called ___",
+   "options": [
+    "data security",
+    "access control",
+    "information management",
+    "data governance"
+   ],
+   "correct_index": 0,
+   "explanation": "Data security refers to the overall practices and technologies used to protect information from unauthorized access and misuse. While data governance manages how data is used and protected through policy, and access control is one specific tool within security, data security is the broad term for the protection practices themselves.",
+   "type": "definition_recall",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An organization's approach to protecting sensitive information from loss, theft, or misuse includes all of the following EXCEPT",
+   "options": [
+    "encrypting data before transmitting it over public networks or the internet",
+    "restricting physical access to server rooms using keycard locks and surveillance",
+    "documenting and testing a step-by-step plan to restore critical systems after an outage",
+    "creating a detailed organizational chart showing which employees report to which managers"
+   ],
+   "correct_index": 3,
+   "explanation": "An organizational chart documents reporting relationships and is a management tool, not a data protection or information security practice. The other three options—documented recovery procedures, physical access controls, and encryption—are all genuine security measures designed to prevent or mitigate information loss and unauthorized access.",
+   "type": "all_except",
+   "knowledge_area": "Information Management Concepts",
+   "difficulty": "hard"
+  }
+ ]
+}

@@ -3,71 +3,87 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* ── Brand accent — indigo → violet (single accent, used sparingly) ─── */
-  --blue-950: #1e1b4b;
-  --blue-900: #312e81;
-  --blue-800: #3730a3;
-  --blue-700: #4338ca;
-  --blue-600: #4f46e5;
-  --blue-500: #6366f1;
-  --blue-400: #818cf8;
-  --blue-300: #a5b4fc;
-  --blue-200: #c7d2fe;
-  --blue-100: #e0e7ff;
-  --blue-50:  #eef2ff;
+  /* ── Brand accent — "Signal": one hue, driven entirely by --signal-hue.
+     Default (no org chosen yet) is the cyan-teal this system started as.
+     Once an org is active, App.jsx stamps data-org on the app root and the
+     [data-org="..."] overrides below re-hue this ENTIRE scale — every
+     --signal-* step, the hero gradient, and the tinted neutrals all follow,
+     because they're all defined in terms of this one variable, not a fixed
+     number. Same L/C curve every time; only the hue angle moves. ────────── */
+  --signal-hue: 195;
 
-  --accent:         var(--blue-600);
-  --accent-hover:   var(--blue-700);
-  --accent-light:   var(--blue-500);
+  --signal-950: oklch(20% 0.045 var(--signal-hue));
+  --signal-900: oklch(26% 0.065 var(--signal-hue));
+  --signal-800: oklch(33% 0.085 var(--signal-hue));
+  --signal-700: oklch(40% 0.110 var(--signal-hue));
+  --signal-600: oklch(47% 0.130 var(--signal-hue));
+  --signal-500: oklch(56% 0.140 var(--signal-hue));
+  --signal-400: oklch(65% 0.135 var(--signal-hue));
+  --signal-300: oklch(75% 0.110 var(--signal-hue));
+  --signal-200: oklch(84% 0.075 var(--signal-hue));
+  --signal-100: oklch(91% 0.045 var(--signal-hue));
+  --signal-50:  oklch(96% 0.020 var(--signal-hue));
+
+  --accent:         var(--signal-600);
+  --accent-hover:   var(--signal-700);
+  --accent-light:   var(--signal-500);
   --accent-contrast:#ffffff;
 
-  --gradient-from: #4f46e5; /* indigo */
-  --gradient-via:  #7c3aed; /* violet */
-  --gradient-to:   #c026d3; /* fuchsia */
+  /* Reserved for large dark hero surfaces only — never a button, badge, or
+     small element (Gradient Containment Rule). Hue-offsets from the same
+     --signal-hue, so the hero glow re-hues right along with everything
+     else instead of staying a fixed cyan→teal→blue regardless of org. */
+  --gradient-from: oklch(55% 0.130 var(--signal-hue));
+  --gradient-via:  oklch(50% 0.110 calc(var(--signal-hue) - 20));
+  --gradient-to:   oklch(45% 0.120 calc(var(--signal-hue) + 35));
 
-  --sidebar-bg:     #07101f;
-  --sidebar-hover:  rgba(255,255,255,0.055);
+  --sidebar-bg:     oklch(14% 0.020 var(--signal-hue));
+  --sidebar-hover:  rgba(255,255,255,0.06);
   --sidebar-text:   rgba(255,255,255,0.48);
   --sidebar-text-h: rgba(255,255,255,0.88);
 
-  /* ── Neutral base ─────────────────────────────────────────────────── */
-  --bg:      #f6f7fb;
-  --surface: #ffffff;
-  --border:  #e4e7ef;
-  --border-s:#f1f2f8;
-  --text:    #0f172a;
-  --text-2:  #334155;
-  --text-3:  #64748b;
-  --text-4:  #94a3b8;
+  /* ── Neutral base — tinted a hair toward the signal hue (Tinted
+     Neutrals: pure gray is dead). Chroma is so low here (0.006–0.02) that
+     following the org hue reads as a barely-there warmth/coolness shift,
+     not a loud recolor — exactly the "subtle" the org theming asked for. */
+  --bg:      oklch(97% 0.006 var(--signal-hue));
+  --surface: oklch(100% 0 0);
+  --border:  oklch(90% 0.010 var(--signal-hue));
+  --border-s:oklch(95% 0.006 var(--signal-hue));
+  --text:    oklch(18% 0.020 var(--signal-hue));
+  --text-2:  oklch(32% 0.020 var(--signal-hue));
+  --text-3:  oklch(50% 0.018 var(--signal-hue));
+  --text-4:  oklch(65% 0.014 var(--signal-hue));
 
   /* ── Semantic status (kept independent of the brand accent) ─────────── */
-  --green:        #16a34a;
-  --green-bg:     #f0fdf4;
-  --green-border: #bbf7d0;
-  --red:          #dc2626;
-  --red-bg:       #fef2f2;
-  --red-border:   #fecaca;
-  --amber:        #d97706;
-  --amber-bg:     #fffbeb;
+  --green:        oklch(52% 0.140 150);
+  --green-bg:     oklch(97% 0.030 150);
+  --green-border: oklch(88% 0.080 150);
+  --red:          oklch(55% 0.190 25);
+  --red-bg:       oklch(97% 0.020 25);
+  --red-border:   oklch(88% 0.070 25);
+  --amber:        oklch(62% 0.150 70);
+  --amber-bg:     oklch(97% 0.030 80);
 
-  /* ── Radius & shadow ──────────────────────────────────────────────── */
-  --r-sm: 8px;
-  --r:    10px;
-  --r-lg: 16px;
-  --r-xl: 22px;
-  --shadow-sm: 0 1px 3px rgba(15,23,42,0.06),0 1px 2px rgba(15,23,42,0.04);
-  --shadow:    0 4px 16px rgba(15,23,42,0.08),0 1px 4px rgba(15,23,42,0.04);
-  --shadow-lg: 0 12px 40px rgba(15,23,42,0.12),0 4px 12px rgba(15,23,42,0.06);
-  --shadow-xl: 0 24px 64px rgba(15,23,42,0.16),0 8px 24px rgba(15,23,42,0.08);
+  /* ── Radius & shadow — tighter, sharper corners; flat-by-default with
+     subtle shadow reserved for hover/interaction states ──────────────── */
+  --r-sm: 6px;
+  --r:    8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --shadow-sm: 0 1px 2px rgba(8,12,18,0.05),0 1px 1px rgba(8,12,18,0.03);
+  --shadow:    0 3px 12px rgba(8,12,18,0.07),0 1px 3px rgba(8,12,18,0.04);
+  --shadow-lg: 0 10px 32px rgba(8,12,18,0.10),0 3px 10px rgba(8,12,18,0.05);
+  --shadow-xl: 0 20px 56px rgba(8,12,18,0.14),0 6px 20px rgba(8,12,18,0.07);
 
-  /* ── Type scale ───────────────────────────────────────────────────── */
-  --text-xs:  12px;
-  --text-sm:  14px;
-  --text-base:16px;
-  --text-lg:  20px;
-  --text-2xl: 28px;
-  --text-4xl: 40px;
-  --text-6xl: 56px;
+  /* ── Type scale — fixed rem scale, ~1.2–1.4 ratio between steps ──────── */
+  --text-xs:  0.6875rem;
+  --text-sm:  0.8125rem;
+  --text-base:1rem;
+  --text-lg:  1.1875rem;
+  --text-2xl: 1.625rem;
+  --text-4xl: 2.375rem;
+  --text-6xl: 3.375rem;
 
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-head: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -78,12 +94,23 @@
   --sp-5: 20px;  --sp-6: 24px;  --sp-8: 32px;  --sp-10: 40px;
   --sp-12: 48px; --sp-16: 64px; --sp-20: 80px; --sp-24: 96px;
 
-  /* ── Motion ───────────────────────────────────────────────────────── */
+  /* ── Motion — ease-out-expo everywhere, no bounce/elastic ────────────── */
   --dur-fast: 150ms;
   --dur-base: 250ms;
   --dur-slow: 400ms;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+/* ── Per-organization hue — stamped as data-org on the app root in
+   App.jsx once an org is selected. Each value is the real OKLCH hue angle
+   of that org's brand color (computed from the actual hex), not a rough
+   guess: DECA's #00539B is hue 253, HOSA's #841619 is hue 26. FBLA has no
+   fixed brand hex here, so 85 was chosen as a rich gold — deliberately
+   further from --amber's hue 70 than it looks, so an FBLA-themed screen
+   never reads as a caution/warning state next to an actual amber badge. */
+:root[data-org="fbla"] { --signal-hue: 85; }
+:root[data-org="deca"] { --signal-hue: 253; }
+:root[data-org="hosa"] { --signal-hue: 26; }
 
 html,body { height: 100%; }
 

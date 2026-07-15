@@ -1,0 +1,120 @@
+HOSA STUDY OUTLINE — CREATIVE PROBLEM SOLVING (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the team/quiz-bowl round).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of the structured problem-solving process teams use to analyze a
+health-related scenario, generate and evaluate creative solutions, and
+communicate a recommendation as a team. Covers problem-solving models,
+creative-thinking techniques, decision-making tools, group dynamics, and
+applying these skills to case scenarios set in healthcare and health science
+contexts.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Problem-Solving Process (10 items)
+1. Sequence the stages of the problem-solving process (define the problem,
+   gather/analyze information, generate alternatives, evaluate options,
+   select and implement a solution, review results).
+2. Differentiate a well-defined problem statement from a vague or biased one.
+3. Explain why gathering facts before brainstorming solutions prevents
+   premature closure on a single option.
+4. Identify root-cause analysis techniques (5 Whys, fishbone/cause-and-effect
+   diagram) used to define a problem accurately.
+5. Distinguish symptoms of a problem from its underlying cause in a scenario.
+6. Explain the purpose of setting evaluation criteria before comparing
+   solution alternatives.
+7. Identify barriers to effective problem solving (groupthink, anchoring,
+   confirmation bias, jumping to solutions).
+8. Explain the role of feedback and reflection in the final review stage.
+9. Apply the problem-solving process to a short health-related case scenario.
+10. Explain how time constraints affect which stage of the process a team
+    should prioritize.
+
+B. Creative Thinking Techniques (8 items)
+1. Define brainstorming and identify its core ground rules (defer judgment,
+   go for quantity, build on others' ideas).
+2. Apply the SCAMPER technique (Substitute, Combine, Adapt, Modify, Put to
+   another use, Eliminate, Reverse) to generate solution ideas.
+3. Explain how mind mapping visually organizes ideas around a central
+   problem.
+4. Differentiate brainwriting (silent, written idea generation) from verbal
+   brainstorming.
+5. Define lateral thinking and distinguish it from linear/logical thinking.
+6. Identify the purpose of reverse brainstorming (identifying how to cause
+   the problem to find ways to prevent it).
+7. Explain how analogical thinking (borrowing solutions from unrelated
+   fields) can generate novel healthcare solutions.
+8. Identify techniques for overcoming creative blocks in a group setting.
+
+C. Decision-Making Models & Tools (7 items)
+1. Construct and interpret a weighted decision matrix to compare
+   alternatives against criteria.
+2. Apply cost-benefit analysis to choose between competing solutions.
+3. Conduct a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)
+   on a proposed solution.
+4. Differentiate consensus decision-making from majority-vote
+   decision-making.
+5. Identify the steps of a rational/rational-actor decision-making model.
+6. Explain how a pros-and-cons list can oversimplify a complex decision.
+7. Explain the concept of an "opportunity cost" when selecting one solution
+   over another.
+
+D. Team Roles & Group Dynamics in Problem Solving (6 items)
+1. Identify common team roles in a problem-solving group (facilitator,
+   recorder/scribe, timekeeper, devil's advocate).
+2. Explain how assigning roles improves the efficiency of a team's
+   process.
+3. Identify the stages of team development (forming, storming, norming,
+   performing, adjourning) as they relate to problem solving.
+4. Explain strategies for resolving conflict within a problem-solving team.
+5. Explain groupthink and identify strategies to prevent it (assigning a
+   devil's advocate, seeking outside opinions).
+6. Explain how diversity of perspective within a team improves solution
+   quality.
+
+E. Communication Skills for Problem Solving (5 items)
+1. Identify active-listening behaviors that support effective group problem
+   solving.
+2. Explain the importance of clarifying questions when a team member
+   presents an idea.
+3. Differentiate constructive feedback from criticism when evaluating a
+   teammate's idea.
+4. Explain how a team should structure a concise oral presentation of its
+   recommended solution.
+5. Identify nonverbal communication cues that affect team collaboration.
+
+F. Case Scenario Analysis in Health Settings (8 items)
+1. Analyze a short case scenario to identify the actual problem versus
+   surface complaints.
+2. Identify stakeholders affected by a health-facility or health-science
+   problem scenario (patients, staff, administration, community).
+3. Apply ethical considerations (patient confidentiality, informed consent)
+   when proposing a solution to a healthcare scenario.
+4. Identify resource constraints (budget, staffing, time, equipment)
+   relevant to a proposed healthcare solution.
+5. Evaluate whether a proposed solution to a health scenario is realistic
+   and implementable.
+6. Identify potential unintended consequences of a proposed healthcare
+   solution.
+7. Explain how regulatory or safety standards limit solution options in a
+   healthcare setting.
+8. Differentiate a short-term fix from a sustainable long-term solution in
+   a health scenario.
+
+G. Implementation & Evaluation of Solutions (6 items)
+1. Identify the steps needed to create an action plan for implementing a
+   chosen solution.
+2. Explain the purpose of assigning responsibilities and timelines in an
+   implementation plan.
+3. Identify metrics or indicators used to measure whether a solution
+   succeeded.
+4. Explain the purpose of a pilot test or trial run before full
+   implementation.
+5. Explain why teams should plan for contingencies if a solution
+   underperforms.
+6. Explain how a team documents and communicates final results to
+   stakeholders.

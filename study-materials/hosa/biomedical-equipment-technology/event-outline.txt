@@ -1,0 +1,90 @@
+HOSA STUDY OUTLINE — BIOMEDICAL EQUIPMENT TECHNOLOGY (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of the installation, calibration, maintenance, and repair of medical
+equipment, including electricity/electronics fundamentals, electrical safety
+codes, regulatory requirements, and the diagnostic, therapeutic, and
+life-support devices used across clinical settings. Includes preventive
+maintenance programs, troubleshooting methodology, and infection control as
+applied to biomedical equipment.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Role of the Biomedical Equipment Technician (2 items)
+1. Describe the scope of practice of a biomedical equipment technician (BMET) within a healthcare facility's clinical engineering department.
+2. Identify required certifications and credentialing bodies (e.g., CBET certification through AAMI/ICC).
+
+B. Electricity & Electronics Fundamentals (6 items)
+1. Apply Ohm's Law (V = IR) and Watt's Law (P = IV) to calculate voltage, current, resistance, and power.
+2. Differentiate series and parallel circuits and calculate total resistance in each configuration.
+3. Differentiate alternating current (AC) and direct current (DC) and identify common waveform characteristics (frequency, amplitude, period).
+4. Identify basic electronic components (resistor, capacitor, inductor, diode, transistor) and their functions.
+5. Explain the function of transformers in stepping voltage up or down.
+6. Interpret a basic block diagram or schematic symbol set for a medical device circuit.
+
+C. Electrical Safety Standards & Codes (5 items)
+1. Differentiate macroshock and microshock and explain why cardiac patients are more vulnerable to microshock.
+2. Identify NFPA 99 (Health Care Facilities Code) requirements for patient care areas.
+3. Explain the purpose of ground fault circuit interrupters (GFCIs) and equipotential grounding in patient care areas.
+4. Interpret acceptable leakage current limits for chassis and patient lead leakage per applicable safety standards.
+5. Identify the class and type ratings of medical equipment (Class I/II, Type B/BF/CF) based on degree of patient protection.
+
+D. Regulatory & Accreditation Bodies (4 items)
+1. Identify the role of the FDA in medical device classification (Class I, II, III) and premarket approval/510(k) clearance.
+2. Explain the role of The Joint Commission in accrediting healthcare facilities and its Environment of Care/medical equipment management standards.
+3. Describe the role of ECRI Institute in independent medical device evaluation and hazard/recall alerts.
+4. Identify the purpose of ISO 13485 and IEC 60601 standards for medical electrical equipment.
+
+E. Patient Monitoring Equipment (5 items)
+1. Explain the principle of operation of an electrocardiogram (ECG/EKG) monitor and lead placement.
+2. Describe how pulse oximetry measures oxygen saturation using light absorption.
+3. Identify components and function of a multiparameter vital signs monitor (NIBP, SpO2, temperature, respiration).
+4. Explain the operating principle of an invasive blood pressure monitoring transducer.
+5. Identify common alarm conditions and priority levels on patient monitors.
+
+F. Diagnostic Imaging Equipment (5 items)
+1. Explain how an X-ray tube generates ionizing radiation for diagnostic imaging.
+2. Describe the basic principle of ultrasound imaging using piezoelectric transducers.
+3. Identify major components of a CT scanner (gantry, detector array, X-ray tube).
+4. Describe the basic principle of MRI using magnetic fields and radiofrequency pulses.
+5. Explain radiation safety principles (ALARA — as low as reasonably achievable) for imaging equipment technicians.
+
+G. Therapeutic & Life-Support Equipment (6 items)
+1. Explain the operating principles and modes of a mechanical ventilator (volume-controlled, pressure-controlled).
+2. Describe the function and safety checks of an infusion pump/IV pump, including free-flow protection.
+3. Explain the operating principle of a defibrillator/AED, including energy selection and synchronized cardioversion.
+4. Identify the function of an electrosurgical unit (ESU) and associated grounding pad safety checks.
+5. Describe the function of a dialysis machine in filtering blood for patients with renal failure.
+6. Identify the function and safety features of an infant incubator/warmer.
+
+H. Sterilization & Infection Control (3 items)
+1. Differentiate sterilization methods used for reusable medical equipment (steam autoclave, ethylene oxide, plasma sterilization).
+2. Explain proper cleaning and disinfection procedures for equipment surfaces between patients.
+3. Identify infection control precautions a BMET must follow when servicing equipment from isolation rooms.
+
+I. Preventive Maintenance & Calibration (5 items)
+1. Explain the purpose of a scheduled preventive maintenance (PM) program for medical equipment.
+2. Describe the process of calibrating a device against a known reference standard.
+3. Identify the use of a safety analyzer to test electrical safety parameters (leakage current, ground resistance).
+4. Explain how equipment risk classification determines PM frequency (high-risk vs. low-risk devices).
+5. Interpret a PM checklist and determine whether a device passes or fails inspection.
+
+J. Troubleshooting & Repair Methodology (4 items)
+1. Apply a systematic troubleshooting approach (identify symptom, isolate cause, test, repair, verify).
+2. Interpret error codes displayed on medical equipment to identify a likely fault.
+3. Differentiate a hardware failure from a software/firmware failure during diagnosis.
+4. Explain when a device should be removed from service and tagged out per facility policy.
+
+K. Test Equipment & Tools (3 items)
+1. Identify the use of a digital multimeter to measure voltage, current, resistance, and continuity.
+2. Explain the use of an oscilloscope to display and analyze waveform signals.
+3. Identify specialized test equipment used for specific devices (defibrillator analyzer, ventilator analyzer, ESU analyzer).
+
+L. Equipment Documentation, Inventory & Risk Management (2 items)
+1. Explain the purpose of an equipment inventory and unique asset tagging in a medical equipment management program.
+2. Identify required documentation for a work order, including incident reporting for equipment-related adverse events.

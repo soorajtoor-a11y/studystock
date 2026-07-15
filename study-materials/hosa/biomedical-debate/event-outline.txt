@@ -1,0 +1,82 @@
+HOSA STUDY OUTLINE — BIOMEDICAL DEBATE (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
+Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the team/performance round).
+Item counts per content area are proportional estimates by knowledge-area weight —
+confirm against the current guideline, in parentheses.
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of debate structure and argumentation, evidence evaluation, and
+core biomedical ethics issues (genetic engineering, end-of-life care,
+resource allocation, research ethics, healthcare policy) that underpin the
+current year's debate topic and general biomedical/health-policy debate.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Debate Structure & Formats (6 items)
+1. Identify the standard structure of a debate round (constructive, rebuttal, cross-examination, closing).
+2. Differentiate the affirmative/proposition side's burden from the negative/opposition side's burden.
+3. Explain the purpose of a resolution/topic statement in framing a debate.
+4. Explain the role of time limits and speaking order in a structured debate format.
+5. Differentiate a policy debate (should we act?) from a value debate (is this ethical/desirable?).
+6. Explain the purpose of a case/constructive speech in establishing a team's position.
+
+B. Argumentation & Logic (6 items)
+1. Identify the components of a well-formed argument (claim, evidence/data, warrant/reasoning).
+2. Differentiate deductive from inductive reasoning in constructing an argument.
+3. Identify common logical fallacies (ad hominem, slippery slope, straw man, false dilemma, appeal to emotion).
+4. Explain the concept of burden of proof and who holds it in a given debate.
+5. Explain how to weigh competing arguments (impact, probability, magnitude, timeframe).
+6. Explain the difference between a link (connection between argument steps) and an impact (why it matters).
+
+C. Evidence Evaluation & Research Literacy (7 items)
+1. Differentiate primary from secondary sources in biomedical research.
+2. Explain criteria for evaluating source credibility (peer review, authorship, recency, conflict of interest).
+3. Differentiate correlation from causation when evaluating a research claim.
+4. Explain the significance of study sample size and methodology in evaluating evidence strength.
+5. Identify signs of biased or unreliable evidence (cherry-picking, outdated data, unverified claims).
+6. Explain how to properly cite and attribute evidence used in a debate case.
+7. Explain the difference between statistical significance and practical/clinical significance of a finding.
+
+D. Rebuttal & Cross-Examination Strategy (5 items)
+1. Explain the purpose of a rebuttal speech in addressing the opposing team's arguments.
+2. Explain effective cross-examination questioning techniques (open vs. closed questions).
+3. Explain strategies for refuting an opponent's argument directly versus by comparative weighing.
+4. Explain the concept of "dropping" an argument and its consequence if left unaddressed.
+5. Explain strategies for maintaining composure and professionalism under cross-examination.
+
+E. Biomedical Ethics Principles (7 items)
+1. Define and apply the principle of autonomy in a patient-care or research scenario.
+2. Define and apply the principle of beneficence and nonmaleficence in a healthcare ethics scenario.
+3. Define and apply the principle of justice (fair distribution of benefits/burdens) in healthcare.
+4. Explain the concept of informed consent as an application of autonomy.
+5. Explain the role of institutional review boards (IRBs) in overseeing research ethics.
+6. Explain the concept of therapeutic versus non-therapeutic research and associated ethical considerations.
+7. Explain how conflicting ethical principles (e.g., autonomy vs. beneficence) create ethical dilemmas.
+
+F. Genetic Engineering & Biotechnology Ethics (6 items)
+1. Explain the ethical debate surrounding CRISPR/gene-editing technology in humans.
+2. Differentiate somatic cell gene editing from germline gene editing and their differing ethical implications.
+3. Explain arguments for and against genetic screening/testing (prenatal, predictive, carrier screening).
+4. Explain ethical concerns related to designer babies and genetic enhancement versus therapy.
+5. Explain ethical considerations in cloning and stem cell research.
+6. Explain concerns about genetic privacy and discrimination (e.g., use of genetic data by insurers/employers).
+
+G. End-of-Life Care & Resource Allocation (6 items)
+1. Explain the ethical debate surrounding physician-assisted death/medical aid in dying.
+2. Differentiate palliative care from hospice care and their role in end-of-life ethics debates.
+3. Explain the ethical use of advance directives and living wills in end-of-life decision-making.
+4. Explain triage ethics and criteria used for allocating scarce medical resources (e.g., organ transplant, crisis standards of care).
+5. Explain the ethical debate over withdrawing versus withholding life-sustaining treatment.
+6. Explain arguments in the debate over healthcare rationing under limited resources.
+
+H. Healthcare Policy & Access Debate Topics (4 items)
+1. Explain arguments for and against universal healthcare coverage models.
+2. Explain the ethical and policy debate surrounding drug pricing and access to medications.
+3. Explain arguments in the debate over vaccine mandates and public health authority versus individual rights.
+4. Explain the policy debate surrounding healthcare access disparities and social determinants of health.
+
+I. Delivery, Rhetoric & Persuasion (3 items)
+1. Explain the role of ethos, pathos, and logos in persuasive debate delivery.
+2. Explain the importance of clarity, pacing, and organization in oral debate delivery.
+3. Explain how a team builds a cohesive narrative/theme across constructive and rebuttal speeches.

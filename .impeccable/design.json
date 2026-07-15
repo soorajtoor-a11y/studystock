@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-14T00:00:00.000Z",
+  "title": "Design System: StudyStock",
+  "extensions": {
+    "colorMeta": {
+      "signal": { "role": "primary", "displayName": "Signal", "canonical": "#006f71", "tonalRamp": ["#001c1c", "#002d2e", "#004243", "#00585a", "#006f71", "#008c8e", "#00a7a9", "#43c3c3"] },
+      "deep-space-navy": { "role": "neutral", "displayName": "Deep Space Navy", "canonical": "#010b0d", "tonalRamp": ["#000000", "#010609", "#010b0d", "#0a1a1c", "#142a2c", "#213c3e", "#2f4f51", "#3f6365"] },
+      "cool-paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "#f1f6f6", "tonalRamp": ["#d7e0e0", "#e4ebeb", "#eaf0f0", "#f1f6f6", "#f6faf9", "#fafcfc", "#fdfefe", "#ffffff"] },
+      "signal-green": { "role": "success", "displayName": "Signal Green", "canonical": "#0a7e3a", "tonalRamp": ["#012209", "#04390f", "#075a1c", "#0a7e3a", "#12a34d", "#3ec471", "#7cdd9c", "#b2e7bc"] },
+      "alert-red": { "role": "error", "displayName": "Alert Red", "canonical": "#c92f33", "tonalRamp": ["#3a0708", "#5c0e0f", "#8e1c1e", "#c92f33", "#e2555a", "#ee8386", "#f7b1b3", "#ffc6c0"] },
+      "flashcard-accent": { "role": "tertiary", "displayName": "Flashcard Accent", "canonical": "#b54d98", "tonalRamp": ["#33132a", "#521f43", "#7a2f65", "#b54d98", "#cd75b6", "#df9fd0", "#eec3e3", "#f6def0"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page-level hero headlines only, at most one per view." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles (picker/landing section headers)." },
+      "title": { "displayName": "Title", "purpose": "Card-level titles (org card, event title, feature card)." },
+      "body": { "displayName": "Body", "purpose": "All prose: descriptions, taglines, chat messages." },
+      "label": { "displayName": "Label", "purpose": "Mono. Uppercase eyebrows, sidebar section labels, badges, ticker text." }
+    },
+    "shadows": [
+      { "name": "resting-card", "value": "0 1px 3px rgba(6,20,20,0.06), 0 1px 2px rgba(6,20,20,0.04)", "purpose": "Default state for any white card." },
+      { "name": "hover-card", "value": "0 4px 16px rgba(6,20,20,0.08), 0 1px 4px rgba(6,20,20,0.04)", "purpose": "Card hover, paired with translateY(-2px)." },
+      { "name": "elevated", "value": "0 12px 40px rgba(6,20,20,0.12), 0 4px 12px rgba(6,20,20,0.06)", "purpose": "Pronounced hover states and open dropdown menus." },
+      { "name": "modal", "value": "0 24px 64px rgba(6,20,20,0.16), 0 8px 24px rgba(6,20,20,0.08)", "purpose": "Overlays, modal-style pickers, the landing sample-question card." },
+      { "name": "primary-cta-glow", "value": "0 4px 16px rgba(0,111,113,0.35)", "purpose": "Resting glow on primary buttons only — the one exception to flat-by-default." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The only easing curve used in the system. No bounce, no elastic." },
+      { "name": "dur-fast", "value": "150ms", "purpose": "Hover/focus state transitions, dropdown open." },
+      { "name": "dur-base", "value": "250ms", "purpose": "Layout-level transitions (sidebar drawer, sticky nav)." },
+      { "name": "dur-slow", "value": "400ms", "purpose": "Entrance animations (card stagger-in, reveal-on-scroll)." },
+      { "name": "ticker-scroll", "value": "46s linear infinite", "purpose": "Landing page event ticker marquee; paused on hover, disabled under reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "520px" },
+      { "name": "tablet", "value": "860px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single primary CTA style — Signal fill, white text, resting glow.",
+      "html": "<button class=\"ds-btn-primary\">Try it free →</button>",
+      "css": ".ds-btn-primary { background: #006f71; color: #fff; font-weight: 700; font-size: 14px; padding: 13px 26px; border: none; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,111,113,0.35); cursor: pointer; transition: background 150ms cubic-bezier(0.16,1,0.3,1), transform 150ms cubic-bezier(0.16,1,0.3,1), box-shadow 150ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary:hover { background: #00585a; transform: translateY(-2px); box-shadow: 0 6px 22px rgba(0,111,113,0.42); } .ds-btn-primary:focus-visible { outline: 2px solid #006f71; outline-offset: 2px; } .ds-btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(0,111,113,0.35); }"
+    },
+    {
+      "name": "Org Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Large selectable card (the org picker's FBLA/DECA/HOSA cards) — flat at rest, lifts and shadows on hover.",
+      "html": "<button class=\"ds-org-card\"><span class=\"ds-org-card-icon\">💼</span><span class=\"ds-org-card-name\">FBLA</span><span class=\"ds-org-card-tag\">Business, technology, and leadership competitive events.</span><span class=\"ds-org-card-cta\">31 events →</span></button>",
+      "css": ".ds-org-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 30px 24px 26px; background: #ffffff; border: 1.5px solid #d7e0e0; border-radius: 16px; text-align: left; cursor: pointer; box-shadow: 0 1px 3px rgba(6,20,20,0.06), 0 1px 2px rgba(6,20,20,0.04); transition: transform 250ms cubic-bezier(0.16,1,0.3,1), box-shadow 250ms cubic-bezier(0.16,1,0.3,1), border-color 250ms cubic-bezier(0.16,1,0.3,1); } .ds-org-card:hover { transform: translateY(-5px); border-color: #43c3c3; box-shadow: 0 12px 40px rgba(6,20,20,0.12), 0 4px 12px rgba(6,20,20,0.06); } .ds-org-card-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; background: linear-gradient(135deg,#1d4ed8,#3b82f6); box-shadow: 0 6px 18px rgba(0,0,0,0.16); } .ds-org-card-name { font-family: 'Inter Tight', sans-serif; font-size: 20px; font-weight: 800; color: #061414; } .ds-org-card-tag { font-size: 13px; color: #586766; line-height: 1.55; } .ds-org-card-cta { font-size: 12.5px; font-weight: 700; color: #006f71; }"
+    },
+    {
+      "name": "Sidebar Nav Item (active)",
+      "kind": "nav",
+      "refersTo": "sidebar-nav-item-active",
+      "description": "The active-state treatment for a Command Deck sidebar nav item — diagonal Signal wash, inset ring, never a solid fill or left-border stripe.",
+      "html": "<button class=\"ds-sidebar-item ds-sidebar-item-active\"><span class=\"ds-sidebar-item-dot\"></span><span class=\"ds-sidebar-item-name\">Accounting</span></button>",
+      "css": ".ds-sidebar-item { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; padding: 7px 10px; border: none; background: transparent; border-radius: 7px; cursor: pointer; font-size: 12.5px; color: rgba(255,255,255,0.5); transition: background 120ms, color 120ms; } .ds-sidebar-item:hover { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); } .ds-sidebar-item-active { background: linear-gradient(135deg, rgba(0,140,142,0.24), rgba(0,140,142,0.1)); box-shadow: inset 0 0 0 1px rgba(0,140,142,0.3); color: #43c3c3; font-weight: 600; } .ds-sidebar-item-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.14); flex-shrink: 0; } .ds-sidebar-item-active .ds-sidebar-item-dot { background: #00a7a9; box-shadow: 0 0 6px rgba(0,140,142,0.7); }"
+    },
+    {
+      "name": "Quiz Option (correct/incorrect states)",
+      "kind": "custom",
+      "refersTo": "quiz-option",
+      "description": "Full-width answer option with three revealed states: correct (green), wrong (red), dimmed (everything else). Shared exactly between the app's real quiz and the landing page's interactive sample question.",
+      "html": "<div class=\"ds-quiz-option ds-quiz-option-correct\"><span class=\"ds-quiz-option-letter\">B</span><span>Debit Accounts Receivable, Credit Sales</span></div>",
+      "css": ".ds-quiz-option { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1.5px solid #d7e0e0; border-radius: 8px; background: #ffffff; font-size: 14px; color: #273636; transition: all 150ms cubic-bezier(0.16,1,0.3,1); } .ds-quiz-option-letter { width: 26px; height: 26px; border-radius: 50%; background: #eaf0f0; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; flex-shrink: 0; } .ds-quiz-option-correct { border-color: #b2e7bc; background: #e8fbeb; color: #0a7e3a; font-weight: 600; } .ds-quiz-option-correct .ds-quiz-option-letter { background: #0a7e3a; color: #fff; } .ds-quiz-option-wrong { border-color: #ffc6c0; background: #fff0ee; color: #c92f33; font-weight: 600; } .ds-quiz-option-wrong .ds-quiz-option-letter { background: #c92f33; color: #fff; } .ds-quiz-option-dimmed { opacity: 0.4; }"
+    },
+    {
+      "name": "Org Switcher Dropdown",
+      "kind": "custom",
+      "refersTo": "org-switcher",
+      "description": "The Command Deck's signature interaction: an inline dark dropdown for switching organizations without leaving the current view.",
+      "html": "<div class=\"ds-org-switcher\"><button class=\"ds-org-switcher-btn\"><span class=\"ds-org-switcher-icon\">💼</span><span>FBLA</span></button><div class=\"ds-org-switcher-menu\"><button class=\"ds-org-switcher-item ds-org-switcher-item-active\"><span class=\"ds-org-switcher-item-name\">FBLA</span><span class=\"ds-org-switcher-item-meta\">31 events</span></button></div></div>",
+      "css": ".ds-org-switcher-btn { display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px 10px; border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.75); font-weight: 600; font-size: 12.5px; border-radius: 8px; cursor: pointer; transition: background 150ms, border-color 150ms; } .ds-org-switcher-btn:hover { background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.18); } .ds-org-switcher-menu { margin-top: 6px; background: #142a2c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 6px; box-shadow: 0 16px 36px rgba(0,0,0,0.45); } .ds-org-switcher-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px; border: none; background: transparent; border-radius: 7px; cursor: pointer; text-align: left; } .ds-org-switcher-item-active { background: linear-gradient(135deg, rgba(0,140,142,0.24), rgba(0,140,142,0.1)); } .ds-org-switcher-item-name { font-size: 12.5px; font-weight: 700; color: rgba(255,255,255,0.92); } .ds-org-switcher-item-meta { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: rgba(255,255,255,0.4); }"
+    },
+    {
+      "name": "Event Ticker",
+      "kind": "custom",
+      "refersTo": "landing-ticker",
+      "description": "Landing-page-only marquee streaming real event names from all three orgs, tagged by org color. Market-ticker motif carried through mono type and a trend glyph, not a second brand color.",
+      "html": "<div class=\"ds-ticker\"><div class=\"ds-ticker-track\"><span class=\"ds-ticker-item\"><span class=\"ds-ticker-arrow\">▲</span><span class=\"ds-ticker-org\">FBLA</span><span class=\"ds-ticker-name\">Accounting</span></span></div></div>",
+      "css": ".ds-ticker { position: relative; overflow: hidden; background: #010b0d; padding: 13px 0; } .ds-ticker-track { display: flex; width: max-content; animation: ds-ticker-scroll 46s linear infinite; } .ds-ticker:hover .ds-ticker-track { animation-play-state: paused; } @keyframes ds-ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } } .ds-ticker-item { display: inline-flex; align-items: center; gap: 9px; padding: 0 26px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; font-weight: 600; color: rgba(255,255,255,0.75); white-space: nowrap; border-right: 1px solid rgba(255,255,255,0.08); } .ds-ticker-arrow { color: #0a7e3a; font-size: 10px; } .ds-ticker-org { font-size: 9.5px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; background: rgba(0,140,142,0.22); color: #43c3c3; } .ds-ticker-name { color: rgba(255,255,255,0.9); }"
+    },
+    {
+      "name": "Interactive Sample Question",
+      "kind": "custom",
+      "refersTo": "landing-sample-question",
+      "description": "Landing-hero widget — the same browser-chrome mockup shell as before, but genuinely clickable and reusing the real Quiz Option component states, so the hero's promise matches the actual product.",
+      "html": "<div class=\"ds-sample-q\"><div class=\"ds-sample-q-topbar\"><span class=\"ds-sample-q-tab\">Accounting › Journalizing</span></div><div class=\"ds-sample-q-body\"><p class=\"ds-sample-q-label\">Try it — question 3 of 10</p><p class=\"ds-sample-q-question\">Which journal entry correctly records a credit sale on account?</p></div></div>",
+      "css": ".ds-sample-q { max-width: 420px; background: #ffffff; border: 1px solid #eaf0f0; border-radius: 16px; box-shadow: 0 24px 64px rgba(6,20,20,0.16), 0 8px 24px rgba(6,20,20,0.08); overflow: hidden; } .ds-sample-q-topbar { padding: 12px 18px; background: #eaf0f0; border-bottom: 1px solid #d7e0e0; } .ds-sample-q-tab { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #586766; } .ds-sample-q-body { padding: 26px; } .ds-sample-q-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: #006f71; margin-bottom: 12px; } .ds-sample-q-question { font-size: 16.5px; font-weight: 700; color: #061414; line-height: 1.4; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Command Deck",
+    "overview": "StudyStock splits into two halves that never blur together: a near-black command sidebar that handles navigation, organization switching, and event selection, and a bright, quiet workspace where the actual studying happens. One teal Signal color crosses both halves — it marks exactly one thing at a time and nothing else competes with it for attention. This replaced an earlier indigo/violet/fuchsia gradient system deliberately, since that combination reads as generic AI-SaaS. The marketing landing page runs as a brand-register surface per-task (PRODUCT.md's per-surface override) with a market/investing narrative — StudyStock = Study + Stock — carried through a live event ticker and an interactive sample question, reusing the same Signal teal and semantic green rather than a second brand color. The system explicitly rejects generic ed-tech SaaS, the default Next.js/Tailwind template look, glassmorphism, corporate-Memphis blobs, and cartoonish gamification.",
+    "keyCharacteristics": [
+      "Two-zone layout: dark command sidebar, light content workspace — never inverted, never merged.",
+      "One accent color, used sparingly. Signal teal means \"this is active\" or \"this is the primary action,\" nowhere else.",
+      "Flat at rest, shadow on interaction. Depth is earned by state, not applied decoratively.",
+      "Precise, structural components — crisp borders, small fast hovers, no bounce or elastic motion.",
+      "Mono type carries every count, badge, and ticker line — an instrument-panel detail used throughout, not sparingly.",
+      "The landing page is a brand-register exception that still reuses the app's one accent — market/ticker concept, not a second palette."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Signal teal appears on at most one element per view at rest. It never decorates static content.", "section": "colors" },
+      { "name": "The Gradient Containment Rule", "body": "The teal→green→blue gradient is reserved for large dark hero surfaces only — never a button, badge, card, or small element, including on the landing page.", "section": "colors" },
+      { "name": "The One Display Rule", "body": "Exactly one Display-scale headline per screen. A second large headline downgrades to Headline scale.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "No box-shadow on any element at rest except cards (sm only) and primary buttons (a deliberate glow exception). Everything else earns its shadow through hover, focus, or an open/active state.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the sidebar Deep Space Navy and the workspace Cool Paper — the two-zone split is the system's structure, not a decoration.",
+      "Do use Signal teal for exactly one active/primary element per view; everywhere else, stay neutral.",
+      "Do keep every card flat at rest (sm shadow only) and add shadow strictly as hover/focus feedback.",
+      "Do use translateY(-2px) + shadow deepening as the standard hover lift — fast (150ms), ease-out, no bounce.",
+      "Do reserve the teal→green→blue gradient for large dark hero surfaces only.",
+      "Do lean on JetBrains Mono for counts, badges, and ticker text.",
+      "Do show all three organizations (FBLA, DECA, HOSA) as equal-weight entry points on the landing page — HOSA marked \"coming soon,\" never hidden."
+    ],
+    "donts": [
+      "Don't ship a generic ed-tech SaaS screen — no stock-photo hero imagery, no multi-step onboarding wizard, no marketing-speak copy.",
+      "Don't introduce mascots, streak badges, confetti, or other gamification chrome.",
+      "Don't apply a resting shadow to any element besides cards and primary buttons.",
+      "Don't use the gradient, or more than one Signal element, decoratively on a single small component.",
+      "Don't use bounce/elastic easing anywhere — every transition uses ease-out (cubic-bezier(0.16, 1, 0.3, 1)).",
+      "Don't default the landing page to the generic Next.js/Tailwind SaaS template look — centered headline, gradient wash, floating browser mockup, nothing else.",
+      "Don't use glassmorphism, corporate-Memphis blob illustrations, or an unstructured three-card feature row as the landing page's primary device.",
+      "Don't introduce a second brand color for the landing page's market/ticker concept — reuse Signal teal and semantic green."
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+HOSA STUDY OUTLINE — NUTRITION (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of human nutrition: macronutrients and micronutrients and their
+functions/deficiency diseases, digestion/absorption/metabolism, current
+dietary guidelines, nutrition needs across the lifespan, therapeutic and
+special diets, nutrition-related disease, and food safety.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Macronutrients — Carbohydrates, Protein & Fat (7 items)
+1. Differentiate simple vs. complex carbohydrates and identify food sources of each.
+2. Explain the role of dietary fiber (soluble vs. insoluble) and its health effects.
+3. Identify essential vs. nonessential amino acids and describe complete vs. incomplete protein sources.
+4. Calculate caloric contribution from grams of carbohydrate, protein, and fat (4/4/9 kcal per gram).
+5. Differentiate saturated, unsaturated (mono/poly), and trans fats and their cardiovascular effects.
+6. Identify essential fatty acids (linoleic, alpha-linolenic/omega-3) and their dietary sources.
+7. Explain nitrogen balance (positive vs. negative) and its clinical significance.
+
+B. Vitamins & Deficiency Diseases (7 items)
+1. Differentiate fat-soluble (A, D, E, K) from water-soluble (B-complex, C) vitamins by absorption and storage.
+2. Identify the deficiency disease associated with each vitamin (e.g., vitamin C/scurvy, vitamin D/rickets, thiamin/beriberi, niacin/pellagra).
+3. Identify food sources rich in a specified vitamin.
+4. Explain the physiological function of a specified vitamin (e.g., vitamin K in clotting, vitamin A in vision, folate in neural tube development).
+5. Identify populations at risk for a specific vitamin deficiency (e.g., folate deficiency in pregnancy, B12 deficiency in vegans/older adults).
+6. Identify signs/symptoms of a specified vitamin toxicity (e.g., hypervitaminosis A, vitamin D toxicity).
+7. Explain the role of antioxidant vitamins (A, C, E) in reducing oxidative cell damage.
+
+C. Minerals & Deficiency/Toxicity Disorders (6 items)
+1. Identify the deficiency disorder associated with a specified mineral (e.g., iron/anemia, iodine/goiter, calcium/osteoporosis).
+2. Explain the physiological function of a specified mineral (e.g., sodium/potassium in fluid balance, calcium in bone and muscle contraction).
+3. Identify dietary sources rich in a specified mineral.
+4. Differentiate major minerals (calcium, phosphorus, magnesium) from trace minerals (iron, zinc, iodine, selenium).
+5. Explain factors that enhance or inhibit mineral absorption (e.g., vitamin C enhancing iron absorption, phytates inhibiting zinc absorption).
+6. Identify signs/symptoms of a specified mineral toxicity (e.g., iron overload/hemochromatosis, excess sodium and hypertension).
+
+D. Digestion, Absorption & Metabolism (6 items)
+1. Sequence the pathway of digestion from ingestion through elimination, identifying each organ's role.
+2. Identify the digestive enzyme responsible for breaking down a specified macronutrient (e.g., amylase, lipase, pepsin, trypsin).
+3. Explain where each macronutrient is primarily absorbed (e.g., most nutrient absorption in the small intestine/jejunum).
+4. Differentiate anabolism from catabolism in metabolism.
+5. Explain the role of the liver in nutrient metabolism (glycogen storage, protein synthesis, detoxification).
+6. Calculate basal metabolic rate (BMR) factors and explain variables that affect metabolic rate (age, muscle mass, thyroid function).
+
+E. Dietary Guidelines & MyPlate (4 items)
+1. Identify the five MyPlate food groups and recommended proportions.
+2. Apply Dietary Guidelines for Americans recommendations to a sample meal or diet.
+3. Interpret a Nutrition Facts label (serving size, % Daily Value, added sugars).
+4. Identify recommended limits for a specified nutrient (e.g., added sugar under 10% of calories, sodium under 2,300 mg/day).
+
+F. Nutrition Across the Lifespan (6 items)
+1. Identify increased nutrient needs during pregnancy and lactation (e.g., folate, iron, calcium, additional calories).
+2. Identify nutrition considerations for infants (breastfeeding vs. formula, introduction of solids, iron-fortified cereal).
+3. Identify nutrition needs and common deficiencies in childhood and adolescence (calcium, iron, growth spurts).
+4. Identify nutrition considerations for older adults (decreased caloric need, risk of B12/calcium/vitamin D deficiency, dehydration risk).
+5. Identify nutrition considerations for athletes (hydration, carbohydrate loading, protein needs for muscle repair).
+6. Explain how pregnancy-related conditions (e.g., gestational diabetes, neural tube defects) relate to specific nutrient intake.
+
+G. Therapeutic & Special Diets (7 items)
+1. Identify dietary modifications for a renal diet (restriction of sodium, potassium, phosphorus, protein).
+2. Identify dietary modifications for a diabetic/carbohydrate-controlled diet (carbohydrate counting, glycemic index).
+3. Identify dietary modifications for a cardiac diet (sodium restriction, saturated fat/cholesterol limits, DASH diet).
+4. Identify dietary modifications for gastrointestinal conditions (low-residue, bland, gluten-free for celiac disease).
+5. Differentiate diet consistency progressions (clear liquid, full liquid, pureed, mechanical soft, regular).
+6. Identify dietary considerations for food allergies vs. food intolerances (e.g., lactose intolerance vs. milk protein allergy).
+7. Identify appropriate enteral/parenteral nutrition indications and basic administration considerations.
+
+H. Nutrition-Related Diseases & Disorders (4 items)
+1. Identify risk factors and dietary contributors to obesity and metabolic syndrome.
+2. Differentiate eating disorders (anorexia nervosa, bulimia nervosa, binge-eating disorder) by clinical signs.
+3. Explain the relationship between diet and cardiovascular disease risk (LDL/HDL cholesterol, triglycerides).
+4. Explain the relationship between diet and type 2 diabetes risk and management.
+
+I. Food Safety, Labeling & Foodborne Illness (3 items)
+1. Identify common foodborne pathogens and their typical food sources (e.g., Salmonella/poultry-eggs, E. coli/undercooked beef, Listeria/unpasteurized dairy).
+2. Identify safe food handling practices (temperature danger zone, safe minimum internal cooking temperatures, cross-contamination prevention).
+3. Interpret food label claims and terminology (e.g., "reduced sodium," "organic," "whole grain," expiration vs. sell-by dates).

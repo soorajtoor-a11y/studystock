@@ -1,0 +1,85 @@
+HOSA STUDY OUTLINE — GENERAL CHEMISTRY (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+introductory college general chemistry curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Foundational chemistry principles including atomic structure, bonding,
+chemical reactions and stoichiometry, states of matter and gas laws,
+solutions, acid-base chemistry, thermochemistry, equilibrium and kinetics,
+and basic nuclear chemistry.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Atomic Structure & Periodic Table (6 items)
+1. Describe the structure of the atom (protons, neutrons, electrons) and isotopes.
+2. Calculate atomic mass, mass number, and average atomic mass from isotope abundances.
+3. Describe electron configuration and orbital notation (s, p, d, f).
+4. Explain periodic trends (atomic radius, ionization energy, electronegativity).
+5. Identify element classification by periodic table location (metals, nonmetals, metalloids, groups/periods).
+6. Explain valence electrons and their role in bonding.
+
+B. Chemical Bonding & Molecular Structure (6 items)
+1. Differentiate ionic, covalent, and metallic bonds.
+2. Apply Lewis dot structures to represent molecules and ions.
+3. Predict molecular geometry using VSEPR theory.
+4. Explain the polarity of bonds and molecules.
+5. Differentiate sigma and pi bonds and single, double, and triple bonds.
+6. Explain intermolecular forces (hydrogen bonding, dipole-dipole, London dispersion) and their effect on physical properties.
+
+C. Chemical Nomenclature & Reactions (5 items)
+1. Name and write formulas for ionic and covalent compounds.
+2. Balance chemical equations.
+3. Classify reaction types (synthesis, decomposition, single/double displacement, combustion).
+4. Predict products of a chemical reaction given reactants.
+5. Write and interpret net ionic equations.
+
+D. Stoichiometry (6 items)
+1. Calculate molar mass and convert between grams, moles, and particles.
+2. Determine empirical and molecular formulas from percent composition.
+3. Perform mole-to-mole and mass-to-mass stoichiometric calculations.
+4. Identify the limiting reactant and calculate theoretical and percent yield.
+5. Calculate the molarity of a solution.
+6. Perform dilution calculations (M1V1 = M2V2).
+
+E. States of Matter & Gas Laws (6 items)
+1. Describe the kinetic molecular theory of gases.
+2. Apply Boyle's law, Charles's law, and Gay-Lussac's law.
+3. Apply the combined gas law and the ideal gas law (PV = nRT).
+4. Explain Dalton's law of partial pressures.
+5. Describe phase changes and heating/cooling curves.
+6. Explain properties of liquids and solids (surface tension, viscosity, crystal structure).
+
+F. Solutions & Concentration (5 items)
+1. Differentiate solute, solvent, and types of solutions (saturated, unsaturated, supersaturated).
+2. Calculate concentration in molarity, molality, and percent composition.
+3. Explain factors affecting solubility (temperature, pressure, polarity).
+4. Explain colligative properties (boiling point elevation, freezing point depression).
+5. Describe the process of dissolution at the molecular level.
+
+G. Acids, Bases & pH (6 items)
+1. Differentiate Arrhenius, Bronsted-Lowry, and Lewis acid-base definitions.
+2. Calculate pH, pOH, [H+], and [OH-].
+3. Differentiate strong and weak acids/bases.
+4. Explain titration and calculate concentration from titration data.
+5. Explain buffer solutions and how they resist pH change.
+6. Interpret an acid-base titration curve.
+
+H. Thermochemistry (4 items)
+1. Differentiate exothermic and endothermic reactions.
+2. Calculate heat transfer using q = mcΔT.
+3. Explain enthalpy and Hess's law.
+4. Interpret a potential energy (reaction coordinate) diagram, including activation energy.
+
+I. Chemical Equilibrium & Kinetics (4 items)
+1. Write and interpret an equilibrium constant expression (Keq).
+2. Apply Le Chatelier's principle to predict shifts in equilibrium.
+3. Explain factors affecting reaction rate (concentration, temperature, catalyst, surface area).
+4. Interpret a reaction rate law and order of reaction.
+
+J. Nuclear Chemistry (2 items)
+1. Differentiate alpha, beta, and gamma radiation.
+2. Write balanced nuclear equations for radioactive decay and calculate half-life.

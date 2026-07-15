@@ -1,0 +1,86 @@
+HOSA STUDY OUTLINE — ALLIED HEALTH STATISTICS (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+introductory health/biostatistics curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Descriptive and inferential statistics as applied to health and medical data,
+including data presentation, probability, distributions, estimation,
+hypothesis testing, correlation, and epidemiological measures.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Foundations of Statistics & Data Types (4 items)
+1. Differentiate levels of measurement (nominal, ordinal, interval, ratio).
+2. Distinguish qualitative vs. quantitative data and discrete vs. continuous variables.
+3. Differentiate population vs. sample and parameter vs. statistic.
+4. Identify common data collection methods and sources of bias in health data.
+
+B. Data Presentation & Graphical Methods (5 items)
+1. Interpret frequency distribution tables and histograms.
+2. Read and construct bar graphs, pie charts, and line graphs of health data.
+3. Interpret stem-and-leaf plots and box-and-whisker plots.
+4. Identify appropriate graph types for categorical vs. numerical data.
+5. Detect misleading graphs (truncated axes, scale distortion).
+
+C. Measures of Central Tendency (5 items)
+1. Calculate the mean, median, and mode from a data set.
+2. Determine which measure of central tendency is most appropriate for skewed data.
+3. Calculate a weighted mean.
+4. Identify the effect of outliers on the mean vs. the median.
+5. Calculate the mean from a grouped frequency distribution.
+
+D. Measures of Variability (5 items)
+1. Calculate the range and interquartile range (IQR).
+2. Calculate variance and standard deviation for a sample and a population.
+3. Calculate the coefficient of variation.
+4. Interpret standard deviation as a measure of spread.
+5. Identify outliers using the IQR rule or z-scores.
+
+E. Probability Basics (6 items)
+1. Calculate simple, joint, and conditional probability.
+2. Differentiate independent vs. dependent events.
+3. Apply the addition rule and multiplication rule of probability.
+4. Calculate probability using a contingency table.
+5. Differentiate sensitivity, specificity, and predictive value in a diagnostic test.
+6. Calculate odds and odds ratio vs. relative risk.
+
+F. The Normal Distribution (6 items)
+1. Describe the properties of the normal (bell) curve.
+2. Apply the empirical rule (68-95-99.7 rule).
+3. Calculate and interpret a z-score.
+4. Use a z-table to find the proportion of data above/below a value.
+5. Differentiate a normal distribution from a skewed distribution.
+6. Explain the standard normal distribution and its use in comparing data sets.
+
+G. Sampling & the Central Limit Theorem (4 items)
+1. Differentiate sampling methods (random, stratified, systematic, convenience, cluster).
+2. Explain sampling error and the sampling distribution of the mean.
+3. Explain the Central Limit Theorem and its implications for sample size.
+4. Calculate the standard error of the mean.
+
+H. Estimation & Confidence Intervals (4 items)
+1. Interpret a confidence interval for a population mean or proportion.
+2. Explain how sample size and confidence level affect interval width.
+3. Calculate a confidence interval given a mean, standard deviation, and sample size.
+4. Interpret margin of error in a health survey report.
+
+I. Hypothesis Testing Basics (5 items)
+1. State a null hypothesis and an alternative hypothesis.
+2. Differentiate Type I and Type II error.
+3. Interpret a p-value and statistical significance (alpha = 0.05).
+4. Differentiate a one-tailed and two-tailed test.
+5. Identify when to use a t-test vs. a chi-square test.
+
+J. Correlation & Regression (3 items)
+1. Interpret a correlation coefficient (r) and a scatterplot.
+2. Differentiate correlation from causation.
+3. Interpret a simple linear regression line and a predicted value.
+
+K. Epidemiological & Health Statistics (3 items)
+1. Calculate incidence rate and prevalence rate.
+2. Differentiate morbidity and mortality rates (crude, age-adjusted).
+3. Calculate and interpret a case fatality rate.

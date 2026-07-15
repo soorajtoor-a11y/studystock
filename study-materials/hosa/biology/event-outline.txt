@@ -1,0 +1,88 @@
+HOSA STUDY OUTLINE — BIOLOGY (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+AP/introductory college biology curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+General biology across the major unifying themes of the discipline: cell
+structure and energetics, genetics and molecular biology, evolution, ecology,
+classification, and an overview of human body systems.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Chemistry of Life (3 items)
+1. Describe the properties of water and its role in living systems.
+2. Identify the four major macromolecules (carbohydrates, lipids, proteins, nucleic acids) and their monomers.
+3. Explain dehydration synthesis and hydrolysis reactions.
+
+B. Cell Structure & Function (5 items)
+1. Differentiate prokaryotic and eukaryotic cells.
+2. Identify major organelles and their functions (nucleus, mitochondria, ER, Golgi, ribosomes, lysosomes).
+3. Describe the fluid mosaic model of the plasma membrane.
+4. Differentiate passive transport (diffusion, osmosis, facilitated diffusion) and active transport.
+5. Explain endocytosis and exocytosis.
+
+C. Cellular Energy: Respiration & Photosynthesis (5 items)
+1. Describe the overall inputs and outputs of cellular respiration.
+2. Identify the stages of cellular respiration (glycolysis, Krebs cycle, electron transport chain).
+3. Describe the overall inputs and outputs of photosynthesis (light reactions, Calvin cycle).
+4. Explain the role of chlorophyll and chloroplast structure.
+5. Compare aerobic respiration and anaerobic fermentation.
+
+D. Cell Division (4 items)
+1. Describe the phases of the cell cycle (interphase, mitosis, cytokinesis).
+2. Identify the stages of mitosis and their key events.
+3. Describe the stages of meiosis I and II and how they produce genetic variation.
+4. Differentiate mitosis and meiosis in purpose and outcome.
+
+E. Mendelian Genetics (5 items)
+1. Apply Mendel's law of segregation and law of independent assortment.
+2. Use a Punnett square to predict genotypic and phenotypic ratios for monohybrid and dihybrid crosses.
+3. Differentiate dominant, recessive, codominant, and incomplete dominance inheritance.
+4. Differentiate genotype and phenotype, homozygous and heterozygous.
+5. Explain sex-linked inheritance patterns (e.g., color blindness, hemophilia).
+
+F. Molecular Genetics (5 items)
+1. Describe DNA structure and the process of DNA replication.
+2. Describe transcription and translation (central dogma).
+3. Explain the structure and role of mRNA, tRNA, and rRNA.
+4. Describe types of mutations and their potential effects.
+5. Explain basic concepts of gene regulation (e.g., operons).
+
+G. Evolution & Natural Selection (5 items)
+1. Explain Darwin's theory of natural selection and its supporting evidence.
+2. Differentiate natural selection, genetic drift, and gene flow as mechanisms of evolution.
+3. Describe evidence for evolution (fossil record, homologous structures, molecular biology).
+4. Explain the concepts of adaptation and fitness.
+5. Describe speciation and reproductive isolation.
+
+H. Ecology (5 items)
+1. Define the levels of ecological organization (organism, population, community, ecosystem, biosphere).
+2. Describe energy flow through trophic levels and food webs.
+3. Explain biogeochemical cycles (carbon, nitrogen, water).
+4. Differentiate types of species interactions (predation, competition, symbiosis).
+5. Describe population growth models (exponential vs. logistic, carrying capacity).
+
+I. Classification & Diversity (4 items)
+1. Describe the hierarchical taxonomic classification system (domain to species).
+2. Differentiate the three domains and six kingdoms of life.
+3. Explain binomial nomenclature.
+4. Describe major characteristics distinguishing plants, animals, fungi, and protists.
+
+J. Human Body Systems Overview (4 items)
+1. Identify the major human organ systems and their primary functions.
+2. Describe homeostasis and negative feedback mechanisms.
+3. Describe the basic structure and function of the nervous and endocrine systems.
+4. Describe the basic structure and function of the circulatory and respiratory systems.
+
+K. Viruses & Microorganisms (3 items)
+1. Describe the basic structure of a virus and the lytic vs. lysogenic cycle.
+2. Differentiate bacteria, viruses, fungi, and protists in basic structure.
+3. Explain the role of microorganisms in disease and in ecosystems.
+
+L. Scientific Method & Biotechnology (2 items)
+1. Identify the steps of the scientific method and elements of experimental design (control, variables).
+2. Describe basic biotechnology techniques (PCR, gel electrophoresis, cloning).

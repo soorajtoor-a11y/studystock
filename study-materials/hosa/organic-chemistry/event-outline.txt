@@ -1,0 +1,88 @@
+HOSA STUDY OUTLINE — ORGANIC CHEMISTRY (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+introductory college organic chemistry curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Structure, bonding, nomenclature, and reactivity of carbon-based compounds,
+including reaction mechanisms, stereochemistry, and the chemistry of the
+functional groups found in biological molecules.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Bonding, Hybridization & Molecular Geometry (5 items)
+1. Describe sp3, sp2, and sp hybridization and predict resulting bond angles and geometry.
+2. Differentiate sigma and pi bonds and their role in single, double, and triple bonds.
+3. Apply VSEPR theory to predict molecular shape of simple organic molecules.
+4. Explain resonance structures and their contribution to molecular stability.
+5. Describe electronegativity and bond polarity in organic functional groups.
+
+B. Nomenclature of Organic Compounds (IUPAC) (5 items)
+1. Apply IUPAC rules to name straight-chain and branched alkanes.
+2. Apply IUPAC rules to name alkenes and alkynes, including position and geometry (E/Z, cis/trans).
+3. Name organic compounds containing a single functional group (alcohols, halides, amines).
+4. Identify common names alongside IUPAC names for frequently encountered compounds.
+5. Determine molecular formula and structural formula from a given IUPAC name.
+
+C. Alkanes, Alkenes & Alkynes (4 items)
+1. Describe physical properties of alkanes (boiling point trends, solubility) based on structure.
+2. Explain conformations of alkanes (staggered, eclipsed) using Newman projections.
+3. Describe addition reactions of alkenes (hydrogenation, halogenation, hydration).
+4. Apply Markovnikov's rule to predict the major product of an addition reaction.
+
+D. Stereochemistry & Isomerism (5 items)
+1. Differentiate constitutional isomers, geometric isomers, and stereoisomers.
+2. Identify a chiral (stereogenic) center in an organic molecule.
+3. Assign R/S configuration to a stereocenter using CIP priority rules.
+4. Differentiate enantiomers, diastereomers, and meso compounds.
+5. Explain the biological significance of chirality (e.g., differing drug enantiomer activity).
+
+E. Aromatic Compounds & Benzene Chemistry (4 items)
+1. Describe the structure and resonance stabilization of benzene.
+2. Apply Hückel's rule to determine aromaticity of a ring system.
+3. Explain electrophilic aromatic substitution as a reaction class.
+4. Predict directing effects of substituents on further aromatic substitution (ortho/para vs. meta directors).
+
+F. Alkyl Halides & Nucleophilic Substitution/Elimination (5 items)
+1. Differentiate SN1 and SN2 mechanisms by rate law, stereochemistry, and substrate structure.
+2. Differentiate E1 and E2 elimination mechanisms and predict major product using Zaitsev's rule.
+3. Explain the effect of nucleophile strength and solvent on reaction pathway (SN1/SN2/E1/E2).
+4. Predict the product of a nucleophilic substitution reaction given a specific alkyl halide and nucleophile.
+5. Explain the role of leaving group ability in substitution and elimination reactions.
+
+G. Alcohols, Ethers & Epoxides (4 items)
+1. Classify alcohols as primary, secondary, or tertiary.
+2. Describe oxidation reactions of alcohols to aldehydes, ketones, and carboxylic acids.
+3. Describe the synthesis and reactivity of ethers.
+4. Explain ring-opening reactions of epoxides.
+
+H. Aldehydes & Ketones (4 items)
+1. Identify the carbonyl functional group and differentiate aldehydes from ketones.
+2. Describe nucleophilic addition reactions to the carbonyl group.
+3. Explain formation of hemiacetals and acetals from aldehydes/ketones and alcohols.
+4. Describe keto-enol tautomerism.
+
+I. Carboxylic Acids & Derivatives (5 items)
+1. Describe the structure and acidity of carboxylic acids relative to alcohols.
+2. Explain the mechanism of Fischer esterification.
+3. Differentiate carboxylic acid derivatives (esters, amides, anhydrides, acid chlorides) by reactivity.
+4. Describe hydrolysis reactions of esters and amides.
+5. Explain the relative reactivity order of carboxylic acid derivatives toward nucleophilic acyl substitution.
+
+J. Amines & Nitrogen-Containing Compounds (3 items)
+1. Classify amines as primary, secondary, or tertiary and describe their basicity.
+2. Explain factors affecting amine basicity (resonance, induction, steric effects).
+3. Describe amide formation from amines and carboxylic acid derivatives.
+
+K. Spectroscopy & Structure Determination (3 items)
+1. Interpret basic infrared (IR) spectra to identify functional groups.
+2. Interpret a basic 1H NMR spectrum (chemical shift, splitting pattern, integration) to deduce structure.
+3. Use mass spectrometry data (molecular ion, fragmentation) to support structure determination.
+
+L. Biomolecules (Carbohydrates, Lipids, Amino Acids/Proteins) (3 items)
+1. Identify functional groups present in monosaccharides and describe glycosidic bond formation.
+2. Describe the structure of triglycerides and the reaction forming an ester bond with fatty acids.
+3. Describe amino acid structure, the zwitterion form, and peptide bond formation.

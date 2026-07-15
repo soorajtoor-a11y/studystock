@@ -1,0 +1,89 @@
+HOSA STUDY OUTLINE — HEALTHCARE ADMINISTRATION (2025–2026)
+Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
+Item counts per content area (from the official test-plan percentages) shown in
+(parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Knowledge of the structure and financing of the U.S. healthcare delivery
+system, health information management, HIPAA and patient privacy, medical
+coding/billing, regulatory and accreditation requirements, facility
+organization and staffing, healthcare law and ethics, and the finance,
+quality improvement, and policy functions of healthcare administration.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Structure of the U.S. Healthcare Delivery System (5 items)
+1. Differentiate levels of care (primary, secondary, tertiary, quaternary) and give an example facility for each.
+2. Identify types of healthcare facilities (acute care hospital, ambulatory surgical center, long-term care, hospice, urgent care).
+3. Differentiate inpatient and outpatient care delivery models.
+4. Describe the role of integrated delivery systems and accountable care organizations (ACOs) in coordinated care.
+5. Identify the continuum of care and the role of care transitions/case management.
+
+B. Health Insurance & Reimbursement Models (5 items)
+1. Differentiate Medicare, Medicaid, and private/commercial health insurance in terms of eligibility and funding.
+2. Differentiate managed care models (HMO, PPO, POS, EPO) by network restrictions and referral requirements.
+3. Explain capitation, fee-for-service, and value-based/bundled payment reimbursement methods.
+4. Identify the purpose of deductibles, copayments, coinsurance, and premiums in a health plan.
+5. Explain the purpose of prior authorization and utilization review in reimbursement.
+
+C. Health Information Management & Medical Records/EHR (5 items)
+1. Differentiate a paper medical record from an electronic health record (EHR) and identify EHR components.
+2. Identify the purpose of the master patient index (MPI) in health information management.
+3. Explain retention requirements and ownership rules for medical records.
+4. Describe the process and purpose of a release of information (ROI) request.
+5. Identify the role of a health information management (HIM)/medical records department.
+
+D. HIPAA & Patient Privacy (4 items)
+1. Explain the purpose of the HIPAA Privacy Rule in protecting protected health information (PHI).
+2. Explain the purpose of the HIPAA Security Rule regarding electronic PHI (ePHI) safeguards.
+3. Identify permitted disclosures of PHI without patient authorization (treatment, payment, operations).
+4. Describe breach notification requirements under HIPAA and consequences of noncompliance.
+
+E. Regulatory & Accreditation Agencies (4 items)
+1. Explain the role of the Centers for Medicare & Medicaid Services (CMS) in healthcare regulation and reimbursement.
+2. Describe the role of The Joint Commission in voluntary accreditation of healthcare organizations.
+3. Explain the role of OSHA in workplace safety standards within healthcare facilities.
+4. Identify the role of state health departments and licensing boards in facility and provider oversight.
+
+F. Medical Coding, Billing & Claims Processing (5 items)
+1. Differentiate ICD-10-CM (diagnosis), CPT (procedure), and HCPCS coding systems by purpose.
+2. Describe the steps of the medical billing/revenue cycle (registration, coding, claim submission, payment posting).
+3. Identify common reasons for claim denials (coding errors, lack of medical necessity, eligibility issues).
+4. Explain the purpose of an Explanation of Benefits (EOB) versus a patient statement.
+5. Identify the role of a clearinghouse in electronic claims submission.
+
+G. Healthcare Facility Organization, Staffing & Credentialing (4 items)
+1. Interpret a typical hospital organizational chart (governing board, administration, medical staff, departments).
+2. Differentiate the roles of a hospital CEO, CMO, CNO, and department director.
+3. Explain the credentialing and privileging process for medical staff.
+4. Describe common staffing models and scheduling considerations (nurse-to-patient ratios, shift coverage).
+
+H. Healthcare Law, Ethics & Patient Rights (5 items)
+1. Explain the elements required for informed consent.
+2. Differentiate an advance directive, living will, and durable power of attorney for healthcare.
+3. Identify the four elements of medical malpractice (duty, breach, causation, damages).
+4. Explain patient rights under the Patient Self-Determination Act and a facility's patient bill of rights.
+5. Differentiate negligence, malpractice, and battery in a healthcare liability context.
+
+I. Quality Improvement & Risk Management (4 items)
+1. Explain the purpose of a continuous quality improvement (CQI) program in a healthcare facility.
+2. Describe the purpose of root cause analysis following a sentinel event.
+3. Identify the role of incident reports in a facility's risk management program.
+4. Explain the purpose of patient satisfaction surveys (e.g., HCAHPS) in quality measurement.
+
+J. Healthcare Finance & Budgeting (3 items)
+1. Differentiate operating and capital budgets in a healthcare organization.
+2. Explain the concept of cost centers/revenue centers in healthcare financial management.
+3. Interpret basic financial statement terms relevant to a healthcare facility (revenue, expense, net income).
+
+K. Human Resource Management in Healthcare (3 items)
+1. Describe the recruitment, hiring, and orientation process for healthcare staff.
+2. Explain the purpose of a performance appraisal/evaluation process for employees.
+3. Identify components of employee compliance training (e.g., HIPAA, OSHA, infection control) required in healthcare settings.
+
+L. Health Policy & Public Health Administration (3 items)
+1. Explain the role of the Affordable Care Act (ACA) in expanding insurance coverage and consumer protections.
+2. Describe the role of public health agencies (CDC, state/local health departments) in population health administration.
+3. Identify how health policy affects access, cost, and quality of care (the "iron triangle" of healthcare).

@@ -1,0 +1,84 @@
+HOSA STUDY OUTLINE — MATH FOR HEALTH PROFESSIONALS (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+health-sciences mathematics curriculum (clinical calculation focus).
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Mathematical concepts and computational skills required in health-care
+settings, from basic arithmetic and measurement systems through dosage
+calculation, IV flow rates, and interpretation of clinical data.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Basic Arithmetic & Number Systems (4 items)
+1. Perform operations with whole numbers, integers, and signed numbers.
+2. Round numbers and estimate to check reasonableness of a calculated answer.
+3. Apply order of operations to multi-step numeric expressions.
+4. Convert between standard and scientific notation.
+
+B. Fractions, Decimals & Percentages (5 items)
+1. Add, subtract, multiply, and divide fractions and mixed numbers.
+2. Convert among fractions, decimals, and percentages.
+3. Calculate percentage strength of a solution and percentage change.
+4. Solve problems involving discounts, markups, and error rate percentages.
+5. Round decimals appropriately for clinical measurements (e.g., to the tenth).
+
+C. Ratio and Proportion (5 items)
+1. Set up and solve a ratio-proportion (means-extremes) for an unknown quantity.
+2. Express drug concentrations as ratios (e.g., 1:1000 epinephrine).
+3. Solve proportion problems involving scale and dilution.
+4. Apply cross-multiplication to verify equivalent ratios.
+5. Convert ratio strength to percentage strength and vice versa.
+
+D. Systems of Measurement (Metric, Household, Apothecary) (5 items)
+1. Identify base units of the metric system (gram, liter, meter) and common prefixes (kilo-, milli-, micro-).
+2. Convert within the metric system using unit prefixes.
+3. Convert between metric and household measures (mL to teaspoons/tablespoons, kg to lb).
+4. Identify apothecary and household units still referenced in older orders (grain, dram, ounce).
+5. Convert Fahrenheit and Celsius temperature scales.
+
+E. Dimensional Analysis / Unit Conversion (6 items)
+1. Set up a dimensional analysis (factor-label) equation with conversion factors.
+2. Cancel units correctly across multiple conversion factors in a single equation.
+3. Convert compound units (e.g., mg/kg/day to mg/dose).
+4. Solve multi-step conversion problems combining weight, volume, and time units.
+5. Identify and correct unit-cancellation errors in a worked dimensional analysis problem.
+6. Apply dimensional analysis to convert between household and metric volume units.
+
+F. Dosage Calculations — Oral & Parenteral (7 items)
+1. Apply the desired-over-have (D/H x Q) formula to calculate oral tablet or liquid dosage.
+2. Calculate the number of tablets or capsules needed from a prescribed dose.
+3. Calculate injectable dosage from a stock (available) concentration.
+4. Convert a prescribed dose in mg/kg to a total dose based on patient weight.
+5. Calculate dosage when the order and the label are in different units (e.g., grains vs. mg).
+6. Determine safe dosage range and compare a prescribed dose against it.
+7. Calculate reconstitution volume and resulting concentration for a powdered drug.
+
+G. IV Flow Rates & Drip Calculations (6 items)
+1. Calculate IV flow rate in mL/hr from a total volume and infusion time.
+2. Calculate drops per minute (gtt/min) using the drop factor of the administration set.
+3. Convert between mL/hr and gtt/min using the tubing's drop factor.
+4. Calculate infusion time remaining given a flow rate and volume remaining.
+5. Calculate a medication drip rate in mcg/kg/min for a titrated IV medication.
+6. Recalculate an IV flow rate after a change in ordered volume or time.
+
+H. Pediatric Dosage Calculations (4 items)
+1. Calculate a pediatric dose using body weight (mg/kg).
+2. Calculate a pediatric dose using body surface area (BSA) with the appropriate formula.
+3. Apply Clark's rule or a similar weight-based pediatric dosage rule.
+4. Determine whether a calculated pediatric dose falls within the recommended safe range.
+
+I. Basic Algebra Applied to Healthcare (4 items)
+1. Solve a linear equation for an unknown clinical variable.
+2. Calculate Body Mass Index (BMI) using the standard formula and interpret the result.
+3. Solve formula-based problems involving rate, distance/volume, and time.
+4. Apply direct and inverse variation to healthcare quantities (e.g., concentration and volume).
+
+J. Statistics & Data Interpretation in Healthcare (4 items)
+1. Calculate mean, median, mode, and range from a set of clinical data.
+2. Interpret data presented in tables, bar graphs, and line graphs of vital signs or lab values.
+3. Calculate a simple rate or ratio from population/clinical data (e.g., infection rate per 1,000).
+4. Interpret basic probability in the context of screening test results.

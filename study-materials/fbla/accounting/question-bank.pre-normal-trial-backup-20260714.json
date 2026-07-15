@@ -1,0 +1,702 @@
+[
+ {
+  "question": "The process of transferring journal entries to the appropriate ledger accounts in the order they appear in the journal is called ___",
+  "options": [
+   "reconciling",
+   "balancing",
+   "posting",
+   "journalizing"
+  ],
+  "correct_index": 2,
+  "explanation": "Posting is the specific accounting term for transferring debit and credit amounts from the journal to the corresponding general ledger or subsidiary ledger accounts. This is a foundational step in the accounting cycle that comes immediately after journalizing.",
+  "type": "definition_recall",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The subsidiary ledger account that is used to record individual customer or vendor transactions, with a corresponding control account in the general ledger, is called a(n) ___",
+  "options": [
+   "trial balance account",
+   "closing entry reference",
+   "adjusting journal entry",
+   "accounts receivable subsidiary ledger"
+  ],
+  "correct_index": 3,
+  "explanation": "A subsidiary ledger (such as accounts receivable or accounts payable) records detailed transactions for individual customers or vendors, while a control account in the general ledger maintains the total. This structure allows accountants to track individual account balances while keeping the general ledger manageable. The other options refer to different accounting processes or documents, not the ledger structure itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In payroll processing, the term used to describe the total amount an employee earns before any deductions are subtracted is called ___.",
+  "options": [
+   "withholding",
+   "gross pay",
+   "voluntary deduction",
+   "net pay"
+  ],
+  "correct_index": 1,
+  "explanation": "Gross pay is the total compensation earned by an employee before taxes, insurance, retirement contributions, and other deductions are applied. Net pay, by contrast, is what remains after all deductions have been subtracted from gross pay. Understanding this distinction is fundamental to processing payroll accurately in both manual and computerized systems.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of transferring employee time records, pay rates, and deduction information into a payroll software system or spreadsheet is known as ___.",
+  "options": [
+   "data entry",
+   "system integration",
+   "data validation",
+   "batch processing"
+  ],
+  "correct_index": 0,
+  "explanation": "Data entry is the specific term for inputting raw information—hours worked, hourly rates, tax withholding elections, and other employee details—into the computerized system where payroll calculations will occur. Data validation checks accuracy after entry; system integration links different software; batch processing groups multiple transactions. Only data entry names the act of transferring the raw information itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The systematic procedures used to transform raw payroll information into accurate paychecks, tax reports, and accounting records constitute ___.",
+  "options": [
+   "accounts receivable",
+   "audit verification",
+   "general ledger management",
+   "payroll processing"
+  ],
+  "correct_index": 3,
+  "explanation": "Payroll processing encompasses the complete workflow—from collecting employee hours and applying pay rates, through calculating deductions, to generating paychecks and compiling tax and accounting documentation. Accounts receivable deals with customer invoices; general ledger management records all transactions; audit verification reviews transactions for accuracy. Only payroll processing names the entire set of functions specific to employee compensation.",
+  "type": "concept_completion",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In payroll processing, the deductions subtracted from an employee's gross pay—such as federal income tax, Social Security, and health insurance premiums—are collectively referred to as ___.",
+  "options": [
+   "payroll deductions",
+   "net pay adjustments",
+   "withholding reserves",
+   "tax liabilities"
+  ],
+  "correct_index": 0,
+  "explanation": "Payroll deductions are the specific amounts withheld from gross pay for taxes, insurance, and other mandatory or voluntary purposes. While withholding reserves and tax liabilities describe related concepts, payroll deductions is the precise accounting term used in payroll software and spreadsheet systems to label this category of amounts.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The difference between an employee's gross pay and all payroll deductions, representing the actual amount the employee receives via check or direct deposit, is called ___.",
+  "options": [
+   "disposable income",
+   "earned compensation",
+   "net pay",
+   "take-home pay"
+  ],
+  "correct_index": 2,
+  "explanation": "Net pay is the standard accounting and payroll term for the amount remaining after all deductions have been subtracted from gross pay. Computerized payroll systems and spreadsheets use net pay to label this final calculated figure, which directly corresponds to the check amount or direct deposit received by the employee.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A form used to record all checks written, deposits made, and the running balance of a checking account is called a(n) ___",
+  "options": [
+   "account ledger",
+   "check register",
+   "reconciliation schedule",
+   "bank statement"
+  ],
+  "correct_index": 1,
+  "explanation": "A check register is the document maintained by the account holder to track all banking activity and the current account balance. The bank statement, by contrast, is provided by the bank showing transactions from their perspective, which may differ in timing from the check register.",
+  "type": "definition_recall",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of comparing the company's checkbook balance to the bank statement balance and identifying reasons for any differences is known as ___",
+  "options": [
+   "transaction posting",
+   "bank reconciliation",
+   "account verification",
+   "balance confirmation"
+  ],
+  "correct_index": 1,
+  "explanation": "Bank reconciliation is the specific accounting process of comparing the two balances and determining what caused them to differ (such as outstanding checks or deposits in transit). This reconciliation ensures both records are accurate and identifies adjusting entries needed in the general ledger.",
+  "type": "definition_recall",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following items would require an adjusting entry in the company's general ledger during bank reconciliation?",
+  "options": [
+   "Deposits recorded in the check register but not yet mailed to the bank",
+   "Checks written but not yet mailed to creditors",
+   "Bank service charges, NSF checks, and interest earned on the account",
+   "Outstanding checks and deposits in transit"
+  ],
+  "correct_index": 2,
+  "explanation": "Items like bank service charges, NSF (non-sufficient funds) checks, and earned interest represent transactions that the bank has recorded but the company has not yet recorded in its books, making them require adjusting journal entries. Outstanding checks and deposits in transit explain timing differences but do not require adjusting entries—they appear on the reconciliation statement only.",
+  "type": "which_of_following",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When a bank statement shows a debit memo for an electronic fund transfer fee, which entry would the company record in its general ledger?",
+  "options": [
+   "Debit Bank Expense, Credit Cash",
+   "Debit Cash, Credit Bank Expense",
+   "Debit Cash, Credit Miscellaneous Expense",
+   "Debit Miscellaneous Expense, Credit Bank Expense"
+  ],
+  "correct_index": 0,
+  "explanation": "Bank fees reduce the company's cash balance and must be recorded as an expense. The journal entry debits the expense account (recognizing the cost) and credits Cash (reducing the asset). This adjusting entry reflects the true cash position after the bank has already deducted the fee.",
+  "type": "definition_recall",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The discrepancy between the balance shown in a company's checkbook and the balance reported on the bank statement typically results from timing differences and items that one party has recorded but the other has not yet processed, a process known as ___.",
+  "options": [
+   "outstanding reconciliation",
+   "check clearance",
+   "bank statement variance analysis",
+   "deposit in transit identification"
+  ],
+  "correct_index": 3,
+  "explanation": "Deposits in transit represent funds the company has recorded in its checkbook and deposited at the bank, but the bank has not yet cleared or credited to the account. These timing differences are a primary reason why book balance and bank balance differ temporarily. Identifying them is a critical step in the reconciliation process.",
+  "type": "definition_recall",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company owes money to suppliers for materials purchased on credit. This obligation to pay suppliers in the future is classified as a ___.",
+  "options": [
+   "accounts payable",
+   "current asset",
+   "retained earnings",
+   "prepaid expense"
+  ],
+  "correct_index": 0,
+  "explanation": "Accounts payable is a current liability that represents amounts owed to suppliers for goods or services purchased on credit. It is a short-term obligation typically due within one year, making it a core liability account in the accounting system.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An obligation that a business must pay within 12 months or within the normal operating cycle, whichever is longer, is classified as a ___.",
+  "options": [
+   "contingent asset",
+   "long-term liability",
+   "current liability",
+   "deferred revenue account"
+  ],
+  "correct_index": 2,
+  "explanation": "Current liabilities are obligations due within one year or the operating cycle. This distinction from long-term liabilities is critical for balance sheet classification and for assessing short-term solvency.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are examples of current liabilities EXCEPT",
+  "options": [
+   "Accounts payable for supplies ordered last month",
+   "Mortgage payable due in 15 years",
+   "Unearned revenue from advance customer payments",
+   "Salaries payable to employees for work already performed"
+  ],
+  "correct_index": 1,
+  "explanation": "A mortgage payable in 15 years is a long-term liability because it extends beyond the 12-month window. The other three are all short-term obligations due within one year, making them current liabilities on the balance sheet.",
+  "type": "all_except",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A long-term obligation that a company incurs when borrowing money from a bank, typically repaid over several years beyond the normal operating cycle, is classified as a ___.",
+  "options": [
+   "note payable",
+   "accrued expense",
+   "bond payable",
+   "long-term liability"
+  ],
+  "correct_index": 3,
+  "explanation": "A long-term liability is any obligation due more than 12 months in the future or beyond the normal operating cycle. This is distinct from current liabilities, which are due within 12 months. The question tests understanding of the time-based classification that separates short-term from long-term obligations.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The accounting function that groups and organizes all of a business's individual liability, asset, and equity accounts into a structured list so transactions can be recorded consistently is called a ___.",
+  "options": [
+   "general ledger",
+   "balance sheet",
+   "trial balance",
+   "chart of accounts"
+  ],
+  "correct_index": 3,
+  "explanation": "A chart of accounts is the foundational tool that lists every account a business uses, organized by type (assets, liabilities, equity, revenue, expense). It ensures consistent account naming and classification across the entire accounting system. A trial balance and balance sheet report account balances; the general ledger stores individual account activity but is not the organizational tool itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Account Classification",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The excess of revenues over expenses during a period is called ___.",
+  "options": [
+   "cost of goods sold",
+   "net income",
+   "operating income",
+   "gross profit"
+  ],
+  "correct_index": 1,
+  "explanation": "Net income is the bottom-line profit remaining after all expenses are subtracted from total revenues. This is distinct from gross profit (revenues minus cost of goods sold only) and operating income (revenues minus operating expenses, before taxes and interest).",
+  "type": "definition_recall",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would ALL increase net income on an income statement?",
+  "options": [
+   "Increased sales revenue, lower cost of goods sold, reduced operating expenses",
+   "Higher operating expenses, increased cost of goods sold, additional taxes",
+   "Decreased depreciation expense, higher advertising costs, increased utilities",
+   "Lower sales revenue, reduced cost of goods sold, higher income tax expense"
+  ],
+  "correct_index": 0,
+  "explanation": "All three items in option B increase net income: higher revenues add to the numerator, and lower costs subtract less from revenues. Options A and D contain items that reduce net income, and option C mixes a gain with two losses.",
+  "type": "which_of_following",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company reports sales revenue of $500,000 and cost of goods sold of $300,000. Operating expenses total $120,000 and income tax expense is $16,000. Using the income statement equation, what is the company's net income?",
+  "options": [
+   "$80,000",
+   "$84,000",
+   "$64,000",
+   "$180,000"
+  ],
+  "correct_index": 2,
+  "explanation": "Net income is calculated as revenues minus all expenses: $500,000 − $300,000 − $120,000 − $16,000 = $64,000. The income statement equation shows that net income results from subtracting cost of goods sold, operating expenses, and taxes from total revenues in sequence.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "On an income statement, operating expenses are all of the following EXCEPT ___.",
+  "options": [
+   "cost of merchandise purchased for resale",
+   "utilities and rent for office facilities",
+   "advertising and marketing costs",
+   "salaries and wages paid to employees"
+  ],
+  "correct_index": 0,
+  "explanation": "The cost of merchandise purchased for resale is classified as cost of goods sold, not an operating expense. Operating expenses are the costs of running the business operations after the sale, such as wages, utilities, rent, and advertising, and they appear separately from cost of goods sold on the income statement.",
+  "type": "all_except",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following items would ALL appear in the operating expenses section of an income statement?",
+  "options": [
+   "Interest expense, income tax expense, and utilities expense",
+   "Salaries expense, rent expense, and cost of goods sold",
+   "Cost of goods sold, freight-in, and salaries expense",
+   "Depreciation expense, utilities expense, and advertising expense"
+  ],
+  "correct_index": 3,
+  "explanation": "Operating expenses are costs incurred in the normal course of running the business and include items such as depreciation, utilities, advertising, salaries, and rent. Cost of goods sold is part of the cost of merchandise purchased for resale, not operating expenses. Interest and income tax expenses are non-operating items that appear below the operating income line on the income statement.",
+  "type": "which_of_following",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The practice of restricting access to sensitive financial records and client information to only authorized personnel is called ___.",
+  "options": [
+   "access logging",
+   "confidentiality",
+   "audit compliance",
+   "data encryption"
+  ],
+  "correct_index": 1,
+  "explanation": "Confidentiality is the principle of protecting sensitive information by limiting who can view or access it. While encryption and access logging are tools that support confidentiality, confidentiality itself is the broader concept of keeping information restricted. Audit compliance refers to meeting regulatory requirements, not the practice of limiting information access.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the processes and standards an accountant follows to maintain integrity, honesty, and respect for clients' trust in financial reporting make up ___.",
+  "options": [
+   "forensic accounting",
+   "regulatory filing",
+   "professional conduct",
+   "internal controls"
+  ],
+  "correct_index": 2,
+  "explanation": "Professional conduct encompasses the ethical standards, behaviors, and principles that accountants must uphold—including honesty, confidentiality, and client trust. Internal controls are specific safeguards over transactions, regulatory filing refers to submission requirements, and forensic accounting is a specialized practice area, none of which capture the broad concept of ethical behavior.",
+  "type": "concept_completion",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of ensuring that financial records and sensitive client information are accessed only by personnel with proper authorization is fundamental to what accounting principle?",
+  "options": [
+   "Transparency in all business communications",
+   "Protection of sensitive data through controlled access",
+   "Standardization of accounting software across departments",
+   "Efficient distribution of workload among staff members"
+  ],
+  "correct_index": 1,
+  "explanation": "Controlling access to sensitive financial records and client information through authorization is the core practice of data protection and confidentiality in accounting. This principle ensures that only qualified personnel can view or modify critical financial data, reducing the risk of fraud, errors, and unauthorized disclosure. The other options address business communication, technology, or workflow efficiency—none of which directly address the safeguarding of sensitive information.",
+  "type": "concept_completion",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following practices would most directly strengthen an accounting firm's ability to maintain client trust and minimize the risk of financial loss?",
+  "options": [
+   "Increasing the number of employees with access to client bank account information and reducing documentation requirements for transactions",
+   "Allowing remote access to financial records without encryption and storing backup files in publicly accessible locations",
+   "Implementing multi-factor authentication for database access, maintaining detailed audit trails, and conducting regular security training for all staff",
+   "Centralizing all client data in a single unprotected server to simplify data retrieval and reduce IT costs"
+  ],
+  "correct_index": 2,
+  "explanation": "Multi-factor authentication, audit trails, and security training are essential controls that protect confidential information and create accountability, directly reducing fraud risk and building client confidence. These measures ensure only authorized personnel access sensitive data and that all actions are traceable. The other options dangerously expose client information through inadequate access controls, lack of encryption, or poor backup practices—each would increase loss risk rather than minimize it.",
+  "type": "which_of_following",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An accountant's obligation to maintain honesty, integrity, and respect for client information in all financial reporting and business dealings is known as ___.",
+  "options": [
+   "Legal accountability",
+   "Regulatory compliance",
+   "Technical competence",
+   "Professional ethics"
+  ],
+  "correct_index": 3,
+  "explanation": "Professional ethics encompasses the principles and standards that guide an accountant's conduct—including honesty, integrity, confidentiality, and trustworthiness in handling client affairs. This framework is broader than simple regulatory compliance (which focuses on legal requirements) or technical competence (which addresses skill level). Upholding professional ethics is what allows clients and the public to rely on accountants' work.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A balance sheet differs from an income statement primarily in that the balance sheet shows ___",
+  "options": [
+   "assets, liabilities, and equity at a specific point in time",
+   "cash inflows and outflows from operating activities",
+   "revenues and expenses for a specific period",
+   "changes in owner's capital due to net income or loss"
+  ],
+  "correct_index": 0,
+  "explanation": "The balance sheet is a snapshot of financial position at a single date, displaying the accounting equation (Assets = Liabilities + Equity), whereas the income statement measures performance over a period. This distinction is fundamental to understanding how the two statements serve different reporting purposes.",
+  "type": "concept_completion",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of systematically recording transactions in accounts, preparing a trial balance, journalizing adjustments, preparing financial statements, and closing accounts is called ___",
+  "options": [
+   "the accounting cycle",
+   "the GAAP framework",
+   "the audit procedure",
+   "financial reconciliation"
+  ],
+  "correct_index": 0,
+  "explanation": "The accounting cycle is the complete sequence of steps that accountants follow each period to record, adjust, and report financial information. Understanding this cycle is essential to grasping how raw transactions become audited financial statements.",
+  "type": "definition_recall",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In double-entry accounting, every transaction affects at least two accounts because ___",
+  "options": [
+   "financial statements cannot be prepared without offsetting entries in every account",
+   "the fundamental accounting equation must remain in balance after each transaction is recorded",
+   "the tax code requires duplicate documentation of all business activities",
+   "auditors need independent verification of all debit and credit entries"
+  ],
+  "correct_index": 1,
+  "explanation": "Double-entry accounting maintains the equality of Assets = Liabilities + Equity; every debit must have a corresponding credit to preserve this balance. This principle ensures the integrity and accuracy of financial records and is the foundation of modern accounting systems.",
+  "type": "concept_completion",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be reported on a company's balance sheet?",
+  "options": [
+   "Depreciation expense, cost of goods sold, and retained earnings",
+   "Service revenue, salaries expense, utilities expense, and dividends paid",
+   "Cash, accounts receivable, inventory, and notes payable",
+   "Net income, operating expenses, and revenue for the quarter"
+  ],
+  "correct_index": 2,
+  "explanation": "The balance sheet reports only assets (cash, accounts receivable, inventory) and liabilities (notes payable) that exist at a point in time. Income statement items such as expenses and revenue, and changes like dividends, do not appear on the balance sheet itself.",
+  "type": "which_of_following",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company must comply with Generally Accepted Accounting Principles (GAAP) primarily because ___",
+  "options": [
+   "federal law prohibits the use of any accounting method not explicitly named in the Internal Revenue Code",
+   "GAAP requirements are set by individual states and must be followed to obtain a business license",
+   "GAAP eliminates the need for external audits and reduces the cost of financial reporting",
+   "GAAP establishes uniform methods and standards that make financial statements comparable and reliable for users making decisions"
+  ],
+  "correct_index": 3,
+  "explanation": "GAAP provides a consistent framework that ensures financial statements are prepared using the same accounting principles, allowing investors, creditors, and other users to compare companies fairly and make informed decisions. This standardization and reliability are GAAP's core purpose, not legal prohibition or audit elimination.",
+  "type": "concept_completion",
+  "knowledge_area": "Terminology, Concepts, and Practices",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's balance sheet shows total assets of $500,000 and total liabilities of $200,000. What is the owner's equity?",
+  "options": [
+   "$100,000",
+   "$700,000",
+   "$300,000",
+   "$200,000"
+  ],
+  "correct_index": 2,
+  "explanation": "The fundamental accounting equation is Assets = Liabilities + Owner's Equity. Rearranging: Owner's Equity = Assets − Liabilities = $500,000 − $200,000 = $300,000. This calculation demonstrates the balance sheet's structural relationship and is essential for interpreting financial condition.",
+  "type": "concept_completion",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following items would all be classified as current assets on a balance sheet?",
+  "options": [
+   "Mortgage payable, bonds payable, and salaries payable",
+   "Retained earnings, common stock, and additional paid-in capital",
+   "Land, equipment, and patents",
+   "Cash, accounts receivable, and prepaid expenses"
+  ],
+  "correct_index": 3,
+  "explanation": "Current assets are resources expected to be converted to cash or used within one year. Cash, accounts receivable (money owed by customers), and prepaid expenses all meet this criterion. The other options represent fixed assets, liabilities, and owner's equity respectively, which would not appear in the current assets section.",
+  "type": "which_of_following",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The left side of a balance sheet reports what the entity owns and owes, while the right side shows ___",
+  "options": [
+   "cash flow from operating activities",
+   "the sources of financing and claims against assets",
+   "management's analysis of performance trends",
+   "revenue and expense activity for the period"
+  ],
+  "correct_index": 1,
+  "explanation": "The balance sheet's right side presents liabilities (claims by creditors) and owner's equity (claims by owners), collectively representing how the business is financed. This structure—showing both the composition of assets and their financing sources—conveys the entity's financial condition at a point in time.",
+  "type": "concept_completion",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A balance sheet at December 31, 2024 would include all of the following EXCEPT",
+  "options": [
+   "sales revenue earned during the year",
+   "equipment purchased and still owned by the business",
+   "merchandise inventory count on the last day of the year",
+   "accounts payable balance as of year-end"
+  ],
+  "correct_index": 0,
+  "explanation": "A balance sheet is a snapshot of financial position at a specific date and includes only balance sheet accounts (assets, liabilities, and equity). Sales revenue is an income statement item reflecting activity over the period, not a balance at a point in time. All other options are balance sheet accounts reported as of December 31.",
+  "type": "all_except",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Assets that are expected to be converted into cash or used up within one year of the balance sheet date are classified as ___",
+  "options": [
+   "Intangible assets",
+   "Fixed assets",
+   "Current assets",
+   "Long-term investments"
+  ],
+  "correct_index": 2,
+  "explanation": "Current assets are short-term resources that will be liquidated or consumed within 12 months, such as cash, inventory, and accounts receivable. Fixed assets, by contrast, are long-term property and equipment expected to provide value over multiple years. This classification is fundamental to interpreting a balance sheet's liquidity position.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A worksheet is a columnar accounting tool used to organize data before preparing financial statements. Which of the following represents the primary purpose of preparing a worksheet in the accounting cycle?",
+  "options": [
+   "To organize unadjusted trial balance data, record adjustments, and facilitate the preparation of financial statements",
+   "To calculate depreciation expense and determine the useful life of fixed assets",
+   "To serve as a permanent record of all transactions and replace the need for a general journal",
+   "To replace the need for a general ledger and eliminate the posting process"
+  ],
+  "correct_index": 0,
+  "explanation": "A worksheet organizes account balances from the unadjusted trial balance, records adjusting entries, and extends amounts to income statement and balance sheet columns to simplify financial statement preparation. It is a working tool—not a permanent ledger—and does not replace the general journal or ledger; it facilitates the accounting process after posting is complete.",
+  "type": "concept_completion",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's worksheet shows Prepaid Insurance with an unadjusted balance of $2,400 in the trial balance. The insurance policy covers 12 months, and 4 months have expired during the current period. On the worksheet, the adjusting entry in the Adjustments columns should record a debit to Insurance Expense and a credit to Prepaid Insurance for ___.",
+  "options": [
+   "$2,400 to transfer the entire prepaid balance to expense",
+   "$800 to reflect the insurance consumed during the period",
+   "$600 to account for the insurance month that is currently accruing",
+   "$1,600 to record the remaining unexpired coverage at period-end"
+  ],
+  "correct_index": 1,
+  "explanation": "Insurance Expense for the period is calculated as $2,400 ÷ 12 months × 4 months = $800. The adjusting entry debits Insurance Expense (and thus appears in the Adjustments Debit column on the worksheet) and credits Prepaid Insurance (Adjustments Credit column) to recognize the portion of the policy that has been used. The remaining $1,600 stays on the balance sheet as a current asset.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would NOT appear in the Balance Sheet columns of a completed worksheet?",
+  "options": [
+   "Common Stock, Retained Earnings, and Dividends declared during the period",
+   "Prepaid Rent, Insurance Expense, and the allowance for doubtful accounts",
+   "Cash, Accounts Receivable, and accumulated depreciation on equipment",
+   "Salaries Payable, Rent Expense, and Notes Payable due in two years"
+  ],
+  "correct_index": 3,
+  "explanation": "Rent Expense and Salaries Payable belong in different columns: Salaries Payable is a liability that appears on the balance sheet, but Rent Expense is an income statement account and belongs in the Income Statement Debit column, not the Balance Sheet columns. The other bundles correctly mix balance sheet items (assets, liabilities, equity accounts) with no income statement accounts present.",
+  "type": "all_except",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When preparing the Income Statement columns on a worksheet, which of the following accounts would ALL be included?",
+  "options": [
+   "Service Revenue, Utilities Expense, Accumulated Depreciation, and Cash",
+   "Accounts Payable, Service Revenue, Interest Expense, and Supplies Inventory",
+   "Service Revenue, Utilities Expense, Salaries Expense, and Advertising Expense",
+   "Retained Earnings, Salaries Expense, Rent Expense, and Accounts Receivable"
+  ],
+  "correct_index": 2,
+  "explanation": "Income Statement columns contain only revenues and expenses—the temporary accounts that determine net income or loss for the period. Accumulated Depreciation, Cash, Accounts Payable, and Retained Earnings are balance sheet accounts and do not appear in the Income Statement columns.",
+  "type": "which_of_following",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A worksheet's Balance Sheet columns include all accounts that will appear on the balance sheet at the end of the period. Which of the following would ALL appear in the Balance Sheet columns of a completed worksheet?",
+  "options": [
+   "Cash, Accounts Receivable, Equipment, and Accounts Payable",
+   "Utilities Expense, Rent Expense, Supplies Expense, and Cost of Goods Sold",
+   "Depreciation Expense, Salaries Payable, Common Stock, and Accumulated Depreciation",
+   "Service Revenue, Interest Earned, Supplies Inventory, and Notes Receivable"
+  ],
+  "correct_index": 0,
+  "explanation": "The Balance Sheet columns contain only asset, liability, and equity accounts—permanent accounts that carry forward to the next period. Utilities Expense, Rent Expense, Supplies Expense, Cost of Goods Sold, Depreciation Expense, Service Revenue, and Interest Earned are all temporary accounts that belong in the Income Statement columns, not the Balance Sheet columns.",
+  "type": "which_of_following",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The journal entry used at the end of an accounting period to bring account balances up to date before preparing financial statements is called a(n) ___.",
+  "options": [
+   "closing entry",
+   "adjusting entry",
+   "reversing entry",
+   "correcting entry"
+  ],
+  "correct_index": 1,
+  "explanation": "Adjusting entries are recorded at the end of each accounting period to recognize revenues and expenses that have been earned or incurred but not yet recorded in the journal. These entries update accounts to reflect the actual financial position before the trial balance is prepared.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of verifying that the sum of all debit entries in a journal equals the sum of all credit entries is called ___.",
+  "options": [
+   "balancing the journal",
+   "ruling the journal",
+   "reconciling the journal",
+   "proving the journal"
+  ],
+  "correct_index": 3,
+  "explanation": "Proving the journal is the accounting procedure that ensures the fundamental accounting equation remains balanced by confirming that total debits equal total credits across all recorded transactions. This control step catches recording errors before they propagate to the general ledger.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "All of the following are purposes of journalizing transactions EXCEPT",
+  "options": [
+   "serving as the primary source document for customer invoices and bills",
+   "showing the debit and credit amounts for each account affected by a transaction",
+   "providing a chronological record of all business transactions",
+   "reducing the risk of errors by recording transactions in one place before posting to the ledger"
+  ],
+  "correct_index": 0,
+  "explanation": "Journalizing creates a chronological record and shows debit/credit amounts, but the primary source documents for customer invoices are separate billing documents, not journal entries. The journal is a recording tool used after transactions occur, not the source of customer communications.",
+  "type": "all_except",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following are appropriate items to record in adjusting entries?",
+  "options": [
+   "Bank deposits, employee wage payments, and supplier invoices",
+   "Accrued expenses, depreciation expense, and unearned revenue adjustments",
+   "Customer refunds, payment of accounts payable, and dividend declarations",
+   "Cash sales, accounts receivable collections, and merchandise purchases"
+  ],
+  "correct_index": 1,
+  "explanation": "Adjusting entries record accrued revenues and expenses (like accrued salaries), depreciation, and allocations of prepaid or unearned amounts—items that require adjustment but were not yet recorded. Regular business transactions like sales, purchases, and payments are recorded in the initial journal entries, not as adjustments.",
+  "type": "which_of_following",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of totaling all debit and credit columns in a journal and verifying that debits equal credits is called ___.",
+  "options": [
+   "posting entries",
+   "journalizing",
+   "reconciling accounts",
+   "ruling the journal"
+  ],
+  "correct_index": 3,
+  "explanation": "Ruling the journal is the final step in journal maintenance where you total each column and verify that total debits equal total credits, ensuring the journal is in balance. This is distinct from proving the journal, which verifies the mathematical accuracy of individual entries before ruling occurs.",
+  "type": "definition_recall",
+  "knowledge_area": "Journalizing",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A business structure in which two or more individuals share ownership, personal liability for debts, and responsibility for management is called a(n) ___",
+  "options": [
+   "sole proprietorship",
+   "corporation",
+   "partnership",
+   "cooperative"
+  ],
+  "correct_index": 2,
+  "explanation": "A partnership is defined by shared ownership among two or more partners who each bear personal liability for business debts and participate in management. This distinguishes it from a corporation (limited liability) and a sole proprietorship (single owner).",
+  "type": "definition_recall",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of establishing clear hierarchies, delegating authority, and documenting financial reporting responsibilities across different organizational levels makes up ___",
+  "options": [
+   "information flow and reporting structure",
+   "tax compliance strategy",
+   "liability protection",
+   "accounting implications"
+  ],
+  "correct_index": 0,
+  "explanation": "Information flow and reporting structure refers to how organizations establish communication channels, define decision-making authority, and require accounting data to move through the business—requirements that vary significantly by ownership type. Corporations, partnerships, and sole proprietorships each have distinct reporting obligations based on their legal structure.",
+  "type": "concept_completion",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be characteristics of a corporation?",
+  "options": [
+   "Unlimited personal liability for owners, centralized management, pass-through taxation to shareholders",
+   "Limited liability for stockholders, separate legal entity status, double taxation on corporate and individual levels",
+   "Shared profits distributed equally, joint and several liability for all partners, informal governance structure",
+   "Single owner with full management control, personal liability for all debts, no formal board of directors"
+  ],
+  "correct_index": 1,
+  "explanation": "Corporations are legally separate entities that shield stockholders from personal liability, exist as distinct taxable entities, and face double taxation—once at the corporate level and again when profits are distributed as dividends. The other options describe characteristics of other ownership structures: sole proprietorships, partnerships, or hybrids that are incorrect for corporations.",
+  "type": "which_of_following",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ }
+]

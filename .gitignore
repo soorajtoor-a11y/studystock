@@ -5,3 +5,4 @@ keys.py
 *.local
 .DS_Store
 __pycache__/
+.claude/

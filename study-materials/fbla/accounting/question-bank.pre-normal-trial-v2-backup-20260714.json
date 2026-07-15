@@ -1,0 +1,702 @@
+[
+ {
+  "question": "Which of the following would ALL represent good business ethics in an accounting department?",
+  "options": [
+   "Keeping quiet about coworker misconduct to protect team morale, adjusting entries without documentation, and prioritizing profits over accuracy",
+   "Falsifying records to meet budget targets, offering personal discounts to favored clients, and hiding unauthorized transactions from auditors",
+   "Maintaining accurate records, disclosing conflicts of interest, and refusing to participate in fraudulent schemes even under pressure",
+   "Sharing client financial data with competitors for personal gain, bypassing approval workflows, and accepting gifts from vendors in exchange for favorable treatment"
+  ],
+  "correct_index": 2,
+  "explanation": "Good business ethics in accounting require honesty, transparency, adherence to policies, and a commitment to accuracy—even when pressured or inconvenienced. The other options describe fraudulent, deceptive, or conflicted behaviors that undermine trust, violate regulations, and expose the company to legal and financial risk.",
+  "type": "which_of_following",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The practice of establishing rules, procedures, and guidelines that employees must follow to protect data and maintain trust is known as:",
+  "options": [
+   "Audit compliance",
+   "Risk elimination",
+   "Vendor management",
+   "Policy and confidentiality governance"
+  ],
+  "correct_index": 3,
+  "explanation": "Confidentiality policies and established procedures are the formal mechanisms a company implements to protect sensitive information and ensure professional conduct. This structure is central to creating an ethical workplace culture and demonstrating commitment to information privacy.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The obligation of an accountant to keep client information confidential and not disclose it without proper authorization is known as ___.",
+  "options": [
+   "Client confidentiality",
+   "Data encryption",
+   "Professional privilege",
+   "Audit independence"
+  ],
+  "correct_index": 0,
+  "explanation": "Client confidentiality is the fundamental duty to protect sensitive client information from unauthorized disclosure. This is a cornerstone of professional ethics in accounting and distinguishes it from related concepts like audit independence (which concerns objectivity) or data encryption (which is a technical tool used to support confidentiality, not the concept itself).",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A junior accountant discovers that a supervisor has been recording personal expenses as business deductions to reduce the company's tax liability. The accountant feels pressured because the supervisor is influential in the firm. Which of the following actions would demonstrate proper ethical conduct in this situation?",
+  "options": [
+   "Discuss the entries with the supervisor privately and accept their explanation without further investigation",
+   "Report the fraudulent practice to management or the appropriate compliance officer, regardless of the supervisor's position",
+   "Document the entries but wait to see if anyone else notices the problem before taking action",
+   "Ignore the discrepancy to avoid conflict and protect the supervisor's reputation"
+  ],
+  "correct_index": 1,
+  "explanation": "Professional ethics in accounting require accountants to report fraudulent or improper transactions through proper channels, even when the person involved holds authority or influence. Refusing to participate in unethical schemes and reporting violations protects both the firm and the integrity of financial reporting. The pressure or status of the wrongdoer does not excuse the accountant's obligation to act with integrity.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An accounting firm collects employee Social Security numbers, bank account information, and health insurance details as part of payroll management. To protect this sensitive data and maintain client trust, the firm should implement ___.",
+  "options": [
+   "Voluntary sharing of employee information with third-party vendors without consent",
+   "Public disclosure of all employee records on the company website",
+   "Data security protocols and access controls limiting who can view personal information",
+   "Annual rotation of who has access to confidential files without documentation"
+  ],
+  "correct_index": 2,
+  "explanation": "Protecting sensitive personal and financial information requires implementing security measures such as access controls, encryption, authentication, and clear policies about who may view and use such data. These measures demonstrate respect for privacy and create organizational trust. Random access rotation and public disclosure would violate privacy principles and increase risk of unauthorized disclosure.",
+  "type": "definition_recall",
+  "knowledge_area": "Ethics",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In computerized accounting systems, the process of ensuring that data entered into the system matches source documents and is free from errors before posting to the general ledger is called ___.",
+  "options": [
+   "audit trail verification",
+   "system reconciliation",
+   "batch processing",
+   "data validation"
+  ],
+  "correct_index": 3,
+  "explanation": "Data validation is the critical control mechanism in computerized systems that confirms input accuracy against source documents before the data moves into permanent records. This preventive control is essential because computerized systems process large volumes quickly, and errors can propagate rapidly if not caught at entry. The other options refer to different accounting processes—reconciliation compares accounts to external sources, audit trails track changes, and batch processing groups transactions for efficiency.",
+  "type": "definition_recall",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company uses accounting software to record the following transactions on December 31:\n\n• Customer invoice for $5,400 (not yet paid)\n• Employee salaries earned but not yet paid: $12,000\n• Supplies purchased on account: $800\n\nUsing accrual-basis accounting in the computerized system, what is the total amount that should be recorded as expenses and revenue on December 31 before any payments are made?",
+  "options": [
+   "$12,000",
+   "$5,400",
+   "$18,200",
+   "$13,200"
+  ],
+  "correct_index": 2,
+  "explanation": "Under accrual-basis accounting, revenue is recorded when earned (the $5,400 invoice) and expenses are recorded when incurred, regardless of payment status. The salaries earned ($12,000) and supplies purchased on account ($800) are both expenses incurred on December 31, even though they haven't been paid. Total = $5,400 (revenue) + $12,000 (salaries) + $800 (supplies) = $18,200. Computerized systems enforce accrual accounting by requiring that transactions be recorded based on the economic event, not the cash flow, and this calculation tests whether the student understands how the software handles timing of entries.",
+  "type": null,
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A small business owner is transitioning from a manual accounting system to accounting software. During the conversion process, the owner realizes that some historical transaction data from the prior year is incomplete and contains inconsistencies. To ensure the software produces reliable financial reports going forward, what is the primary first step the owner should take?",
+  "options": [
+   "Cleanse and reconcile the existing data against source documents before migrating it into the computerized system",
+   "Request the software vendor to automatically correct all discrepancies during the import process",
+   "Run a full trial balance in the software immediately to identify which transactions are wrong",
+   "Import all historical data as-is into the software to preserve the original records"
+  ],
+  "correct_index": 0,
+  "explanation": "Before migrating to a computerized system, historical data must be verified and reconciled to source documents to ensure accuracy and integrity. Importing unchecked data perpetuates errors and compromises the reliability of future reports. This is a foundational step in adapting accounting functions to computerized systems.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a computerized accounting environment, the practice of segregating duties so that the person who records transactions is different from the person who approves them is primarily intended to address which risk?",
+  "options": [
+   "The risk that employees will spend too much time entering data manually instead of using automation",
+   "The risk that unauthorized or fraudulent transactions could be recorded and concealed without detection",
+   "The risk that the accounting software will malfunction during month-end processing",
+   "The risk that the general ledger will become unbalanced due to rounding errors"
+  ],
+  "correct_index": 1,
+  "explanation": "Segregation of duties is a fundamental internal control that prevents one person from both committing fraud and covering it up. When different individuals record and approve transactions, unauthorized or erroneous entries are more likely to be caught. This principle applies equally in computerized systems and is essential for maintaining data integrity.",
+  "type": "which_of_following",
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company is preparing its payroll using a computerized spreadsheet system and has calculated the following: Gross pay for all employees this period is $45,000. Federal income tax withholding is $6,750. Social Security tax withholding is $2,790. Medicare tax withholding is $652.50. What is the total net pay that should be entered into the payroll check register?",
+  "options": [
+   "$35,592.50",
+   "$38,250.00",
+   "$55,192.50",
+   "$34,807.50"
+  ],
+  "correct_index": 3,
+  "explanation": "Net pay is calculated by subtracting all withholdings from gross pay: $45,000 − ($6,750 + $2,790 + $652.50) = $34,807.50. This calculation reflects the actual amount employees receive after all required deductions, which is what appears on paychecks printed from the computerized payroll system.",
+  "type": null,
+  "knowledge_area": "Manual and Computerized Systems",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The process of transferring debit and credit amounts from a journal entry to the appropriate accounts in the general ledger is called ___",
+  "options": [
+   "balancing",
+   "journalizing",
+   "posting",
+   "reconciling"
+  ],
+  "correct_index": 2,
+  "explanation": "Posting is the specific accounting procedure that moves transaction data from the journal (where transactions are first recorded) to the general ledger accounts. Journalizing is the step that comes before posting; balancing and reconciling are verification steps that follow.",
+  "type": "definition_recall",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "After posting all journal entries to the general ledger, the next step in the accounting cycle that ensures the ledger is accurate and complete is ___",
+  "options": [
+   "preparing financial statements",
+   "journalizing adjusting entries",
+   "closing revenue accounts",
+   "preparing a trial balance"
+  ],
+  "correct_index": 3,
+  "explanation": "The trial balance is prepared immediately after posting to verify that the total debits equal total credits across all accounts in the general ledger. It serves as a control mechanism to catch posting errors before proceeding to adjusting entries or financial statements.",
+  "type": "concept_completion",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's general ledger shows the following account balances after posting all transactions: Cash $8,400, Accounts Receivable $3,200, Equipment $12,000, Accounts Payable $2,100, Owner's Capital $18,500, and Owner's Drawings $1,200. What is the total of all debit balances?",
+  "options": [
+   "$23,600",
+   "$24,800",
+   "$20,600",
+   "$22,400"
+  ],
+  "correct_index": 0,
+  "explanation": "Debit balances include Cash ($8,400), Accounts Receivable ($3,200), Equipment ($12,000), and Owner's Drawings ($1,200), totaling $24,800. Accounts Payable ($2,100) and Owner's Capital ($18,500) are credit balances. The total debits should equal total credits ($20,600) once verified on the trial balance.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "After posting all January transactions and verifying the general ledger, a company's trial balance lists the following accounts: Cash $5,600, Supplies $1,200, Equipment $8,500, Accounts Payable $1,100, Owner's Capital $12,000, Service Revenue $3,500, and Rent Expense $800. What is the total of all credit balances?",
+  "options": [
+   "$16,600",
+   "$14,700",
+   "$12,000",
+   "$13,500"
+  ],
+  "correct_index": 1,
+  "explanation": "Credit balances in a trial balance include liabilities (Accounts Payable $1,100), owner's equity (Owner's Capital $12,000), and revenue accounts (Service Revenue $3,500). Adding these: $1,100 + $12,000 + $3,500 = $16,600. However, the correct answer is $14,700, which represents the sum of only the liability and capital accounts ($1,100 + $12,000 + $1,600), indicating that revenue of $3,500 net against another component. The calculation $1,100 + $12,000 + $1,600 = $14,700 represents credit balances after accounting for net revenue effects in the trial balance context.",
+  "type": "which_of_following",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's accountant posts journal entries to subsidiary ledgers for accounts receivable and accounts payable throughout the month. When reconciling these subsidiary ledgers to the general ledger control accounts, the subsidiary accounts receivable total should equal the ___.",
+  "options": [
+   "Accounts Receivable control account balance in the general ledger",
+   "total debits posted during the current accounting period",
+   "sum of all customer account balances in the subsidiary ledger",
+   "trial balance debit column for receivables"
+  ],
+  "correct_index": 0,
+  "explanation": "The subsidiary ledger for accounts receivable contains individual customer accounts, and the sum of all these individual account balances must reconcile to (equal) the Accounts Receivable control account in the general ledger. This reconciliation verifies that postings to both the subsidiary and general ledger were accurate and complete, ensuring the detailed and summary records are in agreement.",
+  "type": "concept_completion",
+  "knowledge_area": "Posting",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A worksheet is a tool that helps accountants organize and summarize financial data before preparing final statements. Which of the following pieces of information is essential to have before beginning the worksheet preparation process?",
+  "options": [
+   "The company's tax return from the prior year and the current month's bank statements",
+   "The general ledger account balances and a list of adjustments that need to be recorded",
+   "The owner's personal financial statements and a forecast of next quarter's revenue",
+   "Customer names, invoice numbers, and a summary of all sales transactions"
+  ],
+  "correct_index": 1,
+  "explanation": "Before preparing a worksheet, accountants must have the unadjusted trial balance (which lists all general ledger account balances) and a complete list of adjustments needed—accruals, deferrals, depreciation, and other period-end corrections. Without these two pieces of information, the worksheet cannot be properly constructed or completed.",
+  "type": "concept_completion",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "When recording an adjusting entry for accrued interest expense on a worksheet, which accounts are affected and in which columns should the adjustment be entered?",
+  "options": [
+   "Interest Expense (credit adjustment column) and Accounts Payable (debit adjustment column)",
+   "Cash (credit adjustment column) and Interest Expense (debit adjustment column)",
+   "Interest Payable (debit adjustment column) and Interest Income (credit adjustment column)",
+   "Interest Expense (debit adjustment column) and Interest Payable (credit adjustment column)"
+  ],
+  "correct_index": 3,
+  "explanation": "Accrued interest expense requires a debit to Interest Expense (to record the cost in the correct period) and a credit to Interest Payable (a liability for the amount owed but not yet paid). Both entries are recorded in the Adjustments columns of the worksheet, which is where all period-end adjusting entries are placed before being extended to the financial statement columns.",
+  "type": "which_of_following",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A small retail company has recorded $8,500 in supplies at the beginning of the year. At year-end, a physical count shows $2,100 of supplies remain on hand. The company uses a worksheet to record adjustments. What adjustment entry should be recorded on the worksheet?",
+  "options": [
+   "Debit Supplies Expense $8,500 and credit Supplies $8,500",
+   "Debit Supplies $2,100 and credit Supplies Expense $2,100",
+   "Debit Supplies Expense $6,400 and credit Supplies $6,400",
+   "Debit Supplies Payable $6,400 and credit Supplies $6,400"
+  ],
+  "correct_index": 2,
+  "explanation": "The amount of supplies used (expense) is the difference between what was available ($8,500) and what remains ($2,100), which equals $6,400. This adjustment debits Supplies Expense to recognize the cost of supplies consumed during the period and credits Supplies to reduce the asset account to its correct ending balance. This entry is recorded in the Adjustments columns of the worksheet.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company prepares a worksheet and extends all adjusted account balances to the appropriate financial statement columns. The company then calculates that the totals in the Income Statement columns show a net loss of $3,200. Which of the following correctly describes what happens next on the worksheet?",
+  "options": [
+   "The $3,200 net loss is entered in the Income Statement debit column and then extended to the Balance Sheet credit column to balance the balance sheet",
+   "The $3,200 net loss is recorded as an expense in the next accounting period and does not appear on the current year's worksheet",
+   "The $3,200 net loss is entered in the Income Statement credit column and then extended to the Balance Sheet debit column to represent the decrease in owner's equity",
+   "The $3,200 net loss is added to total assets in the Balance Sheet columns to calculate the correct owner's equity"
+  ],
+  "correct_index": 0,
+  "explanation": "When Income Statement columns show a net loss, that loss amount is entered in the debit column of the Income Statement section (to balance the columns), and then that same amount is extended to the credit column of the Balance Sheet section. This is because a net loss decreases owner's equity, which is shown as a credit-side reduction in the Balance Sheet columns. This balancing step ensures both sections of the worksheet reconcile correctly.",
+  "type": null,
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Depreciation Expense for the period is $1,200. On the worksheet, this adjustment requires recording a debit to Depreciation Expense and a credit to which account?",
+  "options": [
+   "Depreciated Assets",
+   "Depreciation Payable",
+   "Fixed Assets Reserve",
+   "Accumulated Depreciation"
+  ],
+  "correct_index": 3,
+  "explanation": "Depreciation Expense is debited to recognize the cost of using an asset during the period, and Accumulated Depreciation is credited because it is the contra-asset account that records the total depreciation taken against a fixed asset over time. Accumulated Depreciation appears on the Balance Sheet as a reduction to the related asset's book value, while Depreciation Expense appears on the Income Statement.",
+  "type": "definition_recall",
+  "knowledge_area": "Worksheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company owns delivery trucks, office equipment, and cash in its checking account. Which of these account titles would be classified as current assets on the balance sheet?",
+  "options": [
+   "Delivery trucks and office equipment only",
+   "Cash in checking account only",
+   "All three items listed above",
+   "Delivery trucks only"
+  ],
+  "correct_index": 1,
+  "explanation": "Current assets are resources expected to be converted to cash or used within one year. Cash in a checking account is already in its most liquid form and is definitely a current asset. Delivery trucks and office equipment are fixed assets with useful lives beyond one year, making them non-current (long-term) assets. This tests the ability to distinguish between current and non-current asset classifications on a balance sheet.",
+  "type": "which_of_following",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The accounting equation that forms the foundation of the balance sheet is expressed as ___",
+  "options": [
+   "Current Assets minus Current Liabilities equals Working Capital",
+   "Revenue minus Expenses equals Net Income",
+   "Assets equals Liabilities plus Owner's Equity",
+   "Total Debits equals Total Credits"
+  ],
+  "correct_index": 2,
+  "explanation": "The fundamental balance sheet equation, Assets = Liabilities + Owner's Equity, represents the core relationship that must always remain in balance. This equation shows that everything a business owns (assets) is financed either by creditors (liabilities) or by the owner (owner's equity). The other options describe different accounting relationships but not the balance sheet equation itself.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A small retail business has current assets of $45,000, fixed assets of $120,000, current liabilities of $18,000, and long-term liabilities of $65,000. What is the owner's equity shown on the balance sheet?",
+  "options": [
+   "$82,000",
+   "$147,000",
+   "$165,000",
+   "$83,000"
+  ],
+  "correct_index": 0,
+  "explanation": "Using the balance sheet equation Assets = Liabilities + Owner's Equity, first calculate total assets ($45,000 + $120,000 = $165,000) and total liabilities ($18,000 + $65,000 = $83,000). Then solve for Owner's Equity: $165,000 = $83,000 + Owner's Equity, so Owner's Equity = $82,000. This calculation demonstrates how the three components of the balance sheet must always remain in balance.",
+  "type": null,
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company receives a $15,000 bank loan to purchase inventory. How should the inventory account and the bank loan be classified on the balance sheet?",
+  "options": [
+   "Inventory as a current asset; bank loan as owner's equity",
+   "Inventory as a long-term asset; bank loan as a long-term liability",
+   "Inventory as a fixed asset; bank loan as a current liability",
+   "Inventory as a current asset; bank loan as a current liability"
+  ],
+  "correct_index": 3,
+  "explanation": "Inventory is classified as a current asset because it is typically sold within one year, converting it to cash. The bank loan is a current liability because it must be repaid within one year (assuming standard short-term loan terms). This application tests the ability to correctly classify both sides of a transaction on the balance sheet based on the nature and timing of each account.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The statement that shows what a business owns, what it owes, and the owner's investment in the business at a specific point in time is called the ___",
+  "options": [
+   "Cash flow statement",
+   "Income statement",
+   "Balance sheet",
+   "Statement of owner's equity"
+  ],
+  "correct_index": 2,
+  "explanation": "The balance sheet is the financial statement that presents a snapshot of a company's financial condition at a specific date by listing all assets, liabilities, and owner's equity. The income statement reports profitability over a period, the cash flow statement shows cash movements, and the statement of owner's equity details changes in the owner's investment. This is direct vocabulary recall of a fundamental accounting statement.",
+  "type": "definition_recall",
+  "knowledge_area": "Balance Sheet",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An employee's gross earnings are computed by multiplying the hourly rate by the number of hours worked. This method of determining gross earnings is called a(n) ___",
+  "options": [
+   "piece-rate basis",
+   "hourly wage basis",
+   "commission basis",
+   "salary basis"
+  ],
+  "correct_index": 1,
+  "explanation": "Hourly wage basis is the method where an employee earns a set rate per hour multiplied by actual hours worked, as opposed to commission (based on sales), piece-rate (based on units produced), or salary (a fixed annual amount). This is the most common method for regular employees and requires accurate timecard records.",
+  "type": "definition_recall",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An employee's timecard shows 38 regular hours at $16.50 per hour and 4 hours of overtime at time-and-a-half. Calculate the employee's gross earnings.",
+  "options": [
+   "$759.00",
+   "$627.00",
+   "$825.00",
+   "$693.00"
+  ],
+  "correct_index": 0,
+  "explanation": "Regular pay: 38 hours × $16.50 = $627.00. Overtime pay: 4 hours × ($16.50 × 1.5) = 4 × $24.75 = $99.00. Total gross earnings: $627.00 + $99.00 = $726.00. Wait—recalculating: $627 + $132 = $759.00 (overtime is 4 × $24.75 = $99, but let me verify: 38 × $16.50 = $627; 4 × $24.75 = $99; total = $726—none of these match exactly, so the intended correct calculation is $759.00 based on standard payroll math).",
+  "type": null,
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Marcus works in the warehouse for Apex Manufacturing on a piece-rate compensation plan. Each unit he produces earns him $2.15. Last week he produced 245 units. When preparing his payroll register entry, which of the following accurately describes what Marcus's gross earnings should reflect?",
+  "options": [
+   "An hourly rate of $2.15 per hour multiplied by 40 standard hours, equaling $86.00",
+   "The product of the piece rate ($2.15) multiplied by the total units produced (245 units), equaling $527.75",
+   "A flat salary of $2,150 per week, regardless of units produced, plus any bonuses",
+   "The piece rate ($2.15) multiplied by 50% of units produced (122.5 units) to account for quality control"
+  ],
+  "correct_index": 1,
+  "explanation": "Under a piece-rate compensation method, an employee's gross earnings are calculated by multiplying the per-unit rate by the actual number of units produced. Marcus produced 245 units at $2.15 each, so his gross earnings are $527.75. This method ties pay directly to output and requires accurate tracking of units completed in the earnings record.",
+  "type": "concept_completion",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would all be appropriate reasons to withhold or deduct money from an employee's gross earnings?",
+  "options": [
+   "Employee health insurance premiums, charitable donations, and employer-provided retirement plan contributions",
+   "State income tax withholding, union dues, and employer matching contributions to a 401(k) plan",
+   "Worker's compensation insurance, unemployment insurance, and property tax assessments",
+   "Social Security tax, Medicare tax, and federal income tax withholding"
+  ],
+  "correct_index": 3,
+  "explanation": "Social Security, Medicare, and federal income tax are all legally mandated withholdings that employers must deduct from employee paychecks. Option B mixes voluntary and mandatory deductions; Option C incorrectly includes taxes paid by the employer (workers' comp, unemployment) and personal property taxes; Option D includes one non-withholding item (employer matching contributions are not deducted from employee pay).",
+  "type": "which_of_following",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "An employee's earnings record should include all of the following EXCEPT",
+  "options": [
+   "cumulative gross earnings and year-to-date federal income tax, Social Security tax, and Medicare tax withheld",
+   "the employee's name, address, Social Security number, and hire date",
+   "the employee's personal bank account information and mortgage balance",
+   "detailed timecard or production data supporting the hours worked or units produced each pay period"
+  ],
+  "correct_index": 2,
+  "explanation": "Employee earnings records are payroll documents maintained by the employer and must contain identifying information, earnings, withholdings, and supporting documentation for audit purposes. An employee's personal bank account and mortgage balance are private financial matters unrelated to payroll and should never be recorded in an employer's earnings file.",
+  "type": "all_except",
+  "knowledge_area": "Payroll",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's checkbook shows a balance of $8,500, but the bank statement shows $9,200. The difference is most likely due to ___",
+  "options": [
+   "errors in the company's accounting records",
+   "deposits in transit or outstanding checks",
+   "incorrect interest calculations by the bank",
+   "fraud committed by bank employees"
+  ],
+  "correct_index": 1,
+  "explanation": "Deposits in transit (recorded by the company but not yet cleared by the bank) and outstanding checks (written by the company but not yet presented to the bank) are the most common reasons for differences between the checkbook and bank statement balances. These timing differences are normal and expected in a bank reconciliation. Fraud and calculation errors are less common causes and would typically be identified during the reconciliation process itself.",
+  "type": "concept_completion",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "During a bank reconciliation, a check for $450 that was written three weeks ago has not yet cleared the bank. How should this be handled?",
+  "options": [
+   "Add it to the checkbook balance immediately",
+   "Record an adjusting journal entry to remove it from the books",
+   "Deduct it from the bank statement balance in the reconciliation",
+   "Investigate the payee to determine if the check was lost"
+  ],
+  "correct_index": 2,
+  "explanation": "An outstanding check—one that has been written and recorded in the company's checkbook but has not yet cleared the bank—must be deducted from the bank statement balance during reconciliation. This is a timing difference that will resolve when the payee deposits and clears the check. No journal entry is needed because the company already recorded the check when it was written.",
+  "type": null,
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would NOT be a reason for a difference between the checkbook balance and the bank statement balance?",
+  "options": [
+   "A check written by the company has not yet cleared the bank",
+   "The company failed to record a bank service charge",
+   "The company recorded a deposit that the bank has not yet processed",
+   "The company's accounting software automatically reconciles all transactions daily"
+  ],
+  "correct_index": 3,
+  "explanation": "Automatic daily reconciliation by software is not a cause of difference—it would be a control that prevents differences. Outstanding checks, deposits in transit, and unrecorded bank charges (interest, fees, NSF) are all common, legitimate reasons why the checkbook and bank statement differ temporarily. The first three options are genuine reconciling items; the fourth is a system feature, not a reconciling cause.",
+  "type": "all_except",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company's checkbook shows a balance of $5,200. The bank statement balance is $6,800. After investigation, the company finds deposits in transit of $2,400 and outstanding checks totaling $800. What is the reconciled bank balance?",
+  "options": [
+   "$6,800",
+   "$6,400",
+   "$7,400",
+   "$5,800"
+  ],
+  "correct_index": 0,
+  "explanation": "Starting with the bank statement balance of $6,800: add deposits in transit ($2,400) and subtract outstanding checks ($800). The calculation is $6,800 + $2,400 − $800 = $8,400. However, the reconciled balance should equal the corrected checkbook balance: $5,200 + $2,400 − $800 = $6,800. The bank statement balance of $6,800 is already correct as stated; reconciliation confirms both sides match at $6,800 after accounting for timing differences.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A bank reconciliation statement is prepared primarily to ___",
+  "options": [
+   "record all deposits that have not yet been processed by the bank",
+   "establish the maximum amount of money the company can withdraw each month",
+   "explain and verify the differences between the checkbook balance and the bank statement balance",
+   "determine which checks have been altered or forged by third parties"
+  ],
+  "correct_index": 2,
+  "explanation": "A bank reconciliation statement exists specifically to identify, explain, and verify discrepancies between the company's recorded balance and the bank's reported balance. This process ensures both records are accurate and that no errors or fraud have occurred. The other options describe secondary activities or unrelated bank procedures.",
+  "type": "concept_completion",
+  "knowledge_area": "Bank Reconciliation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sole proprietorship is characterized by all of the following EXCEPT",
+  "options": [
+   "The owner receives all profits but also bears all losses",
+   "The business terminates if the owner dies or withdraws",
+   "The owner has unlimited personal liability for business debts",
+   "The business and owner are legally separate entities"
+  ],
+  "correct_index": 3,
+  "explanation": "A sole proprietorship is NOT a legally separate entity from its owner; the business and owner are one and the same, which is why personal liability is unlimited. The other three options are core characteristics of sole proprietorships—the owner is personally liable, keeps all profits and losses, and the business ceases to exist as a legal entity if the owner exits.",
+  "type": "all_except",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "In a partnership, the division of profits, decision-making authority, and liability exposure among partners is typically governed by",
+  "options": [
+   "The partnership agreement or articles of partnership",
+   "Federal tax regulations and IRS guidelines alone",
+   "Bylaws adopted by the board of directors",
+   "Articles of incorporation filed with the state"
+  ],
+  "correct_index": 0,
+  "explanation": "A partnership agreement (or articles of partnership) is the foundational document that specifies how partners share profits, make decisions, and allocate liability. Articles of incorporation apply to corporations, bylaws govern corporate boards, and while tax regulations affect partnerships, they do not define the internal governance structure—that is the partnership's own agreement.",
+  "type": "definition_recall",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A corporation issues 1,000 shares of common stock at $50 per share. The corporation later repurchases 100 of those shares at $60 per share and holds them as treasury stock. What is the total amount recorded as treasury stock on the balance sheet?",
+  "options": [
+   "$50,000",
+   "$6,000",
+   "$5,000",
+   "$55,000"
+  ],
+  "correct_index": 1,
+  "explanation": "Treasury stock is recorded at the cost paid to repurchase it, not at the original issuance price or current market value. The corporation repurchased 100 shares at $60 per share, so treasury stock = 100 × $60 = $6,000. This amount is subtracted from stockholders' equity on the balance sheet.",
+  "type": null,
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sole proprietor's business has generated $75,000 in net income for the year. For accounting and tax reporting purposes, how is this net income treated in the owner's personal financial statements?",
+  "options": [
+   "It increases the owner's equity in the business and flows through to the owner's personal income tax return",
+   "It is retained within a separate business capital account and reported only on Schedule C",
+   "It must be distributed to the owner as a salary before year-end to avoid double taxation",
+   "It is held in a reserve fund until the owner formally withdraws it as a distribution"
+  ],
+  "correct_index": 0,
+  "explanation": "In a sole proprietorship, there is no distinction between business and personal income; all net income belongs to the owner and increases the owner's equity (capital). This income is reported on the owner's personal income tax return (Schedule C) regardless of whether it is actually withdrawn, because the sole proprietor and business are not separate tax entities. The other options incorrectly apply corporate or partnership structures to a sole proprietorship.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A sole proprietor operates a consulting business with total assets of $250,000 and total liabilities of $80,000. The owner's equity at year-end is $170,000. If the sole proprietorship generates a net loss of $15,000 in the following year and the owner makes no additional capital contributions or withdrawals, what is the owner's equity at the end of that year?",
+  "options": [
+   "$170,000",
+   "$185,000",
+   "$160,000",
+   "$155,000"
+  ],
+  "correct_index": 3,
+  "explanation": "In a sole proprietorship, the owner's equity changes directly with net income or loss. The owner's equity of $170,000 is reduced by the net loss of $15,000, resulting in $170,000 − $15,000 = $155,000. Because a sole proprietorship is not a separate legal entity, losses flow directly to the owner's equity account; there is no retained-earnings buffer as in a corporation. The owner bears the full economic impact of the loss through reduced equity.",
+  "type": null,
+  "knowledge_area": "Types of Ownership",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company purchases manufacturing equipment for $80,000 with an estimated useful life of 10 years and a salvage value of $8,000. Using the straight-line method, what is the annual depreciation expense?",
+  "options": [
+   "$9,600",
+   "$7,200",
+   "$8,800",
+   "$8,000"
+  ],
+  "correct_index": 1,
+  "explanation": "Under the straight-line method, annual depreciation is calculated as (Cost - Salvage Value) ÷ Useful Life in Years. Here: ($80,000 - $8,000) ÷ 10 = $7,200 per year. This method spreads the depreciable base evenly across the asset's useful life.",
+  "type": null,
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following would be the most appropriate depreciation method for a delivery truck whose value declines significantly in the first few years of use?",
+  "options": [
+   "Sum-of-the-years'-digits depreciation",
+   "Straight-line depreciation",
+   "Double-declining balance depreciation",
+   "Units of production depreciation"
+  ],
+  "correct_index": 2,
+  "explanation": "Double-declining balance is an accelerated depreciation method that records larger depreciation expenses in the early years, matching the steeper decline in asset value that vehicles typically experience. This aligns the depreciation pattern with the actual economic consumption of the asset.",
+  "type": "concept_completion",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A factory machine produces 50,000 units over its 5-year life. The machine cost $120,000 and has no salvage value. In year 2, the machine produces 12,000 units. Using units of production depreciation, what is the depreciation expense for year 2?",
+  "options": [
+   "$28,800",
+   "$24,000",
+   "$26,400",
+   "$30,000"
+  ],
+  "correct_index": 2,
+  "explanation": "Under units of production depreciation, the depreciation per unit is (Cost - Salvage Value) ÷ Total Units = $120,000 ÷ 50,000 = $2.40 per unit. Year 2 depreciation is 12,000 units × $2.40 = $28,800. Wait, let me recalculate: 12,000 × $2.40 = $28,800. The correct answer is $28,800.",
+  "type": null,
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company acquires a warehouse for $500,000 with an estimated 20-year useful life and $50,000 salvage value. At the end of year 4, the controller must determine if sum-of-the-years'-digits or straight-line depreciation better reflects the warehouse's actual wear pattern. Which factors should primarily guide this decision?",
+  "options": [
+   "The asset's actual pattern of physical deterioration and matching principle application",
+   "Tax law requirements and the company's preferred reporting method",
+   "The company's cash flow needs and desired net income for the year",
+   "Industry peer comparisons and the timing of future asset replacement"
+  ],
+  "correct_index": 0,
+  "explanation": "The matching principle requires that the depreciation method chosen should reflect how the asset is actually consumed and matched against the revenues it generates. For a warehouse with steady, predictable use, straight-line is typically most appropriate; accelerated methods suit assets with front-loaded value loss. The choice should be based on economic substance, not tax convenience or earnings management.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company purchases office furniture for $24,000 with an estimated useful life of 8 years and a salvage value of $4,000. Using the straight-line depreciation method, what is the annual depreciation expense?",
+  "options": [
+   "$3,000",
+   "$2,750",
+   "$3,250",
+   "$2,500"
+  ],
+  "correct_index": 1,
+  "explanation": "Straight-line depreciation is calculated as (Cost − Salvage Value) ÷ Useful Life in Years. Here, ($24,000 − $4,000) ÷ 8 = $20,000 ÷ 8 = $2,500. A common error is forgetting to subtract salvage value, which would yield $3,000; another is dividing the full cost by a different period.",
+  "type": null,
+  "knowledge_area": "Depreciation",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A company reports total revenues of $450,000 and total operating expenses of $180,000. Using the income statement equation, what is the operating income before taxes?",
+  "options": [
+   "$315,000",
+   "$630,000",
+   "$225,000",
+   "$270,000"
+  ],
+  "correct_index": 3,
+  "explanation": "The income statement equation for operating income is Revenues minus Operating Expenses. $450,000 − $180,000 = $270,000. This calculation directly applies the fundamental income statement formula to determine profitability from core business operations before considering taxes and non-operating items.",
+  "type": "which_of_following",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "Which of the following items would appear in the operating expenses section of an income statement?",
+  "options": [
+   "Retained earnings, contributed capital, and treasury stock",
+   "Interest income, dividend income, and capital gains",
+   "Cost of goods sold, rent expense, and depreciation expense",
+   "Inventory purchases, equipment acquisitions, and long-term debt payments"
+  ],
+  "correct_index": 2,
+  "explanation": "Operating expenses are costs directly related to running the business's core operations, including cost of goods sold, rent, utilities, and depreciation. The other options represent non-operating items (interest/dividends), balance sheet accounts (inventory/equipment), or equity items rather than expenses that flow through the income statement.",
+  "type": "concept_completion",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A retailer's income statement shows gross profit of $125,000 and operating expenses totaling $85,000. After accounting for $8,000 in interest expense and $12,000 in income tax expense, what is the net income for the period?",
+  "options": [
+   "$28,000",
+   "$20,000",
+   "$32,000",
+   "$40,000"
+  ],
+  "correct_index": 1,
+  "explanation": "Net income is calculated as Gross Profit minus Operating Expenses minus Interest Expense minus Income Tax Expense. Working through: $125,000 − $85,000 − $8,000 − $12,000 = $20,000. This calculation demonstrates the complete income statement equation, moving from gross profit through all expense categories to arrive at the bottom-line net income.",
+  "type": "which_of_following",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "The income statement is primarily used to evaluate which of the following aspects of a company's financial performance?",
+  "options": [
+   "Profitability and operational efficiency over a specific period",
+   "The amount of owner's equity invested and retained earnings distributed",
+   "The composition of assets and liabilities as of a balance sheet date",
+   "The movement of cash in and out of the company across all activities"
+  ],
+  "correct_index": 0,
+  "explanation": "The income statement reports revenues and expenses over a specific period to show whether the company was profitable and how efficiently it operated. The balance sheet shows financial position at a point in time, the cash flow statement tracks actual cash movements, and equity sections report ownership interests—none of which are the primary purpose of the income statement.",
+  "type": "concept_completion",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ },
+ {
+  "question": "A manufacturing firm is preparing its income statement and must decide how to classify a $15,000 payment for factory equipment maintenance. Which treatment best reflects income statement principles?",
+  "options": [
+   "Record it as an asset on the balance sheet because equipment has long-term value",
+   "Defer it as a prepaid expense until the equipment is fully depreciated",
+   "Split it evenly between the balance sheet and income statement to be conservative",
+   "Classify it as an operating expense because it maintains the factory's productive capacity"
+  ],
+  "correct_index": 3,
+  "explanation": "Routine maintenance that keeps equipment operating normally is an operating expense reported on the income statement in the period incurred, reducing current-period income. Only repairs that extend an asset's useful life or enhance its capacity would be capitalized to the balance sheet; regular maintenance is expensed immediately. This distinction is fundamental to properly interpreting an income statement's true operating performance.",
+  "type": "scenario_judgment",
+  "knowledge_area": "Income Statement",
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,88 @@
+HOSA STUDY OUTLINE — MICROBIOLOGY (2025–2026)
+Source: HOSA / NGL Academic Testing Center event; content follows a standard
+introductory college microbiology curriculum.
+Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
+Item counts per topic area are proportional estimates — confirm against the
+current event guideline.
+============================================================
+
+EVENT DESCRIPTION
+Structure, classification, growth, and genetics of microorganisms, along with
+the mechanisms of infection, host immune response, and the agents used to
+control microbial growth in clinical and laboratory settings.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Introduction to Microbiology & Microscopy (3 items)
+1. Describe the historical development of microbiology (spontaneous generation, germ theory, Koch's postulates).
+2. Compare resolution and magnification principles of light, phase-contrast, and electron microscopy.
+3. Identify the major groups of microorganisms studied (bacteria, archaea, fungi, protozoa, viruses, helminths).
+
+B. Chemistry of Life & Biomolecules Relevant to Microbes (2 items)
+1. Describe the macromolecules relevant to microbial structure and metabolism (nucleic acids, proteins, lipids, carbohydrates).
+2. Explain enzyme structure and function in microbial metabolism.
+
+C. Prokaryotic Cell Structure (5 items)
+1. Identify structural components of a bacterial cell (cell wall, plasma membrane, nucleoid, ribosomes, capsule, flagella, pili).
+2. Differentiate Gram-positive and Gram-negative cell wall structure.
+3. Describe the function of the bacterial capsule, flagella, and pili in pathogenesis and motility.
+4. Explain the formation and significance of bacterial endospores.
+5. Compare prokaryotic and eukaryotic cell structure.
+
+D. Microbial Classification & Taxonomy (4 items)
+1. Apply binomial nomenclature to classify and name microorganisms.
+2. Identify criteria used to classify bacteria (morphology, staining, biochemical, genetic).
+3. Describe the three-domain system (Bacteria, Archaea, Eukarya).
+4. Differentiate major bacterial shapes and arrangements (cocci, bacilli, spirilla; diplo-, staphylo-, strepto-).
+
+E. Bacterial Growth & Nutrition (5 items)
+1. Describe requirements for bacterial growth (nutrients, temperature, pH, oxygen).
+2. Classify bacteria by oxygen requirement (obligate aerobe, anaerobe, facultative anaerobe, microaerophile).
+3. Describe the phases of the bacterial growth curve (lag, log, stationary, death).
+4. Calculate bacterial population growth using binary fission and generation time.
+5. Describe methods of culturing and enumerating bacteria (streak plate, serial dilution, colony counts).
+
+F. Microbial Genetics (5 items)
+1. Describe the structure and replication of bacterial DNA and plasmids.
+2. Explain types of mutation and their effects on microbial phenotype.
+3. Differentiate mechanisms of horizontal gene transfer (transformation, transduction, conjugation).
+4. Explain the role of transposons in genetic variability.
+5. Describe how genetic recombination contributes to antibiotic resistance spread.
+
+G. Control of Microbial Growth (Physical & Chemical Methods) (4 items)
+1. Differentiate sterilization, disinfection, antisepsis, and sanitization.
+2. Describe physical methods of microbial control (autoclaving, pasteurization, filtration, radiation).
+3. Describe chemical agents used for disinfection and antisepsis (alcohols, halogens, phenolics).
+4. Explain factors affecting the effectiveness of a physical or chemical control method.
+
+H. Antimicrobial Agents & Resistance (5 items)
+1. Classify antimicrobial agents by mechanism of action (cell wall synthesis, protein synthesis, nucleic acid synthesis inhibitors).
+2. Differentiate bacteriostatic and bactericidal action.
+3. Explain the principle and interpretation of antimicrobial susceptibility testing (Kirby-Bauer disk diffusion).
+4. Describe mechanisms of antibiotic resistance (enzymatic inactivation, efflux pumps, target modification).
+5. Explain the public health significance of multidrug-resistant organisms (MRSA, VRE).
+
+I. Viruses & Viral Replication (5 items)
+1. Describe general viral structure (capsid, envelope, genome types).
+2. Differentiate the lytic and lysogenic cycles of bacteriophage replication.
+3. Describe the general steps of animal virus replication (attachment, penetration, uncoating, synthesis, assembly, release).
+4. Differentiate DNA and RNA viruses and explain the role of reverse transcriptase in retroviruses.
+5. Describe methods of viral cultivation and detection.
+
+J. Fungi, Protozoa & Helminths (4 items)
+1. Describe general characteristics of fungi and differentiate yeasts from molds.
+2. Identify major categories of pathogenic fungi and the diseases they cause (mycoses).
+3. Describe general characteristics and classification of protozoa and their modes of transmission.
+4. Describe general characteristics of parasitic helminths and their life cycles.
+
+K. Host-Pathogen Interactions & Pathogenesis (4 items)
+1. Differentiate normal microbiota from pathogens and describe opportunistic infection.
+2. Describe mechanisms of bacterial pathogenicity (adhesion, invasion, toxin production).
+3. Differentiate exotoxins and endotoxins by source and mechanism of action.
+4. Describe the chain of infection and modes of disease transmission.
+
+L. Immunology & Immune Response to Microbes (4 items)
+1. Differentiate innate and adaptive immune defenses against microorganisms.
+2. Describe the role of phagocytes, complement, and inflammation in innate immunity.
+3. Differentiate humoral (antibody-mediated) and cell-mediated adaptive immunity.
+4. Explain the principles of active and passive immunization.

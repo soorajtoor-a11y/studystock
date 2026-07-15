@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Landing from './Landing'
 import { ORG_META, ORG_ORDER } from './orgMeta'
+import { supabase } from './supabaseClient'
 import appMark from './assets/studystock-mark.png'
 import './App.css'
 
@@ -209,6 +210,99 @@ function HomePage({ onStart }) {
           </span>
         </div>
       </div>
+    </div>
+  )
+}
+
+// ── Settings ──────────────────────────────────────────────────────────────────
+const THEME_OPTIONS = [
+  { id: 'light',  label: 'Light',  desc: 'Bright surfaces, dark text.', icon: '☀️' },
+  { id: 'dark',   label: 'Dark',   desc: 'Dark surfaces, easy on the eyes at night.', icon: '🌙' },
+  { id: 'system', label: 'System', desc: "Match your device's setting automatically.", icon: '🖥️' },
+]
+
+function SettingsPage({ theme, onThemeChange, onBack }) {
+  return (
+    <div className="settings-page">
+      <button className="mp-back-link" onClick={onBack}>← Back</button>
+      <h1 className="settings-title">Settings</h1>
+      <p className="settings-subtitle">Personalize how StudyStockAI looks. Your choice is saved on this device.</p>
+
+      <div className="settings-section">
+        <p className="settings-section-label">Appearance</p>
+        <div className="theme-options">
+          {THEME_OPTIONS.map(opt => (
+            <button
+              key={opt.id}
+              className={`theme-option ${theme === opt.id ? 'active' : ''}`}
+              onClick={() => onThemeChange(opt.id)}
+              aria-pressed={theme === opt.id}
+            >
+              <span className="theme-option-icon" aria-hidden="true">{opt.icon}</span>
+              <span className="theme-option-text">
+                <span className="theme-option-label">{opt.label}</span>
+                <span className="theme-option-desc">{opt.desc}</span>
+              </span>
+              <span className="theme-option-check" aria-hidden="true">{theme === opt.id ? '✓' : ''}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ── Account Page ──────────────────────────────────────────────────────────────
+function AccountPage({ user, onBack }) {
+  const [mode,     setMode]     = useState('signin') // 'signin' | 'signup'
+  const [email,    setEmail]    = useState('')
+  const [password, setPassword] = useState('')
+  const [error,    setError]    = useState(null)
+  const [info,     setInfo]     = useState(null)
+  const [busy,     setBusy]     = useState(false)
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    setError(null); setInfo(null); setBusy(true)
+    const { error } = mode === 'signup'
+      ? await supabase.auth.signUp({ email, password })
+      : await supabase.auth.signInWithPassword({ email, password })
+    setBusy(false)
+    if (error) { setError(error.message); return }
+    if (mode === 'signup') setInfo('Check your email to confirm your account, then log in.')
+  }
+
+  if (user) {
+    return (
+      <div className="settings-page">
+        <button className="mp-back-link" onClick={onBack}>← Back</button>
+        <h1 className="settings-title">Account</h1>
+        <p className="settings-subtitle">Signed in as {user.email}</p>
+        <button className="home-cta" onClick={() => supabase.auth.signOut()}>Log Out</button>
+      </div>
+    )
+  }
+
+  return (
+    <div className="settings-page">
+      <button className="mp-back-link" onClick={onBack}>← Back</button>
+      <h1 className="settings-title">Account</h1>
+      <p className="settings-subtitle">Sign in to pin events and save your Explain history across visits.</p>
+      <form className="account-form" onSubmit={handleSubmit}>
+        <input className="account-input" type="email" placeholder="Email" value={email}
+               onChange={e => setEmail(e.target.value)} required autoComplete="email" />
+        <input className="account-input" type="password" placeholder="Password" value={password}
+               onChange={e => setPassword(e.target.value)} required minLength={6}
+               autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} />
+        {error && <p className="account-error">{error}</p>}
+        {info  && <p className="account-info">{info}</p>}
+        <button className="home-cta" type="submit" disabled={busy}>
+          {busy ? 'Please wait…' : mode === 'signup' ? 'Sign Up' : 'Log In'}
+        </button>
+      </form>
+      <button className="account-switch" onClick={() => { setMode(m => m === 'signup' ? 'signin' : 'signup'); setError(null); setInfo(null) }}>
+        {mode === 'signup' ? 'Already have an account? Log in' : "Don't have an account? Sign up"}
+      </button>
     </div>
   )
 }
@@ -975,7 +1069,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, open }) {
+function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, user, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
@@ -1039,6 +1133,21 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
           <div className="sidebar-no-results">No matches</div>
         )}
       </nav>
+
+      <div className="sidebar-footer">
+        <button className={`sidebar-settings-btn ${page === 'account' ? 'active' : ''}`} onClick={onAccount}>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+            <path fillRule="evenodd" d="M10 8a3 3 0 100-6 3 3 0 000 6zm-7 8a7 7 0 1114 0H3z" clipRule="evenodd" />
+          </svg>
+          {user ? user.email : 'Log In'}
+        </button>
+        <button className={`sidebar-settings-btn ${page === 'settings' ? 'active' : ''}`} onClick={onSettings}>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+            <path fillRule="evenodd" d="M11.078 2.25c.917 0 1.699.663 1.85 1.567l.091.549a.798.798 0 00.517.608c.115.043.227.09.337.14a.798.798 0 00.796-.06l.453-.315a1.875 1.875 0 012.416.2l.192.192a1.875 1.875 0 01.2 2.416l-.315.453a.798.798 0 00-.06.796c.05.11.097.222.14.337a.798.798 0 00.608.517l.549.09a1.875 1.875 0 011.567 1.85v.276a1.875 1.875 0 01-1.567 1.85l-.549.091a.798.798 0 00-.608.517 4.985 4.985 0 01-.14.337.798.798 0 00.06.796l.315.453a1.875 1.875 0 01-.2 2.416l-.192.192a1.875 1.875 0 01-2.416.2l-.453-.315a.798.798 0 00-.796-.06 4.98 4.98 0 01-.337.14.798.798 0 00-.517.608l-.09.549a1.875 1.875 0 01-1.85 1.567h-.276a1.875 1.875 0 01-1.85-1.567l-.091-.549a.798.798 0 00-.517-.608 4.999 4.999 0 01-.337-.14.798.798 0 00-.796.06l-.453.315a1.875 1.875 0 01-2.416-.2l-.192-.192a1.875 1.875 0 01-.2-2.416l.315-.453a.798.798 0 00.06-.796 4.982 4.982 0 01-.14-.337.798.798 0 00-.608-.517l-.549-.09a1.875 1.875 0 01-1.567-1.85v-.276c0-.916.663-1.699 1.567-1.85l.549-.091a.798.798 0 00.608-.517c.043-.115.09-.227.14-.337a.798.798 0 00-.06-.796l-.315-.453a1.875 1.875 0 01.2-2.416l.192-.192a1.875 1.875 0 012.416-.2l.453.315a.798.798 0 00.796.06 4.978 4.978 0 01.337-.14.798.798 0 00.517-.608l.09-.549A1.875 1.875 0 0110.802 2.25h.276zM10 13.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" clipRule="evenodd" />
+          </svg>
+          Settings
+        </button>
+      </div>
     </aside>
   )
 }
@@ -1050,11 +1159,21 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event' | 'settings'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event' | 'settings' | 'account'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
-  const [prevPage,    setPrevPage]    = useState('home') // where Settings' back button returns to
+  const [prevPage,    setPrevPage]    = useState('home') // where Settings'/Account's back button returns to
+  const [user,        setUser]        = useState(null) // Supabase session user, or null if signed out
+
+  // Track the Supabase auth session — getSession() resolves the session
+  // already persisted in localStorage from a prior visit; onAuthStateChange
+  // keeps `user` current across sign-in/sign-up/sign-out without a reload.
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null))
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => setUser(session?.user ?? null))
+    return () => sub.subscription.unsubscribe()
+  }, [])
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving to the OS default every load.
   const [theme, setTheme] = useState(() => localStorage.getItem('studystock-theme') || 'system')
@@ -1134,6 +1253,11 @@ export default function App() {
     setPage('settings'); setNavOpen(false)
   }
   function handleSettingsBack() { setPage(prevPage); setNavOpen(false) }
+  function handleAccount() {
+    if (page !== 'account') setPrevPage(page)
+    setPage('account'); setNavOpen(false)
+  }
+  function handleAccountBack() { setPage(prevPage); setNavOpen(false) }
   function handlePickerOpen() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
@@ -1153,6 +1277,8 @@ export default function App() {
   let content
   if (page === 'settings') {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
+  } else if (page === 'account') {
+    content = <AccountPage user={user} onBack={handleAccountBack} />
   } else if (org && !eventsLoaded) {
     content = <div className="loading">Loading…</div>
   } else if (org && events.length === 0) {
@@ -1188,6 +1314,8 @@ export default function App() {
         onLanding={handleLanding}
         onOrgChange={handleOrgChange}
         onSettings={handleSettings}
+        onAccount={handleAccount}
+        user={user}
         open={navOpen}
       />
       <main className="main">{content}</main>

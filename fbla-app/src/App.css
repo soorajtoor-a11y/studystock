@@ -1009,7 +1009,7 @@
 .study-panel {
   position:relative; overflow-y:auto; padding:18px 16px 18px 16px;
   border-left:1px solid var(--border);
-  background:oklch(97% 0.008 var(--signal-hue));
+  background:var(--bg);
   display:flex; flex-direction:column; gap:10px;
 }
 

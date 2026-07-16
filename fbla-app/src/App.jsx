@@ -982,7 +982,7 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
 }
 
 // ── One-Page Section Notes ──────────────────────────────────────────────────
-function NotesPane({ event, org, objectiveText, objectives, onBack }) {
+function NotesPane({ event, org, objectiveText, objectives, title, onBack }) {
   const [notes, setNotes] = useState(null)
   const [error, setError] = useState(null)
 
@@ -1016,7 +1016,7 @@ function NotesPane({ event, org, objectiveText, objectives, onBack }) {
         <div className="study-meta">
           <span className="study-event">{formatEventName(event)}</span>
           <span className="study-divider">›</span>
-          <span className="study-obj">{objectiveText}</span>
+          <span className="study-obj">{title || 'Notes'}</span>
         </div>
       </div>
       <div className="pane-loading">
@@ -1044,7 +1044,7 @@ function NotesPane({ event, org, objectiveText, objectives, onBack }) {
       <div className="notes-doc-wrap">
         <div className="notes-doc">
           <p className="notes-doc-kicker">One-Page Notes</p>
-          <h1 className="notes-doc-title">{objectiveText}</h1>
+          <h1 className="notes-doc-title">{title || formatEventName(event)}</h1>
           <div className="notes-doc-rule" />
           {sorted.map(n => (
             <div key={n.objective_num} className="notes-entry">
@@ -1598,7 +1598,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
               <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives, 'quiz')}>📝 Quiz</button>
               <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives, 'flashcard')}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
-              <button className="sp-btn sp-btn-notes" onClick={() => { onStudy(buildSectionText(section), 'notes', null, null, 'section', section.objectives) }}>📄 Notes</button>
+              <button className="sp-btn sp-btn-notes" onClick={() => { onStudy(buildSectionText(section), 'notes', null, null, 'section', section.objectives, `${section.letter}. ${section.title}`) }}>📄 Notes</button>
             </div>
           </div>
         ))}
@@ -2219,7 +2219,7 @@ export default function App() {
     setPage('picker'); setStudy(null); setNavOpen(false)
   }
   function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setHistoryOpen(false) }
-  function handleStudy(text, mode, count, diff, scope, objectives) { setStudy({ text, mode, count, diff, scope, objectives }) }
+  function handleStudy(text, mode, count, diff, scope, objectives, title) { setStudy({ text, mode, count, diff, scope, objectives, title }) }
   function handleBack()          { setStudy(null) }
 
   if (page === 'landing') {
@@ -2249,7 +2249,7 @@ export default function App() {
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
     } else if (study.mode === 'notes') {
-      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} onBack={handleBack} />
+      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} title={study.title} onBack={handleBack} />
     } else {
       // Keyed on whatever uniquely identifies THIS chat session, so React
       // fully remounts StudyPane (fresh internal `messages` state, fresh

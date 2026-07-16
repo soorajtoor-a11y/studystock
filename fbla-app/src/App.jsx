@@ -1625,10 +1625,7 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
       <button className="sidebar-logo" onClick={onLanding} title="Back to VyeAI overview">
-        <img className="sidebar-logo-mark" src={appMark} alt="" />
-        <div className="sidebar-logo-text">
-          <span className="sidebar-logo-name">VyeAI</span>
-        </div>
+        <img className="sidebar-logo-mark" src={appMark} alt="VyeAI" />
       </button>
 
       <div className="sidebar-top">

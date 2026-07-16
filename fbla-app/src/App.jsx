@@ -1294,18 +1294,16 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory }) {
+function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnything, showHistory, historyCollapsed, onToggleHistoryCollapse }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
-  // Both side panels can shrink to a thin, always-visible rail instead of
-  // fully disappearing — click the rail to bring it back. Reset to expanded
-  // whenever a different event's history panel is (re-)opened, so a
-  // collapse on one pinned event doesn't carry over and surprise-collapse
-  // the next one.
-  const [studyCollapsed,   setStudyCollapsed]   = useState(false)
-  const [historyCollapsed, setHistoryCollapsed] = useState(false)
-  useEffect(() => { if (showHistory) setHistoryCollapsed(false) }, [showHistory, event])
+  // The Study Panel can shrink to a thin, always-visible rail instead of
+  // fully disappearing — click the rail to bring it back. (The History
+  // panel's collapse state is lifted to the App root, not local here — see
+  // the historyCollapsed prop — so it stays consistent when moving between
+  // this view and an open Explain session for the same event.)
+  const [studyCollapsed, setStudyCollapsed] = useState(false)
 
   useEffect(() => {
     setOutline(null); setSelected(null)
@@ -1324,17 +1322,25 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory
       <div className="event-header">
         <div className="event-header-row">
           <h2 className="event-title">{formatEventName(event)}</h2>
-          <button
-            className={`event-pin-btn ${pinned ? 'pinned' : ''}`}
-            onClick={onTogglePin}
-            title={pinned ? 'Unpin event' : 'Mark as pinned'}
-            aria-label={pinned ? 'Unpin event' : 'Mark as pinned'}
-          >
-            <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="13" height="13">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
-            </svg>
-            <span>{pinned ? 'Pinned' : 'Mark as pinned'}</span>
-          </button>
+          <div className="event-header-actions">
+            <button className="event-ask-btn" onClick={onAskAnything}>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
+                <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a9.06 9.06 0 01-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C2.744 13.318 2 11.747 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zm-9.75 3a.75.75 0 001.5 0v-1.5a.75.75 0 00-1.5 0V13zm0-8.75a.75.75 0 011.5 0v4a.75.75 0 01-1.5 0v-4z" clipRule="evenodd" />
+              </svg>
+              Ask Anything
+            </button>
+            <button
+              className={`event-pin-btn ${pinned ? 'pinned' : ''}`}
+              onClick={onTogglePin}
+              title={pinned ? 'Unpin event' : 'Mark as pinned'}
+              aria-label={pinned ? 'Unpin event' : 'Mark as pinned'}
+            >
+              <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="13" height="13">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+              </svg>
+              <span>{pinned ? 'Pinned' : 'Mark as pinned'}</span>
+            </button>
+          </div>
         </div>
         <p className="event-subtitle">Click any objective to study it, or use the panel on the right to study a section or the full event.</p>
       </div>
@@ -1380,7 +1386,7 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory
         {showHistory && user && (
           <ExplainHistorySidePanel
             org={org} event={event} user={user}
-            collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+            collapsed={historyCollapsed} onToggleCollapse={onToggleHistoryCollapse}
           />
         )}
       </div>
@@ -1617,11 +1623,16 @@ export default function App() {
   // to jump straight to the logged-in Dashboard once a session actually
   // appears, rather than back to wherever Account's normal "back" would go.
   const [postLoginRedirect, setPostLoginRedirect] = useState(false)
-  // True only when the active event was opened by clicking a pinned card on
-  // the Dashboard — that's the one entry point that shows the Explain
-  // History side panel alongside the normal event view. Any other way of
-  // opening an event (sidebar, event picker) resets this to false.
-  const [dashboardHistoryOpen, setDashboardHistoryOpen] = useState(false)
+  // Whether the Explain History side panel is showing for the current
+  // event — opened by clicking a pinned card on the Dashboard, hitting
+  // "Ask Anything" in the event header, or "Continue this conversation"
+  // from the full history page. Lifted up here (not local to EventView) so
+  // it stays consistent — collapsed or open — across both the normal event
+  // view AND the Explain screen for the same event, instead of resetting
+  // every time the user moves between them. Any other way of opening an
+  // event (sidebar, event picker) resets this to false.
+  const [historyOpen,      setHistoryOpen]      = useState(false)
+  const [historyCollapsed, setHistoryCollapsed] = useState(false)
   // True from the moment Supabase fires PASSWORD_RECOVERY (the user landed
   // back from a reset-password email link) until they finish setting a new
   // password — AccountPage uses this to show the "set new password" form
@@ -1680,13 +1691,14 @@ export default function App() {
 
   function handleSelectPinned(o, ev) {
     if (o !== org) setOrg(o)
-    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(false)
+    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setHistoryOpen(false)
   }
-  // Only entry point that opens the Explain History side panel alongside
-  // the normal event view — clicking a pinned card on the Dashboard.
+  // Opens the Explain History side panel alongside the normal event view —
+  // clicking a pinned card on the Dashboard.
   function handleSelectPinnedFromDashboard(o, ev) {
     if (o !== org) setOrg(o)
-    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(true)
+    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false)
+    setHistoryOpen(true); setHistoryCollapsed(false)
   }
   function handleOpenHistory(o, ev) {
     if (o !== org) setOrg(o)
@@ -1695,6 +1707,15 @@ export default function App() {
   function handleHistoryBack() { setPage('event') }
   function handleContinueFromHistory() {
     setStudy({ text: '', mode: 'explain', scope: 'general' }); setPage('event')
+    setHistoryOpen(true); setHistoryCollapsed(false)
+  }
+  // The event header's persistent "Ask Anything" button — same general
+  // Explain mode as the Study Panel's own Ask Anything, but also brings the
+  // Explain History panel into view (if signed in) so it's visible right
+  // alongside the conversation as it happens, not just after the fact.
+  function handleAskAnything() {
+    setStudy({ text: '', mode: 'explain', scope: 'general' })
+    if (user) { setHistoryOpen(true); setHistoryCollapsed(false) }
   }
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving to the OS default every load.
@@ -1803,7 +1824,7 @@ export default function App() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
   }
-  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(false) }
+  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setHistoryOpen(false) }
   function handleStudy(text, mode, count, diff, scope, objectives) { setStudy({ text, mode, count, diff, scope, objectives }) }
   function handleBack()          { setStudy(null) }
 
@@ -1829,9 +1850,28 @@ export default function App() {
   } else if (org && events.length === 0) {
     content = <ComingSoonPage org={org} onSwitchOrg={handleSwitchOrg} />
   } else if (study && activeEvent) {
-    if      (study.mode === 'quiz')      content = <QuizPane      event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
-    else if (study.mode === 'flashcard') content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
-    else                                 content = <StudyPane      event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} onBack={handleBack} />
+    if (study.mode === 'quiz') {
+      content = <QuizPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
+    } else if (study.mode === 'flashcard') {
+      content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
+    } else {
+      const pane = <StudyPane event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} onBack={handleBack} />
+      // Explain mode keeps the History panel visible alongside the live
+      // conversation when it was opened (pinned Dashboard card, header
+      // "Ask Anything", or "Continue this conversation") — same rail /
+      // collapse behavior as on the normal event view, and the same
+      // historyOpen/historyCollapsed state, so it doesn't reset just
+      // because the user moved from EventView into an explain session.
+      content = historyOpen && user ? (
+        <div className="event-layout explain-with-history" style={{ gridTemplateColumns: `1fr ${historyCollapsed ? '44px' : '300px'}` }}>
+          {pane}
+          <ExplainHistorySidePanel
+            org={org} event={activeEvent} user={user}
+            collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+          />
+        </div>
+      ) : pane
+    }
   } else if (page === 'home') {
     content = <HomePage onStart={handlePickerOpen} />
   } else if (page === 'picker') {
@@ -1841,7 +1881,8 @@ export default function App() {
       <EventView
         event={activeEvent} org={org} onStudy={handleStudy}
         user={user} pinned={isPinned(org, activeEvent)} onTogglePin={() => togglePin(org, activeEvent)}
-        showHistory={dashboardHistoryOpen}
+        onAskAnything={handleAskAnything}
+        showHistory={historyOpen} historyCollapsed={historyCollapsed} onToggleHistoryCollapse={() => setHistoryCollapsed(c => !c)}
       />
     )
   } else {

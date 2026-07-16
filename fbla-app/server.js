@@ -1074,6 +1074,162 @@ app.post('/api/chat', async (req, res) => {
   res.end();
 });
 
+// Live coverage dashboard — scans study-materials/ fresh on every request, so
+// it always reflects whatever's on disk right now (no caching, no build step).
+// Column pairs are NOT a min-count threshold on the single generated bank —
+// the lower option in each pair (25/10/5) only reads a SEPARATELY-generated,
+// non-overlapping bank file, which the pipeline doesn't produce yet. Until
+// generate_bank.py grows that second batch, those three columns stay red for
+// every event by construction — this just reports what actually exists.
+const COVERAGE_TIERS = [
+  { key: 'obj5',  label: 'Objective — 5',  kind: 'dedicated', filename: 'question-bank-objectives-5.json',  grouped: true,  min: 5  },
+  { key: 'obj10', label: 'Objective — 10', kind: 'threshold', filename: 'question-bank-objectives.json',    grouped: true,  min: 10 },
+  { key: 'sub10', label: 'Sub-topic — 10', kind: 'dedicated', filename: 'question-bank-sections-10.json',   grouped: true,  min: 10 },
+  { key: 'sub20', label: 'Sub-topic — 20', kind: 'threshold', filename: 'question-bank-sections.json',      grouped: true,  min: 20 },
+  { key: 'ov25',  label: 'Overall — 25',   kind: 'dedicated', filename: 'question-bank-25.json',            grouped: false, min: 25 },
+  { key: 'ov50',  label: 'Overall — 50',   kind: 'threshold', filename: 'question-bank.json',                grouped: false, min: 50 },
+];
+
+function scanCoverage() {
+  const orgs = fs.readdirSync(MATERIALS_DIR)
+    .filter(f => fs.statSync(path.join(MATERIALS_DIR, f)).isDirectory())
+    .sort();
+  const rows = [];
+  for (const org of orgs) {
+    const orgDir = path.join(MATERIALS_DIR, org);
+    const events = fs.readdirSync(orgDir)
+      .filter(f => fs.statSync(path.join(orgDir, f)).isDirectory())
+      .sort();
+    for (const event of events) {
+      const evDir = path.join(orgDir, event);
+      const row = { org, event, cells: {} };
+      for (const tier of COVERAGE_TIERS) {
+        const p = path.join(evDir, tier.filename);
+        let ok = false, detail = 'no bank';
+        if (fs.existsSync(p)) {
+          try {
+            const data = JSON.parse(fs.readFileSync(p, 'utf8'));
+            if (tier.grouped) {
+              const counts = Object.values(data).map(v => v.length);
+              const min = counts.length ? Math.min(...counts) : 0;
+              ok = counts.length > 0 && min >= tier.min;
+              detail = counts.length ? `min ${min}/group across ${counts.length} groups` : 'empty bank';
+            } else {
+              ok = Array.isArray(data) && data.length >= tier.min;
+              detail = Array.isArray(data) ? `${data.length} total` : 'malformed bank';
+            }
+          } catch {
+            detail = 'unreadable bank';
+          }
+        }
+        row.cells[tier.key] = { ok, detail };
+      }
+      rows.push(row);
+    }
+  }
+  return rows;
+}
+
+app.get('/admin/coverage', (req, res) => {
+  const rows = scanCoverage();
+  const orgLabel = { fbla: 'FBLA', deca: 'DECA', hosa: 'HOSA' };
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const fmtName = slug => slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  const totals = Object.fromEntries(COVERAGE_TIERS.map(t => [t.key, rows.filter(r => r.cells[t.key].ok).length]));
+  const summaryCards = COVERAGE_TIERS.map(t =>
+    `<div class="stat"><div class="stat-num">${totals[t.key]}<span class="stat-den">/${rows.length}</span></div><div class="stat-label">${esc(t.label)}</div></div>`
+  ).join('');
+
+  const orgOrder = ['fbla', 'deca', 'hosa'];
+  let bodyRows = '';
+  for (const org of orgOrder) {
+    const orgRows = rows.filter(r => r.org === org);
+    if (!orgRows.length) continue;
+    bodyRows += `<tr class="org-row"><td colspan="7">${esc(orgLabel[org] || org)} (${orgRows.length})</td></tr>`;
+    for (const r of orgRows) {
+      const tds = COVERAGE_TIERS.map(t => {
+        const c = r.cells[t.key];
+        const cls = c.ok ? 'good' : 'bad';
+        const icon = c.ok ? '✓' : '✗';
+        return `<td class="cell ${cls}" title="${esc(c.detail)}"><span class="dot">${icon}</span></td>`;
+      }).join('');
+      bodyRows += `<tr><td class="ev-name">${esc(fmtName(r.event))}</td>${tds}</tr>`;
+    }
+  }
+
+  const headerCells = COVERAGE_TIERS.map(t => `<th>${esc(t.label)}</th>`).join('');
+
+  res.setHeader('Cache-Control', 'no-store');
+  res.send(`<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Question Bank Coverage — VyeAI Admin</title>
+<meta name="robots" content="noindex, nofollow" />
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b; --text-secondary: #52514e;
+    --text-muted: #898781; --gridline: #e1e0d9; --border: rgba(11,11,11,0.10);
+    --good: #0ca30c; --good-bg: #e4f5e4; --critical: #d03b3b; --critical-bg: #fbe7e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #ffffff; --text-secondary: #c3c2b7;
+      --text-muted: #898781; --gridline: #2c2c2a; --border: rgba(255,255,255,0.10);
+      --good: #0ca30c; --good-bg: #123a17; --critical: #e66767; --critical-bg: #3d1f1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text-primary); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { padding: 32px 24px 64px; max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
+  .sub { color: var(--text-secondary); font-size: 13px; margin: 0 0 4px; }
+  .refresh-note { color: var(--text-muted); font-size: 11px; margin: 0 0 24px; }
+  .summary { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-bottom: 28px; }
+  .stat { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 12px 10px; text-align: center; }
+  .stat-num { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat-den { font-size: 12px; font-weight: 500; color: var(--text-muted); }
+  .stat-label { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-1); }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  thead th { position: sticky; top: 0; background: var(--surface-1); text-align: center; font-weight: 600; color: var(--text-secondary); font-size: 11px; padding: 10px 6px; border-bottom: 1px solid var(--gridline); white-space: nowrap; }
+  thead th:first-child { text-align: left; }
+  .ev-name { padding: 7px 12px; white-space: nowrap; }
+  td { border-bottom: 1px solid var(--gridline); }
+  .org-row td { background: var(--page); color: var(--text-muted); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 8px 12px; }
+  .cell { text-align: center; padding: 4px; }
+  .dot { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .cell.good .dot { background: var(--good-bg); color: var(--good); }
+  .cell.bad .dot { background: var(--critical-bg); color: var(--critical); }
+  tbody tr:hover td:not(.org-row td) { background: var(--gridline); }
+  .legend { display: flex; gap: 18px; margin: 14px 0 0; font-size: 12px; color: var(--text-secondary); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Question Bank Coverage</h1>
+  <p class="sub">Live scan of study-materials/ — ${rows.length} events across FBLA / DECA / HOSA. The lower option in each pair only counts a separately-generated, non-overlapping bank; it stays red until that second batch exists, even if the higher option is fully generated.</p>
+  <p class="refresh-note">Reload this page any time — it re-scans disk on every request, never cached.</p>
+  <div class="summary">${summaryCards}</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Event</th>${headerCells}</tr></thead>
+      <tbody>${bodyRows}</tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span><span class="dot cell good" style="display:inline-flex;border-radius:4px;">✓</span> Bank exists &amp; meets threshold</span>
+    <span><span class="dot cell bad" style="display:inline-flex;border-radius:4px;">✗</span> Not generated / below threshold</span>
+  </div>
+</main>
+</body>
+</html>`);
+});
+
 // In production, serve the Vite-built frontend and handle client-side routing
 if (process.env.NODE_ENV === 'production') {
   const dist = path.join(__dirname, 'dist');

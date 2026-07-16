@@ -321,6 +321,16 @@ function AccountPage({ user, recoveryMode, onBack }) {
 
   useEffect(() => { if (recoveryMode) setMode('recovery') }, [recoveryMode])
 
+  // Not every Supabase auth error populates `.message` usefully — a 500
+  // (e.g. its own mail sender failing) came back with an error object whose
+  // message rendered as the literal text "{}" instead of anything readable.
+  // Always fall back to a real sentence rather than trusting error.message
+  // blindly.
+  function errMsg(error, fallback) {
+    const m = error?.message
+    return (typeof m === 'string' && m.trim() && m.trim() !== '{}') ? m : fallback
+  }
+
   async function handleSubmit(e) {
     e.preventDefault()
     setError(null); setInfo(null); setBusy(true)
@@ -328,7 +338,7 @@ function AccountPage({ user, recoveryMode, onBack }) {
     if (mode === 'reset') {
       const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin })
       setBusy(false)
-      if (error) { setError(error.message); return }
+      if (error) { setError(errMsg(error, "Couldn't send the reset email right now — please try again in a few minutes.")); return }
       setInfo('If an account exists for that email, a reset link has been sent.')
       return
     }
@@ -336,7 +346,7 @@ function AccountPage({ user, recoveryMode, onBack }) {
     if (mode === 'recovery') {
       const { error } = await supabase.auth.updateUser({ password })
       setBusy(false)
-      if (error) { setError(error.message); return }
+      if (error) { setError(errMsg(error, "Couldn't update your password — please try again.")); return }
       setInfo('Password updated — you\'re signed in.')
       return
     }
@@ -345,7 +355,7 @@ function AccountPage({ user, recoveryMode, onBack }) {
       ? await supabase.auth.signUp({ email, password })
       : await supabase.auth.signInWithPassword({ email, password })
     setBusy(false)
-    if (error) { setError(error.message); return }
+    if (error) { setError(errMsg(error, mode === 'signup' ? "Couldn't sign up — please try again." : "Couldn't log in — check your email and password.")); return }
     if (mode === 'signup') setInfo('Check your email to confirm your account, then log in.')
   }
 

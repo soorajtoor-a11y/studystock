@@ -307,7 +307,7 @@ function PasswordInput({ value, onChange, placeholder, autoComplete, autoFocus }
   )
 }
 
-function AccountPage({ user, recoveryMode, onBack }) {
+function AccountPage({ user, recoveryMode, forceLoginForm, onBack }) {
   // 'signin' | 'signup' | 'reset' (request a reset email) | 'recovery' (set a
   // new password after clicking the link in that email — driven by the
   // parent's recoveryMode, since Supabase signs the user into a temporary
@@ -376,7 +376,7 @@ function AccountPage({ user, recoveryMode, onBack }) {
     )
   }
 
-  if (user) {
+  if (user && !forceLoginForm) {
     return (
       <div className="account-page">
         <AccountHero icon="👤" title="Account" subtitle={`Signed in as ${user.email}`} />
@@ -1772,8 +1772,17 @@ export default function App() {
   // also carries access_token in the hash, and that one must land on the
   // "set a new password" form (handled separately below via the
   // PASSWORD_RECOVERY event), not jump straight to the Dashboard.
+  // IMPORTANT: consumed below via the SIGNED_IN *event*, never via a plain
+  // "is user truthy" check — a session can already exist from a prior visit
+  // by the time this arms, and a truthiness check would fire immediately
+  // (before the user does anything), silently bouncing to the Dashboard
+  // instead of ever showing the login form "Sign In" is supposed to force.
   const [postLoginRedirect, setPostLoginRedirect] = useState(() =>
     window.location.hash.includes('access_token') && !window.location.hash.includes('type=recovery'))
+  // Forces AccountPage to show the actual login form even if a session is
+  // already active — "Sign In" should always mean "let me authenticate",
+  // never "silently confirm whoever's already logged in and skip ahead".
+  const [forceLoginForm, setForceLoginForm] = useState(false)
   // Whether the Explain History side panel is showing for the current
   // event — opened by clicking a pinned card on the Dashboard, hitting
   // "Ask Anything" in the event header, or "Continue this conversation"
@@ -1798,13 +1807,17 @@ export default function App() {
     const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null)
       if (event === 'PASSWORD_RECOVERY') { setRecoveryMode(true); setPage('account') }
+      // SIGNED_IN is a discrete action (password submit, signUp with no
+      // confirmation pending, or an OAuth callback completing) — unlike
+      // checking `user` truthiness, this never fires just because a
+      // pre-existing session was restored on a normal page load, so arming
+      // postLoginRedirect earlier can't cause a premature/silent redirect.
+      if (event === 'SIGNED_IN' && postLoginRedirect) {
+        setPostLoginRedirect(false); setForceLoginForm(false); setPage('dashboard')
+      }
     })
     return () => sub.subscription.unsubscribe()
-  }, [])
-
-  useEffect(() => {
-    if (user && postLoginRedirect) { setPostLoginRedirect(false); setPage('dashboard') }
-  }, [user, postLoginRedirect])
+  }, [postLoginRedirect])
 
   // Pinned events — [{org, event}], loaded from Supabase for the signed-in
   // user and kept in sync via optimistic local updates in togglePin (below)
@@ -1958,16 +1971,16 @@ export default function App() {
   function handleBrowseAll() { handleOrgPicker('home') }
   // "Sign In" from the landing nav: open the Account page's login form. Only
   // arms postLoginRedirect if nobody's currently signed in — otherwise a
-  // session already exists (persisted from a prior visit) and `user` is
-  // already truthy, so the redirect effect would fire on the very next
-  // render and silently bounce straight to the Dashboard without ever
-  // showing anything, even though no new sign-in actually happened. Landing
-  // on the Account page's "Signed in as X" view instead gives them a chance
-  // to Log Out first if they wanted to switch accounts.
+  // session already exists (persisted from a prior visit) — forceLoginForm
+  // makes AccountPage show the real login form regardless, and
+  // postLoginRedirect (consumed via the SIGNED_IN event, not a truthiness
+  // check) only fires the Dashboard jump once an actual sign-in action
+  // completes, never just because a session was already active.
   function handleSignIn() {
     setPrevPage('landing')
     setPendingDestination('home')
-    if (!user) setPostLoginRedirect(true)
+    setPostLoginRedirect(true)
+    setForceLoginForm(true)
     setPage('account'); setNavOpen(false)
   }
   function handleSettings() {
@@ -1977,9 +1990,10 @@ export default function App() {
   function handleSettingsBack() { setPage(prevPage); setNavOpen(false) }
   function handleAccount() {
     if (page !== 'account') setPrevPage(page)
+    setForceLoginForm(false)
     setPage('account'); setNavOpen(false)
   }
-  function handleAccountBack() { setRecoveryMode(false); setPage(prevPage); setNavOpen(false) }
+  function handleAccountBack() { setRecoveryMode(false); setForceLoginForm(false); setPage(prevPage); setNavOpen(false) }
   function handlePickerOpen() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
@@ -2000,7 +2014,7 @@ export default function App() {
   if (page === 'settings') {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
   } else if (page === 'account') {
-    content = <AccountPage user={user} recoveryMode={recoveryMode} onBack={handleAccountBack} />
+    content = <AccountPage user={user} recoveryMode={recoveryMode} forceLoginForm={forceLoginForm} onBack={handleAccountBack} />
   } else if (page === 'dashboard' && user) {
     content = <Dashboard user={user} pins={pins} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
   } else if (page === 'explain-history' && activeEvent && user) {

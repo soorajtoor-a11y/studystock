@@ -273,7 +273,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
           <Reveal as="div" className="home-stats" delay={80}>
             <div className="home-stat">
               <span className="home-stat-pre">All</span>
-              <span className="home-stat-num">96</span>
+              <span className="home-stat-num">109</span>
               <span className="home-stat-label">Objective Tests across 3 Competitions</span>
             </div>
             <div className="home-stat">

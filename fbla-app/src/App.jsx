@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import Landing from './Landing'
+import Reveal from './components/Reveal'
 import { ORG_META, ORG_ORDER } from './orgMeta'
 import { supabase } from './supabaseClient'
 import appMark from './assets/studystock-mark.png'
@@ -17,6 +18,19 @@ const EVENT_NAME_OVERRIDES = {
 function formatEventName(slug) {
   if (EVENT_NAME_OVERRIDES[slug]) return EVENT_NAME_OVERRIDES[slug]
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}
+
+// Best-effort "does this email's local-part look like an actual name" check
+// for the Dashboard greeting. Deliberately conservative — a wrong guess
+// (turning "jsmith47" into "Jsmith47") looks broken, so anything that isn't
+// cleanly 1-3 alphabetic words falls back to no name at all.
+function nameFromEmail(email) {
+  if (!email) return null
+  const local = email.split('@')[0]
+  const parts = local.replace(/[0-9]+$/, '').split(/[._-]+/).filter(Boolean)
+  if (parts.length === 0 || parts.length > 3) return null
+  if (!parts.every(p => /^[a-zA-Z]{2,}$/.test(p))) return null
+  return parts.map(p => p[0].toUpperCase() + p.slice(1).toLowerCase()).join(' ')
 }
 
 function parseOutline(text) {
@@ -364,6 +378,63 @@ function AccountPage({ user, recoveryMode, onBack }) {
       <button className="account-switch" onClick={() => { setMode(m => m === 'signup' ? 'signin' : 'signup'); setError(null); setInfo(null) }}>
         {mode === 'signup' ? 'Already have an account? Log in' : "Don't have an account? Sign up"}
       </button>
+    </div>
+  )
+}
+
+// ── Dashboard (logged-in landing page) ──────────────────────────────────────
+function Dashboard({ user, pins, onSelectPinned, onBrowseAll }) {
+  const name = nameFromEmail(user?.email)
+
+  return (
+    <div className="dashboard-page">
+      <Reveal as="div" className="dashboard-hero">
+        <h1 className="dashboard-greeting">{name ? `Welcome, ${name}` : 'Welcome'}</h1>
+        <p className="dashboard-subtitle">Pick up where you left off, or browse every competitive event.</p>
+      </Reveal>
+
+      <Reveal as="div" className="dashboard-body" delay={90}>
+        <div className="dashboard-pins-header">
+          <p className="dashboard-section-label">Pinned Events</p>
+          {pins.length > 0 && <span className="sidebar-count-badge dashboard-count-badge">{pins.length}</span>}
+        </div>
+
+        {pins.length === 0 ? (
+          <div className="dashboard-empty">
+            <span className="dashboard-empty-icon" aria-hidden="true">📌</span>
+            <p>Pin events you are currently studying!</p>
+          </div>
+        ) : (
+          <div className="dashboard-pins-grid">
+            {pins.map((p, i) => {
+              const meta = ORG_META[p.org]
+              return (
+                <Reveal
+                  as="button"
+                  key={`${p.org}/${p.event}`}
+                  delay={i * 45}
+                  className="dashboard-pin-card"
+                  onClick={() => onSelectPinned(p.org, p.event)}
+                >
+                  <span
+                    className="dashboard-pin-org-icon"
+                    style={meta ? { background: `linear-gradient(135deg,${meta.colors[0]},${meta.colors[1]})` } : undefined}
+                  >
+                    {meta?.icon ?? '📁'}
+                  </span>
+                  <span className="dashboard-pin-info">
+                    <span className="dashboard-pin-name">{formatEventName(p.event)}</span>
+                    <span className="dashboard-pin-org-name">{meta?.name ?? p.org}</span>
+                  </span>
+                  <span className="dashboard-pin-arrow" aria-hidden="true">→</span>
+                </Reveal>
+              )
+            })}
+          </div>
+        )}
+
+        <button className="dashboard-browse-btn" onClick={onBrowseAll}>Browse all events →</button>
+      </Reveal>
     </div>
   )
 }
@@ -918,6 +989,59 @@ function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
   )
 }
 
+// Compact version of ExplainHistoryPage above, shown alongside the normal
+// event view (not as a full-page swap) — the one entry point for this is
+// clicking a pinned event's card on the Dashboard. Read-only: reuses the
+// same message-bubble styling as the live Explain chat and the full-page
+// history view for visual consistency, just in a narrower side column.
+function ExplainHistorySidePanel({ org, event, user, onClose }) {
+  const [rows,  setRows]  = useState(null)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    setRows(null); setError(null)
+    supabase.from('explain_history').select('role, content, created_at')
+      .eq('user_id', user.id).eq('org', org).eq('event', event)
+      .order('created_at', { ascending: true })
+      .then(({ data, error }) => { if (error) setError(error.message); else setRows(data) })
+  }, [org, event])
+
+  return (
+    <Reveal as="aside" className="history-side-panel">
+      <div className="history-side-header">
+        <span className="history-side-title">Explain History</span>
+        <button className="history-side-close" onClick={onClose} aria-label="Close explain history">✕</button>
+      </div>
+
+      {error && (
+        <div className="pane-error">
+          <div className="pane-error-icon">⚠</div>
+          <p className="pane-error-msg">{error}</p>
+        </div>
+      )}
+
+      {!error && rows === null && <div className="loading">Loading…</div>}
+
+      {!error && rows && rows.length === 0 && (
+        <div className="chat-empty-state history-side-empty">
+          <span className="chat-empty-icon">💬</span>
+          <p>No saved Explain conversations for this event yet. Use "Ask Anything" to start one.</p>
+        </div>
+      )}
+
+      {!error && rows && rows.length > 0 && (
+        <div className="chat-messages history-side-messages">
+          {rows.map((m, i) => (
+            <div key={i} className={`message message-${m.role}`}>
+              <div className="message-bubble">{m.content}</div>
+            </div>
+          ))}
+        </div>
+      )}
+    </Reveal>
+  )
+}
+
 // ── Mode Picker ───────────────────────────────────────────────────────────────
 // Every quiz question is generated at the same calibrated difficulty (see
 // question-generation-rules.txt RULE 1) — there's no user-facing choice.
@@ -1062,7 +1186,7 @@ function StudyPanel({ event, outline, onStudy }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, org, onStudy }) {
+function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory, onCloseHistory }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
@@ -1082,11 +1206,24 @@ function EventView({ event, org, onStudy }) {
   return (
     <div className="event-view">
       <div className="event-header">
-        <h2 className="event-title">{formatEventName(event)}</h2>
+        <div className="event-header-row">
+          <h2 className="event-title">{formatEventName(event)}</h2>
+          <button
+            className={`event-pin-btn ${pinned ? 'pinned' : ''}`}
+            onClick={onTogglePin}
+            title={pinned ? 'Unpin event' : 'Mark as pinned'}
+            aria-label={pinned ? 'Unpin event' : 'Mark as pinned'}
+          >
+            <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="13" height="13">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+            </svg>
+            <span>{pinned ? 'Pinned' : 'Mark as pinned'}</span>
+          </button>
+        </div>
         <p className="event-subtitle">Click any objective to study it, or use the panel on the right to study a section or the full event.</p>
       </div>
 
-      <div className="event-layout">
+      <div className={`event-layout ${showHistory ? 'event-layout-with-history' : ''}`}>
         <div className="event-objectives">
           <div className="sections">
             {outline.map(section => (
@@ -1115,6 +1252,10 @@ function EventView({ event, org, onStudy }) {
         </div>
 
         <StudyPanel event={event} outline={outline} onStudy={onStudy} />
+
+        {showHistory && user && (
+          <ExplainHistorySidePanel org={org} event={event} user={user} onClose={onCloseHistory} />
+        )}
       </div>
 
       {selected && (
@@ -1225,7 +1366,7 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
       </button>
 
       <div className="sidebar-top">
-        <button className={`sidebar-home-btn ${page === 'home' ? 'active' : ''}`} onClick={onHome}>
+        <button className={`sidebar-home-btn ${(page === 'home' || page === 'dashboard') ? 'active' : ''}`} onClick={onHome}>
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
@@ -1339,16 +1480,21 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'home' | 'picker' | 'event' | 'settings' | 'account'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
   const [prevPage,    setPrevPage]    = useState('home') // where Settings'/Account's back button returns to
   const [user,        setUser]        = useState(null) // Supabase session user, or null if signed out
   // Set by the landing page's "Sign In" button; consumed by the effect below
-  // to jump straight to the org chooser once a session actually appears,
-  // rather than back to wherever Account's normal "back" would go.
+  // to jump straight to the logged-in Dashboard once a session actually
+  // appears, rather than back to wherever Account's normal "back" would go.
   const [postLoginRedirect, setPostLoginRedirect] = useState(false)
+  // True only when the active event was opened by clicking a pinned card on
+  // the Dashboard — that's the one entry point that shows the Explain
+  // History side panel alongside the normal event view. Any other way of
+  // opening an event (sidebar, event picker) resets this to false.
+  const [dashboardHistoryOpen, setDashboardHistoryOpen] = useState(false)
   // True from the moment Supabase fires PASSWORD_RECOVERY (the user landed
   // back from a reset-password email link) until they finish setting a new
   // password — AccountPage uses this to show the "set new password" form
@@ -1368,7 +1514,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    if (user && postLoginRedirect) { setPostLoginRedirect(false); setPage('orgpicker') }
+    if (user && postLoginRedirect) { setPostLoginRedirect(false); setPage('dashboard') }
   }, [user, postLoginRedirect])
 
   // Pinned events — [{org, event}], loaded from Supabase for the signed-in
@@ -1407,7 +1553,13 @@ export default function App() {
 
   function handleSelectPinned(o, ev) {
     if (o !== org) setOrg(o)
-    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false)
+    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(false)
+  }
+  // Only entry point that opens the Explain History side panel alongside
+  // the normal event view — clicking a pinned card on the Dashboard.
+  function handleSelectPinnedFromDashboard(o, ev) {
+    if (o !== org) setOrg(o)
+    setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(true)
   }
   function handleOpenHistory(o, ev) {
     if (o !== org) setOrg(o)
@@ -1488,9 +1640,18 @@ export default function App() {
     setPage('home'); setNavOpen(false)
   }
   function handleHome() {
-    if (!org) return handleOrgPicker('home')
+    if (!org) {
+      // Logged-in users get the personal Dashboard (greeting + pinned
+      // events) instead of being dropped straight into the org chooser —
+      // "Browse all events" on that page is now the only path to the
+      // chooser for a signed-in user. Guests (no session) keep the old
+      // direct-to-picker behavior since there's nothing personal to show.
+      if (user) { setPage('dashboard'); setActiveEvent(null); setStudy(null); setNavOpen(false); return }
+      return handleOrgPicker('home')
+    }
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
+  function handleBrowseAll() { handleOrgPicker('home') }
   // "Sign In" from the landing nav: open the Account page's login form, and
   // remember to jump straight to the org chooser once a session actually
   // exists (the effect below fires on session creation, i.e. a real log in —
@@ -1515,7 +1676,7 @@ export default function App() {
     if (!org) return handleOrgPicker('picker')
     setPage('picker'); setStudy(null); setNavOpen(false)
   }
-  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false) }
+  function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setDashboardHistoryOpen(false) }
   function handleStudy(text, mode, count, diff, scope, objectives) { setStudy({ text, mode, count, diff, scope, objectives }) }
   function handleBack()          { setStudy(null) }
 
@@ -1532,6 +1693,8 @@ export default function App() {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
   } else if (page === 'account') {
     content = <AccountPage user={user} recoveryMode={recoveryMode} onBack={handleAccountBack} />
+  } else if (page === 'dashboard' && user) {
+    content = <Dashboard user={user} pins={pins} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
   } else if (page === 'explain-history' && activeEvent && user) {
     content = <ExplainHistoryPage org={org} event={activeEvent} user={user} onBack={handleHistoryBack} onContinue={handleContinueFromHistory} />
   } else if (org && !eventsLoaded) {
@@ -1547,7 +1710,13 @@ export default function App() {
   } else if (page === 'picker') {
     content = <EventPickerPage events={events} org={org} onSelect={handleSelectEvent} onBack={handleHome} />
   } else if (page === 'event' && activeEvent) {
-    content = <EventView event={activeEvent} org={org} onStudy={handleStudy} />
+    content = (
+      <EventView
+        event={activeEvent} org={org} onStudy={handleStudy}
+        user={user} pinned={isPinned(org, activeEvent)} onTogglePin={() => togglePin(org, activeEvent)}
+        showHistory={dashboardHistoryOpen} onCloseHistory={() => setDashboardHistoryOpen(false)}
+      />
+    )
   } else {
     content = <div className="loading">Loading…</div>
   }

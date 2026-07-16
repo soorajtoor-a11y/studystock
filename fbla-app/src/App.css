@@ -1277,7 +1277,12 @@
 .loading { padding:80px 40px; text-align:center; color:var(--text-4); font-size:14px; }
 
 /* ── One-Page Section Notes ─────────────────────────────────────────── */
-.notes-doc-wrap { flex:1; overflow-y:auto; padding:40px 24px 60px; display:flex; justify-content:center; }
+/* min-height:0 lets this flex item actually shrink/scroll instead of
+   growing to fit content; align-items:flex-start stops the default
+   "stretch" from forcing .notes-doc to the wrap's own (clamped) height —
+   without it, the card's background/border got stuck short while its text
+   kept flowing past it, uncontained, onto the page background beneath. */
+.notes-doc-wrap { flex:1; min-height:0; overflow-y:auto; padding:40px 24px 60px; display:flex; justify-content:center; align-items:flex-start; }
 .notes-doc {
   width:100%; max-width:640px; background:var(--surface); border:1px solid var(--border);
   border-radius:var(--r-xl); box-shadow:var(--shadow-xl); padding:44px 48px 40px;

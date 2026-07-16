@@ -186,7 +186,7 @@ function HomePage({ onStart }) {
     <div className="home-page">
       <div className="home-hero">
         <div className="home-hero-content">
-<h1 className="home-title">Vye<span className="home-title-accent"> AI</span></h1>
+          <h1 className="home-title"><span className="home-title-accent">Vye</span></h1>
           <p className="home-subtitle">
             Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
             and get instant explanations — all grounded in the official objectives.
@@ -240,7 +240,7 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
     <div className="settings-page">
       <button className="mp-back-link" onClick={onBack}>← Back</button>
       <h1 className="settings-title">Settings</h1>
-      <p className="settings-subtitle">Personalize how Vye AI looks. Your choice is saved on this device.</p>
+      <p className="settings-subtitle">Personalize how Vye looks. Your choice is saved on this device.</p>
 
       <div className="settings-section">
         <p className="settings-section-label">Appearance</p>
@@ -1550,10 +1550,10 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
 
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
-      <button className="sidebar-logo" onClick={onLanding} title="Back to Vye AI overview">
+      <button className="sidebar-logo" onClick={onLanding} title="Back to Vye overview">
         <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
-          <span className="sidebar-logo-name">Vye AI</span>
+          <span className="sidebar-logo-name">Vye</span>
         </div>
       </button>
 
@@ -1919,7 +1919,28 @@ export default function App() {
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
     } else {
-      const pane = <StudyPane event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} initialMessages={study.initialMessages} conversationId={study.conversationId} onBack={handleBack} />
+      // Keyed on whatever uniquely identifies THIS chat session, so React
+      // fully remounts StudyPane (fresh internal `messages` state, fresh
+      // conversationId) whenever the target actually changes — without
+      // this, reusing the same mounted StudyPane instance across two
+      // different targets silently kept the old session's state:
+      //   - Continue on a saved conversation did nothing visible, because
+      //     useState(initialMessages) only seeds state on first mount and
+      //     doesn't react to prop changes afterward.
+      //   - Clicking a different objective's Explain without navigating
+      //     away first would have kept the previous objective's messages
+      //     AND conversationId (a useRef, equally mount-only), silently
+      //     mixing two unrelated conversations into one saved thread.
+      // Falls through to 'new' only for a fresh general Ask Anything
+      // (conversationId and text are both empty there), where starting
+      // blank every time is correct, not a bug.
+      const pane = (
+        <StudyPane
+          key={study.conversationId || study.text || 'new'}
+          event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'}
+          user={user} initialMessages={study.initialMessages} conversationId={study.conversationId} onBack={handleBack}
+        />
+      )
       // Explain mode keeps the History panel visible alongside the live
       // conversation when it was opened (pinned Dashboard card, header
       // "Ask Anything", or "Continue this conversation") — same rail /

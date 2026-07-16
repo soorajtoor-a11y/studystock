@@ -45,13 +45,17 @@
 .sidebar-logo:hover { opacity:0.82; }
 
 .sidebar-logo-mark {
-  width:32px; height:32px;
-  border-radius:9px; object-fit:cover;
+  width:46px; height:46px;
+  border-radius:12px; object-fit:cover;
   box-shadow:0 2px 10px oklch(47% 0.13 var(--signal-hue) / 0.45); flex-shrink:0;
 }
 
 .sidebar-logo-text { display:flex; flex-direction:column; gap:1px; }
-.sidebar-logo-name { font-size:14px; font-weight:800; color:#fff; letter-spacing:0.2px; }
+.sidebar-logo-name {
+  font-family:var(--font-head); font-size:27px; font-weight:800; letter-spacing:-0.2px;
+  background:linear-gradient(120deg,var(--signal-300),var(--signal-100));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
 .sidebar-logo-sub  { font-size:10px; color:rgba(255,255,255,0.34); letter-spacing:0.2px; }
 
 /* Home button */

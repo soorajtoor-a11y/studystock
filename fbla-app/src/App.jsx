@@ -876,6 +876,19 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
   const bottomRef = useRef(null)
   const chatRef   = useRef(null)
   const didInit   = useRef(false)
+  // Whether to keep auto-following new content to the bottom. Starts true
+  // (a fresh conversation should track the live response), but a real
+  // scroll listener — not just re-checking position whenever `messages`
+  // happens to change — is what makes this reliable. A long streamed
+  // response fires setMessages on every small text chunk, sometimes
+  // several times a second; re-deriving "is the user near the bottom" only
+  // at those moments raced a human's much slower scroll gesture and kept
+  // winning, snapping back to the bottom mid-scroll — which is exactly
+  // what "I can't scroll up, it's stuck" looks like on a long answer. A
+  // dedicated scroll listener reacts to the ACTUAL gesture the instant it
+  // happens, so scrolling up even slightly reliably turns auto-follow off
+  // until the user scrolls back down themselves (or sends a new message).
+  const stickToBottom = useRef(true)
   // One id per conversation thread, shared by every message saved in it —
   // reused when resuming a saved conversation (via "Continue"), freshly
   // generated otherwise, so a new "Ask Anything" session starts its own
@@ -888,16 +901,26 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
     sendMessage(`Explain this objective in plain language with a real-world example: "${objectiveText}"`, [])
   }, [])
 
+  // Real scroll listener, not just a position check tied to `messages` —
+  // see the stickToBottom comment above for why that distinction matters.
   useEffect(() => {
     const el = chatRef.current
     if (!el) return
-    const nearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 100
-    if (nearBottom) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    function onScroll() {
+      stickToBottom.current = el.scrollHeight - el.scrollTop - el.clientHeight < 100
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    if (stickToBottom.current) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
   async function sendMessage(text, history) {
     const userMsg    = { role: 'user', content: text }
     const newHistory = [...history, userMsg]
+    stickToBottom.current = true // a fresh question means follow the new answer, regardless of prior scroll position
     setMessages(newHistory)
     setLoading(true)
     setError(null)

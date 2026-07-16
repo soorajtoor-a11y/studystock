@@ -1956,14 +1956,18 @@ export default function App() {
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
   function handleBrowseAll() { handleOrgPicker('home') }
-  // "Sign In" from the landing nav: open the Account page's login form, and
-  // remember to jump straight to the org chooser once a session actually
-  // exists (the effect below fires on session creation, i.e. a real log in —
-  // signUp() alone doesn't create a session until the email is confirmed).
+  // "Sign In" from the landing nav: open the Account page's login form. Only
+  // arms postLoginRedirect if nobody's currently signed in — otherwise a
+  // session already exists (persisted from a prior visit) and `user` is
+  // already truthy, so the redirect effect would fire on the very next
+  // render and silently bounce straight to the Dashboard without ever
+  // showing anything, even though no new sign-in actually happened. Landing
+  // on the Account page's "Signed in as X" view instead gives them a chance
+  // to Log Out first if they wanted to switch accounts.
   function handleSignIn() {
     setPrevPage('landing')
     setPendingDestination('home')
-    setPostLoginRedirect(true)
+    if (!user) setPostLoginRedirect(true)
     setPage('account'); setNavOpen(false)
   }
   function handleSettings() {

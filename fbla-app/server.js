@@ -1086,7 +1086,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const PORT = process.env.PORT || 3001;
-const server = app.listen(PORT, () => console.log(`Vye AI — provider: ${PROVIDER} — port: ${PORT}`));
+const server = app.listen(PORT, () => console.log(`VyeAI — provider: ${PROVIDER} — port: ${PORT}`));
 server.on('error', (err) => console.error('[server] listen error:', err));
 
 // Guaranteed keep-alive: if the listen handle somehow isn't holding the event

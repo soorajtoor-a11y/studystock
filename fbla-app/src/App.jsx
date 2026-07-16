@@ -186,7 +186,7 @@ function HomePage({ onStart }) {
     <div className="home-page">
       <div className="home-hero">
         <div className="home-hero-content">
-          <h1 className="home-title"><span className="home-title-accent">Vye</span></h1>
+          <h1 className="home-title"><span className="home-title-accent">VyeAI</span></h1>
           <p className="home-subtitle">
             Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
             and get instant explanations — all grounded in the official objectives.
@@ -240,7 +240,7 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
     <div className="settings-page">
       <button className="mp-back-link" onClick={onBack}>← Back</button>
       <h1 className="settings-title">Settings</h1>
-      <p className="settings-subtitle">Personalize how Vye looks. Your choice is saved on this device.</p>
+      <p className="settings-subtitle">Personalize how VyeAI looks. Your choice is saved on this device.</p>
 
       <div className="settings-section">
         <p className="settings-section-label">Appearance</p>
@@ -1610,10 +1610,10 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
 
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
-      <button className="sidebar-logo" onClick={onLanding} title="Back to Vye overview">
+      <button className="sidebar-logo" onClick={onLanding} title="Back to VyeAI overview">
         <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
-          <span className="sidebar-logo-name">Vye</span>
+          <span className="sidebar-logo-name">VyeAI</span>
         </div>
       </button>
 

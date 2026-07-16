@@ -1330,7 +1330,6 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
         <div className="sp-btns">
           <button className="sp-btn sp-btn-quiz"  onClick={() => openPicker('Full Event Quiz', formatEventName(event), buildFullEventText(), true)}>📝 Quiz</button>
           <button className="sp-btn sp-btn-flash" onClick={() => openPicker('Full Event Flashcards', formatEventName(event), buildFullEventText(), true)}>🃏 Cards</button>
-          <button className="sp-btn sp-btn-explain" onClick={() => onStudy('', 'explain', undefined, undefined, 'general')}>💡 Ask Anything</button>
         </div>
       </div>
 

@@ -948,8 +948,20 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
         for (const line of lines) {
           if (line.startsWith('data: ') && line !== 'data: [DONE]') {
             try {
-              const { text } = JSON.parse(line.slice(6))
-              assistantText += text
+              const payload = JSON.parse(line.slice(6))
+              // A distinct `error` field (never folded into `text`) — this
+              // used to arrive as literal error JSON inside `text` and get
+              // rendered straight into the message bubble as if it were the
+              // assistant's own reply, instead of routing to the actual
+              // error banner. If nothing had streamed yet, drop the empty
+              // placeholder bubble entirely; if a partial reply already
+              // showed up, leave it and just surface the error alongside it.
+              if (payload.error) {
+                setError(payload.error)
+                if (!assistantText) setMessages(prev => prev.slice(0, -1))
+                continue
+              }
+              assistantText += payload.text
               setMessages(prev => {
                 const u = [...prev]
                 u[u.length - 1] = { role: 'assistant', content: assistantText }

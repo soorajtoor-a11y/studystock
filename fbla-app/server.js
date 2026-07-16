@@ -782,12 +782,31 @@ async function callAnthropic(prompt) {
 async function streamAnthropic(systemPrompt, messages, res) {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-  const stream = await client.messages.stream({
-    model: 'claude-haiku-4-5-20251001', max_tokens: 1024, system: systemPrompt, messages,
-  });
-  for await (const chunk of stream) {
-    if (chunk.type === 'content_block_delta' && chunk.delta.type === 'text_delta') {
-      res.write(`data: ${JSON.stringify({ text: chunk.delta.text })}\n\n`);
+
+  // Anthropic's "overloaded_error" is explicitly transient (their own docs
+  // recommend retrying) — worth one silent automatic retry, but ONLY before
+  // any real content has reached the client. Once even one token has been
+  // written, a retry would restart the reply from scratch while the first
+  // half is already visible, so from that point on a failure just propagates
+  // to the normal catch in the route handler instead.
+  let wroteAny = false;
+  const maxAttempts = 2;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const stream = await client.messages.stream({
+        model: 'claude-haiku-4-5-20251001', max_tokens: 1024, system: systemPrompt, messages,
+      });
+      for await (const chunk of stream) {
+        if (chunk.type === 'content_block_delta' && chunk.delta.type === 'text_delta') {
+          wroteAny = true;
+          res.write(`data: ${JSON.stringify({ text: chunk.delta.text })}\n\n`);
+        }
+      }
+      return;
+    } catch (err) {
+      const overloaded = err?.error?.error?.type === 'overloaded_error' || /overloaded/i.test(err?.message || '');
+      if (wroteAny || !overloaded || attempt === maxAttempts) throw err;
+      console.warn(`[chat] Anthropic overloaded, retrying (attempt ${attempt + 1}/${maxAttempts})`);
     }
   }
 }
@@ -1040,7 +1059,16 @@ app.post('/api/chat', async (req, res) => {
     else await streamOllama(systemPrompt, messages, res);
   } catch (err) {
     console.error(err);
-    res.write(`data: ${JSON.stringify({ text: '\n\n[Error: ' + err.message + ']' })}\n\n`);
+    // A distinct `error` field, never `text` — the raw SDK error (often
+    // literal JSON like {"type":"error","error":{"type":"overloaded_error",
+    // ...}}) used to get written straight into `text`, so the frontend
+    // rendered it as if it were the assistant's own reply instead of routing
+    // it to the actual error banner/retry UI.
+    const overloaded = err?.error?.error?.type === 'overloaded_error' || /overloaded/i.test(err?.message || '');
+    const friendly = overloaded
+      ? 'The AI service is temporarily overloaded — please try again in a moment.'
+      : 'Something went wrong generating a response. Please try again.';
+    res.write(`data: ${JSON.stringify({ error: friendly })}\n\n`);
   }
   res.write('data: [DONE]\n\n');
   res.end();

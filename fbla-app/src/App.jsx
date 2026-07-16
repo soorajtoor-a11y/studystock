@@ -267,6 +267,46 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
 }
 
 // ── Account Page ──────────────────────────────────────────────────────────────
+// Password field with a show/hide toggle — used by every AccountPage form
+// that collects a password (signin/signup and the recovery "set new
+// password" form).
+function PasswordInput({ value, onChange, placeholder, autoComplete, autoFocus }) {
+  const [visible, setVisible] = useState(false)
+  return (
+    <div className="account-input-wrap">
+      <svg className="account-input-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true">
+        <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
+      </svg>
+      <input
+        className="account-input account-input-has-icon"
+        type={visible ? 'text' : 'password'}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        required minLength={6}
+        autoComplete={autoComplete}
+        autoFocus={autoFocus}
+      />
+      <button
+        type="button" className="password-toggle-btn" tabIndex={-1}
+        onClick={() => setVisible(v => !v)}
+        aria-label={visible ? 'Hide password' : 'Show password'}
+      >
+        {visible ? (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" width="16" height="16">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" width="16" height="16">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        )}
+      </button>
+    </div>
+  )
+}
+
 function AccountPage({ user, recoveryMode, onBack }) {
   // 'signin' | 'signup' | 'reset' (request a reset email) | 'recovery' (set a
   // new password after clicking the link in that email — driven by the
@@ -311,74 +351,110 @@ function AccountPage({ user, recoveryMode, onBack }) {
 
   if (mode === 'recovery') {
     return (
-      <div className="settings-page">
-        <h1 className="settings-title">Set a New Password</h1>
-        <p className="settings-subtitle">You clicked a password reset link — choose a new password below.</p>
-        <form className="account-form" onSubmit={handleSubmit}>
-          <input className="account-input" type="password" placeholder="New password" value={password}
-                 onChange={e => setPassword(e.target.value)} required minLength={6} autoComplete="new-password" autoFocus />
-          {error && <p className="account-error">{error}</p>}
-          {info  && <p className="account-info">{info}</p>}
-          <button className="home-cta" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Update Password'}</button>
-        </form>
-        {info && <button className="account-switch" onClick={onBack}>Continue →</button>}
+      <div className="account-page">
+        <AccountHero icon="🔑" title="Set a New Password" subtitle="You clicked a password reset link — choose a new password below." />
+        <Reveal as="div" className="account-card" delay={90}>
+          <form className="account-form" onSubmit={handleSubmit}>
+            <PasswordInput value={password} onChange={e => setPassword(e.target.value)} placeholder="New password" autoComplete="new-password" autoFocus />
+            {error && <p className="account-error">{error}</p>}
+            {info  && <p className="account-info">{info}</p>}
+            <button className="account-submit" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Update Password'}</button>
+          </form>
+          {info && <button className="account-switch" onClick={onBack}>Continue →</button>}
+        </Reveal>
       </div>
     )
   }
 
   if (user) {
     return (
-      <div className="settings-page">
-        <button className="mp-back-link" onClick={onBack}>← Back</button>
-        <h1 className="settings-title">Account</h1>
-        <p className="settings-subtitle">Signed in as {user.email}</p>
-        <button className="home-cta" onClick={() => supabase.auth.signOut()}>Log Out</button>
+      <div className="account-page">
+        <AccountHero icon="👤" title="Account" subtitle={`Signed in as ${user.email}`} />
+        <Reveal as="div" className="account-card" delay={90}>
+          <button className="mp-back-link" onClick={onBack}>← Back</button>
+          <div className="account-avatar-row">
+            <span className="account-avatar">{(user.email || '?')[0].toUpperCase()}</span>
+            <span className="account-avatar-email">{user.email}</span>
+          </div>
+          <button className="account-submit account-submit-danger" onClick={() => supabase.auth.signOut()}>Log Out</button>
+        </Reveal>
       </div>
     )
   }
 
   if (mode === 'reset') {
     return (
-      <div className="settings-page">
-        <button className="mp-back-link" onClick={onBack}>← Back</button>
-        <h1 className="settings-title">Account</h1>
-        <p className="settings-subtitle">Enter your email and we'll send a password reset link.</p>
-        <form className="account-form" onSubmit={handleSubmit}>
-          <input className="account-input" type="email" placeholder="Email" value={email}
-                 onChange={e => setEmail(e.target.value)} required autoComplete="email" autoFocus />
-          {error && <p className="account-error">{error}</p>}
-          {info  && <p className="account-info">{info}</p>}
-          <button className="home-cta" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Send Reset Email'}</button>
-        </form>
-        <button className="account-switch" onClick={() => { setMode('signin'); setError(null); setInfo(null) }}>← Back to log in</button>
+      <div className="account-page">
+        <AccountHero icon="✉️" title="Reset Password" subtitle="Enter your email and we'll send a password reset link." />
+        <Reveal as="div" className="account-card" delay={90}>
+          <button className="mp-back-link" onClick={onBack}>← Back</button>
+          <form className="account-form" onSubmit={handleSubmit}>
+            <div className="account-input-wrap">
+              <svg className="account-input-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <input className="account-input account-input-has-icon" type="email" placeholder="Email" value={email}
+                     onChange={e => setEmail(e.target.value)} required autoComplete="email" autoFocus />
+            </div>
+            {error && <p className="account-error">{error}</p>}
+            {info  && <p className="account-info">{info}</p>}
+            <button className="account-submit" type="submit" disabled={busy}>{busy ? 'Please wait…' : 'Send Reset Email'}</button>
+          </form>
+          <button className="account-switch" onClick={() => { setMode('signin'); setError(null); setInfo(null) }}>← Back to log in</button>
+        </Reveal>
       </div>
     )
   }
 
   return (
-    <div className="settings-page">
-      <button className="mp-back-link" onClick={onBack}>← Back</button>
-      <h1 className="settings-title">Account</h1>
-      <p className="settings-subtitle">Sign in to pin events and save your Explain history across visits.</p>
-      <form className="account-form" onSubmit={handleSubmit}>
-        <input className="account-input" type="email" placeholder="Email" value={email}
-               onChange={e => setEmail(e.target.value)} required autoComplete="email" />
-        <input className="account-input" type="password" placeholder="Password" value={password}
-               onChange={e => setPassword(e.target.value)} required minLength={6}
-               autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} />
-        {error && <p className="account-error">{error}</p>}
-        {info  && <p className="account-info">{info}</p>}
-        <button className="home-cta" type="submit" disabled={busy}>
-          {busy ? 'Please wait…' : mode === 'signup' ? 'Sign Up' : 'Log In'}
+    <div className="account-page">
+      <AccountHero
+        icon={mode === 'signup' ? '✨' : '🔐'}
+        title={mode === 'signup' ? 'Create Your Account' : 'Welcome Back'}
+        subtitle="Sign in to pin events and save your Explain history across visits."
+      />
+      <Reveal as="div" className="account-card" delay={90} key={mode}>
+        <button className="mp-back-link" onClick={onBack}>← Back</button>
+        <form className="account-form" onSubmit={handleSubmit}>
+          <div className="account-input-wrap">
+            <svg className="account-input-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <input className="account-input account-input-has-icon" type="email" placeholder="Email" value={email}
+                   onChange={e => setEmail(e.target.value)} required autoComplete="email" />
+          </div>
+          <PasswordInput
+            value={password} onChange={e => setPassword(e.target.value)} placeholder="Password"
+            autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
+          />
+          {error && <p className="account-error">{error}</p>}
+          {info  && <p className="account-info">{info}</p>}
+          <button className="account-submit" type="submit" disabled={busy}>
+            {busy ? 'Please wait…' : mode === 'signup' ? 'Sign Up' : 'Log In'}
+          </button>
+        </form>
+        {mode === 'signin' && (
+          <button className="account-switch" onClick={() => { setMode('reset'); setError(null); setInfo(null) }}>Forgot password?</button>
+        )}
+        <button className="account-switch account-switch-main" onClick={() => { setMode(m => m === 'signup' ? 'signin' : 'signup'); setError(null); setInfo(null) }}>
+          {mode === 'signup' ? 'Already have an account? Log in' : "Don't have an account? Sign up"}
         </button>
-      </form>
-      {mode === 'signin' && (
-        <button className="account-switch" onClick={() => { setMode('reset'); setError(null); setInfo(null) }}>Forgot password?</button>
-      )}
-      <button className="account-switch" onClick={() => { setMode(m => m === 'signup' ? 'signin' : 'signup'); setError(null); setInfo(null) }}>
-        {mode === 'signup' ? 'Already have an account? Log in' : "Don't have an account? Sign up"}
-      </button>
+      </Reveal>
     </div>
+  )
+}
+
+// Gradient hero header shared by every AccountPage mode — same visual
+// language as the Dashboard's hero, sized down for a narrower form page.
+function AccountHero({ icon, title, subtitle }) {
+  return (
+    <Reveal as="div" className="account-hero">
+      <span className="account-hero-icon" aria-hidden="true">{icon}</span>
+      <h1 className="account-hero-title">{title}</h1>
+      <p className="account-hero-subtitle">{subtitle}</p>
+    </Reveal>
   )
 }
 
@@ -994,7 +1070,7 @@ function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
 // clicking a pinned event's card on the Dashboard. Read-only: reuses the
 // same message-bubble styling as the live Explain chat and the full-page
 // history view for visual consistency, just in a narrower side column.
-function ExplainHistorySidePanel({ org, event, user, onClose }) {
+function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse }) {
   const [rows,  setRows]  = useState(null)
   const [error, setError] = useState(null)
 
@@ -1006,11 +1082,19 @@ function ExplainHistorySidePanel({ org, event, user, onClose }) {
       .then(({ data, error }) => { if (error) setError(error.message); else setRows(data) })
   }, [org, event])
 
+  if (collapsed) {
+    return <CollapsedRail label="Explain History" icon="💬" onExpand={onToggleCollapse} />
+  }
+
   return (
     <Reveal as="aside" className="history-side-panel">
       <div className="history-side-header">
         <span className="history-side-title">Explain History</span>
-        <button className="history-side-close" onClick={onClose} aria-label="Close explain history">✕</button>
+        <button className="history-side-close" onClick={onToggleCollapse} aria-label="Hide explain history">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="12" height="12" aria-hidden="true">
+            <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" />
+          </svg>
+        </button>
       </div>
 
       {error && (
@@ -1117,7 +1201,22 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
 }
 
 // ── Right-side Study Panel ────────────────────────────────────────────────────
-function StudyPanel({ event, outline, onStudy }) {
+// Thin, always-visible, click-to-reopen strip a side panel collapses down
+// to — same idea as Claude's collapsible sidebar rail. The label reads
+// top-to-bottom via CSS writing-mode so it still fits in ~44px.
+function CollapsedRail({ label, icon, onExpand }) {
+  return (
+    <button className="panel-rail" onClick={onExpand} title={`Show ${label}`} aria-label={`Show ${label}`}>
+      <svg className="panel-rail-chevron" viewBox="0 0 20 20" fill="currentColor" width="12" height="12" aria-hidden="true">
+        <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" />
+      </svg>
+      <span className="panel-rail-icon" aria-hidden="true">{icon}</span>
+      <span className="panel-rail-label">{label}</span>
+    </button>
+  )
+}
+
+function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
   const [picker, setPicker] = useState(null)
 
   function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event', objectives = null) {
@@ -1134,8 +1233,17 @@ function StudyPanel({ event, outline, onStudy }) {
     return `${section.letter}. ${section.title}: ${objs}`
   }
 
+  if (collapsed) {
+    return <CollapsedRail label="Study Panel" icon="🎓" onExpand={onToggleCollapse} />
+  }
+
   return (
     <div className="study-panel">
+      <button className="panel-collapse-btn" onClick={onToggleCollapse} title="Hide study panel" aria-label="Hide study panel">
+        <svg viewBox="0 0 20 20" fill="currentColor" width="12" height="12" aria-hidden="true">
+          <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+        </svg>
+      </button>
       <div className="sp-card sp-card-full">
         <div className="sp-card-header">
           <span className="sp-card-icon">🎓</span>
@@ -1186,10 +1294,18 @@ function StudyPanel({ event, outline, onStudy }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory, onCloseHistory }) {
+function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
+  // Both side panels can shrink to a thin, always-visible rail instead of
+  // fully disappearing — click the rail to bring it back. Reset to expanded
+  // whenever a different event's history panel is (re-)opened, so a
+  // collapse on one pinned event doesn't carry over and surprise-collapse
+  // the next one.
+  const [studyCollapsed,   setStudyCollapsed]   = useState(false)
+  const [historyCollapsed, setHistoryCollapsed] = useState(false)
+  useEffect(() => { if (showHistory) setHistoryCollapsed(false) }, [showHistory, event])
 
   useEffect(() => {
     setOutline(null); setSelected(null)
@@ -1223,7 +1339,12 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory
         <p className="event-subtitle">Click any objective to study it, or use the panel on the right to study a section or the full event.</p>
       </div>
 
-      <div className={`event-layout ${showHistory ? 'event-layout-with-history' : ''}`}>
+      <div
+        className={`event-layout ${showHistory ? 'event-layout-with-history' : ''}`}
+        style={{
+          gridTemplateColumns: `1fr ${studyCollapsed ? '44px' : '320px'}${showHistory ? ` ${historyCollapsed ? '44px' : '300px'}` : ''}`,
+        }}
+      >
         <div className="event-objectives">
           <div className="sections">
             {outline.map(section => (
@@ -1251,10 +1372,16 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, showHistory
           </div>
         </div>
 
-        <StudyPanel event={event} outline={outline} onStudy={onStudy} />
+        <StudyPanel
+          event={event} outline={outline} onStudy={onStudy}
+          collapsed={studyCollapsed} onToggleCollapse={() => setStudyCollapsed(c => !c)}
+        />
 
         {showHistory && user && (
-          <ExplainHistorySidePanel org={org} event={event} user={user} onClose={onCloseHistory} />
+          <ExplainHistorySidePanel
+            org={org} event={event} user={user}
+            collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+          />
         )}
       </div>
 
@@ -1640,15 +1767,15 @@ export default function App() {
     setPage('home'); setNavOpen(false)
   }
   function handleHome() {
-    if (!org) {
-      // Logged-in users get the personal Dashboard (greeting + pinned
-      // events) instead of being dropped straight into the org chooser —
-      // "Browse all events" on that page is now the only path to the
-      // chooser for a signed-in user. Guests (no session) keep the old
-      // direct-to-picker behavior since there's nothing personal to show.
-      if (user) { setPage('dashboard'); setActiveEvent(null); setStudy(null); setNavOpen(false); return }
-      return handleOrgPicker('home')
-    }
+    // Logged-in users always land on their personal Dashboard (greeting +
+    // pinned events) when they hit Home — regardless of whether they're
+    // currently inside an org's context or not. "Browse all events" on
+    // that page is the only path to the org chooser for a signed-in user.
+    // Guests (no session) keep the old behavior unchanged: back to the
+    // org-scoped home page if an org is already picked, otherwise the
+    // org chooser — there's nothing personal to show them yet.
+    if (user) { setPage('dashboard'); setActiveEvent(null); setStudy(null); setNavOpen(false); return }
+    if (!org) return handleOrgPicker('home')
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
   function handleBrowseAll() { handleOrgPicker('home') }
@@ -1714,7 +1841,7 @@ export default function App() {
       <EventView
         event={activeEvent} org={org} onStudy={handleStudy}
         user={user} pinned={isPinned(org, activeEvent)} onTogglePin={() => togglePin(org, activeEvent)}
-        showHistory={dashboardHistoryOpen} onCloseHistory={() => setDashboardHistoryOpen(false)}
+        showHistory={dashboardHistoryOpen}
       />
     )
   } else {

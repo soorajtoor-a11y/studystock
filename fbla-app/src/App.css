@@ -654,21 +654,100 @@
 .settings-title { font-family:var(--font-head); font-size:var(--text-2xl); font-weight:800; color:var(--text); margin-top:14px; }
 .settings-subtitle { font-size:13.5px; color:var(--text-3); margin-top:6px; margin-bottom:28px; line-height:1.6; }
 
-.account-form { display:flex; flex-direction:column; gap:12px; max-width:340px; }
+/* ── Account (sign in / sign up / reset / recovery) ─────────────────── */
+.account-page { overflow-y:auto; height:100%; }
+
+.account-hero {
+  background:linear-gradient(140deg,var(--signal-950) 0%,var(--signal-900) 55%,oklch(20% 0.06 calc(var(--signal-hue) + 35)) 100%);
+  padding:56px 32px 96px; position:relative; overflow:hidden;
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+}
+.account-hero::before {
+  content:''; position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse at 74% 30%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 55%),
+    radial-gradient(ellipse at 20% 80%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.1) 0%,transparent 45%);
+}
+.account-hero-icon {
+  position:relative; z-index:1; font-size:34px; line-height:1;
+  margin-bottom:14px; animation:account-icon-float 3.2s ease-in-out infinite;
+}
+@keyframes account-icon-float {
+  0%, 100% { transform:translateY(0) rotate(0deg); }
+  50%      { transform:translateY(-7px) rotate(-4deg); }
+}
+.account-hero-title {
+  position:relative; z-index:1;
+  font-family:var(--font-head); font-size:28px; font-weight:800; color:#fff;
+  letter-spacing:-0.6px; margin-bottom:8px;
+}
+.account-hero-subtitle {
+  position:relative; z-index:1; font-size:13.5px; color:rgba(255,255,255,0.54);
+  line-height:1.6; max-width:340px;
+}
+
+.account-card {
+  max-width:380px; margin:-64px auto 60px; position:relative; z-index:2;
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--r-xl);
+  box-shadow:var(--shadow-xl); padding:28px 28px 26px;
+}
+
+.account-avatar-row { display:flex; align-items:center; gap:12px; margin:8px 0 24px; }
+.account-avatar {
+  width:44px; height:44px; border-radius:50%; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,var(--signal-700),var(--signal-500));
+  color:#fff; font-family:var(--font-head); font-weight:800; font-size:17px;
+}
+.account-avatar-email { font-size:13.5px; font-weight:600; color:var(--text); word-break:break-all; }
+
+.account-form { display:flex; flex-direction:column; gap:12px; }
 .account-input {
-  padding:11px 14px; border-radius:var(--r-sm);
+  width:100%; padding:11px 14px; border-radius:var(--r-sm);
   background:var(--surface); border:1.5px solid var(--border);
   font-family:inherit; font-size:13.5px; color:var(--text);
-  outline:none; transition:border-color var(--dur-fast) var(--ease-out);
+  outline:none; transition:border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
 }
-.account-input:focus { border-color:var(--signal-400); }
+.account-input:focus { border-color:var(--signal-400); box-shadow:0 0 0 3px oklch(56% 0.14 var(--signal-hue) / 0.12); }
+
+.account-input-wrap { position:relative; display:flex; align-items:center; }
+.account-input-icon { position:absolute; left:13px; color:var(--text-4); pointer-events:none; }
+.account-input-has-icon { padding-left:38px; }
+.account-input-wrap .account-input-has-icon { padding-right:38px; }
+
+.password-toggle-btn {
+  position:absolute; right:9px; width:26px; height:26px; border-radius:6px;
+  border:none; background:transparent; color:var(--text-4);
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+  transition:background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.password-toggle-btn:hover { background:var(--tint); color:var(--signal-600); }
+
 .account-error { font-size:12.5px; color:var(--red); }
 .account-info  { font-size:12.5px; color:var(--text-3); }
+
+.account-submit {
+  width:100%; margin-top:4px;
+  background:var(--accent); color:#fff;
+  font-family:inherit; font-size:13.5px; font-weight:700;
+  padding:12px; border-radius:var(--r); border:none; cursor:pointer;
+  transition:all var(--dur-fast) var(--ease-out);
+  box-shadow:0 4px 16px oklch(47% 0.13 var(--signal-hue) / 0.35);
+}
+.account-submit:hover:not(:disabled) { background:var(--accent-hover); transform:translateY(-1px); box-shadow:0 6px 20px oklch(47% 0.13 var(--signal-hue) / 0.42); }
+.account-submit:active:not(:disabled) { transform:translateY(0); }
+.account-submit:disabled { opacity:0.6; cursor:default; }
+.account-submit-danger { background:var(--red); box-shadow:0 4px 16px oklch(55% 0.19 25 / 0.3); }
+.account-submit-danger:hover { background:oklch(48% 0.19 25); box-shadow:0 6px 20px oklch(55% 0.19 25 / 0.38); }
+
 .account-switch {
   display:block; margin-top:16px; background:none; border:none;
-  font-family:inherit; font-size:12.5px; color:var(--signal-400);
+  font-family:inherit; font-size:12.5px; color:var(--signal-600);
   cursor:pointer; text-decoration:underline; padding:0;
+  transition:color var(--dur-fast) var(--ease-out);
 }
+.account-switch:hover { color:var(--signal-700); }
+.account-switch-main { font-weight:700; text-decoration:none; }
 
 .settings-section-label {
   font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em;
@@ -864,11 +943,38 @@
 
 /* ── Right Study Panel ───────────────────────────────────────────── */
 .study-panel {
-  overflow-y:auto; padding:18px 16px;
+  position:relative; overflow-y:auto; padding:18px 16px 18px 16px;
   border-left:1px solid var(--border);
   background:oklch(97% 0.008 var(--signal-hue));
   display:flex; flex-direction:column; gap:10px;
 }
+
+/* ── Collapsible side panels (Study Panel + Explain History) ────────
+   Both shrink to this same thin rail instead of fully disappearing —
+   click it to bring the full panel back. */
+.panel-rail {
+  width:44px; height:100%; border:none; border-left:1px solid var(--border);
+  background:var(--surface); cursor:pointer;
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  padding:16px 0; transition:background var(--dur-fast) var(--ease-out);
+}
+.panel-rail:hover { background:var(--tint); }
+.panel-rail-chevron { color:var(--text-4); flex-shrink:0; }
+.panel-rail-icon { font-size:16px; flex-shrink:0; }
+.panel-rail-label {
+  writing-mode:vertical-rl; transform:rotate(180deg);
+  font-size:11px; font-weight:700; color:var(--text-3);
+  letter-spacing:0.02em; white-space:nowrap;
+}
+
+.panel-collapse-btn {
+  position:absolute; top:14px; right:14px; z-index:1;
+  width:24px; height:24px; border-radius:6px; border:none;
+  background:var(--border-s); color:var(--text-3);
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+  transition:all 0.12s;
+}
+.panel-collapse-btn:hover { background:var(--border); color:var(--text); }
 
 .sp-card {
   background:var(--surface); border:1.5px solid var(--border);

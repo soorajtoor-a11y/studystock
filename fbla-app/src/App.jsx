@@ -1252,7 +1252,7 @@ function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse
 const QUIZ_DIFFICULTY = 'hard'
 
 function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'event' }) {
-  const QUIZ_COUNTS = { event: [10, 25, 50], section: [10, 15, 20], objective: [5, 10] }
+  const QUIZ_COUNTS = { event: [25, 50], section: [10, 20], objective: [5, 10] }
   const quizCounts = QUIZ_COUNTS[scope] ?? [10, 25, 50]
   const [step,       setStep]       = useState('mode')
   const [quizCount,  setQuizCount]  = useState(quizCounts[0])

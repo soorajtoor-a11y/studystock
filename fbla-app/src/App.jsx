@@ -920,6 +920,86 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
   )
 }
 
+// ── One-Page Section Notes ──────────────────────────────────────────────────
+function NotesPane({ event, org, objectiveText, objectives, onBack }) {
+  const [notes, setNotes] = useState(null)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    fetch('/api/notes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ org, event, objective: objectiveText, objectives }),
+    })
+      .then(r => r.json())
+      .then(d => { if (d.error) setError(d.error); else setNotes(d.notes) })
+      .catch(e => setError(e.message))
+  }, [])
+
+  if (error) return (
+    <div className="study-pane">
+      <div className="study-header"><button className="back-btn" onClick={onBack}>← Back</button></div>
+      <div className="pane-error">
+        <div className="pane-error-icon">⚠</div>
+        <p>Error generating notes:</p>
+        <p className="pane-error-msg">{error}</p>
+        <button className="back-btn" onClick={onBack} style={{ marginTop: 16 }}>← Go Back</button>
+      </div>
+    </div>
+  )
+
+  if (!notes) return (
+    <div className="study-pane">
+      <div className="study-header">
+        <button className="back-btn" onClick={onBack}>← Back</button>
+        <div className="study-meta">
+          <span className="study-event">{formatEventName(event)}</span>
+          <span className="study-divider">›</span>
+          <span className="study-obj">{objectiveText}</span>
+        </div>
+      </div>
+      <div className="pane-loading">
+        <div className="pane-orb">
+          <span className="pane-orb-ring" />
+          <span className="pane-orb-core" />
+        </div>
+        <p className="pane-loading-title">Writing notes…</p>
+      </div>
+    </div>
+  )
+
+  const sorted = [...notes].sort((a, b) => a.objective_num - b.objective_num)
+
+  return (
+    <div className="study-pane">
+      <div className="study-header">
+        <button className="back-btn" onClick={onBack}>← Back</button>
+        <div className="study-meta">
+          <span className="study-event">{formatEventName(event)}</span>
+          <span className="study-divider">›</span>
+          <span className="study-obj">Notes</span>
+        </div>
+      </div>
+      <div className="notes-doc-wrap">
+        <div className="notes-doc">
+          <p className="notes-doc-kicker">One-Page Notes</p>
+          <h1 className="notes-doc-title">{objectiveText}</h1>
+          <div className="notes-doc-rule" />
+          {sorted.map(n => (
+            <div key={n.objective_num} className="notes-entry">
+              <span className="notes-entry-num">{n.objective_num}</span>
+              <div className="notes-entry-body">
+                <h3 className="notes-entry-heading">{n.heading}</h3>
+                <p className="notes-entry-text">{n.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // Direct backend URL avoids Vite dev-proxy buffering SSE streams
 const BACKEND = import.meta.env.DEV ? 'http://localhost:3001' : ''
 
@@ -1457,6 +1537,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
               <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives, 'quiz')}>📝 Quiz</button>
               <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives, 'flashcard')}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
+              <button className="sp-btn sp-btn-notes" onClick={() => { onStudy(buildSectionText(section), 'notes', null, null, 'section', section.objectives) }}>📄 Notes</button>
             </div>
           </div>
         ))}
@@ -2069,6 +2150,8 @@ export default function App() {
       content = <QuizPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
+    } else if (study.mode === 'notes') {
+      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} onBack={handleBack} />
     } else {
       // Keyed on whatever uniquely identifies THIS chat session, so React
       // fully remounts StudyPane (fresh internal `messages` state, fresh

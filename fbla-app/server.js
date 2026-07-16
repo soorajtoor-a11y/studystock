@@ -831,6 +831,19 @@ function normalizeCards(cards) {
     .filter(c => c.front.trim() || c.back.trim());
 }
 
+// One entry per objective in a section — falls back to the objective's own
+// number/text if the model dropped a field, so a single malformed entry
+// never silently disappears from the notes page.
+function normalizeNotes(notes, objectivesList) {
+  return notes
+    .map((n, i) => ({
+      objective_num: Number(n.objective_num ?? objectivesList[i]?.num ?? i + 1),
+      heading: String(n.heading ?? n.title ?? '').trim(),
+      body: String(n.body ?? n.text ?? n.explanation ?? '').trim(),
+    }))
+    .filter(n => n.body);
+}
+
 // ---------------------------------------------------------------------------
 // Prompt builders
 // ---------------------------------------------------------------------------
@@ -886,6 +899,24 @@ Rules:
   seriously consider picking it. A distractor that's a one-word throwaway
   or an extreme/absurd choice is not a distractor, it's a hint. Fix any
   option that fails this before outputting.`;
+  }
+
+  if (type === 'notes') {
+    return `Output ONLY a valid JSON array. No text before or after the array.
+
+Generate exactly ${objectivesList.length} study-note entries, one for each
+objective below, in the same order — this is a one-page study document
+covering an entire section, not a single-objective explanation:
+${objectivesList.map(o => `${o.num}. ${o.text}`).join('\n')}
+${studyBlock ? `\n${studyBlock}\n` : ''}
+Format — every object must have these exact keys:
+[{"objective_num":1,"heading":"short 3-6 word title","body":"3-5 sentences of substantive, concrete study notes for this objective — real terms, examples, numbers, or formulas a student needs, written like clean study notes, not a restatement of the objective itself"}]
+
+Rules:
+- Exactly ${objectivesList.length} entries, one per objective, in the same order, each tagged with its matching objective_num
+- "heading" is short and scannable, distinct from the objective's own wording
+- No text outside the array
+- The array MUST end with ]`;
   }
 
   return `Output ONLY a valid JSON array. No text before or after the array.
@@ -1037,6 +1068,34 @@ app.post('/api/flashcards', async (req, res) => {
     res.json({ cards });
   } catch (err) {
     console.error('Flashcard error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// One-page study notes for an entire section — one entry per objective,
+// generated together (not per-objective Explain calls) so the notes read as
+// one coherent document instead of N separate disconnected explanations.
+app.post('/api/notes', async (req, res) => {
+  const { org, event, objective, objectives } = req.body;
+  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+  if (!Array.isArray(objectives) || objectives.length === 0) return res.status(400).json({ error: 'No objectives provided' });
+  const outline = extractRelevantSection(getOutline(org, event), objective);
+  const extras  = getExtras(org, event);
+  const prompt  = buildGenPrompt('notes', objectives.length, objective, outline, '', extras, event, [], objectives);
+
+  try {
+    const parsed = await withRetry(async () => {
+      let raw = '';
+      if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(objectives.length * 300, 8192) });
+      else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
+      return extractJSON(raw);
+    });
+    const notes = normalizeNotes(parsed, objectives);
+    if (notes.length === 0) throw new Error('Model returned no usable notes');
+    res.json({ notes });
+  } catch (err) {
+    console.error('Notes error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });

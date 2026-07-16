@@ -1494,7 +1494,6 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
         <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
           <span className="sidebar-logo-name">StudyStockAI</span>
-          <span className="sidebar-logo-sub">{orgMeta ? `${orgMeta.name} Study Tool` : 'Study Tool'}</span>
         </div>
       </button>
 

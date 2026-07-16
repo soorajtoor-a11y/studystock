@@ -201,7 +201,7 @@
 }
 .ticker-track {
   display: flex; width: max-content;
-  animation: ticker-scroll 185.1s linear infinite;
+  animation: ticker-scroll 222.12s linear infinite;
   will-change: transform;
 }
 /* Deliberately no pause-on-hover: that relied on :hover clearing cleanly,

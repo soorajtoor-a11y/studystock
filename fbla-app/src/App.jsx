@@ -1034,10 +1034,16 @@ function groupConversations(rows) {
         lastAt: messages[messages.length - 1]?.created_at,
       }
     })
-    // A conversation with no actual user text isn't worth showing at all —
-    // covers any pre-existing empty rows saved before the insert-time guard
-    // above existed.
-    .filter(c => c.preview)
+    // Only show conversations with BOTH a user message (for the preview)
+    // AND at least one assistant reply — a "complete" exchange. Legacy rows
+    // saved before conversation_id tracking existed (or any row that lost
+    // its match some other way) can end up split: the user's message and
+    // the assistant's reply land in two different groups instead of one,
+    // since they no longer share one real conversation_id. Requiring both
+    // roles present hides that broken half-conversation entirely instead
+    // of showing a "Continue" card that can't actually load the reply that
+    // was really there.
+    .filter(c => c.preview && c.messages.some(m => m.role === 'assistant'))
   convos.sort((a, b) => new Date(b.lastAt) - new Date(a.lastAt))
   return convos
 }
@@ -1115,7 +1121,7 @@ function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
 // clicking a pinned event's card on the Dashboard. Read-only: reuses the
 // same message-bubble styling as the live Explain chat and the full-page
 // history view for visual consistency, just in a narrower side column.
-function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse, onContinue }) {
+function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse, onContinue, activeConversationId }) {
   const [convos,  setConvos]  = useState(null)
   const [error,   setError]   = useState(null)
   const [openId,  setOpenId]  = useState(null)
@@ -1161,24 +1167,34 @@ function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse
 
       {!error && convos && convos.length > 0 && (
         <div className="convo-list convo-list-side">
-          {convos.map(c => (
-            <div key={c.id} className="convo-card">
-              <button className="convo-card-preview" onClick={() => setOpenId(id => id === c.id ? null : c.id)}>
-                <span className="convo-card-text">{c.preview || '(empty)'}</span>
-                <span className="convo-card-chevron">{openId === c.id ? '▾' : '▸'}</span>
-              </button>
-              {openId === c.id && (
-                <div className="chat-messages history-side-messages convo-card-thread">
-                  {c.messages.map((m, i) => (
-                    <div key={i} className={`message message-${m.role}`}>
-                      <div className="message-bubble">{m.content}</div>
-                    </div>
-                  ))}
-                </div>
-              )}
-              <button className="convo-card-continue" onClick={() => onContinue(c.messages, c.id)}>Continue →</button>
-            </div>
-          ))}
+          {convos.map(c => {
+            const isActive = c.id === activeConversationId
+            return (
+              <div key={c.id} className={`convo-card ${isActive ? 'convo-card-active' : ''}`}>
+                <button className="convo-card-preview" onClick={() => setOpenId(id => id === c.id ? null : c.id)}>
+                  <span className="convo-card-text">{c.preview || '(empty)'}</span>
+                  <span className="convo-card-chevron">{openId === c.id ? '▾' : '▸'}</span>
+                </button>
+                {openId === c.id && (
+                  <div className="chat-messages history-side-messages convo-card-thread">
+                    {c.messages.map((m, i) => (
+                      <div key={i} className={`message message-${m.role}`}>
+                        <div className="message-bubble">{m.content}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {isActive ? (
+                  <span className="convo-card-active-label">
+                    <span className="convo-card-active-dot" aria-hidden="true" />
+                    Active
+                  </span>
+                ) : (
+                  <button className="convo-card-continue" onClick={() => onContinue(c.messages, c.id)}>Continue →</button>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
     </Reveal>
@@ -1954,6 +1970,7 @@ export default function App() {
             org={org} event={activeEvent} user={user}
             collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
             onContinue={handleContinueFromHistory}
+            activeConversationId={study.conversationId}
           />
         </div>
       ) : pane

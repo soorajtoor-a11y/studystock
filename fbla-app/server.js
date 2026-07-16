@@ -1090,6 +1090,19 @@ const COVERAGE_TIERS = [
   { key: 'ov50',  label: 'Overall — 50',   kind: 'threshold', filename: 'question-bank.json',                grouped: false, min: 50 },
 ];
 
+// Counts knowledge areas ("A. Section Name (N items)") and numbered
+// objectives underneath them straight from the source outline — this is the
+// true target denominator, independent of whether generation has even
+// started, so a 0%-generated event still shows a real percentage (of 0/N)
+// rather than an undefined one.
+function parseOutlineCounts(outlineText) {
+  const marker = outlineText.indexOf('KNOWLEDGE AREAS AND OBJECTIVES');
+  const body = marker >= 0 ? outlineText.slice(marker) : outlineText;
+  const nSections   = (body.match(/^[A-Z]\.\s+.+$/gm) || []).length;
+  const nObjectives = (body.match(/^\d+\.\s+.+$/gm) || []).length;
+  return { nSections, nObjectives };
+}
+
 function scanCoverage() {
   const orgs = fs.readdirSync(MATERIALS_DIR)
     .filter(f => fs.statSync(path.join(MATERIALS_DIR, f)).isDirectory())
@@ -1103,6 +1116,7 @@ function scanCoverage() {
     for (const event of events) {
       const evDir = path.join(orgDir, event);
       const row = { org, event, cells: {} };
+      let evTotal = 0, secData = null, objData = null;
       for (const tier of COVERAGE_TIERS) {
         const p = path.join(evDir, tier.filename);
         let ok = false, detail = 'no bank';
@@ -1114,9 +1128,12 @@ function scanCoverage() {
               const min = counts.length ? Math.min(...counts) : 0;
               ok = counts.length > 0 && min >= tier.min;
               detail = counts.length ? `min ${min}/group across ${counts.length} groups` : 'empty bank';
+              if (tier.key === 'obj10') objData = data;
+              if (tier.key === 'sub20') secData = data;
             } else {
               ok = Array.isArray(data) && data.length >= tier.min;
               detail = Array.isArray(data) ? `${data.length} total` : 'malformed bank';
+              if (tier.key === 'ov50' && Array.isArray(data)) evTotal = data.length;
             }
           } catch {
             detail = 'unreadable bank';
@@ -1124,6 +1141,39 @@ function scanCoverage() {
         }
         row.cells[tier.key] = { ok, detail };
       }
+
+      // Percentage of the full generation target actually banked, using the
+      // *current* tiers only (obj10/sub20/ov50 — SCOPE_BANK_MAX here,
+      // TIER_TARGET in generate_bank.py, same values) since those are the
+      // only ones the pipeline actually produces; the dedicated-bank tiers above have no
+      // generation target to measure against yet. Each unit's contribution
+      // is capped at its own target so over-generation can't push an event
+      // above 100%.
+      // A handful of events (e.g. "Introduction to FBLA") use a flatter
+      // outline with no lettered sections at all, which the regex above
+      // can't see — take whichever of outline-parsed or bank-derived is
+      // larger so the denominator can never come in smaller than what's
+      // actually been generated (which would push pct over 100%).
+      const outlinePath = path.join(evDir, 'event-outline.txt');
+      let nSections = secData ? Object.keys(secData).length : 0;
+      let nObjectives = objData ? Object.keys(objData).length : 0;
+      if (fs.existsSync(outlinePath)) {
+        try {
+          const counts = parseOutlineCounts(fs.readFileSync(outlinePath, 'utf8'));
+          nSections   = Math.max(nSections, counts.nSections);
+          nObjectives = Math.max(nObjectives, counts.nObjectives);
+        } catch { /* fall back to bank-derived counts above */ }
+      }
+      const target = SCOPE_BANK_MAX.event + SCOPE_BANK_MAX.section * nSections + SCOPE_BANK_MAX.objective * nObjectives;
+      const actualEvent = Math.min(evTotal, SCOPE_BANK_MAX.event);
+      const actualSections = secData ? Object.values(secData).reduce((sum, v) => sum + Math.min(v.length, SCOPE_BANK_MAX.section), 0) : 0;
+      const actualObjectives = objData ? Object.values(objData).reduce((sum, v) => sum + Math.min(v.length, SCOPE_BANK_MAX.objective), 0) : 0;
+      const actual = actualEvent + actualSections + actualObjectives;
+      row.pct = target > 0 ? Math.round((actual / target) * 100) : 0;
+      row.pctDetail = `${actual}/${target} questions (${SCOPE_BANK_MAX.event} event + ${nSections}×${SCOPE_BANK_MAX.section} sub-topic + ${nObjectives}×${SCOPE_BANK_MAX.objective} objective)`;
+      row.actual = actual;
+      row.target = target;
+
       rows.push(row);
     }
   }
@@ -1137,16 +1187,20 @@ app.get('/admin/coverage', (req, res) => {
   const fmtName = slug => slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
   const totals = Object.fromEntries(COVERAGE_TIERS.map(t => [t.key, rows.filter(r => r.cells[t.key].ok).length]));
+  const totalActual = rows.reduce((sum, r) => sum + r.actual, 0);
+  const totalTarget = rows.reduce((sum, r) => sum + r.target, 0);
+  const sitePct = totalTarget > 0 ? Math.round((totalActual / totalTarget) * 100) : 0;
+
   const summaryCards = COVERAGE_TIERS.map(t =>
     `<div class="stat"><div class="stat-num">${totals[t.key]}<span class="stat-den">/${rows.length}</span></div><div class="stat-label">${esc(t.label)}</div></div>`
-  ).join('');
+  ).join('') + `<div class="stat stat-pct"><div class="stat-num">${sitePct}<span class="stat-den">%</span></div><div class="stat-label">Questions generated</div></div>`;
 
   const orgOrder = ['fbla', 'deca', 'hosa'];
   let bodyRows = '';
   for (const org of orgOrder) {
     const orgRows = rows.filter(r => r.org === org);
     if (!orgRows.length) continue;
-    bodyRows += `<tr class="org-row"><td colspan="7">${esc(orgLabel[org] || org)} (${orgRows.length})</td></tr>`;
+    bodyRows += `<tr class="org-row"><td colspan="8">${esc(orgLabel[org] || org)} (${orgRows.length})</td></tr>`;
     for (const r of orgRows) {
       const tds = COVERAGE_TIERS.map(t => {
         const c = r.cells[t.key];
@@ -1154,11 +1208,14 @@ app.get('/admin/coverage', (req, res) => {
         const icon = c.ok ? '✓' : '✗';
         return `<td class="cell ${cls}" title="${esc(c.detail)}"><span class="dot">${icon}</span></td>`;
       }).join('');
-      bodyRows += `<tr><td class="ev-name">${esc(fmtName(r.event))}</td>${tds}</tr>`;
+      const pctCell = `<td class="cell pct-cell" title="${esc(r.pctDetail)}">
+        <div class="pct-wrap"><div class="pct-bar"><div class="pct-fill" style="width:${r.pct}%"></div></div><span class="pct-text">${r.pct}%</span></div>
+      </td>`;
+      bodyRows += `<tr><td class="ev-name">${esc(fmtName(r.event))}</td>${tds}${pctCell}</tr>`;
     }
   }
 
-  const headerCells = COVERAGE_TIERS.map(t => `<th>${esc(t.label)}</th>`).join('');
+  const headerCells = COVERAGE_TIERS.map(t => `<th>${esc(t.label)}</th>`).join('') + '<th>% Generated</th>';
 
   res.setHeader('Cache-Control', 'no-store');
   res.send(`<!doctype html>
@@ -1173,6 +1230,7 @@ app.get('/admin/coverage', (req, res) => {
     --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b; --text-secondary: #52514e;
     --text-muted: #898781; --gridline: #e1e0d9; --border: rgba(11,11,11,0.10);
     --good: #0ca30c; --good-bg: #e4f5e4; --critical: #d03b3b; --critical-bg: #fbe7e6;
+    --seq: #2a78d6; --seq-track: #e1e0d9;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -1180,6 +1238,7 @@ app.get('/admin/coverage', (req, res) => {
       --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #ffffff; --text-secondary: #c3c2b7;
       --text-muted: #898781; --gridline: #2c2c2a; --border: rgba(255,255,255,0.10);
       --good: #0ca30c; --good-bg: #123a17; --critical: #e66767; --critical-bg: #3d1f1f;
+      --seq: #3987e5; --seq-track: #2c2c2a;
     }
   }
   * { box-sizing: border-box; }
@@ -1188,8 +1247,10 @@ app.get('/admin/coverage', (req, res) => {
   h1 { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
   .sub { color: var(--text-secondary); font-size: 13px; margin: 0 0 4px; }
   .refresh-note { color: var(--text-muted); font-size: 11px; margin: 0 0 24px; }
-  .summary { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-bottom: 28px; }
+  .summary { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-bottom: 28px; }
   .stat { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 12px 10px; text-align: center; }
+  .stat-pct { border-color: var(--seq); }
+  .stat-pct .stat-num { color: var(--seq); }
   .stat-num { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
   .stat-den { font-size: 12px; font-weight: 500; color: var(--text-muted); }
   .stat-label { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
@@ -1204,6 +1265,11 @@ app.get('/admin/coverage', (req, res) => {
   .dot { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font-size: 12px; font-weight: 700; }
   .cell.good .dot { background: var(--good-bg); color: var(--good); }
   .cell.bad .dot { background: var(--critical-bg); color: var(--critical); }
+  .pct-cell { padding: 4px 12px; }
+  .pct-wrap { display: flex; align-items: center; gap: 8px; }
+  .pct-bar { flex: 1; height: 6px; border-radius: 3px; background: var(--seq-track); overflow: hidden; min-width: 60px; }
+  .pct-fill { height: 100%; background: var(--seq); border-radius: 3px; }
+  .pct-text { font-size: 11px; color: var(--text-secondary); font-variant-numeric: tabular-nums; width: 32px; text-align: right; }
   tbody tr:hover td:not(.org-row td) { background: var(--gridline); }
   .legend { display: flex; gap: 18px; margin: 14px 0 0; font-size: 12px; color: var(--text-secondary); }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }

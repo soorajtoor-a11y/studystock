@@ -1,0 +1,80 @@
+FBLA STUDY OUTLINE — TECHNOLOGY SUPPORT & SERVICES (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 role play).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Demonstrates the knowledge and skills needed to provide effective
+technical support in a business environment. Covers help desk
+fundamentals, troubleshooting methodology, hardware and software support,
+operating systems, networking and security concepts relevant to support
+roles, customer service, and ticketing/documentation practices.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Help Desk Fundamentals and IT Support Roles (10 test items)
+1. Explain the role of a help desk within an organization's IT department.
+2. Differentiate between Tier 1, Tier 2, and Tier 3 levels of technical support.
+3. Explain the purpose of a service level agreement (SLA) in IT support.
+4. Identify common IT support career paths (help desk technician, desktop support, systems administrator).
+5. Explain the purpose of an escalation procedure when a ticket cannot be resolved at the current tier.
+
+B. Troubleshooting Methodology (14 test items)
+1. Identify the steps of a standard troubleshooting methodology (identify the problem, establish a theory, test the theory, establish a plan of action, implement, verify, document).
+2. Explain the importance of gathering information from the user before diagnosing an issue.
+3. Explain the purpose of reproducing an issue before attempting a fix.
+4. Differentiate between a symptom and a root cause during troubleshooting.
+5. Explain why documenting a resolution benefits future troubleshooting.
+6. Explain the purpose of isolating variables (hardware vs. software vs. network) when diagnosing a problem.
+7. Explain when it is appropriate to escalate an issue rather than continue troubleshooting.
+
+C. Hardware Support (12 test items)
+1. Identify common computer hardware components and their functions (CPU, RAM, motherboard, storage drive, power supply).
+2. Differentiate between an HDD and an SSD in terms of performance and reliability.
+3. Identify common hardware troubleshooting steps (reseating components, checking cables, testing power).
+4. Explain the purpose of device drivers in hardware/software communication.
+5. Identify common peripheral connection types (USB, HDMI, Ethernet) and their uses.
+6. Explain preventive maintenance practices for hardware (dust removal, firmware updates, monitoring temperatures).
+
+D. Software and Operating Systems Support (14 test items)
+1. Identify common operating systems supported in business environments (Windows, macOS, Linux).
+2. Explain the purpose of safe mode in diagnosing operating system issues.
+3. Explain the purpose and process of installing/updating software patches.
+4. Differentiate between an application crash and a system-wide crash (blue screen/kernel panic).
+5. Explain the purpose of system restore/recovery points.
+6. Explain the purpose of task manager/activity monitor tools in diagnosing performance issues.
+7. Explain the purpose of user account permissions and administrator vs. standard accounts.
+
+E. Networking Concepts for Support Technicians (12 test items)
+1. Explain how to verify network connectivity using basic command-line tools (ping, ipconfig/ifconfig).
+2. Differentiate between a wired and wireless connection issue when troubleshooting.
+3. Explain the purpose of a default gateway and DNS server in a workstation's network configuration.
+4. Explain common causes of "no internet access" errors (DHCP failure, DNS failure, cable/driver issue).
+5. Explain the purpose of a VPN client for remote employee connectivity.
+6. Explain the difference between a local printer, network printer, and print server.
+
+F. Security Concepts for Support Technicians (12 test items)
+1. Explain the purpose of antivirus/anti-malware software in endpoint protection.
+2. Identify signs that a workstation may be compromised (unusual pop-ups, slow performance, unauthorized access).
+3. Explain the purpose of multifactor authentication (MFA) for user accounts.
+4. Explain best practices for password policies (complexity, expiration, reuse).
+5. Explain the purpose of least privilege access when configuring user permissions.
+6. Explain how to recognize and respond to a phishing attempt reported by a user.
+
+G. Customer Service in IT Support (12 test items)
+1. Explain the importance of active listening when a user reports a problem.
+2. Explain techniques for communicating technical information to a non-technical user.
+3. Explain the purpose of setting expectations (time estimates, follow-up) with a user during a support call.
+4. Explain de-escalation techniques for handling a frustrated or upset user.
+5. Explain the importance of empathy and professionalism in maintaining customer satisfaction.
+6. Explain the purpose of a post-resolution follow-up or satisfaction survey.
+
+H. Ticketing Systems, Documentation, and Remote Support Tools (14 test items)
+1. Explain the purpose of a ticketing system in tracking support requests.
+2. Identify standard fields recorded in a support ticket (priority, category, description, resolution, time spent).
+3. Explain the purpose of a knowledge base article for common issues.
+4. Differentiate between ticket priority levels and how they affect response time.
+5. Explain the purpose of remote desktop/remote support tools in resolving issues without an in-person visit.
+6. Explain the purpose of asset/inventory management systems in IT support.
+7. Explain the importance of accurate documentation for audits and recurring-issue trend analysis.

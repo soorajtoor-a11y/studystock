@@ -1,0 +1,80 @@
+FBLA STUDY OUTLINE — NETWORK DESIGN (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 role play).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Demonstrates understanding of the principles used to design, build, and
+secure computer networks for business use. Covers networking models and
+protocols, topologies, hardware, IP addressing, wireless standards,
+security, physical infrastructure, and troubleshooting concepts needed to
+plan a functional and scalable network.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Networking Fundamentals and Models (14 test items)
+1. Describe the purpose and layers of the OSI model (physical, data link, network, transport, session, presentation, application).
+2. Describe the layers of the TCP/IP model and how they map to the OSI model.
+3. Differentiate between connection-oriented (TCP) and connectionless (UDP) protocols.
+4. Identify common protocols and their default ports (HTTP 80, HTTPS 443, FTP 21, DNS 53, SMTP 25).
+5. Explain the function of DNS in resolving domain names to IP addresses.
+6. Explain the function of DHCP in automatically assigning IP addresses.
+7. Differentiate between a LAN, WAN, MAN, and PAN.
+
+B. Network Topologies and Types (10 test items)
+1. Differentiate between physical and logical topologies.
+2. Identify characteristics of star, bus, ring, and mesh topologies.
+3. Explain the advantages and disadvantages of a hybrid topology.
+4. Differentiate between client-server and peer-to-peer network architectures.
+5. Explain the concept of network scalability when selecting a topology.
+
+C. Network Hardware and Devices (14 test items)
+1. Differentiate the functions of a router, switch, and hub.
+2. Explain the purpose of a firewall in a network design.
+3. Differentiate between a Layer 2 switch and a Layer 3 switch.
+4. Describe the function of a network interface card (NIC) and MAC addressing.
+5. Explain the role of an access point (AP) in extending network coverage.
+6. Describe the purpose of a modem in connecting a LAN to a WAN/ISP.
+7. Explain how a proxy server and load balancer affect network traffic and performance.
+
+D. IP Addressing and Subnetting (14 test items)
+1. Differentiate between IPv4 and IPv6 addressing.
+2. Identify the classes of IPv4 addresses (A, B, C, D, E) and their default ranges.
+3. Differentiate between public and private IP addresses (RFC 1918 ranges).
+4. Calculate a subnet mask and number of usable hosts given a CIDR notation (e.g., /24, /26).
+5. Explain the purpose of Network Address Translation (NAT).
+6. Differentiate between static and dynamic IP addressing.
+7. Explain the purpose of a default gateway in routing traffic outside the local subnet.
+
+E. Wireless Networking (12 test items)
+1. Identify wireless standards and their approximate speeds (802.11a/b/g/n/ac/ax).
+2. Differentiate between the 2.4 GHz and 5 GHz frequency bands and their tradeoffs (range vs. speed).
+3. Explain the purpose of SSID broadcasting and hidden networks.
+4. Differentiate between wireless encryption standards (WEP, WPA, WPA2, WPA3).
+5. Explain factors that cause wireless interference (physical obstacles, competing devices, channel overlap).
+6. Describe the purpose of a wireless site survey in network design.
+
+F. Network Security (14 test items)
+1. Explain the purpose of a demilitarized zone (DMZ) in network design.
+2. Differentiate between an intrusion detection system (IDS) and an intrusion prevention system (IPS).
+3. Explain the concept of network segmentation using VLANs.
+4. Describe the purpose of access control lists (ACLs) on routers and switches.
+5. Explain the purpose of a virtual private network (VPN) and tunneling protocols.
+6. Identify common network-based attacks (DoS/DDoS, man-in-the-middle, spoofing).
+7. Explain the principle of defense in depth in securing a network design.
+
+G. Cabling and Physical Infrastructure (10 test items)
+1. Differentiate between twisted-pair, coaxial, and fiber-optic cabling.
+2. Differentiate between Cat5e, Cat6, and Cat6a cabling standards and their maximum speeds.
+3. Explain the difference between single-mode and multimode fiber-optic cable.
+4. Describe the purpose of a patch panel and structured cabling standards.
+5. Identify maximum cable run distances and factors causing signal attenuation.
+
+H. Network Troubleshooting and Cloud Networking (12 test items)
+1. Identify steps in a standard network troubleshooting methodology (identify problem, establish theory, test, implement, verify, document).
+2. Identify common command-line troubleshooting tools (ping, tracert/traceroute, ipconfig/ifconfig, nslookup).
+3. Differentiate between bandwidth and latency as network performance measures.
+4. Explain the concept of redundancy and failover in a resilient network design.
+5. Describe basic cloud networking concepts (virtual private cloud, cloud-based routing, hybrid cloud connectivity).
+6. Explain the benefits and risks of migrating network services to the cloud.

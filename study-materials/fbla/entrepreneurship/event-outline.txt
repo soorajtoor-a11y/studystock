@@ -1,0 +1,72 @@
+FBLA STUDY OUTLINE — ENTREPRENEURSHIP (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 role play).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Tests the knowledge needed to launch and grow a new venture: spotting
+opportunities, building a business plan, choosing a legal structure,
+raising startup capital, marketing on a limited budget, and managing
+risk through growth or exit.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Opportunity Recognition and Idea Generation (10 test items)
+1. Describe methods for identifying unmet market needs (customer pain points, trend analysis).
+2. Explain the difference between an invention and an innovation.
+3. Describe the lean startup methodology (build-measure-learn, minimum viable product).
+4. Explain how to validate a business idea before committing resources (customer discovery interviews).
+5. Describe characteristics of a successful entrepreneur (risk tolerance, resilience, opportunity recognition).
+
+B. Business Plan Development (15 test items)
+1. Identify the standard components of a business plan (executive summary, market analysis, operations plan, financial projections).
+2. Explain the purpose of a value proposition and how to write one.
+3. Describe the business model canvas and its key building blocks.
+4. Explain how to conduct a competitive analysis.
+5. Describe the purpose of break-even analysis in a business plan.
+6. Explain how to develop realistic financial projections (sales forecast, cash flow projection).
+
+C. Legal Structures and Intellectual Property (15 test items)
+1. Differentiate sole proprietorship, partnership, LLC, and corporation.
+2. Describe the liability, taxation, and control differences among business structures.
+3. Explain the purpose of patents, trademarks, copyrights, and trade secrets.
+4. Describe the process and value of registering a business name or trademark.
+5. Explain licensing agreements and franchising as business structures.
+6. Describe common contracts entrepreneurs use (NDAs, operating agreements, vendor contracts).
+
+D. Financing a Startup (20 test items)
+1. Differentiate equity financing and debt financing.
+2. Describe bootstrapping and its advantages and disadvantages.
+3. Explain how angel investors and venture capitalists evaluate startups.
+4. Describe crowdfunding models (reward-based, equity-based, donation-based).
+5. Explain the purpose of a pitch deck and what investors look for in one.
+6. Describe SBA loans and other small-business lending options.
+7. Explain equity dilution and startup valuation (pre-money vs. post-money).
+8. Describe the use of a capitalization (cap) table to track ownership.
+
+E. Marketing for Startups (15 test items)
+1. Explain guerrilla marketing and other low-cost marketing tactics for new businesses.
+2. Describe how to identify and define a target market or customer persona.
+3. Explain the role of branding in differentiating a new venture.
+4. Describe digital marketing channels available to startups (social media, SEO, email).
+5. Explain customer acquisition cost (CAC) and its relationship to customer lifetime value (LTV).
+
+F. Risk Management and Operations (15 test items)
+1. Identify common risks new ventures face (market, financial, operational, legal).
+2. Describe strategies for mitigating startup risk (diversification, insurance, contracts).
+3. Explain the importance of cash flow management to early-stage survival.
+4. Describe basic supply chain and vendor relationship considerations for a new business.
+5. Explain the purpose of common business insurance types (general liability, product liability, property).
+
+G. Growth, Scaling, and Exit Strategies (10 test items)
+1. Describe strategies for scaling a business (franchising, licensing, geographic expansion).
+2. Explain common exit strategies (acquisition, IPO, merger, succession).
+3. Describe the challenges of managing rapid growth (hiring, systems, culture).
+4. Explain how to recognize when and how to pivot a business model.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- FBLA Competitive Events Guidelines — Entrepreneurship
+- U.S. Small Business Administration (SBA) startup resources
+- SCORE foundational entrepreneurship guides
+- The Lean Startup, Eric Ries — core methodology concepts

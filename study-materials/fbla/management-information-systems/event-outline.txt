@@ -1,0 +1,67 @@
+FBLA STUDY OUTLINE — MANAGEMENT INFORMATION SYSTEMS (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 role play).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Tests knowledge of how organizations use information systems to run
+and improve the business: systems fundamentals, databases, the systems
+development lifecycle, networking, cybersecurity and data privacy,
+e-commerce and analytics, and enterprise-wide systems and governance.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Information Systems Fundamentals (15 test items)
+1. Identify the five components of an information system (hardware, software, data, people, process).
+2. Differentiate transaction processing systems (TPS), management information systems (MIS), and decision support systems (DSS).
+3. Explain the role of information systems in supporting core business functions.
+4. Describe the difference between data, information, and knowledge.
+5. Explain how information systems create competitive advantage for an organization.
+
+B. Database Management (15 test items)
+1. Explain the purpose and structure of a relational database (tables, rows, columns, keys).
+2. Differentiate primary keys and foreign keys and their role in table relationships.
+3. Describe the purpose of SQL in querying and managing databases.
+4. Explain data normalization and why it reduces redundancy.
+5. Describe the components and purpose of a data warehouse versus an operational database.
+
+C. Systems Development Lifecycle (15 test items)
+1. Identify the phases of the systems development life cycle (SDLC): planning, analysis, design, implementation, maintenance.
+2. Differentiate the waterfall and agile development methodologies.
+3. Explain the purpose of requirements gathering and system documentation.
+4. Describe testing types used in systems development (unit, integration, user acceptance testing).
+5. Explain the importance of change management and user training during system implementation.
+
+D. Networking and Infrastructure (10 test items)
+1. Differentiate LAN, WAN, and cloud-based network infrastructures.
+2. Describe the client-server model and its role in business computing.
+3. Explain the purpose of IP addresses, routers, and switches in a network.
+4. Describe cloud computing service models (IaaS, PaaS, SaaS).
+
+E. Cybersecurity and Data Privacy in MIS (15 test items)
+1. Describe common threats to information systems (malware, phishing, insider threats).
+2. Explain data privacy regulations relevant to businesses (GDPR, CCPA, and industry-specific rules such as HIPAA).
+3. Describe access control and authentication methods (passwords, multifactor authentication, role-based access).
+4. Explain the purpose of data backup and disaster recovery planning.
+5. Describe encryption's role in protecting data at rest and in transit.
+
+F. E-Commerce and Business Intelligence (15 test items)
+1. Differentiate B2B, B2C, C2C, and C2B e-commerce models.
+2. Describe the components of an e-commerce transaction (shopping cart, payment gateway, order fulfillment).
+3. Explain the purpose of business intelligence (BI) tools in organizational decision-making.
+4. Describe data analytics concepts (descriptive, predictive, prescriptive analytics).
+5. Explain how dashboards and data visualization support managerial decisions.
+
+G. Enterprise Systems and IT Governance (15 test items)
+1. Describe the purpose and modules of an enterprise resource planning (ERP) system.
+2. Explain the purpose of customer relationship management (CRM) systems.
+3. Describe supply chain management (SCM) systems and their integration with ERP.
+4. Explain IT governance frameworks and their role in aligning IT with business strategy.
+5. Describe the importance of IT policies (acceptable use, BYOD, software licensing) in organizations.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- FBLA Competitive Events Guidelines — Management Information Systems
+- CompTIA IT Fundamentals (ITF+) exam objectives
+- Introductory MIS/information systems collegiate texts
+- National Institute of Standards and Technology (NIST) cybersecurity basics

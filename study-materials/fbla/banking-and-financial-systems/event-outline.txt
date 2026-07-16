@@ -1,0 +1,82 @@
+FBLA STUDY OUTLINE — BANKING & FINANCIAL SYSTEMS (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 role play).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Tests knowledge of how banks and financial institutions operate within
+the broader financial system: account and lending products, payment
+systems, regulatory compliance, and the customer-facing financial
+advisory skills bank employees use daily.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Financial System Structure and Institutions (15 test items)
+1. Describe the structure and function of the Federal Reserve System (12 district banks, Board of Governors, FOMC).
+2. Explain the Federal Reserve's monetary policy tools (open market operations, discount rate, reserve requirements).
+3. Differentiate commercial banks, credit unions, savings and loan associations, and investment banks.
+4. Describe the role of central banks in a nation's economy.
+5. Explain fractional reserve banking and the money multiplier effect.
+6. Identify the functions of the U.S. Treasury and its relationship to the banking system.
+7. Describe how banks generate revenue (net interest margin, fees, interchange income).
+
+B. Deposit Accounts and Banking Services (15 test items)
+1. Differentiate checking, savings, money market, and certificate of deposit (CD) accounts.
+2. Explain how compound interest is calculated on savings accounts (APY vs. nominal rate).
+3. Describe common bank fees (overdraft, maintenance, ATM, wire transfer).
+4. Identify services offered by retail banking versus private/wealth management divisions.
+5. Explain the purpose and mechanics of safe deposit boxes and escrow accounts.
+6. Describe the process and purpose of account reconciliation and reading a bank statement.
+7. Explain the role of online and mobile banking platforms in service delivery.
+
+C. Lending, Credit, and Interest (20 test items)
+1. Calculate simple and compound interest on loans and deposits.
+2. Differentiate APR and APY, and explain why they differ.
+3. Explain how credit scores are calculated (payment history, utilization, length of history, new credit, credit mix).
+4. Describe types of loans (secured vs. unsecured, installment vs. revolving, mortgage, auto, personal).
+5. Explain amortization and how monthly loan payments are structured (principal vs. interest).
+6. Describe the 5 Cs of credit (character, capacity, capital, collateral, conditions).
+7. Explain collateral and its role in securing a loan.
+8. Differentiate fixed-rate and adjustable-rate mortgages (ARMs).
+9. Describe the consequences of default, delinquency, and foreclosure/repossession.
+
+D. Payment Systems and Technology (15 test items)
+1. Differentiate ACH transfers, wire transfers, and paper check payments.
+2. Explain how debit and credit card transactions are processed (authorization, clearing, settlement).
+3. Describe emerging digital payment methods (mobile wallets, P2P apps, contactless/NFC payments).
+4. Explain the role of the Automated Clearing House (ACH) network.
+5. Describe cryptocurrency and blockchain basics as they relate to financial systems.
+6. Explain fraud-prevention measures in electronic payments (tokenization, encryption, two-factor authentication).
+7. Describe the check-clearing process and the purpose of the Check 21 Act.
+
+E. Banking Regulation and Compliance (15 test items)
+1. Explain the purpose and coverage limits of FDIC deposit insurance.
+2. Describe the Truth in Lending Act (Regulation Z) and its disclosure requirements.
+3. Explain the purpose of the Truth in Savings Act.
+4. Describe the role of the Consumer Financial Protection Bureau (CFPB).
+5. Explain anti-money laundering (AML) and Know Your Customer (KYC) requirements.
+6. Describe the Community Reinvestment Act (CRA) and its purpose.
+7. Explain the Bank Secrecy Act and the purpose of Suspicious Activity Reports (SARs).
+8. Describe the Equal Credit Opportunity Act (ECOA) and fair lending practices.
+
+F. Financial Statements and Analysis for Banking (10 test items)
+1. Interpret a personal or business balance sheet (assets, liabilities, net worth).
+2. Calculate and interpret ratios used in lending decisions (debt-to-income, loan-to-value).
+3. Explain how banks assess creditworthiness using applicant financial statements.
+4. Describe the components of a bank's own balance sheet (deposits as liabilities, loans as assets).
+5. Interpret a cash flow statement for loan underwriting purposes.
+
+G. Customer Financial Needs, Planning, and Ethics (10 test items)
+1. Identify appropriate banking products for different customer life stages and needs.
+2. Explain the basics of budgeting and financial goal-setting in a banking advisory context.
+3. Describe ethical obligations of bankers (confidentiality, conflicts of interest, product suitability).
+4. Explain identity theft prevention and consumer protection responsibilities in banking.
+5. Describe financial literacy concepts bank employees should communicate to customers.
+
+OFFICIAL REFERENCE RESOURCES (from FBLA guidelines)
+- FBLA Competitive Events Guidelines — Banking & Financial Systems
+- Federal Reserve Education (federalreserveeducation.org)
+- FDIC Consumer Resource Center
+- Consumer Financial Protection Bureau (consumerfinance.gov)
+- American Bankers Association (ABA) foundational resources

@@ -1,0 +1,80 @@
+FBLA STUDY OUTLINE — COMPUTER APPLICATIONS (2025–2026)
+Source: Official FBLA Competitive Events Guidelines (updated Nov 2025)
+Format: Round 1 Objective Test — 100 multiple-choice questions, 50 minutes (qualifies for the Round 2 hands-on production test).
+Test-item counts per knowledge area shown in (parentheses).
+============================================================
+
+EVENT DESCRIPTION
+Demonstrates knowledge of business application software concepts needed
+to produce professional documents, spreadsheets, databases, and
+presentations. Covers word processing, spreadsheet formulas and charts,
+database structure, presentation software, cross-application integration,
+file management, and formatting standards used to score production work.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Word Processing Concepts and Formatting (14 test items)
+1. Identify standard business document formatting conventions (margins, font, line spacing, alignment).
+2. Differentiate between a header/footer and the document body.
+3. Explain the purpose of styles and templates for consistent document formatting.
+4. Explain the purpose of tracked changes and comments in collaborative editing.
+5. Differentiate between a page break and a section break.
+6. Explain the purpose of mail merge and identify its required components (main document, data source).
+7. Identify proper formatting for standard business documents (business letter, memo, report).
+
+B. Spreadsheet Formulas, Functions, and Charts (18 test items)
+1. Differentiate between a relative and an absolute cell reference (e.g., A1 vs. $A$1).
+2. Identify the purpose of common functions (SUM, AVERAGE, COUNT, IF, VLOOKUP).
+3. Explain the order of operations applied within a spreadsheet formula.
+4. Differentiate between a formula and a function.
+5. Explain the purpose of conditional formatting in highlighting data.
+6. Identify appropriate chart types for different data (pie chart for proportions, line chart for trends, bar chart for comparisons).
+7. Explain the purpose of freezing panes and sorting/filtering data in a large worksheet.
+8. Explain the purpose of a PivotTable in summarizing data.
+9. Calculate a formula result given specified cell values and an order of operations.
+
+C. Database Concepts (14 test items)
+1. Differentiate between a table, record, and field in a database.
+2. Explain the purpose of a primary key and a foreign key.
+3. Differentiate between a query, a form, and a report in database software.
+4. Explain the purpose of establishing relationships between tables (one-to-many, many-to-many).
+5. Explain the purpose of normalization in reducing data redundancy.
+6. Identify appropriate data types for database fields (text, number, date/time, currency).
+7. Explain the purpose of sorting and filtering criteria within a query.
+
+D. Presentation Software (12 test items)
+1. Identify best practices for slide design (limited text, consistent formatting, readable fonts).
+2. Explain the purpose of a slide master in maintaining consistent presentation formatting.
+3. Differentiate between a transition and an animation.
+4. Explain the purpose of speaker notes in a presentation.
+5. Explain the purpose of embedding versus linking multimedia within a presentation.
+6. Explain guidelines for using charts and images effectively in a presentation.
+
+E. Integration Across Applications (10 test items)
+1. Differentiate between embedding and linking an object from one application into another.
+2. Explain the purpose of importing a spreadsheet chart into a word processing document or presentation.
+3. Explain the benefit of using mail merge with a spreadsheet or database as the data source.
+4. Explain what happens to a linked object when the source file is updated.
+5. Explain common file format compatibility issues when sharing documents between applications.
+
+F. File Management and Business Document Standards (12 test items)
+1. Explain the purpose of a logical folder/file naming and organization structure.
+2. Identify common file formats and their appropriate uses (.docx, .xlsx, .pdf, .csv).
+3. Explain the purpose of saving a file in a backward-compatible or portable format.
+4. Explain the purpose of file version control and backup practices.
+5. Explain the difference between saving and exporting a file.
+6. Identify proofreading and proofing tool standards used to score business document production (spelling, grammar, consistency).
+
+G. Computer and Software Fundamentals (10 test items)
+1. Differentiate between system software and application software.
+2. Identify common keyboard shortcuts used to increase efficiency (copy, paste, undo, save).
+3. Explain the purpose of cloud-based storage and collaboration tools.
+4. Explain the difference between a local application and a web-based (cloud) application.
+5. Explain the purpose of software updates and version numbering.
+
+H. Editing, Proofreading, and Output Standards (10 test items)
+1. Identify standard proofreaders' marks and their meanings.
+2. Explain the purpose of print preview and page setup before printing a document.
+3. Explain the difference between portrait and landscape orientation and when each is used.
+4. Explain the purpose of print areas and scaling when printing a large spreadsheet.
+5. Explain accuracy and formatting criteria commonly used to evaluate finished business documents.

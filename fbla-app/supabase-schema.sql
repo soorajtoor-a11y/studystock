@@ -50,3 +50,14 @@ create index if not exists explain_history_lookup
 -- rejected outright rather than just seeing zero rows.
 grant select, insert, update, delete on public.pinned_events   to authenticated;
 grant select, insert, update, delete on public.explain_history to authenticated;
+
+-- Groups messages into distinct conversation threads. One value is
+-- generated client-side per chat session and attached to every message in
+-- it, so the History view can show one collapsed card per conversation
+-- instead of every message for an event ever asked, flattened into one list.
+-- Pre-existing rows (before this column existed) each get their own random
+-- id, so old messages just show up as one-message conversations rather than
+-- being lost or wrongly merged together.
+alter table explain_history add column if not exists conversation_id uuid;
+update explain_history set conversation_id = gen_random_uuid() where conversation_id is null;
+alter table explain_history alter column conversation_id set not null;

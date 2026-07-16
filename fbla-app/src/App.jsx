@@ -858,17 +858,22 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
 const BACKEND = import.meta.env.DEV ? 'http://localhost:3001' : ''
 
 // ── Explain / Chat Pane ───────────────────────────────────────────────────────
-function StudyPane({ event, org, objectiveText, general, user, onBack }) {
-  const [messages, setMessages] = useState([])
+function StudyPane({ event, org, objectiveText, general, user, initialMessages, conversationId: resumeId, onBack }) {
+  const [messages, setMessages] = useState(initialMessages || [])
   const [input,    setInput]    = useState('')
   const [loading,  setLoading]  = useState(false)
   const [error,    setError]    = useState(null)
   const bottomRef = useRef(null)
   const chatRef   = useRef(null)
   const didInit   = useRef(false)
+  // One id per conversation thread, shared by every message saved in it —
+  // reused when resuming a saved conversation (via "Continue"), freshly
+  // generated otherwise, so a new "Ask Anything" session starts its own
+  // thread instead of appending to whatever was last saved.
+  const conversationId = useRef(resumeId || crypto.randomUUID()).current
 
   useEffect(() => {
-    if (didInit.current || general) return
+    if (didInit.current || general || (initialMessages && initialMessages.length)) return
     didInit.current = true
     sendMessage(`Explain this objective in plain language with a real-world example: "${objectiveText}"`, [])
   }, [])
@@ -927,8 +932,8 @@ function StudyPane({ event, org, objectiveText, general, user, onBack }) {
       // lost if the user pins the event afterward).
       if (user) {
         supabase.from('explain_history').insert([
-          { user_id: user.id, org, event, role: 'user', content: text },
-          { user_id: user.id, org, event, role: 'assistant', content: assistantText },
+          { user_id: user.id, org, event, conversation_id: conversationId, role: 'user', content: text },
+          { user_id: user.id, org, event, conversation_id: conversationId, role: 'assistant', content: assistantText },
         ]).then(({ error }) => { if (error) console.warn('[explain history] save failed:', error.message) })
       }
     } catch (err) {
@@ -1005,17 +1010,43 @@ function StudyPane({ event, org, objectiveText, general, user, onBack }) {
   )
 }
 
+// Groups flat explain_history rows (one row per message) into distinct
+// conversation threads by conversation_id, newest conversation first, each
+// with a short preview built from its first user message — this is what
+// lets History show one collapsed card per conversation instead of every
+// message for an event, ever, flattened into a single scrolling list.
+function groupConversations(rows) {
+  const byId = new Map()
+  for (const r of rows) {
+    if (!byId.has(r.conversation_id)) byId.set(r.conversation_id, [])
+    byId.get(r.conversation_id).push(r)
+  }
+  const convos = [...byId.entries()].map(([id, messages]) => {
+    const firstUser = messages.find(m => m.role === 'user')
+    const preview = (firstUser?.content || '').trim().slice(0, 100)
+    return {
+      id,
+      messages: messages.map(({ role, content }) => ({ role, content })),
+      preview: preview.length === 100 ? preview + '…' : preview,
+      lastAt: messages[messages.length - 1]?.created_at,
+    }
+  })
+  convos.sort((a, b) => new Date(b.lastAt) - new Date(a.lastAt))
+  return convos
+}
+
 // ── Explain History (pinned events only) ──────────────────────────────────────
 function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
-  const [rows,  setRows]  = useState(null)
-  const [error, setError] = useState(null)
+  const [convos,  setConvos]  = useState(null)
+  const [error,   setError]   = useState(null)
+  const [openId,  setOpenId]  = useState(null)
 
   useEffect(() => {
-    setRows(null)
-    supabase.from('explain_history').select('role, content, created_at')
+    setConvos(null); setOpenId(null)
+    supabase.from('explain_history').select('conversation_id, role, content, created_at')
       .eq('user_id', user.id).eq('org', org).eq('event', event)
       .order('created_at', { ascending: true })
-      .then(({ data, error }) => { if (error) setError(error.message); else setRows(data) })
+      .then(({ data, error }) => { if (error) setError(error.message); else setConvos(groupConversations(data)) })
   }, [org, event])
 
   return (
@@ -1037,28 +1068,35 @@ function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
         </div>
       )}
 
-      {!error && rows === null && <div className="loading">Loading…</div>}
+      {!error && convos === null && <div className="loading">Loading…</div>}
 
-      {!error && rows && rows.length === 0 && (
+      {!error && convos && convos.length === 0 && (
         <div className="chat-empty-state">
           <span className="chat-empty-icon">💬</span>
           <p>No saved Explain conversations for this event yet. Use "Ask Anything" from the event page to start one.</p>
         </div>
       )}
 
-      {!error && rows && rows.length > 0 && (
-        <div className="chat-messages">
-          {rows.map((m, i) => (
-            <div key={i} className={`message message-${m.role}`}>
-              <div className="message-bubble">{m.content}</div>
+      {!error && convos && convos.length > 0 && (
+        <div className="convo-list">
+          {convos.map(c => (
+            <div key={c.id} className="convo-card">
+              <button className="convo-card-preview" onClick={() => setOpenId(id => id === c.id ? null : c.id)}>
+                <span className="convo-card-text">{c.preview || '(empty)'}</span>
+                <span className="convo-card-chevron">{openId === c.id ? '▾' : '▸'}</span>
+              </button>
+              {openId === c.id && (
+                <div className="chat-messages convo-card-thread">
+                  {c.messages.map((m, i) => (
+                    <div key={i} className={`message message-${m.role}`}>
+                      <div className="message-bubble">{m.content}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <button className="convo-card-continue" onClick={() => onContinue(c.messages, c.id)}>Continue →</button>
             </div>
           ))}
-        </div>
-      )}
-
-      {!error && rows && rows.length > 0 && (
-        <div className="chat-input-row">
-          <button className="send-btn" onClick={onContinue}>Continue this conversation →</button>
         </div>
       )}
     </div>
@@ -1070,16 +1108,17 @@ function ExplainHistoryPage({ org, event, user, onBack, onContinue }) {
 // clicking a pinned event's card on the Dashboard. Read-only: reuses the
 // same message-bubble styling as the live Explain chat and the full-page
 // history view for visual consistency, just in a narrower side column.
-function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse }) {
-  const [rows,  setRows]  = useState(null)
-  const [error, setError] = useState(null)
+function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse, onContinue }) {
+  const [convos,  setConvos]  = useState(null)
+  const [error,   setError]   = useState(null)
+  const [openId,  setOpenId]  = useState(null)
 
   useEffect(() => {
-    setRows(null); setError(null)
-    supabase.from('explain_history').select('role, content, created_at')
+    setConvos(null); setError(null); setOpenId(null)
+    supabase.from('explain_history').select('conversation_id, role, content, created_at')
       .eq('user_id', user.id).eq('org', org).eq('event', event)
       .order('created_at', { ascending: true })
-      .then(({ data, error }) => { if (error) setError(error.message); else setRows(data) })
+      .then(({ data, error }) => { if (error) setError(error.message); else setConvos(groupConversations(data)) })
   }, [org, event])
 
   if (collapsed) {
@@ -1104,20 +1143,33 @@ function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse
         </div>
       )}
 
-      {!error && rows === null && <div className="loading">Loading…</div>}
+      {!error && convos === null && <div className="loading">Loading…</div>}
 
-      {!error && rows && rows.length === 0 && (
+      {!error && convos && convos.length === 0 && (
         <div className="chat-empty-state history-side-empty">
           <span className="chat-empty-icon">💬</span>
           <p>No saved Explain conversations for this event yet. Use "Ask Anything" to start one.</p>
         </div>
       )}
 
-      {!error && rows && rows.length > 0 && (
-        <div className="chat-messages history-side-messages">
-          {rows.map((m, i) => (
-            <div key={i} className={`message message-${m.role}`}>
-              <div className="message-bubble">{m.content}</div>
+      {!error && convos && convos.length > 0 && (
+        <div className="convo-list convo-list-side">
+          {convos.map(c => (
+            <div key={c.id} className="convo-card">
+              <button className="convo-card-preview" onClick={() => setOpenId(id => id === c.id ? null : c.id)}>
+                <span className="convo-card-text">{c.preview || '(empty)'}</span>
+                <span className="convo-card-chevron">{openId === c.id ? '▾' : '▸'}</span>
+              </button>
+              {openId === c.id && (
+                <div className="chat-messages history-side-messages convo-card-thread">
+                  {c.messages.map((m, i) => (
+                    <div key={i} className={`message message-${m.role}`}>
+                      <div className="message-bubble">{m.content}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <button className="convo-card-continue" onClick={() => onContinue(c.messages, c.id)}>Continue →</button>
             </div>
           ))}
         </div>
@@ -1294,7 +1346,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnything, showHistory, historyCollapsed, onToggleHistoryCollapse }) {
+function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnything, showHistory, historyCollapsed, onToggleHistoryCollapse, onContinueHistory }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
@@ -1387,6 +1439,7 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
           <ExplainHistorySidePanel
             org={org} event={event} user={user}
             collapsed={historyCollapsed} onToggleCollapse={onToggleHistoryCollapse}
+            onContinue={onContinueHistory}
           />
         )}
       </div>
@@ -1704,8 +1757,13 @@ export default function App() {
     setActiveEvent(ev); setPage('explain-history'); setStudy(null); setNavOpen(false)
   }
   function handleHistoryBack() { setPage('event') }
-  function handleContinueFromHistory() {
-    setStudy({ text: '', mode: 'explain', scope: 'general' }); setPage('event')
+  // Shared by both History surfaces (the full page and the side panel) —
+  // resumes a specific saved conversation in the live Explain pane under
+  // its own conversation_id, so new messages append to that same thread
+  // instead of starting a fresh one.
+  function handleContinueFromHistory(messages, conversationId) {
+    setStudy({ text: '', mode: 'explain', scope: 'general', initialMessages: messages, conversationId })
+    setPage('event')
     setHistoryOpen(true); setHistoryCollapsed(false)
   }
   // The event header's persistent "Ask Anything" button — same general
@@ -1854,7 +1912,7 @@ export default function App() {
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
     } else {
-      const pane = <StudyPane event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} onBack={handleBack} />
+      const pane = <StudyPane event={activeEvent} org={org} objectiveText={study.text} general={study.scope === 'general'} user={user} initialMessages={study.initialMessages} conversationId={study.conversationId} onBack={handleBack} />
       // Explain mode keeps the History panel visible alongside the live
       // conversation when it was opened (pinned Dashboard card, header
       // "Ask Anything", or "Continue this conversation") — same rail /
@@ -1867,6 +1925,7 @@ export default function App() {
           <ExplainHistorySidePanel
             org={org} event={activeEvent} user={user}
             collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+            onContinue={handleContinueFromHistory}
           />
         </div>
       ) : pane
@@ -1882,6 +1941,7 @@ export default function App() {
         user={user} pinned={isPinned(org, activeEvent)} onTogglePin={() => togglePin(org, activeEvent)}
         onAskAnything={handleAskAnything}
         showHistory={historyOpen} historyCollapsed={historyCollapsed} onToggleHistoryCollapse={() => setHistoryCollapsed(c => !c)}
+        onContinueHistory={handleContinueFromHistory}
       />
     )
   } else {

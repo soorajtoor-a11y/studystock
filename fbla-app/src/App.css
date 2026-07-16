@@ -1479,6 +1479,33 @@
 .history-side-empty { padding:24px 20px; }
 .history-side-empty p { font-size:12.5px; max-width:none; }
 
+/* ── Conversation cards (grouped Explain History) ───────────────────── */
+.convo-list { display:flex; flex-direction:column; gap:1px; overflow-y:auto; }
+.convo-list-side { padding:8px; gap:8px; }
+.convo-card {
+  border:1px solid var(--border); border-radius:var(--r-sm);
+  background:var(--surface); overflow:hidden; flex-shrink:0;
+}
+.convo-card-preview {
+  display:flex; align-items:flex-start; gap:8px; width:100%;
+  padding:10px 12px; border:none; background:transparent; cursor:pointer;
+  text-align:left; font-family:inherit;
+}
+.convo-card-preview:hover { background:var(--tint); }
+.convo-card-text {
+  flex:1; font-size:12.5px; line-height:1.5; color:var(--text-2);
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+.convo-card-chevron { flex-shrink:0; font-size:11px; color:var(--text-4); margin-top:1px; }
+.convo-card-thread { max-height:280px; border-top:1px solid var(--border); padding:12px; }
+.convo-card-continue {
+  display:block; width:100%; padding:8px 12px; border:none;
+  border-top:1px solid var(--border); background:transparent;
+  font-family:inherit; font-size:11.5px; font-weight:600; color:var(--signal-400);
+  cursor:pointer; text-align:left; transition:background 0.12s;
+}
+.convo-card-continue:hover { background:var(--tint); }
+
 .typing { display:flex; gap:5px; align-items:center; padding:14px 18px; }
 .typing span { width:7px; height:7px; background:var(--text-4); border-radius:50%; animation:bounce 1.2s infinite; }
 .typing span:nth-child(2) { animation-delay:0.2s; }

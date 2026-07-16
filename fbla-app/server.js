@@ -50,6 +50,19 @@ const OLLAMA_GEN_OPTS  = { temperature: 0.3, num_ctx: 16384, num_predict: -1   }
 // ---------------------------------------------------------------------------
 
 function extractRelevantSection(outlineText, objectiveText) {
+  // General/"Ask Anything" mode calls this with objectiveText === '' (no
+  // single objective to scope to) — there's nothing to match against, so
+  // this must return the FULL outline. Without this early return, an empty
+  // objectiveText produced zero match words, `sections.find()` never
+  // matched anything, and the code fell through to `sections[0]` — which
+  // is not "a reasonable default section", it's whatever text precedes the
+  // outline's first "A. " heading (title, format, eligibility, event
+  // description preamble) with NO actual knowledge areas or objectives in
+  // it. The model then received that near-empty preamble as its entire
+  // source material for a general question and, accurately but unhelpfully,
+  // reported the outline as blank instead of answering.
+  if (!objectiveText || !objectiveText.trim()) return outlineText;
+
   const lines = outlineText.split('\n');
   const sections = [];
   let current = [];
@@ -66,7 +79,7 @@ function extractRelevantSection(outlineText, objectiveText) {
     const words = lower.split(' ').filter(w => w.length > 4);
     return words.some(w => s.toLowerCase().includes(w));
   });
-  return match || sections[0] || outlineText;
+  return match || outlineText;
 }
 
 // Mechanical safety net for RULE 2 (option length balance) on the live

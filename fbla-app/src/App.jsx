@@ -929,8 +929,10 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
       // Persist both sides of this exchange for the signed-in user's
       // per-event Explain history (Pinned events surface a way to review
       // it later; this itself saves regardless of pin status so nothing's
-      // lost if the user pins the event afterward).
-      if (user) {
+      // lost if the user pins the event afterward). Skip entirely if either
+      // side came back blank — an empty exchange isn't a real conversation
+      // worth remembering.
+      if (user && text.trim() && assistantText.trim()) {
         supabase.from('explain_history').insert([
           { user_id: user.id, org, event, conversation_id: conversationId, role: 'user', content: text },
           { user_id: user.id, org, event, conversation_id: conversationId, role: 'assistant', content: assistantText },
@@ -1021,16 +1023,21 @@ function groupConversations(rows) {
     if (!byId.has(r.conversation_id)) byId.set(r.conversation_id, [])
     byId.get(r.conversation_id).push(r)
   }
-  const convos = [...byId.entries()].map(([id, messages]) => {
-    const firstUser = messages.find(m => m.role === 'user')
-    const preview = (firstUser?.content || '').trim().slice(0, 100)
-    return {
-      id,
-      messages: messages.map(({ role, content }) => ({ role, content })),
-      preview: preview.length === 100 ? preview + '…' : preview,
-      lastAt: messages[messages.length - 1]?.created_at,
-    }
-  })
+  const convos = [...byId.entries()]
+    .map(([id, messages]) => {
+      const firstUser = messages.find(m => m.role === 'user')
+      const preview = (firstUser?.content || '').trim().slice(0, 100)
+      return {
+        id,
+        messages: messages.map(({ role, content }) => ({ role, content })),
+        preview: preview.length === 100 ? preview + '…' : preview,
+        lastAt: messages[messages.length - 1]?.created_at,
+      }
+    })
+    // A conversation with no actual user text isn't worth showing at all —
+    // covers any pre-existing empty rows saved before the insert-time guard
+    // above existed.
+    .filter(c => c.preview)
   convos.sort((a, b) => new Date(b.lastAt) - new Date(a.lastAt))
   return convos
 }

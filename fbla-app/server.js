@@ -3,6 +3,7 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execFileSync } from 'child_process';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -21,6 +22,7 @@ app.use(express.json());
 const MATERIALS_DIR   = path.join(__dirname, '..', 'study-materials');
 const BOT_RULES_PATH  = path.join(__dirname, '..', 'bot-rules.txt');
 const GEN_RULES_PATH  = path.join(__dirname, '..', 'question-generation-rules.txt');
+const REPO_ROOT        = path.join(__dirname, '..');
 
 // Org/event slugs are folder names used directly in path.join() below —
 // whitelist to plain slug characters so a request can never escape
@@ -1465,6 +1467,78 @@ if (process.env.NODE_ENV === 'production') {
   // at registration time ("Missing parameter name"). A path-less app.use()
   // catches everything that reached here without needing regex parsing at all.
   app.use((_req, res) => res.sendFile(path.join(dist, 'index.html')));
+}
+
+// ---------------------------------------------------------------------------
+// Live-cache → GitHub sync. Render's disk for this service is wiped on every
+// redeploy, so the *.live.json files the AI-generation cache writes (see
+// loadLiveCache/saveLiveCache above) would otherwise vanish the next time
+// this app is deployed. On an hourly timer, this commits and pushes just
+// those cache files straight to `main` from the running server itself, so
+// the accumulated cache survives redeploys the same way the real
+// generate_bank.py-produced banks do.
+//
+// Opt-in via GITHUB_PUSH_TOKEN (a GitHub fine-grained PAT scoped to this one
+// repo's Contents:Read-and-write permission) — with no token set, this is a
+// silent no-op, so it's safe to run in local dev too. GITHUB_REPO defaults
+// to this project's own repo.
+// ---------------------------------------------------------------------------
+const GITHUB_PUSH_TOKEN = process.env.GITHUB_PUSH_TOKEN || '';
+const GITHUB_REPO = process.env.GITHUB_REPO || 'soorajtoor-a11y/studystock';
+const CACHE_SYNC_INTERVAL_MS = 60 * 60 * 1000;
+
+function findLiveCacheFiles() {
+  const results = [];
+  function walk(dir) {
+    let entries;
+    try { entries = fs.readdirSync(dir, { withFileTypes: true }); }
+    catch { return; }
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name.endsWith('.live.json')) results.push(full);
+    }
+  }
+  if (fs.existsSync(MATERIALS_DIR)) walk(MATERIALS_DIR);
+  return results;
+}
+
+let cacheSyncInFlight = false;
+function syncLiveCacheToGitHub() {
+  if (!GITHUB_PUSH_TOKEN || cacheSyncInFlight) return;
+  cacheSyncInFlight = true;
+  try {
+    if (!fs.existsSync(path.join(REPO_ROOT, '.git'))) {
+      console.warn('[cache-sync] no .git checkout in this environment — skipping (persistence needs a git-based deploy)');
+      return;
+    }
+    const files = findLiveCacheFiles();
+    if (!files.length) return;
+    const relFiles = files.map(f => path.relative(REPO_ROOT, f));
+
+    const git = (args) => execFileSync('git', args, { cwd: REPO_ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+
+    git(['add', '--', ...relFiles]);
+    const staged = execFileSync('git', ['diff', '--cached', '--name-only'], { cwd: REPO_ROOT }).toString().trim();
+    if (!staged) return; // nothing new since the last sync
+
+    git(['-c', 'user.name=Vye Cache Bot', '-c', 'user.email=cache-bot@usevye.study',
+         'commit', '-m', 'Auto-update live generation cache']);
+    const pushUrl = `https://x-access-token:${GITHUB_PUSH_TOKEN}@github.com/${GITHUB_REPO}.git`;
+    git(['push', pushUrl, 'HEAD:main']);
+    console.log(`[cache-sync] pushed ${relFiles.length} live-cache file(s) to GitHub`);
+  } catch (err) {
+    console.error('[cache-sync] failed:', err.message);
+  } finally {
+    cacheSyncInFlight = false;
+  }
+}
+
+if (GITHUB_PUSH_TOKEN) {
+  // One early run (a minute after boot) so a fresh deploy doesn't sit an
+  // hour before its first sync, then hourly forever.
+  setTimeout(syncLiveCacheToGitHub, 60 * 1000);
+  setInterval(syncLiveCacheToGitHub, CACHE_SYNC_INTERVAL_MS);
 }
 
 const PORT = process.env.PORT || 3001;

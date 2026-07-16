@@ -743,6 +743,11 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
   const [done,      setDone]      = useState(false)
   const [error,     setError]     = useState(null)
   const [partial,   setPartial]   = useState(null)
+  // Letters the user has struck through as "definitely wrong" — a
+  // test-taking elimination aid, purely visual, reset each new question.
+  // Doesn't block picking a struck option as the real answer, in case they
+  // change their mind.
+  const [eliminated, setEliminated] = useState(() => new Set())
 
   useEffect(() => {
     fetch('/api/quiz', {
@@ -770,7 +775,17 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
 
   function handleNext() {
     if (current + 1 >= questions.length) setDone(true)
-    else { setCurrent(c => c + 1); setSelected(null); setRevealed(false) }
+    else { setCurrent(c => c + 1); setSelected(null); setRevealed(false); setEliminated(new Set()) }
+  }
+
+  function toggleEliminate(letter, e) {
+    e.stopPropagation()
+    if (revealed) return
+    setEliminated(prev => {
+      const next = new Set(prev)
+      if (next.has(letter)) next.delete(letter); else next.add(letter)
+      return next
+    })
   }
 
   if (error) return (
@@ -858,16 +873,33 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
           <div className="quiz-options">
             {['A', 'B', 'C', 'D'].map(letter => {
               let cls = 'quiz-option'
+              const isEliminated = eliminated.has(letter)
               if (revealed) {
                 if (letter === q.answer)       cls += ' correct'
                 else if (letter === selected)  cls += ' wrong'
                 else                           cls += ' dimmed'
+              } else if (isEliminated) {
+                cls += ' eliminated'
               }
               return (
-                <button key={letter} className={cls} onClick={() => handleAnswer(letter)} disabled={revealed}>
-                  <span className="quiz-option-letter">{letter}</span>
-                  <span className="quiz-option-text">{q.options[letter]}</span>
-                </button>
+                <div key={letter} className={cls}>
+                  <button className="quiz-option-main" onClick={() => handleAnswer(letter)} disabled={revealed}>
+                    <span className="quiz-option-letter">{letter}</span>
+                    <span className="quiz-option-text">{q.options[letter]}</span>
+                  </button>
+                  {!revealed && (
+                    <button
+                      className={`quiz-eliminate-btn ${isEliminated ? 'active' : ''}`}
+                      onClick={e => toggleEliminate(letter, e)}
+                      title={isEliminated ? 'Undo strike-through' : 'Cross out this option'}
+                      aria-label={isEliminated ? 'Undo strike-through' : 'Cross out this option'}
+                    >
+                      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" width="12" height="12" aria-hidden="true">
+                        <path strokeLinecap="round" d="M4 10h12" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
               )
             })}
           </div>
@@ -1275,10 +1307,14 @@ function ExplainHistorySidePanel({ org, event, user, collapsed, onToggleCollapse
 // question-generation-rules.txt RULE 1) — there's no user-facing choice.
 const QUIZ_DIFFICULTY = 'hard'
 
-function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'event' }) {
+function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'event', initialMode = null }) {
   const QUIZ_COUNTS = { event: [25, 50], section: [10, 20], objective: [5, 10] }
   const quizCounts = QUIZ_COUNTS[scope] ?? [10, 25, 50]
-  const [step,       setStep]       = useState('mode')
+  // initialMode ('quiz' | 'flashcard') skips the "how would you like to
+  // study?" step entirely — set only when the caller already knows the mode
+  // (a Quiz/Cards button was clicked directly), so there's nothing to go
+  // "back" to; the back link in that case just closes the picker instead.
+  const [step,       setStep]       = useState(initialMode === 'quiz' ? 'quiz-count' : initialMode === 'flashcard' ? 'fc-count' : 'mode')
   const [quizCount,  setQuizCount]  = useState(quizCounts[0])
   const [fcCount,    setFcCount]    = useState(10)
 
@@ -1316,7 +1352,7 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
 
         {step === 'fc-count' && (
           <>
-            <button className="mp-back-link" onClick={() => setStep('mode')}>← Back</button>
+            <button className="mp-back-link" onClick={() => initialMode ? onClose() : setStep('mode')}>← Back</button>
             <p className="mp-prompt">How many flashcards?</p>
             <div className="count-row">
               {[10, 15, 25].map(n => (
@@ -1329,7 +1365,7 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
 
         {step === 'quiz-count' && (
           <>
-            <button className="mp-back-link" onClick={() => setStep('mode')}>← Back</button>
+            <button className="mp-back-link" onClick={() => initialMode ? onClose() : setStep('mode')}>← Back</button>
             <p className="mp-prompt">How many questions?</p>
             <div className="count-row">
               {quizCounts.map(n => (
@@ -1363,8 +1399,12 @@ function CollapsedRail({ label, icon, onExpand }) {
 function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
   const [picker, setPicker] = useState(null)
 
-  function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event', objectives = null) {
-    setPicker({ title, desc, objectiveText, hideExplain, scope, objectives })
+  // initialMode lets the picker skip straight to the count-selection step —
+  // the Quiz/Cards buttons already say which mode they want, so re-asking
+  // "how would you like to study?" after they already clicked one specific
+  // button was a redundant, confusing extra step.
+  function openPicker(title, desc, objectiveText, hideExplain = false, scope = 'event', objectives = null, initialMode = null) {
+    setPicker({ title, desc, objectiveText, hideExplain, scope, objectives, initialMode })
   }
 
   function buildFullEventText() {
@@ -1397,8 +1437,8 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
           </div>
         </div>
         <div className="sp-btns">
-          <button className="sp-btn sp-btn-quiz"  onClick={() => openPicker('Full Event Quiz', formatEventName(event), buildFullEventText(), true)}>📝 Quiz</button>
-          <button className="sp-btn sp-btn-flash" onClick={() => openPicker('Full Event Flashcards', formatEventName(event), buildFullEventText(), true)}>🃏 Cards</button>
+          <button className="sp-btn sp-btn-quiz"  onClick={() => openPicker('Full Event Quiz', formatEventName(event), buildFullEventText(), true, 'event', null, 'quiz')}>📝 Quiz</button>
+          <button className="sp-btn sp-btn-flash" onClick={() => openPicker('Full Event Flashcards', formatEventName(event), buildFullEventText(), true, 'event', null, 'flashcard')}>🃏 Cards</button>
         </div>
       </div>
 
@@ -1414,8 +1454,8 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
               </div>
             </div>
             <div className="sp-btns">
-              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives)}>📝 Quiz</button>
-              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives)}>🃏 Cards</button>
+              <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives, 'quiz')}>📝 Quiz</button>
+              <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives, 'flashcard')}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
             </div>
           </div>
@@ -1428,6 +1468,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
           desc={picker.desc}
           hideExplain={picker.hideExplain}
           scope={picker.scope}
+          initialMode={picker.initialMode}
           onSelect={(mode, count, diff) => { setPicker(null); onStudy(picker.objectiveText, mode, count, diff, picker.scope, picker.objectives) }}
           onClose={() => setPicker(null)}
         />

@@ -61,3 +61,43 @@ grant select, insert, update, delete on public.explain_history to authenticated;
 alter table explain_history add column if not exists conversation_id uuid;
 update explain_history set conversation_id = gen_random_uuid() where conversation_id is null;
 alter table explain_history alter column conversation_id set not null;
+
+-- Usage tracking — one row per user per calendar day, incremented in ~30s
+-- heartbeats while the app is open, visible, and focused (see the frontend's
+-- usage-tracking effect). Powers both the Dashboard streak (consecutive days
+-- with >= 300 seconds) and Settings' all-time total.
+create table if not exists usage_days (
+  user_id        uuid not null references auth.users(id) on delete cascade,
+  date           date not null,
+  seconds_active integer not null default 0,
+  primary key (user_id, date)
+);
+
+alter table usage_days enable row level security;
+
+create policy "Users manage their own usage"
+  on usage_days for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+grant select, insert, update on public.usage_days to authenticated;
+
+-- Atomic increment via RPC (rather than a client-side read-then-write)
+-- so multiple tabs/heartbeats never lose an update to a race. security
+-- definer + auth.uid() means it only ever touches the CALLING user's own
+-- row regardless of RLS, so it's safe despite bypassing RLS internally.
+create or replace function increment_usage(p_seconds integer)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  insert into usage_days (user_id, date, seconds_active)
+  values (auth.uid(), current_date, p_seconds)
+  on conflict (user_id, date)
+  do update set seconds_active = usage_days.seconds_active + excluded.seconds_active;
+end;
+$$;
+
+grant execute on function increment_usage(integer) to authenticated;

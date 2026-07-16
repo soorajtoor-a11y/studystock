@@ -20,6 +20,42 @@ function formatEventName(slug) {
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 }
 
+const USAGE_STREAK_THRESHOLD_SECONDS = 300 // 5 minutes
+
+// Consecutive days (ending today or, if today hasn't hit the threshold yet,
+// ending yesterday so an in-progress day doesn't zero out the display) with
+// >= 5 minutes of tracked usage.
+function computeUsageStreak(usageDays) {
+  const byDate = {}
+  for (const d of usageDays) byDate[d.date] = d.seconds_active
+  let streak = 0
+  const cursor = new Date()
+  const todayKey = cursor.toISOString().slice(0, 10)
+  if ((byDate[todayKey] || 0) >= USAGE_STREAK_THRESHOLD_SECONDS) streak++
+  cursor.setDate(cursor.getDate() - 1)
+  while (true) {
+    const key = cursor.toISOString().slice(0, 10)
+    if ((byDate[key] || 0) >= USAGE_STREAK_THRESHOLD_SECONDS) { streak++; cursor.setDate(cursor.getDate() - 1) }
+    else break
+  }
+  return streak
+}
+
+function totalUsageSeconds(usageDays) {
+  return usageDays.reduce((sum, d) => sum + (d.seconds_active || 0), 0)
+}
+
+// "3h 42m" / "42m" / "less than a minute" — never shows seconds, this is a
+// glanceable total, not a stopwatch.
+function formatDuration(totalSeconds) {
+  const minutes = Math.floor(totalSeconds / 60)
+  const hours = Math.floor(minutes / 60)
+  const mins = minutes % 60
+  if (hours === 0 && mins === 0) return 'Less than a minute'
+  if (hours === 0) return `${mins}m`
+  return `${hours}h ${mins}m`
+}
+
 // Best-effort "does this email's local-part look like an actual name" check
 // for the Dashboard greeting. Deliberately conservative — a wrong guess
 // (turning "jsmith47" into "Jsmith47") looks broken, so anything that isn't
@@ -235,7 +271,7 @@ const THEME_OPTIONS = [
   { id: 'system', label: 'System', desc: "Match your device's setting automatically.", icon: '🖥️' },
 ]
 
-function SettingsPage({ theme, onThemeChange, onBack }) {
+function SettingsPage({ theme, onThemeChange, user, usageDays, onBack }) {
   return (
     <div className="settings-page">
       <button className="mp-back-link" onClick={onBack}>← Back</button>
@@ -262,6 +298,19 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
           ))}
         </div>
       </div>
+
+      {user && (
+        <div className="settings-section">
+          <p className="settings-section-label">Usage</p>
+          <div className="usage-total-card">
+            <span className="usage-total-icon" aria-hidden="true">⏱️</span>
+            <div>
+              <span className="usage-total-num">{formatDuration(totalUsageSeconds(usageDays))}</span>
+              <span className="usage-total-label">Total time spent studying</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -493,14 +542,26 @@ function AccountHero({ icon, title, subtitle }) {
 }
 
 // ── Dashboard (logged-in landing page) ──────────────────────────────────────
-function Dashboard({ user, pins, onSelectPinned, onBrowseAll }) {
+function Dashboard({ user, pins, usageDays, onSelectPinned, onBrowseAll }) {
   const name = nameFromEmail(user?.email)
+  const streak = computeUsageStreak(usageDays)
 
   return (
     <div className="dashboard-page">
       <Reveal as="div" className="dashboard-hero">
-        <h1 className="dashboard-greeting">{name ? `Welcome, ${name}` : 'Welcome'}</h1>
-        <p className="dashboard-subtitle">Pick up where you left off, or browse every competitive event.</p>
+        <div className="dashboard-hero-top">
+          <div>
+            <h1 className="dashboard-greeting">{name ? `Welcome, ${name}` : 'Welcome'}</h1>
+            <p className="dashboard-subtitle">Pick up where you left off, or browse every competitive event.</p>
+          </div>
+          {streak > 0 && (
+            <div className="streak-badge" title={`${streak} day${streak === 1 ? '' : 's'} in a row with 5+ minutes of study`}>
+              <span className="streak-flame" aria-hidden="true">🔥</span>
+              <span className="streak-num">{streak}</span>
+              <span className="streak-label">day{streak === 1 ? '' : 's'}</span>
+            </div>
+          )}
+        </div>
       </Reveal>
 
       <Reveal as="div" className="dashboard-body" delay={90}>
@@ -1954,6 +2015,43 @@ export default function App() {
       })
   }, [user])
 
+  // Usage tracking — ~30s heartbeats while the app is open, visible, AND
+  // focused (not just an idle background tab) increment today's usage_days
+  // row via an atomic RPC. Powers the Dashboard streak (consecutive days
+  // with >= 5 minutes) and Settings' all-time total. Uses the browser's
+  // local calendar date for display everywhere, but the RPC's current_date
+  // is the database's (UTC) date — for a user far from UTC, a session
+  // spanning local midnight could occasionally land on the "wrong" day by a
+  // few hours. Acceptable imprecision for a streak/total display, not worth
+  // the complexity of reconciling timezones for this.
+  const [usageDays, setUsageDays] = useState([]) // [{date, seconds_active}]
+
+  function reloadUsage(uid) {
+    supabase.from('usage_days').select('date, seconds_active').eq('user_id', uid)
+      .then(({ data, error }) => { if (!error && data) setUsageDays(data) })
+  }
+
+  useEffect(() => {
+    if (!user) { setUsageDays([]); return }
+    reloadUsage(user.id)
+  }, [user])
+
+  useEffect(() => {
+    if (!user) return
+    const HEARTBEAT_MS = 30000
+    let cancelled = false
+    const id = setInterval(() => {
+      if (document.visibilityState === 'visible' && document.hasFocus()) {
+        supabase.rpc('increment_usage', { p_seconds: Math.round(HEARTBEAT_MS / 1000) })
+          .then(({ error }) => {
+            if (error) console.warn('[usage] increment failed:', error.message)
+            else if (!cancelled) reloadUsage(user.id)
+          })
+      }
+    }, HEARTBEAT_MS)
+    return () => { cancelled = true; clearInterval(id) }
+  }, [user])
+
   function isPinned(o, ev) { return pins.some(p => p.org === o && p.event === ev) }
 
   async function togglePin(o, ev) {
@@ -2134,11 +2232,11 @@ export default function App() {
 
   let content
   if (page === 'settings') {
-    content = <SettingsPage theme={theme} onThemeChange={setTheme} onBack={handleSettingsBack} />
+    content = <SettingsPage theme={theme} onThemeChange={setTheme} user={user} usageDays={usageDays} onBack={handleSettingsBack} />
   } else if (page === 'account') {
     content = <AccountPage user={user} recoveryMode={recoveryMode} forceLoginForm={forceLoginForm} onBack={handleAccountBack} />
   } else if (page === 'dashboard' && user) {
-    content = <Dashboard user={user} pins={pins} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
+    content = <Dashboard user={user} pins={pins} usageDays={usageDays} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
   } else if (page === 'explain-history' && activeEvent && user) {
     content = <ExplainHistoryPage org={org} event={activeEvent} user={user} onBack={handleHistoryBack} onContinue={handleContinueFromHistory} />
   } else if (org && !eventsLoaded) {

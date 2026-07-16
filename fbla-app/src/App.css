@@ -804,12 +804,35 @@
     radial-gradient(ellipse at 74% 50%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 55%),
     radial-gradient(ellipse at 16% 82%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.09) 0%,transparent 45%);
 }
-.dashboard-greeting {
+.dashboard-hero-top {
   position:relative; z-index:1;
+  display:flex; align-items:flex-start; justify-content:space-between; gap:24px; flex-wrap:wrap;
+}
+.dashboard-greeting {
   font-family:var(--font-head); font-size:38px; font-weight:800; color:#fff;
   letter-spacing:-0.9px; margin-bottom:10px;
 }
-.dashboard-subtitle { position:relative; z-index:1; font-size:15px; color:rgba(255,255,255,0.54); line-height:1.6; }
+.dashboard-subtitle { font-size:15px; color:rgba(255,255,255,0.54); line-height:1.6; }
+
+.streak-badge {
+  flex-shrink:0; display:flex; align-items:center; gap:10px;
+  padding:12px 20px; border-radius:999px; margin-top:4px;
+  background:linear-gradient(135deg, oklch(30% 0.09 55 / 0.5), oklch(24% 0.07 30 / 0.5));
+  border:1px solid oklch(60% 0.14 50 / 0.35);
+  box-shadow:0 4px 18px oklch(25% 0.1 40 / 0.35);
+}
+.streak-flame { font-size:22px; filter:drop-shadow(0 0 8px oklch(70% 0.18 55 / 0.6)); }
+.streak-num   { font-family:var(--font-head); font-size:24px; font-weight:800; color:#fff; }
+.streak-label { font-size:12.5px; font-weight:600; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.04em; }
+
+.usage-total-card {
+  display:flex; align-items:center; gap:16px;
+  padding:18px 20px; border-radius:var(--r-lg);
+  background:var(--surface); border:1.5px solid var(--border);
+}
+.usage-total-icon { font-size:26px; }
+.usage-total-num   { display:block; font-family:var(--font-head); font-size:20px; font-weight:800; color:var(--text); }
+.usage-total-label { display:block; font-size:12px; color:var(--text-3); margin-top:2px; }
 
 .dashboard-body { padding:36px 60px 60px; }
 

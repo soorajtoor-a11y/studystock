@@ -3,7 +3,7 @@ import Landing from './Landing'
 import Reveal from './components/Reveal'
 import { ORG_META, ORG_ORDER } from './orgMeta'
 import { supabase } from './supabaseClient'
-import appMark from './assets/studystock-mark.png'
+import appMark from './assets/vye-mark.png'
 import './App.css'
 
 // DECA event slugs: most cluster exams' folder names end in "-cluster",
@@ -186,7 +186,7 @@ function HomePage({ onStart }) {
     <div className="home-page">
       <div className="home-hero">
         <div className="home-hero-content">
-<h1 className="home-title">Study<span className="home-title-accent">StockAI</span></h1>
+<h1 className="home-title">Vye<span className="home-title-accent"> AI</span></h1>
           <p className="home-subtitle">
             Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
             and get instant explanations — all grounded in the official objectives.
@@ -240,7 +240,7 @@ function SettingsPage({ theme, onThemeChange, onBack }) {
     <div className="settings-page">
       <button className="mp-back-link" onClick={onBack}>← Back</button>
       <h1 className="settings-title">Settings</h1>
-      <p className="settings-subtitle">Personalize how StudyStockAI looks. Your choice is saved on this device.</p>
+      <p className="settings-subtitle">Personalize how Vye AI looks. Your choice is saved on this device.</p>
 
       <div className="settings-section">
         <p className="settings-section-label">Appearance</p>
@@ -1550,10 +1550,10 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
 
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
-      <button className="sidebar-logo" onClick={onLanding} title="Back to StudyStockAI overview">
+      <button className="sidebar-logo" onClick={onLanding} title="Back to Vye AI overview">
         <img className="sidebar-logo-mark" src={appMark} alt="" />
         <div className="sidebar-logo-text">
-          <span className="sidebar-logo-name">StudyStockAI</span>
+          <span className="sidebar-logo-name">Vye AI</span>
         </div>
       </button>
 
@@ -1783,7 +1783,7 @@ export default function App() {
   }
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving to the OS default every load.
-  const [theme, setTheme] = useState(() => localStorage.getItem('studystock-theme') || 'system')
+  const [theme, setTheme] = useState(() => localStorage.getItem('vye-theme') || 'system')
 
   useEffect(() => {
     fetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
@@ -1819,7 +1819,7 @@ export default function App() {
   // theme flips while "system" is selected, the app follows without a
   // reload, via the matchMedia change listener below.
   useEffect(() => {
-    localStorage.setItem('studystock-theme', theme)
+    localStorage.setItem('vye-theme', theme)
   }, [theme])
 
   useEffect(() => {

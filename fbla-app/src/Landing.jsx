@@ -3,7 +3,7 @@ import RotatingHeadline from './components/RotatingHeadline'
 import Reveal from './components/Reveal'
 import { Button, Card, Eyebrow } from './components/ui'
 import { ORG_META, ORG_ORDER } from './orgMeta'
-import appMark from './assets/studystock-mark.png'
+import appMark from './assets/vye-mark.png'
 import './Landing.css'
 
 function formatEventName(slug) {
@@ -224,7 +224,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
         <div className="lnav-inner">
           <a className="lnav-brand" href="#top" onClick={e => { e.preventDefault(); scrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' }) }}>
             <img className="lnav-mark" src={appMark} alt="" />
-            StudyStockAI
+            Vye AI
           </a>
           <nav className="lnav-links" aria-label="Primary">
             <button className="lnav-link" onClick={() => scrollToId('features')}>Features</button>
@@ -330,7 +330,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
           <Reveal as="div" className="section-head">
             <Eyebrow>Why it’s better</Eyebrow>
             <h2 className="section-title">Dense guidelines in. A clean quiz out.</h2>
-            <p className="section-desc">The official objectives are thorough — but they’re not built for studying. StudyStockAI turns them into practice you’ll actually use.</p>
+            <p className="section-desc">The official objectives are thorough — but they’re not built for studying. Vye AI turns them into practice you’ll actually use.</p>
           </Reveal>
           <div className="ba-row">
             <Reveal as={Card} className="ba-card ba-before">
@@ -362,7 +362,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
       {/* ── Footer ────────────────────────────────────────────────────── */}
       <footer className="lfooter">
         <div className="lfooter-inner">
-          <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> StudyStockAI</span>
+          <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> Vye AI</span>
           <nav className="lfooter-links" aria-label="Footer">
             <button onClick={() => scrollToId('features')}>Features</button>
             <button onClick={onPickEvent}>Events</button>

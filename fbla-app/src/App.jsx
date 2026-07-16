@@ -982,9 +982,15 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
 }
 
 // ── One-Page Section Notes ──────────────────────────────────────────────────
-function NotesPane({ event, org, objectiveText, objectives, title, onBack }) {
+function NotesPane({ event, org, objectiveText, objectives, title, user, onBack }) {
   const [notes, setNotes] = useState(null)
-  const [error, setError] = useState(null)
+  const [notesError, setNotesError] = useState(null)
+  // Q&A box at the bottom — same hook StudyPane's Explain chat uses, so
+  // questions asked here save to explain_history exactly the same way,
+  // scoped to this section's own text so the AI has the same context that
+  // produced the notes themselves.
+  const { messages, loading, error, setError, sendMessage } = useExplainChat({ org, event, objectiveText, user })
+  const [input, setInput] = useState('')
 
   useEffect(() => {
     fetch('/api/notes', {
@@ -993,17 +999,23 @@ function NotesPane({ event, org, objectiveText, objectives, title, onBack }) {
       body: JSON.stringify({ org, event, objective: objectiveText, objectives }),
     })
       .then(r => r.json())
-      .then(d => { if (d.error) setError(d.error); else setNotes(d.notes) })
-      .catch(e => setError(e.message))
+      .then(d => { if (d.error) setNotesError(d.error); else setNotes(d.notes) })
+      .catch(e => setNotesError(e.message))
   }, [])
 
-  if (error) return (
+  function handleSend() {
+    if (!input.trim() || loading) return
+    const text = input.trim(); setInput('')
+    sendMessage(text, messages)
+  }
+
+  if (notesError) return (
     <div className="study-pane">
       <div className="study-header"><button className="back-btn" onClick={onBack}>← Back</button></div>
       <div className="pane-error">
         <div className="pane-error-icon">⚠</div>
         <p>Error generating notes:</p>
-        <p className="pane-error-msg">{error}</p>
+        <p className="pane-error-msg">{notesError}</p>
         <button className="back-btn" onClick={onBack} style={{ marginTop: 16 }}>← Go Back</button>
       </div>
     </div>
@@ -1055,6 +1067,46 @@ function NotesPane({ event, org, objectiveText, objectives, title, onBack }) {
               </div>
             </div>
           ))}
+
+          <div className="notes-doc-rule notes-doc-rule-qa" />
+          <p className="notes-qa-label">Have a question about this section?</p>
+
+          {messages.length > 0 && (
+            <div className="notes-qa-messages">
+              {messages.map((m, i) => (
+                <div key={i} className={`message message-${m.role}`}>
+                  <div className="message-bubble">
+                    {m.content || (m.role === 'assistant' && loading
+                      ? <span className="typing"><span /><span /><span /></span>
+                      : '')}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {error && (
+            <div className="chat-error">
+              <span className="chat-error-icon">⚠</span>
+              <span>{error}</span>
+              <button className="chat-error-retry" onClick={() => {
+                setError(null)
+                sendMessage(messages[messages.length - 1]?.content || '', messages.slice(0, -1))
+              }}>Retry</button>
+            </div>
+          )}
+
+          <div className="notes-qa-input-row">
+            <input
+              className="chat-input"
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && handleSend()}
+              placeholder={`Ask anything about ${title || 'this section'}…`}
+              disabled={loading}
+            />
+            <button className="send-btn" onClick={handleSend} disabled={loading || !input.trim()}>Send</button>
+          </div>
         </div>
       </div>
     </div>
@@ -1064,60 +1116,24 @@ function NotesPane({ event, org, objectiveText, objectives, title, onBack }) {
 // Direct backend URL avoids Vite dev-proxy buffering SSE streams
 const BACKEND = import.meta.env.DEV ? 'http://localhost:3001' : ''
 
-// ── Explain / Chat Pane ───────────────────────────────────────────────────────
-function StudyPane({ event, org, objectiveText, general, user, initialMessages, conversationId: resumeId, onBack }) {
+// Shared by StudyPane's Explain chat AND the Q&A box at the bottom of
+// NotesPane — same SSE streaming, same error handling, same persistence to
+// explain_history. Extracted rather than duplicated by hand since a second
+// hand-copy of ~70 lines of streaming/parsing logic is real drift risk, not
+// "three similar lines."
+function useExplainChat({ org, event, objectiveText, user, initialMessages, resumeId }) {
   const [messages, setMessages] = useState(initialMessages || [])
-  const [input,    setInput]    = useState('')
   const [loading,  setLoading]  = useState(false)
   const [error,    setError]    = useState(null)
-  const bottomRef = useRef(null)
-  const chatRef   = useRef(null)
-  const didInit   = useRef(false)
-  // Whether to keep auto-following new content to the bottom. Starts true
-  // (a fresh conversation should track the live response), but a real
-  // scroll listener — not just re-checking position whenever `messages`
-  // happens to change — is what makes this reliable. A long streamed
-  // response fires setMessages on every small text chunk, sometimes
-  // several times a second; re-deriving "is the user near the bottom" only
-  // at those moments raced a human's much slower scroll gesture and kept
-  // winning, snapping back to the bottom mid-scroll — which is exactly
-  // what "I can't scroll up, it's stuck" looks like on a long answer. A
-  // dedicated scroll listener reacts to the ACTUAL gesture the instant it
-  // happens, so scrolling up even slightly reliably turns auto-follow off
-  // until the user scrolls back down themselves (or sends a new message).
-  const stickToBottom = useRef(true)
   // One id per conversation thread, shared by every message saved in it —
   // reused when resuming a saved conversation (via "Continue"), freshly
-  // generated otherwise, so a new "Ask Anything" session starts its own
-  // thread instead of appending to whatever was last saved.
+  // generated otherwise, so a new session starts its own thread instead of
+  // appending to whatever was last saved.
   const conversationId = useRef(resumeId || crypto.randomUUID()).current
-
-  useEffect(() => {
-    if (didInit.current || general || (initialMessages && initialMessages.length)) return
-    didInit.current = true
-    sendMessage(`Explain this objective in plain language with a real-world example: "${objectiveText}"`, [])
-  }, [])
-
-  // Real scroll listener, not just a position check tied to `messages` —
-  // see the stickToBottom comment above for why that distinction matters.
-  useEffect(() => {
-    const el = chatRef.current
-    if (!el) return
-    function onScroll() {
-      stickToBottom.current = el.scrollHeight - el.scrollTop - el.clientHeight < 100
-    }
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => el.removeEventListener('scroll', onScroll)
-  }, [])
-
-  useEffect(() => {
-    if (stickToBottom.current) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages])
 
   async function sendMessage(text, history) {
     const userMsg    = { role: 'user', content: text }
     const newHistory = [...history, userMsg]
-    stickToBottom.current = true // a fresh question means follow the new answer, regardless of prior scroll position
     setMessages(newHistory)
     setLoading(true)
     setError(null)
@@ -1187,9 +1203,58 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
     setLoading(false)
   }
 
+  return { messages, setMessages, loading, error, setError, sendMessage, conversationId }
+}
+
+// ── Explain / Chat Pane ───────────────────────────────────────────────────────
+function StudyPane({ event, org, objectiveText, general, user, initialMessages, conversationId: resumeId, onBack }) {
+  const { messages, setMessages, loading, error, setError, sendMessage } = useExplainChat({
+    org, event, objectiveText, user, initialMessages, resumeId,
+  })
+  const [input, setInput] = useState('')
+  const bottomRef = useRef(null)
+  const chatRef   = useRef(null)
+  const didInit   = useRef(false)
+  // Whether to keep auto-following new content to the bottom. Starts true
+  // (a fresh conversation should track the live response), but a real
+  // scroll listener — not just re-checking position whenever `messages`
+  // happens to change — is what makes this reliable. A long streamed
+  // response fires setMessages on every small text chunk, sometimes
+  // several times a second; re-deriving "is the user near the bottom" only
+  // at those moments raced a human's much slower scroll gesture and kept
+  // winning, snapping back to the bottom mid-scroll — which is exactly
+  // what "I can't scroll up, it's stuck" looks like on a long answer. A
+  // dedicated scroll listener reacts to the ACTUAL gesture the instant it
+  // happens, so scrolling up even slightly reliably turns auto-follow off
+  // until the user scrolls back down themselves (or sends a new message).
+  const stickToBottom = useRef(true)
+
+  useEffect(() => {
+    if (didInit.current || general || (initialMessages && initialMessages.length)) return
+    didInit.current = true
+    sendMessage(`Explain this objective in plain language with a real-world example: "${objectiveText}"`, [])
+  }, [])
+
+  // Real scroll listener, not just a position check tied to `messages` —
+  // see the stickToBottom comment above for why that distinction matters.
+  useEffect(() => {
+    const el = chatRef.current
+    if (!el) return
+    function onScroll() {
+      stickToBottom.current = el.scrollHeight - el.scrollTop - el.clientHeight < 100
+    }
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    if (stickToBottom.current) bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages])
+
   function handleSend() {
     if (!input.trim() || loading) return
     const text = input.trim(); setInput('')
+    stickToBottom.current = true // a fresh question means follow the new answer, regardless of prior scroll position
     sendMessage(text, messages)
   }
 
@@ -2249,7 +2314,7 @@ export default function App() {
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
     } else if (study.mode === 'notes') {
-      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} title={study.title} onBack={handleBack} />
+      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} title={study.title} user={user} onBack={handleBack} />
     } else {
       // Keyed on whatever uniquely identifies THIS chat session, so React
       // fully remounts StudyPane (fresh internal `messages` state, fresh

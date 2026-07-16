@@ -1310,6 +1310,16 @@
 .notes-entry-heading { font-family:var(--font-head); font-size:14.5px; font-weight:700; color:var(--text); margin-bottom:5px; }
 .notes-entry-text    { font-size:13.5px; line-height:1.7; color:var(--text-2); }
 
+.notes-doc-rule-qa { margin-top:8px; }
+.notes-qa-label {
+  font-family:var(--font-head); font-size:13.5px; font-weight:700;
+  color:var(--text); margin-bottom:14px;
+}
+.notes-qa-messages { display:flex; flex-direction:column; gap:12px; margin-bottom:14px; }
+.notes-qa-messages .message-bubble { max-width:100%; font-size:13px; }
+.notes-qa-input-row { display:flex; gap:10px; }
+.notes-qa-input-row .chat-input { flex:1; }
+
 .pane-partial-note {
   font-size:12.5px; color:var(--text-3); background:var(--bg);
   border:1px solid var(--border); border-radius:8px; padding:8px 14px;

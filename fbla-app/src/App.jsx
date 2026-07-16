@@ -429,7 +429,17 @@ function AccountPage({ user, recoveryMode, onBack }) {
         <button
           type="button"
           className="account-google-btn"
-          onClick={() => supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin } })}
+          onClick={() => supabase.auth.signInWithOAuth({
+            provider: 'google',
+            options: {
+              redirectTo: window.location.origin,
+              // Without this, Google silently reuses whichever account
+              // already has an active browser session (or was last used
+              // with this app) instead of letting the user pick — genuinely
+              // signing in with a *different* Google account was impossible.
+              queryParams: { prompt: 'select_account' },
+            },
+          })}
         >
           <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
             <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" />
@@ -1752,7 +1762,18 @@ export default function App() {
   // Set by the landing page's "Sign In" button; consumed by the effect below
   // to jump straight to the logged-in Dashboard once a session actually
   // appears, rather than back to wherever Account's normal "back" would go.
-  const [postLoginRedirect, setPostLoginRedirect] = useState(false)
+  // Also seeded true on initial load if the URL itself looks like an OAuth
+  // redirect callback (Google, etc.) — that flow leaves the SPA entirely
+  // (full navigation to Google and back), so the in-memory flag set by
+  // clicking "Sign In" is long gone by the time the page reloads; without
+  // this, a fresh Google sign-in landed on the marketing page instead of
+  // the Dashboard even though `user` was correctly populated.
+  // Excludes type=recovery specifically — a password-reset link's callback
+  // also carries access_token in the hash, and that one must land on the
+  // "set a new password" form (handled separately below via the
+  // PASSWORD_RECOVERY event), not jump straight to the Dashboard.
+  const [postLoginRedirect, setPostLoginRedirect] = useState(() =>
+    window.location.hash.includes('access_token') && !window.location.hash.includes('type=recovery'))
   // Whether the Explain History side panel is showing for the current
   // event — opened by clicking a pinned card on the Dashboard, hitting
   // "Ask Anything" in the event header, or "Continue this conversation"

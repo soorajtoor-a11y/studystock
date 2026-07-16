@@ -452,53 +452,125 @@ function shuffle(arr) {
   return a;
 }
 
-// Each scope has its own pre-generated bank size. The bank is only ever
-// served when the request asks for exactly that many questions — anything
-// smaller generates fresh so it isn't just a random subset of the bigger
-// pre-generated pool.
+// Each scope has its own pre-generated bank size — still used by
+// generate_bank.py as its tier target, but no longer a hard requirement for
+// serving from cache here (see loadQuizPool below).
 const SCOPE_BANK_MAX = { event: 50, section: 20, objective: 10 };
 const SCOPE_BANK_FILENAME = { section: 'question-bank-sections.json', objective: 'question-bank-objectives.json' };
 
-// Serve `count` questions from the pre-generated section/objective bank, if
-// one exists for this event and the request's objective text resolves to a
-// pool in it. Returns null (never throws) on any miss — the caller always
-// falls through to live generation, same as the event-tier path.
-function serveScopedBank(org, event, scope, objective, difficulty) {
-  const filename = SCOPE_BANK_FILENAME[scope];
-  if (!filename) return null;
-  const bankPath = path.join(MATERIALS_DIR, org, event, filename);
-  if (!fs.existsSync(bankPath)) return null;
+// ---------------------------------------------------------------------------
+// Shared "live cache" — whenever any user's request falls through to the AI
+// (below in /api/quiz, /api/flashcards, /api/notes), the fresh result is
+// saved here, per event, so every subsequent request for that same
+// scope/objective is served straight from disk instead of paying for another
+// generation. This is the same idea as the generate_bank.py-produced banks
+// (question-bank*.json), just filled in lazily by live traffic instead of a
+// bulk offline run — the two sources are simply unioned when serving.
+// ---------------------------------------------------------------------------
+function liveCachePath(org, event, filename) {
+  return path.join(MATERIALS_DIR, org, event, filename);
+}
+function loadLiveCache(org, event, filename) {
+  const p = liveCachePath(org, event, filename);
+  if (!fs.existsSync(p)) return {};
+  try {
+    const data = JSON.parse(fs.readFileSync(p, 'utf8'));
+    return (data && typeof data === 'object' && !Array.isArray(data)) ? data : {};
+  } catch { return {}; }
+}
+function saveLiveCache(org, event, filename, data) {
+  try { fs.writeFileSync(liveCachePath(org, event, filename), JSON.stringify(data, null, 2)); }
+  catch (err) { console.error(`[live-cache] failed to save ${filename}:`, err.message); }
+}
 
-  let data;
-  try { data = JSON.parse(fs.readFileSync(bankPath, 'utf8')); }
-  catch { return null; }
+// Section-scope requests send "A. Title: obj1; obj2; ..." (see
+// buildSectionText in App.jsx) — pull out just the title so both the real
+// bank and the live cache key off the same short, stable string.
+function sectionCacheKey(objective) {
+  const m = (objective || '').match(/^[A-Z]{1,2}\.\s+(.+?):\s/);
+  return m ? m[1] : (objective || '__section__');
+}
 
-  let pool = null;
-  if (scope === 'objective') {
-    // Objective-scope requests send the raw objective sentence verbatim —
-    // it's the exact key generate_bank.py used when building this pool.
-    pool = data[objective] || null;
-  } else if (scope === 'section') {
-    // Section-scope requests send "A. Title: obj1; obj2; ..." (see
-    // buildSectionText in App.jsx) — pull out just the title to match the
-    // bank's section-name keys.
-    const m = (objective || '').match(/^[A-Z]{1,2}\.\s+(.+?):\s/);
-    pool = m ? (data[m[1]] || null) : null;
+const LIVE_QUIZ_CACHE_FILE = {
+  event:     'question-bank.live.json',
+  section:   'question-bank-sections.live.json',
+  objective: 'question-bank-objectives.live.json',
+};
+
+function quizCacheKey(scope, objective) {
+  if (scope === 'event') return '__event__';
+  if (scope === 'section') return sectionCacheKey(objective);
+  return objective || '__objective__';
+}
+
+// Returns the merged (real bank ∪ live cache), quiz-format, unshuffled pool
+// for a scope. Never throws; empty array on total miss.
+function loadQuizPool(org, event, scope, objective) {
+  let bankPool = [];
+  if (scope === 'event') {
+    const bank = loadBank(org, event);
+    if (bank) bankPool = bank.map(bankToQuizFormat);
+  } else {
+    const filename = SCOPE_BANK_FILENAME[scope];
+    const bankPath = filename && path.join(MATERIALS_DIR, org, event, filename);
+    if (bankPath && fs.existsSync(bankPath)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(bankPath, 'utf8'));
+        const raw = scope === 'objective' ? (data[objective] || null) : (data[sectionCacheKey(objective)] || null);
+        if (raw) bankPool = raw.map(bankToQuizFormat);
+      } catch { /* fall through with empty bankPool */ }
+    }
   }
-  if (!pool || pool.length === 0) return null;
 
+  const liveFile = LIVE_QUIZ_CACHE_FILE[scope];
+  const livePool = liveFile ? (loadLiveCache(org, event, liveFile)[quizCacheKey(scope, objective)] || []) : [];
+  if (!livePool.length) return bankPool;
+
+  const seen = new Set(bankPool.map(q => normalizeQuestionText(q.question)));
+  const merged = bankPool.slice();
+  for (const q of livePool) {
+    const k = normalizeQuestionText(q.question);
+    if (!seen.has(k)) { seen.add(k); merged.push(q); }
+  }
+  return merged;
+}
+
+// Serve `count` questions straight from the merged pool if it already has
+// enough matching-difficulty questions — no AI call needed. Returns null
+// (never throws) on any miss, so the caller always falls through to live
+// generation.
+function serveQuizFromPool(org, event, scope, objective, difficulty, count) {
+  const pool = loadQuizPool(org, event, scope, objective);
+  if (!pool.length) return null;
   let filtered = pool;
   if (difficulty) {
     const byDiff = pool.filter(q => q.difficulty === difficulty);
     if (byDiff.length) filtered = byDiff;
   }
-  // Slice to the scope's max — the pool can legitimately hold MORE than
-  // that (e.g. Intro-to-IT's section pools still have 25 each even though
-  // SCOPE_BANK_MAX.section is now 20, since the extra already-generated
-  // questions were kept rather than thrown away). Sampling a shuffled
-  // subset each time is a deliberate bonus: repeat quiz-takers on the same
-  // section see genuine variety instead of the identical 20 every time.
-  return shuffle(filtered).slice(0, SCOPE_BANK_MAX[scope]).map(bankToQuizFormat);
+  if (filtered.length < count) return null;
+  return shuffle(filtered).slice(0, count);
+}
+
+// Folds freshly AI-generated questions into the live cache pool for this
+// scope/objective, deduped against whatever's already there (bank or live),
+// so the next request for this exact scope/objective — from any user — can
+// be served from disk instead of generating again.
+function mergeIntoLiveQuizCache(org, event, scope, objective, freshQuestions) {
+  const liveFile = LIVE_QUIZ_CACHE_FILE[scope];
+  if (!liveFile || !freshQuestions.length) return;
+  const key = quizCacheKey(scope, objective);
+  const cache = loadLiveCache(org, event, liveFile);
+  const existingPool = cache[key] || [];
+  // Dedupe against the FULL merged pool (bank + live), not just live, so a
+  // question that already exists in the real bank never gets re-saved here.
+  const seen = new Set(loadQuizPool(org, event, scope, objective).map(q => normalizeQuestionText(q.question)));
+  const merged = existingPool.slice();
+  for (const q of freshQuestions) {
+    const k = normalizeQuestionText(q.question);
+    if (!seen.has(k)) { seen.add(k); merged.push(q); }
+  }
+  cache[key] = merged;
+  saveLiveCache(org, event, liveFile, cache);
 }
 
 // Mirrors generate_bank.py's difficulty_tier() exactly, so on-the-fly
@@ -506,23 +578,6 @@ function serveScopedBank(org, event, scope, objective, difficulty) {
 // every "introduction-to-*" event is INTRO tier, everything else STANDARD.
 function difficultyTier(event) {
   return (event || '').startsWith('introduction-to-') ? 'INTRO' : 'STANDARD';
-}
-
-// Serve the full pre-generated bank for an exact-max-count event request.
-// Returns an array of quiz-format questions, or null if the bank is missing.
-function serveFromBank(org, event, difficulty) {
-  const bank = loadBank(org, event);
-  if (!bank || bank.length === 0) return null;
-
-  // Prefer questions matching the requested difficulty, but never fail just
-  // because the bank doesn't stock that difficulty — fall back to everything.
-  let pool = bank;
-  if (difficulty) {
-    const byDiff = bank.filter(q => q.difficulty === difficulty);
-    if (byDiff.length) pool = byDiff;
-  }
-
-  return shuffle(pool).slice(0, SCOPE_BANK_MAX.event).map(bankToQuizFormat);
 }
 
 // ---------------------------------------------------------------------------
@@ -947,23 +1002,18 @@ app.post('/api/quiz', async (req, res) => {
   if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
   console.log(`[quiz] org=${org} event=${event} scope=${scope} count=${count} difficulty=${difficulty} objective="${objective?.slice(0,60)}"`);
 
-  // Fast path: exact-max-count request — serve the pre-generated bank for
-  // this scope, if one exists and has a matching pool.
-  if (scope === 'event' && count === SCOPE_BANK_MAX.event) {
-    const banked = serveFromBank(org, event, difficulty);
-    if (banked) {
-      console.log(`[bank] serving ${banked.length} ${difficulty} questions for ${event}`);
-      return res.json({ questions: banked, source: 'bank' });
-    }
-    console.log(`[bank] miss — falling through to AI`);
-  } else if ((scope === 'section' || scope === 'objective') && count === SCOPE_BANK_MAX[scope]) {
-    const banked = serveScopedBank(org, event, scope, objective, difficulty);
-    if (banked) {
-      console.log(`[bank] serving ${banked.length} ${difficulty} ${scope} questions for ${event}`);
-      return res.json({ questions: banked, source: 'bank' });
-    }
-    console.log(`[bank] miss (${scope}) — falling through to AI`);
+  // Fast path: serve straight from the merged (real bank ∪ live cache) pool
+  // whenever it already has enough matching questions — no AI call needed,
+  // for ANY count, not just an exact tier match. The live cache is filled in
+  // below whenever a request DOES fall through to AI, so a given
+  // scope/objective/difficulty combo only ever needs to be generated once,
+  // globally, across every user.
+  const banked = serveQuizFromPool(org, event, scope, objective, difficulty, count);
+  if (banked) {
+    console.log(`[bank] serving ${banked.length} ${difficulty || ''} ${scope} questions for ${event}`);
+    return res.json({ questions: banked, source: 'bank' });
   }
+  console.log(`[bank] miss (${scope}, count=${count}) — falling through to AI`);
 
   // Slow path: generate with AI
   const outline = extractRelevantSection(getOutline(org, event), objective);
@@ -1041,6 +1091,10 @@ app.post('/api/quiz', async (req, res) => {
 
   const questions = kept.slice(0, count);
   rememberQuestions(event, scope, objective, questions);
+  // Save to the shared live cache so this exact scope/objective never has to
+  // be regenerated by AI again — the next request (this user or any other)
+  // hits the fast path above instead.
+  mergeIntoLiveQuizCache(org, event, scope, objective, questions);
   // `requested` lets the client tell a genuine partial batch (fewer clean
   // questions found than asked for) apart from a normal full response,
   // instead of silently treating whatever came back as "the whole quiz".
@@ -1048,25 +1102,55 @@ app.post('/api/quiz', async (req, res) => {
 });
 
 // Flashcard generation — retries up to 3 times total, slices to exact count
+const FLASHCARD_CACHE_FILE = 'flashcards.live.json';
+function flashcardCacheKey(objective) { return objective || '__general__'; }
+
 app.post('/api/flashcards', async (req, res) => {
   const { org, event, objective, count } = req.body;
   if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+
+  // Shared cache, same idea as the quiz live cache above: once enough cards
+  // exist for this objective (from any prior user's request), serve
+  // straight from disk instead of generating again.
+  const cache = loadLiveCache(org, event, FLASHCARD_CACHE_FILE);
+  const key = flashcardCacheKey(objective);
+  const pool = cache[key] || [];
+  if (pool.length >= count) {
+    return res.json({ cards: shuffle(pool).slice(0, count), source: 'cache' });
+  }
+
   const outline = extractRelevantSection(getOutline(org, event), objective);
   const extras  = getExtras(org, event);
-  const prompt  = buildGenPrompt('flashcard', count, objective, outline, '', extras);
+  const needed  = count - pool.length;
+  const prompt  = buildGenPrompt('flashcard', needed, objective, outline, '', extras);
 
   try {
     const parsed = await withRetry(async () => {
       let raw = '';
       if (PROVIDER === 'anthropic') raw = await callAnthropic(prompt);
-      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(count * 200, 8192) });
+      else if (PROVIDER === 'gemini') raw = await callGemini(prompt, { maxOutputTokens: Math.min(needed * 200, 8192) });
       else raw = await callOllamaStreaming([{ role: 'user', content: prompt }], OLLAMA_GEN_OPTS);
       return extractJSON(raw);
     });
-    const cards = normalizeCards(parsed).slice(0, count);
-    if (cards.length === 0) throw new Error('Model returned no usable flashcards');
-    res.json({ cards });
+    const fresh = normalizeCards(parsed);
+    if (fresh.length === 0 && pool.length === 0) throw new Error('Model returned no usable flashcards');
+
+    // Dedupe by front text before folding into the shared pool.
+    const seen = new Set(pool.map(c => c.front.trim().toLowerCase()));
+    const merged = pool.slice();
+    for (const c of fresh) {
+      const k = c.front.trim().toLowerCase();
+      if (k && !seen.has(k)) { seen.add(k); merged.push(c); }
+    }
+    cache[key] = merged;
+    saveLiveCache(org, event, FLASHCARD_CACHE_FILE, cache);
+
+    res.json({ cards: shuffle(merged).slice(0, count), source: pool.length ? 'cache+ai' : 'ai' });
   } catch (err) {
+    if (pool.length) {
+      console.warn(`[flashcards] AI generation failed, serving ${pool.length} cached cards instead:`, err.message);
+      return res.json({ cards: shuffle(pool).slice(0, count), source: 'cache-partial' });
+    }
     console.error('Flashcard error:', err.message);
     res.status(500).json({ error: err.message });
   }
@@ -1075,10 +1159,25 @@ app.post('/api/flashcards', async (req, res) => {
 // One-page study notes for an entire section — one entry per objective,
 // generated together (not per-objective Explain calls) so the notes read as
 // one coherent document instead of N separate disconnected explanations.
+const NOTES_CACHE_FILE = 'notes.live.json';
+// Notes are a static reference document for a fixed set of objectives, so
+// (unlike quiz/flashcard pools) there's no benefit to variety — the same
+// section should always show the same notes. Cache key is the exact
+// objectives list, so a different set of objectives (e.g. outline edits)
+// naturally misses and regenerates rather than serving stale content.
+function notesCacheKey(objectives) { return objectives.join('|'); }
+
 app.post('/api/notes', async (req, res) => {
   const { org, event, objective, objectives } = req.body;
   if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
   if (!Array.isArray(objectives) || objectives.length === 0) return res.status(400).json({ error: 'No objectives provided' });
+
+  const cache = loadLiveCache(org, event, NOTES_CACHE_FILE);
+  const key = notesCacheKey(objectives);
+  if (cache[key]) {
+    return res.json({ notes: cache[key], source: 'cache' });
+  }
+
   const outline = extractRelevantSection(getOutline(org, event), objective);
   const extras  = getExtras(org, event);
   const prompt  = buildGenPrompt('notes', objectives.length, objective, outline, '', extras, event, [], objectives);
@@ -1093,7 +1192,9 @@ app.post('/api/notes', async (req, res) => {
     });
     const notes = normalizeNotes(parsed, objectives);
     if (notes.length === 0) throw new Error('Model returned no usable notes');
-    res.json({ notes });
+    cache[key] = notes;
+    saveLiveCache(org, event, NOTES_CACHE_FILE, cache);
+    res.json({ notes, source: 'ai' });
   } catch (err) {
     console.error('Notes error:', err.message);
     res.status(500).json({ error: err.message });

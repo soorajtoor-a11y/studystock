@@ -43,7 +43,7 @@ export default function Navbar({ scrolled, onScrollTop, onScrollTo, onSignIn, on
             onClick={onSignIn}
             className="min-h-[44px] rounded-lg px-4.5 text-sm font-bold text-ink-2 transition-colors hover:bg-tint hover:text-ink"
           >
-            Sign In
+            Sign in for Free
           </button>
           <motion.button
             type="button"
@@ -53,7 +53,7 @@ export default function Navbar({ scrolled, onScrollTop, onScrollTo, onSignIn, on
             transition={{ type: 'spring', stiffness: 400, damping: 20 }}
             className="min-h-[44px] rounded-lg bg-brand px-5 text-sm font-bold text-white hover:bg-brand-hover"
           >
-            Try it free
+            Try it
           </motion.button>
         </div>
 
@@ -90,14 +90,14 @@ export default function Navbar({ scrolled, onScrollTop, onScrollTo, onSignIn, on
                 How it works
               </button>
               <button type="button" onClick={() => { setMenuOpen(false); onSignIn() }} className="min-h-[44px] rounded-lg px-2 text-left text-[15px] font-semibold text-ink-2 hover:bg-tint hover:text-ink">
-                Sign In
+                Sign in for Free
               </button>
               <button
                 type="button"
                 onClick={() => { setMenuOpen(false); onStart() }}
                 className="mt-1 min-h-[44px] rounded-lg bg-brand px-4 text-left text-[15px] font-bold text-white hover:bg-brand-hover"
               >
-                Try it free
+                Try it
               </button>
             </div>
           </motion.nav>

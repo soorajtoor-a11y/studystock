@@ -123,7 +123,7 @@ export default function Hero({ onStart, onSeeFeatures }) {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <h1 className="flex flex-col gap-1.5 font-display text-[clamp(2rem,4.6vw,3.4rem)] font-extrabold leading-[1.1] tracking-tight text-ink">
-            <span>Study smarter for FBLA, DECA, and HOSA.</span>
+            <span>Study smarter for FBLA, DECA, and HOSA. For free.</span>
             <RotatingHeadline phrases={ROTATING_PHRASES} />
           </h1>
           <p className="mt-5.5 max-w-md text-base leading-relaxed text-ink-3 sm:text-[16.5px]">

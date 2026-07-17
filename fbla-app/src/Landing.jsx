@@ -343,12 +343,13 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
             <div className="ba-arrow" aria-hidden="true">→</div>
             <Reveal as={Card} delay={120} className="ba-card ba-after">
               <span className="ba-label ba-label-accent">Instant flashcard</span>
-              <div className="ba-flashcard">
-                <span className="ba-fc-side">Term</span>
-                <p className="ba-fc-text">Multi-column journal</p>
-                <span className="ba-fc-divider" />
-                <span className="ba-fc-side">Definition</span>
-                <p className="ba-fc-text ba-fc-def">A journal with multiple debit/credit columns used to record recurring transactions of the same type efficiently.</p>
+              <div className="ba-flashcard-stack">
+                <div className="ba-flashcard-back" aria-hidden="true" />
+                <div className="ba-flashcard">
+                  <span className="ba-fc-side">Term</span>
+                  <p className="ba-fc-text">Multi-column journal</p>
+                  <span className="ba-fc-hint">Click to flip →</span>
+                </div>
               </div>
             </Reveal>
           </div>

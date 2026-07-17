@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* Declared here (matching Tailwind's own internal layer order exactly) so
+   the "base" layer's priority relative to Tailwind's "utilities" layer is
+   locked in regardless of which stylesheet's content happens to load
+   first. Without this, the plain reset below — being unlayered CSS — would
+   silently beat every Tailwind spacing utility (mx-auto, px-*, mt-*, …)
+   project-wide, since unlayered rules always win over layered ones. */
+@layer theme, base, components, utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+}
 
 :root {
   /* ── Brand accent — "Signal": one hue, driven entirely by --signal-hue.

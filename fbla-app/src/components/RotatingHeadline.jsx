@@ -1,6 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-
-const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 
 // Cycles through `phrases`, crossfading + sliding up on each change.
 // Some phrases wrap to one line, others to two — so the container height
@@ -10,18 +9,10 @@ const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)'
 // static text for prefers-reduced-motion.
 export default function RotatingHeadline({ phrases, interval = 2500, className = '' }) {
   const [index, setIndex] = useState(0)
-  const [reducedMotion, setReducedMotion] = useState(false)
   const [reservedHeight, setReservedHeight] = useState(null)
   const pausedRef = useRef(false)
   const measureRef = useRef(null)
-
-  useEffect(() => {
-    const mq = window.matchMedia(REDUCED_MOTION_QUERY)
-    setReducedMotion(mq.matches)
-    const onChange = e => setReducedMotion(e.matches)
-    mq.addEventListener('change', onChange)
-    return () => mq.removeEventListener('change', onChange)
-  }, [])
+  const reducedMotion = useReducedMotion()
 
   useLayoutEffect(() => {
     const measureEl = measureRef.current
@@ -48,19 +39,30 @@ export default function RotatingHeadline({ phrases, interval = 2500, className =
   }, [reducedMotion, phrases.length, interval])
 
   if (reducedMotion) {
-    return <span className={`rh ${className}`}>{phrases[0]}</span>
+    return <span className={`block text-brand ${className}`}>{phrases[0]}</span>
   }
 
   return (
     <span
-      className={`rh rh-live ${className}`}
+      className={`relative block w-full min-h-[1.15em] overflow-hidden ${className}`}
       style={reservedHeight ? { height: reservedHeight } : undefined}
       onMouseEnter={() => { pausedRef.current = true }}
       onMouseLeave={() => { pausedRef.current = false }}
     >
-      <span className="rh-track" key={index}>{phrases[index]}</span>
-      <span className="rh-measure" ref={measureRef} aria-hidden="true">
-        {phrases.map((p, i) => <span key={i} className="rh-measure-item">{p}</span>)}
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={index}
+          className="inline-block text-brand"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -12 }}
+          transition={{ duration: 0.38, ease: [0.16, 1, 0.3, 1] }}
+        >
+          {phrases[index]}
+        </motion.span>
+      </AnimatePresence>
+      <span className="invisible absolute left-0 top-0 -z-10 w-full" ref={measureRef} aria-hidden="true">
+        {phrases.map((p, i) => <span key={i} className="block">{p}</span>)}
       </span>
     </span>
   )

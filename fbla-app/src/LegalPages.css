@@ -4,8 +4,13 @@
    minimal header/footer built from the same design tokens as Landing.css.
    ════════════════════════════════════════════════════════════════════ */
 
+/* index.css's body/#root are fixed at 100vh with overflow:hidden — built
+   for the main app shell, which manages its own internal scroll regions.
+   These static legal pages share that same global stylesheet but are plain
+   flow documents, so they need to own their own scrollport rather than
+   relying on the (deliberately non-scrolling) body. */
 .legal-page {
-  min-height: 100vh; display: flex; flex-direction: column;
+  height: 100%; overflow-y: auto; display: flex; flex-direction: column;
   background: var(--bg); color: var(--text);
 }
 

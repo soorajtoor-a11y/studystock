@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'motion/react'
 
 const RAW_OBJECTIVE = `A. Journalizing
@@ -7,7 +8,14 @@ const RAW_OBJECTIVE = `A. Journalizing
    receivable/payable) in appropriate
    journals.`
 
+const SAMPLE_CARD = {
+  front: 'Multi-column journal',
+  back: 'A journal with dedicated columns for frequently recurring transaction types, so similar entries can be recorded and totaled without repeating account titles.',
+}
+
 export default function BeforeAfter() {
+  const [flipped, setFlipped] = useState(false)
+
   return (
     <section className="mx-auto max-w-5xl px-6 py-24 sm:px-8 sm:py-28">
       <motion.div
@@ -43,15 +51,29 @@ export default function BeforeAfter() {
 
         <div className="flex shrink-0 items-center justify-center rotate-90 text-2xl text-ink-4 sm:rotate-0">→</div>
 
-        <div className="relative flex-1">
-          <div aria-hidden="true" className="absolute inset-2 -right-2 -bottom-2 rounded-lg border-[1.5px] border-dashed border-brand-light bg-surface" />
-          <div className="relative rounded-lg border-[1.5px] border-dashed border-brand-light bg-tint p-5">
-            <span className="mb-3.5 inline-block font-code text-[11px] font-bold uppercase tracking-wide text-brand">
-              Instant flashcard
-            </span>
-            <span className="block font-code text-[10.5px] font-bold uppercase tracking-wide text-brand">Term</span>
-            <p className="my-1.5 mb-4 text-[15px] font-semibold text-ink">Multi-column journal</p>
-            <span className="block text-[11.5px] text-ink-4">Click to flip →</span>
+        <div className="flex-1">
+          <span className="mb-3.5 inline-block font-code text-[11px] font-bold uppercase tracking-wide text-brand">
+            Instant flashcard
+          </span>
+          <div
+            role="button"
+            tabIndex={0}
+            aria-label="Sample flashcard, click to flip"
+            className={`fc-card fc-card-demo w-full max-w-none h-[190px] ${flipped ? 'flipped' : ''}`}
+            onClick={() => setFlipped(f => !f)}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setFlipped(f => !f) } }}
+          >
+            <div className="fc-card-inner">
+              <div className="fc-face fc-front">
+                <span className="fc-side-label">Term</span>
+                <p className="fc-text">{SAMPLE_CARD.front}</p>
+                <span className="fc-hint">Click to flip →</span>
+              </div>
+              <div className="fc-face fc-back">
+                <span className="fc-side-label">Definition</span>
+                <p className="fc-text text-[14px]">{SAMPLE_CARD.back}</p>
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

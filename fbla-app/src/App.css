@@ -1515,6 +1515,10 @@
 .fc-back  .fc-text { color:#fff; }
 .fc-hint  { font-size:10.5px; color:var(--text-4); margin-top:14px; }
 
+.fc-card-demo { max-width:none; }
+.fc-card-demo .fc-face { padding:24px 22px; }
+.fc-card-demo .fc-text { font-size:15px; }
+
 .fc-actions { display:flex; gap:12px; }
 .fc-btn { padding:10px 26px; border-radius:var(--r); border:2px solid; font-family:inherit; font-size:13px; font-weight:700; cursor:pointer; transition:all 0.14s; }
 .fc-btn-review { border-color:oklch(87% 0.09 75); color:var(--amber); background:var(--amber-bg); }

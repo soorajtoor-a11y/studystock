@@ -22,13 +22,13 @@ const FEATURES = [
   { icon: '📝', title: 'Quiz Mode', desc: 'AI-generated multiple-choice questions scoped to any objective, section, or full event.' },
   { icon: '🃏', title: 'Flashcards', desc: '“Got It” / “Still Learning” tracking so review time goes where it’s needed.' },
   { icon: '💡', title: 'Explain Mode', desc: 'Plain-language breakdowns with real-world examples, plus follow-up chat.' },
-  { icon: '📚', title: 'Official Objectives', desc: 'Every question is grounded in the official competitive event guidelines — FBLA, DECA, and HOSA alike.' },
-  { icon: '🗂️', title: 'Three Organizations', desc: 'FBLA, DECA, and HOSA — covered end to end, from Accounting to Health Science.' },
-  { icon: '⚡', title: 'Instant Feedback', desc: 'See what you got right, what you missed, and why — immediately.' },
+  { icon: '📚', title: 'Official Objectives', desc: 'Every question is grounded in the official competitive event guidelines: FBLA, DECA, and HOSA alike.' },
+  { icon: '🗂️', title: 'Three Organizations', desc: 'FBLA, DECA, and HOSA, covered end to end, from Accounting to Health Science.' },
+  { icon: '⚡', title: 'Instant Feedback', desc: 'See what you got right, what you missed, and why, right away.' },
 ]
 
 const STEPS = [
-  { n: '01', title: 'Pick your organization', desc: 'FBLA, DECA, or HOSA — then browse every competitive event inside it.' },
+  { n: '01', title: 'Pick your organization', desc: 'FBLA, DECA, or HOSA, then browse every competitive event inside it.' },
   { n: '02', title: 'Choose your scope', desc: 'Study a single objective, a whole section, or the full event outline.' },
   { n: '03', title: 'Study your way', desc: 'Quiz yourself, drill flashcards, or ask the AI to explain it plainly.' },
 ]
@@ -54,7 +54,7 @@ const SAMPLE_QUESTION = {
     { letter: 'C', text: 'Unearned Revenue', correct: true },
     { letter: 'D', text: 'Cash' },
   ],
-  explanation: 'The service hasn’t been performed yet, so it isn’t earned revenue — it’s a liability (Unearned Revenue) until the work is done.',
+  explanation: 'The service hasn’t been performed yet, so it isn’t earned revenue: it’s a liability (Unearned Revenue) until the work is done.',
 }
 
 // ── Interactive sample question (hero) ──────────────────────────────────────
@@ -74,7 +74,7 @@ function SampleQuestion() {
         <span className="sample-q-tab">{SAMPLE_QUESTION.event}</span>
       </div>
       <div className="sample-q-body">
-        <p className="sample-q-label">Try it — question 3 of 10</p>
+        <p className="sample-q-label">Try it: question 3 of 10</p>
         <p className="sample-q-question">{SAMPLE_QUESTION.question}</p>
         <div className="sample-q-options">
           {SAMPLE_QUESTION.options.map(opt => {
@@ -162,7 +162,7 @@ function EventTicker() {
       const queues = results.map(({ org, list }) => ({
         org,
         items: list.length === 0
-          ? [{ org, name: `${ORG_META[org].name} — events coming soon`, soon: true }]
+          ? [{ org, name: `${ORG_META[org].name}: events coming soon`, soon: true }]
           : list.map(slug => ({ org, name: formatEventName(slug) })),
       }))
       const next = []
@@ -240,22 +240,21 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
       <main id="top">
         {/* ── Hero ──────────────────────────────────────────────────── */}
         <section className="hero">
-          <div className="hero-glow" aria-hidden="true" />
           <div className="hero-split">
             <div className="hero-copy">
-              <Eyebrow>AI-powered · FBLA · DECA · HOSA — {totalEvents}+ events</Eyebrow>
               <h1 className="hero-title">
                 <span>Study smarter for FBLA, DECA, and HOSA.</span>
                 <RotatingHeadline phrases={ROTATING_PHRASES} className="hero-rotator" />
               </h1>
               <p className="hero-subtitle">
-                Quiz yourself, drill flashcards, and get instant explanations —
+                Quiz yourself, drill flashcards, and get instant explanations,
                 all grounded in the official competitive event objectives.
                 No prep, no guesswork, just focused practice.
               </p>
             </div>
 
             <div className="hero-sample">
+              <span className="hero-accent-shape" aria-hidden="true" />
               <SampleQuestion />
             </div>
           </div>
@@ -268,7 +267,6 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
           <Reveal as="div" className="section-head">
             <Eyebrow>FBLA · DECA · HOSA</Eyebrow>
             <h2 className="section-title">Three organizations. One tool.</h2>
-            <p className="section-desc">Every card on the next screen leads straight into the event picker for that organization.</p>
           </Reveal>
           <Reveal as="div" className="home-stats" delay={80}>
             <div className="home-stat">
@@ -294,11 +292,16 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
           <Reveal as="div" className="section-head">
             <Eyebrow>Everything you need</Eyebrow>
             <h2 className="section-title">One tool, every study mode</h2>
-            <p className="section-desc">Built specifically for competitive events — not a generic flashcard app.</p>
+            <p className="section-desc">Built specifically for competitive events, not a generic flashcard app.</p>
           </Reveal>
           <div className="feature-grid">
             {FEATURES.map((f, i) => (
-              <Reveal as={Card} key={f.title} delay={i * 60} className="feature-card">
+              <Reveal
+                as={Card}
+                key={f.title}
+                delay={i * 60}
+                className={`feature-card ${i === 0 ? 'feature-card-featured' : ''}`}
+              >
                 <span className="feature-icon" aria-hidden="true">{f.icon}</span>
                 <h3 className="feature-title">{f.title}</h3>
                 <p className="feature-desc">{f.desc}</p>
@@ -330,7 +333,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
           <Reveal as="div" className="section-head">
             <Eyebrow>Why it’s better</Eyebrow>
             <h2 className="section-title">Dense guidelines in. A clean quiz out.</h2>
-            <p className="section-desc">The official objectives are thorough — but they’re not built for studying. VyeAI turns them into practice you’ll actually use.</p>
+            <p className="section-desc">The official objectives are thorough, but they’re not built for studying. VyeAI turns them into practice you’ll actually use.</p>
           </Reveal>
           <div className="ba-row">
             <Reveal as={Card} className="ba-card ba-before">
@@ -354,7 +357,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
         {/* ── Closing CTA ───────────────────────────────────────────── */}
         <Reveal as="section" className="closing">
           <h2 className="closing-title">Ready to actually remember this?</h2>
-          <p className="closing-desc">Pick an organization and start studying — free, no account needed.</p>
+          <p className="closing-desc">Pick an organization and start studying: free, no account needed.</p>
           <Button variant="primary" size="lg" onClick={onStart}>Try it free →</Button>
         </Reveal>
       </main>
@@ -362,12 +365,20 @@ export default function Landing({ onStart, onPickEvent, onSignIn, orgs = [] }) {
       {/* ── Footer ────────────────────────────────────────────────────── */}
       <footer className="lfooter">
         <div className="lfooter-inner">
-          <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> VyeAI</span>
+          <div className="lfooter-brand-col">
+            <span className="lfooter-brand"><img className="lnav-mark lnav-mark-sm" src={appMark} alt="" /> VyeAI</span>
+            <p className="lfooter-note">Built for FBLA, DECA, and HOSA competitors. Not affiliated with FBLA-PBL, DECA Inc., or HOSA-Future Health Professionals.</p>
+          </div>
           <nav className="lfooter-links" aria-label="Footer">
             <button onClick={() => scrollToId('features')}>Features</button>
             <button onClick={onPickEvent}>Events</button>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
           </nav>
-          <span className="lfooter-note">Built for FBLA, DECA, and HOSA competitors. Not affiliated with FBLA-PBL, DECA Inc., or HOSA-Future Health Professionals.</span>
+          <div className="lfooter-meta">
+            <a className="lfooter-contact" href="mailto:support@usevye.study">support@usevye.study</a>
+            <span className="lfooter-copyright">© {new Date().getFullYear()} VyeAI. All rights reserved.</span>
+          </div>
         </div>
       </footer>
     </div>

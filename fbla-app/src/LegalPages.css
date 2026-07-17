@@ -1,0 +1,90 @@
+/* ════════════════════════════════════════════════════════════════════
+   Legal pages (Privacy Policy / Terms of Service) — standalone routes,
+   not part of the app shell's page-state machine, so they get their own
+   minimal header/footer built from the same design tokens as Landing.css.
+   ════════════════════════════════════════════════════════════════════ */
+
+.legal-page {
+  min-height: 100vh; display: flex; flex-direction: column;
+  background: var(--bg); color: var(--text);
+}
+
+.legal-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 32px; border-bottom: 1px solid var(--border);
+}
+.legal-brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-head); font-weight: 800; font-size: 22px;
+  color: var(--signal-700); text-decoration: none;
+}
+.legal-mark { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
+.legal-back {
+  font-size: 14px; font-weight: 600; color: var(--text-2); text-decoration: none;
+}
+.legal-back:hover { color: var(--accent); }
+
+.legal-body {
+  flex: 1; max-width: 720px; width: 100%; margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+.legal-title {
+  font-family: var(--font-head); font-weight: 800; letter-spacing: -0.02em;
+  font-size: clamp(28px, 4vw, 40px); color: var(--text); margin-bottom: 10px;
+}
+.legal-updated { font-size: 13.5px; color: var(--text-4); margin-bottom: 32px; }
+.legal-intro {
+  font-size: 16.5px; line-height: 1.7; color: var(--text-2);
+  padding-bottom: 28px; margin-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.legal-body p {
+  font-size: 15.5px; line-height: 1.7; color: var(--text-2); margin-bottom: 14px;
+}
+.legal-body a { color: var(--accent); font-weight: 600; }
+
+/* Numbered sections — same "circle badge" visual language as the landing
+   page's "How it works" steps, so this reads as part of the same site. */
+.legal-section { margin-top: 40px; padding-top: 4px; }
+.legal-section:first-of-type { margin-top: 28px; }
+.legal-body h2 {
+  display: flex; align-items: center; gap: 14px;
+  font-family: var(--font-head); font-weight: 700; font-size: 18.5px;
+  color: var(--text); margin: 0 0 14px;
+}
+.legal-section-num {
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--signal-50); border: 1px solid var(--signal-100);
+  font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--accent);
+}
+
+.legal-body ul {
+  margin: 4px 0 16px; padding-left: 22px; display: flex; flex-direction: column; gap: 10px;
+}
+.legal-body li {
+  font-size: 15.5px; line-height: 1.7; color: var(--text-2);
+}
+.legal-body li ul { margin: 8px 0 0; gap: 6px; }
+.legal-body li strong { color: var(--text); }
+
+.legal-callout {
+  font-size: 14.5px; color: var(--text-2);
+  background: var(--green-bg); border: 1px solid var(--green-border);
+  border-radius: var(--r); padding: 13px 16px; margin: 4px 0 16px;
+}
+.legal-callout strong { color: var(--green); }
+
+.legal-footer {
+  border-top: 1px solid var(--border); padding: 24px 32px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-wrap: wrap; font-size: 13px; color: var(--text-4);
+}
+.legal-footer-links { display: flex; gap: 18px; }
+.legal-footer-links a, .legal-contact { color: var(--text-3); text-decoration: none; }
+.legal-footer-links a:hover, .legal-contact:hover { color: var(--accent); }
+
+@media (max-width: 520px) {
+  .legal-nav { padding: 16px 20px; }
+  .legal-body { padding: 40px 20px 64px; }
+  .legal-footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+}

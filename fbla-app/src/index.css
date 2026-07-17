@@ -7,9 +7,9 @@
      Default (no org chosen yet) is the cyan-teal this system started as.
      Once an org is active, App.jsx stamps data-org on the app root and the
      [data-org="..."] overrides below re-hue this ENTIRE scale — every
-     --signal-* step, the hero gradient, and the tinted neutrals all follow,
-     because they're all defined in terms of this one variable, not a fixed
-     number. Same L/C curve every time; only the hue angle moves. ────────── */
+     --signal-* step and the tinted neutrals all follow, because they're all
+     defined in terms of this one variable, not a fixed number. Same L/C
+     curve every time; only the hue angle moves. ────────────────────────── */
   --signal-hue: 195;
 
   --signal-950: oklch(20% 0.045 var(--signal-hue));
@@ -28,14 +28,6 @@
   --accent-hover:   var(--signal-700);
   --accent-light:   var(--signal-500);
   --accent-contrast:#ffffff;
-
-  /* Reserved for large dark hero surfaces only — never a button, badge, or
-     small element (Gradient Containment Rule). Hue-offsets from the same
-     --signal-hue, so the hero glow re-hues right along with everything
-     else instead of staying a fixed cyan→teal→blue regardless of org. */
-  --gradient-from: oklch(55% 0.130 var(--signal-hue));
-  --gradient-via:  oklch(50% 0.110 calc(var(--signal-hue) - 20));
-  --gradient-to:   oklch(45% 0.120 calc(var(--signal-hue) + 35));
 
   --sidebar-bg:     oklch(14% 0.020 var(--signal-hue));
   --sidebar-hover:  rgba(255,255,255,0.06);
@@ -61,8 +53,8 @@
      the raw palette in light mode, but is its OWN variable rather than a
      direct alias — dark mode below redefines just this, as a translucent
      overlay, while --signal-50/100 themselves stay fixed opaque colors
-     (still needed as-is for things like gradient text and icon chips,
-     which would break if they suddenly went translucent). Anywhere in the
+     (still needed as-is for things like icon chips, which would break if
+     they suddenly went translucent). Anywhere in the
      app that wants a "light wash of the accent color," reach for --tint /
      --tint-border, not --signal-50 / --signal-100 directly. ────────────── */
   --tint:        var(--signal-50);
@@ -137,7 +129,7 @@
    tab; persisted to localStorage, defaults to the OS preference). Same
    pattern as the [data-org] hue overrides above: only the neutral/surface
    scale and the status tints flip, everything derived from --signal-hue
-   (accent, gradient, sidebar) stays as-is, because the sidebar is a
+   (accent, sidebar) stays as-is, because the sidebar is a
    permanently-dark shell in both themes and the accent hue doesn't need to
    change — only how light or dark the CONTENT surfaces are. ────────────── */
 :root[data-theme="dark"] {

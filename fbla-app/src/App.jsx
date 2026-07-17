@@ -107,7 +107,7 @@ function OrgPicker({ orgs, onSelect, onBack }) {
             const empty = count === 0
             return (
               <button key={id} className={`org-card ${empty ? 'org-card-empty' : ''}`} onClick={() => onSelect(id)} style={{ '--org-c1': c1, '--org-c2': c2 }}>
-                <span className="org-card-icon" style={{ background: `linear-gradient(135deg,${c1},${c2})` }}>{meta.icon}</span>
+                <span className="org-card-icon" style={{ background: c1 }}>{meta.icon}</span>
                 <span className="org-card-name">{meta.name}</span>
                 <span className="org-card-tagline">{meta.tagline}</span>
                 <span className={`org-card-cta ${empty ? 'org-card-cta-soon' : ''}`}>
@@ -194,13 +194,13 @@ function EventPickerPage({ events, org, onSelect, onBack }) {
         ) : (
           <div className="picker-grid">
             {filtered.map((ev, i) => {
-              const [c1, c2] = CARD_PALETTES[i % CARD_PALETTES.length]
+              const [c1] = CARD_PALETTES[i % CARD_PALETTES.length]
               const name = formatEventName(ev)
               return (
                 <button key={ev} className="picker-card" onClick={() => onSelect(ev)}>
                   <span
                     className="picker-card-initial"
-                    style={{ background: `linear-gradient(135deg,${c1},${c2})` }}
+                    style={{ background: c1 }}
                   >
                     {name[0]}
                   </span>
@@ -225,7 +225,7 @@ function HomePage({ onStart }) {
           <h1 className="home-title"><span className="home-title-accent">VyeAI</span></h1>
           <p className="home-subtitle">
             Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
-            and get instant explanations — all grounded in the official objectives.
+            and get instant explanations, all grounded in the official objectives.
           </p>
           <button className="home-cta" onClick={onStart}>Pick an Event →</button>
         </div>
@@ -256,7 +256,7 @@ function HomePage({ onStart }) {
           <span>
             <strong>How to start:</strong> Click <em>Pick an Event →</em> above to browse all
             competitive events, or select one directly from the sidebar. Then study a single
-            objective, an entire section, or the full event — with Quiz, Flashcard, or Explain modes.
+            objective, an entire section, or the full event, with Quiz, Flashcard, or Explain modes.
           </span>
         </div>
       </div>
@@ -387,7 +387,7 @@ function AccountPage({ user, recoveryMode, forceLoginForm, onBack }) {
     if (mode === 'reset') {
       const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin })
       setBusy(false)
-      if (error) { setError(errMsg(error, "Couldn't send the reset email right now — please try again in a few minutes.")); return }
+      if (error) { setError(errMsg(error, "Couldn't send the reset email right now. Please try again in a few minutes.")); return }
       setInfo('If an account exists for that email, a reset link has been sent.')
       return
     }
@@ -395,8 +395,8 @@ function AccountPage({ user, recoveryMode, forceLoginForm, onBack }) {
     if (mode === 'recovery') {
       const { error } = await supabase.auth.updateUser({ password })
       setBusy(false)
-      if (error) { setError(errMsg(error, "Couldn't update your password — please try again.")); return }
-      setInfo('Password updated — you\'re signed in.')
+      if (error) { setError(errMsg(error, "Couldn't update your password. Please try again.")); return }
+      setInfo('Password updated. You\'re signed in.')
       return
     }
 
@@ -404,14 +404,14 @@ function AccountPage({ user, recoveryMode, forceLoginForm, onBack }) {
       ? await supabase.auth.signUp({ email, password })
       : await supabase.auth.signInWithPassword({ email, password })
     setBusy(false)
-    if (error) { setError(errMsg(error, mode === 'signup' ? "Couldn't sign up — please try again." : "Couldn't log in — check your email and password.")); return }
+    if (error) { setError(errMsg(error, mode === 'signup' ? "Couldn't sign up. Please try again." : "Couldn't log in. Check your email and password.")); return }
     if (mode === 'signup') setInfo('Check your email to confirm your account, then log in.')
   }
 
   if (mode === 'recovery') {
     return (
       <div className="account-page">
-        <AccountHero icon="🔑" title="Set a New Password" subtitle="You clicked a password reset link — choose a new password below." />
+        <AccountHero icon="🔑" title="Set a New Password" subtitle="You clicked a password reset link. Choose a new password below." />
         <Reveal as="div" className="account-card" delay={90}>
           <form className="account-form" onSubmit={handleSubmit}>
             <PasswordInput value={password} onChange={e => setPassword(e.target.value)} placeholder="New password" autoComplete="new-password" autoFocus />
@@ -589,7 +589,7 @@ function Dashboard({ user, pins, usageDays, onSelectPinned, onBrowseAll }) {
                 >
                   <span
                     className="dashboard-pin-org-icon"
-                    style={meta ? { background: `linear-gradient(135deg,${meta.colors[0]},${meta.colors[1]})` } : undefined}
+                    style={meta ? { background: meta.colors[0] } : undefined}
                   >
                     {meta?.icon ?? '📁'}
                   </span>
@@ -637,7 +637,7 @@ function FlashcardPane({ event, org, objectiveText, count, onBack }) {
     <div className="study-pane">
       <div className="study-header">
         <button className="back-btn" onClick={onBack}>← Back</button>
-        <span className="study-event">Flashcards — {formatEventName(event)}</span>
+        <span className="study-event">Flashcards: {formatEventName(event)}</span>
       </div>
       <div className="pane-error">
         <div className="pane-error-icon">⚠</div>
@@ -923,7 +923,7 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
       {partial && (
         <p className="pane-partial-note">
           Only found {partial.got} of the {partial.requested} questions requested that passed every
-          quality check — the rest kept failing our duplicate/length checks after several retries.
+          quality check. The rest kept failing our duplicate/length checks after several retries.
         </p>
       )}
 
@@ -1273,7 +1273,7 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
         {general && messages.length === 0 && (
           <div className="chat-empty-state">
             <span className="chat-empty-icon">💡</span>
-            <p>Ask anything about {formatEventName(event)} — not tied to one objective.</p>
+            <p>Ask anything about {formatEventName(event)}, not tied to one objective.</p>
           </div>
         )}
         {messages.map((m, i) => (
@@ -1615,7 +1615,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
 
   function buildFullEventText() {
     const names = outline.map(s => `${s.letter}. ${s.title}`).join(', ')
-    return `Complete review of ${formatEventName(event)} — all knowledge areas: ${names}`
+    return `Complete review of ${formatEventName(event)}, covering all knowledge areas: ${names}`
   }
 
   function buildSectionText(section) {
@@ -1827,7 +1827,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
       >
         <span
           className="org-switcher-icon"
-          style={orgMeta ? { background: `linear-gradient(135deg,${orgMeta.colors[0]},${orgMeta.colors[1]})` } : undefined}
+          style={orgMeta ? { background: orgMeta.colors[0] } : undefined}
         >
           {orgMeta?.icon || '📁'}
         </span>
@@ -1852,7 +1852,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
                 aria-selected={active}
                 onClick={() => { onChange(id); setOpen(false) }}
               >
-                <span className="org-switcher-item-icon" style={{ background: `linear-gradient(135deg,${meta.colors[0]},${meta.colors[1]})` }}>
+                <span className="org-switcher-item-icon" style={{ background: meta.colors[0] }}>
                   {meta.icon}
                 </span>
                 <span className="org-switcher-item-text">
@@ -2390,7 +2390,11 @@ export default function App() {
 
   return (
     <div className="app">
-      <button className="mobile-menu-btn" onClick={() => setNavOpen(o => !o)} aria-label="Toggle menu">
+      <button
+        className={`mobile-menu-btn ${navOpen ? 'mobile-menu-btn-hidden' : ''}`}
+        onClick={() => setNavOpen(o => !o)}
+        aria-label="Toggle menu"
+      >
         <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fillRule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm0 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zm1 4a1 1 0 100 2h14a1 1 0 100-2H3z" clipRule="evenodd" /></svg>
       </button>
       {navOpen && <div className="sidebar-backdrop" onClick={() => setNavOpen(false)} />}

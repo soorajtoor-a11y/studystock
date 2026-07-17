@@ -13,10 +13,15 @@
 /* Mobile menu toggle + slide-in drawer (hidden on desktop) */
 .mobile-menu-btn {
   display:none; position:fixed; top:14px; left:14px; z-index:60;
-  width:38px; height:38px; align-items:center; justify-content:center;
+  width:44px; height:44px; align-items:center; justify-content:center;
   background:var(--sidebar-bg); color:#fff; border:1px solid rgba(255,255,255,0.12);
   border-radius:var(--r-sm); cursor:pointer; box-shadow:var(--shadow);
 }
+/* Hidden while the drawer is open — it otherwise sits directly on top of
+   the sidebar's own logo mark at the same corner, reading as a visual
+   collision rather than two intentional controls. Closing already works
+   via the backdrop tap. */
+.mobile-menu-btn-hidden { display:none !important; }
 .sidebar-backdrop { display:none; }
 
 @media (max-width:860px) {
@@ -50,13 +55,6 @@
   box-shadow:0 2px 10px oklch(47% 0.13 var(--signal-hue) / 0.45); flex-shrink:0;
 }
 
-.sidebar-logo-text { display:flex; flex-direction:column; gap:1px; }
-.sidebar-logo-name {
-  font-family:var(--font-head); font-size:27px; font-weight:800; letter-spacing:-0.2px;
-  background:linear-gradient(120deg,var(--signal-300),var(--signal-100));
-  -webkit-background-clip:text; background-clip:text; color:transparent;
-}
-.sidebar-logo-sub  { font-size:10px; color:rgba(255,255,255,0.34); letter-spacing:0.2px; }
 
 /* Home button */
 .sidebar-top { padding:10px 10px 4px; flex-shrink:0; }
@@ -71,7 +69,7 @@
 }
 .sidebar-home-btn:hover  { background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.9); }
 .sidebar-home-btn.active {
-  background:linear-gradient(135deg,oklch(56% 0.14 var(--signal-hue) / 0.24),oklch(56% 0.14 var(--signal-hue) / 0.1));
+  background:oklch(56% 0.14 var(--signal-hue) / 0.16);
   color:var(--signal-300);
   box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.3);
 }
@@ -155,7 +153,7 @@
 }
 .sidebar-settings-btn:hover  { background:rgba(255,255,255,0.07); color:rgba(255,255,255,0.85); }
 .sidebar-settings-btn.active {
-  background:linear-gradient(135deg,oklch(56% 0.14 var(--signal-hue) / 0.24),oklch(56% 0.14 var(--signal-hue) / 0.1));
+  background:oklch(56% 0.14 var(--signal-hue) / 0.16);
   color:var(--signal-300);
   box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.3);
 }
@@ -195,7 +193,7 @@
 .sidebar-nav-pinned { flex:none; max-height:160px; }
 .sidebar-nav-pinned + .sidebar-events-header { border-top:1px solid rgba(255,255,255,0.06); margin-top:4px; padding-top:14px; }
 .sidebar-item:hover .sidebar-item-dot { background:rgba(255,255,255,0.35); }
-.sidebar-item.active { background:linear-gradient(135deg,oklch(56% 0.14 var(--signal-hue) / 0.22),oklch(56% 0.14 var(--signal-hue) / 0.09)); box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.26); }
+.sidebar-item.active { background:oklch(56% 0.14 var(--signal-hue) / 0.15); box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.26); }
 .sidebar-item.active .sidebar-item-dot { background:var(--signal-400); box-shadow:0 0 6px oklch(56% 0.14 var(--signal-hue) / 0.7); }
 .sidebar-item.active .sidebar-item-name { color:var(--signal-300); font-weight:600; }
 
@@ -221,17 +219,10 @@
 .picker-page { display:flex; flex-direction:column; height:100%; }
 
 .picker-hero {
-  background:linear-gradient(140deg,var(--signal-950) 0%,var(--signal-900) 55%,oklch(20% 0.06 calc(var(--signal-hue) + 35)) 100%);
+  background:var(--signal-950);
   padding:40px 44px 36px;
   position:relative; overflow:hidden; flex-shrink:0;
 }
-.picker-hero::before {
-  content:''; position:absolute; inset:0; pointer-events:none;
-  background:
-    radial-gradient(ellipse at 82% 40%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 52%),
-    radial-gradient(ellipse at 10% 80%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.07) 0%,transparent 40%);
-}
-
 .picker-back {
   position:relative; z-index:1; display:inline-flex; align-items:center; gap:5px;
   background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14);
@@ -339,7 +330,7 @@
 
 /* ── Organization Picker ─────────────────────────────────────────── */
 .org-picker-page .picker-body {
-  display:flex; align-items:center; justify-content:center;
+  display:flex; align-items:safe center; justify-content:center;
   min-height:100%;
   padding-top:16px; padding-bottom:64px;
 }
@@ -377,12 +368,6 @@
   to   { opacity:1; transform:translateY(0) scale(1); }
 }
 
-.org-card::before {
-  content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background:radial-gradient(circle at 85% -10%, color-mix(in srgb, var(--org-c1, var(--signal-500)) 16%, transparent), transparent 60%);
-  opacity:0; transition:opacity 420ms var(--ease-out);
-}
-.org-card:hover::before { opacity:1; }
 
 .org-card:hover {
   transform:translateY(-12px) scale(1.025);
@@ -396,7 +381,7 @@
 /* Glossy diagonal sheen that sweeps across on hover */
 .org-card::after {
   content:''; position:absolute; top:0; left:-60%; width:36%; height:100%;
-  background:linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  background:rgba(255,255,255,0.5);
   transform:skewX(-20deg);
   opacity:0; z-index:1; pointer-events:none;
 }
@@ -514,7 +499,7 @@
 }
 .org-switcher-item + .org-switcher-item { margin-top:1px; }
 .org-switcher-item:hover { background:rgba(255,255,255,0.08); }
-.org-switcher-item.active { background:linear-gradient(135deg,oklch(56% 0.14 var(--signal-hue) / 0.24),oklch(56% 0.14 var(--signal-hue) / 0.1)); }
+.org-switcher-item.active { background:oklch(56% 0.14 var(--signal-hue) / 0.16); }
 
 .org-switcher-item-icon {
   width:26px; height:26px; border-radius:7px; flex-shrink:0;
@@ -557,14 +542,8 @@
 .home-page { overflow-y:auto; height:100%; }
 
 .home-hero {
-  background:linear-gradient(140deg,var(--signal-950) 0%,var(--signal-900) 55%,oklch(20% 0.06 calc(var(--signal-hue) + 35)) 100%);
+  background:var(--signal-950);
   padding:56px 60px 52px; position:relative; overflow:hidden;
-}
-.home-hero::before {
-  content:''; position:absolute; inset:0;
-  background:
-    radial-gradient(ellipse at 74% 50%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 55%),
-    radial-gradient(ellipse at 16% 82%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.09) 0%,transparent 45%);
 }
 .home-hero-content { position:relative; z-index:1; }
 
@@ -582,8 +561,7 @@
   line-height:1.07; letter-spacing:-1.2px; margin-bottom:16px;
 }
 .home-title-accent {
-  background:linear-gradient(120deg,var(--signal-300),var(--signal-100));
-  -webkit-background-clip:text; background-clip:text; color:transparent;
+  color:var(--signal-200);
 }
 
 .home-subtitle { font-size:16px; color:rgba(255,255,255,0.54); line-height:1.7; max-width:450px; margin-bottom:30px; }
@@ -662,15 +640,9 @@
 .account-page { overflow-y:auto; height:100%; }
 
 .account-hero {
-  background:linear-gradient(140deg,var(--signal-950) 0%,var(--signal-900) 55%,oklch(20% 0.06 calc(var(--signal-hue) + 35)) 100%);
+  background:var(--signal-950);
   padding:56px 32px 96px; position:relative; overflow:hidden;
   display:flex; flex-direction:column; align-items:center; text-align:center;
-}
-.account-hero::before {
-  content:''; position:absolute; inset:0;
-  background:
-    radial-gradient(ellipse at 74% 30%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 55%),
-    radial-gradient(ellipse at 20% 80%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.1) 0%,transparent 45%);
 }
 .account-hero-icon {
   position:relative; z-index:1; font-size:34px; line-height:1;
@@ -700,7 +672,7 @@
 .account-avatar {
   width:44px; height:44px; border-radius:50%; flex-shrink:0;
   display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(135deg,var(--signal-700),var(--signal-500));
+  background:var(--signal-600);
   color:#fff; font-family:var(--font-head); font-weight:800; font-size:17px;
 }
 .account-avatar-email { font-size:13.5px; font-weight:600; color:var(--text); word-break:break-all; }
@@ -795,14 +767,8 @@
 .dashboard-page { overflow-y:auto; height:100%; }
 
 .dashboard-hero {
-  background:linear-gradient(140deg,var(--signal-950) 0%,var(--signal-900) 55%,oklch(20% 0.06 calc(var(--signal-hue) + 35)) 100%);
+  background:var(--signal-950);
   padding:52px 60px 44px; position:relative; overflow:hidden;
-}
-.dashboard-hero::before {
-  content:''; position:absolute; inset:0;
-  background:
-    radial-gradient(ellipse at 74% 50%,oklch(56% 0.14 var(--signal-hue) / 0.22) 0%,transparent 55%),
-    radial-gradient(ellipse at 16% 82%,oklch(45% 0.12 calc(var(--signal-hue) + 35) / 0.09) 0%,transparent 45%);
 }
 .dashboard-hero-top {
   position:relative; z-index:1;
@@ -817,7 +783,7 @@
 .streak-badge {
   flex-shrink:0; display:flex; align-items:center; gap:10px;
   padding:12px 20px; border-radius:999px; margin-top:4px;
-  background:linear-gradient(135deg, oklch(30% 0.09 55 / 0.5), oklch(24% 0.07 30 / 0.5));
+  background:oklch(27% 0.08 42 / 0.5);
   border:1px solid oklch(60% 0.14 50 / 0.35);
   box-shadow:0 4px 18px oklch(25% 0.1 40 / 0.35);
 }
@@ -949,6 +915,46 @@
    page scrolls instead. */
 .explain-with-history { height:100%; }
 
+/* Below the sidebar's own collapse point, the fixed 2-3 column split (JS
+   sets an inline grid-template-columns, e.g. "1fr 320px") no longer has
+   room — it used to render both/all panes squeezed side by side with text
+   and buttons clipped past the right edge. Stack to one column and let the
+   whole event view scroll as a single page instead of two independently
+   clipped panes; !important is required to beat the inline style. */
+@media (max-width:860px) {
+  /* A grid/flex box doesn't shrink below its content's min-content width
+     by default (implicit min-width:auto) — one unwrapped nowrap button row
+     anywhere in this chain (e.g. the pin/"Ask Anything" buttons) was enough
+     to silently stretch .event-view, .event-header, and .event-layout all
+     the way out past the viewport with no scrollbar, since nothing above
+     it clips. min-width:0 down the whole ancestor chain is what actually
+     lets flex-wrap below engage instead of just growing the container. */
+  .event-view, .event-header, .event-header-row, .event-header-actions {
+    min-width:0;
+  }
+  .event-view { overflow-y:auto; }
+  .event-layout, .event-layout-with-history, .explain-with-history {
+    grid-template-columns:1fr !important;
+    overflow:visible;
+    min-width:0;
+  }
+  .event-layout > *, .event-layout-with-history > *, .explain-with-history > * {
+    min-width:0;
+  }
+  /* Extra left clearance so the fixed hamburger button (top:14px; left:14px;
+     44px wide) never sits on top of the title text, and the title/actions
+     row stacks instead of squeezing "Ask Anything" against a long event
+     name on one line. */
+  .event-header { padding:16px 20px 18px 68px; }
+  .event-header-row { flex-wrap:wrap; }
+  /* width:100% is required, not just flex-wrap: without an explicit width,
+     a wrapped-onto-its-own-line flex item still sizes to its own unwrapped
+     content (its intrinsic width), so its own children never get narrow
+     enough to need to wrap in turn. */
+  .event-header-actions { flex-wrap:wrap; width:100%; }
+  .event-title { font-size:21px; }
+}
+
 .event-objectives { overflow-y:auto; padding:24px 28px; }
 
 /* ── Sections / Objectives ───────────────────────────────────────── */
@@ -971,7 +977,7 @@
 
 .section-letter {
   width:27px; height:27px; font-family:var(--font-mono);
-  background:linear-gradient(135deg,var(--signal-700),var(--signal-500));
+  background:var(--signal-600);
   color:#fff; font-size:11.5px; font-weight:800; border-radius:7px;
   display:flex; align-items:center; justify-content:center; flex-shrink:0;
   box-shadow:0 2px 6px oklch(47% 0.13 var(--signal-hue) / 0.3);
@@ -1054,7 +1060,7 @@
 
 .sp-letter {
   width:24px; height:24px; flex-shrink:0; font-family:var(--font-mono);
-  background:linear-gradient(135deg,var(--signal-700),var(--signal-500));
+  background:var(--signal-600);
   color:#fff; font-size:11px; font-weight:800; border-radius:6px;
   display:flex; align-items:center; justify-content:center;
   box-shadow:0 1px 4px oklch(47% 0.13 var(--signal-hue) / 0.25); margin-top:1px;
@@ -1178,13 +1184,13 @@
 
 .primary-btn {
   width:100%; padding:12px;
-  background:linear-gradient(135deg,var(--signal-800),var(--signal-600));
+  background:var(--signal-700);
   color:#fff; border:none; border-radius:var(--r);
   font-family:inherit; font-size:14px; font-weight:700;
   cursor:pointer; transition:all 0.15s;
   box-shadow:0 3px 12px oklch(47% 0.13 var(--signal-hue) / 0.28); letter-spacing:0.1px;
 }
-.primary-btn:hover { background:linear-gradient(135deg,var(--signal-900),var(--signal-700)); transform:translateY(-1px); box-shadow:0 5px 16px oklch(47% 0.13 var(--signal-hue) / 0.35); }
+.primary-btn:hover { background:var(--signal-800); transform:translateY(-1px); box-shadow:0 5px 16px oklch(47% 0.13 var(--signal-hue) / 0.35); }
 
 /* ── Study Pane ──────────────────────────────────────────────────── */
 /* min-height:0 overrides the grid/flex-item default of min-height:auto —
@@ -1238,28 +1244,21 @@
 .pane-orb-ring {
   position:absolute; inset:0;
   border-radius:50%;
-  background:conic-gradient(from 0deg,
-    var(--gradient-from) 0deg,
-    var(--gradient-via) 120deg,
-    var(--gradient-to) 240deg,
-    var(--gradient-from) 360deg);
-  animation:orb-spin 2.1s linear infinite;
-  -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
-          mask:radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px));
+  border:3px solid var(--border);
+  border-top-color:var(--accent);
+  animation:orb-spin 0.85s linear infinite;
 }
 .pane-orb-core {
   position:relative;
-  width:30px; height:30px;
+  width:14px; height:14px;
   border-radius:50%;
-  background:radial-gradient(circle at 32% 28%,
-    var(--signal-200) 0%, var(--gradient-via) 55%, var(--gradient-to) 100%);
-  box-shadow:0 0 0 6px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.10), 0 0 20px 2px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.35);
+  background:var(--accent);
   animation:orb-pulse 1.7s ease-in-out infinite;
 }
 @keyframes orb-spin { to { transform:rotate(360deg); } }
 @keyframes orb-pulse {
-  0%, 100% { transform:scale(0.82); box-shadow:0 0 0 4px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.08), 0 0 14px 1px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.25); }
-  50%      { transform:scale(1);    box-shadow:0 0 0 8px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.14), 0 0 26px 4px oklch(50% 0.11 calc(var(--signal-hue) - 20) / 0.4); }
+  0%, 100% { transform:scale(0.82); opacity:0.7; }
+  50%      { transform:scale(1);    opacity:1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .pane-orb-ring { animation:none; }
@@ -1297,7 +1296,7 @@
 }
 .notes-doc-rule {
   height:1px; margin:22px 0 28px;
-  background:linear-gradient(90deg, var(--green) 0, var(--border) 60px, var(--border) 100%);
+  background:var(--border);
 }
 .notes-entry { display:flex; gap:16px; padding:18px 0; border-top:1px solid var(--border); }
 .notes-entry:first-of-type { border-top:none; padding-top:0; }
@@ -1400,7 +1399,7 @@
 
 .quiz-next-btn {
   padding:12px 36px;
-  background:linear-gradient(135deg,var(--signal-800),var(--signal-600));
+  background:var(--signal-700);
   color:#fff; border:none; border-radius:var(--r);
   font-family:inherit; font-size:14px; font-weight:700;
   cursor:pointer; transition:all 0.15s;
@@ -1416,7 +1415,7 @@
 .quiz-results-with-breakdown { justify-content:flex-start; padding-top:48px; }
 .results-circle {
   width:132px; height:132px; border-radius:50%; flex-shrink:0;
-  background:linear-gradient(135deg,var(--signal-800),var(--signal-500));
+  background:var(--signal-700);
   color:#fff; display:flex; align-items:baseline; justify-content:center; gap:3px;
   box-shadow:0 10px 36px oklch(47% 0.13 var(--signal-hue) / 0.32);
   animation:popIn 0.4s var(--ease-out);
@@ -1488,7 +1487,7 @@
 .fc-topbar { width:100%; max-width:640px; display:flex; align-items:center; gap:14px; }
 .fc-progress-wrap  { flex:1; display:flex; flex-direction:column; gap:4px; }
 .fc-progress-track { width:100%; height:5px; background:var(--border); border-radius:3px; overflow:hidden; }
-.fc-progress-fill  { height:100%; background:linear-gradient(90deg,var(--signal-700),var(--signal-400)); border-radius:3px; transition:width 0.4s ease; }
+.fc-progress-fill  { height:100%; background:var(--signal-600); border-radius:3px; transition:width 0.4s ease; }
 .fc-progress-label { font-family:var(--font-mono); font-size:11px; color:var(--text-4); font-weight:500; }
 .fc-known-badge    { font-family:var(--font-mono); font-size:11.5px; font-weight:700; color:var(--green); background:var(--green-bg); border:1px solid var(--green-border); padding:3px 11px; border-radius:20px; white-space:nowrap; }
 
@@ -1506,7 +1505,7 @@
   padding:32px 44px; text-align:center;
 }
 .fc-front { background:var(--surface); border:2px solid var(--signal-200); box-shadow:var(--shadow); }
-.fc-back  { background:linear-gradient(140deg,var(--signal-900) 0%,var(--signal-700) 100%); transform:rotateY(180deg); box-shadow:var(--shadow-lg); }
+.fc-back  { background:var(--signal-800); transform:rotateY(180deg); box-shadow:var(--shadow-lg); }
 
 .fc-side-label { font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:2px; margin-bottom:14px; }
 .fc-front .fc-side-label { color:var(--signal-400); }
@@ -1558,7 +1557,7 @@
   font-size:13.5px; line-height:1.65; white-space:pre-wrap;
 }
 .message-user .message-bubble {
-  background:linear-gradient(135deg,var(--signal-800),var(--signal-600));
+  background:var(--signal-700);
   color:#fff; border-bottom-right-radius:4px;
   box-shadow:0 2px 8px oklch(47% 0.13 var(--signal-hue) / 0.18);
 }
@@ -1647,7 +1646,7 @@
 
 .send-btn {
   padding:10px 20px;
-  background:linear-gradient(135deg,var(--signal-800),var(--signal-600));
+  background:var(--signal-700);
   color:#fff; border:none; border-radius:var(--r);
   font-family:inherit; font-size:13.5px; font-weight:700;
   cursor:pointer; transition:all 0.15s;

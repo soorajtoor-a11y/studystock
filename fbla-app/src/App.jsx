@@ -2254,18 +2254,22 @@ export default function App() {
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
   function handleBrowseAll() { handleOrgPicker('home') }
-  // "Sign In" from the landing nav: open the Account page's login form. Only
-  // arms postLoginRedirect if nobody's currently signed in — otherwise a
-  // session already exists (persisted from a prior visit) — forceLoginForm
-  // makes AccountPage show the real login form regardless, and
+  // "Sign In" from the landing nav: a full reset back to a signed-out state,
+  // then the real login form. If a session was already active (e.g. someone
+  // wants to switch accounts), leaving it alive would keep the sidebar
+  // showing that account's pinned events/email chip behind the login form —
+  // signing out first makes the whole app look exactly like nobody has ever
+  // signed in, not just the login page in isolation. forceLoginForm covers
+  // the brief gap before the SIGNED_OUT event actually propagates so
+  // AccountPage never flashes the "already logged in" view in between.
   // postLoginRedirect (consumed via the SIGNED_IN event, not a truthiness
-  // check) only fires the Dashboard jump once an actual sign-in action
-  // completes, never just because a session was already active.
+  // check) fires the Dashboard jump once the new sign-in completes.
   function handleSignIn() {
     setPrevPage('landing')
     setPendingDestination('home')
     setPostLoginRedirect(true)
     setForceLoginForm(true)
+    supabase.auth.signOut()
     setPage('account'); setNavOpen(false)
   }
   function handleSettings() {

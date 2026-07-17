@@ -2050,6 +2050,16 @@ export default function App() {
   // Track the Supabase auth session — getSession() resolves the session
   // already persisted in localStorage from a prior visit; onAuthStateChange
   // keeps `user` current across sign-in/sign-up/sign-out without a reload.
+  // Read via a ref (not a dependency) below — this effect must only ever run
+  // ONCE, on mount. It used to depend on [postLoginRedirect], which meant
+  // React tore down and recreated this whole subscription (including a fresh
+  // getSession() re-fetch) every time handleSignIn() flipped that flag —
+  // exactly the same moment a sign-out was in flight. That re-fetch could
+  // read the session before Supabase had actually cleared it and set `user`
+  // right back to the old account, undoing the sign-out.
+  const postLoginRedirectRef = useRef(postLoginRedirect)
+  useEffect(() => { postLoginRedirectRef.current = postLoginRedirect }, [postLoginRedirect])
+
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null))
     const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
@@ -2060,12 +2070,12 @@ export default function App() {
       // checking `user` truthiness, this never fires just because a
       // pre-existing session was restored on a normal page load, so arming
       // postLoginRedirect earlier can't cause a premature/silent redirect.
-      if (event === 'SIGNED_IN' && postLoginRedirect) {
+      if (event === 'SIGNED_IN' && postLoginRedirectRef.current) {
         setPostLoginRedirect(false); setForceLoginForm(false); setPage('dashboard')
       }
     })
     return () => sub.subscription.unsubscribe()
-  }, [postLoginRedirect])
+  }, [])
 
   // Pinned events — [{org, event}], loaded from Supabase for the signed-in
   // user and kept in sync via optimistic local updates in togglePin (below)

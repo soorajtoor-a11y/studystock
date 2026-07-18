@@ -3,7 +3,7 @@
 // sample, the grader isn't discriminating and Haiku's leniency is a real
 // problem, not a theoretical one.
 
-import { gradeScript } from '../scriptGrader.js';
+import { runWorkbot } from '../presentationOrchestrator.js';
 
 const WEAK_SPEECH = `
 Today I want to talk about overcoming challenges. Challenges are hard but you can get through them if you try your best and never give up.
@@ -16,9 +16,9 @@ In conclusion, overcoming challenges is important and everyone should try to do 
 `.trim();
 
 async function main() {
-  const result = await gradeScript('Public Speaking', WEAK_SPEECH);
+  const result = await runWorkbot('Public Speaking', { script: WEAK_SPEECH });
   console.log(JSON.stringify(result, null, 2));
-  console.log(`\nSubtotal: ${result.subtotal} / ${result.ceiling}`);
+  console.log(`\nScored: ${result.totals.scored_points} / ${result.totals.assessed_ceiling}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

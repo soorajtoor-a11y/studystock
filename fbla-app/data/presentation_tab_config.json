@@ -35,11 +35,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 10
     },
     {
       "event": "Financial Planning",
@@ -66,11 +67,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 10
     },
     {
       "event": "Financial Statement Analysis",
@@ -97,11 +99,13 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
+          "available": false
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": "The captured line items sum to 140, but the official sheet prints a 150 total (one item's max is likely 10 higher than captured). grand_total is set to the honest computed 140; verify the missing 10 against the official PDF before locking."
+      "notes": "The captured line items sum to 140, but the official sheet prints a 150 total (one item's max is likely 10 higher than captured). grand_total is set to the honest computed 140; verify the missing 10 against the official PDF before locking.",
+      "audio_scorable_points": 0
     },
     {
       "event": "Event Planning",
@@ -128,11 +132,13 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
+          "available": false
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 0
     },
     {
       "event": "Data Analysis",
@@ -159,11 +165,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (5 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 5 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 5
     },
     {
       "event": "Supply Chain Management",
@@ -190,11 +197,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 10
     },
     {
       "event": "Future Business Educator",
@@ -222,11 +230,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (20 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 10 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 10
     },
     {
       "event": "Social Media Strategies",
@@ -253,11 +262,13 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
+          "available": false
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 0
     },
     {
       "event": "Business Ethics",
@@ -285,11 +296,13 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
+          "available": false
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": "Grand total 180 covers report + presentation only; the objective test scores/advances separately. Vye already handles objective tests, so this event pairs its existing engine with the new grader."
+      "notes": "Grand total 180 covers report + presentation only; the objective test scores/advances separately. Vye already handles objective tests, so this event pairs its existing engine with the new grader.",
+      "audio_scorable_points": 0
     },
     {
       "event": "Career Portfolio",
@@ -316,11 +329,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 10
     },
     {
       "event": "Job Interview",
@@ -348,11 +362,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (35 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 25 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Mock interview",
-      "notes": "Only the 50-pt prejudged assets are auto-gradable from an upload. The 120-pt interview is live; build it as a mock-interview practice mode."
+      "notes": "Only the 50-pt prejudged assets are auto-gradable from an upload. The 120-pt interview is live; build it as a mock-interview practice mode.",
+      "audio_scorable_points": 10
     },
     {
       "event": "Public Speaking",
@@ -379,11 +394,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (40 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 20 audio-observable delivery pts (pace/voice/delivery). 20 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 20
     },
     {
       "event": "Introduction to Public Speaking",
@@ -410,11 +426,12 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (40 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "Scores 20 audio-observable delivery pts (pace/voice/delivery). 20 pts name visual signals \u2192 locked, need video."
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 20
     },
     {
       "event": "Introduction to Business Presentation",
@@ -441,11 +458,13 @@
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Delivery coaching (10 pts on the sheet; partial from audio - full delivery needs video)"
+          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
+          "available": false
         }
       ],
       "interactive_practice_mode": "Q&A practice",
-      "notes": null
+      "notes": null,
+      "audio_scorable_points": 0
     }
   ]
 }

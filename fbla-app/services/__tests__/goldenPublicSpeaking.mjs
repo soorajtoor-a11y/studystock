@@ -10,7 +10,7 @@
 // rubber-stamp everything as Exceeds.
 
 import assert from 'assert';
-import { gradeScript } from '../scriptGrader.js';
+import { runWorkbot } from '../presentationOrchestrator.js';
 
 const SAMPLE_SPEECH = `
 Three years ago, I broke my ankle two weeks before the biggest cross country meet of my season. I want to talk today about bouncing back — not just recovering, but coming back stronger than before.
@@ -29,20 +29,25 @@ So here's what I'd leave you with: bouncing back isn't about pretending the setb
 `.trim();
 
 async function main() {
-  const result = await gradeScript('Public Speaking', SAMPLE_SPEECH);
+  const result = await runWorkbot('Public Speaking', { script: SAMPLE_SPEECH });
 
   console.log(JSON.stringify(result, null, 2));
 
+  const scored = result.criteria.filter(c => c.status === 'scored');
+  const locked = result.criteria.filter(c => c.status === 'locked');
+
   // --- Mechanical invariants (must always hold, regardless of judgment calls) ---
   assert.strictEqual(result.event, 'Public Speaking');
-  assert.strictEqual(result.ceiling, 60);
-  assert.strictEqual(result.grand_total, 110);
-  assert.strictEqual(result.scored.length, 5); // Topic&Theme, Intro, Body, Conclusion, Adherence
-  assert.strictEqual(result.not_scored.length, 5); // 4 delivery + Q&A
-  assert.ok(result.subtotal <= result.ceiling, 'subtotal must not exceed ceiling');
-  assert.ok(result.subtotal >= 0, 'subtotal must not be negative');
+  assert.strictEqual(result.totals.assessed_ceiling, 60);
+  assert.strictEqual(result.totals.ai_gradable_ceiling, 60);
+  assert.strictEqual(result.totals.grand_total, 110);
+  assert.strictEqual(scored.length, 5); // Topic&Theme, Intro, Body, Conclusion, Adherence
+  assert.strictEqual(locked.length, 5); // 4 delivery + Q&A
+  assert.ok(result.totals.scored_points <= result.totals.assessed_ceiling, 'scored_points must not exceed assessed_ceiling');
+  assert.ok(result.totals.scored_points >= 0, 'scored_points must not be negative');
 
-  for (const s of result.scored) {
+  for (const s of scored) {
+    assert.strictEqual(s.owner_tool, 'script');
     assert.ok(s.points >= 0 && s.points <= s.max, `${s.criterion}: points ${s.points} out of [0, ${s.max}]`);
     assert.ok(s.justification && s.justification.length > 0, `${s.criterion}: empty justification`);
     assert.ok(s.fix && s.fix.length > 0, `${s.criterion}: empty fix`);
@@ -51,8 +56,8 @@ async function main() {
     }
   }
 
-  for (const ns of result.not_scored) {
-    assert.ok(ns.reason && ns.reason.length > 0, `${ns.criterion}: missing not_scored reason`);
+  for (const l of locked) {
+    assert.ok(l.unlock_hint && l.unlock_hint.length > 0, `${l.criterion}: missing unlock_hint`);
   }
 
   console.log('\nAll mechanical invariants hold.');

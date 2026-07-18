@@ -6,7 +6,8 @@
 // Run: node services/__tests__/allEventsSmoke.mjs
 
 import assert from 'assert';
-import { listEvents, gradeScript } from '../scriptGrader.js';
+import { listEvents } from '../scriptGrader.js';
+import { runWorkbot } from '../presentationOrchestrator.js';
 
 const GENERIC_SCRIPT = `
 This report addresses the assigned topic for this year's competitive event. We
@@ -24,13 +25,20 @@ async function main() {
   let failures = 0;
   for (const { event, ai_gradable_points } of events) {
     try {
-      const result = await gradeScript(event, GENERIC_SCRIPT);
-      assert.strictEqual(result.ceiling, ai_gradable_points, 'ceiling mismatch');
-      assert.ok(result.subtotal >= 0 && result.subtotal <= result.ceiling, 'subtotal out of range');
-      for (const s of result.scored) {
-        assert.ok(s.points >= 0 && s.points <= s.max, `${event}/${s.criterion}: points out of range`);
+      const result = await runWorkbot(event, { script: GENERIC_SCRIPT });
+      assert.strictEqual(result.totals.assessed_ceiling, ai_gradable_points, 'assessed_ceiling mismatch');
+      assert.ok(
+        result.totals.scored_points >= 0 && result.totals.scored_points <= result.totals.assessed_ceiling,
+        'scored_points out of range'
+      );
+      for (const c of result.criteria) {
+        if (c.status === 'scored') {
+          assert.ok(c.points >= 0 && c.points <= c.max, `${event}/${c.criterion}: points out of range`);
+        } else {
+          assert.ok(c.unlock_hint, `${event}/${c.criterion}: locked with no unlock_hint`);
+        }
       }
-      console.log(`ok    ${event.padEnd(38)} ${result.subtotal}/${result.ceiling}${result.flag ? '  [flagged]' : ''}`);
+      console.log(`ok    ${event.padEnd(38)} ${result.totals.scored_points}/${result.totals.assessed_ceiling}${result.flag ? '  [flagged]' : ''}`);
     } catch (err) {
       failures++;
       console.error(`FAIL  ${event.padEnd(38)} ${err.message}`);

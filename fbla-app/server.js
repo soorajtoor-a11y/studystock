@@ -1,10 +1,12 @@
 import express from 'express';
 import cors from 'cors';
+import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
-import { gradeScript, listEvents as listPresentationEvents } from './services/scriptGrader.js';
+import { listEvents as listPresentationEvents } from './services/scriptGrader.js';
+import { runWorkbot } from './services/presentationOrchestrator.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -1227,32 +1229,60 @@ app.post('/api/notes', async (req, res) => {
   }
 });
 
-// Script Grader — scores a pasted FBLA presentation-event script against the
-// event's official rating sheet. See services/scriptGrader.js and
-// BUILD-BRIEF-script-grader.md for the full spec.
+// Presentation Workbot — one console where a student picks an FBLA
+// presentation event, supplies whatever inputs they have (a pasted script or
+// an uploaded document/deck), and gets back one merged scorecard covering
+// the event's full official rating sheet. See services/presentationOrchestrator.js,
+// services/scriptGrader.js, and SHARED-CONTRACT.md for the full spec.
 const MAX_SCRIPT_LENGTH = 20000; // ~3500-4000 words — generous for a 5-7 min speech/report
+const MAX_FILE_BYTES = 20 * 1024 * 1024; // 20MB — generous for a document/deck upload
+const workbotUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: MAX_FILE_BYTES } });
 
 app.get('/api/presentation-events', (req, res) => {
   res.json(listPresentationEvents());
 });
 
-app.post('/api/grade-script', async (req, res) => {
-  const { eventId, scriptText } = req.body;
+// Accepts either a plain JSON body ({ eventId, inputs: { script } }) or a
+// multipart/form-data submission (eventId field + an uploaded `file` field).
+// A companion `inputType` field ("files" | "audio") says which grader the
+// upload is for, since one uploaded buffer is ambiguous otherwise — defaults
+// to "files" (document/deck) when omitted. Multer only intercepts multipart
+// requests — a JSON POST passes through untouched to express.json()'s
+// already-parsed req.body.
+app.post('/api/workbot/grade', workbotUpload.single('file'), async (req, res) => {
+  const eventId = req.body?.eventId;
   if (typeof eventId !== 'string' || !listPresentationEvents().some(e => e.event === eventId)) {
     return res.status(400).json({ error: 'Unknown or missing eventId' });
   }
-  if (typeof scriptText !== 'string') {
-    return res.status(400).json({ error: 'scriptText must be a string' });
+
+  const inputs = {};
+
+  let rawInputs = req.body?.inputs;
+  if (typeof rawInputs === 'string') {
+    try { rawInputs = JSON.parse(rawInputs); } catch { rawInputs = null; }
   }
-  if (scriptText.length > MAX_SCRIPT_LENGTH) {
-    return res.status(400).json({ error: `scriptText exceeds ${MAX_SCRIPT_LENGTH} characters` });
+  if (rawInputs && typeof rawInputs === 'object') {
+    if (typeof rawInputs.script === 'string') inputs.script = rawInputs.script;
   }
-  console.log(`[grade-script] event="${eventId}" scriptLength=${scriptText.length}`);
+
+  if (req.file) {
+    if (req.body?.inputType === 'audio') {
+      inputs.audio = { audioBuffer: req.file.buffer, filename: req.file.originalname, mimeType: req.file.mimetype };
+    } else {
+      inputs.files = { buffer: req.file.buffer, filename: req.file.originalname };
+    }
+  }
+
+  if (inputs.script != null && inputs.script.length > MAX_SCRIPT_LENGTH) {
+    return res.status(400).json({ error: `inputs.script exceeds ${MAX_SCRIPT_LENGTH} characters` });
+  }
+
+  console.log(`[workbot] event="${eventId}" inputs=${Object.keys(inputs).join(',')}`);
   try {
-    const result = await gradeScript(eventId, scriptText);
+    const result = await runWorkbot(eventId, inputs);
     res.json(result);
   } catch (err) {
-    console.error('Script grader error:', err.message);
+    console.error('Workbot error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });

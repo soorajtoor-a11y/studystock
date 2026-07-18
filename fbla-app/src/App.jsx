@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import Landing from './Landing'
 import Reveal from './components/Reveal'
-import ScriptGraderPage from './components/ScriptGraderPage'
+import WorkbotPage from './components/WorkbotPage'
 import { ORG_META, ORG_ORDER } from './orgMeta'
 import { supabase } from './supabaseClient'
-import appMark from './assets/vye-mark.png'
+import { WordmarkIcon } from './components/landing/Wordmark'
 import './App.css'
 
 // DECA event slugs: most cluster exams' folder names end in "-cluster",
@@ -1873,7 +1873,7 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onScriptGrader, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open }) {
+function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open }) {
   const [search, setSearch] = useState('')
   const filtered = search.trim()
     ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
@@ -1884,7 +1884,7 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
   return (
     <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
       <button className="sidebar-logo" onClick={onLanding} title="Back to VyeAI overview">
-        <img className="sidebar-logo-mark" src={appMark} alt="VyeAI" />
+        <WordmarkIcon className="sidebar-logo-mark" size={46} />
       </button>
 
       <div className="sidebar-top">
@@ -1978,11 +1978,11 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
       </nav>
 
       <div className="sidebar-footer">
-        <button className={`sidebar-settings-btn ${page === 'script-grader' ? 'active' : ''}`} onClick={onScriptGrader}>
+        <button className={`sidebar-settings-btn ${page === 'workbot' ? 'active' : ''}`} onClick={onWorkbot}>
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
             <path fillRule="evenodd" d="M4 4a2 2 0 012-2h6.586A2 2 0 0114 2.586L16.414 5A2 2 0 0117 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm4 5a1 1 0 100 2h4a1 1 0 100-2H8zm0 4a1 1 0 100 2h4a1 1 0 100-2H8z" clipRule="evenodd" />
           </svg>
-          Script Grader
+          Presentation Workbot
         </button>
         <button className={`sidebar-settings-btn ${page === 'account' ? 'active' : ''}`} onClick={onAccount}>
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
@@ -2008,7 +2008,7 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'script-grader'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'workbot'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
@@ -2294,11 +2294,11 @@ export default function App() {
     setPage('settings'); setNavOpen(false)
   }
   function handleSettingsBack() { setPage(prevPage); setNavOpen(false) }
-  function handleScriptGrader() {
-    if (page !== 'script-grader') setPrevPage(page)
-    setPage('script-grader'); setNavOpen(false)
+  function handleWorkbot() {
+    if (page !== 'workbot') setPrevPage(page)
+    setPage('workbot'); setNavOpen(false)
   }
-  function handleScriptGraderBack() { setPage(prevPage); setNavOpen(false) }
+  function handleWorkbotBack() { setPage(prevPage); setNavOpen(false) }
   function handleAccount() {
     if (page !== 'account') setPrevPage(page)
     setForceLoginForm(false)
@@ -2326,8 +2326,8 @@ export default function App() {
     content = <SettingsPage theme={theme} onThemeChange={setTheme} user={user} usageDays={usageDays} onBack={handleSettingsBack} />
   } else if (page === 'account') {
     content = <AccountPage user={user} recoveryMode={recoveryMode} forceLoginForm={forceLoginForm} onBack={handleAccountBack} />
-  } else if (page === 'script-grader') {
-    content = <ScriptGraderPage onBack={handleScriptGraderBack} />
+  } else if (page === 'workbot') {
+    content = <WorkbotPage onBack={handleWorkbotBack} />
   } else if (page === 'dashboard' && user) {
     content = <Dashboard user={user} pins={pins} usageDays={usageDays} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
   } else if (page === 'explain-history' && activeEvent && user) {
@@ -2424,7 +2424,7 @@ export default function App() {
         onOrgChange={handleOrgChange}
         onSettings={handleSettings}
         onAccount={handleAccount}
-        onScriptGrader={handleScriptGrader}
+        onWorkbot={handleWorkbot}
         user={user}
         pins={pins}
         onTogglePin={togglePin}

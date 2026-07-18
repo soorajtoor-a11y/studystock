@@ -1,0 +1,108 @@
+{
+  "Identify the five C's of communication.": [
+    {
+      "question": "Which of the five C's of communication refers to the message being free from errors and ambiguity?",
+      "options": {
+        "A": "Clarity",
+        "B": "Conciseness",
+        "C": "Correctness",
+        "D": "Coherence"
+      },
+      "answer": "C",
+      "explanation": "Correctness is the C that emphasizes accuracy in spelling, grammar, facts, and figures — ensuring the message contains no errors that would confuse or mislead the receiver. Clarity focuses on understandable word choice; conciseness addresses unnecessary length; and coherence deals with logical flow and organization — all distinct from the error-free requirement that defines correctness.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A manager wants to convey complex financial data to the board in a report that is easy to understand and logically organized. Which C of communication is the primary focus here?",
+      "options": {
+        "A": "Conciseness",
+        "B": "Coherence",
+        "C": "Completeness",
+        "D": "Courtesy"
+      },
+      "answer": "B",
+      "explanation": "Coherence ensures that ideas are logically connected and the message flows in an organized manner, making complex information easier to follow. While conciseness eliminates unnecessary words, completeness ensures all needed information is included, and courtesy addresses tone — coherence is specifically about logical organization and clear structure that helps the audience understand how ideas relate to one another.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    },
+    {
+      "question": "All of the following are among the five C's of communication EXCEPT",
+      "options": {
+        "A": "Clarity",
+        "B": "Conciseness",
+        "C": "Credibility",
+        "D": "Completeness"
+      },
+      "answer": "C",
+      "explanation": "The five C's of communication are Clarity, Conciseness, Correctness, Coherence, and Completeness. Credibility, while important in business communication, is not one of the five C's framework. Credibility relates to the sender's trustworthiness and reputation, whereas the five C's focus specifically on message attributes and delivery principles.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When a business email includes every relevant detail needed for the reader to make a decision without requiring follow-up questions, which C of communication is being demonstrated?",
+      "options": {
+        "A": "Clarity",
+        "B": "Completeness",
+        "C": "Conciseness",
+        "D": "Correctness"
+      },
+      "answer": "B",
+      "explanation": "Completeness ensures that all necessary information is included so the reader has everything needed to understand and act on the message. Clarity ensures understandable language; conciseness avoids unnecessary length; and correctness ensures accuracy — but completeness specifically addresses the inclusion of all required facts, details, and context to eliminate the need for clarification.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A business letter uses simple, direct language and removes all redundant phrases while maintaining a respectful tone. Which two of the five C's are best illustrated in this example?",
+      "options": {
+        "A": "Clarity and Conciseness",
+        "B": "Correctness and Coherence",
+        "C": "Completeness and Courtesy",
+        "D": "Conciseness and Correctness"
+      },
+      "answer": "A",
+      "explanation": "Clarity is demonstrated through simple, direct language that is easy to understand, and conciseness is shown by removing redundant phrases and unnecessary words. While courtesy relates to respectful tone, it is not one of the five C's; the five C's are Clarity, Conciseness, Correctness, Coherence, and Completeness. Correctness and coherence are separate concepts not specifically highlighted in this scenario.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "hard"
+    },
+    {
+      "question": "When a business communicator ensures that the message is tailored to the audience's level of understanding and uses language appropriate for the recipient, which of the five C's of communication is being applied?",
+      "options": {
+        "A": "Consideration",
+        "B": "Conciseness",
+        "C": "Consistency",
+        "D": "Coherence"
+      },
+      "answer": "A",
+      "explanation": "Consideration refers to adapting communication to the audience's needs, knowledge level, and perspective. Conciseness focuses on brevity, consistency addresses uniform messaging across channels, and coherence relates to logical flow and organization. Choosing the right language for the right audience demonstrates audience-centered thinking, which is the core of consideration.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Which of the following would all be examples of violating the coherence principle in business communication?",
+      "options": {
+        "A": "Using overly technical jargon for a general audience; failing to adapt tone to the recipient's role",
+        "B": "Presenting ideas in random order; including unrelated tangents; failing to use transitions between thoughts",
+        "C": "Using vague pronouns with unclear antecedents; including multiple unrelated topics without prioritization",
+        "D": "Omitting key facts needed for decision-making; leaving the reader with unanswered questions about next steps"
+      },
+      "answer": "B",
+      "explanation": "Coherence requires logical organization, clear connections between ideas, and smooth transitions that help the reader follow the message's structure and reasoning. Option B directly describes breakdowns in logical flow and organization. Option A relates to consideration (audience adaptation), Option C mixes coherence with completeness concerns, and Option D primarily addresses completeness (including all necessary information).",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which of the following best describes what is meant by the C of communication that emphasizes ensuring the message uses only words and ideas that are truly necessary to achieve the purpose?",
+      "options": {
+        "A": "Coherence, which requires every sentence to connect logically to the next",
+        "B": "Conciseness, which eliminates wordiness and redundant phrases",
+        "C": "Completeness, which verifies that all relevant facts are included",
+        "D": "Credibility, which demonstrates the communicator's reliability and expertise"
+      },
+      "answer": "B",
+      "explanation": "Conciseness specifically means trimming unnecessary words and repetition while preserving meaning. Coherence is about logical flow and connections; Completeness ensures all needed information is present; Credibility depends on the communicator's trustworthiness and knowledge. Only Conciseness directly addresses eliminating unnecessary language.",
+      "knowledge_area": "Five C's of Communication",
+      "difficulty": "medium"
+    }
+  ]
+}

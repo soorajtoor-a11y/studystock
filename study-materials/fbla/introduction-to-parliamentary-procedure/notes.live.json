@@ -1,0 +1,19 @@
+{
+  "[object Object]|[object Object]|[object Object]": [
+    {
+      "objective_num": 1,
+      "heading": "Core Principles of Parliamentary Law",
+      "body": "Parliamentary law rests on six foundational principles: (1) one question and one speaker at a time; (2) majority rule only after minority has been heard; (3) equal rights for all members; (4) protection of assembly, minority, individuals, and absentees; (5) justice, courtesy, and impartiality; (6) silence equals consent—abstaining members accept the vote outcome. The purpose is efficient business transaction while safeguarding member rights. These principles govern all motion handling, debate, and voting."
+    },
+    {
+      "objective_num": 2,
+      "heading": "Parliamentary Authority and Governing Documents",
+      "body": "Parliamentary authority flows from a hierarchy: corporate charter (if incorporated) → bylaws → standing rules → special rules of order → general parliamentary law (Robert's Rules). Bylaws are the organization's fundamental law and cannot be suspended; they govern membership, officers, committees, and meeting structure. Standing rules apply to each meeting and may be suspended by majority vote. Special rules of order modify general parliamentary law and require a two-thirds vote to adopt or suspend. Each level must be consistent with higher authority."
+    },
+    {
+      "objective_num": 3,
+      "heading": "Session, Meeting, Quorum, and Their Effects",
+      "body": "A session is a single gathering of the assembly; a meeting is one or more sessions held on the same day without adjournment sine die. Quorum is the minimum number of members who must be present to conduct business legally (set by bylaws; default is a majority of membership). Without quorum, the assembly cannot act except to adjourn or take measures to achieve quorum. If quorum is lost during a meeting, debate stops and the chair must adjourn or call for quorum. All actions taken without quorum present are voidable."
+    }
+  ]
+}

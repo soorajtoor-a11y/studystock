@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "org": "FBLA",
+    "division": "High School",
+    "season": "2025-2026",
+    "purpose": "Machine-readable rating sheets for Vye's AI presentation grader. Each criterion is tagged by category and whether the AI can score it from an uploaded document/slides/script (ai_gradable). Delivery and live-Q&A criteria are ai_gradable:false and belong in a practice/coaching mode, not automated scoring.",
+    "category_key": {
+      "content": "Substance the AI reads and scores from the upload.",
+      "compliance": "Format/sources/adherence the AI can check against the deliverable spec (page limits, required sections, citations).",
+      "delivery": "Live delivery (confidence, body language, eye contact, voice, pace). NOT gradable from text.",
+      "qa": "Live judge Q&A. NOT gradable from an upload; use practice mode."
+    },
+    "source": "Virginia FBLA competitive-event guidelines (cteresource.org), which reproduce the national FBLA rating sheets. URLs on each event."
+  },
+  "events": [
+    {
+      "event": "Business Plan",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": true,
+      "deliverable": {
+        "type": "Prejudged report (PDF) + presentation",
+        "page_limit": 17,
+        "paper": "8.5x11",
+        "required_sections": ["Front cover", "Table of contents", "Executive Summary", "Company Profile", "Industry Analysis", "Target Market", "Competitive Analysis", "Marketing Plan and Sales Strategy", "Operations", "Management and Organization", "Long-Term Development", "Financials", "Appendix"],
+        "prohibited": ["QR codes", "links"],
+        "presentation_time_min": 7,
+        "qa_time_min": 3
+      },
+      "rating_sheets": [
+        {"name": "Prejudged Report", "total": 190, "criteria": [
+          {"criterion": "Executive Summary", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Company Profile", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Industry Analysis", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Target Market", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Competitive Analysis", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Marketing Plan & Sales Strategy", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Operations", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Management & Organization", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Long-Term Development", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Financials", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Sources/Research", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Report Format", "max": 5, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Grammar/Punctuation/Spelling", "max": 5, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]},
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Business Concept & Company Profile", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Marketing Aspects", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Operations & Management Plans", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Financial Documents & Projections", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Risks & Adverse Results Analysis", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Long-Term Goals", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Organization & Clarity", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence & Delivery", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Q&A Response Ability", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 300,
+      "ai_gradable_points": 280,
+      "source_url": "https://www.cteresource.org/media/oyvgva5t/2526-business-plan-va-fbla.pdf"
+    },
+    {
+      "event": "Financial Planning",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3, "required_topics": ["budgeting/expense tracking", "debt management", "investments vs retirement", "goal attainment", "recommendations", "professional guidance"]},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 150, "criteria": [
+          {"criterion": "Understanding of topic & problem definition", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Budgeting", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Debt Management", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Investments & Retirement", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Goal Attainment", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Recommendations", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Professional Guidance", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Source Citation", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Presentation Organization", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence & Delivery", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Question Response", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 150,
+      "ai_gradable_points": 130,
+      "source_url": "https://www.cteresource.org/media/f1jcytob/2526-financial-planning-va-fbla.pdf"
+    },
+    {
+      "event": "Financial Statement Analysis",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3, "note": "2025-26 subject: Chipotle Mexican Grill financials FY ending 12/31/2024 (SEC EDGAR)."},
+      "rating_sheets": [
+        {"name": "Presentation", "total_stated": 150, "total_computed": 140, "criteria": [
+          {"criterion": "Describes each financial statement & purpose", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Performs financial analysis of each statement", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Describes financial condition using analysis", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Offers guidance for business decision making", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Highlights key differences between years", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Analyzes what changes reveal about financial health", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Recommends 2-3 strategic business decisions", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Substantiates & cites sources", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Well-organized & clearly stated", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence, body language, eye contact, voice", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Effectively answers questions", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 140,
+      "ai_gradable_points": 120,
+      "source_url": "https://www.cteresource.org/media/nlejmdu2/2526-financial-statement-analysis-va-fbla.pdf",
+      "flag": "The captured line items sum to 140, but the official sheet prints a 150 total (one item's max is likely 10 higher than captured). grand_total is set to the honest computed 140; verify the missing 10 against the official PDF before locking."
+    },
+    {
+      "event": "Event Planning",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 180, "criteria": [
+          {"criterion": "Event Overview", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Planning Process", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Budget", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Logistics", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Marketing & Promotion", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Legal & Risk Management", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Execution Summary", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Evaluation & Reflection", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Statements Well-Organized", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence/Body Language/Eye Contact/Voice", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Question Response Ability", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 180,
+      "ai_gradable_points": 160,
+      "source_url": "https://www.cteresource.org/media/1owpohzp/2526-event-planning-va-fbla.pdf"
+    },
+    {
+      "event": "Data Analysis",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3, "note": "Requires at least three competitor-created visuals."},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Topic Understanding", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Data Analysis", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Visualizations", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Recommendation", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Statement Accuracy", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Source Citation", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Organization", "max": 5, "category": "content", "ai_gradable": true},
+          {"criterion": "Delivery/Confidence", "max": 5, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Q&A Response", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Protocol Adherence", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 95,
+      "source_url": "https://www.cteresource.org/media/tpsnr5a4/2526-data-analysis-va-fbla.pdf"
+    },
+    {
+      "event": "Supply Chain Management",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 120, "criteria": [
+          {"criterion": "Summarizes Supply Chain Management", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Management Planning", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Financial Planning", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Demand Planning", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Sources/Citations", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Presentation Organization", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Delivery/Confidence", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Question Response", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 120,
+      "ai_gradable_points": 100,
+      "source_url": "https://www.cteresource.org/media/batbmrlh/2526-supply-chain-management-va-fbla.pdf"
+    },
+    {
+      "event": "Future Business Educator",
+      "tier": "1-strong",
+      "participants": "Individual",
+      "has_uploaded_document": true,
+      "deliverable": {"type": "Prejudged lesson plan (PDF, <=3 pages) + presentation", "page_limit": 3, "paper": "8.5x11", "presentation_time_min": 7, "qa_time_min": 3, "prohibited": ["links", "QR codes"]},
+      "rating_sheets": [
+        {"name": "Prejudged Lesson Plan", "total": 60, "criteria": [
+          {"criterion": "Spelling, punctuation, grammar", "max": 5, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Business & Academic Standards", "max": 5, "category": "content", "ai_gradable": true},
+          {"criterion": "Objectives", "max": 5, "category": "content", "ai_gradable": true},
+          {"criterion": "Outcome & Measurement", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Resources & Materials", "max": 5, "category": "content", "ai_gradable": true},
+          {"criterion": "Instructional Activities", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Substantiates & cites sources", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]},
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Subject matter knowledge", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Material met lesson plan objectives", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Material appropriate for audience/subject", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Interesting, motivating, creative", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Substantiates & cites sources", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Presentation Delivery", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Verbal and nonverbal communication", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Ability to answer questions", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 170,
+      "ai_gradable_points": 140,
+      "source_url": "https://www.cteresource.org/media/1wglfybz/2526-future-business-educator-va-fbla.pdf"
+    },
+    {
+      "event": "Social Media Strategies",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only", "presentation_time_min": 7, "qa_time_min": 3, "note": "Must include >=3 posts across multiple platforms and a clear call-to-action."},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Campaign addresses topic/audience", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Knowledge of strategies & metrics", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Research methodology described", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Design process described", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Social media strategies / call-to-action", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Three+ posts on multiple platforms", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Sources substantiated & cited", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Organization / clarity", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence, body language, eye contact, voice", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Question response ability", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 90,
+      "source_url": "https://www.cteresource.org/media/14qmc1ih/2526-social-media-strategies-va-fbla.pdf"
+    },
+    {
+      "event": "Business Ethics",
+      "tier": "1-strong-BUT-has-test",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": true,
+      "has_objective_test": true,
+      "deliverable": {"type": "Objective test (100Q, 50min) + prejudged executive summary (PDF, <=3 pages) + presentation", "page_limit": 3, "paper": "8.5x11", "presentation_time_min": 7, "qa_time_min": 3, "required_report_headings": ["Why the Ethical Issue Happened", "How the Ethical Issue Should be Resolved", "What Could Have Prevented the Ethical Issue", "Works Cited"], "note": "Requires interviews with three local businesspeople."},
+      "rating_sheets": [
+        {"name": "Prejudged Executive Summary", "total": 70, "criteria": [
+          {"criterion": "Identifies & defines ethical issues", "max": 5, "category": "content", "ai_gradable": true},
+          {"criterion": "Explains why ethical issues happened", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Provides logical solutions", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Recommends safeguards", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Substantiates & cites sources", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Business interviews & integration", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Grammar, punctuation, spelling", "max": 5, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]},
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Identifies & defines ethical issues", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Explains why ethical issues happened", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Provides logical recommendations", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Recommends safeguards", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Research quality & businesspeople input", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Substantiates & cites sources", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Well-organized, clearly stated", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence, body language, eye contact, voice", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Effectively answers questions", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 180,
+      "ai_gradable_points": 160,
+      "source_url": "https://www.cteresource.org/media/n53eg2pv/2526-business-ethics-va-fbla.pdf",
+      "flag": "Grand total 180 covers report + presentation only; the objective test scores/advances separately. Vye already handles objective tests, so this event pairs its existing engine with the new grader."
+    },
+    {
+      "event": "Career Portfolio",
+      "tier": "1-strong",
+      "participants": "Individual",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Presentation only (portfolio presented live)", "presentation_time_min": 7, "qa_time_min": 3},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Resume", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Career Research", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Career-Related Education", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Special Skills/Proficiencies", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Source Documentation", "max": 10, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Portfolio Use", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Organization/Clarity", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Delivery/Confidence", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Q&A Responses", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 90,
+      "source_url": "https://www.cteresource.org/media/micehhhh/2526-career-portfolio-va-fbla.pdf"
+    },
+    {
+      "event": "Job Interview",
+      "tier": "1-strong (assets only)",
+      "participants": "Individual",
+      "has_uploaded_document": true,
+      "deliverable": {"type": "Prejudged cover letter + resume, then live interview", "cover_letter_page_limit": 1, "resume_page_limit": 2, "paper": "8.5x11", "interview_time_min": 10, "note": "No photos on resume; no links/QR codes."},
+      "rating_sheets": [
+        {"name": "Prejudged Assets (Cover Letter + Resume)", "total": 50, "criteria": [
+          {"criterion": "Cover letter states job applying for", "max": 4, "category": "content", "ai_gradable": true},
+          {"criterion": "Cover letter promotes self (skills, achievements)", "max": 8, "category": "content", "ai_gradable": true},
+          {"criterion": "Cover letter states resume included & asks for interview", "max": 4, "category": "content", "ai_gradable": true},
+          {"criterion": "Resume targets the job", "max": 4, "category": "content", "ai_gradable": true},
+          {"criterion": "Resume reader-friendly (layout, fonts, white space)", "max": 8, "category": "compliance", "ai_gradable": true},
+          {"criterion": "Resume includes education, activities, awards, experience", "max": 8, "category": "content", "ai_gradable": true},
+          {"criterion": "Resume brief & concise", "max": 4, "category": "content", "ai_gradable": true},
+          {"criterion": "Spelling & Grammar", "max": 5, "category": "compliance", "ai_gradable": true},
+          {"criterion": "All directions followed", "max": 5, "category": "compliance", "ai_gradable": true}
+        ]},
+        {"name": "Interview (live - practice mode only)", "total": 120, "criteria": [
+          {"criterion": "Job Readiness & Qualifications", "max": 15, "category": "qa", "ai_gradable": false},
+          {"criterion": "Interview Preparation & Research", "max": 15, "category": "qa", "ai_gradable": false},
+          {"criterion": "Response Quality & Critical Thinking", "max": 15, "category": "qa", "ai_gradable": false},
+          {"criterion": "Presentation of Strengths & Experiences", "max": 15, "category": "qa", "ai_gradable": false},
+          {"criterion": "Career Goals & Motivation", "max": 15, "category": "qa", "ai_gradable": false},
+          {"criterion": "Proper greeting, introduction, closing", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Confidence, body language, eye contact, voice", "max": 15, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Verbal and nonverbal communication", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": false}
+        ]}
+      ],
+      "grand_total": 170,
+      "ai_gradable_points": 50,
+      "source_url": "https://www.cteresource.org/media/o1tgbuex/2526-job-interview-va-fbla.pdf",
+      "flag": "Only the 50-pt prejudged assets are auto-gradable from an upload. The 120-pt interview is live; build it as a mock-interview practice mode."
+    },
+    {
+      "event": "Public Speaking",
+      "tier": "2-speech-script",
+      "participants": "Individual",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Prepared speech (script)", "presentation_time_min": 5, "qa_time_min": 2, "topic_2025_26": "Bouncing Back: How to Overcome Challenges and Succeed", "notes_allowed": true, "visual_aids": false},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Topic & Theme", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Introduction", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Supporting Information (Body)", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Conclusion", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Delivery - Pace & Fillers", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Eye Contact & Facial Expressions", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Voice Projection", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Confidence & Posture", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Q&A Ability", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 60,
+      "source_url": "https://www.cteresource.org/media/z5jldsba/2526-public-speaking-va-fbla.pdf"
+    },
+    {
+      "event": "Introduction to Public Speaking",
+      "tier": "2-speech-script",
+      "participants": "Individual (grades 9-10)",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Prepared speech (script)", "presentation_time_min": 5, "qa_time_min": 2, "topic_2025_26": "Social Media Smarts: Building a Positive Online Presence", "notes_allowed": true, "visual_aids": false},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 110, "criteria": [
+          {"criterion": "Topic & Theme", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Introduction", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Supporting Information (Body)", "max": 20, "category": "content", "ai_gradable": true},
+          {"criterion": "Conclusion", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Delivery - Pace & Filler Words", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Eye Contact & Facial Expressions", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Voice Projection", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Delivery - Confidence & Posture", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Q&A Response Ability", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 60,
+      "source_url": "https://www.cteresource.org/media/nlxhvq4x/2526-introduction-to-public-speaking-va-fbla.pdf"
+    },
+    {
+      "event": "Introduction to Business Presentation",
+      "tier": "2-speech-script",
+      "participants": "Team of 1-3 (grades 9-10)",
+      "has_uploaded_document": false,
+      "deliverable": {"type": "Prepared slide presentation (script + slides)", "presentation_time_min": 7, "qa_time_min": 3, "topic_2025_26": "AI: Smart Move or Risky Business?", "visual_aids": true},
+      "rating_sheets": [
+        {"name": "Presentation", "total": 115, "criteria": [
+          {"criterion": "Demonstrates understanding of event topic", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Describes purpose with logical sequence", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Summarizes information & identifies recommendations", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Technology - proper formatting/design", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Suitable & accurate statements with sources", "max": 15, "category": "content", "ai_gradable": true},
+          {"criterion": "Statements well-organized & clearly stated", "max": 10, "category": "content", "ai_gradable": true},
+          {"criterion": "Confidence, body language, eye contact, voice", "max": 10, "category": "delivery", "ai_gradable": false},
+          {"criterion": "Ability to effectively answer questions", "max": 10, "category": "qa", "ai_gradable": false},
+          {"criterion": "Adherence to Guidelines", "max": 10, "category": "compliance", "ai_gradable": true}
+        ]}
+      ],
+      "grand_total": 115,
+      "ai_gradable_points": 95,
+      "source_url": "https://www.cteresource.org/media/x4ochlmg/2526-introduction-to-business-presentation-va-fbla.pdf"
+    }
+  ]
+}

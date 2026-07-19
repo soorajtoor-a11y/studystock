@@ -1548,6 +1548,97 @@
       "ai_gradable_points": 95,
       "source_url": "https://www.cteresource.org/media/x4ochlmg/2526-introduction-to-business-presentation-va-fbla.pdf",
       "audio_scorable_points": 0
+    },
+    {
+      "event": "Sales Presentation",
+      "tier": "1-strong",
+      "participants": "Team of 1-3",
+      "has_uploaded_document": false,
+      "deliverable": {
+        "type": "Interactive sales presentation (pitch)",
+        "presentation_time_min": 7,
+        "note": "Judges may act as the customer; student pitches a product/service."
+      },
+      "rating_sheets": [
+        {
+          "name": "Presentation",
+          "total": 110,
+          "criteria": [
+            {
+              "criterion": "Presents appropriate greeting",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Able to determine needs",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Presenting product/service",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Able to overcome objections",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Demonstrates suggestion selling",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Able to close the sale",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Demonstrates relationship development",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Well-organized, clearly stated",
+              "max": 10,
+              "category": "content",
+              "ai_gradable": true
+            },
+            {
+              "criterion": "Confidence, body language, eye contact, voice",
+              "max": 10,
+              "category": "delivery",
+              "ai_gradable": false,
+              "audio_gradable": false,
+              "requires_video": true
+            },
+            {
+              "criterion": "Answers questions effectively",
+              "max": 10,
+              "category": "qa",
+              "ai_gradable": false
+            },
+            {
+              "criterion": "Adherence to Guidelines",
+              "max": 10,
+              "category": "compliance",
+              "ai_gradable": true
+            }
+          ]
+        }
+      ],
+      "grand_total": 110,
+      "ai_gradable_points": 90,
+      "audio_scorable_points": 0,
+      "source_url": "https://www.cteresource.org/media/f4khm1kd/2526-sales-presentation-va-fbla.pdf"
     }
   ]
 }

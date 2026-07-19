@@ -8,6 +8,7 @@ import { execFileSync } from 'child_process';
 import { listEvents as listPresentationEvents } from './services/scriptGrader.js';
 import { runWorkbot } from './services/presentationOrchestrator.js';
 import { inputOptionsFor } from './services/tabConfig.js';
+import { listNotYetGradableEvents, notReadyInputOptionsFor, tierFor } from './services/eventCatalog.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -1240,11 +1241,24 @@ const MAX_FILE_BYTES = 20 * 1024 * 1024; // 20MB — generous for a document/dec
 const workbotUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: MAX_FILE_BYTES } });
 
 app.get('/api/presentation-events', (req, res) => {
-  // input_options is the ordered, per-event set of submission methods (from
-  // presentation_tab_config.json) the picker offers — which one is primary
-  // vs. an alternative genuinely varies per event (e.g. Business Plan wants
-  // an uploaded report first; Public Speaking wants a pasted script first).
-  res.json(listPresentationEvents().map(e => ({ ...e, input_options: inputOptionsFor(e.event) })));
+  // All 30 official FBLA presentation events. 15 are build_ready — their
+  // input_options come from presentation_tab_config.json and actually score
+  // (Business Plan wants an uploaded report first; Public Speaking wants a
+  // pasted script first, etc). The other 15 are real events whose rating
+  // sheets need engines (video/vision/code/web) that don't exist yet — they
+  // still show up, tagged build_ready:false, so a student can see the event
+  // and its official rubric even though nothing on it can be scored today.
+  const ready = listPresentationEvents().map(e => ({
+    ...e,
+    tier: tierFor(e.event),
+    build_ready: true,
+    input_options: inputOptionsFor(e.event),
+  }));
+  const notReady = listNotYetGradableEvents().map(e => ({
+    ...e,
+    input_options: notReadyInputOptionsFor(e.event),
+  }));
+  res.json([...ready, ...notReady]);
 });
 
 // Accepts either a plain JSON body ({ eventId, inputs: { script } }) or a
@@ -1256,7 +1270,15 @@ app.get('/api/presentation-events', (req, res) => {
 // already-parsed req.body.
 app.post('/api/workbot/grade', workbotUpload.single('file'), async (req, res) => {
   const eventId = req.body?.eventId;
-  if (typeof eventId !== 'string' || !listPresentationEvents().some(e => e.event === eventId)) {
+  if (typeof eventId !== 'string') {
+    return res.status(400).json({ error: 'Unknown or missing eventId' });
+  }
+  if (listNotYetGradableEvents().some(e => e.event === eventId)) {
+    // Defense in depth: the frontend never shows a Grade button for these,
+    // but a direct API call must still refuse rather than fabricate a score.
+    return res.status(400).json({ error: `Grading for "${eventId}" isn't available yet — its deliverable needs a media engine (video/vision/code/web) Vye hasn't built.` });
+  }
+  if (!listPresentationEvents().some(e => e.event === eventId)) {
     return res.status(400).json({ error: 'Unknown or missing eventId' });
   }
 

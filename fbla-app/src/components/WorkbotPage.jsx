@@ -11,6 +11,15 @@ const BAND_CLASS = {
 const CATEGORY_LABEL = {
   content: 'Content',
   compliance: 'Format & sources',
+  // Not-yet-gradable events tag their preview lines with the engine they'd
+  // need (from presentation_events_all30.json) instead of content/compliance.
+  text: 'Content',
+  video: 'Video',
+  vision: 'Visual/design',
+  code: 'Code',
+  web: 'Website',
+  live: 'Live Q&A',
+  auto: 'Format',
 }
 
 // Matches server.js's already-established ease-out-quint curve (see
@@ -89,7 +98,7 @@ function InputMethodPicker({ event, options, onSelect, onClose }) {
                 <div className="mp-mode-icon"><Icon /></div>
                 <span>{opt.label}</span>
                 <span className="mp-mode-caption">
-                  {opt.comingSoon ? 'Coming soon — not scored yet' : (TOOL_CAPTION[opt.role] || '')}
+                  {opt.comingSoon ? (opt.reason || 'Coming soon — not scored yet') : (TOOL_CAPTION[opt.role] || '')}
                 </span>
               </button>
             )
@@ -179,6 +188,28 @@ export default function WorkbotPage({ onBack }) {
     [scriptText]
   )
 
+  // All 30 official events, grouped by tier (what each one actually needs to
+  // be gradable — text-only, audio delivery, video, design, code, a live
+  // website…) — the same grouping the backend derives from
+  // presentation_events_all30.json, so "organize by what they need" reflects
+  // one source of truth. Insertion order follows the API response, which
+  // already lists build-ready tiers first.
+  const eventsByTier = useMemo(() => {
+    const map = new Map()
+    for (const e of events) {
+      const key = e.tier || 'Other'
+      if (!map.has(key)) map.set(key, [])
+      map.get(key).push(e)
+    }
+    return [...map.entries()]
+  }, [events])
+
+  const toolForMode = mode => (mode === 'file' ? 'files' : mode)
+  const selectedOption = inputMode ? inputOptions.find(o => o.tool === toolForMode(inputMode)) : null
+  const isComingSoon = !!selectedOption?.comingSoon
+  const readyFallbackOption = inputOptions.find(o => !o.comingSoon)
+  const ComingSoonIcon = selectedOption ? TOOL_ICON[selectedOption.tool] : null
+
   const fadeSlide = (offset = 8) => ({
     initial: reducedMotion ? false : { opacity: 0, y: offset },
     animate: { opacity: 1, y: 0 },
@@ -210,8 +241,14 @@ export default function WorkbotPage({ onBack }) {
               onChange={e => setEventId(e.target.value)}
             >
               <option value="" disabled>Choose an event…</option>
-              {events.map(e => (
-                <option key={e.event} value={e.event}>{e.event}</option>
+              {eventsByTier.map(([tier, evs]) => (
+                <optgroup key={tier} label={tier}>
+                  {evs.map(e => (
+                    <option key={e.event} value={e.event}>
+                      {e.event}{e.build_ready ? '' : ' (coming soon)'}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
             <svg className="sg-select-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="14" height="14">
@@ -224,27 +261,39 @@ export default function WorkbotPage({ onBack }) {
         <AnimatePresence mode="wait">
           {selectedEvent && (
             <motion.div key={selectedEvent.event} {...fadeSlide(10)} className="sg-event-summary">
-              <div className="sg-ceiling-bar">
-                <div className="sg-ceiling-bar-graded" style={{ width: `${gradablePct}%` }} />
-              </div>
-              <p className="sg-ceiling-caption">
-                <strong>{selectedEvent.ai_gradable_points} of {selectedEvent.grand_total} points</strong> for
-                this event come from what you write — this grader reads your script and scores those
-                directly, criterion by criterion.
-                {liveOnlyPoints > 0 && (
-                  <> The remaining <strong>{liveOnlyPoints} points</strong> are delivery and Q&amp;A, which stay
-                  locked here until a future update.</>
-                )}
-              </p>
-              <div className="sg-ceiling-legend">
-                <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your text ({selectedEvent.ai_gradable_points})</span>
-                {liveOnlyPoints > 0 && (
-                  <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-live" />Locked for now ({liveOnlyPoints})</span>
-                )}
-              </div>
+              {selectedEvent.build_ready ? (
+                <>
+                  <div className="sg-ceiling-bar">
+                    <div className="sg-ceiling-bar-graded" style={{ width: `${gradablePct}%` }} />
+                  </div>
+                  <p className="sg-ceiling-caption">
+                    <strong>{selectedEvent.ai_gradable_points} of {selectedEvent.grand_total} points</strong> for
+                    this event come from what you write — this grader reads your script and scores those
+                    directly, criterion by criterion.
+                    {liveOnlyPoints > 0 && (
+                      <> The remaining <strong>{liveOnlyPoints} points</strong> are delivery and Q&amp;A, which stay
+                      locked here until a future update.</>
+                    )}
+                  </p>
+                  <div className="sg-ceiling-legend">
+                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your text ({selectedEvent.ai_gradable_points})</span>
+                    {liveOnlyPoints > 0 && (
+                      <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-live" />Locked for now ({liveOnlyPoints})</span>
+                    )}
+                  </div>
+                </>
+              ) : (
+                <div className="sg-not-ready-banner">
+                  <p className="sg-not-ready-title">Grading isn't available yet for this event</p>
+                  <p className="sg-not-ready-text">
+                    {selectedEvent.input_options?.[0]?.reason || "This event's scoring isn't wired up yet."} You
+                    can still see its official rating sheet below.
+                  </p>
+                </div>
+              )}
 
               <div className="sg-preview">
-                <h3 className="sg-section-title">What gets graded</h3>
+                <h3 className="sg-section-title">{selectedEvent.build_ready ? 'What gets graded' : "This event's official rating sheet"}</h3>
                 <div className="sg-preview-table">
                   {selectedEvent.gradable_criteria.map((c, i) => (
                     <motion.div
@@ -276,58 +325,60 @@ export default function WorkbotPage({ onBack }) {
               </button>
             </div>
 
-            {inputMode === 'script' && (
-              <div className="sg-textarea-wrap">
-                <textarea
-                  id="sg-script-input"
-                  className="sg-textarea"
-                  placeholder="Paste your script here…"
-                  value={scriptText}
-                  onChange={e => setScriptText(e.target.value)}
-                  rows={12}
-                />
-                <span className="sg-word-count">{wordCount} {wordCount === 1 ? 'word' : 'words'}</span>
-              </div>
-            )}
-
-            {inputMode === 'file' && (
-              <div className="sg-file-drop">
-                <input
-                  id="sg-file-input"
-                  className="sg-file-input"
-                  type="file"
-                  accept={ACCEPTED_FILE_EXT.join(',')}
-                  onChange={handleFileChange}
-                />
-                <label htmlFor="sg-file-input" className="sg-file-label">
-                  <UploadIcon />
-                  {file ? (
-                    <span className="sg-file-name">{file.name}</span>
-                  ) : (
-                    <span>Choose a PDF, DOCX, or PPTX file</span>
-                  )}
-                </label>
-                {fileError && <p className="sg-inline-error">{fileError}</p>}
-              </div>
-            )}
-
-            {inputMode === 'audio' && (
-              <div className="sg-audio-soon">
-                <div className="sg-audio-soon-icon"><MicIcon /></div>
-                <p className="sg-audio-soon-title">Audio scoring is coming soon</p>
-                <p className="sg-audio-soon-text">
-                  Delivery scoring from a recording isn't wired up yet. In the meantime, paste
-                  your script instead — it scores every content and format line on this event's
-                  rating sheet.
+            {isComingSoon ? (
+              <div className="sg-tool-soon">
+                <div className="sg-tool-soon-icon">{ComingSoonIcon && <ComingSoonIcon />}</div>
+                <p className="sg-tool-soon-title">
+                  {selectedEvent.build_ready ? 'Audio scoring is coming soon' : "Grading isn't available yet"}
                 </p>
-                <button
-                  type="button"
-                  className="sg-audio-soon-btn"
-                  onClick={() => setInputMode('script')}
-                >
-                  Paste my script instead
-                </button>
+                <p className="sg-tool-soon-text">{selectedOption.reason}</p>
+                {readyFallbackOption && (
+                  <button
+                    type="button"
+                    className="sg-tool-soon-btn"
+                    onClick={() => setInputMode(readyFallbackOption.tool === 'files' ? 'file' : readyFallbackOption.tool)}
+                  >
+                    {readyFallbackOption.label} instead
+                  </button>
+                )}
               </div>
+            ) : (
+              <>
+                {inputMode === 'script' && (
+                  <div className="sg-textarea-wrap">
+                    <textarea
+                      id="sg-script-input"
+                      className="sg-textarea"
+                      placeholder="Paste your script here…"
+                      value={scriptText}
+                      onChange={e => setScriptText(e.target.value)}
+                      rows={12}
+                    />
+                    <span className="sg-word-count">{wordCount} {wordCount === 1 ? 'word' : 'words'}</span>
+                  </div>
+                )}
+
+                {inputMode === 'file' && (
+                  <div className="sg-file-drop">
+                    <input
+                      id="sg-file-input"
+                      className="sg-file-input"
+                      type="file"
+                      accept={ACCEPTED_FILE_EXT.join(',')}
+                      onChange={handleFileChange}
+                    />
+                    <label htmlFor="sg-file-input" className="sg-file-label">
+                      <UploadIcon />
+                      {file ? (
+                        <span className="sg-file-name">{file.name}</span>
+                      ) : (
+                        <span>Choose a PDF, DOCX, or PPTX file</span>
+                      )}
+                    </label>
+                    {fileError && <p className="sg-inline-error">{fileError}</p>}
+                  </div>
+                )}
+              </>
             )}
           </div>
         )}
@@ -338,7 +389,7 @@ export default function WorkbotPage({ onBack }) {
           </button>
         )}
 
-        {(inputMode === 'script' || inputMode === 'file') && (
+        {(inputMode === 'script' || inputMode === 'file') && !isComingSoon && (
           <button
             className="sg-grade-btn"
             onClick={handleGrade}

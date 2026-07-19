@@ -1,12 +1,7 @@
 {
   "meta": {
-    "purpose": "Config for the Presentation tab. For each eligible event, tells the UI which of the three input tools (Script / Audio / Files) to load and what slice of the official rating sheet each tool scores. Derived from presentation_rubrics.json (verified) + the input-requirements planning doc.",
-    "tools": {
-      "script": "Typed/pasted text (speech, report text, or plan). Scores the CONTENT + FORMAT/SOURCES lines.",
-      "audio": "Voice recording. Coaches the DELIVERY lines (pace, fillers, projection). NOTE: audio catches vocal delivery only; eye contact/body language need video, so delivery credit from audio is partial.",
-      "files": "Uploaded artifact (report PDF, slide deck, resume). For document events the file IS the graded deliverable; for presentation-only events it's a supporting deck."
-    },
-    "ui_rule": "Load every tool marked default:true. Tools marked default:false are offered as optional. When two tools can both feed the content grade (upload a doc OR paste the script), let the student choose in the moment - they score the same rubric lines."
+    "purpose": "Build-ready tool loadout for the 15 script/audio/downloader-gradable presentation events. The full 30-event map is presentation_events_all30.json.",
+    "ui_rule": "Load tools with default:true; offer default:false as optional."
   },
   "events": [
     {
@@ -15,6 +10,7 @@
       "primary_input": "files",
       "content_format_points": 280,
       "delivery_points": 10,
+      "audio_scorable_points": 10,
       "live_qa_points": 10,
       "grand_total": 300,
       "tools": [
@@ -22,25 +18,21 @@
           "tool": "files",
           "role": "primary",
           "default": true,
-          "scores": "Provides the graded document; scores content+format lines (280 pts)",
-          "artifact": "Prejudged report (PDF) + presentation"
+          "scores": "Graded document; 280 content+format pts"
         },
         {
           "tool": "script",
           "role": "alternative",
           "default": false,
-          "scores": "Paste the same text instead of uploading; scores the same 280 pts"
+          "scores": "Paste text instead; same 280 pts"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Financial Planning",
@@ -48,6 +40,7 @@
       "primary_input": "script",
       "content_format_points": 130,
       "delivery_points": 10,
+      "audio_scorable_points": 10,
       "live_qa_points": 10,
       "grand_total": 150,
       "tools": [
@@ -55,24 +48,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (130 pts)"
+          "scores": "Speech/plan/analysis script; 130 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Financial Statement Analysis",
@@ -80,6 +70,7 @@
       "primary_input": "script",
       "content_format_points": 120,
       "delivery_points": 10,
+      "audio_scorable_points": 0,
       "live_qa_points": 10,
       "grand_total": 140,
       "tools": [
@@ -87,25 +78,22 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (120 pts)"
+          "scores": "Speech/plan/analysis script; 120 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
-          "available": false
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": "The captured line items sum to 140, but the official sheet prints a 150 total (one item's max is likely 10 higher than captured). grand_total is set to the honest computed 140; verify the missing 10 against the official PDF before locking.",
-      "audio_scorable_points": 0
+      ]
     },
     {
       "event": "Event Planning",
@@ -113,6 +101,7 @@
       "primary_input": "script",
       "content_format_points": 160,
       "delivery_points": 10,
+      "audio_scorable_points": 0,
       "live_qa_points": 10,
       "grand_total": 180,
       "tools": [
@@ -120,25 +109,22 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (160 pts)"
+          "scores": "Speech/plan/analysis script; 160 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
-          "available": false
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 0
+      ]
     },
     {
       "event": "Data Analysis",
@@ -146,6 +132,7 @@
       "primary_input": "script",
       "content_format_points": 95,
       "delivery_points": 5,
+      "audio_scorable_points": 5,
       "live_qa_points": 10,
       "grand_total": 110,
       "tools": [
@@ -153,24 +140,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (95 pts)"
+          "scores": "Speech/plan/analysis script; 95 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": true,
-          "scores": "Required visuals / slide deck; part of the content grade"
+          "scores": "Slide deck / visuals"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 5 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
+          "scores": "5 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 5
+      ]
     },
     {
       "event": "Supply Chain Management",
@@ -178,6 +162,7 @@
       "primary_input": "script",
       "content_format_points": 100,
       "delivery_points": 10,
+      "audio_scorable_points": 10,
       "live_qa_points": 10,
       "grand_total": 120,
       "tools": [
@@ -185,24 +170,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (100 pts)"
+          "scores": "Speech/plan/analysis script; 100 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Future Business Educator",
@@ -210,6 +192,7 @@
       "primary_input": "files",
       "content_format_points": 140,
       "delivery_points": 20,
+      "audio_scorable_points": 10,
       "live_qa_points": 10,
       "grand_total": 170,
       "tools": [
@@ -217,25 +200,21 @@
           "tool": "files",
           "role": "primary",
           "default": true,
-          "scores": "Provides the graded document; scores content+format lines (140 pts)",
-          "artifact": "Prejudged lesson plan (PDF, <=3 pages) + presentation"
+          "scores": "Graded document; 140 content+format pts"
         },
         {
           "tool": "script",
           "role": "alternative",
           "default": false,
-          "scores": "Paste the same text instead of uploading; scores the same 140 pts"
+          "scores": "Paste text instead; same 140 pts"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 10 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Social Media Strategies",
@@ -243,6 +222,7 @@
       "primary_input": "script",
       "content_format_points": 90,
       "delivery_points": 10,
+      "audio_scorable_points": 0,
       "live_qa_points": 10,
       "grand_total": 110,
       "tools": [
@@ -250,25 +230,22 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (90 pts)"
+          "scores": "Speech/plan/analysis script; 90 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": true,
-          "scores": "Required visuals / slide deck; part of the content grade"
+          "scores": "Slide deck / visuals"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
-          "available": false
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 0
+      ]
     },
     {
       "event": "Business Ethics",
@@ -276,6 +253,7 @@
       "primary_input": "files",
       "content_format_points": 160,
       "delivery_points": 10,
+      "audio_scorable_points": 0,
       "live_qa_points": 10,
       "grand_total": 180,
       "tools": [
@@ -283,26 +261,22 @@
           "tool": "files",
           "role": "primary",
           "default": true,
-          "scores": "Provides the graded document; scores content+format lines (160 pts)",
-          "artifact": "Objective test (100Q, 50min) + prejudged executive summary (PDF, <=3 pages) + presentation"
+          "scores": "Graded document; 160 content+format pts"
         },
         {
           "tool": "script",
           "role": "alternative",
           "default": false,
-          "scores": "Paste the same text instead of uploading; scores the same 160 pts"
+          "scores": "Paste text instead; same 160 pts"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
-          "available": false
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": "Grand total 180 covers report + presentation only; the objective test scores/advances separately. Vye already handles objective tests, so this event pairs its existing engine with the new grader.",
-      "audio_scorable_points": 0
+      ]
     },
     {
       "event": "Career Portfolio",
@@ -310,6 +284,7 @@
       "primary_input": "script",
       "content_format_points": 90,
       "delivery_points": 10,
+      "audio_scorable_points": 10,
       "live_qa_points": 10,
       "grand_total": 110,
       "tools": [
@@ -317,24 +292,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (90 pts)"
+          "scores": "Speech/plan/analysis script; 90 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 0 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Job Interview",
@@ -342,6 +314,7 @@
       "primary_input": "files",
       "content_format_points": 50,
       "delivery_points": 35,
+      "audio_scorable_points": 10,
       "live_qa_points": 75,
       "grand_total": 170,
       "tools": [
@@ -349,25 +322,21 @@
           "tool": "files",
           "role": "primary",
           "default": true,
-          "scores": "Provides the graded document; scores content+format lines (50 pts)",
-          "artifact": "Prejudged cover letter + resume, then live interview"
+          "scores": "Graded document; 50 content+format pts"
         },
         {
           "tool": "script",
           "role": "alternative",
           "default": false,
-          "scores": "Paste the same text instead of uploading; scores the same 50 pts"
+          "scores": "Paste text instead; same 50 pts"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 10 audio-observable delivery pts (pace/voice/delivery). 25 pts name visual signals \u2192 locked, need video."
+          "scores": "10 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Mock interview",
-      "notes": "Only the 50-pt prejudged assets are auto-gradable from an upload. The 120-pt interview is live; build it as a mock-interview practice mode.",
-      "audio_scorable_points": 10
+      ]
     },
     {
       "event": "Public Speaking",
@@ -375,6 +344,7 @@
       "primary_input": "script",
       "content_format_points": 60,
       "delivery_points": 40,
+      "audio_scorable_points": 20,
       "live_qa_points": 10,
       "grand_total": 110,
       "tools": [
@@ -382,24 +352,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (60 pts)"
+          "scores": "Speech/plan/analysis script; 60 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 20 audio-observable delivery pts (pace/voice/delivery). 20 pts name visual signals \u2192 locked, need video."
+          "scores": "20 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 20
+      ]
     },
     {
       "event": "Introduction to Public Speaking",
@@ -407,6 +374,7 @@
       "primary_input": "script",
       "content_format_points": 60,
       "delivery_points": 40,
+      "audio_scorable_points": 20,
       "live_qa_points": 10,
       "grand_total": 110,
       "tools": [
@@ -414,24 +382,21 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (60 pts)"
+          "scores": "Speech/plan/analysis script; 60 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": false,
-          "scores": "Optional slide deck; supplements the content grade"
+          "scores": "Optional slide deck"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "Scores 20 audio-observable delivery pts (pace/voice/delivery). 20 pts name visual signals \u2192 locked, need video."
+          "scores": "20 audio-observable delivery pts"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 20
+      ]
     },
     {
       "event": "Introduction to Business Presentation",
@@ -439,6 +404,7 @@
       "primary_input": "script",
       "content_format_points": 95,
       "delivery_points": 10,
+      "audio_scorable_points": 0,
       "live_qa_points": 10,
       "grand_total": 115,
       "tools": [
@@ -446,25 +412,53 @@
           "tool": "script",
           "role": "primary",
           "default": true,
-          "scores": "Their speech/plan/analysis script; scores content+format lines (95 pts)"
+          "scores": "Speech/plan/analysis script; 95 content+format pts"
         },
         {
           "tool": "files",
           "role": "supporting",
           "default": true,
-          "scores": "Required visuals / slide deck; part of the content grade"
+          "scores": "Slide deck / visuals"
         },
         {
           "tool": "audio",
           "role": "coaching",
           "default": false,
-          "scores": "No audio-scorable delivery for this event (all 10 delivery pts name visual signals a mic can't verify \u2192 require video).",
-          "available": false
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
         }
-      ],
-      "interactive_practice_mode": "Q&A practice",
-      "notes": null,
-      "audio_scorable_points": 0
+      ]
+    },
+    {
+      "event": "Sales Presentation",
+      "participants": "Team of 1-3",
+      "primary_input": "script",
+      "content_format_points": 90,
+      "delivery_points": 10,
+      "audio_scorable_points": 0,
+      "live_qa_points": 10,
+      "grand_total": 110,
+      "tools": [
+        {
+          "tool": "script",
+          "role": "primary",
+          "default": true,
+          "scores": "Speech/plan/analysis script; 90 content+format pts"
+        },
+        {
+          "tool": "files",
+          "role": "supporting",
+          "default": false,
+          "scores": "Optional slide deck"
+        },
+        {
+          "tool": "audio",
+          "role": "coaching",
+          "default": false,
+          "available": false,
+          "scores": "No audio-scorable delivery (10 delivery pts need video)"
+        }
+      ]
     }
   ]
 }

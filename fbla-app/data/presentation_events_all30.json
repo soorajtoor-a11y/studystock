@@ -1,0 +1,2879 @@
+{
+  "meta": {
+    "purpose": "Full catalog of all 30 FBLA High School presentation events for the Vye Presentation Workbot. Each event lists tier, the input tools that apply, the grading ENGINES it needs, its deliverable, and its official rating sheet with a per-line engine tag. 'build_ready' events have exact, validated per-criterion rubrics in presentation_rubrics.json; the rest are artifact/interactive events whose graders (vision/video/code/web/live) are later phases.",
+    "engine_legend": {
+      "text": "LLM reads text/transcript/slides",
+      "audio": "voice delivery from audio",
+      "video": "moving-image (video/animation) analysis",
+      "vision": "still-image/design analysis",
+      "code": "source-code review/execution",
+      "web": "rendered-website analysis",
+      "live": "live Q&A / interview (practice mode)",
+      "auto": "deterministic check (time/length/binary)"
+    },
+    "counts": {
+      "total": 30,
+      "build_ready": 15
+    },
+    "source": "Virginia FBLA guideline PDFs (cteresource.org), reproducing the national 2025-26 rating sheets."
+  },
+  "events": [
+    {
+      "event": "Business Plan",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "files",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text"
+      ],
+      "components": "Prejudged report (PDF) + presentation",
+      "deliverable": "Prejudged report (PDF) + presentation",
+      "rating_total": 300,
+      "ai_gradable_points": 280,
+      "rating_lines": [
+        {
+          "line": "Executive Summary",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Company Profile",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Industry Analysis",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Target Market",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Competitive Analysis",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Marketing Plan & Sales Strategy",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Operations",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Management & Organization",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Long-Term Development",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Financials",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Sources/Research",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Report Format",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Grammar/Punctuation/Spelling",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Report"
+        },
+        {
+          "line": "Business Concept & Company Profile",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Marketing Aspects",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Operations & Management Plans",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Financial Documents & Projections",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Risks & Adverse Results Analysis",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Long-Term Goals",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Organization & Clarity",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence & Delivery",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Q&A Response Ability",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/oyvgva5t/2526-business-plan-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Financial Planning",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 150,
+      "ai_gradable_points": 130,
+      "rating_lines": [
+        {
+          "line": "Understanding of topic & problem definition",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Budgeting",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Debt Management",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Investments & Retirement",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Goal Attainment",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Recommendations",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Professional Guidance",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Source Citation",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Presentation Organization",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence & Delivery",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Question Response",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/f1jcytob/2526-financial-planning-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Financial Statement Analysis",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 140,
+      "ai_gradable_points": 120,
+      "rating_lines": [
+        {
+          "line": "Describes each financial statement & purpose",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Performs financial analysis of each statement",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Describes financial condition using analysis",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Offers guidance for business decision making",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Highlights key differences between years",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Analyzes what changes reveal about financial health",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Recommends 2-3 strategic business decisions",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Well-organized & clearly stated",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Effectively answers questions",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/nlejmdu2/2526-financial-statement-analysis-va-fbla.pdf",
+      "notes": "The captured line items sum to 140, but the official sheet prints a 150 total (one item's max is likely 10 higher than captured). grand_total is set to the honest computed 140; verify the missing 10 against the official PDF before locking."
+    },
+    {
+      "event": "Event Planning",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 180,
+      "ai_gradable_points": 160,
+      "rating_lines": [
+        {
+          "line": "Event Overview",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Planning Process",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Budget",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Logistics",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Marketing & Promotion",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Legal & Risk Management",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Execution Summary",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Evaluation & Reflection",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Statements Well-Organized",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence/Body Language/Eye Contact/Voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Question Response Ability",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/1owpohzp/2526-event-planning-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Data Analysis",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 110,
+      "ai_gradable_points": 95,
+      "rating_lines": [
+        {
+          "line": "Topic Understanding",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Data Analysis",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Visualizations",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Recommendation",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Statement Accuracy",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Source Citation",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Organization",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery/Confidence",
+          "max": 5,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Q&A Response",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Protocol Adherence",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/tpsnr5a4/2526-data-analysis-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Supply Chain Management",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 120,
+      "ai_gradable_points": 100,
+      "rating_lines": [
+        {
+          "line": "Summarizes Supply Chain Management",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Management Planning",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Financial Planning",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Demand Planning",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Sources/Citations",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Presentation Organization",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery/Confidence",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Question Response",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/batbmrlh/2526-supply-chain-management-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Future Business Educator",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Individual",
+      "input_tools": [
+        "script",
+        "files",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prejudged lesson plan (PDF, <=3 pages) + presentation",
+      "deliverable": "Prejudged lesson plan (PDF, <=3 pages) + presentation",
+      "rating_total": 170,
+      "ai_gradable_points": 140,
+      "rating_lines": [
+        {
+          "line": "Spelling, punctuation, grammar",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Business & Academic Standards",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Objectives",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Outcome & Measurement",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Resources & Materials",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Instructional Activities",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Lesson Plan"
+        },
+        {
+          "line": "Subject matter knowledge",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Material met lesson plan objectives",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Material appropriate for audience/subject",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Interesting, motivating, creative",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Presentation Delivery",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Verbal and nonverbal communication",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Ability to answer questions",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/1wglfybz/2526-future-business-educator-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Social Media Strategies",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Presentation only",
+      "deliverable": "Presentation only",
+      "rating_total": 110,
+      "ai_gradable_points": 90,
+      "rating_lines": [
+        {
+          "line": "Campaign addresses topic/audience",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Knowledge of strategies & metrics",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Research methodology described",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Design process described",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Social media strategies / call-to-action",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Three+ posts on multiple platforms",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Sources substantiated & cited",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Organization / clarity",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Question response ability",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/14qmc1ih/2526-social-media-strategies-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Business Ethics",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "files"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Objective test (100Q, 50min) + prejudged executive summary (PDF, <=3 pages) + presentation",
+      "deliverable": "Objective test (100Q, 50min) + prejudged executive summary (PDF, <=3 pages) + presentation",
+      "rating_total": 180,
+      "ai_gradable_points": 160,
+      "rating_lines": [
+        {
+          "line": "Identifies & defines ethical issues",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Explains why ethical issues happened",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Provides logical solutions",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Recommends safeguards",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Business interviews & integration",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Grammar, punctuation, spelling",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Prejudged Executive Summary"
+        },
+        {
+          "line": "Identifies & defines ethical issues",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Explains why ethical issues happened",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Provides logical recommendations",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Recommends safeguards",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Research quality & businesspeople input",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Well-organized, clearly stated",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Effectively answers questions",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/n53eg2pv/2526-business-ethics-va-fbla.pdf",
+      "notes": "Grand total 180 covers report + presentation only; the objective test scores/advances separately. Vye already handles objective tests, so this event pairs its existing engine with the new grader."
+    },
+    {
+      "event": "Career Portfolio",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Individual",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text"
+      ],
+      "components": "Presentation only (portfolio presented live)",
+      "deliverable": "Presentation only (portfolio presented live)",
+      "rating_total": 110,
+      "ai_gradable_points": 90,
+      "rating_lines": [
+        {
+          "line": "Resume",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Career Research",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Career-Related Education",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Special Skills/Proficiencies",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Source Documentation",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Portfolio Use",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Organization/Clarity",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery/Confidence",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Q&A Responses",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/micehhhh/2526-career-portfolio-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Job Interview",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Individual",
+      "input_tools": [
+        "script",
+        "files",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prejudged cover letter + resume, then live interview",
+      "deliverable": "Prejudged cover letter + resume, then live interview",
+      "rating_total": 170,
+      "ai_gradable_points": 50,
+      "rating_lines": [
+        {
+          "line": "Cover letter states job applying for",
+          "max": 4,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Cover letter promotes self (skills, achievements)",
+          "max": 8,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Cover letter states resume included & asks for interview",
+          "max": 4,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Resume targets the job",
+          "max": 4,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Resume reader-friendly (layout, fonts, white space)",
+          "max": 8,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Resume includes education, activities, awards, experience",
+          "max": 8,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Resume brief & concise",
+          "max": 4,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Spelling & Grammar",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "All directions followed",
+          "max": 5,
+          "engine": "text",
+          "sheet": "Prejudged Assets (Cover Letter + Resume)"
+        },
+        {
+          "line": "Job Readiness & Qualifications",
+          "max": 15,
+          "engine": "live",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Interview Preparation & Research",
+          "max": 15,
+          "engine": "live",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Response Quality & Critical Thinking",
+          "max": 15,
+          "engine": "live",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Presentation of Strengths & Experiences",
+          "max": 15,
+          "engine": "live",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Career Goals & Motivation",
+          "max": 15,
+          "engine": "live",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Proper greeting, introduction, closing",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 15,
+          "engine": "video",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Verbal and nonverbal communication",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Interview (live - practice mode only)"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Interview (live - practice mode only)"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/o1tgbuex/2526-job-interview-va-fbla.pdf",
+      "notes": "Only the 50-pt prejudged assets are auto-gradable from an upload. The 120-pt interview is live; build it as a mock-interview practice mode."
+    },
+    {
+      "event": "Public Speaking",
+      "tier": "Speech",
+      "build_ready": true,
+      "participants": "Individual",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prepared speech (script)",
+      "deliverable": "Prepared speech (script)",
+      "rating_total": 110,
+      "ai_gradable_points": 60,
+      "rating_lines": [
+        {
+          "line": "Topic & Theme",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Introduction",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Supporting Information (Body)",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Conclusion",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Pace & Fillers",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Eye Contact & Facial Expressions",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Voice Projection",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Confidence & Posture",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Q&A Ability",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/z5jldsba/2526-public-speaking-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Introduction to Public Speaking",
+      "tier": "Speech",
+      "build_ready": true,
+      "participants": "Individual (grades 9-10)",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prepared speech (script)",
+      "deliverable": "Prepared speech (script)",
+      "rating_total": 110,
+      "ai_gradable_points": 60,
+      "rating_lines": [
+        {
+          "line": "Topic & Theme",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Introduction",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Supporting Information (Body)",
+          "max": 20,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Conclusion",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Pace & Filler Words",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Eye Contact & Facial Expressions",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Voice Projection",
+          "max": 10,
+          "engine": "audio",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Delivery - Confidence & Posture",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Q&A Response Ability",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/nlxhvq4x/2526-introduction-to-public-speaking-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Introduction to Business Presentation",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3 (grades 9-10)",
+      "input_tools": [
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prepared slide presentation (script + slides)",
+      "deliverable": "Prepared slide presentation (script + slides)",
+      "rating_total": 115,
+      "ai_gradable_points": 95,
+      "rating_lines": [
+        {
+          "line": "Demonstrates understanding of event topic",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Describes purpose with logical sequence",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Summarizes information & identifies recommendations",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Technology - proper formatting/design",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Suitable & accurate statements with sources",
+          "max": 15,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Statements well-organized & clearly stated",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Ability to effectively answer questions",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/x4ochlmg/2526-introduction-to-business-presentation-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Sales Presentation",
+      "tier": "Script-gradable",
+      "build_ready": true,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Interactive sales presentation (pitch)",
+      "deliverable": "Interactive sales presentation (pitch)",
+      "rating_total": 110,
+      "ai_gradable_points": 90,
+      "rating_lines": [
+        {
+          "line": "Presents appropriate greeting",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Able to determine needs",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Presenting product/service",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Able to overcome objections",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Demonstrates suggestion selling",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Able to close the sale",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Demonstrates relationship development",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Well-organized, clearly stated",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Answers questions effectively",
+          "max": 10,
+          "engine": "live",
+          "sheet": "Presentation"
+        },
+        {
+          "line": "Adherence to Guidelines",
+          "max": 10,
+          "engine": "text",
+          "sheet": "Presentation"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/f4khm1kd/2526-sales-presentation-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Broadcast Journalism",
+      "tier": "Artifact \u2014 video",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "script",
+        "audio",
+        "files"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Pre-recorded news segment (\u22642 min) + live presentation",
+      "deliverable": "Pre-recorded news segment (\u22642 min) + live presentation",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Broadcast news segment (topic, \u22642min)",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Visual & editorial design (segment)",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Visual & editorial design (presentation)",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Production techniques & tools",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Research, accuracy & ethical reporting",
+          "max": 15,
+          "engine": "text"
+        },
+        {
+          "line": "Well-organized, clearly stated",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, poise, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answer questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/uu2fpjpr/2526-broadcast-journalism-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Digital Video Production",
+      "tier": "Artifact \u2014 video",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Original video (\u22642 min, submitted as URL) + live presentation",
+      "deliverable": "Original video (\u22642 min, submitted as URL) + live presentation",
+      "rating_total": 220,
+      "rating_lines_sum": 220,
+      "rating_lines": [
+        {
+          "line": "Video content: addresses concept/topic",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Video content: production-skill elements",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Video content: grammar/spelling/punctuation",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Video content: copyright/sources & original",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Project eval: logical flow",
+          "max": 20,
+          "engine": "video"
+        },
+        {
+          "line": "Project eval: editing & transitions",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Project eval: audio/visual coordination",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Project eval: video/film techniques",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Video time (\u22642min)",
+          "max": 5,
+          "engine": "auto"
+        },
+        {
+          "line": "Understanding of event topic",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Innovative technology use",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Design & development process",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Incorporates video into presentation",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Copyright/source documented & original",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Statements well-organized",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answer questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/vfjj1nww/2526-digital-video-production-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Public Service Announcement",
+      "tier": "Artifact \u2014 video",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Original PSA video (\u226460 sec) + live presentation",
+      "deliverable": "Original PSA video (\u226460 sec) + live presentation",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Learning objective: topic + audience",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Research: major findings",
+          "max": 15,
+          "engine": "text"
+        },
+        {
+          "line": "Script: design/script-writing process",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Techniques: video/audio techniques",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Equipment & software: \u22653 types",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Copyright/sources & original",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "PSA video shown during presentation",
+          "max": 5,
+          "engine": "auto"
+        },
+        {
+          "line": "Presentation delivery: well-organized",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence & delivery",
+          "max": 5,
+          "engine": "video"
+        },
+        {
+          "line": "Question response",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/l2npwdro/2526-public-service-announcement-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Digital Animation",
+      "tier": "Artifact \u2014 video/design",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Original animated video (\u22642 min, submitted as URL) + live presentation",
+      "deliverable": "Original animated video (\u22642 min, submitted as URL) + live presentation",
+      "rating_total": 230,
+      "rating_lines_sum": 230,
+      "rating_lines": [
+        {
+          "line": "Concept/topic addressed",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Design elements appropriate",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Graphics appropriate",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Information accuracy",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Overall animation quality",
+          "max": 20,
+          "engine": "video"
+        },
+        {
+          "line": "Editing and transitions",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Logical flow",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Credits & acknowledgement",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Video time (\u22642min)",
+          "max": 5,
+          "engine": "auto"
+        },
+        {
+          "line": "Topic understanding",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Development process description",
+          "max": 15,
+          "engine": "text"
+        },
+        {
+          "line": "Production process description",
+          "max": 15,
+          "engine": "text"
+        },
+        {
+          "line": "Software & hardware explanation",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Animation techniques description",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Copyright/sources documented",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Well-organized statements",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence and delivery",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Question response ability",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/2b1pj2f5/2526-digital-animation-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Graphic Design",
+      "tier": "Artifact \u2014 design",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Rebranding package (identity, palette, fonts, social post, magazine ad) + live presentation",
+      "deliverable": "Rebranding package (identity, palette, fonts, social post, magazine ad) + live presentation",
+      "rating_total": 120,
+      "rating_lines_sum": 120,
+      "rating_lines": [
+        {
+          "line": "Description of topic and materials",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Explains design & development process",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Create interest and desire for design",
+          "max": 20,
+          "engine": "vision"
+        },
+        {
+          "line": "Programs/tools used",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Consistency in design to theme",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Statements well-organized",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Answer questions effectively",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/5l5hgkdl/2526-graphic-design-va-fbla.pdf",
+      "notes": "Fetch surfaced one 120-pt presentation sheet; a separate prejudged sheet may exist \u2014 verify vs source."
+    },
+    {
+      "event": "Visual Design",
+      "tier": "Artifact \u2014 design",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Visual recruitment-booth design + live presentation",
+      "deliverable": "Visual recruitment-booth design + live presentation",
+      "rating_total": 140,
+      "rating_lines_sum": 140,
+      "rating_lines": [
+        {
+          "line": "Description of topic/materials",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Apply design principles",
+          "max": 20,
+          "engine": "vision"
+        },
+        {
+          "line": "Demonstrate technical skills",
+          "max": 20,
+          "engine": "vision"
+        },
+        {
+          "line": "Communicate visually",
+          "max": 20,
+          "engine": "vision"
+        },
+        {
+          "line": "Explain creative process",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Consistency to theme",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Presentation delivery (organization)",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Presentation delivery (confidence/body language)",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Answer questions effectively",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/gcwdknoc/2526-visual-design-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Coding & Programming",
+      "tier": "Artifact \u2014 code",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "code",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Working program + source code, readme, documentation; demoed live",
+      "deliverable": "Working program + source code, readme, documentation; demoed live",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Coding language selection",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Comments/naming/formatting",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Modular design, readability",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "UX design: journey, rationale, accessibility",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "UI intuitiveness / instructions",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Easy navigation",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "User input validation",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Program addresses all prompt parts",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Program generates report",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Data storage",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Well-organized, clearly stated",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, poise, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Answer questions effectively",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/jusbhhyn/2526-coding-and-programming-va-fbla.pdf",
+      "notes": "Section subtotals had extraction noise \u2014 verify exact per-line points vs source."
+    },
+    {
+      "event": "Computer Game & Simulation Programming",
+      "tier": "Artifact \u2014 code",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "code",
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Playable career-themed game + source; demoed live",
+      "deliverable": "Playable career-themed game + source; demoed live",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Game addresses concept/topic & guidelines",
+          "max": 15,
+          "engine": "code"
+        },
+        {
+          "line": "Rules well-defined & explained",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "Game challenging but completable",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Innovation & creativity",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Programming language/tools & complexity",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Graphics appropriate for concept",
+          "max": 5,
+          "engine": "vision"
+        },
+        {
+          "line": "Graphics consistently applied",
+          "max": 5,
+          "engine": "vision"
+        },
+        {
+          "line": "Color/contrast/typography/sound",
+          "max": 5,
+          "engine": "vision"
+        },
+        {
+          "line": "Title screen with instructions",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "UX design: journey & accessibility",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Easy navigation & engagement",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Intuitive controls & mechanics",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Well-organized statements",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, poise, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answers questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/g5jiywjy/2526-computer-game-and-simulation-programming-va-fbla.pdf",
+      "notes": "Section subtotals had extraction noise \u2014 verify exact per-line points vs source."
+    },
+    {
+      "event": "Mobile Application Development",
+      "tier": "Artifact \u2014 code",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "code",
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Mobile app + source code, readme, documentation; demoed live",
+      "deliverable": "Mobile app + source code, readme, documentation; demoed live",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Planning process",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Classes/modules/components",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Mobile architectural patterns",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Innovation & creativity",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "UX design: journey, rationale, accessibility",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "UI intuitive / instructions",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Icons/graphics appropriate & consistent",
+          "max": 5,
+          "engine": "vision"
+        },
+        {
+          "line": "User input validated",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Addresses all prompt parts",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Social-media integration",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Data handling & storage",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Documentation & copyright compliance",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "Well-organized statements",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answer questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/5lodtyvp/2526-mobile-application-development-va-fbla.pdf",
+      "notes": "Section subtotals had extraction noise \u2014 verify exact per-line points vs source."
+    },
+    {
+      "event": "Website Coding & Development",
+      "tier": "Artifact \u2014 web/code",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "code",
+        "live",
+        "text",
+        "video",
+        "vision",
+        "web"
+      ],
+      "components": "Functional website (original source code) + live presentation",
+      "deliverable": "Functional website (original source code) + live presentation",
+      "rating_total": 220,
+      "rating_lines_sum": 220,
+      "rating_lines": [
+        {
+          "line": "Website coding style",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Usability & accessibility",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Color/contrast, background, font",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Graphics appropriate for topic",
+          "max": 10,
+          "engine": "vision"
+        },
+        {
+          "line": "Fully addresses topic",
+          "max": 10,
+          "engine": "web"
+        },
+        {
+          "line": "Multiple elements/coding skills",
+          "max": 20,
+          "engine": "code"
+        },
+        {
+          "line": "Grammar/spelling/punctuation",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Source citation/research",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Multi-platform compatibility",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Website interactivity",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Consistency across pages",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Source code & documentation",
+          "max": 20,
+          "engine": "code"
+        },
+        {
+          "line": "Presentation organization",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Delivery/confidence/professionalism",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Question response ability",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/djhgidaj/2526-website-coding-and-development-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Website Design",
+      "tier": "Artifact \u2014 web",
+      "build_ready": false,
+      "participants": "Team of 1-3",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video",
+        "web"
+      ],
+      "components": "Educational website (need not be live) + live presentation",
+      "deliverable": "Educational website (need not be live) + live presentation",
+      "rating_total": 120,
+      "rating_lines_sum": 120,
+      "rating_lines": [
+        {
+          "line": "Planning, development, implementation",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Website features (required elements)",
+          "max": 10,
+          "engine": "web"
+        },
+        {
+          "line": "Website UX design",
+          "max": 20,
+          "engine": "web"
+        },
+        {
+          "line": "Content \u2014 grammar/spelling",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "Content \u2014 source citations",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "Compatibility (multiple platforms)",
+          "max": 5,
+          "engine": "web"
+        },
+        {
+          "line": "Interactivity (error-free)",
+          "max": 5,
+          "engine": "web"
+        },
+        {
+          "line": "Consistency across pages",
+          "max": 5,
+          "engine": "web"
+        },
+        {
+          "line": "Metrics/success measurement",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "Delivery \u2014 organization",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Delivery \u2014 confidence/body language",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Delivery \u2014 Q&A responses",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/ptgfl54j/2526-website-design-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Introduction to Programming",
+      "tier": "Artifact \u2014 code",
+      "build_ready": false,
+      "participants": "Team of 1-3 (grades 9-10)",
+      "input_tools": [
+        "files",
+        "script"
+      ],
+      "engines_needed": [
+        "code",
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Virtual-pet program + source, readme, docs; presented live",
+      "deliverable": "Virtual-pet program + source, readme, docs; presented live",
+      "rating_total": 130,
+      "rating_lines_sum": 130,
+      "rating_lines": [
+        {
+          "line": "Comments/naming/formatting",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Modular, readable",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "UI intuitive / instructions",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Easy navigation",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Input validated",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Addresses all prompt parts",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Generates presentable report",
+          "max": 10,
+          "engine": "code"
+        },
+        {
+          "line": "Data storage",
+          "max": 5,
+          "engine": "code"
+        },
+        {
+          "line": "Comprehensive documentation",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Well-organized statements",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, poise, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answer questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/r1fl4qvw/2526-introduction-to-programming-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Impromptu Speaking",
+      "tier": "Speech",
+      "build_ready": false,
+      "participants": "Individual",
+      "input_tools": [
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "audio",
+        "text",
+        "video"
+      ],
+      "components": "On-site topic; 20-min prep, 7-min speech; no Q&A, no script",
+      "deliverable": "On-site topic; 20-min prep, 7-min speech; no Q&A, no script",
+      "rating_total": 100,
+      "rating_lines_sum": 100,
+      "rating_lines": [
+        {
+          "line": "Incorporates provided topic",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Consistent theme",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Accurate/appropriate supporting info",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Introduction (introduce topic immediately)",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Body (support topic throughout)",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Closing (effective conclusion)",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Quality extemporaneous delivery",
+          "max": 15,
+          "engine": "audio"
+        },
+        {
+          "line": "Confidence/poise/eye contact/voice",
+          "max": 15,
+          "engine": "video"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/ymfhwaby/2526-impromptu-speaking-va-fbla.pdf",
+      "notes": null
+    },
+    {
+      "event": "Future Business Leader",
+      "tier": "Interactive (+ objective test)",
+      "build_ready": false,
+      "participants": "Individual",
+      "input_tools": [
+        "files",
+        "script",
+        "audio"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video"
+      ],
+      "components": "Prejudged cover letter + resume; 100-Q objective test; 10-min interview",
+      "deliverable": "Prejudged cover letter + resume; 100-Q objective test; 10-min interview",
+      "rating_total": 160,
+      "rating_lines_sum": 160,
+      "rating_lines": [
+        {
+          "line": "Cover letter: states award applying for",
+          "max": 4,
+          "engine": "text"
+        },
+        {
+          "line": "Cover letter: promotes self",
+          "max": 8,
+          "engine": "text"
+        },
+        {
+          "line": "Cover letter: states resume included & asks interview",
+          "max": 4,
+          "engine": "text"
+        },
+        {
+          "line": "Resume: targets award",
+          "max": 4,
+          "engine": "text"
+        },
+        {
+          "line": "Resume: reader-friendly",
+          "max": 8,
+          "engine": "text"
+        },
+        {
+          "line": "Resume: includes required categories",
+          "max": 8,
+          "engine": "text"
+        },
+        {
+          "line": "Resume: brief & concise",
+          "max": 4,
+          "engine": "text"
+        },
+        {
+          "line": "Spelling & grammar",
+          "max": 5,
+          "engine": "text"
+        },
+        {
+          "line": "All directions followed",
+          "max": 5,
+          "engine": "auto"
+        },
+        {
+          "line": "FBLA participation & leadership",
+          "max": 15,
+          "engine": "live"
+        },
+        {
+          "line": "Other school/community orgs",
+          "max": 15,
+          "engine": "live"
+        },
+        {
+          "line": "Areas of outstanding achievement",
+          "max": 15,
+          "engine": "live"
+        },
+        {
+          "line": "Career knowledge & plans",
+          "max": 15,
+          "engine": "live"
+        },
+        {
+          "line": "Greeting, introduction, closing",
+          "max": 15,
+          "engine": "live"
+        },
+        {
+          "line": "Self-confidence, assertiveness, enthusiasm",
+          "max": 15,
+          "engine": "video"
+        },
+        {
+          "line": "Verbal & nonverbal communication",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/azjhev0y/2526-future-business-leader-va-fbla.pdf",
+      "notes": "Also has a 100-Q objective test (Vye already grades those); its point weight is not disclosed. 160 = prejudged 50 + interview 110."
+    },
+    {
+      "event": "Introduction to Social Media Strategy",
+      "tier": "Multi-input (script + design)",
+      "build_ready": false,
+      "participants": "Team of 1-3 (grades 9-10)",
+      "input_tools": [
+        "script",
+        "files",
+        "audio"
+      ],
+      "engines_needed": [
+        "live",
+        "text",
+        "video",
+        "vision"
+      ],
+      "components": "Campaign on 1 platform + 3 original ads; presented live",
+      "deliverable": "Campaign on 1 platform + 3 original ads; presented live",
+      "rating_total": 110,
+      "rating_lines_sum": 110,
+      "rating_lines": [
+        {
+          "line": "Understanding of event topic",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Social-media strategy & metrics",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Design & development process",
+          "max": 20,
+          "engine": "text"
+        },
+        {
+          "line": "Incorporates campaign into presentation",
+          "max": 20,
+          "engine": "vision"
+        },
+        {
+          "line": "Substantiates & cites sources",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Well-organized, clearly stated",
+          "max": 10,
+          "engine": "text"
+        },
+        {
+          "line": "Confidence, body language, eye contact, voice",
+          "max": 10,
+          "engine": "video"
+        },
+        {
+          "line": "Effectively answer questions",
+          "max": 10,
+          "engine": "live"
+        },
+        {
+          "line": "Adherence to guidelines",
+          "max": 10,
+          "engine": "auto"
+        }
+      ],
+      "source_url": "https://www.cteresource.org/media/tb2hwfnz/2526-introduction-to-social-media-strategy-va-fbla.pdf",
+      "notes": null
+    }
+  ]
+}

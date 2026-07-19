@@ -56,5 +56,6 @@ export function inputOptionsFor(eventId) {
       role: t.role,
       primary: t.role === 'primary',
       comingSoon: t.tool === 'audio',
+      reason: t.tool === 'audio' ? "Delivery scoring from a recording isn't wired up yet." : undefined,
     }));
 }

@@ -1,6 +1,6 @@
 // Offline checks — no API calls, no cost. Validates the mechanical
 // guarantees from BUILD-BRIEF-02-script-grader.md's Acceptance Tests section
-// against all 14 events, plus the band-derivation logic in isolation.
+// against all 15 build-ready events, plus the band-derivation logic in isolation.
 //
 // Run: node services/__tests__/bandLogic.test.mjs
 
@@ -63,7 +63,7 @@ test('"Protocol Adherence" (Data Analysis) is NOT binary — only the literal na
   assert.deepStrictEqual(deriveBand(7, 10, 'Protocol Adherence'), { points: 7, band: 'Meets Expectations' });
 });
 
-console.log('\nPer-event structural checks (all 14 events)');
+console.log('\nPer-event structural checks (all 15 events)');
 
 test('every event: ai_gradable criteria max-sum equals declared ai_gradable_points', () => {
   for (const { event } of listEvents()) {
@@ -90,8 +90,8 @@ test('every event: scored + not_scored criteria counts add up to the full sheet'
   }
 });
 
-test('exactly 14 events are present', () => {
-  assert.strictEqual(listEvents().length, 14);
+test('exactly 15 build-ready events are present', () => {
+  assert.strictEqual(listEvents().length, 15);
 });
 
 test('flagged events (Business Ethics, Financial Statement Analysis) still carry their flag', () => {
@@ -178,7 +178,7 @@ test('unlockHint: each locked reason is distinct and specific', () => {
   assert.notStrictEqual(audioHint, videoHint);
 });
 
-console.log('\nOrchestrator merge (all 14 events, no network — insufficient-content path)');
+console.log('\nOrchestrator merge (all 15 events, no network — insufficient-content path)');
 
 async function asyncTest(name, fn) {
   try { await fn(); passed++; console.log(`  ok  ${name}`); }

@@ -26,6 +26,80 @@ function LockIcon() {
   )
 }
 
+function ScriptIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="24" height="24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 2.5h7l3 3v12a1 1 0 01-1 1H5a1 1 0 01-1-1V3.5a1 1 0 011-1z" />
+      <path strokeLinecap="round" d="M7 9h6M7 12h6M7 15h3.5" />
+    </svg>
+  )
+}
+
+function UploadIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="24" height="24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M10 13V3m0 0L6.5 6.5M10 3l3.5 3.5M4 13v2a2 2 0 002 2h8a2 2 0 002-2v-2" />
+    </svg>
+  )
+}
+
+function MicIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="24" height="24">
+      <rect x="7.5" y="2.5" width="5" height="9" rx="2.5" />
+      <path strokeLinecap="round" d="M4.5 9.5a5.5 5.5 0 0011 0M10 15v2.5M7 17.5h6" />
+    </svg>
+  )
+}
+
+const TOOL_ICON = { script: ScriptIcon, files: UploadIcon, audio: MicIcon }
+const TOOL_CAPTION = {
+  primary: 'Recommended for this event',
+  alternative: 'Also works — scores the same lines',
+  supporting: 'Also works — scores the same lines',
+}
+
+// The "how would you like to submit?" picker — same overlay/box/prompt
+// chrome as the study ModePicker (quiz/flashcard/explain), so choosing an
+// input method for a presentation event feels like the same app, not a
+// bolted-on flow. Options come from the event's real input_options (derived
+// from presentation_tab_config.json), so which button reads "Recommended"
+// genuinely varies per event instead of always defaulting to script.
+function InputMethodPicker({ event, options, onSelect, onClose }) {
+  return (
+    <div className="mp-overlay" onClick={onClose}>
+      <div className="mp-box" onClick={e => e.stopPropagation()}>
+        <button className="mp-close" onClick={onClose}>✕</button>
+
+        <div className="mp-context">
+          <span className="mp-context-label">{event}</span>
+          <span className="mp-context-desc">How would you like to submit your work?</span>
+        </div>
+
+        <p className="mp-prompt">Choose an input method</p>
+        <div className="mp-mode-btns">
+          {options.map(opt => {
+            const Icon = TOOL_ICON[opt.tool]
+            return (
+              <button
+                key={opt.tool}
+                className={`mp-mode-btn mp-${opt.tool}`}
+                onClick={() => onSelect(opt.tool)}
+              >
+                <div className="mp-mode-icon"><Icon /></div>
+                <span>{opt.label}</span>
+                <span className="mp-mode-caption">
+                  {opt.comingSoon ? 'Coming soon — not scored yet' : (TOOL_CAPTION[opt.role] || '')}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const ACCEPTED_FILE_EXT = ['.pdf', '.docx', '.pptx']
 
 // The Workbot console — one event, whatever inputs the student has (a pasted
@@ -36,7 +110,8 @@ export default function WorkbotPage({ onBack }) {
   const [events, setEvents] = useState([])
   const [eventId, setEventId] = useState('')
   const [eventsError, setEventsError] = useState(null)
-  const [inputMode, setInputMode] = useState('script') // 'script' | 'file'
+  const [inputMode, setInputMode] = useState(null) // null | 'script' | 'file'
+  const [pickerOpen, setPickerOpen] = useState(false)
   const [scriptText, setScriptText] = useState('')
   const [file, setFile] = useState(null)
   const [fileError, setFileError] = useState(null)
@@ -48,9 +123,24 @@ export default function WorkbotPage({ onBack }) {
   useEffect(() => {
     fetch('/api/presentation-events')
       .then(r => r.json())
-      .then(list => { setEvents(list); if (list.length) setEventId(list[0].event) })
+      .then(list => setEvents(list))
       .catch(() => setEventsError('Could not load the event list.'))
   }, [])
+
+  // Every time the selected event changes, ask again how they want to
+  // submit for THIS event — the right default genuinely differs per event,
+  // and any script/file already entered belonged to the previous event's
+  // criteria. Nothing is auto-selected on load, so this only fires once the
+  // student actually picks an event from the dropdown.
+  useEffect(() => {
+    if (!eventId) return
+    setInputMode(null)
+    setScriptText('')
+    setFile(null)
+    setFileError(null)
+    setResult(null)
+    setPickerOpen(true)
+  }, [eventId])
 
   function handleFileChange(e) {
     const picked = e.target.files?.[0] || null
@@ -81,6 +171,7 @@ export default function WorkbotPage({ onBack }) {
   }
 
   const selectedEvent = events.find(e => e.event === eventId)
+  const inputOptions = selectedEvent?.input_options || []
   const liveOnlyPoints = selectedEvent ? selectedEvent.grand_total - selectedEvent.ai_gradable_points : 0
   const gradablePct = selectedEvent ? Math.round((selectedEvent.ai_gradable_points / selectedEvent.grand_total) * 100) : 0
   const wordCount = useMemo(
@@ -116,8 +207,9 @@ export default function WorkbotPage({ onBack }) {
               id="sg-event-select"
               className="sg-select"
               value={eventId}
-              onChange={e => { setEventId(e.target.value); setResult(null) }}
+              onChange={e => setEventId(e.target.value)}
             >
+              <option value="" disabled>Choose an event…</option>
               {events.map(e => (
                 <option key={e.event} value={e.event}>{e.event}</option>
               ))}
@@ -173,69 +265,88 @@ export default function WorkbotPage({ onBack }) {
           )}
         </AnimatePresence>
 
-        <div className="sg-field">
-          <div className="sg-mode-toggle" role="tablist" aria-label="Input method">
-            <button
-              type="button" role="tab" aria-selected={inputMode === 'script'}
-              className={`sg-mode-btn ${inputMode === 'script' ? 'active' : ''}`}
-              onClick={() => setInputMode('script')}
-            >
-              Paste script
-            </button>
-            <button
-              type="button" role="tab" aria-selected={inputMode === 'file'}
-              className={`sg-mode-btn ${inputMode === 'file' ? 'active' : ''}`}
-              onClick={() => setInputMode('file')}
-            >
-              Upload file
-            </button>
-          </div>
-
-          {inputMode === 'script' && (
-            <div className="sg-textarea-wrap">
-              <textarea
-                id="sg-script-input"
-                className="sg-textarea"
-                placeholder="Paste your script here…"
-                value={scriptText}
-                onChange={e => setScriptText(e.target.value)}
-                rows={12}
-              />
-              <span className="sg-word-count">{wordCount} {wordCount === 1 ? 'word' : 'words'}</span>
-            </div>
-          )}
-
-          {inputMode === 'file' && (
-            <div className="sg-file-drop">
-              <input
-                id="sg-file-input"
-                className="sg-file-input"
-                type="file"
-                accept={ACCEPTED_FILE_EXT.join(',')}
-                onChange={handleFileChange}
-              />
-              <label htmlFor="sg-file-input" className="sg-file-label">
-                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="22" height="22">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 13V3m0 0L6.5 6.5M10 3l3.5 3.5M4 13v2a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                </svg>
-                {file ? (
-                  <span className="sg-file-name">{file.name}</span>
-                ) : (
-                  <span>Choose a PDF, DOCX, or PPTX file</span>
-                )}
+        {inputMode && (
+          <div className="sg-field">
+            <div className="sg-input-header">
+              <label className="sg-label" htmlFor={inputMode === 'script' ? 'sg-script-input' : inputMode === 'file' ? 'sg-file-input' : undefined}>
+                {inputMode === 'script' ? 'Your script' : inputMode === 'file' ? 'Your file' : 'Your audio'}
               </label>
-              {fileError && <p className="sg-inline-error">{fileError}</p>}
+              <button type="button" className="sg-change-input" onClick={() => setPickerOpen(true)}>
+                Change input method
+              </button>
             </div>
-          )}
-        </div>
 
-        <button
-          className="sg-grade-btn"
-          onClick={handleGrade}
-          disabled={loading || !eventId || (inputMode === 'script' ? !scriptText.trim() : !file)}
-        >
-          {loading ? 'Grading…' : 'Grade my submission'}
-        </button>
+            {inputMode === 'script' && (
+              <div className="sg-textarea-wrap">
+                <textarea
+                  id="sg-script-input"
+                  className="sg-textarea"
+                  placeholder="Paste your script here…"
+                  value={scriptText}
+                  onChange={e => setScriptText(e.target.value)}
+                  rows={12}
+                />
+                <span className="sg-word-count">{wordCount} {wordCount === 1 ? 'word' : 'words'}</span>
+              </div>
+            )}
+
+            {inputMode === 'file' && (
+              <div className="sg-file-drop">
+                <input
+                  id="sg-file-input"
+                  className="sg-file-input"
+                  type="file"
+                  accept={ACCEPTED_FILE_EXT.join(',')}
+                  onChange={handleFileChange}
+                />
+                <label htmlFor="sg-file-input" className="sg-file-label">
+                  <UploadIcon />
+                  {file ? (
+                    <span className="sg-file-name">{file.name}</span>
+                  ) : (
+                    <span>Choose a PDF, DOCX, or PPTX file</span>
+                  )}
+                </label>
+                {fileError && <p className="sg-inline-error">{fileError}</p>}
+              </div>
+            )}
+
+            {inputMode === 'audio' && (
+              <div className="sg-audio-soon">
+                <div className="sg-audio-soon-icon"><MicIcon /></div>
+                <p className="sg-audio-soon-title">Audio scoring is coming soon</p>
+                <p className="sg-audio-soon-text">
+                  Delivery scoring from a recording isn't wired up yet. In the meantime, paste
+                  your script instead — it scores every content and format line on this event's
+                  rating sheet.
+                </p>
+                <button
+                  type="button"
+                  className="sg-audio-soon-btn"
+                  onClick={() => setInputMode('script')}
+                >
+                  Paste my script instead
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+
+        {selectedEvent && !inputMode && (
+          <button type="button" className="sg-choose-input-btn" onClick={() => setPickerOpen(true)}>
+            Choose how you'd like to submit your work →
+          </button>
+        )}
+
+        {(inputMode === 'script' || inputMode === 'file') && (
+          <button
+            className="sg-grade-btn"
+            onClick={handleGrade}
+            disabled={loading || !eventId || (inputMode === 'script' ? !scriptText.trim() : !file)}
+          >
+            {loading ? 'Grading…' : 'Grade my submission'}
+          </button>
+        )}
 
         {error && (
           <div className="pane-error">
@@ -299,6 +410,15 @@ export default function WorkbotPage({ onBack }) {
           )}
         </AnimatePresence>
       </div>
+
+      {pickerOpen && selectedEvent && (
+        <InputMethodPicker
+          event={selectedEvent.event}
+          options={inputOptions}
+          onSelect={tool => { setInputMode(tool === 'files' ? 'file' : tool); setPickerOpen(false) }}
+          onClose={() => setPickerOpen(false)}
+        />
+      )}
     </div>
   )
 }

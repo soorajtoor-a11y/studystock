@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
 import { listEvents as listPresentationEvents } from './services/scriptGrader.js';
 import { runWorkbot } from './services/presentationOrchestrator.js';
+import { inputOptionsFor } from './services/tabConfig.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -1239,7 +1240,11 @@ const MAX_FILE_BYTES = 20 * 1024 * 1024; // 20MB — generous for a document/dec
 const workbotUpload = multer({ storage: multer.memoryStorage(), limits: { fileSize: MAX_FILE_BYTES } });
 
 app.get('/api/presentation-events', (req, res) => {
-  res.json(listPresentationEvents());
+  // input_options is the ordered, per-event set of submission methods (from
+  // presentation_tab_config.json) the picker offers — which one is primary
+  // vs. an alternative genuinely varies per event (e.g. Business Plan wants
+  // an uploaded report first; Public Speaking wants a pasted script first).
+  res.json(listPresentationEvents().map(e => ({ ...e, input_options: inputOptionsFor(e.event) })));
 });
 
 // Accepts either a plain JSON body ({ eventId, inputs: { script } }) or a

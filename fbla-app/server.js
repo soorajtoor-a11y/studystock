@@ -1495,7 +1495,7 @@ app.get('/admin/coverage', (req, res) => {
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Question Bank Coverage — VyeAI Admin</title>
+<title>Question Bank Coverage — Vye Admin</title>
 <meta name="robots" content="noindex, nofollow" />
 <style>
   :root {
@@ -1653,7 +1653,7 @@ if (GITHUB_PUSH_TOKEN) {
 }
 
 const PORT = process.env.PORT || 3001;
-const server = app.listen(PORT, () => console.log(`VyeAI — provider: ${PROVIDER} — port: ${PORT}`));
+const server = app.listen(PORT, () => console.log(`Vye — provider: ${PROVIDER} — port: ${PORT}`));
 server.on('error', (err) => console.error('[server] listen error:', err));
 
 // Guaranteed keep-alive: if the listen handle somehow isn't holding the event

@@ -3,7 +3,7 @@
     "org": "FBLA",
     "division": "High School",
     "season": "2025-2026",
-    "purpose": "Machine-readable rating sheets for Vye's AI presentation grader. Each criterion is tagged by category and whether the AI can score it from an uploaded document/slides/script (ai_gradable). Delivery and live-Q&A criteria are ai_gradable:false and belong in a practice/coaching mode, not automated scoring.",
+    "purpose": "Machine-readable rating sheets for Vye's presentation grader. Each criterion is tagged by category and whether the AI can score it from an uploaded document/slides/script (ai_gradable). Delivery and live-Q&A criteria are ai_gradable:false and belong in a practice/coaching mode, not automated scoring.",
     "category_key": {
       "content": "Substance the AI reads and scores from the upload.",
       "compliance": "Format/sources/adherence the AI can check against the deliverable spec (page limits, required sections, citations).",

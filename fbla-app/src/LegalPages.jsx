@@ -7,7 +7,7 @@ function LegalShell({ title, updated, children }) {
       <header className="legal-nav">
         <a className="legal-brand" href="/">
           <img className="legal-mark" src={appMark} alt="" />
-          VyeAI
+          Vye
         </a>
         <a className="legal-back" href="/">Back to home</a>
       </header>
@@ -19,7 +19,7 @@ function LegalShell({ title, updated, children }) {
       </main>
 
       <footer className="legal-footer">
-        <span>© {new Date().getFullYear()} VyeAI. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Vye. All rights reserved.</span>
         <span className="legal-footer-links">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
@@ -173,11 +173,11 @@ export function TermsOfService() {
     <LegalShell title="Terms of Service" updated="pending, this page is placeholder text for now">
       <p>
         This is placeholder text. The final Terms of Service will be supplied and will replace
-        everything on this page. Nothing here should be treated as VyeAI's actual terms until that
+        everything on this page. Nothing here should be treated as Vye's actual terms until that
         replacement happens.
       </p>
 
-      <Section n="1" title="Using VyeAI">
+      <Section n="1" title="Using Vye">
         <p>
           Placeholder: this section will describe who may use the service and any account
           requirements.
@@ -209,7 +209,7 @@ export function TermsOfService() {
 
       <Section n="5" title="Changes to These Terms">
         <p>
-          Placeholder: this section will describe how VyeAI may update these terms and how users
+          Placeholder: this section will describe how Vye may update these terms and how users
           will be notified.
         </p>
       </Section>

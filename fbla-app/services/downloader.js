@@ -10,6 +10,8 @@
 import { findEvent, allCriteria } from './rubrics.js';
 import { grade as gradeScript } from './scriptGrader.js';
 import { isBinaryCriterion } from './bands.js';
+import { isVideoGradable } from './eventCatalog.js';
+import { grade as gradeVideo } from './videoGrader.js';
 
 export function extFromFilename(filename) {
   const m = /\.([a-z0-9]+)$/i.exec(filename || '');
@@ -138,6 +140,7 @@ async function gradeDeck(event, text, slideCount, imageCount) {
 }
 
 const UNSUPPORTED_LABEL = { mp4: 'Video', mov: 'Video', webm: 'Video', png: 'Image', jpg: 'Image', jpeg: 'Image', gif: 'Image', zip: 'Code repo' };
+const VIDEO_EXTS = new Set(['mp4', 'mov', 'webm']);
 
 function unsupportedResult(ext) {
   const label = UNSUPPORTED_LABEL[ext] || 'This file type';
@@ -153,12 +156,24 @@ function unsupportedResult(ext) {
 // { buffer, filename, kind? } — kind is an optional 'document' | 'deck' hint
 // for a .pdf that's actually a slide export (PDF alone can't tell the two
 // apart); everything else is inferred from the file extension.
+//
+// Video uploads are checked BEFORE findEvent() — findEvent() only knows the
+// 15 build-ready events (presentation_rubrics.json) and throws for anything
+// else, but a video-gradable event (eventCatalog.isVideoGradable) is a real,
+// not-build-ready event whose video submissions videoGrader.js can still
+// score. Routing on extension first keeps that path from ever touching
+// rubrics.js at all.
 // ---------------------------------------------------------------------------
 export async function grade(eventId, input) {
-  const event = findEvent(eventId);
-  const gradable = allCriteria(event).filter(c => c.ai_gradable);
   const { buffer, filename, kind } = input;
   const ext = extFromFilename(filename);
+
+  if (VIDEO_EXTS.has(ext)) {
+    return isVideoGradable(eventId) ? gradeVideo(eventId, { buffer, filename }) : unsupportedResult(ext);
+  }
+
+  const event = findEvent(eventId);
+  const gradable = allCriteria(event).filter(c => c.ai_gradable);
 
   if (ext === 'docx') {
     const { text } = await extractDocxText(buffer);

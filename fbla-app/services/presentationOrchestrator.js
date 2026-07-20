@@ -8,6 +8,7 @@
 import { findEvent, allCriteria } from './rubrics.js';
 import { grade as gradeScript } from './scriptGrader.js';
 import { grade as gradeFile } from './downloader.js';
+import { isVideoGradable, listNotYetGradableEvents } from './eventCatalog.js';
 
 // Registry of implemented graders, keyed by input name. Adding a future
 // module (Audio, Video) is just one more entry, per ARCHITECTURE.md —
@@ -75,7 +76,86 @@ function unlockHint(criterion) {
   return 'Live judge Q&A — use practice mode.';
 }
 
+// Locked-line hint for a not-ready event's rating line, keyed off its engine
+// tag (from presentation_events_all30.json) rather than category/ai_gradable
+// — these 9 events don't have the validated rubric structure the 15
+// build-ready ones do, just an engine per line.
+function videoUnlockHint(line, videoSubmitted) {
+  if (line.category === 'live') return 'Live judge Q&A — use practice mode.';
+  if (line.category === 'auto') return "Mechanical check (e.g. a time limit) — not scored in the trial version.";
+  // text/video/vision — genuinely video-gradable, just not scored (yet) here
+  return videoSubmitted
+    ? 'The grader did not return a score for this line.'
+    : 'Upload a video to unlock this line.';
+}
+
+// Parallel path for the 9 not-ready-but-video-gradable events (see
+// eventCatalog.isVideoGradable). These live entirely in
+// presentation_events_all30.json — flat rating_lines tagged by engine, not
+// rubrics.js's validated rating_sheets/criteria tagged ai_gradable/category
+// — a genuinely different data shape, so this is a separate function rather
+// than forcing both through one merge. runWorkbot's existing 15-event path
+// below is completely untouched by this.
+async function runVideoWorkbot(eventId, inputs) {
+  const catalogEvent = listNotYetGradableEvents().find(e => e.event === eventId);
+
+  const videoFile = inputs.files; // the only input this path scores
+  const videoOutput = videoFile ? await gradeFile(eventId, videoFile) : null;
+  const scoredByKey = new Map((videoOutput?.results || []).map(r => [`${r.sheet}::${r.criterion}`, r]));
+
+  const merged = catalogEvent.gradable_criteria.map(c => {
+    const videoScorable = ['text', 'video', 'vision'].includes(c.category);
+    const hit = videoScorable && scoredByKey.get(`${c.sheet}::${c.criterion}`);
+
+    if (hit) {
+      return {
+        criterion: c.criterion, sheet: c.sheet, max: c.max, category: c.category,
+        owner_tool: 'video', status: 'scored',
+        band: hit.band, points: hit.points, justification: hit.justification, fix: hit.fix,
+      };
+    }
+    return {
+      criterion: c.criterion, sheet: c.sheet, max: c.max, category: c.category,
+      owner_tool: videoScorable ? 'video' : null, status: 'locked',
+      unlock_hint: videoUnlockHint(c, !!videoFile),
+    };
+  });
+
+  const scoredCriteria = merged.filter(c => c.status === 'scored');
+  const scored_points = scoredCriteria.reduce((sum, c) => sum + c.points, 0);
+  const assessed_ceiling = scoredCriteria.reduce((sum, c) => sum + c.max, 0);
+
+  const by_tool = {};
+  for (const c of scoredCriteria) {
+    by_tool[c.owner_tool] ??= { points: 0, of: 0 };
+    by_tool[c.owner_tool].points += c.points;
+    by_tool[c.owner_tool].of += c.max;
+  }
+
+  const lockedPoints = catalogEvent.grand_total - assessed_ceiling;
+  const notes = collectNotes(videoOutput ? [videoOutput] : []);
+  const result = {
+    event: catalogEvent.event,
+    inputs_used: videoFile ? ['files'] : [],
+    criteria: merged,
+    totals: {
+      scored_points,
+      assessed_ceiling,
+      ai_gradable_ceiling: catalogEvent.video_gradable_points,
+      grand_total: catalogEvent.grand_total,
+      by_tool,
+    },
+    summary: lockedPoints > 0
+      ? `${scored_points} / ${assessed_ceiling} assessed. ${lockedPoints} pts not scored here — this is a trial-version grader, live Q&A and time-limit checks aren't covered.`
+      : `${scored_points} / ${assessed_ceiling} assessed — every video-gradable point on this sheet was scored.`,
+  };
+  if (notes.length > 0) result.notes = notes;
+  return result;
+}
+
 export async function runWorkbot(eventId, inputs = {}) {
+  if (isVideoGradable(eventId)) return runVideoWorkbot(eventId, inputs);
+
   const event = findEvent(eventId);
   const criteria = allCriteria(event);
 
@@ -156,4 +236,4 @@ export async function runWorkbot(eventId, inputs = {}) {
 }
 
 // Exported for tests only.
-export const _internal = { ownerToolFor, textOwnerTool, unlockHint };
+export const _internal = { ownerToolFor, textOwnerTool, unlockHint, videoUnlockHint, runVideoWorkbot };

@@ -9,6 +9,7 @@ import { listEvents as listPresentationEvents } from './services/scriptGrader.js
 import { runWorkbot } from './services/presentationOrchestrator.js';
 import { inputOptionsFor } from './services/tabConfig.js';
 import { listNotYetGradableEvents, notReadyInputOptionsFor, tierFor } from './services/eventCatalog.js';
+import { extFromFilename } from './services/downloader.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -46,7 +47,7 @@ const PROVIDER      = process.env.AI_PROVIDER  || 'ollama';
 const OLLAMA_MODEL  = process.env.OLLAMA_MODEL  || 'llama3.2';
 const OLLAMA_URL    = 'http://localhost:11434/api/chat';
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
-const GEMINI_MODEL  = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const GEMINI_MODEL  = process.env.GEMINI_MODEL || 'gemini-3.5-flash';
 const GEMINI_BASE   = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}`;
 
 const OLLAMA_FAST_OPTS = { temperature: 0.7, num_ctx: 4096,  num_predict: 2048 };
@@ -1268,17 +1269,26 @@ app.get('/api/presentation-events', (req, res) => {
 // to "files" (document/deck) when omitted. Multer only intercepts multipart
 // requests — a JSON POST passes through untouched to express.json()'s
 // already-parsed req.body.
+const VIDEO_EXTS = new Set(['mp4', 'mov', 'webm']);
+
 app.post('/api/workbot/grade', workbotUpload.single('file'), async (req, res) => {
   const eventId = req.body?.eventId;
   if (typeof eventId !== 'string') {
     return res.status(400).json({ error: 'Unknown or missing eventId' });
   }
-  if (listNotYetGradableEvents().some(e => e.event === eventId)) {
-    // Defense in depth: the frontend never shows a Grade button for these,
-    // but a direct API call must still refuse rather than fabricate a score.
-    return res.status(400).json({ error: `Grading for "${eventId}" isn't available yet — its deliverable needs a media engine (video/vision/code/web) Vye hasn't built.` });
-  }
-  if (!listPresentationEvents().some(e => e.event === eventId)) {
+
+  const notReady = listNotYetGradableEvents().find(e => e.event === eventId);
+  if (notReady) {
+    // Defense in depth: the frontend never shows a Grade button for the 6
+    // code/web-tier events, or for script/audio on the 9 video-gradable
+    // ones — but a direct API call must still be refused rather than
+    // fabricate a score. The one thing that's allowed through: an actual
+    // video upload for one of the 9 events Gemini can genuinely grade.
+    const isVideoUpload = req.file && VIDEO_EXTS.has(extFromFilename(req.file.originalname));
+    if (!(notReady.video_gradable && isVideoUpload)) {
+      return res.status(400).json({ error: `Grading for "${eventId}" isn't available yet — its deliverable needs a media engine (video/vision/code/web) Vye hasn't built.` });
+    }
+  } else if (!listPresentationEvents().some(e => e.event === eventId)) {
     return res.status(400).json({ error: 'Unknown or missing eventId' });
   }
 

@@ -109,7 +109,8 @@ function InputMethodPicker({ event, options, onSelect, onClose }) {
   )
 }
 
-const ACCEPTED_FILE_EXT = ['.pdf', '.docx', '.pptx']
+const DOCUMENT_FILE_EXT = ['.pdf', '.docx', '.pptx']
+const VIDEO_FILE_EXT = ['.mp4', '.mov', '.webm']
 
 // The Workbot console — one event, whatever inputs the student has (a pasted
 // script or an uploaded document/deck), one merged scorecard against the
@@ -151,12 +152,12 @@ export default function WorkbotPage({ onBack }) {
     setPickerOpen(true)
   }, [eventId])
 
-  function handleFileChange(e) {
+  function handleFileChange(e, acceptedExt, wrongTypeHint) {
     const picked = e.target.files?.[0] || null
     setFileError(null)
-    if (picked && !ACCEPTED_FILE_EXT.some(ext => picked.name.toLowerCase().endsWith(ext))) {
+    if (picked && !acceptedExt.some(ext => picked.name.toLowerCase().endsWith(ext))) {
       setFile(null)
-      setFileError(`"${picked.name}" isn't a supported type yet — upload a ${ACCEPTED_FILE_EXT.join(', ')} file, or paste your script as text instead.`)
+      setFileError(`"${picked.name}" isn't a supported type yet — upload a ${acceptedExt.join(', ')} file${wrongTypeHint}.`)
       return
     }
     setFile(picked)
@@ -181,8 +182,14 @@ export default function WorkbotPage({ onBack }) {
 
   const selectedEvent = events.find(e => e.event === eventId)
   const inputOptions = selectedEvent?.input_options || []
-  const liveOnlyPoints = selectedEvent ? selectedEvent.grand_total - selectedEvent.ai_gradable_points : 0
-  const gradablePct = selectedEvent ? Math.round((selectedEvent.ai_gradable_points / selectedEvent.grand_total) * 100) : 0
+  // Build-ready events are assessed from text (ai_gradable_points); the 9
+  // video-gradable ones are assessed from a video upload instead
+  // (video_gradable_points) — same ceiling-bar treatment, different source.
+  const assessedPoints = selectedEvent
+    ? (selectedEvent.build_ready ? selectedEvent.ai_gradable_points : (selectedEvent.video_gradable_points || 0))
+    : 0
+  const liveOnlyPoints = selectedEvent ? selectedEvent.grand_total - assessedPoints : 0
+  const gradablePct = selectedEvent ? Math.round((assessedPoints / selectedEvent.grand_total) * 100) : 0
   const wordCount = useMemo(
     () => (scriptText.trim() ? scriptText.trim().split(/\s+/).length : 0),
     [scriptText]
@@ -204,6 +211,7 @@ export default function WorkbotPage({ onBack }) {
     return [...map.entries()]
   }, [events])
 
+  const acceptedFileExt = selectedEvent?.video_gradable ? VIDEO_FILE_EXT : DOCUMENT_FILE_EXT
   const toolForMode = mode => (mode === 'file' ? 'files' : mode)
   const selectedOption = inputMode ? inputOptions.find(o => o.tool === toolForMode(inputMode)) : null
   const isComingSoon = !!selectedOption?.comingSoon
@@ -245,7 +253,7 @@ export default function WorkbotPage({ onBack }) {
                 <optgroup key={tier} label={tier}>
                   {evs.map(e => (
                     <option key={e.event} value={e.event}>
-                      {e.event}{e.build_ready ? '' : ' (coming soon)'}
+                      {e.event}{e.build_ready ? '' : (e.video_gradable ? ' (video)' : ' (coming soon)')}
                     </option>
                   ))}
                 </optgroup>
@@ -267,7 +275,7 @@ export default function WorkbotPage({ onBack }) {
                     <div className="sg-ceiling-bar-graded" style={{ width: `${gradablePct}%` }} />
                   </div>
                   <p className="sg-ceiling-caption">
-                    <strong>{selectedEvent.ai_gradable_points} of {selectedEvent.grand_total} points</strong> for
+                    <strong>{assessedPoints} of {selectedEvent.grand_total} points</strong> for
                     this event come from what you write — this grader reads your script and scores those
                     directly, criterion by criterion.
                     {liveOnlyPoints > 0 && (
@@ -276,7 +284,28 @@ export default function WorkbotPage({ onBack }) {
                     )}
                   </p>
                   <div className="sg-ceiling-legend">
-                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your text ({selectedEvent.ai_gradable_points})</span>
+                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your text ({assessedPoints})</span>
+                    {liveOnlyPoints > 0 && (
+                      <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-live" />Locked for now ({liveOnlyPoints})</span>
+                    )}
+                  </div>
+                </>
+              ) : selectedEvent.video_gradable ? (
+                <>
+                  <div className="sg-ceiling-bar">
+                    <div className="sg-ceiling-bar-graded" style={{ width: `${gradablePct}%` }} />
+                  </div>
+                  <p className="sg-ceiling-caption">
+                    <strong>{assessedPoints} of {selectedEvent.grand_total} points</strong> for this event
+                    come from what a video shows — trial version, upload a recording and it's graded by
+                    watching and listening to it, no script needed.
+                    {liveOnlyPoints > 0 && (
+                      <> The remaining <strong>{liveOnlyPoints} points</strong> are live judge Q&amp;A and
+                      mechanical checks (like a time limit), which this trial grader doesn't cover.</>
+                    )}
+                  </p>
+                  <div className="sg-ceiling-legend">
+                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your video ({assessedPoints})</span>
                     {liveOnlyPoints > 0 && (
                       <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-live" />Locked for now ({liveOnlyPoints})</span>
                     )}
@@ -293,7 +322,9 @@ export default function WorkbotPage({ onBack }) {
               )}
 
               <div className="sg-preview">
-                <h3 className="sg-section-title">{selectedEvent.build_ready ? 'What gets graded' : "This event's official rating sheet"}</h3>
+                <h3 className="sg-section-title">
+                  {selectedEvent.build_ready || selectedEvent.video_gradable ? 'What gets graded' : "This event's official rating sheet"}
+                </h3>
                 <div className="sg-preview-table">
                   {selectedEvent.gradable_criteria.map((c, i) => (
                     <motion.div
@@ -364,13 +395,19 @@ export default function WorkbotPage({ onBack }) {
                       id="sg-file-input"
                       className="sg-file-input"
                       type="file"
-                      accept={ACCEPTED_FILE_EXT.join(',')}
-                      onChange={handleFileChange}
+                      accept={acceptedFileExt.join(',')}
+                      onChange={e => handleFileChange(
+                        e,
+                        acceptedFileExt,
+                        selectedEvent?.video_gradable ? '' : ', or paste your script as text instead'
+                      )}
                     />
                     <label htmlFor="sg-file-input" className="sg-file-label">
                       <UploadIcon />
                       {file ? (
                         <span className="sg-file-name">{file.name}</span>
+                      ) : selectedEvent?.video_gradable ? (
+                        <span>Choose a video file (MP4, MOV, or WEBM)</span>
                       ) : (
                         <span>Choose a PDF, DOCX, or PPTX file</span>
                       )}

@@ -1,6 +1,8 @@
 /* ── Layout ──────────────────────────────────────────────────────── */
 .app  { display:flex; height:100vh; overflow:hidden; position:relative; }
 .main { flex:1; overflow-y:auto; background:var(--bg); min-width:0; }
+.main-transition { min-height:100%; display:flex; flex-direction:column; }
+.main-transition > * { flex:1; min-height:0; }
 
 /* ── Sidebar ─────────────────────────────────────────────────────── */
 .sidebar {
@@ -39,20 +41,46 @@
   }
 }
 
-.sidebar-logo {
-  padding:18px 16px 14px;
+.sidebar-logo-row {
+  display:flex; align-items:center; justify-content:space-between; gap:6px;
+  padding:14px 12px 14px 16px;
   border-bottom:1px solid rgba(255,255,255,0.06);
-  display:flex; align-items:center; gap:10px;
   flex-shrink:0;
-  width:100%; background:none; border-left:none; border-right:none; border-top:none;
-  cursor:pointer; text-align:left; transition:opacity var(--dur-fast) var(--ease-out);
+}
+
+.sidebar-logo {
+  display:flex; align-items:center; gap:10px;
+  background:none; border:none;
+  padding:0; cursor:pointer; text-align:left;
+  transition:opacity var(--dur-fast) var(--ease-out);
 }
 .sidebar-logo:hover { opacity:0.82; }
 
 .sidebar-logo-mark {
-  width:46px; height:46px;
-  border-radius:12px; object-fit:cover;
+  width:40px; height:40px;
+  border-radius:11px; object-fit:cover;
   flex-shrink:0;
+}
+
+.sidebar-collapse-btn {
+  display:flex; align-items:center; justify-content:center;
+  width:26px; height:26px; flex-shrink:0;
+  background:transparent; border:1px solid rgba(255,255,255,0.1);
+  border-radius:7px; color:rgba(255,255,255,0.45); cursor:pointer;
+  transition:all 0.15s;
+}
+.sidebar-collapse-btn:hover { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.85); border-color:rgba(255,255,255,0.2); }
+/* Collapse is a desktop-only rail concept — mobile always shows the
+   full drawer content when open, so the toggle has nothing to do. */
+@media (max-width:860px) {
+  .sidebar-collapse-btn { display:none; }
+}
+.sidebar-collapse-icon { transition:transform 0.2s var(--ease-out); }
+.sidebar-collapse-icon.is-collapsed { transform:rotate(180deg); }
+
+.sidebar-btn-label {
+  flex:1; min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 }
 
 
@@ -97,7 +125,7 @@
 
 /* Sidebar search */
 .sidebar-search-wrap {
-  padding:0 10px 8px; flex-shrink:0;
+  padding:8px 10px; flex-shrink:0;
   position:relative;
 }
 
@@ -133,12 +161,44 @@
 .sidebar-search-clear:hover { background:rgba(255,255,255,0.2); color:#fff; }
 
 /* Nav list */
-.sidebar-nav {
-  flex:1; overflow-y:auto; padding:2px 8px 16px;
+.sidebar-nav { padding:2px 8px 16px; }
+
+/* Groups area (Objective Tests / Presentation Events) — this, not
+   .sidebar-nav, is the flex child that grows and scrolls now that the
+   event list lives nested inside a collapsible group. */
+.sidebar-groups {
+  flex:1; overflow-y:auto; min-height:0;
+  display:flex; flex-direction:column;
+  border-top:1px solid rgba(255,255,255,0.06);
+  margin-top:4px; padding-top:6px;
   scrollbar-width:thin; scrollbar-color:rgba(255,255,255,0.07) transparent;
 }
-.sidebar-nav::-webkit-scrollbar { width:3px; }
-.sidebar-nav::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.07); border-radius:2px; }
+.sidebar-groups::-webkit-scrollbar { width:3px; }
+.sidebar-groups::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.07); border-radius:2px; }
+
+.sidebar-pins-block { flex-shrink:0; }
+
+.sidebar-group { flex-shrink:0; }
+
+.sidebar-group-header {
+  display:flex; align-items:center; justify-content:space-between;
+  width:calc(100% - 16px); margin:2px 8px; padding:8px 8px;
+  border:none; background:transparent; border-radius:7px; cursor:pointer;
+  color:rgba(255,255,255,0.6); font-family:inherit;
+  transition:background 0.12s,color 0.12s;
+}
+.sidebar-group-header:hover { background:rgba(255,255,255,0.06); color:rgba(255,255,255,0.92); }
+.sidebar-group-header-left { display:flex; align-items:center; gap:8px; min-width:0; }
+.sidebar-group-header-right { display:flex; align-items:center; gap:6px; flex-shrink:0; }
+.sidebar-group-icon { flex-shrink:0; color:inherit; opacity:0.85; }
+.sidebar-group-label {
+  font-size:12.5px; font-weight:600; letter-spacing:0.01em;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.sidebar-group-chevron { flex-shrink:0; color:rgba(255,255,255,0.4); transition:transform 0.18s var(--ease-out); }
+.sidebar-group-chevron.open { transform:rotate(180deg); }
+.sidebar-group-content { display:flex; flex-direction:column; }
+.sidebar-group-item { margin:0 8px; width:calc(100% - 16px); gap:8px; }
 
 .sidebar-footer {
   padding:10px 8px; border-top:1px solid rgba(255,255,255,0.06); flex-shrink:0;
@@ -190,8 +250,7 @@
   margin-top:2px;
 }
 
-.sidebar-nav-pinned { flex:none; max-height:160px; }
-.sidebar-nav-pinned + .sidebar-events-header { border-top:1px solid rgba(255,255,255,0.06); margin-top:4px; padding-top:14px; }
+.sidebar-nav-pinned { max-height:160px; overflow-y:auto; }
 .sidebar-item:hover .sidebar-item-dot { background:rgba(255,255,255,0.35); }
 .sidebar-item.active { background:oklch(56% 0.14 var(--signal-hue) / 0.15); box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.26); }
 .sidebar-item.active .sidebar-item-dot { background:var(--signal-400); box-shadow:0 0 6px oklch(56% 0.14 var(--signal-hue) / 0.7); }
@@ -213,6 +272,43 @@
 .sidebar-no-results {
   padding:16px 12px; font-size:11.5px;
   color:rgba(255,255,255,0.22); text-align:center;
+}
+
+.sidebar-empty-org {
+  flex:1; min-height:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:12px; padding:32px 28px; text-align:center;
+  color:rgba(255,255,255,0.24);
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.sidebar-empty-org svg { color:rgba(255,255,255,0.18); flex-shrink:0; }
+.sidebar-empty-org p { font-size:12.5px; line-height:1.55; margin:0; max-width:26ch; }
+
+/* ── Sidebar collapsed (icon rail) — desktop only; mobile keeps the
+   full-width slide-in drawer regardless of this state. ───────────── */
+@media (min-width:861px) {
+  .sidebar.sidebar-collapsed { width:68px; min-width:68px; }
+
+  .sidebar-collapsed .sidebar-logo-row { flex-direction:column; gap:8px; padding:14px 8px; }
+  .sidebar-collapsed .sidebar-collapse-btn { width:22px; height:22px; }
+
+  .sidebar-collapsed .sidebar-top { padding:10px 8px 4px; }
+  .sidebar-collapsed .sidebar-home-btn { justify-content:center; padding:9px; gap:0; }
+  .sidebar-collapsed .sidebar-btn-label { display:none; }
+
+  .sidebar-collapsed .org-switcher-btn { justify-content:center; padding:7px; gap:0; }
+  .sidebar-collapsed .org-switcher-name,
+  .sidebar-collapsed .org-switcher-chevron { display:none; }
+  .sidebar-collapsed .org-switcher-menu { left:0; right:auto; min-width:230px; }
+
+  .sidebar-collapsed .sidebar-pins-block { display:none; }
+
+  .sidebar-collapsed .sidebar-group-header { justify-content:center; padding:9px 6px; margin:2px 6px; width:calc(100% - 12px); }
+  .sidebar-collapsed .sidebar-group-label,
+  .sidebar-collapsed .sidebar-group-header-right { display:none; }
+
+  .sidebar-collapsed .sidebar-footer { padding:10px 6px; }
+  .sidebar-collapsed .sidebar-settings-btn { justify-content:center; padding:9px 6px; gap:0; }
 }
 
 /* ── Event Picker Page ───────────────────────────────────────────── */
@@ -1691,19 +1787,56 @@
   text-transform:uppercase; letter-spacing:0.4px; margin-bottom:7px;
 }
 
-.sg-select-wrap { position:relative; display:inline-block; }
-.sg-select {
-  appearance:none; -webkit-appearance:none;
-  padding:10px 38px 10px 14px; border-radius:var(--r); border:1.5px solid var(--border);
+/* Custom event picker (replaces a native <select>/<optgroup>, which
+   renders with unstyleable OS chrome) — same open/close/hover language
+   as OrgSwitcher's dropdown. */
+.sg-event-picker { position:relative; display:inline-block; min-width:300px; }
+.sg-event-picker-btn {
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  width:100%; padding:10px 14px; border-radius:var(--r); border:1.5px solid var(--border);
   background:var(--surface); color:var(--text); font-family:inherit; font-size:14px;
-  font-weight:600; cursor:pointer; min-width:260px; transition:border-color 0.14s, box-shadow 0.14s;
+  font-weight:600; cursor:pointer; text-align:left;
+  transition:border-color 0.14s, box-shadow 0.14s;
 }
-.sg-select:hover { border-color:var(--signal-300); }
-.sg-select:focus-visible { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px oklch(65% 0.13 var(--signal-hue) / 0.18); }
-.sg-select-chevron {
-  position:absolute; right:13px; top:50%; transform:translateY(-50%);
-  color:var(--text-4); pointer-events:none;
+.sg-event-picker-btn:hover { border-color:var(--signal-300); }
+.sg-event-picker-btn.open { border-color:var(--accent); box-shadow:0 0 0 3px oklch(65% 0.13 var(--signal-hue) / 0.18); }
+.sg-event-picker-value { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sg-event-picker-placeholder { color:var(--text-4); font-weight:500; }
+.sg-event-picker-chevron { flex-shrink:0; color:var(--text-4); transition:transform 0.18s var(--ease-out); }
+.sg-event-picker-btn.open .sg-event-picker-chevron { transform:rotate(180deg); }
+
+.sg-event-picker-menu {
+  position:absolute; top:calc(100% + 6px); left:0; right:0; z-index:40;
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--r-lg); box-shadow:0 16px 36px rgba(0,0,0,0.45);
+  overflow:hidden; animation:org-switcher-menu-in 150ms var(--ease-out);
 }
+.sg-event-picker-search-wrap { padding:8px; border-bottom:1px solid var(--border); }
+.sg-event-picker-search {
+  width:100%; padding:8px 10px; background:var(--bg); border:1px solid var(--border);
+  border-radius:7px; font-family:inherit; font-size:13px; color:var(--text); outline:none;
+  transition:border-color 0.14s;
+}
+.sg-event-picker-search:focus { border-color:var(--signal-300); }
+.sg-event-picker-search::placeholder { color:var(--text-4); }
+
+.sg-event-picker-list { max-height:320px; overflow-y:auto; padding:6px; }
+.sg-event-picker-item {
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  width:100%; padding:9px 10px; border:none; background:transparent;
+  border-radius:7px; cursor:pointer; text-align:left;
+  font-family:inherit; font-size:13.5px; font-weight:500; color:var(--text-2);
+  transition:background 0.12s, color 0.12s;
+}
+.sg-event-picker-item:hover { background:var(--tint); color:var(--text); }
+.sg-event-picker-item.active { background:var(--tint); color:var(--signal-300); font-weight:700; box-shadow:inset 0 0 0 1px var(--tint-border); }
+.sg-event-picker-item + .sg-event-picker-item { margin-top:1px; }
+.sg-event-picker-tag {
+  flex-shrink:0; font-family:var(--font-mono); font-size:9.5px; font-weight:700;
+  text-transform:uppercase; letter-spacing:0.05em; color:var(--text-4);
+  background:var(--bg); padding:2px 6px; border-radius:20px;
+}
+.sg-event-picker-empty { padding:16px 10px; font-size:12.5px; color:var(--text-4); text-align:center; }
 
 .sg-inline-error { font-size:12.5px; color:var(--red); margin-top:6px; }
 
@@ -1873,7 +2006,7 @@
 .sg-criterion-unlock { font-size:13.5px; line-height:1.55; color:var(--text-4); font-style:italic; }
 
 @media (max-width:640px) {
-  .sg-select { min-width:0; width:100%; }
+  .sg-event-picker { min-width:0; width:100%; }
   .sg-preview-row { grid-template-columns:1fr auto; row-gap:2px; }
   .sg-preview-category { grid-column:1; order:2; }
   .sg-preview-max { grid-column:2; order:1; grid-row:1; }

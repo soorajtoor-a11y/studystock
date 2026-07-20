@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 
 const BAND_CLASS = {
@@ -109,6 +109,91 @@ function InputMethodPicker({ event, options, onSelect, onClose }) {
   )
 }
 
+// Flat, alphabetical event picker styled to match the rest of the app —
+// a native <select>/<optgroup> renders with the OS's own chrome (macOS's
+// grey Aqua listbox), which breaks the dark theme entirely and can't be
+// restyled with CSS. This is the same custom-dropdown pattern as OrgSwitcher
+// (button + absolutely-positioned panel, click-outside/Escape to close).
+// No tier grouping — every event, sorted by name, is a peer; students pick
+// by what they're actually working on, not by grading-engine internals.
+function EventPickerDropdown({ events, value, onChange, placeholder = 'Choose an event…' }) {
+  const [open, setOpen] = useState(false)
+  const [search, setSearch] = useState('')
+  const ref = useRef(null)
+
+  useEffect(() => {
+    if (!open) return
+    function onDocPointerDown(e) { if (ref.current && !ref.current.contains(e.target)) setOpen(false) }
+    function onKeyDown(e) { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('mousedown', onDocPointerDown)
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('mousedown', onDocPointerDown)
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [open])
+
+  const sorted = useMemo(
+    () => [...events].sort((a, b) => a.event.localeCompare(b.event)),
+    [events]
+  )
+  const filtered = search.trim()
+    ? sorted.filter(e => e.event.toLowerCase().includes(search.toLowerCase()))
+    : sorted
+  const selected = events.find(e => e.event === value)
+
+  return (
+    <div className="sg-event-picker" ref={ref}>
+      <button
+        type="button"
+        className={`sg-event-picker-btn ${open ? 'open' : ''}`}
+        onClick={() => setOpen(o => !o)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+      >
+        <span className={`sg-event-picker-value ${!selected ? 'sg-event-picker-placeholder' : ''}`}>
+          {selected ? selected.event : placeholder}
+        </span>
+        <svg className="sg-event-picker-chevron" viewBox="0 0 20 20" fill="currentColor" width="12" height="12">
+          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="sg-event-picker-menu" role="listbox">
+          <div className="sg-event-picker-search-wrap">
+            <input
+              className="sg-event-picker-search"
+              placeholder="Filter events…"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              autoFocus
+            />
+          </div>
+          <div className="sg-event-picker-list">
+            {filtered.map(e => (
+              <button
+                key={e.event}
+                type="button"
+                role="option"
+                aria-selected={e.event === value}
+                className={`sg-event-picker-item ${e.event === value ? 'active' : ''}`}
+                onClick={() => { onChange(e.event); setOpen(false); setSearch('') }}
+              >
+                <span>{e.event}</span>
+                {!e.build_ready && (
+                  <span className="sg-event-picker-tag">{e.video_gradable ? 'video' : 'coming soon'}</span>
+                )}
+              </button>
+            ))}
+            {filtered.length === 0 && <div className="sg-event-picker-empty">No matches</div>}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const DOCUMENT_FILE_EXT = ['.pdf', '.docx', '.pptx']
 const VIDEO_FILE_EXT = ['.mp4', '.mov', '.webm']
 
@@ -116,7 +201,7 @@ const VIDEO_FILE_EXT = ['.mp4', '.mov', '.webm']
 // script or an uploaded document/deck), one merged scorecard against the
 // event's full official rating sheet. See SHARED-CONTRACT.md / ARCHITECTURE.md
 // for the model this implements.
-export default function WorkbotPage({ onBack }) {
+export default function WorkbotPage({ onBack, initialEventId }) {
   const [events, setEvents] = useState([])
   const [eventId, setEventId] = useState('')
   const [eventsError, setEventsError] = useState(null)
@@ -136,6 +221,15 @@ export default function WorkbotPage({ onBack }) {
       .then(list => setEvents(list))
       .catch(() => setEventsError('Could not load the event list.'))
   }, [])
+
+  // Arriving here from a sidebar click on a specific event (App.jsx passes
+  // initialEventId) pre-selects it the moment the event list has loaded —
+  // same as picking it from the in-page dropdown, just skipping that step.
+  useEffect(() => {
+    if (initialEventId && events.some(e => e.event === initialEventId)) {
+      setEventId(initialEventId)
+    }
+  }, [initialEventId, events])
 
   // Every time the selected event changes, ask again how they want to
   // submit for THIS event — the right default genuinely differs per event,
@@ -195,22 +289,6 @@ export default function WorkbotPage({ onBack }) {
     [scriptText]
   )
 
-  // All 30 official events, grouped by tier (what each one actually needs to
-  // be gradable — text-only, audio delivery, video, design, code, a live
-  // website…) — the same grouping the backend derives from
-  // presentation_events_all30.json, so "organize by what they need" reflects
-  // one source of truth. Insertion order follows the API response, which
-  // already lists build-ready tiers first.
-  const eventsByTier = useMemo(() => {
-    const map = new Map()
-    for (const e of events) {
-      const key = e.tier || 'Other'
-      if (!map.has(key)) map.set(key, [])
-      map.get(key).push(e)
-    }
-    return [...map.entries()]
-  }, [events])
-
   const acceptedFileExt = selectedEvent?.video_gradable ? VIDEO_FILE_EXT : DOCUMENT_FILE_EXT
   const toolForMode = mode => (mode === 'file' ? 'files' : mode)
   const selectedOption = inputMode ? inputOptions.find(o => o.tool === toolForMode(inputMode)) : null
@@ -240,29 +318,8 @@ export default function WorkbotPage({ onBack }) {
         </p>
 
         <div className="sg-field">
-          <label className="sg-label" htmlFor="sg-event-select">Event</label>
-          <div className="sg-select-wrap">
-            <select
-              id="sg-event-select"
-              className="sg-select"
-              value={eventId}
-              onChange={e => setEventId(e.target.value)}
-            >
-              <option value="" disabled>Choose an event…</option>
-              {eventsByTier.map(([tier, evs]) => (
-                <optgroup key={tier} label={tier}>
-                  {evs.map(e => (
-                    <option key={e.event} value={e.event}>
-                      {e.event}{e.build_ready ? '' : (e.video_gradable ? ' (video)' : ' (coming soon)')}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-            <svg className="sg-select-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="14" height="14">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 7.5l5 5 5-5" />
-            </svg>
-          </div>
+          <label className="sg-label" id="sg-event-select-label">Event</label>
+          <EventPickerDropdown events={events} value={eventId} onChange={setEventId} />
           {eventsError && <p className="sg-inline-error">{eventsError}</p>}
         </div>
 

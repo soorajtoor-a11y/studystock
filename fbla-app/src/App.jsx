@@ -1,11 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
+import { motion, AnimatePresence } from 'motion/react'
 import Landing from './Landing'
 import Reveal from './components/Reveal'
 import WorkbotPage from './components/WorkbotPage'
 import { ORG_META, ORG_ORDER } from './orgMeta'
 import { supabase } from './supabaseClient'
-import { WordmarkIcon } from './components/landing/Wordmark'
+import { MarkScorecardFavicon } from './components/landing/ExamMark'
 import './App.css'
+
+const EASE = [0.16, 1, 0.3, 1]
 
 // DECA event slugs: most cluster exams' folder names end in "-cluster",
 // but these two are organized as clusters in practice while the source
@@ -19,6 +22,21 @@ const EVENT_NAME_OVERRIDES = {
 function formatEventName(slug) {
   if (EVENT_NAME_OVERRIDES[slug]) return EVENT_NAME_OVERRIDES[slug]
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}
+
+// Word-prefix match instead of a single-substring match, so an abbreviated
+// query like "intro to" still finds "Introduction To Business
+// Communication" — a plain `.includes()` misses it because "intro" is not
+// a literal substring of "introduction". Each query word just needs to
+// prefix-match some word in the name, in any order.
+function matchesEventSearch(name, query) {
+  const q = query.trim().toLowerCase()
+  if (!q) return true
+  const nameLower = name.toLowerCase()
+  if (nameLower.includes(q)) return true
+  const queryWords = q.split(/\s+/).filter(Boolean)
+  const nameWords = nameLower.split(/\s+/).filter(Boolean)
+  return queryWords.every(qw => nameWords.some(nw => nw.startsWith(qw)))
 }
 
 const USAGE_STREAK_THRESHOLD_SECONDS = 300 // 5 minutes
@@ -152,9 +170,7 @@ const CARD_PALETTES = [
 function EventPickerPage({ events, org, onSelect, onBack }) {
   const [search, setSearch] = useState('')
   const inputRef = useRef(null)
-  const filtered = events.filter(e =>
-    formatEventName(e).toLowerCase().includes(search.toLowerCase())
-  )
+  const filtered = events.filter(e => matchesEventSearch(formatEventName(e), search))
   const unit = ORG_META[org]?.unit ?? 'events'
 
   useEffect(() => { inputRef.current?.focus() }, [])
@@ -1873,32 +1889,55 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open }) {
+function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open, collapsed, onToggleCollapsed }) {
   const [search, setSearch] = useState('')
+  const [objOpen, setObjOpen] = useState(true)
+  const [presOpen, setPresOpen] = useState(true)
   const filtered = search.trim()
-    ? events.filter(e => formatEventName(e).toLowerCase().includes(search.toLowerCase()))
+    ? events.filter(e => matchesEventSearch(formatEventName(e), search))
     : events
   const orgMeta = ORG_META[org]
   const unit = orgMeta?.unit ?? 'events'
 
+  function handleObjHeaderClick() {
+    if (collapsed) { onToggleCollapsed(); setObjOpen(true) }
+    else setObjOpen(o => !o)
+  }
+  function handlePresHeaderClick() {
+    if (collapsed) { onWorkbot() }
+    else setPresOpen(o => !o)
+  }
+
   return (
-    <aside className={`sidebar ${open ? 'sidebar-open' : ''}`}>
-      <button className="sidebar-logo" onClick={onLanding} title="Back to Vye overview">
-        <WordmarkIcon className="sidebar-logo-mark" size={46} />
-      </button>
+    <aside className={`sidebar ${open ? 'sidebar-open' : ''} ${collapsed ? 'sidebar-collapsed' : ''}`}>
+      <div className="sidebar-logo-row">
+        <button className="sidebar-logo" onClick={onLanding} title="Back to Vye overview">
+          <MarkScorecardFavicon className="sidebar-logo-mark" />
+        </button>
+        <button
+          className="sidebar-collapse-btn"
+          onClick={onToggleCollapsed}
+          title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+          aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+        >
+          <svg className={`sidebar-collapse-icon ${collapsed ? 'is-collapsed' : ''}`} viewBox="0 0 20 20" fill="currentColor" width="13" height="13">
+            <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 010 1.06L8.832 10l3.958 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.04.02z" clipRule="evenodd" />
+          </svg>
+        </button>
+      </div>
 
       <div className="sidebar-top">
-        <button className={`sidebar-home-btn ${(page === 'home' || page === 'dashboard') ? 'active' : ''}`} onClick={onHome}>
+        <motion.button whileTap={{ scale: 0.96 }} transition={{ duration: 0.12, ease: EASE }} className={`sidebar-home-btn ${(page === 'home' || page === 'dashboard') ? 'active' : ''}`} onClick={onHome} title="Home">
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
-          Home
-        </button>
+          <span className="sidebar-btn-label">Home</span>
+        </motion.button>
         <OrgSwitcher org={org} orgs={orgs} onChange={onOrgChange} />
       </div>
 
       {pins.length > 0 && (
-        <>
+        <div className="sidebar-pins-block">
           <div className="sidebar-events-header">
             <span className="sidebar-label">Pinned</span>
             <span className="sidebar-count-badge">{pins.length}</span>
@@ -1909,11 +1948,11 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
                 key={`${p.org}/${p.event}`}
                 className={`sidebar-item ${p.event === activeEvent && p.org === org && (page === 'event' || page === 'explain-history') ? 'active' : ''}`}
               >
-                <button className="sidebar-item-main" onClick={() => onSelectPinned(p.org, p.event)} title={formatEventName(p.event)}>
+                <motion.button whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }} className="sidebar-item-main" onClick={() => { onSelectPinned(p.org, p.event); setObjOpen(false) }} title={formatEventName(p.event)}>
                   <span className="sidebar-item-dot" />
                   <span className="sidebar-item-name">{formatEventName(p.event)}</span>
                   <span className="sidebar-item-org-badge">{ORG_META[p.org]?.name ?? p.org}</span>
-                </button>
+                </motion.button>
                 <button
                   className="sidebar-pin-btn"
                   onClick={e => { e.stopPropagation(); onOpenHistory(p.org, p.event) }}
@@ -1927,75 +1966,149 @@ function Sidebar({ events, page, activeEvent, org, orgs, onSelect, onHome, onLan
               </div>
             ))}
           </nav>
+        </div>
+      )}
+
+      {!org ? (
+        !collapsed && (
+          <div className="sidebar-empty-org">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.4" width="20" height="20">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 6a2 2 0 012-2h3.5l1.5 2H15a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V6z" />
+            </svg>
+            <p>Choose your organization to browse events.</p>
+          </div>
+        )
+      ) : (
+        <>
+          {!collapsed && (
+            <div className="sidebar-search-wrap">
+              <svg className="sidebar-search-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
+              </svg>
+              <input
+                className="sidebar-search"
+                placeholder={`Filter ${unit}…`}
+                value={search}
+                onChange={e => { setSearch(e.target.value); if (e.target.value.trim()) setObjOpen(true) }}
+              />
+              {search && (
+                <button className="sidebar-search-clear" onClick={() => setSearch('')}>✕</button>
+              )}
+            </div>
+          )}
+
+          <div className="sidebar-groups">
+            <div className="sidebar-group">
+              <button className="sidebar-group-header" onClick={handleObjHeaderClick} aria-expanded={objOpen} title="Objective Tests">
+                <span className="sidebar-group-header-left">
+                  <svg className="sidebar-group-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                    <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                  </svg>
+                  <span className="sidebar-group-label">Objective Tests</span>
+                </span>
+                <span className="sidebar-group-header-right">
+                  {events.length > 0 && <span className="sidebar-count-badge">{events.length}</span>}
+                  <svg className={`sidebar-group-chevron ${objOpen ? 'open' : ''}`} viewBox="0 0 20 20" fill="currentColor" width="12" height="12">
+                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </button>
+
+              {objOpen && !collapsed && (
+                <div className="sidebar-group-content">
+                  <nav className="sidebar-nav">
+                    {filtered.map(ev => {
+                      const pinned = pins.some(p => p.org === org && p.event === ev)
+                      return (
+                        <div key={ev} className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}>
+                          <motion.button whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }} className="sidebar-item-main" onClick={() => { onSelect(ev); setObjOpen(false) }} title={formatEventName(ev)}>
+                            <span className="sidebar-item-dot" />
+                            <span className="sidebar-item-name">{formatEventName(ev)}</span>
+                          </motion.button>
+                          <button
+                            className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
+                            onClick={e => { e.stopPropagation(); onTogglePin(org, ev) }}
+                            title={pinned ? 'Unpin event' : 'Pin event'}
+                            aria-label={pinned ? 'Unpin event' : 'Pin event'}
+                          >
+                            <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+                            </svg>
+                          </button>
+                        </div>
+                      )
+                    })}
+                    {filtered.length === 0 && search && (
+                      <div className="sidebar-no-results">No matches</div>
+                    )}
+                  </nav>
+                </div>
+              )}
+            </div>
+
+            {org === 'fbla' && (
+              <div className="sidebar-group">
+                <button className="sidebar-group-header" onClick={handlePresHeaderClick} aria-expanded={presOpen} title="Presentation Events">
+                  <span className="sidebar-group-header-left">
+                    <svg className="sidebar-group-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h6.586A2 2 0 0114 2.586L16.414 5A2 2 0 0117 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm4 5a1 1 0 100 2h4a1 1 0 100-2H8zm0 4a1 1 0 100 2h4a1 1 0 100-2H8z" clipRule="evenodd" />
+                    </svg>
+                    <span className="sidebar-group-label">Presentation Events</span>
+                  </span>
+                  <span className="sidebar-group-header-right">
+                    {presentationEvents.length > 0 && <span className="sidebar-count-badge">{presentationEvents.length}</span>}
+                    <svg className={`sidebar-group-chevron ${presOpen ? 'open' : ''}`} viewBox="0 0 20 20" fill="currentColor" width="12" height="12">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </button>
+
+                {presOpen && !collapsed && (
+                  <div className="sidebar-group-content">
+                    <nav className="sidebar-nav">
+                      {presentationEvents.map(pe => (
+                        <div
+                          key={pe.event}
+                          className={`sidebar-item ${page === 'workbot' && pe.event === workbotEventId ? 'active' : ''}`}
+                        >
+                          <motion.button
+                            whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }}
+                            className="sidebar-item-main"
+                            onClick={() => { onWorkbot(pe.event); setPresOpen(false) }}
+                            title={pe.event}
+                          >
+                            <span className="sidebar-item-dot" />
+                            <span className="sidebar-item-name">{pe.event}</span>
+                            {!pe.build_ready && <span className="sidebar-item-org-badge">video</span>}
+                          </motion.button>
+                        </div>
+                      ))}
+                      {presentationEvents.length === 0 && (
+                        <div className="sidebar-no-results">Loading…</div>
+                      )}
+                    </nav>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
         </>
       )}
 
-      <div className="sidebar-events-header">
-        <span className="sidebar-label">{unit.charAt(0).toUpperCase() + unit.slice(1)}</span>
-        {events.length > 0 && <span className="sidebar-count-badge">{events.length}</span>}
-      </div>
-
-      <div className="sidebar-search-wrap">
-        <svg className="sidebar-search-icon" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
-        </svg>
-        <input
-          className="sidebar-search"
-          placeholder={`Filter ${unit}…`}
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
-        {search && (
-          <button className="sidebar-search-clear" onClick={() => setSearch('')}>✕</button>
-        )}
-      </div>
-
-      <nav className="sidebar-nav">
-        {filtered.map(ev => {
-          const pinned = pins.some(p => p.org === org && p.event === ev)
-          return (
-            <div key={ev} className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}>
-              <button className="sidebar-item-main" onClick={() => onSelect(ev)} title={formatEventName(ev)}>
-                <span className="sidebar-item-dot" />
-                <span className="sidebar-item-name">{formatEventName(ev)}</span>
-              </button>
-              <button
-                className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
-                onClick={e => { e.stopPropagation(); onTogglePin(org, ev) }}
-                title={pinned ? 'Unpin event' : 'Pin event'}
-                aria-label={pinned ? 'Unpin event' : 'Pin event'}
-              >
-                <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="12" height="12">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
-                </svg>
-              </button>
-            </div>
-          )
-        })}
-        {filtered.length === 0 && search && (
-          <div className="sidebar-no-results">No matches</div>
-        )}
-      </nav>
-
       <div className="sidebar-footer">
-        <button className={`sidebar-settings-btn ${page === 'workbot' ? 'active' : ''}`} onClick={onWorkbot}>
-          <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
-            <path fillRule="evenodd" d="M4 4a2 2 0 012-2h6.586A2 2 0 0114 2.586L16.414 5A2 2 0 0117 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm4 5a1 1 0 100 2h4a1 1 0 100-2H8zm0 4a1 1 0 100 2h4a1 1 0 100-2H8z" clipRule="evenodd" />
-          </svg>
-          Presentation Workbot
-        </button>
-        <button className={`sidebar-settings-btn ${page === 'account' ? 'active' : ''}`} onClick={onAccount}>
+        <motion.button whileTap={{ scale: 0.97 }} transition={{ duration: 0.1, ease: EASE }} className={`sidebar-settings-btn ${page === 'account' ? 'active' : ''}`} onClick={onAccount} title={user ? user.email : 'Log In'}>
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
             <path fillRule="evenodd" d="M10 8a3 3 0 100-6 3 3 0 000 6zm-7 8a7 7 0 1114 0H3z" clipRule="evenodd" />
           </svg>
-          {user ? user.email : 'Log In'}
-        </button>
-        <button className={`sidebar-settings-btn ${page === 'settings' ? 'active' : ''}`} onClick={onSettings}>
+          <span className="sidebar-btn-label">{user ? user.email : 'Log In'}</span>
+        </motion.button>
+        <motion.button whileTap={{ scale: 0.97 }} transition={{ duration: 0.1, ease: EASE }} className={`sidebar-settings-btn ${page === 'settings' ? 'active' : ''}`} onClick={onSettings} title="Settings">
           <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
             <path fillRule="evenodd" d="M11.078 2.25c.917 0 1.699.663 1.85 1.567l.091.549a.798.798 0 00.517.608c.115.043.227.09.337.14a.798.798 0 00.796-.06l.453-.315a1.875 1.875 0 012.416.2l.192.192a1.875 1.875 0 01.2 2.416l-.315.453a.798.798 0 00-.06.796c.05.11.097.222.14.337a.798.798 0 00.608.517l.549.09a1.875 1.875 0 011.567 1.85v.276a1.875 1.875 0 01-1.567 1.85l-.549.091a.798.798 0 00-.608.517 4.985 4.985 0 01-.14.337.798.798 0 00.06.796l.315.453a1.875 1.875 0 01-.2 2.416l-.192.192a1.875 1.875 0 01-2.416.2l-.453-.315a.798.798 0 00-.796-.06 4.98 4.98 0 01-.337.14.798.798 0 00-.517.608l-.09.549a1.875 1.875 0 01-1.85 1.567h-.276a1.875 1.875 0 01-1.85-1.567l-.091-.549a.798.798 0 00-.517-.608 4.999 4.999 0 01-.337-.14.798.798 0 00-.796.06l-.453.315a1.875 1.875 0 01-2.416-.2l-.192-.192a1.875 1.875 0 01-.2-2.416l.315-.453a.798.798 0 00.06-.796 4.982 4.982 0 01-.14-.337.798.798 0 00-.608-.517l-.549-.09a1.875 1.875 0 01-1.567-1.85v-.276c0-.916.663-1.699 1.567-1.85l.549-.091a.798.798 0 00.608-.517c.043-.115.09-.227.14-.337a.798.798 0 00-.06-.796l-.315-.453a1.875 1.875 0 01.2-2.416l.192-.192a1.875 1.875 0 012.416-.2l.453.315a.798.798 0 00.796.06 4.978 4.978 0 01.337-.14.798.798 0 00.517-.608l.09-.549A1.875 1.875 0 0110.802 2.25h.276zM10 13.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" clipRule="evenodd" />
           </svg>
-          Settings
-        </button>
+          <span className="sidebar-btn-label">Settings</span>
+        </motion.button>
       </div>
     </aside>
   )
@@ -2008,10 +2121,14 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
+  const [presentationEvents, setPresentationEvents] = useState([])
+  const [workbotEventId, setWorkbotEventId] = useState(null)
   const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'workbot'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(() => localStorage.getItem('vye-sidebar-collapsed') === '1')
+  useEffect(() => { localStorage.setItem('vye-sidebar-collapsed', sidebarCollapsed ? '1' : '0') }, [sidebarCollapsed])
   const [prevPage,    setPrevPage]    = useState('home') // where Settings'/Account's back button returns to
   const [user,        setUser]        = useState(null) // Supabase session user, or null if signed out
   // Set by the landing page's "Sign In" button; consumed by the effect below
@@ -2189,8 +2306,11 @@ export default function App() {
     if (user) { setHistoryOpen(true); setHistoryCollapsed(false) }
   }
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
-  // their choice instead of re-resolving to the OS default every load.
-  const [theme, setTheme] = useState(() => localStorage.getItem('vye-theme') || 'system')
+  // their choice instead of re-resolving every load. Defaults to 'dark'
+  // (not 'system') because dark is now the app's own brand default, same
+  // as the marketing site — not just "whatever the OS happens to prefer."
+  // 'light' and 'system' stay available as explicit opt-ins in Settings.
+  const [theme, setTheme] = useState(() => localStorage.getItem('vye-theme') || 'dark')
 
   useEffect(() => {
     fetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
@@ -2200,6 +2320,22 @@ export default function App() {
     if (!org) { setEvents([]); setEventsLoaded(false); return }
     setEventsLoaded(false)
     fetch(`/api/events?org=${org}`).then(r => r.json()).then(list => { setEvents(list.sort()); setEventsLoaded(true) })
+  }, [org])
+
+  // Sidebar shortcut list for the Presentation Workbot — only the events
+  // that actually grade something today (build_ready text/file scoring, or
+  // video_gradable via the trial Gemini grader). The other 6 (code/web-tier)
+  // stay reachable only from the in-page event picker inside WorkbotPage,
+  // which still lists all 30 — the sidebar is a curated "these work" list,
+  // same spirit as Objective Tests only ever listing real events.
+  useEffect(() => {
+    if (org !== 'fbla') { setPresentationEvents([]); return }
+    fetch('/api/presentation-events')
+      .then(r => r.json())
+      .then(list => setPresentationEvents(
+        list.filter(e => e.build_ready || e.video_gradable).sort((a, b) => a.event.localeCompare(b.event))
+      ))
+      .catch(() => setPresentationEvents([]))
   }, [org])
 
   // Re-hues the whole app (--signal-hue and everything derived from it) to
@@ -2218,10 +2354,15 @@ export default function App() {
   }, [org, page])
 
   // Light/dark mode — same [data-*] attribute-on-<html> pattern as org
-  // theming above, and same scoping decision: the marketing Landing page
-  // and OrgPicker stay their normal light appearance regardless of the
-  // in-app choice (Settings itself only exists inside the app shell, so
-  // there's no page for a visitor to have set a preference from yet).
+  // theming above. Only the marketing Landing page is excluded now, and
+  // even that's moot rather than deliberate: Landing.jsx has its own
+  // standalone dark "Examination" CSS system (exam.css) and never reads
+  // these --bg/--text tokens at all, so this attribute has zero visual
+  // effect there either way. OrgPicker used to be excluded too, back when
+  // the untagged default was always light and excluding it was harmless —
+  // now that dark is the real default and light is an explicit opt-out,
+  // excluding OrgPicker would silently override a user's actual "light"
+  // choice the moment they land there, so it's included in themed pages.
   // "system" resolves via prefers-color-scheme and stays live — if the OS
   // theme flips while "system" is selected, the app follows without a
   // reload, via the matchMedia change listener below.
@@ -2230,7 +2371,7 @@ export default function App() {
   }, [theme])
 
   useEffect(() => {
-    const inThemedPage = page !== 'landing' && page !== 'orgpicker'
+    const inThemedPage = page !== 'landing'
     const mql = window.matchMedia('(prefers-color-scheme: dark)')
     function apply() {
       if (!inThemedPage) { document.documentElement.removeAttribute('data-theme'); return }
@@ -2294,8 +2435,9 @@ export default function App() {
     setPage('settings'); setNavOpen(false)
   }
   function handleSettingsBack() { setPage(prevPage); setNavOpen(false) }
-  function handleWorkbot() {
+  function handleWorkbot(eventId) {
     if (page !== 'workbot') setPrevPage(page)
+    setWorkbotEventId(eventId || null)
     setPage('workbot'); setNavOpen(false)
   }
   function handleWorkbotBack() { setPage(prevPage); setNavOpen(false) }
@@ -2327,7 +2469,7 @@ export default function App() {
   } else if (page === 'account') {
     content = <AccountPage user={user} recoveryMode={recoveryMode} forceLoginForm={forceLoginForm} onBack={handleAccountBack} />
   } else if (page === 'workbot') {
-    content = <WorkbotPage onBack={handleWorkbotBack} />
+    content = <WorkbotPage onBack={handleWorkbotBack} initialEventId={workbotEventId} />
   } else if (page === 'dashboard' && user) {
     content = <Dashboard user={user} pins={pins} usageDays={usageDays} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
   } else if (page === 'explain-history' && activeEvent && user) {
@@ -2414,6 +2556,8 @@ export default function App() {
       {navOpen && <div className="sidebar-backdrop" onClick={() => setNavOpen(false)} />}
       <Sidebar
         events={events}
+        presentationEvents={presentationEvents}
+        workbotEventId={workbotEventId}
         page={page}
         activeEvent={activeEvent}
         org={org}
@@ -2431,8 +2575,23 @@ export default function App() {
         onSelectPinned={handleSelectPinned}
         onOpenHistory={handleOpenHistory}
         open={navOpen}
+        collapsed={sidebarCollapsed}
+        onToggleCollapsed={() => setSidebarCollapsed(c => !c)}
       />
-      <main className="main">{content}</main>
+      <main className="main">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={`${page}:${study?.mode || ''}:${activeEvent || ''}`}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.22, ease: EASE }}
+            className="main-transition"
+          >
+            {content}
+          </motion.div>
+        </AnimatePresence>
+      </main>
     </div>
   )
 }

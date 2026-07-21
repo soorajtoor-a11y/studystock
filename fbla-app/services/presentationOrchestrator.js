@@ -8,17 +8,20 @@
 import { findEvent, allCriteria } from './rubrics.js';
 import { grade as gradeScript } from './scriptGrader.js';
 import { grade as gradeFile } from './downloader.js';
+import { grade as gradeAudio } from './audioBot.js';
 import { isVideoGradable, listNotYetGradableEvents } from './eventCatalog.js';
 
 // Registry of implemented graders, keyed by input name. Adding a future
-// module (Audio, Video) is just one more entry, per ARCHITECTURE.md —
-// omitting one here is what makes its criteria fall through to `locked`
-// rather than crashing. Downloader only supports documents + slide decks
-// (v1 scope); everything else returns an explicit "not supported yet" note
-// via its own unsupportedResult(), never a fabricated score.
+// module (Video, for the 15 build-ready events' delivery lines) is just one
+// more entry, per ARCHITECTURE.md — omitting one here is what makes its
+// criteria fall through to `locked` rather than crashing. Downloader only
+// supports documents + slide decks (v1 scope); everything else returns an
+// explicit "not supported yet" note via its own unsupportedResult(), never a
+// fabricated score.
 const GRADERS = {
   script: (eventId, inputs) => gradeScript(eventId, { scriptText: inputs.script }),
   files: (eventId, inputs) => gradeFile(eventId, inputs.files),
+  audio: (eventId, inputs) => gradeAudio(eventId, inputs.audio),
 };
 
 // Content/compliance criteria are owned by whichever text-producing tool
@@ -30,15 +33,19 @@ function textOwnerTool(usedTools) {
   return null;
 }
 
-// Static per-criterion ownership. No `delivery` criterion has an owner in
-// this build — the Audio bot (which would own `audio_gradable:true` lines)
-// isn't wired up yet; `requires_video:true` lines have no owner in any
-// version of the basic app, since that needs a future Video bot.
+// Static per-criterion ownership. A `delivery` criterion is owned by Audio
+// only when it's audio_gradable AND a recording was actually submitted —
+// `requires_video:true` lines (or audio_gradable:false ones) have no owner
+// in this build, since that needs a future Video bot for the 15 build-ready
+// events (separate from the trial video grader on the other 9 events).
 function ownerToolFor(criterion, usedTools) {
   if (criterion.category === 'content' || criterion.category === 'compliance') {
     return textOwnerTool(usedTools);
   }
-  return null; // delivery + qa — neither audio nor interactive is implemented yet
+  if (criterion.category === 'delivery' && criterion.audio_gradable && usedTools.includes('audio')) {
+    return 'audio';
+  }
+  return null; // qa is never owned; video-only delivery lines stay unowned too
 }
 
 // Surfaces the plain-language things a grader's meta already computed but
@@ -70,7 +77,7 @@ function unlockHint(criterion) {
   }
   if (criterion.category === 'delivery') {
     return criterion.audio_gradable
-      ? 'Delivery scoring is coming in a future update.'
+      ? `Record or upload audio to unlock ${criterion.max} pts.`
       : 'Needs video — not available yet.';
   }
   return 'Live judge Q&A — use practice mode.';
@@ -165,11 +172,22 @@ export async function runWorkbot(eventId, inputs = {}) {
   });
 
   // Run every grader whose input was actually provided, concurrently. An
-  // input for a tool with no registered grader yet (audio this round) is
-  // silently ignored here — its criteria fall through to locked below,
-  // never a fabricated score.
+  // input for a tool with no registered grader yet is silently ignored here
+  // — its criteria fall through to locked below, never a fabricated score.
   const runnableTools = providedTools.filter(t => GRADERS[t]);
   const outputs = await Promise.all(runnableTools.map(t => GRADERS[t](eventId, inputs)));
+
+  // Two-for-one handoff: a recording's transcript IS a script. If audio was
+  // submitted and nothing else already covers content/compliance (no
+  // separate script or file), feed that transcript through the Script
+  // grader too — one recording then covers delivery AND every content/
+  // format line, not just the handful of audio-observable delivery points.
+  const usedTools = [...runnableTools];
+  const audioOutput = outputs.find(o => o.toolId === 'audio');
+  if (audioOutput?.meta?.transcript && !usedTools.includes('files') && !usedTools.includes('script')) {
+    outputs.push(await gradeScript(eventId, { scriptText: audioOutput.meta.transcript }));
+    usedTools.push('script');
+  }
 
   const resultsByOwner = {};
   for (const output of outputs) {
@@ -177,8 +195,6 @@ export async function runWorkbot(eventId, inputs = {}) {
       output.results.map(r => [`${r.sheet}::${r.criterion}`, r])
     );
   }
-
-  const usedTools = runnableTools;
 
   const merged = criteria.map(c => {
     const owner = ownerToolFor(c, usedTools);

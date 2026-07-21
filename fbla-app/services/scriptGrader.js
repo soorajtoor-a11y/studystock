@@ -31,6 +31,7 @@ export function listEvents() {
     event: e.event,
     grand_total: e.grand_total,
     ai_gradable_points: e.ai_gradable_points,
+    audio_scorable_points: e.audio_scorable_points ?? 0,
     gradable_criteria: allCriteria(e)
       .filter(c => c.ai_gradable)
       .map(c => ({ criterion: c.criterion, max: c.max, category: c.category, sheet: c.sheet })),

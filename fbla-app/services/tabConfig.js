@@ -20,19 +20,19 @@ function findEventTabConfig(eventId) {
   return loadTabConfig().events.find(e => e.event === eventId) || null;
 }
 
-// Only tools with a real grader wired up can ever be offered as a *working*
-// choice — audio grading isn't wired up yet (no STT provider configured), so
-// it never appears as something that actually scores. script/files both have
-// real graders (scriptGrader.js, downloader.js) behind them.
-const IMPLEMENTED_TOOLS = new Set(['script', 'files']);
+// script and files always have real graders (scriptGrader.js, downloader.js)
+// behind them. audio now does too (audioBot.js, via Groq Whisper) — but only
+// scores anything on the events whose rubric actually has audio-observable
+// delivery points; presentation_tab_config.json marks the rest
+// (`available: false`) since their delivery lines name visual signals
+// (body language, eye contact) a microphone can't verify.
 const ROLE_PRIORITY = { primary: 0, alternative: 1, supporting: 2, coaching: 3 };
 const TOOL_LABEL = { script: 'Paste script', files: 'Upload file', audio: 'Record or upload audio' };
 
 // Events that are pure spoken delivery — there's no document a student would
 // naturally "upload" for these (no report, no deck), so offering "Upload
-// file" as the alternative to a pasted script doesn't reflect how the event
-// actually works. Audio is the real alternative here, even though scoring it
-// isn't live yet: it's shown as a "coming soon" choice instead of files.
+// file" as an alternative to a pasted script doesn't reflect how the event
+// actually works.
 const SPEECH_EVENTS = new Set([
   'Public Speaking',
   'Introduction to Public Speaking',
@@ -47,15 +47,17 @@ export function inputOptionsFor(eventId) {
   if (!config) return [];
   const isSpeechEvent = SPEECH_EVENTS.has(eventId);
   return config.tools
-    .filter(t => IMPLEMENTED_TOOLS.has(t.tool) || (isSpeechEvent && t.tool === 'audio'))
     .filter(t => !(isSpeechEvent && t.tool === 'files'))
     .sort((a, b) => (ROLE_PRIORITY[a.role] ?? 9) - (ROLE_PRIORITY[b.role] ?? 9))
-    .map(t => ({
-      tool: t.tool,
-      label: TOOL_LABEL[t.tool],
-      role: t.role,
-      primary: t.role === 'primary',
-      comingSoon: t.tool === 'audio',
-      reason: t.tool === 'audio' ? "Delivery scoring from a recording isn't wired up yet." : undefined,
-    }));
+    .map(t => {
+      const audioComingSoon = t.tool === 'audio' && t.available === false;
+      return {
+        tool: t.tool,
+        label: TOOL_LABEL[t.tool],
+        role: t.role,
+        primary: t.role === 'primary',
+        comingSoon: audioComingSoon,
+        reason: audioComingSoon ? (t.scores || "Delivery scoring from a recording isn't wired up yet.") : undefined,
+      };
+    });
 }

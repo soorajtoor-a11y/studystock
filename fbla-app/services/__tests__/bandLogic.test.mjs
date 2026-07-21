@@ -157,9 +157,10 @@ test('ownerToolFor: uploaded file preferred over pasted text when both present',
   assert.strictEqual(ownerToolFor(criterion, ['script', 'files']), 'downloader');
 });
 
-test('ownerToolFor: no delivery criterion has an owner yet (Audio bot not wired up in this build)', () => {
+test('ownerToolFor: audio owns audio_gradable delivery criteria only when audio was actually submitted', () => {
   assert.strictEqual(ownerToolFor({ category: 'delivery', audio_gradable: true }, ['script']), null);
-  assert.strictEqual(ownerToolFor({ category: 'delivery', audio_gradable: false, requires_video: true }, ['script']), null);
+  assert.strictEqual(ownerToolFor({ category: 'delivery', audio_gradable: true }, ['audio']), 'audio');
+  assert.strictEqual(ownerToolFor({ category: 'delivery', audio_gradable: false, requires_video: true }, ['audio']), null);
 });
 
 test('ownerToolFor: qa has no owner in the basic version', () => {
@@ -172,7 +173,7 @@ test('unlockHint: each locked reason is distinct and specific', () => {
   const videoHint = unlockHint({ category: 'delivery', max: 10, audio_gradable: false });
   const qaHint = unlockHint({ category: 'qa', max: 10 });
   assert.match(textHint, /script|file/i);
-  assert.match(audioHint, /future update/i);
+  assert.match(audioHint, /record|upload/i);
   assert.match(videoHint, /video/i);
   assert.match(qaHint, /q&a|judge/i);
   assert.notStrictEqual(audioHint, videoHint);

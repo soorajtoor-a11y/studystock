@@ -66,6 +66,10 @@ const TOOL_CAPTION = {
   primary: 'Recommended for this event',
   alternative: 'Also works — scores the same lines',
   supporting: 'Also works — scores the same lines',
+  // Audio's role is always 'coaching' — but the orchestrator's two-for-one
+  // handoff also runs the transcript through the Script grader, so a
+  // recording alone still covers content/format, not just delivery.
+  coaching: 'Scores delivery (pace, fillers, pauses) + content from your transcript',
 }
 
 // The "how would you like to submit?" picker — same overlay/box/prompt
@@ -196,6 +200,10 @@ function EventPickerDropdown({ events, value, onChange, placeholder = 'Choose an
 
 const DOCUMENT_FILE_EXT = ['.pdf', '.docx', '.pptx']
 const VIDEO_FILE_EXT = ['.mp4', '.mov', '.webm']
+// Whatever Groq's Whisper endpoint accepts (flac/mp3/mp4/mpeg/mpga/m4a/ogg/
+// opus/wav/webm) — trimmed to the formats a phone or laptop mic actually
+// produces day to day.
+const AUDIO_FILE_EXT = ['.mp3', '.wav', '.m4a', '.ogg', '.webm', '.flac']
 
 // The Workbot console — one event, whatever inputs the student has (a pasted
 // script or an uploaded document/deck), one merged scorecard against the
@@ -261,9 +269,9 @@ export default function WorkbotPage({ onBack, initialEventId }) {
     setLoading(true); setError(null); setResult(null)
     const formData = new FormData()
     formData.append('eventId', eventId)
-    if (inputMode === 'file' && file) {
+    if ((inputMode === 'file' || inputMode === 'audio') && file) {
       formData.append('file', file)
-      formData.append('inputType', 'files')
+      formData.append('inputType', inputMode === 'audio' ? 'audio' : 'files')
     } else {
       formData.append('inputs', JSON.stringify({ script: scriptText }))
     }
@@ -312,9 +320,9 @@ export default function WorkbotPage({ onBack, initialEventId }) {
 
       <div className="sg-body">
         <p className="sg-intro-text">
-          Pick your event, then paste your script or upload a document/slide deck — either one
-          scores the same content and format lines. Get one scorecard against the official FBLA
-          rating sheet. Delivery and live Q&amp;A scoring are coming in a later update.
+          Pick your event, then paste your script, upload a document/slide deck, or — for events
+          where it helps — record your audio or video. Get one scorecard against the official FBLA
+          rating sheet. Live judge Q&amp;A stays for practice mode only.
         </p>
 
         <div className="sg-field">
@@ -336,8 +344,11 @@ export default function WorkbotPage({ onBack, initialEventId }) {
                     this event come from what you write — this grader reads your script and scores those
                     directly, criterion by criterion.
                     {liveOnlyPoints > 0 && (
-                      <> The remaining <strong>{liveOnlyPoints} points</strong> are delivery and Q&amp;A, which stay
-                      locked here until a future update.</>
+                      <> The remaining <strong>{liveOnlyPoints} points</strong> are delivery and Q&amp;A —
+                      {selectedEvent.audio_scorable_points > 0
+                        ? <> {selectedEvent.audio_scorable_points} of those unlock if you also submit audio; the rest need live practice or video, not available here yet.</>
+                        : <> those need live practice or video, not available here yet.</>}
+                      </>
                     )}
                   </p>
                   <div className="sg-ceiling-legend">
@@ -405,7 +416,7 @@ export default function WorkbotPage({ onBack, initialEventId }) {
         {inputMode && (
           <div className="sg-field">
             <div className="sg-input-header">
-              <label className="sg-label" htmlFor={inputMode === 'script' ? 'sg-script-input' : inputMode === 'file' ? 'sg-file-input' : undefined}>
+              <label className="sg-label" htmlFor={inputMode === 'script' ? 'sg-script-input' : inputMode === 'file' ? 'sg-file-input' : inputMode === 'audio' ? 'sg-audio-input' : undefined}>
                 {inputMode === 'script' ? 'Your script' : inputMode === 'file' ? 'Your file' : 'Your audio'}
               </label>
               <button type="button" className="sg-change-input" onClick={() => setPickerOpen(true)}>
@@ -472,6 +483,34 @@ export default function WorkbotPage({ onBack, initialEventId }) {
                     {fileError && <p className="sg-inline-error">{fileError}</p>}
                   </div>
                 )}
+
+                {inputMode === 'audio' && (
+                  <div className="sg-file-drop">
+                    <input
+                      id="sg-audio-input"
+                      className="sg-file-input"
+                      type="file"
+                      accept={AUDIO_FILE_EXT.join(',')}
+                      onChange={e => handleFileChange(e, AUDIO_FILE_EXT, ', or paste your script as text instead')}
+                    />
+                    <label htmlFor="sg-audio-input" className="sg-file-label">
+                      <MicIcon />
+                      {file ? (
+                        <span className="sg-file-name">{file.name}</span>
+                      ) : (
+                        <span>Choose an MP3, WAV, M4A, OGG, WEBM, or FLAC recording</span>
+                      )}
+                    </label>
+                    {selectedEvent?.build_ready && (
+                      <p className="sg-audio-scope-note">
+                        This scores {selectedEvent.audio_scorable_points} delivery pts (pace, filler words,
+                        pauses) — and your recording's transcript is also graded as your script, covering
+                        content and format too, unless you separately paste a script or upload a file instead.
+                      </p>
+                    )}
+                    {fileError && <p className="sg-inline-error">{fileError}</p>}
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -483,7 +522,7 @@ export default function WorkbotPage({ onBack, initialEventId }) {
           </button>
         )}
 
-        {(inputMode === 'script' || inputMode === 'file') && !isComingSoon && (
+        {(inputMode === 'script' || inputMode === 'file' || inputMode === 'audio') && !isComingSoon && (
           <button
             className="sg-grade-btn"
             onClick={handleGrade}

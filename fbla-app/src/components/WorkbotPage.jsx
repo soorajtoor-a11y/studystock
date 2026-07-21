@@ -284,11 +284,18 @@ export default function WorkbotPage({ onBack, initialEventId }) {
 
   const selectedEvent = events.find(e => e.event === eventId)
   const inputOptions = selectedEvent?.input_options || []
-  // Build-ready events are assessed from text (ai_gradable_points); the 9
-  // video-gradable ones are assessed from a video upload instead
-  // (video_gradable_points) — same ceiling-bar treatment, different source.
+  // Build-ready events are assessed from text (ai_gradable_points) by
+  // default; the 9 video-gradable ones from a video upload instead
+  // (video_gradable_points). Once the student has actually picked "audio"
+  // as a real (not comingSoon) option, the two-for-one handoff means an
+  // audio submission scores the text points too (its transcript IS the
+  // script) PLUS its own delivery points — so the ceiling bumps up rather
+  // than staying at the text-only number with a footnote nobody reads.
+  const audioActive = inputMode === 'audio' && inputOptions.find(o => o.tool === 'audio' && !o.comingSoon)
   const assessedPoints = selectedEvent
-    ? (selectedEvent.build_ready ? selectedEvent.ai_gradable_points : (selectedEvent.video_gradable_points || 0))
+    ? audioActive
+      ? selectedEvent.ai_gradable_points + selectedEvent.audio_scorable_points
+      : (selectedEvent.build_ready ? selectedEvent.ai_gradable_points : (selectedEvent.video_gradable_points || 0))
     : 0
   const liveOnlyPoints = selectedEvent ? selectedEvent.grand_total - assessedPoints : 0
   const gradablePct = selectedEvent ? Math.round((assessedPoints / selectedEvent.grand_total) * 100) : 0
@@ -340,19 +347,32 @@ export default function WorkbotPage({ onBack, initialEventId }) {
                     <div className="sg-ceiling-bar-graded" style={{ width: `${gradablePct}%` }} />
                   </div>
                   <p className="sg-ceiling-caption">
-                    <strong>{assessedPoints} of {selectedEvent.grand_total} points</strong> for
-                    this event come from what you write — this grader reads your script and scores those
-                    directly, criterion by criterion.
+                    {audioActive ? (
+                      <>
+                        <strong>{assessedPoints} of {selectedEvent.grand_total} points</strong> are covered by
+                        your recording — its transcript is scored as your script ({selectedEvent.ai_gradable_points} content/format
+                        pts) and its audio is scored for delivery ({selectedEvent.audio_scorable_points} pts), both from one upload.
+                      </>
+                    ) : (
+                      <>
+                        <strong>{assessedPoints} of {selectedEvent.grand_total} points</strong> for
+                        this event come from what you write — this grader reads your script and scores those
+                        directly, criterion by criterion.
+                      </>
+                    )}
                     {liveOnlyPoints > 0 && (
-                      <> The remaining <strong>{liveOnlyPoints} points</strong> are delivery and Q&amp;A —
-                      {selectedEvent.audio_scorable_points > 0
-                        ? <> {selectedEvent.audio_scorable_points} of those unlock if you also submit audio; the rest need live practice or video, not available here yet.</>
-                        : <> those need live practice or video, not available here yet.</>}
+                      <> The remaining <strong>{liveOnlyPoints} points</strong> are
+                      {audioActive
+                        ? <> live judge Q&amp;A, which needs live practice, not available here.</>
+                        : <> delivery and Q&amp;A — {selectedEvent.audio_scorable_points > 0
+                            ? <>{selectedEvent.audio_scorable_points} of those unlock if you also submit audio; the rest need live practice or video, not available here yet.</>
+                            : <>those need live practice or video, not available here yet.</>}
+                          </>}
                       </>
                     )}
                   </p>
                   <div className="sg-ceiling-legend">
-                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />Scored from your text ({assessedPoints})</span>
+                    <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-graded" />{audioActive ? 'Scored from your audio' : 'Scored from your text'} ({assessedPoints})</span>
                     {liveOnlyPoints > 0 && (
                       <span className="sg-legend-item"><span className="sg-legend-dot sg-legend-dot-live" />Locked for now ({liveOnlyPoints})</span>
                     )}

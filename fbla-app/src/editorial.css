@@ -1,0 +1,97 @@
+/* ════════════════════════════════════════════════════════════════════
+   EDITORIAL DESIGN SYSTEM — Vye marketing site
+   A deliberate blank-slate rebuild: paper, ink, one accent, a serif with
+   real editorial character. Not derived from the app-shell's OKLCH
+   signal-hue token system (index.css) — the marketing site and the
+   product UI are allowed to look like two different, deliberate things.
+   Token names here intentionally reuse the old landing-only brand-bridge
+   names in shadcn.css (--color-ink, --color-paper, --font-display, …);
+   this file loads after it, so it fully supersedes those old values. The
+   old landing components are being retired, not kept in parallel.
+   ════════════════════════════════════════════════════════════════════ */
+
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource-variable/fraunces/full-italic.css';
+@import '@fontsource-variable/hanken-grotesk/wght.css';
+@import '@fontsource-variable/geist-mono/wght.css';
+
+@theme inline {
+  /* ── Paper & ink — warm, printed, not screen-white/pure-black ──────── */
+  --color-paper:       #F7F4EE;
+  --color-paper-alt:    #F0EBE0;  /* subtle section-to-section shift */
+  --color-ink:          #17150F;
+  --color-ink-soft:     #4A453C;  /* secondary text — ~8.7:1 on paper */
+  /* Original #8D8677 measured ~3.3:1 on paper — fails AA for anything
+     under 18px/24px-bold, which is every label/caption it's used for.
+     Darkened to clear AA (~5.3:1) at any size actually used on the page. */
+  --color-ink-faint:    #6B6558;  /* tertiary / captions — ~5.3:1 on paper */
+  --color-rule:         #DAD3C3;  /* hairline dividers */
+  --color-rule-strong:  #C7BEA9;
+
+  /* ── One academic accent — deep oxblood. Confident, not decorative.
+     Named "oxblood" rather than the generic "accent" specifically to
+     avoid colliding with shadcn's own --color-accent (a separate, muted
+     semantic used by shadcn/ui components like Button). ─────────────── */
+  --color-oxblood:       #7A2E2E;
+  --color-oxblood-deep:  #5B2020;
+  --color-oxblood-tint:  #F1E4E1;  /* wash for callouts/highlighted terms */
+
+  /* ── Type — display serif / grotesque body / mono labels ───────────── */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', serif;
+  --font-copy:    'Hanken Grotesk Variable', -apple-system, sans-serif;
+  --font-label:   'Geist Mono Variable', ui-monospace, monospace;
+
+  /* ── Motion — deliberate, page-like. No spring bounce anywhere. ────── */
+  --ease-editorial: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-settle:    cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-marquee: marquee 240s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+/* Fraunces optical-size + SOFT axis. SOFT was 40 in the first pass — at
+   headline scale that rounded warmth combined with the oxblood/cream
+   palette read as Italian trattoria/wine-label branding, not an academic
+   study tool. Pulled down to match the wordmark's crisper axes (see
+   Wordmark.jsx) — WONK stays at 0 either way (no quirky ink-trap forms;
+   "confident," not "cute"). Applied via a utility class rather than baked
+   into --font-display so body-sized serif accents (e.g. a pull-quote) can
+   opt out. */
+.editorial-display-axes {
+  font-variation-settings: 'opsz' 72, 'SOFT' 6, 'WONK' 0;
+}
+
+/* Subtle paper grain — a faint noise texture, not a flat fill, so large
+   paper-colored fields read as printed stock rather than a screen. Kept
+   to a low-opacity SVG feTurbulence data-URI (no image asset, no request). */
+.editorial-grain {
+  position: relative;
+}
+.editorial-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* The app-shell's global :focus-visible ring (index.css) uses the old
+   teal/gold --accent — still functional here (visible, sufficient
+   contrast), but color-mismatched against this page's one deliberate
+   accent. Scoped override, not a global change — the dashboard keeps its
+   own ring. */
+.editorial-root :focus-visible {
+  outline-color: var(--color-oxblood);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .editorial-root *, .editorial-root *::before, .editorial-root *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

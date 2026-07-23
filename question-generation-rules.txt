@@ -146,6 +146,18 @@ Business Law, Cybersecurity, Securities and Investments, etc.):
   obfuscated wording, never a trick. A prepared student should still
   score ~70-80%.
 
+  MINIMUM-RECALL FLOOR FOR SMALL BATCHES (real user feedback — do not
+  drop this): the ~15-20% target above is a proportion sized for large
+  batches. On its own it rounds to zero on the small batches (5-10
+  questions) that a single-objective live quiz actually requests — which
+  is exactly when users noticed a full batch of application/scenario
+  questions with not one definition in it. Regardless of batch size,
+  ALWAYS include AT LEAST 1 direct definition/recall question in any
+  batch of 4-7 questions, and AT LEAST 2 in any batch of 8 or more —
+  even if that pushes the recall share above the ~15-20% target for that
+  specific batch. Never let the recall floor round down to zero just
+  because the batch is small.
+
 If the event slug starts with "introduction-to-", it is INTRO tier.
 Every other event is STANDARD tier. This split is mechanical and
 does not change based on how much or how little source material is

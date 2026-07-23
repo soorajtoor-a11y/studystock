@@ -1,0 +1,74 @@
+/* ════════════════════════════════════════════════════════════════════
+   "THE EXAMINATION" — dark rubric-as-identity system, proposed as a
+   replacement for the paper/oxblood editorial system (editorial.css).
+   Deliberately namespaced under exam-* rather than reusing --color-ink/
+   --color-paper/etc again — this is a THIRD token system on top of the
+   dashboard's index.css and the marketing site's editorial.css, and it
+   needs to coexist with the still-live approved page during review, not
+   silently override it via the same names (that exact mistake already
+   happened once with the old landing brand-bridge vs editorial.css).
+   ════════════════════════════════════════════════════════════════════ */
+
+@import '@fontsource-variable/space-grotesk/wght.css';
+/* Fraunces + Geist Mono already loaded by editorial.css's imports — no
+   need to double-import the same @font-face rules. */
+
+@theme inline {
+  /* ── Base — warm black, not cool navy: closer to lamp-lit examination-
+     hall wood/leather than a tech-SaaS dark mode. ─────────────────────── */
+  --color-exam-ink:         #16130F;
+  --color-exam-ink-raised:  #1D1912;  /* cards/panels one step up from bg */
+  --color-exam-ink-line:    #33291F;  /* hairline rules on dark */
+
+  --color-exam-bone:        #ECE4D6;
+  --color-exam-bone-soft:   #B9AF9C;  /* secondary text on dark — ~8.5:1 */
+  /* #756B5A measured ~3.5:1 on ink — fails AA. Lightened to clear it
+     (~4.9:1) at any size actually used on the page. */
+  --color-exam-bone-faint:  #8C8271;  /* tertiary/disabled on dark */
+
+  /* Deep oxblood is for FILLED surfaces only (buttons/blocks with bone
+     text on top — ~14.7:1). Used directly as small text/numerals on the
+     ink background it measures ~2.2:1, well under even the 3:1 large-text
+     floor — a classic dark-accent-on-dark trap. --color-exam-ember-text is
+     the brightened variant for that job (~5.2:1 on ink), same color
+     family, still unmistakably oxblood/ember, just legible. */
+  --color-exam-oxblood:      #8B2E2E;
+  --color-exam-oxblood-deep: #6B2222;
+  --color-exam-ember-text:   #D5674F;
+  --color-exam-brass:        #C6A15B;  /* fine details: numerals, rules, stamps — ~7.6:1 on ink, safe as text */
+
+  /* Occasional lighter "parchment" break — NOT the same hex as the old
+     editorial paper (#F7F4EE), a hair warmer/darker so it reads as one
+     step within THIS system, not a leftover from the old one. */
+  --color-exam-parchment:      #EFE7D6;
+  --color-exam-parchment-line: #D8CCB2;
+  --color-exam-parchment-ink:  #1C1812;
+
+  /* ── Type — three roles, tension between classic and contemporary ──── */
+  --font-exam-display:   'Fraunces Variable', 'Iowan Old Style', serif;
+  --font-exam-grotesque: 'Space Grotesk Variable', 'Space Grotesk', sans-serif;
+  --font-exam-mono:      'Geist Mono Variable', ui-monospace, monospace;
+
+  --ease-exam: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --animate-exam-ticker: exam-ticker 200s linear infinite;
+}
+
+@keyframes exam-ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+/* Fraunces at display scale — high optical size, WONK 0 (confident, not
+   quirky), a little SOFT for warmth without tipping into the "trattoria"
+   territory the earlier paper version was corrected away from. */
+.exam-display-axes {
+  font-variation-settings: 'opsz' 130, 'SOFT' 10, 'WONK' 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exam-root *, .exam-root *::before, .exam-root *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

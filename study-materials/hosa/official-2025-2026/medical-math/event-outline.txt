@@ -1,0 +1,34 @@
+HOSA STUDY OUTLINE — MEDICAL MATH (2025–2026)
+Source: Official HOSA Competitive Event Guidelines 2025-2026. The test format, content-area TEST PLAN (percentages), and references below are OFFICIAL (verbatim from the HOSA guideline). Item counts = the official percentages applied to the 50-question test. Objectives are representative, aligned to each official content area and to the listed references.
+Format: 50 fill-in-the-blank questions / 90 minutes (60 min at FLC; 10 multi-step tiebreakers). At least half of problems involve conversions.
+============================================================
+
+EVENT DESCRIPTION
+Calculations used in healthcare: conversions, dosages, IV solutions, dilutions, and interpreting medical information.
+
+OFFICIAL REFERENCES
+- Simmers et al. DHO: Health Science. Cengage, latest ed.
+- Kennamer. Math for Health Care Professionals. Cengage, latest ed.
+- Craig. Dosage Calculations Made Easy. Wolters Kluwer, latest ed.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Mathematical Essentials (3 items — 5%)
+1. Work with fractions, decimals, percentages, ratios, and proportions.
+2. Apply rounding and significant-figure rules.
+
+B. Measurement & Conversion Problems (10 items — 20%)
+1. Convert within and between metric, apothecary, and household systems.
+2. Convert temperature, time (military), and weight units.
+
+C. Drug Dosages & Intravenous Solutions (18 items — 35%)
+1. Calculate oral and parenteral drug dosages.
+2. Calculate IV flow rates (mL/hr, gtt/min) and infusion times.
+
+D. Dilutions, Solutions & Concentrations (12 items — 25%)
+1. Calculate solution strengths, dilutions, and concentrations.
+2. Prepare solutions from stock using ratio/proportion.
+
+E. Interpreting Medical Information (7 items — 15%)
+1. Interpret intake/output, vital signs, and lab values.
+2. Read and apply data from charts, graphs, and tables.

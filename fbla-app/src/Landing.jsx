@@ -1,25 +1,18 @@
-import { useEffect, useRef, useState } from 'react'
-import Navbar from './components/landing/Navbar'
-import Hero from './components/landing/Hero'
-import EventTicker from './components/landing/EventTicker'
-import Stats from './components/landing/Stats'
-import Features from './components/landing/Features'
-import HowItWorks from './components/landing/HowItWorks'
-import BeforeAfter from './components/landing/BeforeAfter'
-import ClosingCTA from './components/landing/ClosingCTA'
-import Footer from './components/landing/Footer'
+// "The Examination" — dark rubric-as-identity redesign, approved and
+// fully built out. The prior paper/oxblood editorial components remain on
+// disk (unused) for reference/rollback.
+import DarkNav from './components/landing/DarkNav'
+import DarkHero from './components/landing/DarkHero'
+import DarkTicker from './components/landing/DarkTicker'
+import DarkTools from './components/landing/DarkTools'
+import RatingSheet from './components/landing/RatingSheet'
+import DarkSocialProof from './components/landing/DarkSocialProof'
+import DarkClosingCTA from './components/landing/DarkClosingCTA'
+import DarkFooter from './components/landing/DarkFooter'
+import { useRef } from 'react'
 
 export default function Landing({ onStart, onPickEvent, onSignIn }) {
   const scrollRef = useRef(null)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const el = scrollRef.current
-    if (!el) return
-    const onScroll = () => setScrolled(el.scrollTop > 8)
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => el.removeEventListener('scroll', onScroll)
-  }, [])
 
   function scrollToId(id) {
     const el = document.getElementById(id)
@@ -31,26 +24,23 @@ export default function Landing({ onStart, onPickEvent, onSignIn }) {
   }
 
   return (
-    <div ref={scrollRef} className="flex-1 overflow-y-auto overflow-x-hidden bg-paper [scroll-behavior:smooth]">
-      <Navbar
-        scrolled={scrolled}
-        onScrollTop={scrollToTop}
+    <div ref={scrollRef} className="exam-root flex-1 overflow-y-auto overflow-x-hidden bg-exam-ink font-exam-grotesque [scroll-behavior:smooth]">
+      <DarkNav
         onScrollTo={scrollToId}
+        onScrollTop={scrollToTop}
+        onPickEvent={onPickEvent}
         onSignIn={onSignIn}
         onStart={onStart}
       />
-
       <main id="top">
-        <Hero onStart={onStart} onSeeFeatures={() => scrollToId('features')} />
-        <EventTicker />
-        <Stats />
-        <Features />
-        <HowItWorks />
-        <BeforeAfter />
-        <ClosingCTA onStart={onStart} />
+        <DarkHero onStart={onStart} onScrollTo={scrollToId} onSignIn={onSignIn} />
+        <DarkTicker />
+        <DarkTools />
+        <RatingSheet />
+        <DarkSocialProof />
+        <DarkClosingCTA onStart={onStart} />
       </main>
-
-      <Footer onScrollTo={scrollToId} onPickEvent={onPickEvent} />
+      <DarkFooter onScrollTo={scrollToId} onPickEvent={onPickEvent} />
     </div>
   )
 }

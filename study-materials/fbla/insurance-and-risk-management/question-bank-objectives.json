@@ -1,0 +1,74 @@
+{
+ "Understand the risk management model (identify hazards, assess/prioritize risks, choose controls, implement, monitor/review).": [
+  {
+   "question": "The process of recognizing potential sources of loss or injury to an organization is called ___",
+   "options": [
+    "hazard identification",
+    "control implementation",
+    "risk prioritization",
+    "risk assessment"
+   ],
+   "correct_index": 0,
+   "explanation": "Hazard identification is the first step in the risk management model where organizations actively locate and document potential threats. Risk assessment and prioritization occur after hazards are identified, while control implementation happens later in the cycle.",
+   "type": "definition_recall",
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "In Enterprise Risk Management (ERM), the process of evaluating the likelihood and potential impact of identified risks in order to rank them by significance is known as ___",
+   "options": [
+    "risk retention",
+    "risk communication",
+    "risk monitoring",
+    "risk evaluation"
+   ],
+   "correct_index": 3,
+   "explanation": "Risk evaluation involves assessing both the probability and consequence of each identified risk to determine which ones pose the greatest threat to organizational objectives. This step allows decision-makers to allocate resources toward controlling the most significant risks first. Risk retention and monitoring occur at different stages of the ERM process.",
+   "type": "definition_recall",
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The integrated approach to identifying, analyzing, and treating risks across an entire organization to protect assets and achieve strategic objectives makes up ___",
+   "options": [
+    "insurance underwriting",
+    "loss prevention",
+    "emergency response planning",
+    "Enterprise Risk Management"
+   ],
+   "correct_index": 3,
+   "explanation": "Enterprise Risk Management (ERM) is a comprehensive framework that coordinates risk identification, evaluation, treatment, monitoring, and communication throughout the entire organization. This differs from loss prevention (a single control tactic), insurance underwriting (a financing method), or emergency response (one component of a complete program).",
+   "type": "concept_completion",
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be appropriate examples of risk prevention and reduction control strategies?",
+   "options": [
+    "Purchasing liability insurance and retaining risk through self-insurance reserves",
+    "Monitoring hazards quarterly and communicating risk reports to stakeholders",
+    "Installing fire suppression systems and conducting employee safety training",
+    "Enabling new business opportunities and enhancing competitive positioning"
+   ],
+   "correct_index": 2,
+   "explanation": "Risk prevention (fire suppression systems) and risk reduction (safety training) are both control tactics that decrease the likelihood or severity of loss before it occurs. Option B mixes financing methods, Option C describes monitoring and communication activities rather than controls, and Option D reflects risk enablement and enhancement—strategies that accept risk to pursue opportunity, not prevent it.",
+   "type": "which_of_following",
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of examining an organization to identify potential sources of loss, injury, or failure before they occur is called ___",
+   "options": [
+    "risk prioritization",
+    "hazard assessment",
+    "risk monitoring",
+    "loss prevention"
+   ],
+   "correct_index": 1,
+   "explanation": "Hazard assessment is the systematic examination and identification of potential sources of loss or injury within an organization. This follows the initial step of hazard identification and is critical to understanding what threats exist before evaluating their likelihood and impact. The other options refer to later steps in the risk management process (prioritization, prevention, and ongoing review) rather than the assessment phase itself.",
+   "type": "definition_recall",
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  }
+ ]
+}

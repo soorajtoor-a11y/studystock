@@ -17,7 +17,7 @@
 
 import { findEvent, allCriteria } from './rubrics.js';
 import { bandLineForPrompt, deriveBand } from './bands.js';
-import { CACHE_SPLIT_MARKER, extractJSON, withRetry, callHaiku } from './llmClient.js';
+import { CACHE_SPLIT_MARKER, extractJSON, withRetry, callHaiku, gradeWithConsensus } from './llmClient.js';
 
 // ---------------------------------------------------------------------------
 // Transcription — Groq's Whisper Large v3 Turbo, OpenAI-API-compatible.
@@ -125,6 +125,8 @@ EVENT: ${event.event}
 
 Score ONLY the criteria listed below — each is pre-verified as audible (pace, voice, delivery confidence heard through speech alone). Do NOT assess anything visual (eye contact, body language, posture) — that is explicitly out of scope for this tool; a separate Video bot would cover those in a future update.
 
+Be a maximally consistent, reproducible grader: the same recording graded again should land on the same scores. Anchor every score to the measured metrics and specific transcript evidence below, not a general impression of how it "sounds."
+
 CRITERIA TO SCORE (score every one, in order):
 ${criteriaLines}
 
@@ -226,9 +228,14 @@ export async function grade(eventId, input) {
     : null;
   const metrics = computeMetrics(words, targetSeconds);
 
-  const results = reconcileAudio(audioCriteria, await withRetry(async () =>
-    extractJSON(await callHaiku(buildDeliveryPrompt(event, audioCriteria, metrics, transcript)))
-  , 3, 'Audio bot'));
+  // Delivery scoring hasn't had the same mechanical-decomposition treatment
+  // as scriptGrader.js yet (see BUILD-BRIEF context in that file) — median-
+  // of-3 stays here as the interim consistency measure. 5 was tried and
+  // wasn't a clear improvement over 3 (see llmClient.js's gradeWithConsensus
+  // comment), so 3 explicitly rather than trusting the default to stay put.
+  const results = await gradeWithConsensus(() => withRetry(async () =>
+    reconcileAudio(audioCriteria, extractJSON(await callHaiku(buildDeliveryPrompt(event, audioCriteria, metrics, transcript))))
+  , 3, 'Audio bot'), audioCriteria.length, 3);
 
   return { toolId: 'audio', results, meta: { transcript, metrics } };
 }

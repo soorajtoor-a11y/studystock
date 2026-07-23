@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "purpose": "Config + data for the basic role-play generator. Three parts: (A) situation maker, (B) audio listener & grader, (C) question generator. Performance indicators (PIs) are the scoring criteria — the generator holds them constant per event and randomizes the situation around them.",
+    "applies_to": "DECA role-plays (Team Decision Making + Series events) and FBLA hybrid/role-play events."
+  },
+  "output_contract": {
+    "scenario": "{ role, company, situation, your_task, judge_role, performance_indicators:[...], prep_minutes }",
+    "grade": "{ toolId:'roleplay', results:[ {criterion(=PI), band, points, justification, fix} ], delivery:{...if audio}, overall, meta:{transcript} }"
+  },
+  "context_banks": {
+    "comment": "The situation maker draws ONE value from each bank (plus temperature + recent-history exclusion) to make every scenario unique while the PIs stay fixed.",
+    "industries": ["apparel & accessories","quick-serve restaurant","fitness studio","auto dealership","electronics retailer","hotel & lodging","event venue","grocery","streaming service","sporting goods","coffee shop chain","pharmacy","bank branch","real estate office","landscaping service","pet supplies","bookstore","furniture store","travel agency","food truck"],
+    "company_sizes": ["a startup with 3 employees","a single local location","a regional chain of 12 stores","a fast-growing franchise","an established national brand"],
+    "judge_roles": ["your store manager","the regional director","a new client","a long-time customer","the company owner","a potential investor","a vendor/supplier rep","the marketing director"],
+    "constraints": ["a tight budget this quarter","a two-week deadline","a competitor just cut prices","a recent negative online review","limited staff availability","a supply shortage","a new company policy","declining foot traffic"],
+    "twists": ["the customer is unhappy and considering leaving","a new opportunity just appeared","leadership wants a recommendation by tomorrow","two options are on the table and you must pick one","the budget was just cut in half","a mistake was made that must be addressed"]
+  },
+  "scoring_form": {
+    "type": "DECA role-play evaluation form (adapt totals for FBLA hybrids to their rating sheet)",
+    "structure": "Each performance indicator is scored in one of four bands; the PI scores plus a 21st-Century-Skills block and an overall-impression score sum to 100.",
+    "pi_bands": ["Little/No Value","Below Expectations","Meets Expectations","Exceeds Expectations"],
+    "twenty_first_century_skills": ["Reason and make judgments / think critically","Communicate clearly","Show evidence of creativity","Overall impression and response to the judge's questions"],
+    "total_points": 100,
+    "note": "DECA publishes the exact PIs and per-PI point value per event; pull the official list per event and drop them in as the criteria."
+  },
+  "example_events": [
+    {
+      "event": "Principles of Marketing (DECA, individual, Business Admin Core cluster)",
+      "prep_minutes": 10,
+      "performance_indicators": [
+        "Explain the nature of positive customer relations",
+        "Explain the selling process",
+        "Identify the elements of the promotional mix",
+        "Explain the concept of marketing strategies"
+      ]
+    },
+    {
+      "event": "Hospitality & Tourism Team Decision Making (DECA, team of 2)",
+      "prep_minutes": 30,
+      "performance_indicators": [
+        "Demonstrate a customer-service mindset",
+        "Handle customer/client complaints",
+        "Explain the nature of quality management",
+        "Explain the nature of marketing planning",
+        "Make oral presentations"
+      ]
+    },
+    {
+      "event": "Marketing (FBLA hybrid, team of 1-3)",
+      "prep_minutes": 10,
+      "performance_indicators": [
+        "Determine customer/client needs",
+        "Present a marketing solution",
+        "Demonstrate product/service knowledge",
+        "Handle objections and answer questions"
+      ]
+    }
+  ]
+}

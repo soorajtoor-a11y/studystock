@@ -10,6 +10,7 @@ import { grade as gradeScript } from './scriptGrader.js';
 import { grade as gradeFile } from './downloader.js';
 import { grade as gradeAudio } from './audioBot.js';
 import { isVideoGradable, listNotYetGradableEvents } from './eventCatalog.js';
+import { buildSummary } from './resultsSummary.js';
 
 // Registry of implemented graders, keyed by input name. Adding a future
 // module (Video, for the 15 build-ready events' delivery lines) is just one
@@ -69,6 +70,25 @@ function collectNotes(outputs) {
     }
   }
   return notes;
+}
+
+// The actual text that was graded, regardless of which tool it came from —
+// needed by the Q&A Engine (BUILD-BRIEF-06) to ground questions/answer-
+// consistency checks in what the student actually submitted, even for file/
+// audio submissions the client itself never sees the raw text of (a pasted
+// script is already in the client's own state, but an uploaded file's
+// extracted text and a recording's transcript only ever existed server-side
+// until now). Preference order matches what actually got graded as content:
+// a direct script input, then an uploaded file's extracted text, then a
+// recording's own transcript (the two-for-one handoff already treats this
+// as "the script" when nothing else covers content/compliance).
+function extractSubmissionText(inputs, outputs) {
+  if (typeof inputs.script === 'string' && inputs.script.trim()) return inputs.script;
+  const fileOutput = outputs.find(o => o.toolId === 'downloader');
+  if (fileOutput?.meta?.extractedText) return fileOutput.meta.extractedText;
+  const audioOutput = outputs.find(o => o.toolId === 'audio');
+  if (audioOutput?.meta?.transcript) return audioOutput.meta.transcript;
+  return '';
 }
 
 function unlockHint(criterion) {
@@ -139,22 +159,20 @@ async function runVideoWorkbot(eventId, inputs) {
     by_tool[c.owner_tool].of += c.max;
   }
 
-  const lockedPoints = catalogEvent.grand_total - assessed_ceiling;
   const notes = collectNotes(videoOutput ? [videoOutput] : []);
+  const totals = {
+    scored_points,
+    assessed_ceiling,
+    ai_gradable_ceiling: catalogEvent.video_gradable_points,
+    grand_total: catalogEvent.grand_total,
+    by_tool,
+  };
   const result = {
     event: catalogEvent.event,
     inputs_used: videoFile ? ['files'] : [],
     criteria: merged,
-    totals: {
-      scored_points,
-      assessed_ceiling,
-      ai_gradable_ceiling: catalogEvent.video_gradable_points,
-      grand_total: catalogEvent.grand_total,
-      by_tool,
-    },
-    summary: lockedPoints > 0
-      ? `${scored_points} / ${assessed_ceiling} assessed. ${lockedPoints} pts not scored here — this is a trial-version grader, live Q&A and time-limit checks aren't covered.`
-      : `${scored_points} / ${assessed_ceiling} assessed — every video-gradable point on this sheet was scored.`,
+    totals,
+    summary: await buildSummary(merged, totals),
   };
   if (notes.length > 0) result.notes = notes;
   return result;
@@ -225,22 +243,21 @@ export async function runWorkbot(eventId, inputs = {}) {
     by_tool[c.owner_tool].of += c.max;
   }
 
-  const lockedPoints = event.grand_total - assessed_ceiling;
   const notes = collectNotes(outputs);
+  const totals = {
+    scored_points,
+    assessed_ceiling,
+    ai_gradable_ceiling: event.ai_gradable_points,
+    grand_total: event.grand_total,
+    by_tool,
+  };
   const result = {
     event: event.event,
     inputs_used: usedTools,
     criteria: merged,
-    totals: {
-      scored_points,
-      assessed_ceiling,
-      ai_gradable_ceiling: event.ai_gradable_points,
-      grand_total: event.grand_total,
-      by_tool,
-    },
-    summary: lockedPoints > 0
-      ? `${scored_points} / ${assessed_ceiling} assessed. ${lockedPoints} pts not scored here — add more inputs (or practice live) to cover them.`
-      : `${scored_points} / ${assessed_ceiling} assessed — every point on this sheet was scored.`,
+    totals,
+    summary: await buildSummary(merged, totals),
+    submission_text: extractSubmissionText(inputs, outputs),
   };
   if (notes.length > 0) result.notes = notes;
 
@@ -251,5 +268,53 @@ export async function runWorkbot(eventId, inputs = {}) {
   return result;
 }
 
+// Folds the Q&A Engine's scored `qa` criterion back into an already-graded
+// scorecard (BUILD-BRIEF-06) — a second pass, not part of runWorkbot's own
+// concurrent-graders dispatch, since Q&A happens interactively AFTER the
+// initial grade and depends on its output (the weak criteria it targets).
+// Never mutates `result` — WorkbotPage.jsx holds the pre-qa result in state
+// until this resolves, exactly like reactivating a different Grade History
+// row already does with ScorecardResult. Split into a pure, network-free
+// merge/totals step (below) and the async mergeQAResult() that also
+// refreshes the LLM-backed summary, so the arithmetic is unit-testable
+// without needing to stub out buildSummary().
+function mergeQACriteriaAndTotals(result, qaResult) {
+  const key = `${qaResult.sheet}::${qaResult.criterion}`;
+  const merged = result.criteria.map(c => {
+    if (`${c.sheet}::${c.criterion}` !== key) return c;
+    return {
+      criterion: c.criterion, sheet: c.sheet, max: c.max, category: c.category,
+      owner_tool: 'qa', status: 'scored',
+      band: qaResult.band, points: qaResult.points,
+      justification: qaResult.justification, fix: qaResult.fix,
+    };
+  });
+
+  const scoredCriteria = merged.filter(c => c.status === 'scored');
+  const scored_points = scoredCriteria.reduce((sum, c) => sum + c.points, 0);
+  const assessed_ceiling = scoredCriteria.reduce((sum, c) => sum + c.max, 0);
+
+  const by_tool = {};
+  for (const c of scoredCriteria) {
+    by_tool[c.owner_tool] ??= { points: 0, of: 0 };
+    by_tool[c.owner_tool].points += c.points;
+    by_tool[c.owner_tool].of += c.max;
+  }
+
+  const totals = { ...result.totals, scored_points, assessed_ceiling, by_tool };
+  return { merged, totals };
+}
+
+export async function mergeQAResult(result, qaResult) {
+  const { merged, totals } = mergeQACriteriaAndTotals(result, qaResult);
+
+  return {
+    ...result,
+    criteria: merged,
+    totals,
+    summary: await buildSummary(merged, totals),
+  };
+}
+
 // Exported for tests only.
-export const _internal = { ownerToolFor, textOwnerTool, unlockHint, videoUnlockHint, runVideoWorkbot };
+export const _internal = { ownerToolFor, textOwnerTool, unlockHint, videoUnlockHint, runVideoWorkbot, mergeQACriteriaAndTotals };

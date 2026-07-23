@@ -1,0 +1,42 @@
+HOSA STUDY OUTLINE — GENERAL CHEMISTRY (2025–2026)
+Source: Official HOSA NGL/Cengage Academic Testing Center Guidelines 2025-2026. Test plan (content-area %) and reference are OFFICIAL. Item counts = official % applied to the 50-question test. Objectives are representative, aligned to each official area.
+Format: 50 multiple-choice questions / 60 minutes (1 tiebreaker). Type: ATC (Academic Testing Center) textbook test.
+============================================================
+
+EVENT DESCRIPTION
+Foundational chemistry: matter, reactions, bonding, and calculations.
+
+OFFICIAL REFERENCES
+- Zumdahl & DeCoste. Chemistry, 11th ed. (ISBN 9780357850794). Cengage/NGL.
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Concepts, Measurements & Calculations (moles, molar mass, energy) (10 items — 20%)
+1. Perform measurements and mole/molar-mass/energy calculations.
+
+B. Elements, Atoms, Ions & Periodicity (5 items — 10%)
+1. Explain atomic structure, ions, and periodic trends.
+
+C. Chemical Reactions, Energy & Solutions (15 items — 30%)
+1. Balance equations; classify reactions; work with solutions and energy.
+
+D. Composition, Quantities, Kinetics & Equilibrium (5 items — 10%)
+1. Apply stoichiometry, reaction rates, and equilibrium.
+
+E. Bonding Concepts (2 items — 4%)
+1. Differentiate ionic, covalent, and metallic bonding.
+
+F. Modern Atomic Theory (2 items — 4%)
+1. Describe modern atomic/quantum theory.
+
+G. Acids & Bases (2 items — 4%)
+1. Explain acid-base concepts and pH.
+
+H. Chemical Nomenclature (2 items — 4%)
+1. Name compounds using IUPAC rules.
+
+I. Properties of Matter (solids, liquids, gases) (5 items — 10%)
+1. Describe states of matter and their properties.
+
+J. Electrochemistry & Entropy (2 items — 4%)
+1. Explain redox, electrochemistry, and entropy.

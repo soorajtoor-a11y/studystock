@@ -1,0 +1,54 @@
+{
+  "[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]|[object Object]": [
+    {
+      "objective_num": 1,
+      "heading": "Ethical Compliance and Legal Intent",
+      "body": "Complying with laws means following both the written rules and the underlying purpose behind them. Regulations often have a spirit—an intent to protect consumers, workers, or the environment—that goes beyond literal text. For example, truth-in-advertising laws aim to prevent deception, so a business must not only avoid outright lies but also avoid misleading implications. Ethical compliance builds trust, reduces legal liability, and strengthens brand reputation. Understanding intent protects businesses from technical compliance while violating the regulation's core goal."
+    },
+    {
+      "objective_num": 2,
+      "heading": "U.S. Law Sources and Structure",
+      "body": "U.S. law comes from four primary sources: the Constitution (supreme law), statutes (acts passed by Congress or state legislatures), common law (judge-made law from court decisions), and administrative regulations (rules created by federal and state agencies). The Constitution establishes the framework; statutory law creates specific rules for contracts, employment, and commerce; common law provides precedent for disputes not covered by statute; regulations enforce laws through agencies like the SEC or FDA. These sources work together—courts interpret statutes against constitutional standards, and regulations must align with enabling legislation."
+    },
+    {
+      "objective_num": 3,
+      "heading": "Federal and State Judicial Systems",
+      "body": "The U.S. judicial system has two parallel tracks: federal courts (handling federal law, interstate disputes, and constitutional questions) and state courts (handling most contract, property, and business disputes). The federal system includes district courts (trial level), circuit courts of appeal (appellate), and the Supreme Court (highest). State systems mirror this structure with trial courts, appellate courts, and a state supreme court. Most business litigation occurs in state courts; jurisdiction depends on whether federal law applies, diversity of citizenship exists, or the amount exceeds $75,000 for federal cases."
+    },
+    {
+      "objective_num": 4,
+      "heading": "Intellectual Property Protection Methods",
+      "body": "Intellectual property includes patents (inventions; 20 years), copyrights (original works; typically life plus 70 years), trademarks (brand symbols; renewable indefinitely), and trade secrets (confidential information with economic value). Patents require USPTO registration and prevent others from making, using, or selling the invention. Copyrights protect creative works automatically but registration strengthens enforcement. Trademarks distinguish goods and services in commerce. Trade secrets rely on confidentiality—once disclosed, protection is lost. Businesses use NDAs, licensing agreements, and enforcement action to protect all types."
+    },
+    {
+      "objective_num": 5,
+      "heading": "Key Legal Issues in Business",
+      "body": "Major legal risks include employment law (discrimination, wrongful termination, wage/hour compliance), contract disputes (breach, formation, interpretation), product liability (defects causing injury), environmental compliance, and data privacy (GDPR, CCPA). Tax law, antitrust law (preventing monopolies), and consumer protection statutes also apply broadly. Intellectual property disputes, real estate transactions, and regulatory licensing are industry-specific. Businesses mitigate risk through clear contracts, proper classification of workers, product testing, insurance, and legal counsel review of major decisions."
+    },
+    {
+      "objective_num": 6,
+      "heading": "Common Business Torts",
+      "body": "A tort is a civil wrong (not a contract breach or crime) for which a victim can recover damages. Negligence occurs when a business fails to exercise reasonable care, causing injury—example: a store's wet floor causing a customer fall. Strict liability applies to ultrahazardous activities or defective products regardless of care taken. Intentional torts include assault, battery, false imprisonment, and defamation. Economic torts include fraud (misrepresentation), tortious interference (damaging a business relationship), and unfair competition. Businesses carry liability insurance and implement safety protocols to reduce exposure."
+    },
+    {
+      "objective_num": 7,
+      "heading": "Contract Formation and Binding Elements",
+      "body": "A legally binding contract requires four elements: offer (clear proposal), acceptance (unqualified agreement), consideration (exchange of value—money, services, or a promise), and intent to be bound (parties must intend legal consequences). Contracts can be written or oral, though certain types (real estate, goods over $500 under the UCC) must be written to be enforceable. Parties must have capacity (legal age, sound mind) and the contract cannot involve illegal purposes. Once formed, parties are obligated to perform; breach allows the non-breaching party to sue for damages, specific performance, or rescission."
+    },
+    {
+      "objective_num": 8,
+      "heading": "Agency Relationships and Authority",
+      "body": "An agency relationship exists when one party (agent) acts on behalf of another (principal) with authority to bind the principal legally. The principal is liable for the agent's authorized actions and, in some cases, negligent actions (vicarious liability—example: a business is liable for employee negligence on the job). Authority can be actual (explicitly granted), apparent (reasonably understood by third parties), or implied (necessary to carry out actual authority). Agents owe principals duties of loyalty, obedience, and care. Agency relationships are common in employment, sales, and real estate."
+    },
+    {
+      "objective_num": 9,
+      "heading": "Business Ownership Structures",
+      "body": "Sole proprietorship (one owner, unlimited personal liability, simple to form) is the most common but riskiest structure. Partnerships (two or more owners, pass-through taxation, joint liability unless limited partnership) share profits and decision-making. Corporations (separate legal entity, limited liability, double taxation—corporate and shareholder level, complex formation) offer liability protection. Limited liability companies (LLC; hybrid structure, pass-through taxation, limited liability, flexible) are increasingly popular for small businesses. S corporations (pass-through taxation, fewer than 100 shareholders, strict requirements) provide liability protection with favorable tax treatment."
+    },
+    {
+      "objective_num": 10,
+      "heading": "Debtor-Creditor Legal Framework",
+      "body": "A debtor-creditor relationship arises when one party owes money or performs an obligation to another. Creditors have legal remedies for non-payment: collection actions, garnishment (seizing a portion of wages), liens (claims on property), or foreclosure (for secured debt). Security interests (pledging collateral) give creditors priority in bankruptcy or default. Bankruptcy law (Chapters 7, 11, 13) allows debtors to discharge or restructure debts. Usury laws cap interest rates; Truth in Lending Act requires clear disclosure of terms. Fair Debt Collection Practices Act prohibits harassment and deceptive practices by collectors."
+    }
+  ]
+}

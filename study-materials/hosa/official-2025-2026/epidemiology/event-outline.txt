@@ -1,0 +1,28 @@
+HOSA STUDY OUTLINE — EPIDEMIOLOGY (2025–2026)
+Source: Official HOSA Competitive Event Guidelines 2025-2026. Test format, content-area TEST PLAN (percentages), and references are OFFICIAL. Item counts = the official percentages applied to the 50-question test. Objectives are representative, aligned to each official content area and the listed references.
+Format: 50 multiple-choice questions / 60 minutes (essay tiebreaker). A longer 75-question online round may be used as a qualifier.
+============================================================
+
+EVENT DESCRIPTION
+Principles of epidemiology, disease surveillance, and public-health response.
+
+OFFICIAL REFERENCES
+- PH 101 Series: An Introduction to Epidemiology
+- ActivEpi
+- CDC: Morbidity and Mortality Weekly Report (MMWR)
+- ATSDR Environmental Medicine Education resources
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Introduction to Epidemiology (15 items — 30%)
+1. Define epidemiology, incidence, prevalence, morbidity, and mortality.
+2. Explain study designs and measures of association.
+3. Explain the epidemiologic triangle and chain of infection.
+
+B. World & Government Response to Infectious Diseases (10 items — 20%)
+1. Describe the roles of WHO, CDC, and public-health agencies.
+2. Explain outbreak investigation and response.
+
+C. CDC: Morbidity and Mortality Weekly Report (MMWR) (25 items — 50%)
+1. Interpret data and reports from the CDC MMWR.
+2. Apply surveillance data to public-health decisions.

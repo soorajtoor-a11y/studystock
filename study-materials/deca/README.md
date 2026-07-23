@@ -1,12 +1,17 @@
-# DECA Study Outlines
+# DECA Study Outlines — Official 2025–2026 (refined)
 
 Seven exam outlines that cover **every** DECA competitive event. DECA reuses the
 same exam across many events, so you only need these seven (not one per event).
 
-Source: MBA Research **DECA Exam Specifications 2024–2025** (the official
-blueprint). Item counts use the **national / ICDC** column and sum to 100 per
-exam. Objectives are representative **performance indicators** per instructional
-area — enough to guide question generation; expand anytime.
+## What these are based on (exactly)
+- **Instructional areas + item counts:** the official **DECA Exam Blueprints 2025**
+  and the **MBA Research DECA Exam Specifications**, at the **ICDC / national**
+  level. Every exam's item counts sum to **100** (verified).
+- **Objectives:** authentic **MBA Research performance indicators** taken from the
+  official DECA Career Cluster Performance Indicator documents (verbatim wording;
+  indicator codes removed for readability). Each area lists a representative
+  subset of its performance indicators — enough to guide question generation;
+  expand from the official PI list anytime.
 
 ## The seven exams (folders here)
 
@@ -44,26 +49,25 @@ Entrepreneurship Series (and related entrepreneurship events).
 
 **Personal Financial Literacy Exam** — Personal Financial Literacy.
 
-## Format note (matches the app parser)
+## Format (matches the app parser)
 
-Each `event-outline.txt` uses the same structure as the FBLA outlines:
-a `KNOWLEDGE AREAS AND OBJECTIVES` block with headers `A. <Instructional Area>
-(<N> items)` and numbered objectives `1. …`. So they parse into the sidebar and
-feed `generate_bank.py` exactly like FBLA events.
+Each `event-outline.txt` uses `A. <Instructional Area> (<N> items)` headers with
+numbered performance indicators, identical to the FBLA and HOSA outlines, so they
+parse into the sidebar and feed `generate_bank.py` the same way.
 
-## To make these live in the app
+## Accuracy notes
+- Item counts are ICDC-level; DECA also publishes District and Association
+  blueprints with slightly different counts. Re-check the current-year blueprint
+  before a season.
+- A few Personal Financial Literacy indicators were lightly completed where the
+  source PDF truncated them; wording is otherwise verbatim.
 
-These live under `study-materials/deca/…` so they don't clutter the current flat
-FBLA event list. To activate them you either:
-1. add the small **organization-grouping** layer we discussed (group the sidebar
-   by FBLA / DECA / HOSA), or
-2. temporarily move/copy each exam folder up to `study-materials/` as its own
-   top-level event (optionally prefixed, e.g., `deca-marketing-cluster`).
+Sources: DECA Exam Blueprints 2025 (deca.org) · MBA Research DECA Exam
+Specifications · DECA Career Cluster Performance Indicators (deca.org /
+mbaresearch.org).
 
-Then run `generate_bank.py` on each to produce `question-bank.json`.
+## Next step: question banks
 
-## Accuracy caveat
-
-DECA publishes new exams yearly and item counts shift slightly by level
-(District / Association / ICDC). Before a season, check the current MBA Research
-DECA Exam Specifications and adjust the `(N items)` counts if needed.
+No `question-bank.json` exists yet for these events. Run `generate_bank.py`
+per event (event → section → objective tiers) to produce them, same as the
+FBLA/HOSA event folders.

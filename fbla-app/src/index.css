@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+/* Fraunces/Hanken Grotesk/Geist Mono are self-hosted via @fontsource,
+   loaded once in editorial.css (imported through shadcn.css) — no separate
+   Google Fonts request needed here, and @font-face registration is global
+   regardless of which stylesheet declared it, so referencing the family
+   names below just works once both files are in the loaded document. */
 
 /* Declared here (matching Tailwind's own internal layer order exactly) so
    the "base" layer's priority relative to Tailwind's "utilities" layer is
@@ -14,90 +18,100 @@
 
 :root {
   /* ── Brand accent — "Signal": one hue, driven entirely by --signal-hue.
-     Default (no org chosen yet) is the cyan-teal this system started as.
-     Once an org is active, App.jsx stamps data-org on the app root and the
-     [data-org="..."] overrides below re-hue this ENTIRE scale — every
-     --signal-* step and the tinted neutrals all follow, because they're all
-     defined in terms of this one variable, not a fixed number. Same L/C
-     curve every time; only the hue angle moves. ────────────────────────── */
-  --signal-hue: 195;
+     Default (no org chosen yet) is now the same deep, muted oxblood family
+     the marketing site uses (hue ~25) — was cyan-teal (195) from this
+     system's earlier SaaS-styled phase. Once an org is active, App.jsx
+     stamps data-org on the app root and the [data-org="..."] overrides
+     below re-hue this ENTIRE scale — every --signal-* step and the tinted
+     neutrals all follow, because they're all defined in terms of this one
+     variable, not a fixed number. Same L/C curve every time; only the hue
+     angle moves. The org hue ANGLES themselves (85/253/26 below) are
+     unchanged from before — this is a recipe change, not a re-branding of
+     which color means which org. ─────────────────────────────────────── */
+  --signal-hue: 25;
 
-  --signal-950: oklch(20% 0.045 var(--signal-hue));
-  --signal-900: oklch(26% 0.065 var(--signal-hue));
-  --signal-800: oklch(33% 0.085 var(--signal-hue));
-  --signal-700: oklch(40% 0.110 var(--signal-hue));
-  --signal-600: oklch(47% 0.130 var(--signal-hue));
-  --signal-500: oklch(56% 0.140 var(--signal-hue));
-  --signal-400: oklch(65% 0.135 var(--signal-hue));
-  --signal-300: oklch(75% 0.110 var(--signal-hue));
-  --signal-200: oklch(84% 0.075 var(--signal-hue));
-  --signal-100: oklch(91% 0.045 var(--signal-hue));
-  --signal-50:  oklch(96% 0.020 var(--signal-hue));
+  /* L/C recipe recalibrated for the editorial system: darker and less
+     saturated at every step than the original (--signal-600 was
+     oklch(47% 0.130 …), a brighter mid-tone SaaS accent) — this is what
+     actually produces oxblood's muted, "confident not bright" character at
+     the default hue, and carries the same restraint into DECA/HOSA/FBLA. */
+  --signal-950: oklch(16% 0.035 var(--signal-hue));
+  --signal-900: oklch(21% 0.050 var(--signal-hue));
+  --signal-800: oklch(27% 0.065 var(--signal-hue));
+  --signal-700: oklch(33% 0.085 var(--signal-hue));
+  --signal-600: oklch(38% 0.095 var(--signal-hue));
+  --signal-500: oklch(45% 0.105 var(--signal-hue));
+  --signal-400: oklch(54% 0.110 var(--signal-hue));
+  --signal-300: oklch(65% 0.095 var(--signal-hue));
+  --signal-200: oklch(78% 0.065 var(--signal-hue));
+  --signal-100: oklch(88% 0.040 var(--signal-hue));
+  --signal-50:  oklch(95% 0.018 var(--signal-hue));
 
   --accent:         var(--signal-600);
   --accent-hover:   var(--signal-700);
   --accent-light:   var(--signal-500);
   --accent-contrast:#ffffff;
 
-  --sidebar-bg:     oklch(14% 0.020 var(--signal-hue));
+  --sidebar-bg:     oklch(12% 0.024 var(--signal-hue));
   --sidebar-hover:  rgba(255,255,255,0.06);
   --sidebar-text:   rgba(255,255,255,0.48);
   --sidebar-text-h: rgba(255,255,255,0.88);
 
-  /* ── Neutral base — tinted a hair toward the signal hue (Tinted
-     Neutrals: pure gray is dead). Chroma is so low here (0.006–0.02) that
-     following the org hue reads as a barely-there warmth/coolness shift,
-     not a loud recolor — exactly the "subtle" the org theming asked for. */
-  --bg:      oklch(97% 0.006 var(--signal-hue));
-  --surface: oklch(100% 0 0);
-  --border:  oklch(90% 0.010 var(--signal-hue));
-  --border-s:oklch(95% 0.006 var(--signal-hue));
-  --text:    oklch(18% 0.020 var(--signal-hue));
-  --text-2:  oklch(32% 0.020 var(--signal-hue));
-  --text-3:  oklch(50% 0.018 var(--signal-hue));
-  --text-4:  oklch(65% 0.014 var(--signal-hue));
+  /* ── Neutral base — DARK by default now, matching the landing page's
+     "Examination" system (warm black / bone text) rather than the paper
+     palette the app used to default to. The paper values didn't go away —
+     they moved to [data-theme="light"] below, the same override slot
+     "dark mode" used to live in before this flip. Tinted toward the
+     signal hue exactly as before, just dark-first instead of light-first. */
+  --bg:      oklch(9%  0.018 var(--signal-hue));
+  --surface: oklch(13% 0.020 var(--signal-hue));
+  --border:  oklch(24% 0.028 var(--signal-hue));
+  --border-s:oklch(18% 0.024 var(--signal-hue));
+  --text:    oklch(92% 0.014 var(--signal-hue));
+  --text-2:  oklch(78% 0.020 var(--signal-hue));
+  --text-3:  oklch(62% 0.020 var(--signal-hue));
+  --text-4:  oklch(50% 0.018 var(--signal-hue));
 
   /* ── Tint — the "subtle accent-tinted background wash" used for hover/
      active/callout surfaces throughout the app (list-item hover, active
-     buttons, callout boxes). Defaults to the same --signal-50/100 steps as
-     the raw palette in light mode, but is its OWN variable rather than a
-     direct alias — dark mode below redefines just this, as a translucent
-     overlay, while --signal-50/100 themselves stay fixed opaque colors
-     (still needed as-is for things like icon chips, which would break if
-     they suddenly went translucent). Anywhere in the
-     app that wants a "light wash of the accent color," reach for --tint /
-     --tint-border, not --signal-50 / --signal-100 directly. ────────────── */
-  --tint:        var(--signal-50);
-  --tint-border: var(--signal-100);
+     buttons, callout boxes). Dark-default version is a translucent overlay
+     (light mode below uses opaque --signal-50/100 steps instead, since a
+     translucent wash over white paper reads muddy rather than "light"). */
+  --tint:        oklch(45% 0.105 var(--signal-hue) / 0.14);
+  --tint-border: oklch(45% 0.105 var(--signal-hue) / 0.28);
 
-  /* Flashcard mode's dedicated pink accent (independent of --signal-hue —
-     it's a fixed identity color for that one mode, not org-tinted) — same
-     tint/dark-mode-safety treatment as --tint above. */
-  --flash-accent:      oklch(58% 0.160 340);
-  --flash-tint:        oklch(96% 0.020 340);
-  --flash-tint-strong: oklch(90% 0.050 340);
-  --flash-border:      oklch(93% 0.045 340);
+  /* Flashcard mode's dedicated accent (independent of --signal-hue — it's
+     a fixed identity color for that one mode, not org-tinted) — a deep
+     muted berry, matching the rest of the system's "one confident, muted
+     accent" restraint. Dark-default translucent tint; light mode below
+     gets the opaque version. */
+  --flash-accent:      oklch(45% 0.110 340);
+  --flash-tint:        oklch(65% 0.16 340 / 0.12);
+  --flash-tint-strong: oklch(65% 0.16 340 / 0.20);
+  --flash-border:      oklch(65% 0.16 340 / 0.32);
 
-  /* ── Semantic status (kept independent of the brand accent) ─────────── */
+  /* ── Semantic status (kept independent of the brand accent) — dark-
+     default backgrounds; light mode below gets the pale versions. ────── */
   --green:        oklch(52% 0.140 150);
-  --green-bg:     oklch(97% 0.030 150);
-  --green-border: oklch(88% 0.080 150);
+  --green-bg:     oklch(22% 0.050 150);
+  --green-border: oklch(38% 0.085 150);
   --red:          oklch(55% 0.190 25);
-  --red-bg:       oklch(97% 0.020 25);
-  --red-border:   oklch(88% 0.070 25);
+  --red-bg:       oklch(22% 0.060 25);
+  --red-border:   oklch(38% 0.095 25);
   --amber:        oklch(62% 0.150 70);
-  --amber-bg:     oklch(97% 0.030 80);
+  --amber-bg:     oklch(22% 0.050 80);
 
   /* ── Radius & shadow — tighter, sharper corners; flat-by-default with
-     subtle shadow reserved for hover/interaction states ──────────────── */
+     subtle shadow reserved for hover/interaction states. Dark-default
+     shadow is pure-black-based; light mode below uses the softer version. */
   --r-sm: 6px;
   --r:    8px;
   --r-lg: 12px;
   --r-xl: 16px;
-  --shadow-sm: 0 1px 2px rgba(8,12,18,0.05),0 1px 1px rgba(8,12,18,0.03);
-  --shadow:    0 3px 12px rgba(8,12,18,0.07),0 1px 3px rgba(8,12,18,0.04);
-  --shadow-lg: 0 10px 32px rgba(8,12,18,0.10),0 3px 10px rgba(8,12,18,0.05);
-  --shadow-xl: 0 20px 56px rgba(8,12,18,0.14),0 6px 20px rgba(8,12,18,0.07);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35),  0 1px 1px rgba(0,0,0,0.24);
+  --shadow:    0 3px 12px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30);
+  --shadow-lg: 0 10px 32px rgba(0,0,0,0.55),0 3px 10px rgba(0,0,0,0.35);
+  --shadow-xl: 0 20px 56px rgba(0,0,0,0.65),0 6px 20px rgba(0,0,0,0.40);
 
   /* ── Type scale — fixed rem scale, ~1.2–1.4 ratio between steps ──────── */
   --text-xs:  0.6875rem;
@@ -108,9 +122,20 @@
   --text-4xl: 2.375rem;
   --text-6xl: 3.375rem;
 
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-head: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Space Grotesk replaces Hanken Grotesk for --font-body — matches the
+     landing page's grotesque exactly now, instead of a same-family-but-
+     different typeface. Fraunces/Geist Mono unchanged. */
+  --font-body: 'Space Grotesk Variable', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-head: 'Fraunces Variable', 'Iowan Old Style', serif;
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Same deliberate, non-bouncy easing as the marketing site. Kept as an
+     ADDITIONAL token rather than redefining --ease-out below, since
+     existing hover/transition rules already reference --ease-out by name
+     throughout App.css — swapping its meaning site-wide is a Phase 6
+     motion-pass task, not a token-recipe change. New interactions should
+     reach for --ease-editorial. */
+  --ease-editorial: cubic-bezier(0.65, 0, 0.35, 1);
 
   /* ── Spacing scale (4px base) ─────────────────────────────────────── */
   --sp-1: 4px;   --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;
@@ -135,40 +160,41 @@
 :root[data-org="deca"] { --signal-hue: 253; }
 :root[data-org="hosa"] { --signal-hue: 26; }
 
-/* ── Dark mode — stamped as data-theme="dark" on <html> by App.jsx (Settings
-   tab; persisted to localStorage, defaults to the OS preference). Same
-   pattern as the [data-org] hue overrides above: only the neutral/surface
-   scale and the status tints flip, everything derived from --signal-hue
-   (accent, sidebar) stays as-is, because the sidebar is a
-   permanently-dark shell in both themes and the accent hue doesn't need to
-   change — only how light or dark the CONTENT surfaces are. ────────────── */
-:root[data-theme="dark"] {
-  --bg:       oklch(17% 0.014 var(--signal-hue));
-  --surface:  oklch(22% 0.016 var(--signal-hue));
-  --border:   oklch(32% 0.020 var(--signal-hue));
-  --border-s: oklch(27% 0.016 var(--signal-hue));
-  --text:     oklch(94% 0.010 var(--signal-hue));
-  --text-2:   oklch(82% 0.012 var(--signal-hue));
-  --text-3:   oklch(64% 0.014 var(--signal-hue));
-  --text-4:   oklch(48% 0.014 var(--signal-hue));
+/* ── Light mode — now the OPT-IN alternate, stamped as data-theme="light"
+   on <html> by App.jsx (Settings tab; persisted to localStorage). This is
+   the same paper palette that used to be the unthemed default before the
+   dark-by-default flip above — moved here rather than deleted, so light
+   mode is still a real, fully-tuned option, not a second-class fallback.
+   Same pattern as the [data-org] hue overrides: only the neutral/surface
+   scale and status tints flip; --signal-hue itself (accent, sidebar)
+   stays as-is in both themes. ─────────────────────────────────────────── */
+:root[data-theme="light"] {
+  --bg:       oklch(97% 0.008 var(--signal-hue));
+  --surface:  oklch(99% 0.004 var(--signal-hue));
+  --border:   oklch(88% 0.014 var(--signal-hue));
+  --border-s: oklch(94% 0.008 var(--signal-hue));
+  --text:     oklch(14% 0.024 var(--signal-hue));
+  --text-2:   oklch(28% 0.022 var(--signal-hue));
+  --text-3:   oklch(46% 0.020 var(--signal-hue));
+  --text-4:   oklch(60% 0.016 var(--signal-hue));
 
-  --tint:        oklch(56% 0.14 var(--signal-hue) / 0.10);
-  --tint-border: oklch(56% 0.14 var(--signal-hue) / 0.22);
+  --tint:        var(--signal-50);
+  --tint-border: var(--signal-100);
 
-  --flash-tint:        oklch(65% 0.16 340 / 0.10);
-  --flash-tint-strong: oklch(65% 0.16 340 / 0.18);
-  --flash-border:      oklch(65% 0.16 340 / 0.30);
+  --flash-tint:        oklch(96% 0.020 340);
+  --flash-tint-strong: oklch(90% 0.050 340);
+  --flash-border:      oklch(93% 0.045 340);
 
-  --green-bg:     oklch(25% 0.055 150);
-  --green-border: oklch(40% 0.090 150);
-  --red-bg:       oklch(25% 0.065 25);
-  --red-border:   oklch(40% 0.100 25);
-  --amber-bg:     oklch(25% 0.055 80);
+  --green-bg:     oklch(97% 0.030 150);
+  --green-border: oklch(88% 0.080 150);
+  --red-bg:       oklch(97% 0.020 25);
+  --red-border:   oklch(88% 0.070 25);
+  --amber-bg:     oklch(97% 0.030 80);
 
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35),  0 1px 1px rgba(0,0,0,0.24);
-  --shadow:    0 3px 12px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30);
-  --shadow-lg: 0 10px 32px rgba(0,0,0,0.55),0 3px 10px rgba(0,0,0,0.35);
-  --shadow-xl: 0 20px 56px rgba(0,0,0,0.65),0 6px 20px rgba(0,0,0,0.40);
+  --shadow-sm: 0 1px 2px rgba(8,12,18,0.05),0 1px 1px rgba(8,12,18,0.03);
+  --shadow:    0 3px 12px rgba(8,12,18,0.07),0 1px 3px rgba(8,12,18,0.04);
+  --shadow-lg: 0 10px 32px rgba(8,12,18,0.10),0 3px 10px rgba(8,12,18,0.05);
+  --shadow-xl: 0 20px 56px rgba(8,12,18,0.14),0 6px 20px rgba(8,12,18,0.07);
 }
 
 html,body { height: 100%; }

@@ -1,0 +1,44 @@
+{
+  "Complete review of Accounting, covering all knowledge areas: A. Journalizing, B. Account Classification, C. Terminology, Concepts, and Practices, D. Income Statement, E. Posting, F. Balance Sheet, G. Worksheet, H. Bank Reconciliation, I. Payroll, J. Types of Ownership, K. Depreciation, L. Manual and Computerized Systems, M. Ethics": [
+    {
+      "front": "Journal Entry",
+      "back": "The first step in the accounting cycle where business transactions are recorded in chronological order with debit and credit amounts. Each entry includes the date, accounts affected, and a brief description of the transaction."
+    },
+    {
+      "front": "Account Classification",
+      "back": "The process of categorizing accounts into five types: Assets, Liabilities, Equity, Revenue, and Expenses. Proper classification ensures accurate financial reporting and statement preparation."
+    },
+    {
+      "front": "Double-Entry Bookkeeping",
+      "back": "An accounting principle requiring that every transaction affects at least two accounts with equal debit and credit amounts. This maintains the accounting equation: Assets = Liabilities + Equity."
+    },
+    {
+      "front": "Income Statement",
+      "back": "A financial statement showing a company's profitability over a specific period by listing revenues, expenses, and calculating net income or loss. Also called a Profit and Loss statement."
+    },
+    {
+      "front": "Posting",
+      "back": "The process of transferring journal entry information to individual ledger accounts in the general ledger. This creates a detailed record of all account activity."
+    },
+    {
+      "front": "Balance Sheet",
+      "back": "A financial statement showing a company's financial position at a specific point in time by listing assets, liabilities, and equity. It demonstrates whether the accounting equation remains in balance."
+    },
+    {
+      "front": "Bank Reconciliation",
+      "back": "A process that compares a company's bank statement to its cash records to identify discrepancies and ensure accuracy. It accounts for outstanding checks, deposits in transit, and bank fees."
+    },
+    {
+      "front": "Depreciation",
+      "back": "The systematic allocation of an asset's cost over its useful life as an expense on the income statement. It recognizes that assets lose value over time due to use and wear."
+    },
+    {
+      "front": "Payroll",
+      "back": "The process of calculating employee compensation, withholding taxes, and distributing paychecks. It includes tracking gross pay, deductions, and net pay for each employee."
+    },
+    {
+      "front": "Accounting Ethics",
+      "back": "Principles and standards that guide accountants to act with integrity, honesty, and objectivity in their work. Ethical practices ensure accurate financial reporting and public trust in accounting information."
+    }
+  ]
+}

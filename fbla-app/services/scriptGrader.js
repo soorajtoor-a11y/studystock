@@ -17,10 +17,19 @@
 //   acceptance-test requirement) regardless of what the model says, and
 //   removes a whole class of model self-contradiction (e.g. picking
 //   "Exceeds Expectations" but writing 12/20).
+// - Consistency: a single freehand "points 0-max" call was measured to swing
+//   by dozens of points across identical re-grades even at temperature:0. A
+//   mechanical decomposition into three small 0-2 sub-judgments (coverage/
+//   depth/soundness, summed via a fixed formula) was tried as a fix and
+//   measured WORSE (their small individual variances compounded rather than
+//   averaging out, and scores ran systematically lower) — reverted.
+//   `gradeWithConsensus` in llmClient.js (median-of-3 over this same
+//   single-integer prompt) is the fix that actually tested best; see grade()
+//   below and llmClient.js's own comment for the numbers.
 
 import { loadRubrics, findEvent, allCriteria } from './rubrics.js';
 import { bandLineForPrompt, deriveBand } from './bands.js';
-import { CACHE_SPLIT_MARKER, extractJSON, withRetry, callHaiku } from './llmClient.js';
+import { CACHE_SPLIT_MARKER, extractJSON, withRetry, callHaiku, gradeWithConsensus } from './llmClient.js';
 
 // Includes the gradable-criteria breakdown (not just the totals) so the UI
 // can render "what gets graded" immediately on event selection, with no
@@ -35,6 +44,14 @@ export function listEvents() {
     gradable_criteria: allCriteria(e)
       .filter(c => c.ai_gradable)
       .map(c => ({ criterion: c.criterion, max: c.max, category: c.category, sheet: c.sheet })),
+    // Surfaced so the frontend can offer "Full Event (with Q&A)" only where
+    // the Q&A Engine's v1 shape actually applies — exactly one qa criterion.
+    // Job Interview has 5 (its whole sheet IS qa/PIs, a different modality
+    // entirely) and is deliberately excluded by this same length check on
+    // the frontend rather than a hardcoded event-name special case.
+    qa_criteria: allCriteria(e)
+      .filter(c => c.category === 'qa')
+      .map(c => ({ criterion: c.criterion, max: c.max, sheet: c.sheet })),
   }));
 }
 
@@ -58,6 +75,8 @@ EVENT: ${event.event}
 2025-26 TOPIC/SUBJECT: ${topic}
 
 Score ONLY the criteria listed below, each independently and strictly on its own definition. Ignore delivery, pacing, voice, and anything only assessable live — those are judged elsewhere, not from this text.
+
+Be a maximally consistent, reproducible grader: if this exact submission were graded again, every criterion's score should come out the same. Anchor each score to specific, checkable evidence in the text (what's present, what's missing, against the band definitions below) rather than an impression or overall tone — two judges reading the same evidence should reach the same number.
 
 CRITERIA TO SCORE (score every one, in order):
 ${criteriaLines}
@@ -141,9 +160,9 @@ export async function grade(eventId, input) {
 
   const results = isEffectivelyEmpty(scriptText)
     ? insufficientContentResults(gradable)
-    : reconcile(gradable, await withRetry(async () =>
-        extractJSON(await callHaiku(buildGradingPrompt(event, gradable, scriptText)))
-      , 3, 'Script grader'));
+    : await gradeWithConsensus(() => withRetry(async () =>
+        reconcile(gradable, extractJSON(await callHaiku(buildGradingPrompt(event, gradable, scriptText))))
+      , 3, 'Script grader'), gradable.length, 3);
 
   return { toolId: 'script', results, meta: {} };
 }

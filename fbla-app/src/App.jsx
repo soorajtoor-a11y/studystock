@@ -3,12 +3,27 @@ import { motion, AnimatePresence } from 'motion/react'
 import Landing from './Landing'
 import Reveal from './components/Reveal'
 import WorkbotPage from './components/WorkbotPage'
+import CollapsedRail from './components/CollapsedRail'
+import NotesWindow from './components/NotesWindow'
 import { ORG_META, ORG_ORDER } from './orgMeta'
 import { supabase } from './supabaseClient'
+import { useFakeProgress } from './lib/useFakeProgress'
+import ProgressBar from './components/ProgressBar'
 import { MarkScorecardFavicon } from './components/landing/ExamMark'
 import './App.css'
 
 const EASE = [0.16, 1, 0.3, 1]
+
+// Presentation events (Workbot) only exist under FBLA — never the app's
+// currently-selected `org` state, which is meant for the study/objective-test
+// side and can be sitting on a completely different org (DECA, etc.) at the
+// moment a presentation event's pin/grade/explain action fires, since none
+// of those actions force-switch `org` the way selecting a study event does.
+// Using the live `org` state for presentation-event persistence caused
+// grades/pins/explain saved under whatever org happened to be active to
+// silently vanish later once `org` moved on to something else — hardcoding
+// this instead means it can never drift.
+const PRESENTATION_ORG = 'fbla'
 
 // DECA event slugs: most cluster exams' folder names end in "-cluster",
 // but these two are organized as clusters in practice while the source
@@ -234,22 +249,30 @@ function EventPickerPage({ events, org, onSelect, onBack }) {
 }
 
 // ── Home Page ─────────────────────────────────────────────────────────────────
-function HomePage({ onStart }) {
+// Fronted with the chosen org's own identity (name + tagline in its brand
+// colors), not a repeat of the generic Vye pitch already given on the org
+// picker — a student who's already chosen DECA doesn't need to be re-sold
+// on what Vye is, just oriented into DECA.
+function HomePage({ onStart, org }) {
+  const meta = ORG_META[org] || {}
   return (
     <div className="home-page">
       <div className="home-hero">
         <div className="home-hero-content">
-          <h1 className="home-title"><span className="home-title-accent">Vye</span></h1>
-          <p className="home-subtitle">
-            Your AI-powered tool for every FBLA competitive event. Quiz yourself, study flashcards,
-            and get instant explanations, all grounded in the official objectives.
-          </p>
+          <div
+            className="home-org-mark"
+            style={{ '--org-c1': meta.colors?.[0], '--org-c2': meta.colors?.[1] }}
+          >
+            {meta.icon && <span className="home-org-icon" aria-hidden="true">{meta.icon}</span>}
+            <h1 className="home-org-name">{meta.name || org}</h1>
+          </div>
+          {meta.tagline && <p className="home-subtitle">{meta.tagline}</p>}
           <button className="home-cta" onClick={onStart}>Pick an Event →</button>
         </div>
       </div>
 
       <div className="home-body">
-        <p className="home-section-label">Study Modes</p>
+        <p className="home-section-label">Objective Tests</p>
         <div className="home-cards">
           <div className="home-card">
             <div className="home-card-icon quiz">📝</div>
@@ -266,14 +289,49 @@ function HomePage({ onStart }) {
             <div className="home-card-title">Explain Mode</div>
             <div className="home-card-desc">The AI breaks down any objective in plain language with a real-world example. Follow up with your own questions.</div>
           </div>
+          <div className="home-card">
+            <div className="home-card-icon notes">📄</div>
+            <div className="home-card-title">Notes</div>
+            <div className="home-card-desc">One-page structured summaries for any section — a condensed outline of every objective, ready to skim before you quiz yourself.</div>
+          </div>
         </div>
+
+        {/* Only FBLA currently has presentation events (Workbot grading) —
+            matches the sidebar, which hides this whole group for other orgs. */}
+        {org === 'fbla' && (
+          <>
+            <p className="home-section-label">Presentation Events</p>
+            <div className="home-cards">
+              <div className="home-card">
+                <div className="home-card-icon script">📜</div>
+                <div className="home-card-title">Script</div>
+                <div className="home-card-desc">Paste your speech or presentation script directly. Scored against the event's official rating sheet for content and format.</div>
+              </div>
+              <div className="home-card">
+                <div className="home-card-icon download">🗂️</div>
+                <div className="home-card-title">File Upload</div>
+                <div className="home-card-desc">Upload a PDF, DOCX, or PPTX of your report or deck. Graded criterion by criterion against the rubric.</div>
+              </div>
+              <div className="home-card">
+                <div className="home-card-icon video">🎬</div>
+                <div className="home-card-title">Video</div>
+                <div className="home-card-desc">Upload a recording of your presentation. Graded by watching and listening to it — no script needed.</div>
+              </div>
+              <div className="home-card">
+                <div className="home-card-icon audio">🎙️</div>
+                <div className="home-card-title">Audio</div>
+                <div className="home-card-desc">Record or upload your delivery. Scores pace, filler words, and pauses — plus content and format from the transcript.</div>
+              </div>
+            </div>
+          </>
+        )}
 
         <div className="home-tip">
           <span className="home-tip-icon">💬</span>
           <span>
             <strong>How to start:</strong> Click <em>Pick an Event →</em> above to browse all
             competitive events, or select one directly from the sidebar. Then study a single
-            objective, an entire section, or the full event, with Quiz, Flashcard, or Explain modes.
+            objective, an entire section, or the full event, with Quiz, Flashcard, Explain, or Notes modes.
           </span>
         </div>
       </div>
@@ -559,7 +617,7 @@ function AccountHero({ icon, title, subtitle }) {
 }
 
 // ── Dashboard (logged-in landing page) ──────────────────────────────────────
-function Dashboard({ user, pins, usageDays, onSelectPinned, onBrowseAll }) {
+function Dashboard({ user, pins, usageDays, onSelectPinned, onOpenWorkbot, onBrowseAll }) {
   const name = nameFromEmail(user?.email)
   const streak = computeUsageStreak(usageDays)
 
@@ -599,10 +657,10 @@ function Dashboard({ user, pins, usageDays, onSelectPinned, onBrowseAll }) {
               return (
                 <Reveal
                   as="button"
-                  key={`${p.org}/${p.event}`}
+                  key={`${p.org}/${p.event}/${p.kind}`}
                   delay={i * 45}
                   className="dashboard-pin-card"
-                  onClick={() => onSelectPinned(p.org, p.event)}
+                  onClick={() => p.kind === 'presentation' ? onOpenWorkbot(p.event) : onSelectPinned(p.org, p.event)}
                 >
                   <span
                     className="dashboard-pin-org-icon"
@@ -634,6 +692,7 @@ function FlashcardPane({ event, org, objectiveText, count, onBack }) {
   const [flipped, setFlipped] = useState(false)
   const [known,   setKnown]   = useState(new Set())
   const [error,   setError]   = useState(null)
+  const progress = useFakeProgress(!cards && !error, 6000)
 
   useEffect(() => {
     fetch('/api/flashcards', {
@@ -680,7 +739,8 @@ function FlashcardPane({ event, org, objectiveText, count, onBack }) {
           <span className="pane-orb-ring" />
           <span className="pane-orb-core" />
         </div>
-        <p className="pane-loading-title">Generating {count} flashcards…</p>
+        <p className="pane-loading-title">Generating {count} flashcards… {progress}%</p>
+        <ProgressBar percent={progress} />
       </div>
     </div>
   )
@@ -826,6 +886,11 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
   // Doesn't block picking a struck option as the real answer, in case they
   // change their mind.
   const [eliminated, setEliminated] = useState(() => new Set())
+  // Larger/harder quizzes (more questions, or a scope needing retry passes
+  // for length-tell/duplicate violations) genuinely take longer — scale the
+  // estimate with count rather than using one flat number for a 5-question
+  // objective quiz and a 50-question full-event one alike.
+  const progress = useFakeProgress(!questions && !error, Math.max(6000, count * 350))
 
   useEffect(() => {
     fetch('/api/quiz', {
@@ -893,7 +958,8 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
           <span className="pane-orb-ring" />
           <span className="pane-orb-core" />
         </div>
-        <p className="pane-loading-title">Generating {count} questions…</p>
+        <p className="pane-loading-title">Generating {count} questions… {progress}%</p>
+        <ProgressBar percent={progress} />
       </div>
     </div>
   )
@@ -993,138 +1059,6 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
             {current + 1 >= questions.length ? 'See Results →' : 'Next Question →'}
           </button>
         )}
-      </div>
-    </div>
-  )
-}
-
-// ── One-Page Section Notes ──────────────────────────────────────────────────
-function NotesPane({ event, org, objectiveText, objectives, title, user, onBack }) {
-  const [notes, setNotes] = useState(null)
-  const [notesError, setNotesError] = useState(null)
-  // Q&A box at the bottom — same hook StudyPane's Explain chat uses, so
-  // questions asked here save to explain_history exactly the same way,
-  // scoped to this section's own text so the AI has the same context that
-  // produced the notes themselves.
-  const { messages, loading, error, setError, sendMessage } = useExplainChat({ org, event, objectiveText, user })
-  const [input, setInput] = useState('')
-
-  useEffect(() => {
-    fetch('/api/notes', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ org, event, objective: objectiveText, objectives }),
-    })
-      .then(r => r.json())
-      .then(d => { if (d.error) setNotesError(d.error); else setNotes(d.notes) })
-      .catch(e => setNotesError(e.message))
-  }, [])
-
-  function handleSend() {
-    if (!input.trim() || loading) return
-    const text = input.trim(); setInput('')
-    sendMessage(text, messages)
-  }
-
-  if (notesError) return (
-    <div className="study-pane">
-      <div className="study-header"><button className="back-btn" onClick={onBack}>← Back</button></div>
-      <div className="pane-error">
-        <div className="pane-error-icon">⚠</div>
-        <p>Error generating notes:</p>
-        <p className="pane-error-msg">{notesError}</p>
-        <button className="back-btn" onClick={onBack} style={{ marginTop: 16 }}>← Go Back</button>
-      </div>
-    </div>
-  )
-
-  if (!notes) return (
-    <div className="study-pane">
-      <div className="study-header">
-        <button className="back-btn" onClick={onBack}>← Back</button>
-        <div className="study-meta">
-          <span className="study-event">{formatEventName(event)}</span>
-          <span className="study-divider">›</span>
-          <span className="study-obj">{title || 'Notes'}</span>
-        </div>
-      </div>
-      <div className="pane-loading">
-        <div className="pane-orb">
-          <span className="pane-orb-ring" />
-          <span className="pane-orb-core" />
-        </div>
-        <p className="pane-loading-title">Writing notes…</p>
-      </div>
-    </div>
-  )
-
-  const sorted = [...notes].sort((a, b) => a.objective_num - b.objective_num)
-
-  return (
-    <div className="study-pane">
-      <div className="study-header">
-        <button className="back-btn" onClick={onBack}>← Back</button>
-        <div className="study-meta">
-          <span className="study-event">{formatEventName(event)}</span>
-          <span className="study-divider">›</span>
-          <span className="study-obj">Notes</span>
-        </div>
-      </div>
-      <div className="notes-doc-wrap">
-        <div className="notes-doc">
-          <p className="notes-doc-kicker">One-Page Notes</p>
-          <h1 className="notes-doc-title">{title || formatEventName(event)}</h1>
-          <div className="notes-doc-rule" />
-          {sorted.map(n => (
-            <div key={n.objective_num} className="notes-entry">
-              <span className="notes-entry-num">{n.objective_num}</span>
-              <div className="notes-entry-body">
-                <h3 className="notes-entry-heading">{n.heading}</h3>
-                <p className="notes-entry-text">{n.body}</p>
-              </div>
-            </div>
-          ))}
-
-          <div className="notes-doc-rule notes-doc-rule-qa" />
-          <p className="notes-qa-label">Have a question about this section?</p>
-
-          {messages.length > 0 && (
-            <div className="notes-qa-messages">
-              {messages.map((m, i) => (
-                <div key={i} className={`message message-${m.role}`}>
-                  <div className="message-bubble">
-                    {m.content || (m.role === 'assistant' && loading
-                      ? <span className="typing"><span /><span /><span /></span>
-                      : '')}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {error && (
-            <div className="chat-error">
-              <span className="chat-error-icon">⚠</span>
-              <span>{error}</span>
-              <button className="chat-error-retry" onClick={() => {
-                setError(null)
-                sendMessage(messages[messages.length - 1]?.content || '', messages.slice(0, -1))
-              }}>Retry</button>
-            </div>
-          )}
-
-          <div className="notes-qa-input-row">
-            <input
-              className="chat-input"
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && handleSend()}
-              placeholder={`Ask anything about ${title || 'this section'}…`}
-              disabled={loading}
-            />
-            <button className="send-btn" onClick={handleSend} disabled={loading || !input.trim()}>Send</button>
-          </div>
-        </div>
       </div>
     </div>
   )
@@ -1302,7 +1236,7 @@ function StudyPane({ event, org, objectiveText, general, user, initialMessages, 
             </div>
           </div>
         ))}
-        {loading && messages[messages.length - 1]?.content === '' && (
+        {loading && messages[messages.length - 1]?.role !== 'assistant' && (
           <div className="message message-assistant">
             <div className="message-bubble"><span className="typing"><span /><span /><span /></span></div>
           </div>
@@ -1604,21 +1538,6 @@ function ModePicker({ title, desc, onSelect, onClose, hideExplain, scope = 'even
 }
 
 // ── Right-side Study Panel ────────────────────────────────────────────────────
-// Thin, always-visible, click-to-reopen strip a side panel collapses down
-// to — same idea as Claude's collapsible sidebar rail. The label reads
-// top-to-bottom via CSS writing-mode so it still fits in ~44px.
-function CollapsedRail({ label, icon, onExpand }) {
-  return (
-    <button className="panel-rail" onClick={onExpand} title={`Show ${label}`} aria-label={`Show ${label}`}>
-      <svg className="panel-rail-chevron" viewBox="0 0 20 20" fill="currentColor" width="12" height="12" aria-hidden="true">
-        <path fillRule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clipRule="evenodd" />
-      </svg>
-      <span className="panel-rail-icon" aria-hidden="true">{icon}</span>
-      <span className="panel-rail-label">{label}</span>
-    </button>
-  )
-}
-
 function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
   const [picker, setPicker] = useState(null)
 
@@ -1680,7 +1599,6 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
               <button className="sp-btn sp-btn-quiz"    onClick={() => openPicker(`Section ${section.letter} Quiz`, section.title, buildSectionText(section), true, 'section', section.objectives, 'quiz')}>📝 Quiz</button>
               <button className="sp-btn sp-btn-flash"   onClick={() => openPicker(`Section ${section.letter} Cards`, section.title, buildSectionText(section), true, 'section', section.objectives, 'flashcard')}>🃏 Cards</button>
               <button className="sp-btn sp-btn-explain" onClick={() => { onStudy(buildSectionText(section), 'explain') }}>💡 Explain</button>
-              <button className="sp-btn sp-btn-notes" onClick={() => { onStudy(buildSectionText(section), 'notes', null, null, 'section', section.objectives, `${section.letter}. ${section.title}`) }}>📄 Notes</button>
             </div>
           </div>
         ))}
@@ -1702,7 +1620,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
 }
 
 // ── Event View ────────────────────────────────────────────────────────────────
-function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnything, showHistory, historyCollapsed, onToggleHistoryCollapse, onContinueHistory }) {
+function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnything, showHistory, historyCollapsed, onToggleHistoryCollapse, onContinueHistory, onNeedAccount }) {
   const [outline,  setOutline]  = useState(null)
   const [expanded, setExpanded] = useState({})
   const [selected, setSelected] = useState(null)
@@ -1712,6 +1630,13 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
   // the historyCollapsed prop — so it stays consistent when moving between
   // this view and an open Explain session for the same event.)
   const [studyCollapsed, setStudyCollapsed] = useState(false)
+  // Chrome-style top tabs — Study Tools (quiz/cards/explain, the existing
+  // event-layout below) vs Notes (its own window: generate per-section
+  // notes, edit them, browse saved history). Local to this event, not
+  // lifted to the root `page` enum — it only ever matters while one event
+  // is already open, and switching it shouldn't affect the sidebar/URL-ish
+  // navigation state at all.
+  const [tab, setTab] = useState('study')
 
   useEffect(() => {
     setOutline(null); setSelected(null)
@@ -1750,55 +1675,81 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
             </button>
           </div>
         </div>
-        <p className="event-subtitle">Click any objective to study it, or use the panel on the right to study a section or the full event.</p>
-      </div>
-
-      <div
-        className={`event-layout ${showHistory ? 'event-layout-with-history' : ''}`}
-        style={{
-          gridTemplateColumns: `1fr ${studyCollapsed ? '44px' : '320px'}${showHistory ? ` ${historyCollapsed ? '44px' : '300px'}` : ''}`,
-        }}
-      >
-        <div className="event-objectives">
-          <div className="sections">
-            {outline.map(section => (
-              <div key={section.letter} className="section">
-                <button className={`section-header ${expanded[section.letter] ? 'open' : ''}`} onClick={() => toggle(section.letter)}>
-                  <span className="section-letter">{section.letter}</span>
-                  <span className="section-title">{section.title}</span>
-                  {section.items && <span className="section-items">{section.items} items</span>}
-                  <span className="section-chevron">▸</span>
-                </button>
-                {expanded[section.letter] && (
-                  <ul className="objectives">
-                    {section.objectives.map(obj => (
-                      <li key={obj.num} className="objective"
-                        onClick={() => setSelected({ num: `${section.letter}.${obj.num}`, text: obj.text })}>
-                        <span className="obj-num">{obj.num}.</span>
-                        <span className="obj-text">{obj.text}</span>
-                        <span className="obj-arrow">→</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
+        <div className="event-tabs" role="tablist" aria-label="Event sections">
+          <button
+            role="tab" aria-selected={tab === 'study'}
+            className={`event-tab ${tab === 'study' ? 'active' : ''}`}
+            onClick={() => setTab('study')}
+          >
+            <span className="event-tab-icon" aria-hidden="true">🎓</span>
+            Study Tools
+          </button>
+          <button
+            role="tab" aria-selected={tab === 'notes'}
+            className={`event-tab ${tab === 'notes' ? 'active' : ''}`}
+            onClick={() => setTab('notes')}
+          >
+            <span className="event-tab-icon" aria-hidden="true">📄</span>
+            Notes
+          </button>
         </div>
-
-        <StudyPanel
-          event={event} outline={outline} onStudy={onStudy}
-          collapsed={studyCollapsed} onToggleCollapse={() => setStudyCollapsed(c => !c)}
-        />
-
-        {showHistory && user && (
-          <ExplainHistorySidePanel
-            org={org} event={event} user={user}
-            collapsed={historyCollapsed} onToggleCollapse={onToggleHistoryCollapse}
-            onContinue={onContinueHistory}
-          />
-        )}
+        <p className="event-subtitle">
+          {tab === 'study'
+            ? 'Click any objective to study it, or use the panel on the right to study a section or the full event.'
+            : 'Generate clean, saved study notes for each section — edit them any time, or revisit your notes history.'}
+        </p>
       </div>
+
+      {tab === 'notes' ? (
+        <NotesWindow org={org} event={event} outline={outline} user={user} onNeedAccount={onNeedAccount} />
+      ) : (
+        <div
+          className={`event-layout ${showHistory ? 'event-layout-with-history' : ''}`}
+          style={{
+            gridTemplateColumns: `1fr ${studyCollapsed ? '44px' : '320px'}${showHistory ? ` ${historyCollapsed ? '44px' : '300px'}` : ''}`,
+          }}
+        >
+          <div className="event-objectives">
+            <div className="sections">
+              {outline.map(section => (
+                <div key={section.letter} className="section">
+                  <button className={`section-header ${expanded[section.letter] ? 'open' : ''}`} onClick={() => toggle(section.letter)}>
+                    <span className="section-letter">{section.letter}</span>
+                    <span className="section-title">{section.title}</span>
+                    {section.items && <span className="section-items">{section.items} items</span>}
+                    <span className="section-chevron">▸</span>
+                  </button>
+                  {expanded[section.letter] && (
+                    <ul className="objectives">
+                      {section.objectives.map(obj => (
+                        <li key={obj.num} className="objective"
+                          onClick={() => setSelected({ num: `${section.letter}.${obj.num}`, text: obj.text })}>
+                          <span className="obj-num">{obj.num}.</span>
+                          <span className="obj-text">{obj.text}</span>
+                          <span className="obj-arrow">→</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <StudyPanel
+            event={event} outline={outline} onStudy={onStudy}
+            collapsed={studyCollapsed} onToggleCollapse={() => setStudyCollapsed(c => !c)}
+          />
+
+          {showHistory && user && (
+            <ExplainHistorySidePanel
+              org={org} event={event} user={user}
+              collapsed={historyCollapsed} onToggleCollapse={onToggleHistoryCollapse}
+              onContinue={onContinueHistory}
+            />
+          )}
+        </div>
+      )}
 
       {selected && (
         <ModePicker
@@ -1889,10 +1840,10 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, open, collapsed, onToggleCollapsed }) {
+function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, onWorkbotAskAnything, open, collapsed, onToggleCollapsed }) {
   const [search, setSearch] = useState('')
-  const [objOpen, setObjOpen] = useState(true)
-  const [presOpen, setPresOpen] = useState(true)
+  const [objOpen, setObjOpen] = useState(false)
+  const [presOpen, setPresOpen] = useState(false)
   const filtered = search.trim()
     ? events.filter(e => matchesEventSearch(formatEventName(e), search))
     : events
@@ -1943,28 +1894,36 @@ function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent
             <span className="sidebar-count-badge">{pins.length}</span>
           </div>
           <nav className="sidebar-nav sidebar-nav-pinned">
-            {pins.map(p => (
-              <div
-                key={`${p.org}/${p.event}`}
-                className={`sidebar-item ${p.event === activeEvent && p.org === org && (page === 'event' || page === 'explain-history') ? 'active' : ''}`}
-              >
-                <motion.button whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }} className="sidebar-item-main" onClick={() => { onSelectPinned(p.org, p.event); setObjOpen(false) }} title={formatEventName(p.event)}>
-                  <span className="sidebar-item-dot" />
-                  <span className="sidebar-item-name">{formatEventName(p.event)}</span>
-                  <span className="sidebar-item-org-badge">{ORG_META[p.org]?.name ?? p.org}</span>
-                </motion.button>
-                <button
-                  className="sidebar-pin-btn"
-                  onClick={e => { e.stopPropagation(); onOpenHistory(p.org, p.event) }}
-                  title="Explain history"
-                  aria-label="Explain history for this event"
-                >
-                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="12" height="12">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 5.5V10l3 2M17.5 10a7.5 7.5 0 11-7.5-7.5A7.5 7.5 0 0117.5 10z" />
-                  </svg>
-                </button>
-              </div>
-            ))}
+            {pins.map(p => {
+              const isPresentation = p.kind === 'presentation'
+              const isActive = isPresentation
+                ? (page === 'workbot' || page === 'workbot-explain') && p.event === workbotEventId
+                : p.event === activeEvent && p.org === org && (page === 'event' || page === 'explain-history')
+              return (
+                <div key={`${p.org}/${p.event}/${p.kind}`} className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                  <motion.button
+                    whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }}
+                    className="sidebar-item-main"
+                    onClick={() => { if (isPresentation) onWorkbot(p.event); else onSelectPinned(p.org, p.event); setObjOpen(false) }}
+                    title={isPresentation ? p.event : formatEventName(p.event)}
+                  >
+                    <span className="sidebar-item-dot" />
+                    <span className="sidebar-item-name">{isPresentation ? p.event : formatEventName(p.event)}</span>
+                    <span className="sidebar-item-org-badge">{isPresentation ? 'Presentation' : (ORG_META[p.org]?.name ?? p.org)}</span>
+                  </motion.button>
+                  <button
+                    className="sidebar-pin-btn"
+                    onClick={e => { e.stopPropagation(); if (isPresentation) onWorkbotAskAnything(p.event); else onOpenHistory(p.org, p.event) }}
+                    title="Explain history"
+                    aria-label="Explain history for this event"
+                  >
+                    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 5.5V10l3 2M17.5 10a7.5 7.5 0 11-7.5-7.5A7.5 7.5 0 0117.5 10z" />
+                    </svg>
+                  </button>
+                </div>
+              )
+            })}
           </nav>
         </div>
       )}
@@ -2019,7 +1978,7 @@ function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent
                 <div className="sidebar-group-content">
                   <nav className="sidebar-nav">
                     {filtered.map(ev => {
-                      const pinned = pins.some(p => p.org === org && p.event === ev)
+                      const pinned = pins.some(p => p.org === org && p.event === ev && p.kind === 'study')
                       return (
                         <div key={ev} className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}>
                           <motion.button whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }} className="sidebar-item-main" onClick={() => { onSelect(ev); setObjOpen(false) }} title={formatEventName(ev)}>
@@ -2028,7 +1987,7 @@ function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent
                           </motion.button>
                           <button
                             className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
-                            onClick={e => { e.stopPropagation(); onTogglePin(org, ev) }}
+                            onClick={e => { e.stopPropagation(); onTogglePin(org, ev, 'study') }}
                             title={pinned ? 'Unpin event' : 'Pin event'}
                             aria-label={pinned ? 'Unpin event' : 'Pin event'}
                           >
@@ -2067,23 +2026,36 @@ function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent
                 {presOpen && !collapsed && (
                   <div className="sidebar-group-content">
                     <nav className="sidebar-nav">
-                      {presentationEvents.map(pe => (
-                        <div
-                          key={pe.event}
-                          className={`sidebar-item ${page === 'workbot' && pe.event === workbotEventId ? 'active' : ''}`}
-                        >
-                          <motion.button
-                            whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }}
-                            className="sidebar-item-main"
-                            onClick={() => { onWorkbot(pe.event); setPresOpen(false) }}
-                            title={pe.event}
+                      {presentationEvents.map(pe => {
+                        const pinned = pins.some(p => p.org === PRESENTATION_ORG && p.event === pe.event && p.kind === 'presentation')
+                        return (
+                          <div
+                            key={pe.event}
+                            className={`sidebar-item ${(page === 'workbot' || page === 'workbot-explain') && pe.event === workbotEventId ? 'active' : ''}`}
                           >
-                            <span className="sidebar-item-dot" />
-                            <span className="sidebar-item-name">{pe.event}</span>
-                            {!pe.build_ready && <span className="sidebar-item-org-badge">video</span>}
-                          </motion.button>
-                        </div>
-                      ))}
+                            <motion.button
+                              whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }}
+                              className="sidebar-item-main"
+                              onClick={() => { onWorkbot(pe.event); setPresOpen(false) }}
+                              title={pe.event}
+                            >
+                              <span className="sidebar-item-dot" />
+                              <span className="sidebar-item-name">{pe.event}</span>
+                              {!pe.build_ready && <span className="sidebar-item-org-badge">video</span>}
+                            </motion.button>
+                            <button
+                              className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
+                              onClick={e => { e.stopPropagation(); onTogglePin(PRESENTATION_ORG, pe.event, 'presentation') }}
+                              title={pinned ? 'Unpin event' : 'Pin event'}
+                              aria-label={pinned ? 'Unpin event' : 'Pin event'}
+                            >
+                              <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+                              </svg>
+                            </button>
+                          </div>
+                        )
+                      })}
                       {presentationEvents.length === 0 && (
                         <div className="sidebar-no-results">Loading…</div>
                       )}
@@ -2123,7 +2095,7 @@ export default function App() {
   const [eventsLoaded, setEventsLoaded] = useState(false)
   const [presentationEvents, setPresentationEvents] = useState([])
   const [workbotEventId, setWorkbotEventId] = useState(null)
-  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'workbot'
+  const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'workbot' | 'workbot-explain' | 'explain-history'
   const [activeEvent, setActiveEvent] = useState(null)
   const [study,       setStudy]       = useState(null)
   const [navOpen,     setNavOpen]     = useState(false) // mobile sidebar drawer
@@ -2201,13 +2173,18 @@ export default function App() {
     return () => sub.subscription.unsubscribe()
   }, [])
 
-  // Pinned events — [{org, event}], loaded from Supabase for the signed-in
-  // user and kept in sync via optimistic local updates in togglePin (below)
-  // rather than re-fetching after every toggle.
+  // Pinned events — [{org, event, kind}], loaded from Supabase for the
+  // signed-in user and kept in sync via optimistic local updates in
+  // togglePin (below) rather than re-fetching after every toggle. `kind`
+  // ('study' | 'presentation') distinguishes an Objective Tests pin from a
+  // Presentation Events pin sharing the same (org, event) shape — a study
+  // event and a presentation event could in principle share a name, and
+  // they route to entirely different pages (EventView vs WorkbotPage) and
+  // history tables (explain_history vs workbot_grade_history).
   const [pins, setPins] = useState([])
   useEffect(() => {
     if (!user) { setPins([]); return }
-    supabase.from('pinned_events').select('org, event').eq('user_id', user.id)
+    supabase.from('pinned_events').select('org, event, kind').eq('user_id', user.id)
       .then(({ data, error }) => {
         if (error) console.error('[pin] failed to load pinned events:', error.message)
         else if (data) setPins(data)
@@ -2251,23 +2228,23 @@ export default function App() {
     return () => { cancelled = true; clearInterval(id) }
   }, [user])
 
-  function isPinned(o, ev) { return pins.some(p => p.org === o && p.event === ev) }
+  function isPinned(o, ev, kind = 'study') { return pins.some(p => p.org === o && p.event === ev && p.kind === kind) }
 
-  async function togglePin(o, ev) {
+  async function togglePin(o, ev, kind = 'study') {
     if (!user) { handleAccount(); return }
-    if (isPinned(o, ev)) {
-      setPins(prev => prev.filter(p => !(p.org === o && p.event === ev)))
-      const { error } = await supabase.from('pinned_events').delete().eq('user_id', user.id).eq('org', o).eq('event', ev)
+    if (isPinned(o, ev, kind)) {
+      setPins(prev => prev.filter(p => !(p.org === o && p.event === ev && p.kind === kind)))
+      const { error } = await supabase.from('pinned_events').delete().eq('user_id', user.id).eq('org', o).eq('event', ev).eq('kind', kind)
       if (error) {
         console.error('[pin] delete failed:', error.message)
-        setPins(prev => [...prev, { org: o, event: ev }]) // roll back the optimistic update
+        setPins(prev => [...prev, { org: o, event: ev, kind }]) // roll back the optimistic update
       }
     } else {
-      setPins(prev => [...prev, { org: o, event: ev }])
-      const { error } = await supabase.from('pinned_events').insert({ user_id: user.id, org: o, event: ev })
+      setPins(prev => [...prev, { org: o, event: ev, kind }])
+      const { error } = await supabase.from('pinned_events').insert({ user_id: user.id, org: o, event: ev, kind })
       if (error) {
         console.error('[pin] insert failed:', error.message)
-        setPins(prev => prev.filter(p => !(p.org === o && p.event === ev))) // roll back the optimistic update
+        setPins(prev => prev.filter(p => !(p.org === o && p.event === ev && p.kind === kind))) // roll back the optimistic update
       }
     }
   }
@@ -2291,10 +2268,12 @@ export default function App() {
   // Shared by both History surfaces (the full page and the side panel) —
   // resumes a specific saved conversation in the live Explain pane under
   // its own conversation_id, so new messages append to that same thread
-  // instead of starting a fresh one.
-  function handleContinueFromHistory(messages, conversationId) {
+  // instead of starting a fresh one. targetPage lets a conversation resumed
+  // from a presentation event's Explain History come back into
+  // 'workbot-explain' instead of the study-side 'event' page.
+  function handleContinueFromHistory(messages, conversationId, targetPage = 'event') {
     setStudy({ text: '', mode: 'explain', scope: 'general', initialMessages: messages, conversationId })
-    setPage('event')
+    setPage(targetPage)
     setHistoryOpen(true); setHistoryCollapsed(false)
   }
   // The event header's persistent "Ask Anything" button — same general
@@ -2305,6 +2284,26 @@ export default function App() {
     setStudy({ text: '', mode: 'explain', scope: 'general' })
     if (user) { setHistoryOpen(true); setHistoryCollapsed(false) }
   }
+  // Presentation-event counterpart to handleAskAnything — keyed on
+  // workbotEventId (the Workbot's own "which event" state), reusing the
+  // exact same StudyPane/Explain History infrastructure the study side
+  // uses, just pointed at a presentation event's name instead of a study
+  // event's. WorkbotPage passes up whichever event it currently has
+  // selected, since that can diverge from workbotEventId if the student
+  // switched events via the in-page dropdown rather than the sidebar.
+  // Also doubles as "Activate" from a Grade History row: WorkbotPage
+  // passes a seeded initialMessages recap of that submission (plus its row
+  // id as activateId, so StudyPane fully remounts instead of reusing
+  // whatever the previous activation happened to leave mounted) so the
+  // conversation opens already grounded in that specific score instead of
+  // a blank "ask anything."
+  function handleWorkbotAskAnything(ev, initialMessages, activateId) {
+    setWorkbotEventId(ev)
+    setStudy({ text: '', mode: 'explain', scope: 'general', initialMessages, activateId })
+    setPage('workbot-explain'); setNavOpen(false)
+    if (user) { setHistoryOpen(true); setHistoryCollapsed(false) }
+  }
+  function handleWorkbotExplainBack() { setStudy(null); setPage('workbot') }
   // 'light' | 'dark' | 'system' — persisted so a returning visitor keeps
   // their choice instead of re-resolving every load. Defaults to 'dark'
   // (not 'system') because dark is now the app's own brand default, same
@@ -2411,6 +2410,21 @@ export default function App() {
     if (!org) return handleOrgPicker('home')
     setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
   }
+  // Landing's "Start free" CTA — a no-account trial entry point, always.
+  // Unlike handleHome() (the in-app Home button, which correctly resumes a
+  // signed-in user's personal Dashboard), this must NEVER continue an
+  // existing session into that Dashboard — and routing alone isn't enough:
+  // a real session sitting around in the browser (e.g. from earlier sign-in
+  // testing) keeps `user` truthy, which means pins/usage/account email all
+  // still load and leak into what's supposed to be an anonymous trial. So,
+  // same as handleSignIn(), this actually signs the session out — the only
+  // way to guarantee every pins/usage/account useEffect keyed on `user`
+  // resets to empty, not just hide the Dashboard behind different routing.
+  function handleStartGuest() {
+    supabase.auth.signOut()
+    if (!org) return handleOrgPicker('home')
+    setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
+  }
   function handleBrowseAll() { handleOrgPicker('home') }
   // "Sign In" from the landing nav: a full reset back to a signed-out state,
   // then the real login form. If a session was already active (e.g. someone
@@ -2456,7 +2470,7 @@ export default function App() {
   function handleBack()          { setStudy(null) }
 
   if (page === 'landing') {
-    return <Landing onStart={handleHome} onPickEvent={handlePickerOpen} onSignIn={handleSignIn} eventCount={events.length} orgs={orgs} />
+    return <Landing onStart={handleStartGuest} onPickEvent={handlePickerOpen} onSignIn={handleSignIn} eventCount={events.length} orgs={orgs} />
   }
 
   if (page === 'orgpicker') {
@@ -2469,9 +2483,43 @@ export default function App() {
   } else if (page === 'account') {
     content = <AccountPage user={user} recoveryMode={recoveryMode} forceLoginForm={forceLoginForm} onBack={handleAccountBack} />
   } else if (page === 'workbot') {
-    content = <WorkbotPage onBack={handleWorkbotBack} initialEventId={workbotEventId} />
+    content = (
+      <WorkbotPage
+        onBack={handleWorkbotBack} initialEventId={workbotEventId}
+        user={user} org={PRESENTATION_ORG} pins={pins} onTogglePin={togglePin} onAskAnything={handleWorkbotAskAnything}
+      />
+    )
+  } else if (page === 'workbot-explain' && workbotEventId && study) {
+    // Presentation-event counterpart to the study-side explain branch
+    // below — same StudyPane + ExplainHistorySidePanel pairing, keyed on
+    // workbotEventId instead of activeEvent, since a presentation event's
+    // Explain History is stored in the very same explain_history table
+    // (just with a presentation event's name in the `event` column).
+    const workbotPane = (
+      <StudyPane
+        key={study.conversationId || study.activateId || study.text || 'new'}
+        event={workbotEventId} org={PRESENTATION_ORG} objectiveText={study.text} general={study.scope === 'general'}
+        user={user} initialMessages={study.initialMessages} conversationId={study.conversationId} onBack={handleWorkbotExplainBack}
+      />
+    )
+    content = historyOpen && user ? (
+      <div className="event-layout explain-with-history" style={{ gridTemplateColumns: `1fr ${historyCollapsed ? '44px' : '300px'}` }}>
+        {workbotPane}
+        <ExplainHistorySidePanel
+          org={PRESENTATION_ORG} event={workbotEventId} user={user}
+          collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+          onContinue={(messages, conversationId) => handleContinueFromHistory(messages, conversationId, 'workbot-explain')}
+          activeConversationId={study.conversationId}
+        />
+      </div>
+    ) : workbotPane
   } else if (page === 'dashboard' && user) {
-    content = <Dashboard user={user} pins={pins} usageDays={usageDays} onSelectPinned={handleSelectPinnedFromDashboard} onBrowseAll={handleBrowseAll} />
+    content = (
+      <Dashboard
+        user={user} pins={pins} usageDays={usageDays}
+        onSelectPinned={handleSelectPinnedFromDashboard} onOpenWorkbot={handleWorkbot} onBrowseAll={handleBrowseAll}
+      />
+    )
   } else if (page === 'explain-history' && activeEvent && user) {
     content = <ExplainHistoryPage org={org} event={activeEvent} user={user} onBack={handleHistoryBack} onContinue={handleContinueFromHistory} />
   } else if (org && !eventsLoaded) {
@@ -2483,8 +2531,6 @@ export default function App() {
       content = <QuizPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} difficulty={study.diff} scope={study.scope} objectives={study.objectives} onBack={handleBack} />
     } else if (study.mode === 'flashcard') {
       content = <FlashcardPane event={activeEvent} org={org} objectiveText={study.text} count={study.count} onBack={handleBack} />
-    } else if (study.mode === 'notes') {
-      content = <NotesPane event={activeEvent} org={org} objectiveText={study.text} objectives={study.objectives} title={study.title} user={user} onBack={handleBack} />
     } else {
       // Keyed on whatever uniquely identifies THIS chat session, so React
       // fully remounts StudyPane (fresh internal `messages` state, fresh
@@ -2527,7 +2573,7 @@ export default function App() {
       ) : pane
     }
   } else if (page === 'home') {
-    content = <HomePage onStart={handlePickerOpen} />
+    content = <HomePage onStart={handlePickerOpen} org={org} />
   } else if (page === 'picker') {
     content = <EventPickerPage events={events} org={org} onSelect={handleSelectEvent} onBack={handleHome} />
   } else if (page === 'event' && activeEvent) {
@@ -2538,6 +2584,7 @@ export default function App() {
         onAskAnything={handleAskAnything}
         showHistory={historyOpen} historyCollapsed={historyCollapsed} onToggleHistoryCollapse={() => setHistoryCollapsed(c => !c)}
         onContinueHistory={handleContinueFromHistory}
+        onNeedAccount={handleAccount}
       />
     )
   } else {
@@ -2574,6 +2621,7 @@ export default function App() {
         onTogglePin={togglePin}
         onSelectPinned={handleSelectPinned}
         onOpenHistory={handleOpenHistory}
+        onWorkbotAskAnything={handleWorkbotAskAnything}
         open={navOpen}
         collapsed={sidebarCollapsed}
         onToggleCollapsed={() => setSidebarCollapsed(c => !c)}

@@ -6,10 +6,15 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { execFileSync } from 'child_process';
 import { listEvents as listPresentationEvents } from './services/scriptGrader.js';
-import { runWorkbot } from './services/presentationOrchestrator.js';
+import { runWorkbot, mergeQAResult } from './services/presentationOrchestrator.js';
+import { buildComparison } from './services/progressComparison.js';
+import { generateQuestions, scoreAnswers } from './services/qaEngine.js';
+import { transcribeAudio } from './services/audioBot.js';
 import { inputOptionsFor } from './services/tabConfig.js';
 import { listNotYetGradableEvents, notReadyInputOptionsFor, tierFor } from './services/eventCatalog.js';
 import { extFromFilename } from './services/downloader.js';
+import { findEvent as findPresentationEvent, allCriteria } from './services/rubrics.js';
+import { PRESENTATION_EVENT_DESCRIPTIONS } from './services/presentationEventDescriptions.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -36,6 +41,19 @@ const REPO_ROOT        = path.join(__dirname, '..');
 const SAFE_SLUG_RE = /^[a-zA-Z0-9_-]+$/;
 function isSafeSlug(s) {
   return typeof s === 'string' && SAFE_SLUG_RE.test(s);
+}
+
+// Presentation event names ("Business Plan", "Public Speaking", ...) are
+// real display names with spaces/punctuation, not path-safe slugs — they
+// never touch the filesystem via getOutline()/getExtras() below, so they're
+// validated against this fixed whitelist (all 30 official events) instead
+// of SAFE_SLUG_RE. Membership in a finite known list is what actually keeps
+// this safe, not the string shape — an attacker-supplied value can't match
+// one of these 30 exact names, so it falls through to the normal slug check.
+function isPresentationEventName(s) {
+  if (typeof s !== 'string') return false;
+  return listPresentationEvents().some(e => e.event === s)
+    || listNotYetGradableEvents().some(e => e.event === s);
 }
 
 // Read generation rules once at startup so every prompt gets them
@@ -648,11 +666,45 @@ function getExtras(org, event) {
     .join('\n\n');
 }
 
+// Presentation events (Business Plan, Public Speaking, ...) have no
+// study-materials/ folder or event-outline.txt — their source of truth is
+// the official rating sheet, which lives in one of two places depending on
+// whether Vye's graders have been built for it yet: the 15 build-ready
+// events are in presentation_rubrics.json (full deliverable + rating-sheet
+// detail via services/rubrics.js); the other 15 only have the flatter
+// gradable_criteria summary eventCatalog.js already exposes for their
+// "coming soon" grading banner. Either way, reformats it into outline-shaped
+// text (deliverable requirements + every graded criterion and its point
+// value) so the same Explain/chat pipeline built for study events' outlines
+// can ground a presentation event's Ask Anything the same way, without the
+// coach ever going in blind.
+function getPresentationOutline(event) {
+  const lines = [`${event} — official FBLA rating sheet`, ''];
+  const buildReady = listPresentationEvents().some(e => e.event === event);
+  if (buildReady) {
+    const ev = findPresentationEvent(event);
+    const d = ev.deliverable || {};
+    if (d.type) lines.push(`Deliverable: ${d.type}`);
+    if (d.page_limit) lines.push(`Page limit: ${d.page_limit} (${d.paper || 'standard paper'})`);
+    if (d.presentation_time_min) lines.push(`Presentation time: ${d.presentation_time_min} min` + (d.qa_time_min ? ` + ${d.qa_time_min} min Q&A` : ''));
+    if (d.required_sections?.length) lines.push(`Required sections: ${d.required_sections.join(', ')}`);
+    if (d.prohibited?.length) lines.push(`Prohibited: ${d.prohibited.join(', ')}`);
+    lines.push('', 'Graded criteria:');
+    for (const c of allCriteria(ev)) lines.push(`- [${c.sheet}] ${c.criterion} (${c.max} pts, ${c.category})`);
+  } else {
+    const ev = listNotYetGradableEvents().find(e => e.event === event);
+    lines.push(`Tier: ${ev?.tier || 'unknown'}`, '', 'Graded criteria:');
+    for (const c of ev?.gradable_criteria || []) lines.push(`- ${c.criterion} (${c.max} pts, ${c.category})`);
+  }
+  return lines.join('\n');
+}
+
 function buildSystemPrompt(org, event, objectiveText, mode) {
   const botRules = fs.readFileSync(BOT_RULES_PATH, 'utf8');
-  const outline  = getOutline(org, event);
+  const presentationEvent = isPresentationEventName(event);
+  const outline  = presentationEvent ? getPresentationOutline(event) : getOutline(org, event);
   const section  = extractRelevantSection(outline, objectiveText);
-  const extras   = getExtras(org, event);
+  const extras   = presentationEvent ? '' : getExtras(org, event);
   return `${botRules}
 
 --- RELEVANT OUTLINE SECTION ---
@@ -1254,10 +1306,12 @@ app.get('/api/presentation-events', (req, res) => {
     tier: tierFor(e.event),
     build_ready: true,
     input_options: inputOptionsFor(e.event),
+    description: PRESENTATION_EVENT_DESCRIPTIONS[e.event] || '',
   }));
   const notReady = listNotYetGradableEvents().map(e => ({
     ...e,
     input_options: notReadyInputOptionsFor(e.event),
+    description: PRESENTATION_EVENT_DESCRIPTIONS[e.event] || '',
   }));
   res.json([...ready, ...notReady]);
 });
@@ -1324,10 +1378,89 @@ app.post('/api/workbot/grade', workbotUpload.single('file'), async (req, res) =>
   }
 });
 
+// Progress comparison (BUILD-BRIEF-08) — diffs two already-graded scorecards
+// the client already has in hand (the just-inserted attempt, and the
+// previous row it read back from its own workbot_grade_history query). No
+// Supabase access happens here — the client owns fetching its own history,
+// same as everywhere else in this app; this route only owns the diff logic
+// and the one LLM phrasing call, keeping the API key server-side.
+app.post('/api/workbot/compare', async (req, res) => {
+  const { previous, current, event } = req.body || {};
+  if (!previous?.criteria || !previous?.totals || !current?.criteria || !current?.totals) {
+    return res.status(400).json({ error: 'previous and current must both be full scorecard results' });
+  }
+  try {
+    const comparison = await buildComparison(previous, current, event);
+    res.json({ comparison });
+  } catch (err) {
+    console.error('Progress comparison error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Q&A Engine (BUILD-BRIEF-06) — generates judge-style questions grounded in
+// the student's own submission and their weakest graded criteria, then
+// scores their answers and unlocks the event's `qa` criterion. Question-
+// history dedup is entirely client-owned (a new qa_question_history table
+// in Supabase, same pattern as workbot_grade_history) — these routes only
+// own the LLM calls and the merge-back-into-the-scorecard step.
+app.post('/api/workbot/qa/generate', async (req, res) => {
+  const { eventId, submissionText, criteria, recentQuestions } = req.body || {};
+  if (typeof eventId !== 'string' || typeof submissionText !== 'string' || !Array.isArray(criteria)) {
+    return res.status(400).json({ error: 'eventId, submissionText, and criteria are required' });
+  }
+  const event = findPresentationEvent(eventId);
+  if (!event) return res.status(400).json({ error: 'Unknown eventId' });
+  try {
+    const questions = await generateQuestions(event, submissionText, criteria, Array.isArray(recentQuestions) ? recentQuestions : []);
+    res.json({ questions });
+  } catch (err) {
+    console.error('Q&A generate error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Transcribes a single short Q&A answer — reuses audioBot.js's own
+// transcribeAudio() directly rather than its full grade() (no dependency on
+// rubric criteria or delivery-scoring machinery, already decoupled cleanly
+// for exactly this reuse). Reuses the same upload middleware/size limit as
+// the main grade route since this is the same kind of file.
+app.post('/api/workbot/qa/transcribe', workbotUpload.single('file'), async (req, res) => {
+  if (!req.file) return res.status(400).json({ error: 'No audio file provided' });
+  try {
+    const { transcript } = await transcribeAudio(req.file.buffer, req.file.originalname, req.file.mimetype);
+    res.json({ transcript });
+  } catch (err) {
+    console.error('Q&A transcribe error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/workbot/qa/score', async (req, res) => {
+  const { eventId, previousResult, submissionText, exchanges } = req.body || {};
+  if (typeof eventId !== 'string' || !previousResult?.criteria || !Array.isArray(exchanges)) {
+    return res.status(400).json({ error: 'eventId, previousResult, and exchanges are required' });
+  }
+  const event = findPresentationEvent(eventId);
+  if (!event) return res.status(400).json({ error: 'Unknown eventId' });
+  const qaCriterion = allCriteria(event).find(c => c.category === 'qa');
+  if (!qaCriterion) return res.status(400).json({ error: `"${eventId}" has no qa criterion` });
+  try {
+    const qaResult = await scoreAnswers(event, qaCriterion, submissionText || '', exchanges);
+    const result = await mergeQAResult(previousResult, qaResult);
+    res.json({ result, per_question: qaResult.per_question });
+  } catch (err) {
+    console.error('Q&A score error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Chat / Explain — SSE streaming
 app.post('/api/chat', async (req, res) => {
   const { messages, org, event, objective, mode } = req.body;
-  if (!isSafeSlug(org) || !isSafeSlug(event)) return res.status(400).json({ error: 'Invalid org or event' });
+  if (!isSafeSlug(org) || (!isSafeSlug(event) && !isPresentationEventName(event))) {
+    return res.status(400).json({ error: 'Invalid org or event' });
+  }
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Connection', 'keep-alive');

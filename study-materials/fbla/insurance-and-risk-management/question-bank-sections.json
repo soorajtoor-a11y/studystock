@@ -1,0 +1,304 @@
+{
+ "Risk Management": [
+  {
+   "question": "The systematic process of identifying potential hazards, evaluating their likelihood and impact, selecting appropriate control measures, implementing those measures, and periodically reviewing their effectiveness is known as ___",
+   "options": [
+    "Risk financing",
+    "Risk mapping",
+    "Enterprise risk management",
+    "The risk management model"
+   ],
+   "correct_index": 3,
+   "explanation": "The risk management model is the foundational framework that includes five core steps: identify hazards, assess and prioritize risks, choose controls, implement controls, and monitor/review outcomes. This systematic approach ensures organizations address risks comprehensively and continuously. The other options describe related but narrower concepts—risk financing addresses how to pay for losses, ERM is a broader organizational philosophy, and risk mapping is one tool within the model.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A company maintains an internal reserve fund to cover the cost of employee injury claims rather than purchasing workers' compensation insurance. This approach to managing risk is called ___",
+   "options": [
+    "Risk avoidance",
+    "Risk mitigation",
+    "Risk retention",
+    "Risk transfer"
+   ],
+   "correct_index": 2,
+   "explanation": "Risk retention means the organization deliberately keeps the risk and sets aside funds or uses internal resources to cover potential losses, rather than transferring that risk to an insurer. In this case, the company is self-insuring by maintaining a reserve—they are accepting financial responsibility for claims. Risk transfer would mean buying insurance; risk avoidance would mean eliminating the activity; risk mitigation would mean reducing the frequency or severity of losses.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be typical components included in a comprehensive risk management report?",
+   "options": [
+    "Individual employee medical histories, competitive intelligence, and customer service feedback",
+    "Executive summary of identified risks, control effectiveness metrics, and recommendations for resource allocation",
+    "Historical loss data, regulatory compliance status, and insurance policy renewal dates",
+    "Employee complaint logs, departmental budget allocations, and executive compensation structures"
+   ],
+   "correct_index": 1,
+   "explanation": "A comprehensive risk management report synthesizes the organization's risk landscape by summarizing what risks have been identified, how well existing controls are performing, and what actions management should consider—including how to direct resources toward the highest-priority exposures. This information is actionable and directly supports governance. The other options include information that may be useful for HR, finance, or strategy purposes but do not form the core substance of a risk management report; option D includes confidential personal information that would never be included in such a report.",
+   "type": "which_of_following",
+   "objective_num": 12,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A risk financing transfer method in which an organization contracts with an insurance company to cover specified losses is called ___",
+   "options": [
+    "insurance transfer",
+    "loss prevention",
+    "risk retention",
+    "self-insurance"
+   ],
+   "correct_index": 0,
+   "explanation": "Insurance transfer is the process of shifting financial responsibility for losses to an insurance carrier through a contract. This differs from risk retention, where the organization keeps the financial burden internally, and from loss prevention, which is a control tactic rather than a financing method.",
+   "type": "definition_recall",
+   "objective_num": 11,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of gathering, analyzing, and documenting key data about an organization's identified risks, control measures, their effectiveness, and suggested improvements makes up ___",
+   "options": [
+    "risk forecasting",
+    "enterprise risk evaluation",
+    "risk profiling",
+    "risk management reporting"
+   ],
+   "correct_index": 3,
+   "explanation": "Risk management reporting is the formal documentation and communication of risk information, including what risks exist, how controls are performing, and what actions are recommended. While risk profiling organizes risks, and forecasting predicts future risk events, reporting specifically refers to the overall communication and documentation of risk data.",
+   "type": "definition_recall",
+   "objective_num": 12,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of determining which identified risks pose the greatest threat to an organization by evaluating their probability and potential impact is called ___",
+   "options": [
+    "risk mapping",
+    "hazard identification",
+    "risk assessment and prioritization",
+    "control selection"
+   ],
+   "correct_index": 2,
+   "explanation": "Risk assessment and prioritization is the step in the risk management model where identified hazards are evaluated for likelihood and severity to determine which require immediate attention. This follows hazard identification and precedes the selection of control measures. Mapping visualizes risk relationships; hazard identification is the initial discovery step.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic coordination of people, processes, and tools to identify, evaluate, treat, and monitor an organization's risks while communicating findings to stakeholders describes ___",
+   "options": [
+    "Business continuity planning",
+    "Hazard assessment",
+    "Risk financing",
+    "Enterprise Risk Management"
+   ],
+   "correct_index": 3,
+   "explanation": "Enterprise Risk Management (ERM) is the holistic, cross-organizational approach that integrates risk identification, evaluation, treatment, monitoring, and communication. Business continuity focuses on response after an incident; risk financing addresses how to pay for losses; hazard assessment is just one early step in a broader process.",
+   "type": "concept_completion",
+   "objective_num": 2,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be valid risk control strategies within the risk management model?",
+   "options": [
+    "Monitoring only high-impact risks, postponing corrective actions indefinitely, and refusing to document findings",
+    "Implementing controls only after losses occur, avoiding any baseline hazard assessment, and declining to review effectiveness",
+    "Avoiding the activity entirely, reducing the likelihood of occurrence, and enabling controlled exposure with safeguards in place",
+    "Transferring all risk to an insurance company, ignoring low-probability hazards, and eliminating employee training"
+   ],
+   "correct_index": 2,
+   "explanation": "Risk control strategies include prevention (avoiding an activity), reduction (lowering likelihood), and enablement with safeguards (allowing controlled exposure with protections)—all are legitimate tactical choices. The other options contain invalid approaches: ignoring hazards, skipping assessment, implementing only after loss, and refusing to monitor are contrary to sound risk management practice.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of systematically identifying sources of potential loss or harm within an organization's operations is called ___",
+   "options": [
+    "hazard identification",
+    "loss prevention",
+    "risk financing",
+    "risk prioritization"
+   ],
+   "correct_index": 0,
+   "explanation": "Hazard identification is the first step in the risk management model, where organizations discover and catalog potential sources of loss—equipment failures, natural disasters, human error, or operational gaps. This precedes assessment and prioritization; without identifying what could go wrong, no control measures can be designed.",
+   "type": "definition_recall",
+   "objective_num": 1,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An organization's ability to anticipate market shifts, competitive threats, and operational disruptions, then position itself to capitalize on those insights or avoid their harm, is known as ___",
+   "options": [
+    "contingency planning",
+    "risk-based value creation",
+    "loss forecasting",
+    "risk mitigation"
+   ],
+   "correct_index": 1,
+   "explanation": "Risk-based value creation recognizes that understanding and strategically managing risks allows organizations to make better decisions, allocate resources more efficiently, and even turn exposures into competitive advantages. This reflects the modern view that risk management is not merely defensive but a source of strategic value.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The coordination of protective actions designed to minimize the probability that a risk event will occur, reduce the magnitude of potential loss if it does occur, and prepare the organization to respond effectively when a loss is unavoidable is the core function of ___",
+   "options": [
+    "risk communication and stakeholder reporting",
+    "loss forecasting and reserve modeling",
+    "enterprise risk governance oversight",
+    "risk control and mitigation strategy"
+   ],
+   "correct_index": 3,
+   "explanation": "Risk control and mitigation strategy encompasses prevention (stopping an event before it happens), reduction (limiting its impact), and preparedness (readying the organization to respond). These three pillars form the tactical backbone of the risk management model. Reporting, governance, and forecasting are separate functions that support or complement control but do not define it.",
+   "type": "concept_completion",
+   "objective_num": 9,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The process of identifying and documenting potential sources of loss or harm within an organization's operations, then systematically evaluating how likely each is to occur and what financial impact it would cause, is called ___",
+   "options": [
+    "Enterprise risk communication",
+    "Risk mapping and risk profiling",
+    "Loss prevention analysis",
+    "Risk control implementation"
+   ],
+   "correct_index": 1,
+   "explanation": "Risk mapping identifies sources of loss and their characteristics; risk profiling evaluates the probability and potential financial impact of each identified risk. This two-part process goes beyond simple identification to include quantified assessment of likelihood and magnitude, distinguishing it from broader risk control or communication activities.",
+   "type": "definition_recall",
+   "objective_num": 7,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic development of written procedures that specify how an organization will respond in real-time when a serious operational disruption occurs—including designation of emergency roles, communication chains, recovery timelines, and the criteria for activating each response protocol—is known as ___",
+   "options": [
+    "Business continuity planning",
+    "Risk assessment documentation",
+    "Regulatory compliance reporting",
+    "Loss control benchmarking"
+   ],
+   "correct_index": 0,
+   "explanation": "Business continuity planning creates detailed, actionable procedures for maintaining or rapidly restoring critical operations when a disruption strikes. It specifies roles, communication sequences, and activation triggers. This is distinct from risk assessment (which identifies and evaluates risks) and compliance reporting (which documents adherence to external standards).",
+   "type": "definition_recall",
+   "objective_num": 10,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "An organization determines the total financial impact of risk by calculating the sum of all potential losses weighted by their probability of occurrence, plus the ongoing cost of control measures needed to manage those risks. This combined figure—both realized and prevented losses—represents what aspect of risk management?",
+   "options": [
+    "Enterprise risk weighting",
+    "Loss mitigation efficiency",
+    "The cost of risk",
+    "The risk premium reserve"
+   ],
+   "correct_index": 2,
+   "explanation": "The cost of risk encompasses the full financial picture: the expected value of losses (probability × impact for each risk) plus the actual dollars spent on prevention, reduction, and control measures. It shows the true economic burden risk places on the organization. This holistic view is essential for justifying risk management spending and prioritizing resource allocation.",
+   "type": "concept_completion",
+   "objective_num": 8,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all be recognized methods for addressing identified risks within a comprehensive risk management framework?",
+   "options": [
+    "Accepting the risk without controls, postponing the decision until next fiscal year, and assigning the risk to a subordinate",
+    "Avoiding the activity, reducing the likelihood through preventive controls, and implementing safeguards to enable controlled exposure",
+    "Eliminating the activity entirely, purchasing insurance to transfer the loss, and segregating business units",
+    "Documenting the risk in the report, monitoring competitor responses, and requesting additional budget for unrelated initiatives"
+   ],
+   "correct_index": 1,
+   "explanation": "The three primary risk control tactics—avoidance (eliminating the activity), prevention/reduction (lowering occurrence likelihood), and enablement (proceeding with protective safeguards)—represent genuine management choices. Option A conflates avoidance with insurance transfer (a financing tool, not a control tactic) and includes unit segregation (an operational decision, not a control theory). Option B includes delay and delegation, which are not valid risk management responses. Option D confuses risk management (controlling the risk itself) with risk communication and budgeting.",
+   "type": "which_of_following",
+   "objective_num": 9,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "A manufacturing company projects that equipment failures will occur in 8% of production runs over the next year, and each failure will cost approximately $12,000 in lost output and repairs. To forecast the company's total financial exposure from equipment failures, the company should ___",
+   "options": [
+    "multiply the failure rate by the per-failure cost and adjust for inflation",
+    "subtract the failure rate from 100% and multiply by the per-failure cost",
+    "multiply the probability of failure by the expected loss per failure to estimate expected loss",
+    "add the failure rate and per-failure cost together and divide by the number of production runs"
+   ],
+   "correct_index": 2,
+   "explanation": "Creating a valid risk forecast requires calculating expected loss as probability × impact. Here, 0.08 × $12,000 = $960,000 expected annual loss. This single-step calculation is the foundation of quantitative risk forecasting; it allows the company to decide whether prevention controls or insurance transfers are economically justified. The other options misapply probability and cost data.",
+   "type": "scenario_judgment",
+   "objective_num": 6,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The systematic identification and documentation of all potential sources of financial loss across an organization—including the likelihood that each loss will occur within a defined time period and the estimated magnitude of that loss—combined with ongoing analysis of how effectively implemented control measures reduce those exposures, makes up the broader process known as ___",
+   "options": [
+    "Insurance underwriting",
+    "Compliance auditing",
+    "Emergency response planning",
+    "Risk forecasting and risk measurement"
+   ],
+   "correct_index": 3,
+   "explanation": "Risk forecasting and risk measurement encompass identifying sources of loss, estimating their probability and financial impact, and continuously evaluating how well control measures are working to reduce those exposures. This process produces the data and insights that drive prioritization and resource decisions throughout the organization's risk management program.",
+   "type": "concept_completion",
+   "objective_num": 6,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all represent valid applications of risk profiling within an organization's risk management program?",
+   "options": [
+    "Documenting the characteristics, frequency, severity, and control status of each identified risk and using that profile to guide resource allocation",
+    "Comparing actual loss experience against forecasted loss amounts and adjusting control strategies based on variances",
+    "Establishing a quantitative baseline of the organization's total risk appetite and measuring all identified risks against that threshold",
+    "Calculating the expected monetary value of a single risk event and determining whether to transfer or retain that exposure"
+   ],
+   "correct_index": 0,
+   "explanation": "Risk profiling is the detailed documentation and characterization of individual risks—their sources, likelihood, impact, existing controls, and status—to inform prioritization and resource decisions. While the other options describe legitimate risk management activities, they are not core applications of profiling; option A is monitoring/review, option B is risk financing analysis, and option D is risk appetite setting.",
+   "type": "which_of_following",
+   "objective_num": 7,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "Which of the following would all represent valid outputs or applications of risk forecasting within a risk management program?",
+   "options": [
+    "Claims payment processing, worker compensation premium rates set by insurers, and third-party liability settlement amounts",
+    "Marketing strategies based on competitor risk exposure, pricing adjustments during low-risk quarters, and discontinuation of products with historical claims",
+    "Budget allocation for control measures, scenario planning for disruption preparedness, and quantified loss projections for insurance purchase decisions",
+    "Employee safety training schedules, regulatory compliance audit timelines, and vendor selection criteria"
+   ],
+   "correct_index": 2,
+   "explanation": "Risk forecasting produces quantified projections of future losses and probabilities, which directly inform budget planning, scenario development, and insurance purchasing decisions. Options B and C reflect operational activities or insurer decisions rather than outputs of risk forecasting, and Option D conflates risk exposure with market strategy inappropriately.",
+   "type": "which_of_following",
+   "objective_num": 6,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  },
+  {
+   "question": "The comprehensive strategy of positioning an organization to recognize emerging competitive threats, shifts in market demand, and operational vulnerabilities—then using that foresight to either capitalize on opportunities or shield the organization from harm—describes how risk management contributes to ___",
+   "options": [
+    "hazard elimination",
+    "strategic value creation",
+    "loss financing",
+    "control measure selection"
+   ],
+   "correct_index": 1,
+   "explanation": "Risk management's ability to detect and respond to both threats and opportunities before they fully emerge creates competitive and strategic advantage—a form of organizational value. This goes beyond simple loss prevention (hazard elimination, control selection) and financing mechanisms. The organization leverages risk insights as a forward-looking business asset, not merely as a cost-containment or compliance function.",
+   "type": "concept_completion",
+   "objective_num": 4,
+   "knowledge_area": "Risk Management",
+   "difficulty": "hard"
+  }
+ ]
+}

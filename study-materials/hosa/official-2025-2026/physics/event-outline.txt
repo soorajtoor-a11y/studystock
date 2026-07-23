@@ -1,0 +1,39 @@
+HOSA STUDY OUTLINE — PHYSICS (2025–2026)
+Source: Official HOSA NGL/Cengage Academic Testing Center Guidelines 2025-2026. Test plan (content-area %) and reference are OFFICIAL. Item counts = official % applied to the 50-question test. Objectives are representative, aligned to each official area.
+Format: 50 multiple-choice questions / 60 minutes (1 tiebreaker). Type: ATC (Academic Testing Center) textbook test.
+============================================================
+
+EVENT DESCRIPTION
+Mechanics, waves, electricity, magnetism, optics, and thermodynamics.
+
+OFFICIAL REFERENCES
+- Serway & Vuille. College Physics, AP Edition, 12th ed. (ISBN 9780357976425). Cengage/NGL. (Event listed as 'Physics College'.)
+
+KNOWLEDGE AREAS AND OBJECTIVES
+
+A. Work, Energy & Particle Dynamics (5 items — 10%)
+1. Apply velocity, acceleration, force, and energy concepts.
+
+B. Waves, Sound & Thermodynamics Laws (5 items — 10%)
+1. Describe wave and sound behavior and thermodynamic laws.
+
+C. Fluid Mechanics & Buoyancy (2 items — 4%)
+1. Explain fluid pressure and buoyancy.
+
+D. Electricity (current, resistance, circuits, fields) (10 items — 20%)
+1. Analyze current, resistance, circuits, and electric fields.
+
+E. Light Properties (wave vs. particle) (6 items — 12%)
+1. Explain the wave and particle models of light.
+
+F. Optics, Images & Focal Points (2 items — 4%)
+1. Describe image formation and focal points.
+
+G. Thermodynamics Laws (5 items — 10%)
+1. State and apply the laws of thermodynamics.
+
+H. Magnetism & Inductance (5 items — 10%)
+1. Explain magnetism and electromagnetic induction.
+
+I. Basic Physics Mathematics (10 items — 20%)
+1. Apply the mathematics used in physics problem-solving.

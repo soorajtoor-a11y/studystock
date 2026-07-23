@@ -7,51 +7,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+/* Editorial landing-page tokens — @theme only takes effect inside
+   Tailwind's own processed chain, so this has to be imported here rather
+   than as a separate top-level stylesheet in main.jsx. The old Tailwind
+   landing page's brand-bridge tokens (bg-brand, text-ink, font-display,
+   the marquee/float keyframes) lived here before; they're gone now along
+   with the landing components that used them — this is a clean rebuild,
+   not a second system layered on top. */
+@import "./editorial.css";
+/* "The Examination" — dark system proposed as editorial.css's replacement,
+   namespaced under exam-* so it can coexist during review without
+   silently overriding the still-live approved page (see exam.css). */
+@import "./exam.css";
 
 @custom-variant dark (&:is(.dark *));
-
-/* ── Brand bridge ─────────────────────────────────────────────────────
-   The landing page is rebuilt entirely in Tailwind utilities, but the
-   palette/spacing/type scale it draws from is still the ONE system
-   defined in index.css (--accent, --text, --bg, --font-head, etc.), not
-   a second Tailwind-only palette. These tokens just expose that existing
-   system as real Tailwind utility classes (bg-brand, text-ink, font-display,
-   …) so "one unified system" means one source of truth, reused, not two
-   systems that happen to look similar. */
-@theme inline {
-  --color-brand: var(--accent);
-  --color-brand-hover: var(--accent-hover);
-  --color-brand-light: var(--accent-light);
-  --color-ink: var(--text);
-  --color-ink-2: var(--text-2);
-  --color-ink-3: var(--text-3);
-  --color-ink-4: var(--text-4);
-  --color-paper: var(--bg);
-  --color-surface: var(--surface);
-  --color-line: var(--border);
-  --color-line-soft: var(--border-s);
-  --color-tint: var(--tint);
-  --color-tint-line: var(--tint-border);
-  --color-good: var(--green);
-  --color-good-bg: var(--green-bg);
-  --color-bad: var(--red);
-  --color-bad-bg: var(--red-bg);
-  --font-display: var(--font-head);
-  --font-text: var(--font-body);
-  --font-code: var(--font-mono);
-
-  --animate-marquee: marquee 220s linear infinite;
-  --animate-float: float 6s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-@keyframes float {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-10px); }
-}
 
 :root {
   --radius: 0.625rem;

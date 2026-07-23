@@ -59,6 +59,15 @@
   to   { transform: translateX(-33.333%); }
 }
 
+@keyframes exam-glare-sweep {
+  from { transform: translateX(-140%) skewX(-12deg); }
+  to   { transform: translateX(260%) skewX(-12deg); }
+}
+
+.glass-plaque-glare {
+  animation: exam-glare-sweep 4.5s ease-in-out infinite;
+}
+
 /* Fraunces at display scale — high optical size, WONK 0 (confident, not
    quirky), a little SOFT for warmth without tipping into the "trattoria"
    territory the earlier paper version was corrected away from. */

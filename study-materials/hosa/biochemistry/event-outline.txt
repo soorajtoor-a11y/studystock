@@ -1,86 +1,33 @@
 HOSA STUDY OUTLINE — BIOCHEMISTRY (2025–2026)
-Source: HOSA / NGL Academic Testing Center event; content follows a standard
-introductory biochemistry curriculum.
-Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
-Item counts per topic area are proportional estimates — confirm against the
-current event guideline.
+Source: Official HOSA NGL/Cengage Academic Testing Center Guidelines 2025-2026. Test plan (content-area %) and reference are OFFICIAL. Item counts = official % applied to the 50-question test. Objectives are representative, aligned to each official area.
+Format: 50 multiple-choice questions / 60 minutes (1 tiebreaker). Type: ATC (Academic Testing Center) textbook test.
 ============================================================
 
 EVENT DESCRIPTION
-Chemical structure and function of biological molecules, enzyme kinetics,
-metabolic pathways and bioenergetics, and the molecular basis of gene
-expression, at an introductory college level.
+Biomolecules, membranes, and metabolism.
+
+OFFICIAL REFERENCES
+- Bettelheim et al. Introduction to General, Organic and Biochemistry, 12th ed. (ISBN 9781337571357). Cengage/NGL.
 
 KNOWLEDGE AREAS AND OBJECTIVES
 
-A. Water, pH & Buffers (4 items)
-1. Explain the properties of water relevant to biological systems (polarity, hydrogen bonding).
-2. Calculate pH and pOH from hydrogen ion concentration.
-3. Apply the Henderson-Hasselbalch equation to a buffer system.
-4. Explain the role of buffers (e.g., the bicarbonate buffer system) in maintaining physiological pH.
+A. Water Characteristics (5 items — 10%)
+1. Explain the properties of water important to biochemistry.
 
-B. Amino Acids & Protein Structure (7 items)
-1. Identify the general structure of an amino acid and classify side chains (nonpolar, polar, acidic, basic).
-2. Describe peptide bond formation and the primary structure of a protein.
-3. Differentiate secondary structures (alpha helix, beta sheet).
-4. Describe tertiary and quaternary protein structure and the bonds that stabilize them.
-5. Explain protein denaturation and the factors that cause it (heat, pH, urea).
-6. Relate protein structure to function (e.g., hemoglobin vs. myoglobin).
-7. Describe basic methods for determining a protein's primary sequence.
+B. Proteins, Amino Acids, Peptides & Enzymes (10 items — 20%)
+1. Describe protein structure and enzyme function.
 
-C. Enzymes & Enzyme Kinetics (6 items)
-1. Explain enzyme specificity and the induced-fit model.
-2. Interpret a Michaelis-Menten curve and define Km and Vmax.
-3. Differentiate competitive, noncompetitive, and uncompetitive inhibition.
-4. Interpret a Lineweaver-Burk plot.
-5. Explain the effect of temperature and pH on enzyme activity.
-6. Describe enzyme cofactors and coenzymes (e.g., vitamins as coenzyme precursors).
+C. Carbohydrate Structures & Functions (10 items — 20%)
+1. Describe carbohydrate structure and function.
 
-D. Carbohydrates (4 items)
-1. Differentiate monosaccharides, disaccharides, and polysaccharides.
-2. Identify glycosidic bond formation and hydrolysis.
-3. Differentiate the structure and function of starch, glycogen, and cellulose.
-4. Describe the structural difference between glucose, fructose, and galactose.
+D. Nucleic Acids (DNA/RNA) & Genetics (10 items — 20%)
+1. Explain nucleic acid structure and the flow of genetic information.
 
-E. Lipids (4 items)
-1. Differentiate saturated, unsaturated, and trans fatty acids.
-2. Describe triglyceride structure and formation (ester bonds).
-3. Describe phospholipid structure and its role in membrane bilayers.
-4. Describe cholesterol structure and its role in membranes and steroid hormone synthesis.
+E. Lipid Structure & Functions (5 items — 10%)
+1. Describe lipid structure and function.
 
-F. Nucleic Acids (5 items)
-1. Describe the structure of a nucleotide (sugar, phosphate, nitrogenous base).
-2. Differentiate purines and pyrimidines.
-3. Describe the double-helix structure of DNA and complementary base pairing.
-4. Differentiate DNA and RNA in structure and function.
-5. Describe DNA replication (semiconservative model, key enzymes: helicase, DNA polymerase, ligase).
+F. Biological Membranes & Cell Transport (3 items — 6%)
+1. Explain membrane structure and transport.
 
-G. Gene Expression (5 items)
-1. Describe transcription (RNA polymerase, mRNA synthesis, promoter).
-2. Describe translation (ribosomes, tRNA, codons, start/stop codons).
-3. Explain the genetic code and its properties (redundancy, universality).
-4. Describe post-translational modification of proteins.
-5. Explain basic mutation types (point, insertion, deletion) and their effect on protein.
-
-H. Bioenergetics & ATP (4 items)
-1. Explain the role of ATP as the energy currency of the cell.
-2. Describe exergonic and endergonic reactions and coupled reactions.
-3. Explain oxidation-reduction (redox) reactions in metabolism.
-4. Describe the role of NAD+/NADH and FAD/FADH2 as electron carriers.
-
-I. Glycolysis & Fermentation (4 items)
-1. Describe the net ATP and NADH yield of glycolysis.
-2. Identify the substrate and products of glycolysis (glucose to pyruvate).
-3. Explain the regulation of glycolysis (key enzyme: phosphofructokinase).
-4. Differentiate lactic acid fermentation and alcoholic fermentation.
-
-J. Citric Acid Cycle & Oxidative Phosphorylation (4 items)
-1. Describe the entry of pyruvate into the mitochondrion (pyruvate dehydrogenase, acetyl-CoA).
-2. Identify the products of one turn of the citric acid (Krebs) cycle.
-3. Describe the electron transport chain and chemiosmosis (ATP synthase).
-4. Calculate the approximate total ATP yield from complete glucose oxidation.
-
-K. Lipid & Protein Metabolism (3 items)
-1. Describe beta-oxidation of fatty acids.
-2. Describe transamination and deamination of amino acids.
-3. Describe the urea cycle and nitrogen waste excretion.
+G. Metabolism & ATP Production (7 items — 14%)
+1. Explain metabolism and ATP production.

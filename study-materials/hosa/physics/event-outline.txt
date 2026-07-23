@@ -1,90 +1,39 @@
 HOSA STUDY OUTLINE — PHYSICS (2025–2026)
-Source: HOSA / NGL Academic Testing Center event; content follows a standard
-introductory college/algebra-based physics curriculum, with health-science
-applications noted where relevant.
-Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreaker).
-Item counts per topic area are proportional estimates — confirm against the
-current event guideline.
+Source: Official HOSA NGL/Cengage Academic Testing Center Guidelines 2025-2026. Test plan (content-area %) and reference are OFFICIAL. Item counts = official % applied to the 50-question test. Objectives are representative, aligned to each official area.
+Format: 50 multiple-choice questions / 60 minutes (1 tiebreaker). Type: ATC (Academic Testing Center) textbook test.
 ============================================================
 
 EVENT DESCRIPTION
-Fundamental principles of mechanics, fluids, thermodynamics, waves,
-electricity and magnetism, and optics, with emphasis on quantitative
-problem-solving and applications relevant to the health sciences (circulatory
-and respiratory fluid dynamics, diagnostic imaging, sound, and instrumentation).
+Mechanics, waves, electricity, magnetism, optics, and thermodynamics.
+
+OFFICIAL REFERENCES
+- Serway & Vuille. College Physics, AP Edition, 12th ed. (ISBN 9780357976425). Cengage/NGL. (Event listed as 'Physics College'.)
 
 KNOWLEDGE AREAS AND OBJECTIVES
 
-A. Units, Measurement & Vectors (3 items)
-1. Apply SI units and metric prefixes to physical quantities.
-2. Distinguish scalar and vector quantities and perform basic vector addition.
-3. Perform dimensional analysis to check the validity of a physics equation.
+A. Work, Energy & Particle Dynamics (5 items — 10%)
+1. Apply velocity, acceleration, force, and energy concepts.
 
-B. Kinematics (Motion in One and Two Dimensions) (5 items)
-1. Apply the kinematic equations to solve for displacement, velocity, and acceleration under constant acceleration.
-2. Interpret position-time and velocity-time graphs.
-3. Solve projectile motion problems by separating horizontal and vertical components.
-4. Differentiate speed, velocity, and acceleration.
-5. Calculate free-fall motion using gravitational acceleration (g = 9.8 m/s^2).
+B. Waves, Sound & Thermodynamics Laws (5 items — 10%)
+1. Describe wave and sound behavior and thermodynamic laws.
 
-C. Newton's Laws & Dynamics (5 items)
-1. Apply Newton's First Law (inertia) to explain the motion of an object with balanced forces.
-2. Apply Newton's Second Law (F = ma) to solve for force, mass, or acceleration.
-3. Apply Newton's Third Law to identify action-reaction force pairs.
-4. Solve problems involving friction (static and kinetic) using the coefficient of friction.
-5. Analyze forces on an object on an inclined plane.
+C. Fluid Mechanics & Buoyancy (2 items — 4%)
+1. Explain fluid pressure and buoyancy.
 
-D. Work, Energy & Power (5 items)
-1. Calculate work done by a constant force using W = Fd cos(theta).
-2. Apply the work-energy theorem to relate work and kinetic energy.
-3. Calculate gravitational potential energy and elastic potential energy.
-4. Apply conservation of mechanical energy to solve motion problems.
-5. Calculate power as the rate of work done or energy transferred.
+D. Electricity (current, resistance, circuits, fields) (10 items — 20%)
+1. Analyze current, resistance, circuits, and electric fields.
 
-E. Momentum & Collisions (3 items)
-1. Calculate linear momentum (p = mv) of an object.
-2. Apply conservation of momentum to solve elastic and inelastic collision problems.
-3. Calculate impulse and relate it to change in momentum.
+E. Light Properties (wave vs. particle) (6 items — 12%)
+1. Explain the wave and particle models of light.
 
-F. Rotational Motion & Equilibrium (3 items)
-1. Calculate torque produced by a force applied at a distance from a pivot.
-2. Apply conditions for static equilibrium (sum of forces and sum of torques equal zero).
-3. Describe angular velocity, angular acceleration, and their relationship to linear quantities.
+F. Optics, Images & Focal Points (2 items — 4%)
+1. Describe image formation and focal points.
 
-G. Fluids (Pressure, Buoyancy, Flow) (5 items)
-1. Calculate pressure as force per unit area and apply it to fluid columns (P = ρgh).
-2. Apply Pascal's principle to hydraulic systems.
-3. Apply Archimedes' principle to determine buoyant force and predict floating/sinking.
-4. Apply the continuity equation to relate fluid velocity and cross-sectional area (e.g., blood flow through vessels of different diameter).
-5. Apply Bernoulli's principle to relate fluid pressure and velocity.
+G. Thermodynamics Laws (5 items — 10%)
+1. State and apply the laws of thermodynamics.
 
-H. Thermodynamics & Heat (4 items)
-1. Differentiate temperature scales (Celsius, Fahrenheit, Kelvin) and convert between them.
-2. Calculate heat transfer using specific heat capacity (Q = mcΔT).
-3. Differentiate mechanisms of heat transfer (conduction, convection, radiation).
-4. Describe the laws of thermodynamics, including conservation of energy and entropy.
+H. Magnetism & Inductance (5 items — 10%)
+1. Explain magnetism and electromagnetic induction.
 
-I. Waves & Sound (5 items)
-1. Describe wave properties (wavelength, frequency, amplitude, period) and their relationship (v = fλ).
-2. Differentiate transverse and longitudinal waves.
-3. Describe the Doppler effect and its application to blood flow and diagnostic ultrasound.
-4. Calculate sound intensity level in decibels and relate it to hearing safety.
-5. Describe resonance and its relevance to acoustic instruments and the human ear.
-
-J. Electricity & Circuits (5 items)
-1. Apply Coulomb's law to calculate the force between charged particles.
-2. Apply Ohm's law (V = IR) to solve for voltage, current, or resistance in a circuit.
-3. Calculate equivalent resistance for resistors in series and in parallel.
-4. Calculate electrical power and energy consumption in a circuit.
-5. Describe the basic principles of capacitance and the function of a capacitor in a circuit.
-
-K. Magnetism & Electromagnetic Induction (3 items)
-1. Describe the relationship between electric current and magnetic fields.
-2. Describe the principle of electromagnetic induction (Faraday's law).
-3. Explain the basic operating principle of an MRI in terms of magnetic fields and radiofrequency signals.
-
-L. Optics & Light (4 items)
-1. Apply the law of reflection and describe image formation by plane and curved mirrors.
-2. Apply Snell's law to calculate refraction of light at an interface.
-3. Describe image formation by converging and diverging lenses, including the thin-lens equation.
-4. Describe the electromagnetic spectrum and the relationship between wavelength, frequency, and energy.
+I. Basic Physics Mathematics (10 items — 20%)
+1. Apply the mathematics used in physics problem-solving.

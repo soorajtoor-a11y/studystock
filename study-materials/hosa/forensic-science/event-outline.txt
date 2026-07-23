@@ -1,121 +1,38 @@
 HOSA STUDY OUTLINE — FORENSIC SCIENCE (2025–2026)
-Source: HOSA Competitive Event Guidelines 2025-2026 (Round 1 written-test knowledge domain).
-Format: Round 1 Written Knowledge Test — 50 multiple-choice questions, 60 minutes (qualifies for the team/quiz-bowl round).
-Item counts per content area are proportional estimates by knowledge-area weight —
-confirm against the current guideline, in parentheses.
+Source: Official HOSA Competitive Event Guidelines 2025-2026. Test plan (content-area %) and reference are OFFICIAL. Item counts = official % applied to the 50-question test. Objectives are representative, aligned to each official area.
+Format: 50 multiple-choice questions / 60 minutes (1 tiebreaker). Type: HOSA Teamwork event — Round 1 written test.
 ============================================================
 
 EVENT DESCRIPTION
-Knowledge of the scientific principles and procedures used to collect,
-preserve, and analyze physical evidence in the investigation of a crime.
-Covers crime scene processing and chain of custody, pattern and trace
-evidence (fingerprints, DNA, ballistics, toxicology), forensic pathology,
-forensic anthropology and odontology, laboratory analysis techniques, and
-the legal/courtroom use of forensic evidence.
+Forensic investigation methods across disciplines. HOSA Teamwork event (2 competitors): Round 1 written test (below) + Round 2 hands-on case study.
+
+OFFICIAL REFERENCES
+- Bertino. Forensic Science: Fundamentals & Investigations. Cengage, latest ed.
+- Bell. Forensic Science. Latest ed.
 
 KNOWLEDGE AREAS AND OBJECTIVES
 
-A. Crime Scene Processing & Chain of Custody (8 items)
-1. Sequence the steps of processing a crime scene (secure, document,
-   collect, preserve, transport evidence).
-2. Explain the purpose of establishing and maintaining chain of custody for
-   physical evidence.
-3. Identify methods of crime scene documentation (photography, sketching,
-   note-taking, videography).
-4. Differentiate primary from secondary crime scenes.
-5. Identify proper packaging and labeling procedures for different evidence
-   types (paper bags for biological evidence, airtight containers for
-   accelerants).
-6. Explain the concept of cross-contamination and how investigators prevent
-   it (gloves, evidence markers, single-use tools).
-7. Identify Locard's exchange principle and its role in trace evidence
-   collection.
-8. Explain the legal requirement of a search warrant for processing certain
-   crime scenes.
+A. Forensic History & Careers (5 items — 10%)
+1. Describe the history of forensic science and its careers.
 
-B. Fingerprint Analysis (6 items)
-1. Identify the three basic fingerprint patterns (loop, whorl, arch).
-2. Differentiate patent, latent, and plastic fingerprints by how they are
-   formed and visualized.
-3. Identify common latent print development techniques (dusting with
-   powder, ninhydrin, cyanoacrylate/superglue fuming).
-4. Explain the concept of minutiae points used to match fingerprints.
-5. Explain how AFIS (Automated Fingerprint Identification System) is used
-   to search for matches.
-6. Explain why no two individuals (including identical twins) share
-   identical fingerprints.
+B. Crime Scene & Death Investigation (10 items — 20%)
+1. Explain crime-scene processing and death investigation.
+2. Describe evidence collection and chain of custody.
 
-C. DNA Evidence & Serology (7 items)
-1. Identify sources of biological evidence that yield DNA (blood, saliva,
-   hair follicles, skin cells, semen).
-2. Explain the process of PCR (polymerase chain reaction) in amplifying
-   DNA samples.
-3. Explain how STR (short tandem repeat) analysis is used to generate a DNA
-   profile.
-4. Differentiate nuclear DNA from mitochondrial DNA and when each is used.
-5. Explain the purpose of CODIS (Combined DNA Index System) in criminal
-   investigations.
-6. Identify presumptive tests used in serology (Kastle-Meyer test for
-   blood).
-7. Explain the concept of touch DNA and its evidentiary limitations.
+C. Forensic Toxicology & Pharmacology (10 items — 20%)
+1. Explain toxicology testing and drug effects.
 
-D. Ballistics & Firearms Evidence (5 items)
-1. Differentiate class characteristics from individual characteristics of a
-   firearm (rifling/lands and grooves versus unique tool marks).
-2. Explain how a bullet's rifling marks are matched to a specific firearm.
-3. Identify the purpose of gunshot residue (GSR) testing.
-4. Explain how trajectory analysis is used to reconstruct a shooting scene.
-5. Identify the difference between entrance and exit wound characteristics
-   relevant to firearms evidence.
+D. Forensic Anthropology (5 items — 10%)
+1. Describe skeletal analysis in forensic identification.
 
-E. Toxicology (5 items)
-1. Define forensic toxicology and its role in determining cause of death or
-   impairment.
-2. Identify common biological specimens used in toxicology testing (blood,
-   urine, vitreous humor, hair).
-3. Differentiate a screening test from a confirmatory test (immunoassay
-   versus gas chromatography-mass spectrometry).
-4. Explain the concept of postmortem redistribution affecting drug
-   concentration readings.
-5. Identify common classes of substances tested for in a toxicology panel
-   (alcohol, opioids, stimulants).
+E. Forensic Entomology (5 items — 10%)
+1. Explain how insects estimate post-mortem interval.
 
-F. Forensic Pathology (Cause & Manner of Death) (6 items)
-1. Differentiate cause of death from manner of death (natural, accident,
-   suicide, homicide, undetermined).
-2. Identify the purpose and general procedure of an autopsy.
-3. Explain how postmortem interval (time since death) is estimated (livor
-   mortis, rigor mortis, algor mortis, decomposition stage).
-4. Differentiate livor mortis, rigor mortis, and algor mortis.
-5. Identify the role of a medical examiner versus a coroner.
-6. Explain how wound pattern analysis helps determine the mechanism of
-   death.
+F. Blood/Biological Fluid Identification (5 items — 10%)
+1. Describe identification and analysis of biological fluids.
 
-G. Forensic Anthropology & Odontology (5 items)
-1. Explain how forensic anthropologists estimate age, sex, ancestry, and
-   stature from skeletal remains.
-2. Identify skeletal features used to distinguish male from female
-   remains (pelvis shape, skull features).
-3. Explain how bite-mark analysis is used in forensic odontology.
-4. Explain how dental records are used to identify unknown remains.
-5. Identify limitations and controversies of bite-mark comparison as
-   forensic evidence.
+G. DNA Analysis Techniques (5 items — 10%)
+1. Explain forensic DNA analysis techniques.
 
-H. Trace Evidence & Lab Techniques (4 items)
-1. Identify common types of trace evidence (hair, fibers, glass, soil,
-   paint chips).
-2. Explain how microscopy is used to compare hair and fiber evidence.
-3. Explain the purpose of chromatography in separating and identifying
-   chemical substances.
-4. Explain how spectrometry (e.g., mass spectrometry) identifies unknown
-   substances found at a scene.
-
-I. Legal/Courtroom Aspects of Forensic Evidence (4 items)
-1. Explain the role of an expert witness in presenting forensic evidence in
-   court.
-2. Identify the standard used to determine admissibility of scientific
-   evidence (Daubert or Frye standard).
-3. Explain why a broken chain of custody can result in evidence being ruled
-   inadmissible.
-4. Explain the difference between circumstantial and direct evidence in a
-   criminal case.
+H. Forensic Psychology & Psychiatry (5 items — 10%)
+1. Describe the role of psychology/psychiatry in forensics.

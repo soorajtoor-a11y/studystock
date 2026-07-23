@@ -46,7 +46,7 @@ export default function DarkHero({ onStart, onScrollTo, onSignIn }) {
             <MarkScorecardWordmark className="h-16 w-auto sm:h-20" fill="#ECE4D6" />
           </div>
 
-          <h1 className="exam-display-axes mt-10 max-w-[26ch] font-exam-display text-[clamp(2.5rem,5.6vw,4.75rem)] font-medium leading-[1.03] tracking-[0.06em] text-exam-bone sm:mt-14">
+          <h1 className="exam-display-axes mt-10 max-w-[32ch] font-exam-display text-[clamp(2.5rem,5.6vw,4.75rem)] font-medium leading-[1.03] tracking-[0.14em] text-exam-bone sm:mt-14">
             {HEADLINE_LINES.map((line, i) => (
               <MaskLine key={line} delay={0.1 + i * 0.1}>{line}</MaskLine>
             ))}

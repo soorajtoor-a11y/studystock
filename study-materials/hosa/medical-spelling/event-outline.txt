@@ -1,88 +1,22 @@
 HOSA STUDY OUTLINE — MEDICAL SPELLING (2025–2026)
-Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
-Format: Objective Test — 50 written-spelling items, 60 minutes, plus an oral
-spelldown round.
-Item counts per content area (from the official test-plan percentages) shown in
-(parentheses).
+Source: Official HOSA Competitive Event Guidelines 2025-2026. NOTE: HOSA publishes NO weighted percentage test plan for Medical Spelling — questions are drawn from the official reference dictionaries (spelling and definitions of medical terms). No item-count-per-area breakdown exists.
+Format: 50 multiple-choice questions / 60 minutes, followed by a live spelldown; the written test score breaks spelldown ties.
 ============================================================
 
 EVENT DESCRIPTION
-Accurate spelling of medical terminology encountered in clinical and health
-science settings: word roots, prefixes, and suffixes; anatomy, physiology,
-and disease/procedure terms organized by body system; pharmacological and
-diagnostic terms; commonly misspelled and easily confused medical words; and
-correct plural and eponym forms.
+Correct spelling and definitions of medical terms drawn from the official references.
+
+OFFICIAL REFERENCES
+- Taber's Cyclopedic Medical Dictionary. F.A. Davis, latest ed.
+- Taber's Audio Glossary. F.A. Davis, latest ed.
 
 KNOWLEDGE AREAS AND OBJECTIVES
+(No official percentage weighting — study the reference dictionaries broadly.)
 
-A. Roots, Prefixes, Suffixes & Combining Forms (6 items)
-1. Spell common Greek- and Latin-derived word roots correctly (e.g., cardi/o, nephr/o, hepat/o, encephal/o).
-2. Spell common prefixes correctly (e.g., dys-, brady-, tachy-, hyper-, hypo-, peri-).
-3. Spell common suffixes for conditions correctly (-itis, -osis, -emia, -algia, -megaly).
-4. Spell common suffixes for procedures correctly (-ectomy, -otomy, -ostomy, -oscopy, -plasty).
-5. Apply correct combining-vowel rules when joining a root to a suffix beginning with a consonant vs. a vowel.
-6. Spell multi-root compound terms correctly (e.g., gastroenterology, osteoarthritis, electrocardiogram).
+A. Spelling of Medical Terms
+1. Spell medical terms correctly across all body systems and specialties.
+2. Spell terms for diseases, procedures, instruments, and abbreviations.
 
-B. Cardiovascular & Hematologic Terms (4 items)
-1. Spell cardiovascular structure terms correctly (e.g., myocardium, pericardium, atrioventricular, aorta).
-2. Spell cardiovascular condition terms correctly (e.g., arrhythmia, atherosclerosis, thrombophlebitis, aneurysm).
-3. Spell hematologic terms correctly (e.g., erythrocyte, thrombocytopenia, hemophilia, leukemia).
-4. Spell cardiovascular procedure/diagnostic terms correctly (e.g., angioplasty, echocardiogram, sphygmomanometer).
-
-C. Respiratory Terms (4 items)
-1. Spell respiratory structure terms correctly (e.g., bronchiole, pleura, epiglottis, alveoli).
-2. Spell respiratory condition terms correctly (e.g., pneumonia, emphysema, bronchiectasis, pertussis).
-3. Spell respiratory procedure terms correctly (e.g., tracheostomy, bronchoscopy, thoracentesis).
-4. Spell respiratory diagnostic/measurement terms correctly (e.g., spirometry, pulse oximetry, hypoxemia).
-
-D. Musculoskeletal Terms (4 items)
-1. Spell skeletal structure terms correctly (e.g., vertebrae, scapula, calcaneus, metacarpal).
-2. Spell muscular structure terms correctly (e.g., quadriceps, gastrocnemius, sternocleidomastoid).
-3. Spell musculoskeletal condition terms correctly (e.g., osteoporosis, kyphosis, fibromyalgia, rheumatoid arthritis).
-4. Spell musculoskeletal procedure terms correctly (e.g., arthroscopy, osteotomy, arthroplasty).
-
-E. Nervous System & Special Senses Terms (4 items)
-1. Spell nervous system structure terms correctly (e.g., cerebellum, meninges, myelin, hypothalamus).
-2. Spell neurological condition terms correctly (e.g., aneurysm, seizure, hemiparesis, Alzheimer's).
-3. Spell ophthalmic and otic structure/condition terms correctly (e.g., conjunctiva, tympanic membrane, glaucoma, tinnitus).
-4. Spell neurological diagnostic terms correctly (e.g., electroencephalogram, cerebrospinal, myelogram).
-
-F. Digestive & Gastrointestinal Terms (4 items)
-1. Spell digestive structure terms correctly (e.g., esophagus, duodenum, pancreas, peritoneum).
-2. Spell GI condition terms correctly (e.g., diverticulitis, cholecystitis, gastroesophageal, cirrhosis).
-3. Spell GI procedure terms correctly (e.g., colonoscopy, cholecystectomy, gastrostomy).
-4. Spell digestive diagnostic/lab terms correctly (e.g., bilirubin, occult, endoscopy).
-
-G. Endocrine & Reproductive Terms (4 items)
-1. Spell endocrine gland/hormone terms correctly (e.g., pituitary, parathyroid, glucagon, aldosterone).
-2. Spell endocrine condition terms correctly (e.g., hyperthyroidism, hypoglycemia, acromegaly).
-3. Spell reproductive structure terms correctly (e.g., endometrium, spermatogenesis, fallopian).
-4. Spell obstetric/reproductive condition terms correctly (e.g., preeclampsia, endometriosis, dysmenorrhea).
-
-H. Integumentary & Urinary Terms (4 items)
-1. Spell integumentary structure/condition terms correctly (e.g., epidermis, sebaceous, psoriasis, cellulitis).
-2. Spell integumentary procedure terms correctly (e.g., debridement, dermabrasion).
-3. Spell urinary structure terms correctly (e.g., ureter, urethra, glomerulus, nephron).
-4. Spell urinary condition/procedure terms correctly (e.g., pyelonephritis, hematuria, cystoscopy, nephrolithiasis).
-
-I. Diagnostic, Surgical & Pharmacological Terms (6 items)
-1. Spell diagnostic imaging terms correctly (e.g., fluoroscopy, ultrasonography, magnetic resonance).
-2. Spell laboratory/pathology terms correctly (e.g., histology, biopsy, hemoglobin, differential).
-3. Spell surgical terms correctly (e.g., anastomosis, laparoscopic, anesthesia, hemostasis).
-4. Spell drug classification terms correctly (e.g., anticoagulant, antihypertensive, antipyretic, bronchodilator).
-5. Spell dosage-form and route terms correctly (e.g., suppository, subcutaneous, sublingual, intramuscular).
-6. Spell common pharmacologic suffix terms correctly (e.g., -mab, -olol, -pril, -statin classes as generic term endings).
-
-J. Commonly Confused & Frequently Misspelled Terms (6 items)
-1. Correctly spell sound-alike medical term pairs (e.g., ilium vs. ileum, perineal vs. peroneal, mucous vs. mucus).
-2. Correctly spell terms with silent or unexpected letters (e.g., pneumonia, phlegm, diarrhea, rhinorrhea).
-3. Correctly spell terms with commonly transposed letters (e.g., pelvic, epiglottis, sphygmomanometer).
-4. Correctly spell terms distinguished by a single letter with different meanings (e.g., abduction vs. adduction, hypertrophy vs. atrophy).
-5. Correctly spell terms with silent "p," "h," or "g" combinations (e.g., psychiatry, phthisis, gnathic).
-6. Correctly spell terms frequently misspelled due to double consonants (e.g., appendicitis, tonsillitis, cellulitis).
-
-K. Plural Forms & Eponyms (4 items)
-1. Form the correct plural of a medical term ending in -is (e.g., diagnosis to diagnoses, metastasis to metastases).
-2. Form the correct plural of a medical term ending in -um or -on (e.g., bacterium to bacteria, ganglion to ganglia).
-3. Form the correct plural of a medical term ending in -a or -ix/-ex (e.g., vertebra to vertebrae, appendix to appendices).
-4. Spell eponymous disease and syndrome names correctly (e.g., Parkinson's disease, Down syndrome, Alzheimer's disease).
+B. Definitions of Medical Terms
+1. Match medical terms to their correct definitions.
+2. Recognize roots, prefixes, and suffixes that inform spelling and meaning.

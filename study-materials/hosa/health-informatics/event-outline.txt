@@ -1,90 +1,41 @@
 HOSA STUDY OUTLINE — HEALTH INFORMATICS (2025–2026)
-Source: HOSA Competitive Event Guidelines 2025-2026 (official test plan).
-Format: Objective Test — 50 multiple-choice questions, 60 minutes (+ tiebreakers).
-Item counts per content area (from the official test-plan percentages) shown in
-(parentheses).
+Source: Official HOSA Competitive Event Guidelines 2025-2026. Test format, content-area TEST PLAN (percentages), and references are OFFICIAL. Item counts = the official percentages applied to the 50-question test. Objectives are representative, aligned to each official content area and the listed references.
+Format: 50 multiple-choice questions / 60 minutes (essay tiebreaker).
 ============================================================
 
 EVENT DESCRIPTION
-Knowledge of the systems, standards, and technologies used to capture, store,
-exchange, and analyze health information, including electronic health record
-(EHR) functions, health data standards and coding systems, interoperability
-and health information exchange, data privacy/security, clinical decision
-support, health data analytics, telehealth, and emerging health IT
-technologies.
+Management, analysis, governance, and security of healthcare information.
+
+OFFICIAL REFERENCES
+- Zhou & Clack. Introduction to Healthcare Informatics. AHIMA Press, latest ed.
+- White. A Practical Approach to Analyzing Healthcare Data. AHIMA Press, latest ed.
 
 KNOWLEDGE AREAS AND OBJECTIVES
 
-A. Foundations of Health Informatics (3 items)
-1. Define health informatics and differentiate it from health information management (HIM).
-2. Identify the roles of a health informatics specialist within a healthcare organization.
-3. Describe the evolution from paper records to electronic health records driven by the HITECH Act and meaningful use.
+A. History, Careers & Roles (4 items — 8%)
+1. Describe health-informatics history, careers, and roles.
 
-B. EHR/EMR Systems & Functions (5 items)
-1. Differentiate an electronic medical record (EMR) from an electronic health record (EHR) by scope of data sharing.
-2. Identify core EHR functions (clinical documentation, computerized provider order entry/CPOE, e-prescribing, results reporting).
-3. Explain the purpose of clinical documentation improvement (CDI) programs.
-4. Identify the benefits and risks of copy-forward/copy-paste documentation in an EHR.
-5. Describe the role of patient portals in providing patients access to their EHR data.
+B. Information Systems in Healthcare (6 items — 12%)
+1. Explain EHRs and healthcare information systems.
 
-C. Health Data Standards & Terminologies (5 items)
-1. Explain the purpose of HL7 messaging standards in exchanging clinical data between systems.
-2. Describe the purpose of the FHIR (Fast Healthcare Interoperability Resources) standard for modern health data exchange.
-3. Identify the purpose of SNOMED CT as a clinical terminology for documenting diagnoses and findings.
-4. Identify the purpose of LOINC in standardizing laboratory and clinical observation codes.
-5. Differentiate structured data from unstructured data (e.g., free-text clinical notes) in a health record.
+C. Data Analytics (14 items — 28%)
+1. Analyze and interpret healthcare data.
+2. Apply descriptive statistics and visualization to health data.
 
-D. Coding & Classification Systems (5 items)
-1. Differentiate ICD-10-CM (diagnosis coding) from ICD-10-PCS (inpatient procedure coding).
-2. Explain the purpose of CPT codes in reporting outpatient procedures and services.
-3. Identify the purpose of HCPCS Level II codes for supplies, equipment, and non-physician services.
-4. Explain how DRGs (Diagnosis-Related Groups) are used for inpatient reimbursement classification.
-5. Identify the role of a medical coder/coding compliance in accurate claims submission.
+D. Data Integrity & Quality (4 items — 8%)
+1. Explain data integrity, accuracy, and quality measures.
 
-E. Interoperability & Health Information Exchange (4 items)
-1. Define interoperability and differentiate its levels (foundational, structural, semantic).
-2. Explain the purpose of a health information exchange (HIE) in sharing patient data across organizations.
-3. Identify barriers to interoperability (proprietary systems, data silos, inconsistent standards).
-4. Describe the purpose of an application programming interface (API) in connecting health IT systems.
+E. Data Governance (6 items — 12%)
+1. Describe data governance, standards, and stewardship.
 
-F. Data Privacy, Security & HIPAA Compliance (5 items)
-1. Explain HIPAA Security Rule safeguards (administrative, physical, technical) for electronic PHI.
-2. Differentiate encryption, access controls, and audit trails as data security measures.
-3. Identify the purpose of role-based access control in limiting EHR data access.
-4. Describe steps required following a data breach involving unsecured PHI.
-5. Explain the concept of the "minimum necessary" standard in accessing patient information.
+F. Health Information Privacy & Security (6 items — 12%)
+1. Explain HIPAA, privacy, and data-security safeguards.
 
-G. Clinical Decision Support Systems (4 items)
-1. Define clinical decision support systems (CDSS) and identify examples (drug interaction alerts, best-practice alerts).
-2. Explain the risk of alert fatigue in clinical decision support implementation.
-3. Describe how a CDSS uses clinical guidelines to generate a diagnostic or treatment recommendation.
-4. Identify the role of computerized physician order entry (CPOE) combined with CDSS in reducing medication errors.
+G. Ethics (2 items — 4%)
+1. Describe ethical issues in health information.
 
-H. Health Data Analytics & Population Health (4 items)
-1. Define population health management and its use of aggregated health data.
-2. Differentiate descriptive, predictive, and prescriptive analytics in a healthcare data context.
-3. Explain the purpose of a clinical data warehouse/registry in supporting research and quality reporting.
-4. Identify how big data analytics supports value-based care initiatives.
+H. Research Study & Design (6 items — 12%)
+1. Explain research study designs and data-collection methods.
 
-I. Telehealth & Mobile Health Technology (3 items)
-1. Differentiate synchronous (live video) and asynchronous (store-and-forward) telehealth encounters.
-2. Identify the role of remote patient monitoring devices and wearables in mobile health (mHealth).
-3. Describe licensure and reimbursement considerations unique to telehealth delivery.
-
-J. Database Management & Health Data Structures (4 items)
-1. Identify the basic structure of a relational database (tables, fields, records, primary keys).
-2. Explain the purpose of data normalization in reducing redundancy in a health database.
-3. Differentiate structured query language (SQL) queries used to retrieve health data.
-4. Describe the purpose of metadata in describing and organizing health data.
-
-K. Health IT Governance & Standards Organizations (3 items)
-1. Explain the role of the Office of the National Coordinator for Health IT (ONC) in health IT policy.
-2. Describe the role of HIMSS in health information and technology professional standards.
-3. Identify the role of CMS incentive/reporting programs (e.g., Promoting Interoperability) in EHR adoption.
-
-L. Emerging Technologies & Legal/Ethical Issues in Health IT (5 items)
-1. Identify applications of artificial intelligence and machine learning in diagnostic imaging and predictive analytics.
-2. Describe the potential use of blockchain technology for secure health data exchange.
-3. Explain ethical issues surrounding algorithmic bias in AI-based clinical tools.
-4. Identify legal issues related to data ownership, consent, and secondary use of de-identified health data.
-5. Describe cybersecurity threats specific to healthcare systems (ransomware, phishing, medical device hacking).
+I. Emerging Technologies (2 items — 4%)
+1. Describe emerging technologies (AI, telehealth) in healthcare.

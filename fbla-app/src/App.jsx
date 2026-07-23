@@ -1592,7 +1592,7 @@ function StudyPanel({ event, outline, onStudy, collapsed, onToggleCollapse }) {
               <span className="sp-letter">{section.letter}</span>
               <div>
                 <div className="sp-card-title">{section.title}</div>
-                <div className="sp-card-sub">{section.objectives.length} objectives{section.items ? ` · ${section.items} items` : ''}</div>
+                <div className="sp-card-sub">{section.objectives.length} objective{section.objectives.length === 1 ? '' : 's'}</div>
               </div>
             </div>
             <div className="sp-btns">
@@ -1716,7 +1716,7 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
                   <button className={`section-header ${expanded[section.letter] ? 'open' : ''}`} onClick={() => toggle(section.letter)}>
                     <span className="section-letter">{section.letter}</span>
                     <span className="section-title">{section.title}</span>
-                    {section.items && <span className="section-items">{section.items} items</span>}
+                    <span className="section-items">{section.objectives.length} objective{section.objectives.length === 1 ? '' : 's'}</span>
                     <span className="section-chevron">▸</span>
                   </button>
                   {expanded[section.letter] && (

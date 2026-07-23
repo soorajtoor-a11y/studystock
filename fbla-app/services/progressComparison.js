@@ -12,7 +12,7 @@
 // is a coverage change, not an improvement — it must never inflate the score
 // delta. See buildDiff()'s newly_unlocked/no_longer_assessed handling.
 
-import { CACHE_SPLIT_MARKER, withRetry, callHaiku, extractJSONObject } from './llmClient.js';
+import { CACHE_SPLIT_MARKER, withRetry, callHaiku, extractJSON, extractJSONObject } from './llmClient.js';
 
 const MAX_ITEMS = 3;
 
@@ -71,21 +71,67 @@ function buildDiff(previousCriteria, currentCriteria) {
   };
 }
 
-// For each of the previous attempt's priority actions, did its criterion
-// actually improve this time? Closes the advice loop — "acted on" or "still
-// open" — rather than silently regenerating fresh advice with no memory of
-// what was already suggested.
-function buildAddressedActions(previousActions, improved) {
+// For each of the previous attempt's priority actions, was it actually acted
+// on? A pure points-delta check ("did this exact criterion's score go up")
+// is fragile: the grader has real run-to-run noise on any single criterion
+// (a few points either way, even at temperature 0 with consensus sampling —
+// see scriptGrader.js), so a genuine fix can easily land on a flat or even
+// slightly negative delta purely from grading jitter, especially on
+// criteria with little room left to climb. `verifiedResults` (from an LLM
+// read of the actual current submission text, see verifyAddressedActions
+// below) is the primary signal for exactly that reason; the mechanical
+// score-delta is kept only as a fallback/OR — never overrides a "yes" from
+// either signal, and still applies unchanged when verification wasn't run
+// (empty array, e.g. no submission text or the LLM call failed).
+function buildAddressedActions(previousActions, improved, verifiedResults = []) {
   const improvedByCriterion = new Map(improved.map(c => [c.criterion, c]));
-  return previousActions.map(a => {
+  return previousActions.map((a, i) => {
     const hit = improvedByCriterion.get(a.criterion);
+    const verified = verifiedResults[i];
+    const addressed = Boolean(hit) || Boolean(verified?.addressed);
     return {
       action: a.action,
       criterion: a.criterion,
-      result: hit ? `acted on (+${hit.delta})` : 'still open',
-      addressed: Boolean(hit),
+      result: !addressed ? 'still open' : hit ? `acted on (+${hit.delta})` : 'acted on',
+      addressed,
     };
   });
+}
+
+// LLM-based check: does the CURRENT submission text actually contain the
+// substantive change each previous suggestion asked for? This is what makes
+// "addressed" detection resilient to grading noise — it reads the actual
+// text instead of trusting one criterion's score to have moved.
+function buildAddressedVerificationPrompt(previousActions, currentSubmissionText) {
+  const actionLines = previousActions.map((a, i) => `${i + 1}. [Criterion: "${a.criterion}"] ${a.action}`).join('\n');
+
+  return `You are checking whether a student acted on specific feedback between two submissions of the same FBLA competitive event.
+
+Below is a numbered list of suggestions given after their PREVIOUS submission. Read their CURRENT (most recent) submission text below and judge, for EACH suggestion, whether the current submission now substantively contains the specific change described — not whether some score happened to move, but whether the actual content is now present in the text. Be reasonably generous: a genuine, even partial, attempt to add the missing content counts as addressed; an unrelated or purely cosmetic edit does not.
+
+PREVIOUS SUGGESTIONS:
+${actionLines}
+
+Return a JSON array of exactly ${previousActions.length} objects, in the same order as the numbered list above: [{"addressed": true|false, "evidence": "<one short phrase citing what changed, or empty string if not addressed>"}]. Output ONLY the JSON array — no markdown fences, no text outside it.
+
+${CACHE_SPLIT_MARKER}
+CURRENT SUBMISSION:
+"""
+${currentSubmissionText}
+"""`;
+}
+
+async function verifyAddressedActions(previousActions, currentSubmissionText) {
+  if (previousActions.length === 0 || !currentSubmissionText) return [];
+  try {
+    const parsed = await withRetry(async () =>
+      extractJSON(await callHaiku(buildAddressedVerificationPrompt(previousActions, currentSubmissionText)))
+    , 3, 'Progress comparison addressed-check');
+    return parsed.map(p => ({ addressed: Boolean(p?.addressed), evidence: String(p?.evidence || '').trim() }));
+  } catch (err) {
+    console.warn('[progress comparison] addressed verification failed, falling back to score-delta only:', err.message);
+    return [];
+  }
 }
 
 // Refreshed "do these next" — still-open previous actions (gap recomputed
@@ -166,7 +212,9 @@ async function phraseComparison(args) {
 
 export async function buildComparison(previous, current, eventName) {
   const diff = buildDiff(previous.criteria, current.criteria);
-  const addressed_actions = buildAddressedActions(previous.summary?.priority_actions || [], diff.improved);
+  const previousActions = previous.summary?.priority_actions || [];
+  const verifiedResults = await verifyAddressedActions(previousActions, current.submission_text);
+  const addressed_actions = buildAddressedActions(previousActions, diff.improved, verifiedResults);
   const addressedCount = addressed_actions.filter(a => a.addressed).length;
 
   const score_delta = {
@@ -221,4 +269,4 @@ export async function buildComparison(previous, current, eventName) {
 }
 
 // Exported for tests only.
-export const _internal = { buildDiff, buildAddressedActions, buildWhatToDoNext };
+export const _internal = { buildDiff, buildAddressedActions, buildWhatToDoNext, verifyAddressedActions };

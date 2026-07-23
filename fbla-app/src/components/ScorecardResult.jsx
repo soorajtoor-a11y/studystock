@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
+import ScoreProgressChart from './ScoreProgressChart'
 
 const BAND_CLASS = {
   'Not Demonstrated': 'sg-band-not',
@@ -74,18 +75,7 @@ export default function ScorecardResult({ result, comparison, scoreHistory = [] 
 
             <p className="sg-comparison-headline">{comparison.headline}</p>
 
-            {scoreHistory.length >= 2 && (
-              <svg className="sg-comparison-sparkline" viewBox="0 0 100 28" preserveAspectRatio="none" aria-hidden="true">
-                <polyline
-                  points={scoreHistory.map((h, i) => {
-                    const x = (i / (scoreHistory.length - 1)) * 100
-                    const y = 26 - h.ratio * 24
-                    return `${x},${y}`
-                  }).join(' ')}
-                  fill="none" stroke="var(--signal-500)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                />
-              </svg>
-            )}
+            <ScoreProgressChart scoreHistory={scoreHistory} />
 
             {(comparison.improved.length > 0 || comparison.declined.length > 0) && (
               <div className="sg-comparison-cols">
@@ -114,19 +104,9 @@ export default function ScorecardResult({ result, comparison, scoreHistory = [] 
 
             {comparison.addressed_summary && <p className="sg-comparison-addressed">✓ {comparison.addressed_summary}</p>}
 
-            {comparison.what_to_do_next.length > 0 && (
-              <div className="sg-comparison-actions">
-                <p className="sg-comparison-col-title">Do these next</p>
-                <ol className="sg-comparison-action-list">
-                  {comparison.what_to_do_next.map((a, i) => (
-                    <li key={i}>
-                      <span className="sg-comparison-action-text">{a.action}</span>
-                      <span className="sg-comparison-action-pts">+{a.points_available} pts</span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
+            {/* "What to do next" lives once, in the Priority Actions card
+                below — this band is about what changed since last time, not
+                a second copy of the same action list. */}
 
             {comparison.newly_unlocked.length > 0 && (
               <p className="sg-comparison-note">

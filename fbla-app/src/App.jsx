@@ -2348,7 +2348,14 @@ export default function App() {
   // thing, not a marketing-page thing.
   useEffect(() => {
     const inOrgScopedPage = page !== 'landing' && page !== 'orgpicker'
-    if (org && inOrgScopedPage) document.documentElement.setAttribute('data-org', org)
+    // The Presentation Workbot is hardcoded FBLA-only (PRESENTATION_ORG)
+    // regardless of whatever `org` the user was last browsing — so its
+    // pages must always theme as FBLA too, or the sidebar/theme is left
+    // showing whatever org (e.g. HOSA red) was active before Workbot was
+    // opened, on a page that's never actually that org.
+    const isWorkbotPage = page === 'workbot' || page === 'workbot-explain'
+    const effectiveOrg = isWorkbotPage ? PRESENTATION_ORG : org
+    if (effectiveOrg && inOrgScopedPage) document.documentElement.setAttribute('data-org', effectiveOrg)
     else document.documentElement.removeAttribute('data-org')
   }, [org, page])
 

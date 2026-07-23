@@ -95,6 +95,26 @@ test('buildAddressedActions: a previous action whose criterion did not improve i
   assert.strictEqual(actions[0].result, 'still open');
 });
 
+test('buildAddressedActions: LLM verification counts as addressed even when the score delta is flat/negative (grading noise)', () => {
+  const actions = buildAddressedActions(
+    [{ action: 'Add regulatory trends', criterion: 'Industry Analysis' }],
+    [], // mechanical signal saw no improvement — the criterion's score didn't move
+    [{ addressed: true, evidence: 'added a regulatory-trends paragraph' }],
+  );
+  assert.strictEqual(actions[0].addressed, true, 'a genuine text-level fix must not be missed just because the score happened to stay flat');
+  assert.strictEqual(actions[0].result, 'acted on');
+});
+
+test('buildAddressedActions: LLM verification saying not-addressed does not override a real score improvement', () => {
+  const improved = [{ criterion: 'Financials', delta: 4 }];
+  const actions = buildAddressedActions(
+    [{ action: 'Add cash flow', criterion: 'Financials' }],
+    improved,
+    [{ addressed: false, evidence: '' }],
+  );
+  assert.strictEqual(actions[0].addressed, true, 'the two signals are OR-ed — a real score gain still counts even if the text-check missed it');
+});
+
 console.log('\nRefreshed "do these next"');
 
 test('buildWhatToDoNext: still-open previous actions recompute their gap from the CURRENT attempt', () => {

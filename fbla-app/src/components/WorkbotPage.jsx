@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { supabase } from '../supabaseClient'
 import ScorecardResult from './ScorecardResult'
+import ScoreProgressChart from './ScoreProgressChart'
 import WorkbotGradeHistorySidePanel from './WorkbotGradeHistorySidePanel'
 import QASession from './QASession'
 import { useFakeProgress } from '../lib/useFakeProgress'
@@ -370,6 +371,23 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
     setQaMode(null); setAwaitingQaChoice(false); setQaSessionActive(false)
   }, [eventId])
 
+  // Pre-submission growth chart — a student should be able to see their
+  // progress on this event the moment they land on it, not only after
+  // grading again this session. Independent of loadComparisonAndHistory
+  // (which also computes the "since your last attempt" diff): this just
+  // wants the bare score series, no comparison band, and needs to run
+  // before any grade/Activate has happened this visit.
+  useEffect(() => {
+    if (!user || !eventId) return
+    supabase.from('workbot_grade_history').select('result, created_at')
+      .eq('user_id', user.id).eq('org', org).eq('event', eventId)
+      .order('created_at', { ascending: true })
+      .then(({ data: rows, error: rowsErr }) => {
+        if (rowsErr || !rows) return
+        setScoreHistory(rows.map(toHistoryPoint))
+      })
+  }, [eventId, user, org])
+
   function handleFileChange(e, acceptedExt, wrongTypeHint) {
     const picked = e.target.files?.[0] || null
     setFileError(null)
@@ -391,6 +409,15 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
   // server rather than trusting anything cached locally, so this is correct
   // even if the student re-grades in two tabs. First-ever attempt (no
   // predecessor) leaves comparison null — no band, per the brief.
+  function toHistoryPoint(r) {
+    return {
+      ratio: r.result.totals.assessed_ceiling > 0 ? r.result.totals.scored_points / r.result.totals.assessed_ceiling : 0,
+      points: r.result.totals.scored_points,
+      max: r.result.totals.assessed_ceiling,
+      created_at: r.created_at,
+    }
+  }
+
   function loadComparisonAndHistory(targetId, targetResult) {
     if (!user || !targetId) return
     supabase.from('workbot_grade_history').select('id, result, created_at')
@@ -398,10 +425,7 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
       .order('created_at', { ascending: true })
       .then(({ data: rows, error: rowsErr }) => {
         if (rowsErr || !rows) return
-        setScoreHistory(rows.map(r => ({
-          ratio: r.result.totals.assessed_ceiling > 0 ? r.result.totals.scored_points / r.result.totals.assessed_ceiling : 0,
-          created_at: r.created_at,
-        })))
+        setScoreHistory(rows.map(toHistoryPoint))
         const idx = rows.findIndex(r => r.id === targetId)
         if (idx <= 0) { setComparison(null); return }
         const previous = rows[idx - 1].result
@@ -832,6 +856,18 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
           <button type="button" className="sg-choose-input-btn" onClick={() => setPickerOpen(true)}>
             Choose how you'd like to submit your work →
           </button>
+        )}
+
+        {/* Growth-only preview — visible the moment a student lands on an
+            event they've graded before, before they've submitted or
+            Activated anything this visit. Once `result` is showing, the
+            full comparison band below (with the same chart) takes over
+            instead of duplicating it here. */}
+        {!result && scoreHistory.length >= 2 && (
+          <div className="sg-pre-submit-chart">
+            <p className="sg-pre-submit-chart-label">Your progress on this event</p>
+            <ScoreProgressChart scoreHistory={scoreHistory} />
+          </div>
         )}
 
         {(inputMode === 'script' || inputMode === 'file' || inputMode === 'audio') && !isComingSoon && (

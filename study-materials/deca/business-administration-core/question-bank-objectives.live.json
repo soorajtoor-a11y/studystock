@@ -1,0 +1,134 @@
+{
+  "Discuss the nature of debtor-creditor relationships": [
+    {
+      "question": "A creditor who takes a security interest in a debtor's personal property to guarantee repayment of a loan has created what type of arrangement?",
+      "options": {
+        "A": "A guarantee agreement",
+        "B": "A secured transaction",
+        "C": "A lien arrangement",
+        "D": "A mortgage contract"
+      },
+      "answer": "B",
+      "explanation": "A secured transaction is a debtor-creditor relationship where the creditor takes a security interest (collateral) in the debtor's property to secure repayment. While a lien is a related concept, a secured transaction under the UCC is the broader, more precise legal framework. A guarantee agreement involves a third party's promise, and a mortgage specifically applies to real property, not personal property generally.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A debtor defaults on a secured loan, and the creditor wishes to recover the collateral without going to court. What is this process called?",
+      "options": {
+        "A": "Judicial foreclosure",
+        "B": "Repossession",
+        "C": "Garnishment",
+        "D": "Attachment"
+      },
+      "answer": "B",
+      "explanation": "Repossession is the creditor's right to take back collateral upon default, typically without court involvement if done peacefully. Judicial foreclosure requires court proceedings and is used primarily for real property. Garnishment is a court-ordered process to seize a debtor's wages or bank accounts. Attachment is a pre-judgment court remedy to secure assets before a final judgment.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A creditor obtains a court order to seize a portion of a debtor's monthly wages to satisfy an outstanding judgment debt. This remedy is known as",
+      "options": {
+        "A": "repossession of income",
+        "B": "wage garnishment",
+        "C": "creditor's lien enforcement",
+        "D": "involuntary liquidation"
+      },
+      "answer": "B",
+      "explanation": "Wage garnishment is the court-ordered process by which a creditor intercepts a debtor's wages to satisfy a judgment debt. Repossession applies to physical collateral, not wages. A creditor's lien enforcement is a broader remedial process that may include garnishment but is not the specific term for wage seizure. Involuntary liquidation refers to forced sale of a debtor's assets, typically in bankruptcy.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Under debtor-creditor law, what is the primary purpose of a security agreement?",
+      "options": {
+        "A": "To establish the debtor's personal credit score with national reporting agencies",
+        "B": "To allow the creditor to obtain a property interest in the debtor's assets as collateral for the debt",
+        "C": "To transfer all legal title of the debtor's property to the creditor until the debt is paid in full",
+        "D": "To prevent the debtor from entering into any additional contracts or financial transactions during the loan period"
+      },
+      "answer": "B",
+      "explanation": "A security agreement gives the creditor a security interest in (not ownership of) specified collateral, allowing the creditor to repossess or sell those assets if the debtor defaults. Option C overstates the creditor's rights—legal title does not fully transfer, only a security interest is created. Option A confuses the security agreement with credit reporting. Option D imposes an unreasonable restriction not inherent to security agreements.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When a creditor agrees to accept periodic installment payments from a debtor over time rather than demanding full payment immediately, what legal relationship has been established?",
+      "options": {
+        "A": "An open account or credit arrangement that creates ongoing debtor-creditor obligations",
+        "B": "A promissory note that eliminates the creditor's right to pursue legal action",
+        "C": "A bankruptcy filing that automatically suspends all collection efforts",
+        "D": "A lien that gives the creditor immediate ownership of the debtor's assets"
+      },
+      "answer": "A",
+      "explanation": "An open account or credit arrangement formalizes the debtor-creditor relationship when payment terms are extended over time. Option B is wrong because a promissory note does not eliminate collection rights—it documents the debt. Option C confuses debtor-creditor law with bankruptcy procedures. Option D describes a lien or secured interest, which is a separate mechanism that does not automatically apply to installment arrangements.",
+      "knowledge_area": "Business Law — Debtor-Creditor Relationships",
+      "difficulty": "medium"
+    },
+    {
+      "question": "A creditor who accepts partial payment of a debt in full satisfaction of the entire obligation has entered into what type of agreement?",
+      "options": {
+        "A": "Accord and satisfaction",
+        "B": "Novation of debt",
+        "C": "Debt consolidation",
+        "D": "Secured creditor arrangement"
+      },
+      "answer": "A",
+      "explanation": "Accord and satisfaction occurs when a creditor agrees to accept less than the full amount owed in exchange for complete discharge of the debt. Novation replaces the original obligation with a new one entirely; debt consolidation merges multiple debts but doesn't discharge them; a secured creditor arrangement protects the creditor's claim through collateral, not by accepting partial payment.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Which of the following best describes the legal status of a debtor who files for bankruptcy protection?",
+      "options": {
+        "A": "The debtor retains full ownership of all assets and continues all business operations without creditor interference",
+        "B": "The debtor's assets are placed under court supervision, and an automatic stay halts creditor collection efforts",
+        "C": "The debtor is required to immediately liquidate all personal property and repay creditors in full within 30 days",
+        "D": "The debtor loses all legal rights and becomes a ward of the bankruptcy trustee for a minimum of ten years"
+      },
+      "answer": "B",
+      "explanation": "Bankruptcy triggers an automatic stay that prevents creditors from pursuing collection while the court manages the debtor's assets. Option A ignores court supervision; option C misrepresents the timeline and flexibility of bankruptcy proceedings; option D overstates the loss of rights and incorrectly specifies a ten-year period rather than the actual discharge timeline.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A creditor who holds a mortgage on a debtor's home has what type of claim against the property?",
+      "options": {
+        "A": "An unsecured claim based on personal liability",
+        "B": "A secured claim backed by a specific asset used as collateral",
+        "C": "A floating lien that can attach to any asset the debtor acquires",
+        "D": "A general claim that ranks equally with all other creditors in bankruptcy"
+      },
+      "answer": "B",
+      "explanation": "A mortgage is a secured claim because the creditor holds a legal interest in the specific property (the home) as collateral for the loan. An unsecured claim has no collateral backing; a floating lien is a continuous claim on inventory or assets in a certain category; a general claim in bankruptcy is unsecured and ranks below secured claims.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "hard"
+    },
+    {
+      "question": "A debtor may be discharged from personal liability on a debt through bankruptcy, but which of the following debts would NOT typically be discharged?",
+      "options": {
+        "A": "Credit card debt incurred two years before filing",
+        "B": "Child support obligations owed to a former spouse or dependent",
+        "C": "Medical bills from a surgery performed before the bankruptcy filing",
+        "D": "Unsecured personal loans from friends made prior to bankruptcy"
+      },
+      "answer": "B",
+      "explanation": "Child support and alimony obligations are non-dischargeable debts in bankruptcy—they remain the debtor's personal obligation even after discharge. Credit card debt, medical bills, and personal loans are generally unsecured debts that can be discharged, allowing the debtor to be relieved of personal liability for those amounts.",
+      "knowledge_area": "Debtor-Creditor Relationships",
+      "difficulty": "hard"
+    },
+    {
+      "question": "When a debtor becomes insolvent and owes money to multiple creditors, what determines the order in which creditors receive payment from the debtor's remaining assets?",
+      "options": {
+        "A": "Creditors are paid in the order they filed collection lawsuits, regardless of whether their claims are secured or unsecured",
+        "B": "The priority of claims is established by law, with secured creditors and priority claims paid before general unsecured creditors",
+        "C": "All creditors receive equal pro-rata payments based on the total amount owed to each, with no distinction between secured and unsecured claims",
+        "D": "The debtor chooses which creditors to pay first based on personal relationships or business considerations"
+      },
+      "answer": "B",
+      "explanation": "In debtor-creditor law, the hierarchy of claims is governed by statute, with secured creditors (those holding a lien or security interest) and priority claims receiving payment before general unsecured creditors. This priority system protects creditors who took steps to secure their interest in specific assets. The other options misrepresent how the claim hierarchy works: filing a lawsuit alone doesn't determine payment order, all creditors don't receive equal treatment, and debtors don't have discretion to pay creditors in any order they choose.",
+      "knowledge_area": "Business Law — Debtor-Creditor Relationships",
+      "difficulty": "hard"
+    }
+  ]
+}

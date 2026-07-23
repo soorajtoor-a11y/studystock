@@ -2259,6 +2259,15 @@
   background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r-xl);
   padding:20px 24px; margin-bottom:20px; box-shadow:var(--shadow-sm);
 }
+
+.sg-pre-submit-chart {
+  background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r-xl);
+  padding:20px 24px; margin-top:16px; box-shadow:var(--shadow-sm);
+}
+.sg-pre-submit-chart-label {
+  font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-4);
+}
+.sg-pre-submit-chart .sg-comparison-chart { margin-top:14px; }
 .sg-comparison-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .sg-comparison-label { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; color:var(--text-4); }
 .sg-delta-badge {
@@ -2270,7 +2279,38 @@
 .sg-delta-flat { background:var(--border-s); color:var(--text-3); }
 
 .sg-comparison-headline { margin-top:8px; font-size:13.5px; line-height:1.55; color:var(--text-2); max-width:60ch; }
-.sg-comparison-sparkline { display:block; width:100%; max-width:220px; height:28px; margin-top:12px; }
+
+.sg-comparison-chart { width:100%; max-width:440px; margin-top:18px; }
+.sg-comparison-chart-row { display:flex; gap:8px; }
+.sg-comparison-chart-yaxis {
+  display:flex; flex-direction:column; justify-content:space-between;
+  font-family:var(--font-mono); font-size:10.5px; font-weight:700; color:var(--text-4);
+  padding:16px 0 0; text-align:right; flex-shrink:0; min-width:26px;
+}
+.sg-comparison-chart-plot { position:relative; flex:1; min-width:0; height:104px; padding-top:16px; }
+.sg-comparison-sparkline { display:block; width:100%; height:100%; }
+.sg-comparison-chart-dots { position:absolute; inset:0 0 0 0; top:16px; pointer-events:none; }
+.sg-comparison-chart-dot {
+  position:absolute; width:7px; height:7px; border-radius:50%;
+  background:var(--surface); border:2px solid var(--signal-500);
+  transform:translate(-50%, -50%);
+}
+.sg-comparison-chart-dot-current {
+  width:10px; height:10px; background:var(--signal-600); border-color:var(--signal-600);
+  box-shadow:0 0 0 3px var(--tint);
+}
+.sg-comparison-chart-dot-value {
+  position:absolute; left:50%; bottom:100%; transform:translateX(-50%); margin-bottom:6px;
+  font-family:var(--font-mono); font-size:10.5px; font-weight:800; color:var(--text-2);
+  white-space:nowrap; background:var(--surface); padding:1px 5px; border-radius:6px;
+  box-shadow:0 0 0 1px var(--border);
+}
+.sg-comparison-chart-dot-current .sg-comparison-chart-dot-value { color:var(--signal-700); box-shadow:0 0 0 1px var(--tint-border); }
+.sg-comparison-chart-labels { display:flex; justify-content:space-between; margin-top:6px; gap:4px; padding-left:34px; }
+.sg-comparison-chart-labels span {
+  font-family:var(--font-mono); font-size:10px; color:var(--text-4); white-space:nowrap;
+}
+.sg-comparison-chart-label-current { color:var(--signal-600) !important; font-weight:800; }
 
 .sg-comparison-cols { display:flex; gap:24px; margin-top:16px; flex-wrap:wrap; }
 .sg-comparison-col { flex:1; min-width:180px; }
@@ -2287,15 +2327,6 @@
 .sg-comparison-delta { color:var(--text-3); font-family:var(--font-mono); font-size:12px; }
 
 .sg-comparison-addressed { margin-top:14px; font-size:12.5px; font-weight:700; color:var(--green); }
-
-.sg-comparison-actions { margin-top:16px; padding-top:16px; border-top:1px solid var(--border); }
-.sg-comparison-action-list { list-style:none; display:flex; flex-direction:column; gap:8px; margin-top:8px; }
-.sg-comparison-action-list li { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.sg-comparison-action-text { flex:1; font-size:13px; line-height:1.5; color:var(--text-2); }
-.sg-comparison-action-pts {
-  flex-shrink:0; font-family:var(--font-mono); font-size:11px; font-weight:800;
-  padding:2px 9px; border-radius:20px; background:var(--tint); color:var(--signal-700); white-space:nowrap;
-}
 
 .sg-comparison-note { margin-top:12px; font-size:12px; line-height:1.5; color:var(--text-4); }
 

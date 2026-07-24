@@ -1706,7 +1706,7 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
       </div>
 
       {tab === 'roleplay' ? (
-        <RolePlayPage embedded presetEventId={HYBRID_EVENT_ROLEPLAY_NAME[event]} />
+        <RolePlayPage embedded presetEventId={HYBRID_EVENT_ROLEPLAY_NAME[event]} user={user} org={org} />
       ) : tab === 'notes' ? (
         <NotesWindow org={org} event={event} outline={outline} user={user} onNeedAccount={onNeedAccount} />
       ) : (

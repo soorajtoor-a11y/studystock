@@ -2493,3 +2493,10 @@
 .rp-audio-drop:hover { border-color:var(--signal-500); color:var(--text-2); background:var(--tint); }
 
 .rp-result-footer { display:flex; gap:10px; flex-wrap:wrap; max-width:640px; margin:20px auto 0; }
+
+.rp-landing-card {
+  max-width:640px; margin:0 auto; padding:28px 26px; text-align:center;
+  border:1.5px solid var(--border); border-radius:var(--r-lg); background:var(--surface); box-shadow:var(--shadow-sm);
+}
+.rp-landing-title { font-family:var(--font-head); font-size:22px; font-weight:800; color:var(--text); margin:10px 0 10px; }
+.rp-landing-desc { font-size:14px; line-height:1.6; color:var(--text-2); margin-bottom:20px; }

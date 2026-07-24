@@ -212,3 +212,33 @@ create index if not exists qa_question_history_lookup
   on qa_question_history (user_id, org, event, created_at desc);
 
 grant select, insert, update, delete on public.qa_question_history to authenticated;
+
+-- FBLA Role Play generator — one row per attempt, same insert-then-optionally
+-- -update-in-place pattern as workbot_grade_history (insert right after the
+-- main grade; if the student then does the judge follow-up Q&A, update the
+-- same row's `result` so the persisted scorecard reflects the qa unlock too,
+-- not just the version from before Q&A). `scenario` is stored alongside the
+-- grade (not just the grade alone) so re-opening a past attempt can show
+-- exactly what situation the student was responding to, not just the score.
+create table if not exists roleplay_history (
+  id         uuid primary key default gen_random_uuid(),
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  org        text not null default 'fbla',
+  event      text not null,
+  scenario   jsonb not null,
+  input_mode text not null check (input_mode in ('script', 'audio')),
+  result     jsonb not null,
+  created_at timestamptz not null default now()
+);
+
+alter table roleplay_history enable row level security;
+
+create policy "Users manage their own roleplay history"
+  on roleplay_history for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+create index if not exists roleplay_history_lookup
+  on roleplay_history (user_id, org, event, created_at desc);
+
+grant select, insert, update, delete on public.roleplay_history to authenticated;

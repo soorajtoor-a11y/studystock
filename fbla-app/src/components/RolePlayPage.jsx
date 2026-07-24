@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
+import { supabase } from '../supabaseClient'
 import { useFakeProgress } from '../lib/useFakeProgress'
 import ProgressBar from './ProgressBar'
+import RolePlayGradeHistorySidePanel from './RolePlayGradeHistorySidePanel'
 
 const EASE = [0.16, 1, 0.3, 1]
 
@@ -62,6 +64,27 @@ function EventPicker({ events, onSelect }) {
         {events.length === 0 && <p className="sg-inline-error">Loading events…</p>}
       </div>
     </div>
+  )
+}
+
+// The gate between picking/arriving at an event and actually generating a
+// scenario — nothing fires until the student explicitly clicks Begin, so
+// landing on this tab (or Activating a past attempt from history) never
+// silently kicks off a fresh generation call in the background.
+function EventLanding({ eventId, eventMeta, onBegin, beginning }) {
+  return (
+    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.28, ease: EASE }} className="rp-landing-card">
+      <p className="rp-scenario-event">{eventId}</p>
+      <h3 className="rp-landing-title">Ready when you are</h3>
+      <p className="rp-landing-desc">
+        You'll get a fresh, on-topic scenario{eventMeta ? ` — ${eventMeta.prep_minutes} min prep, ${eventMeta.perform_minutes} min performance` : ''}.
+        Perform your response typed or recorded, get scored against the official rating sheet, then
+        answer the judge's follow-up questions to unlock the last line.
+      </p>
+      <button className="sg-grade-btn" onClick={onBegin} disabled={beginning}>
+        {beginning ? 'Starting…' : 'Begin Role Play →'}
+      </button>
+    </motion.div>
   )
 }
 
@@ -341,22 +364,29 @@ function FollowUpSession({ eventId, scenario, results, onDone, onSkip }) {
 
 // `presetEventId` (a roleplay_config.json display name, e.g. from
 // HYBRID_EVENT_ROLEPLAY_NAME) skips the picker and jumps straight to that
-// event — used when this is embedded as a tab inside a specific hybrid
-// event's page rather than opened standalone from the sidebar. Only 3 of
-// the 12 hybrid events have a built roleplay_config.json entry so far; this
-// checks the live /api/roleplay-events list rather than trusting a
-// hardcoded flag, so a preset event that isn't built yet gets a clear
-// "coming soon" state instead of a raw 400 from the scenario endpoint.
+// event's landing screen — used when this is embedded as a tab inside a
+// specific hybrid event's page rather than opened standalone from the
+// sidebar. Only 3 of the 12 hybrid events have a built roleplay_config.json
+// entry so far; this checks the live /api/roleplay-events list rather than
+// trusting a hardcoded flag, so a preset event that isn't built yet gets a
+// clear "coming soon" state instead of a raw 400 from the scenario endpoint.
 // `embedded` drops the standalone page's own header/back-button/padding
 // chrome, since the host page (EventView's tab) already provides it.
-export default function RolePlayPage({ onBack, presetEventId = null, embedded = false }) {
+// `user`/`org` (org defaults to 'fbla' — role play is FBLA-only today) wire
+// up the Grade History side panel, same pattern as WorkbotPage.
+export default function RolePlayPage({ onBack, presetEventId = null, embedded = false, user = null, org = 'fbla' }) {
   const [events, setEvents] = useState([])
   const [eventId, setEventId] = useState(presetEventId)
   const [scenario, setScenario] = useState(null)
   const [recentScenarios, setRecentScenarios] = useState([])
-  const [phase, setPhase] = useState(presetEventId ? 'preset-loading' : 'pick') // preset-loading | unavailable | pick | scenario-loading | scenario | respond | grading | result | qa | error
+  // preset-loading | unavailable | pick | landing | scenario-loading |
+  // scenario | respond | grading | result | qa | error
+  const [phase, setPhase] = useState(presetEventId ? 'preset-loading' : 'pick')
   const [error, setError] = useState(null)
   const [grade, setGrade] = useState(null)
+  const [historyCollapsed, setHistoryCollapsed] = useState(false)
+  const [historyRefreshKey, setHistoryRefreshKey] = useState(0)
+  const [activeGradeId, setActiveGradeId] = useState(null)
   const genProgress = useFakeProgress(phase === 'scenario-loading', 6000)
   const gradeProgress = useFakeProgress(phase === 'grading', 20000)
 
@@ -364,13 +394,13 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
     fetch('/api/roleplay-events').then(r => r.json()).then(list => {
       setEvents(list)
       if (presetEventId) {
-        if (list.some(e => e.event === presetEventId)) pickEvent(presetEventId)
-        else setPhase('unavailable')
+        setPhase(list.some(e => e.event === presetEventId) ? 'landing' : 'unavailable')
       }
     }).catch(() => {})
   }, [])
 
   function fetchScenario(id, recents) {
+    setActiveGradeId(null)
     setPhase('scenario-loading')
     fetch('/api/roleplay/scenario', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -385,10 +415,17 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
       .catch(err => { setError(err.message); setPhase('error') })
   }
 
+  // Picking an event (from the internal picker) only selects it — it lands
+  // on the "Begin Role Play" gate, same as arriving via a preset event or
+  // Activating a past attempt, rather than immediately generating anything.
   function pickEvent(id) {
     setEventId(id)
     setRecentScenarios([])
-    fetchScenario(id, [])
+    setPhase('landing')
+  }
+
+  function beginRoleplay() {
+    fetchScenario(eventId, recentScenarios)
   }
 
   function rerollScenario() {
@@ -411,19 +448,56 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
         if (d.error) { setError(d.error); setPhase('error'); return }
         setGrade(d)
         setPhase('result')
+        // Persist for the signed-in user's Role Play History — fire-and-
+        // forget, mirrors WorkbotPage's handleGrade save. No raw audio bytes
+        // saved (no storage bucket exists in this project), just the
+        // scenario + full grader response, everything the scorecard/history
+        // row needs to re-render identically later.
+        if (user) {
+          supabase.from('roleplay_history').insert({
+            user_id: user.id, org, event: eventId, scenario, input_mode: d.toolId, result: d,
+          }).select('id').then(({ data, error }) => {
+            if (error) { console.warn('[roleplay history] save failed:', error.message); return }
+            setActiveGradeId(data?.[0]?.id ?? null)
+            setHistoryRefreshKey(k => k + 1)
+          })
+        }
       })
       .catch(err => { setError(err.message); setPhase('error') })
   }
 
+  // Q&A finished — swap in the qa-merged scorecard and, if this attempt was
+  // saved to history, update that row in place so the persisted scorecard
+  // reflects the qa unlock too, not just the pre-Q&A version.
+  function handleQADone(updatedGrade) {
+    setGrade(updatedGrade)
+    setPhase('result')
+    if (user && activeGradeId) {
+      supabase.from('roleplay_history').update({ result: updatedGrade }).eq('id', activeGradeId)
+        .then(({ error }) => { if (error) console.warn('[roleplay qa] failed to save to history:', error.message) })
+    }
+  }
+
+  // Reopens a past attempt exactly as it was scored — no re-generation, no
+  // re-grading.
+  function handleActivate(row) {
+    setScenario(row.scenario)
+    setGrade(row.result)
+    setActiveGradeId(row.id)
+    setPhase('result')
+  }
+
   function resetToPicker() {
-    setScenario(null); setGrade(null); setError(null)
-    if (presetEventId) { pickEvent(presetEventId); return }
+    setScenario(null); setGrade(null); setError(null); setActiveGradeId(null)
+    if (presetEventId) { setPhase('landing'); return }
     setEventId(null)
     setPhase('pick')
   }
 
   const qaCriterion = grade?.results.find(r => r.category === 'qa')
   const qaAvailable = qaCriterion && qaCriterion.locked
+  const eventMeta = events.find(e => e.event === eventId)
+  const showHistoryPanel = !!user && !!eventId && !['pick', 'preset-loading', 'unavailable'].includes(phase)
 
   const body = (
           <AnimatePresence mode="wait">
@@ -447,6 +521,12 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
             {phase === 'pick' && (
               <motion.div key="pick" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                 <EventPicker events={events} onSelect={pickEvent} />
+              </motion.div>
+            )}
+
+            {phase === 'landing' && (
+              <motion.div key="landing">
+                <EventLanding eventId={eventId} eventMeta={eventMeta} onBegin={beginRoleplay} beginning={false} />
               </motion.div>
             )}
 
@@ -493,7 +573,7 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
                 <FollowUpSession
                   eventId={eventId} scenario={scenario} results={grade.results}
                   onSkip={() => setPhase('result')}
-                  onDone={updatedGrade => { setGrade(updatedGrade); setPhase('result') }}
+                  onDone={handleQADone}
                 />
               </motion.div>
             )}
@@ -508,10 +588,28 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
           </AnimatePresence>
   )
 
-  if (embedded) return <div className="sg-body rp-embedded">{body}</div>
+  const historyPanel = showHistoryPanel && (
+    <RolePlayGradeHistorySidePanel
+      event={eventId} user={user}
+      collapsed={historyCollapsed} onToggleCollapse={() => setHistoryCollapsed(c => !c)}
+      refreshKey={historyRefreshKey} onActivate={handleActivate} activeRowId={activeGradeId}
+    />
+  )
+  const historyGridStyle = showHistoryPanel
+    ? { gridTemplateColumns: `1fr ${historyCollapsed ? '44px' : '320px'}` }
+    : { gridTemplateColumns: '1fr' }
+
+  if (embedded) {
+    return (
+      <div className={`event-layout ${showHistoryPanel ? 'explain-with-history' : ''}`} style={{ ...historyGridStyle, height: '100%' }}>
+        <div className="sg-body rp-embedded">{body}</div>
+        {historyPanel}
+      </div>
+    )
+  }
 
   return (
-    <div className="event-layout" style={{ gridTemplateColumns: '1fr', height: '100%' }}>
+    <div className={`event-layout ${showHistoryPanel ? 'explain-with-history' : ''}`} style={historyGridStyle}>
       <div className="study-pane">
         <div className="study-header">
           <button className="back-btn" onClick={onBack}>← Back</button>
@@ -519,6 +617,7 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
         </div>
         <div className="sg-body">{body}</div>
       </div>
+      {historyPanel}
     </div>
   )
 }

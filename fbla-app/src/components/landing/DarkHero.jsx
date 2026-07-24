@@ -110,6 +110,18 @@ export default function DarkHero({ onStart, onScrollTo, onSignIn }) {
               Sign in for free
             </button>
           </motion.div>
+
+          {/* The one claim worth repeating in plain mono, not folded into
+              the paragraph above where it'd read as a footnote — every tool
+              is free, full stop, not a "free tier" of a paid product. */}
+          <motion.p
+            initial={reduced ? false : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.92 }}
+            className="mt-5 font-exam-mono text-[12px] tracking-[0.1em] text-exam-brass"
+          >
+            EVERY TOOL, 100% FREE — NO CARD, NO TRIAL, NO CATCH.
+          </motion.p>
         </div>
 
         {/* The award plaque — offset to the right, in the open field beside

@@ -8,6 +8,7 @@ import DarkTools from './components/landing/DarkTools'
 import RatingSheet from './components/landing/RatingSheet'
 import DarkAbout from './components/landing/DarkAbout'
 import DarkSocialProof from './components/landing/DarkSocialProof'
+import DarkPricing from './components/landing/DarkPricing'
 import DarkClosingCTA from './components/landing/DarkClosingCTA'
 import DarkFooter from './components/landing/DarkFooter'
 import { useRef } from 'react'
@@ -40,6 +41,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn }) {
         <RatingSheet />
         <DarkAbout />
         <DarkSocialProof />
+        <DarkPricing />
         <DarkClosingCTA onStart={onStart} />
       </main>
       <DarkFooter onScrollTo={scrollToId} onPickEvent={onPickEvent} />

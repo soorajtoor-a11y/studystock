@@ -16,7 +16,8 @@ export default function DarkClosingCTA({ onStart }) {
         Study the rubric your judges are already using.
       </h2>
       <p className="mx-auto mt-6 max-w-[48ch] font-exam-grotesque text-[17px] leading-[1.6] text-exam-bone-soft">
-        Free to start, no card required. Pick an event and see your first practice test in under a minute.
+        Completely free, every tool — no card, no trial. Pick an event and see your first practice test
+        in under a minute.
       </p>
       <motion.button
         type="button"

@@ -1,8 +1,10 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import Landing from './Landing'
 import Reveal from './components/Reveal'
 import WorkbotPage from './components/WorkbotPage'
+import RolePlayPage from './components/RolePlayPage'
+import { isHybridEvent, HYBRID_EVENT_ROLEPLAY_NAME } from './lib/hybridEvents'
 import CollapsedRail from './components/CollapsedRail'
 import NotesWindow from './components/NotesWindow'
 import { ORG_META, ORG_ORDER } from './orgMeta'
@@ -325,15 +327,6 @@ function HomePage({ onStart, org }) {
             </div>
           </>
         )}
-
-        <div className="home-tip">
-          <span className="home-tip-icon">💬</span>
-          <span>
-            <strong>How to start:</strong> Click <em>Pick an Event →</em> above to browse all
-            competitive events, or select one directly from the sidebar. Then study a single
-            objective, an entire section, or the full event, with Quiz, Flashcard, Explain, or Notes modes.
-          </span>
-        </div>
       </div>
     </div>
   )
@@ -1692,15 +1685,29 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
             <span className="event-tab-icon" aria-hidden="true">📄</span>
             Notes
           </button>
+          {isHybridEvent(event) && (
+            <button
+              role="tab" aria-selected={tab === 'roleplay'}
+              className={`event-tab ${tab === 'roleplay' ? 'active' : ''}`}
+              onClick={() => setTab('roleplay')}
+            >
+              <span className="event-tab-icon" aria-hidden="true">🎭</span>
+              Role Play
+            </button>
+          )}
         </div>
         <p className="event-subtitle">
           {tab === 'study'
             ? 'Click any objective to study it, or use the panel on the right to study a section or the full event.'
-            : 'Generate clean, saved study notes for each section — edit them any time, or revisit your notes history.'}
+            : tab === 'notes'
+            ? 'Generate clean, saved study notes for each section — edit them any time, or revisit your notes history.'
+            : "Practice this event's live Role Play component: a fresh scenario, your performance, and the judge's official rating sheet."}
         </p>
       </div>
 
-      {tab === 'notes' ? (
+      {tab === 'roleplay' ? (
+        <RolePlayPage embedded presetEventId={HYBRID_EVENT_ROLEPLAY_NAME[event]} />
+      ) : tab === 'notes' ? (
         <NotesWindow org={org} event={event} outline={outline} user={user} onNeedAccount={onNeedAccount} />
       ) : (
         <div
@@ -1840,9 +1847,10 @@ function OrgSwitcher({ org, orgs, onChange }) {
 }
 
 // ── Sidebar ───────────────────────────────────────────────────────────────────
-function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, onWorkbotAskAnything, open, collapsed, onToggleCollapsed }) {
+function Sidebar({ events, hybridEvents, presentationEvents, workbotEventId, page, activeEvent, org, orgs, onSelect, onHome, onLanding, onOrgChange, onSettings, onAccount, onWorkbot, user, pins, onTogglePin, onSelectPinned, onOpenHistory, onWorkbotAskAnything, open, collapsed, onToggleCollapsed }) {
   const [search, setSearch] = useState('')
   const [objOpen, setObjOpen] = useState(false)
+  const [hybridOpen, setHybridOpen] = useState(false)
   const [presOpen, setPresOpen] = useState(false)
   const filtered = search.trim()
     ? events.filter(e => matchesEventSearch(formatEventName(e), search))
@@ -2006,6 +2014,53 @@ function Sidebar({ events, presentationEvents, workbotEventId, page, activeEvent
               )}
             </div>
 
+            {org === 'fbla' && hybridEvents.length > 0 && (
+              <div className="sidebar-group">
+                <button className="sidebar-group-header" onClick={() => setHybridOpen(o => !o)} aria-expanded={hybridOpen} title="Hybrid Events (Objective Test + Role Play)">
+                  <span className="sidebar-group-header-left">
+                    <svg className="sidebar-group-icon" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
+                      <path d="M10 2a4 4 0 100 8 4 4 0 000-8zM3 17a7 7 0 0114 0 1 1 0 01-1 1H4a1 1 0 01-1-1z" />
+                    </svg>
+                    <span className="sidebar-group-label">Hybrid Events</span>
+                  </span>
+                  <span className="sidebar-group-header-right">
+                    <span className="sidebar-count-badge">{hybridEvents.length}</span>
+                    <svg className={`sidebar-group-chevron ${hybridOpen ? 'open' : ''}`} viewBox="0 0 20 20" fill="currentColor" width="12" height="12">
+                      <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                </button>
+
+                {hybridOpen && !collapsed && (
+                  <div className="sidebar-group-content">
+                    <nav className="sidebar-nav">
+                      {hybridEvents.map(ev => {
+                        const pinned = pins.some(p => p.org === org && p.event === ev && p.kind === 'study')
+                        return (
+                          <div key={ev} className={`sidebar-item ${ev === activeEvent && page === 'event' ? 'active' : ''}`}>
+                            <motion.button whileTap={{ scale: 0.98 }} transition={{ duration: 0.1, ease: EASE }} className="sidebar-item-main" onClick={() => { onSelect(ev); setHybridOpen(false) }} title={formatEventName(ev)}>
+                              <span className="sidebar-item-dot" />
+                              <span className="sidebar-item-name">{formatEventName(ev)}</span>
+                            </motion.button>
+                            <button
+                              className={`sidebar-pin-btn ${pinned ? 'pinned' : ''}`}
+                              onClick={e => { e.stopPropagation(); onTogglePin(org, ev, 'study') }}
+                              title={pinned ? 'Unpin event' : 'Pin event'}
+                              aria-label={pinned ? 'Unpin event' : 'Pin event'}
+                            >
+                              <svg viewBox="0 0 20 20" fill={pinned ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" width="12" height="12">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.958a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.368 2.447a1 1 0 00-.363 1.118l1.286 3.958c.3.921-.755 1.688-1.538 1.118L10.586 15.6a1 1 0 00-1.176 0l-3.368 2.447c-.783.57-1.838-.197-1.538-1.118l1.286-3.958a1 1 0 00-.363-1.118L2.06 9.386c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.958z" />
+                              </svg>
+                            </button>
+                          </div>
+                        )
+                      })}
+                    </nav>
+                  </div>
+                )}
+              </div>
+            )}
+
             {org === 'fbla' && (
               <div className="sidebar-group">
                 <button className="sidebar-group-header" onClick={handlePresHeaderClick} aria-expanded={presOpen} title="Presentation Events">
@@ -2093,6 +2148,12 @@ export default function App() {
   const [pendingDestination, setPendingDestination] = useState('home')
   const [events,      setEvents]      = useState([])
   const [eventsLoaded, setEventsLoaded] = useState(false)
+  // The 12 hybrid (objective test + role play) events get their own sidebar
+  // section and a 3-tab event page instead of living in the plain
+  // "Objective Tests" list — split once here so every consumer (sidebar,
+  // the "Pick an Event" browse page) sees the same split automatically.
+  const objectiveEvents = useMemo(() => events.filter(e => !isHybridEvent(e)), [events])
+  const hybridEventsList = useMemo(() => events.filter(isHybridEvent), [events])
   const [presentationEvents, setPresentationEvents] = useState([])
   const [workbotEventId, setWorkbotEventId] = useState(null)
   const [page,        setPage]        = useState('landing')   // 'landing' | 'orgpicker' | 'dashboard' | 'home' | 'picker' | 'event' | 'settings' | 'account' | 'workbot' | 'workbot-explain' | 'explain-history'
@@ -2168,6 +2229,20 @@ export default function App() {
       // postLoginRedirect earlier can't cause a premature/silent redirect.
       if (event === 'SIGNED_IN' && postLoginRedirectRef.current) {
         setPostLoginRedirect(false); setForceLoginForm(false); setPage('dashboard')
+      }
+      // A signed-out session must look exactly like nobody was ever signed
+      // in — org selection, the currently-open event, and any in-progress
+      // study session all belong to that account's session, not to the
+      // browser tab. Centralized here (rather than duplicated at every
+      // call site that signs out) so it's caught regardless of which one
+      // triggered it: the Account page's Log Out button, handleStartGuest,
+      // or handleSignIn. Deliberately does NOT force `page` — callers that
+      // sign out as a setup step for their own navigation (handleStartGuest,
+      // handleSignIn) already set `page` themselves right after, and this
+      // fires asynchronously, so overwriting it here could race and clobber
+      // that intended destination.
+      if (event === 'SIGNED_OUT') {
+        setOrg(null); setActiveEvent(null); setStudy(null)
       }
     })
     return () => sub.subscription.unsubscribe()
@@ -2391,7 +2466,12 @@ export default function App() {
     }
   }, [theme, page])
 
-  function handleLanding()       { setPage('landing'); setActiveEvent(null); setStudy(null); setNavOpen(false) }
+  // Landing is the neutral, no-org-context marketing page — carrying a
+  // previously-picked org's color/state back into it (and then into
+  // whatever comes next) is exactly the stale-DECA-blue-before-picking-
+  // anything bug this was resetting incompletely: org is now cleared here
+  // too, not just activeEvent/study.
+  function handleLanding()       { setPage('landing'); setOrg(null); setActiveEvent(null); setStudy(null); setNavOpen(false) }
   function handleOrgPicker(dest) { setPendingDestination(dest); setPage('orgpicker'); setNavOpen(false) }
   function handleOrgSelect(o)    { setOrg(o); setPage(pendingDestination); setNavOpen(false) }
   function handleSwitchOrg() {
@@ -2429,8 +2509,13 @@ export default function App() {
   // resets to empty, not just hide the Dashboard behind different routing.
   function handleStartGuest() {
     supabase.auth.signOut()
-    if (!org) return handleOrgPicker('home')
-    setPage('home'); setActiveEvent(null); setStudy(null); setNavOpen(false)
+    // Always re-prompt the org picker here, never fall through to a
+    // previously-picked org — `org` won't actually clear until the
+    // SIGNED_OUT listener's async callback runs, so checking `!org`
+    // synchronously right after signOut() would still see the stale value
+    // and skip straight into whatever org was last selected.
+    setOrg(null); setActiveEvent(null); setStudy(null)
+    handleOrgPicker('home')
   }
   function handleBrowseAll() { handleOrgPicker('home') }
   // "Sign In" from the landing nav: a full reset back to a signed-out state,
@@ -2449,6 +2534,7 @@ export default function App() {
     setPostLoginRedirect(true)
     setForceLoginForm(true)
     supabase.auth.signOut()
+    setOrg(null); setActiveEvent(null); setStudy(null)
     setPage('account'); setNavOpen(false)
   }
   function handleSettings() {
@@ -2582,7 +2668,7 @@ export default function App() {
   } else if (page === 'home') {
     content = <HomePage onStart={handlePickerOpen} org={org} />
   } else if (page === 'picker') {
-    content = <EventPickerPage events={events} org={org} onSelect={handleSelectEvent} onBack={handleHome} />
+    content = <EventPickerPage events={objectiveEvents} org={org} onSelect={handleSelectEvent} onBack={handleHome} />
   } else if (page === 'event' && activeEvent) {
     content = (
       <EventView
@@ -2609,7 +2695,8 @@ export default function App() {
       </button>
       {navOpen && <div className="sidebar-backdrop" onClick={() => setNavOpen(false)} />}
       <Sidebar
-        events={events}
+        events={objectiveEvents}
+        hybridEvents={hybridEventsList}
         presentationEvents={presentationEvents}
         workbotEventId={workbotEventId}
         page={page}

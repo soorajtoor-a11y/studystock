@@ -15,6 +15,10 @@ import { listNotYetGradableEvents, notReadyInputOptionsFor, tierFor } from './se
 import { extFromFilename } from './services/downloader.js';
 import { findEvent as findPresentationEvent, allCriteria } from './services/rubrics.js';
 import { PRESENTATION_EVENT_DESCRIPTIONS } from './services/presentationEventDescriptions.js';
+import { listRoleplayEvents } from './services/roleplayConfig.js';
+import { generateScenario } from './services/roleplayScenario.js';
+import { gradeRoleplay } from './services/roleplayGrader.js';
+import { generateFollowUps, scoreFollowUpAnswers } from './services/roleplayQuestions.js';
 
 // Load .env before anything reads process.env
 const __envPath = fileURLToPath(new URL('.env', import.meta.url));
@@ -1451,6 +1455,106 @@ app.post('/api/workbot/qa/score', async (req, res) => {
     res.json({ result, per_question: qaResult.per_question });
   } catch (err) {
     console.error('Q&A score error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// FBLA Role Play generator — Part A (situation maker). See
+// vye-fbla-roleplay-generator/START-HERE.md for the full three-part spec;
+// only part A (scenario generation) is wired up so far. Covers the 3
+// events built first: Marketing, Customer Service, Banking & Financial
+// Systems — data/roleplay_config.json.
+app.get('/api/roleplay-events', (req, res) => {
+  res.json(listRoleplayEvents());
+});
+
+app.post('/api/roleplay/scenario', async (req, res) => {
+  const { eventId, recentScenarios } = req.body || {};
+  if (typeof eventId !== 'string') {
+    return res.status(400).json({ error: 'Unknown or missing eventId' });
+  }
+  try {
+    const scenario = await generateScenario(eventId, Array.isArray(recentScenarios) ? recentScenarios : []);
+    res.json(scenario);
+  } catch (err) {
+    console.error('Role-play scenario error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Part B — grader. Same multipart-or-JSON contract as /api/workbot/grade:
+// a JSON body of { eventId, scenario, script } for a typed script, or a
+// multipart upload with an `eventId` field, a `file` field, and
+// `inputType: 'audio'`. `scenario` (Part A's output) is optional but should
+// be passed for grounded, scenario-aware justifications.
+app.post('/api/roleplay/grade', workbotUpload.single('file'), async (req, res) => {
+  const eventId = req.body?.eventId;
+  if (typeof eventId !== 'string') {
+    return res.status(400).json({ error: 'Unknown or missing eventId' });
+  }
+
+  let scenario = req.body?.scenario;
+  if (typeof scenario === 'string') {
+    try { scenario = JSON.parse(scenario); } catch { scenario = null; }
+  }
+
+  const input = {};
+  if (req.file) {
+    input.audioBuffer = req.file.buffer;
+    input.filename = req.file.originalname;
+    input.mimeType = req.file.mimetype;
+  } else if (typeof req.body?.script === 'string') {
+    if (req.body.script.length > MAX_SCRIPT_LENGTH) {
+      return res.status(400).json({ error: `script exceeds ${MAX_SCRIPT_LENGTH} characters` });
+    }
+    input.script = req.body.script;
+  } else {
+    return res.status(400).json({ error: 'Provide either a script string or an audio file' });
+  }
+
+  try {
+    const result = await gradeRoleplay(eventId, scenario && typeof scenario === 'object' ? scenario : null, input);
+    res.json(result);
+  } catch (err) {
+    console.error('Role-play grade error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Part C, job 1 — in-character judge follow-ups targeting Part B's weak
+// lines. `results` is the `results` array from a /api/roleplay/grade
+// response.
+app.post('/api/roleplay/questions', async (req, res) => {
+  const { eventId, scenario, results, recentQuestions } = req.body || {};
+  if (typeof eventId !== 'string' || !scenario || !Array.isArray(results)) {
+    return res.status(400).json({ error: 'eventId, scenario, and results are required' });
+  }
+  try {
+    const questions = await generateFollowUps(eventId, scenario, results, Array.isArray(recentQuestions) ? recentQuestions : []);
+    res.json({ questions });
+  } catch (err) {
+    console.error('Role-play questions error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Part C, job 2 — scores the follow-up exchanges, filling in the locked
+// "qa" line and re-checking any content lines a strong answer clarified.
+// `gradeResult` is a full /api/roleplay/grade response; `exchanges` is
+// [{question, answer, isAudio, targets_criterion}]. Audio answers should be
+// transcribed client-side first via the existing, already-generic
+// /api/workbot/qa/transcribe route — no separate roleplay transcribe route
+// needed.
+app.post('/api/roleplay/questions/score', async (req, res) => {
+  const { eventId, gradeResult, exchanges } = req.body || {};
+  if (typeof eventId !== 'string' || !gradeResult?.results || !Array.isArray(exchanges)) {
+    return res.status(400).json({ error: 'eventId, gradeResult, and exchanges are required' });
+  }
+  try {
+    const result = await scoreFollowUpAnswers(eventId, gradeResult, exchanges);
+    res.json(result);
+  } catch (err) {
+    console.error('Role-play questions/score error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });

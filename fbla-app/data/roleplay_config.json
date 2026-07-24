@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "purpose": "Config + data for the FBLA role-play generator. Three parts: (A) situation maker, (B) audio/script grader, (C) question generator. FBLA scores the role-play PERFORMANCE on one shared rating sheet; only the event-specific line(s) change per event.",
+    "applies_to": "FBLA high-school Role Play events (the 12 hybrid test + role-play events).",
+    "source_year": "2025-2026",
+    "sources": [
+      "connect.fbla.org official guidelines (S3, not directly readable) — verified via readable mirrors below",
+      "Marketing: middletonfbla.com/wp-content/uploads/2025/09/Marketing_Guidelines25-26.pdf (verbatim national mirror)",
+      "Customer Service: cteresource.org/media/bk3aucoz/2526-customer-service-va-fbla.pdf (VA FBLA = national verbatim)",
+      "Banking & Financial Systems: cteresource.org/media/2jamyfhq/2526-banking-and-finance-va-fbla.pdf (VA FBLA = national verbatim)"
+    ],
+    "scope_note": "3 of 12 events built first (Marketing, Customer Service, Banking & Financial Systems) to validate the format. The other 9 reuse the SAME shared rating sheet — only knowledge_areas and the event-specific line(s) differ."
+  },
+
+  "output_contract": {
+    "scenario": "{ event, role, company, situation, your_task, judge_role, knowledge_areas_in_play:[...], prep_minutes, perform_minutes, participants }",
+    "grade": "{ toolId:'roleplay', event, results:[ {criterion, category, max, band, points, justification, fix, gradable_from} ], penalties:[...], total:{scored, of:100}, meta:{transcript, input_mode} }"
+  },
+
+  "how_fbla_scoring_works": {
+    "shared_rating_sheet": "All FBLA role-play events are scored on ONE common 7-line, 100-point rating sheet. Four bands per line: 'Not Demonstrated' (0), 'Below Expectations', 'Meets Expectations', 'Exceeds Expectations'.",
+    "the_only_event_specific_line": "Line 'Demonstrates knowledge of the event knowledge areas' — the knowledge_areas differ per event and are the substance of that line.",
+    "event_variants": "A few events swap content lines for custom ones (e.g., Customer Service replaces two lines with Empathy/Diplomacy and Conflict Resolution, each worth 20). Each event below therefore carries its OWN explicit rating_sheet so the grader never has to guess.",
+    "band_point_ranges": {
+      "comment": "Point ranges are standardized by the line's max. Use these exactly.",
+      "max_10": { "Not Demonstrated": "0", "Below Expectations": "1-6", "Meets Expectations": "7-8", "Exceeds Expectations": "9-10" },
+      "max_20": { "Not Demonstrated": "0", "Below Expectations": "1-9", "Meets Expectations": "10-16", "Exceeds Expectations": "17-20" }
+    },
+    "penalties": [
+      { "reason": "Dress code violation", "points": -5 },
+      { "reason": "Late arrival / failure to follow event procedures", "points": -5 }
+    ],
+    "gradable_from_legend": {
+      "script": "Content lines — gradable from a typed script OR an audio transcript.",
+      "audio": "Verbal delivery (voice projection, pace, fluency) and answering questions — gradable from audio.",
+      "video": "Body language and eye contact — need video for a full score; from audio alone, grade only the voice portion and flag the visual portion as not assessed."
+    }
+  },
+
+  "context_banks": {
+    "comment": "The situation maker draws ONE value from each bank (+ temperature + recent-history exclusion) to make every scenario unique while the rating sheet stays fixed. Prefer the event's domain_flavor for on-topic settings.",
+    "company_sizes": ["a startup with a handful of employees", "a single local branch/location", "a regional chain", "a fast-growing franchise", "an established national brand"],
+    "constraints": ["a tight budget this quarter", "a two-week deadline", "a competitor just changed the game", "a recent negative online review", "limited staff availability", "a new company policy", "a compliance/regulatory requirement"],
+    "twists": ["the client is unhappy and considering leaving", "a new opportunity just appeared", "leadership wants a recommendation by tomorrow", "two options are on the table and you must pick one", "the budget was just cut", "a mistake was made that must be addressed"]
+  },
+
+  "events": [
+    {
+      "event": "Marketing",
+      "category": "Role Play",
+      "participants": "Individual or team of 1-3 (same chapter)",
+      "prep_minutes": 20,
+      "perform_minutes": 7,
+      "judge_questions": true,
+      "notecards_allowed": 2,
+      "total_points": 100,
+      "domain_flavor": {
+        "industries": ["apparel & accessories retailer", "quick-serve restaurant", "fitness studio", "electronics retailer", "streaming service", "sporting goods brand", "coffee-shop chain", "consumer-packaged-goods brand", "e-commerce store", "event venue"],
+        "judge_roles": ["your marketing director", "the company owner", "a new client", "the regional director", "a potential investor"]
+      },
+      "knowledge_areas": [
+        "Marketing Fundamentals",
+        "Market Planning",
+        "Marketing-Information Management",
+        "Product/Service Management",
+        "Channel Management",
+        "Pricing",
+        "Promotion",
+        "Selling"
+      ],
+      "rating_sheet": [
+        { "n": 1, "criterion": "Demonstrates understanding of the role play and defines the problem(s) to be solved", "category": "content", "max": 10, "gradable_from": ["script"] },
+        { "n": 2, "criterion": "Identifies alternatives and the pro(s) and con(s) of each", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 3, "criterion": "Identifies a logical solution and aspects of implementation", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 4, "criterion": "Demonstrates knowledge and understanding of the event knowledge areas", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 5, "criterion": "Statements are well-organized and clearly stated", "category": "delivery", "max": 10, "gradable_from": ["script", "audio"] },
+        { "n": 6, "criterion": "Consistently displays confidence, poised body language, and engaging eye contact", "category": "delivery", "max": 10, "gradable_from": ["audio", "video"] },
+        { "n": 7, "criterion": "Demonstrates the ability to effectively answer questions", "category": "qa", "max": 10, "gradable_from": ["script", "audio"] }
+      ]
+    },
+    {
+      "event": "Customer Service",
+      "category": "Role Play",
+      "participants": "Individual only",
+      "prep_minutes": 20,
+      "perform_minutes": 7,
+      "judge_questions": true,
+      "notecards_allowed": 2,
+      "total_points": 100,
+      "domain_flavor": {
+        "industries": ["hotel & lodging", "airline / travel", "electronics retailer", "wireless carrier", "bank branch", "quick-serve restaurant", "e-commerce support", "gym / membership service", "auto service center", "subscription service"],
+        "judge_roles": ["an upset customer", "a long-time loyal customer", "a first-time customer", "your shift manager", "a customer escalating a complaint"]
+      },
+      "knowledge_areas": [
+        "Fostering Positive Relationships",
+        "Emotional Intelligence",
+        "Conflict Resolution",
+        "Delivering on a Brand Promise",
+        "Customer Relationship Management (CRM)",
+        "Sales Processes and Techniques"
+      ],
+      "rating_sheet": [
+        { "n": 1, "criterion": "Demonstrates understanding of the role play and defines the problem(s) to be solved", "category": "content", "max": 10, "gradable_from": ["script"] },
+        { "n": 2, "criterion": "Communicates position on the role play scenario", "category": "content", "max": 10, "gradable_from": ["script"] },
+        { "n": 3, "criterion": "Identifies a logical solution and aspects of implementation", "category": "content", "max": 10, "gradable_from": ["script"] },
+        { "n": 4, "criterion": "Displays empathy/diplomacy when responding to the role play scenario", "category": "content", "max": 20, "gradable_from": ["script", "audio"] },
+        { "n": 5, "criterion": "Demonstrates conflict resolution and closure to the role play", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 6, "criterion": "Statements are well-organized and clearly stated", "category": "delivery", "max": 10, "gradable_from": ["script", "audio"] },
+        { "n": 7, "criterion": "Consistently displays confidence, poised body language, engaging eye contact, and effective voice projection", "category": "delivery", "max": 10, "gradable_from": ["audio", "video"] },
+        { "n": 8, "criterion": "Demonstrates the ability to effectively answer questions", "category": "qa", "max": 10, "gradable_from": ["script", "audio"] }
+      ]
+    },
+    {
+      "event": "Banking & Financial Systems",
+      "category": "Role Play",
+      "participants": "Team of 1-3 (same chapter)",
+      "prep_minutes": 20,
+      "perform_minutes": 7,
+      "judge_questions": true,
+      "notecards_allowed": 2,
+      "total_points": 100,
+      "domain_flavor": {
+        "industries": ["community bank", "credit union", "regional bank branch", "online-only bank", "wealth-management firm", "mortgage lender", "small-business lending desk", "student banking division", "payments/fintech company"],
+        "judge_roles": ["the branch manager", "a new account customer", "a small-business loan applicant", "the regional director", "a compliance officer", "a long-time client"]
+      },
+      "knowledge_areas": [
+        "Concepts and Practices (banking operations, accounting, Federal Reserve, FDIC, accounts, loans)",
+        "Basic Terminology (credit, payroll, taxation, mortgages, stocks/bonds, investments, insurance)",
+        "Government Regulation (laws, compliance, audits, records retention)",
+        "Technology Impact (financial software, databases, online services)",
+        "Ethics (confidentiality, social responsibility, deceptive-practice identification)",
+        "Institution Types (banks, credit unions, services, credit sources)",
+        "Financial Careers (roles, employability, licensing/certification)",
+        "Taxation (tax code, returns, liability, deductions/credits)"
+      ],
+      "rating_sheet": [
+        { "n": 1, "criterion": "Demonstrates understanding of the role play and defines the problem(s) to be solved", "category": "content", "max": 10, "gradable_from": ["script"] },
+        { "n": 2, "criterion": "Identifies alternatives and the pro(s) and con(s) of each", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 3, "criterion": "Identifies a logical solution and aspects of implementation", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 4, "criterion": "Demonstrates knowledge and understanding of the event knowledge areas", "category": "content", "max": 20, "gradable_from": ["script"] },
+        { "n": 5, "criterion": "Statements are well-organized and clearly stated", "category": "delivery", "max": 10, "gradable_from": ["script", "audio"] },
+        { "n": 6, "criterion": "Consistently displays confidence, poise, eye contact, and effective voice projection", "category": "delivery", "max": 10, "gradable_from": ["audio", "video"] },
+        { "n": 7, "criterion": "Demonstrates the ability to effectively answer questions", "category": "qa", "max": 10, "gradable_from": ["script", "audio"] }
+      ]
+    }
+  ],
+
+  "remaining_events_to_add": [
+    "Business Management",
+    "Entrepreneurship",
+    "Hospitality & Event Management",
+    "International Business",
+    "Management Information Systems",
+    "Network Design",
+    "Parliamentary Procedure",
+    "Sports & Entertainment Management",
+    "Technology Support & Services"
+  ],
+
+  "validation": {
+    "marketing_total": "10+20+20+20+10+10+10 = 100",
+    "customer_service_total": "10+10+10+20+20+10+10+10 = 100",
+    "banking_total": "10+20+20+20+10+10+10 = 100"
+  }
+}

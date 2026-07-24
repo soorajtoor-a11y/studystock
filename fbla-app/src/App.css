@@ -188,6 +188,7 @@
   transition:background 0.12s,color 0.12s;
 }
 .sidebar-group-header:hover { background:rgba(255,255,255,0.06); color:rgba(255,255,255,0.92); }
+.sidebar-group-header.active { background:oklch(56% 0.14 var(--signal-hue) / 0.15); box-shadow:inset 0 0 0 1px oklch(56% 0.14 var(--signal-hue) / 0.26); color:rgba(255,255,255,0.95); }
 .sidebar-group-header-left { display:flex; align-items:center; gap:8px; min-width:0; }
 .sidebar-group-header-right { display:flex; align-items:center; gap:6px; flex-shrink:0; }
 .sidebar-group-icon { flex-shrink:0; color:inherit; opacity:0.85; }
@@ -738,14 +739,6 @@
   text-align:center; line-height:1.4; letter-spacing:0;
 }
 .home-stat-num { font-family:var(--font-mono); font-size:38px; font-weight:800; color:var(--signal-700); line-height:1; letter-spacing:-1.5px; margin:1px 0 4px; font-variant-numeric:tabular-nums; }
-
-.home-tip {
-  background:var(--tint);
-  border:1.5px solid var(--tint-border); border-radius:var(--r-lg);
-  padding:18px 22px; font-size:13.5px; color:var(--text-2); line-height:1.75;
-  display:flex; align-items:flex-start; gap:13px;
-}
-.home-tip-icon { font-size:18px; flex-shrink:0; margin-top:1px; }
 
 /* ── Settings ─────────────────────────────────────────────────────── */
 .settings-page { max-width:520px; margin:0 auto; padding:36px 32px 48px; }
@@ -2447,3 +2440,56 @@
   .sg-preview-category { grid-column:1; order:2; }
   .sg-preview-max { grid-column:2; order:1; grid-row:1; }
 }
+
+/* ── Role Play Generator ─────────────────────────────────────────── */
+.rp-intro { font-size:14px; line-height:1.6; color:var(--text-2); margin-bottom:20px; }
+
+.rp-event-grid { display:flex; flex-direction:column; gap:10px; }
+.rp-event-card {
+  text-align:left; padding:16px 18px; border:2px solid var(--border); border-radius:var(--r-lg);
+  background:var(--surface); cursor:pointer; transition:all 0.15s;
+  display:flex; flex-direction:column; gap:4px;
+}
+.rp-event-card:hover { border-color:var(--signal-500); background:var(--tint); transform:translateY(-1px); }
+.rp-event-card-name { font-size:15px; font-weight:700; color:var(--text); }
+.rp-event-card-meta { font-size:12px; color:var(--text-3); }
+
+.rp-scenario-card {
+  max-width:640px; margin:0 auto; padding:20px 22px; border:1.5px solid var(--border);
+  border-radius:var(--r-lg); background:var(--surface); box-shadow:var(--shadow-sm);
+}
+.rp-scenario-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px; }
+.rp-scenario-event { font-size:12px; font-weight:700; color:var(--signal-700); text-transform:uppercase; letter-spacing:0.4px; }
+.rp-prep-timer {
+  font-family:var(--font-mono); font-size:12.5px; font-weight:700; color:var(--text-3);
+  background:var(--border-s); padding:3px 10px; border-radius:20px; white-space:nowrap;
+}
+.rp-scenario-role { font-size:15px; color:var(--text); margin-bottom:2px; }
+.rp-scenario-company { font-size:13px; color:var(--text-3); margin-bottom:12px; }
+.rp-scenario-situation { font-size:14.5px; line-height:1.65; color:var(--text-2); margin-bottom:12px; }
+.rp-scenario-task { font-size:14px; line-height:1.6; color:var(--text); margin-bottom:14px; }
+.rp-scenario-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; }
+.rp-tag {
+  font-size:11px; font-weight:600; color:var(--signal-700); background:var(--tint);
+  padding:4px 10px; border-radius:20px; border:1px solid var(--signal-400);
+}
+.rp-scenario-actions { display:flex; gap:10px; flex-wrap:wrap; }
+
+.rp-response-form { max-width:640px; margin:0 auto; }
+.rp-scenario-recap {
+  display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+  padding:12px 14px; border-radius:var(--r); background:var(--border-s); margin-bottom:16px;
+}
+.rp-scenario-recap-task { font-size:13px; line-height:1.55; color:var(--text-2); }
+.rp-mode-btns { margin-bottom:16px; }
+.rp-mode-btn.active, .mp-mode-btn.active { border-color:var(--signal-600); background:var(--tint); color:var(--signal-700); }
+.rp-script-input { min-height:220px; }
+.rp-audio-drop {
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  min-height:120px; border:2px dashed var(--border); border-radius:var(--r-lg);
+  color:var(--text-3); font-size:13.5px; font-weight:600; cursor:pointer; margin-bottom:16px;
+  transition:all 0.15s;
+}
+.rp-audio-drop:hover { border-color:var(--signal-500); color:var(--text-2); background:var(--tint); }
+
+.rp-result-footer { display:flex; gap:10px; flex-wrap:wrap; max-width:640px; margin:20px auto 0; }

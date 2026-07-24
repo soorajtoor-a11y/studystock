@@ -6,6 +6,7 @@ import DarkHero from './components/landing/DarkHero'
 import DarkTicker from './components/landing/DarkTicker'
 import DarkTools from './components/landing/DarkTools'
 import RatingSheet from './components/landing/RatingSheet'
+import DarkAbout from './components/landing/DarkAbout'
 import DarkSocialProof from './components/landing/DarkSocialProof'
 import DarkClosingCTA from './components/landing/DarkClosingCTA'
 import DarkFooter from './components/landing/DarkFooter'
@@ -37,6 +38,7 @@ export default function Landing({ onStart, onPickEvent, onSignIn }) {
         <DarkTicker />
         <DarkTools />
         <RatingSheet />
+        <DarkAbout />
         <DarkSocialProof />
         <DarkClosingCTA onStart={onStart} />
       </main>

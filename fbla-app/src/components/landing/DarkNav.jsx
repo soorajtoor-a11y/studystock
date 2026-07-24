@@ -6,7 +6,7 @@ const EASE = [0.65, 0, 0.35, 1]
 
 const LINKS = [
   { label: 'Product', id: 'tools' },
-  { label: 'About', id: 'methodology' },
+  { label: 'About', id: 'about' },
 ]
 
 function NavLink({ children, onClick }) {

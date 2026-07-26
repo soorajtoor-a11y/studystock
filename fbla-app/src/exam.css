@@ -51,6 +51,18 @@
 
   --ease-exam: cubic-bezier(0.65, 0, 0.35, 1);
 
+  /* ── Motion scale — one set of durations/stagger for the whole
+     cinematic layer, so nothing on the page is timed by hand. Slow and
+     weighted on purpose: the fast step is still 400ms, which is roughly
+     where most sites' SLOW step sits. Nothing here bounces or
+     overshoots — --ease-exam is a pure ease-in-out with no back-easing,
+     and that's the only curve the landing page is allowed to use. */
+  --dur-exam-fast:  400ms;
+  --dur-exam-base:  700ms;
+  --dur-exam-slow:  900ms;
+  --dur-exam-draw:  1100ms;  /* rubric-rule line draw */
+  --stagger-exam:   90ms;    /* between siblings in a revealed group */
+
   --animate-exam-ticker: exam-ticker 200s linear infinite;
 }
 
@@ -75,9 +87,55 @@
   font-variation-settings: 'opsz' 130, 'SOFT' 10, 'WONK' 0;
 }
 
+/* ── Section reveal ──────────────────────────────────────────────────
+   These styles are what src/components/Reveal.jsx has always been
+   toggling. They did not exist anywhere in the project, so that
+   component was inert at every call site — it ran an IntersectionObserver
+   and flipped a class that styled nothing. Defining them here fixes all
+   of them at once rather than adding a second, parallel reveal system.
+
+   Kept as plain CSS transitions rather than a Motion variant because
+   Reveal is used inside the app shell too (NotesWindow, the grade-history
+   side panels), which is outside the landing page's Motion tree. */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity   var(--dur-exam-base) var(--ease-exam),
+    transform var(--dur-exam-base) var(--ease-exam);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Film grain ──────────────────────────────────────────────────────
+   One fixed, page-wide noise field. An inline SVG feTurbulence rather
+   than a texture file: it costs no request, tiles seamlessly at any
+   viewport, and stays crisp on HiDPI where a raster grain would soften.
+   Very low opacity — this should register as film stock, never as
+   visible dots over type. */
+.exam-grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 @media (prefers-reduced-motion: reduce) {
   .exam-root *, .exam-root *::before, .exam-root *::after {
     animation-duration: 0.001ms !important;
     transition-duration: 0.001ms !important;
   }
+
+  /* The blanket rule above only collapses durations — an element left at
+     opacity:0 waiting for a reveal that now takes 0.001ms is fine, but an
+     element whose observer never fires (below the fold, JS disabled)
+     would stay invisible. Force the resting state so content is never
+     gated on motion. */
+  .reveal { opacity: 1; transform: none; }
 }

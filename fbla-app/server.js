@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
+import rateLimit from 'express-rate-limit';
+import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -74,6 +76,57 @@ const GEMINI_BASE   = `https://generativelanguage.googleapis.com/v1beta/models/$
 
 const OLLAMA_FAST_OPTS = { temperature: 0.7, num_ctx: 4096,  num_predict: 2048 };
 const OLLAMA_GEN_OPTS  = { temperature: 0.3, num_ctx: 16384, num_predict: -1   };
+
+// ---------------------------------------------------------------------------
+// Waitlist mode + dev-team access gate (vye-waitlist-dev-bypass-spec.md).
+//
+// While WAITLIST_MODE is on, the public sees only the landing page's waitlist
+// form; every /api/* app-data route is blocked at the Express layer unless the
+// caller presents a Supabase session whose email is on DEV_ALLOWLIST. The
+// hidden-route obscurity of /team-access is NOT the security boundary — this
+// allowlist check is. Flip WAITLIST_MODE=false at launch to make the whole
+// gate a no-op (single-flag launch switch, per the spec).
+// ---------------------------------------------------------------------------
+const WAITLIST_MODE = (process.env.WAITLIST_MODE ?? 'true').toLowerCase() !== 'false';
+const DEV_ALLOWLIST = (process.env.DEV_ALLOWLIST || '')
+  .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+// Reuse the same Supabase project the frontend already uses. The anon key is
+// all that's needed here: auth.getUser(token) verifies a user's own JWT with
+// it (it's the token that carries the authority, not the key), so no
+// service-role key has to be introduced to the backend.
+const SUPABASE_URL      = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || '';
+const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || '';
+let supabaseAuth = null;
+if (SUPABASE_URL && SUPABASE_ANON_KEY) {
+  supabaseAuth = createSupabaseClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+} else if (WAITLIST_MODE) {
+  console.warn('[gate] WAITLIST_MODE is on but Supabase env vars are missing — the gate cannot verify sessions and will deny all app routes.');
+}
+
+function bearerToken(req) {
+  const h = req.headers.authorization || '';
+  const m = h.match(/^Bearer\s+(.+)$/i);
+  return m ? m[1].trim() : null;
+}
+
+// Resolves the caller to { user, allowed } from their Bearer token. `allowed`
+// is true only when the verified email is on DEV_ALLOWLIST. Never throws —
+// any failure (no token, bad token, Supabase down) resolves to a denied
+// caller, so callers can treat this as a plain boolean gate.
+async function resolveCaller(req) {
+  const token = bearerToken(req);
+  if (!token || !supabaseAuth) return { user: null, allowed: false };
+  try {
+    const { data, error } = await supabaseAuth.auth.getUser(token);
+    if (error || !data?.user) return { user: null, allowed: false };
+    const email = (data.user.email || '').toLowerCase();
+    return { user: data.user, allowed: DEV_ALLOWLIST.includes(email) };
+  } catch {
+    return { user: null, allowed: false };
+  }
+}
 
 // ---------------------------------------------------------------------------
 // Utilities
@@ -609,6 +662,85 @@ function mergeIntoLiveQuizCache(org, event, scope, objective, freshQuestions) {
 function difficultyTier(event) {
   return (event || '').startsWith('introduction-to-') ? 'INTRO' : 'STANDARD';
 }
+
+// ---------------------------------------------------------------------------
+// Waitlist + access gate — PUBLIC routes (declared before the gate middleware
+// below so they stay reachable while WAITLIST_MODE is on).
+// ---------------------------------------------------------------------------
+
+// Tells the frontend how to render: whether the site is gated at all, and
+// (if a session token is presented) whether this caller is a dev-team member
+// allowed through. Never leaks allowlist membership beyond a plain boolean to
+// the very session it belongs to.
+app.get('/api/gate-status', async (req, res) => {
+  if (!WAITLIST_MODE) return res.json({ waitlistMode: false, allowed: true });
+  const { user, allowed } = await resolveCaller(req);
+  res.json({ waitlistMode: true, allowed, signedIn: Boolean(user) });
+});
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const waitlistLimiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 5,                       // 5 submissions / minute / IP, per spec
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many requests — please wait a minute and try again.' },
+});
+
+app.post('/api/waitlist', waitlistLimiter, async (req, res) => {
+  const { email, name, note, company, source } = req.body || {};
+
+  // Honeypot: `company` is an off-screen field no real user ever fills. If
+  // it's set, silently pretend success and store nothing — don't tip off a
+  // bot that it was detected.
+  if (typeof company === 'string' && company.trim() !== '') {
+    return res.json({ ok: true, status: 'success' });
+  }
+
+  const clean = String(email || '').trim().toLowerCase();
+  if (!EMAIL_RE.test(clean)) {
+    return res.status(400).json({ error: 'Please enter a valid email address.' });
+  }
+
+  if (!supabaseAuth) {
+    console.error('[waitlist] Supabase not configured — cannot store signup.');
+    return res.status(500).json({ error: 'Waitlist is temporarily unavailable.' });
+  }
+
+  const row = {
+    email: clean,
+    name: typeof name === 'string' && name.trim() ? name.trim() : null,
+    note: typeof note === 'string' && note.trim() ? note.trim() : null,
+    source: typeof source === 'string' && source.trim() ? source.trim() : null,
+  };
+
+  const { error } = await supabaseAuth.from('waitlist').insert(row);
+  if (!error) return res.json({ ok: true, status: 'success' });
+
+  // 23505 = unique_violation → already on the list. Treat as success (don't
+  // error, don't create a duplicate), per the spec.
+  if (error.code === '23505') return res.json({ ok: true, status: 'already' });
+
+  console.error('[waitlist] insert failed:', error.message);
+  return res.status(500).json({ error: 'Something went wrong. Please try again.' });
+});
+
+// ---------------------------------------------------------------------------
+// Access gate MIDDLEWARE — every /api/* app-data route registered AFTER this
+// point requires a dev-allowlisted session while WAITLIST_MODE is on. Scoped
+// to '/api' on purpose: the public waitlist + gate-status routes above are
+// registered first (so they respond before this ever runs), and the SPA
+// shell + static assets served at the very bottom are NOT under /api, so the
+// public can always load the landing page and its JS/CSS — only the data
+// endpoints behind it are blocked. Generic 401 only — never reveals whether
+// an email is on the allowlist.
+// ---------------------------------------------------------------------------
+app.use('/api', async (req, res, next) => {
+  if (!WAITLIST_MODE) return next();
+  const { allowed } = await resolveCaller(req);
+  if (allowed) return next();
+  return res.status(401).json({ error: 'Access not available.' });
+});
 
 // ---------------------------------------------------------------------------
 // File helpers

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { supabase } from '../supabaseClient'
+import { supabase, apiFetch } from '../supabaseClient'
 import { useFakeProgress } from '../lib/useFakeProgress'
 import ProgressBar from './ProgressBar'
 
@@ -136,7 +136,7 @@ export default function NotesEditor({ org, event, section, user, onNeedAccount, 
       }
 
       try {
-        const res = await fetch('/api/notes', {
+        const res = await apiFetch('/api/notes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ org, event, objective: buildSectionText(section), objectives: section.objectives }),

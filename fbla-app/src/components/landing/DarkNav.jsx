@@ -22,7 +22,7 @@ function NavLink({ children, onClick }) {
   )
 }
 
-export default function DarkNav({ onScrollTo, onScrollTop, onPickEvent, onSignIn, onStart }) {
+export default function DarkNav({ onScrollTo, onScrollTop, onPickEvent, onSignIn, onStart, waitlistMode = false }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   function go(id) {
@@ -37,28 +37,46 @@ export default function DarkNav({ onScrollTo, onScrollTop, onPickEvent, onSignIn
           <MarkScorecardWordmark className="h-6 w-auto" fill="#ECE4D6" />
         </a>
 
+        {/* In waitlist mode the nav is single-purpose — nothing but the
+            Join-the-waitlist CTA on the right. The Product/About/Events links
+            all lead into content or the app, so they're dropped entirely for
+            the public; devs (mode off for them) still get the full nav. */}
         <nav aria-label="Primary" className="hidden items-center gap-9 md:flex">
-          {LINKS.map(l => <NavLink key={l.id} onClick={() => go(l.id)}>{l.label}</NavLink>)}
-          <NavLink onClick={onPickEvent}>Events</NavLink>
+          {!waitlistMode && LINKS.map(l => <NavLink key={l.id} onClick={() => go(l.id)}>{l.label}</NavLink>)}
+          {!waitlistMode && <NavLink onClick={onPickEvent}>Events</NavLink>}
         </nav>
 
         <div className="hidden items-center gap-6 sm:flex">
-          <button
-            type="button"
-            onClick={onSignIn}
-            className="font-exam-grotesque text-[15px] font-medium text-exam-bone-soft transition-colors hover:text-exam-bone"
-          >
-            Sign in
-          </button>
-          <motion.button
-            type="button"
-            onClick={onStart}
-            whileHover={{ backgroundColor: '#D5674F' }}
-            transition={{ duration: 0.25, ease: EASE }}
-            className="inline-flex min-h-[44px] items-center bg-exam-oxblood px-5 font-exam-grotesque text-[14px] font-bold text-exam-bone"
-          >
-            Try it
-          </motion.button>
+          {waitlistMode ? (
+            <motion.button
+              type="button"
+              onClick={() => go('waitlist')}
+              whileHover={{ backgroundColor: '#D5674F' }}
+              transition={{ duration: 0.25, ease: EASE }}
+              className="inline-flex min-h-[44px] items-center bg-exam-oxblood px-5 font-exam-grotesque text-[14px] font-bold text-exam-bone"
+            >
+              Join the waitlist
+            </motion.button>
+          ) : (
+            <>
+              <button
+                type="button"
+                onClick={onSignIn}
+                className="font-exam-grotesque text-[15px] font-medium text-exam-bone-soft transition-colors hover:text-exam-bone"
+              >
+                Sign in
+              </button>
+              <motion.button
+                type="button"
+                onClick={onStart}
+                whileHover={{ backgroundColor: '#D5674F' }}
+                transition={{ duration: 0.25, ease: EASE }}
+                className="inline-flex min-h-[44px] items-center bg-exam-oxblood px-5 font-exam-grotesque text-[14px] font-bold text-exam-bone"
+              >
+                Try it
+              </motion.button>
+            </>
+          )}
         </div>
 
         <button
@@ -87,7 +105,7 @@ export default function DarkNav({ onScrollTo, onScrollTop, onPickEvent, onSignIn
             className="overflow-hidden border-t border-exam-ink-line bg-exam-ink sm:hidden"
           >
             <div className="flex flex-col gap-1 px-6 py-3">
-              {LINKS.map(l => (
+              {!waitlistMode && LINKS.map(l => (
                 <button
                   key={l.id}
                   type="button"
@@ -97,27 +115,39 @@ export default function DarkNav({ onScrollTo, onScrollTop, onPickEvent, onSignIn
                   {l.label}
                 </button>
               ))}
-              <button
-                type="button"
-                onClick={() => { setMenuOpen(false); onPickEvent?.() }}
-                className="min-h-[44px] py-2 text-left font-exam-grotesque text-[15px] text-exam-bone-soft hover:text-exam-bone"
-              >
-                Events
-              </button>
-              <button
-                type="button"
-                onClick={() => { setMenuOpen(false); onSignIn?.() }}
-                className="min-h-[44px] py-2 text-left font-exam-grotesque text-[15px] text-exam-bone-soft hover:text-exam-bone"
-              >
-                Sign in
-              </button>
-              <button
-                type="button"
-                onClick={() => { setMenuOpen(false); onStart?.() }}
-                className="mt-1 min-h-[44px] bg-exam-oxblood px-4 text-left font-exam-grotesque text-[15px] font-bold text-exam-bone"
-              >
-                Try it
-              </button>
+              {waitlistMode ? (
+                <button
+                  type="button"
+                  onClick={() => { setMenuOpen(false); onScrollTo?.('waitlist') }}
+                  className="mt-1 min-h-[44px] bg-exam-oxblood px-4 text-left font-exam-grotesque text-[15px] font-bold text-exam-bone"
+                >
+                  Join the waitlist
+                </button>
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => { setMenuOpen(false); onPickEvent?.() }}
+                    className="min-h-[44px] py-2 text-left font-exam-grotesque text-[15px] text-exam-bone-soft hover:text-exam-bone"
+                  >
+                    Events
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setMenuOpen(false); onSignIn?.() }}
+                    className="min-h-[44px] py-2 text-left font-exam-grotesque text-[15px] text-exam-bone-soft hover:text-exam-bone"
+                  >
+                    Sign in
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setMenuOpen(false); onStart?.() }}
+                    className="mt-1 min-h-[44px] bg-exam-oxblood px-4 text-left font-exam-grotesque text-[15px] font-bold text-exam-bone"
+                  >
+                    Try it
+                  </button>
+                </>
+              )}
             </div>
           </motion.nav>
         )}

@@ -1,84 +1,48 @@
-import { useState } from 'react'
 import { motion } from 'motion/react'
+import objectiveTestsImg from '../../assets/screenshots/objective-tests.jpg'
+import presentationImg from '../../assets/screenshots/presentation.jpg'
+import roleplayImg from '../../assets/screenshots/roleplay.jpg'
+import notesImg from '../../assets/screenshots/notes.jpg'
 
 const EASE = [0.65, 0, 0.35, 1]
 
-function Exhibit({ children }) {
-  return <div className="border border-exam-ink-line bg-exam-ink-raised p-6">{children}</div>
-}
-
-// ── Practice Tests ────────────────────────────────────────────────────────
-function PracticeTestExhibit() {
+// Real screenshots of the running app (captured live, not mocked) — this
+// replaced an earlier version where the right-hand exhibit was a hand-coded
+// fake quiz/flashcard UI. Same bordered-card treatment, now framing an
+// actual `img` instead of markup built to look like one.
+function ScreenshotExhibit({ src, alt }) {
   return (
-    <Exhibit>
-      <p className="mb-4 font-exam-mono text-[11px] tracking-[0.1em] text-exam-bone-faint">ACCOUNTING · JOURNALIZING</p>
-      <p className="mb-4 font-exam-grotesque text-[15px] leading-snug text-exam-bone">
-        A business receives $1,200 cash in advance for services it hasn't performed yet. Which account is credited?
-      </p>
-      <div className="flex flex-col gap-2">
-        {[
-          { l: 'A', t: 'Service Revenue' },
-          { l: 'B', t: 'Accounts Receivable' },
-          { l: 'C', t: 'Unearned Revenue', correct: true },
-          { l: 'D', t: 'Cash' },
-        ].map(o => (
-          <div key={o.l} className={`flex items-center gap-3 border px-3 py-2 font-exam-grotesque text-[13.5px] ${o.correct ? 'border-exam-ember-text/60 bg-exam-oxblood/15 text-exam-bone' : 'border-exam-ink-line text-exam-bone-soft'}`}>
-            <span className={`font-exam-mono text-[11px] ${o.correct ? 'text-exam-ember-text' : 'text-exam-bone-faint'}`}>{o.l}</span>
-            {o.t}
-          </div>
-        ))}
-      </div>
-    </Exhibit>
+    <div className="border border-exam-ink-line bg-exam-ink-raised p-2">
+      <img src={src} alt={alt} className="h-auto w-full border border-exam-ink-line" />
+    </div>
   )
 }
 
-// ── Flashcard Drills ─────────────────────────────────────────────────────
-function FlashcardExhibit() {
-  const [flipped, setFlipped] = useState(false)
-  return (
-    <Exhibit>
-      <div style={{ perspective: '1200px' }}>
-        <div
-          role="button"
-          tabIndex={0}
-          aria-pressed={flipped}
-          aria-label="Flashcard, click to flip between term and definition"
-          onClick={() => setFlipped(f => !f)}
-          onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setFlipped(f => !f) } }}
-          className="relative h-[132px] cursor-pointer outline-none"
-          style={{ transformStyle: 'preserve-3d', transition: 'transform 0.55s cubic-bezier(0.65,0,0.35,1)', transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
-        >
-          <div className="absolute inset-0" style={{ backfaceVisibility: 'hidden' }}>
-            <p className="mb-3 font-exam-mono text-[11px] tracking-[0.1em] text-exam-bone-faint">TERM</p>
-            <p className="font-exam-grotesque text-[20px] font-bold text-exam-bone">Multi-column journal</p>
-          </div>
-          <div className="absolute inset-0" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-            <p className="mb-3 font-exam-mono text-[11px] tracking-[0.1em] text-exam-ember-text">DEFINITION</p>
-            <p className="font-exam-grotesque text-[14.5px] leading-relaxed text-exam-bone-soft">
-              A journal with dedicated columns for frequently recurring transaction types, so
-              similar entries can be recorded and totaled without repeating account titles.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex items-center justify-between border-t border-exam-ink-line pt-4">
-        <span className="font-exam-grotesque text-[13px] text-exam-bone-faint">{flipped ? 'Click to flip back' : 'Click to reveal definition'}</span>
-        <span className="flex gap-1.5">
-          <span className="border border-exam-ink-line px-2.5 py-1 font-exam-mono text-[11px] text-exam-bone-soft">Still learning</span>
-          <span className="border border-exam-ember-text/60 bg-exam-oxblood/15 px-2.5 py-1 font-exam-mono text-[11px] text-exam-ember-text">Got it</span>
-        </span>
-      </div>
-    </Exhibit>
-  )
-}
-
-// ── Presentation Workbot ──────────────────────────────────────────────────
-// No card container this time — the rubric sits directly on the oxblood
-// field with just a hairline divider under the header, so it reads as part
-// of the same surface rather than a floating black box on top of it.
 const SPLIT_TOOLS = [
-  { title: 'Practice Tests', body: 'Multiple-choice questions scoped to any objective, section, or full event — generated fresh each time, never a stale repeated bank.', Exhibit: PracticeTestExhibit },
-  { title: 'Flashcard Drills', body: '"Got it" and "still learning" tracking, so review time goes toward what you actually don\'t know yet, not what you\'ve already mastered.', Exhibit: FlashcardExhibit },
+  {
+    title: 'Objective Test Study Tools',
+    body: 'Objective Test Study Tools offer a thorough breakdown of every objective event across all three competitions. Users can pick from flashcards, quizzes, or chatbots to prepare for their event, seamlessly switching between detailed, goal-by-goal analysis and comprehensive reviews of the entire event.',
+    img: objectiveTestsImg,
+    alt: 'The Objective Test study tools, showing a section-by-section breakdown of an FBLA Accounting event',
+  },
+  {
+    title: 'Presentation Events',
+    body: "Presentation Events provide complete access to an AI presentation workbot that evaluates and scores your presentation audio, script, video, or file, all in line with the official event guidelines that judges use during actual competitions. Users can monitor their progress over time and enhance their scores in a systematic and precise manner. After presenting, they also have the option to be scored on a Q&A tailored specifically for their event and product.",
+    img: presentationImg,
+    alt: 'The Presentation Workbot showing what gets graded for the Business Plan event',
+  },
+  {
+    title: 'Role-Play Events',
+    body: 'Role-Play Events allow competitors to create sample prompts for their role-play, plan and prepare, and present through audio, script, or video. They receive a clear and focused breakdown of their progress across different scenarios.',
+    img: roleplayImg,
+    alt: 'A scored Role Play rating sheet for the Marketing event',
+  },
+  {
+    title: 'Editable Notes',
+    body: 'Editable Notes enable students to quickly generate notes based on guidelines, which they can then copy, edit, and revisit whenever they wish.',
+    img: notesImg,
+    alt: 'Generated one-page notes for a Marketing section',
+  },
 ]
 
 export default function DarkTools() {
@@ -88,35 +52,27 @@ export default function DarkTools() {
         <h2 className="exam-display-axes mb-16 max-w-[14ch] font-exam-display text-[clamp(2rem,3.6vw,3.25rem)] font-medium leading-[1.08] text-exam-bone sm:mb-20">What We Offer</h2>
 
         <div className="flex flex-col gap-20 sm:gap-28">
-          {/* Practice Tests */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: EASE }}
-            className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
-          >
-            <div>
-              <h3 className="mb-4 font-exam-grotesque text-[clamp(1.75rem,2.6vw,2.5rem)] font-bold leading-[1.1] text-exam-bone">{SPLIT_TOOLS[0].title}</h3>
-              <p className="max-w-[42ch] font-exam-grotesque text-[16px] leading-[1.65] text-exam-bone-soft">{SPLIT_TOOLS[0].body}</p>
-            </div>
-            <PracticeTestExhibit />
-          </motion.div>
-
-          {/* Flashcard Drills — mirrored */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: EASE }}
-            className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
-          >
-            <div className="lg:order-2">
-              <h3 className="mb-4 font-exam-grotesque text-[clamp(1.75rem,2.6vw,2.5rem)] font-bold leading-[1.1] text-exam-bone">{SPLIT_TOOLS[1].title}</h3>
-              <p className="max-w-[42ch] font-exam-grotesque text-[16px] leading-[1.65] text-exam-bone-soft">{SPLIT_TOOLS[1].body}</p>
-            </div>
-            <div className="lg:order-1"><FlashcardExhibit /></div>
-          </motion.div>
+          {SPLIT_TOOLS.map((tool, i) => {
+            const mirrored = i % 2 === 1
+            return (
+              <motion.div
+                key={tool.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6, ease: EASE }}
+                className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
+              >
+                <div className={mirrored ? 'lg:order-2' : undefined}>
+                  <h3 className="mb-4 font-exam-grotesque text-[clamp(1.75rem,2.6vw,2.5rem)] font-bold leading-[1.1] text-exam-bone">{tool.title}</h3>
+                  <p className="max-w-[42ch] font-exam-grotesque text-[16px] leading-[1.65] text-exam-bone-soft">{tool.body}</p>
+                </div>
+                <div className={mirrored ? 'lg:order-1' : undefined}>
+                  <ScreenshotExhibit src={tool.img} alt={tool.alt} />
+                </div>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>

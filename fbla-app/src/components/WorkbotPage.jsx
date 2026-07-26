@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { supabase } from '../supabaseClient'
+import { supabase, apiFetch } from '../supabaseClient'
 import ScorecardResult from './ScorecardResult'
 import ScoreProgressChart from './ScoreProgressChart'
 import WorkbotGradeHistorySidePanel from './WorkbotGradeHistorySidePanel'
@@ -334,7 +334,7 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
   const pinned = pins.some(p => p.org === org && p.event === eventId && p.kind === 'presentation')
 
   useEffect(() => {
-    fetch('/api/presentation-events')
+    apiFetch('/api/presentation-events')
       .then(r => r.json())
       .then(list => setEvents(list))
       .catch(() => setEventsError('Could not load the event list.'))
@@ -429,7 +429,7 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
         const idx = rows.findIndex(r => r.id === targetId)
         if (idx <= 0) { setComparison(null); return }
         const previous = rows[idx - 1].result
-        fetch('/api/workbot/compare', {
+        apiFetch('/api/workbot/compare', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ previous, current: targetResult, event: eventId }),
         })
@@ -449,7 +449,7 @@ export default function WorkbotPage({ onBack, initialEventId, user, org = 'fbla'
     } else {
       formData.append('inputs', JSON.stringify({ script: scriptText }))
     }
-    fetch('/api/workbot/grade', { method: 'POST', body: formData })
+    apiFetch('/api/workbot/grade', { method: 'POST', body: formData })
       .then(r => r.json())
       .then(d => {
         if (d.error) { setError(d.error); return }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { ORG_META, ORG_ORDER } from '../../orgMeta'
 import { ORG_GLYPHS } from './OrgGlyphs'
+import { apiFetch } from '../../supabaseClient'
 
 function formatEventName(slug) {
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
@@ -43,9 +44,12 @@ export default function DarkTicker() {
     let cancelled = false
     Promise.all(
       ORG_ORDER.map(org =>
-        fetch(`/api/events?org=${org}`)
+        apiFetch(`/api/events?org=${org}`)
           .then(r => r.json())
-          .then(list => ({ org, list }))
+          // A 401 (waitlist mode, no dev token) returns {error} not an array —
+          // fall back to empty so the ticker just shows "coming soon" rather
+          // than throwing on .map below.
+          .then(list => ({ org, list: Array.isArray(list) ? list : [] }))
           .catch(() => ({ org, list: [] }))
       )
     ).then(results => {

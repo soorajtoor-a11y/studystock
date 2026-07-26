@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { supabase } from '../supabaseClient'
+import { supabase, apiFetch } from '../supabaseClient'
 import { useFakeProgress } from '../lib/useFakeProgress'
 import ProgressBar from './ProgressBar'
 import RolePlayGradeHistorySidePanel from './RolePlayGradeHistorySidePanel'
@@ -223,7 +223,7 @@ function FollowUpSession({ eventId, scenario, results, onDone, onSkip }) {
 
   useEffect(() => {
     let cancelled = false
-    fetch('/api/roleplay/questions', {
+    apiFetch('/api/roleplay/questions', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ eventId, scenario, results }),
     })
@@ -244,7 +244,7 @@ function FollowUpSession({ eventId, scenario, results, onDone, onSkip }) {
     setPhase('transcribing')
     const formData = new FormData()
     formData.append('file', file)
-    fetch('/api/workbot/qa/transcribe', { method: 'POST', body: formData })
+    apiFetch('/api/workbot/qa/transcribe', { method: 'POST', body: formData })
       .then(r => r.json())
       .then(d => {
         if (d.error) { setError(d.error); setPhase('active'); return }
@@ -265,7 +265,7 @@ function FollowUpSession({ eventId, scenario, results, onDone, onSkip }) {
     if (index + 1 < questions.length) { setIndex(i => i + 1); return }
 
     setPhase('submitting')
-    fetch('/api/roleplay/questions/score', {
+    apiFetch('/api/roleplay/questions/score', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ eventId, gradeResult: { results, total: { scored: 0, of: 100 } }, exchanges: nextExchanges }),
     })
@@ -391,7 +391,7 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
   const gradeProgress = useFakeProgress(phase === 'grading', 20000)
 
   useEffect(() => {
-    fetch('/api/roleplay-events').then(r => r.json()).then(list => {
+    apiFetch('/api/roleplay-events').then(r => r.json()).then(list => {
       setEvents(list)
       if (presetEventId) {
         setPhase(list.some(e => e.event === presetEventId) ? 'landing' : 'unavailable')
@@ -402,7 +402,7 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
   function fetchScenario(id, recents) {
     setActiveGradeId(null)
     setPhase('scenario-loading')
-    fetch('/api/roleplay/scenario', {
+    apiFetch('/api/roleplay/scenario', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ eventId: id, recentScenarios: recents }),
     })
@@ -442,7 +442,7 @@ export default function RolePlayPage({ onBack, presetEventId = null, embedded = 
     if (audioFile) form.append('file', audioFile)
     else form.append('script', script)
 
-    fetch('/api/roleplay/grade', { method: 'POST', body: form })
+    apiFetch('/api/roleplay/grade', { method: 'POST', body: form })
       .then(r => r.json())
       .then(d => {
         if (d.error) { setError(d.error); setPhase('error'); return }

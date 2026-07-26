@@ -1,6 +1,6 @@
 import { MarkScorecardWordmark } from './ExamMark'
 
-export default function DarkFooter({ onScrollTo, onPickEvent }) {
+export default function DarkFooter({ onScrollTo, onPickEvent, waitlistMode = false }) {
   return (
     <footer className="border-t border-exam-ink-line bg-exam-ink-raised">
       <div className="mx-auto grid max-w-[1240px] grid-cols-1 gap-12 px-6 py-16 sm:px-10 sm:py-20 md:grid-cols-[1.3fr_1fr_1fr]">
@@ -19,7 +19,8 @@ export default function DarkFooter({ onScrollTo, onPickEvent }) {
           <span className="mb-1 font-exam-mono text-[11px] tracking-[0.12em] text-exam-bone-faint">PRODUCT</span>
           <button type="button" onClick={() => onScrollTo?.('tools')} className="w-fit min-h-[40px] py-1 text-left font-exam-grotesque text-[14.5px] text-exam-bone-soft transition-colors hover:text-exam-ember-text">What we offer</button>
           <button type="button" onClick={() => onScrollTo?.('methodology')} className="w-fit min-h-[40px] py-1 text-left font-exam-grotesque text-[14.5px] text-exam-bone-soft transition-colors hover:text-exam-ember-text">Methodology</button>
-          <button type="button" onClick={onPickEvent} className="w-fit min-h-[40px] py-1 text-left font-exam-grotesque text-[14.5px] text-exam-bone-soft transition-colors hover:text-exam-ember-text">Browse events</button>
+          {/* "Browse events" enters the app — hidden in waitlist mode. */}
+          {!waitlistMode && <button type="button" onClick={onPickEvent} className="w-fit min-h-[40px] py-1 text-left font-exam-grotesque text-[14.5px] text-exam-bone-soft transition-colors hover:text-exam-ember-text">Browse events</button>}
         </nav>
 
         <nav aria-label="Legal" className="flex flex-col gap-3">

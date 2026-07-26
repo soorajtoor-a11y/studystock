@@ -8,7 +8,7 @@ import { isHybridEvent, HYBRID_EVENT_ROLEPLAY_NAME } from './lib/hybridEvents'
 import CollapsedRail from './components/CollapsedRail'
 import NotesWindow from './components/NotesWindow'
 import { ORG_META, ORG_ORDER } from './orgMeta'
-import { supabase } from './supabaseClient'
+import { supabase, apiFetch } from './supabaseClient'
 import { useFakeProgress } from './lib/useFakeProgress'
 import ProgressBar from './components/ProgressBar'
 import { MarkScorecardFavicon } from './components/landing/ExamMark'
@@ -170,6 +170,24 @@ function ComingSoonPage({ org, onSwitchOrg }) {
         or switch to another organization in the meantime.
       </p>
       <button className="home-cta" onClick={onSwitchOrg}>Switch Organization →</button>
+    </div>
+  )
+}
+
+// Shown to a signed-in account that isn't on the dev allowlist while the
+// site is in waitlist mode (e.g. a pre-existing user from before the gate).
+// Deliberately says nothing about allowlists or "almost in" — just a plain
+// standing message plus a way to sign out.
+function WaitlistStandingPage({ email, onSignOut }) {
+  return (
+    <div className="coming-soon-page">
+      <div className="coming-soon-icon">✳️</div>
+      <h2 className="coming-soon-title">You're on the waitlist</h2>
+      <p className="coming-soon-desc">
+        Vye isn't open to the public just yet. We'll email {email ? <strong>{email}</strong> : 'you'} the
+        moment your access is ready.
+      </p>
+      <button className="home-cta" onClick={onSignOut}>Sign out</button>
     </div>
   )
 }
@@ -688,7 +706,7 @@ function FlashcardPane({ event, org, objectiveText, count, onBack }) {
   const progress = useFakeProgress(!cards && !error, 6000)
 
   useEffect(() => {
-    fetch('/api/flashcards', {
+    apiFetch('/api/flashcards', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ org, event, objective: objectiveText, count }),
@@ -886,7 +904,7 @@ function QuizPane({ event, org, objectiveText, count, difficulty, scope, objecti
   const progress = useFakeProgress(!questions && !error, Math.max(6000, count * 350))
 
   useEffect(() => {
-    fetch('/api/quiz', {
+    apiFetch('/api/quiz', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ org, event, objective: objectiveText, count, difficulty, scope, objectives }),
@@ -1633,7 +1651,7 @@ function EventView({ event, org, onStudy, user, pinned, onTogglePin, onAskAnythi
 
   useEffect(() => {
     setOutline(null); setSelected(null)
-    fetch(`/api/events/${org}/${event}/outline`).then(r => r.json()).then(d => {
+    apiFetch(`/api/events/${org}/${event}/outline`).then(r => r.json()).then(d => {
       const s = parseOutline(d.content); setOutline(s)
       if (s.length > 0) setExpanded({ [s[0].letter]: true })
     })
@@ -2142,7 +2160,13 @@ function Sidebar({ events, hybridEvents, presentationEvents, workbotEventId, pag
 }
 
 // ── App Root ──────────────────────────────────────────────────────────────────
-export default function App() {
+export default function App({ teamAccess = false } = {}) {
+  // Waitlist gate (vye-waitlist-dev-bypass-spec.md). `gate` is null until the
+  // server tells us the mode (avoids flashing the full app then yanking it):
+  //   { waitlistMode, allowed, signedIn }
+  // Re-fetched whenever the auth session changes, so signing in at
+  // /team-access flips `allowed` without a reload.
+  const [gate, setGate] = useState(null)
   const [orgs,             setOrgs]             = useState([])   // [{id, eventCount}]
   const [org,               setOrg]               = useState(null)
   const [pendingDestination, setPendingDestination] = useState('home')
@@ -2247,6 +2271,33 @@ export default function App() {
     })
     return () => sub.subscription.unsubscribe()
   }, [])
+
+  // The hidden dev-login route must never be indexed. Inject a noindex meta
+  // for it (and restore on unmount) — belt-and-suspenders alongside its
+  // absence from any nav/sitemap.
+  useEffect(() => {
+    if (!teamAccess) return
+    const meta = document.createElement('meta')
+    meta.name = 'robots'
+    meta.content = 'noindex, nofollow'
+    document.head.appendChild(meta)
+    return () => { document.head.removeChild(meta) }
+  }, [teamAccess])
+
+  // Waitlist gate status — asks the server whether the site is gated and,
+  // if a session token is present (apiFetch attaches it), whether this
+  // account is on the dev allowlist. Re-runs on every `user` change so a
+  // fresh sign-in at /team-access immediately re-evaluates access. On any
+  // failure, fail CLOSED to waitlist mode (never accidentally expose the app
+  // because a status check hiccuped).
+  useEffect(() => {
+    let cancelled = false
+    apiFetch('/api/gate-status')
+      .then(r => r.json())
+      .then(d => { if (!cancelled) setGate(d) })
+      .catch(() => { if (!cancelled) setGate({ waitlistMode: true, allowed: false, signedIn: false }) })
+    return () => { cancelled = true }
+  }, [user])
 
   // Pinned events — [{org, event, kind}], loaded from Supabase for the
   // signed-in user and kept in sync via optimistic local updates in
@@ -2387,13 +2438,13 @@ export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('vye-theme') || 'dark')
 
   useEffect(() => {
-    fetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
+    apiFetch('/api/orgs').then(r => r.json()).then(setOrgs).catch(() => {})
   }, [])
 
   useEffect(() => {
     if (!org) { setEvents([]); setEventsLoaded(false); return }
     setEventsLoaded(false)
-    fetch(`/api/events?org=${org}`).then(r => r.json()).then(list => { setEvents(list.sort()); setEventsLoaded(true) })
+    apiFetch(`/api/events?org=${org}`).then(r => r.json()).then(list => { setEvents(list.sort()); setEventsLoaded(true) })
   }, [org])
 
   // Sidebar shortcut list for the Presentation Workbot — only the events
@@ -2404,7 +2455,7 @@ export default function App() {
   // same spirit as Objective Tests only ever listing real events.
   useEffect(() => {
     if (org !== 'fbla') { setPresentationEvents([]); return }
-    fetch('/api/presentation-events')
+    apiFetch('/api/presentation-events')
       .then(r => r.json())
       .then(list => setPresentationEvents(
         list.filter(e => e.build_ready || e.video_gradable).sort((a, b) => a.event.localeCompare(b.event))
@@ -2561,6 +2612,46 @@ export default function App() {
   function handleSelectEvent(ev) { setActiveEvent(ev); setPage('event'); setStudy(null); setNavOpen(false); setHistoryOpen(false) }
   function handleStudy(text, mode, count, diff, scope, objectives, title) { setStudy({ text, mode, count, diff, scope, objectives, title }) }
   function handleBack()          { setStudy(null) }
+
+  // ── Waitlist gate ────────────────────────────────────────────────────────
+  // Route-driven while gate.waitlistMode is true. The distinction is the URL,
+  // not who you are:
+  //   • hidden /team-access route → the FULL marketing landing with working
+  //       Try it / Sign in for free — the one and only place the dev team
+  //       signs in. (Falls through to the normal render below.)
+  //   • public / (everyone else)  → waitlist-only landing, ZERO auth entry
+  //       points, no matter what.
+  //   • signed in but NOT on the allowlist → a plain "you're on the waitlist"
+  //       page; signing in with a non-dev account never reaches the app.
+  //   • signed-in allowed dev     → falls through to the full app as normal.
+  // When gate.waitlistMode is false, this whole block is skipped and the app
+  // renders exactly as before — the single launch switch.
+  if (gate && gate.waitlistMode) {
+    // A real account that isn't on the dev allowlist (e.g. a pre-existing
+    // user, or someone who signed up at /team-access) — never the app, never
+    // a hint about "almost in," just a standing page. Checked first so it
+    // applies on both routes.
+    if (user && !gate.allowed) {
+      return <WaitlistStandingPage email={user.email} onSignOut={() => supabase.auth.signOut()} />
+    }
+    // The full marketing landing (with Try it / Sign in for free) exists ONLY
+    // on the hidden /team-access route — that's the single sign-in entry for
+    // the dev team. ANYWHERE else, whenever we'd otherwise render the landing,
+    // show the waitlist-only version instead: no sign-in, no Try it, no
+    // matter what — including for a signed-in dev who clicks back to it.
+    // Allowed devs still get the real app because that lives at a page other
+    // than 'landing' (dashboard/event/etc.), which falls through untouched; a
+    // non-allowed public visitor has no CTA to ever leave page==='landing',
+    // so this fully contains them.
+    if (page === 'landing' && !teamAccess) {
+      return <Landing waitlistMode onPickEvent={handlePickerOpen} eventCount={events.length} orgs={orgs} />
+    }
+    // else: on /team-access (full landing + sign-in), or an allowed dev inside
+    // the app → fall through to the normal render below.
+  }
+  // Still resolving the gate on first paint — render nothing rather than
+  // flashing either the app or the waitlist before we know which to show.
+  if (!gate) return null
 
   if (page === 'landing') {
     return <Landing onStart={handleStartGuest} onPickEvent={handlePickerOpen} onSignIn={handleSignIn} eventCount={events.length} orgs={orgs} />

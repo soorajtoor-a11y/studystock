@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { supabase } from '../supabaseClient'
+import { supabase, apiFetch } from '../supabaseClient'
 import { useFakeProgress } from '../lib/useFakeProgress'
 import ProgressBar from './ProgressBar'
 
@@ -41,7 +41,7 @@ export default function QASession({ org, eventId, qaCriterion, previousResult, u
       if (cancelled) return
 
       try {
-        const res = await fetch('/api/workbot/qa/generate', {
+        const res = await apiFetch('/api/workbot/qa/generate', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             eventId, submissionText: previousResult.submission_text || '',
@@ -83,7 +83,7 @@ export default function QASession({ org, eventId, qaCriterion, previousResult, u
     setPhase('transcribing')
     const formData = new FormData()
     formData.append('file', file)
-    fetch('/api/workbot/qa/transcribe', { method: 'POST', body: formData })
+    apiFetch('/api/workbot/qa/transcribe', { method: 'POST', body: formData })
       .then(r => r.json())
       .then(d => {
         if (d.error) { setError(d.error); setPhase('active'); return }
@@ -108,7 +108,7 @@ export default function QASession({ org, eventId, qaCriterion, previousResult, u
 
     // Last question answered — score the whole set.
     setPhase('submitting')
-    fetch('/api/workbot/qa/score', {
+    apiFetch('/api/workbot/qa/score', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         eventId, previousResult, submissionText: previousResult.submission_text || '',

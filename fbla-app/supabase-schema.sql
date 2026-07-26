@@ -242,3 +242,38 @@ create index if not exists roleplay_history_lookup
   on roleplay_history (user_id, org, event, created_at desc);
 
 grant select, insert, update, delete on public.roleplay_history to authenticated;
+
+-- Waitlist (BUILD-BRIEF: vye-waitlist-dev-bypass-spec.md) — public signups
+-- collected while the site is in waitlist mode. Deliberately the ONE table
+-- in this schema with no user_id/auth.uid() scoping: there's no session yet
+-- at signup time, and the opposite grant direction from every other table
+-- here — anon gets INSERT only, nothing is ever granted to authenticated
+-- for read/update/delete, so no one can list, edit, or delete signups
+-- through the public API (read them yourself in Supabase's table editor,
+-- or from the server with the service-role key, which bypasses RLS).
+-- Real-world submissions arrive through POST /api/waitlist (server-side
+-- validation + rate-limit + honeypot), not a direct client insert — but
+-- the RLS shape here is the actual security boundary regardless of which
+-- client calls it.
+create table if not exists waitlist (
+  id         uuid primary key default gen_random_uuid(),
+  email      text not null,
+  name       text,
+  note       text,
+  source     text,
+  invited    boolean not null default false,
+  created_at timestamptz not null default now()
+);
+
+-- Case-insensitive uniqueness so Foo@x.com and foo@x.com don't both get in.
+create unique index if not exists waitlist_email_lower_idx
+  on waitlist (lower(email));
+
+alter table waitlist enable row level security;
+
+create policy "Anyone can join the waitlist"
+  on waitlist for insert
+  to anon, authenticated
+  with check (true);
+
+grant insert on public.waitlist to anon, authenticated;

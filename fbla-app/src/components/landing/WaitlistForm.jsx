@@ -14,8 +14,6 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 export default function WaitlistForm({ source = 'landing' }) {
   const [email, setEmail] = useState('')
-  const [name, setName] = useState('')
-  const [note, setNote] = useState('')
   const [company, setCompany] = useState('') // honeypot — real users never fill this
   const [status, setStatus] = useState('idle') // idle | submitting | success | already | error
   const [message, setMessage] = useState('')
@@ -38,7 +36,7 @@ export default function WaitlistForm({ source = 'landing' }) {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: clean, name, note, company, source }),
+        body: JSON.stringify({ email: clean, company, source }),
       })
       const data = await res.json().catch(() => ({}))
 
@@ -50,7 +48,7 @@ export default function WaitlistForm({ source = 'landing' }) {
       if (res.ok) {
         setStatus('success')
         setMessage("You're on the list — we'll email you when Vye opens.")
-        setEmail(''); setName(''); setNote('')
+        setEmail('')
         return
       }
 
@@ -89,12 +87,15 @@ export default function WaitlistForm({ source = 'landing' }) {
             aria-hidden="true"
           />
 
+          {/* Email only — lowest possible friction. Name / "what are you
+              prepping for" were removed per request; the backend still accepts
+              them if ever re-added, but signup asks for nothing but an email. */}
           <div className="flex flex-col gap-3 sm:flex-row">
             <input
               type="email"
               inputMode="email"
               required
-              placeholder="you@school.edu"
+              placeholder="Enter your email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               className="flex-1 border border-exam-ink-line bg-exam-ink-raised px-4 py-3 font-exam-grotesque text-[14px] text-exam-bone placeholder-exam-bone-faint outline-none focus:border-exam-brass"
@@ -108,30 +109,6 @@ export default function WaitlistForm({ source = 'landing' }) {
             >
               {status === 'submitting' ? 'Joining…' : 'Join the waitlist'}
             </motion.button>
-          </div>
-
-          {/* Optional — kept low-friction: two small fields below the primary
-              email row, both skippable. Stacked rather than side-by-side: this
-              form renders at max-w-md (448px) in both the modal and the closing
-              CTA, and side-by-side truncated the longer placeholder to "What
-              are you prepping for" with the "(optional)" cut off — which reads
-              as a required question. A viewport breakpoint can't fix that,
-              since the container is narrow even on wide screens. */}
-          <div className="flex flex-col gap-3">
-            <input
-              type="text"
-              placeholder="First name (optional)"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              className="border border-exam-ink-line bg-exam-ink-raised px-4 py-2.5 font-exam-grotesque text-[13px] text-exam-bone placeholder-exam-bone-faint outline-none focus:border-exam-brass"
-            />
-            <input
-              type="text"
-              placeholder="What are you prepping for? (optional)"
-              value={note}
-              onChange={e => setNote(e.target.value)}
-              className="border border-exam-ink-line bg-exam-ink-raised px-4 py-2.5 font-exam-grotesque text-[13px] text-exam-bone placeholder-exam-bone-faint outline-none focus:border-exam-brass"
-            />
           </div>
         </div>
       )}

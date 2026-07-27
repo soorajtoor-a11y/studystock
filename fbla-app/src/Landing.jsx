@@ -10,7 +10,6 @@ import DarkAbout from './components/landing/DarkAbout'
 import DarkSocialProof from './components/landing/DarkSocialProof'
 import DarkPricing from './components/landing/DarkPricing'
 import DarkClosingCTA from './components/landing/DarkClosingCTA'
-import WaitlistPreviewSection from './components/landing/WaitlistPreviewSection'
 import DarkFooter from './components/landing/DarkFooter'
 import { useRef } from 'react'
 
@@ -47,10 +46,6 @@ export default function Landing({ onStart, onPickEvent, onSignIn, waitlistMode =
             product is pre-launch, so it's dropped in waitlist mode. */}
         {!waitlistMode && <DarkPricing />}
         <DarkClosingCTA onStart={onStart} waitlistMode={waitlistMode} />
-        {/* The standalone waitlist preview only exists to demo the form when
-            NOT in waitlist mode; in waitlist mode the hero + closing CTA host
-            the real form, so this would be a redundant third copy. */}
-        {!waitlistMode && <WaitlistPreviewSection />}
       </main>
       <DarkFooter onScrollTo={scrollToId} onPickEvent={onPickEvent} waitlistMode={waitlistMode} />
     </div>

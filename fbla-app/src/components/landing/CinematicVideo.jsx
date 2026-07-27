@@ -88,6 +88,13 @@ export default function CinematicVideo({
     const play = () => {
       const v = videoRef.current
       if (!v) return
+      /* Set muted imperatively, not just via the JSX prop. React assigns
+         `muted` as a DOM property rather than rendering the attribute, and
+         that has historically been unreliable — if it doesn't stick, iOS and
+         Android refuse to autoplay without a user gesture and the clip
+         silently never starts. Asserting it here, immediately before play(),
+         is the one moment it has to be true. */
+      v.muted = true
       /* Autoplay can still be refused (background tab, power saving).
          A rejected promise is a non-event: we simply stay on the poster,
          and the next intersection will try again. */

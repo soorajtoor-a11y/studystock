@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import CinematicVideo from './CinematicVideo'
 import objectiveTestsImg from '../../assets/screenshots/objective-tests.jpg'
 import presentationImg from '../../assets/screenshots/presentation.jpg'
 import roleplayImg from '../../assets/screenshots/roleplay.jpg'
@@ -10,10 +11,35 @@ const EASE = [0.65, 0, 0.35, 1]
 // replaced an earlier version where the right-hand exhibit was a hand-coded
 // fake quiz/flashcard UI. Same bordered-card treatment, now framing an
 // actual `img` instead of markup built to look like one.
-function ScreenshotExhibit({ src, alt }) {
+//
+// An exhibit can now be a looping demo clip instead of a still. Same card
+// chrome either way — outer border + p-2 + inner hairline — so a video
+// exhibit is indistinguishable from a screenshot one until it moves.
+function ScreenshotExhibit({ src, alt, video }) {
   return (
     <div className="border border-exam-ink-line bg-exam-ink-raised p-2">
-      <img src={src} alt={alt} className="h-auto w-full border border-exam-ink-line" />
+      {video ? (
+        /* The clip is 16:9 while the screenshots are ~2.08:1, so this box is
+           aspect-video rather than inheriting the stills' proportions:
+           object-cover into the flatter ratio would crop ~7% off the top and
+           bottom, taking the event header and the last objective rows with
+           it. Width and card treatment still match the other exhibits
+           exactly — only this row's height differs, and rows are independent.
+
+           role="img" + aria-label because CinematicVideo marks itself
+           aria-hidden (it's built for decorative beds); without this the
+           exhibit's description would be lost to screen readers, which the
+           <img alt> it replaces did provide. */
+        <div
+          role="img"
+          aria-label={alt}
+          className="relative aspect-video w-full overflow-hidden border border-exam-ink-line"
+        >
+          <CinematicVideo poster={video.poster} sources={video.sources} />
+        </div>
+      ) : (
+        <img src={src} alt={alt} className="h-auto w-full border border-exam-ink-line" />
+      )}
     </div>
   )
 }
@@ -23,13 +49,25 @@ const SPLIT_TOOLS = [
     title: 'Objective Test Study Tools',
     body: 'Objective Test Study Tools offer a thorough breakdown of every objective event across all three competitions. Users can pick from flashcards, quizzes, or chatbots to prepare for their event, seamlessly switching between detailed, goal-by-goal analysis and comprehensive reviews of the entire event.',
     img: objectiveTestsImg,
-    alt: 'The Objective Test study tools, showing a section-by-section breakdown of an FBLA Accounting event',
+    alt: 'The Objective Test study tools: picking an objective from an FBLA Business Communication event to study by quiz, cards, or explanation',
+    /* Served from public/ as plain URLs rather than imported through Vite —
+       they're large binaries that don't need hashing or bundling, and the
+       poster doubles as the video's own poster attribute inside
+       CinematicVideo. */
+    video: {
+      poster: '/objective-selector-poster.jpg',
+      sources: [{ src: '/objective-selector-web.mp4', type: 'video/mp4' }],
+    },
   },
   {
     title: 'Presentation Events',
     body: "Presentation Events provide complete access to an AI presentation workbot that evaluates and scores your presentation audio, script, video, or file, all in line with the official event guidelines that judges use during actual competitions. Users can monitor their progress over time and enhance their scores in a systematic and precise manner. After presenting, they also have the option to be scored on a Q&A tailored specifically for their event and product.",
     img: presentationImg,
-    alt: 'The Presentation Workbot showing what gets graded for the Business Plan event',
+    alt: 'The Presentation Workbot on the Business Plan event: the scoring breakdown and grade history, then choosing whether to be graded on the full event or the main part only',
+    video: {
+      poster: '/presentationsuper-poster.jpg',
+      sources: [{ src: '/presentationsuper-web.mp4', type: 'video/mp4' }],
+    },
   },
   {
     title: 'Role-Play Events',
@@ -68,7 +106,7 @@ export default function DarkTools() {
                   <p className="max-w-[42ch] font-exam-grotesque text-[16px] leading-[1.65] text-exam-bone-soft">{tool.body}</p>
                 </div>
                 <div className={mirrored ? 'lg:order-1' : undefined}>
-                  <ScreenshotExhibit src={tool.img} alt={tool.alt} />
+                  <ScreenshotExhibit src={tool.img} alt={tool.alt} video={tool.video} />
                 </div>
               </motion.div>
             )

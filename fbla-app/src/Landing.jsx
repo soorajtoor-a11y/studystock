@@ -7,7 +7,6 @@ import DarkTicker from './components/landing/DarkTicker'
 import DarkTools from './components/landing/DarkTools'
 import RatingSheet from './components/landing/RatingSheet'
 import DarkAbout from './components/landing/DarkAbout'
-import DarkSocialProof from './components/landing/DarkSocialProof'
 import DarkPricing from './components/landing/DarkPricing'
 import DarkClosingCTA from './components/landing/DarkClosingCTA'
 import DarkFooter from './components/landing/DarkFooter'
@@ -41,7 +40,6 @@ export default function Landing({ onStart, onPickEvent, onSignIn, waitlistMode =
         <DarkTools />
         <RatingSheet />
         <DarkAbout />
-        <DarkSocialProof />
         {/* Pricing is a "sign up / start free" surface — irrelevant while the
             product is pre-launch, so it's dropped in waitlist mode. */}
         {!waitlistMode && <DarkPricing />}
